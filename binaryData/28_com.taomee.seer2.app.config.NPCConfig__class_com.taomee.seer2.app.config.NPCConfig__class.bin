@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- 
+	
+ -->
+<npcs>
+	<npc id="437" resId="437" name="砂吉塔" dir="1" width="25" height="100" pos="545,447" actorPos="465,430" path="">
+	</npc>
+	<npc id="438" resId="438" name="爆炸头" dir="1" width="25" height="100" pos="504,407" actorPos="287,333" path="">
+	</npc>
+	<npc id="451" resId="451" name="受伤的小乔" dir="1" width="30" height="67" pos="565,180" actorPos="560,229" path="">
+		<dialog npcId="451" npcName="受伤的小乔" transport="1,450,340">
+			<branch id="default">
+				<node emotion="0"><![CDATA[告诉你一个秘密哦，只要有100个祝福粉末我就能进化了！不过哥哥们从来都不肯留点给我，你能帮帮我吗？]]></node>
+				<reply action="close"><![CDATA[额，你别急我一会就来！]]></reply>
+			</branch>
+		</dialog>
+		<functionality>
+			<node type="" name="谁能帮帮我？呜呜呜……" params="DreamTrue" />
+		</functionality>
+		<eventHandler>
+			<click>
+				<HandlerOpenDialogPanel/>
+			</click>
+		</eventHandler>
+	</npc>
+	<npc id="453" resId="453" name="光伊特" dir="0" width="25" height="70" pos="642,169" actorPos="596,200" path="">
+		<dialog npcId="453" npcName="光伊特" transport="1,596,200">
+			<branch id="default">
+				<node emotion="0"><![CDATA[我就是法则，你敢挑战陈规？哼哼，我不会像暗伊特那么好唬弄的。]]></node>
+				<reply action="" params="453"><![CDATA[我要挑战你]]></reply>
+				<reply action="close"><![CDATA[我先走了]]></reply>
+			</branch>
+		</dialog>
+		<eventHandler>
+			<click>
+				<HandlerOpenDialogPanel/>
+			</click>
+		</eventHandler>
+	</npc>
+	<npc id="454" resId="454" name="飞天小鹿" dir="1" width="25" height="62" pos="357,320" actorPos="450,340" path="">
+		<dialog npcId="454" npcName="飞天小鹿" transport="1,450,340">
+			<branch id="default">
+				<node emotion="0"><![CDATA[就算你这样看得起我，我也不会高兴的啦，混蛋~那我们就比试比试吧！]]></node>
+				<reply action="" params="454"><![CDATA[我要挑战你]]></reply>
+				<reply action="close"><![CDATA[我先走了]]></reply>
+			</branch>
+		</dialog>
+		<eventHandler>
+			<click>
+				<HandlerOpenDialogPanel/>
+			</click>
+		</eventHandler>
+	</npc>
+</npcs>

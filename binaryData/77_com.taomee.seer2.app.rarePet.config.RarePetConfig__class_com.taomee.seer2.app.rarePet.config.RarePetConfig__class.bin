@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- 
+	index 
+	id npc ID前端用，
+	mon_id 精灵id, name 精灵名称,  level 精灵等级, hp 精灵血量， startTime 开始出现时间  endTime 结束时间 intervalTime 间隔时间 date表示一周中的星期几(0~6分别表示周日~周一)
+	DayLimitType后台计数，保存在数据库中的type值，表示今日做什么事， DayMaxNum一天多少次
+ -->
+<rarepets>
+	<pet index="10000" id="75" mon_id="75" name="达克尔" level="28" mapId="262" intervalTime="5"  escape="5">
+		<Times>
+			<Time Day = "0" startTime = "13 00" endTime = "13 59"/>
+			<Time Day = "1" startTime = "13 00" endTime = "13 59"/>
+			<Time Day = "2" startTime = "13 00" endTime = "13 59"/>
+			<Time Day = "3" startTime = "13 00" endTime = "13 59"/>
+			<Time Day = "4" startTime = "13 00" endTime = "13 59"/>
+			<Time Day = "5" startTime = "13 00" endTime = "13 59"/>
+			<Time Day = "6" startTime = "13 00" endTime = "13 59"/>
+		</Times>
+	</pet>
+	<!--
+	<pet index="10001" id="453" mon_id="96" name="光伊特" level="100" hp="3200" mapId="" intervalTime="0"  escape="" DayLimitType = "294" DayMaxNum = "3">
+		<Times>
+			<Time Day = "6" startTime = "14 00" endTime = "14 59"/>
+			<Time Day = "0" startTime = "14 00" endTime = "14 59"/>
+		</Times>
+	</pet>
+	<pet index="10002" id="454" mon_id="145" name="飞天小鹿" level="100" hp="3000" mapId="" intervalTime="0"  escape="" DayLimitType = "295" DayMaxNum = "3">
+		<Times>
+			<Time Day = "6" startTime = "14 00" endTime = "14 59"/>
+			<Time Day = "0" startTime = "14 00" endTime = "14 59"/>
+			<Time Day = "1" startTime = "14 00" endTime = "14 59"/>
+			<Time Day = "2" startTime = "14 00" endTime = "14 59"/>
+			<Time Day = "3" startTime = "14 00" endTime = "14 59"/>
+			<Time Day = "4" startTime = "14 00" endTime = "14 59"/>
+			<Time Day = "5" startTime = "14 00" endTime = "14 59"/>
+		</Times>
+	</pet>
+	-->
+	<pet index="10003" id="0" mon_id="164" name="米米" level="50" hp="3000" mapId="" intervalTime="0"  escape="" TypeCheckFun="1">
+	</pet>
+	<pet index="10004" id="0" mon_id="165" name="米奇林" level="100" hp="5000" mapId="" intervalTime="0"  escape="" TypeCheckFun="1">
+	</pet>
+</rarepets>

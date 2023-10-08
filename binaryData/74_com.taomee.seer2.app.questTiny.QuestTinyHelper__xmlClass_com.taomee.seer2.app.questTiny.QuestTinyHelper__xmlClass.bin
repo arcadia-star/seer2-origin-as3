@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- 星钻任务最后两个任务跳转 配表 
+	 该星钻任务的前八个任务 固定不变 
+	 每次只修改 id = 9 和  id = 10 的活动面板跳转 -->
+<starSteps>
+	<step id="1" title="经验之门" des="经验之门中战胜一波敌人" module="3831"/>
+	<step id="2" title="种植园" des="种植园收获一次果实" module="70000"/>
+	<step id="3" title="精灵大乱斗" des="参加2次精灵大乱斗" module="60"/>
+	<step id="4" title="分配学习力" des="为精灵分配一次学习力" module="PetBagPanel" para="0"/>
+	<step id="5" title="星魂召唤" des="进行一次星魂召唤" module="PetBagPanel" para="3"/>
+	<step id="6" title="在线领奖" des="领取一次40分钟在线奖励" module="OnlineRewardPanel"/>
+	<step id="7" title="SPT挑战" des="挑战一次SPT" module="SPTPanel"/>
+	<step id="8" title="太空武斗场" des="参加一次太空武斗场对战" module="3832"/>
+	
+	<step id="9" title="圣灵界王神" des="参加活动" module="NewYearVipPetPanel" tip="参加一次“圣灵界王神”活动"/>
+	<step id="10" title="冥神哈迪斯" des="参加活动" module="WorldKingMainPanel" tip="参加一次“冥神哈迪斯”活动"/>
+</starSteps>

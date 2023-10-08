@@ -1,0 +1,546 @@
+<!-- 种子配置表 -->
+<!-- harvest_time, 花期，种子三阶段的总时长,单位分-->
+<!-- item_must_out, 里面为肯定能收获到的道具-->
+<!-- item_out, 里面为收获随机产生的道具-->
+<!-- shop_type, 种子在哪个商店出售0普通，1高级，2vip-->
+<!-- flag 0表示是物品，1表示是特殊事件 -->
+
+<Seed>
+	
+	<Item ID="0" seed_id="601455" name="新手教学笑笑花种子" level="1" harvest_time="1" season ="1" shop_type="0" harvest_num="15">
+    <item_must_out>
+      <Item id="601500" num ="10"/>
+    </item_must_out>
+	</Item>
+	<Item ID="1" seed_id="601000" name="笑笑花种子" level="1" harvest_time="1" season ="1" shop_type="0" harvest_num="15">
+    <item_must_out>
+      <Item id="601500" num ="15"/>
+    </item_must_out>
+	  <item_out>
+		  <Item id="400232" rate="5"  steal_rate="1" num ="1"/>
+		  <Item id="0" rate="95" steal_rate="99" num ="0"/>
+	  </item_out>
+	</Item>
+	
+	<Item ID="2" seed_id="601001" name="藤蔓花种子" level="1" harvest_time="4" season ="1" shop_type="0" harvest_num="15">
+    <item_must_out>
+      <Item id="601501" num ="15"/>
+    </item_must_out>
+    <item_out>
+ 		  <Item id="400232" rate="5"  steal_rate="1" num ="1"/>
+		  <Item id="0" rate="95" steal_rate="99" num ="0"/>
+    </item_out>
+	</Item>
+	
+	<Item ID="3" seed_id="601002" name="狗尾巴草种子" level="1" harvest_time="15" season ="1" shop_type="0" harvest_num="20">
+    <item_must_out>
+      <Item id="601502" num ="20"/>
+    </item_must_out>
+    <item_out>
+      <Item id="601511" rate="50" steal_rate="10" num ="5"/>
+      <Item id="0" rate="50" steal_rate="90" num ="0"/>
+    </item_out>
+	</Item>
+	
+	<Item ID="4" seed_id="601003" name="蒲公英种子" level="2" harvest_time="30" season ="1" shop_type="0" harvest_num="20">
+    <item_must_out>
+      <Item id="601503" num ="20"/>
+    </item_must_out>
+    <item_out>
+      <Item id="601504" rate="20" steal_rate="5" num ="10"/>
+      <Item id="400232" rate="5" steal_rate="1" num ="1"/>
+      <Item id="0" rate="75" steal_rate="94" num ="0"/>
+    </item_out>
+	</Item>
+	
+	<Item ID="5" seed_id="601004" name="满天星种子" level="3" harvest_time="45" season ="1" shop_type="0" harvest_num="25">
+    <item_must_out>
+      <Item id="601505" num ="25"/>
+    </item_must_out>
+    <item_out>
+      <Item id="601506" rate="20" steal_rate="5" num ="10"/>
+      <Item id="400232" rate="5" steal_rate="1" num ="1"/>
+      <Item id="0" rate="75" steal_rate="94" num ="0"/>
+    </item_out>
+	</Item>
+    
+	<Item ID="6" seed_id="601005" name="豌豆兵种子" level="4" harvest_time="45" season ="1" shop_type="0" harvest_num="25">
+    <item_must_out>
+      <Item id="601507" num ="25"/>
+    </item_must_out>
+    <item_out>
+      <Item id="601508" rate="20" steal_rate="5" num ="10"/>
+      <Item id="200213" rate="5" steal_rate="1" num ="1"/>
+      <Item id="0" rate="75" steal_rate="94" num ="0"/>
+    </item_out>
+	</Item>
+    
+	<Item ID="7" seed_id="601006" name="宝石花种子" level="4" harvest_time="60" season ="1" shop_type="0" harvest_num="20">
+    <item_must_out>
+      <Item id="601509" num ="20"/>
+    </item_must_out>
+    <item_out>
+      <Item id="601510" rate="20" steal_rate="5" num ="10"/>
+      <Item id="200213" rate="5" steal_rate="1" num ="1"/>
+      <Item id="0" rate="75" steal_rate="94" num ="0"/>
+    </item_out>
+	</Item>
+	
+	<Item ID="8" seed_id="601007" name="铃铛果种子" level="5" harvest_time="90" season ="1" shop_type="0" harvest_num="25">
+    <item_must_out>
+      <Item id="601512" num ="25"/>
+    </item_must_out>
+    <item_out>
+      <Item id="601513" rate="20" steal_rate="5" num ="10"/>
+      <Item id="200213" rate="5" steal_rate="1" num ="1"/>
+      <Item id="0" rate="75" steal_rate="94" num ="0"/>
+    </item_out>
+	</Item>
+	
+	<Item ID="9" seed_id="601008" name="风信子种子" level="5" harvest_time="60" season ="1" shop_type="0" harvest_num="20">
+    <item_must_out>
+      <Item id="601514" num ="20"/>
+    </item_must_out>
+    <item_out>
+      <Item id="601515" rate="20" steal_rate="5" num ="10"/>
+      <Item id="200213" rate="5" steal_rate="1" num ="1"/>
+      <Item id="0" rate="75" steal_rate="94" num ="0"/>
+    </item_out>
+	</Item>
+	
+	<Item ID="10" seed_id="601009" name="百合花种子" level="5" harvest_time="120" season ="1" shop_type="0" harvest_num="30">
+    <item_must_out>
+      <Item id="601516" num ="30"/>
+    </item_must_out>
+    <item_out>
+      <Item id="601517" rate="20" steal_rate="5" num ="10"/>
+      <Item id="200214" rate="5" steal_rate="1" num ="1"/>
+      <Item id="0" rate="75" steal_rate="94" num ="0"/>
+    </item_out>
+	</Item>
+	
+	<Item ID="11" seed_id="601011" name="向日葵种子" level="6" harvest_time="80" season ="1" shop_type="0" harvest_num="20">
+    <item_must_out>
+      <Item id="601518" num ="20"/>
+    </item_must_out>
+    <item_out>
+      <Item id="601519" rate="20" steal_rate="5" num ="10"/>
+      <Item id="200214" rate="5" steal_rate="1" num ="1"/>
+      <Item id="0" rate="75" steal_rate="94" num ="0"/>
+    </item_out>
+	</Item>
+
+	<Item ID="12" seed_id="601012" name="橡皮神君种子" level="1" harvest_time="2880" season ="1" shop_type="0" harvest_num="1">
+    <item_must_out>
+      <Item id="601526" num ="1"/>
+    </item_must_out>
+	</Item>
+
+	<Item ID="13" seed_id="601010" name="糖果种子" level="1" harvest_time="15" season ="1" shop_type="0" harvest_num="5">
+    <item_must_out>
+      <Item id="601527" num ="5"/>
+    </item_must_out>
+	</Item>
+
+	<Item ID="14" seed_id="601013" name="三叶草种子" level="6" harvest_time="100" season ="1" shop_type="0" harvest_num="25">
+    <item_must_out>
+      <Item id="601520" num ="25"/>
+    </item_must_out>
+    <item_out>
+      <Item id="601521" rate="20" steal_rate="5" num ="10"/>
+      <Item id="200214" rate="5" steal_rate="1" num ="1"/>
+      <Item id="0" rate="75" steal_rate="94" num ="0"/>
+    </item_out>
+	</Item>
+
+	<Item ID="15" seed_id="601014" name="亮顶蘑菇种子" level="7" harvest_time="150" season ="1" shop_type="0" harvest_num="35">
+    <item_must_out>
+      <Item id="601522" num ="35"/>
+    </item_must_out>
+    <item_out>
+      <Item id="601523" rate="20" steal_rate="5" num ="10"/>
+      <Item id="200214" rate="5" steal_rate="1" num ="1"/>
+      <Item id="0" rate="75" steal_rate="94" num ="0"/>
+    </item_out>
+	</Item>
+
+	<Item ID="16" seed_id="601015" name="南瓜种子" level="7" harvest_time="30" season ="1" shop_type="0" harvest_num="20">
+    <item_must_out>
+      <Item id="601524" num ="20"/>
+    </item_must_out>
+    <item_out>
+      <Item id="601525" rate="20" steal_rate="5" num ="10"/>
+      <Item id="200214" rate="5" steal_rate="1" num ="1"/>
+      <Item id="0" rate="75" steal_rate="94" num ="0"/>
+    </item_out>
+	</Item>
+
+	<Item ID="17" seed_id="601016" name="糖果种子" level="2" harvest_time="3" season ="1" shop_type="0" harvest_num="5">
+    <item_must_out>
+      <Item id="601527" num ="5"/>
+    </item_must_out>
+	</Item>
+
+	<Item ID="18" seed_id="601020" name="孔雀花种子" level="1" harvest_time="10" season ="1" shop_type="0" harvest_num="5">
+    <item_must_out>
+      <Item id="601528" num ="5"/>
+    </item_must_out>
+    <item_out>
+      <Item id="601528" rate="5" steal_rate="5" num ="2"/>
+      <Item id="200214" rate="5" steal_rate="1" num ="1"/>
+      <Item id="0" rate="90" steal_rate="94" num ="0"/>
+    </item_out>
+	</Item>
+
+	<Item ID="19" seed_id="601017" name="榛果种子" level="8" harvest_time="300" season ="1" shop_type="0" harvest_num="50">
+    <item_must_out>
+      <Item id="601530" num ="50"/>
+    </item_must_out>
+    <item_out>
+      <Item id="601533" rate="20" steal_rate="5" num ="10"/>
+      <Item id="200214" rate="5" steal_rate="1" num ="1"/>
+      <Item id="0" rate="75" steal_rate="94" num ="0"/>
+    </item_out>
+	</Item>
+
+	<Item ID="20" seed_id="601018" name="栀子花种子" level="8" harvest_time="80" season ="1" shop_type="0" harvest_num="20">
+    <item_must_out>
+      <Item id="601529" num ="20"/>
+    </item_must_out>
+    <item_out>
+      <Item id="601532" rate="20" steal_rate="5" num ="10"/>
+      <Item id="200214" rate="5" steal_rate="1" num ="1"/>
+      <Item id="0" rate="75" steal_rate="94" num ="0"/>
+    </item_out>
+	</Item>
+
+	<Item ID="21" seed_id="601019" name="天使羽毛种子" level="1" harvest_time="4320" season ="1" shop_type="0" harvest_num="10">
+    <item_must_out>
+      <Item id="601531" num ="5"/>
+    </item_must_out>
+	</Item>
+	
+	<Item ID="22" seed_id="601021" name="樱花种子" level="9" harvest_time="90" season ="1" shop_type="0" harvest_num="25">
+    <item_must_out>
+      <Item id="601534" num ="25"/>
+    </item_must_out>
+	<item_out>
+      <Item id="601535" rate="20" steal_rate="5" num ="10"/>
+      <Item id="200214" rate="5" steal_rate="94" num ="1"/>
+      <Item id="601591" rate="75" steal_rate="1" num ="1"/>
+    </item_out>
+	</Item>
+	
+	<Item ID="23" seed_id="601022" name="葫芦种子" level="9" harvest_time="360" season ="1" shop_type="0" harvest_num="60">
+    <item_must_out>
+      <Item id="601536" num ="60"/>
+    </item_must_out>
+	<item_out>
+      <Item id="601537" rate="20" steal_rate="5" num ="10"/>
+      <Item id="200214" rate="5" steal_rate="1" num ="1"/>
+      <Item id="0" rate="75" steal_rate="94" num ="0"/>
+    </item_out>
+	</Item> 
+	
+	<Item ID="24" seed_id="601023" name="胡萝卜种子" level="1" harvest_time="10" season ="1" shop_type="0" harvest_num="20">
+    <item_must_out>
+      <Item id="601538" num ="20"/>
+    </item_must_out>
+	<item_out>
+      <Item id="601539" rate="50" steal_rate="5" num ="2"/>
+      <Item id="200214" rate="5" steal_rate="1" num ="1"/>
+      <Item id="0" rate="45" steal_rate="94" num ="0"/>
+    </item_out>
+	</Item>
+	
+	<Item ID="25" seed_id="601024" name="圣诞树种子" level="1" harvest_time="30" season ="1" shop_type="0" harvest_num="20">
+    <item_must_out>
+      <Item id="601540" num ="20"/>
+    </item_must_out>
+	</Item>
+	
+	<Item ID="26" seed_id="601025" name="腊梅种子" level="10" harvest_time="100" season ="1" shop_type="0" harvest_num="25">
+    <item_must_out>
+      <Item id="601541" num ="20"/>
+    </item_must_out>
+	<item_out>
+      <Item id="601542" rate="20" steal_rate="5" num ="10"/>
+      <Item id="200214" rate="5" steal_rate="94" num ="1"/>
+      <Item id="601591" rate="75" steal_rate="1" num ="1"/>
+    </item_out>
+	</Item>
+	
+	<Item ID="27" seed_id="601026" name="棉花种子" level="10" harvest_time="390" season ="1" shop_type="0" harvest_num="50">
+    <item_must_out>
+      <Item id="601543" num ="50"/>
+    </item_must_out>
+	<item_out>
+      <Item id="601544" rate="20" steal_rate="5" num ="10"/>
+      <Item id="200214" rate="5" steal_rate="1" num ="1"/>
+      <Item id="0" rate="75" steal_rate="94" num ="0"/>
+    </item_out>
+	</Item>
+	
+	<Item ID="28" seed_id="601027" name="竹子种子" level="1" harvest_time="60" season ="1" shop_type="0" harvest_num="10">
+    <item_must_out>
+      <Item id="601546" num ="10"/>
+    </item_must_out>
+	<item_out>
+      <Item id="601545" rate="15" steal_rate="0" num ="3"/>
+      <Item id="200214" rate="5" steal_rate="1" num ="1"/>
+      <Item id="0" rate="80" steal_rate="99" num ="0"/>
+    </item_out>
+	</Item>
+	
+	<Item ID="29" seed_id="601028" name="迎春花种子" level="11" harvest_time="120" season ="1" shop_type="0" harvest_num="30">
+    <item_must_out>
+      <Item id="601547" num ="30"/>
+    </item_must_out>
+	<item_out>
+      <Item id="601548" rate="20" steal_rate="5" num ="10"/>
+      <Item id="200214" rate="5" steal_rate="94" num ="1"/>
+      <Item id="601591" rate="75" steal_rate="1" num ="1"/>
+    </item_out>
+	</Item>
+	
+	<Item ID="30" seed_id="601029" name="牡丹种子" level="11" harvest_time="420" season ="1" shop_type="0" harvest_num="55">
+    <item_must_out>
+      <Item id="601549" num ="55"/>
+    </item_must_out>
+	<item_out>
+      <Item id="601550" rate="20" steal_rate="5" num ="10"/>
+      <Item id="200214" rate="5" steal_rate="1" num ="1"/>
+      <Item id="0" rate="75" steal_rate="94" num ="0"/>
+    </item_out>
+	</Item>
+	<Item ID="31" seed_id="601030" name="黑天使羽毛种子" level="10" harvest_time="5760" season ="1" shop_type="0" harvest_num="10">
+    <item_must_out>
+      <Item id="601551" num ="10"/>
+    </item_must_out>
+	</Item>
+	
+	<Item ID="32" seed_id="601031" name="桃花种子" level="12" harvest_time="140" season ="1" shop_type="0" harvest_num="30">
+    <item_must_out>
+      <Item id="601552 " num ="30"/>
+    </item_must_out>
+	<item_out>
+      <Item id="601553" rate="20" steal_rate="5" num ="10"/>
+      <Item id="200214" rate="5" steal_rate="94" num ="1"/>
+      <Item id="601591" rate="75" steal_rate="1" num ="1"/>
+    </item_out>
+	</Item>
+	
+	<Item ID="33" seed_id="601032" name="芭蕉种子" level="12" harvest_time="420" season ="1" shop_type="0" harvest_num="55">
+    <item_must_out>
+      <Item id="601554 " num ="55"/>
+    </item_must_out>
+	<item_out>
+      <Item id="601555" rate="20" steal_rate="5" num ="10"/>
+      <Item id="0" rate="80" steal_rate="95" num ="0"/>
+    </item_out>
+	</Item>
+	
+	<Item ID="34" seed_id="601033" name="太阳魔法花种子" level="1" harvest_time="60" season ="1" shop_type="0" harvest_num="10">
+    <item_must_out>
+      <Item id="601556" num ="10"/>
+    </item_must_out>
+	</Item>
+	
+	<Item ID="35" seed_id="601034" name="恶魔魔法花种子" level="1" harvest_time="60" season ="1" shop_type="0" harvest_num="10">
+    <item_must_out>
+      <Item id="601557" num ="10"/>
+    </item_must_out>
+	</Item>
+	
+	<Item ID="36" seed_id="601035" name="火元素奖杯种子" level="1" harvest_time="30" season ="1" shop_type="0" harvest_num="1">
+    <item_must_out>
+      <Item id="601558" num ="1"/>
+    </item_must_out>
+	</Item>
+	
+	<Item ID="37" seed_id="601036" name="水元素奖杯种子" level="1" harvest_time="30" season ="1" shop_type="0" harvest_num="1">
+    <item_must_out>
+      <Item id="601559" num ="1"/>
+    </item_must_out>
+	</Item>
+	
+	<Item ID="38" seed_id="601037" name="草元素奖杯种子" level="1" harvest_time="30" season ="1" shop_type="0" harvest_num="1">
+    <item_must_out>
+      <Item id="601560" num ="1"/>
+    </item_must_out>
+	</Item>
+	
+	<Item ID="39" seed_id="601038" name="惊叫果种子" level="1" harvest_time="60" season ="1" shop_type="0" harvest_num="5">
+    <item_must_out>
+      <Item id="601561" num ="5"/>
+    </item_must_out>
+	<item_out>
+      <Item id="601561" rate="10" steal_rate="5" num ="5"/>
+	  <Item id="0" rate="90" steal_rate="95" num ="0"/>
+    </item_out>
+	</Item>
+	
+	<Item ID="40" seed_id="601039" name="桂花种子" level="13" harvest_time="5" season ="1" shop_type="0" harvest_num="20">
+    <item_must_out>
+      <Item id="601562" num ="20"/>
+    </item_must_out>
+	<item_out>
+      <Item id="601563" rate="40" steal_rate="5" num ="10"/>
+	  <Item id="0" rate="60" steal_rate="95" num ="0"/>
+    </item_out>
+	</Item>
+	
+	<Item ID="41" seed_id="601040" name="番茄种子" level="13" harvest_time="450" season ="1" shop_type="0" harvest_num="55">
+    <item_must_out>
+      <Item id="601564" num ="55"/>
+    </item_must_out>
+	<item_out>
+      <Item id="601565" rate="20" steal_rate="5" num ="10"/>
+	  <Item id="0" rate="80" steal_rate="95" num ="0"/>
+    </item_out>
+	</Item>
+
+	<Item ID="42" seed_id="601041" name="生菜种子" level="1" harvest_time="180" season ="1" shop_type="0" harvest_num="5">
+    <item_must_out>
+      <Item id="601566" num ="5"/>
+    </item_must_out>
+	<item_out>
+      <Item id="601567" rate="30" steal_rate="5" num ="2"/>
+	  <Item id="0" rate="70" steal_rate="95" num ="0"/>
+    </item_out>
+	</Item>
+
+	<Item ID="43" seed_id="601042" name="毛线种子" level="1" harvest_time="25" season ="1" shop_type="0" harvest_num="1">
+    <item_must_out>
+      <Item id="601568" num ="1"/>
+    </item_must_out>
+	<item_out>
+      <Item id="601569" rate="40" steal_rate="5" num ="1"/>
+	  <Item id="0" rate="60" steal_rate="95" num ="0"/>
+    </item_out>
+	</Item>
+
+	<Item ID="44" seed_id="601043" name="红包种子" level="1" harvest_time="10" season ="1" shop_type="0" harvest_num="1">
+    <item_must_out>
+      <Item id="601570" num ="1"/>
+    </item_must_out>
+	<item_out>
+      <Item id="601570" rate="20" steal_rate="5" num ="2"/>
+	  <Item id="0" rate="80" steal_rate="95" num ="0"/>
+    </item_out>
+	</Item>
+
+	<Item ID="45" seed_id="601044" name="问号种子" level="1" harvest_time="5" season ="1" shop_type="0" harvest_num="1">
+    <item_must_out>
+      <Item id="601571" num ="1"/>
+    </item_must_out>
+	<item_out>
+      <Item id="601572" rate="30" steal_rate="5" num ="5"/>
+	  <Item id="0" rate="70" steal_rate="95" num ="0"/>
+    </item_out>
+	</Item>
+
+
+	<Item ID="46" seed_id="601045" name="特制樱花果种子" level="1" harvest_time="200" season ="1" shop_type="0" harvest_num="1">
+    <item_must_out>
+      <Item id="601574" num ="1"/>
+    </item_must_out>
+ 	</Item>
+
+
+    <Item ID="47" seed_id="601046" name="整蛊种子" level="1" harvest_time="10" season ="1" shop_type="0" harvest_num="2">
+      <item_must_out>
+      <Item id="601575" num ="2"/>
+    </item_must_out>
+	<item_out>
+      <Item id="601576" rate="20" steal_rate="5" num ="1"/>
+	  <Item id="0" rate="80" steal_rate="95" num ="0"/>
+    </item_out>
+	</Item>
+
+
+    <Item ID="47" seed_id="601047" name="辛勤种子" level="1" harvest_time="20" season ="1" shop_type="0" harvest_num="2">
+      <item_must_out>
+      <Item id="601578" num ="2"/>
+    </item_must_out>
+	<item_out>
+      <Item id="601578" rate="20" steal_rate="5" num ="3"/>
+	  <Item id="0" rate="80" steal_rate="95" num ="0"/>
+    </item_out>
+	</Item>
+
+    <Item ID="48" seed_id="601048" name="西瓜种子" level="1" harvest_time="30" season ="1" shop_type="0" harvest_num="1">
+      <item_must_out>
+      <Item id="601579" num ="1"/>
+    </item_must_out>
+
+	</Item>
+
+
+ <Item ID="49" seed_id="601049" name="赛元宝种子" level="1" harvest_time="40" season ="1" shop_type="0" harvest_num="1">
+ 	<item_out>
+      <Item id="601580" rate="3" steal_rate="0"  num ="1"/>
+	  <Item id="601581" rate="97"  steal_rate="0" num ="1"/>
+	  <Item id="0" rate="0" steal_rate="100" num="1"/>
+    </item_out>
+	</Item>
+
+
+    <Item ID="50" seed_id="601050" name="巨无霸种子" level="1" harvest_time="10" season ="1" shop_type="0" harvest_num="1">
+ 	  <item_out>
+        <Item id="601584" rate="90" steal_rate="0"  num ="5"/>
+	    <Item id="601583" rate="10"  steal_rate="0" num ="1"/>
+	    <Item id="0" rate="0" steal_rate="100" num="1"/>
+	  </item_out>
+	</Item>
+
+    <Item ID="51" seed_id="601051" name="大米种子" level="1" harvest_time="10" season ="1" shop_type="0" harvest_num="10">
+ 	 <item_must_out>
+      <Item id="601585" num ="10"/>
+    </item_must_out>
+	</Item>
+
+   <Item ID="52" seed_id="601052" name="海棠种子" level="14" harvest_time="100" season ="1" shop_type="0" harvest_num="25">
+      <item_must_out>
+      <Item id="601586" num ="25"/>
+    </item_must_out>
+	<item_out>
+      <Item id="601587" rate="20" steal_rate="5" num ="10"/>
+	  <Item id="0" rate="80" steal_rate="95" num ="0"/>
+    </item_out>
+	</Item>
+
+   <Item ID="53" seed_id="601053" name="鸢尾种子" level="14" harvest_time="450" season ="1" shop_type="0" harvest_num="20">
+      <item_must_out>
+      <Item id="601588" num ="20"/>
+    </item_must_out>
+	<item_out>
+      <Item id="601589" rate="20" steal_rate="5" num ="10"/>
+	  <Item id="0" rate="80" steal_rate="95" num ="0"/>
+    </item_out>
+	</Item>
+
+
+
+
+   <Item ID="54" seed_id="601054" name="柳树种子" level="1" harvest_time="3" season ="1" shop_type="0" harvest_num="3">
+      <item_must_out>
+      <Item id="601590" num ="3"/>
+    </item_must_out>
+	<item_out>
+      <Item id="601591" rate="80" steal_rate="5" num ="1"/>
+	  <Item id="0" rate="20" steal_rate="95" num ="0"/>
+    </item_out>
+	</Item>
+
+
+
+    <Item ID="55" seed_id="601060" name="满分种子" level="1" harvest_time="30" season ="1" shop_type="0" harvest_num="1">
+ 	 <item_must_out>
+      <Item id="601592" num ="1"/>
+    </item_must_out>
+	</Item>
+
+
+
+</Seed>

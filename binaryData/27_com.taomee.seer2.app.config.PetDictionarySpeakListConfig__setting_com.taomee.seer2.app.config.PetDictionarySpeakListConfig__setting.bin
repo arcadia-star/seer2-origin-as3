@@ -1,0 +1,19 @@
+<root newPetId=""> <!-- newPetId 本周要介绍的精灵ID  -->
+	<pet id="62" frame="1" fightIndex="15" mapId="132" />
+	<pet id="6" frame="2" fightIndex="11" mapId="" />
+	<pet id="12" frame="3" fightIndex="12" mapId="121" />
+	<pet id="9" frame="4" fightIndex="13" mapId="" />
+	<pet id="3" frame="5" fightIndex="14" mapId="" />
+	<pet id="197" frame="6" fightIndex="16" mapId="" />
+	<pet id="201" frame="7" fightIndex="17" mapId="" />
+	<pet id="213" frame="8" fightIndex="18" mapId="" />
+	<pet id="209" frame="9" fightIndex="19" mapId="" />
+	<pet id="207" frame="10" fightIndex="20" mapId="" />
+	<pet id="211" frame="11" fightIndex="21" mapId="310" />
+	<pet id="203" frame="12" fightIndex="22" mapId="490" />
+	<pet id="205" frame="13" fightIndex="23" mapId="124" />
+	<pet id="173" frame="14" fightIndex="24" mapId="720" />
+	<pet id="190" frame="15" fightIndex="25" mapId="125" />
+	<pet id="230" frame="16" fightIndex="26" mapId="620" />
+	<pet id="240" frame="17" fightIndex="29" mapId="890" />
+</root>

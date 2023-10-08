@@ -1,0 +1,327 @@
+<!--
+	normalShop 是普通物品区
+	upShop  是高级物品区
+	vipShop  是VIP物品区
+	referenceId 是物品的ID
+	price是物品的价格
+-->
+<root>
+	<normalShop>
+		<!--购买种子商店-->
+		<item referenceId="601046" price="100"/>
+		<!--整蛊种子-->
+		<item referenceId="601044" price="300"/>
+		<!--问号种子-->
+		<item referenceId="601041" price="50"/>
+		<!--生菜种子-->
+		<item referenceId="601040" price="450"/>
+		<!--番茄种子-->
+		<item referenceId="601039" price="60"/>
+		<!--桂花种子-->
+		<item referenceId="601038" price="60"/>
+		<!--惊叫果种子-->
+		<item referenceId="601035" price="30"/>
+		<!--火元素奖杯种子-->
+		<item referenceId="601036" price="30"/>
+		<!--水元素奖杯种子-->
+		<item referenceId="601037" price="30"/>
+		<!--草元素奖杯种子-->
+		<item referenceId="601033" price="30"/>
+		<!--太阳魔法花种子-->
+		<item referenceId="601034" price="30"/>
+		<!--恶魔魔法花种子-->
+		<item referenceId="601000" price="10"/>
+		<item referenceId="601001" price="10"/>
+		<item referenceId="601002" price="20"/>
+		<item referenceId="601003" price="35"/>
+		<item referenceId="601004" price="40"/>
+		<item referenceId="601005" price="40"/>
+		<item referenceId="601006" price="45"/>
+		<item referenceId="601007" price="50"/>
+		<item referenceId="601008" price="45"/>
+		<item referenceId="601009" price="45"/>
+
+
+
+
+
+
+		<item referenceId="602000" price="60"/>
+		<item referenceId="601011" price="50"/>
+		<item referenceId="601013" price="55"/>
+		<item referenceId="601014" price="70"/>
+		<item referenceId="601015" price="35"/>
+
+
+
+		<item referenceId="601017" price="150"/>
+		<item referenceId="601018" price="50"/>
+		<item referenceId="601021" price="60"/>
+		<item referenceId="601022" price="180"/>
+		<item referenceId="601023" price="15"/>
+		<item referenceId="601025" price="65"/>
+		<item referenceId="601026" price="190"/>
+		<item referenceId="601028" price="80"/>
+		<item referenceId="601029" price="200"/>
+		<item referenceId="601031" price="90"/>
+		<!--桃花种子-->
+		<item referenceId="601032" price="200"/>
+		<!--芭蕉种子-->
+		<!--  			<item referenceId="601049" price="500"/>赛元宝种子-->
+		<item referenceId="601050" price="300"/>
+		<!--巨无霸种子-->
+		<item referenceId="601051" price="300"/>
+		<!--大米种子-->
+		<item referenceId="601052" price="80"/>
+		<!--海棠种子-->
+		<item referenceId="601053" price="400"/>
+		<!--鸢尾种子-->
+
+		<item referenceId="601016" price="60"/>
+		<!--万圣糖果种子-->
+
+
+
+
+
+	</normalShop>
+	<upShop>
+		<!--高级商店-->
+		<item referenceId="101023" price="2010"/>
+		<!--番茄超人-->
+		<item referenceId="200734" price="2009"/>
+		<!--桂花糕-->
+		<item referenceId="100522" price="619"/>
+		<item referenceId="200213" price="620"/>
+		<item referenceId="100524" price="621"/>
+		<item referenceId="602002" price="622"/>
+		<item referenceId="200214" price="624"/>
+		<item referenceId="602001" price="625"/>
+		<item referenceId="263" price="626"/>
+		<item referenceId="276" price="633"/>
+		<item referenceId="100523" price="634"/>
+		<item referenceId="200221" price="635"/>
+		<item referenceId="100546" price="671"/>
+		<item referenceId="274" price="672"/>
+		<item referenceId="100549" price="696"/>
+		<item referenceId="100565" price="716"/>
+		<item referenceId="100567" price="714"/>
+		<item referenceId="100566" price="713"/>
+		<item referenceId="200617" price="715"/>
+		<item referenceId="100605" price="818"/>
+		<item referenceId="100575" price="861"/>
+		<item referenceId="100645" price="934"/>
+		<item referenceId="200631" price="933"/>
+		<item referenceId="100702" price="1109"/>
+		<item referenceId="100766" price="1215"/>
+		<!--暗黑天使翅膀-->
+		<item referenceId="100816" price="1279"/>
+		<!--暗黑天使翅膀-->
+		<item referenceId="101522" price="3537"/>
+		<!--鸢尾蝴蝶翅膀-->
+	</upShop>
+	<vipShop>
+		<!--VIP商店-->
+		<item referenceId="601019" price="70"/>
+		<item referenceId="602003" price="150"/>
+		<item referenceId="601027" price="300"/>
+		<!--<item referenceId="601024" price="200"/>圣诞树种子-->
+		<item referenceId="601030" price="100"/>
+		<!--暗黑天使种子-->
+	</vipShop>
+	<sellShop>
+		<!--出售-->
+		<item referenceId="601000" price="4"/>
+		<item referenceId="601001" price="4"/>
+		<item referenceId="601002" price="8"/>
+		<item referenceId="601003" price="14"/>
+		<item referenceId="601004" price="16"/>
+		<item referenceId="601005" price="16"/>
+		<item referenceId="601006" price="18"/>
+		<item referenceId="601007" price="20"/>
+		<item referenceId="602000" price="20"/>
+		<item referenceId="601500" price="13"/>
+		<item referenceId="601501" price="13"/>
+		<item referenceId="601502" price="11"/>
+		<item referenceId="601503" price="13"/>
+		<item referenceId="601504" price="25"/>
+		<item referenceId="601505" price="12"/>
+		<item referenceId="601506" price="25"/>
+		<item referenceId="601507" price="12"/>
+		<item referenceId="601508" price="25"/>
+		<item referenceId="601509" price="18"/>
+		<item referenceId="601510" price="30"/>
+		<item referenceId="601511" price="20"/>
+		<item referenceId="601512" price="16"/>
+		<item referenceId="601513" price="50"/>
+		<item referenceId="602001" price="90"/>
+		<item referenceId="602002" price="120"/>
+		<item referenceId="601514" price="18"/>
+		<item referenceId="601515" price="35"/>
+		<item referenceId="601516" price="16"/>
+		<item referenceId="601517" price="40"/>
+		<item referenceId="601518" price="20"/>
+		<item referenceId="601519" price="55"/>
+		<item referenceId="601008" price="18"/>
+		<item referenceId="601009" price="24"/>
+		<item referenceId="601011" price="20"/>
+		<item referenceId="601013" price="22"/>
+		<item referenceId="601014" price="28"/>
+		<item referenceId="601015" price="14"/>
+		<item referenceId="601520" price="18"/>
+		<item referenceId="601521" price="60"/>
+		<item referenceId="601522" price="16"/>
+		<item referenceId="601523" price="70"/>
+		<item referenceId="601524" price="13"/>
+		<item referenceId="601525" price="30"/>
+		<item referenceId="601017" price="60"/>
+		<item referenceId="601018" price="20"/>
+		<item referenceId="601019" price="28"/>
+		<item referenceId="601529" price="15"/>
+		<item referenceId="601530" price="22"/>
+		<item referenceId="601531" price="25"/>
+		<item referenceId="601532" price="55"/>
+		<item referenceId="601533" price="100"/>
+		<item referenceId="601021" price="24"/>
+		<item referenceId="601022" price="72"/>
+		<item referenceId="601534" price="13"/>
+		<item referenceId="601535" price="40"/>
+		<item referenceId="601536" price="25"/>
+		<item referenceId="601537" price="120"/>
+		<item referenceId="601528" price="10"/>
+		<item referenceId="601538" price="8"/>
+		<item referenceId="601539" price="10"/>
+		<item referenceId="601540" price="60"/>
+		<item referenceId="601025" price="26"/>
+		<item referenceId="601026" price="76"/>
+		<item referenceId="601541" price="15"/>
+		<item referenceId="601542" price="45"/>
+		<item referenceId="601543" price="35"/>
+		<item referenceId="601544" price="130"/>
+		<item referenceId="601027" price="120"/>
+		<item referenceId="601545" price="30"/>
+		<item referenceId="601546" price="25"/>
+		<item referenceId="601028" price="32"/>
+		<item referenceId="601029" price="80"/>
+		<item referenceId="601547" price="15"/>
+		<item referenceId="601548" price="50"/>
+		<item referenceId="601549" price="30"/>
+		<item referenceId="601550" price="140"/>
+		<item referenceId="601030" price="40"/>
+		<!--黑天使羽毛种子-->
+		<item referenceId="601551" price="27"/>
+		<!--黑天使羽毛果实-->
+		<item referenceId="601031" price="36"/>
+		<!--桃花种子-->
+		<item referenceId="601552" price="18"/>
+		<!--桃花-->
+		<item referenceId="601553" price="165"/>
+		<!--蜜桃-->
+		<item referenceId="601032" price="80"/>
+		<!--芭蕉种子-->
+		<item referenceId="601554" price="32"/>
+		<!--芭蕉-->
+		<item referenceId="601555" price="435"/>
+		<!--芭蕉叶-->
+		<item referenceId="601033" price="12"/>
+		<!--太阳魔法花种子-->
+		<item referenceId="601034" price="12"/>
+		<!--恶魔魔法花种子-->
+		<item referenceId="601556" price="78"/>
+		<!--太阳魔法花-->
+		<item referenceId="601557" price="78"/>
+		<!--恶魔魔法花-->
+		<item referenceId="601035" price="12"/>
+		<!--火元素奖杯种子-->
+		<item referenceId="601036" price="12"/>
+		<!--水元素奖杯种子-->
+		<item referenceId="601037" price="12"/>
+		<!--草元素奖杯种子-->
+		<item referenceId="601558" price="78"/>
+		<!--火元素奖杯-->
+		<item referenceId="601559" price="78"/>
+		<!--水元素奖杯-->
+		<item referenceId="601560" price="78"/>
+		<!--草元素奖杯-->
+		<item referenceId="601038" price="3"/>
+		<!--惊叫果种子-->
+		<item referenceId="601561" price="3"/>
+		<!--惊叫果-->
+		<item referenceId="601039" price="24"/>
+		<!--桂花种子-->
+		<item referenceId="601040" price="180"/>
+		<!--番茄种子-->
+		<item referenceId="601562" price="36"/>
+		<!--桂花果实-->
+		<item referenceId="601563" price="60"/>
+		<!--桂花蕊-->
+		<item referenceId="601564" price="35"/>
+		<!--番茄果实-->
+		<item referenceId="601041" price="20"/>
+		<!--生菜种子-->
+		<item referenceId="601566" price="100"/>
+		<!--包心生菜-->
+		<item referenceId="601567" price="150"/>
+		<!--奶油生菜-->
+		<item referenceId="601044" price="120"/>
+		<!--问号种子-->
+		<item referenceId="601571" price="360"/>
+		<!--恨泡泡-->
+		<item referenceId="601572" price="390"/>
+		<!--爱泡泡-->
+		<item referenceId="601042" price="20"/>
+		<!--毛线种子-->
+		<item referenceId="601568" price="100"/>
+		<!--恨泡泡-->
+		<item referenceId="601569" price="150"/>
+		<!--爱泡泡-->
+		<item referenceId="601046" price="20"/>
+		<!--整蛊种子-->
+		<item referenceId="601575" price="300"/>
+		<!--被整徽章-->
+		<item referenceId="601576" price="450"/>
+		<!--整蛊徽章-->
+		<item referenceId="601047" price="20"/>
+		<!--辛勤种子-->
+		<item referenceId="601578" price="300"/>
+		<!--辛勤果实-->
+		<item referenceId="601049" price="200"/>
+		<!--赛元宝种子-->
+		<item referenceId="601580" price="300000"/>
+		<!--赛元宝-->
+		<item referenceId="601581" price="100000"/>
+		<!--赛小宝-->
+		<item referenceId="601050" price="120"/>
+		<!--巨无霸种子-->
+		<item referenceId="601584" price="300"/>
+		<!--月饼原料-->
+		<item referenceId="601583" price="1000"/>
+		<!--饼之魂魄-->
+		<item referenceId="601051" price="120"/>
+		<!--大米种子-->
+		<item referenceId="601585" price="30"/>
+		<!--大米-->
+		<item referenceId="601052" price="32"/>
+		<!--海棠种子-->
+		<item referenceId="601586" price="20"/>
+		<!--海棠花-->
+		<item referenceId="601587" price="80"/>
+		<!--垂丝海棠-->
+		<item referenceId="601053" price="160"/>
+		<!--鸢尾种子-->
+		<item referenceId="601588" price="50"/>
+		<!--鸢尾花-->
+
+		<item referenceId="601589" price="150"/>
+		<!--爱丽丝花-->
+
+
+
+		<item referenceId="601054" price="10"/>
+		<!--柳树种子-->
+
+		<item referenceId="601589" price="20"/>
+		<!--柳小树-->
+
+	</sellShop>
+</root>

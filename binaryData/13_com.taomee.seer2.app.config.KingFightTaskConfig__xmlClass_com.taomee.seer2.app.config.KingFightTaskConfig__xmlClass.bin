@@ -1,0 +1,28 @@
+<!--王者试炼目标配置表
+dayList:每日通关王者试炼任意层数(前7个)、每日通关王者试炼未曾通关数(第8个)、每日领取状态(第9个)
+forList:目前玩家所在最高层、永久领取状态
+swapList:领取每日目标、领取永久目标
+-->
+<data dayList="5105,5106,5107,5108,5109,5110,5111,5188,5187" forList="250310,250453" swapList="4192,4193">
+	<dayItem index="1" tip="通关王者试炼任意1层" itemList="200201,1" itemCount="1,100" totalWin="1"/>
+	<dayItem index="2" tip="通关王者试炼任意5层" itemList="200205,1" itemCount="1,500" totalWin="5"/>
+	<dayItem index="3" tip="通关王者试炼任意10层" itemList="200205,1" itemCount="2,1000" totalWin="10"/>
+	<dayItem index="4" tip="通关王者试炼任意20层" itemList="200205,1" itemCount="4,2000" totalWin="20"/>
+	<dayItem index="5" tip="通关王者试炼未曾通关的关卡1层" itemList="200205,1" itemCount="1,500" totalWin="1"/>
+	<dayItem index="6" tip="通关王者试炼未曾通关的关卡5层" itemList="200206,1" itemCount="1,2500" totalWin="5"/>
+	<dayItem index="7" tip="通关王者试炼未曾通关的关卡10层" itemList="200232,1" itemCount="1,5000" totalWin="10"/>
+	<dayItem index="8" tip="通关王者试炼未曾通关的关卡20层" itemList="200591,1" itemCount="1,10000" totalWin="20"/>
+	
+	<forItem index="1" tip="通关王者试炼1层" itemList="200205,208299,208300" itemCount="2,5,5" totalWin="1"/>
+	<forItem index="2" tip="通关王者试炼5层" itemList="200206,208299,208300" itemCount="1,10,10" totalWin="5"/>
+	<forItem index="3" tip="通关王者试炼10层" itemList="200232,208299,208300" itemCount="1,20,20" totalWin="10"/>
+	<forItem index="4" tip="通关王者试炼20层" itemList="200591,400350,500299" itemCount="1,30,1" totalWin="20"/>
+	<forItem index="5" tip="通关王者试炼30层" itemList="200232,208299,208300" itemCount="3,40,40" totalWin="30"/>
+	<forItem index="6" tip="通关王者试炼40层" itemList="200591,400350,500300" itemCount="2,50,1" totalWin="40"/>
+	<forItem index="7" tip="通关王者试炼50层" itemList="200232,208299,208300" itemCount="5,60,60" totalWin="50"/>
+	<forItem index="8" tip="在通关王者试炼60层" itemList="200591,400350,500301" itemCount="3,70,1" totalWin="60"/>
+	<forItem index="9" tip="通关王者试炼70层" itemList="200232,208299,208300" itemCount="7,80,80" totalWin="70"/>
+	<forItem index="10" tip="通关王者试炼80层" itemList="200591,400350,500302" itemCount="4,90,1" totalWin="80"/>
+	<forItem index="11" tip="通关王者试炼90层" itemList="200232,208299,208300" itemCount="9,100,100" totalWin="90"/>
+	<forItem index="12" tip="通关王者试炼100层" itemList="200591,400350,500303" itemCount="5,120,1" totalWin="100"/>
+</data>

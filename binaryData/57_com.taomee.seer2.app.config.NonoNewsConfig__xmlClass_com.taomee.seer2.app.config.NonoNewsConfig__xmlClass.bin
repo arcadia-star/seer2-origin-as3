@@ -1,0 +1,11 @@
+<!--type:"gotoMap":地图跳转,70000代表种植园,60000代表战队,50000代表小屋,80000以上代表副本场景,其他为普通场景"module":模块-->
+<News>
+
+    <nono content="月神神迹觉醒"  type="module"  transport="MoonWakeUpActPanel"/>
+	<nono content="罪恶之躯来袭"    type="module"  transport="EvilBodyActPanel"/>
+    <nono content="神龙许愿池"  type="module"  transport="TwoYearWishPanel"/>
+	<nono content="中秋美食小当家"      type="module"  transport="HugeMoonCakePanel"/>
+    <nono content="星钻月饼大追击"      type="module"  transport="RunningRabbitPanel"/>
+    <nono content="玩转中秋送大礼"    type="module"  transport="MidAutumnGiftPanel"/>
+
+</News>

@@ -1,0 +1,69 @@
+<!--type:是类型1为物资储备 2为收集精灵等 
+	questId:任务的ID要和后台对应 
+	gotoMap为跳地图 
+	module为弹面板 
+	titleType:点标题该干嘛 
+	titleContent:对应titleType比如titleType配置gotoMap那么titleContent配置110就是跳转到110地图
+	target:任务描述
+	exp:获得多少经验
+	point:任务获得积分
+	money:任务获得的钱
+	activity:任务获得的活跃点-->
+<newTeam>
+	<quest type="1" questId="1" titleType="gotoMap" titleContent="125" target="前往七味小厨收集1个爆炒豌豆。" exp="1000" point="9" money="180" activity="90"/>
+	<quest type="1" questId="2" titleType="gotoMap" titleContent="125" target="前往七味小厨收集1个石斑鱼卷。" exp="1000" point="9" money="180" activity="90"/>
+	<quest type="1" questId="3" titleType="gotoMap" titleContent="125" target="前往七味小厨收集1个清蒸蘑菇。" exp="1000" point="11" money="220" activity="110"/>
+	<quest type="1" questId="4" titleType="gotoMap" titleContent="125" target="前往七味小厨收集1个烤气泡鱼。" exp="1000" point="11" money="220" activity="110"/>
+	<quest type="1" questId="5" titleType="gotoMap" titleContent="125" target="前往七味小厨收集1个甜甜葫芦瓜。" exp="1000" point="12" money="240" activity="120"/>
+	<quest type="1" questId="6" titleType="gotoMap" titleContent="125" target="前往七味小厨收集1个鳝鱼寿司。" exp="1000" point="12" money="240" activity="120"/>
+	<quest type="1" questId="7" titleType="gotoMap" titleContent="80000" target="前往种植园收集5个笑笑花。" exp="1000" point="2" money="40" activity="20"/>
+	<quest type="1" questId="8" titleType="gotoMap" titleContent="80000" target="前往种植园收集5个蔓藤花。" exp="1000" point="3" money="60" activity="30"/>
+	<quest type="1" questId="9" titleType="gotoMap" titleContent="80000" target="前往种植园收集5个蒲公英。" exp="1000" point="4" money="80" activity="40"/>
+	<quest type="1" questId="10" titleType="gotoMap" titleContent="80000" target="前往种植园收集5个满天星。" exp="1000" point="4" money="80" activity="40"/>
+	<quest type="1" questId="11" titleType="gotoMap" titleContent="80000" target="前往种植园收集5个豌豆兵。" exp="1000" point="4" money="80" activity="40"/>
+	<quest type="1" questId="12" titleType="gotoMap" titleContent="80000" target="前往种植园收集5个宝石花。" exp="1000" point="5" money="100" activity="50"/>
+	<quest type="1" questId="13" titleType="gotoMap" titleContent="152" target="前往水仙溪口收集3个小黄鱼。" exp="1000" point="3" money="60" activity="30"/>
+	<quest type="1" questId="14" titleType="gotoMap" titleContent="152" target="前往水仙溪口收集2个河蟹。" exp="1000" point="4" money="80" activity="40"/>
+	<quest type="1" questId="15" titleType="gotoMap" titleContent="152" target="前往水仙溪口收集3个气泡鱼。" exp="1000" point="4" money="80" activity="40"/>
+	<quest type="1" questId="16" titleType="gotoMap" titleContent="152" target="前往水仙溪口收集2个灯笼鱼。" exp="1000" point="5" money="100" activity="50"/>
+	<quest type="1" questId="17" titleType="gotoMap" titleContent="152" target="前往水仙溪口收集2个石斑鱼。" exp="1000" point="5" money="100" activity="50"/>
+	<quest type="1" questId="18" titleType="gotoMap" titleContent="261" target="前往赤链山脉收集3个赤鳍鳗鱼。" exp="1000" point="5" money="100" activity="50"/>
+	<quest type="2" questId="1001" titleType="gotoMap" titleContent="121" target="前往异蘑世界捕捉1个精灵：法拉。" exp="1000" point="3" money="60" activity="30"/>
+	<quest type="2" questId="1002" titleType="gotoMap" titleContent="131" target="前往荆棘林捕捉1个精灵：小小葵。" exp="1000" point="3" money="60" activity="30"/>
+	<quest type="2" questId="1003" titleType="gotoMap" titleContent="180" target="前往银脉山脊捕捉1个精灵：水墨点点。" exp="1000" point="4" money="80" activity="40"/>
+	<quest type="2" questId="1004" titleType="gotoMap" titleContent="213" target="前往狂暴漩涡捕捉1个精灵：安可。" exp="1000" point="4" money="80" activity="40"/>
+	<quest type="2" questId="1005" titleType="gotoMap" titleContent="192" target="前往残骸通道捕捉1个精灵：蓝喵。" exp="1000" point="4" money="80" activity="40"/>
+	<quest type="2" questId="1006" titleType="gotoMap" titleContent="261" target="前往赤链山脉捕捉1个精灵：小赤豚。" exp="1000" point="5" money="100" activity="50"/>
+	<quest type="2" questId="1007" titleType="gotoMap" titleContent="281" target="前往焰之森捕捉1个精灵：多摩。" exp="1000" point="5" money="100" activity="50"/>
+	<quest type="3" questId="2001" titleType="gotoMap" titleContent="122" target="前往朽木桥击败5个精灵：啾啾。" exp="1000" point="3" money="60" activity="30"/>
+	<quest type="3" questId="2002" titleType="gotoMap" titleContent="141" target="前往幻影崖击败5个精灵：小树根。" exp="1000" point="3" money="60" activity="30"/>
+	<quest type="3" questId="2003" titleType="gotoMap" titleContent="151" target="前往水仙草界击败5个精灵：奇鲁。" exp="1000" point="3" money="60" activity="30"/>
+	<quest type="3" questId="2004" titleType="gotoMap" titleContent="202" target="前往珊瑚路击败5个精灵：安亚。" exp="1000" point="3" money="60" activity="30"/>
+	<quest type="3" questId="2005" titleType="gotoMap" titleContent="201" target="前往彩虹珊瑚湾击败5个精灵：希捷。" exp="1000" point="3" money="60" activity="30"/>
+	<quest type="3" questId="2006" titleType="gotoMap" titleContent="291" target="前往幻空通道击败5个精灵：尤尼。" exp="1000" point="4" money="80" activity="40"/>
+	<quest type="3" questId="2007" titleType="gotoMap" titleContent="302" target="前往灰烬岔口击败5个精灵：雷金纳德。" exp="1000" point="4" money="80" activity="40"/>
+	<quest type="3" questId="2008" titleType="gotoMap" titleContent="510" target="前往地道之路击败5个精灵：格尔西克。" exp="1000" point="4" money="80" activity="40"/>
+	<quest type="3" questId="2009" titleType="gotoMap" titleContent="310" target="前往三八跑道线（沙）击败5个精灵：蹦蹦鼠。" exp="1000" point="4" money="80" activity="40"/>
+	<quest type="3" questId="2010" titleType="gotoMap" titleContent="540" target="前往冰之谷击败5个精灵：寒冰龟。" exp="1000" point="4" money="80" activity="40"/>
+	<quest type="3" questId="2011" titleType="gotoMap" titleContent="700" target="前往时镜之岛击败5个精灵：克里普特。" exp="1000" point="4" money="80" activity="40"/>
+	<quest type="4" questId="3001" titleType="gotoMap" titleContent="142" target="前往巨石洞穴击败SPT Boss：布鲁托。" exp="1000" point="5" money="100" activity="50"/>
+	<quest type="4" questId="3002" titleType="gotoMap" titleContent="193" target="前往悲伤残骸击败SPT Boss：阿卡纳斯。" exp="1000" point="6" money="120" activity="60"/>
+	<quest type="4" questId="3003" titleType="gotoMap" titleContent="270" target="前往魅罗门击败SPT Boss：霍克努尔。" exp="1000" point="7" money="140" activity="70"/>
+	<quest type="4" questId="3004" titleType="gotoMap" titleContent="152" target="前往水仙溪口击败SPT Boss：麦麦迪。" exp="1000" point="8" money="160" activity="80"/>
+	<quest type="4" questId="3005" titleType="gotoMap" titleContent="530" target="前往黑岩旋梯击败SPT Boss：巨锤莫古。" exp="1000" point="9" money="180" activity="90"/>
+	<quest type="4" questId="3006" titleType="gotoMap" titleContent="370" target="前往海市蜃楼击败SPT Boss：沙皇鸟。" exp="1000" point="9" money="180" activity="90"/>
+	<quest type="4" questId="3007" titleType="gotoMap" titleContent="610" target="前往冰晶矿场击败SPT Boss：卡尼娅。" exp="1000" point="10" money="200" activity="100"/>
+	<quest type="4" questId="3008" titleType="gotoMap" titleContent="710" target="前往遗忘之岛击败SPT Boss：菲亚斯。" exp="1000" point="10" money="200" activity="100"/>
+	<quest type="4" questId="3009" titleType="gotoMap" titleContent="790" target="前往微光湖畔击败SPT Boss：艾丽希斯。" exp="1000" point="11" money="220" activity="110"/>
+	<quest type="4" questId="3010" titleType="gotoMap" titleContent="910" target="前往神风祭台击败SPT Boss：卡多斯。" exp="1000" point="11" money="220" activity="110"/>
+	<quest type="4" questId="3011" titleType="gotoMap" titleContent="1220" target="前往虫穴地牢击败SPT Boss：特米提。" exp="1000" point="12" money="240" activity="120"/>
+	<quest type="4" questId="3012" titleType="gotoMap" titleContent="81" target="前往英格瓦要塞通关试炼之门——普通模式" exp="1000" point="20" money="400" activity="200"/>
+	<quest type="4" questId="3013" titleType="gotoMap" titleContent="81" target="前往英格瓦要塞通关试炼之门——50V50模式" exp="1000" point="20" money="400" activity="200"/>
+	<quest type="4" questId="3014" titleType="gotoMap" titleContent="81" target="前往英格瓦要塞通关勇士之门——普通模式" exp="1000" point="25" money="500" activity="250"/>
+	<quest type="4" questId="3015" titleType="gotoMap" titleContent="81" target="前往英格瓦要塞通关勇士之门——50V50模式" exp="1000" point="25" money="500" activity="250"/>
+	<quest type="4" questId="3016" titleType="gotoMap" titleContent="81" target="前往英格瓦要塞通关竞技之门——普通模式" exp="1000" point="30" money="600" activity="300"/>
+	<quest type="4" questId="3017" titleType="gotoMap" titleContent="81" target="前往英格瓦要塞通关竞技之门——50V50模式" exp="1000" point="30" money="600" activity="300"/>
+	<quest type="4" questId="3018" titleType="gotoMap" titleContent="81" target="前往英格瓦要塞通关英雄之门——普通模式" exp="1000" point="35" money="700" activity="350"/>
+	<quest type="4" questId="3019" titleType="gotoMap" titleContent="81" target="前往英格瓦要塞通关英雄之门——50V50模式" exp="1000" point="35" money="700" activity="350"/>
+	<quest type="4" questId="3020" titleType="gotoMap" titleContent="81" target="前往英格瓦要塞通关双子之门——普通模式" exp="1000" point="40" money="800" activity="400"/>
+</newTeam>

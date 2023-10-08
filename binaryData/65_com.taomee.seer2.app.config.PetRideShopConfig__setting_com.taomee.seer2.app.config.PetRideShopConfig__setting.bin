@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- 		index显示时的顺序，值越大显示越靠后(米币版才会显示) -->
+<!-- 		mibi是否米币版本 0-非米币 1-米币 -->
+<!-- 		petResourceId 芯片对应的可使用的精灵resourceId -->
+<!-- 		equipId 骑上精灵时对应加上去的装备 -->
+<!-- 		swapId  给精灵使用芯片时后台swap协议id,每只精灵都不一样，让策划配 -->
+<!--		chipBackId 使用芯片后后台返回的芯片id,PetInfo更新信息使用的id也是这些 -->
+<!-- 		petBunchId 精灵的种类id，通常一个种类的精灵会有2种或者3中不同的形态，不同的形态对应不同的petResourceId -->
+<!-- 		getPetType 怎么获取精灵 module打开面板 map 跳转地图 -->
+<!-- 		whereToGet 具体怎么获得精灵 地图或者面板  -->
+
+
+														<!-- 		注意          -->
+		<!-- 如果某些精灵暂时关闭直接获得的跳转功能，那么getPetType和whereToGet要留空，否则一切后果自负 -->
+
+
+
+<root petrideId=""> 
+	<pet chipId="207011"  chipBackId="900011"   index="1"  petResourceId="529"     petBunchId="249"    petName="迈巴赫"           equipId="101020"   name="巴赫晶片"   mibi="0"   swapId="1988" getPetType="module" whereToGet="LuckyDialMeePanel" />
+	<pet chipId="207012"  chipBackId="900012"   index="2"  petResourceId="537"     petBunchId="252"    petName="艾妮维娅"           equipId="101021"   name="朱雀晶片"   mibi="0"   swapId="1989" getPetType="module" whereToGet="ShopPanel" />
+	<pet chipId="207013"  chipBackId="900013"   index="3"  petResourceId="539"     petBunchId="253"    petName="雷克顿"           equipId="101022"   name="霸王晶片"   mibi="0"   swapId="1990" getPetType="module" whereToGet="ShopPanel" />
+	<pet chipId="207001"  chipBackId="900001"  	index="4"   petResourceId="64"  	petBunchId="26" 	petName="格尔西克" 		equipId="100971"   name="格尔晶片"   mibi="0"  	swapId="1847" 	getPetType="map" whereToGet="510" />
+	<pet chipId="207002"  chipBackId="900002" 	index="5"   petResourceId="163" 	petBunchId="80" 	petName="雷克萨斯"  		equipId="100972"   name="雷克晶片"   mibi="0"  	swapId="1848" 	getPetType="" whereToGet="" />
+	<pet chipId="207003"  chipBackId="900003" 	index="6"   petResourceId="261"  	petBunchId="128" 	petName="英菲尼迪" 		equipId="100973"   name="英菲晶片"   mibi="0"  	swapId="1849" 	getPetType="" whereToGet="" />
+	<pet chipId="207004"  chipBackId="900004" 	index="7"   petResourceId="360"  	petBunchId="181" 	petName="兰博基尼" 		equipId="100974"   name="兰博晶片"   mibi="0"    swapId="1850" 	getPetType="module" whereToGet="LuckyDialMeePanel" />
+	<pet chipId="207005"  chipBackId="900005" 	index="8"   petResourceId="384" 	petBunchId="192"	petName="法拉利" 		equipId="100975"   name="拉利晶片"  	mibi="0"    swapId="1851" 	getPetType="module" whereToGet="LuckyDialMeePanel" />
+	<pet chipId="207006"  chipBackId="900006" 	index="9"   petResourceId="418"  	petBunchId="211"    petName="哈德拉奇" 		equipId="100976"   name="哈德晶片"   mibi="0"   swapId="1852"    getPetType="module" whereToGet="ShopPanel" />
+	<pet chipId="207007"  chipBackId="900007" 	index="10"   petResourceId="381"  	petBunchId="191"    petName="萨菲隆" 		equipId="100977"   name="萨菲晶片"   mibi="0"   swapId="1853"   getPetType="module" whereToGet="ShopPanel" />
+	<pet chipId="207008"  chipBackId="900008"   index="11"   petResourceId="363"     petBunchId="182"    petName="泰格武茨"       equipId="100978"   name="泰格晶片"   mibi="0"   swapId="1854"  getPetType="module" whereToGet="ShopPanel" />
+	<pet chipId="207009"  chipBackId="900009"   index="12"   petResourceId="395"     petBunchId="199"    petName="奥黛丽"         equipId="100979"   name="奥黛晶片"   mibi="0"   swapId="1855" getPetType="" whereToGet="" />	
+	<pet chipId="207010"  chipBackId="900010"   index="13"  petResourceId="412"     petBunchId="208"    petName="赫本"           equipId="100980"   name="赫本晶片"   mibi="0"   swapId="1856" getPetType="" whereToGet="" />
+	<pet chipId="207014"  chipBackId="900014"   index="14"  petResourceId="145"     petBunchId="73"    petName="托尼乔巴"           equipId="101091"   name="乔巴晶片"   mibi="0"   swapId="2216" getPetType="module" whereToGet="TwoYearWishPanel" />
+	<pet chipId="207015"    chipBackId="900015"     index="15"   petResourceId="447"   petBunchId="230"  petName="陶勒斯"      equipId="101118"   name="陶勒斯晶片"  mibi="0"   swapId="2291"   getPetType="" whereToGet="" />
+	<pet chipId="207016"    chipBackId="900016"     index="16"   petResourceId="603"   petBunchId="323"  petName="布加迪威龙"      equipId="101119"   name="布加迪晶片"  mibi="0"   swapId="2290"   getPetType="module" whereToGet="LuckyDialMeePanel" />
+	<pet chipId="207017"    chipBackId="900018"     index="18"   petResourceId="623"   petBunchId="336"  petName="圣兽天尊"      equipId="101125"   name="圣兽天尊晶片"  mibi="0"   swapId="2352"   getPetType="module" whereToGet="TianZunMainPanel" />
+	<pet chipId="207018"    chipBackId="900017"     index="19"   petResourceId="624"   petBunchId="337"  petName="圣兽天尊"      equipId="101131"   name="圣兽天尊晶片"  mibi="0"   swapId="2354"   getPetType="" whereToGet="" />
+	<pet chipId="207019"    chipBackId="900019"     index="17"   petResourceId="631"   petBunchId="341"  petName="小木马"      equipId="101137"   name="小木马晶片"  mibi="0"   swapId="2426"   getPetType="" whereToGet="" />
+
+	<pet chipId="207020"    chipBackId="900020"     index="20"   petResourceId="636"   petBunchId="354"  petName="卢卡斯"      equipId="101165"   name="卢卡斯晶片"  mibi="0"   swapId="2469"   getPetType="" whereToGet="" />
+
+	<pet chipId="207021"    chipBackId="900021"     index="21"   petResourceId="663"   petBunchId="367"  petName="极冰凤皇"      equipId="101212"   name="极冰凤皇晶片"  mibi="0"   swapId="2601"   getPetType="module" whereToGet="IceFengKuangPanel" />
+
+	<pet chipId="207022"    chipBackId="900022"     index="22"   petResourceId="709"   petBunchId="405"  petName="魔纹黑龙"      equipId="101292"   name="魔纹黑龙晶片"  mibi="0"   swapId="2796"   getPetType="module" whereToGet="BlackDragonPanel" />
+
+	<pet chipId="207023"    chipBackId="900023"     index="23"   petResourceId="830"   petBunchId="485"  petName="雷霆"      equipId="101510"   name="雷霆晶片"  mibi="0"   swapId="3533"   getPetType="module" whereToGet="HeroLeiTingActPanel" />
+	<pet chipId="207024"    chipBackId="900024"     index="24"   petResourceId="797"   petBunchId="465"  petName="赤兔"      equipId="101542"   name="赤兔晶片"  mibi="0"   swapId="3628"   getPetType="module" whereToGet="ThreeKingdomsHerosPanel" />
+	<pet chipId="207025"    chipBackId="900025"     index="25"   petResourceId="780"   petBunchId="454"  petName="白龙驹"      equipId="101543"   name="白龙驹晶片"  mibi="0"   swapId="3629"   getPetType="module" whereToGet="ThreeKingdomsHerosPanel" />
+	<pet chipId="207026"    chipBackId="900026"     index="26"   petResourceId="789"   petBunchId="460"  petName="的卢"      equipId="101544"   name="的卢晶片"  mibi="0"   swapId="3630"   getPetType="module" whereToGet="ThreeKingdomsHerosPanel" />
+	<pet chipId="207027"    chipBackId="900027"     index="27"   petResourceId="812"   petBunchId="486"  petName="焰豪"      equipId="101545"   name="焰豪晶片"  mibi="0"   swapId="3631"   getPetType="module" whereToGet="ThreeKingdomsHerosPanel" />
+
+
+	<pet chipId="207029"    chipBackId="900028"     index="28"   petResourceId="918"   petBunchId="543"  petName="恶灵兽"      equipId="101643"   name="恶灵晶片"  mibi="0"   swapId="3864"   getPetType="module" whereToGet="PetElingActPanel" />
+	<pet chipId="207030"    chipBackId="900029"     index="29"   petResourceId="916"   petBunchId="542"  petName="奎尔斯之影"      equipId="101644"   name="奎影晶片"  mibi="0"   swapId="3865"   getPetType="module" whereToGet="ShengLingTianZunPanel" />
+
+
+		
+																	<!-- 警戒线以下是收费版 -->
+
+	<pet chipId="208021"    chipBackId="900021"     index="17"   petResourceId="663"   petBunchId="367"  petName="极冰凤皇"      equipId="101212"   name="极冰凤皇晶片"  mibi="1"   swapId="2601"   getPetType="module" whereToGet="IceFengKuangPanel" />
+	<pet chipId="208011"    chipBackId="900011"     index="18"   petResourceId="529"   petBunchId="249"  petName="迈巴赫"      equipId="101020"   name="巴赫晶片"  mibi="1"   swapId="1988"   getPetType="module" whereToGet="LuckyDialMeePanel" />
+	<pet chipId="208012"    chipBackId="900012"     index="3"   petResourceId="537"   petBunchId="252"  petName="艾妮维娅"      equipId="101021"   name="朱雀晶片"  mibi="1"   swapId="1989" getPetType="module" whereToGet="ShopPanel" />	
+    <pet chipId="208013"    chipBackId="900013"     index="4"   petResourceId="539"   petBunchId="253"  petName="雷克顿"      equipId="101022"   name="霸王晶片"  mibi="1"   swapId="1990"   getPetType="module" whereToGet="ShopPanel" />	
+	<pet chipId="208002"  	chipBackId="900002" 	index="5"   petResourceId="163"   petBunchId="80"	petName="雷克萨斯"	equipId="100972"   name="雷克晶片"   mibi="1"  	swapId="1848" 	getPetType="" whereToGet="" />
+	<pet chipId="208003" 	chipBackId="900003" 	index="6"   petResourceId="261"   petBunchId="128"	petName="英菲尼迪"	equipId="100973"   name="英菲晶片"   mibi="1"  	swapId="1849" 	getPetType="" whereToGet="" />
+	<pet chipId="208004" 	chipBackId="900004"  	index="7"   petResourceId="360"   petBunchId="181"	petName="兰博基尼"	equipId="100974"   name="兰博晶片"   mibi="1"   	swapId="1850" 	getPetType="module" whereToGet="LuckyDialMeePanel" />
+	<pet chipId="208005" 	chipBackId="900005"  	index="8"   petResourceId="384"   petBunchId="192"	petName="法拉利"		equipId="100975"   name="拉利晶片"   mibi="1"  	swapId="1851" 	getPetType="module" whereToGet="LuckyDialMeePanel" />
+	<pet chipId="208006"    chipBackId="900006"     index="9"   petResourceId="418"   petBunchId="211"  petName="哈德拉奇"   equipId="100976"   name="哈德晶片"   mibi="1"   swapId="1852"   getPetType="module" whereToGet="ShopPanel" />
+	<pet chipId="208007"    chipBackId="900007"     index="10"   petResourceId="381"   petBunchId="191"  petName="萨菲隆"     equipId="100977"   name="萨菲晶片"   mibi="1"   swapId="1853"   getPetType="module" whereToGet="ShopPanel" />
+	<pet chipId="208008"    chipBackId="900008"     index="11"   petResourceId="363"   petBunchId="182"  petName="泰格武茨"   equipId="100978"   name="泰格晶片"   mibi="1"    swapId="1854"  getPetType="module" whereToGet="ShopPanel" />
+	<pet chipId="208009"    chipBackId="900009"     index="12"   petResourceId="395"   petBunchId="199"  petName="奥黛丽"     equipId="100979"   name="奥黛晶片"   mibi="1"    swapId="1855" getPetType="" whereToGet="" />
+	<pet chipId="208010"    chipBackId="900010"     index="13"   petResourceId="412"   petBunchId="208"  petName="赫本"      equipId="100980"   name="赫本晶片"  mibi="1"   swapId="1856"   getPetType="" whereToGet="" />
+	<pet chipId="208014"    chipBackId="900014"     index="14"   petResourceId="145"   petBunchId="73"  petName="托尼乔巴"      equipId="101091"   name="乔巴晶片"  mibi="1"   swapId="2216"   getPetType="module" whereToGet="TwoYearWishPanel" />
+	<pet chipId="208015"    chipBackId="900015"     index="15"   petResourceId="447"   petBunchId="230"  petName="陶勒斯"      equipId="101118"   name="陶勒斯晶片"  mibi="1"   swapId="2293"   getPetType="" whereToGet="" />
+	<pet chipId="208016"    chipBackId="900016"     index="16"   petResourceId="603"   petBunchId="323"  petName="布加迪威龙"      equipId="101119"   name="布加迪晶片"  mibi="1"   swapId="2292"   getPetType="module" whereToGet="LuckyDialMeePanel" />
+
+
+
+
+
+	<pet chipId="208025"    chipBackId="900028"     index="1"   petResourceId="543"   petBunchId="918"  petName="恶灵兽"      equipId="101643"   name="恶灵兽晶片"  mibi="1"   swapId="3864"   getPetType="module" whereToGet="PetElingActPanel" />
+	<pet chipId="208026"    chipBackId="900029"     index="2"   petResourceId="542"   petBunchId="916"  petName="奎尔斯之影"      equipId="101644"   name="奎尔斯晶片"  mibi="1"   swapId="3865"   getPetType="module" whereToGet="ShengLingTianZunPanel" />
+
+
+
+
+
+</root>

@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- titleId：物品ID -->
+<!-- titleName：称号 -->
+<!-- des：描述 -->
+<titles>
+	<type id="0">
+	<title titleId="500046" titleName="历史见证者" des="在周年庆期间登录赛尔号II，见证飞船起航周年的盛典。" />
+	<title titleId="500045" titleName="正义伙伴" des="阿卡迪亚星北半球的所有SPTBOSS都被彻底打败了，真是可喜可贺。" />
+	<title titleId="500035" titleName="双子星" des="成功打败了英格瓦要塞的双子之门守护者，继承双子星之名。" />
+	<title titleId="500044" titleName="博学家" des="收集100种不同的精灵，现在终于可以被称为一个博学者了。" />
+	<title titleId="500047" titleName="单挑王" des="只有在单挑王争霸赛中获胜的人才能赢得这个称号。" />
+	<title titleId="500051" titleName="万中无一" des="在争霸赛的训练师对决中获得最后的优胜才能赢得这个称号。" />
+	<title titleId="500052" titleName="炎魔" des="作为炎帝凯萨的代理者挑战了北半球所有的强者。" />	
+	<title titleId="500053" titleName="雷鸣炎破" des="同时拥有雷伊和凯萨作为伙伴并在雷鸣炎破之战中获得500场胜利。" />	
+	<title titleId="500054" titleName="破坏王" des="在阻击影灵兽的战役中做出最大的贡献。" />
+	<title titleId="500060" titleName="猜图专家" des="你在你画我猜中通关了精灵4组成为了猜图专家！" />
+
+	<title titleId="500063" titleName="水瓶座守护者" des="1月20日-2月18日出生的幸运儿至VIP乐园希尔顿处登记获得" />
+	<title titleId="500064" titleName="双鱼座守护者" des="2月19日-3月20日出生的幸运儿至VIP乐园希尔顿处登记获得" />
+	<title titleId="500065" titleName="白羊座守护者" des="3月21日-4月19日出生的幸运儿至VIP乐园希尔顿处登记获得" />
+	<title titleId="500066" titleName="金牛座守护者" des="4月20日-5月20日出生的幸运儿至VIP乐园希尔顿处登记获得" />
+	<title titleId="500067" titleName="双子座守护者" des="5月21日-6月21日出生的幸运儿至VIP乐园希尔顿处登记获得" />
+	<title titleId="500068" titleName="巨蟹座守护者" des="6月22日-7月22日出生的幸运儿至VIP乐园希尔顿处登记获得" />
+	<title titleId="500069" titleName="狮子座守护者" des="7月23日-8月22日出生的幸运儿至VIP乐园希尔顿处登记获得" />
+	<title titleId="500070" titleName="室女座守护者" des="8月23日-9月22日出生的幸运儿至VIP乐园希尔顿处登记获得" />
+	<title titleId="500071" titleName="天秤座守护者" des="9月23日-10月23日出生的幸运儿至VIP乐园希尔顿处登记获得" />
+	<title titleId="500072" titleName="天蝎座守护者" des="10月24日-11月22日出生的幸运儿至VIP乐园希尔顿处登记获得" />
+	<title titleId="500073" titleName="射手座守护者" des="11月23日-12月21日出生的幸运儿至VIP乐园希尔顿处登记获得" />
+	<title titleId="500074" titleName="摩羯座守护者" des="12月22日-1月19日出生的幸运儿至VIP乐园希尔顿处登记获得" />
+
+	<title titleId="500061" titleName="缇娜之克星" des="在万圣节萨伦袭击中，第一个击败缇娜的小赛尔！！" />
+	<title titleId="500062" titleName="钓鱼大师" des="在凤凰杯钓鱼大师赛中获得冠军！" />
+	<title titleId="500075" titleName="烹饪大师" des="在凤凰杯烹饪大师赛中获得团队冠军！" />
+	<title titleId="500076" titleName="至尊大胃王" des="在凤凰杯烹饪大师赛中排行榜中位列TOP1获得！" />
+	<title titleId="500077" titleName="美食小当家" des="在凤凰杯烹饪大师赛中排行榜中位列TOP2-10获得！" />
+	<title titleId="500078" titleName="美食小小家" des="在凤凰杯烹饪大师赛中排行榜中位列TOP11-50获得！" />
+	<title titleId="500079" titleName="种植大师" des="在凤凰杯种植大师赛排行中位列TOP1获得！" />
+	<title titleId="500080" titleName="种植高手" des="在凤凰杯种植大师赛排行榜中位列TOP2-10获得！" />
+	<title titleId="500081" titleName="种植达人" des="在凤凰杯种植大师赛排行榜中位列TOP11-50获得！" />
+
+	<title titleId="500084" titleName="赛纳留斯圣徒" des="在观星台击败观星者之首：赛纳留斯圣徒。" />
+	<title titleId="500083" titleName="孩子王" des="在活动树屋大作战中获得最高连胜次数" />
+	<title titleId="500086" titleName="末日拯救者" des="在末日拯救地球中为贾斯汀站长充过一次宇宙巨能！" />
+	<title titleId="500087" titleName="纳法里奥圣徒" des="在观星台击败观星者之躯：纳法里奥圣徒。" />
+
+	<title titleId="500088" titleName="地狱舞者" des="在深渊派对活动的三种挑战里累计挑战100次" />
+
+	<title titleId="500094" titleName="竞技场先驱" des="在2013年2月1日-6日参与了天空竞技场的试赛，为竞技场建设付出了重大贡献。" />
+
+
+	<title titleId="500096" titleName="锋芒初露" des="在天空竞技场常规赛中获得首次胜利" />
+	<title titleId="500097" titleName="二区英雄" des="在天空竞技场中到达常规赛第二区" />
+	<title titleId="500098" titleName="三区英雄" des="在天空竞技场中到达常规赛第三区" />
+	<title titleId="500099" titleName="四区英雄" des="在天空竞技场中到达常规赛第四区" />
+	<title titleId="500100" titleName="竞技场精英" des="在天空竞技场中到达常规赛第五区" />
+
+	<title titleId="500102" titleName="S1冠军" des="在天空竞技场常规赛排行榜中赢得赛季冠军" />
+	<title titleId="500103" titleName="S1亚军" des="在天空竞技场常规赛排行榜中赢得赛季亚军" />
+	<title titleId="500104" titleName="S1季军" des="在天空竞技场常规赛排行榜中赢得赛季季军" />
+	<title titleId="500105" titleName="S1勇士" des="在天空竞技场常规赛排行榜中位列第4——10名" />
+	<title titleId="500106" titleName="S1帝王" des="在天空竞技场精英赛排行榜中赢得赛季冠军" />
+	<title titleId="500107" titleName="S1武圣" des="在天空竞技场精英赛排行榜中赢得赛季亚军" />
+	<title titleId="500108" titleName="S1狂战" des="在天空竞技场精英赛排行榜中赢得赛季季军" />
+	<title titleId="500109" titleName="S1高手" des="在天空竞技场精英赛排行榜中位列第4——10名" />
+
+	<title titleId="500095" titleName="捞王" des="在鲤鱼王捞中撞见鲤鱼王并成功捕捉可获得" />
+	<title titleId="500110" titleName="节食者" des="在炼狱暴食回廊不击败任何一只精灵的前提下击败BOSS" />
+
+	<title titleId="500111" titleName="诺克萨斯圣徒" des="在观星者挑战之足部诺克萨斯之战中获胜" />
+
+	<title titleId="500112" titleName="S2冠军" des="在天空竞技场第二赛季常规赛排行榜中赢得赛季冠军" />
+	<title titleId="500113" titleName="S2亚军" des="在天空竞技场第二赛季常规赛排行榜中赢得赛季亚军" />
+	<title titleId="500114" titleName="S2季军" des="在天空竞技场第二赛季常规赛排行榜中赢得赛季季军" />
+	<title titleId="500115" titleName="S2勇士" des="在天空竞技场第二赛季常规赛排行榜中位列第4——10名" />
+	<title titleId="500116" titleName="S2帝王" des="在天空竞技场第二赛季精英赛排行榜中赢得赛季冠军" />
+	<title titleId="500117" titleName="S2武圣" des="在天空竞技场第二赛季精英赛排行榜中赢得赛季亚军" />
+	<title titleId="500118" titleName="S2狂战" des="在天空竞技场第二赛季精英赛排行榜中赢得赛季季军" />
+	<title titleId="500119" titleName="S2高手" des="在天空竞技场第二赛季精英赛排行榜中位列第4——10名" />
+
+
+	<title titleId="500120" titleName="伊特角斗王" des="在伊特锦标赛中获得团队冠军" />
+	<title titleId="500121" titleName="奥比休斯圣徒" des="在观星者挑战之背部奥比休斯之战中获胜" />
+	<title titleId="500122" titleName="自食其力" des="在炼狱贪婪回廊中首次通关获得" />
+	<title titleId="500123" titleName="死神猎手" des="在审判暗黑死神活动中杀出第二重门获得" />
+
+	<title titleId="500124" titleName="S3冠军" des="在天空竞技场常规赛排行榜中赢得赛季冠军" />
+	<title titleId="500125" titleName="S3亚军" des="在天空竞技场常规赛排行榜中赢得赛季亚军" />
+	<title titleId="500126" titleName="S3季军" des="在天空竞技场常规赛排行榜中赢得赛季季军" />
+	<title titleId="500127" titleName="S3勇士" des="在天空竞技场常规赛排行榜中位列第4——10名" />
+	<title titleId="500128" titleName="S3达人" des="在天空竞技场常规赛排行榜中位列第11——50名" />
+	<title titleId="500129" titleName="S3战士" des="在天空竞技场常规赛排行榜中位列第51——100名" />
+	<title titleId="500089" titleName="约瑟传说见证者" des="听元蛋讲过精灵王约瑟的故事" />
+	<title titleId="500090" titleName="奎尔赛拉圣徒" des="在观星者挑战之手部奎尔赛拉之战中获胜" />
+	<title titleId="500091" titleName="武斗神" des="在梅花三弄武斗会中获得第一名" />
+	<title titleId="500092" titleName="尚武者" des="在梅花三弄武斗会中进入2-10名排行" />
+	<title titleId="500093" titleName="武学爱好者" des="在梅花三弄武斗会中进入11-100名排行" />
+	<title titleId="500094" titleName="竞技场先驱" des="参与了天空竞技场的封测" />
+	<title titleId="500095" titleName="捞王" des="在鲤鱼王捞中撞见鲤鱼王并成功捕捉可获得" />
+	<title titleId="500131" titleName="爱心大使" des="在闪电麒麟佑护雅安中获得，雅安加油！" />
+
+
+
+
+
+
+	<title titleId="500134" titleName="泰尔瑞斯圣徒" des="在观星者挑战之心泰尔瑞斯之战中获胜" />
+	<title titleId="500135" titleName="贾斯汀接班人" des="获得了贾斯汀至尊螳螂的101次信念后获得" />
+	<title titleId="500136" titleName="至尊螳螂战将" des="完成至尊螳螂的黄钻历炼获得" />
+	<title titleId="500137" titleName="2周年庆典见证者" des="为约瑟传说2周年庆典加油100次可获得" />
+	<title titleId="500138" titleName="S4冠军" des="在天空竞技场常规赛排行榜中赢得赛季冠军" />
+	<title titleId="500139" titleName="S4亚军" des="在天空竞技场常规赛排行榜中赢得赛季亚军" />
+	<title titleId="500140" titleName="S4季军" des="在天空竞技场常规赛排行榜中赢得赛季季军" />
+	<title titleId="500141" titleName="S4勇士" des="在天空竞技场常规赛排行榜中位列第4——10名" />
+	<title titleId="500142" titleName="S4达人" des="在天空竞技场常规赛排行榜中" />
+	<title titleId="500143" titleName="S4战士" des="在天空竞技场常规赛排行榜中" />
+	<title titleId="500144" titleName="超级大王勋章" des="在超级精灵大比拼中获得冠军" />
+	<title titleId="500145" titleName="超级精灵勋章" des="在超级精灵大比拼中获得" />
+	<title titleId="500146" titleName="S5冠军" des="在天空竞技场常规赛排行榜中赢得赛季冠军" />
+	<title titleId="500147" titleName="S5亚军" des="在天空竞技场常规赛排行榜中赢得赛季亚军" />
+	<title titleId="500148" titleName="S5季军" des="在天空竞技场常规赛排行榜中赢得赛季季军" />
+	<title titleId="500149" titleName="S5勇士" des="在天空竞技场常规赛排行榜中位列第4——10名" />
+	<title titleId="500150" titleName="S5达人" des="在天空竞技场常规赛排行榜中" />
+	<title titleId="500151" titleName="S5战士" des="在天空竞技场常规赛排行榜中" />
+	<title titleId="500152" titleName="约瑟杯冠军" des="在第2届精灵王争霸赛中获得冠军" />
+	<title titleId="500153" titleName="约瑟杯亚军" des="在第2届精灵王争霸赛中获得亚军" />
+	<title titleId="500154" titleName="约瑟杯季军" des="在第2届精灵王争霸赛中获得季军" />
+	<title titleId="500155" titleName="S6冠军" des="在天空竞技场常规赛排行榜中赢得赛季冠军" />
+	<title titleId="500156" titleName="S6亚军" des="在天空竞技场常规赛排行榜中赢得赛季亚军" />
+	<title titleId="500157" titleName="S6季军" des="在天空竞技场常规赛排行榜中赢得赛季季军" />
+	<title titleId="500158" titleName="S6勇士" des="在天空竞技场常规赛排行榜中位列第4——10名" />
+	<title titleId="500159" titleName="S6达人" des="在天空竞技场常规赛排行榜中" />
+	<title titleId="500160" titleName="S6战士" des="在天空竞技场常规赛排行榜中" />
+	<title titleId="500161" titleName="伊特狂人" des="集齐13个伊特获得" />
+	<title titleId="500162" titleName="S7冠军" des="在天空竞技场常规赛排行榜中赢得赛季冠军" />
+	<title titleId="500163" titleName="S7亚军" des="在天空竞技场常规赛排行榜中赢得赛季亚军" />
+	<title titleId="500164" titleName="S7季军" des="在天空竞技场常规赛排行榜中赢得赛季季军" />
+	<title titleId="500165" titleName="S7勇士" des="在天空竞技场常规赛排行榜中位列第4——10名" />
+	<title titleId="500166" titleName="S7达人" des="在天空竞技场常规赛排行榜中" />
+	<title titleId="500167" titleName="S7战士" des="在天空竞技场常规赛排行榜中" />
+	<title titleId="500168" titleName="水忍克星勋章" des="玩家在盘龙水镜挑战涟漪通过第10关" />
+	<title titleId="500169" titleName="水忍大师勋章" des="玩家在盘龙水镜挑战涟漪通过第20关" />
+	<title titleId="500170" titleName="水忍宗师勋章" des="玩家在盘龙水镜挑战涟漪通过第30关" />
+	<title titleId="500171" titleName="S8冠军" des="在天空竞技场常规赛排行榜中赢得赛季冠军" />
+	<title titleId="500172" titleName="S8亚军" des="在天空竞技场常规赛排行榜中赢得赛季亚军" />
+	<title titleId="500173" titleName="S8季军" des="在天空竞技场常规赛排行榜中赢得赛季季军" />
+	<title titleId="500174" titleName="S8勇士" des="在天空竞技场常规赛排行榜中位列第4——10名" />
+	<title titleId="500175" titleName="S8达人" des="在天空竞技场常规赛排行榜中" />
+	<title titleId="500176" titleName="S8战士" des="在天空竞技场常规赛排行榜中" />
+
+
+
+	<title titleId="500177" titleName="木忍克星勋章" des="玩家在巨树森林挑战斩灵通过第10关" />
+	<title titleId="500178" titleName="木忍大师勋章" des="玩家在巨树森林挑战斩灵通过第20关" />
+	<title titleId="500179" titleName="木忍宗师勋章" des="玩家在巨树森林挑战斩灵通过第30关" />
+
+
+	<title titleId="500180" titleName="超级金蛋王" des="在沙漠孵蛋比赛中的周赛中获得TOP1" />
+	<title titleId="500181" titleName="超级银蛋王" des="在沙漠孵蛋比赛中的周赛中获得TOP2" />
+	<title titleId="500182" titleName="超级铜蛋王" des="在沙漠孵蛋比赛中的周赛中获得TOP3" />
+	<title titleId="500183" titleName="孵蛋达人" des="在沙漠孵蛋比赛中的周赛中获得TOP4-100获得" />
+
+	<title titleId="500184" titleName="地忍克星勋章" des="玩家在白龙岩阵挑战涟漪通过第10关" />
+	<title titleId="500185" titleName="地忍大师勋章" des="玩家在白龙岩阵挑战涟漪通过第20关" />
+	<title titleId="500186" titleName="地忍宗师勋章" des="玩家在白龙岩阵挑战涟漪通过第30关" />
+
+	<title titleId="500187" titleName="S9冠军" des="在天空竞技场常规赛排行榜中赢得赛季冠军" />
+	<title titleId="500188" titleName="S9亚军" des="在天空竞技场常规赛排行榜中赢得赛季亚军" />
+	<title titleId="500189" titleName="S9季军" des="在天空竞技场常规赛排行榜中赢得赛季季军" />
+	<title titleId="500190" titleName="S9勇士" des="在天空竞技场常规赛排行榜中位列第4——10名" />
+	<title titleId="500191" titleName="S9达人" des="在天空竞技场常规赛排行榜中" />
+	<title titleId="500192" titleName="S9战士" des="在天空竞技场常规赛排行榜中" />
+
+	<title titleId="500193" titleName="魔神大帝" des="在魔域神域中获得当日排行榜TOP1" />
+	<title titleId="500194" titleName="魔神护法" des="在魔域神域中获得当日排行榜TOP2-3" />
+	<title titleId="500195" titleName="魔神爱徒" des="在魔域神域中获得当日排行榜TOP4-100" />
+
+	<title titleId="500196" titleName="S10冠军" des="在天空竞技场常规赛排行榜中赢得赛季冠军" />
+	<title titleId="500197" titleName="S10亚军" des="在天空竞技场常规赛排行榜中赢得赛季亚军" />
+	<title titleId="500198" titleName="S10季军" des="在天空竞技场常规赛排行榜中赢得赛季季军" />
+	<title titleId="500199" titleName="S10勇士" des="在天空竞技场常规赛排行榜中位列第4——10名" />
+	<title titleId="500200" titleName="S10达人" des="在天空竞技场常规赛排行榜中" />
+	<title titleId="500201" titleName="S10战士" des="在天空竞技场常规赛排行榜中" />
+
+	<title titleId="500202" titleName="天尊先行者" des="成为年费预定用户" />
+	<title titleId="500203" titleName="天尊守护者" des="成为2014的VIP年费用户" />
+	<title titleId="500204" titleName="降魔尊者" des="世界BOSS上古魔王中排名TOP1" />
+	<title titleId="500205" titleName="降魔元帅" des="世界BOSS上古魔王中排名TOP2-10" />
+	<title titleId="500206" titleName="降魔大将" des="世界BOSS上古魔王中排名TOP11-300" />
+	<title titleId="500207" titleName="降魔英雄" des="世界BOSS上古魔王中排名TOP301-1700" />
+	<title titleId="500208" titleName="降魔先锋" des="世界BOSS上古魔王中排名TOP1701-5000" />
+
+	<title titleId="500209" titleName="雷霆霸主" des="拥有雷伊、雷斩、雷煞三只精灵" />
+	<title titleId="500210" titleName="练级达人" des="在世界BOSS上古魔王中排名TOP1701-5000" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</type>
+</titles>

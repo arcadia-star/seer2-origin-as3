@@ -1,0 +1,236 @@
+<!-- 
+	答题题库:
+	id(题目id号，1000-1999为某一种类型段位，具体意义有策划补充，每种类型题数1000应该足够拓展)
+	ask(问题)
+	selectItems(选择项)
+	answer(答案 1,2,3,4代表A,B,C,D)
+ -->
+<copys>
+  	<item id="1000" ask="海洋水面周期性的涨落现象叫做潮汐，那么你知道产生海水潮汐的主要原因是什么吗？" selectItems="地球自转;月球引力;台风;地震" answer="2"/>
+  	<item id="1001" ask="我们生活中所需的大部分光和热都来源于太阳，那么你知道太阳表面温度大约多少吗？" selectItems="6000度;4000度;2000度;1000度" answer="1"/>
+  	<item id="1002" ask="地球一直围绕着太阳转，你知道太阳在哪一天离地球最远吗？" selectItems="秋分;春分;夏至;小雪" answer="3"/>
+  	<item id="1003" ask="地球有一颗卫星那就是月球，那么火星有几颗卫星？" selectItems="1;2;3;4" answer="2"/>
+  	<item id="1004" ask="光年这个词似乎很奇妙，你知道光年到底是什么单位吗？" selectItems="时间;面积;重量;距离" answer="4"/>
+  	<item id="1005" ask="太阳系是人类生存的星系，那么下面哪个不是在太阳系中的行星？" selectItems="冥王星;水星;土星;太白金星" answer="4"/>
+  	<item id="1006" ask="太阳是并非永远都很稳定，有时太阳也会爆发太阳风暴，那么太阳风暴对地球影响最大的是哪方面？" selectItems="无线通讯;温度;白天增长;夜晚增长" answer="1"/>
+  	<item id="1007" ask="人造卫星是人类智慧的结晶，世界上第一颗人造卫星是那个国家发明的？" selectItems="美国;前苏联;日本;德国" answer="2"/>
+  	<item id="1008" ask="光在真空中传播的速度大约是多少？" selectItems="3万千米/秒;30万千米/秒;300万千米/秒;3000万千米/秒" answer="2"/>
+  	<item id="1009" ask="在太阳系中，体积最大的行星哪一颗?" selectItems="火星;土星;木星;水星" answer="3"/>
+  	<item id="1010" ask="在太阳系中，质量最大的行星是哪一颗？" selectItems="金星;水星;木星;土星" answer="3"/>
+  	<item id="1011" ask="太阳系中根据各行星的公转轨道距太阳的平均距离数算，距离地球最近的行星是哪一颗？" selectItems="金星;水星;木星;土星" answer="1"/>
+  	<item id="1012" ask="哈雷彗星是是一颗巨大而神秘的彗星，在地球上多久才能看到它一次吗？" selectItems="每隔8年;每隔16年;每隔76年;每隔96年" answer="3"/>
+  	<item id="1013" ask="月球是地球的卫星，请问世界上第一个登上月球的载人飞船叫什么？" selectItems="神州7号;赛尔号;泰坦尼克号;阿波罗11号" answer="4"/>
+  	<item id="1014" ask="天文望远镜是我们了解太空的眼睛，世界上第一台天文望远镜是谁发明的？" selectItems="汉斯•李波儿赛;哈勃;伽利略;斯坦因博士" answer="3"/>
+  	<item id="1015" ask="太阳位于太阳系中心，为我们提供光和热，那么太阳是属于下列哪一种？" selectItems="行星;卫星;恒星;流星" answer="3"/>
+  	<item id="1016" ask="绚烂的星空中有很多星座，有谁知道北斗七星属于哪一个星座？" selectItems="小熊星座;大熊星座;射手星座;猎户星座" answer="2"/>
+  	<item id="1017" ask="银河系大约有多少颗恒星？" selectItems="少于100亿;100亿到500亿之间;500亿到1000亿之间;1000亿以上" answer="4"/>
+
+	<item id="1018" ask="地球上出现的四季更替是由于?" selectItems="地球公转;地球自转;月球公转;月球自转" answer="1"/>
+	<item id="1019" ask="地球上最大的海洋是哪一个？" selectItems="北冰洋;太平洋;印度洋;大西洋" answer="2"/>
+	<item id="1020" ask="晴朗的夜晚之所以能够看到月亮，是因为月球能够？" selectItems="反射太阳光;自身发光;月球是恒星;月球的公转" answer="1"/>
+	<item id="1021" ask="太阳的能量用完会变成什么？" selectItems="白矮星;陨石;黑子;碎片" answer="1"/>
+
+	<item id="1022" ask="织女星位于哪一个星座?" selectItems="天鹰座;天马座;天琴座;天蝎座" answer="3"/>
+	<item id="1023" ask="太阳的能量来自哪里？" selectItems="化合反应;核裂;小宇宙;自身的核聚变" answer="4"/>
+	<item id="1024" ask="地球的形状长得像什么？" selectItems="梨子;圆球;香蕉;桃子" answer="1"/>
+	<item id="1025" ask="什么是虫洞？" selectItems="住满虫子的洞穴;连接时空中不同区域的通道;有一个山洞叫虫洞;一个景点" answer="2"/>
+	<item id="1026" ask="宇宙中最快的速度是什么？" selectItems="豹的速度;音速;超音速;光速" answer="4"/>
+	<item id="1027" ask="为什么肌肉在太空中容易萎缩？" selectItems="没有压力，肌肉缺乏锻炼;暗影系的破坏;没有水分;太空中的辐射" answer="1"/>
+	<item id="1028" ask="把很多火箭结合成一个称为什么？" selectItems="休斯顿火箭;多级火箭;超级火箭;积木火箭" answer="2"/>
+	<item id="1029" ask="地球的卫星是哪个？" selectItems="月球;太阳;火星;土星" answer="1"/>
+	<item id="1030" ask="什么是流星？" selectItems="留在天空的星星;陨石坠落时的发光现象;围绕太阳转的星星;流浪的星星" answer="2"/>
+	<item id="1031" ask="银河是由什么组成的？" selectItems="行星;流星;恒星;陨石碎片" answer="3"/>
+	<item id="1032" ask="太空垃圾，是谁丢的？" selectItems="人类;奥特曼;雷伊;小精灵" answer="1"/>
+	<item id="1033" ask="宇航员生活和工作的空间站，又称为什么？" selectItems="航天站;太空房;宇宙小屋;要塞" answer="1"/>
+	<item id="1034" ask="从地球上到达火星，至少要多久？" selectItems="8~12个月;6~7个月;1~2个月;3~4个月" answer="2"/>
+	<item id="1035" ask="我们能看到月球的几个面？" selectItems="1个面;2个面;3面;4面" answer="1"/>
+	<item id="1036" ask="阳光从太阳到地球需要多久？" selectItems="大约3分多钟;大约8分多钟;大约1秒钟;大约1小时" answer="2"/>
+	<item id="1037" ask="银河系属于什么星系？" selectItems="椭圆星系;棒旋星系;螺旋星系;不规则星系" answer="3"/>
+	<item id="1038" ask="黑洞是如何生长的？" selectItems="吃精灵;吸收其他物质;浇水施肥;不会长" answer="2"/>
+	<item id="1039" ask="黑洞是什么？" selectItems="具有强大吸力的天体;黑色的洞;黑色的影子;黑色的星星" answer="1"/>
+	<item id="1040" ask="英国巨石阵是用来干嘛的？" selectItems="是用来捉迷藏的;是一种日历;拍照用的;是天下掉下的陨石" answer="2"/>
+
+	<item id="1041" ask="请问万有引力定律是谁发现的？" selectItems="伽利略;牛顿;哈勃;哥伦布" answer="2"/>
+	<item id="1042" ask="在星系间起主导作用的是那种力？" selectItems="引力;磁力;电场力;洛仑兹力" answer="1"/>
+	<item id="1043" ask="太阳系中哪个行星的体积最大？" selectItems="地球;木星;火星;水星" answer="2"/>
+	<item id="1044" ask="太阳系中哪个行星有美丽的光环？" selectItems="水星;金星;火星;土星" answer="4"/>
+	<item id="1045" ask="目前太阳系有几大行星？" selectItems="6;7;8;9" answer="3"/>
+	<item id="1046" ask="天文学上常用的距离单位是什么？" selectItems="公里;千米;光年;米" answer="3"/>
+	<item id="1047" ask="在太阳系中那个行星离太阳最近?" selectItems="地球;木星;水星;火星" answer="3"/>
+	<item id="1048" ask="哈勃望远镜是以下什么望远镜？" selectItems="空间望远镜;射电望远镜;光学望远镜;以上都不是" answer="1"/>
+	<item id="1049" ask="太阳是什么星？" selectItems="卫星;恒星;行星;白矮星" answer="2"/>
+	<item id="1050" ask="光年是描述什么的单位？" selectItems="时间;距离;速度;质量" answer="2"/>
+	<item id="1051" ask="古诗十九首:迢迢牵牛星,皎皎河汉女.请问织女星位于哪一个星座? " selectItems="仙女座;室女座;天琴座;阿卡迪亚座" answer="3"/>
+	<item id="1052" ask="地球第一个进入太空的宇航员是谁？" selectItems="阿姆斯特朗;加加林;查理·杜克;杨利伟" answer="2"/>
+	<item id="1053" ask="太阳系中，体积最小的行星是？" selectItems="地球;火星;水星;海王星" answer="3"/>
+	<item id="1054" ask="为什么流星会有尾巴？" selectItems="大气摩擦;自身着火;阳光反射;人眼错觉" answer="1"/>
+	<item id="1055" ask="地球绕太阳公转的周期是多少？" selectItems="200;312;365;420" answer="3"/>
+	<item id="1056" ask="发明望远镜的科学家是谁？" selectItems="伽利略;牛顿;爱迪生;哥白尼" answer="1"/>
+	<item id="1057" ask="地球自转的方向是？" selectItems="自西向东;自东向西;自北向南;自南向北" answer="1"/>
+	<item id="1058" ask="一年的节气有多少个？" selectItems="4;12;16;24" answer="4"/>
+	<item id="1059" ask="人们在星空中看到的绝大多数星星是" selectItems="行星;恒星;卫星;小天体" answer="2"/>
+	<item id="1060" ask="阿姆斯特朗是乘什么飞船成功登月的？" selectItems="阿波罗11号;神州6号;东方号;赛尔号" answer="1"/>
+
+
+
+
+
+
+
+
+  	<item id="2000" ask="在阿卡迪亚星球上，有一只神奇的精灵能够进梦境之中，你知道是哪一只吗？" selectItems="啾啾;法拉;浣浣;小海葵" answer="2"/>
+  	<item id="2001" ask="在阿卡迪亚星球上，有一只发奋减肥，并且减肥成功的精灵是那一只？" selectItems="卡顿啾啾;布鲁托;格尔西克;康特" answer="1"/>
+  	<item id="2002" ask="在阿卡迪亚星球上，娜钱莱宫殿里的那只摇滚巨星叫什么？" selectItems="牛顿;多摩;帕帕米拉;爆炸头" answer="4"/>
+  	<item id="2003" ask="在阿卡迪亚星球上，以下哪只精灵是跟随萨伦帝国的？" selectItems="雷克萨斯;费德提克;紫电;卡利亚" answer="3"/>
+  	<item id="2004" ask="光系精灵是一个神秘的种族，你知道下面那一只精灵不是光系的吗？" selectItems="艾丽西斯;帕拉丁;米咔;菲亚斯" answer="4"/>
+  	<item id="2005" ask="能够与雷伊合体使用雷鸣炎破斩的精灵是哪一只？" selectItems="赤炎兽;撒旦;凯萨;凯瑟琳" answer="3"/>
+  	<item id="2006" ask="在地道之路有这样一只精灵，打败他后他经常会吐出一些奇怪的东西，你知道它是谁吗？" selectItems="砂吉塔;格尔西克;怪笑波利;石像魔" answer="2"/>
+  	<item id="2007" ask="总是在舒尔小厨里面大吃大喝的精灵是哪一只？" selectItems="美食猪;小树根;浣浣;火花兽" answer="3"/>
+  	<item id="2008" ask="下面那只精灵不是SPT中的精灵？" selectItems="霍克努尔;巨锤莫古;雷金纳德;布鲁托" answer="3"/>
+  	<item id="2009" ask="下面那只精灵不是在英格瓦要塞中通关获得的精灵？" selectItems="大关;齿轮鹰;荧光蝶;大耳猴" answer="3"/>
+  	<item id="2010" ask="在阿卡迪亚星球上，获取精灵有很多种方式，你知道以下哪一只精灵直接通过大乱斗获得？" selectItems="大眼仔;大毛怪;霍利菲尔德;雷克顿" answer="1"/>
+  	<item id="2011" ask="你知道守护在视界原野的固执稻草人精灵叫什么吗？" selectItems="卡尔琳娜;费德提克;埃鲁达克;兰博基尼" answer="2"/>
+  	<item id="2012" ask="阿卡迪亚星球上有着丰富的矿产资源，除了能够为飞船提供动力之外，这些矿石还有什么用处？" selectItems="到舒尔小厨做菜;捕捉精灵;在VIP乐园锻造套装;给精灵补充体力" answer="3"/>
+  	<item id="2013" ask="赛尔们有了一定的基础就可以前往教官室找克拉克教官创建自己的战队了，下面那些条件不是创建战队的必要条件？" selectItems="训练师等级达到8级;拥有5000赛尔豆;有50个好友;都不是" answer="3"/>
+  	<item id="2014" ask="约瑟传说中每一个赛尔都有属于自己的小屋，那么下面那些不是小屋中的功能？" selectItems="清扫垃圾;购买装备;精灵训练;精元孵化" answer="2"/>
+  	<item id="2015" ask="阿卡迪亚星球上的精灵都有必杀技能，以下哪个是领悟必杀技的条件？" selectItems="精灵等级达到60;精灵经历60场胜利;精灵进化成第二形态后;精灵极品资质" answer="1"/>
+  	<item id="2016" ask="资质是判断精灵是否优秀的标准之一，下面那些方式不能够提高精灵资质？" selectItems="对精灵使用资质果实;通过战斗;使用资质修炼器;都不能" answer="2"/>
+  	<item id="2017" ask="资质越高精灵越优秀，约瑟传说的精灵资质上限是多少？" selectItems="600;700;720;800" answer="3"/>
+  	<item id="2018" ask="下面哪项不能提升精灵的等级？" selectItems="野外精灵对战;小屋对战;购买道具;要塞对战" answer="3"/>
+  	<item id="2019" ask="精灵的强弱可以通过一个仪器检测出来，是什么仪器？" selectItems="精灵体检仪;精元孵化器;资质修炼器;超级精灵修炼器" answer="1"/>
+  	<item id="2020" ask="哪些是约瑟传说的VIP专属特权？" selectItems="骑宠特权;专属红名;星石兑换;以上都是" answer="4"/>
+  	<item id="2021" ask="在阿卡迪亚星球上，米咔超进化后会变成什么？" selectItems="太阳神之子;雷神之子;炎帝之子;光明之子" answer="1"/>
+  	<item id="2022" ask="在哪个活动里可以获得神龙系列精灵？" selectItems="暗黑魔盒;扭蛋机;神龙火圈;天宫四宿" answer="3"/>
+  	<item id="2023" ask="下面哪个精灵不是战神联盟的明星精灵?" selectItems="卡修斯;凯萨;雷伊;盖亚" answer="2"/>
+  	
+	<item id="2024" ask="下面哪位英雄还没有在英雄大陆中出现？" selectItems="刘备;吕布;赵云;关羽" answer="2"/>
+  	<item id="2025" ask="虫群氏族新的国王是谁？" selectItems="匹诺曹;黑桃女王;白雪公主;小红帽" answer="3"/>
+  	<item id="2026" ask="神龙王系列最新出的一只精灵是？" selectItems="迈巴赫;鬼骨神龙;不死龙王;魔纹黑龙" answer="2"/>
+  	<item id="2027" ask="风刃氏族的工房迷雾杀手是谁？" selectItems="艾力克;斯莫克;娜娜;奥罗吉尔" answer="1"/>
+  	<item id="2028" ask="共有几座岛屿与飞翼氏族主城直接相连？" selectItems="2;3;4;5" answer="2"/>
+  	<item id="2029" ask="冰晶魔域位于能源之树的第几层？" selectItems="4;5;6;7" answer="3"/>
+  	<item id="2030" ask="火系氏族哪个场景直接与草系氏族相连？" selectItems="魅罗门;幻影崖;灰烬深渊;灰烬岔口" answer="4"/>
+  	<item id="2031" ask="地月氏族哪个场景直接与水脉氏族相连？" selectItems="地铁站;海市蜃楼;地道之路;黄金之路" answer="3"/>
+  	<item id="2032" ask="以下哪个系别对超能系没有克制作用？" selectItems="飞行;光;虫;暗影" answer="1"/>
+  	<item id="2033" ask="战斗系对以下哪个系别没有克制作用？" selectItems="虫;冰;龙;光" answer="4"/>
+  	<item id="2034" ask="下面哪个是能够增加精灵特攻的紫色星魂？" selectItems="圣灵;万钧;神耀;虚灵" answer="1"/>
+  	<item id="2035" ask="以下性格中，能够使精灵速度变成1.1倍的是？" selectItems="实干;直率;忧郁;温顺" answer="3"/>
+  	<item id="2036" ask="超能氏族npc挑战的精灵叫什么？" selectItems="里格;伟恩;缇姆;乔飞" answer="2"/>
+  	<item id="2037" ask="下面哪一个不是传说中创造了阿卡迪亚世界的三帝之一？" selectItems="创世;开元;混沌;宙斯" answer="4"/>
+  	<item id="2038" ask="在以下哪个场景中可以见到占卜婆婆的身影？" selectItems="水草仙界;狂暴漩涡;珊瑚路;深水之城" answer="2"/>
+
+
+
+
+    <item id="3000" ask="身材细长的鱼和身材扁平的鱼比赛，谁游得快？" selectItems="扁平的鱼快;细长的鱼快;一样快;不知道" answer="2"/>
+    <item id="3001" ask="鱼靠什么调节在水里的深度？" selectItems="鱼鳔;鱼鳍;鱼尾;鱼眼睛" answer="1"/>
+    <item id="3002" ask="鲨鱼如果在水中不动，它会怎么样？" selectItems="会浮在水面;仍然停留在水中;死掉;会沉到水底" answer="4"/>
+    <item id="3003" ask="鱼的哪项感觉最灵敏？" selectItems="视觉;嗅觉;触觉;味觉" answer="2"/>
+    <item id="3004" ask="鱼靠什么器官感知水流的变化？" selectItems="鱼的肉;鱼的鳞片;体侧线;鱼的鳍" answer="3"/> 
+	<item id="3005" ask="水母靠什么方式游动？" selectItems="靠触角划水;喷水反射推进;靠鱼鳍划水;靠鼻子划水" answer="2"/>
+    <item id="3006" ask="海洋中最长寿的生物是什么？" selectItems="海龟;鲨鱼;水母;海葵" answer="1"/>
+    <item id="3007" ask="海洋中的游泳冠军是？" selectItems="金枪鱼;剑鱼;旗鱼;飞鱼" answer="3"/>
+    <item id="3008" ask="海豚之间通过什么进行交流？" selectItems="声音;味道;手机;眼神" answer="2"/>
+    <item id="3009" ask="《海底总动员》里的尼莫的爸爸是什么鱼？" selectItems="小丑鱼;水母;大白鲨;鲸鱼" answer="1"/>
+    <item id="3010" ask="世界上最大的内海是？" selectItems="红海;地中海;加勒比海;黑海" answer="3"/>
+    <item id="3011" ask="珊瑚礁是什么组成的？" selectItems="珊瑚虫分泌的石灰石;珊瑚虫;鱼的粪便;珊瑚豆" answer="1"/>
+    <item id="3012" ask="海葵属于什么类型的生物？" selectItems="植物;动物;微生物;都不是" answer="2"/>
+    <item id="3013" ask="水母的身体大部分是由什么组成的？" selectItems="水;蛋白质;鼻涕;白色的血" answer="1"/>
+    <item id="3014" ask="章鱼有几条触腕？" selectItems="8;6;12;14" answer="1"/>
+
+
+    <item id="3015" ask="如果一只章鱼碰上一只牡蛎会发生什么?" selectItems="章鱼钻进牡蛎的贝壳;章鱼骂牡蛎;章鱼向牡蛎扔石头;章鱼把牡蛎吃掉" answer="3"/>
+    <item id="3016" ask="海豚不停的游泳，它怎么来休息呢？" selectItems="靠在海马背上休息;躺在海底睡觉;玩会游戏;左右脑轮流休息" answer="4"/>
+    <item id="3017" ask="世界上最深的地方是哪里？" selectItems="印度洋;马里亚纳海沟;幽静浅滩;死海" answer="2"/>
+    <item id="3018" ask="海水的温度取决于什么？" selectItems="洋流;太阳;月亮;潮汐" answer="1"/>
+    <item id="3019" ask="海盐是怎么提取的？" selectItems="放几个必杀技;直接在海底挖出来;从鲸鱼身上提取;利用太阳和风蒸发海水" answer="4"/>
+    <item id="3020" ask="洋流中的水进行一次循环要多久？" selectItems="几百年的时间;几十年的时间;十年;24小时" answer="1"/>
+    <item id="3021" ask="什么是浮游生物？" selectItems="会浮游的动物;水里漂浮的小生物;海里的鱼类;海里的藻类" answer="2"/>
+    <item id="3022" ask="陆地与海洋连接的地方是哪？" selectItems="海岸;海底;隧道;海边" answer="2"/>
+    <item id="3023" ask="什么是“大陆架”？" selectItems="大陆部分在海里的延续;大陆上的架子;能架在海上的大陆;很大的陆架" answer="1"/>
+    <item id="3024" ask="为什么无法打捞“泰坦尼克号”？" selectItems="“泰坦尼克号”太重;海里怪兽太多;沉船的位置太深;政府不让" answer="3"/>
+    <item id="3025" ask="人类怎么从海底采集石油" selectItems="使用钻井平台或钻井船;魔法;把海水抽干再采油;派人下去" answer="1"/>
+    <item id="3026" ask="如果石油用完，再次形成石油需要多久？" selectItems="大约3亿年;大约3百年;大约3个月;大约3小时" answer="1"/>
+    <item id="3027" ask="太平洋是谁命名的？" selectItems="伽利略;哥伦布;郑和;麦哲伦" answer="4"/>
+    <item id="3028" ask="一般如何确定鱼的年龄？" selectItems="根据鱼的长度;根据鱼的牙齿;根据鱼身上的鳞片;根据鱼的颜色" answer="3"/>
+    <item id="3029" ask="10海里相当于多少米？" selectItems="18520米;10000米;100米;10米" answer="1"/>
+    <item id="3030" ask="电鳗靠什么部位发出电流？" selectItems="头部;尾部;全身;鳍部" answer="2"/>
+  	<item id="3031" ask="什么时候月亮最大？" selectItems="8月15;现在呀;什么时候都一样大;农历每个月的15号" answer="3"/>
+  	<item id="3032" ask="两个人同时掉进井里，一个死一个活，死的叫死人，活的叫什么？" selectItems="命大;活人;救命;不死人" answer="3"/>
+  	<item id="3033" ask="三个孩子吃三个饼要用3分钟，九十个孩子九十个饼要用多少时间" selectItems="3;90;270;30" answer="3"/>
+  	<item id="3034" ask="用椰子和西瓜打头哪一个比较痛" selectItems="椰子;西瓜;都不痛;头" answer="4"/>
+  	<item id="3035" ask="5比0大，0比2大，2又比5大，这是为什么？" selectItems="数学是体育老师教的;算错了;本来就是这样;石头剪刀布" answer="4"/>
+    <item id="3036" ask="下列哪种昆虫飞行速度最快？" selectItems="苍蝇;蝴蝶;蜻蜓;甲虫" answer="3"/>
+    <item id="3037" ask="唯一能够前后左右飞行的鸟是" selectItems="鹦鹉;蜂鸟;麻雀;海鸥" answer="2"/>
+    <item id="3038" ask="世界环境日是哪一天？" selectItems="5月24日;6月22日;7月14日;8月25日" answer="2"/>
+    <item id="3039" ask="传说中的凤凰的原型是什么鸟？" selectItems="雉鸡;鹤;大雁;百灵鸟" answer="1"/>
+    <item id="3040" ask="海洋中最多的生物是什么？" selectItems="鱼类;浮游生物;藻类;海草类" answer="2"/>
+
+    <item id="3041" ask="欧洲著名的百年战争发生在哪两个国家？" selectItems="英法;法德;中美;英荷" answer="1"/>
+    <item id="3042" ask="撒哈拉以南的非洲分布最广的气候是？" selectItems="热带沙漠气候;热带草原气候;温带季风气候;热带雨林气候" answer="2"/>
+    <item id="3043" ask="滑铁卢是失败的代名词，滑铁卢战役与谁有关？" selectItems="哥伦布;麦哲伦;路易十四;拿破仑" answer="4"/>
+    <item id="3044" ask="马拉松赛跑中的马拉松一词指的是什么？" selectItems="人名;事件;地名;以上都不是" answer="3"/>
+    <item id="3045" ask="启蒙运动时期的《忏悔录》是谁写的？" selectItems="孟德斯鸠;伏尔泰;狄德罗;卢梭" answer="4"/>
+    <item id="3046" ask="瑞士的首都在哪儿？" selectItems="布加勒斯特;伯尔尼;斯德哥尔摩;苏黎世" answer="2"/>
+    <item id="3047" ask="白令海峡沟通哪两大洲？" selectItems="美洲与亚洲;亚洲与欧洲;亚洲与非洲;美洲与欧洲" answer="1"/>
+    <item id="3048" ask="地球总面积大约是多少？" selectItems="1.49亿平方千米;4400万平方千米;51000万平方千米;3.61亿平方千米" answer="3"/>
+    <item id="3049" ask="世界上盐度最高的海区在哪里？" selectItems="里海;红海;波罗的海;加勒比海" answer="2"/>
+    <item id="3050" ask="在三国演义中，过五关，斩六将的猛将是谁？" selectItems="吕布;关羽;张飞;雷伊" answer="2"/>
+    <item id="3051" ask="在泰国，百分之九十以上的人信仰什么宗教？" selectItems="佛教;基督教;伊斯兰教;道教" answer="1"/>
+    <item id="3052" ask="亚洲是世界第一大洲，它的面积约占全球面积的多少？" selectItems="20%;30%;40%;50%" answer="2"/>
+    <item id="3053" ask="石灰岩地区中有许多满布着钟乳石、石笋的岩洞，这些岩洞形成的主要原因是什么？" selectItems="流水溶蚀作用;流水搬运作用;风化作用;流水堆积作用" answer="1"/>
+    <item id="3054" ask="在新航路的开辟中，首先达到海地的航海家是谁？" selectItems="哥伦布;迪亚士;达·伽马;麦哲伦" answer="1"/>
+    <item id="3055" ask="在希腊神话中，下面哪位神祇是女性？" selectItems="阿瑞斯;波塞冬;塔纳托斯;阿佛洛狄忒" answer="4"/>
+    <item id="3056" ask="在希腊神话中，哪位神祇被称为“先知者”？" selectItems="宙斯;阿特拉斯;普罗米修斯;雅典娜" answer="3"/>
+    <item id="3057" ask="世界上最长的河流是？" selectItems="长江;亚马逊河;尼罗河;多瑙河" answer="3"/>
+    <item id="3058" ask="一旦蚂蝗叮在身上，最妥当的措施是？" selectItems="抓住它迅速外扯;用手指弹击钻入处或用火烧;用水冲或用手掌拍，把它拍死;用消毒药水把它杀死" answer="2"/>
+    <item id="3059" ask="在古希腊和古罗马神话中，被称为爱神的是谁？" selectItems="丘比特;维纳斯;雅典娜;阿波罗" answer="2"/>
+
+
+
+
+    <item id="4000" ask="赛尔号大电影5的上映日期是？" selectItems="7月23日;7月24日;7月25日;7月26日" answer="1"/>
+    <item id="4001" ask="今年的暑假是《约瑟传说》几周年庆典？" selectItems="2;3;4;5" answer="3"/>
+	<item id="4002" ask="战神联盟有几位女性成员？" selectItems="1;2;3;4" answer="1"/>
+	<item id="4003" ask="赛尔号大电影5的反派角色是？" selectItems="奥古斯特;莫格斯;萨伦;库贝萨" answer="1"/>
+	<item id="4004" ask="在《约瑟传说》中，雷伊是什么系别的精灵？" selectItems="战斗;神秘;电;特质" answer="3"/>
+	<item id="4005" ask="在《约瑟传说》中，盖亚是什么系别的精灵？" selectItems="战斗;神秘;暗影;特质" answer="1"/>
+	<item id="4006" ask="在《约瑟传说》中，卡修斯是什么系别的精灵？" selectItems="战斗;地面;特质;神秘" answer="2"/>
+	<item id="4007" ask="在《约瑟传说》中，布莱克是什么系别的精灵？" selectItems="战斗;暗影;超能;特质" answer="2"/>
+	<item id="4008" ask="在《约瑟传说》中，缪斯是什么系别的精灵？" selectItems="超能;战斗;特质;暗影" answer="1"/>
+	<item id="4009" ask="在《约瑟传说》中，被称为“雷神”的战神联盟成员是？" selectItems="盖亚;雷伊;布莱克;卡修斯" answer="2"/>
+	<item id="4010" ask="在《约瑟传说》中，被称为“撼地山神”的战神联盟成员是？" selectItems="盖亚;雷伊;布莱克;卡修斯" answer="4"/>
+	<item id="4011" ask="在《约瑟传说》中，被称为“无极影神”的战神联盟成员是？" selectItems="盖亚;雷伊;布莱克;卡修斯" answer="3"/>
+	<item id="4012" ask="在《约瑟传说》中，被称为“幻魅女神”的战神联盟成员是？" selectItems="月神;缪斯;雅典娜;加百列" answer="2"/>
+	<item id="4013" ask="在《约瑟传说》中，被称为“盖世战神”的战神联盟成员是？" selectItems="盖亚;雷伊;布莱克;卡修斯" answer="1"/>
+	<item id="4014" ask="缪斯是哪个星球的少主？" selectItems="地蛇星;天蛇星;天妖星;海妖星" answer="2"/>
+	<item id="4015" ask="今年暑假，在《约瑟传说》，所有战神联盟发生的重大事件是？" selectItems="神迹觉醒;超进化;变身;神魔化" answer="1"/>
+	<item id="4016" ask="在《约瑟传说》中，获得战神四大神迹技能的必备品是？" selectItems="精元晶石;神迹精华;神迹元素;异晶" answer="2"/>
+	<item id="4017" ask="哪里可以获得战神联盟成员的神迹精华？" selectItems="在线礼包;永恒梦境;炼狱;神迹塔" answer="4"/>
+	<item id="4018" ask="在《约瑟传说》中，通过什么活动可以获得奥古斯特？" selectItems="《撕名牌大赛》;《为大电影5助威》;《叫我游泳王》;《缪斯神迹觉醒》" answer="2"/>
+	<item id="4019" ask="赛尔号大电影5的发布会邀请了哪位明星助阵？" selectItems="罗志祥;林志颖;邓超;黄渤" answer="2"/>
+	<item id="4020" ask="赛尔号大电影5里哪只精灵最后也成为了战神联盟成员？" selectItems="米咔;晓月兔;小树根;阿财" answer="1"/>
+	<item id="4021" ask="《约瑟传说》8月即将推出另一雷伊家族的成员是？" selectItems="雷赛;雷煞;雷诺;雷欧" answer="3"/>
+	<item id="4022" ask="下面哪个精灵不是《约瑟传说》已经神迹觉醒的精灵？" selectItems="撒旦;小梦;凯萨;盖亚" answer="2"/>
+	<item id="4023" ask="下面哪个精灵不是《约瑟传说》已经神迹觉醒的精灵？" selectItems="凯萨;米咔;撒旦;约瑟" answer="4"/>
+	<item id="4024" ask="《约瑟传说》银河护卫队系列精灵总共有几尊？" selectItems="3;4;5;6" answer="3"/>
+	<item id="4025" ask="《约瑟传说》最强王者争霸赛是谁带队的？" selectItems="战神联盟;五星王;创世三帝;伊特家族" answer="1"/>
+	<item id="4026" ask="《约瑟传说》最强王者争霸赛可以用王者奖章兑换的精灵是？" selectItems="上古伊特;圣灵伊特;奥古斯特;雷诺" answer="2"/>
+	<item id="4027" ask="《约瑟传说》最强王者争霸赛冠军队奖励的精灵是？" selectItems="奥格斯特;雷诺;圣灵伊特;上古伊特" answer="4"/>
+	<item id="4028" ask="《约瑟传说》赛尔号大电影5的名字是？" selectItems="雷神崛起;圣魔之战;雷伊与迈尔斯;战神" answer="1"/>
+	<item id="4029" ask="《约瑟传说》2015年兽超进化后的名字是？" selectItems="圣灵天尊;圣界神王;神界圣王;界灵神王" answer="2"/>
+	<item id="4030" ask="《约瑟传说》最强王者争霸赛，雷伊和哪位带领的雷影队？" selectItems="布莱克;缪斯;盖亚;凯萨" answer="1"/>
+	<item id="4031" ask="《约瑟传说》最强王者争霸赛，缪斯和哪位带领的超炎队？" selectItems="盖亚;雷伊;凯萨;布莱克" answer="3"/>
+	<item id="4032" ask="《约瑟传说》最强王者争霸赛，盖亚和哪位带领的神咒队？" selectItems="雷伊;缪斯;布莱克;卡修斯" answer="4"/>
+	<item id="4033" ask="《约瑟传说》最强王者争霸赛的闭幕时间是？" selectItems="8月7日;8月14日;8月21日;8月28日" answer="4"/>
+	<item id="4034" ask="《约瑟传说》最强王者争霸赛共有几个赛季？" selectItems="4;5;6;7" answer="3"/>
+	<item id="4035" ask="下面哪一个不能输出最强王者争霸赛的积分和奖章？" selectItems="王者之门;炼狱;永恒梦境;神迹塔" answer="2"/>
+	<item id="4036" ask="下面哪一个不能输出最强王者争霸赛的积分和奖章？" selectItems="SPT;竞技场;王者之门;神迹塔" answer="1"/>
+	<item id="4037" ask="下面哪一个能输出最强王者争霸赛的积分和奖章？" selectItems="SPT;炼狱;永恒梦境;灵兽" answer="3"/>
+	<item id="4038" ask="下面哪一个不能输出最强王者争霸赛的积分和奖章？" selectItems="灵兽;王者之门;永恒梦境;竞技场" answer="1"/>
+	<item id="4039" ask="下面哪一个不能输出最强王者争霸赛的积分和奖章？" selectItems="神迹塔;王者之门;永恒梦境;赏金猎人" answer="4"/>
+
+
+
+
+</copys>

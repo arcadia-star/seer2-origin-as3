@@ -1,0 +1,1304 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- itemId：物品ID -->
+<!-- petId：精灵ID -->
+<!-- swapId：兑换ID -->
+<gads>
+	<gad itemId="200539" petId="4" swapId="273" />
+	<gad itemId="200540" petId="99" swapId="274" />
+	<gad itemId="200541" petId="8" swapId="275" />
+	<gad itemId="200542" petId="27" swapId="276" />
+	<gad itemId="200543" petId="5" swapId="277" />
+	<gad itemId="200544" petId="18" swapId="278" />
+	<gad itemId="200545" petId="7" swapId="279" />
+	<gad itemId="200546" petId="10" swapId="309" />
+	<gad itemId="200547" petId="71" swapId="310" />
+	<gad itemId="200548" petId="8" swapId="311" />
+	<gad itemId="200549" petId="11" swapId="312" />
+	<gad itemId="200550" petId="17" swapId="313" />
+	<gad itemId="200551" petId="14" swapId="314" />
+	<gad itemId="200552" petId="13" swapId="315" />
+	<gad itemId="200553" petId="16" swapId="316" />
+	<gad itemId="200554" petId="20" swapId="317" />
+	<gad itemId="200559" petId="57" swapId="353" />
+	<gad itemId="200560" petId="89" swapId="352" />
+	<gad itemId="200561" petId="61" swapId="351" />
+	<gad itemId="200562" petId="88" swapId="358" />
+	<gad itemId="200580" petId="31" swapId="460" />
+	<gad itemId="200581" petId="114" swapId="461" />
+	<gad itemId="200582" petId="40" swapId="479" />
+	<gad itemId="200583" petId="41" swapId="480" />
+	<gad itemId="200584" petId="42" swapId="481" />
+	<gad itemId="200585" petId="43" swapId="482" />
+	<gad itemId="200586" petId="44" swapId="483" />
+	<gad itemId="200587" petId="45" swapId="484" />
+	<gad itemId="200588" petId="46" swapId="485" />
+	<gad itemId="200589" petId="47" swapId="486" />
+	<gad itemId="200590" petId="48" swapId="487" />
+	<gad itemId="200592" petId="83" swapId="529" />
+	<gad itemId="200600" petId="21" swapId="588" />
+	<gad itemId="200593" petId="132" swapId="597" />
+	<gad itemId="200594" petId="74" swapId="629" />
+	<gad itemId="200596" petId="76" swapId="630" />
+	<gad itemId="200595" petId="75" swapId="631" />
+	<gad itemId="200597" petId="77" swapId="632" />
+	<gad itemId="200598" petId="91" swapId="636" />
+	<gad itemId="200599" petId="92" swapId="637" />
+	<gad itemId="200601" petId="133" swapId="725" />
+	<gad itemId="200613" petId="154" swapId="707" />
+	<gad itemId="200616" petId="141" swapId="718" />
+	<gad itemId="203001" petId="138" swapId="721" />
+	<gad itemId="203002" petId="137" swapId="722" />
+	<gad itemId="203003" petId="142" swapId="723" />
+	<gad itemId="203004" petId="40" swapId="726" />
+	<gad itemId="203005" petId="41" swapId="727" />
+	<gad itemId="203006" petId="42" swapId="728" />
+	<gad itemId="203007" petId="43" swapId="729" />
+	<gad itemId="203008" petId="44" swapId="730" />
+	<gad itemId="203009" petId="45" swapId="731" />
+	<gad itemId="203010" petId="46" swapId="732" />
+	<gad itemId="203011" petId="47" swapId="733" />
+	<gad itemId="203012" petId="48" swapId="734" />
+	<gad itemId="200619" petId="155" swapId="791" />
+	<gad itemId="203013" petId="88" swapId="903"/>
+	
+	<gad itemId="200615" petId="143" swapId="838"/>
+	<gad itemId="203014" petId="143" swapId="839"/>
+	<gad itemId="200628" petId="173" swapId="840"/>
+	<gad itemId="203016" petId="173" swapId="841"/>
+	
+	<gad itemId="200625" petId="80" swapId="843"/>
+	<gad itemId="200626" petId="128" swapId="844"/>
+	<gad itemId="200627" petId="146" swapId="845"/>
+	
+	<gad itemId="200801" petId="154" swapId="797" /><!--天蝎-->
+	<gad itemId="200403" petId="154" swapId="802" /><!--收费-->
+	<gad itemId="200806" petId="155" swapId="807" /><!--射手-->
+	<gad itemId="200404" petId="155" swapId="812" /><!--收费-->
+	<gad itemId="200630" petId="156" swapId="911" />
+	<gad itemId="200808" petId="156" swapId="942" /><!--摩羯-->
+	<gad itemId="200406" petId="156" swapId="943" /><!--收费-->	
+	
+	<gad itemId="200636" petId="180" swapId="996" />
+	<gad itemId="200633" petId="145" swapId="1004" />
+	<gad itemId="200635" petId="178" swapId="998" />
+	<gad itemId="200634" petId="181" swapId="1003" />
+	<gad itemId="200640" petId="157" swapId="1005" />
+	
+	<gad itemId="200809" petId="157" swapId="1011" />
+	<gad itemId="200408" petId="157" swapId="1006" />
+<!--  swap ID重复  
+	<gad itemId="200636" petId="180" swapId="1072" />
+-->
+	<gad itemId="203017" petId="1" swapId="1075" />
+	<gad itemId="203018" petId="2" swapId="1076" />
+	<gad itemId="203019" petId="3" swapId="1077" />
+	<gad itemId="203020" petId="25" swapId="1078" />
+	<gad itemId="203003" petId="142" swapId="1079" />
+	<gad itemId="203021" petId="32" swapId="1080" />
+	<gad itemId="203022" petId="61" swapId="1081" />
+	<gad itemId="203023" petId="22" swapId="1082" />
+	<gad itemId="203024" petId="24" swapId="1083" />
+	<gad itemId="203025" petId="19" swapId="1084" />
+	
+	<gad itemId="203027" petId="38" swapId="1094" />
+	<gad itemId="200645" petId="38" swapId="1092" />
+	<gad itemId="203026" petId="115" swapId="1095" />
+	
+	<gad itemId="203028" petId="181" swapId="1096" />
+	<gad itemId="203029" petId="80" swapId="1097" />
+	<gad itemId="203030" petId="146" swapId="1098" />
+	<gad itemId="203031" petId="128" swapId="1099" />
+	<gad itemId="203032" petId="77" swapId="1100" />
+	<gad itemId="203033" petId="136" swapId="1101" />
+	<gad itemId="203034" petId="89" swapId="1102" />
+	<gad itemId="200643" petId="89" swapId="1105" />
+	<gad itemId="200644" petId="115" swapId="1093" />
+	<gad itemId="200646" petId="158" swapId="1110" />  
+	 
+	<gad itemId="200647" petId="187" swapId="1111" />   
+	<gad itemId="200648" petId="167" swapId="1112" /> 
+
+	<gad itemId="200410" petId="158" swapId="1118" />
+	<gad itemId="200810" petId="158" swapId="1113" /> 
+	
+	<gad itemId="200650" petId="50" swapId="1136" /> 
+	<gad itemId="203035" petId="50" swapId="1137" /> 
+	<gad itemId="200651" petId="49" swapId="1138" /> 
+	<gad itemId="200656" petId="149" swapId="1200" />
+	<gad itemId="200655" petId="190" swapId="1201" />
+	<gad itemId="200653" petId="159" swapId="1203" />
+	<gad itemId="203037" petId="190" swapId="1202" />
+	<gad itemId="203036" petId="49" swapId="1139" />
+	<gad itemId="200412" petId="159" swapId="1195" /><!--白羊收费-->
+	<gad itemId="200811" petId="159" swapId="1190" /><!--白羊免费-->
+	<gad itemId="200658" petId="191" swapId="1213" /><!--天宫四宿斗青龙-->
+	<gad itemId="200657" petId="192" swapId="1212" /><!--神龙火圈法拉利-->
+	<gad itemId="200659" petId="193" swapId="1216" /><!--暗月兔-->
+	<gad itemId="203038" petId="193" swapId="1220" /><!--暗月兔收费-->
+	<gad itemId="200660" petId="107" swapId="1217" /><!--乌鸦-->
+	<gad itemId="203039" petId="107" swapId="1218" /><!--乌鸦收费-->
+	<gad itemId="200661" petId="169" swapId="1219" /><!--炼狱4层精灵-->
+
+	<gad itemId="200664" petId="194" swapId="1240" /><!--九尾-->
+
+	<gad itemId="200665" petId="195" swapId="1241" /><!--月神-->
+	<gad itemId="203040" petId="195" swapId="1243" /><!--月神收费-->
+
+	<gad itemId="200666" petId="197" swapId="1242" /><!--保时捷-->
+
+	<gad itemId="200663" petId="160" swapId="1238" /><!--金牛-->
+
+	<gad itemId="200414" petId="160" swapId="1246" /><!--金牛-->
+
+	<gad itemId="200662" petId="30" swapId="1254" /><!--乌古达-->
+
+	<gad itemId="203041" petId="199" swapId="1282" /><!--通冥，奥黛丽收费-->
+	<gad itemId="203042" petId="196" swapId="1283" /><!--再生，变色蜥收费-->
+
+	<gad itemId="200668" petId="188" swapId="1284" /><!--追迫，雷奥帕德-->
+
+
+
+
+
+	<gad itemId="203044" petId="4" swapId="1295" /><!--收费-->
+	<gad itemId="203045" petId="5" swapId="1296" /><!--收费-->
+	<gad itemId="203046" petId="7" swapId="1297" /><!--收费-->
+	<gad itemId="203047" petId="8" swapId="1298" /><!--收费-->
+	<gad itemId="203048" petId="9" swapId="1299" /><!--收费-->
+	<gad itemId="203049" petId="10" swapId="1300" /><!--收费-->
+	<gad itemId="203050" petId="11" swapId="1301" /><!--收费-->
+	<gad itemId="203051" petId="13" swapId="1302" /><!--收费-->
+	<gad itemId="203052" petId="14" swapId="1303" /><!--收费-->
+	<gad itemId="203053" petId="16" swapId="1304" /><!--收费-->
+	<gad itemId="203054" petId="17" swapId="1305" /><!--收费-->
+	<gad itemId="203055" petId="18" swapId="1306" /><!--收费-->
+	<gad itemId="203056" petId="20" swapId="1307" /><!--收费-->
+	<gad itemId="203057" petId="21" swapId="1308" /><!--收费-->
+	<gad itemId="203058" petId="26" swapId="1309" /><!--收费-->
+	<gad itemId="203059" petId="27" swapId="1310" /><!--收费-->
+	<gad itemId="203060" petId="28" swapId="1311" /><!--收费-->
+	<gad itemId="203061" petId="29" swapId="1312" /><!--收费-->
+	<gad itemId="203062" petId="30" swapId="1313" /><!--收费-->
+	<gad itemId="203063" petId="31" swapId="1314" /><!--收费-->
+
+
+	<gad itemId="203064" petId="35" swapId="1315" /><!--收费-->
+
+	<gad itemId="203065" petId="36" swapId="1316" /><!--收费-->
+	<gad itemId="203066" petId="37" swapId="1317" /><!--收费-->
+
+
+	<gad itemId="203067" petId="39" swapId="1318" /><!--收费-->
+	<gad itemId="203068" petId="57" swapId="1319" /><!--收费-->
+	<gad itemId="203069" petId="58" swapId="1320" /><!--收费-->
+	<gad itemId="203070" petId="59" swapId="1321" /><!--收费-->
+	<gad itemId="203071" petId="60" swapId="1322" /><!--收费-->
+	<gad itemId="203072" petId="62" swapId="1323" /><!--收费-->
+	<gad itemId="203073" petId="63" swapId="1324" /><!--收费-->
+	<gad itemId="203074" petId="64" swapId="1325" /><!--收费-->
+	<gad itemId="203075" petId="66" swapId="1326" /><!--收费-->
+	<gad itemId="203076" petId="67" swapId="1327" /><!--收费-->
+	<gad itemId="203077" petId="68" swapId="1328" /><!--收费-->
+	<gad itemId="203078" petId="69" swapId="1329" /><!--收费-->
+	<gad itemId="203079" petId="70" swapId="1330" /><!--收费-->
+	<gad itemId="203080" petId="71" swapId="1331" /><!--收费-->
+	<gad itemId="203081" petId="72" swapId="1332" /><!--收费-->
+	<gad itemId="203082" petId="73" swapId="1333" /><!--收费-->
+	<gad itemId="203083" petId="74" swapId="1334" /><!--收费-->
+	<gad itemId="203084" petId="75" swapId="1335" /><!--收费-->	
+	<gad itemId="203085" petId="76" swapId="1336" /><!--收费-->
+	<gad itemId="203086" petId="81" swapId="1337" /><!--收费-->
+	<gad itemId="203087" petId="82" swapId="1338" /><!--收费-->
+	<gad itemId="203088" petId="83" swapId="1339" /><!--收费-->
+	<gad itemId="203089" petId="84" swapId="1340" /><!--收费-->
+	<gad itemId="203090" petId="85" swapId="1341" /><!--收费-->
+	<gad itemId="203091" petId="86" swapId="1342" /><!--收费-->
+	<gad itemId="203092" petId="87" swapId="1343" /><!--收费-->
+	<gad itemId="203093" petId="90" swapId="1344" /><!--收费-->
+	<gad itemId="203094" petId="91" swapId="1345" /><!--收费-->
+	<gad itemId="203095" petId="92" swapId="1346" /><!--收费-->
+	<gad itemId="203096" petId="93" swapId="1347" /><!--收费-->
+	<gad itemId="203097" petId="94" swapId="1348" /><!--收费-->
+	<gad itemId="203098" petId="95" swapId="1349" /><!--收费-->
+	<gad itemId="203099" petId="96" swapId="1350" /><!--收费-->
+	<gad itemId="203100" petId="97" swapId="1351" /><!--收费-->
+	<gad itemId="203101" petId="98" swapId="1352" /><!--收费-->
+	<gad itemId="203102" petId="99" swapId="1353" /><!--收费-->
+	<gad itemId="203103" petId="100" swapId="1354" /><!--收费-->
+	<gad itemId="203104" petId="101" swapId="1355" /><!--收费-->
+	<gad itemId="203105" petId="102" swapId="1356" /><!--收费-->
+	<gad itemId="203106" petId="103" swapId="1357" /><!--收费-->
+	<gad itemId="203107" petId="104" swapId="1358" /><!--收费-->
+	<gad itemId="203108" petId="105" swapId="1359" /><!--收费-->
+
+	<gad itemId="203109" petId="108" swapId="1360" /><!--收费-->
+	<gad itemId="203110" petId="109" swapId="1361" /><!--收费-->	
+	<gad itemId="203111" petId="110" swapId="1362" /><!--收费-->
+	<gad itemId="203112" petId="111" swapId="1363" /><!--收费-->
+	<gad itemId="203113" petId="112" swapId="1364" /><!--收费-->
+	<gad itemId="203114" petId="113" swapId="1365" /><!--收费-->
+	<gad itemId="203115" petId="114" swapId="1366" /><!--收费-->
+	<gad itemId="203116" petId="116" swapId="1367" /><!--收费-->
+	<gad itemId="203117" petId="117" swapId="1368" /><!--收费-->
+	<gad itemId="203118" petId="118" swapId="1369" /><!--收费-->
+	<gad itemId="203119" petId="119" swapId="1370" /><!--收费-->
+	<gad itemId="203120" petId="120" swapId="1371" /><!--收费-->
+	<gad itemId="203121" petId="121" swapId="1372" /><!--收费-->
+	<gad itemId="203122" petId="123" swapId="1373" /><!--收费-->
+	<gad itemId="203123" petId="124" swapId="1374" /><!--收费-->
+	<gad itemId="203124" petId="125" swapId="1375" /><!--收费-->
+	<gad itemId="203125" petId="126" swapId="1376" /><!--收费-->
+	<gad itemId="203126" petId="127" swapId="1377" /><!--收费-->
+	<gad itemId="203127" petId="129" swapId="1378" /><!--收费-->
+	<gad itemId="203128" petId="130" swapId="1379" /><!--收费-->
+	<gad itemId="203129" petId="131" swapId="1380" /><!--收费-->
+	<gad itemId="203130" petId="132" swapId="1381" /><!--收费-->
+	<gad itemId="203131" petId="133" swapId="1382" /><!--收费-->
+	<gad itemId="203132" petId="134" swapId="1383" /><!--收费-->
+	<gad itemId="203133" petId="135" swapId="1384" /><!--收费-->
+	<gad itemId="200607" petId="135" swapId="4180" /><!--收费-->
+
+
+
+
+
+	<gad itemId="203134" petId="139" swapId="1385" /><!--收费-->
+	<gad itemId="203135" petId="140" swapId="1386" /><!--收费-->
+	<gad itemId="203136" petId="141" swapId="1387" /><!--收费-->	
+	<gad itemId="203137" petId="144" swapId="1388" /><!--收费-->
+	<gad itemId="203138" petId="145" swapId="1389" /><!--收费-->
+
+
+	<gad itemId="203139" petId="154" swapId="1390" /><!--收费-->
+	<gad itemId="203140" petId="155" swapId="1391" /><!--收费-->
+	<gad itemId="203141" petId="156" swapId="1392" /><!--收费-->
+	<gad itemId="203142" petId="157" swapId="1393" /><!--收费-->
+
+
+
+
+
+
+
+
+
+	<gad itemId="203143" petId="158" swapId="1394" /><!--收费-->
+	<gad itemId="203144" petId="159" swapId="1395" /><!--收费-->
+	<gad itemId="203145" petId="160" swapId="1396" /><!--收费-->
+
+
+	<gad itemId="203146" petId="166" swapId="1397" /><!--收费-->
+	<gad itemId="203147" petId="167" swapId="1398" /><!--收费-->
+	<gad itemId="203148" petId="168" swapId="1399" /><!--收费-->
+	<gad itemId="203149" petId="169" swapId="1400" /><!--收费-->
+
+
+	<gad itemId="203150" petId="174" swapId="1401" /><!--收费-->
+	<gad itemId="203151" petId="175" swapId="1402" /><!--收费-->
+	<gad itemId="203152" petId="176" swapId="1403" /><!--收费-->
+	<gad itemId="203153" petId="177" swapId="1404" /><!--收费-->
+	<gad itemId="203154" petId="178" swapId="1405" /><!--收费-->
+
+
+
+	<gad itemId="203155" petId="180" swapId="1406" /><!--收费-->
+
+
+	<gad itemId="203156" petId="183" swapId="1407" /><!--收费-->
+	<gad itemId="203157" petId="187" swapId="1408" /><!--收费-->
+	<gad itemId="203158" petId="188" swapId="1409" /><!--收费-->
+	<gad itemId="203159" petId="189" swapId="1410" /><!--收费-->
+
+
+	<gad itemId="203160" petId="192" swapId="1411" /><!--收费-->
+	<gad itemId="203161" petId="194" swapId="1412" /><!--收费-->
+	<gad itemId="203162" petId="197" swapId="1413" /><!--收费-->
+	
+
+	<gad itemId="203163" petId="201" swapId="1414" /><!--火爆猴，收费-->
+	<gad itemId="203043" petId="170" swapId="1415" /><!--炼狱埃尔，收费-->
+
+
+
+	<gad itemId="200672" petId="198" swapId="1416" /><!--暗夜兔-->
+
+
+
+	<gad itemId="200676" petId="203" swapId="1433" /><!--收费,彩翼蜻蜓-->
+	<gad itemId="203164" petId="203" swapId="1434" /><!--彩翼蜻蜓-->
+
+
+	<gad itemId="203165" petId="200" swapId="1435" /><!--收费，水元素-->
+	<gad itemId="200675" petId="202" swapId="1436" /><!--SPT，特米堤-->
+
+
+
+		
+	<gad itemId="200677" petId="161" swapId="1458" /><!--免费，双子座-->
+	<gad itemId="200678" petId="171" swapId="1489" /><!--免费，汉尼拔-->
+	<gad itemId="200679" petId="204" swapId="1491" /><!--免费，猛犸象-->
+	<gad itemId="203166" petId="161" swapId="1488" /><!--收费，双子座-->
+	<gad itemId="203167" petId="171" swapId="1490" /><!--收费，汉尼拔-->
+	<gad itemId="203168" petId="204" swapId="1492" /><!--收费，猛犸象-->
+
+	<gad itemId="200416" petId="161" swapId="1483" /><!--双子收费-->
+
+
+
+	<gad itemId="200681" petId="95" swapId="1512" /><!--凯瑟-->
+	<gad itemId="200686" petId="205" swapId="1513" /><!--粽子-->
+	<gad itemId="203170" petId="205" swapId="1514" /><!--粽子收费-->
+	<gad itemId="200685" petId="206" swapId="1515" /><!--帕加-->
+	<gad itemId="203169" petId="206" swapId="1516" /><!--帕加收费-->
+	<gad itemId="200687" petId="208" swapId="1517" /><!--赫本-->
+	<gad itemId="203171" petId="208" swapId="1518" /><!--赫本收费-->
+	<gad itemId="200642" petId="183" swapId="1520" /><!--赫本-->
+	<gad itemId="203156" petId="183" swapId="1521" /><!--赫本收费-->
+	
+
+
+	<gad itemId="200688" petId="207" swapId="1532" /><!--2013.6.13火元素-->
+	<gad itemId="203173" petId="207" swapId="1533" /><!--2013.6.13火元素收费-->
+	<gad itemId="200684" petId="172" swapId="1530" /><!--2013.6.13炼狱伊利丹-->
+	<gad itemId="203172" petId="172" swapId="1531" /><!--2013.6.13炼狱伊利丹收费-->
+
+
+	<gad itemId="200689" petId="79" swapId="1549" /><!--2013.6.20螳螂-->
+	<gad itemId="203174" petId="79" swapId="1550" /><!--2013.6.20螳螂收费-->
+	<gad itemId="200690" petId="209" swapId="1551" /><!--2013.6.20瓢虫-->
+	<gad itemId="203175" petId="209" swapId="1552" /><!--2013.6.20瓢虫收费-->
+
+	<gad itemId="200418" petId="162" swapId="1580" /><!--巨蟹座魔能宝石收费-->
+	<gad itemId="200693" petId="211" swapId="1585" /><!--2013.6.28玄武-->
+	<gad itemId="203177" petId="211" swapId="1586" /><!--2013.6.28玄武收费-->
+
+
+	<gad itemId="200691" petId="162" swapId="1587" /><!--2013.6.28巨蟹-->
+	<gad itemId="203176" petId="162" swapId="1588" /><!--2013.6.28巨蟹收费-->
+
+
+	<gad itemId="200694" petId="215" swapId="1613" /><!--2013.7.05约米亚-->
+	<gad itemId="203178" petId="215" swapId="1614" /><!--2013.7.05约米亚收费-->
+	<gad itemId="200695" petId="214" swapId="1615" /><!--2013.7.05草元素-->
+	<gad itemId="203179" petId="214" swapId="1616" /><!--2013.7.05草元素收费-->
+	<gad itemId="200696" petId="212" swapId="1617" /><!--2013.7.05撒旦-->
+	<gad itemId="203180" petId="212" swapId="1618" /><!--2013.7.05撒旦收费-->
+
+
+	<gad itemId="200697" petId="217" swapId="1657" /><!--2013.7.12瑟咪娅-->
+	<gad itemId="203181" petId="217" swapId="1658" /><!--2013.7.12瑟咪收费-->
+	<gad itemId="200698" petId="219" swapId="1659" /><!--2013.7.12阿斯顿马丁-->
+	<gad itemId="203182" petId="219" swapId="1660" /><!--2013.7.12阿斯顿马丁收费-->
+
+
+
+	<gad itemId="200699" petId="220" swapId="1681" /><!--2013.7.18花焰-->
+	<gad itemId="203183" petId="220" swapId="1682" /><!--2013.7.18花焰收费-->
+	<gad itemId="200700" petId="221" swapId="1683" /><!--2013.7.18蒂姆森-->
+	<gad itemId="203184" petId="221" swapId="1684" /><!--2013.7.18蒂姆森收费-->
+	<gad itemId="200701" petId="222" swapId="1685" /><!--2013.7.18盖亚-->
+	<gad itemId="203185" petId="222" swapId="1686" /><!--2013.7.18盖亚收费-->
+
+
+
+	<gad itemId="200702" petId="224" swapId="1700" /><!--2013.7.25幽冥-->
+	<gad itemId="203186" petId="224" swapId="1701" /><!--2013.7.25幽冥收费-->
+	<gad itemId="200703" petId="225" swapId="1702" /><!--2013.7.25伊鲁达-->
+	<gad itemId="203187" petId="225" swapId="1703" /><!--2013.7.25伊鲁达收费-->
+
+
+	<gad itemId="200815" petId="163" swapId="1712" /><!--2013.8.1伊利亚斯-->
+	<gad itemId="200420" petId="163" swapId="1717" /><!--2013.8.1伊利亚斯收费-->
+
+    <gad itemId="200704" petId="163" swapId="1722" /><!--2013.8.01狮子-->
+	<gad itemId="203188" petId="163" swapId="1723" /><!--2013.8.01狮子收费-->
+	<gad itemId="200705" petId="226" swapId="1724" /><!--2013.8.01福音哥布-->
+	<gad itemId="203189" petId="226" swapId="1725" /><!--2013.8.01福音哥布收费-->
+
+
+
+
+	<gad itemId="200707" petId="227" swapId="1734" /><!--2013.8.8兰纳-->
+	<gad itemId="203190" petId="227" swapId="1735" /><!--2013.8.8兰纳收费-->
+    <gad itemId="200708" petId="228" swapId="1736" /><!--2013.8.8飓风-->
+	<gad itemId="203191" petId="228" swapId="1737" /><!--2013.8.8飓风收费-->
+	<gad itemId="200709" petId="229" swapId="1738" /><!--2013.8.8河童-->
+	<gad itemId="203192" petId="229" swapId="1739" /><!--2013.8.8河童收费-->
+
+
+
+	<gad itemId="200711" petId="223" swapId="1750" /><!--2013.8.15观星者-->
+	<gad itemId="203193" petId="223" swapId="1751" /><!--2013.8.15观星者收费-->
+
+    <gad itemId="200710" petId="231" swapId="1752" /><!--2013.8.15骤雨-->
+	<gad itemId="203194" petId="231" swapId="1753" /><!--2013.8.15骤雨收费-->
+
+	<gad itemId="200712" petId="230" swapId="1754" /><!--2013.8.15小陶-->
+	<gad itemId="203195" petId="230" swapId="1755" /><!--2013.8.15小陶收费-->
+
+
+
+
+	<gad itemId="200713" petId="234" swapId="1778" /><!--2013.8.22雷电-->
+	<gad itemId="203196" petId="234" swapId="1779" /><!--2013.8.22雷电收费-->
+
+	<gad itemId="200714" petId="235" swapId="1780" /><!--2013.8.22巴鲁金斯-->
+	<gad itemId="203197" petId="235" swapId="1781" /><!--2013.8.22巴鲁金斯收费-->
+
+
+	<gad itemId="200816" petId="164" swapId="1822" /><!--2013.8.30阿释米塔-->
+	<gad itemId="200422" petId="164" swapId="1827" /><!--2013.8.30阿释米塔收费-->
+
+	<gad itemId="200716" petId="236" swapId="1832" /><!--2013.8.30卡修斯-->
+	<gad itemId="203198" petId="236" swapId="1833" /><!--2013.8.30卡修斯收费-->
+
+	<gad itemId="200715" petId="164" swapId="1834" /><!--2013.8.30处女-->
+	<gad itemId="203199" petId="164" swapId="1835" /><!--2013.8.30处女收费-->
+
+
+
+
+	<gad itemId="200718" petId="51" swapId="1866" /><!--2013.9.5超伊特-->
+	<gad itemId="203200" petId="51" swapId="1867" /><!--2013.9.5超伊特收费-->
+
+
+
+	<gad itemId="200719" petId="242" swapId="1868" /><!--2013.9.5大毛怪-->
+	<gad itemId="203201" petId="242" swapId="1869" /><!--2013.9.5大毛怪收费-->
+
+
+
+	<gad itemId="200720" petId="241" swapId="1870" /><!--2013.9.5大眼仔-->
+	<gad itemId="203202" petId="241" swapId="1871" /><!--2013.9.5大眼仔收费-->
+
+
+	<gad itemId="200724" petId="243" swapId="1872" /><!--2013.9.5晨璨-->
+	<gad itemId="203203" petId="243" swapId="1873" /><!--2013.9.5晨璨收费-->
+
+
+
+	<gad itemId="200725" petId="245" swapId="1891" /><!--2013.9.12布克-->
+	<gad itemId="203204" petId="245" swapId="1892" /><!--2013.9.12布克收费-->
+
+	<gad itemId="200726" petId="248" swapId="1893" /><!--2013.9.12霍利-->
+	<gad itemId="203205" petId="248" swapId="1894" /><!--2013.9.12霍利收费-->
+
+	<gad itemId="200727" petId="247" swapId="1895" /><!--2013.9.12魔奇拉-->
+	<gad itemId="203206" petId="247" swapId="1896" /><!--2013.9.12魔奇拉收费-->
+
+
+	<gad itemId="200817" petId="165" swapId="1978" /><!--2013.9.27童虎-->
+	<gad itemId="200424" petId="165" swapId="1983" /><!--2013.9.27童虎收费-->
+
+
+    <gad itemId="200729" petId="165" swapId="1991" /><!--2013.9.27天秤-->
+	<gad itemId="203207" petId="165" swapId="1992" /><!--2013.9.27天秤收费-->
+
+
+
+	<gad itemId="200730" petId="52" swapId="1993" /><!--2013.9.27神伊特-->
+	<gad itemId="203208" petId="52" swapId="1994" /><!--2013.9.27神伊特收费-->
+
+
+	<gad itemId="200731" petId="252" swapId="1995" /><!--2013.9.27朱雀-->
+	<gad itemId="203209" petId="252" swapId="1996" /><!--2013.9.27朱雀收费-->
+
+
+
+	<gad itemId="200732" petId="249" swapId="1997" /><!--2013.9.27迈巴赫-->
+	<gad itemId="203210" petId="249" swapId="1998" /><!--2013.9.27迈巴赫收费-->
+
+
+	<gad itemId="200733" petId="253" swapId="1999" /><!--2013.9.27雷克-->
+	<gad itemId="203211" petId="253" swapId="2000" /><!--2013.9.27雷克收费-->
+
+
+
+
+
+	<gad itemId="200735" petId="250" swapId="2012" /><!--2013.10.10 小石怪-->
+	<gad itemId="203212" petId="250" swapId="2013" /><!--2013.10.10 小石怪收费-->
+
+
+	<gad itemId="200736" petId="255" swapId="2014" /><!--2013.10.10 初影忍者-->
+	<gad itemId="203213" petId="255" swapId="2015" /><!--2013.10.10 初影忍者收费-->
+
+
+
+
+	<gad itemId="200737" petId="273" swapId="2048" /><!--2013.10.18 异形赞格-->
+	<gad itemId="203214" petId="273" swapId="2049" /><!--2013.10.18 异形赞格收费-->
+
+
+
+	<gad itemId="200738" petId="276" swapId="2065" /><!--2013.10.25 吸血女王卡莎-->
+	<gad itemId="203215" petId="276" swapId="2066" /><!--2013.10.25 吸血女王卡莎收费-->
+
+
+	<gad itemId="200739" petId="256" swapId="2063" /><!--2013.10.25 忍者绝影-->
+	<gad itemId="203216" petId="256" swapId="2064" /><!--2013.10.25 忍者绝影收费-->
+
+
+
+	<gad itemId="200740" petId="286" swapId="2086" /><!--2013.11.01 震天虎-->
+	<gad itemId="203217" petId="286" swapId="2087" /><!--2013.11.01 震天虎收费-->
+
+
+	<gad itemId="200741" petId="277" swapId="2088" /><!--2013.11.01 僵尸博士-->
+	<gad itemId="203218" petId="277" swapId="2089" /><!--2013.11.01 僵尸博士收费-->
+
+	<gad itemId="200742" petId="53" swapId="2090" /><!--2013.11.01 特伊特-->
+	<gad itemId="203219" petId="53" swapId="2091" /><!--2013.11.01 特伊特收费-->
+
+	<gad itemId="200426" petId="286" swapId="2092" /><!--2013.11.01震天虎魔能宝石收费-->
+
+	<gad itemId="200743" petId="258" swapId="2122" /><!--2013.11.08 忍者涟漪-->
+	<gad itemId="203220" petId="258" swapId="2123" /><!--2013.11.08 忍者涟漪收费-->
+
+	<gad itemId="200427" petId="258" swapId="2116" /><!--2013.11.08 收费忍者魔能宝石-->
+	<gad itemId="200818" petId="258" swapId="2117" /><!--2013.11.08 忍者魔能宝石-->
+
+
+
+	<gad itemId="200745" petId="257" swapId="2134" /><!--2013.11.15 忍者斩灵-->
+	<gad itemId="203221" petId="257" swapId="2135" /><!--2013.11.15 忍者斩灵收费-->
+
+	<gad itemId="200747" petId="301" swapId="2136" /><!--2013.11.15 小当家-->
+	<gad itemId="203222" petId="301" swapId="2137" /><!--2013.11.15 小当家收费-->
+
+	<gad itemId="200428" petId="257" swapId="2138" /><!--2013.11.15 收费忍者斩灵魔能宝石-->
+	<gad itemId="200819" petId="257" swapId="2143" /><!--2013.11.15 忍者斩灵魔能宝石-->
+
+	<gad itemId="200748" petId="303" swapId="2156" /><!--2013.11.22 猎豹路奇-->
+	<gad itemId="203223" petId="303" swapId="2157" /><!--2013.11.22 猎豹路奇收费-->
+
+
+	<gad itemId="200749" petId="261" swapId="2154" /><!--2013.11.22 忍者百魁-->
+	<gad itemId="203224" petId="261" swapId="2155" /><!--2013.11.22 忍者百魁收费-->
+
+
+	<gad itemId="200429" petId="261" swapId="2158" /><!--2013.11.22 收费百魁魔能宝石-->
+	<gad itemId="200820" petId="261" swapId="2163" /><!--2013.11.22 免费百魁魔能宝石-->
+
+
+
+	<gad itemId="200752" petId="304" swapId="2187" /><!--2013.11.28 圣猎人-->
+	<gad itemId="203226" petId="304" swapId="2188" /><!--2013.11.28 圣猎人收费-->
+
+
+	<gad itemId="200751" petId="287" swapId="2185" /><!--2013.11.28 机甲苍龙-->
+	<gad itemId="203225" petId="287" swapId="2186" /><!--2013.11.28 机甲苍龙收费-->
+
+	<gad itemId="200431" petId="287" swapId="2178" /><!--2013.11.01苍龙魔能宝石收费-->
+
+
+
+	<gad itemId="200753" petId="310" swapId="2197" /><!--2013.12.06 圣灵师海罗-->
+	<gad itemId="203227" petId="310" swapId="2198" /><!--2013.12.06 圣灵师海罗收费-->
+
+	<gad itemId="200754" petId="306" swapId="2195" /><!--2013.12.06 半鹿人露法-->
+	<gad itemId="203228" petId="306" swapId="2196" /><!--2013.12.06 半鹿人露法收费-->
+
+
+
+
+
+	<gad itemId="200756" petId="305" swapId="2212" /><!--2013.12.13半熊人伯德-->
+	<gad itemId="203229" petId="305" swapId="2213" /><!--2013.12.13 半熊人伯德收费-->
+
+	<gad itemId="200757" petId="312" swapId="2214" /><!--2013.12.13 炼金师迪克-->
+	<gad itemId="203230" petId="312" swapId="2215" /><!--2013.12.13 炼金师迪克收费-->
+
+	<gad itemId="200758" petId="6" swapId="2208" /><!--2013.12.13 布鲁托-->
+	<gad itemId="203231" petId="6" swapId="2209" /><!--2013.12.13 布鲁托收费-->
+
+	<gad itemId="200759" petId="15" swapId="2210" /><!--2013.12.13 霍克-->
+	<gad itemId="203232" petId="15" swapId="2211" /><!--2013.12.13 霍克收费-->
+
+
+
+
+	<gad itemId="200760" petId="313" swapId="2241" /><!--2013.12.20 库贝萨-->
+	<gad itemId="203233" petId="313" swapId="2242" /><!--2013.12.20 库贝萨收费-->
+
+	<gad itemId="200761" petId="314" swapId="2243" /><!--2013.12.20 光轮圣骑天龙-->
+	<gad itemId="203234" petId="314" swapId="2244" /><!--2013.12.20 光轮圣骑天龙收费-->
+
+	<gad itemId="200762" petId="322" swapId="2245" /><!--2013.12.13 半兽人亚伦-->
+	<gad itemId="203235" petId="322" swapId="2246" /><!--2013.12.13 半兽人亚伦收费-->
+
+
+
+	<gad itemId="200433" petId="288" swapId="2263" /><!--2013.12.27 机甲赤焰收费-->
+
+
+
+
+	<gad itemId="200766" petId="325" swapId="2268" /><!--2013.12.27 布莱克-->
+	<gad itemId="203236" petId="325" swapId="2269" /><!--2013.12.27 布莱克收费-->
+
+	<gad itemId="200765" petId="288" swapId="2270" /><!--2013.12.27 赤焰-->
+	<gad itemId="203237" petId="288" swapId="2271" /><!--2013.12.27 赤焰收费-->
+
+
+	<gad itemId="200767" petId="324" swapId="2272" /><!--2013.12.27 豚鼠-->
+	<gad itemId="203238" petId="324" swapId="2273" /><!--2013.12.27 豚鼠收费-->
+
+
+	<gad itemId="200764" petId="323" swapId="2274" /><!--2013.12.27 布加迪威龙-->
+	<gad itemId="200768" petId="73" swapId="2275" /><!--2013.12.27 乔巴-->
+
+
+
+	<gad itemId="200770" petId="23" swapId="2286" /><!--2014.1.3 麦麦迪-->
+	<gad itemId="203240" petId="23" swapId="2287" /><!--2014.1.3 麦麦迪收费-->
+	<gad itemId="200769" petId="330" swapId="2288" /><!--2014.1.3 汤姆-->
+	<gad itemId="203239" petId="330" swapId="2289" /><!--2014.1.3 汤姆收费-->
+
+
+
+	<gad itemId="200771" petId="332" swapId="2307" /><!--2014.1.9 斯派克-->
+	<gad itemId="203241" petId="332" swapId="2308" /><!--2014.1.9 斯派克收费-->
+	<gad itemId="200772" petId="333" swapId="2309" /><!--2014.1.9 假面肯特-->
+	<gad itemId="203242" petId="333" swapId="2310" /><!--2014.1.9 假面肯特收费-->
+
+
+
+	<gad itemId="200773" petId="336" swapId="2342" /><!--2014.1.16 天尊-->
+	<gad itemId="203243" petId="336" swapId="2343" /><!--2014.1.16 天尊收费-->
+	<gad itemId="200774" petId="337" swapId="2344" /><!--2014.1.16 苍海霸主-->
+	<gad itemId="203244" petId="337" swapId="2345" /><!--2014.1.16 苍海霸主收费-->
+	<gad itemId="200775" petId="335" swapId="2346" /><!--2014.1.16 伊蒂娅-->
+	<gad itemId="203245" petId="335" swapId="2347" /><!--2014.1.16 伊蒂娅收费-->
+	<gad itemId="200776" petId="338" swapId="2348" /><!--2014.1.16 昔洛-->
+	<gad itemId="203246" petId="338" swapId="2349" /><!--2014.1.16 昔洛收费-->
+
+
+
+
+
+	<gad itemId="200782" petId="339" swapId="2419" /><!--2014.1.24 修罗-->
+	<gad itemId="203252" petId="339" swapId="2420" /><!--2014.1.24 修罗收费-->
+	<gad itemId="200778" petId="340" swapId="2421" /><!--2014.1.24 雷煞-->
+	<gad itemId="203247" petId="340" swapId="2422" /><!--2014.1.24 雷煞收费-->
+	<gad itemId="200777" petId="341" swapId="2423" /><!--2014.1.24 小木马-->
+	<gad itemId="203251" petId="341" swapId="2424" /><!--2014.1.24 小木马收费-->
+
+
+	<gad itemId="200780" petId="351" swapId="2452" /><!--2014.1.26 黑天马-->
+	<gad itemId="203249" petId="351" swapId="2453" /><!--2014.1.26 黑天马收费-->
+
+
+	<gad itemId="200779" petId="289" swapId="2454" /><!--2014.1.26 光轮-->
+	<gad itemId="203248" petId="289" swapId="2455" /><!--2014.1.26 光轮收费-->
+
+
+	<gad itemId="200783" petId="353" swapId="2456" /><!--2014.1.26 鞭炮兽-->
+	<gad itemId="203253" petId="353" swapId="2457" /><!--2014.1.26 鞭炮兽收费-->
+
+	<gad itemId="200784" petId="355" swapId="2458" /><!--2014.1.26 约瑟-->
+	<gad itemId="203254" petId="355" swapId="2459" /><!--2014.1.26 约瑟收费-->
+
+
+	<gad itemId="200781" petId="349" swapId="2460" /><!--2014.1.26 缪斯-->
+	<gad itemId="203250" petId="349" swapId="2461" /><!--2014.1.26 缪斯收费-->
+
+	<gad itemId="200785" petId="352" swapId="2462" /><!--2014.1.26 冥皓-->
+	<gad itemId="203255" petId="352" swapId="2463" /><!--2014.1.26 冥皓收费-->
+
+	<gad itemId="200786" petId="346" swapId="2464" /><!--2014.1.26 雷利斯-->
+	<gad itemId="203256" petId="346" swapId="2465" /><!--2014.1.26 雷利斯收费-->
+
+	<gad itemId="200787" petId="345" swapId="2466" /><!--2014.1.26 卢卡斯-->
+	<gad itemId="203257" petId="345" swapId="2467" /><!--2014.1.26 卢卡斯收费-->
+
+	<gad itemId="200435" petId="289" swapId="2447" /><!--2014.1.26 光轮收费-->
+
+
+
+	<gad itemId="200788" petId="12" swapId="2498" /><!--2014.2.13 阿卡-->
+	<gad itemId="203258" petId="12" swapId="2499" /><!--2014.2.13 阿卡收费-->
+
+
+	<gad itemId="200793" petId="123" swapId="2500" /><!--2014.2.13 帕拉-->
+
+
+	<gad itemId="200789" petId="360" swapId="2490" /><!--2014.2.13 炎煞-->
+	<gad itemId="203259" petId="360" swapId="2491" /><!--2014.2.13 炎煞收费-->
+
+
+	<gad itemId="200790" petId="358" swapId="2492" /><!--2014.2.13 圣冰骑士-->
+	<gad itemId="203260" petId="358" swapId="2493" /><!--2014.2.13 圣冰骑士收费-->
+
+
+	<gad itemId="200791" petId="354" swapId="2494" /><!--2014.2.13 礼花兽-->
+	<gad itemId="203261" petId="354" swapId="2495" /><!--2014.2.13 礼花兽收费-->
+
+
+	<gad itemId="200792" petId="359" swapId="2496" /><!--2014.2.13 丘比特-->
+	<gad itemId="203262" petId="359" swapId="2497" /><!--2014.2.13 丘比特收费-->
+
+	<gad itemId="200794" petId="365" swapId="2538" /><!--2014.2.20 哈莫雷特-->
+	<gad itemId="203265" petId="365" swapId="2539" /><!--2014.2.20 哈莫雷特收费-->
+
+	<gad itemId="200795" petId="54" swapId="2540" /><!--2014.2.20 草伊特-->
+	<gad itemId="203263" petId="54" swapId="2541" /><!--2014.2.20 草伊特收费-->
+
+	<gad itemId="200798" petId="362" swapId="2542" /><!--2014.2.20 地煞-->
+	<gad itemId="203266" petId="362" swapId="2543" /><!--2014.2.20 地煞收费-->
+
+	<gad itemId="200799" petId="363" swapId="2544" /><!--2014.2.20 武煞-->
+	<gad itemId="203267" petId="363" swapId="2545" /><!--2014.2.20 武煞收费-->
+
+	<gad itemId="200800" petId="364" swapId="2546" /><!--2014.2.20 花仙-->
+	<gad itemId="203268" petId="364" swapId="2547" /><!--2014.2.20 花仙收费-->
+
+	<gad itemId="200901" petId="366" swapId="2548" /><!--2014.2.20 雪豹-->
+	<gad itemId="203269" petId="366" swapId="2549" /><!--2014.2.20 雪豹收费-->
+
+
+
+
+<!-- 米币物品和免费物品已转换，收费版本的ITEM不需要配置了 -->
+	<gad itemId="200905" petId="368" swapId="2590" /><!--2014.2.27 暗煞-->
+
+	<gad itemId="200902" petId="369" swapId="2591" /><!--2014.2.27 超煞-->
+
+	<gad itemId="200796" petId="290" swapId="2592" /><!--2014.2.27 擎天-->
+
+	<gad itemId="200906" petId="370" swapId="2593" /><!--2014.2.27 雪兔-->
+
+	<gad itemId="200904" petId="55" swapId="2594" /><!--2014.2.27 水伊特-->
+
+	<gad itemId="200903" petId="367" swapId="2595" /><!--2014.2.27 冰凤皇-->
+
+	<gad itemId="200437" petId="290" swapId="2596" /><!--2014.2.27 擎天魔能宝石-->
+
+
+	<gad itemId="200912" petId="1" swapId="2621" /><!--2014.3.7 迪兰-->
+
+	<gad itemId="200913" petId="2" swapId="2622" /><!--2014.3.7 休咻-->
+
+	<gad itemId="200914" petId="3" swapId="2623" /><!--2014.3.7 拉奥-->
+
+
+	<gad itemId="200907" petId="372" swapId="2616" /><!--2014.3.7 阿波罗-->
+
+	<gad itemId="200910" petId="371" swapId="2617" /><!--2014.3.7 赫-->
+
+	<gad itemId="200911" petId="374" swapId="2620" /><!--2014.3.7 奥黛丽赫本-->
+
+	<gad itemId="200909" petId="56" swapId="2618" /><!--2014.3.7 火伊特-->
+
+	<gad itemId="200908" petId="373" swapId="2619" /><!--2014.3.7 樱花熊-->
+
+	<gad itemId="200920" petId="65" swapId="2677" /><!--2014.3.14 尼娅-->
+
+	<gad itemId="200918" petId="376" swapId="2672" /><!--2014.3.14 铁甲墨菲-->
+
+	<gad itemId="200915" petId="377" swapId="2673" /><!--2014.3.14 雅典娜-->
+
+	<gad itemId="200917" petId="378" swapId="2674" /><!--2014.3.14 噬星少主-->
+
+	<gad itemId="200919" petId="379" swapId="2675" /><!--2014.3.14 丘布-->
+
+	<gad itemId="200916" petId="380" swapId="2676" /><!--2014.3.14 爱德华-->
+
+	<gad itemId="200921" petId="387" swapId="2699" /><!--2014.3.21 潘多拉-->
+
+	<gad itemId="200922" petId="384" swapId="2700" /><!--2014.3.21 不死龙王-->
+
+	<gad itemId="200923" petId="388" swapId="2701" /><!--2014.3.21 草莓猫-->
+
+	<gad itemId="200924" petId="382" swapId="2702" /><!--2014.3.21 米尔斯-->
+
+	<gad itemId="200925" petId="383" swapId="2703" /><!--2014.3.21 切希尔-->
+
+	<gad itemId="200926" petId="386" swapId="2704" /><!--2014.3.21 占星者-->
+
+	<gad itemId="200932" petId="389" swapId="2728" /><!--2014.3.28 冥界魔犬-->
+
+	<gad itemId="200931" petId="390" swapId="2729" /><!--2014.3.28 菠萝猫-->
+
+	<gad itemId="200927" petId="391" swapId="2730" /><!--2014.3.28 魔煞帝王-->
+
+	<gad itemId="200930" petId="392" swapId="2731" /><!--2014.3.28 巴比隆-->
+
+	<gad itemId="200928" petId="393" swapId="2732" /><!--2014.3.28 宙斯-->
+
+ 	<gad itemId="200929" petId="291" swapId="2733" /><!--2014.3.28 傲世-->
+
+ 	<gad itemId="201081" petId="394" swapId="2739" /><!--2014.3.28 小丑米咔-->
+
+
+
+	<gad itemId="200439" petId="291" swapId="2734" /><!--2014.3.27 傲世魔能宝石-->
+
+
+ 	<gad itemId="200940" petId="33" swapId="2777" /><!--2014.4.4 莫古-->
+
+
+
+
+
+ 	<gad itemId="200933" petId="400" swapId="2778" /><!--2014.4.4 加百列-->
+
+ 	<gad itemId="200934" petId="396" swapId="2779" /><!--2014.4.4 上古雷尊-->
+
+ 	<gad itemId="200935" petId="395" swapId="2780" /><!--2014.4.4 温柏-->
+
+ 	<gad itemId="200936" petId="397" swapId="2781" /><!--2014.4.4 死神镰刀-->
+
+ 	<gad itemId="200937" petId="398" swapId="2782" /><!--2014.4.4 奇异猫-->
+
+ 	<gad itemId="200938" petId="399" swapId="2783" /><!--2014.4.4 劫-->
+
+ 	<gad itemId="200939" petId="401" swapId="2784" /><!--2014.4.4 双面冥王-->
+
+
+ 	<gad itemId="200942" petId="403" swapId="2792" /><!--2014.4.11 萤火虫-->
+ 	<gad itemId="200944" petId="406" swapId="2793" /><!--2014.4.11 香蕉猫-->
+ 	<gad itemId="200943" petId="404" swapId="2794" /><!--2014.4.11 地魁星-->
+ 	<gad itemId="200941" petId="405" swapId="2795" /><!--2014.4.11 黑龙-->
+
+
+
+
+
+ 	<gad itemId="200948" petId="408" swapId="2814" /><!--2014.4.17 酷奇-->
+ 	<gad itemId="200945" petId="409" swapId="2815" /><!--2014.4.17 石巨人-->
+ 	<gad itemId="200947" petId="407" swapId="2816" /><!--2014.4.17 葡萄猫-->
+ 	<gad itemId="200946" petId="410" swapId="2817" /><!--2014.4.17 乔布斯-->
+
+
+
+ 	<gad itemId="200949" petId="292" swapId="2836" /><!--2014.4.25 极光-->
+ 	<gad itemId="200950" petId="414" swapId="2837" /><!--2014.4.25 远古树神-->
+ 	<gad itemId="200951" petId="412" swapId="2838" /><!--2014.4.25 地狱阎罗-->
+ 	<gad itemId="200952" petId="415" swapId="2839" /><!--2014.4.25 菲利亚斯-->
+
+	<gad itemId="200441" petId="292" swapId="2840" /><!--2014.3.27 傲世魔能宝石-->
+
+ 	<gad itemId="200956" petId="416" swapId="2870" /><!--2014.4.30 古奇-->
+ 	<gad itemId="200957" petId="350" swapId="2871" /><!--2014.4.30 黑武士-->
+ 	<gad itemId="200953" petId="419" swapId="2872" /><!--2014.4.30 战神泰坦-->
+ 	<gad itemId="200955" petId="417" swapId="2873" /><!--2014.4.30 水果猫王-->
+ 	<gad itemId="200954" petId="418" swapId="2874" /><!--2014.4.30 劳动节米咔-->
+
+ 	<gad itemId="200958" petId="424" swapId="2897" /><!--2014.5.9 维奥拉-->
+ 	<gad itemId="200959" petId="421" swapId="2898" /><!--2014.5.9 魔尊左使-->
+ 	<gad itemId="200960" petId="422" swapId="2899" /><!--2014.5.9 踏天-->
+ 	<gad itemId="200961" petId="425" swapId="2900" /><!--2014.5.9 时空霸主-->
+ 	<gad itemId="200962" petId="423" swapId="2901" /><!--2014.5.9 尼奥比-->
+
+ 	<gad itemId="200966" petId="420" swapId="2940" /><!--2014.5.16 奥德曼-->
+ 	<gad itemId="200963" petId="426" swapId="2941" /><!--2014.5.16 魔尊右使-->
+ 	<gad itemId="200964" petId="427" swapId="2942" /><!--2014.5.16 逆世盖亚-->
+ 	<gad itemId="200606" petId="147" swapId="2943" /><!--2014.5.16 目灵兽-->
+ 
+
+
+
+ 	<gad itemId="200965" petId="428" swapId="2965" /><!--2014.5.23 万劫魔尊-->
+ 	<gad itemId="200967" petId="436" swapId="2964" /><!--2014.5.23 天捷星-->
+ 	<gad itemId="200968" petId="34" swapId="2966" /><!--2014.5.23 沙皇鸟-->
+
+
+ 	<gad itemId="200969" petId="293" swapId="2979" /><!--2014.5.30 沙虎-->
+ 	<gad itemId="200970" petId="435" swapId="2980" /><!--2014.5.30 圣灵天尊-->
+ 	<gad itemId="200971" petId="438" swapId="2981" /><!--2014.5.30 哆啦a萌-->
+ 	<gad itemId="200972" petId="439" swapId="2982" /><!--2014.5.30 神粽王-->
+
+	<gad itemId="200443" petId="293" swapId="3007" /><!--2014.3.27 沙虎魔能宝石-->
+
+
+ 	<gad itemId="200973" petId="440" swapId="3021" /><!--2014.6.6 伊特王-->
+ 	<gad itemId="200974" petId="441" swapId="3022" /><!--2014.6.6 梦魇-->
+
+ 	<gad itemId="200975" petId="442" swapId="3032" /><!--2014.6.13 魔渊梦神-->
+ 	<gad itemId="200976" petId="443" swapId="3033" /><!--2014.6.6 星魂守护者-->
+
+ 	<gad itemId="200977" petId="444" swapId="3046" /><!--2014.6.20 星座之王-->
+ 	<gad itemId="200979" petId="446" swapId="3047" /><!--2014.6.20 西瓜状元-->
+
+
+
+	<gad itemId="200445" petId="444" swapId="3048" /><!--2014.6.20 星王魔能宝石-->
+
+	<gad itemId="200980" petId="294" swapId="3086" /><!--2014.6.27 暗流-->
+	<gad itemId="200981" petId="450" swapId="3087" /><!--2014.6.27 路飞-->
+
+
+
+	<gad itemId="200449" petId="294" swapId="3081" /><!--2014.6.27 暗流魔能宝石-->
+
+
+	<gad itemId="200446" petId="448" swapId="3077" /><!--2014.6.27 圣翼雷神-->
+	<gad itemId="200447" petId="449" swapId="3078" /><!--2014.6.27 帝刃雷神-->
+
+
+	<gad itemId="200982" petId="452" swapId="3111" /><!--2014.7.04 赵云-->
+	<gad itemId="200983" petId="451" swapId="3112" /><!--2014.7.04 索隆-->
+	<gad itemId="200984" petId="148" swapId="3116" /><!--2014.7.04 脉灵神-->
+
+	<gad itemId="200985" petId="453" swapId="3140" /><!--2014.7.11 邪神-->
+	<gad itemId="200986" petId="454" swapId="3141" /><!--2014.7.11 白龙驹-->
+	<gad itemId="200987" petId="455" swapId="3142" /><!--2014.7.11 娜美-->
+	<gad itemId="200988" petId="25" swapId="3143" /><!--2014.7.11 晓月兔-->
+
+
+	<gad itemId="200989" petId="457" swapId="3171" /><!--2014.7.18 刘备 -->
+    <gad itemId="200990" petId="456" swapId="3172" /><!--2014.7.18 神将赵云-->
+    <gad itemId="200991" petId="458" swapId="3173" /><!--2014.7.18 香吉士-->
+    <gad itemId="200992" petId="78" swapId="3174" /><!--2014.7.18 菲亚斯-->
+
+
+    <gad itemId="200978" petId="445" swapId="3187" /><!--2014.7.21 星魂元神-->
+
+
+
+    <gad itemId="200993" petId="463" swapId="3210" /><!--2014.7.25 鬼骨神龙-->
+    <gad itemId="200994" petId="459" swapId="3211" /><!--2014.7.25 创世大帝-->
+    <gad itemId="200995" petId="461" swapId="3212" /><!--2014.7.25 帝王米咔-->
+    <gad itemId="200996" petId="460" swapId="3213" /><!--2014.7.25 的卢-->
+
+
+    <gad itemId="200997" petId="466" swapId="3232" /><!--2014.8.1 灵鹊-->
+    <gad itemId="200998" petId="467" swapId="3233" /><!--2014.8.1 开元大帝-->
+    <gad itemId="200999" petId="295" swapId="3234" /><!--2014.8.1 崛地-->
+
+    <gad itemId="200451" petId="295" swapId="3237" /><!--2014.8.1 崛地魔能宝石-->
+
+
+    <gad itemId="208201" petId="470" swapId="3273" /><!--2014.8.7 光翼之芒-->
+    <gad itemId="208202" petId="469" swapId="3274" /><!--2014.8.7 暗翼之影-->
+    <gad itemId="208203" petId="471" swapId="3275" /><!--2014.8.7 零式长牙狮-->
+    <gad itemId="208204" petId="468" swapId="3276" /><!--2014.8.7 混沌大帝-->
+
+
+    <gad itemId="208207" petId="459" swapId="3316" /><!--2014.8.15 创世大帝魔能宝石-->
+    <gad itemId="208208" petId="467" swapId="3317" /><!--2014.8.15 开元大帝魔能宝石-->
+    <gad itemId="208209" petId="468" swapId="3318" /><!--2014.8.15 混沌大帝魔能宝石-->
+
+    <gad itemId="208206" petId="462" swapId="3321" /><!--2014.8.15 关羽-->
+    <gad itemId="208210" petId="106" swapId="3322" /><!--2014.8.15 艾丽希斯-->
+
+	<gad itemId="208211" petId="465" swapId="3349"/><!--2014.8.22 赤兔-->
+	<gad itemId="208212" petId="476" swapId="3350"/><!--2014.8.22 坠天-->
+	<gad itemId="208213" petId="477" swapId="3351"/><!--2014.8.22 伟恩-->
+	<gad itemId="200669" petId="150" swapId="3352"/><!--2014.8.22 沁灵神-->
+	<gad itemId="208214" petId="464" swapId="3353"/><!--2014.8.22 神将刘备-->
+
+
+	<gad itemId="208215" petId="296" swapId="3387"/><!--2014.8.29 冰山机甲-->
+	<gad itemId="208216" petId="478" swapId="3388"/><!--2014.8.29 反速翼龙-->
+	<gad itemId="208217" petId="479" swapId="3389"/><!--2014.8.29 爆焱战狐纹章-->
+	<gad itemId="208218" petId="264" swapId="3390"/><!--2014.8.29 风姬纹章-->
+
+	<gad itemId="200458" petId="296" swapId="3391"/><!--2014.8.29 冰山魔能宝石-->
+	<gad itemId="200456" petId="264" swapId="3396"/><!--2014.8.29 风姬魔能宝石-->
+
+	<gad itemId="208220" petId="482" swapId="3437"/><!--2014.9.5 黑暗斗魂纹章-->
+	<gad itemId="208221" petId="483" swapId="3438"/><!--2014.9.5 巨无霸月饼纹章-->
+	<gad itemId="208222" petId="437" swapId="3439"/><!--2014.9.5 小梦纹章-->
+
+	<gad itemId="208228" petId="480" swapId="3468"/><!--2014.8.29 圣冰十尾纹章-->
+
+	<gad itemId="208205" petId="481" swapId="3320" /><!--2014.9.12 张飞-->
+	<gad itemId="208224" petId="484" swapId="3458" /><!--2014.9.12 魔念黯灵-->
+
+
+	<gad itemId="208227" petId="488" swapId="3482" /><!--2014.9.19 耀-->
+	<gad itemId="208226" petId="487" swapId="3483" /><!--2014.9.19 毁灭者-->
+	<gad itemId="208225" petId="486" swapId="3484" /><!--2014.9.19 焰豪-->
+
+
+	<gad itemId="208230" petId="489" swapId="3508" /><!--2014.9.26 辰-->
+
+	<gad itemId="200461" petId="297" swapId="3522"/><!--2014.9.30 机甲王魔能宝石-->
+
+	<gad itemId="208229" petId="297" swapId="3527"/><!--2014.9.30 机甲王纹章-->
+	<gad itemId="208231" petId="491" swapId="3528"/><!--2014.9.30 银河星王纹章-->
+	<gad itemId="208232" petId="492" swapId="3529"/><!--2014.9.30 雷小伊纹章-->
+	<gad itemId="208233" petId="493" swapId="3530"/><!--2014.9.30 瞬纹章-->
+	<gad itemId="208223" petId="485" swapId="3531"/><!--2014.9.30 雷霆纹章-->
+
+	<gad itemId="208235" petId="490" swapId="3557"/><!--2014.10.17 瓦力纹章-->
+    <gad itemId="208234" petId="494" swapId="3558"/><!--2014.10.17 格萨拉克纹章-->
+    <gad itemId="208236" petId="496" swapId="3559"/><!--2014.10.17 神将关羽纹章-->
+
+
+    <gad itemId="208239" petId="122" swapId="3578"/><!--2014.10.24 -->
+    <gad itemId="208240" petId="153" swapId="3579"/><!--2014.10.24 翼灵兽-->
+    <gad itemId="208241" petId="152" swapId="3580"/><!--2014.10.24 月灵兽-->
+    <gad itemId="208242" petId="179" swapId="3581"/><!--2014.10.24 -->
+    <gad itemId="208243" petId="182" swapId="3582"/><!--2014.10.24 -->
+    <gad itemId="208237" petId="498" swapId="3583"/><!--2014.10.24 可洛纹章-->
+    <gad itemId="208238" petId="495" swapId="3584"/><!--2014.10.24 阿兹尔纹章-->
+
+
+    <gad itemId="208245" petId="499" swapId="3601"/><!--2014.10.24 提塔哈克纹章-->
+    <gad itemId="208244" petId="502" swapId="3602"/><!--2014.10.24 超念小妖纹章-->
+    <gad itemId="208246" petId="500" swapId="3603"/><!--2014.10.24 小法师纹章-->
+
+	<gad itemId="200821" petId="502" swapId="3604"/><!--2014.10.24 超念灵妖魔能宝石-->
+
+
+    <gad itemId="208247" petId="501" swapId="3623"/><!--2014.11.7 拉斯拉克纹章-->
+    <gad itemId="208249" petId="497" swapId="3624"/><!--2014.11.7 神将·张飞纹章-->
+    <gad itemId="208248" petId="514" swapId="3625"/><!--2014.11.7 格鲁特纹章-->
+
+
+    <gad itemId="208250" petId="516" swapId="3638"/><!--2014.11.14 鬼瞳纹章-->
+    <gad itemId="208251" petId="517" swapId="3639"/><!--2014.11.14 迪赛纹章-->
+    <gad itemId="208252" petId="518" swapId="3657"/><!--2014.11.21 战小天纹章-->
+
+
+
+
+
+	<gad itemId="200822" petId="503" swapId="3672"/><!--2014.11.28 斗魂灵妖魔能宝石-->
+	<gad itemId="200466" petId="515" swapId="3666"/><!--2014.11.28 宇宙骑士第二纹章-->
+
+	<gad itemId="208253" petId="503" swapId="3667"/><!--2014.11.28 斗魂灵妖纹章-->
+	<gad itemId="208254" petId="515" swapId="3668"/><!--2014.11.28 宇宙骑士纹章-->
+	<gad itemId="208255" petId="519" swapId="3669"/><!--2014.11.28 哲纹章-->
+	<gad itemId="208256" petId="520" swapId="3670"/><!--2014.11.28 米勒斯纹章-->
+	<gad itemId="208257" petId="430" swapId="3671"/><!--2014.11.28 蚀魂兽纹章-->
+
+	<gad itemId="208260" petId="521" swapId="3681"/><!--2014.12.05 希卡普纹章-->
+	<gad itemId="208259" petId="525" swapId="3682"/><!--2014.12.05 钢锁暴龙纹章-->
+
+
+	<gad itemId="208262" petId="526" swapId="3685"/><!--2014.12.12 梵尔尼纹章-->
+	<gad itemId="208261" petId="522" swapId="3686"/><!--2014.12.12 格鲁尔纹章-->
+
+	<gad itemId="208263" petId="528" swapId="3710"/><!--2014.12.19 暴雪领主纹章-->
+	<gad itemId="208264" petId="523" swapId="3711"/><!--2014.12.19 史图依克纹章-->
+
+	<gad itemId="208265" petId="530" swapId="3717"/><!--2014.12.26 拉达曼迪纹章-->
+
+	<gad itemId="208266" petId="524" swapId="3728"/><!--2014.12.31 末日咆哮纹章-->
+
+	<gad itemId="208267" petId="527" swapId="3729"/><!--2014.12.31 战啸天纹章-->
+
+	<gad itemId="208268" petId="532" swapId="3740"/><!--2015.1.9 东方界王纹章-->
+	<gad itemId="208269" petId="537" swapId="3741"/><!--2015.1.9 佩格文纹章-->
+
+	<gad itemId="208272" petId="151" swapId="3748"/><!--2015.1.9 爪灵兽纹章-->
+
+	<gad itemId="208270" petId="534" swapId="3749"/><!--2015.1.16 西方界王纹章-->
+	<gad itemId="208271" petId="539" swapId="3750"/><!--2015.1.16 闪电纹章-->
+
+
+	<gad itemId="208273" petId="533" swapId="3765"/><!--2015.1.23 南方界王纹章-->
+	<gad itemId="208274" petId="538" swapId="3766"/><!--2015.1.23 凯小萨纹章-->
+	<gad itemId="208275" petId="540" swapId="3767"/><!--2015.1.23 发财萌纹章-->
+	
+	<gad itemId="208276" petId="531" swapId="3789"/><!--2015.1.30 界王神纹章-->
+	<gad itemId="208277" petId="535" swapId="3790"/><!--2015.1.30 北方界王纹章-->
+
+	<gad itemId="208278" petId="536" swapId="3809"/><!--2015.2.6 哈迪斯纹章-->
+	<gad itemId="208279" petId="529" swapId="3810"/><!--2015.2.6 四九战灵纹章-->
+
+	<gad itemId="208281" petId="544" swapId="3835"/><!--2015.2.13 梦梦蓝纹章-->
+	<gad itemId="208280" petId="541" swapId="3836"/><!--2015.2.13 梦梦草纹章-->
+
+
+	<gad itemId="200472" petId="531" swapId="3845"/><!--2015.2.17 界王神觉醒石-->
+ 	<gad itemId="208283" petId="542" swapId="3848"/><!--2015.2.17 奎尔斯之影-->
+	<gad itemId="208282" petId="543" swapId="3849"/><!--2015.2.17 恶灵兽-->
+	<gad itemId="208284" petId="545" swapId="3850"/><!--2015.2.17 赤焰之龙-->
+	<gad itemId="208285" petId="546" swapId="3881"/><!--2015.3.6 梦梦焰-->
+	<gad itemId="200474" petId="355" swapId="3882"/><!--2015.3.6 约瑟第二纹章-->
+
+	<gad itemId="208286" petId="548" swapId="3892"/><!--2015.3.20 梦梦雪-->
+	<gad itemId="208287" petId="563" swapId="3922"/><!--2015.4.3 堕落之翼-->
+
+	<gad itemId="200562" petId="562" swapId="358" />
+	<gad itemId="200562" petId="564" swapId="358" /><!--2015.4.3 神迹米咔变身-->
+	<gad itemId="208288" petId="565" swapId="3929" />
+
+	<gad itemId="208289" petId="568" swapId="3974"/><!--2015.5.7 加内特-->
+
+    <gad itemId="208290" petId="569" swapId="3995"/><!--2015.5.22 暗黑超梦-->
+	<gad itemId="208291" petId="431" swapId="3996"/><!--2015.5.22 原魂兽-->
+
+	<gad itemId="208292" petId="571" swapId="4015"/><!--2015.5.29 星河游侠-->
+    <gad itemId="208293" petId="572" swapId="4037"/><!--2015.6.12 洛基-->
+	<gad itemId="208294" petId="573" swapId="4048"/><!--2015.6.19 圣舞龙王-->
+	<gad itemId="208295" petId="575" swapId="4081"/><!--2015.7.10 卡小斯-->
+	<gad itemId="208296" petId="577" swapId="4092"/><!--2015.7.17 神盾破坏王-->
+	<gad itemId="208297" petId="579" swapId="4116"/><!--2015.7.30 圣灵伊特-->
+	<gad itemId="208301" petId="580" swapId="4117"/><!--2015.7.30 上古伊特-->
+	<gad itemId="208302" petId="583" swapId="4283"/><!--2015.7.30 圣王皓玥-->
+	<gad itemId="208298" petId="581" swapId="4105"/><!--2015.7.24 奥古斯特-->
+
+	<gad itemId="208305" petId="585" swapId="4145"/><!--2015.8.14 雷锘-->
+	<gad itemId="208306" petId="578" swapId="4146"/><!--2015.8.14 双子星王-->
+	<gad itemId="208307" petId="586" swapId="4163"/><!--2015.8.21 王者米咔-->
+	<gad itemId="208308" petId="589" swapId="4212"/><!--2015.9.10 伦迪特-->
+	<gad itemId="208310" petId="590" swapId="4237"/><!--2015.9.24 罗澜-->
+
+	<gad itemId="208309" petId="594" swapId="4282"/><!--2015.9.29 万龙尊者-->
+	<gad itemId="208311" petId="591" swapId="4280"/><!--2015.9.29 蚀恶-->
+	<gad itemId="208313" petId="596" swapId="4281"/><!--2015.9.29 邪魔浩劫-->
+
+	<gad itemId="208314" petId="597" swapId="4294"/><!--2015.10.15 久久-->
+
+	<gad itemId="208316" petId="598" swapId="4304"/><!--2015.10.22 撒莱尔-->
+	<gad itemId="208315" petId="599" swapId="4303"/><!--2015.10.22 雨果-->
+
+	<gad itemId="208317" petId="600" swapId="4317"/><!--2015.10.29 万圣鬼王-->
+
+	<gad itemId="208318" petId="602" swapId="4368"/><!--2015.11.19 无情-->
+
+	<gad itemId="208319" petId="603" swapId="4386"/><!--2015.11.26 大白-->
+
+	<gad itemId="208320" petId="604" swapId="4399"/><!--2015.12.03 邪风维奇-->
+
+	<gad itemId="208321" petId="605" swapId="4405"/><!--2015.12.10 极夜艾瑞克-->
+
+	<gad itemId="208322" petId="606" swapId="4415"/><!--2015.12.10 血轮万斯-->
+
+	<gad itemId="208323" petId="608" swapId="4425"/><!--2016.1.21 绝望之主萨隆-->
+
+	<gad itemId="208324" petId="607" swapId="4437"/><!--2016.2.5 齐天大圣-->
+
+	<gad itemId="200475" petId="607" swapId="4438"/><!--2016.2.5 齐天大圣第二纹章-->
+
+	<gad itemId="208325" petId="609" swapId="4436"/><!--2016.2.5 唐小僧-->
+
+	<gad itemId="208326" petId="610" swapId="4442"/><!--2016.2.18 宵宵-->
+
+	<gad itemId="208327" petId="611" swapId="4443"/><!--2016.2.25 奥斯卡-->
+
+	<gad itemId="208328" petId="612" swapId="4450"/><!--2016.3.3 圣甲雷鸣-->
+
+	<gad itemId="208329" petId="613" swapId="4461"/><!--2016.3.11 圣甲幻瞳-->
+
+	<gad itemId="208330" petId="614" swapId="4467"/><!--2016.3.18 圣甲狂战-->
+
+	<gad itemId="208331" petId="615" swapId="4473"/><!--2016.3.25 圣甲地裂-->
+
+	<gad itemId="208332" petId="616" swapId="4479"/><!--2016.4.1 圣甲永夜-->
+
+	<gad itemId="208333" petId="617" swapId="4480"/><!--2016.4.1 黑龙王-->
+
+	<gad itemId="208334" petId="618" swapId="4484"/><!--2016.4.8 昊希娜-->
+
+	<gad itemId="208335" petId="623" swapId="4485"/><!--2016.4.8 夜叉-->
+
+	<gad itemId="208336" petId="619" swapId="4493"/><!--2016.4.15 达克斯特-->
+
+	<gad itemId="208337" petId="620" swapId="4494"/><!--2016.4.22 苏希斯-->
+
+	<gad itemId="208338" petId="621" swapId="4495"/><!--2016.4.29 费雷姆-->
+
+	<gad itemId="208339" petId="624" swapId="4500"/><!--2016.4.29 帝龙邪尊-->
+
+	<gad itemId="208340" petId="625" swapId="4496"/><!--2016.4.29 履霜冰至-->
+
+	<gad itemId="208341" petId="622" swapId="4501"/><!--2016.5.6 萨夫特-->
+
+	<gad itemId="208342" petId="626" swapId="4502"/><!--2016.5.13 天玄界王-->
+
+	<gad itemId="208343" petId="627" swapId="4507"/><!--2016.5.20 瀚海界王-->
+
+	<gad itemId="208344" petId="628" swapId="4510"/><!--2016.5.27 地葬界王-->
+
+	<gad itemId="208345" petId="632" swapId="4511"/><!--2016.5.27 莉莲娜-->
+
+	<gad itemId="208346" petId="629" swapId="4514"/><!--2016.6.3 混沌界王-->
+
+	<gad itemId="208347" petId="630" swapId="4517"/><!--2016.6.8 时空界王-->
+
+	<gad itemId="208348" petId="631" swapId="4520"/><!--2016.6.17 幻境界王-->
+
+	<gad itemId="208349" petId="633" swapId="4523"/><!--2016.6.24 天石灵尊-->
+
+	<gad itemId="208350" petId="634" swapId="4525"/><!--2016.7.1 邪念魔尊-->
+
+	<gad itemId="208351" petId="635" swapId="4527"/><!--2016.7.8 暗翼魔圣-->
+
+	<gad itemId="208352" petId="637" swapId="4557"/><!--2016.7.29 皮埃纳-->
+
+	<gad itemId="208355" petId="638" swapId="4561"/><!--2016.8.12 雷神雷伊-->
+
+	<gad itemId="208356" petId="639" swapId="4562"/><!--2016.8.12 炎帝凯萨-->
+
+	<gad itemId="208357" petId="640" swapId="4563"/><!--2016.8.12 冥王撒旦-->
+
+	<gad itemId="208358" petId="641" swapId="4566"/><!--2016.8.26 影灵的幻视-->
+
+	<gad itemId="208359" petId="636" swapId="4573"/><!--2016.9.2 尤米茜-->
+
+	<gad itemId="208360" petId="642" swapId="4581"/><!--2016.9.9 星之首影-->
+
+	<gad itemId="208361" petId="643" swapId="4582"/><!--2016.9.14 星之躯影-->
+
+	<gad itemId="208362" petId="644" swapId="4583"/><!--2016.9.23 星之臂影-->
+
+	<gad itemId="200478" petId="638" swapId="4586"/><!--2016.9.23 雷神雷伊第二纹章-->
+
+	<gad itemId="200479" petId="639" swapId="4589"/><!--2016.9.30 炎帝凯萨第二纹章-->
+
+	<gad itemId="208363" petId="645" swapId="4591"/><!--2016.9.30 赛纳留斯-->
+
+	<gad itemId="208364" petId="646" swapId="4595"/><!--2016.10.14 星之足影-->
+
+	<gad itemId="208365" petId="654" swapId="4596"/><!--2016.10.14 塔西亚-->
+
+	<gad itemId="208366" petId="647" swapId="4601"/><!--2016.10.21 纳法里奥-->
+
+	<gad itemId="208367" petId="655" swapId="4602"/><!--2016.10.21 塔克林-->
+
+	<gad itemId="208368" petId="648" swapId="4607"/><!--2016.10.28 星之背影-->
+
+	<gad itemId="208369" petId="656" swapId="4608"/><!--2016.10.28 塞维尔-->
+
+	<gad itemId="208370" petId="649" swapId="4609"/><!--2016.11.04 星之心影-->
+
+	<gad itemId="208371" petId="650" swapId="4618"/><!--2016.11.25 奎尔塞拉圣徒-->
+
+	<gad itemId="208372" petId="657" swapId="4624"/><!--2016.12.02 诗风-->
+
+	<gad itemId="208373" petId="651" swapId="4626"/><!--2016.12.09 诺克萨斯圣徒-->
+
+	<gad itemId="208374" petId="658" swapId="4632"/><!--2016.12.16 邪恶魔神-->
+
+	<gad itemId="208375" petId="663" swapId="4638"/><!--2016.12.23 源晶蛋-->
+
+	<gad itemId="208376" petId="664" swapId="4639"/><!--2016.12.23 圣诞源晶蛋-->
+
+	<gad itemId="208377" petId="665" swapId="4648"/><!--2016.12.30 罗克-->
+
+	<gad itemId="200481" petId="665" swapId="4654"/><!--2016.12.30 罗克第二纹章-->
+
+	<gad itemId="208378" petId="659" swapId="4649"/><!--2016.12.30 炼狱魔神-->
+
+	<gad itemId="208379" petId="666" swapId="4651"/><!--2017.1.13 吞-->
+
+	<gad itemId="208380" petId="652" swapId="4665"/><!--2017.2.24 奥比休斯圣徒-->
+
+	<gad itemId="208381" petId="660" swapId="4669"/><!--2017.3.3 毁灭魔神-->
+
+	<gad itemId="208382" petId="653" swapId="4673"/><!--2017.3.17 泰尔瑞斯圣徒-->
+
+	<gad itemId="208383" petId="667" swapId="4674"/><!--2017.3.31 碧珞逍遥-->
+
+	<gad itemId="200488" petId="667" swapId="4675"/><!--2017.3.31 碧珞天道-->
+
+	<gad itemId="208384" petId="669" swapId="4679"/><!--2017.4.28 圣武缚灵-->
+
+	<gad itemId="208385" petId="32" swapId="4680"/><!--2017.4.28 齿轮鹰-->
+
+	<gad itemId="208386" petId="19" swapId="4681"/><!--2017.4.28 鲁尼-->
+
+	<gad itemId="208387" petId="24" swapId="4683"/><!--2017.5.12 长臂猴-->
+
+	<gad itemId="208388" petId="670" swapId="4696"/><!--2017.5.26 柯尼塞格-->
+
+</gads>
+

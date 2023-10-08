@@ -1,0 +1,40 @@
+﻿<!--
+   sow 是播种
+   remove 是铲除
+   get 是收获
+   openPlant 是开垦
+   steal  是偷窃
+   fertilizer 是施肥   	
+ -->
+<root>
+	<sow>
+			<item str="一份耕耘，一份收获！"/>
+			<item str="播种成功，静静等待作物成熟吧！"/>
+			<item str="暖暖的土地就像厚厚的棉被一样~"/>
+	</sow>	
+	<remove>
+			<item str="NO！你真的要移除我吗？"/>
+			<item str="好狠心哟T.T"/>
+			<item str="揠苗助长是不对的！"/>
+	</remove>	
+	<get>
+			<item str="哦耶，我总算开花结果啦"/>
+			<item str="我是油光水滑的胖果实~~"/>
+			<item str="英姿飒爽，闪亮登场！"/>
+	</get>	
+	<openPlant>
+			<item str="锄禾日当午~汗滴禾下土~"/>
+			<item str="更多土地更多欢笑，就在普兰特~"/>
+			<item str="请务必在我身上种最高级的作物！"/>
+	</openPlant>
+	<steal>
+			<item str="滴嘟嘟嘟，紧急报警系统启动！"/>
+			<item str="不要偷我呀~不要偷我呀~"/>
+			<item str="生活中不会有那么多机会可以不劳而获哦！"/>
+	</steal>
+	<fertilizer>
+			<item str="肥料就是我的生命"/>
+			<item str="施什么肥哟，浪费钱，我自己也可以长"/>
+			<item str="虽然有助成长，但是……臭臭的？"/>
+	</fertilizer>
+</root>

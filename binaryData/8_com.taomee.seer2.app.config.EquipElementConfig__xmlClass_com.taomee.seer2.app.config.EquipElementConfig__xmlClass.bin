@@ -1,0 +1,135 @@
+<!-- 
+   itemIdList 附魔道具组，初级中级高级，也可以只填写初级那么就只支持初级
+   equipIcon 套装的集合ICON
+   idList为ID组 可以支持1个和多个 如果身上都装备了这些 才有效果	
+   elementType 为加的元素类型 1为物攻值 2为物防值 3为特攻值 4为特防值 5为速度值 6为体力值 7为全能力值
+   elementCount 为加的元素的值 支持小数点
+   obj 对象
+-->
+<root>
+	<equip itemIdList="205001" equipIcon="203016" levelMax="3" idList="100137,100138,100139,100140,100141" elementType="2,4|2,4|2,4" elementCount="5,5|10,10|15,15" obj="草系精灵" nextObj="树根套装"/>
+	<equip itemIdList="205002" equipIcon="203016" levelMax="3" idList="100153,100154,100155,100156,100157" elementType="2,4|2,4|2,4" elementCount="5,5|10,10|15,15" obj="水系精灵" nextObj="维京套装"/>
+	<equip itemIdList="205003" equipIcon="203016" levelMax="3" idList="100166,100167,100168,100169,100170" elementType="2,4|2,4|2,4" elementCount="5,5|10,10|15,15" obj="火系精灵" nextObj="斩魂套装"/>
+	<equip itemIdList="205004" equipIcon="203016" levelMax="3" idList="100172,100173,100174,100175,100176" elementType="2,4|2,4|2,4" elementCount="5,5|10,10|15,15" obj="地面系精灵" nextObj="乌迪尔套装"/>
+	<equip itemIdList="205005" equipIcon="203016" levelMax="3" idList="100182,100183,100184,100185,100186" elementType="2,4|2,4|2,4" elementCount="5,5|10,10|15,15" obj="沙漠系精灵" nextObj="沙漠之神套装"/>
+	<equip itemIdList="205006" equipIcon="203016" levelMax="3" idList="100203,100204,100205,100206,100207" elementType="2,4|2,4|2,4" elementCount="5,5|10,10|15,15" obj="冰系精灵" nextObj="瓦尔基套装"/>
+	<equip itemIdList="205007" equipIcon="203016" levelMax="5" idList="100553,100554,100555,100556,100557" elementType="7|7|7|7|7" elementCount="10|15|20|25|30" obj="卡鲁迪亚" nextObj="天蝎守护圣衣"/>
+	<equip itemIdList="205008" equipIcon="203016" levelMax="5" idList="100577,100578,100579,100580,100581" elementType="7|7|7|7|7" elementCount="10|15|20|25|30" obj="艾厄洛斯" nextObj="射手守护圣衣"/>
+	<equip itemIdList="205009" equipIcon="203016" levelMax="5" idList="100631,100632,100633,100634,100635" elementType="7|7|7|7|7" elementCount="10|15|20|25|30" obj="伊奥尼亚" nextObj="摩羯守护圣衣"/>
+	<equip itemIdList="205010" equipIcon="203016" levelMax="5" idList="100640,100641,100642,100643,100644" elementType="3|3|3|3|3" elementCount="5|10|15|20|25" obj="所有精灵" nextObj="黑金霸王套装"/>
+	<equip itemIdList="205011" equipIcon="203016" levelMax="5" idList="100649,100650,100651,100652" elementType="1,2|1,2|1,2|1,2|1,2" elementCount="5,5|10,10|15,15|20,20|25,25" obj="乔乔和乔飞" nextObj="玄云套装"/>
+	<equip itemIdList="205012" equipIcon="203016" levelMax="5" idList="100654,100655,100656,100657,100658" elementType="7|7|7|7|7" elementCount="10|15|20|25|30" obj="加缪奥斯" nextObj="水瓶守护圣衣"/>
+	<equip itemIdList="205013" equipIcon="203016" levelMax="5" idList="100694,100695,100696,100697,100698" elementType="2|2|2|2|2" elementCount="5|10|15|20|25" obj="所有精灵" nextObj="零式套装"/>
+	<equip itemIdList="205014" equipIcon="203016" levelMax="5" idList="100703,100704,100705,100706,100707" elementType="7|7|7|7|7" elementCount="10|15|20|25|30" obj="雅柏菲卡" nextObj="双鱼守护圣衣"/>
+
+	<equip itemIdList="206001" equipIcon="203016" levelMax="3" idList="100137,100138,100139,100140,100141" elementType="2,4|2,4|2,4" elementCount="5,5|10,10|15,15" obj="草系精灵" nextObj="树根套装"/>
+	<equip itemIdList="206002" equipIcon="203016" levelMax="3" idList="100153,100154,100155,100156,100157" elementType="2,4|2,4|2,4" elementCount="5,5|10,10|15,15" obj="水系精灵" nextObj="维京套装"/>
+	<equip itemIdList="206003" equipIcon="203016" levelMax="3" idList="100166,100167,100168,100169,100170" elementType="2,4|2,4|2,4" elementCount="5,5|10,10|15,15" obj="火系精灵" nextObj="斩魂套装"/>
+	<equip itemIdList="206004" equipIcon="203016" levelMax="3" idList="100172,100173,100174,100175,100176" elementType="2,4|2,4|2,4" elementCount="5,5|10,10|15,15" obj="地面系精灵" nextObj="乌迪尔套装"/>
+	<equip itemIdList="206005" equipIcon="203016" levelMax="3" idList="100182,100183,100184,100185,100186" elementType="2,4|2,4|2,4" elementCount="5,5|10,10|15,15" obj="沙漠系精灵" nextObj="沙漠之神套装"/>
+	<equip itemIdList="206006" equipIcon="203016" levelMax="3" idList="100203,100204,100205,100206,100207" elementType="2,4|2,4|2,4" elementCount="5,5|10,10|15,15" obj="冰系精灵" nextObj="瓦尔基套装"/>
+	<equip itemIdList="206007" equipIcon="203016" levelMax="5" idList="100553,100554,100555,100556,100557" elementType="7|7|7|7|7" elementCount="10|15|20|25|30" obj="卡鲁迪亚" nextObj="天蝎守护圣衣"/>
+	<equip itemIdList="206008" equipIcon="203016" levelMax="5" idList="100577,100578,100579,100580,100581" elementType="7|7|7|7|7" elementCount="10|15|20|25|30" obj="艾厄洛斯" nextObj="射手守护圣衣"/>
+	<equip itemIdList="206009" equipIcon="203016" levelMax="5" idList="100631,100632,100633,100634,100635" elementType="7|7|7|7|7" elementCount="10|15|20|25|30" obj="伊奥尼亚" nextObj="摩羯守护圣衣"/>
+	<equip itemIdList="206010" equipIcon="203016" levelMax="5" idList="100640,100641,100642,100643,100644" elementType="3|3|3|3|3" elementCount="5|10|15|20|25" obj="所有精灵" nextObj="黑金霸王套装"/>
+	<equip itemIdList="206011" equipIcon="203016" levelMax="5" idList="100649,100650,100651,100652" elementType="1,2|1,2|1,2|1,2|1,2" elementCount="5,5|10,10|15,15|20,20|25,25" obj="乔乔和乔飞" nextObj="玄云套装"/>
+	<equip itemIdList="206012" equipIcon="203016" levelMax="5" idList="100654,100655,100656,100657,100658" elementType="7|7|7|7|7" elementCount="10|15|20|25|30" obj="加缪奥斯" nextObj="水瓶守护圣衣"/>
+	<equip itemIdList="206013" equipIcon="203016" levelMax="5" idList="100694,100695,100696,100697,100698" elementType="2|2|2|2|2" elementCount="5|10|15|20|25" obj="所有精灵" nextObj="零式套装"/>
+	<equip itemIdList="206014" equipIcon="203016" levelMax="5" idList="100703,100704,100705,100706,100707" elementType="7|7|7|7|7" elementCount="10|15|20|25|30" obj="雅柏菲卡" nextObj="双鱼守护圣衣"/>
+	<equip itemIdList="206015" equipIcon="203016" levelMax="5" idList="100742,100743,100744,100745,100746" elementType="7|7|7|7|7" elementCount="10|15|20|25|30" obj="史昂" nextObj="白羊守护圣衣"/>
+	<equip itemIdList="206016" equipIcon="203016" levelMax="5" idList="100784,100785,100786,100787,100788" elementType="7|7|7|7|7" elementCount="10|15|20|25|30" obj="阿鲁迪亚" nextObj="金牛守护圣衣"/>
+	<equip itemIdList="206017" equipIcon="203016" levelMax="5" idList="100806,100807,100808,100809,100810" elementType="1,2|1,2|1,2|1,2|1,2" elementCount="10,10|20,20|30,30|40,40|50,50" obj="变色蜥" nextObj="变色蜥套装"/>
+	<equip itemIdList="206018" equipIcon="203016" levelMax="5" idList="100817,100818,100819,100820,100821" elementType="1,5|1,5|1,5|1,5|1,5" elementCount="10,7|20,14|30,21|40,28|50,35" obj="火爆猴" nextObj="火爆猴套装"/>
+	<equip itemIdList="206019" equipIcon="203016" levelMax="5" idList="100835,100836,100837,100838,100839" elementType="7|7|7|7|7" elementCount="10|15|20|25|30" obj="撒加" nextObj="双子守护圣衣"/>
+	<equip itemIdList="206020" equipIcon="203016" levelMax="5" idList="100875,100876,100877,100878,100879" elementType="7|7|7|7|7" elementCount="10|15|20|25|30" obj="马尼戈特" nextObj="巨蟹座护圣衣"/>
+	<equip itemIdList="206021" equipIcon="203016" levelMax="5" idList="100893,100894,100895,100896,100897" elementType="3,5|3,5|3,5|3,5|3,5" elementCount="10,10|20,20|30,30|40,40|50,50" obj="阿斯顿马丁" nextObj="圣龙守护甲"/>
+	<equip itemIdList="206022" equipIcon="203016" levelMax="5" idList="100899,100900,100901,100902,100903" elementType="3,5|3,5|3,5|3,5|3,5" elementCount="10,10|20,20|30,30|40,40|50,50" obj="阿斯顿马丁" nextObj="圣龙守护甲（特价版）"/>
+	<equip itemIdList="206023" equipIcon="203016" levelMax="5" idList="100941,100942,100943,100944,100945" elementType="7|7|7|7|7" elementCount="10|15|20|25|30" obj="伊利亚斯" nextObj="狮子座护圣衣"/>
+	<equip itemIdList="206024" equipIcon="203016" levelMax="5" idList="100965,100966,100967,100968,100969" elementType="7|7|7|7|7" elementCount="10|15|20|25|30" obj="阿释米塔" nextObj="处女座护圣衣"/>
+	<equip itemIdList="206025" equipIcon="203016" levelMax="5" idList="100981,100982,100983,100984,100985" elementType="7|7|7|7|7" elementCount="10|15|20|25|30" obj="童虎" nextObj="天秤座护圣衣"/>
+	<equip itemIdList="206026" equipIcon="203016" levelMax="5" idList="101033,101034,101035,101036,101037" elementType="7|7|7|7|7" elementCount="10|20|30|40|50" obj="震天虎" nextObj="震天机甲套装"/>
+	<equip itemIdList="206027" equipIcon="203016" levelMax="5" idList="101060,101061,101062,101063,101064" elementType="3|3|3|3|3" elementCount="75" obj="所有精灵" nextObj="火羽套装"/>
+	<equip itemIdList="206028" equipIcon="203016" levelMax="5" idList="101065,101066,101067,101068,101069" elementType="5|5|5|5|5" elementCount="10" obj="所有精灵" nextObj="龙影套装"/>
+<!--苍龙卷轴-->
+	<equip itemIdList="206031" equipIcon="203016" levelMax="5" idList="101077,101078,101079,101080,101081" elementType="7|7|7|7|7" elementCount="10|20|30|40|50" obj="苍龙" nextObj="苍龙甲套装"/>
+<!--赤焰卷轴-->
+	<equip itemIdList="206032" equipIcon="203016" levelMax="5" idList="101107,101108,101109,101110,101111" elementType="7|7|7|7|7" elementCount="10|20|30|40|50" obj="赤焰" nextObj="赤焰甲套装"/>
+
+<!--天尊卷轴免费-->
+	<equip itemIdList="206033" equipIcon="203016" levelMax="5" idList="101120,101121,101122,101123,101124" elementType="7|7|7|7|7" elementCount="15|25|35|45|55" obj="圣兽天尊" nextObj="圣兽天尊套装"/>
+
+<!--天尊卷轴收费-->
+	<equip itemIdList="206034" equipIcon="203016" levelMax="5" idList="101120,101121,101122,101123,101124" elementType="7|7|7|7|7" elementCount="15|25|35|45|55" obj="圣兽天尊" nextObj="圣兽天尊套装"/>
+
+<!--光轮卷轴收费-->
+	<equip itemIdList="206035" equipIcon="203016" levelMax="5" idList="101144,101145,101146,101147,101148" elementType="7|7|7|7|7" elementCount="10|20|30|40|50" obj="光轮" nextObj="光轮套装"/>
+
+<!--擎天卷轴收费-->
+	<equip itemIdList="206036" equipIcon="203016" levelMax="5" idList="101197,101198,101199,101200,101201" elementType="7|7|7|7|7" elementCount="10|20|30|40|50" obj="擎天" nextObj="擎天套装"/>
+
+<!--擎天卷轴免费-->
+	<equip itemIdList="206037" equipIcon="203016" levelMax="5" idList="101197,101198,101199,101200,101201" elementType="7|7|7|7|7" elementCount="10|20|30|40|50" obj="擎天" nextObj="擎天套装"/>
+
+<!--智慧卷轴免费-->
+	<equip itemIdList="206038" equipIcon="203016" levelMax="5" idList="101197,101198,101199,101200,101201" elementType="7|7|7|7|7" elementCount="10|20|30|40|50" obj="雅典娜" nextObj="智慧套装"/>
+
+
+<!--潘多拉卷轴免费-->
+	<equip itemIdList="206040" equipIcon="203016" levelMax="5" idList="101250,101251,101252,101253,101254" elementType="7|7|7|7|7" elementCount="10|20|30|40|50" obj="潘多拉" nextObj="潘多拉套装"/>
+
+<!--傲世卷轴免费-->
+	<equip itemIdList="206042" equipIcon="203016" levelMax="5" idList="101271,101272,101273,101274,101275" elementType="7|7|7|7|7" elementCount="10|20|30|40|50" obj="傲世" nextObj="傲世套装"/>
+
+
+<!--极光卷轴免费-->
+	<equip itemIdList="206043" equipIcon="203016" levelMax="5" idList="101316,101317,101318,101319,101320" elementType="7|7|7|7|7" elementCount="10|20|30|40|50" obj="极光" nextObj="极光套装"/>
+
+
+<!--沙虎卷轴免费-->
+	<equip itemIdList="206044" equipIcon="203016" levelMax="5" idList="101356,101357,101358,101359,101360" elementType="7|7|7|7|7" elementCount="10|20|30|40|50" obj="沙虎" nextObj="沙虎套装"/>
+
+
+<!--暗流卷轴免费-->
+	<equip itemIdList="206046" equipIcon="203016" levelMax="5" idList="101393,101394,101395,101396,101397" elementType="7|7|7|7|7" elementCount="10|20|30|40|50" obj="暗流" nextObj="暗流套装"/>
+
+<!--星王卷轴免费-->
+	<equip itemIdList="206045" equipIcon="203016" levelMax="5" idList="101377,101378,101379,101380,101381" elementType="7|7|7|7|7" elementCount="10|20|30|40|50" obj="星座之王" nextObj="星王套装"/>
+
+
+
+<!--崛地卷轴免费-->
+	<equip itemIdList="206047" equipIcon="203016" levelMax="5" idList="101434,101435,101436,101437,101438" elementType="7|7|7|7|7" elementCount="10|20|30|40|50" obj="崛地" nextObj="崛地套装"/>
+
+
+<!--冰山卷轴免费-->
+	<equip itemIdList="206048" equipIcon="203016" levelMax="5" idList="101479,101480,101481,101482,101483" elementType="7|7|7|7|7" elementCount="10|20|30|40|50" obj="冰山" nextObj="冰山套装"/>
+
+
+
+<!--机甲王卷轴免费-->
+	<equip itemIdList="206049" equipIcon="203016" levelMax="5" idList="101505,101506,101507,101508,101509" elementType="7|7|7|7|7" elementCount="10|20|30|40|50" obj="机甲王" nextObj="机甲王套装"/>
+
+
+<!--超念灵妖卷轴免费-->
+	<equip itemIdList="206050" equipIcon="203016" levelMax="5" idList="101528,101529,101530,101531,101532" elementType="7|7|7|7|7" elementCount="10|20|30|40|50" obj="超念灵妖" nextObj="超念灵妖套装"/>
+
+<!--斗魂灵妖卷轴免费-->
+	<equip itemIdList="206051" equipIcon="203016" levelMax="5" idList="101556,101557,101558,101559,101560" elementType="7|7|7|7|7" elementCount="10|20|30|40|50" obj="斗魂灵妖" nextObj="斗魂灵妖套装"/>
+<!--圣灵界王神卷轴免费-->
+	<equip itemIdList="206052" equipIcon="203016" levelMax="5" idList="101618,101619,101620,101621,101622" elementType="7|7|7|7|7" elementCount="10|20|30|40|50" obj="圣灵界王神" nextObj="圣灵界王神套装"/>
+	<equip itemIdList="206053" equipIcon="203016" levelMax="5" idList="101618,101619,101620,101621,101622" elementType="7|7|7|7|7" elementCount="10|20|30|40|50" obj="圣灵界王神" nextObj="圣灵界王神套装"/>
+
+
+<!--暗黑超梦卷轴免费-->
+	<equip itemIdList="206054" equipIcon="203016" levelMax="5" idList="101684,101685,101686,101687,101688" elementType="7|7|7|7|7" elementCount="10|20|30|40|50" obj="暗黑超梦" nextObj="暗黑超梦套装"/>
+	<equip itemIdList="206055" equipIcon="203016" levelMax="5" idList="101684,101685,101686,101687,101688" elementType="7|7|7|7|7" elementCount="10|20|30|40|50" obj="暗黑超梦" nextObj="暗黑超梦套装"/>
+
+
+
+
+
+
+
+
+
+</root>

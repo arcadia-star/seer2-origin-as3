@@ -1,0 +1,13 @@
+<planets>
+	<planet mapId="350" idList="501000" swapList="663" tipList="它喜欢呆在沙漠里,只能提醒你这么多了"/>
+	<planet mapId="340" idList="501001" swapList="664" tipList="它藏在一个特别欢乐的地方"/>
+	<planet mapId="123" idList="501002" swapList="680" tipList="它藏在一个会采集到蘑菇果实的地方"/>
+	<planet mapId="230" idList="501003" swapList="717" tipList="它藏着的地方站着母子二人"/>
+	<planet mapId="201" idList="501004" swapList="724" tipList="它藏着的地方有一个大章鱼"/>
+	<planet mapId="540" idList="501005" swapList="777" tipList="它藏着的地方非常冷非常冷"/>
+	<planet mapId="131" idList="501006" swapList="910" tipList="它藏着的地方有一只奇怪的眼睛"/>
+
+
+	<planet mapId="330" idList="501007" swapList="1529" tipList="它藏着的地方站着一个总管哦"/>
+
+</planets>

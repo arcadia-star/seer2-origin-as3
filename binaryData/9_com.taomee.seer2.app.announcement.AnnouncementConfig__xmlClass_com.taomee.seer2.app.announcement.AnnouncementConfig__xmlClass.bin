@@ -1,0 +1,97 @@
+<announcements>
+<!-- 本地使用 从 10000 开始编号 -->
+    <announcement id = "10000" day = "1" content = "敌人正在进攻草系部落的信奉广场和碧玉森林请各位赛尔前去支援！" frequency = "14:00_14:05_14:10_14:15"/>
+    <announcement id = "10001" day = "1" content = "敌人的精锐出动了，他们正在进攻碧玉森林，从信奉广场向上走，赛尔们快支援！" frequency = "14:25_14:30_14:35"/>
+    <announcement id = "10002" day = "1" content = "青蜂队队长来了，他降落在碧玉森林中，我们一定要阻止他！快去支援！" frequency = "14:45_14:50"/>
+    <announcement id = "10003" day = "1" content = "我们终于击退了萨伦帝国的进攻！为勇敢的赛尔们欢呼吧！" frequency = "15:01"/>
+    <announcement id = "10004" day = "5" content = "敌人正在进攻草系部落的信奉广场和碧玉森林请各位赛尔前去支援！" frequency = "19:00_19:05_19:10_19:15"/>
+    <announcement id = "10005" day = "5" content = "敌人的精锐出动了，他们正在进攻碧玉森林，从信奉广场向上走，赛尔们快支援！" frequency = "19:25_19:30_19:35"/>
+    <announcement id = "10006" day = "5" content = "青蜂队队长来了，他降落在碧玉森林中，我们一定要阻止他！快去支援！" frequency = "19:45_19:50"/>
+    <announcement id = "10007" day = "5" content = "我们终于击退了萨伦帝国的进攻！为勇敢的赛尔们欢呼吧！" frequency = "20:01"/>
+    
+    <announcement id = "10008" day = "2" content = "水源之心正遭受攻击，绝对不能让他们污染水脉！深水之城需要支援！" frequency = "14:00_14:05_14:10_14:15"/>
+    <announcement id = "10009" day = "2" content = "神谕祭司的防护罩正在变弱，快去水源之心支援！" frequency = "14:25_14:30_14:35"/>
+    <announcement id = "10010" day = "2" content = "保护罩破碎了，我们要尽快阻止紫电队长！" frequency = "14:45_14:50"/>
+    <announcement id = "10011" day = "2" content = "神兽苏醒了！萨伦帝国的阴谋又一次被瓦解！！" frequency = "15:01"/>
+    <announcement id = "10012" day = "6" content = "水源之心正遭受攻击，绝对不能让他们污染水脉！深水之城需要支援！" frequency = "19:00_19:05_19:10_19:15"/>
+    <announcement id = "10013" day = "6" content = "神谕祭司的防护罩正在变弱，快去水源之心支援！" frequency = "19:25_19:30_19:35"/>
+    <announcement id = "10014" day = "6" content = "保护罩破碎了，我们要尽快阻止紫电队长！" frequency = "19:45_19:50"/>
+    <announcement id = "10015" day = "6" content = "神兽苏醒了！萨伦帝国的阴谋又一次被瓦解！！" frequency = "20:01"/>
+    
+    <announcement id = "10016" day = "7" content = "火焰山的争夺战正在进行中，请快去赤炼山脉报名吧！" frequency = "14:00_14:05_14:10"/>
+    <announcement id = "10017" day = "7" content = "火焰山的争夺战正在进行中，请快去赤炼山脉报名吧！" frequency = "14:15_14:20_14:25"/>
+    <announcement id = "10018" day = "7" content = "火焰山的争夺战正在进行中，请快去赤炼山脉报名吧！" frequency = "14:30_14:35_14:40"/>
+    <announcement id = "10019" day = "7" content = "火焰山最后的争夺战已经展开，胜利到底会是谁的呢！" frequency = "14:45_14:50_14:55_14:59"/>
+    <announcement id = "10020" day = "3" content = "火焰山的争夺战正在进行中，请快去赤炼山脉报名吧！" frequency = "19:00_19:05_19:10"/>
+    <announcement id = "10021" day = "3" content = "火焰山的争夺战正在进行中，请快去赤炼山脉报名吧！" frequency = "19:15_19:20_19:25"/>
+    <announcement id = "10022" day = "3" content = "火焰山的争夺战正在进行中，请快去赤炼山脉报名吧！" frequency = "19:30_19:35_19:40"/>
+    <announcement id = "10023" day = "3" content = "火焰山最后的争夺战已经展开，胜利到底会是谁的呢！" frequency = "19:45_19:50_19:55_20:01"/>
+
+<!--  从服务器接收的公告     从 1 开始编号 -->    
+    <announcement id = "1" day = "5" content = "最先击败了青峰队队长，让我们为他欢呼吧！" frequency = ""/>
+    <announcement id = "2" day = "5" content = "从巴卢特那里夺回了一块伊萨晶石！" frequency = ""/>
+    <announcement id = "3" day = "6" content = "最先击败了紫电队队长，让我们为他欢呼吧！" frequency = ""/>
+    <announcement id = "4" day = "6" content = "从紫电队队长那里夺回了一块伊萨晶石！" frequency = ""/>    
+    <announcement id = "5" day = "7" content = "最先击败了巴尔卡！让我们为他欢呼吧！" frequency = ""/>
+    <announcement id = "6" day = "7" content = "最先击败了洛克！让我们为他欢呼吧！" frequency = ""/>
+    <announcement id = "7" day = "7" content = "巴尔卡一派夺得了火神祭坛，愿火神祝他百战百胜！" frequency = ""/>
+    <announcement id = "8" day = "7" content = "洛克一派夺得了火神祭坛，愿火神祝他百战百胜！" frequency = ""/>
+	<announcement id = "9" day = "7" content = "火焰山争夺双方暂时休战5分钟，请战士们耐心等待！" frequency = ""/>  
+      
+    <announcement id = "10" day = "-1" content = "获得了10场擂台连胜！ " frequency = ""/>
+    <announcement id = "20" day = "-1" content = "获得了20场擂台连胜！让我们为他欢呼吧！ " frequency = ""/>
+    <announcement id = "30" day = "-1" content = "获得了30场擂台连胜！没有人能阻挡他得胜利步伐！" frequency = ""/>
+    <announcement id = "40" day = "-1" content = "获得了40场擂台连胜！真是常胜！ " frequency = ""/>
+    <announcement id = "50" day = "-1" content = "获得了50场擂台连胜！真是不可思议！ " frequency = ""/>
+    
+    <announcement id = "51" day = "-1" content = "以第{$order}名通关的金字塔精灵挑战，获得初级资质果实1颗，初级成长果实10颗" frequency = ""/>
+    
+    <announcement id = "62" day = "-1" content = "击败萨伦帝国士官并获得了一只大眼独角！" frequency = ""/>
+    <announcement id = "63" day = "-1" content = "击败萨伦帝国士官并获得了一只小巴！" frequency = ""/>
+	<announcement id = "65" day = "-1" content = "在英格瓦要塞的双子之门中击破了最终关卡获得精灵卡罗！" frequency = ""/>
+	<announcement id = "68" day = "-1" content = "在遗忘之岛战胜了真正的幻影双子【菲亚斯】" frequency = ""/>
+	<announcement id = "69" day = "-1" content = "战胜并获得了一只【凯瑟】" frequency = ""/>
+	<announcement id = "70" day = "-1" content = "开启幸运礼包获得了至尊资质果实！【点击查看充值活动】" frequency = ""/>
+	<announcement id = "71" day = "-1" content = "在水源之心击败了缇娜三次，终于收服她的精灵【紫电】" frequency = ""/>
+	<announcement id = "2001" day = "-1" content = "送给你1张六一礼物券喽！" frequency = ""/>
+	<announcement id = "72" day = "-1" content = "在乐园金字塔中抽取了终极大奖:星际急速！【点击参加】" frequency = ""/>
+	<announcement id = "73" day="-1" content="在碧玉森林击败了巴卢特三次，终于收服他的精灵【青蜂】" frequency=""/>
+	<announcement id = "74" day = "-1" content = "翻斗乐第一季“暗夜摩托”，谁能驾驭摩托驰骋黑夜！【点击参加】" frequency = ""/>
+	<announcement id = "75" day = "-1" content = "获得了今天钓鱼大赛的冠军" frequency = ""/>
+	<announcement id = "76" day = "-1" content = "队在刚才的争夺赛中已经胜了一局，加油啊！" frequency = ""/>
+	<announcement id = "81" day = "-1" content = "" frequency = ""/>
+	<announcement id = "82" day = "-1" content = "" frequency = ""/>
+	<announcement id = "84" day = "-1" content = "强大的影灵兽已经在赛尔们的合力阻击下被击退了！让我们庆祝胜利吧！" frequency = ""/>
+	<announcement id = "86" day = "-1" content = "在万圣节萨伦的突袭中，第一个击败了缇娜！" frequency = ""/>
+	<announcement id = "87" day = "-1" content = "你在钓鱼大师赛中获得了冠军！奖品凤凰金杯、钓鱼大师勋章及称号、至尊资质果实已发放，请注意查收哦！" frequency = ""/>
+	<announcement id = "88" day = "-1" content = "你在钓鱼大师赛中进入2-5排名！奖品凤凰银杯、钓鱼大师勋章及称号、高级资质果实已发放，请注意查收哦！" frequency = ""/>
+	<announcement id = "89" day = "-1" content = "你在钓鱼大师赛中进入6-20排名！奖品凤凰金杯、钓鱼大师勋章及称号、中级资质果实已发放，请注意查收哦！" frequency = ""/>
+	<announcement id = "90" day = "-1" content = "你在钓鱼大师赛中进入21-50排名！奖品初级资质果实已发放，请注意查收哦！" frequency = ""/>
+	<announcement id = "91" day = "-1" content = "你在烹饪大师赛中获得了排行榜第1名！奖品至尊大胃王称号、1个至尊资质果实已发放，请注意查收哦！" frequency = ""/>
+	<announcement id = "92" day = "-1" content = "你在烹饪大师赛中进入2-10排名！奖品美食小当家称号、1个高级资质果实已发放，请注意查收哦！" frequency = ""/>
+	<announcement id = "93" day = "-1" content = "你在烹饪大师赛中进入11-50排名！奖品美食小小家称号、1个中级资质果实已发放，请注意查收哦！" frequency = ""/>
+	<announcement id = "94" day = "-1" content = "你在烹饪大师赛中获得了冠军队的奖励！奖品精灵楼兰、食神大厨帽、2个精灵成长精华、烹饪大师勋章已发放，请注意查收哦！" frequency = ""/>
+	<announcement id = "95" day = "-1" content = "你在烹饪大师赛中获得了亚军队的奖励！奖品食神中厨帽、2个精灵成长精华已发放，请注意查收哦！" frequency = ""/>
+	<announcement id = "96" day = "-1" content = "你在烹饪大师赛中获得了季军队的奖励！奖品食神小厨帽、5万经验券已发放，请注意查收哦！" frequency = ""/>
+	
+
+
+	<announcement id = "97" day = "-1" content = "你在种植大师赛中获得了冠军！奖品孔雀金羽冠、1个至尊资质果实、榛果种子10个、种植大师勋章已发放，请注意查收哦！" frequency = ""/>
+	<announcement id = "98" day = "-1" content = "你在种植大师赛中进入2-10排名！奖品孔雀银羽冠、1个高级资质果实、榛果种子5个、种植高手勋章已发放，请注意查收哦！" frequency = ""/>
+	<announcement id = "99" day = "-1" content = "你在种植大师赛中进入11-50排名！奖品孔雀铜羽冠、1个中级资质果实、榛果种子1个、种植达人勋章已发放，请注意查收哦！" frequency = ""/>
+	
+	<announcement id = "114" day = "-1" content = "世界BOSS挑战开始了" frequency = ""/>
+	<announcement id = "115" day = "-1" content = "世界BOSS挑战结束了" frequency = ""/>
+	
+
+
+
+
+
+
+
+
+
+
+
+</announcements>

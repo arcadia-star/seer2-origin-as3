@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- 
+**********************
+巅峰之战兑换配置
+swap节点:
+type 兑换类型,goods(战斗物资兑换),honour(荣誉点兑换)；
+des 对应兑换的说明；
+**********************
+honour节点:
+des 对应兑换的说明；
+type 奖品类型,bag、gad、pet、equip;
+**********************
+goods节点:
+id 物品id；
+swapid 后台给的兑换swapid；
+tips  物品描述；
+price 价格；
+checkID 检测id,物资检测id为后台给的的daylimit，荣誉点的检测id为后台给的foreverlimit
+daylimitNum每日限制的次数
+***********************
+ -->
+<root>
+	<swap type="goods" des="战斗物资">
+		<!-- 
+		<goods id="202014" swapId="1053" tips="在精灵背包中使用，可以使精灵在下3场PVP对战中获得特攻值提升50点的效果" price="50" checkID="612" daylimitNum="10"/>
+		<goods id="202015" swapId="1054" tips="在精灵背包中使用，可以使精灵在下3场PVP对战中获得物攻值提升50点的效果" price="50" checkID="613" daylimitNum="10"/>
+		<goods id="202013" swapId="1055" tips="在精灵背包中使用，可以使精灵在下3场PVP对战中获得物防值提升50点的效果" price="50" checkID="614" daylimitNum="10"/>
+		<goods id="202016" swapId="1056" tips="在精灵背包中使用，可以使精灵在下3场PVP对战中获得特防值提升50点的效果" price="50" checkID="615" daylimitNum="10"/>
+		  -->
+	</swap>
+	<swap type="honour" des="荣誉点兑换">
+		<honour type="bag" des="包裹">
+			<goods id="400281" swapId="1124" tips="A型包裹：5万经验券*3+性格药水A*3" price="50"/>
+			<goods id="400282" swapId="1125" tips="B型包裹：5万经验券*3+性格药水B*3" price="45"/>
+			<goods id="400283" swapId="1126" tips="C型包裹：5万经验券*3+性格药水C*3" price="50"/>
+			<goods id="400284" swapId="1127" tips="D型包裹：5万经验券*3+性格药水D*3" price="45"/>
+			<goods id="400284" swapId="4693" tips="一堆异晶：异晶*1000 " price="200"/>
+			<goods id="400284" swapId="4694" tips="一堆龙鳞：龙鳞4*20 " price="150"/>
+			<goods id="400284" swapId="4695" tips="特殊性格药剂礼包：特化性格药剂*3、深度性格药剂*1" price="300"/>
+		</honour>
+		<honour type="gad" des="纹章">
+			<goods id="200668" swapId="1255" tips="使精灵帕德在首发出场时自动获得追击状态" price="30"/>
+			<goods id="200726" swapId="3260" tips="使霍利出场时自带刺拳状态" price="20"/>
+			<goods id="200943" swapId="3261" tips="使阿吒婆拘魔道之念状态持续到战斗结束" price="25"/>
+			<goods id="200941" swapId="3262" tips="使魔纹黑龙出场时特防强化1层" price="30"/>
+			<goods id="200946" swapId="3263" tips="使乔布斯使用淘汰之刃时可瞬间击败体力低于200点的对手" price="25"/>
+			<goods id="200961" swapId="3264" tips="使时空霸主先出手时超能系技能威力增加10" price="25"/>
+			<goods id="200975" swapId="3859" tips="使魔渊梦神上场后使环境变为异空间" price="60"/>
+			<goods id="208245" swapId="3860" tips="使海岩兽提塔哈克上场时获得1层连攻状态" price="60"/>
+			<goods id="208247" swapId="3861" tips="使远古地魔拉斯拉克受到致死打击时 扣除对手1/4的体力 最高不超过200点" price="60"/>
+			<goods id="200974" swapId="3862" tips="使梦魇对手恐惧时 自己每回合额外增加15点怒气" price="50"/>
+			<goods id="200786" swapId="3863" tips="使雷利斯自身能力强化状态大于3层时 每回合额外恢复5点怒气" price="40"/>
+
+			<goods id="200676" swapId="4689" tips="使小绿蜓若自己受到致命一击 则自己下一次致命一击率增加100%" price="70"/>
+			<goods id="208340" swapId="4690" tips="使履霜冰至将对手消耗的怒气会转化为自身怒气" price="80"/>
+			<goods id="208344" swapId="4691" tips="使地葬界王回合开始时若自身怒气低于对手 则本回合释放的所有技能必中" price="80"/>
+			<goods id="208337" swapId="4692" tips="使苏希斯每次降低对手怒气时 自己增加相等的怒气值" price="80"/>
+		</honour>
+		<honour type="pet" des="精灵">
+			<goods id="373" swapId="1156" tips="雷奥帕德是只非常出色的战斗系精灵，只追随最强的训练师" price="80" checkID="202237"/>
+			<goods id="525" swapId="1897" tips="霍利菲尔德是只非常出色的战斗系精灵，只追随最强的训练师" price="80" checkID="203192"/>
+            <goods id="759" swapId="3854" tips="魔渊梦神是只非常出色的超能系精灵，只追随最强的训练师" price="160" checkID="0"/>
+            <goods id="850" swapId="3855" tips="哈克是只非常出色的水系精灵，只追随最强的训练师" price="160" checkID="0"/>
+            <goods id="843" swapId="3856" tips="拉克是只非常出色的地面系精灵，只追随最强的训练师" price="160" checkID="0"/>
+            <goods id="758" swapId="3857" tips="梦魇是只非常出色的暗影系精灵，只追随最强的训练师" price="140" checkID="0"/>
+            <goods id="637" swapId="3858" tips="雷利是只非常出色的电系精灵，只追随最强的训练师" price="120" checkID="0"/>
+            <goods id="964" swapId="4684" tips="卡小斯" price="30" checkID="0"/>
+            <goods id="571" swapId="4685" tips="极光" price="100" checkID="0"/>
+            <goods id="2544" swapId="4686" tips="地葬界王" price="250" checkID="0"/>
+            <goods id="2536" swapId="4687" tips="苏希斯" price="250" checkID="0"/>
+            <goods id="2555" swapId="4688" tips="尤米茜" price="250" checkID="0"/>
+		</honour>
+		<honour type="equip" des="装备">
+		
+			<goods id="101065" swapId="4393" price="30" checkID="250670" isNew="1" tips="龙影飞速装的头盔"/>
+			<goods id="101066" swapId="4394" price="20" checkID="250671" isNew="1" tips="龙影飞速装的手甲"/>
+			<goods id="101067" swapId="4395" price="20" checkID="250672" isNew="1" tips="龙影飞速装的腰带"/>
+			<goods id="101068" swapId="4396" price="30" checkID="250673" isNew="1" tips="龙影飞速装的战靴"/>
+			<goods id="101069" swapId="4397" price="40" checkID="250674" isNew="1" tips="龙影飞速装的背装"/>
+			<goods id="605479" swapId="4398" price="50" checkID="0" isNew="1" tips="随机获得一个紫色星魂" />
+			
+			<goods id="100166" swapId="3265" price="20" checkID="204886" tips="寄宿着火焰精灵的头盔"/>
+			<goods id="100167" swapId="3266" price="15" checkID="204887" tips="寄宿着火焰精灵的胸甲"/>
+			<goods id="100168" swapId="3267" price="10" checkID="204888" tips="寄宿着火焰精灵的腰带"/>
+			<goods id="100169" swapId="3268" price="15" checkID="204889" tips="寄宿着火焰精灵的靴子"/>
+			<goods id="100170" swapId="3269" price="20" checkID="204890" tips="寄宿着火焰精灵的靴子"/>
+			<goods id="100485" swapId="3270" price="40" checkID="204891" tips="贾斯汀站长所持有的光剑" />
+			
+			<!--<goods id="100694" swapId="1047" tips="零式套装头部-集齐套装可使用零式卷轴获得提升" price="100" checkID="202160"/>
+			<goods id="100695" swapId="1048" tips="零式套装手部-集齐套装可使用零式卷轴获得提升" price="60" checkID="202161"/>
+			<goods id="100696" swapId="1049" tips="零式套装腰带-集齐套装可使用零式卷轴获得提升" price="40" checkID="202162"/>
+			<goods id="100697" swapId="1050" tips="零式套装腿部-集齐套装可使用零式卷轴获得提升" price="60" checkID="202163"/>
+			<goods id="100698" swapId="1051" tips="零式套装背部-集齐套装可使用零式卷轴获得提升" price="160" checkID="202164"/>
+			<goods id="205013" swapId="1052" tips="这里面共有5个零式卷轴，零式套装共计可被附魔5次。" price="250" checkID="202165"/>
+             -->
+		</honour>
+	</swap>
+</root>

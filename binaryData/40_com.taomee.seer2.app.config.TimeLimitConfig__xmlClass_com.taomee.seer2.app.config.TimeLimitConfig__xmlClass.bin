@@ -1,0 +1,927 @@
+<!-- Limit ID 时刻表的编号， FromDate表示开始的日期: 年、月、日、小时、分钟，ToDate结束的时间-->
+<!--Time WeekDay表示周几， TimeStart表示开始时间（小时 分钟）， TimeEnd表示结束时间（小时， 分钟） -->
+<!--Flag 一个标志-->
+<!-- 譬如
+	 <Limit ID="2" NAME="" FromDate="2012-02-01,14:00" ToDate="2012-03-15 14:10">
+		<Week>
+			<TM WeekDay="5" TimeStart="16 50" TimeEnd="17 20" />
+			<TM WeekDay="5" TimeStart="19 0" TimeEnd="19 25" />
+		</Week>
+	</Limit>
+-->
+
+<Time>
+	<Limit ID="1" NAME="VIP幸运礼包" FromDate="2012-03-16 00:00" ToDate="2012-04-12 23:00">
+	</Limit>
+	<Limit ID="2" NAME="先祖祭拜活动" FromDate="2012-04-02 13:00" ToDate="2012-04-02 15:00">
+	</Limit>
+	<Limit ID="3" NAME="野外纹章精灵" FromDate="2012-06-02 13:00" ToDate="2012-06-02 15:00">
+    <!--	
+	    <Week>
+			<TM WeekDay="0" TimeStart="13 00" TimeEnd="15 00" />
+			<TM WeekDay="1" TimeStart="13 00" TimeEnd="15 00" />
+			<TM WeekDay="2" TimeStart="13 00" TimeEnd="15 00" />
+		</Week>
+		-->
+	</Limit>
+	<Limit ID="4" NAME="VIP试用领取奖品" FromDate="2012-04-29 14:00" ToDate="2012-04-29 15:00">
+	</Limit>
+	<Limit ID="5" NAME="SPT(艾丽希斯)"  FromDate="2012-04-01 00:00" ToDate="2022-04-02 15:00">
+		<Week>
+			<TM WeekDay="0" TimeStart="13 00" TimeEnd="15 00" />
+			<TM WeekDay="1" TimeStart="13 00" TimeEnd="15 00" />
+			<TM WeekDay="2" TimeStart="13 00" TimeEnd="15 00" />
+			<TM WeekDay="3" TimeStart="13 00" TimeEnd="15 00" />
+			<TM WeekDay="4" TimeStart="13 00" TimeEnd="15 00" />
+			<TM WeekDay="5" TimeStart="13 00" TimeEnd="15 00" />
+			<TM WeekDay="6" TimeStart="13 00" TimeEnd="15 00" />
+		</Week>
+	</Limit>
+	<Limit ID="6" NAME="VIP幸运礼包--充值活动" FromDate="2013-05-31 00:00" ToDate="2013-06-27 23:00">
+	</Limit>
+	<Limit ID="7" NAME="普天同庆 赛尔豆大放送2-10000" FromDate="2012-04-21 12:30" ToDate="2012-04-21 13:30">
+	</Limit>
+	<Limit ID="8" NAME="普天同庆 赛尔豆大放送2-15000" FromDate="2012-04-21 13:30" ToDate="2012-04-21 14:30">
+	</Limit>
+	<Limit ID="9" NAME="普天同庆 赛尔豆大放送2-25000" FromDate="2012-04-21 14:30" ToDate="2012-04-21 15:00">
+	</Limit>
+	<Limit ID="10" NAME="能量树" FromDate="2012-07-22 00:00" ToDate="2012-07-22 23:59">
+	</Limit>
+	<Limit ID="11" NAME="能量树" FromDate="2012-07-22 12:27" ToDate="2012-07-22 23:59">
+	</Limit>
+	<Limit ID="12" NAME="能量树" FromDate="2012-07-22 12:57" ToDate="2012-07-22 23:59">
+	</Limit>
+	<Limit ID="13" NAME="能量树" FromDate="2012-07-22 13:27" ToDate="2012-07-22 23:59">
+	</Limit>
+	<Limit ID="14" NAME="能量树" FromDate="2012-07-22 13:57" ToDate="2012-07-22 23:59">
+	</Limit>
+	<Limit ID="15" NAME="能量树" FromDate="2012-07-22 14:27" ToDate="2012-07-22 23:59">
+	</Limit>
+	<Limit ID="16" NAME="能量树" FromDate="2012-07-22 14:57" ToDate="2012-07-22 23:59">
+	</Limit>
+	<Limit ID="17" NAME="能量树(AS用)" FromDate="2012-04-29 11:57" ToDate="2012-04-29 12:12">
+	</Limit>
+	<Limit ID="18" NAME="能量树(AS用)" FromDate="2012-04-29 12:12" ToDate="2012-04-29 12:27">
+	</Limit>
+	<Limit ID="19" NAME="能量树(AS用)" FromDate="2012-04-29 12:27" ToDate="2012-04-29 12:42">
+	</Limit>
+	<Limit ID="20" NAME="能量树(AS用)" FromDate="2012-04-29 12:42" ToDate="2012-04-29 12:57">
+	</Limit>
+	<Limit ID="21" NAME="能量树(AS用)" FromDate="2012-04-29 12:57" ToDate="2012-04-29 13:12">
+	</Limit>
+	<Limit ID="22" NAME="能量树(AS用)" FromDate="2012-04-29 13:12" ToDate="2012-04-29 13:27">
+	</Limit>
+	<Limit ID="23" NAME="能量树(AS用)" FromDate="2012-04-29 13:27" ToDate="2012-04-29 13:42">
+	</Limit>
+	<Limit ID="24" NAME="能量树(AS用)" FromDate="2012-04-29 13:42" ToDate="2012-04-29 13:57">
+	</Limit>
+	<Limit ID="25" NAME="能量树(AS用)" FromDate="2012-04-29 13:57" ToDate="2012-04-29 14:12">
+	</Limit>
+	<Limit ID="26" NAME="能量树(AS用)" FromDate="2012-04-29 14:12" ToDate="2012-04-29 14:27">
+	</Limit>
+	<Limit ID="27" NAME="能量树(AS用)" FromDate="2012-04-29 14:27" ToDate="2012-04-29 14:42">
+	</Limit>
+	<Limit ID="28" NAME="能量树(AS用)" FromDate="2012-04-29 14:42" ToDate="2012-04-29 14:57">
+	</Limit>
+	<Limit ID="29" NAME="能量树(AS用)" FromDate="2012-04-29 14:57" ToDate="2012-04-29 15:00">
+	</Limit>
+	<Limit ID="30" NAME="能量树外面5分钟倒计时(AS用)" FromDate="2012-04-29 11:52" ToDate="2012-04-29 11:57">
+	</Limit>
+	<Limit ID="31" NAME="新一轮反攻 多精灵对战"  FromDate="2012-04-29 13:00" ToDate="2012-05-01 15:00">
+		<Week>
+			<TM WeekDay="0" TimeStart="13 00" TimeEnd="15 00" />
+			<TM WeekDay="1" TimeStart="13 00" TimeEnd="15 00" />
+			<TM WeekDay="2" TimeStart="13 00" TimeEnd="15 00" />
+		</Week>
+	</Limit>
+	<Limit ID="32" NAME="雷神对决活动" FromDate="2012-04-29 14:00" ToDate="2012-04-29 14:30">
+	</Limit>
+	<Limit ID="33" NAME="雷神对决活动" FromDate="2012-04-29 14:30" ToDate="2012-04-29 15:00">
+	</Limit>
+	<Limit ID="34" NAME="六一礼物券" FromDate="2012-06-01 00:00" ToDate="2012-06-08 00:00">
+	</Limit>
+	<Limit ID="35" NAME="六一送豪礼" FromDate="2012-05-19 14:00" ToDate="2012-05-19 15:00">
+	</Limit>
+	<Limit ID="36" NAME="六一礼物券, 打工" FromDate="2012-05-11 00:00" ToDate="2012-06-02 23:59">
+	</Limit>
+	<Limit ID="37" NAME="百万豪车大派送" FromDate="2012-06-22 14:00" ToDate="2012-06-22 15:00">
+	</Limit>
+	<Limit ID="38" NAME="神猪降临" FromDate="2013-04-22 00:00" ToDate="2082-07-22 23:30">
+		<Week>
+			<TM WeekDay="0" TimeStart="13 30" TimeEnd="14 30" />
+			<TM WeekDay="1" TimeStart="13 30" TimeEnd="14 30" />
+			<TM WeekDay="2" TimeStart="13 30" TimeEnd="14 30" />
+			<TM WeekDay="3" TimeStart="13 30" TimeEnd="14 30" />
+			<TM WeekDay="4" TimeStart="13 30" TimeEnd="14 30" />
+			<TM WeekDay="5" TimeStart="13 30" TimeEnd="14 30" />
+			<TM WeekDay="6" TimeStart="13 30" TimeEnd="14 30" />
+		</Week>
+	</Limit>
+	<Limit ID="39" NAME="普天同庆 赛尔豆大放送6.2-10000" FromDate="2012-06-02 13:30" ToDate="2012-06-02 13:50">
+	</Limit>
+	<Limit ID="40" NAME="普天同庆 赛尔豆大放送6.2-15000" FromDate="2012-06-02 13:50" ToDate="2012-06-02 14:10">
+	</Limit>
+	<Limit ID="41" NAME="普天同庆 赛尔豆大放送6.2-25000" FromDate="2012-06-02 14:10" ToDate="2012-06-02 14:30">
+	</Limit>
+	<Limit ID="42" NAME="拯救米咔" FromDate="2012-06-02 14:30" ToDate="2013-06-02 15:00">
+	</Limit>
+	<Limit ID="43" NAME="神猪降临获取奖励" FromDate="2013-04-22 13:30" ToDate="2082-11-10 14:30">
+		<Week>
+			<TM WeekDay="0" TimeStart="13 30" TimeEnd="14 30" />
+			<TM WeekDay="1" TimeStart="13 30" TimeEnd="14 30" />
+			<TM WeekDay="2" TimeStart="13 30" TimeEnd="14 30" />
+			<TM WeekDay="3" TimeStart="13 30" TimeEnd="14 30" />
+			<TM WeekDay="4" TimeStart="13 30" TimeEnd="14 30" />
+			<TM WeekDay="5" TimeStart="13 30" TimeEnd="14 30" />
+			<TM WeekDay="6" TimeStart="13 30" TimeEnd="14 30" />
+		</Week>
+	</Limit>
+	<Limit ID="44" NAME="睡懒觉的吃货" >
+		<Week>
+			<TM WeekDay="0" TimeStart="13 00" TimeEnd="16 00" />
+			<TM WeekDay="1" TimeStart="13 00" TimeEnd="16 00" />
+			<TM WeekDay="2" TimeStart="13 00" TimeEnd="16 00" />
+			<TM WeekDay="3" TimeStart="13 00" TimeEnd="16 00" />
+			<TM WeekDay="4" TimeStart="13 00" TimeEnd="16 00" />
+			<TM WeekDay="5" TimeStart="13 00" TimeEnd="16 00" />
+			<TM WeekDay="6" TimeStart="13 00" TimeEnd="16 00" />
+		</Week>
+	</Limit>
+	<Limit ID="45" NAME="打工领六一套装-1" FromDate="2012-06-08 00:00" ToDate="2012-06-15 00:00">
+	</Limit>
+	<Limit ID="46" NAME="打工领六一套装-2" FromDate="2012-06-15 00:00" ToDate="2012-06-22 00:00">
+	</Limit>
+	<Limit ID="47" NAME="打工领六一套装-3" FromDate="2012-06-22 00:00" ToDate="2012-06-29 00:00">
+	</Limit>
+	<Limit ID="48" NAME="打工领六一套装-4" FromDate="2012-06-29 00:00" ToDate="2012-07-06 00:00">
+	</Limit>
+	<Limit ID="50" NAME="绝版星级礼包活动限制时间1"  FromDate="2012-06-16 14:00" ToDate="2012-06-16 14:20">
+	</Limit>
+	<Limit ID="51" NAME="绝版星级礼包活动限制时间2"  FromDate="2012-06-16 14:20" ToDate="2012-06-16 14:40">
+	</Limit>
+	<Limit ID="52" NAME="绝版星级礼包活动限制时间3"  FromDate="2012-06-16 14:40" ToDate="2012-06-16 15:00">
+	</Limit>
+	<Limit ID="53" NAME="贾斯汀开学高效资质训练"  FromDate="2012-08-31 00:00" ToDate="2012-09-13 23:00">
+		<Week>
+			<TM WeekDay="0" TimeStart="14 00" TimeEnd="15 00" />
+			<TM WeekDay="1" TimeStart="14 00" TimeEnd="15 00" />
+			<TM WeekDay="2" TimeStart="14 00" TimeEnd="15 00" />
+			<TM WeekDay="3" TimeStart="14 00" TimeEnd="15 00" />
+			<TM WeekDay="4" TimeStart="14 00" TimeEnd="15 00" />
+			<TM WeekDay="5" TimeStart="14 00" TimeEnd="15 00" />
+			<TM WeekDay="6" TimeStart="14 00" TimeEnd="15 00" />
+		</Week>
+	</Limit>
+	<Limit ID="54" NAME="翻斗乐之暗夜摩托"  FromDate="2012-06-26 00:00" ToDate="2012-07-26 23:00">
+		<Week>
+			<TM WeekDay="6" TimeStart="14 00" TimeEnd="16 00" />
+		</Week>
+	</Limit>
+	<Limit ID="55" NAME="雷伊对凯萨 世纪大战"  FromDate="2012-07-07 14:00" ToDate="2012-07-08 15:00">
+		<Week>
+			<TM WeekDay="0" TimeStart="14 00" TimeEnd="15 00" />
+			<TM WeekDay="6" TimeStart="14 00" TimeEnd="15 00" />
+		</Week>
+	</Limit>
+	<Limit ID="56" NAME="周年庆六大礼包1" FromDate="2012-07-07 00:00" ToDate="2012-07-19 23:59" >
+	</Limit>
+	<Limit ID="57" NAME="周年庆六大礼包2" FromDate="2012-07-08 00:00" ToDate="2012-07-19 23:59" >
+	</Limit>
+	<Limit ID="58" NAME="周年庆六大礼包3" FromDate="2012-07-09 00:00" ToDate="2012-07-19 23:59" >
+	</Limit>
+	<Limit ID="59" NAME="周年庆六大礼包4" FromDate="2012-07-10 00:00" ToDate="2012-07-19 23:59" >
+	</Limit>
+	<Limit ID="60" NAME="周年庆六大礼包5" FromDate="2012-07-11 00:00" ToDate="2012-07-19 23:59" >
+	</Limit>
+	<Limit ID="61" NAME="周年庆六大礼包6" FromDate="2012-07-12 00:00" ToDate="2012-07-19 23:59" >
+	</Limit>
+	<Limit ID="62" NAME="暑假签到活动" FromDate="2012-07-06 00:00" ToDate="2012-08-31 23:59" >
+	</Limit>
+	<Limit ID="63" NAME="见证飞船起航1周年的盛典"  FromDate="2012-07-08 00:00" ToDate="2012-07-12 23:59">
+		<Week>
+			<TM WeekDay="0" TimeStart="14 00" TimeEnd="15 00" />
+			<TM WeekDay="1" TimeStart="14 00" TimeEnd="15 00" />
+			<TM WeekDay="2" TimeStart="14 00" TimeEnd="15 00" />
+			<TM WeekDay="3" TimeStart="14 00" TimeEnd="15 00" />
+			<TM WeekDay="4" TimeStart="14 00" TimeEnd="15 00" />
+		</Week>
+	</Limit>
+	<Limit ID="64" NAME="假日秘宝大行动,随机物品的时间"  FromDate="2012-07-06 00:00" ToDate="2012-08-31 23:59">
+	</Limit>
+	<Limit ID="65" NAME="伊特大乱斗"  FromDate="2012-07-08 00:00" ToDate="2082-07-12 23:59">
+	</Limit>
+	<Limit ID="66" NAME="精灵王争霸赛,比赛时间" FromDate="2012-07-06 00:00" ToDate="2012-08-10 23:59" >
+	</Limit>
+	<Limit ID="67" NAME="帕帕米拉的造型"  FromDate="2012-07-08 00:00" ToDate="2082-07-12 23:59">
+		<Week>
+			<TM WeekDay="0" TimeStart="13 00" TimeEnd="14 00" />
+			<TM WeekDay="0" TimeStart="19 00" TimeEnd="20 00" />
+			<TM WeekDay="1" TimeStart="13 00" TimeEnd="14 00" />
+			<TM WeekDay="1" TimeStart="19 00" TimeEnd="20 00" />
+			<TM WeekDay="2" TimeStart="13 00" TimeEnd="14 00" />
+			<TM WeekDay="2" TimeStart="19 00" TimeEnd="20 00" />
+			<TM WeekDay="3" TimeStart="13 00" TimeEnd="14 00" />
+			<TM WeekDay="3" TimeStart="19 00" TimeEnd="20 00" />
+			<TM WeekDay="4" TimeStart="13 00" TimeEnd="14 00" />
+			<TM WeekDay="4" TimeStart="19 00" TimeEnd="20 00" />
+			<TM WeekDay="5" TimeStart="13 00" TimeEnd="14 00" />
+			<TM WeekDay="5" TimeStart="19 00" TimeEnd="20 00" />
+			<TM WeekDay="6" TimeStart="13 00" TimeEnd="14 00" />
+			<TM WeekDay="6" TimeStart="19 00" TimeEnd="20 00" />
+		</Week>
+	</Limit>
+	<Limit ID="68" NAME="精灵王争霸赛之抢分赛" FromDate="2012-08-3 14:00" ToDate="2012-08-3 14:20" >
+	</Limit>
+	<Limit ID="69" NAME="精灵王争霸赛之抢分赛" FromDate="2012-08-3 14:20" ToDate="2012-8-3 14:40" >
+	</Limit>
+	<Limit ID="70" NAME="精灵王争霸赛之抢分赛" FromDate="2012-08-3 14:40" ToDate="2012-08-3 15:00" >
+	</Limit>
+	<Limit ID="71" NAME="精灵王争霸赛之抢分赛" FromDate="2012-08-4 14:00" ToDate="2012-08-4 14:20" >
+	</Limit>
+	<Limit ID="72" NAME="精灵王争霸赛之抢分赛" FromDate="2012-08-4 14:20" ToDate="2012-08-4 14:40" >
+	</Limit>
+	<Limit ID="73" NAME="精灵王争霸赛之抢分赛" FromDate="2012-08-4 14:40" ToDate="2012-08-4 15:00" >
+	</Limit>
+	<Limit ID="74" NAME="精灵王争霸赛之抢分赛" FromDate="2012-08-5 14:00" ToDate="2012-08-5 14:20" >
+	</Limit>
+	<Limit ID="75" NAME="精灵王争霸赛之抢分赛" FromDate="2012-08-5 14:20" ToDate="2012-08-5 14:40" >
+	</Limit>
+	<Limit ID="76" NAME="精灵王争霸赛之抢分赛" FromDate="2012-08-5 14:40" ToDate="2012-08-5 15:00" >
+	</Limit>
+	<Limit ID="77" NAME="精灵王争霸赛之抢分赛(第一次领取时间)" FromDate="2012-08-3 15:00" ToDate="2012-08-4 14:00" >
+	</Limit>
+	<Limit ID="78" NAME="精灵王争霸赛之抢分赛(第二次领取时间)" FromDate="2012-08-4 15:00" ToDate="2012-08-5 14:00" >
+	</Limit>
+	<Limit ID="79" NAME="精灵王争霸赛之抢分赛(第三次领取时间)" FromDate="2012-08-5 15:00" ToDate="2012-08-06 14:00" >
+	</Limit>
+	<Limit ID="80" NAME="钓鱼大赛"  FromDate="2012-07-16 00:00" ToDate="2082-08-12 23:59">
+		<Week>
+			<TM WeekDay="0" TimeStart="13 00" TimeEnd="15 00" />
+			<TM WeekDay="1" TimeStart="13 00" TimeEnd="15 00" />
+			<TM WeekDay="2" TimeStart="13 00" TimeEnd="15 00" />
+			<TM WeekDay="3" TimeStart="13 00" TimeEnd="15 00" />
+			<TM WeekDay="4" TimeStart="13 00" TimeEnd="15 00" />
+			<TM WeekDay="5" TimeStart="13 00" TimeEnd="15 00" />
+			<TM WeekDay="6" TimeStart="13 00" TimeEnd="15 00" />
+		</Week>
+	</Limit>
+	<Limit ID="81" NAME="凯撒加入争霸赛(第一场)" FromDate="2012-07-23 13:00" ToDate="2082-07-26 13:30" >
+	</Limit>
+	<Limit ID="82" NAME="凯撒加入争霸赛(第二场)" FromDate="2012-07-23 14:00" ToDate="2082-07-26 15:00" >
+	</Limit>
+	<Limit ID="83" NAME="凯撒加入争霸赛(第三场)" FromDate="2012-07-23 15:00" ToDate="2082-07-26 15:30" >
+	</Limit>
+	<Limit ID="84" NAME="单挑王争霸赛"  FromDate="2012-07-08 00:00" ToDate="2082-07-12 23:59">
+		<Week>
+			<TM WeekDay="0" TimeStart="19 00" TimeEnd="20 00" />
+			<TM WeekDay="1" TimeStart="19 00" TimeEnd="20 00" />
+			<TM WeekDay="2" TimeStart="19 00" TimeEnd="20 00" />
+			<TM WeekDay="3" TimeStart="19 00" TimeEnd="20 00" />
+			<TM WeekDay="4" TimeStart="19 00" TimeEnd="20 00" />
+			<TM WeekDay="5" TimeStart="19 00" TimeEnd="20 00" />
+			<TM WeekDay="6" TimeStart="19 00" TimeEnd="20 00" />
+		</Week>
+	</Limit>
+	<Limit ID="85" NAME="训练师争霸赛"  FromDate="2012-07-08 00:00" ToDate="2082-07-12 23:59">
+		<Week>
+			<TM WeekDay="0" TimeStart="18 00" TimeEnd="21 00" />
+			<TM WeekDay="1" TimeStart="18 00" TimeEnd="21 00" />
+			<TM WeekDay="2" TimeStart="18 00" TimeEnd="21 00" />
+			<TM WeekDay="3" TimeStart="18 00" TimeEnd="21 00" />
+			<TM WeekDay="4" TimeStart="18 00" TimeEnd="21 00" />
+			<TM WeekDay="5" TimeStart="18 00" TimeEnd="21 00" />
+			<TM WeekDay="6" TimeStart="18 00" TimeEnd="21 00" />
+		</Week>
+	</Limit>
+	<Limit ID="86" NAME="精灵王争霸赛之抢分赛" FromDate="2012-08-6 14:00" ToDate="2012-08-6 14:20" >
+	</Limit>
+	<Limit ID="87" NAME="精灵王争霸赛之抢分赛" FromDate="2012-08-6 14:20" ToDate="2012-08-6 14:40" >
+	</Limit>
+	<Limit ID="88" NAME="精灵王争霸赛之抢分赛" FromDate="2012-08-6 14:40" ToDate="2012-08-6 15:00" >
+	</Limit>
+	<Limit ID="89" NAME="精灵王争霸赛之抢分赛" FromDate="2012-08-7 14:00" ToDate="2012-08-7 14:20" >
+	</Limit>
+	<Limit ID="90" NAME="精灵王争霸赛之抢分赛" FromDate="2012-08-7 14:20" ToDate="2012-08-7 14:40" >
+	</Limit>
+	<Limit ID="91" NAME="精灵王争霸赛之抢分赛" FromDate="2012-08-7 14:40" ToDate="2012-08-7 15:00" >
+	</Limit>
+	<Limit ID="92" NAME="精灵王争霸赛之抢分赛" FromDate="2012-08-8 14:00" ToDate="2012-08-8 14:20" >
+	</Limit>
+	<Limit ID="93" NAME="精灵王争霸赛之抢分赛" FromDate="2012-08-8 14:20" ToDate="2012-08-8 14:40" >
+	</Limit>
+	<Limit ID="94" NAME="精灵王争霸赛之抢分赛" FromDate="2012-08-8 14:40" ToDate="2012-08-8 15:00" >
+	</Limit>
+	<Limit ID="95" NAME="精灵王争霸赛之抢分赛" FromDate="2012-08-9 14:00" ToDate="2012-08-9 14:20" >
+	</Limit>
+	<Limit ID="96" NAME="精灵王争霸赛之抢分赛" FromDate="2012-08-9 14:20" ToDate="2012-08-9 14:40" >
+	</Limit>
+	<Limit ID="97" NAME="精灵王争霸赛之抢分赛" FromDate="2012-08-9 14:40" ToDate="2012-08-9 15:00" >
+	</Limit>
+	<Limit ID="98" NAME="精灵王争霸赛之抢分赛(第三次领取时间)" FromDate="2012-08-6 15:00" ToDate="2012-08-07 14:00" >
+	</Limit>
+	<Limit ID="99" NAME="精灵王争霸赛之抢分赛(第三次领取时间)" FromDate="2012-08-7 15:00" ToDate="2012-08-08 14:00" >
+	</Limit>
+	<Limit ID="100" NAME="精灵王争霸赛之抢分赛(第三次领取时间)" FromDate="2012-08-8 15:00" ToDate="2012-08-09 14:00" >
+	</Limit>
+	<Limit ID="101" NAME="精灵王争霸赛之抢分赛(第三次领取时间)" FromDate="2012-08-9 15:00" ToDate="2012-08-10 14:00" >
+	</Limit>
+    <Limit ID="102" NAME="超级礼包争抢活动 教官室" FromDate="2012-08-10 13:30" ToDate="2012-08-10 13:40" ></Limit>
+    <Limit ID="103" NAME="超级礼包争抢活动 实验室" FromDate="2012-08-10 13:40" ToDate="2012-08-10 13:50" ></Limit>
+    <Limit ID="104" NAME="超级礼包争抢活动 游戏室" FromDate="2012-08-10 13:50" ToDate="2012-08-10 14:00" ></Limit>
+    <Limit ID="105" NAME="超级礼包争抢活动 动力室" FromDate="2012-08-10 14:00" ToDate="2012-08-10 14:10" ></Limit>
+    <Limit ID="106" NAME="超级礼包争抢活动 机械室" FromDate="2012-08-10 14:10" ToDate="2012-08-10 14:20" ></Limit>
+    <Limit ID="107" NAME="超级礼包争抢活动 船长室" FromDate="2012-08-10 14:20" ToDate="2012-08-10 14:30" ></Limit>
+	<Limit ID="108" NAME="凯萨挑战SPT" FromDate="2012-11-02 00:00" ToDate="2012-11-08 23:59" >
+	</Limit>
+	<Limit ID="109" NAME="扫除小恶魔"  FromDate="2012-08-11 00:00" ToDate="2082-08-16 23:59">
+		<Week>
+			<TM WeekDay="0" TimeStart="13 00" TimeEnd="14 00" />
+			<TM WeekDay="1" TimeStart="13 00" TimeEnd="14 00" />
+			<TM WeekDay="2" TimeStart="13 00" TimeEnd="14 00" />
+			<TM WeekDay="3" TimeStart="13 00" TimeEnd="14 00" />
+			<TM WeekDay="4" TimeStart="13 00" TimeEnd="14 00" />
+			<TM WeekDay="5" TimeStart="13 00" TimeEnd="14 00" />
+			<TM WeekDay="6" TimeStart="13 00" TimeEnd="14 00" />
+		</Week>
+	</Limit>
+
+  <Limit ID="110" NAME="王者广场开放时间" FromDate="2012-08-10 00:00" ToDate="2012-08-10 23:59" >
+  </Limit>
+  <Limit ID="111" NAME="王者广场开放时间"  FromDate="2012-08-10 00:00" ToDate="2082-08-23 23:59">
+    <Week>
+      <TM WeekDay="0" TimeStart="14 30" TimeEnd="15 00" />
+      <TM WeekDay="1" TimeStart="14 30" TimeEnd="15 00" />
+      <TM WeekDay="2" TimeStart="14 30" TimeEnd="15 00" />
+      <TM WeekDay="3" TimeStart="14 30" TimeEnd="15 00" />
+      <TM WeekDay="4" TimeStart="14 30" TimeEnd="15 00" />
+      <TM WeekDay="5" TimeStart="14 30" TimeEnd="15 00" />
+      <TM WeekDay="6" TimeStart="14 30" TimeEnd="15 00" />
+    </Week>
+  </Limit>
+  <Limit ID="112" NAME="战车大巡游 " FromDate="2012-08-10 14:00" ToDate="2012-08-10 15:00" ></Limit>
+  <Limit ID="113" NAME="战车大巡游 水系主城" FromDate="2012-08-10 14:11" ToDate="2012-08-10 14:20" ></Limit>
+  <Limit ID="114" NAME="战车大巡游 火系主城" FromDate="2012-08-10 14:21" ToDate="2012-08-10 14:30" ></Limit>
+  <Limit ID="115" NAME="战车大巡游 沙系主城" FromDate="2012-08-10 14:31" ToDate="2012-08-10 14:40" ></Limit>
+  <Limit ID="116" NAME="战车大巡游 地系主城" FromDate="2012-08-10 14:41" ToDate="2012-08-10 14:50" ></Limit>
+  <Limit ID="117" NAME="战车大巡游 冰系主城" FromDate="2012-08-10 14:51" ToDate="2012-08-10 15:00" ></Limit>
+  <Limit ID="118" NAME="收集神圣的祝福雨露" FromDate="2012-08-11 14:00" ToDate="2012-08-16 23:59" >
+  </Limit>
+  <Limit ID="119" NAME="收集神圣的祝福雨露" FromDate="2012-08-12 14:30" ToDate="2012-08-16 23:59" >
+  </Limit>
+  <Limit ID="120" NAME="收集神圣的祝福雨露" FromDate="2012-08-13 14:30" ToDate="2012-08-16 23:59" >
+  </Limit>
+  <Limit ID="121" NAME="收集神圣的祝福雨露" FromDate="2012-08-14 14:30" ToDate="2012-08-16 23:59" >
+  </Limit>
+  <Limit ID="122" NAME="收集神圣的祝福雨露" FromDate="2012-08-15 14:30" ToDate="2012-08-16 23:59" >
+  </Limit>
+  <Limit ID="123" NAME="收集神圣的祝福雨露" FromDate="2012-08-16 14:30" ToDate="2012-08-16 23:59" >
+  </Limit>
+  <Limit ID="124" NAME="挑战帕拉丁" FromDate="2012-08-10 00:00" ToDate="2012-08-23 23:59" >
+    <Week>
+      <TM WeekDay="0" TimeStart="14 30" TimeEnd="15 00" />
+      <TM WeekDay="1" TimeStart="14 30" TimeEnd="15 00" />
+      <TM WeekDay="2" TimeStart="14 30" TimeEnd="15 00" />
+      <TM WeekDay="3" TimeStart="14 30" TimeEnd="15 00" />
+      <TM WeekDay="4" TimeStart="14 30" TimeEnd="15 00" />
+      <TM WeekDay="5" TimeStart="14 30" TimeEnd="15 00" />
+      <TM WeekDay="6" TimeStart="14 30" TimeEnd="15 00" />
+    </Week>
+  </Limit>
+  <Limit ID="125" NAME="走红地毯" FromDate="2012-08-10 13:00" ToDate="2012-08-10 14:00" >
+  </Limit>
+  <Limit ID="126" NAME="战车试驾送礼" FromDate="2012-08-10 13:00" ToDate="2012-08-10 16:00" >
+  </Limit>
+  <Limit ID="127" NAME="火炬挑战咪咔" FromDate="2013-06-01 14:00" ToDate="2013-06-01 15:00" >
+  </Limit>
+
+  <Limit ID="128" NAME="召唤雷伊" FromDate="2012-08-17 13:00" ToDate="2012-08-17 14:00" >
+  </Limit>
+  <Limit ID="129" NAME="召唤雷伊领取礼物" FromDate="2012-08-17 13:15" ToDate="2012-08-17 14:15" >
+  </Limit>
+  <Limit ID="130" NAME="目灵兽的复苏" FromDate="2012-08-17 00:00" ToDate="2012-08-17 23:59" >
+  </Limit>
+  <Limit ID="131" NAME="伪装草系精灵捕捉时间"  FromDate="2012-08-17 00:00" ToDate="2022-04-02 15:00">
+    <Week>
+      <TM WeekDay="0" TimeStart="13 30" TimeEnd="14 30" />
+      <TM WeekDay="1" TimeStart="13 30" TimeEnd="14 30" />
+      <TM WeekDay="2" TimeStart="13 30" TimeEnd="14 30" />
+      <TM WeekDay="3" TimeStart="13 30" TimeEnd="14 30" />
+      <TM WeekDay="4" TimeStart="13 30" TimeEnd="14 30" />
+      <TM WeekDay="5" TimeStart="13 30" TimeEnd="14 30" />
+      <TM WeekDay="6" TimeStart="13 30" TimeEnd="14 30" />
+    </Week>
+  </Limit>
+  <Limit ID="132" NAME="雷鸣炎破斩习得"  FromDate="2012-01-01 00:00" ToDate="2082-01-03 23:59">
+  </Limit>
+  <Limit ID="133" NAME="臭流氓！哪里逃！"  FromDate="2012-08-17 00:00" ToDate="2082-08-23 23:59">
+    <Week>
+      <TM WeekDay="0" TimeStart="12 00" TimeEnd="15 00" />
+      <TM WeekDay="1" TimeStart="12 00" TimeEnd="15 00" />
+      <TM WeekDay="2" TimeStart="12 00" TimeEnd="15 00" />
+      <TM WeekDay="3" TimeStart="12 00" TimeEnd="15 00" />
+      <TM WeekDay="4" TimeStart="12 00" TimeEnd="15 00" />
+      <TM WeekDay="5" TimeStart="12 00" TimeEnd="15 00" />
+      <TM WeekDay="6" TimeStart="12 00" TimeEnd="15 00" />
+    </Week>
+  </Limit>
+  <Limit ID="134" NAME="凯伊影灵世纪末对决" FromDate="2013-04-04 13:00" ToDate="2083-04-06 20:00" >
+    <Week>
+      <TM WeekDay="0" TimeStart="13 00" TimeEnd="14 00" />
+      <TM WeekDay="0" TimeStart="19 00" TimeEnd="20 00" />
+      <TM WeekDay="1" TimeStart="13 00" TimeEnd="14 00" />
+      <TM WeekDay="1" TimeStart="19 00" TimeEnd="20 00" />
+      <TM WeekDay="2" TimeStart="13 00" TimeEnd="14 00" />
+      <TM WeekDay="2" TimeStart="19 00" TimeEnd="20 00" />
+      <TM WeekDay="3" TimeStart="13 00" TimeEnd="14 00" />
+      <TM WeekDay="3" TimeStart="19 00" TimeEnd="20 00" />
+      <TM WeekDay="4" TimeStart="13 00" TimeEnd="14 00" />
+      <TM WeekDay="4" TimeStart="19 00" TimeEnd="20 00" />
+      <TM WeekDay="5" TimeStart="13 00" TimeEnd="14 00" />
+      <TM WeekDay="5" TimeStart="19 00" TimeEnd="20 00" />
+      <TM WeekDay="6" TimeStart="13 00" TimeEnd="14 00" />
+      <TM WeekDay="6" TimeStart="19 00" TimeEnd="20 00" />
+    </Week>
+  </Limit>
+  <Limit ID="135" NAME="寄给站长的明信片 前三个小任务" FromDate="2012-08-24 00:00" ToDate="2012-09-06 23:00" >
+  </Limit>
+  <Limit ID="136" NAME="寄给站长的明信片 最后领奖" FromDate="2012-09-01 14:30" ToDate="2012-09-06 23:00" >
+  </Limit>
+  <Limit ID="137" NAME="中秋经验大放送,巨无霸月饼" FromDate="2012-09-30 13:30" ToDate="2012-09-30 14:00" >
+  </Limit>
+  <Limit ID="138" NAME="中秋经验大放送,五万经验券" FromDate="2012-09-30 14:00" ToDate="2012-09-30 14:30" >
+  </Limit>
+  <Limit ID="139" NAME="中秋经验大放送,精灵成长精华" FromDate="2012-09-30 14:30" ToDate="2012-09-30 15:00" >
+  </Limit>
+  <Limit ID="140" NAME="训练师授奖" FromDate="2012-09-01 14:30" ToDate="2012-09-13 23:00" >
+  </Limit>
+  <Limit ID="141" NAME="领取龙蛋" FromDate="2012-09-01 14:30" ToDate="2082-09-13 23:00" >
+  </Limit>
+  <Limit ID="142" NAME="开学极速成长训练"  FromDate="2012-08-31 00:00" ToDate="2012-09-13 23:00">
+	<Week>
+		<TM WeekDay="0" TimeStart="14 00" TimeEnd="15 00" />
+		<TM WeekDay="1" TimeStart="14 00" TimeEnd="15 00" />
+		<TM WeekDay="2" TimeStart="14 00" TimeEnd="15 00" />
+		<TM WeekDay="3" TimeStart="14 00" TimeEnd="15 00" />
+		<TM WeekDay="4" TimeStart="14 00" TimeEnd="15 00" />
+		<TM WeekDay="5" TimeStart="14 00" TimeEnd="15 00" />
+		<TM WeekDay="6" TimeStart="14 00" TimeEnd="15 00" />
+	</Week>
+  </Limit>
+  <Limit ID="143" NAME="开学有奖智慧考验"  FromDate="2012-08-31 12:00" ToDate="2022-04-02 15:00">
+  </Limit>
+  <Limit ID="144" NAME="龙蛋孵化开始时间"  FromDate="2012-09-08 14:00" ToDate="2022-04-02 15:00">
+  </Limit>
+  <Limit ID="145" NAME="龙蛋"  FromDate="2012-09-15 13:30" ToDate="2012-09-15 14:00">
+  </Limit>
+  <Limit ID="146" NAME="阿宝星球寻宝记-第3弹"  FromDate="2012-09-22 14:30" ToDate="2012-09-22 15:00">
+  </Limit>
+  <Limit ID="147" NAME="爱吃月饼的小精灵"  FromDate="2012-09-30 00:00" ToDate="2012-10-06 00:00">
+	<Week>
+		<TM WeekDay="0" TimeStart="14 00" TimeEnd="15 00" />
+		<TM WeekDay="5" TimeStart="14 00" TimeEnd="15 00" />
+	</Week>
+  </Limit>
+  <Limit ID="148" NAME="狼妖挑战"  FromDate="2012-09-30 00:00" ToDate="2012-10-18 23:00">
+	<Week>
+		<TM WeekDay="0" TimeStart="13 00" TimeEnd="14 30" />
+		<TM WeekDay="1" TimeStart="13 00" TimeEnd="14 30" />
+		<TM WeekDay="2" TimeStart="13 00" TimeEnd="14 30" />
+		<TM WeekDay="3" TimeStart="13 00" TimeEnd="14 30" />
+		<TM WeekDay="4" TimeStart="13 00" TimeEnd="14 30" />
+		<TM WeekDay="5" TimeStart="13 00" TimeEnd="14 30" />
+		<TM WeekDay="6" TimeStart="13 00" TimeEnd="14 30" />
+	</Week>
+  </Limit>
+  <Limit ID="149" NAME="目灵兽的试炼 第一章 小小葵"  FromDate="2012-10-12 00:00" ToDate="2022-10-18 23:00">
+  </Limit>
+  <Limit ID="150" NAME="目灵兽的试炼 第一章 小树根"  FromDate="2012-10-13 00:00" ToDate="2022-10-18 23:00">
+  </Limit>
+  <Limit ID="151" NAME="目灵兽的试炼 第一章 芙拉"  FromDate="2012-10-14 00:00" ToDate="2022-10-18 23:00">
+  </Limit>
+  <Limit ID="152" NAME="目灵兽的试炼 第一章 浣浣"  FromDate="2012-10-15 00:00" ToDate="2022-10-18 23:00">
+  </Limit>
+  <Limit ID="153" NAME="目灵兽的试炼 第一章 荧光蝶"  FromDate="2012-10-16 00:00" ToDate="2022-10-18 23:00">
+  </Limit>
+  <Limit ID="154" NAME="目灵兽的试炼 第一章 法拉"  FromDate="2012-10-17 00:00" ToDate="2022-10-18 23:00">
+  </Limit>
+  <Limit ID="155" NAME="目灵兽的试炼 第一章 布鲁托"  FromDate="2012-10-18 00:00" ToDate="2022-10-18 23:00">
+  </Limit>
+  <Limit ID="156" NAME="破晓黎明 冰封之轴(新)"  FromDate="2012-10-16 00:00" ToDate="2082-10-18 23:00">
+	<Week>
+		<TM WeekDay="0" TimeStart="13 00" TimeEnd="14 00" />
+		<TM WeekDay="0" TimeStart="20 00" TimeEnd="21 00" />
+		<TM WeekDay="1" TimeStart="13 00" TimeEnd="14 00" />
+		<TM WeekDay="1" TimeStart="20 00" TimeEnd="21 00" />
+		<TM WeekDay="2" TimeStart="13 00" TimeEnd="14 00" />
+		<TM WeekDay="2" TimeStart="20 00" TimeEnd="21 00" />
+		<TM WeekDay="3" TimeStart="13 00" TimeEnd="14 00" />
+		<TM WeekDay="3" TimeStart="20 00" TimeEnd="21 00" />
+		<TM WeekDay="4" TimeStart="13 00" TimeEnd="14 00" />
+		<TM WeekDay="4" TimeStart="20 00" TimeEnd="21 00" />
+		<TM WeekDay="5" TimeStart="13 00" TimeEnd="14 00" />
+		<TM WeekDay="5" TimeStart="20 00" TimeEnd="21 00" />
+		<TM WeekDay="6" TimeStart="13 00" TimeEnd="14 00" />
+		<TM WeekDay="6" TimeStart="20 00" TimeEnd="21 00" />
+	</Week>
+  </Limit>
+  <Limit ID="157" NAME="X龙蛋也万圣"  FromDate="2012-10-27 13:30" ToDate="2012-10-27 14:00">
+  </Limit>
+  <Limit ID="158" NAME="萨伦军团的万圣节突袭"  FromDate="2012-11-2 00:00" ToDate="2012-11-4 23:59">
+  </Limit>
+  <Limit ID="159" NAME="万圣节活动幽灵大变身"  FromDate="2012-10-27 13:00" ToDate="2012-10-27 15:00">
+  </Limit>
+  <Limit ID="160" NAME="万圣节活动南瓜炒饭"  FromDate="2012-10-27 13:00" ToDate="2012-10-27 14:00">
+  </Limit>
+  <Limit ID="161" NAME="南瓜怪的逆袭"  FromDate="2012-11-02 00:00" ToDate="2082-11-08 23:00">
+    <Week>
+      <TM WeekDay="0" TimeStart="12 00" TimeEnd="15 00" />
+      <TM WeekDay="0" TimeStart="18 00" TimeEnd="21 00" />
+      <TM WeekDay="1" TimeStart="12 00" TimeEnd="15 00" />
+      <TM WeekDay="1" TimeStart="18 00" TimeEnd="21 00" />
+      <TM WeekDay="2" TimeStart="12 00" TimeEnd="15 00" />
+      <TM WeekDay="2" TimeStart="18 00" TimeEnd="21 00" />
+      <TM WeekDay="3" TimeStart="12 00" TimeEnd="15 00" />
+      <TM WeekDay="3" TimeStart="18 00" TimeEnd="21 00" />
+      <TM WeekDay="4" TimeStart="12 00" TimeEnd="15 00" />
+      <TM WeekDay="4" TimeStart="18 00" TimeEnd="21 00" />
+      <TM WeekDay="5" TimeStart="12 00" TimeEnd="15 00" />
+      <TM WeekDay="5" TimeStart="18 00" TimeEnd="21 00" />
+      <TM WeekDay="6" TimeStart="12 00" TimeEnd="15 00" />
+      <TM WeekDay="6" TimeStart="18 00" TimeEnd="21 00" />
+    </Week>
+  </Limit>
+  <Limit ID="162" NAME="空腹节的灾难"  FromDate="2012-11-09 00:00" ToDate="2012-11-11 23:59">
+    <Week>
+      <TM WeekDay="0" TimeStart="13 00" TimeEnd="15 00" />
+      <TM WeekDay="1" TimeStart="13 00" TimeEnd="15 00" />
+      <TM WeekDay="2" TimeStart="13 00" TimeEnd="15 00" />
+      <TM WeekDay="3" TimeStart="13 00" TimeEnd="15 00" />
+      <TM WeekDay="4" TimeStart="13 00" TimeEnd="15 00" />
+      <TM WeekDay="5" TimeStart="13 00" TimeEnd="15 00" />
+      <TM WeekDay="6" TimeStart="13 00" TimeEnd="15 00" />
+    </Week>
+  </Limit>
+	<Limit ID="163" NAME="树屋大作战"  FromDate="2012-11-29 00:00" ToDate="2012-12-20 23:00">
+    <Week>
+      <TM WeekDay="0" TimeStart="13 00" TimeEnd="21 00" />
+      <TM WeekDay="1" TimeStart="13 00" TimeEnd="21 00" />
+      <TM WeekDay="2" TimeStart="13 00" TimeEnd="21 00" />
+      <TM WeekDay="3" TimeStart="13 00" TimeEnd="21 00" />
+      <TM WeekDay="4" TimeStart="13 00" TimeEnd="21 00" />
+      <TM WeekDay="5" TimeStart="13 00" TimeEnd="21 00" />
+      <TM WeekDay="6" TimeStart="13 00" TimeEnd="21 00" />
+    </Week>
+	</Limit>
+	<Limit ID="164" NAME="树屋大作战领奖"  FromDate="2012-12-21 00:00" ToDate="2012-12-27 23:00">
+	</Limit>
+	<Limit ID="165" NAME="VIP纪念礼包"  FromDate="2012-12-07 00:00" ToDate="2012-12-27 23:59">
+	</Limit>
+
+    <Limit ID="166" NAME="七星连珠 唤醒神龙"  FromDate="2013-01-31 00:00" ToDate="2083-02-23 23:00">
+    <Week>
+      <TM WeekDay="0" TimeStart="14 00" TimeEnd="15 00" />
+      <TM WeekDay="1" TimeStart="14 00" TimeEnd="15 00" />
+      <TM WeekDay="2" TimeStart="14 00" TimeEnd="15 00" />
+      <TM WeekDay="3" TimeStart="14 00" TimeEnd="15 00" />
+      <TM WeekDay="4" TimeStart="14 00" TimeEnd="15 00" />
+      <TM WeekDay="5" TimeStart="14 00" TimeEnd="15 00" />
+      <TM WeekDay="6" TimeStart="14 00" TimeEnd="15 00" />
+      <TM WeekDay="0" TimeStart="19 00" TimeEnd="20 00" />
+      <TM WeekDay="1" TimeStart="19 00" TimeEnd="20 00" />
+      <TM WeekDay="2" TimeStart="19 00" TimeEnd="20 00" />
+      <TM WeekDay="3" TimeStart="19 00" TimeEnd="20 00" />
+      <TM WeekDay="4" TimeStart="19 00" TimeEnd="20 00" />
+      <TM WeekDay="5" TimeStart="19 00" TimeEnd="20 00" />
+      <TM WeekDay="6" TimeStart="19 00" TimeEnd="20 00" />
+    </Week>
+    </Limit>
+
+    <Limit ID="167" NAME="火影神龙"  FromDate="2012-12-14 00:00" ToDate="2012-12-20 23:00">
+    </Limit>
+
+    <Limit ID="168" NAME="贾斯汀站长拯救地球"  FromDate="2012-12-21 20:00" ToDate="2012-12-21 21:00">
+    </Limit>
+
+    <Limit ID="169" NAME="雪域大战"  FromDate="2015-12-23 00:00" ToDate="2016-1-5 23:59">
+    </Limit>
+
+	<Limit ID="170" NAME="掏掏掏抽奖时间限制"  FromDate="2012-12-21 00:00" ToDate="2013-1-04 23:59">
+    </Limit>
+	
+	<Limit ID="171" NAME="VIP纪念礼包(1)"  FromDate="2012-12-28 00:00" ToDate="2013-1-31 23:59">
+	</Limit>
+	
+	<Limit ID="172" NAME="元蛋传奇"  FromDate="2013-02-08 00:00" ToDate="2013-02-15 23:59">
+    </Limit>
+	<Limit ID="173" NAME="观星者挑战二" FromDate="2012-12-28 00:00" ToDate="2013-12-29 23:59">
+	</Limit>
+	<Limit ID="174" NAME="脉灵兽试炼第一章(1)" FromDate="2013-01-10 00:00" ToDate="2083-12-29 23:59">
+	</Limit>
+	<Limit ID="175" NAME="脉灵兽试炼第一章(2)" FromDate="2013-01-11 00:00" ToDate="2083-12-29 23:59">
+	</Limit>
+	<Limit ID="176" NAME="脉灵兽试炼第一章(3)" FromDate="2013-01-12 00:00" ToDate="2083-12-29 23:59">
+	</Limit>
+	<Limit ID="177" NAME="脉灵兽试炼第一章(4)" FromDate="2013-01-13 00:00" ToDate="2083-12-29 23:59">
+	</Limit>
+	<Limit ID="178" NAME="脉灵兽试炼第一章(5)" FromDate="2013-01-14 00:00" ToDate="2083-12-29 23:59">
+	</Limit>
+	<Limit ID="179" NAME="脉灵兽试炼第一章(6)" FromDate="2013-01-15 00:00" ToDate="2083-12-29 23:59">
+	</Limit>
+	<Limit ID="180" NAME="脉灵兽试炼第一章(7)" FromDate="2013-01-16 00:00" ToDate="2083-12-29 23:59">
+	</Limit>
+	<Limit ID="181" NAME="深渊派对" FromDate="2013-01-31 00:00" ToDate="2083-01-31 23:59">
+    <Week>
+      <TM WeekDay="0" TimeStart="14 00" TimeEnd="16 00" />
+      <TM WeekDay="6" TimeStart="14 00" TimeEnd="16 00" />
+    </Week>
+	</Limit>
+<!--	<Limit ID="182" NAME="巅峰之战常规赛及精英赛"  FromDate="2013-01-16 00:00" ToDate="2016-12-20 23:00">
+    <Week>
+      <TM WeekDay="0" TimeStart="14 00" TimeEnd="16 00" />
+      <TM WeekDay="0" TimeStart="19 00" TimeEnd="21 00" />
+      <TM WeekDay="5" TimeStart="14 00" TimeEnd="16 00" />
+      <TM WeekDay="5" TimeStart="19 00" TimeEnd="21 00" />
+      <TM WeekDay="6" TimeStart="14 00" TimeEnd="16 00" />
+      <TM WeekDay="6" TimeStart="19 00" TimeEnd="21 00" />
+    </Week>
+	</Limit>
+	<Limit ID="183" NAME="巅峰之战bonus赛"  FromDate="2013-01-16 00:00" ToDate="2016-12-20 23:00">
+    <Week>
+      <TM WeekDay="0" TimeStart="14 00" TimeEnd="15 00" />
+      <TM WeekDay="6" TimeStart="14 00" TimeEnd="15 00" />
+    </Week>
+	</Limit>-->
+	<Limit ID="182" NAME="脉灵兽试炼第二章(1)" FromDate="2013-01-18 00:00" ToDate="2083-12-29 23:59">
+	</Limit>
+	<Limit ID="183" NAME="脉灵兽试炼第二章(2)" FromDate="2013-01-19 00:00" ToDate="2083-12-29 23:59">
+	</Limit>
+	<Limit ID="184" NAME="脉灵兽试炼第二章(3)" FromDate="2013-01-20 00:00" ToDate="2083-12-29 23:59">
+	</Limit>
+	<Limit ID="185" NAME="脉灵兽试炼第二章(4)" FromDate="2013-01-21 00:00" ToDate="2083-12-29 23:59">
+	</Limit>
+	<Limit ID="186" NAME="脉灵兽试炼第二章(5)" FromDate="2013-01-22 00:00" ToDate="2083-12-29 23:59">
+	</Limit>
+	<Limit ID="187" NAME="脉灵兽试炼第二章(6)" FromDate="2013-01-23 00:00" ToDate="2083-12-29 23:59">
+	</Limit>
+	<Limit ID="188" NAME="脉灵兽试炼第二章(7)" FromDate="2013-01-24 00:00" ToDate="2083-12-29 23:59">
+	</Limit>
+	<Limit ID="189" NAME="青竹迷境" FromDate="2013-01-18 00:00" ToDate="2013-02-28 23:59">
+	</Limit>
+	<Limit ID="190" NAME="脉灵兽试炼第三章(1)" FromDate="2012-01-25 00:00" ToDate="2083-12-29 23:59">
+	</Limit>
+	<Limit ID="191" NAME="脉灵兽试炼第三章(2)" FromDate="2012-01-26 00:00" ToDate="2083-12-29 23:59">
+	</Limit>
+	<Limit ID="192" NAME="脉灵兽试炼第三章(3)" FromDate="2012-01-27 00:00" ToDate="2083-12-29 23:59">
+	</Limit>
+	<Limit ID="193" NAME="脉灵兽试炼第三章(4)" FromDate="2012-01-28 00:00" ToDate="2083-12-29 23:59">
+	</Limit>
+	<Limit ID="194" NAME="脉灵兽试炼第三章(5)" FromDate="2012-01-29 00:00" ToDate="2083-12-29 23:59">
+	</Limit>
+	<Limit ID="195" NAME="脉灵兽试炼第三章(6)" FromDate="2012-01-30 00:00" ToDate="2083-12-29 23:59">
+	</Limit>
+	<Limit ID="196" NAME="脉灵兽试炼第三章(7)" FromDate="2012-01-31 00:00" ToDate="2083-12-29 23:59">
+	</Limit>
+	<Limit ID="197" NAME="寒假签到" FromDate="2013-01-25 00:00" ToDate="2013-02-21 23:59">
+	</Limit>
+	<Limit ID="198" NAME="寒假领奖" FromDate="2013-02-14 00:00" ToDate="2013-02-21 23:59">
+	</Limit>
+	<Limit ID="199" NAME="年费精灵" FromDate="2013-01-25 00:00" ToDate="2013-03-28 23:59">
+	</Limit>
+	<Limit ID="200" NAME="月费精灵" FromDate="2013-03-29 00:00" ToDate="2013-06-27 23:59">
+	</Limit>
+	<Limit ID="201" NAME="月费1" FromDate="2013-03-29 00:00" ToDate="2013-06-27 23:59">
+	</Limit>
+	<Limit ID="202" NAME="月费1" FromDate="2013-03-29 00:00" ToDate="2013-06-27 23:59">
+	</Limit>
+	<Limit ID="203" NAME="月费1" FromDate="2013-03-29 00:00" ToDate="2013-06-27 23:59">
+	</Limit>
+	<Limit ID="204" NAME="梅花三弄玩法" FromDate="2013-01-25 00:00" ToDate="2013-02-21 23:59">
+	</Limit>
+	<Limit ID="205" NAME="梅花三弄玩法" FromDate="2013-02-22 00:00" ToDate="2083-02-21 23:59">
+	</Limit>
+	<Limit ID="206" NAME="VIP纪念礼包（1.25）" FromDate="2013-01-25 00:00" ToDate="2013-02-28 23:59">
+	</Limit>
+	<Limit ID="207" NAME="观星者之手" FromDate="2013-01-31 00:00" ToDate="2083-02-28 23:59">
+	</Limit>
+	<Limit ID="208" NAME="米币送不停(1)" FromDate="2013-02-01 00:00" ToDate="2013-02-06 23:59">
+	</Limit>
+	<Limit ID="209" NAME="米币送不停(2)" FromDate="2013-02-07 00:00" ToDate="2013-02-15 23:59">
+	</Limit>
+	<Limit ID="210" NAME="米币送不停(3)" FromDate="2013-02-16 00:00" ToDate="2013-02-21 23:59">
+	</Limit>
+	<Limit ID="211" NAME="米币送不停" FromDate="2012-02-01 00:00" ToDate="2013-02-21 23:59">
+	</Limit>
+	<Limit ID="212" NAME="圣光争夺战玩法"  FromDate="2013-05-02 00:00" ToDate="2013-05-16 23:59">
+	</Limit>
+	<Limit ID="213" NAME="新年经验大放送(1)"  FromDate="2013-02-8 00:00" ToDate="2013-02-14 23:00">
+    <Week>
+      <TM WeekDay="4" TimeStart="13 00" TimeEnd="13 30" />
+      <TM WeekDay="5" TimeStart="13 00" TimeEnd="13 30" />
+    </Week>
+	</Limit>
+	<Limit ID="214" NAME="新年经验大放送(2)"  FromDate="2013-02-8 00:00" ToDate="2013-02-14 23:00">
+    <Week>
+      <TM WeekDay="4" TimeStart="13 30" TimeEnd="14 00" />
+      <TM WeekDay="5" TimeStart="13 30" TimeEnd="14 00" />
+    </Week>
+	</Limit>
+	<Limit ID="215" NAME="新年经验大放送(3)"  FromDate="2013-02-8 00:00" ToDate="2013-02-14 23:00">
+    <Week>
+      <TM WeekDay="4" TimeStart="14 30" TimeEnd="15 00" />
+      <TM WeekDay="5" TimeStart="14 30" TimeEnd="15 00" />
+    </Week>
+	</Limit>
+	<Limit ID="216" NAME="鲤鱼王捞玩法" FromDate="2013-02-22 00:00" ToDate="2013-03-07 23:59">
+	</Limit>
+	<Limit ID="217" NAME="常规奖励" FromDate="2013-05-02 00:00" ToDate="2013-05-31 23:59">
+	</Limit>
+	<Limit ID="218" NAME="精英奖励" FromDate="2013-03-01 00:00" ToDate="2013-03-20 23:59">
+	</Limit>
+	<Limit ID="219" NAME="春风纪念礼包" FromDate="2013-03-01 00:00" ToDate="2013-03-28 23:59">
+	</Limit>
+	<Limit ID="220" NAME="观星者的挑战" FromDate="2013-03-01 00:00" ToDate="2083-03-28 23:59">
+	</Limit>
+	<Limit ID="221" NAME="春天的战翼" FromDate="2013-03-01 00:00" ToDate="2083-03-28 23:59">
+	</Limit>
+	<Limit ID="222" NAME="雷伊卡萨米币挑战" FromDate="2013-04-03 00:00" ToDate="2083-04-10 23:59">
+	</Limit>
+
+	<Limit ID="223" NAME="伊特锦标赛,每天送伊特果实的时间" FromDate="2013-3-5 00:00" ToDate="2013-04-10 23:59">
+	</Limit>
+
+	<Limit ID="224" NAME="神秘伊特"  FromDate="2013-01-16 00:00" ToDate="2082-12-20 23:00">
+    	<Week>
+      		<TM WeekDay="0" TimeStart="13 00" TimeEnd="14 00" />
+	      	<TM WeekDay="1" TimeStart="13 00" TimeEnd="14 00" />
+	      	<TM WeekDay="2" TimeStart="13 00" TimeEnd="14 00" />
+	      	<TM WeekDay="3" TimeStart="13 00" TimeEnd="14 00" />
+	      	<TM WeekDay="4" TimeStart="13 00" TimeEnd="14 00" />
+	      	<TM WeekDay="5" TimeStart="13 00" TimeEnd="14 00" />
+	      	<TM WeekDay="6" TimeStart="13 00" TimeEnd="14 00" />
+    	</Week>
+	</Limit>
+
+	<Limit ID="225" NAME="神秘伊特"  FromDate="2013-01-16 00:00" ToDate="2082-12-20 23:00">
+    	<Week>
+	      	<TM WeekDay="0" TimeStart="20 00" TimeEnd="21 00" />
+	      	<TM WeekDay="1" TimeStart="20 00" TimeEnd="21 00" />
+	      	<TM WeekDay="2" TimeStart="20 00" TimeEnd="21 00" />
+	      	<TM WeekDay="3" TimeStart="20 00" TimeEnd="21 00" />
+	      	<TM WeekDay="4" TimeStart="20 00" TimeEnd="21 00" />
+	      	<TM WeekDay="5" TimeStart="20 00" TimeEnd="21 00" />
+	      	<TM WeekDay="6" TimeStart="20 00" TimeEnd="21 00" />
+    	</Week>
+	</Limit>
+	<Limit ID="226" NAME="伊特PVP"  FromDate="2013-03-15 00:00" ToDate="2082-12-20 23:00">
+    <Week>
+      <TM WeekDay="0" TimeStart="12 00" TimeEnd="13 00" />
+      <TM WeekDay="1" TimeStart="12 00" TimeEnd="13 00" />
+      <TM WeekDay="2" TimeStart="12 00" TimeEnd="13 00" />
+      <TM WeekDay="3" TimeStart="12 00" TimeEnd="13 00" />
+      <TM WeekDay="4" TimeStart="12 00" TimeEnd="13 00" />
+      <TM WeekDay="5" TimeStart="12 00" TimeEnd="13 00" />
+      <TM WeekDay="6" TimeStart="12 00" TimeEnd="13 00" />
+      <TM WeekDay="0" TimeStart="19 00" TimeEnd="20 00" />
+      <TM WeekDay="1" TimeStart="19 00" TimeEnd="20 00" />
+      <TM WeekDay="2" TimeStart="19 00" TimeEnd="20 00" />
+      <TM WeekDay="3" TimeStart="19 00" TimeEnd="20 00" />
+      <TM WeekDay="4" TimeStart="19 00" TimeEnd="20 00" />
+      <TM WeekDay="5" TimeStart="19 00" TimeEnd="20 00" />
+      <TM WeekDay="6" TimeStart="19 00" TimeEnd="20 00" />
+    </Week>
+	</Limit>
+
+	<Limit ID="227" NAME="伊特锦标赛,闭模式" FromDate="2013-3-5 00:00" ToDate="2013-03-28 23:59">
+	</Limit>
+	<Limit ID="228" NAME="观星者的挑战五" FromDate="2013-03-29 00:00" ToDate="2083-03-28 23:59">
+	</Limit>
+	<Limit ID="229" NAME="VIP纪念礼包（4.29）" FromDate="2013-04-28 00:00" ToDate="2013-05-30 23:59">
+	</Limit>
+	<Limit ID="230" NAME="月神祭拜" FromDate="2013-04-03 00:00" ToDate="2013-04-06 23:59">
+	</Limit>
+	<Limit ID="231" NAME="天空竞技场"  FromDate="2013-04-02 00:00" ToDate="2083-05-31 23:59">
+    <Week>
+      <TM WeekDay="0" TimeStart="19 00" TimeEnd="20 00" />
+      <TM WeekDay="1" TimeStart="19 00" TimeEnd="20 00" />
+      <TM WeekDay="2" TimeStart="19 00" TimeEnd="20 00" />
+      <TM WeekDay="3" TimeStart="19 00" TimeEnd="20 00" />
+      <TM WeekDay="4" TimeStart="19 00" TimeEnd="20 00" />
+      <TM WeekDay="5" TimeStart="19 00" TimeEnd="20 00" />
+      <TM WeekDay="6" TimeStart="19 00" TimeEnd="20 00" />
+    </Week>
+	</Limit>
+	<Limit ID="232" NAME="天空竞技场(节假日)"  FromDate="2012-06-10 00:00" ToDate="2012-06-12 23:59">
+	</Limit>
+	<Limit ID="233" NAME="黑羽之战"  FromDate="2012-04-17 18:00" ToDate="2088-05-31 23:59">
+	</Limit>
+	<Limit ID="234" NAME="电麒麟"  FromDate="2013-04-29 13:00" ToDate="2013-04-29 13:30">
+	</Limit>
+	<Limit ID="235" NAME="电麒麟进化芯片1"  FromDate="2013-04-29 13:30" ToDate="2013-04-29 14:00">
+	</Limit>
+	<Limit ID="236" NAME="电麒麟进化芯片2"  FromDate="2013-04-29 14:00" ToDate="2013-05-01 14:30">
+	</Limit>
+	<Limit ID="237" NAME="野怪纹章大放送"  FromDate="2013-04-28 13:00" ToDate="2013-05-02 15:00">
+	</Limit>
+	<Limit ID="238" NAME="串串烧" FromDate="2012-04-28 13:00" ToDate="2012-05-02 15:00">
+      <Week>
+        <TM WeekDay="0" TimeStart="13 00" TimeEnd="15 00" />
+        <TM WeekDay="1" TimeStart="13 00" TimeEnd="15 00" />
+        <TM WeekDay="2" TimeStart="13 00" TimeEnd="15 00" />
+        <TM WeekDay="3" TimeStart="13 00" TimeEnd="15 00" />
+        <TM WeekDay="4" TimeStart="13 00" TimeEnd="15 00" />
+        <TM WeekDay="5" TimeStart="13 00" TimeEnd="15 00" />
+        <TM WeekDay="6" TimeStart="13 00" TimeEnd="15 00" />
+        <TM WeekDay="0" TimeStart="18 00" TimeEnd="20 00" />
+        <TM WeekDay="1" TimeStart="18 00" TimeEnd="20 00" />
+        <TM WeekDay="2" TimeStart="18 00" TimeEnd="20 00" />
+        <TM WeekDay="3" TimeStart="18 00" TimeEnd="20 00" />
+        <TM WeekDay="4" TimeStart="18 00" TimeEnd="20 00" />
+        <TM WeekDay="5" TimeStart="18 00" TimeEnd="20 00" />
+        <TM WeekDay="6" TimeStart="18 00" TimeEnd="20 00" />
+      </Week>
+	</Limit>
+	<Limit ID="239" NAME="天空竞技场（保存数据）"  FromDate="2013-05-31 23:00" ToDate="2013-05-31 23:01">
+	</Limit>
+    <Limit ID="240" NAME="凯伊影灵世纪末对决(1)" FromDate="2013-04-04 13:00" ToDate="2083-04-06 20:00" >
+    <Week>
+      <TM WeekDay="0" TimeStart="13 30" TimeEnd="14 00" />
+      <TM WeekDay="6" TimeStart="13 30" TimeEnd="14 00" />
+    </Week>
+  </Limit>
+    <Limit ID="241" NAME="凯伊影灵世纪末对决(2)" FromDate="2013-04-04 13:00" ToDate="2083-04-06 20:00" >
+    <Week>
+      <TM WeekDay="0" TimeStart="19 30" TimeEnd="20 00" />
+      <TM WeekDay="6" TimeStart="19 30" TimeEnd="20 00" />
+    </Week>
+  </Limit>
+  <!--Flag：登陆领取精灵活动id从0开始，每次换活动，累加 -->
+    <Limit ID="243" NAME="连续登陆领取精灵" FromDate="2013-05-09 24:00" ToDate="2013-06-05 24:00" Flag = "1 396" >
+  </Limit>
+    <Limit ID="244" NAME="神秘提灯怪 尼禄超进化" FromDate="2013-05-18 12:00" ToDate="2013-05-19 20:00" >
+    <Week>
+      <TM WeekDay="0" TimeStart="12 00" TimeEnd="14 00" />
+      <TM WeekDay="0" TimeStart="18 00" TimeEnd="20 00" />
+      <TM WeekDay="6" TimeStart="12 00" TimeEnd="14 00" />
+      <TM WeekDay="6" TimeStart="18 00" TimeEnd="20 00" />
+    </Week>
+  </Limit>
+  	<Limit ID="245" NAME="VIP节日礼包领取" FromDate="2015-09-25 00:00" ToDate="2015-10-29 23:59" >
+  </Limit>
+  <Limit ID="246" NAME="VIP包月回馈季" FromDate="2014-10-30 23:59" ToDate="2014-11-27 23:59" >
+  </Limit>
+  <Limit ID="247" NAME="观星者的挑战六" FromDate="2013-05-31 00:00" ToDate="2083-05-31 23:59">
+  </Limit>
+  <Limit ID="248" NAME="小丑许愿" FromDate="2013-05-31 00:00" ToDate="2013-06-13 23:59">
+  </Limit>
+  <Limit ID="249" NAME="完美精灵计划" FromDate="2015-5-28 00:00" ToDate="2015-6-4 23:59">
+  </Limit>
+  <Limit ID="250" NAME="放开那雪宝" FromDate="2014-12-19 00:00" ToDate="2014-12-31 23:59">
+  </Limit>
+  <Limit ID="251" NAME="VIP天降红包" FromDate="2015-1-1 00:00" ToDate="2015-1-3 23:59">
+  </Limit>
+  <Limit ID="252" NAME="新年刮刮乐" FromDate="2015-8-28 00:00" ToDate="2017-9-17 23:59">
+  </Limit>
+  <Limit ID="253" NAME="精灵王超进化—斑斓圣焰" FromDate="2016-9-14 00:00" ToDate="2016-10-13 23:59">
+  </Limit>
+  <Limit ID="254" NAME="回归战神觉醒" FromDate="2015-2-6 00:00" ToDate="2015-3-5 23:59">
+  </Limit>
+<!--   <Limit ID="255" NAME="寒假强宠大放送" FromDate="2015-6-19 00:00" ToDate="2015-6-22 23:59"> -->
+<!--   </Limit> -->
+  <Limit ID="255" NAME="寒假强宠大放送" FromDate="2016-2-12 00:00" ToDate="2016-2-18 23:59">
+  </Limit>
+  <Limit ID="256" NAME="在线领奖V17" FromDate="2015-2-16 00:00" ToDate="2015-2-26 23:59">
+  </Limit>
+  <Limit ID="257" NAME="在线领奖V27" FromDate="2015-2-27 00:00" ToDate="2015-3-5 23:59">
+  </Limit>
+  <Limit ID="258" NAME="精灵王超进化—2" FromDate="2016-9-14 00:00" ToDate="2016-10-13 23:59">
+  </Limit>
+  <Limit ID="259" NAME="暗黑超梦(下)-黑梦的强大" FromDate="2015-5-26 00:00" ToDate="2082-5-26 23:59"> </Limit>
+  <Limit ID="260" NAME="小梦的轰趴派对" FromDate="2015-5-26 00:00" ToDate="2016-5-26 23:59"> </Limit>
+  <Limit ID="261" NAME="全能学霸君" FromDate="2015-6-9 00:00" ToDate="2016-7-2 23:59"> </Limit>
+  <Limit ID="262" NAME="圣舞龙王" FromDate="2015-6-19 00:00" ToDate="2016-7-3 23:59"> </Limit>
+  <Limit ID="263" NAME="神盾破坏王" FromDate="2015-7-13 00:00" ToDate="2016-8-13 23:59"> </Limit>
+  <Limit ID="264" NAME="王者试炼系统-万王之战" FromDate="2015-07-25 00:00" ToDate="2082-12-20 23:00">
+    <Week>
+      <TM WeekDay="0" TimeStart="12 00" TimeEnd="13 00" />
+      <TM WeekDay="1" TimeStart="12 00" TimeEnd="13 00" />
+      <TM WeekDay="2" TimeStart="12 00" TimeEnd="13 00" />
+      <TM WeekDay="3" TimeStart="12 00" TimeEnd="13 00" />
+      <TM WeekDay="4" TimeStart="12 00" TimeEnd="13 00" />
+      <TM WeekDay="5" TimeStart="12 00" TimeEnd="13 00" />
+      <TM WeekDay="6" TimeStart="12 00" TimeEnd="13 00" />
+      <TM WeekDay="0" TimeStart="19 00" TimeEnd="20 00" />
+      <TM WeekDay="1" TimeStart="19 00" TimeEnd="20 00" />
+      <TM WeekDay="2" TimeStart="19 00" TimeEnd="20 00" />
+      <TM WeekDay="3" TimeStart="19 00" TimeEnd="20 00" />
+      <TM WeekDay="4" TimeStart="19 00" TimeEnd="20 00" />
+      <TM WeekDay="5" TimeStart="19 00" TimeEnd="20 00" />
+      <TM WeekDay="6" TimeStart="19 00" TimeEnd="20 00" />
+    </Week>
+   </Limit>
+   <Limit ID="265" NAME="罪恶之躯" FromDate="2015-9-24 00:00" ToDate="2015-10-15 23:59"> </Limit>
+   <Limit ID="266" NAME="六星豪礼" FromDate="2015-11-6 00:00" ToDate="2015-11-12 23:59"> </Limit>
+   <Limit ID="267" NAME="春节签到得萌宠" FromDate="2016-2-5 00:00" ToDate="2016-2-18 23:59"> </Limit>
+   <Limit ID="268" NAME="月签到（4月）" FromDate="2016-4-8 00:00" ToDate="2016-4-28 23:59"> </Limit>
+</Time>
+
+

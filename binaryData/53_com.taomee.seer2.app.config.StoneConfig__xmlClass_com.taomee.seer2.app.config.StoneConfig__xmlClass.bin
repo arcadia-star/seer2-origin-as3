@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- itemId：物品ID -->
+<!-- petId：宠物ID -->
+<!-- swapId：兑换ID -->
+<stones>
+	<stoneTotal>
+		<stone itemId="200623"  decoratinId="700001" petId="154" swapId="798" /><!--收费-->
+		<stone itemId="200623"  decoratinId="700002" petId="154" swapId="799" />
+		<stone itemId="200623"  decoratinId="700003" petId="154" swapId="800" />
+		<stone itemId="200623"  decoratinId="700004" petId="154" swapId="801" />
+	</stoneTotal>
+	
+	<stoneTotal>
+	<stone itemId="200401"  decoratinId="700001" petId="154" swapId="803" /><!--免费-->
+	<stone itemId="200401"  decoratinId="700002" petId="154" swapId="804" />
+	<stone itemId="200401"  decoratinId="700003" petId="154" swapId="805" />
+	<stone itemId="200401"  decoratinId="700004" petId="154" swapId="806" />
+	</stoneTotal>
+	
+	<stoneTotal>
+	<stone itemId="200624"  decoratinId="700006" petId="155" swapId="808" /><!--收费-->
+	<stone itemId="200624"  decoratinId="700007" petId="155" swapId="809" />
+	<stone itemId="200624"  decoratinId="700008" petId="155" swapId="810" />
+	<stone itemId="200624"  decoratinId="700009"  petId="155" swapId="811" />
+	</stoneTotal>
+	
+	<stoneTotal>
+	<stone itemId="200402"  decoratinId="700006" petId="155" swapId="813" /><!--免费-->
+	<stone itemId="200402"  decoratinId="700007" petId="155" swapId="814" />
+	<stone itemId="200402"  decoratinId="700008" petId="155" swapId="815" />
+	<stone itemId="200402"  decoratinId="700009" petId="155" swapId="816" />
+	</stoneTotal>
+
+	<stoneTotal>
+	<stone itemId="200405"  decoratinId="700011" petId="156" swapId="948" /><!--收费-->
+	<stone itemId="200405"  decoratinId="700012" petId="156" swapId="949" />
+	<stone itemId="200405"  decoratinId="700013" petId="156" swapId="950" />
+	<stone itemId="200405"  decoratinId="700014"  petId="156" swapId="951" />
+	</stoneTotal>
+	
+	<stoneTotal>
+	<stone itemId="200632"  decoratinId="700011" petId="156" swapId="944" /><!--免费-->
+	<stone itemId="200632"  decoratinId="700012" petId="156" swapId="945" />
+	<stone itemId="200632"  decoratinId="700013" petId="156" swapId="946" />
+	<stone itemId="200632"  decoratinId="700014" petId="156" swapId="947" />
+	</stoneTotal>
+	<!---->
+	<stoneTotal>
+	<stone itemId="200407"  decoratinId="700016" petId="157" swapId="1007" /><!--收费-->
+	<stone itemId="200407"  decoratinId="700017" petId="157" swapId="1008" />
+	<stone itemId="200407"  decoratinId="700018" petId="157" swapId="1009" />
+	<stone itemId="200407"  decoratinId="700019" petId="157" swapId="1010" />
+	</stoneTotal>
+	
+	<stoneTotal>
+	<stone itemId="200639"  decoratinId="700016" petId="157" swapId="1012" /><!--收费-->
+	<stone itemId="200639"  decoratinId="700017" petId="157" swapId="1013" />
+	<stone itemId="200639"  decoratinId="700018" petId="157" swapId="1014" />
+	<stone itemId="200639"  decoratinId="700019" petId="157" swapId="1015" />
+	</stoneTotal>
+
+	<stoneTotal>
+	<stone itemId="200409"  decoratinId="700021" petId="158" swapId="1119" /><!--免费-->
+	<stone itemId="200409"  decoratinId="700022" petId="158" swapId="1120" />
+	<stone itemId="200409"  decoratinId="700023" petId="158" swapId="1121" />
+	<stone itemId="200409"  decoratinId="700024"  petId="158" swapId="1122" />
+	</stoneTotal>
+
+	<stoneTotal>
+	<stone itemId="200649"  decoratinId="700021" petId="158" swapId="1114" /><!--收费-->
+	<stone itemId="200649"  decoratinId="700022" petId="158" swapId="1115" />
+	<stone itemId="200649"  decoratinId="700023" petId="158" swapId="1116" />
+	<stone itemId="200649"  decoratinId="700024"  petId="158" swapId="1117" />
+	</stoneTotal>
+	
+	<stoneTotal>
+	<stone itemId="200654"  decoratinId="700026" petId="159" swapId="1191" /><!--免费-->
+	<stone itemId="200654"  decoratinId="700027" petId="159" swapId="1192" />
+	<stone itemId="200654"  decoratinId="700028" petId="159" swapId="1193" />
+	<stone itemId="200654"  decoratinId="700029"  petId="159" swapId="1194" />
+	</stoneTotal>
+
+	<stoneTotal>
+	<stone itemId="200411"  decoratinId="700026" petId="159" swapId="1196" /><!--收费-->
+	<stone itemId="200411"  decoratinId="700027" petId="159" swapId="1197" />
+	<stone itemId="200411"  decoratinId="700028" petId="159" swapId="1198" />
+	<stone itemId="200411"  decoratinId="700029"  petId="159" swapId="1199" />
+	</stoneTotal>
+
+	<stoneTotal>
+	<stone itemId="200413"  decoratinId="700031" petId="160" swapId="1247" /><!--收费-->
+	<stone itemId="200413"  decoratinId="700032" petId="160" swapId="1248" />
+	<stone itemId="200413"  decoratinId="700033" petId="160" swapId="1249" />
+	<stone itemId="200413"  decoratinId="700034"  petId="160" swapId="1250" />
+	</stoneTotal>
+
+	<stoneTotal>
+	<stone itemId="200415"  decoratinId="700036" petId="161" swapId="1484" /><!--收费-->
+	<stone itemId="200415"  decoratinId="700037" petId="161" swapId="1485" />
+	<stone itemId="200415"  decoratinId="700038" petId="161" swapId="1486" />
+	<stone itemId="200415"  decoratinId="700039"  petId="161" swapId="1487" />
+	</stoneTotal>
+
+	<stoneTotal>
+	<stone itemId="200417"  decoratinId="700041" petId="162" swapId="1581" /><!--收费-->
+	<stone itemId="200417"  decoratinId="700042" petId="162" swapId="1582" />
+	<stone itemId="200417"  decoratinId="700043" petId="162" swapId="1583" />
+	<stone itemId="200417"  decoratinId="700044"  petId="162" swapId="1584" />
+	</stoneTotal>
+
+	<stoneTotal>
+	<stone itemId="200706"  decoratinId="700046" petId="163" swapId="1713" /><!--免费-->
+	<stone itemId="200706"  decoratinId="700047" petId="163" swapId="1714" />
+	<stone itemId="200706"  decoratinId="700048" petId="163" swapId="1715" />
+	<stone itemId="200706"  decoratinId="700049"  petId="163" swapId="1716" />
+	</stoneTotal>
+
+	<stoneTotal>
+	<stone itemId="200419"  decoratinId="700046" petId="163" swapId="1718" /><!--收费-->
+	<stone itemId="200419"  decoratinId="700047" petId="163" swapId="1719" />
+	<stone itemId="200419"  decoratinId="700048" petId="163" swapId="1720" />
+	<stone itemId="200419"  decoratinId="700049"  petId="163" swapId="1721" />
+	</stoneTotal>
+
+	<stoneTotal>
+	<stone itemId="200717"  decoratinId="700051" petId="164" swapId="1823" /><!--免费-->
+	<stone itemId="200717"  decoratinId="700052" petId="164" swapId="1824" />
+	<stone itemId="200717"  decoratinId="700053" petId="164" swapId="1825" />
+	<stone itemId="200717"  decoratinId="700054" petId="164" swapId="1826" />
+	</stoneTotal>
+
+	<stoneTotal>
+	<stone itemId="200421"  decoratinId="700051" petId="164" swapId="1828" /><!--收费-->
+	<stone itemId="200421"  decoratinId="700052" petId="164" swapId="1829" />
+	<stone itemId="200421"  decoratinId="700053" petId="164" swapId="1830" />
+	<stone itemId="200421"  decoratinId="700054"  petId="164" swapId="1831" />
+	</stoneTotal>
+
+	<stoneTotal>
+	<stone itemId="200728"  decoratinId="700056" petId="165" swapId="1979" /><!--免费-->
+	<stone itemId="200728"  decoratinId="700057" petId="165" swapId="1980" />
+	<stone itemId="200728"  decoratinId="700058" petId="165" swapId="1981" />
+	<stone itemId="200728"  decoratinId="700059" petId="165" swapId="1982" />
+	</stoneTotal>
+
+	<stoneTotal>
+	<stone itemId="200423"  decoratinId="700056" petId="165" swapId="1984" /><!--收费-->
+	<stone itemId="200423"  decoratinId="700057" petId="165" swapId="1985" />
+	<stone itemId="200423"  decoratinId="700058" petId="165" swapId="1986" />
+	<stone itemId="200423"  decoratinId="700059"  petId="165" swapId="1987" />
+	</stoneTotal>
+
+	<stoneTotal>
+	<stone itemId="200425"  decoratinId="700061" petId="286" swapId="2093" /><!--2013.11.01震天虎魔能宝石收费-->
+	<stone itemId="200425"  decoratinId="700062" petId="286" swapId="2094" />
+	<stone itemId="200425"  decoratinId="700063" petId="286" swapId="2095" />
+	<stone itemId="200425"  decoratinId="700064"  petId="286" swapId="2096" />
+	</stoneTotal>
+
+	<stoneTotal>
+	<stone itemId="200744"  decoratinId="700066" petId="258" swapId="2118" /><!--2013.11.08涟漪魔能宝石收费-->
+	<stone itemId="200744"  decoratinId="700067" petId="258" swapId="2119" />
+	<stone itemId="200744"  decoratinId="700068" petId="258" swapId="2120" />
+	<stone itemId="200744"  decoratinId="700069"  petId="258" swapId="2121" />
+	</stoneTotal>
+
+	<stoneTotal>
+	<stone itemId="200746"  decoratinId="700071" petId="257" swapId="2139" /><!--2013.11.15 斩灵魔能宝石收费-->
+	<stone itemId="200746"  decoratinId="700072" petId="257" swapId="2140" />
+	<stone itemId="200746"  decoratinId="700073" petId="257" swapId="2141" />
+	<stone itemId="200746"  decoratinId="700074"  petId="257" swapId="2142" />
+	</stoneTotal>
+
+	<stoneTotal>
+	<stone itemId="200750"  decoratinId="700076" petId="261" swapId="2159" /><!--2013.11.21 百魁强化石免费-->
+	<stone itemId="200750"  decoratinId="700077" petId="261" swapId="2160" />
+	<stone itemId="200750"  decoratinId="700078" petId="261" swapId="2161" />
+	<stone itemId="200750"  decoratinId="700079"  petId="261" swapId="2162" />
+	</stoneTotal>
+
+	<stoneTotal>
+	<stone itemId="200430"  decoratinId="700081" petId="287" swapId="2179" /><!--2013.11.29 苍龙强化石免费-->
+	<stone itemId="200430"  decoratinId="700082" petId="287" swapId="2180" />
+	<stone itemId="200430"  decoratinId="700083" petId="287" swapId="2181" />
+	<stone itemId="200430"  decoratinId="700084" petId="287" swapId="2182" />
+	</stoneTotal>
+
+	<stoneTotal>
+	<stone itemId="200432"  decoratinId="700086" petId="288" swapId="2264" /><!--2013.12.25 苍龙强化石免费-->
+	<stone itemId="200432"  decoratinId="700087" petId="288" swapId="2265" />
+	<stone itemId="200432"  decoratinId="700088" petId="288" swapId="2266" />
+	<stone itemId="200432"  decoratinId="700089" petId="288" swapId="2267" />
+	</stoneTotal>
+	
+	<stoneTotal>
+	<stone itemId="200434"  decoratinId="700091" petId="289" swapId="2448" /><!--2014.1.27 光轮强化石免费-->
+	<stone itemId="200434"  decoratinId="700092" petId="289" swapId="2449" />
+	<stone itemId="200434"  decoratinId="700093" petId="289" swapId="2450" />
+	<stone itemId="200434"  decoratinId="700094" petId="289" swapId="2451" />
+	</stoneTotal>
+
+	<stoneTotal>
+	<stone itemId="200797"  decoratinId="700096" petId="290" swapId="2597" /><!--2014.1.27 擎天强化石免费-->
+	<stone itemId="200797"  decoratinId="700097" petId="290" swapId="2598" />
+	<stone itemId="200797"  decoratinId="700098" petId="290" swapId="2599" />
+	<stone itemId="200797"  decoratinId="700099" petId="290" swapId="2600" />
+	</stoneTotal>
+
+
+	<stoneTotal>
+	<stone itemId="200438"  decoratinId="700101" petId="291" swapId="2735" /><!--2014.3.27 傲世强化石免费-->
+	<stone itemId="200438"  decoratinId="700102" petId="291" swapId="2736" />
+	<stone itemId="200438"  decoratinId="700103" petId="291" swapId="2737" />
+	<stone itemId="200438"  decoratinId="700104" petId="291" swapId="2738" />
+	</stoneTotal>
+
+
+	<stoneTotal>
+	<stone itemId="200440"  decoratinId="700106" petId="292" swapId="2841" /><!--2014.4.25 极光强化石免费-->
+	<stone itemId="200440"  decoratinId="700107" petId="292" swapId="2842" />
+	<stone itemId="200440"  decoratinId="700108" petId="292" swapId="2843" />
+	<stone itemId="200440"  decoratinId="700109" petId="292" swapId="2844" />
+	</stoneTotal>
+
+	<stoneTotal>
+	<stone itemId="200442"  decoratinId="700111" petId="293" swapId="3008" /><!--2014.4.29 沙虎强化石免费-->
+	<stone itemId="200442"  decoratinId="700112" petId="293" swapId="3009" />
+	<stone itemId="200442"  decoratinId="700113" petId="293" swapId="3010" />
+	<stone itemId="200442"  decoratinId="700114" petId="293" swapId="3011" />
+	</stoneTotal>
+
+	<stoneTotal>
+	<stone itemId="200444"  decoratinId="700116" petId="444" swapId="3049" /><!--2014.6.19 星座之王强化石免费-->
+	<stone itemId="200444"  decoratinId="700117" petId="444" swapId="3050" />
+	<stone itemId="200444"  decoratinId="700118" petId="444" swapId="3051" />
+	<stone itemId="200444"  decoratinId="700119" petId="444" swapId="3052" />
+	</stoneTotal>
+
+
+	<stoneTotal>
+	<stone itemId="200448"  decoratinId="700131" petId="294" swapId="3082" /><!--2014.6.27 VIP暗流噬神-->
+	<stone itemId="200448"  decoratinId="700132" petId="294" swapId="3083" />
+	<stone itemId="200448"  decoratinId="700133" petId="294" swapId="3084" />
+	<stone itemId="200448"  decoratinId="700134" petId="294" swapId="3085" />
+	</stoneTotal>
+
+	<stoneTotal>
+	<stone itemId="200450"  decoratinId="700136" petId="295" swapId="3238" /><!--2014.8.1 VIP崛地-->
+	<stone itemId="200450"  decoratinId="700137" petId="295" swapId="3239" />
+	<stone itemId="200450"  decoratinId="700138" petId="295" swapId="3240" />
+	<stone itemId="200450"  decoratinId="700139" petId="295" swapId="3241" />
+	</stoneTotal>
+
+	<stoneTotal>
+	<stone itemId="200457"  decoratinId="700161" petId="296" swapId="3392" /><!--2014.8.29 VIP冰山-->
+	<stone itemId="200457"  decoratinId="700162" petId="296" swapId="3393" />
+	<stone itemId="200457"  decoratinId="700163" petId="296" swapId="3394" />
+	<stone itemId="200457"  decoratinId="700164" petId="296" swapId="3395" />
+	</stoneTotal>
+
+	<stoneTotal>
+	<stone itemId="208219"  decoratinId="700156" petId="264" swapId="3397" /><!--2014.8.29 风姬-->
+	<stone itemId="208219"  decoratinId="700157" petId="264" swapId="3398" />
+	<stone itemId="208219"  decoratinId="700158" petId="264" swapId="3399" />
+	<stone itemId="208219"  decoratinId="700159" petId="264" swapId="3400" />
+	</stoneTotal>
+
+
+
+	<stoneTotal>
+	<stone itemId="200460"  decoratinId="700166" petId="297" swapId="3523" /><!--2014.9.30 VIP机甲王-->
+	<stone itemId="200460"  decoratinId="700167" petId="297" swapId="3524" />
+	<stone itemId="200460"  decoratinId="700168" petId="297" swapId="3525" />
+	<stone itemId="200460"  decoratinId="700169" petId="297" swapId="3526" />
+	</stoneTotal>
+
+
+
+	<stoneTotal>
+	<stone itemId="200462"  decoratinId="700171" petId="502" swapId="3605" /><!--2014.10.31 VIP超念灵妖-->
+	<stone itemId="200462"  decoratinId="700172" petId="502" swapId="3606" />
+	<stone itemId="200462"  decoratinId="700173" petId="502" swapId="3607" />
+	<stone itemId="200462"  decoratinId="700174" petId="502" swapId="3608" />
+	</stoneTotal>
+
+	<stoneTotal>
+	<stone itemId="208258"  decoratinId="700181" petId="503" swapId="3673" /><!--2014.11.28 VIP斗魂灵妖-->
+	<stone itemId="208258"  decoratinId="700182" petId="503" swapId="3674" />
+	<stone itemId="208258"  decoratinId="700183" petId="503" swapId="3675" />
+	<stone itemId="208258"  decoratinId="700184" petId="503" swapId="3676" />
+	</stoneTotal>
+
+
+
+
+
+
+
+
+
+
+
+</stones>

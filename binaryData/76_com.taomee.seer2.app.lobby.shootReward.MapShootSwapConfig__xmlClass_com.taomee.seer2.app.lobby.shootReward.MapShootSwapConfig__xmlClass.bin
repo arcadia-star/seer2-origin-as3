@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- 地图头部射击交互 -->
+<!-- label:不同射击效果的不同状态标签 -->
+<!-- map:地图中射击交互对应的输出 -->
+<!-- reward:不同射击效果对应的SwapID -->
+
+<rewards>
+	<label shootType="1" name="glass" />
+	<label shootType="2" name="water" />
+	<label shootType="3" name="fire" />
+	<map id="201">
+		<swap shootType="1" index="143" />
+		<swap shootType="2" index="144" />
+		<swap shootType="3" index="142" />
+	</map>
+	<map id="301">
+		<swap shootType="1" index="146" />
+		<swap shootType="2" index="147" />
+		<swap shootType="3" index="145" />
+	</map>
+	<map id="133">
+		<swap shootType="1" index="137" />
+		<swap shootType="2" index="138" />
+		<swap shootType="3" index="136" />
+	</map>
+	<map id="100">
+		<swap shootType="1" index="134" />
+		<swap shootType="2" index="135" />
+		<swap shootType="3" index="133" />
+	</map>
+	<map id="262">
+		<swap shootType="1" index="149" />
+		<swap shootType="2" index="150" />
+		<swap shootType="3" index="148" />
+	</map>
+</rewards>

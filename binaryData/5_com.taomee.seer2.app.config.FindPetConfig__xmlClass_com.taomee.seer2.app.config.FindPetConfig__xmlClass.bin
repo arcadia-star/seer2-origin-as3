@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!--
+<root start="2012_12_2_30(所有找精灵的开启时间)" end="2012_12_2_30(所有找精灵的结束时间)">
+<act petId="精灵id" fightId="战斗id（后台提供）" probabilityId="刷怪id（后台提供）" mapId="刷怪地图"  start="上线时间" end="下线时间" lev="精灵等级，未知填0">
+<time start="开始时间如：14:00开始填1400" end="结束时间如：16:00开始填1600" day="所指定的星期值(0 代表星期日，1 代表星期一，依此类推)"/>
+-->
+<root start="2013_04_22" end="2013_05_26">
+	<act petId="118" fightId="417" probabilityId="44" mapId="620"  start="2013_04_23" end="2013_05_26" lev="0">
+		<time start="0001" end="2359" day="0"/>
+		<time start="0001" end="2359" day="1"/>
+		<time start="0001" end="2359" day="2"/>
+		<time start="0001" end="2359" day="3"/>
+		<time start="0001" end="2359" day="4"/>
+		<time start="0001" end="2359" day="5"/>
+		<time start="0001" end="2359" day="6"/>
+	</act>
+	<act petId="118" fightId="417" probabilityId="45" mapId="261" start="2013_04_23" end="2013_05_26" lev="0">
+		<time start="0001" end="2359" day="0"/>
+		<time start="0001" end="2359" day="1"/>
+		<time start="0001" end="2359" day="2"/>
+		<time start="0001" end="2359" day="3"/>
+		<time start="0001" end="2359" day="4"/>
+		<time start="0001" end="2359" day="5"/>
+		<time start="0001" end="2359" day="6"/>
+	</act>
+	<act petId="118" fightId="417" probabilityId="46" mapId="132" start="2013_04_23" end="2013_05_26" lev="0">
+		<time start="0001" end="2359" day="0"/>
+		<time start="0001" end="2359" day="1"/>
+		<time start="0001" end="2359" day="2"/>
+		<time start="0001" end="2359" day="3"/>
+		<time start="0001" end="2359" day="4"/>
+		<time start="0001" end="2359" day="5"/>
+		<time start="0001" end="2359" day="6"/>
+	</act>
+</root>

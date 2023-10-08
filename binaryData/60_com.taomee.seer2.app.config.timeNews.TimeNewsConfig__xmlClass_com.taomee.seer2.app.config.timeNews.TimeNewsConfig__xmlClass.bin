@@ -1,0 +1,88 @@
+<!--
+	version.txt  文件为设置当前版本
+	============================================================================
+	大小：630x365
+	坐标：0,0
+	跳转按钮类型为：SimpleButton ，命名规则"btn"开头从0开始依次累增，如：btn0 btn1 btn2
+	鼠标动画类型为：MovieClip ，命名规则"mc"开头从0开始依次累增，如：mc0 mc1 mc2
+	动态文本类型为：TextField ，命名规则"txt"开头从0开始依次累增，如：txt0 txt1 txt2
+
+	配置表说明：
+	page:  
+		id 页码
+		title 标题，目录列表显示内容
+		isNew 是否显示新标记
+		type 页面类型:
+		petInfo：精灵信息显示
+	
+	btn:
+		type 类型：
+		map：需要在标签内容里写跳转的地图id
+		home：跳到小屋，不需要在标签内容里写东西
+		team：跳到战队，不需要在标签内容里写东西
+		module：弹出模块，需要在标签内容里写模块名
+		url：链接地址，需要在标签内容里写链接地址
+		copy:复制内容，需要在标签内容里写需要复制的内容
+		request:提交txt内容，标签内容里写 间隔符，如："#||#"
+		page:翻页按钮 标签内容里写，上一页：prev 下一页：next
+		traffic:联运
+		fight:模拟对战，表情内容里写：怪物出现的地点号|精灵的位置信息	
+		tip 提示文字
+
+		//新增规则
+		initPage:初始化显示第几项
+		version:本周跟新的版本号，问美术要资源文件夹名称
+		petInfo：精灵属性   (姓名);(属性);(形态);(必杀技);(推荐加点);(概述)
+		getWay：精灵获得方式说明   
+		txtColor：文本初始颜色设置
+   		name:面板固定按钮点击:线下赛尔、下期预告、评分
+   		award:奖励物品id列表(注:宠物图标除外，由美术做)
+   		
+   		bbs:论坛跳转链接，根据WebJumpConfig.xml读取客户端用的bbsId索引作为跳转id
+
+-->
+<root initPage="1" version="181">
+	<page id="1" title="魔·炎煞" isPet="1" petInfo="魔·炎煞;火;2;暗之末日劫;物攻 速度;魔·炎煞是炎煞的超进化形态，与冥·雷煞共同上场有特殊的羁绊效果!" getWay="炎煞超进化">
+		<btn type="module">app/HotHeartYanLeiShaEvolutionYanPanel|正在打开面板...</btn>
+	</page>	
+	
+	<page id="2" title="冥·雷煞" isPet="1" petInfo="冥·雷煞;电;2;暗之世纪末;特攻 速度;冥·雷煞是雷煞的超进化形态，与魔·炎煞共同上场有特殊的羁绊效果!" getWay="雷煞超进化">
+		<btn type="module">app/HotHeartYanLeiShaMainPanel|正在打开面板...</btn>
+	</page>
+
+	<page id="3" title="炎煞超进化">
+		<btn type="module">app/HotHeartYanLeiShaEvolutionYanPanel|正在打开面板...</btn>
+	</page> 
+	<page id="4" title="寒假强宠回归">
+		<btn type="map">3842</btn>
+	</page> 	
+
+	<page id="5" title="暗黑双生">
+		<btn type="module">app/LeiAndYanMainActPanel|正在打开面板...</btn>
+	</page> 	
+		
+	<page id="6" title="神迹塔的召唤">
+		<btn type="module">app/MiKaAwakenActFourPanel|正在打开面板...</btn>
+	</page> 			
+	<page id="7" title="界王神变身强化">
+		<btn type="module">app/NewYearVipPetPanel|正在打开面板...</btn>
+	</page> 	
+	<page id="8" title="首充vip送星钻">
+		<btn type="module">app/VIPDarkSeniorBoxPanel|正在打开面板...</btn>
+	</page>
+
+
+
+
+	<!--线下赛尔-->
+	<page name="seer">
+	
+	</page>
+	<!--下期预告-->
+	<page name="notice">
+	</page>
+	<!--评分-->
+	<page name="grade">
+		<btn type="module">app/ScorePanel|正在打开面板...</btn>
+	</page>
+</root>

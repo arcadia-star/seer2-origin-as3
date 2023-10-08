@@ -1,0 +1,24 @@
+<root>
+	<swap type="2" name="伊特" 		swapCount="100"  	id="91" 		isPet="1" swapID="401"/>
+	<swap type="1" name="战斗之芯" 	swapCount="60"  	id="200311" 	isPet="0" swapID="413"/>
+	<swap type="1" name="飓风之心" 	swapCount="60"  	id="200301" 	isPet="0" swapID="405"/>
+	<swap type="1" name="闪电之心" 	swapCount="60"  	id="200302" 	isPet="0" swapID="406"/>
+	<swap type="1" name="冰霜之心" 	swapCount="60"  	id="200303" 	isPet="0" swapID="407"/>
+	<swap type="1" name="暗影之心" 	swapCount="60"  	id="200304" 	isPet="0" swapID="408"/>
+	<swap type="1" name="光辉之心" 	swapCount="60"  	id="200305" 	isPet="0" swapID="409"/>
+	<swap type="1" name="飞翔之芯" 	swapCount="60"  	id="200308" 	isPet="0" swapID="410"/>
+	<swap type="1" name="虫群之芯" 	swapCount="60"  	id="200309" 	isPet="0" swapID="411"/>
+	<swap type="1" name="沙暴之芯" 	swapCount="60"  	id="200310" 	isPet="0" swapID="412"/>
+	<swap type="2" name="成长果实" 	swapCount="5"   	id="200214" 	isPet="0" swapID="403"/>
+	<swap type="2" name="伊特饼干" 	swapCount="10"  	id="200573" 	isPet="0" swapID="404"/>
+	<swap type="3" name="风暴"	  	swapCount="60"  	id="200582" 	isPet="0" swapID="490"/>
+    <swap type="3" name="电荷"    	swapCount="60"  	id="200583" 	isPet="0" swapID="491"/>
+    <swap type="3" name="深结"     	swapCount="60" 		id="200584" 	isPet="0" swapID="492"/>
+    <swap type="3" name="恐惧"     	swapCount="60" 		id="200585" 	isPet="0" swapID="493"/>
+    <swap type="3" name="光辉"     	swapCount="60" 		id="200586" 	isPet="0" swapID="494"/>
+    <swap type="3" name="飞旋"     	swapCount="60" 		id="200587" 	isPet="0" swapID="495"/>
+    <swap type="3" name="沙阵"     	swapCount="60" 		id="200588" 	isPet="0" swapID="496"/>
+    <swap type="3" name="虫群"     	swapCount="60" 		id="200589" 	isPet="0" swapID="497"/>
+    <swap type="3" name="斗魂"     	swapCount="60" 		id="200590" 	isPet="0" swapID="498"/>
+    <swap type="2" name="本源之芯" 	swapCount="100" 	id="200312" 	isPet="0" swapID="499"/>
+</root>

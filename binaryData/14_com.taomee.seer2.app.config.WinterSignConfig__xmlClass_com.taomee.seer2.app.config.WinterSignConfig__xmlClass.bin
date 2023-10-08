@@ -1,0 +1,31 @@
+<!--每日签到配置表
+--------策划配的内容-----------
+startTime：签到开始时间
+endTime：签到结束时间
+freeSign :免费补签次数普通、vip
+itemList ：奖励物品ID（可填多物品）注：因为精灵id会与物品冲突，所以在配置精灵id时，+1000000
+itemCount ：奖励物品数量（按顺序对应多物品的数量）
+totalWin:累计奖励需要累计的天数
+--------------------------------
+dayList:今天是否签到
+forList:签到标记位、是否已领取过累积签到奖励（按位标记）、vip补签次数
+swapList:签到、领取奖励、补签
+miBuyList:星钻购买(补签)
+
+
+dayItem系列：每日签到配置    注：因为精灵id会与物品冲突，所以在配置精灵id时，+1000000
+forItem系列：累计签到奖励配置
+-->
+<data startTime="" endTime="" dayList="5018" forList="71,73,72" swapList="4426,4427,4428" miBuyList="605583" freeSign="0,1">
+	<dayItem index="1"  tip=""  itemList="200202,401089,1" itemCount="2,15,1000"/>
+	<dayItem index="2"  tip=""  itemList="200202,401089,1" itemCount="2,15,1000"/>
+	<dayItem index="3"  tip=""  itemList="200202,401089,1" itemCount="2,15,1000"/>
+	<dayItem index="4"  tip=""  itemList="200202,401089,1" itemCount="2,15,1000"/>
+	<dayItem index="5"  tip=""  itemList="200202,401089,1" itemCount="2,15,1000"/>
+ 	<dayItem index="6"  tip=""  itemList="200202,401089,1" itemCount="2,15,1000"/> 
+ 	<dayItem index="7"  tip=""  itemList="200202,401089,1" itemCount="2,15,1000"/> 
+ 	
+
+	<forItem index="1" tip="签到2天领取" itemList="" itemCount="" totalWin="2"/>
+	<forItem index="2" tip="签到5天领取" itemList="" itemCount="" totalWin="5"/>
+</data>

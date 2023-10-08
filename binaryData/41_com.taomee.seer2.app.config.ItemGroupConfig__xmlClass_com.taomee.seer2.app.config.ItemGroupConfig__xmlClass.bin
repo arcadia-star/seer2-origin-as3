@@ -1,0 +1,56 @@
+<groups>
+	<category name="molecularPassword">
+		<group id="1">
+			 <item id="100070" count="1" isPet="" /> 
+			 <item id="100071" count="1" isPet="" /> 
+			 <item id="100072" count="1" isPet="" /> 
+			 <item id="100073" count="1" isPet="" /> 
+			 <item id="100074" count="1" isPet="" /> 
+		</group>
+		<group id="2">
+		  <item id="200001" count="3" isPet="" /> 
+		  <item id="200011" count="5" isPet="" /> 
+		</group>
+	</category>
+	<category name="dailyQuest">
+		<group id="1">
+			<item id="1" count="100" isPet="" /> 
+		</group>
+		<group id="2">
+			<item id="200001" count="1" isPet="" /> 
+		</group>
+		<group id="3">
+			<item id="200002" count="1" isPet="" /> 
+		</group>
+		<group id="4">
+			<item id="200003" count="1" isPet="" /> 
+		</group>
+		<group id="5">
+			<item id="1" count="100" isPet="" /> 
+			<item id="200001" count="1" isPet="" /> 
+		</group>	
+		<group id="6">
+			<item id="1" count="100" isPet="" /> 
+			<item id="200002" count="1" isPet="" /> 
+		</group>	
+		<group id="7">
+			<item id="1" count="100" isPet="" /> 
+			<item id="200003" count="1" isPet="" /> 
+		</group>	
+		<group id="8">
+			<item id="1" count="100" isPet="" /> 
+			<item id="200001" count="1" isPet="" /> 
+			<item id="200213" count="1" isPet="" /> 
+		</group>	
+		<group id="9">
+			<item id="1" count="100" isPet="" /> 
+			<item id="200002" count="1" isPet="" />
+			<item id="200213" count="1" isPet="" />		
+		</group>	
+		<group id="10">
+			<item id="1" count="100" isPet="" /> 
+			<item id="200003" count="1" isPet="" /> 
+			<item id="200213" count="1" isPet="" />		
+		</group>	
+	</category>
+</groups>

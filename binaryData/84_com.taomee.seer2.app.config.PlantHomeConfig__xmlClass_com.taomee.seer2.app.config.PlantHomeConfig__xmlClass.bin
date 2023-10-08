@@ -1,0 +1,16 @@
+<root>
+	<item level="1" idList="601500|601501|601502" countList="40|40|35" nextLevelSpecialList="601003|400135"/>
+	<item level="2" idList="601500|601501|601502" countList="40|40|35" nextLevelSpecialList="601003|400135"/>
+	<item level="3" idList="601502|601503" countList="70|40" nextLevelSpecialList="601004"/>
+	<item level="4" idList="601502|601503|601505" countList="50|50|20" nextLevelSpecialList="601005|601006|400135"/>
+	<item level="5" idList="601505|601507|601509" countList="40|40|20" nextLevelSpecialList="601007|601008|601009"/>
+	<item level="6" idList="601514|601512|601516" countList="40|20|25" nextLevelSpecialList="601011|601013|601016|400135"/>
+	<item level="7" idList="601518|601520" countList="50|50" nextLevelSpecialList="601014|601015|400135"/>
+	<item level="8" idList="601522|601520|601524" countList="80|40|60" nextLevelSpecialList="601017|601018|400135"/>
+	<item level="9" idList="601530|601529|601524" countList="80|50|50" nextLevelSpecialList="601021|601022|400135"/>
+	<item level="10" idList="601536|601534|601529" countList="120|80|50" nextLevelSpecialList="601025|601026|400135"/>
+	<item level="11" idList="601541|601543|601536" countList="120|160|150" nextLevelSpecialList="601028|601029"/>
+	<item level="12" idList="601547|601549|601543" countList="120|160|180" nextLevelSpecialList="601031|601032|400135"/>
+	<item level="13" idList="601554|601552|601547" countList="200|150|120" nextLevelSpecialList="601039|601040|400135"/>
+	<item level="14" idList="601562|601564|601552" countList="180|160|120" nextLevelSpecialList="601052|601053"/>
+</root>

@@ -1,0 +1,1818 @@
+<!--
+ 此表定义了战斗精灵播放战斗动画时资源所占用的帧数统计
+ -->
+
+<!--  <fighter id='PETID' physics='41' attribute='26' special='45' critical='39' fit='64' /> -->
+
+
+<fighters>
+	<!-- physics:物理攻击 attribute:属性攻击 special:特殊攻击 critical:必杀攻击 fit:合体攻击 -->
+	<fighter id='1' physics='28' attribute='63' special='43' critical='0' fit='0'/>
+	<fighter id='2' physics='43' attribute='38' special='27' critical='0' fit='0'/>
+	<fighter id='3' physics="21" attribute="17" special="20" critical="22" fit="191"/>
+	<fighter id='4' physics='33' attribute='19' special='17' critical='0' fit='0'/>
+	<fighter id='5' physics='28' attribute='17' special='16' critical='0' fit='0'/>
+	<fighter id='6' physics='53' attribute='15' special='38' critical='14' fit='191'/>
+	<fighter id='7' physics='46' attribute='16' special='23' critical='0' fit='0'/>
+	<fighter id='8' physics='57' attribute='15' special='21' critical='0' fit='0'/>
+	<fighter id='9' physics='18' attribute='39' special='27' critical='77' fit='191'/>
+	<fighter id='10' physics='23' attribute='23' special='19' critical='0' fit='0'/>
+	<fighter id='11' physics='20' attribute='36' special='59' critical='0' fit='0'/>
+	<fighter id='12' physics='35' attribute='64' special='78' critical='27' fit='0'/>
+	<fighter id='13' physics='25' attribute='22' special='22' critical='0' fit='0'/>
+	<fighter id='14' physics='16' attribute='48' special='43' critical='0' fit='0'/>
+	<fighter id='15' physics='20' attribute='16' special='20' critical='30' fit='0'/>
+	<fighter id='16' physics='35' attribute='66' special='0' critical='0' fit='0'/>
+	<fighter id='17' physics='35' attribute='22' special='42' critical='61' fit='0'/>
+	<fighter id='18' physics='31' attribute='29' special='9' critical='0' fit='0'/>
+	<fighter id='19' physics='11' attribute='12' special='47' critical='21' fit='0'/>
+	<fighter id='20' physics='18' attribute='12' special='21' critical='0' fit='0'/>
+	<fighter id='21' physics='29' attribute='32' special='29' critical='30' fit='0'/>
+	<fighter id='22' physics='30' attribute='17' special='16' critical='0' fit='0'/>
+	<fighter id='23' physics='39' attribute='31' special='25' critical='0' fit='0'/>
+	<fighter id='24' physics='14' attribute='14' special='20' critical='8' fit='0'/>
+	<fighter id='25' physics='32' attribute='32' special='48' critical='0' fit='0'/>
+	<fighter id='26' physics='24' attribute='21' special='40' critical='0' fit='0'/>
+	<fighter id='27' physics='27' attribute='20' special='59' critical='16' fit='0'/>
+	<fighter id='28' physics='34' attribute='21' special='31' critical='0' fit='0'/>
+	<fighter id='29' physics='27' attribute='9' special='23' critical='32' fit='0'/>
+	<fighter id='30' physics='48' attribute='33' special='40' critical='0' fit='0'/>
+	<fighter id='31' physics='39' attribute='22' special='58' critical='123' fit='0'/>
+	<fighter id='32' physics='34' attribute='34' special='63' critical='0' fit='0'/>
+	<fighter id='33' physics='26' attribute='14' special='27' critical='24' fit='0'/>
+	<fighter id='34' physics='67' attribute='12' special='32' critical='0' fit='0'/>
+	<fighter id='35' physics='41' attribute='21' special='53' critical='0' fit='0'/>
+	<fighter id='36' physics='43' attribute='21' special='32' critical='59' fit='0'/>
+	<fighter id='37' physics='18' attribute='55' special='20' critical='0' fit='0'/>
+	<fighter id='38' physics='50' attribute='19' special='70' critical='44' fit='0'/>
+	<fighter id='39' physics='17' attribute='17' special='75' critical='0' fit='0'/>
+	<fighter id='40' physics='24' attribute='7' special='25' critical='25' fit='0'/>
+	<fighter id='41' physics='58' attribute='19' special='36' critical='0' fit='0'/>
+	<fighter id='42' physics='19' attribute='13' special='28' critical='19' fit='0'/>
+	<fighter id='43' physics='34' attribute='21' special='32' critical='0' fit='0'/>
+	<fighter id='44' physics='62' attribute='8' special='50' critical='0' fit='0'/>
+	<fighter id='45' physics='22' attribute='35' special='37' critical='82' fit='0'/>
+	<fighter id='46' physics='25' attribute='14' special='35' critical='0' fit='0'/>
+	<fighter id='47' physics='28' attribute='5' special='28' critical='0' fit='0'/>
+	<fighter id='48' physics='53' attribute='11' special='38' critical='53' fit='0'/>
+	<fighter id='49' physics='25' attribute='12' special='48' critical='0' fit='0'/>
+	<fighter id='50' physics='19' attribute='23' special='27' critical='35' fit='0'/>
+	<fighter id='51' physics='35' attribute='7' special='32' critical='0' fit='0'/>
+	<fighter id='52' physics='47' attribute='14' special='45' critical='97' fit='0'/>
+	<fighter id='53' physics='25' attribute='12' special='14' critical='0' fit='0'/>
+	<fighter id='54' physics='24' attribute='18' special='22' critical='40' fit='0'/>
+	<fighter id='55' physics='51' attribute='11' special='33' critical='0' fit='0'/>
+	<fighter id='56' physics='37' attribute='13' special='71' critical='0' fit='0'/>
+	<fighter id='57' physics='59' attribute='18' special='98' critical='101' fit='0'/>
+	<fighter id='58' physics='59' attribute='17' special='70' critical='0' fit='0'/>
+	<fighter id='59' physics='51' attribute='15' special='85' critical='0' fit='0'/>
+	<fighter id='60' physics='25' attribute='21' special='19' critical='97' fit='0'/>
+	<fighter id='61' physics='68' attribute='25' special='63' critical='0' fit='0'/>
+	<fighter id='62' physics='34' attribute='29' special='45' critical='58' fit='0'/>
+	<fighter id='63' physics='61' attribute='13' special='45' critical='0' fit='0'/>
+	<fighter id='64' physics='39' attribute='29' special='36' critical='74' fit='0'/>
+	<fighter id='65' physics='45' attribute='13' special='26' critical='0' fit='0'/>
+	<fighter id='66' physics='40' attribute='10' special='41' critical='52' fit='0'/>
+	<fighter id='67' physics='62' attribute='19' special='35' critical='0' fit='0'/>
+	<fighter id='68' physics='61' attribute='17' special='25' critical='0' fit='0'/>
+	<fighter id='69' physics='40' attribute='9' special='34' critical='34' fit='0'/>
+	<fighter id='70' physics='62' attribute='14' special='66' critical='0' fit='0'/>
+	<fighter id='71' physics='41' attribute='11' special='37' critical='70' fit='0'/>
+	<fighter id='72' physics='46' attribute='15' special='44' critical='0' fit='0'/>
+	<fighter id='73' physics='33' attribute='19' special='22' critical='47' fit='0'/>
+	<fighter id='74' physics='61' attribute='20' special='43' critical='0' fit='0'/>
+	<fighter id='75' physics='34' attribute='13' special='31' critical='0' fit='0' />
+	<fighter id='76' physics='36' attribute='9' special='23' critical='46' fit='0'/>
+	<fighter id='77' physics='55' attribute='23' special='38' critical='0' fit='0'/>
+	<fighter id='78' physics='33' attribute='32' special='27' critical='40' fit='0'/>
+	<fighter id='79' physics='27' attribute='9' special='38' critical='0' fit='0'/>
+	<fighter id='80' physics='59' attribute='19' special='24' critical='29' fit='0'/>
+	<fighter id='81' physics='47' attribute='18' special='39' critical='0' fit='0'/>
+	<fighter id='82' physics='41' attribute='9' special='34' critical='55' fit='0'/>
+	<fighter id='83' physics='48' attribute='33' special='26' critical='0' fit='0'/>
+	<fighter id='84' physics='39' attribute='30' special='37' critical='0' fit='0'/>
+	<fighter id='85' physics='33' attribute='17' special='51' critical='104' fit='0'/>
+	<fighter id='86' physics='55' attribute='10' special='23' critical='0' fit='0'/>
+	<fighter id='87' physics='46' attribute='19' special='21' critical='54' fit='0'/>
+	<fighter id='88' physics='63' attribute='23' special='40' critical='0' fit='0'/>
+	<fighter id='89' physics='56' attribute='17' special='34' critical='108' fit='0'/>
+	<fighter id='90' physics='23' attribute='35' special='77' critical='169' fit='90' />
+	<fighter id='91' physics='36' attribute='35' special='60' critical='0' fit='0'/>
+	<fighter id='92' physics='61' attribute='14' special='33' critical='96' fit='199'/>
+	<fighter id='93' physics='51' attribute='14' special='59' critical='94' fit='199'/>
+	<fighter id='94' physics='75' attribute='16' special='52' critical='95' fit='199'/>
+	<fighter id='95' physics='63' attribute='18' special='38' critical='44' fit='184'/>
+	<fighter id='96' physics='24' attribute='21' special='50' critical='111' fit='184'/>
+	<fighter id='97' physics='32' attribute='35' special='42' critical='144' fit='178' />
+	<fighter id='98' physics='29' attribute='35' special='47' critical='47' fit='178' />
+	<fighter id='99' physics='33' attribute='26' special='39' critical='51' fit='178' />
+	<fighter id='100' physics='33' attribute='25' special='44' critical='143' fit='176' />
+
+	<fighter id='101' physics='29' attribute='31' special='37' critical='65' fit='77' />
+	<fighter id='102' physics='25' attribute='21' special='27' critical='35' fit='61' />
+	<fighter id='103' physics='25' attribute='35' special='36' critical='41' fit='85' />
+	<fighter id='104' physics='29' attribute='23' special='27' critical='69' fit='70' />
+	<fighter id='105' physics='30' attribute='35' special='44' critical='74' fit='131' />
+	<fighter id='106' physics='27' attribute='20' special='13' critical='23' fit='0' />
+	<fighter id='107' physics='33' attribute='26' special='37' critical='46' fit='0' />
+	<fighter id='108' physics='27' attribute='32' special='54' critical='85' fit='0' />
+	<fighter id='109' physics='65' attribute='19' special='43' critical='0' fit='0'/>
+
+
+	<fighter id='110' physics='48' attribute='19' special='28' critical='56' fit='0'/>
+	<fighter id='111' physics='53' attribute='17' special='24' critical='0' fit='0'/>
+	<fighter id='112' physics='29' attribute='13' special='26' critical='36' fit='0'/>
+	<fighter id='113' physics='34' attribute='19' special='47' critical='0' fit='0'/>
+	<fighter id='114' physics='48' attribute='31' special='35' critical='17' fit='0'/>
+	<fighter id='115' physics='81' attribute='64' special='51' critical='0' fit='0'/>
+	<fighter id='116' physics='47' attribute='33' special='47' critical='79' fit='0'/>
+	<fighter id='117' physics='61' attribute='21' special='22' critical='0' fit='0'/>
+	<fighter id='118' physics='42' attribute='42' special='70' critical='65' fit='0'/>
+	<fighter id='119' physics='30' attribute='27' special='45' critical='0' fit='0'/>
+	<fighter id='120' physics='34' attribute='35' special='37' critical='0' fit='0'/>
+	<fighter id='121' physics='33' attribute='13' special='45' critical='57' fit='0'/>
+	<fighter id='122' physics='22' attribute='30' special='57' critical='0' fit='0'/>
+	<fighter id='123' physics='27' attribute='21' special='30' critical='29' fit='0'/>
+	<fighter id='124' physics='42' attribute='24' special='41' critical='0' fit='0'/>
+	<fighter id='125' physics='19' attribute='29' special='54' critical='66' fit='0'/>
+	<fighter id='126' physics='34' attribute='16' special='57' critical='0' fit='0'/>
+	<fighter id='127' physics='38' attribute='13' special='44' critical='49' fit='0'/>
+	<fighter id='128' physics='23' attribute='20' special='25' critical='0' fit='0'/>
+	<fighter id='129' physics='30' attribute='15' special='40' critical='29' fit='0'/>
+	<fighter id='130' physics='41' attribute='24' special='49' critical='0' fit='0'/>
+	<fighter id='131' physics='24' attribute='30' special='56' critical='0' fit='0'/>
+	<fighter id='132' physics='25' attribute='18' special='39' critical='69' fit='0'/>
+	<fighter id='133' physics='43' attribute='35' special='27' critical='0' fit='0'/>
+	<fighter id='134' physics='23' attribute='24' special='42' critical='66' fit='0'/>
+	<fighter id='135' physics='54' attribute='19' special='45' critical='0' fit='0'/>
+	<fighter id='136' physics='50' attribute='26' special='40' critical='0' fit='0'/>
+	<fighter id='137' physics='49' attribute='28' special='28' critical='79' fit='0'/>
+	<fighter id='138' physics='35' attribute='35' special='35' critical='0' fit='0'/>
+	<fighter id='139' physics='41' attribute='34' special='55' critical='118' fit='0'/>
+	<fighter id='140' physics='46' attribute='36' special='53' critical='0' fit='0'/>
+	<fighter id='141' physics='37' attribute='29' special='42' critical='99' fit='0'/>
+	<fighter id='142' physics='50' attribute='30' special='48' critical='0' fit='0'/>
+	<fighter id='143' physics='36' attribute='34' special='53' critical='68' fit='0'/>
+	<fighter id='144' physics='34' attribute='27' special='39' critical='0' fit='0'/>
+	<fighter id='145' physics='25' attribute='37' special='33' critical='95' fit='0'/>
+
+	<fighter id='146' physics='58' attribute='40' special='25' critical='0' fit='0'/>
+	<fighter id='147' physics='24' attribute='19' special='19' critical='0' fit='0'/>
+	<fighter id='148' physics='22' attribute='20' special='29' critical='23' fit='0'/>
+	<fighter id='149' physics='55' attribute='14' special='41' critical='0' fit='0'/>
+	<fighter id='150' physics='37' attribute='21' special='30' critical='61' fit='0'/>
+	<fighter id='151' physics='31' attribute='35' special='42' critical='0' fit='0' />
+	<fighter id='152' physics='40' attribute='19' special='79' critical='0' fit='0' />
+	<fighter id='153' physics='44' attribute='28' special='78' critical='50' fit='0' />
+	<fighter id='154' physics='39' attribute='27' special='28' critical='0' fit='0' />
+	<fighter id='155' physics='28' attribute='16' special='32' critical='53' fit='0' />
+	<fighter id='156' physics='30' attribute='10' special='17' critical='0' fit='0'/>
+	<fighter id='157' physics='28' attribute='21' special='45' critical='16' fit='0'/>
+	<fighter id='158' physics='54' attribute='32' special='30' critical='0' fit='0'/>
+	<fighter id='159' physics='46' attribute='19' special='58' critical='0' fit='0'/>
+	<fighter id='160' physics='57' attribute='13' special='78' critical='106' fit='0'/>
+	<fighter id='161' physics='43' attribute='31' special='39' critical='0' fit='0'/>
+	<fighter id='162' physics='52' attribute='39' special='35' critical='60' fit='0'/>
+	<fighter id='163' physics='57' attribute='76' special='55' critical='156' fit='0'/>
+	<fighter id='164' physics='37' attribute='30' special='26' critical='0' fit='0'/>
+	<fighter id='165' physics='45' attribute='29' special='39' critical='76' fit='0'/>
+	<fighter id='166' physics='38' attribute='13' special='25' critical='0' fit='0'/>
+	<fighter id='167' physics='39' attribute='33' special='37' critical='0' fit='0'/>
+	<fighter id='168' physics='40' attribute='42' special='40' critical='60' fit='0'/>
+	<fighter id='169' physics='38' attribute='27' special='36' critical='0' fit='0'/>
+	<fighter id='170' physics='35' attribute='43' special='39' critical='55' fit='0'/>
+	<fighter id='171' physics='39' attribute='29' special='66' critical='76' fit='0'/>
+	<fighter id='172' physics='43' attribute='19' special='60' critical='0' fit='0'/>
+	<fighter id='173' physics='51' attribute='41' special='49' critical='49' fit='0'/>
+	<fighter id='174' physics='41' attribute='33' special='48' critical='0' fit='0'/>
+	<fighter id='175' physics='67' attribute='62' special='48' critical='54' fit='134'/>
+	<fighter id='176' physics='53' attribute='33' special='39' critical='0' fit='0'/>
+	<fighter id='177' physics='32' attribute='77' special='67' critical='75' fit='134'/>
+	<fighter id='178' physics='38' attribute='49' special='44' critical='193' fit='0'/>
+	<fighter id='179' physics='62' attribute='49' special='39' critical='0' fit='0'/>
+	<fighter id='180' physics='51' attribute='41' special='41' critical='53' fit='0'/>
+	<fighter id='181' physics='66' attribute='30' special='44' critical='0' fit='0'/>
+	<fighter id='182' physics='37' attribute='21' special='32' critical='0' fit='0'/>
+	<fighter id='183' physics='51' attribute='25' special='38' critical='75' fit='0'/>
+	<fighter id='184' physics='38' attribute='24' special='38' critical='0' fit='0'/>
+	<fighter id='185' physics='43' attribute='23' special='25' critical='63' fit='0'/>
+	<fighter id='186' physics='66' attribute='33' special='33' critical='0' fit='0'/>
+	<fighter id='187' physics='39' attribute='51' special='59' critical='119' fit='0'/>
+	<fighter id='188' physics='28' attribute='13' special='17' critical='0' fit='0' />
+	<fighter id='189' physics='32' attribute='29' special='45' critical='76' fit='0' />
+	<fighter id='190' physics='60' attribute='43' special='31' critical='0' fit='0'/>
+	<fighter id='191' physics='56' attribute='47' special='24' critical='87' fit='0'/>
+	<fighter id='192' physics='33' attribute='31' special='37' critical='0' fit='0'/>
+	<fighter id='193' physics='29' attribute='34' special='44' critical='88' fit='0'/>
+	<fighter id='194' physics='27' attribute='41' special='32' critical='0' fit='0'/>
+	<fighter id='195' physics='33' attribute='65' special='79' critical='99' fit='0'/>
+	<fighter id='196' physics='48' attribute='13' special='32' critical='0' fit='0'/>
+	<fighter id='197' physics='34' attribute='20' special='60' critical='96' fit='0'/>
+	<fighter id='198' physics='35' attribute='25' special='29' critical='0' fit='0'/>
+	<fighter id='199' physics='23' attribute='15' special='18' critical='66' fit='0'/>
+	<fighter id='200' physics='33' attribute='21' special='29' critical='0' fit='0'/>
+	<fighter id='201' physics='51' attribute='35' special='38' critical='88' fit='0'/>
+	<fighter id='202' physics='52' attribute='15' special='74' critical='0' fit='0' />
+	<fighter id='203' physics='36' attribute='12' special='32' critical='111' fit='0' />
+	<fighter id='204' physics='53' attribute='14' special='46' critical='0' fit='0' />
+	<fighter id='205' physics='55' attribute='14' special='37' critical='77' fit='0' />
+	<fighter id='206' physics='32' attribute='27' special='49' critical='0' fit='0' />
+	<fighter id='207' physics='25' attribute='25' special='31' critical='74' fit='0' />
+	<fighter id='208' physics='35' attribute='52' special='51' critical='0' fit='0' />
+	<fighter id='209' physics='35' attribute='9' special='55' critical='54' fit='0' />
+	<fighter id='210' physics='26' attribute='26' special='20' critical='0' fit='0' />
+	<fighter id='211' physics='39' attribute='22' special='39' critical='64' fit='0' />
+	<fighter id='212' physics='31' attribute='38' special='57' critical='0' fit='0' />
+	<fighter id='213' physics='33' attribute='15' special='35' critical='82' fit='0' />
+	<fighter id='214' physics='39' attribute='37' special='28' critical='0' fit='0' />
+	<fighter id='215' physics='59' attribute='25' special='42' critical='171' fit='0' />
+	<fighter id='216' physics='29' attribute='31' special='32' critical='0' fit='0' />
+	<fighter id='217' physics='27' attribute='35' special='45' critical='92' fit='0' />
+	<fighter id='218' physics='30' attribute='17' special='16' critical='0' fit='0' />
+	<fighter id='219' physics='41' attribute='30' special='25' critical='80' fit='0' />
+	<fighter id='220' physics='20' attribute='21' special='57' critical='0' fit='0' />
+	<fighter id='221' physics='21' attribute='21' special='54' critical='35' fit='0' />
+	<fighter id='222' physics='15' attribute='25' special='22' critical='0' fit='0' />
+	<fighter id='223' physics='29' attribute='35' special='37' critical='64' fit='0' />
+	<fighter id='224' physics='23' attribute='23' special='29' critical='0' fit='0' />
+	<fighter id='225' physics='15' attribute='25' special='43' critical='88' fit='0' />
+	<fighter id='226' physics='26' attribute='25' special='17' critical='0' fit='0' />
+	<fighter id='227' physics='21' attribute='18' special='27' critical='33' fit='0' />
+	<fighter id='228' physics='33' attribute='21' special='49' critical='0' fit='0' />
+	<fighter id='229' physics='22' attribute='20' special='31' critical='0' fit='0' />
+	<fighter id='230' physics='32' attribute='24' special='44' critical='87' fit='0' />
+	<fighter id='231' physics='16' attribute='32' special='38' critical='0' fit='0' />
+	<fighter id='232' physics='27' attribute='17' special='14' critical='0' fit='0' />
+	<fighter id='233' physics='19' attribute='35' special='39' critical='57' fit='0' />
+	<fighter id='234' physics='46' attribute='49' special='67' critical='92' fit='0' />
+	<fighter id='235' physics='34' attribute='23' special='28' critical='0' fit='0' />
+	<fighter id='236' physics='30' attribute='30' special='31' critical='84' fit='0' />
+	<fighter id='237' physics='33' attribute='35' special='69' critical='0' fit='0' />
+	<fighter id='238' physics='17' attribute='20' special='72' critical='18' fit='0' />
+	<fighter id='239' physics='38' attribute='37' special='47' critical='0' fit='0' />
+	<fighter id='240' physics='54' attribute='49' special='47' critical='127' fit='0' />
+	<fighter id='241' physics='24' attribute='24' special='30' critical='0' fit='0' />
+	<fighter id='242' physics='26' attribute='25' special='28' critical='81' fit='0' />
+	<fighter id='243' physics='21' attribute='26' special='22' critical='0' fit='0' />
+	<fighter id='244' physics='29' attribute='31' special='32' critical='58' fit='0' />
+	<fighter id='245' physics='21' attribute='25' special='36' critical='0' fit='0' />
+	<fighter id='246' physics='21' attribute='14' special='19' critical='59' fit='0' />
+	<fighter id='247' physics='16' attribute='17' special='16' critical='0' fit='0' />
+	<fighter id='248' physics='64' attribute='33' special='53' critical='131' fit='0' />
+	<fighter id='249' physics='26' attribute='21' special='37' critical='0' fit='0' />
+	<fighter id='250' physics='46' attribute='17' special='24' critical='102' fit='0' />
+	<fighter id='251' physics='25' attribute='28' special='36' critical='0' fit='0' />
+	<fighter id='252' physics='31' attribute='12' special='28' critical='33' fit='0' />
+	<fighter id='253' physics='30' attribute='25' special='34' critical='0' fit='0' />
+	<fighter id='254' physics='35' attribute='13' special='48' critical='46' fit='0' />
+	<fighter id='255' physics='32' attribute='35' special='49' critical='0' fit='0' />
+	<fighter id='256' physics='41' attribute='24' special='38' critical='81' fit='0' />
+	<fighter id='257' physics='20' attribute='15' special='25' critical='0' fit='0' />
+	<fighter id='258' physics='43' attribute='21' special='24' critical='47' fit='0' />
+	<fighter id='259' physics='20' attribute='31' special='41' critical='0' fit='0' />
+	<fighter id='260' physics='29' attribute='20' special='54' critical='0' fit='0' />
+	<fighter id='261' physics='62' attribute='49' special='33' critical='53' fit='0' />
+	<fighter id='262' physics='42' attribute='21' special='31' critical='0' fit='0' />
+	<fighter id='263' physics='27' attribute='18' special='23' critical='60' fit='0' />
+	<fighter id='264' physics='24' attribute='33' special='54' critical='0' fit='0' />
+	<fighter id='265' physics='38' attribute='1' special='38' critical='69' fit='0' />
+	<fighter id='266' physics='25' attribute='29' special='32' critical='0' fit='0' />
+	<fighter id='267' physics='26' attribute='35' special='25' critical='0' fit='0' />
+	<fighter id='268' physics='39' attribute='23' special='27' critical='68' fit='0' />
+	<fighter id='269' physics='24' attribute='23' special='30' critical='0' fit='0' />
+	<fighter id='270' physics='46' attribute='18' special='19' critical='0' fit='0' />
+	<fighter id='271' physics='25' attribute='21' special='1' critical='67' fit='0' />
+	<fighter id='272' physics='81' attribute='38' special='58' critical='0' fit='0' />
+	<fighter id='273' physics='72' attribute='51' special='36' critical='53' fit='0' />
+	<fighter id='274' physics='58' attribute='23' special='33' critical='0' fit='0' />
+	<fighter id='275' physics='24' attribute='27' special='29' critical='83' fit='0' />
+	<fighter id='276' physics='22' attribute='36' special='21' critical='0' fit='0' />
+	<fighter id='277' physics='32' attribute='1' special='1' critical='57' fit='0' />
+	<fighter id='278' physics='27' attribute='22' special='51' critical='0' fit='0' />
+	<fighter id='279' physics='31' attribute='27' special='25' critical='37' fit='0' />
+	<fighter id='280' physics='31' attribute='25' special='34' critical='0' fit='0' />
+	<fighter id='281' physics='39' attribute='29' special='25' critical='40' fit='0' />
+	<fighter id='282' physics='31' attribute='25' special='22' critical='0' fit='0' />
+	<fighter id='283' physics='23' attribute='25' special='26' critical='57' fit='0' />
+	<fighter id='284' physics='24' attribute='25' special='30' critical='0' fit='0' />
+	<fighter id='285' physics='40' attribute='13' special='29' critical='39' fit='0' />
+	<fighter id='286' physics='21' attribute='28' special='23' critical='0' fit='0' />
+	<fighter id='287' physics='33' attribute='24' special='32' critical='76' fit='0' />
+	<fighter id='288' physics='37' attribute='25' special='30' critical='0' fit='0' />
+	<fighter id='289' physics='27' attribute='25' special='29' critical='71' fit='0' />
+	<fighter id='290' physics='38' attribute='15' special='30' critical='0' fit='0' />
+	<fighter id='291' physics='28' attribute='21' special='33' critical='0' fit='0' />
+	<fighter id='292' physics='31' attribute='17' special='32' critical='116' fit='0' />
+	<fighter id='293' physics='21' attribute='31' special='29' critical='95' fit='0' />
+	<fighter id='294' physics='22' attribute='25' special='21' critical='0' fit='0' />
+	<fighter id='295' physics='38' attribute='18' special='30' critical='45' fit='0' />
+	<fighter id='296' physics='25' attribute='25' special='17' critical='0' fit='0' />
+	<fighter id='297' physics='27' attribute='15' special='46' critical='29' fit='0' />
+	<fighter id='298' physics='27' attribute='25' special='31' critical='0' fit='0' />
+	<fighter id='299' physics='18' attribute='27' special='33' critical='0' fit='0' />
+	<fighter id='300' physics='32' attribute='31' special='33' critical='65' fit='0' />
+	<fighter id='341' physics='39' attribute='45' special='37' critical='87' fit='0' />
+	<fighter id='301' physics='18' attribute='9' special='44' critical='30' fit='0' />
+	<fighter id='302' physics='33' attribute='21' special='31' critical='75' fit='0' />
+	<fighter id='303' physics='25' attribute='23' special='20' critical='39' fit='0' />
+	<fighter id='304' physics='20' attribute='24' special='58' critical='85' fit='0' />
+	<fighter id='305' physics='42' attribute='39' special='41' critical='65' fit='0' />
+	<fighter id='306' physics='35' attribute='35' special='39' critical='55' fit='0' />
+	<fighter id='307' physics='51' attribute='60' special='41' critical='86' fit='0' />
+	<fighter id='308' physics='48' attribute='41' special='29' critical='165' fit='0' />
+	<fighter id='309' physics='35' attribute='21' special='43' critical='69' fit='0' />
+	<fighter id='310' physics='28' attribute='7' special='41' critical='47' fit='0' />
+	<fighter id='311' physics='26' attribute='27' special='39' critical='65' fit='0' />
+	<fighter id='312' physics='28' attribute='35' special='38' critical='68' fit='0' />
+	<fighter id='313' physics='28' attribute='27' special='25' critical='62' fit='0' />
+	<fighter id='314' physics='21' attribute='35' special='21' critical='65' fit='0' />
+	<fighter id='315' physics='53' attribute='61' special='55' critical='104' fit='0' />
+	<fighter id='316' physics='39' attribute='27' special='37' critical='37' fit='0' />
+	<fighter id='317' physics='18' attribute='23' special='25' critical='53' fit='0' />
+	<fighter id='318' physics='23' attribute='19' special='37' critical='34' fit='0' />
+	<fighter id='319' physics='19' attribute='26' special='33' critical='30' fit='0' />
+
+
+	<fighter id='320' physics='23' attribute='16' special='19' critical='0' fit='0' />
+	<fighter id='321' physics='19' attribute='21' special='35' critical='0' fit='0' />
+	<fighter id='322' physics='24' attribute='31' special='23' critical='79' fit='0' />
+	<fighter id='323' physics='31' attribute='35' special='29' critical='0' fit='0' />
+	<fighter id='324' physics='21' attribute='13' special='22' critical='0' fit='0' />
+	<fighter id='325' physics='27' attribute='43' special='23' critical='41' fit='0' />
+	<fighter id='326' physics='27' attribute='41' special='25' critical='0' fit='0' />
+	<fighter id='327' physics='31' attribute='25' special='20' critical='0' fit='0' />
+	<fighter id='328' physics='38' attribute='33' special='50' critical='71' fit='0' />
+	<fighter id='329' physics='35' attribute='60' special='33' critical='0' fit='0' />
+	<fighter id='330' physics='33' attribute='20' special='28' critical='0' fit='0' />
+	<fighter id='331' physics='24' attribute='40' special='24' critical='52' fit='0' />
+	<fighter id='332' physics='22' attribute='25' special='21' critical='0' fit='0' />
+	<fighter id='333' physics='38' attribute='34' special='44' critical='0' fit='0' />
+	<fighter id='334' physics='34' attribute='21' special='24' critical='67' fit='0' />
+	<fighter id='335' physics='34' attribute='40' special='33' critical='0' fit='0' />
+	<fighter id='336' physics='28' attribute='25' special='38' critical='0' fit='0' />
+	<fighter id='337' physics='24' attribute='26' special='27' critical='59' fit='0' />
+	<fighter id='338' physics='18' attribute='21' special='32' critical='0' fit='0' />
+	<fighter id='339' physics='28' attribute='26' special='33' critical='0' fit='0' />
+
+	<fighter id='340' physics='37' attribute='37' special='52' critical='98' fit='0' />
+	<fighter id='342' physics='21' attribute='13' special='27' critical='0' fit='0' />
+	<fighter id='343' physics='22' attribute='9' special='23' critical='42' fit='0' />
+	<fighter id='344' physics='22' attribute='25' special='32' critical='0' fit='0' />
+	<fighter id='345' physics='27' attribute='19' special='29' critical='0' fit='0' />
+	<fighter id='346' physics='25' attribute='25' special='39' critical='55' fit='0' />
+	<fighter id='347' physics='20' attribute='17' special='32' critical='0' fit='0' />
+	<fighter id='348' physics='23' attribute='15' special='25' critical='0' fit='0' />
+	<fighter id='349' physics='41' attribute='19' special='27' critical='75' fit='0' />
+
+
+	<fighter id='350' physics='22' attribute='30' special='23' critical='0' fit='0' />
+	<fighter id='351' physics='35' attribute='31' special='27' critical='40' fit='0' />
+	<fighter id='352' physics='36' attribute='19' special='29' critical='0' fit='0' />
+	<fighter id='353' physics='33' attribute='35' special='45' critical='55' fit='0' />
+	<fighter id='354' physics='28' attribute='21' special='22' critical='0' fit='0' />
+	<fighter id='355' physics='33' attribute='51' special='73' critical='68' fit='0' />
+	<fighter id='356' physics='22' attribute='18' special='16' critical='0' fit='0' />
+	<fighter id='357' physics='19' attribute='5' special='19' critical='55' fit='0' />
+	<fighter id='358' physics='19' attribute='21' special='29' critical='0' fit='0' />
+	<fighter id='359' physics='23' attribute='23' special='19' critical='0' fit='0' />
+	<fighter id='360' physics='27' attribute='27' special='35' critical='39' fit='0' />
+	<fighter id='361' physics='22' attribute='19' special='34' critical='0' fit='0' />
+	<fighter id='362' physics='24' attribute='22' special='18' critical='0' fit='0' />
+	<fighter id='363' physics='30' attribute='23' special='34' critical='69' fit='0' />
+	<fighter id='364' physics='17' attribute='17' special='17' critical='0' fit='0' />
+	<fighter id='365' physics='40' attribute='16' special='24' critical='45' fit='0' />
+	<fighter id='366' physics='38' attribute='24' special='51' critical='70' fit='0' />
+	<fighter id='367' physics='27' attribute='22' special='51' critical='0' fit='0' />
+	<fighter id='368' physics='31' attribute='27' special='25' critical='37' fit='0' />
+	<fighter id='369' physics='39' attribute='27' special='28' critical='0' fit='0' />
+	<fighter id='370' physics='28' attribute='16' special='32' critical='53' fit='0' />
+	<fighter id='371' physics='27' attribute='18' special='27' critical='0' fit='0' />
+	<fighter id='372' physics='15' attribute='18' special='29' critical='23' fit='0' />
+	<fighter id='373' physics='35' attribute='16' special='25' critical='0' fit='0' />
+	<fighter id='374' physics='41' attribute='25' special='35' critical='55' fit='0' />
+	<fighter id='375' physics='31' attribute='19' special='32' critical='0' fit='0' />
+	<fighter id='376' physics='35' attribute='23' special='31' critical='36' fit='0' />
+	<fighter id='377' physics='32' attribute='29' special='33' critical='0' fit='0' />
+	<fighter id='378' physics='34' attribute='33' special='22' critical='84' fit='0' />
+	<fighter id='379' physics='21' attribute='31' special='16' critical='0' fit='0' />
+	<fighter id='380' physics='33' attribute='15' special='35' critical='0' fit='0' />
+	<fighter id='381' physics='30' attribute='25' special='26' critical='54' fit='0' />
+	<fighter id='382' physics='30' attribute='31' special='31' critical='0' fit='0' />
+	<fighter id='383' physics='22' attribute='12' special='34' critical='0' fit='0' />
+	<fighter id='384' physics='31' attribute='21' special='20' critical='31' fit='0' />
+	<fighter id='385' physics='37' attribute='35' special='31' critical='0' fit='0' />
+	<fighter id='386' physics='27' attribute='27' special='27' critical='101' fit='0' />
+	<fighter id='387' physics='20' attribute='29' special='55' critical='0' fit='0' />
+	<fighter id='388' physics='16' attribute='16' special='28' critical='18' fit='0' />
+	<fighter id='389' physics='25' attribute='31' special='45' critical='51' fit='0' />
+	<fighter id='390' physics='16' attribute='16' special='47' critical='0' fit='0' />
+	<fighter id='391' physics='36' attribute='34' special='43' critical='110' fit='0' />
+	<fighter id='392' physics='21' attribute='28' special='35' critical='0' fit='0' />
+	<fighter id='393' physics='25' attribute='21' special='29' critical='0' fit='0' />
+	<fighter id='394' physics='49' attribute='25' special='28' critical='57' fit='0' />
+	<fighter id='395' physics='31' attribute='27' special='37' critical='52' fit='0' />
+	<fighter id='396' physics='33' attribute='38' special='33' critical='39' fit='0' />
+	<fighter id='397' physics='16' attribute='10' special='21' critical='0' fit='0' />
+	<fighter id='398' physics='19' attribute='20' special='15' critical='39' fit='0' />
+	<fighter id='399' physics='25' attribute='19' special='29' critical='0' fit='0' />
+	<fighter id='400' physics='20' attribute='23' special='17' critical='0' fit='0' />
+	<fighter id='401' physics='27' attribute='37' special='25' critical='61' fit='0' />
+	<fighter id='402' physics='33' attribute='29' special='46' critical='0' fit='0' />
+	<fighter id='403' physics='24' attribute='22' special='20' critical='62' fit='0' />
+	<fighter id='404' physics='27' attribute='19' special='21' critical='0' fit='0' />
+	<fighter id='405' physics='29' attribute='14' special='26' critical='40' fit='0' />
+	<fighter id='406' physics='20' attribute='28' special='31' critical='0' fit='0' />
+	<fighter id='407' physics='16' attribute='27' special='26' critical='54' fit='0' />
+	<fighter id='408' physics='16' attribute='15' special='35' critical='0' fit='0' />
+	<fighter id='409' physics='26' attribute='23' special='35' critical='0' fit='0' />
+	<fighter id='410' physics='29' attribute='31' special='33' critical='32' fit='0' />
+	<fighter id='411' physics='27' attribute='19' special='25' critical='69' fit='0' />
+	<fighter id='412' physics='32' attribute='51' special='61' critical='78' fit='0' />
+	<fighter id='413' physics='24' attribute='22' special='39' critical='0' fit='0' />
+	<fighter id='414' physics='17' attribute='31' special='35' critical='91' fit='0' />
+	<fighter id='416' physics='25' attribute='20' special='24' critical='0' fit='0' />
+	<fighter id='417' physics='26' attribute='22' special='27' critical='0' fit='0' />
+	<fighter id='418' physics='27' attribute='33' special='31' critical='74' fit='0' />
+	<fighter id='419' physics='35' attribute='25' special='39' critical='51' fit='0' />
+	<fighter id='420' physics='22' attribute='29' special='50' critical='0' fit='0' />
+	<fighter id='421' physics='35' attribute='29' special='47' critical='74' fit='0' />
+	<fighter id='422' physics='28' attribute='12' special='20' critical='0' fit='0' />
+	<fighter id='423' physics='23' attribute='14' special='26' critical='64' fit='0' />
+	<fighter id='424' physics='32' attribute='25' special='39' critical='0' fit='0' />
+	<fighter id='425' physics='23' attribute='21' special='48' critical='0' fit='0' />
+	<fighter id='426' physics='31' attribute='31' special='22' critical='81' fit='0' />
+	<fighter id='427' physics='35' attribute='35' special='31' critical='0' fit='0' />
+	<fighter id='428' physics='21' attribute='29' special='30' critical='60' fit='0' />
+	<fighter id='429' physics='21' attribute='30' special='41' critical='0' fit='0' />
+	<fighter id='430' physics='29' attribute='24' special='35' critical='61' fit='0' />
+	<fighter id='431' physics='60' attribute='16' special='54' critical='0' fit='0' />
+	<fighter id='432' physics='48' attribute='20' special='42' critical='0' fit='0' />
+	<fighter id='433' physics='30' attribute='34' special='78' critical='15' fit='0' />
+	<fighter id='434' physics='20' attribute='11' special='0' critical='0' fit='0' />
+	<fighter id='435' physics='42' attribute='26' special='25' critical='135' fit='0' />
+	<fighter id='436' physics='30' attribute='13' special='21' critical='0' fit='0' />
+	<fighter id='437' physics='26' attribute='29' special='30' critical='52' fit='0' />
+
+	<fighter id='438' physics='29' attribute='31' special='43' critical='0' fit='0' />
+	<fighter id='439' physics='52' attribute='29' special='39' critical='86' fit='0' />
+	<fighter id='440' physics='19' attribute='13' special='23' critical='0' fit='0' />
+	<fighter id='441' physics='22' attribute='9' special='14' critical='0' fit='0' />
+	<fighter id='442' physics='21' attribute='17' special='31' critical='65' fit='0' />
+	<fighter id='443' physics='25' attribute='22' special='33' critical='0' fit='0' />
+	<fighter id='444' physics='22' attribute='24' special='51' critical='65' fit='0' />
+	<fighter id='445' physics='40' attribute='26' special='40' critical='0' fit='0' />
+	<fighter id='446' physics='40' attribute='13' special='29' critical='0' fit='0' />
+	<fighter id='447' physics='55' attribute='39' special='53' critical='85' fit='0' />
+
+	<fighter id='448' physics='33' attribute='26' special='22' critical='0' fit='0' />
+	<fighter id='449' physics='18' attribute='15' special='30' critical='0' fit='0' />
+	<fighter id='450' physics='22' attribute='25' special='22' critical='64' fit='0' />
+	<fighter id='451' physics='18' attribute='26' special='42' critical='0' fit='0' />
+	<fighter id='452' physics='21' attribute='25' special='23' critical='0' fit='0' />
+	<fighter id='453' physics='30' attribute='32' special='30' critical='66' fit='0' />
+	<fighter id='454' physics='29' attribute='5' special='18' critical='0' fit='0' />
+	<fighter id='455' physics='20' attribute='22' special='17' critical='22' fit='0' />
+	<fighter id='456' physics='59' attribute='33' special='75' critical='124' fit='0' />
+
+	<fighter id='457' physics='45' attribute='21' special='20' critical='43' fit='88' />
+	<fighter id='458' physics='26' attribute='30' special='25' critical='100' fit='89' />
+
+	<fighter id='492' physics='19' attribute='18' special='13' critical='0' fit='0' />
+	<fighter id='493' physics='10' attribute='19' special='28' critical='37' fit='0' />
+
+	<fighter id='494' physics='18' attribute='40' special='41' critical='67' fit='0' />
+	<fighter id='495' physics='31' attribute='45' special='88' critical='103' fit='0' />
+	<fighter id='496' physics='91' attribute='54' special='45' critical='132' fit='0' />
+	<fighter id='497' physics='91' attribute='54' special='45' critical='132' fit='0' />
+	<fighter id='498' physics='27' attribute='25' special='54' critical='109' fit='0' />
+
+	<fighter id='499' physics='24' attribute='26' special='38' critical='118' fit='0' />
+	<fighter id='500' physics='30' attribute='47' special='56' critical='263' fit='0' />
+
+	<fighter id='503' physics='20' attribute='30' special='51' critical='136' fit='0' />
+	<fighter id='504' physics='42' attribute='11' special='22' critical='44' fit='0' />
+	<fighter id='505' physics='21' attribute='41' special='18' critical='64' fit='0' />
+	<fighter id='506' physics='48' attribute='40' special='49' critical='61' fit='0' />
+	<fighter id='507' physics='32' attribute='21' special='31' critical='59' fit='0' />
+	<fighter id='508' physics='25' attribute='31' special='36' critical='30' fit='0' />
+	<fighter id='509' physics='22' attribute='23' special='23' critical='38' fit='0' />
+
+	<fighter id='510' physics='32' attribute='30' special='25' critical='62' fit='0' />
+	<fighter id='511' physics='24' attribute='35' special='33' critical='28' fit='0' />
+	<fighter id='512' physics='29' attribute='25' special='37' critical='59' fit='0' />
+	<fighter id='513' physics='41' attribute='36' special='20' critical='56' fit='0' />
+	<fighter id='514' physics='35' attribute='17' special='17' critical='32' fit='0' />
+	<fighter id='515' physics='23' attribute='10' special='33' critical='59' fit='0' />
+	<fighter id='516' physics='23' attribute='20' special='28' critical='34' fit='0' />
+	<fighter id='517' physics='38' attribute='10' special='33' critical='52' fit='0' />
+	<fighter id='518' physics='43' attribute='37' special='52' critical='64' fit='0' />
+	<fighter id='519' physics='18' attribute='30' special='35' critical='56' fit='0' />
+
+	<fighter id='520' physics='28' attribute='10' special='30' critical='59' fit='0' />
+	<fighter id='521' physics='29' attribute='60' special='55' critical='0' fit='0' />
+	<fighter id='522' physics='25' attribute='35' special='44' critical='80' fit='0' />
+	<fighter id='523' physics='32' attribute='17' special='34' critical='0' fit='0' />
+	<fighter id='524' physics='26' attribute='40' special='19' critical='50' fit='0' />
+	<fighter id='525' physics='24' attribute='21' special='39' critical='0' fit='0' />
+	<fighter id='526' physics='29' attribute='21' special='33' critical='49' fit='0' />
+	<fighter id='527' physics='18' attribute='28' special='26' critical='0' fit='0' />
+	<fighter id='528' physics='19' attribute='22' special='25' critical='0' fit='0' />
+	<fighter id='529' physics='39' attribute='34' special='43' critical='72' fit='0' />
+	<fighter id='530' physics='19' attribute='35' special='42' critical='49' fit='0' />
+
+	<fighter id='531' physics='35' attribute='25' special='33' critical='69' fit='0' />
+	<fighter id='532' physics='28' attribute='22' special='49' critical='0' fit='0' />
+	<fighter id='533' physics='29' attribute='28' special='41' critical='51' fit='0' />
+	<fighter id='534' physics='28' attribute='25' special='29' critical='24' fit='0' />
+	<fighter id='535' physics='22' attribute='15' special='21' critical='0' fit='0' />
+	<fighter id='536' physics='20' attribute='18' special='31' critical='0' fit='0' />
+	<fighter id='537' physics='19' attribute='14' special='15' critical='61' fit='0' />
+	<fighter id='538' physics='30' attribute='14' special='30' critical='0' fit='0' />
+	<fighter id='539' physics='18' attribute='25' special='41' critical='46' fit='0' />
+
+
+	<fighter id='540' physics='47' attribute='58' special='46' critical='91' fit='0' />
+	<fighter id='541' physics='32' attribute='30' special='48' critical='108' fit='0' />
+	<fighter id='542' physics='30' attribute='18' special='32' critical='38' fit='0' />
+	<fighter id='543' physics='35' attribute='45' special='34' critical='45' fit='0' />
+	<fighter id='546' physics='23' attribute='18' special='42' critical='74' fit='0' />
+	<fighter id='549' physics='33' attribute='29' special='27' critical='66' fit='0' />
+
+	<fighter id='558' physics='19' attribute='20' special='28' critical='0' fit='0' />
+	<fighter id='559' physics='24' attribute='35' special='26' critical='87' fit='0' />
+	<fighter id='560' physics='36' attribute='41' special='42' critical='71' fit='0' />
+
+
+	<fighter id='561' physics='35' attribute='30' special='33' critical='0' fit='0' />
+	<fighter id='562' physics='29' attribute='65' special='54' critical='119' fit='0' />
+	<fighter id='563' physics='25' attribute='19' special='24' critical='0' fit='0' />
+	<fighter id='564' physics='21' attribute='30' special='53' critical='81' fit='0' />
+	<fighter id='565' physics='33' attribute='51' special='40' critical='115' fit='0' />
+	<fighter id='566' physics='31' attribute='27' special='28' critical='100' fit='0' />
+	<fighter id='567' physics='22' attribute='24' special='25' critical='60' fit='0' />
+	<fighter id='568' physics='39' attribute='30' special='35' critical='85' fit='0' />
+	<fighter id='569' physics='48' attribute='24' special='38' critical='52' fit='0' />
+	<fighter id='570' physics='20' attribute='20' special='34' critical='71' fit='0' />
+	<fighter id='571' physics='12' attribute='11' special='24' critical='32' fit='0' />
+	<fighter id='572' physics='15' attribute='11' special='16' critical='15' fit='0' />
+	<fighter id='573' physics='22' attribute='40' special='33' critical='78' fit='0' />
+	<fighter id='574' physics='41' attribute='26' special='45' critical='39' fit='64' />
+	<fighter id='575' physics='42' attribute='13' special='30' critical='42' fit='0' />
+	<fighter id='576' physics='24' attribute='18' special='35' critical='75' fit='0' />
+	<fighter id='578' physics='41' attribute='42' special='53' critical='102' fit='0' />
+	<fighter id='579' physics='41' attribute='26' special='45' critical='39' fit='64' />
+	<fighter id='580' physics='37' attribute='35' special='39' critical='96' fit='0' />
+
+
+	<fighter id='581' physics='22' attribute='23' special='18' critical='50' fit='0' />
+	<fighter id='582' physics='18' attribute='28' special='28' critical='0' fit='0' />
+	<fighter id='583' physics='34' attribute='46' special='47' critical='111' fit='0' />
+	<fighter id='584' physics='34' attribute='18' special='34' critical='62' fit='0' />
+	<fighter id='585' physics='20' attribute='31' special='55' critical='52' fit='0' />
+	<fighter id='586' physics='25' attribute='15' special='22' critical='55' fit='0' />
+	<fighter id='587' physics='50' attribute='39' special='42' critical='116' fit='0' />
+	<fighter id='588' physics='25' attribute='30' special='51' critical='0' fit='0' />
+	<fighter id='589' physics='42' attribute='32' special='44' critical='71' fit='0' />
+
+
+	<fighter id='590' physics='36' attribute='30' special='24' critical='120' fit='0' />
+	<fighter id='591' physics='29' attribute='33' special='34' critical='0' fit='0' />
+	<fighter id='592' physics='36' attribute='30' special='32' critical='32' fit='0' />
+	<fighter id='593' physics='26' attribute='30' special='44' critical='0' fit='0' />
+	<fighter id='594' physics='27' attribute='24' special='35' critical='0' fit='0' />
+	<fighter id='595' physics='49' attribute='55' special='38' critical='136' fit='0' />
+	<fighter id='596' physics='23' attribute='32' special='28' critical='0' fit='0' />
+	<fighter id='597' physics='17' attribute='36' special='33' critical='0' fit='0' />
+	<fighter id='598' physics='45' attribute='35' special='33' critical='108' fit='0' />
+	<fighter id='599' physics='14' attribute='12' special='24' critical='35' fit='0' />
+
+	<fighter id='600' physics='27' attribute='21' special='29' critical='34' fit='0' />
+	<fighter id='601' physics='32' attribute='18' special='23' critical='0' fit='0' />
+	<fighter id='602' physics='27' attribute='18' special='18' critical='0' fit='0' />
+	<fighter id='603' physics='26' attribute='15' special='26' critical='32' fit='0' />
+	<fighter id='604' physics='24' attribute='33' special='35' critical='0' fit='0' />
+	<fighter id='605' physics='49' attribute='26' special='38' critical='60' fit='0' />
+	<fighter id='606' physics='20' attribute='21' special='24' critical='22' fit='0' />
+	<fighter id='608' physics='27' attribute='33' special='13' critical='27' fit='0' />
+	<fighter id='609' physics='36' attribute='40' special='58' critical='75' fit='0' />
+	<fighter id='610' physics='26' attribute='11' special='27' critical='28' fit='0' />
+
+	<fighter id='611' physics='29' attribute='28' special='24' critical='0' fit='0' />
+	<fighter id='612' physics='44' attribute='38' special='55' critical='120' fit='0' />
+	<fighter id='613' physics='37' attribute='31' special='39' critical='70' fit='0' />
+	<fighter id='614' physics='32' attribute='27' special='47' critical='0' fit='0' />
+	<fighter id='615' physics='30' attribute='42' special='42' critical='85' fit='0' />
+	<fighter id='616' physics='26' attribute='8' special='29' critical='0' fit='0' />
+	<fighter id='617' physics='28' attribute='14' special='20' critical='19' fit='0' />
+	<fighter id='618' physics='25' attribute='25' special='26' critical='90' fit='0' />
+	<fighter id='619' physics='27' attribute='28' special='31' critical='0' fit='0' />
+	<fighter id='620' physics='29' attribute='30' special='23' critical='42' fit='0' />
+	<fighter id='621' physics='29' attribute='28' special='28' critical='0' fit='0' />
+	<fighter id='622' physics='31' attribute='26' special='31' critical='0' fit='0' />
+	<fighter id='623' physics='51' attribute='35' special='42' critical='85' fit='0' />
+	<fighter id='624' physics='35' attribute='46' special='37' critical='68' fit='0' />
+	<fighter id='625' physics='32' attribute='24' special='27' critical='0' fit='0' />
+	<fighter id='626' physics='28' attribute='26' special='26' critical='0' fit='0' />
+	<fighter id='627' physics='31' attribute='21' special='27' critical='67' fit='0' />
+	<fighter id='630' physics='54' attribute='34' special='59' critical='77' fit='0' />
+
+	<fighter id='631' physics='28' attribute='32' special='41' critical='72' fit='0' />
+	<fighter id='632' physics='39' attribute='28' special='51' critical='70' fit='0' />
+	<fighter id='633' physics='36' attribute='28' special='39' critical='52' fit='0' />
+	<fighter id='634' physics='24' attribute='26' special='30' critical='0' fit='0' />
+	<fighter id='635' physics='30' attribute='24' special='26' critical='42' fit='0' />
+	<fighter id='636' physics='20' attribute='25' special='23' critical='54' fit='0' />
+
+
+	<fighter id='637' physics='20' attribute='31' special='23' critical='0' fit='0' />
+	<fighter id='638' physics='27' attribute='24' special='30' critical='61' fit='0' />
+
+
+	<fighter id='640' physics='33' attribute='25' special='25' critical='98' fit='0' />
+	<fighter id='641' physics='38' attribute='39' special='33' critical='61' fit='0' />
+	<fighter id='642' physics='33' attribute='10' special='13' critical='13' fit='0' />
+	<fighter id='643' physics='28' attribute='24' special='36' critical='0' fit='0' />
+	<fighter id='644' physics='26' attribute='25' special='25' critical='0' fit='0' />
+	<fighter id='645' physics='55' attribute='39' special='39' critical='82' fit='0' />
+	<fighter id='646' physics='32' attribute='32' special='42' critical='90' fit='0' />
+	<fighter id='647' physics='33' attribute='14' special='23' critical='61' fit='0' />
+
+	<fighter id='648' physics='39' attribute='34' special='38' critical='69' fit='0' />
+	<fighter id='649' physics='27' attribute='24' special='27' critical='54' fit='0' />
+	<fighter id='650' physics='37' attribute='17' special='25' critical='16' fit='0' />
+	<fighter id='651' physics='31' attribute='34' special='44' critical='47' fit='0' />
+	<fighter id='652' physics='26' attribute='25' special='35' critical='0' fit='0' />
+	<fighter id='653' physics='58' attribute='32' special='40' critical='61' fit='0' />
+	<fighter id='654' physics='37' attribute='32' special='57' critical='93' fit='0' />
+
+	<fighter id='655' physics='45' attribute='34' special='29' critical='82' fit='0' />
+	<fighter id='656' physics='51' attribute='32' special='43' critical='76' fit='0' />
+	<fighter id='657' physics='27' attribute='21' special='20' critical='40' fit='0' />
+	<fighter id='658' physics='25' attribute='27' special='31' critical='0' fit='0' />
+	<fighter id='659' physics='34' attribute='28' special='26' critical='95' fit='0' />
+	<fighter id='660' physics='27' attribute='10' special='18' critical='0' fit='0' />
+	<fighter id='661' physics='29' attribute='8' special='26' critical='29' fit='0' />
+
+	<fighter id='662' physics='18' attribute='18' special='18' critical='0' fit='0' />
+	<fighter id='663' physics='25' attribute='4' special='22' critical='29' fit='0' />
+	<fighter id='664' physics='41' attribute='42' special='47' critical='77' fit='0' />
+	<fighter id='665' physics='33' attribute='30' special='29' critical='70' fit='0' />
+	<fighter id='666' physics='32' attribute='21' special='26' critical='0' fit='0' />
+
+	<fighter id='667' physics='35' attribute='17' special='30' critical='32' fit='0' />
+	<fighter id='668' physics='33' attribute='21' special='21' critical='16' fit='0' />
+	<fighter id='669' physics='15' attribute='12' special='14' critical='31' fit='0' />
+	<fighter id='670' physics='26' attribute='19' special='51' critical='33' fit='0' />
+	<fighter id='671' physics='47' attribute='30' special='71' critical='74' fit='0' />
+	<fighter id='672' physics='30' attribute='36' special='50' critical='70' fit='0' />
+
+	<fighter id='673' physics='41' attribute='26' special='45' critical='39' fit='64' />
+	<fighter id='674' physics='27' attribute='7' special='13' critical='36' fit='0' />
+
+	<fighter id='676' physics='30' attribute='26' special='32' critical='23' fit='0' />
+	<fighter id='677' physics='38' attribute='38' special='41' critical='84' fit='0' />
+	<fighter id='678' physics='48' attribute='36' special='69' critical='73' fit='0' />
+	<fighter id='679' physics='22' attribute='21' special='50' critical='83' fit='0' />
+	<fighter id='680' physics='16' attribute='12' special='20' critical='23' fit='0' />
+	<fighter id='681' physics='27' attribute='28' special='21' critical='17' fit='0' />
+	<fighter id='683' physics='25' attribute='22' special='20' critical='52' fit='0' />
+	<fighter id='682' physics='36' attribute='16' special='31' critical='86' fit='0' />
+	<fighter id='684' physics='16' attribute='8' special='26' critical='31' fit='0' />
+	<fighter id='685' physics='62' attribute='36' special='31' critical='80' fit='0' />
+	<fighter id='686' physics='25' attribute='18' special='45' critical='97' fit='0' />
+	<fighter id='687' physics='18' attribute='19' special='21' critical='38' fit='0' />
+	<fighter id='688' physics='27' attribute='21' special='31' critical='28' fit='0' />
+	<fighter id='689' physics='27' attribute='21' special='19' critical='27' fit='0' />
+	<fighter id='690' physics='26' attribute='13' special='22' critical='26' fit='0' />
+	<fighter id='691' physics='64' attribute='30' special='48' critical='52' fit='0' />
+	<fighter id='692' physics='21' attribute='18' special='23' critical='27' fit='0' />
+	<fighter id='693' physics='21' attribute='18' special='77' critical='73' fit='0' />
+	<fighter id='694' physics='42' attribute='12' special='32' critical='80' fit='0' />
+
+	<fighter id='695' physics='16' attribute='23' special='22' critical='27' fit='0' />
+	<fighter id='696' physics='58' attribute='43' special='54' critical='68' fit='0' />
+	<fighter id='697' physics='35' attribute='11' special='22' critical='21' fit='0' />
+	<fighter id='698' physics='21' attribute='15' special='27' critical='23' fit='0' />
+	<fighter id='699' physics='19' attribute='19' special='21' critical='38' fit='0' />
+	<fighter id='700' physics='24' attribute='24' special='34' critical='71' fit='0' />
+	<fighter id='701' physics='26' attribute='34' special='49' critical='0' fit='0' />
+	<fighter id='702' physics='30' attribute='22' special='34' critical='43' fit='0' />
+	<fighter id='703' physics='84' attribute='21' special='37' critical='120' fit='0' />
+	<fighter id='704' physics='33' attribute='21' special='22' critical='21' fit='0' />
+
+	<fighter id='705' physics='16' attribute='13' special='26' critical='31' fit='0' />
+	<fighter id='706' physics='26' attribute='15' special='23' critical='24' fit='0' />
+	<fighter id='707' physics='29' attribute='19' special='46' critical='58' fit='0' />
+	<fighter id='708' physics='24' attribute='21' special='29' critical='0' fit='0' />
+	<fighter id='709' physics='47' attribute='29' special='31' critical='53' fit='0' />
+
+
+	<fighter id='710' physics='26' attribute='13' special='17' critical='26' fit='0' />
+	<fighter id='711' physics='26' attribute='22' special='34' critical='0' fit='0' />
+	<fighter id='712' physics='16' attribute='24' special='22' critical='44' fit='0' />
+	<fighter id='713' physics='26' attribute='4' special='23' critical='0' fit='0' />
+	<fighter id='714' physics='16' attribute='23' special='33' critical='36' fit='0' />
+	<fighter id='715' physics='21' attribute='28' special='30' critical='34' fit='0' />
+
+	<fighter id='716' physics='12' attribute='13' special='24' critical='49' fit='0' />
+	<fighter id='717' physics='41' attribute='26' special='45' critical='39' fit='64' />
+	<fighter id='718' physics='39' attribute='23' special='58' critical='96' fit='0' />
+	<fighter id='719' physics='36' attribute='28' special='21' critical='67' fit='0' />
+	<fighter id='720' physics='87' attribute='10' special='29' critical='33' fit='0' />
+	<fighter id='721' physics='31' attribute='13' special='23' critical='29' fit='0' />
+
+	<fighter id='722' physics='26' attribute='25' special='47' critical='100' fit='0' />
+	<fighter id='723' physics='25' attribute='19' special='54' critical='68' fit='0' />
+	<fighter id='724' physics='27' attribute='19' special='22' critical='32' fit='0' />
+	<fighter id='725' physics='40' attribute='31' special='60' critical='91' fit='0' />
+	<fighter id='726' physics='34' attribute='12' special='53' critical='79' fit='0' />
+	<fighter id='727' physics='37' attribute='16' special='25' critical='29' fit='0' />
+
+	<fighter id='728' physics='14' attribute='19' special='16' critical='13' fit='0' />
+	<fighter id='729' physics='47' attribute='25' special='60' critical='95' fit='0' />
+	<fighter id='730' physics='36' attribute='20' special='32' critical='75' fit='0' />
+	<fighter id='731' physics='45' attribute='21' special='46' critical='89' fit='0' />
+	<fighter id='732' physics='16' attribute='13' special='31' critical='14' fit='0' />
+	<fighter id='733' physics='41' attribute='8' special='23' critical='24' fit='0' />
+
+	<fighter id='734' physics='33' attribute='31' special='34' critical='54' fit='0' />
+	<fighter id='735' physics='24' attribute='16' special='27' critical='27' fit='0' />
+	<fighter id='736' physics='32' attribute='26' special='26' critical='59' fit='0' />
+	<fighter id='737' physics='24' attribute='20' special='37' critical='64' fit='0' />
+	<fighter id='738' physics='27' attribute='21' special='38' critical='27' fit='0' />
+	<fighter id='739' physics='36' attribute='28' special='21' critical='67' fit='0' />
+
+	<fighter id='745' physics='21' attribute='18' special='25' critical='47' fit='0' />
+	<fighter id='746' physics='27' attribute='18' special='30' critical='57' fit='0' />
+	<fighter id='747' physics='27' attribute='31' special='47' critical='87' fit='0' />
+	<fighter id='748' physics='43' attribute='12' special='28' critical='77' fit='0' />
+	<fighter id='749' physics='11' attribute='10' special='12' critical='20' fit='0' />
+	<fighter id='750' physics='33' attribute='21' special='31' critical='57' fit='0' />
+
+	<fighter id='751' physics='24' attribute='13' special='25' critical='24' fit='0' />
+	<fighter id='752' physics='26' attribute='39' special='54' critical='93' fit='0' />
+	<fighter id='753' physics='44' attribute='21' special='23' critical='91' fit='0' />
+	<fighter id='754' physics='38' attribute='21' special='56' critical='65' fit='0' />
+	<fighter id='755' physics='22' attribute='10' special='4' critical='10' fit='0' />
+	<fighter id='756' physics='17' attribute='17' special='29' critical='31' fit='0' />
+	<fighter id='757' physics='17' attribute='26' special='31' critical='114' fit='0' />
+	<fighter id='758' physics='30' attribute='36' special='33' critical='73' fit='0' />
+
+	<fighter id='759' physics='30' attribute='11' special='18' critical='75' fit='0' />
+	<fighter id='760' physics='22' attribute='19' special='17' critical='14' fit='0' />
+	<fighter id='761' physics='42' attribute='26' special='26' critical='0' fit='0' />
+	<fighter id='762' physics='47' attribute='25' special='31' critical='92' fit='0' />
+	<fighter id='763' physics='30' attribute='30' special='48' critical='53' fit='0' />
+
+	<fighter id='764' physics='29' attribute='13' special='16' critical='28' fit='0' />
+	<fighter id='765' physics='31' attribute='26' special='32' critical='50' fit='0' />
+	<fighter id='766' physics='43' attribute='23' special='27' critical='68' fit='0' />
+	<fighter id='767' physics='42' attribute='56' special='41' critical='100' fit='0' />
+	<fighter id='768' physics='37' attribute='36' special='41' critical='47' fit='0' />
+	<fighter id='769' physics='19' attribute='12' special='18' critical='19' fit='0' />
+
+
+	<fighter id='770' physics='24' attribute='18' special='31' critical='14' fit='0' />
+	<fighter id='771' physics='31' attribute='15' special='13' critical='34' fit='0' />
+	<fighter id='772' physics='36' attribute='27' special='30' critical='77' fit='0' />
+	<fighter id='774' physics='19' attribute='65' special='26' critical='54' fit='0' />
+	<fighter id='773' physics='28' attribute='23' special='60' critical='87' fit='0' />
+	<fighter id='775' physics='30' attribute='49' special='32' critical='0' fit='0' />
+	<fighter id='776' physics='27' attribute='30' special='44' critical='72' fit='0' />
+	<fighter id='777' physics='15' attribute='10' special='45' critical='18' fit='0' />
+	<fighter id='778' physics='21' attribute='29' special='19' critical='67' fit='0' />
+	<fighter id='779' physics='24' attribute='10' special='25' critical='38' fit='0' />
+	<fighter id='780' physics='19' attribute='29' special='39' critical='101' fit='0' />
+	<fighter id='781' physics='29' attribute='28' special='70' critical='101' fit='0' />
+
+	<fighter id='782' physics='21' attribute='33' special='39' critical='84' fit='0' />
+	<fighter id='783' physics='23' attribute='17' special='37' critical='0' fit='0' />
+	<fighter id='784' physics='21' attribute='21' special='19' critical='36' fit='0' />
+	<fighter id='785' physics='30' attribute='60' special='30' critical='72' fit='0' />
+	<fighter id='786' physics='27' attribute='25' special='34' critical='84' fit='0' />
+	<fighter id='787' physics='48' attribute='18' special='42' critical='0' fit='0' />
+	<fighter id='788' physics='39' attribute='25' special='30' critical='75' fit='0' />
+	<fighter id='789' physics='19' attribute='11' special='20' critical='20' fit='0' />
+	<fighter id='790' physics='37' attribute='33' special='33' critical='33' fit='0' />
+	<fighter id='791' physics='21' attribute='28' special='45' critical='59' fit='0' />
+	<fighter id='792' physics='22' attribute='25' special='27' critical='0' fit='0' />
+	<fighter id='793' physics='23' attribute='28' special='29' critical='23' fit='0' />
+	<fighter id='794' physics='24' attribute='17' special='19' critical='0' fit='0' />
+	<fighter id='795' physics='29' attribute='16' special='30' critical='0' fit='0' />
+	<fighter id='796' physics='22' attribute='21' special='30' critical='30' fit='0' />
+	<fighter id='797' physics='25' attribute='24' special='23' critical='72' fit='0' />
+	<fighter id='798' physics='17' attribute='11' special='24' critical='78' fit='0' />
+	<fighter id='799' physics='26' attribute='29' special='35' critical='0' fit='0' />
+	<fighter id='800' physics='36' attribute='24' special='37' critical='66' fit='0' />
+	<fighter id='801' physics='28' attribute='26' special='27' critical='49' fit='0' />
+	<fighter id='802' physics='26' attribute='13' special='4' critical='118' fit='0' />
+	<fighter id='803' physics='20' attribute='22' special='24' critical='0' fit='0' />
+	<fighter id='804' physics='35' attribute='24' special='31' critical='67' fit='151' />
+	<fighter id='805' physics='8' attribute='15' special='6' critical='24' fit='0' />
+	<fighter id='806' physics='24' attribute='24' special='19' critical='9' fit='0' />
+	<fighter id='807' physics='19' attribute='12' special='14' critical='19' fit='0' />
+    <fighter id='808' physics='35' attribute='24' special='31' critical='67' fit='151' />
+	<fighter id='809' physics='36' attribute='24' special='37' critical='66' fit='146' />
+	<fighter id='810' physics='39' attribute='25' special='30' critical='75' fit='141' />
+	<fighter id='811' physics='22' attribute='13' special='20' critical='0' fit='0' />
+	<fighter id='812' physics='15' attribute='9' special='15' critical='36' fit='0' />
+	<fighter id='813' physics='44' attribute='10' special='19' critical='44' fit='0' />
+	<fighter id='814' physics='23' attribute='13' special='24' critical='23' fit='0' />
+	<fighter id='815' physics='34' attribute='14' special='50' critical='77' fit='0' />
+	<fighter id='816' physics='14' attribute='21' special='37' critical='82' fit='0' />
+	<fighter id='817' physics='22' attribute='7' special='54' critical='39' fit='0' />
+	<fighter id='818' physics='27' attribute='25' special='41' critical='73' fit='0' />
+	<fighter id='819' physics='27' attribute='17' special='22' critical='51' fit='0' />
+	<fighter id='820' physics='21' attribute='12' special='31' critical='13' fit='0' />
+	<fighter id='821' physics='41' attribute='26' special='45' critical='39' fit='64' />
+	<fighter id='822' physics='41' attribute='26' special='45' critical='39' fit='64' />
+	<fighter id='823' physics='35' attribute='13' special='36' critical='92' fit='0' />
+	<fighter id='824' physics='48' attribute='16' special='4' critical='106' fit='0' />
+	<fighter id='825' physics='41' attribute='9' special='4' critical='150' fit='0' />
+	<fighter id='826' physics='31' attribute='21' special='51' critical='94' fit='0' />
+	<fighter id='827' physics='20' attribute='15' special='17' critical='24' fit='0' />
+    <fighter id='828' physics='22' attribute='13' special='30' critical='0' fit='0' />
+    <fighter id='829' physics='15' attribute='13' special='13' critical='0' fit='0' />
+    <fighter id='830' physics='14' attribute='13' special='7' critical='12' fit='0' />
+    <fighter id='831' physics='32' attribute='26' special='44' critical='0' fit='0' />
+    <fighter id='832' physics='25' attribute='12' special='34' critical='80' fit='0' />
+    <fighter id='833' physics='27' attribute='28' special='34' critical='0' fit='0' />
+    <fighter id='834' physics='32' attribute='11' special='23' critical='68' fit='0' />
+    <fighter id='835' physics='40' attribute='29' special='26' critical='101' fit='0' />
+    <fighter id='836' physics='28' attribute='20' special='25' critical='35' fit='0' />
+    <fighter id='837' physics='20' attribute='17' special='26' critical='26' fit='0' />
+	<fighter id='838' physics='22' attribute='14' special='29' critical='29' fit='0' />
+    <fighter id='839' physics='27' attribute='18' special='21' critical='31' fit='0' />
+	<fighter id='840' physics='50' attribute='27' special='40' critical='126' fit='0' />
+    <fighter id='841' physics='30' attribute='25' special='27' critical='0' fit='0' />
+    <fighter id='842' physics='39' attribute='14' special='38' critical='91' fit='0' />
+    <fighter id='843' physics='23' attribute='15' special='18' critical='0' fit='0' />
+	<fighter id='844' physics='22' attribute='11' special='18' critical='19' fit='0' />
+	<fighter id='845' physics='23' attribute='14' special='24' critical='0' fit='0' />
+	<fighter id='846' physics='54' attribute='14' special='17' critical='22' fit='0' />
+	<fighter id='847' physics='27' attribute='14' special='55' critical='78' fit='0' />
+	<fighter id='848' physics='27' attribute='13' special='23' critical='38' fit='0' />
+	<fighter id='849' physics='41' attribute='26' special='45' critical='39' fit='64' />
+	<fighter id='850' physics='25' attribute='25' special='34' critical='0' fit='0' />
+	<fighter id='851' physics='33' attribute='30' special='37' critical='84' fit='0' />
+	<fighter id='852' physics='26' attribute='27' special='45' critical='92' fit='0' />
+	<fighter id='853' physics='17' attribute='16' special='38' critical='17' fit='0' />
+	<fighter id='854' physics='60' attribute='11' special='54' critical='98' fit='0' />
+	<fighter id='855' physics='26' attribute='13' special='4' critical='26' fit='0' />
+	<fighter id='856' physics='20' attribute='13' special='27' critical='26' fit='0' />
+	<fighter id='857' physics='19' attribute='13' special='28' critical='19' fit='0' />
+	<fighter id='880' physics='45' attribute='33' special='55' critical='164' fit='0' />
+
+	<fighter id='882' physics='27' attribute='13' special='33' critical='0' fit='0' />
+	<fighter id='883' physics='22' attribute='14' special='10' critical='7' fit='0' />
+	<fighter id='884' physics='32' attribute='12' special='24' critical='52' fit='0' />
+
+	<fighter id='887' physics='21' attribute='12' special='58' critical='26' fit='0' />
+	<fighter id='885' physics='26' attribute='16' special='28' critical='26' fit='0' />
+
+	<fighter id='858' physics='25' attribute='14' special='20' critical='21' fit='0' />
+	<fighter id='859' physics='25' attribute='14' special='20' critical='21' fit='0' />
+	<fighter id='881' physics='25' attribute='11' special='15' critical='15' fit='0' />
+	<fighter id='886' physics='21' attribute='13' special='17' critical='42' fit='0' />
+	<fighter id='888' physics='41' attribute='26' special='36' critical='89' fit='0' />
+	<fighter id='740' physics='54' attribute='26' special='37' critical='131' fit='0' />
+
+	<fighter id='889' physics='31' attribute='26' special='50' critical='67' fit='0' />
+	<fighter id='893' physics='41' attribute='26' special='45' critical='39' fit='64' />
+
+	<fighter id='890' physics='47' attribute='26' special='33' critical='81' fit='0' />
+	<fighter id='894' physics='20' attribute='16' special='29' critical='0' fit='0' />
+	<fighter id='895' physics='24' attribute='16' special='28' critical='23' fit='0' />
+	<fighter id='891' physics='25' attribute='22' special='39' critical='72' fit='0' />
+	<fighter id='892' physics='22' attribute='16' special='15' critical='6' fit='0' />
+	<fighter id='897' physics='21' attribute='14' special='13' critical='0' fit='0' />
+	<fighter id='898' physics='18' attribute='11' special='12' critical='18' fit='0' />
+	<fighter id='628' physics='24' attribute='26' special='30' critical='0' fit='0' />
+	<fighter id='629' physics='30' attribute='24' special='26' critical='42' fit='0' />
+	<fighter id='899' physics='21' attribute='12' special='20' critical='34' fit='0' />
+	<fighter id='900' physics='20' attribute='5' special='32' critical='41' fit='0' />
+	<fighter id='1406' physics='20' attribute='5' special='32' critical='41' fit='0' />
+	<fighter id='1407' physics='21' attribute='12' special='20' critical='34' fit='0' />
+
+	<fighter id='896' physics='30' attribute='31' special='31' critical='56' fit='0' />
+	<fighter id='901' physics='26' attribute='24' special='30' critical='58' fit='0' />
+
+	<fighter id='903' physics='31' attribute='17' special='22' critical='34' fit='0' />
+	<fighter id='906' physics='25' attribute='25' special='32' critical='72' fit='0' />
+	<fighter id='1409' physics='25' attribute='25' special='32' critical='72' fit='0' />
+	<fighter id='908' physics='17' attribute='17' special='21' critical='17' fit='0' />
+	<fighter id='912' physics='31' attribute='23' special='38' critical='87' fit='0' />
+
+	<fighter id='1410' physics='17' attribute='17' special='21' critical='17' fit='0' />
+	<fighter id='1411' physics='21' attribute='12' special='58' critical='26' fit='0' />
+	<fighter id='1412' physics='35' attribute='13' special='20' critical='11' fit='0' />
+	<fighter id='907' physics='35' attribute='13' special='20' critical='11' fit='0' />
+
+	<fighter id='914' physics='29' attribute='17' special='28' critical='22' fit='0' />
+
+	<fighter id='904' physics='0' attribute='0' special='0' critical='0' fit='0' />
+	<fighter id='905' physics='0' attribute='0' special='0' critical='0' fit='0' />
+	<fighter id='909' physics='19' attribute='5' special='13' critical='5' fit='0' />
+
+	<fighter id='1413' physics='19' attribute='5' special='13' critical='5' fit='0' />
+	<fighter id='902' physics='36' attribute='25' special='44' critical='48' fit='0' />
+	<fighter id='910' physics='24' attribute='13' special='15' critical='15' fit='0' />
+
+	<fighter id='913' physics='48' attribute='35' special='46' critical='89' fit='0' />
+	<fighter id='915' physics='24' attribute='10' special='9' critical='24' fit='0' />
+	<fighter id='919' physics='14' attribute='14' special='25' critical='14' fit='0' />
+	<fighter id='1414' physics='48' attribute='35' special='46' critical='89' fit='0' />
+
+	<fighter id='1600' physics='57' attribute='15' special='21' critical='0' fit='0' />
+	<fighter id='1601' physics='55' attribute='14' special='37' critical='77' fit='0' />
+	<fighter id='1602' physics='27' attribute='25' special='35' critical='79' fit='0' />
+	<fighter id='1603' physics='20' attribute='22' special='17' critical='22' fit='0' />
+	<fighter id='1604' physics='31' attribute='12' special='28' critical='33' fit='0' />
+	<fighter id='1605' physics='18' attribute='39' special='27' critical='77' fit='183' />
+	<fighter id='1606' physics='32' attribute='30' special='27' critical='57' fit='0' />
+	<fighter id='1607' physics='21' attribute='17' special='20' critical='22' fit='183' />
+	<fighter id='1608' physics='26' attribute='25' special='28' critical='81' fit='0' />
+	<fighter id='1609' physics='35' attribute='9' special='55' critical='54' fit='0' />
+	<fighter id='1610' physics='28' attribute='35' special='38' critical='68' fit='0' />
+	<fighter id='1611' physics='19' attribute='13' special='28' critical='19' fit='0' />
+	<fighter id='1612' physics='27' attribute='24' special='27' critical='54' fit='0' />
+	<fighter id='1613' physics='35' attribute='46' special='37' critical='68' fit='0' />
+
+	<fighter id='916' physics='41' attribute='44' special='65' critical='91' fit='0' />
+	<fighter id='917' physics='30' attribute='11' special='20' critical='32' fit='0' />
+	<fighter id='918' physics='53' attribute='23' special='49' critical='82' fit='0' />
+	<fighter id='920' physics='40' attribute='24' special='60' critical='113' fit='0' />
+	<fighter id='937' physics='0' attribute='0' special='0' critical='0' fit='0' />
+	<fighter id='1417' physics='41' attribute='44' special='65' critical='91' fit='0' />
+	<fighter id='1415' physics='30' attribute='11' special='20' critical='32' fit='0' />
+	<fighter id='1416' physics='53' attribute='23' special='49' critical='82' fit='0' />
+	<fighter id='911' physics='25' attribute='15' special='21' critical='21' fit='0' />
+	<fighter id='999' physics='25' attribute='15' special='12' critical='26' fit='0' />
+	<fighter id='921' physics='36' attribute='28' special='39' critical='52' fit='0' />
+	<fighter id='1418' physics='30' attribute='47' special='28' critical='263' fit='0' />
+	<fighter id='1419' physics='30' attribute='47' special='28' critical='263' fit='0' />
+	<fighter id='1420' physics='30' attribute='47' special='28' critical='263' fit='0' />
+	<fighter id='1421' physics='25' attribute='15' special='12' critical='26' fit='0' />
+	<fighter id='1422' physics='25' attribute='15' special='12' critical='26' fit='0' />
+	<fighter id='1423' physics='25' attribute='15' special='12' critical='26' fit='0' />
+	<fighter id='1424' physics='25' attribute='15' special='12' critical='26' fit='0' />
+	<fighter id='938' physics='14' attribute='10' special='4' critical='14' fit='0' />
+	<fighter id='1425' physics='14' attribute='10' special='4' critical='14' fit='0' />
+
+	<fighter id='941' physics='33' attribute='14' special='11' critical='11' fit='0' />
+	<fighter id='922' physics='21' attribute='13' special='26' critical='31' fit='0' />
+	<fighter id='1426' physics='33' attribute='14' special='11' critical='11' fit='0' />
+	<fighter id='1427' physics='33' attribute='14' special='11' critical='11' fit='0' />
+	<fighter id='1428' physics='33' attribute='14' special='11' critical='11' fit='0' />
+
+	<fighter id='942' physics='25' attribute='11' special='15' critical='11' fit='0' />
+	<fighter id='1429' physics='25' attribute='11' special='15' critical='11' fit='0' />
+
+	<fighter id='939' physics='20' attribute='13' special='24' critical='44' fit='0' />
+	<fighter id='940' physics='20' attribute='13' special='23' critical='37' fit='0' />
+	<fighter id='943' physics='17' attribute='11' special='21' critical='17' fit='0' />
+
+	<fighter id='1432' physics='12' attribute='14' special='12' critical='26' fit='0' />
+	<fighter id='944' physics='18' attribute='12' special='18' critical='18' fit='0' />
+	<fighter id='945' physics='12' attribute='14' special='12' critical='26' fit='0' />
+
+	<fighter id='946' physics='20' attribute='16' special='41' critical='20' fit='0' />
+	<fighter id='947' physics='20' attribute='16' special='41' critical='54' fit='0' />
+
+	<fighter id='1435' physics='20' attribute='16' special='41' critical='54' fit='0' />
+
+
+	<fighter id='948' physics='17' attribute='10' special='26' critical='21' fit='0' />
+
+	<fighter id='949' physics='38' attribute='12' special='36' critical='37' fit='0' />
+	<fighter id='950' physics='20' attribute='10' special='19' critical='18' fit='0' />
+	<fighter id='951' physics='18' attribute='9' special='19' critical='13' fit='0' />
+
+	<fighter id='952' physics='19' attribute='13' special='9' critical='9' fit='0' />
+	<fighter id='953' physics='19' attribute='9' special='15' critical='18' fit='0' />
+	<fighter id='1437' physics='19' attribute='13' special='9' critical='9' fit='0' />
+	<fighter id='1438' physics='19' attribute='9' special='15' critical='18' fit='0' />
+
+	<fighter id='1439' physics='25' attribute='12' special='34' critical='80' fit='0' />
+	<fighter id='1440' physics='0' attribute='0' special='0' critical='0' fit='0' />
+
+	<fighter id='741' physics='7' attribute='10' special='13' critical='7' fit='0' />
+	<fighter id='954' physics='8' attribute='9' special='15' critical='17' fit='0' />
+	<fighter id='1441' physics='7' attribute='10' special='13' critical='7' fit='0' />
+
+	<fighter id='955' physics='21' attribute='13' special='10' critical='25' fit='0' />
+	<fighter id='956' physics='12' attribute='12' special='23' critical='23' fit='0' />
+	<fighter id='957' physics='19' attribute='19' special='21' critical='52' fit='0' />
+	<fighter id='1442' physics='19' attribute='19' special='21' critical='52' fit='0' />
+	<fighter id='1443' physics='21' attribute='13' special='10' critical='25' fit='0' />
+	<fighter id='1444' physics='12' attribute='12' special='23' critical='23' fit='0' />
+
+	<fighter id='958' physics='15' attribute='12' special='19' critical='15' fit='0' />
+
+	<fighter id='959' physics='23' attribute='11' special='12' critical='13' fit='0' />
+
+	<fighter id='960' physics='31' attribute='22' special='39' critical='47' fit='0' />
+
+	<fighter id='961' physics='18' attribute='26' special='33' critical='30' fit='0' />
+	<fighter id='962' physics='18' attribute='26' special='33' critical='34' fit='0' />
+	<fighter id='1445' physics='59' attribute='19' special='24' critical='29' fit='0' />
+	<fighter id='1446' physics='33' attribute='38' special='33' critical='71' fit='0' />
+	<fighter id='1447' physics='27' attribute='19' special='25' critical='69' fit='0' />
+	<fighter id='1448' physics='35' attribute='25' special='39' critical='51' fit='0' />
+	<fighter id='1449' physics='25' attribute='37' special='33' critical='95' fit='0' />
+	<fighter id='1450' physics='35' attribute='25' special='29' critical='0' fit='0' />
+	<fighter id='1451' physics='20' attribute='23' special='25' critical='54' fit='0' />
+	<fighter id='1452' physics='45' attribute='33' special='55' critical='164' fit='0' />
+	<fighter id='1453' physics='53' attribute='15' special='38' critical='14' fit='191' />
+	<fighter id='1454' physics='20' attribute='16' special='20' critical='30' fit='0' />
+	<fighter id='1455' physics='50' attribute='19' special='70' critical='44' fit='0' />
+	<fighter id='1456' physics='35' attribute='22' special='42' critical='61' fit='0' />
+	<fighter id='1457' physics='28' attribute='21' special='45' critical='16' fit='0' />
+	<fighter id='1458' physics='59' attribute='25' special='42' critical='171' fit='0' />
+	<fighter id='963' physics='5' attribute='26' special='20' critical='14' fit='0' />
+	<fighter id='1433' physics='55' attribute='39' special='53' critical='85' fit='0' />
+	<fighter id='1434' physics='20' attribute='16' special='41' critical='20' fit='0' />
+
+	<fighter id='1460' physics='5' attribute='26' special='20' critical='14' fit='0' />
+	<fighter id='1461' physics='0' attribute='0' special='0' critical='0' fit='0' />
+
+	<fighter id='964' physics='25' attribute='11' special='17' critical='34' fit='0' />
+	<fighter id='965' physics='17' attribute='13' special='13' critical='19' fit='0' />
+	<fighter id='966' physics='11' attribute='13' special='13' critical='11' fit='0' />
+	<fighter id='967' physics='15' attribute='14' special='16' critical='24' fit='0' />
+	<fighter id='1464' physics='15' attribute='14' special='16' critical='24' fit='0' />
+	<fighter id='577' physics='45' attribute='35' special='35' critical='75' fit='0' />
+	<fighter id='971' physics='21' attribute='11' special='21' critical='11' fit='0' />
+	<fighter id='972' physics='19' attribute='12' special='12' critical='21' fit='0' />
+	<fighter id='973' physics='19' attribute='11' special='29' critical='28' fit='0' />
+	<fighter id='974' physics='19' attribute='11' special='29' critical='36' fit='0' />
+	<fighter id='1466' physics='19' attribute='11' special='29' critical='36' fit='0' />
+	<fighter id='1465' physics='19' attribute='11' special='29' critical='28' fit='0' />
+	<fighter id='1467' physics='19' attribute='12' special='12' critical='21' fit='0' />
+
+
+	<fighter id='970' physics='8' attribute='11' special='20' critical='9' fit='0' />
+	<fighter id='975' physics='14' attribute='12' special='7' critical='12' fit='0' />
+	<fighter id='969' physics='10' attribute='10' special='5' critical='10' fit='0' />
+
+	<fighter id='1468' physics='14' attribute='12' special='7' critical='12' fit='0' />
+	<fighter id='1469' physics='14' attribute='12' special='7' critical='12' fit='0' />
+
+	<fighter id='976' physics='27' attribute='17' special='18' critical='51' fit='0' />
+	<fighter id='977' physics='13' attribute='13' special='9' critical='15' fit='0' />
+	<fighter id='978' physics='12' attribute='11' special='9' critical='26' fit='0' />
+
+	<fighter id='1470' physics='41' attribute='26' special='45' critical='39' fit='64' />
+	<fighter id='1471' physics='41' attribute='26' special='45' critical='39' fit='64' />
+	<fighter id='1472' physics='41' attribute='26' special='45' critical='39' fit='64' />
+	<fighter id='1473' physics='41' attribute='26' special='45' critical='39' fit='64' />
+
+	<fighter id='968' physics='27' attribute='13' special='16' critical='12' fit='0' />
+	<fighter id='979' physics='0' attribute='0' special='0' critical='0' fit='0' />
+	<fighter id='1474' physics='0' attribute='0' special='0' critical='0' fit='0' />
+	<fighter id='1475' physics='27' attribute='13' special='16' critical='12' fit='0' />
+
+	<fighter id='980' physics='8' attribute='10' special='19' critical='13' fit='46' />
+	<fighter id='981' physics='41' attribute='26' special='45' critical='39' fit='64' />
+
+	<fighter id='1476' physics='8' attribute='10' special='19' critical='13' fit='46' />
+	<fighter id='1477' physics='41' attribute='26' special='45' critical='39' fit='64' />
+	<fighter id='1478' physics='41' attribute='26' special='45' critical='39' fit='64' />
+	<fighter id='1479' physics='41' attribute='26' special='45' critical='39' fit='64' />
+	<fighter id='1480' physics='41' attribute='26' special='45' critical='39' fit='64' />
+	<fighter id='1481' physics='41' attribute='26' special='45' critical='39' fit='64' />
+	<fighter id='1482' physics='41' attribute='26' special='45' critical='39' fit='64' />
+
+
+	<fighter id='982' physics='29' attribute='14' special='20' critical='29' fit='0' />
+	<fighter id='983' physics='29' attribute='14' special='20' critical='29' fit='0' />
+	<fighter id='1483' physics='31' attribute='26' special='50' critical='67' fit='0' />
+	<fighter id='1484' physics='47' attribute='26' special='33' critical='81' fit='0' />
+	<fighter id='1485' physics='25' attribute='22' special='39' critical='72' fit='0' />
+	<fighter id='1486' physics='20' attribute='10' special='4' critical='10' fit='0' />
+
+	<fighter id='984' physics='20' attribute='10' special='4' critical='10' fit='0' />
+	<fighter id='985' physics='20' attribute='10' special='4' critical='10' fit='0' />
+	<fighter id='986' physics='17' attribute='12' special='12' critical='12' fit='0' />
+	<fighter id='1487' physics='17' attribute='12' special='12' critical='12' fit='0' />
+	<fighter id='1488' physics='36' attribute='24' special='37' critical='66' fit='146' />
+
+
+	<fighter id='1491' physics='17' attribute='12' special='9' critical='12' fit='0' />
+	<fighter id='1492' physics='18' attribute='9' special='19' critical='13' fit='0' />
+	<fighter id='1493' physics='29' attribute='14' special='20' critical='29' fit='0' />
+	<fighter id='1494' physics='12' attribute='11' special='9' critical='26' fit='0' />
+	<fighter id='1495' physics='11' attribute='13' special='13' critical='11' fit='0' />
+	<fighter id='1496' physics='18' attribute='26' special='33' critical='34' fit='0' />
+	<fighter id='1497' physics='16' attribute='23' special='22' critical='27' fit='0' />
+
+	<fighter id='1489' physics='39' attribute='25' special='30' critical='75' fit='141' />
+	<fighter id='1490' physics='35' attribute='24' special='31' critical='67' fit='151' />
+
+	<fighter id='990' physics='19' attribute='11' special='7' critical='7' fit='0' />
+	<fighter id='2501' physics='19' attribute='11' special='7' critical='7' fit='0' />
+	<fighter id='1498' physics='19' attribute='11' special='7' critical='7' fit='0' />
+	<fighter id='991' physics='23' attribute='14' special='5' critical='9' fit='0' />
+	<fighter id='2502' physics='23' attribute='14' special='5' critical='12' fit='0' />
+
+	<fighter id='987' physics='17' attribute='12' special='9' critical='12' fit='0' />
+	<fighter id='988' physics='22' attribute='13' special='11' critical='14' fit='0' />
+	<fighter id='989' physics='19' attribute='11' special='25' critical='34' fit='0' />
+	<fighter id='1499' physics='23' attribute='14' special='5' critical='12' fit='0' />
+
+	<fighter id='992' physics='0' attribute='0' special='0' critical='0' fit='0' />
+	<fighter id='993' physics='22' attribute='11' special='37' critical='37' fit='0' />
+	<fighter id='994' physics='17' attribute='11' special='34' critical='34' fit='0' />
+	<fighter id='2503' physics='22' attribute='11' special='32' critical='37' fit='0' />
+	<fighter id='1500' physics='17' attribute='11' special='34' critical='34' fit='0' />
+
+	<fighter id='1501' physics='0' attribute='0' special='0' critical='0' fit='0' />
+	<fighter id='1502' physics='0' attribute='0' special='0' critical='0' fit='0' />
+	<fighter id='1503' physics='22' attribute='11' special='32' critical='34' fit='0' />
+	<fighter id='1504' physics='22' attribute='13' special='11' critical='14' fit='0' />
+	<fighter id='1505' physics='19' attribute='11' special='25' critical='34' fit='0' />
+	<fighter id='1506' physics='17' attribute='12' special='9' critical='12' fit='0' />
+	<fighter id='1507' physics='22' attribute='13' special='11' critical='14' fit='0' />
+	<fighter id='1508' physics='19' attribute='11' special='25' critical='34' fit='0' />
+
+	<fighter id='995' physics='20' attribute='18' special='16' critical='20' fit='0' />
+
+	<fighter id='996' physics='12' attribute='13' special='12' critical='12' fit='0' />
+	<fighter id='997' physics='15' attribute='12' special='9' critical='15' fit='0' />
+	<fighter id='998' physics='15' attribute='16' special='33' critical='34' fit='0' />
+	<fighter id='1509' physics='15' attribute='12' special='9' critical='15' fit='0' />
+
+	<fighter id='2504' physics='0' attribute='0' special='0' critical='0' fit='0' />
+	<fighter id='2505' physics='15' attribute='13' special='10' critical='10' fit='0' />
+
+	<fighter id='2506' physics='24' attribute='14' special='20' critical='20' fit='0' />
+	<fighter id='2507' physics='15' attribute='12' special='12' critical='12' fit='0' />
+	<fighter id='2508' physics='17' attribute='12' special='12' critical='12' fit='0' />
+	<fighter id='1510' physics='10' attribute='19' special='28' critical='37' fit='0' />
+	<fighter id='1511' physics='10' attribute='19' special='28' critical='37' fit='0' />
+	<fighter id='1512' physics='10' attribute='19' special='28' critical='37' fit='0' />
+	<fighter id='1513' physics='10' attribute='19' special='28' critical='37' fit='0' />
+
+	<fighter id='2509' physics='14' attribute='12' special='19' critical='15' fit='0' />
+
+	<fighter id='2510' physics='21' attribute='13' special='24' critical='17' fit='0' />
+	<fighter id='2511' physics='16' attribute='12' special='19' critical='20' fit='0' />
+
+	<fighter id='2512' physics='23' attribute='11' special='29' critical='34' fit='0' />
+	<fighter id='2513' physics='0' attribute='0' special='0' critical='0' fit='0' />
+	<fighter id='1514' physics='39' attribute='23' special='58' critical='96' fit='0' />
+	<fighter id='1515' physics='49' attribute='55' special='38' critical='136' fit='0' />
+	<fighter id='1516' physics='22' attribute='23' special='18' critical='50' fit='0' />
+	<fighter id='1517' physics='24' attribute='13' special='15' critical='15' fit='0' />
+	<fighter id='1518' physics='23' attribute='11' special='29' critical='34' fit='0' />
+
+	<fighter id='2514' physics='15' attribute='11' special='4' critical='14' fit='0' />
+
+	<fighter id='2515' physics='15' attribute='7' special='8' critical='8' fit='0' />
+	<fighter id='2517' physics='27' attribute='13' special='47' critical='51' fit='0' />
+
+	<fighter id='1520' physics='15' attribute='7' special='8' critical='8' fit='0' />
+	<fighter id='1521' physics='15' attribute='7' special='8' critical='8' fit='0' />
+	<fighter id='1522' physics='15' attribute='7' special='8' critical='8' fit='0' />
+	<fighter id='1523' physics='27' attribute='13' special='47' critical='51' fit='0' />
+
+	<fighter id='1524' physics='22' attribute='14' special='35' critical='55' fit='0' />
+	<fighter id='2516' physics='22' attribute='14' special='35' critical='55' fit='0' />
+
+	<fighter id='1525' physics='25' attribute='7' special='32' critical='37' fit='0' />
+	<fighter id='2518' physics='25' attribute='7' special='32' critical='37' fit='0' />
+
+	<fighter id='1526' physics='22' attribute='14' special='35' critical='55' fit='0' />
+	<fighter id='1527' physics='26' attribute='13' special='16' critical='21' fit='0' />
+	<fighter id='2520' physics='26' attribute='13' special='16' critical='21' fit='0' />
+
+	<fighter id='2521' physics='36' attribute='13' special='21' critical='7' fit='0' />
+	<fighter id='2522' physics='14' attribute='13' special='27' critical='11' fit='0' />
+	<fighter id='1528' physics='14' attribute='13' special='27' critical='11' fit='0' />
+	<fighter id='1529' physics='36' attribute='13' special='21' critical='7' fit='0' />
+
+	<fighter id='1530' physics='0' attribute='0' special='0' critical='0' fit='0' />
+	<fighter id='2523' physics='0' attribute='0' special='0' critical='0' fit='0' />
+
+	<fighter id='2524' physics='9' attribute='15' special='15' critical='4' fit='0' />
+	<fighter id='1531' physics='9' attribute='15' special='15' critical='4' fit='0' />
+
+	<fighter id='2519' physics='25' attribute='13' special='10' critical='13' fit='0' />
+	<fighter id='2525' physics='21' attribute='5' special='11' critical='7' fit='0' />
+
+	<fighter id='2526' physics='0' attribute='0' special='0' critical='0' fit='0' />
+
+	<fighter id='2527' physics='0' attribute='0' special='0' critical='0' fit='0' />
+
+	<fighter id='2528' physics='0' attribute='0' special='0' critical='0' fit='0' />
+	<fighter id='1532' physics='0' attribute='0' special='0' critical='0' fit='0' />
+
+	<fighter id='2529' physics='0' attribute='0' special='0' critical='0' fit='0' />
+	<fighter id='1533' physics='0' attribute='0' special='0' critical='0' fit='0' />
+
+	<fighter id='1534' physics='0' attribute='0' special='0' critical='0' fit='0' />
+	<fighter id='2530' physics='0' attribute='0' special='0' critical='0' fit='0' />
+
+	<fighter id='2531' physics='0' attribute='0' special='0' critical='0' fit='0' />
+	<fighter id='1535' physics='0' attribute='0' special='0' critical='0' fit='0' />
+
+	<fighter id='2532' physics='0' attribute='0' special='0' critical='0' fit='0' />
+	<fighter id='2533' physics='21' attribute='11' special='19' critical='15' fit='0' />
+	<fighter id='1536' physics='0' attribute='0' special='0' critical='0' fit='0' />
+
+	<fighter id='2539' physics='19' attribute='17' special='7' critical='10' fit='0' />
+
+	<fighter id='2534' physics='30' attribute='17' special='11' critical='11' fit='0' />
+
+	<fighter id='1537' physics='17' attribute='10' special='26' critical='21' fit='0' />
+	<fighter id='1538' physics='30' attribute='17' special='11' critical='11' fit='0' />
+
+	<fighter id='2535' physics='22' attribute='11' special='27' critical='44' fit='0' />
+	<fighter id='1539' physics='22' attribute='11' special='27' critical='44' fit='0' />
+
+	<fighter id='2536' physics='35' attribute='12' special='14' critical='11' fit='0' />
+	<fighter id='1540' physics='35' attribute='12' special='14' critical='11' fit='0' />
+
+	<fighter id='2537' physics='17' attribute='17' special='34' critical='15' fit='0' />
+	<fighter id='2540' physics='19' attribute='13' special='7' critical='14' fit='0' />
+	<fighter id='2541' physics='17' attribute='13' special='5' critical='5' fit='0' />
+	<fighter id='1541' physics='17' attribute='17' special='34' critical='15' fit='0' />
+
+	<fighter id='2538' physics='24' attribute='13' special='21' critical='21' fit='0' />
+	<fighter id='1542' physics='24' attribute='13' special='21' critical='21' fit='0' />
+
+	<fighter id='2542' physics='38' attribute='19' special='45' critical='34' fit='0' />
+	<fighter id='1543' physics='38' attribute='19' special='45' critical='34' fit='0' />
+
+	<fighter id='2543' physics='11' attribute='12' special='12' critical='12' fit='0' />
+	<fighter id='1544' physics='11' attribute='12' special='12' critical='12' fit='0' />
+
+	<fighter id='1519' physics='15' attribute='11' special='4' critical='14' fit='0' />
+
+	<fighter id='1545' physics='25' attribute='22' special='40' critical='25' fit='0' />
+	<fighter id='2544' physics='25' attribute='22' special='40' critical='25' fit='0' />
+	<fighter id='2548' physics='30' attribute='19' special='34' critical='0' fit='0' />
+	<fighter id='2549' physics='37' attribute='13' special='24' critical='37' fit='0' />
+
+
+	<fighter id='2545' physics='48' attribute='13' special='22' critical='46' fit='0' />
+	<fighter id='1546' physics='48' attribute='13' special='22' critical='46' fit='0' />
+
+	<fighter id='2546' physics='10' attribute='9' special='18' critical='10' fit='0' />
+	<fighter id='1547' physics='10' attribute='9' special='18' critical='10' fit='0' />
+
+	<fighter id='2547' physics='51' attribute='23' special='40' critical='51' fit='0' />
+	<fighter id='1548' physics='51' attribute='23' special='40' critical='51' fit='0' />
+
+
+	<fighter id='2550' physics='14' attribute='15' special='11' critical='13' fit='0' />
+	<fighter id='1549' physics='14' attribute='15' special='11' critical='13' fit='0' />
+	<fighter id='1550' physics='14' attribute='15' special='11' critical='13' fit='0' />
+	<fighter id='1551' physics='14' attribute='15' special='11' critical='13' fit='0' />
+	<fighter id='1552' physics='14' attribute='15' special='11' critical='13' fit='0' />
+	<fighter id='1553' physics='14' attribute='15' special='11' critical='13' fit='0' />
+
+
+
+
+	<fighter id='2551' physics='18' attribute='13' special='21' critical='18' fit='0' />
+	<fighter id='1554' physics='18' attribute='13' special='21' critical='18' fit='0' />
+
+	<fighter id='2554' physics='24' attribute='13' special='19' critical='7' fit='0' />
+
+	<fighter id='2552' physics='26' attribute='19' special='28' critical='24' fit='0' />
+	<fighter id='1555' physics='26' attribute='19' special='28' critical='24' fit='0' />
+	<fighter id='1556' physics='63' attribute='18' special='38' critical='44' fit='184'/>
+	<fighter id='1557' physics='24' attribute='21' special='50' critical='111' fit='184' />
+	<fighter id='1558' physics='61' attribute='14' special='33' critical='96' fit='199'/>
+	<fighter id='1559' physics='51' attribute='14' special='59' critical='94' fit='199'/>
+	<fighter id='1560' physics='75' attribute='16' special='52' critical='95' fit='199'/>
+	<fighter id='1561' physics='24' attribute='13' special='19' critical='7' fit='0' />
+	<fighter id='1562' physics='25' attribute='35' special='44' critical='80' fit='0' />
+	<fighter id='1563' physics='25' attribute='35' special='44' critical='80' fit='0' />
+	<fighter id='1564' physics='25' attribute='35' special='44' critical='80' fit='0' />
+
+	<fighter id='2557 ' physics='21' attribute='13' special='13' critical='5' fit='0' />
+
+	<fighter id='10000' physics='41' attribute='26' special='45' critical='39' fit='64' />
+
+	<fighter id='2561' physics='41' attribute='26' special='45' critical='39' fit='64' />
+	<fighter id='2553' physics='41' attribute='26' special='45' critical='39' fit='64' />
+
+	<!--标记-->
+
+	<fighter id='1000' physics='30' attribute='47' special='28' critical='263' fit='0' />
+	<fighter id='1001' physics='58' attribute='40' special='25' critical='0' fit='0'/>
+	<fighter id='1002' physics='24' attribute='19' special='19' critical='0' fit='0'/>
+	<fighter id='1003' physics='22' attribute='20' special='29' critical='23' fit='0'/>
+	<fighter id='1004' physics='60' attribute='16' special='54' critical='0' fit='0'/>
+	<fighter id='1005' physics='48' attribute='20' special='42' critical='0' fit='0'/>
+	<fighter id='1006' physics='30' attribute='34' special='78' critical='15' fit='0'/>
+	<fighter id='1007' physics='20' attribute='11' special='0' critical='0' fit='0'/>
+	<fighter id='1008' physics='42' attribute='26' special='25' critical='9' fit='0'/>
+	<fighter id='1009' physics='23' attribute='20' special='25' critical='0' fit='0'/>
+	<fighter id='1010' physics='28' attribute='30' special='40' critical='70' fit='0' />
+	<fighter id='1011' physics='33' attribute='35' special='69' critical='0' fit='0'/>
+	<fighter id='1012' physics='17' attribute='20' special='72' critical='18' fit='0'/>
+	<fighter id='1013' physics='25' attribute='12' special='14' critical='0' fit='0'/>
+	<fighter id='1014' physics='24' attribute='18' special='22' critical='0' fit='0'/>
+	<fighter id='1015' physics='16' attribute='16' special='47' critical='0' fit='0'/>
+	<fighter id='1016' physics='36' attribute='34' special='43' critical='110' fit='0'/>
+	<fighter id='1017' physics='63' attribute='23' special='40' critical='0' fit='0'/>
+	<fighter id='1018' physics='56' attribute='17' special='34' critical='108' fit='0'/>
+	<fighter id='1019' physics='30' attribute='10' special='17' critical='0' fit='0'/>
+	<fighter id='1020' physics='68' attribute='21' special='85' critical='29' fit='0'/>
+	<fighter id='1021' physics='16' attribute='17' special='16' critical='0' fit='0'/>
+	<fighter id='1022' physics='64' attribute='33' special='53' critical='131' fit='0'/>
+	<fighter id='1023' physics='23' attribute='9' special='45' critical='60' fit='0'/>
+	<fighter id='1024' physics='53' attribute='17' special='24' critical='0' fit='0'/>
+	<fighter id='1025' physics='29' attribute='13' special='26' critical='36' fit='0'/>
+	<fighter id='1026' physics='55' attribute='14' special='41' critical='0' fit='0'/>
+	<fighter id='1027' physics='37' attribute='21' special='30' critical='61' fit='0'/>
+	<fighter id='1029' physics='28' attribute='16' special='32' critical='53' fit='0'/>
+	<fighter id='1031' physics='98' attribute='19' special='24' critical='29' fit='0'/>
+	<fighter id='1033' physics='41' attribute='9' special='34' critical='55' fit='0'/>
+	<fighter id='1034' physics='54' attribute='32' special='30' critical='0' fit='0'/>
+	<fighter id='1035' physics='46' attribute='19' special='58' critical='0' fit='0'/>
+	<fighter id='1036' physics='57' attribute='13' special='78' critical='106' fit='0'/>
+	<fighter id='1037' physics='31' attribute='35' special='42' critical='0' fit='0'/>
+	<fighter id='1038' physics='40' attribute='19' special='79' critical='0' fit='0'/>
+	<fighter id='1039' physics='44' attribute='28' special='78' critical='50' fit='0'/>
+	<fighter id='1040' physics='48' attribute='13' special='32' critical='0' fit='0' />
+	<fighter id='1041' physics='34' attribute='20' special='60' critical='96' fit='0' />
+	<fighter id='1042' physics='23' attribute='35' special='77' critical='169' fit='0' />
+	<fighter id='1043' physics='8' attribute='8' special='8' critical='8' fit='0' />
+	<fighter id='1044' physics='8' attribute='8' special='8' critical='8' fit='0' />
+	<fighter id='1045' physics='23' attribute='35' special='77' critical='169' fit='0' />
+	<fighter id='1046' physics='40' attribute='0' special='0' critical='0' fit='0' />
+	<fighter id='1047' physics='21' attribute='31' special='29' critical='95' fit='0' />
+	<fighter id='1048' physics='21' attribute='31' special='29' critical='95' fit='0' />
+	<fighter id='1049' physics='39' attribute='45' special='37' critical='87' fit='0' />
+	<fighter id='1050' physics='39' attribute='45' special='37' critical='87' fit='0' />
+	<fighter id='1051' physics='25' attribute='25' special='19' critical='54' fit='0' />
+	<fighter id='1052' physics='24' attribute='31' special='23' critical='79' fit='0' />
+	<fighter id='1053' physics='24' attribute='31' special='23' critical='79' fit='0' />
+	<fighter id='1056' physics='67' attribute='49' special='90' critical='92' fit='79' />
+	<fighter id='1057' physics='67' attribute='49' special='90' critical='92' fit='79' />
+	<fighter id='1054' physics='23' attribute='35' special='77' critical='169' fit='90' />
+	<fighter id='1055' physics='23' attribute='35' special='77' critical='169' fit='90' />
+	<fighter id='1058' physics='29' attribute='23' special='27' critical='69' fit='0' />
+
+	<fighter id='1064' physics='22' attribute='20' special='29' critical='23' fit='0'/>
+	<fighter id='1065' physics='44' attribute='28' special='78' critical='50' fit='0' />
+	<fighter id='1066' physics='37' attribute='21' special='30' critical='61' fit='0'/>
+	<fighter id='1067' physics='33' attribute='15' special='35' critical='82' fit='0' />
+	<fighter id='1068' physics='28' attribute='16' special='32' critical='53' fit='0' />
+	<fighter id='1069' physics='64' attribute='33' special='53' critical='131' fit='0' />
+	<fighter id='1070' physics='28' attribute='16' special='32' critical='53' fit='0' />
+	<fighter id='1071' physics='35' attribute='64' special='78' critical='27' fit='0' />
+	<fighter id='1072' physics='31' attribute='27' special='37' critical='52' fit='0' />
+	<fighter id='1073' physics='32' attribute='51' special='61' critical='78' fit='0' />
+	<fighter id='1077' physics='23' attribute='35' special='77' critical='169' fit='90' />
+	<fighter id='1078' physics='23' attribute='35' special='77' critical='169' fit='90' />
+	<fighter id='1079' physics='35' attribute='32' special='32' critical='52' fit='0' />
+	<fighter id='1080' physics='31' attribute='45' special='88' critical='103' fit='0' />
+	<fighter id='1081' physics='31' attribute='45' special='88' critical='103' fit='0' />
+	<fighter id='1082' physics='51' attribute='60' special='41' critical='86' fit='0' />
+	<fighter id='1083' physics='30' attribute='34' special='78' critical='15' fit='0' />
+	<fighter id='1084' physics='91' attribute='54' special='45' critical='132' fit='0' />
+	<fighter id='1085' physics='91' attribute='54' special='45' critical='132' fit='0' />
+	<fighter id='1086' physics='20' attribute='30' special='51' critical='0' fit='0' />
+
+	<fighter id='1087' physics='22' attribute='25' special='22' critical='64' fit='0' />
+	<fighter id='1088' physics='32' attribute='30' special='38' critical='22' fit='0' />
+	<fighter id='1089' physics='24' attribute='26' special='38' critical='118' fit='0' />
+	<fighter id='1090' physics='24' attribute='26' special='38' critical='118' fit='0' />
+
+	<fighter id='1091' physics='10' attribute='19' special='28' critical='37' fit='0' />
+	<fighter id='1092' physics='10' attribute='19' special='28' critical='37' fit='0' />
+	<fighter id='1093' physics='10' attribute='19' special='28' critical='37' fit='0' />
+	<fighter id='1094' physics='26' attribute='40' special='19' critical='50' fit='0' />
+	<fighter id='1095' physics='34' attribute='33' special='22' critical='84' fit='0' />
+	<fighter id='1096' physics='28' attribute='25' special='29' critical='24' fit='0' />
+	<fighter id='1097' physics='39' attribute='34' special='43' critical='72' fit='0' />
+	<fighter id='1098' physics='36' attribute='41' special='42' critical='71' fit='0' />
+	<fighter id='1099' physics='36' attribute='41' special='42' critical='71' fit='0' />
+
+	<fighter id='1100' physics='35' attribute='32' special='32' critical='52' fit='0' />
+
+	<fighter id='1101' physics='32' attribute='30' special='38' critical='22' fit='0' />
+	<fighter id='1102' physics='36' attribute='41' special='42' critical='71' fit='0' />
+	<fighter id='1103' physics='32' attribute='30' special='48' critical='108' fit='0' />
+	<fighter id='1104' physics='29' attribute='65' special='54' critical='119' fit='0' />
+	<fighter id='1105' physics='29' attribute='65' special='54' critical='119' fit='0' />
+	<fighter id='1106' physics='21' attribute='30' special='53' critical='81' fit='0' />
+	<fighter id='1107' physics='35' attribute='45' special='34' critical='45' fit='0' />
+	<fighter id='1108' physics='30' attribute='18' special='32' critical='38' fit='0' />
+	<fighter id='1109' physics='41' attribute='42' special='53' critical='102' fit='0' />
+	<fighter id='1110' physics='41' attribute='42' special='53' critical='102' fit='0' />
+
+	<fighter id='1111' physics='37' attribute='35' special='39' critical='96' fit='0' />
+	<fighter id='1112' physics='25' attribute='15' special='22' critical='55' fit='0' />
+	<fighter id='1113' physics='35' attribute='31' special='33' critical='63' fit='0' />
+	<fighter id='1114' physics='28' attribute='21' special='37' critical='70' fit='0' />
+	<fighter id='1115' physics='49' attribute='25' special='28' critical='57' fit='0' />
+	<fighter id='1116' physics='31' attribute='21' special='20' critical='31' fit='0' />
+	<fighter id='1117' physics='29' attribute='31' special='33' critical='32' fit='0' />
+	<fighter id='1118' physics='39' attribute='34' special='43' critical='72' fit='0' />
+	<fighter id='1119' physics='31' attribute='31' special='22' critical='81' fit='0' />
+	<fighter id='1120' physics='34' attribute='33' special='32' critical='62' fit='0' />
+	<fighter id='1121' physics='19' attribute='14' special='15' critical='61' fit='0' />
+	<fighter id='1122' physics='46' attribute='49' special='62' critical='92' fit='0' />
+	<fighter id='1123' physics='62' attribute='49' special='33' critical='53' fit='0' />
+	<fighter id='1124' physics='45' attribute='35' special='33' critical='108' fit='0' />
+	<fighter id='1125' physics='45' attribute='35' special='33' critical='108' fit='0' />
+	<fighter id='1126' physics='49' attribute='55' special='38' critical='136' fit='0' />
+	<fighter id='1127' physics='22' attribute='23' special='18' critical='50' fit='0' />
+	<fighter id='1128' physics='20' attribute='31' special='55' critical='52' fit='0' />
+	<fighter id='1129' physics='34' attribute='18' special='34' critical='62' fit='0' />
+	<fighter id='1130' physics='49' attribute='55' special='38' critical='136' fit='0' />
+
+	<fighter id='1131' physics='26' attribute='15' special='26' critical='32' fit='0' />
+	<fighter id='1132' physics='20' attribute='21' special='24' critical='22' fit='0' />
+	<fighter id='1133' physics='20' attribute='21' special='24' critical='22' fit='0' />
+	<fighter id='1134' physics='20' attribute='21' special='24' critical='22' fit='0' />
+	<fighter id='1135' physics='20' attribute='21' special='24' critical='22' fit='0' />
+	<fighter id='1136' physics='27' attribute='33' special='13' critical='27' fit='0' />
+	<fighter id='1137' physics='59' attribute='18' special='98' critical='101' fit='0'/>
+	<fighter id='1138' physics='49' attribute='26' special='38' critical='60' fit='0' />
+	<fighter id='1139' physics='49' attribute='55' special='38' critical='136' fit='0' />
+
+	<fighter id='1140' physics='37' attribute='31' special='39' critical='70' fit='0' />
+	<fighter id='1141' physics='37' attribute='31' special='39' critical='70' fit='0' />
+	<fighter id='1142' physics='37' attribute='31' special='39' critical='70' fit='0' />
+	<fighter id='1143' physics='28' attribute='14' special='20' critical='19' fit='0' />
+	<fighter id='1144' physics='49' attribute='55' special='38' critical='136' fit='0' />
+	<fighter id='1145' physics='31' attribute='21' special='27' critical='67' fit='0' />
+
+	<fighter id='1146' physics='32' attribute='77' special='67' critical='75' fit='134' />
+	<fighter id='1147' physics='67' attribute='62' special='48' critical='54' fit='134' />
+	<fighter id='1148' physics='42' attribute='26' special='25' critical='9' fit='0' />
+	<fighter id='1149' physics='29' attribute='30' special='23' critical='42' fit='0' />
+	<fighter id='1150' physics='30' attribute='24' special='26' critical='42' fit='0' />
+	<fighter id='1151' physics='54' attribute='34' special='59' critical='77' fit='0' />
+	<fighter id='1152' physics='38' attribute='39' special='33' critical='61' fit='0' />
+	<fighter id='1153' physics='55' attribute='39' special='39' critical='82' fit='0' />
+	<fighter id='1154' physics='27' attribute='24' special='30' critical='61' fit='0' />
+	<fighter id='1155' physics='32' attribute='32' special='42' critical='90' fit='0' />
+	<fighter id='1156' physics='30' attribute='47' special='28' critical='263' fit='0' />
+	<fighter id='1157' physics='30' attribute='47' special='28' critical='263' fit='0' />
+	<fighter id='1158' physics='30' attribute='47' special='28' critical='263' fit='0' />
+	<fighter id='1159' physics='31' attribute='34' special='44' critical='47' fit='0' />
+	<fighter id='1160' physics='37' attribute='17' special='25' critical='16' fit='0' />
+
+	<fighter id='1161' physics='37' attribute='32' special='57' critical='93' fit='0' />
+	<fighter id='1162' physics='37' attribute='32' special='57' critical='93' fit='0' />
+	<fighter id='1163' physics='37' attribute='32' special='57' critical='93' fit='0' />
+
+	<fighter id='1164' physics='45' attribute='34' special='29' critical='82' fit='0' />
+	<fighter id='1165' physics='36' attribute='41' special='42' critical='71' fit='0' />
+
+	<fighter id='1166' physics='29' attribute='21' special='33' critical='49' fit='0' />
+	<fighter id='1167' physics='57' attribute='13' special='78' critical='106' fit='0'/>
+	<fighter id='1168' physics='31' attribute='45' special='88' critical='103' fit='0' />
+	<fighter id='1169' physics='38' attribute='39' special='33' critical='61' fit='0' />
+	<fighter id='1170' physics='45' attribute='35' special='33' critical='108' fit='0' />
+	<fighter id='1171' physics='51' attribute='32' special='43' critical='76' fit='0' />
+	<fighter id='1172' physics='34' attribute='28' special='26' critical='95' fit='0' />
+	<fighter id='1173' physics='41' attribute='42' special='47' critical='77' fit='0' />
+	<fighter id='1174' physics='33' attribute='30' special='29' critical='70' fit='0' />
+	<fighter id='1175' physics='38' attribute='13' special='44' critical='49' fit='0'/>
+	<fighter id='1176' physics='15' attribute='25' special='43' critical='88' fit='0' />
+	<fighter id='1177' physics='20' attribute='29' special='55' critical='0' fit='0' />
+	<fighter id='1178' physics='36' attribute='40' special='58' critical='75' fit='0' />
+	<fighter id='1179' physics='47' attribute='30' special='71' critical='74' fit='0' />
+	<fighter id='1180' physics='47' attribute='30' special='71' critical='74' fit='0' />
+
+	<fighter id='1181' physics='33' attribute='21' special='21' critical='16' fit='0' />
+	<fighter id='1182' physics='33' attribute='21' special='21' critical='16' fit='0' />
+	<fighter id='1183' physics='33' attribute='21' special='21' critical='16' fit='0' />
+	<fighter id='1184' physics='33' attribute='21' special='21' critical='16' fit='0' />
+	<fighter id='1185' physics='33' attribute='21' special='21' critical='16' fit='0' />
+	<fighter id='1186' physics='37' attribute='7' special='13' critical='36' fit='0' />
+	<fighter id='1187' physics='35' attribute='17' special='30' critical='32' fit='0' />
+	<fighter id='1188' physics='28' attribute='27' special='25' critical='62' fit='0' />
+	<fighter id='1189' physics='21' attribute='35' special='21' critical='65' fit='0' />
+	<fighter id='1190' physics='53' attribute='61' special='55' critical='104' fit='0' />
+	<fighter id='1191' physics='39' attribute='27' special='37' critical='37' fit='0' />
+	<fighter id='1192' physics='18' attribute='23' special='25' critical='53' fit='0' />
+	<fighter id='1193' physics='23' attribute='19' special='37' critical='34' fit='0' />
+	<fighter id='1194' physics='19' attribute='26' special='33' critical='30' fit='0' />
+	<fighter id='1195' physics='48' attribute='41' special='29' critical='165' fit='0' />
+	<fighter id='1196' physics='35' attribute='21' special='43' critical='69' fit='0' />
+	<fighter id='1197' physics='28' attribute='7' special='41' critical='47' fit='0' />
+	<fighter id='1198' physics='26' attribute='27' special='39' critical='65' fit='0' />
+	<fighter id='1199' physics='28' attribute='35' special='38' critical='68' fit='0' />
+	<fighter id='1200' physics='16' attribute='12' special='20' critical='23' fit='0' />
+	<fighter id='1201' physics='48' attribute='36' special='69' critical='73' fit='0' />
+	<fighter id='1202' physics='38' attribute='38' special='41' critical='84' fit='0' />
+	<fighter id='1203' physics='38' attribute='38' special='41' critical='84' fit='0' />
+	<fighter id='1204' physics='25' attribute='22' special='20' critical='52' fit='0' />
+	<fighter id='1205' physics='25' attribute='22' special='20' critical='52' fit='0' />
+	<fighter id='1206' physics='25' attribute='22' special='20' critical='52' fit='0' />
+	<fighter id='1207' physics='25' attribute='22' special='20' critical='52' fit='0' />
+
+	<fighter id='1208' physics='25' attribute='21' special='47' critical='71' fit='0' />
+	<fighter id='1209' physics='41' attribute='25' special='35' critical='0' fit='0' />
+	<fighter id='1210' physics='25' attribute='41' special='27' critical='0' fit='0' />
+	<fighter id='1211' physics='30' attribute='18' special='35' critical='0' fit='0' />
+	<fighter id='1212' physics='39' attribute='34' special='24' critical='0' fit='0' />
+	<fighter id='1213' physics='34' attribute='38' special='55' critical='0' fit='0' />
+	<fighter id='1214' physics='27' attribute='21' special='31' critical='28' fit='0' />
+	<fighter id='1215' physics='28' attribute='16' special='32' critical='53' fit='0' />
+	<fighter id='1216' physics='16' attribute='8' special='26' critical='31' fit='0' />
+	<fighter id='1217' physics='62' attribute='36' special='31' critical='80' fit='0' />
+	<fighter id='1218' physics='25' attribute='18' special='45' critical='97' fit='0' />
+	<fighter id='1219' physics='20' attribute='30' special='51' critical='0' fit='0' />
+	<fighter id='1220' physics='46' attribute='17' special='24' critical='102' fit='0' />
+
+	<fighter id='1221' physics='18' attribute='19' special='21' critical='38' fit='0' />
+	<fighter id='1222' physics='47' attribute='30' special='71' critical='74' fit='0' />
+	<fighter id='1223' physics='38' attribute='38' special='41' critical='84' fit='0' />
+	<fighter id='1224' physics='21' attribute='18' special='77' critical='73' fit='0' />
+	<fighter id='1225' physics='54' attribute='34' special='59' critical='77' fit='0' />
+	<fighter id='1226' physics='37' attribute='32' special='57' critical='93' fit='0' />
+	<fighter id='1227' physics='45' attribute='34' special='29' critical='82' fit='0' />
+	<fighter id='1228' physics='51' attribute='32' special='43' critical='76' fit='0' />
+	<fighter id='1229' physics='41' attribute='42' special='47' critical='77' fit='0' />
+	<fighter id='1230' physics='33' attribute='30' special='29' critical='70' fit='0' />
+	<fighter id='1231' physics='64' attribute='30' special='48' critical='52' fit='0' />
+	<fighter id='1232' physics='36' attribute='16' special='31' critical='86' fit='0' />
+	<fighter id='1233' physics='22' attribute='21' special='50' critical='83' fit='0' />
+	<fighter id='1234' physics='25' attribute='22' special='20' critical='52' fit='0' />
+	<fighter id='1235' physics='21' attribute='18' special='23' critical='27' fit='0' />
+	<fighter id='1236' physics='16' attribute='12' special='20' critical='23' fit='0' />
+
+	<fighter id='1237' physics='25' attribute='31' special='23' critical='79' fit='0' />
+	<fighter id='1238' physics='27' attribute='43' special='23' critical='41' fit='0' />
+	<fighter id='1239' physics='46' attribute='45' special='49' critical='80' fit='0' />
+	<fighter id='1240' physics='24' attribute='40' special='24' critical='52' fit='0' />
+	<fighter id='1241' physics='34' attribute='21' special='24' critical='67' fit='0' />
+	<fighter id='1242' physics='24' attribute='26' special='27' critical='59' fit='0' />
+	<fighter id='1243' physics='37' attribute='37' special='52' critical='98' fit='0' />
+	<fighter id='1244' physics='84' attribute='21' special='37' critical='120' fit='0' />
+	<fighter id='1245' physics='30' attribute='22' special='34' critical='43' fit='0' />
+	<fighter id='1246' physics='91' attribute='54' special='45' critical='132' fit='0' />
+
+	<fighter id='1247' physics='29' attribute='19' special='46' critical='58' fit='0' />
+	<fighter id='1248' physics='29' attribute='19' special='46' critical='58' fit='0' />
+	<fighter id='1249' physics='29' attribute='19' special='46' critical='58' fit='0' />
+	<fighter id='1250' physics='47' attribute='29' special='31' critical='53' fit='0' />
+	<fighter id='1251' physics='47' attribute='29' special='31' critical='53' fit='0' />
+	<fighter id='1252' physics='21' attribute='28' special='30' critical='34' fit='0' />
+	<fighter id='1253' physics='16' attribute='23' special='33' critical='36' fit='0' />
+	<fighter id='1254' physics='39' attribute='23' special='58' critical='96' fit='0' />
+	<fighter id='1255' physics='31' attribute='13' special='23' critical='29' fit='0' />
+	<fighter id='1256' physics='24' attribute='24' special='34' critical='71' fit='0' />
+	<fighter id='1257' physics='87' attribute='10' special='29' critical='33' fit='0' />
+	<fighter id='1258' physics='87' attribute='10' special='29' critical='33' fit='0' />
+	<fighter id='1259' physics='46' attribute='49' special='67' critical='92' fit='0' />
+	<fighter id='1260' physics='24' attribute='26' special='38' critical='118' fit='0' />
+	<fighter id='1261' physics='25' attribute='19' special='54' critical='68' fit='0' />
+	<fighter id='1262' physics='24' attribute='26' special='38' critical='118' fit='0' />
+	<fighter id='1263' physics='40' attribute='31' special='60' critical='91' fit='0' />
+	<fighter id='1264' physics='14' attribute='19' special='16' critical='13' fit='0' />
+	<fighter id='1265' physics='16' attribute='13' special='31' critical='14' fit='0' />
+	<fighter id='1266' physics='16' attribute='13' special='31' critical='14' fit='0' />
+	<fighter id='1267' physics='45' attribute='34' special='29' critical='82' fit='0' />
+	<fighter id='1268' physics='18' attribute='40' special='41' critical='67' fit='0' />
+	<fighter id='1269' physics='21' attribute='18' special='77' critical='73' fit='0' />
+	<fighter id='1270' physics='47' attribute='25' special='60' critical='95' fit='0' />
+	<fighter id='1271' physics='47' attribute='25' special='60' critical='95' fit='0' />
+
+	<fighter id='1272' physics='33' attribute='31' special='34' critical='54' fit='0' />
+	<fighter id='1273' physics='33' attribute='31' special='34' critical='54' fit='0' />
+	<fighter id='1274' physics='24' attribute='16' special='27' critical='27' fit='0' />
+	<fighter id='1275' physics='32' attribute='26' special='26' critical='59' fit='0' />
+	<fighter id='1276' physics='36' attribute='28' special='21' critical='67' fit='0' />
+	<fighter id='1277' physics='37' attribute='16' special='25' critical='29' fit='0' />
+	<fighter id='1278' physics='33' attribute='21' special='31' critical='57' fit='0' />
+	<fighter id='1279' physics='27' attribute='21' special='38' critical='27' fit='0' />
+	<fighter id='1280' physics='27' attribute='21' special='38' critical='27' fit='0' />
+	<fighter id='1281' physics='27' attribute='21' special='38' critical='27' fit='0' />
+	<fighter id='1282' physics='27' attribute='18' special='30' critical='57' fit='0' />
+	<fighter id='1283' physics='24' attribute='13' special='25' critical='24' fit='0' />
+	<fighter id='1284' physics='26' attribute='39' special='54' critical='93' fit='0' />
+	<fighter id='1285' physics='27' attribute='18' special='30' critical='57' fit='0' />
+	<fighter id='1286' physics='27' attribute='21' special='38' critical='27' fit='0' />
+	<fighter id='1287' physics='33' attribute='10' special='13' critical='13' fit='0' />
+	<fighter id='1288' physics='41' attribute='8' special='23' critical='24' fit='0' />
+	<fighter id='1289' physics='44' attribute='21' special='23' critical='91' fit='0' />
+	<fighter id='1290' physics='38' attribute='21' special='56' critical='65' fit='0' />
+	<fighter id='1291' physics='31' attribute='13' special='23' critical='29' fit='0' />
+	<fighter id='1292' physics='47' attribute='25' special='60' critical='95' fit='0' />
+	<fighter id='1293' physics='36' attribute='20' special='32' critical='75' fit='0' />
+	<fighter id='1294' physics='40' attribute='31' special='60' critical='91' fit='0' />
+	<fighter id='1295' physics='40' attribute='31' special='60' critical='91' fit='0' />
+	<fighter id='1296' physics='40' attribute='31' special='60' critical='91' fit='0' />
+	<fighter id='1297' physics='26' attribute='39' special='54' critical='93' fit='0' />
+	<fighter id='1298' physics='17' attribute='17' special='29' critical='31' fit='0' />
+	<fighter id='1299' physics='30' attribute='36' special='33' critical='73' fit='0' />
+	<fighter id='1300' physics='17' attribute='26' special='31' critical='114' fit='0' />
+	<fighter id='1301' physics='17' attribute='26' special='31' critical='114' fit='0' />
+	<fighter id='1302' physics='17' attribute='17' special='29' critical='31' fit='0' />
+	<fighter id='1303' physics='30' attribute='11' special='18' critical='75' fit='0' />
+	<fighter id='1304' physics='22' attribute='19' special='17' critical='14' fit='0' />
+	<fighter id='1305' physics='29' attribute='13' special='16' critical='28' fit='0' />
+	<fighter id='1306' physics='29' attribute='13' special='16' critical='28' fit='0' />
+	<fighter id='1307' physics='19' attribute='12' special='18' critical='19' fit='0' />
+
+	<fighter id='1308' physics='19' attribute='65' special='26' critical='54' fit='0' />
+	<fighter id='1309' physics='42' attribute='56' special='41' critical='100' fit='0' />
+	<fighter id='1310' physics='24' attribute='18' special='31' critical='14' fit='0' />
+	<fighter id='1311' physics='41' attribute='26' special='45' critical='39' fit='64' />
+	<fighter id='1312' physics='23' attribute='35' special='77' critical='169' fit='90' />
+	<fighter id='1313' physics='27' attribute='25' special='54' critical='109' fit='0' />
+	<fighter id='1314' physics='14' attribute='19' special='16' critical='13' fit='0' />
+	<fighter id='1315' physics='24' attribute='16' special='27' critical='27' fit='0' />
+	<fighter id='1316' physics='14' attribute='19' special='16' critical='13' fit='0' />
+	<fighter id='1317' physics='35' attribute='11' special='22' critical='21' fit='0' />
+	<fighter id='1318' physics='15' attribute='10' special='45' critical='18' fit='0' />
+	<fighter id='1319' physics='21' attribute='29' special='19' critical='67' fit='0' />
+	<fighter id='1320' physics='39' attribute='23' special='27' critical='68' fit='0' />
+	<fighter id='1321' physics='16' attribute='24' special='22' critical='44' fit='0' />
+	<fighter id='1322' physics='21' attribute='17' special='31' critical='65' fit='0' />
+	<fighter id='1323' physics='35' attribute='13' special='48' critical='46' fit='0' />
+	<fighter id='1324' physics='36' attribute='40' special='58' critical='75' fit='0' />
+	<fighter id='1325' physics='30' attribute='11' special='18' critical='75' fit='0' />
+	<fighter id='1326' physics='24' attribute='10' special='25' critical='38' fit='0' />
+	<fighter id='1327' physics='24' attribute='10' special='25' critical='38' fit='0' />
+	<fighter id='1328' physics='24' attribute='10' special='25' critical='38' fit='0' />
+
+	<fighter id='1329' physics='21' attribute='33' special='39' critical='84' fit='0' />
+	<fighter id='1330' physics='27' attribute='21' special='20' critical='40' fit='0' />
+	<fighter id='1331' physics='32' attribute='29' special='45' critical='76' fit='0' />
+	<fighter id='1332' physics='26' attribute='11' special='27' critical='28' fit='0' />
+	<fighter id='1333' physics='25' attribute='25' special='26' critical='90' fit='0' />
+	<fighter id='1334' physics='18' attribute='19' special='21' critical='38' fit='0' />
+	<fighter id='1335' physics='64' attribute='30' special='48' critical='52' fit='0' />
+	<fighter id='1336' physics='33' attribute='21' special='22' critical='21' fit='0' />
+	<fighter id='1337' physics='39' attribute='25' special='30' critical='75' fit='0' />
+	<fighter id='1338' physics='36' attribute='24' special='37' critical='66' fit='0' />
+	<fighter id='1339' physics='27' attribute='32' special='54' critical='85' fit='0' />
+	<fighter id='1340' physics='36' attribute='30' special='24' critical='120' fit='0' />
+	<fighter id='1341' physics='33' attribute='25' special='25' critical='98' fit='98' />
+	<fighter id='1342' physics='14' attribute='12' special='24' critical='35' fit='0' />
+	<fighter id='1343' physics='19' attribute='35' special='42' critical='49' fit='0' />
+	<fighter id='1344' physics='30' attribute='60' special='30' critical='72' fit='0' />
+	<fighter id='1345' physics='19' attribute='29' special='39' critical='101' fit='0' />
+	<fighter id='1346' physics='19' attribute='11' special='20' critical='20' fit='0' />
+	<fighter id='1347' physics='28' attribute='26' special='27' critical='49' fit='0' />
+	<fighter id='1348' physics='26' attribute='13' special='4' critical='118' fit='0' />
+	<fighter id='1349' physics='36' attribute='24' special='37' critical='66' fit='0' />
+	<fighter id='1350' physics='35' attribute='24' special='31' critical='67' fit='0' />
+	<fighter id='1351' physics='27' attribute='21' special='29' critical='34' fit='0' />
+	<fighter id='1352' physics='33' attribute='29' special='27' critical='66' fit='0' />
+	<fighter id='1353' physics='34' attribute='14' special='50' critical='77' fit='0' />
+	<fighter id='1354' physics='22' attribute='7' special='54' critical='39' fit='0' />
+	<fighter id='1355' physics='27' attribute='21' special='29' critical='34' fit='0' />
+	<fighter id='1356' physics='22' attribute='21' special='30' critical='30' fit='0' />
+	<fighter id='1357' physics='27' attribute='17' special='22' critical='51' fit='0' />
+	<fighter id='1358' physics='21' attribute='12' special='31' critical='13' fit='0' />
+	<fighter id='1359' physics='25' attribute='4' special='22' critical='29' fit='0' />
+	<fighter id='1408' physics='30' attribute='31' special='31' critical='56' fit='0' />
+	<fighter id='1991' physics='115' attribute='54' special='69' critical='140' fit='0' />
+	<fighter id='1992' physics='28' attribute='16' special='32' critical='53' fit='0' />
+	<fighter id='2998' physics='48' attribute='36' special='49' critical='0' fit='0' />
+	<fighter id='2999' physics='48' attribute='36' special='49' critical='0' fit='0' />
+	<fighter id='2992' physics='25' attribute='21' special='47' critical='71' fit='0' />
+	<fighter id='2993' physics='41' attribute='25' special='35' critical='0' fit='0' />
+	<fighter id='2994' physics='25' attribute='41' special='27' critical='0' fit='0' />
+	<fighter id='2995' physics='30' attribute='18' special='35' critical='0' fit='0' />
+	<fighter id='2996' physics='39' attribute='34' special='24' critical='0' fit='0' />
+	<fighter id='2997' physics='34' attribute='38' special='55' critical='0' fit='0' />
+
+
+	<fighter id='1360' physics='34' attribute='21' special='32' critical='0' fit='0'/>
+	<fighter id='1361' physics='23' attribute='23' special='19' critical='0' fit='0'/>
+	<fighter id='1362' physics='21' attribute='13' special='27' critical='0' fit='0' />
+	<fighter id='1363' physics='41' attribute='11' special='37' critical='70' fit='0'/>
+	<fighter id='1364' physics='25' attribute='25' special='31' critical='74' fit='0' />
+	<fighter id='1365' physics='16' attribute='23' special='33' critical='36' fit='0' />
+	<fighter id='1366' physics='35' attribute='13' special='36' critical='92' fit='0' />
+	<fighter id='1367' physics='21' attribute='28' special='45' critical='59' fit='0' />
+	<fighter id='1368' physics='35' attribute='25' special='33' critical='69' fit='0' />
+	<fighter id='1369' physics='43' attribute='12' special='28' critical='77' fit='0' />
+	<fighter id='1370' physics='43' attribute='12' special='28' critical='77' fit='0' />
+	<fighter id='1371' physics='31' attribute='29' special='9' critical='0' fit='0'/>
+	<fighter id='1372' physics='30' attribute='47' special='56' critical='263' fit='0' />
+	<fighter id='1373' physics='34' attribute='12' special='53' critical='79' fit='0' />
+	<fighter id='1374' physics='22' attribute='10' special='4' critical='10' fit='0' />
+	<fighter id='1375' physics='22' attribute='10' special='4' critical='10' fit='0' />
+	<fighter id='1376' physics='27' attribute='18' special='21' critical='31' fit='0' />
+	<fighter id='1377' physics='58' attribute='43' special='54' critical='68' fit='0' />
+	<fighter id='1378' physics='14' attribute='13' special='7' critical='12' fit='0' />
+	<fighter id='1379' physics='30' attribute='30' special='48' critical='53' fit='0' />
+	<fighter id='1380' physics='26' attribute='19' special='51' critical='33' fit='0' />
+	<fighter id='1381' physics='28' attribute='20' special='25' critical='35' fit='0' />
+	<fighter id='1382' physics='50' attribute='27' special='40' critical='126' fit='0' />
+	<fighter id='1383' physics='22' attribute='11' special='18' critical='19' fit='0' />
+	<fighter id='1384' physics='22' attribute='11' special='18' critical='19' fit='0' />
+	<fighter id='1385' physics='32' attribute='11' special='23' critical='68' fit='0' />
+	<fighter id='1386' physics='27' attribute='14' special='55' critical='78' fit='0' />
+	<fighter id='1387' physics='33' attribute='30' special='37' critical='84' fit='0' />
+	<fighter id='1388' physics='54' attribute='14' special='17' critical='22' fit='0' />
+	<fighter id='1389' physics='54' attribute='14' special='17' critical='22' fit='0' />
+	<fighter id='1390' physics='26' attribute='9' special='4' critical='26' fit='0' />
+	<fighter id='1391' physics='33' attribute='30' special='37' critical='84' fit='0' />
+	<fighter id='1392' physics='26' attribute='13' special='4' critical='26' fit='0' />
+	<fighter id='1393' physics='33' attribute='30' special='37' critical='84' fit='0' />
+
+	<fighter id='1394' physics='27' attribute='13' special='23' critical='38' fit='0' />
+	<fighter id='1395' physics='17' attribute='16' special='38' critical='17' fit='0' />
+	<fighter id='1396' physics='39' attribute='14' special='38' critical='91' fit='0' />
+
+	<fighter id='1397' physics='60' attribute='11' special='54' critical='98' fit='0' />
+	<fighter id='1398' physics='22' attribute='14' special='10' critical='7' fit='0' />
+
+	<fighter id='1399' physics='54' attribute='26' special='37' critical='131' fit='0' />
+	<fighter id='1400' physics='20' attribute='15' special='17' critical='24' fit='0' />
+	<fighter id='1401' physics='21' attribute='13' special='17' critical='42' fit='0' />
+	<fighter id='1403' physics='25' attribute='11' special='15' critical='15' fit='0' />
+	<fighter id='1404' physics='22' attribute='16' special='15' critical='6' fit='0' />
+	<fighter id='1405' physics='18' attribute='11' special='12' critical='18' fit='0' />
+
+	<fighter id='1430' physics='20' attribute='13' special='24' critical='44' fit='0' />
+	<fighter id='1431' physics='20' attribute='13' special='23' critical='37' fit='0' />
+	<fighter id='1436' physics='38' attribute='12' special='36' critical='37' fit='0' />
+	<fighter id='1462' physics='27' attribute='28' special='21' critical='17' fit='0' />
+	<fighter id='1463' physics='44' attribute='10' special='19' critical='44' fit='0' />
+
+	<fighter id='1562' physics='25' attribute='35' special='44' critical='80' fit='0' />
+	<fighter id='1563' physics='25' attribute='35' special='44' critical='80' fit='0' />
+	<fighter id='1564' physics='25' attribute='35' special='44' critical='80' fit='0' />
+
+	<fighter id='1565' physics='23' attribute='35' special='77' critical='169' fit='90' />
+	<fighter id='1566' physics='46' attribute='49' special='67' critical='92' fit='0' />
+	<fighter id='1567' physics='40' attribute='0' special='0' critical='0' fit='0' />
+	<fighter id='1568' physics='40' attribute='0' special='0' critical='0' fit='0' />
+
+	<fighter id='2558' physics='27' attribute='25' special='54' critical='109' fit='0' />
+	<fighter id='1569' physics='27' attribute='25' special='54' critical='109' fit='0' />
+	<fighter id='2559' physics='24' attribute='26' special='38' critical='118' fit='0' />
+	<fighter id='1570' physics='24' attribute='26' special='38' critical='118' fit='0' />
+	<fighter id='2560' physics='91' attribute='54' special='45' critical='132' fit='0' />
+	<fighter id='1571' physics='91' attribute='54' special='45' critical='132' fit='0' />
+
+
+	<fighter id='1572' physics='33' attribute='25' special='44' critical='143' fit='176' />
+	<fighter id='1573' physics='32' attribute='35' special='42' critical='144' fit='178' />
+	<fighter id='1574' physics='25' attribute='15' special='22' critical='55' fit='0' />
+	<fighter id='2555' physics='7' attribute='19' special='29' critical='32' fit='0' />
+	<fighter id='2556' physics='25' attribute='11' special='11' critical='11' fit='0' />
+	<fighter id='2562' physics='25' attribute='21' special='47' critical='71' fit='0' />
+	<fighter id='1582' physics='25' attribute='21' special='47' critical='71' fit='0' />
+	<fighter id='1580' physics='29' attribute='35' special='47' critical='47' fit='178' />
+	<fighter id='1581' physics='33' attribute='26' special='39' critical='51' fit='178' />
+
+	<fighter id='2563' physics='41' attribute='25' special='35' critical='0' fit='0' />
+	<fighter id='1583' physics='41' attribute='25' special='35' critical='0' fit='0' />
+
+	<fighter id='2564' physics='25' attribute='41' special='27' critical='0' fit='0' />
+	<fighter id='1584' physics='25' attribute='41' special='27' critical='0' fit='0' />
+
+	<fighter id='2565' physics='19' attribute='13' special='15' critical='13' fit='0' />
+
+	<fighter id='2566' physics='30' attribute='18' special='35' critical='0' fit='0' />
+	<fighter id='1585' physics='30' attribute='18' special='35' critical='0' fit='0' />
+
+	<fighter id='2574' physics='20' attribute='13' special='20' critical='20' fit='0' />
+	<fighter id='2575' physics='14' attribute='13' special='18' critical='18' fit='0' />
+
+	<fighter id='2567' physics='5' attribute='10' special='6' critical='5' fit='0' />
+
+	<fighter id='1586' physics='39' attribute='34' special='24' critical='0' fit='0' />
+	<fighter id='2568' physics='39' attribute='34' special='24' critical='0' fit='0' />
+
+	<fighter id='2576' physics='26' attribute='13' special='16' critical='16' fit='0' />
+	<fighter id='2577' physics='26' attribute='14' special='17' critical='17' fit='0' />
+
+	<fighter id='2570' physics='9' attribute='11' special='12' critical='12' fit='0' />
+	<fighter id='2578' physics='17' attribute='11' special='5' critical='5' fit='0' />
+  <fighter id='2571' physics='5' attribute='13' special='10' critical='10' fit='0' />
+  <fighter id='2579' physics='35' attribute='15' special='22' critical='31' fit='0' />
+  <fighter id='2584' physics='31' attribute='40' special='54' critical='70' fit='0' />
+  <fighter id='2583' physics='13' attribute='13' special='9' critical='7' fit='0' />
+  <fighter id='2585' physics='31' attribute='40' special='54' critical='70' fit='0' />
+  <fighter id='2586' physics='27' attribute='33' special='19' critical='38' fit='0' />
+  <fighter id='2580' physics='21' attribute='19' special='14' critical='11' fit='0' />
+  <fighter id='2587' physics='17' attribute='13' special='5' critical='7' fit='0' />
+  <fighter id='2588' physics='12' attribute='13' special='7' critical='12' fit='0' />
+  <fighter id='2589' physics='68' attribute='27' special='33' critical='68' fit='0' />
+  <fighter id='2590' physics='28' attribute='14' special='26' critical='58' fit='0' />
+  <fighter id='2591' physics='18' attribute='13' special='12' critical='13' fit='0' />
+   <fighter id='2572' physics='17' attribute='13' special='19' critical='17' fit='0' />
+   <fighter id='2581' physics='35' attribute='12' special='12' critical='12' fit='0' />
+   <fighter id='2573' physics='17' attribute='13' special='7' critical='13' fit='0' />
+   <fighter id='2592' physics='49' attribute='49' special='45' critical='86' fit='0' />
+   <fighter id='2593' physics='41' attribute='39' special='45' critical='67' fit='0' />
+   <fighter id='2594' physics='23' attribute='13' special='8' critical='23' fit='0' />
+   <fighter id='2595' physics='19' attribute='13' special='17' critical='19' fit='0' />
+   <fighter id='2596' physics='18' attribute='13' special='13' critical='13' fit='0' />
+   <fighter id='2597' physics='17' attribute='10' special='15' critical='17' fit='0' />
+   <fighter id='2598' physics='16' attribute='13' special='11' critical='0' fit='0' />
+	<fighter id='2599' physics='13' attribute='13' special='21' critical='0' fit='0' />
+	<fighter id='2600' physics='12' attribute='13' special='9' critical='19' fit='0' />
+</fighters>
+
+<!--  <fighter id='PETID' physics='41' attribute='26' special='45' critical='39' fit='64' /> -->

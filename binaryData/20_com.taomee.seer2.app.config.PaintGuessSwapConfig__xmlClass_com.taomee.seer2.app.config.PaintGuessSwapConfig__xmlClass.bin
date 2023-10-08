@@ -1,0 +1,20 @@
+<root>
+	<reward type="total" sort="1">
+			<item id = "400252" tip="需要猜对10张图片" isPet="0" condition="10" swapId="655" onlyFlag="508"/> 
+			<item id = "400253" tip="需要猜对50张图片" isPet="0" condition="50" swapId="656" onlyFlag="509"/> 
+			<item id = "400254" tip="需要猜对100张图片" isPet="0" condition="100" swapId="657" onlyFlag="510"/> 
+			<item id = "400255" tip="需要猜对300张图片" isPet="0" condition="300" swapId="658" onlyFlag="511"/> 
+	</reward>
+	<reward type="complete" sort="2">	
+			<item id = "400256" tip="需要通关精灵1组" isPet="0" condition="1|1" swapId="659" onlyFlag="512"/> 
+			<item id = "400257" tip="需要通关精灵2组" isPet="0" condition="1|2" swapId="660" onlyFlag="513"/> 
+			<item id = "400258" tip="需要通关精灵3组" isPet="0" condition="1|3" swapId="661" onlyFlag="514"/> 
+			<item id = "400259" tip="需要通关精灵4组" isPet="0" condition="1|4" swapId="662" onlyFlag="515"/> 
+	</reward>
+	<reward type="complete2" sort="3">	
+			<item id = "400261" tip="需要通关高级精灵1组" isPet="0" condition="2|1" swapId="697" onlyFlag="525"/> 
+			<item id = "400262" tip="需要通关高级精灵2组" isPet="0" condition="2|2" swapId="698" onlyFlag="526"/> 
+			<item id = "400263" tip="需要通关高级精灵3组" isPet="0" condition="2|3" swapId="699" onlyFlag="527"/> 
+			<item id = "400260" tip="需要通关高级精灵4组" isPet="0" condition="2|4" swapId="700" onlyFlag="528"/> 
+	</reward>
+</root> 

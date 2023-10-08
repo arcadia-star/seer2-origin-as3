@@ -1,0 +1,641 @@
+<!--精元展示表
+petSpirtTrainConfig.xml说明 by Tyleryang
+当需要增加精元或者精元蛋时配置此表，此表会在孵化器中提供精灵信息展示的功能
+
+isHot：代表是否热门
+isNew：代表是否新上架
+resId：精灵资源id
+skillInfo：技能id1;技能id2(必杀技能:名称,威力,怒气)
+charactor：特性描述
+getWay：获得方式描述
+go:获取路径:填模块名直接打开模块、数字一般代表跳转场景(70000,代表种植园;50000,代表小屋)
+-->
+<root>
+
+	<introduce>
+		<item id="802110" isNew="1" isHot="1" go="" />
+		<item id="802109" isNew="1" isHot="1" go="" />
+	</introduce>
+
+	<title>
+		<item resId="445" skillInfo="13225,13227" charactor="自身每2点怒气值能够使自己受到伤害减少1.5%" getWay="精灵大乱斗" go="PetMeleePanel"/>
+		<item resId="446" skillInfo="13225,13227" charactor="自身每2点怒气值能够使自己受到伤害减少1.5%" getWay="精灵大乱斗" go="PetMeleePanel"/>
+		<item resId="447" skillInfo="13225,13227" charactor="自身每2点怒气值能够使自己受到伤害减少1.5%" getWay="精灵大乱斗" go="PetMeleePanel"/>
+		<item resId="505" skillInfo="13309,13313" charactor="所有技能必中 受到火系技能攻击不受伤害且使自己恢复30点体力" getWay="魂器！王之火魄！" go="KingSoulWithFirePanel"/>
+		<item resId="506" skillInfo="13314,13318" charactor="所有技能必中 受到水系技能攻击不受伤害且使自己恢复30点体力" getWay="激战！王之水魄！" go="KingSoulWithWaterPanel"/>
+		<item resId="507" skillInfo="13319,13323" charactor="所有技能必中 受到草系技能攻击不受伤害且使自己恢复30点体力" getWay="速杀！王之草魄！" go="KingSoulWithGrassPanel"/>
+		<item resId="457" skillInfo="13390,13386" charactor="对手具有放松警惕时使用属性技能恢复30点体力" getWay="精灵大乱斗" go="PetMeleePanel"/>
+		<item resId="458" skillInfo="13390,13401" charactor="使用技能15%先制+1" getWay="尖角的大毛怪" go="70000"/>
+		<item resId="510" skillInfo="13421,13425" charactor="所有技能必中 受到飞行系技能攻击不受伤害且使自己恢复30点体力" getWay="王之空魄！" go="KingSoulWithSkyPanel"/>
+		<item resId="511" skillInfo="13542,13546" charactor="所有技能必中 受到风系技能攻击不受伤害且使自己恢复30点体力" getWay="王之风魄！" go="KingSoulWithWindActPanel"/>
+		<item resId="512" skillInfo="13360,13364" charactor="所有技能必中 受到冰系技能攻击不受伤害且使自己恢复30点体力" getWay="王之冰魄！" go=""/>
+		<item resId="513" skillInfo="13610,13611" charactor="所有技能必中 受到虫系技能攻击不受伤害且使自己恢复30点体力" getWay="王之虫魄！" go="KingBagPanel"/>
+		<item resId="272" skillInfo="11755,11757" charactor="使用威力100以下的技能时伤害增加10%" getWay="萌宠在线送" go=""/>
+		<item resId="273" skillInfo="11755,11757" charactor="使用威力100以下的技能时伤害增加10%" getWay="萌宠在线送" go=""/>
+
+		<item resId="164" skillInfo="10087,10870" charactor="自己每受到1点伤害就获得1点弹力，累积到200点弹力时进入崩坏状态" getWay="进食山" go=""/>
+		<item resId="165" skillInfo="10087,10870" charactor="自己每受到1点伤害就获得1点弹力，累积到200点弹力时进入崩坏状态" getWay="进食山" go=""/>
+
+
+		<item resId="518" skillInfo="13702,13704" charactor="所有技能必中 受到超能系技能攻击不受伤害且使自己恢复30点体力" getWay="探索王之超魄" go=""/>
+
+		<item resId="361" skillInfo="12169,12178" charactor="首发 出场的第一回合先制+1且必中" getWay="天宫四宿（绝版）" go=""/>
+		<item resId="362" skillInfo="12169,12178" charactor="首发 出场的第一回合先制+1且必中" getWay="天宫四宿（绝版）" go=""/>
+		<item resId="363" skillInfo="12169,12178" charactor="首发 出场的第一回合先制+1且必中" getWay="天宫四宿（绝版）" go=""/>
+
+		<item resId="379" skillInfo="12447,12453" charactor="自己具有能力弱化时受到的伤害减少20%" getWay="天宫四宿（绝版）" go=""/>
+		<item resId="380" skillInfo="12447,12453" charactor="自己具有能力弱化时受到的伤害减少20%" getWay="天宫四宿（绝版）" go=""/>
+		<item resId="381" skillInfo="12447,12453" charactor="自己具有能力弱化时受到的伤害减少20%" getWay="天宫四宿（绝版）" go=""/>
+
+		<item resId="416" skillInfo="12933,12937" charactor="当对手造成的伤害高于100点时 30%几率使对手物攻或特攻中任意一项能力下降1级" getWay="天宫四宿（绝版）" go=""/>
+		<item resId="417" skillInfo="12933,12937" charactor="当对手造成的伤害高于100点时 30%几率使对手物攻或特攻中任意一项能力下降1级" getWay="天宫四宿（绝版）" go=""/>
+		<item resId="418" skillInfo="12933,12937" charactor="当对手造成的伤害高于100点时 30%几率使对手物攻或特攻中任意一项能力下降1级" getWay="天宫四宿（绝版）" go=""/>
+
+
+		<item resId="284" skillInfo="11842,11843" charactor="每具有1层特防值时减少20点受到的特攻伤害" getWay="精元商城" go=""/>
+		<item resId="285" skillInfo="11842,11843" charactor="每具有1层特防值时减少20点受到的特攻伤害" getWay="精元商城" go=""/>
+
+		<item resId="286" skillInfo="11890,11891" charactor="站立时每回合额外增加5点怒气 独立时造成的伤害增加10%" getWay="精元商城" go=""/>
+		<item resId="287" skillInfo="11890,11891" charactor="站立时每回合额外增加5点怒气 独立时造成的伤害增加10%" getWay="精元商城" go=""/>
+
+		<item resId="288" skillInfo="10081,11918" charactor="对手具有能力提升状态时自己获得开屏效果" getWay="精元商城" go=""/>
+		<item resId="289" skillInfo="10081,11918" charactor="对手具有能力提升状态时自己获得开屏效果" getWay="精元商城" go=""/>
+
+		<item resId="396" skillInfo="12657,12658" charactor="雨天时每回合恢复30点体力" getWay="精元商城" go=""/>
+
+		<item resId="411" skillInfo="12826,12827" charactor="火系技能伤害增加5%" getWay="精元商城" go=""/>
+
+		<item resId="419" skillInfo="12969,12970" charactor="晴天环境下遇到微弱属性时造成的伤害增加10%" getWay="精元商城" go=""/>
+
+		<item resId="184" skillInfo="11027,11028" charactor="物防值超过500时受到的物理伤害减少10%" getWay="精元商城" go=""/>
+		<item resId="185" skillInfo="11027,11028" charactor="物防值超过500时受到的物理伤害减少10%" getWay="精元商城" go=""/>
+
+		<item resId="186" skillInfo="11043,11044" charactor="特防值超过500时受到的特殊伤害减少10%" getWay="精元商城" go=""/>
+		<item resId="187" skillInfo="11043,11044" charactor="特防值超过500时受到的特殊伤害减少10%" getWay="精元商城" go=""/>
+
+		<item resId="231" skillInfo="11476,11477" charactor="使必杀技造成的伤害增加10%" getWay="精元商城" go=""/>
+		<item resId="232" skillInfo="11476,11477" charactor="使必杀技造成的伤害增加10%" getWay="精元商城" go=""/>
+		<item resId="233" skillInfo="11476,11477" charactor="使必杀技造成的伤害增加10%" getWay="精元商城" go=""/>
+
+		<item resId="169" skillInfo="11596,11597" charactor="对手具有恶魔契约时 自己造成致命一击可恢复60点体力" getWay="精元商城" go=""/>
+		<item resId="170" skillInfo="11596,11597" charactor="对手具有恶魔契约时 自己造成致命一击可恢复60点体力" getWay="精元商城" go=""/>
+
+		<item resId="222" skillInfo="11337,11338" charactor="自己有美食主义时所有攻击性技能威力增加5" getWay="精元商城" go=""/>
+		<item resId="223" skillInfo="11337,11338" charactor="自己有美食主义时所有攻击性技能威力增加5" getWay="精元商城" go=""/>
+
+		<item resId="290" skillInfo="11932,11933" charactor="炎化状态下只有受到超过自己剩余体力2倍的伤害才会被击败 否则会余下1点体力" getWay="精元商城" go=""/>
+		<item resId="291" skillInfo="11932,11933" charactor="炎化状态下只有受到超过自己剩余体力2倍的伤害才会被击败 否则会余下1点体力" getWay="精元商城" go=""/>
+		<item resId="292" skillInfo="11932,11933" charactor="炎化状态下只有受到超过自己剩余体力2倍的伤害才会被击败 否则会余下1点体力" getWay="精元商城" go=""/>
+
+		<item resId="538" skillInfo="13519,13520" charactor="攻击技能造成伤害后恢复10点体力" getWay="精元商城" go=""/>
+		<item resId="539" skillInfo="13519,13520" charactor="攻击技能造成伤害后恢复10点体力" getWay="精元商城" go=""/>
+
+		<item resId="161" skillInfo="10857,10858" charactor="怒气100时，造成的伤害增加25%；怒气大于70，造成伤害增加15%；怒气大于50，造成伤害增加10%" getWay="精元商城" go=""/>
+		<item resId="162" skillInfo="10857,10858" charactor="怒气100时，造成的伤害增加25%；怒气大于70，造成伤害增加15%；怒气大于50，造成伤害增加10%" getWay="精元商城" go=""/>
+		<item resId="163" skillInfo="10857,10858" charactor="怒气100时，造成的伤害增加25%；怒气大于70，造成伤害增加15%；怒气大于50，造成伤害增加10%" getWay="精元商城" go=""/>
+
+
+		<item resId="259" skillInfo="11674,11675" charactor="对手怒气100时，自己造成的伤害增加25%；怒气大于70，造成伤害增加15%；怒气大于50，造成伤害增加10%" getWay="精元商城" go=""/>
+		<item resId="260" skillInfo="11674,11675" charactor="对手怒气100时，自己造成的伤害增加25%；怒气大于70，造成伤害增加15%；怒气大于50，造成伤害增加10%" getWay="精元商城" go=""/>
+		<item resId="261" skillInfo="11674,11675" charactor="对手怒气100时，自己造成的伤害增加25%；怒气大于70，造成伤害增加15%；怒气大于50，造成伤害增加10%" getWay="精元商城" go=""/>
+
+		<item resId="255" skillInfo="11644,11645" charactor="每送完一封信件即可恢复30体力" getWay="精元商城" go=""/>
+		<item resId="256" skillInfo="11644,11645" charactor="每送完一封信件即可恢复30体力" getWay="精元商城" go=""/>
+
+
+		<item resId="16" skillInfo="10096,10097" charactor="体重超过100KG时造成的所有伤害增加10%" getWay="布鲁托生日派对" go=""/>
+		<item resId="17" skillInfo="10096,10097" charactor="体重超过100KG时造成的所有伤害增加10%" getWay="布鲁托生日派对" go=""/>
+
+		<item resId="320" skillInfo="12117,12118" charactor="自己每新获得1个影子时 都能为自己恢复20点体力" getWay="精元商城" go=""/>
+		<item resId="321" skillInfo="12117,12118" charactor="自己每新获得1个影子时 都能为自己恢复20点体力" getWay="精元商城" go=""/>
+		<item resId="322" skillInfo="12117,12118" charactor="自己每新获得1个影子时 都能为自己恢复20点体力" getWay="精元商城" go=""/>
+
+		<item resId="323" skillInfo="12286,12287" charactor="每次造成的伤害若低于100则恢复自己1/12体力" getWay="精元商城" go=""/>
+		<item resId="324" skillInfo="12286,12287" charactor="每次造成的伤害若低于100则恢复自己1/12体力" getWay="精元商城" go=""/>
+		<item resId="325" skillInfo="12286,12287" charactor="每次造成的伤害若低于100则恢复自己1/12体力" getWay="精元商城" go=""/>
+
+		<item resId="326" skillInfo="12404,12405" charactor="普通系技能对自己的命中率减少35%" getWay="精元商城" go=""/>
+		<item resId="327" skillInfo="12404,12405" charactor="普通系技能对自己的命中率减少35%" getWay="精元商城" go=""/>
+		<item resId="328" skillInfo="12404,12405" charactor="普通系技能对自己的命中率减少35%" getWay="精元商城" go=""/>
+
+		<item resId="329" skillInfo="12515,12516" charactor="对手具有弱化状态时 自己每次攻击能恢复30体力" getWay="精元商城" go=""/>
+		<item resId="330" skillInfo="12515,12516" charactor="对手具有弱化状态时 自己每次攻击能恢复30体力" getWay="精元商城" go=""/>
+		<item resId="331" skillInfo="12515,12516" charactor="对手具有弱化状态时 自己每次攻击能恢复30体力" getWay="精元商城" go=""/>
+
+		<item resId="332" skillInfo="12674,12675" charactor="对手使用属性技能时自己获得10点怒气" getWay="精元商城" go=""/>
+		<item resId="333" skillInfo="12674,12675" charactor="对手使用属性技能时自己获得10点怒气" getWay="精元商城" go=""/>
+		<item resId="334" skillInfo="12674,12675" charactor="对手使用属性技能时自己获得10点怒气" getWay="精元商城" go=""/>
+
+		<item resId="335" skillInfo="12732,12733" charactor="若对手所有能力值高于自己 则自己受到伤害减少10% （使自己获得嫉妒状态）" getWay="精元商城" go=""/>
+		<item resId="336" skillInfo="12732,12733" charactor="若对手所有能力值高于自己 则自己受到伤害减少10% （使自己获得嫉妒状态）" getWay="精元商城" go=""/>
+		<item resId="337" skillInfo="12732,12733" charactor="若对手所有能力值高于自己 则自己受到伤害减少10% （使自己获得嫉妒状态）" getWay="精元商城" go=""/>
+
+		<item resId="338" skillInfo="12842,12843" charactor="当自身能力强化大于对手时自己收到的伤害减少5%" getWay="精元商城" go=""/>
+		<item resId="339" skillInfo="12842,12843" charactor="当自身能力强化大于对手时自己收到的伤害减少5%" getWay="精元商城" go=""/>
+		<item resId="340" skillInfo="12842,12843" charactor="当自身能力强化大于对手时自己收到的伤害减少5%" getWay="精元商城" go=""/>
+		<item resId="508" skillInfo="13804,13806" charactor="所有技能必中 受到地面系技能攻击不受伤害且使自己恢复30点体力" getWay="精元商城" go=""/>
+		<item resId="518" skillInfo="13609,13611" charactor="所有技能必中 受到虫系技能攻击不受伤害且使自己恢复30点体力" getWay="精元商城" go=""/>
+		<item resId="37" skillInfo="10233,10231" charactor="在炎热环境下自己技能命中率增加10%" getWay="精元商城" go=""/>
+		<item resId="38" skillInfo="10233,10231" charactor="在炎热环境下自己技能命中率增加10%" getWay="精元商城" go=""/>
+
+		<item resId="404" skillInfo="12740,12749" charactor="攻击技能附加15%当前速度值的固定伤害（速度提升也计算在内）" getWay="精元商城" go=""/>
+		<item resId="405" skillInfo="12740,12749" charactor="攻击技能附加15%当前速度值的固定伤害（速度提升也计算在内）" getWay="精元商城" go=""/>
+
+		<item resId="581" skillInfo="13736,13742" charactor="连续使用属性技能使对手流血3回合 每回合失去50点体力" getWay="精元商城" go=""/>
+
+		<item resId="585" skillInfo="13788,13794" charactor="对手每1项能力弱化状态可使自己每回合恢复5点体力" getWay="精元商城" go=""/>
+
+		<item resId="584" skillInfo="13827,13836" charactor="攻击技能无视对手护盾 属性技能释放成功后下回合技能必中" getWay="精元商城" go=""/>
+
+		<item resId="600" skillInfo="13901,13910" charactor="使用攻击技能有5%的概率恢复满怒气" getWay="精元商城" go=""/>
+
+		<item resId="582" skillInfo="13754,13762" charactor="受到致命一击后使对手受到165点伤害 免疫重心不稳状态" getWay="精元商城" go=""/>
+		<item resId="583" skillInfo="13754,13762" charactor="受到致命一击后使对手受到165点伤害 免疫重心不稳状态" getWay="精元商城" go=""/>
+
+		<item resId="588" skillInfo="13809,13817" charactor="被击败后会使对手速度弱化1级 特攻弱化2级" getWay="精元商城" go=""/>
+		<item resId="589" skillInfo="13809,13817" charactor="被击败后会使对手速度弱化1级 特攻弱化2级" getWay="精元商城" go=""/>
+
+		<item resId="591" skillInfo="13845,13851" charactor="对手每1项能力强化状态可使自己每回合恢复5点体力" getWay="精元商城" go=""/>
+		<item resId="592" skillInfo="13845,13851" charactor="对手每1项能力强化状态可使自己每回合恢复5点体力" getWay="精元商城" go=""/>
+
+		<item resId="596" skillInfo="13889,13895" charactor="被击败后使对手获得死亡烙印" getWay="精元商城" go=""/>
+		<item resId="597" skillInfo="13889,13895" charactor="被击败后使对手获得死亡烙印" getWay="精元商城" go=""/>
+		<item resId="598" skillInfo="13889,13895" charactor="被击败后使对手获得死亡烙印" getWay="精元商城" go=""/>
+
+		<item resId="509" skillInfo="13879,13883" charactor="所有技能必中 受到沙漠系技能攻击不受伤害且使自己恢复30点体力" getWay="精元商城" go=""/>
+
+		<item resId="249" skillInfo="11573,11582" charactor="自己具有神圣状态时不会受到致命一击" getWay="精元商城" go=""/>
+		<item resId="250" skillInfo="11573,11582" charactor="自己具有神圣状态时不会受到致命一击" getWay="精元商城" go=""/>
+
+		<item resId="535" skillInfo="13529,13537" charactor="死亡后会使对手烧伤且下回合无法使用任何技能" getWay="精元商城" go=""/>
+		<item resId="536" skillInfo="13529,13537" charactor="死亡后会使对手烧伤且下回合无法使用任何技能" getWay="精元商城" go=""/>
+		<item resId="537" skillInfo="13529,13537" charactor="死亡后会使对手烧伤且下回合无法使用任何技能" getWay="精元商城" go=""/>
+
+		<item resId="55" skillInfo="10332,10340" charactor="替换上场时造成的伤害增加10%" getWay="精元商城" go=""/>
+		<item resId="56" skillInfo="10332,10340" charactor="替换上场时造成的伤害增加10%" getWay="精元商城" go=""/>
+		<item resId="57" skillInfo="10332,10340" charactor="替换上场时造成的伤害增加10%" getWay="精元商城" go=""/>
+
+		<item resId="178" skillInfo="10941,10950" charactor="自己攻击性技能造成的伤害额外附加固定伤害，附加值等于自己的潜力值" getWay="精元商城" go=""/>
+
+		<item resId="249" skillInfo="11573,11582" charactor="自己具有神圣状态时不会受到致命一击" getWay="精元商城" go=""/>
+		<item resId="250" skillInfo="11573,11582" charactor="自己具有神圣状态时不会受到致命一击" getWay="精元商城" go=""/>
+
+		<item resId="90" skillInfo="11188,11190" charactor="每次出场时可以将环境效果转换为雷暴天" getWay="精元商城" go=""/>
+		<item resId="495" skillInfo="13054,13055" charactor="在古战场环境下物攻技能有10%概率连击+1" getWay="精元商城" go=""/>
+		<item resId="494" skillInfo="13303,13308" charactor="使用地面系技能造成致命一击后使天气转变为地震" getWay="精元商城" go=""/>
+		<item resId="606" skillInfo="13947,13953" charactor="使用必杀技会使环境变为夜幕 夜幕状态下闪避率提高15%" getWay="精元商城" go=""/>
+
+		<item resId="515" skillInfo="14062,14064" charactor="所有技能必中 受到光系技能攻击不受伤害且使自己恢复30点体力" getWay="精元商城" go=""/>
+
+		<item resId="625" skillInfo="14119,14131" charactor="自身具有萨伦军火状态时释放属性技能15%不消耗怒气" getWay="精元商城" go=""/>
+		<item resId="626" skillInfo="14119,14131" charactor="自身具有萨伦军火状态时释放属性技能15%不消耗怒气" getWay="精元商城" go=""/>
+		<item resId="627" skillInfo="14119,14131" charactor="自身具有萨伦军火状态时释放属性技能15%不消耗怒气" getWay="精元商城" go=""/>
+
+		<item resId="448" skillInfo="13238,13249" charactor="攻击性技能造成致命一击后使环境变为雨天" getWay="精元商城" go=""/>
+		<item resId="449" skillInfo="13238,13249" charactor="攻击性技能造成致命一击后使环境变为雨天" getWay="精元商城" go=""/>
+		<item resId="450" skillInfo="13238,13249" charactor="攻击性技能造成致命一击后使环境变为雨天" getWay="精元商城" go=""/>
+
+		<item resId="440" skillInfo="13188,13200" charactor="上场第1回合受到伤害减少60%" getWay="精元商城" go=""/>
+		<item resId="441" skillInfo="13188,13200" charactor="上场第1回合受到伤害减少60%" getWay="精元商城" go=""/>
+		<item resId="442" skillInfo="13188,13200" charactor="上场第1回合受到伤害减少60%" getWay="精元商城" go=""/>
+
+		<item resId="451" skillInfo="13270,13281" charactor="攻击性技能造成致命一击后使环境变为雷暴天" getWay="精元商城" go=""/>
+		<item resId="452" skillInfo="13270,13281" charactor="攻击性技能造成致命一击后使环境变为雷暴天" getWay="精元商城" go=""/>
+		<item resId="453" skillInfo="13270,13281" charactor="攻击性技能造成致命一击后使环境变为雷暴天" getWay="精元商城" go=""/>
+
+		<item resId="431" skillInfo="13077,13089" charactor="受到必杀技伤害后会立即回复20点怒气" getWay="精元商城" go=""/>
+		<item resId="432" skillInfo="13077,13089" charactor="受到必杀技伤害后会立即回复20点怒气" getWay="精元商城" go=""/>
+		<item resId="433" skillInfo="13077,13089" charactor="受到必杀技伤害后会立即回复20点怒气" getWay="精元商城" go=""/>
+
+		<item resId="422" skillInfo="12977,12988" charactor="若攻击性技能造成伤害低于100则有40%几率提升自己1级物防" getWay="精元商城" go=""/>
+		<item resId="423" skillInfo="12977,12988" charactor="若攻击性技能造成伤害低于100则有40%几率提升自己1级物防" getWay="精元商城" go=""/>
+
+		<item resId="519" skillInfo="13927,13930" charactor="所有技能必中 受到龙系技能攻击不受伤害且使自己恢复30点体力" getWay="精元商城" go=""/>
+
+		<item resId="619" skillInfo="14087,14098" charactor="自身具有能力下降效果时 攻击技能致命一击率提升10%" getWay="精元商城" go=""/>
+		<item resId="620" skillInfo="14087,14098" charactor="自身具有能力下降效果时 攻击技能致命一击率提升10%" getWay="精元商城" go=""/>
+
+		<item resId="516" skillInfo="14056,14058" charactor="所有技能必中 受到暗影系技能攻击不受伤害且使自己恢复30点体力" getWay="精元商城" go=""/>
+
+		<item resId="517" skillInfo="14139,14142" charactor="所有技能必中 受到神秘系技能攻击不受伤害且使自己恢复30点体力" getWay="精元商城" go=""/>
+
+		<item resId="504" skillInfo="14169,14172" charactor="所有技能必中 受到特质系技能攻击不受伤害且使自己恢复30点体力" getWay="精元商城" go=""/>
+		<item resId="628" skillInfo="14158,14161" charactor="自身具有任意能力下降状态时没回和回复50点体力" getWay="精元商城" go=""/>
+		<item resId="629" skillInfo="14158,14161" charactor="自身具有任意能力下降状态时没回和回复50点体力" getWay="精元商城" go=""/>
+
+		<item resId="520" skillInfo="14144,14145" charactor="所有技能必中 受到电系技能攻击不受伤害且使自己恢复30点体力" getWay="精元商城" go=""/>
+
+		<item resId="514" skillInfo="14133,14134" charactor="所有技能必中 受到战斗系技能攻击不受伤害且使自己恢复30点体力" getWay="精元商城" go=""/>
+	
+		<item resId="999" skillInfo="14324,14331" charactor="上场后怒气不低于30 自身不会被对手增加任何状态" getWay="精元商城" go=""/>
+		<item resId="1000" skillInfo="14324,14331" charactor="上场后怒气不低于30 自身不会被对手增加任何状态" getWay="精元商城" go=""/>
+
+		<item resId="637" skillInfo="14273,14282" charactor="若技能未命中则使自己恢复80点体力" getWay="精元商城" go=""/>
+		<item resId="638" skillInfo="14273,14282" charactor="若技能未命中则使自己恢复80点体力" getWay="精元商城" go=""/>
+
+		<item resId="234" skillInfo="11461,11462" charactor="除开场外任何情况下怒气都不少于25  怒气高于50时免疫异常状态" getWay="精元商城" go=""/>
+
+		<item resId="30" skillInfo="10180,10187" charactor="在雨天环境下水纹屏障的伤害吸收量增加50%" getWay="精元商城" go=""/>
+		<item resId="31" skillInfo="10180,10187" charactor="在雨天环境下水纹屏障的伤害吸收量增加50%" getWay="精元商城" go=""/>
+
+		<item resId="630" skillInfo="14180,14183" charactor="每次出场时可以将环境效果转换为雷暴天" getWay="精元商城" go=""/>
+
+		<item resId="641" skillInfo="14211,14212" charactor="自身每层弱化状态可使特攻技能致命一击率提高15%" getWay="精元商城" go=""/>
+
+		<item resId="503" skillInfo="13133,13134" charactor="免疫异常状态及不良状态，并且上场附带星移效果" getWay="精元商城" go=""/>
+		<item resId="827" skillInfo="16227,16228" charactor="免疫异常状态及不良状态，并且上场附带星移效果" getWay="精元商城" go=""/>
+
+
+		<item resId="496" skillInfo="12904,12905" charactor="自己将学习力分配到物攻的同时也会使特攻获得同样多的学习力" getWay="精元商城" go=""/>
+	
+		<item resId="395" skillInfo="12629,12630" charactor="击败对手时恢复自己1/6体力" getWay="精元商城" go=""/>
+
+		<item resId="412" skillInfo="12794,12795" charactor="击败对手时恢复自己30点怒气" getWay="精元商城" go=""/>
+
+		<item resId="454" skillInfo="13259,13260" charactor="使用属性技能减少对手2根稻草 当对手身上稻草大于5根时自己受到的物理攻击伤害减少20%" getWay="精元商城" go=""/>
+		<item resId="455" skillInfo="13259,13260" charactor="使用属性技能减少对手2根稻草 当对手身上稻草大于5根时自己受到的物理攻击伤害减少20%" getWay="精元商城" go=""/>
+
+		<item resId="655" skillInfo="14406,14407" charactor="使用地面系技能造成致命一击后使天气转变为地震" getWay="精元商城" go=""/>
+
+		<item resId="656" skillInfo="14417,14418" charactor="在古战场环境下物攻技能有10%概率连击+1" getWay="精元商城" go=""/>
+
+	    <item resId="654" skillInfo="14342,14343" charactor="除开场外任何情况下怒气都不少于25  怒气高于50时免疫异常状态" getWay="精元商城" go=""/>
+
+	    <item resId="643" skillInfo="14230,14231" charactor="若自剩余体力大于1则受到任何攻击都会余下1点体力" getWay="精元商城" go=""/>
+	    <item resId="644" skillInfo="14230,14231" charactor="若自剩余体力大于1则受到任何攻击都会余下1点体力" getWay="精元商城" go=""/>
+	    <item resId="645" skillInfo="14230,14231" charactor="若自剩余体力大于1则受到任何攻击都会余下1点体力" getWay="精元商城" go=""/>
+	    <item resId="126" skillInfo="10670,10679" charactor="在暴风雪环境下普通系技能伤害增加25%" getWay="精元商城" go=""/>
+	    <item resId="127" skillInfo="10670,10679" charactor="在暴风雪环境下普通系技能伤害增加25%" getWay="精元商城" go=""/>
+
+
+	    <item resId="154" skillInfo="11397,11398" charactor="特攻技能伤害增加5% 物攻技能命中率增加5%" getWay="精元商城" go=""/>
+	    <item resId="155" skillInfo="11397,11398" charactor="特攻技能伤害增加5% 物攻技能命中率增加5%" getWay="精元商城" go=""/>
+
+	    <item resId="389" skillInfo="12556,12558" charactor="受到雄性精灵的伤害减少15% 对雌性精灵造成的伤害增加15%" getWay="精元商城" go=""/>
+	    <item resId="678" skillInfo="14681,13139" charactor="免疫异常状态 上场附带星移效果" getWay="精元商城" go=""/>
+
+	    <item resId="664" skillInfo="13941,14510" charactor="使用必杀技会使环境变为夜幕 夜幕状态下闪避率提高15%" getWay="精元商城" go=""/>
+	    <item resId="665" skillInfo="14489,14491" charactor="自身每层弱化状态可使物攻技能致命一击率提高15%" getWay="精元商城" go=""/>
+
+	    <item resId="377" skillInfo="12420,12421" charactor="在瞬步状态下击败对手时不消耗瞬步状态" getWay="精元商城" go=""/>
+	    <item resId="378" skillInfo="12420,12421" charactor="在瞬步状态下击败对手时不消耗瞬步状态" getWay="精元商城" go=""/>
+
+	    <item resId="79" skillInfo="10473,10474" charactor="对手被破防时自己伤害增加10%" getWay="精元商城" go=""/>
+	    <item resId="80" skillInfo="10473,10474" charactor="对手被破防时自己伤害增加10%" getWay="精元商城" go=""/>
+
+	    <item resId="156" skillInfo="11011,11012" charactor="飞行系技能累积命中对手2次后 自己怒气增加20" getWay="精元商城" go=""/>
+	    <item resId="157" skillInfo="11011,11012" charactor="飞行系技能累积命中对手2次后 自己怒气增加20" getWay="精元商城" go=""/>
+
+        <item resId="81" skillInfo="10487,10488" charactor="闪避物理攻击的几率增加5%" getWay="精元商城" go=""/>
+        <item resId="82" skillInfo="10487,10488" charactor="闪避物理攻击的几率增加5%" getWay="精元商城" go=""/>
+
+        <item resId="527" skillInfo="13465,13466" charactor="受到致死攻击后会有40%概率使对手失去40点体力" getWay="精元商城" go=""/>
+        <item resId="528" skillInfo="13465,13466" charactor="受到致死攻击后会有40%概率使对手失去40点体力" getWay="精元商城" go=""/>
+        <item resId="529" skillInfo="13465,13466" charactor="受到致死攻击后会有40%概率使对手失去40点体力" getWay="精元商城" go=""/>
+
+        <item resId="298" skillInfo="11994,11995" charactor="怒气高于对手时 造成的伤害增加10%" getWay="精元商城" go=""/>
+        <item resId="299" skillInfo="11994,11995" charactor="怒气高于对手时 造成的伤害增加10%" getWay="精元商城" go=""/>
+        <item resId="300" skillInfo="11994,11995" charactor="怒气高于对手时 造成的伤害增加10%" getWay="精元商城" go=""/>
+
+        <item resId="392" skillInfo="12574,12575" charactor=" 上场自带沙暴：每回合结束后附加对手当前体力尾数相同的特攻值 最大叠加100" getWay="精元商城" go=""/>
+        <item resId="393" skillInfo="12574,12575" charactor=" 上场自带沙暴：每回合结束后附加对手当前体力尾数相同的特攻值 最大叠加100" getWay="精元商城" go=""/>
+        <item resId="394" skillInfo="12574,12575" charactor=" 上场自带沙暴：每回合结束后附加对手当前体力尾数相同的特攻值 最大叠加100" getWay="精元商城" go=""/>
+
+        <item resId="358" skillInfo="12223,12224" charactor="怒气低于对手时 造成的伤害增加10%" getWay="精元商城" go=""/>
+        <item resId="359" skillInfo="12223,12224" charactor="怒气低于对手时 造成的伤害增加10%" getWay="精元商城" go=""/>
+        <item resId="360" skillInfo="12223,12224" charactor="怒气低于对手时 造成的伤害增加10%" getWay="精元商城" go=""/>
+
+        <item resId="408" skillInfo="12763,12764" charactor=" 上场自带煞影：每回合结束后附加双方当前体力尾数最高的数字相同的物攻值 最大叠加100" getWay="精元商城" go=""/>
+        <item resId="409" skillInfo="12763,12764" charactor=" 上场自带煞影：每回合结束后附加双方当前体力尾数最高的数字相同的物攻值 最大叠加100" getWay="精元商城" go=""/>
+        <item resId="410" skillInfo="12763,12764" charactor=" 上场自带煞影：每回合结束后附加双方当前体力尾数最高的数字相同的物攻值 最大叠加100" getWay="精元商城" go=""/>
+
+        <item resId="382" skillInfo="12467,12468" charactor=" 上场自带疾风：每回合结束后附加自己当前体力尾数相同的速度值 最大叠加100" getWay="精元商城" go=""/>
+        <item resId="383" skillInfo="12467,12468" charactor=" 上场自带疾风：每回合结束后附加自己当前体力尾数相同的速度值 最大叠加100" getWay="精元商城" go=""/>
+        <item resId="384" skillInfo="12467,12468" charactor=" 上场自带疾风：每回合结束后附加自己当前体力尾数相同的速度值 最大叠加100" getWay="精元商城" go=""/>
+
+        <item resId="424" skillInfo="13022,13023" charactor="受到致命伤害时有5%几率不死 并恢复60体力" getWay="精元商城" go=""/>
+        <item resId="425" skillInfo="13022,13023" charactor="受到致命伤害时有5%几率不死 并恢复60体力" getWay="精元商城" go=""/>
+        <item resId="426" skillInfo="13022,13023" charactor="受到致命伤害时有5%几率不死 并恢复60体力" getWay="精元商城" go=""/>
+
+        <item resId="601" skillInfo="13963,13964" charactor="被龙系精灵换上场后会随机使自己一项能力强化" getWay="精元商城" go=""/>
+        <item resId="602" skillInfo="13963,13964" charactor="被龙系精灵换上场后会随机使自己一项能力强化" getWay="精元商城" go=""/>
+        <item resId="603" skillInfo="13963,13964" charactor="被龙系精灵换上场后会随机使自己一项能力强化" getWay="精元商城" go=""/>
+
+        <item resId="684" skillInfo="14796,14797" charactor="只有受到超过自己剩余体力2倍的伤害才会被击败 否则会余下1点体力" getWay="精元商城" go=""/>
+
+        <item resId="190" skillInfo="12420,12421" charactor="在瞬步状态下击败对手时不消耗瞬步状态" getWay="精元商城" go=""/>
+        <item resId="191" skillInfo="12420,12421" charactor="在瞬步状态下击败对手时不消耗瞬步状态" getWay="精元商城" go=""/>
+
+        <item resId="636" skillInfo="14267,14268" charactor="受到伤害后有50%的几率增加15点速度值 最多叠加75点" getWay="精元商城" go=""/>
+
+        <item resId="593" skillInfo="13875,13876" charactor="免疫异常状态 受到致命一击后获得苍穹之怒状态。" getWay="精元商城" go=""/>
+        <item resId="594" skillInfo="13875,13876" charactor="免疫异常状态 受到致命一击后获得苍穹之怒状态。" getWay="精元商城" go=""/>
+        <item resId="595" skillInfo="13875,13876" charactor="免疫异常状态 受到致命一击后获得苍穹之怒状态。" getWay="精元商城" go=""/>
+
+        <item resId="636" skillInfo="14766,14767" charactor="免疫异常状态 上场附带星移效果。" getWay="精元商城" go=""/>
+
+        <item resId="697" skillInfo="14986,14987" charactor="每回合使对手损失3%的最大体力值。" getWay="精元商城" go=""/>
+
+        <item resId="658" skillInfo="14446,14447" charactor="每次命中对手后 额外增加5点怒气。" getWay="精元商城" go=""/>
+        <item resId="659" skillInfo="14446,14447" charactor="每次命中对手后 额外增加5点怒气。" getWay="精元商城" go=""/>
+
+        <item resId="301" skillInfo="11859,11860" charactor="免疫不良状态 体力低于1/8时会自动恢复1/8体力。" getWay="精元商城" go=""/>
+
+        <item resId="443" skillInfo="13205,13212" charactor="当环境转变为雨天时会使自己恢复1/4体力。" getWay="精元商城" go=""/>
+        <item resId="444" skillInfo="13205,13212" charactor="当环境转变为雨天时会使自己恢复1/4体力。" getWay="精元商城" go=""/>
+
+        <item resId="397" skillInfo="12635,12644" charactor="怒气高于30时造成的伤害增加5%。" getWay="精元商城" go=""/>
+        <item resId="398" skillInfo="12635,12644" charactor="怒气高于30时造成的伤害增加5%。" getWay="精元商城" go=""/>
+
+        <item resId="680" skillInfo="14706,14712" charactor="先出手时 所有攻击性机能伤害增加10%。" getWay="精元商城" go=""/>
+        <item resId="681" skillInfo="14706,14712" charactor="先出手时 所有攻击性机能伤害增加10%。" getWay="精元商城" go=""/>
+
+        <item resId="682" skillInfo="14731,14734" charactor="受到伤害超过100时减免20点伤害。" getWay="精元商城" go=""/>
+
+        <item resId="679" skillInfo="14694,14697" charactor="血量低于20%致命一击率为40%" getWay="精元商城" go=""/>
+
+        <item resId="695" skillInfo="14970,14971" charactor="血量低于1/4时 每回合额外恢复10点怒气" getWay="精元商城" go=""/>
+
+        <item resId="689" skillInfo="14864,14865" charactor="攻击造成致命一击时速度强化2级" getWay="精元商城" go=""/>
+
+        <item resId="158" skillInfo="12857,12858" charactor="使用带苍月的技能使对手获得坠地状态 使用破地技能可使对手获得滞空状态 两种状态不共存" getWay="精元商城" go=""/>
+        <item resId="159" skillInfo="12857,12858" charactor="使用带苍月的技能使对手获得坠地状态 使用破地技能可使对手获得滞空状态 两种状态不共存" getWay="精元商城" go=""/>
+        <item resId="160" skillInfo="12857,12858" charactor="使用带苍月的技能使对手获得坠地状态 使用破地技能可使对手获得滞空状态 两种状态不共存" getWay="精元商城" go=""/>
+
+        <item resId="713" skillInfo="15137,15138" charactor="自身具有上古体质状态时使用属性技能可以使自己恢复30点体力" getWay="精元商城" go=""/>
+        <item resId="714" skillInfo="15137,15138" charactor="自身具有上古体质状态时使用属性技能可以使自己恢复30点体力" getWay="精元商城" go=""/>
+
+        <item resId="720" skillInfo="15216,15217" charactor="自己每回合恢复20点体力" getWay="精元商城" go=""/>
+
+        <item resId="642" skillInfo="15243,15244" charactor="每3回合会产生一个武魂护体护盾" getWay="精元商城" go=""/>
+
+        <item resId="715" skillInfo="15120,15121" charactor="每次受到攻击性技能伤害时有17%的概率反弹给对手55点伤害" getWay="精元商城" go=""/>
+
+        <item resId="657" skillInfo="14458,14462" charactor="使用属性技能使自己回复当前体力的1/10" getWay="精元商城" go=""/>
+
+        <item resId="308" skillInfo="11873,11874" charactor="对手流血时 自己的物攻技能威力增加10" getWay="精元商城" go=""/>
+
+        <item resId="309" skillInfo="11947,11948" charactor="自己造成致命一击时可使对手的防御类强化效果降低1级，对手未强化则无效" getWay="精元商城" go=""/>
+
+        <item resId="310" skillInfo="12081,12082" charactor="使物攻技能额外附带该技能35%威力的固定伤害" getWay="精元商城" go=""/>
+
+        <item resId="311" skillInfo="12192,12193" charactor="每消耗1个冰洁环可使自己特攻值增加10点 最大60点" getWay="精元商城" go=""/>
+
+        <item resId="312" skillInfo="12316,12317" charactor="对手体力大于1/2时 自己受到的伤害减少20%" getWay="精元商城" go=""/>
+
+        <item resId="313" skillInfo="12385,12386" charactor="自己具有百草丰茂状态时草系技能命中后会恢复自己30点体力" getWay="精元商城" go=""/>
+
+        <item resId="314" skillInfo="12529,12530" charactor="自己每减少2%的体力 受到的伤害则减少1%" getWay="精元商城" go=""/>
+
+        <item resId="315" skillInfo="12717,12718" charactor="受到伤害时伤害值为偶数则恢复1/8体力" getWay="精元商城" go=""/>
+
+        <item resId="316" skillInfo="12887,12888" charactor="当技能吸收到体力时会额外增加10点物攻值和10点特防值" getWay="精元商城" go=""/>
+
+        <item resId="317" skillInfo="13151,13152" charactor="对手处于流血状态时自身每回合恢复25点体力" getWay="精元商城" go=""/>
+
+        <item resId="318" skillInfo="13338,13339" charactor="当自己体力低于1/4时 所有治疗技能效果额外增加35%" getWay="精元商城" go=""/>
+
+        <item resId="319" skillInfo="13494,13495" charactor="造成致命一击后额外恢复30点体力" getWay="精元商城" go=""/>
+
+        <item resId="302" skillInfo="12208,12209" charactor="免疫不良状态 体力为1时怒气回满" getWay="精元商城" go=""/>
+
+        <item resId="303" skillInfo="12437,12438" charactor="免疫不良状态 怒气到达100后可继续获得储存怒气并自动进行怒气回流 满值100" getWay="精元商城" go=""/>
+
+        <item resId="304" skillInfo="12593,12594" charactor="免疫不良状态 免疫冰冻状态 当回合没有受到伤害则增加自己10点怒气" getWay="精元商城" go=""/>
+
+        <item resId="305" skillInfo="13007,13008" charactor="免疫不良状态 一旦受到致命一击则提升自己双攻" getWay="精元商城" go=""/>
+
+        <item resId="306" skillInfo="12810,12811" charactor="免疫不良状态 一旦受到致命一击则提升自己双防" getWay="精元商城" go=""/>
+
+        <item resId="307" skillInfo="13102,13103" charactor="免疫不良状态 闪避对手攻击后立即回复35点体力" getWay="精元商城" go=""/>
+        <item resId="938" skillInfo="17192,17193" charactor="免疫不良状态 闪避对手攻击后立即回复35点体力" getWay="精元商城" go=""/>
+
+
+        <item resId="739" skillInfo="15437,15438" charactor="免疫异常状态 先出手时立即恢复25点体力" getWay="精元商城" go=""/>
+
+
+       <item resId="693" skillInfo="14912,14913" charactor="自身能力强化状态大于2项时受到致死攻击会反弹500点伤害给对手" getWay="精元商城" go=""/>
+
+      <item resId="677" skillInfo="14668,14669" charactor="上场获得祝福女神状态 25%吸收对手造成的伤害并回复35点体力" getWay="精元商城" go=""/>
+
+      <item resId="687" skillInfo="14783,14784" charactor="对手没有任何强化状态时造成伤害减少35%" getWay="精元商城" go=""/>
+
+	  <item resId="701" skillInfo="15029,15030" charactor="每换场1次可使自己恢复60点体力" getWay="精元商城" go=""/>
+      <item resId="702" skillInfo="15029,15030" charactor="每换场1次可使自己恢复60点体力" getWay="精元商城" go=""/>
+
+      <item resId="671" skillInfo="14597,14598" charactor="击败对手时10%概率使自己恢复500点体力" getWay="精元商城" go=""/>
+
+      <item resId="779" skillInfo="15796,15806" charactor="自身体力高于1/4时被击败则使当前对手获得堕落领域" getWay="精元商城" go=""/>
+      <item resId="243" skillInfo="11525,11526" charactor="每次特攻技能可获得1层元气 特攻技能打出致命一击时获得2层 可叠加3次" getWay="精元商城" go=""/>
+      <item resId="244" skillInfo="11525,11526" charactor="每次特攻技能可获得1层元气 特攻技能打出致命一击时获得2层 可叠加3次" getWay="精元商城" go=""/>
+
+      <item resId="725" skillInfo="15303,15304" charactor="造成伤害大于100点25%使自己获得物攻强化" getWay="精元商城" go=""/>
+
+      <item resId="723" skillInfo="15253,15264" charactor="精灵背包里每有一种水果猫时 自身除血量外所有属性增加20%" getWay="精元商城" go=""/>
+
+      <item resId="700" skillInfo="15183,15189" charactor="体力低于1/2时受到对手攻击使对手怒气减少5点" getWay="精元商城" go=""/>
+
+      <item resId="429" skillInfo="13066,13075" charactor="每使用一个带维度的技能都会增加相应维度数2倍的怒气值" getWay="精元商城" go=""/>
+
+      <item resId="757" skillInfo="15587,15586" charactor="每次被攻击后有10%几率使怒气增加到100点" getWay="精元商城" go=""/>
+
+      <item resId="745" skillInfo="15507,15506" charactor="技能命中对手后出现致命一击时自身可获得圣爆效果 最多可累计3层" getWay="精元商城" go=""/>
+
+	  <item resId="746" skillInfo="15507,15506" charactor="技能命中对手后出现致命一击时自身可获得圣爆效果 最多可累计3层" getWay="精元商城" go=""/>
+
+      <item resId="794" skillInfo="15931,15932" charactor="鬼爪时每回合有15%概率物攻增加1级 鬼骨时每回合15%概率物防强化1级" getWay="精元商城" go=""/>
+
+      <item resId="795" skillInfo="15939,15938" charactor="鬼爪时每回合有15%概率物攻增加1级 鬼骨时每回合15%概率物防强化1级" getWay="精元商城" go=""/>
+
+      <item resId="693" skillInfo="14912,14911" charactor="自身能力强化状态大于2项时受到致死攻击会反弹500点伤害给对手" getWay="精元商城" go=""/>
+
+	  <item resId="677" skillInfo="14668,14667" charactor="上场获得祝福女神状态 25%吸收对手造成的伤害并回复35点体力" getWay="精元商城" go=""/>
+
+      <item resId="671" skillInfo="14597,14596" charactor="自己资质越高附带的伤害就越高" getWay="精元商城" go=""/>
+
+	  <item resId="775" skillInfo="15759,15758" charactor="每次击败对手后 清除自身全部能力下降状态与不良状态" getWay="精元商城" go=""/>	
+      <item resId="776" skillInfo="15759,15758" charactor="每次击败对手后 清除自身全部能力下降状态与不良状态" getWay="精元商城" go=""/>
+
+	  <item resId="783" skillInfo="15876,15877" charactor="对手具有蜀道状态时受到伤害增加15%" getWay="精元商城" go=""/>		
+      <item resId="784" skillInfo="15876,15877" charactor="对手具有蜀道状态时受到伤害增加15%" getWay="精元商城" go=""/>	
+
+	  <item resId="811" skillInfo="14324,14323" charactor="上场后怒气不低于30" getWay="精元商城" go=""/>
+
+
+	  
+	  <item resId="347" skillInfo="12254,12255" charactor="当双方电极不同时每回合怒气额外增长5点 当双方电极相同时伤害增加10%" getWay="精元商城" go=""/>
+      <item resId="348" skillInfo="12254,12255" charactor="当双方电极不同时每回合怒气额外增长5点 当双方电极相同时伤害增加10%" getWay="精元商城" go=""/>
+      <item resId="349" skillInfo="12254,12255" charactor="当双方电极不同时每回合怒气额外增长5点 当双方电极相同时伤害增加10%" getWay="精元商城" go=""/>
+
+
+      <item resId="764" skillInfo="15692,15691" charactor="每回合有10%概率减少对手当前所有怒气" getWay="精元商城" go=""/>
+      <item resId="691" skillInfo="14848,14847" charactor="自身受到任意不良效果时使对手流血3回合每回合失去50点体力" getWay="精元商城" go=""/>
+      <item resId="758" skillInfo="15602,15601" charactor="每5回合获得一个暗影之刃状态 下一次攻击额外增加当前1/5物攻值伤害" getWay="精元商城" go=""/>
+
+      <item resId="387" skillInfo="12543,12542" charactor="受到致命一击时恢复自己1/8体力" getWay="精元商城" go=""/>
+
+	
+      <item resId="565" skillInfo="13663,13662" charactor="使用攻击技能可使自己获得脉冲能量。" getWay="精元商城" go=""/>
+      <item resId="566" skillInfo="13777,13776" charactor="使用攻击技能可使自己获得脉冲能量。" getWay="精元商城" go=""/>
+      <item resId="567" skillInfo="13979,13978" charactor="使用攻击技能可使自己获得脉冲能量。" getWay="精元商城" go=""/>
+     
+	  <item resId="568" skillInfo="14252,14251" charactor="使用攻击技能可使自己获得脉冲能量。" getWay="精元商城" go=""/>
+      <item resId="569" skillInfo="14536,14535" charactor="使用攻击技能可使自己获得脉冲能量。" getWay="精元商城" go=""/>
+      <item resId="570" skillInfo="14895,14894" charactor="使用攻击技能可使自己获得脉冲能量。" getWay="精元商城" go=""/>
+
+      <item resId="787" skillInfo="15924,15923" charactor="攻击命中对手后有5%的概率使对手失明" getWay="精元商城" go=""/>
+      <item resId="788" skillInfo="15924,15923" charactor="攻击命中对手后有5%的概率使对手失明" getWay="精元商城" go=""/>
+      <item resId="975" skillInfo="15924,15923" charactor="攻击命中对手后有5%的概率使对手失明" getWay="精元商城" go=""/>
+	  <item resId="799" skillInfo="15962,15961" charactor="单次受到伤害不会超过自身体力值的1/3" getWay="精元商城" go=""/>	  
+	  <item resId="800" skillInfo="15962,15961" charactor="单次受到伤害不会超过自身体力值的1/3" getWay="精元商城" go=""/>
+
+	  <item resId="803" skillInfo="16062,16061" charactor="对手双防每有1级弱化 自身伤害提升5%" getWay="精元商城" go=""/>	  
+	  <item resId="804" skillInfo="16062,16061" charactor="对手双防每有1级弱化 自身伤害提升5%" getWay="精元商城" go=""/>
+
+	  <item resId="492" skillInfo="13348,13347" charactor="回合结束时恢复自己潜力值的体力" getWay="精元商城" go=""/>
+	  <item resId="493" skillInfo="13355,13354" charactor="回合结束时恢复自己潜力值的体力" getWay="精元商城" go=""/>
+	  <item resId="676" skillInfo="14651,14650" charactor="不会受到低于150威力的技能的致命一击" getWay="精元商城" go=""/>
+
+
+
+	  <item resId="373" skillInfo="12356,12355" charactor="自己具有追击状态时 每次攻击性技能命中都能增加一层杀气 最多6层" getWay="精元商城" go=""/>
+	  <item resId="374" skillInfo="12356,12355" charactor="自己具有追击状态时 每次攻击性技能命中都能增加一层杀气 最多6层" getWay="精元商城" go=""/>
+
+
+	  <item resId="525" skillInfo="13451,13450" charactor="当自身怒气低于对手时额外增加10点怒气" getWay="精元商城" go=""/>
+	  <item resId="526" skillInfo="13451,13450" charactor="当自身怒气低于对手时额外增加10点怒气" getWay="精元商城" go=""/>
+
+	  <item resId="755" skillInfo="16368,16367" charactor="死亡时使对手失去60点怒气" getWay="精元商城" go=""/>
+	  <item resId="838" skillInfo="16368,16367" charactor="死亡时使对手失去60点怒气" getWay="精元商城" go=""/>
+
+	  <item resId="1" skillInfo="10013,10012" charactor="危机时弱点技伤害提升" getWay="精元商城" go=""/>
+	  <item resId="2" skillInfo="10013,10012" charactor="危机时弱点技伤害提升" getWay="精元商城" go=""/>
+	  <item resId="3" skillInfo="10013,10012" charactor="危机时弱点技伤害提升" getWay="精元商城" go=""/>
+	  <item resId="632" skillInfo="10013,10012" charactor="危机时弱点技伤害提升" getWay="精元商城" go=""/>
+
+	  <item resId="4" skillInfo="10030,10031" charactor="危机时火系技能伤害提升" getWay="精元商城" go=""/>
+	  <item resId="5" skillInfo="10030,10031" charactor="危机时火系技能伤害提升" getWay="精元商城" go=""/>
+	  <item resId="6" skillInfo="10030,10031" charactor="危机时火系技能伤害提升" getWay="精元商城" go=""/>
+      <item resId="640" skillInfo="10030,10031" charactor="危机时火系技能伤害提升" getWay="精元商城" go=""/> 
+
+	  <item resId="7" skillInfo="10046,10045" charactor="危机时受到伤害减少" getWay="精元商城" go=""/>
+	  <item resId="8" skillInfo="10046,10045" charactor="危机时受到伤害减少" getWay="精元商城" go=""/>
+	  <item resId="9" skillInfo="10046,10045" charactor="危机时受到伤害减少" getWay="精元商城" go=""/>
+	  <item resId="618" skillInfo="10046,10045" charactor="危机时受到伤害减少" getWay="精元商城" go=""/>
+
+
+
+		<item resId="836" skillInfo="16411,16410" charactor="自身体力小于1/4时受到伤害减少20%" getWay="精元商城"/>
+		<item resId="371" skillInfo="12301,12300" charactor="击败对手时10%概率使自己恢复500点体力" getWay="精元商城"/>
+		<item resId="372" skillInfo="12301,12300" charactor="击败对手时10%概率使自己恢复500点体力" getWay="精元商城"/>
+		<item resId="652" skillInfo="14370,14371" charactor="每回合有20%概率闪避对手攻击" getWay="精元商城"/>
+		<item resId="653" skillInfo="14370,14371" charactor="每回合有20%概率闪避对手攻击" getWay="精元商城"/>
+		<item resId="352" skillInfo="12146,12145" charactor="自己具有能力下降状态时 攻击性技能必中" getWay="精元商城"/>
+		<item resId="353" skillInfo="12146,12145" charactor="自己具有能力下降状态时 攻击性技能必中" getWay="精元商城"/>
+		<item resId="780" skillInfo="15820,15821" charactor="自己速度强化效果每1级造成伤害增加5% 最多增加30%" getWay="精元商城"/>
+		<item resId="789" skillInfo="15906,15905" charactor="每次受到攻击有10%概率额外获得20点怒气" getWay="精元商城"/>
+		<item resId="797" skillInfo="16154,16153" charactor="每受到一次攻击获得一层赤兔状态 每层赤兔状态提升自身5%的速度 至多20层" getWay="精元商城"/>
+		<item resId="812" skillInfo="16336,16335" charactor="受到火系攻击伤害减少15%" getWay="精元商城"/>
+		<item resId="751" skillInfo="15510,15511" charactor="在古战场环境下物攻技能有10%概率连击+1" getWay="精元商城"/>
+		<item resId="495" skillInfo="15510,15511" charactor="在古战场环境下物攻技能有10%概率连击+1" getWay="精元商城"/>
+
+
+		<item resId="837" skillInfo="11182,11189" charactor="每次出场时可以将环境效果转换为雷暴天" getWay="精元商城"/>
+
+		<item resId="845" skillInfo="16501,16500" charactor="自己每获得1个沙卫时 15%概率提升自己1级特防" getWay="精元商城"/>
+		<item resId="846" skillInfo="16501,16500" charactor="自己每获得1个沙卫时 15%概率提升自己1级特防" getWay="精元商城"/>
+		<item resId="881" skillInfo="16678,16677" charactor="自身造成致命一击后 获得离子修复状态 3回合每回合恢复30点体力" getWay="精元商城"/>
+		<item resId="889" skillInfo="16772,16775" charactor="若对手为末日咆哮时 使自己获得屠龙士气状态" getWay="精元商城"/>
+		<item resId="730" skillInfo="15321,15320" charactor="每次攻击有2%几率使对手溺水" getWay="精元商城"/>
+		<item resId="727" skillInfo="15453,15454" charactor="自身血量低于1/2时 受到伤害减少25%" getWay="精元商城"/>
+		<item resId="828" skillInfo="16321,16320" charactor="上场时自带1级速度强化状态" getWay="精元商城"/>		
+		<item resId="829" skillInfo="16321,16320" charactor="上场时自带1级速度强化状态" getWay="精元商城"/>		
+		<item resId="830" skillInfo="16321,16320" charactor="上场时自带1级速度强化状态" getWay="精元商城"/>
+		<item resId="660" skillInfo="14479,14478" charactor="对手冻伤时使用攻击技能命中可使自己恢复35点体力" getWay="精元商城"/>
+		<item resId="661" skillInfo="14479,14478" charactor="对手冻伤时使用攻击技能命中可使自己恢复35点体力" getWay="精元商城"/>
+		<item resId="666" skillInfo="14521,14521" charactor="对手冻伤时使用攻击技能20%使自己物防强化1级" getWay="精元商城"/>
+		<item resId="667" skillInfo="14521,14521" charactor="对手冻伤时使用攻击技能20%使自己物防强化1级" getWay="精元商城"/>
+		<item resId="672" skillInfo="14633,14632" charactor="使用攻击技能15%使对手冻伤" getWay="精元商城"/>
+		<item resId="673" skillInfo="14633,14632" charactor="使用攻击技能15%使对手冻伤" getWay="精元商城"/>
+		<item resId="890" skillInfo="16789,16788" charactor="若对手为末日咆哮时 使自己获得屠龙士气状态" getWay="精元商城"/>
+	
+		<item resId="891" skillInfo="16855,16856" charactor="开场获得蓄伤状态 若对手为末日咆哮时 同时还会获得屠龙守卫状态" getWay="精元商城"/>
+		<item resId="767" skillInfo="15675,15674" charactor="自身每装备有1个星魂全能力值+4点" getWay="精元商城"/>
+		<item resId="766" skillInfo="15675,15674" charactor="自身每装备有1个星魂全能力值+4点" getWay="精元商城"/>
+		<item resId="765" skillInfo="15675,15674" charactor="自身每装备有1个星魂全能力值+4点" getWay="精元商城"/>
+		<item resId="759" skillInfo="15619,15618" charactor="对手每进入1次梦境，自身任意能力随机强化1级" getWay="精元商城"/>
+		<item resId="740" skillInfo="16740,16741" charactor="免疫异常状态 攻击技能命中对手后 使对手获得1层蚀附虫" getWay="精元商城"/>
+		<item resId="728" skillInfo="15369,15368" charactor="被致命一击击中后使对手获得一个魔尊诅咒状态" getWay="精元商城"/>
+		<item resId="734" skillInfo="15421,15420" charactor="主动换场若下一只上场精灵体力不足1/2则使其恢复至最大体力的1/2（最多恢复300点）" getWay="精元商城"/>
+		<item resId="621" skillInfo="14113,14112" charactor="击败对手后使自己获得灵骑勋章最多叠加5层 对手体力低于1/2时使用必杀技10%秒杀任何对手" getWay="精元商城"/>
+		<item resId="622" skillInfo="14113,14112" charactor="击败对手后使自己获得灵骑勋章最多叠加5层 对手体力低于1/2时使用必杀技10%秒杀任何对手" getWay="精元商城"/>
+		<item resId="623" skillInfo="14113,14112" charactor="击败对手后使自己获得灵骑勋章最多叠加5层 对手体力低于1/2时使用必杀技10%秒杀任何对手" getWay="精元商城"/>	
+		<item resId="896" skillInfo="16897,16896" charactor="自身体力低于1/2时 攻击性技能必中" getWay="精元商城"/>	
+		<item resId="892" skillInfo="16838,16837" charactor="若被击败则使对手双攻各弱化2级" getWay="精元商城"/>	
+		<item resId="906" skillInfo="16915,16914" charactor="自身体力低于1/4时 恢复性效果增加25%" getWay="精元商城"/>
+		
+		<item resId="908" skillInfo="16962,16953" charactor="上场时使环境变为沙尘暴" getWay="精元商城"/>
+		<item resId="907" skillInfo="16979,16976" charactor="受到致命一击时有70%概率恢复所有怒气" getWay="精元商城"/>
+		<item resId="909" skillInfo="17013,17014" charactor="双方每死亡1只精灵自身每回合恢复5点体力" getWay="精元商城"/>
+
+		<item resId="910" skillInfo="17046,17042" charactor="对手具有溺水状态时 攻击命中对手后增加5点怒气" getWay="精元商城"/>
+		<item resId="902" skillInfo="17063,17067" charactor="对手为克制属性时 受到伤害反弹1/8给对手 最高不超过80点" getWay="精元商城"/>
+
+		<item resId="911" skillInfo="11463,11456" charactor="除开场外任何情况下怒气都不少于25 怒气高于50时免疫异常状态" getWay="精元商城"/>
+		<item resId="916" skillInfo="17125,17129" charactor="受到致命一击伤害时额外增加15点怒气" getWay="精元商城"/>
+		<item resId="918" skillInfo="17141,17144" charactor="自身使用攻击性技能5%使对手失血" getWay="精元商城"/>
+	
+		<item resId="939" skillInfo="17185,17188" charactor="自己攻击性技能造成的伤害额外附加固定伤害，附加值等于自己的潜力值" getWay="精元商城"/>
+		<item resId="178" skillInfo="17185,17188" charactor="自己攻击性技能造成的伤害额外附加固定伤害，附加值等于自己的潜力值" getWay="精元商城"/>
+		<item resId="456" skillInfo="17185,17188" charactor="自己攻击性技能造成的伤害额外附加固定伤害，附加值等于自己的潜力值" getWay="精元商城"/>		
+		<item resId="61" skillInfo="17274,17275" charactor="自己具有爱的名义时造成的所有伤害提升10%" getWay="精元商城"/>
+		<item resId="62" skillInfo="17274,17275" charactor="自己具有爱的名义时造成的所有伤害提升10%" getWay="精元商城"/>
+		<item resId="685" skillInfo="17274,17275" charactor="自己具有爱的名义时造成的所有伤害提升10%" getWay="精元商城"/>
+		<item resId="946" skillInfo="17274,17275" charactor="自己具有爱的名义时造成的所有伤害提升10%" getWay="精元商城"/>
+		
+		<item resId="234" skillInfo="17305,17306" charactor="除开场外任何情况下怒气都不少于25 怒气高于50时免疫异常状态" getWay="精元商城"/>		
+		<item resId="726" skillInfo="17305,17306" charactor="除开场外任何情况下怒气都不少于25 怒气高于50时免疫异常状态" getWay="精元商城"/>	
+		<item resId="950" skillInfo="17305,17306" charactor="除开场外任何情况下怒气都不少于25 怒气高于50时免疫异常状态" getWay="精元商城"/>
+
+
+
+		<item resId="964" skillInfo="13304,13295" charactor="使用地面系技能造成致命一击后使天气转变为地震" getWay="精元商城"/>		
+		<item resId="960" skillInfo="17442,17443" charactor="自身体力低于1/8时强化1级速度" getWay="精元商城"/>		
+		<item resId="920" skillInfo="17158,17162" charactor="使用火系攻击技能时有10%概率使对手烧伤" getWay="精元商城"/>
+
+		<item resId="971" skillInfo="17521,17525" charactor="使用暗影系技能时有45%概率将怒气消耗减半" getWay="精元商城"/>
+		<item resId="972" skillInfo="17521,17525" charactor="使用暗影系技能时有45%概率将怒气消耗减半" getWay="精元商城"/>
+
+
+
+		<item resId="646" skillInfo="14314,14316" charactor="自身具有能力弱化效果时不会受到致命一击伤害" getWay="精元商城"/>
+
+
+
+		<item resId="387" skillInfo="12543,12544" charactor="受到致命一击时恢复自己1/8体力" getWay="精元商城"/>
+		<item resId="820" skillInfo="12543,12544" charactor="受到致命一击时恢复自己1/8体力" getWay="精元商城"/>
+		<item resId="819" skillInfo="12543,12544" charactor="受到致命一击时恢复自己1/8体力" getWay="精元商城"/>
+
+
+		<item resId="624" skillInfo="14081,14085" charactor="环境为雨天时 水系技能伤害提升5% 受到伤害不超过100点时 使对手获得霸印效果" getWay="精元商城"/>
+
+
+		<item resId="759" skillInfo="15619,15622" charactor="对手每进入1次梦境，自身任意能力随机强化1级" getWay="精元商城"/>
+		<item resId="689" skillInfo="14865,14867" charactor="攻击造成致命一击时速度强化2级" getWay="精元商城"/>
+		<item resId="708" skillInfo="15076,15078" charactor="出场时物防强化1层" getWay="精元商城"/>
+		<item resId="709" skillInfo="15076,15078" charactor="出场时物防强化1层" getWay="精元商城"/>
+
+		<item resId="967" skillInfo="17504,17508" charactor="上场时获得1个吸收250伤害的护盾 每场战斗只生效1次" getWay="精元商城"/>
+		<item resId="971" skillInfo="17521,17525" charactor="使用暗影系技能时有45%概率将怒气消耗减半" getWay="精元商城"/>
+		<item resId="972" skillInfo="17521,17525" charactor="使用暗影系技能时有45%概率将怒气消耗减半" getWay="精元商城"/>
+
+
+
+		<item resId="992" skillInfo="17785,17789" charactor="自身每损失7点体力则额外回复1点怒气" getWay="精元商城"/>
+
+		<item resId="2586" skillInfo="18784,18788" charactor="每次使用物攻技能后 自身下一次使用特攻技能会强化特攻特防各1级" getWay=""/>
+		<item resId="2587" skillInfo="18795,18788" charactor="每次使用物攻技能后 自身下一次使用特攻技能会强化特攻特防各1级" getWay=""/>
+		<item resId="2588" skillInfo="18816,18818" charactor="每次使用物攻技能后 自身下一次使用特攻技能会强化特攻特防各1级 晴天环境下免疫异常 自身为6星时上场自带破晓光线" getWay=""/>
+
+	</title>
+</root>

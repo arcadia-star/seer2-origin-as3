@@ -1,0 +1,208 @@
+<!--BossLV表示BOSS的等级 BossHP表示BOSS的血量，CatchMonLV表示BOSS给捕获的时候的等级, 没有此字段的表示不能捕获 -->
+<!--FLAG 1表示规则1送的物品， FLAG 2表示规则2送的物品，FLAG 3表示获取所有装扮之后获取的勋章 其他表示非规则1和规则2情况下
+，送的装扮和物品(注意：送的装扮必须放在物品的前面)-->
+<!-- ScoreNormal表示在普通模式下获取的训练师的分数，ScoreRule在特殊规则下获取的训练师分数 -->
+<!-- OnlyFlagIndex 表示记录用户是否由于战胜BOSS领取过训练师分数，由于战胜只能领取一次 -->
+<!-- HpTimeLimit 表示限定血量的时间段 -->
+<!--LimitHp限制的血量值-->
+<Bosses>
+	<Boss BossID="17" NAME="布鲁托" BossLV="20" BossHP="200" CatchMonLV="10" ScoreNormal = "50"
+	ScoreRule = "60" OnlyFlagIndex = "7" MaxLvl = "20" PreID = "0">
+		<Items>
+			<Item ID="300006" Count="1" Flag="1"/>
+			<Item ID="500004" Count="1" Flag="2"/>
+			<Item ID="500010" Count="1" Flag="3"/>
+			<Item ID="100039" Count="1" />
+			<Item ID="100040" Count="1" />
+			<Item ID="100041" Count="1" />
+			<Item ID="100042" Count="1" />
+			<Item ID="0" Count="1"/>
+		</Items>
+	</Boss>
+	<Boss BossID="31" NAME="阿卡纳斯" BossLV="30" BossHP="400" CatchMonLV="10" ScoreNormal = "50"
+	ScoreRule = "60" OnlyFlagIndex = "8" MaxLvl = "30" PreID = "17" >
+		<Items>
+			<Item ID="300012" Count="1" Flag="1"/>
+			<Item ID="500005" Count="1" Flag="2"/>
+			<Item ID="500011" Count="1" Flag="3"/>
+			<Item ID="100047" Count="1" />
+			<Item ID="100048" Count="1" />
+			<Item ID="100049" Count="1" />
+			<Item ID="100050" Count="1" />
+			<Item ID="100051" Count="1" />
+			<Item ID="0" Count="1"/>
+		</Items>
+	</Boss>
+	<Boss BossID="36" NAME="大将岩浮" BossLV="37" BossHP="400">
+	</Boss>
+	<Boss BossID="33" NAME="乔尼" BossLV="38" BossHP="400">
+	</Boss>
+	<Boss BossID="38" NAME="霍克努尔" BossLV="40" BossHP="600" CatchMonLV="10" ScoreNormal = "50"
+	ScoreRule = "60" OnlyFlagIndex = "9" MaxLvl = "40" PreID = "31">
+		<Items>
+			<Item ID="300015" Count="1" Flag="1"/>
+			<Item ID="500006" Count="1" Flag="2"/>
+			<Item ID="500012" Count="1" Flag="3"/>
+			<Item ID="100043" Count="1" />
+			<Item ID="100044" Count="1" />
+			<Item ID="100045" Count="1" />
+			<Item ID="100046" Count="1" />
+			<Item ID="0" Count="1"/>
+		</Items>
+	</Boss>
+	<Boss BossID="14" NAME="呆呆葵" BossLV="40" BossHP="600">
+	</Boss>
+	<Boss BossID="57" NAME="麦麦迪" BossLV="45" BossHP="800" CatchMonLV="10" ScoreNormal = "50"
+	ScoreRule = "60" OnlyFlagIndex = "99" MaxLvl = "45" PreID = "38">
+		<Items>
+			<Item ID="300023" Count="1" Flag="1"/>
+			<Item ID="500015" Count="1" Flag="2"/>
+			<Item ID="500016" Count="1" Flag="3"/>
+			<Item ID="100097" Count="1" />
+			<Item ID="100098" Count="1" />
+			<Item ID="100099" Count="1" />
+			<Item ID="100100" Count="1" />
+			<Item ID="0" Count="1"/>
+		</Items>
+	</Boss>
+	<Boss BossID="80" NAME="巨锤莫古" BossLV="50" BossHP="1000" CatchMonLV="10" ScoreNormal = "50"
+	ScoreRule = "60" OnlyFlagIndex = "152" MaxLvl = "50" PreID = "57">
+		<Items>
+			<Item ID="300033" Count="1" Flag="1"/>
+			<Item ID="500022" Count="1" Flag="3"/>
+			<Item ID="100116" Count="1" />
+			<Item ID="100117" Count="1" />
+			<Item ID="100118" Count="1" />
+			<Item ID="100119" Count="1" />
+			<Item ID="0" Count="1"/>
+		</Items>
+	</Boss>
+	<Boss BossID="82" NAME="沙皇鸟" BossLV="55" BossHP="1200" CatchMonLV="10" ScoreNormal = "50"
+	ScoreRule = "60" OnlyFlagIndex = "153" MaxLvl = "55" PreID = "80">
+		<Items>
+			<Item ID="300034" Count="1" Flag="1"/>
+			<Item ID="500024" Count="1" Flag="2"/>
+			<Item ID="500023" Count="1" Flag="3"/>
+			<Item ID="100112" Count="1" />
+			<Item ID="100113" Count="1" />
+			<Item ID="100114" Count="1" />
+			<Item ID="100115" Count="1" />
+			<Item ID="0" Count="1"/>
+		</Items>
+	</Boss>
+	<Boss BossID="1031" NAME="巨锤莫古" BossLV="60" BossHP="1400">
+	</Boss>
+	<Boss BossID="1033" NAME="沙皇鸟" BossLV="60" BossHP="1400" MaxLvl = "55" PreID = "82">
+	</Boss>
+	<Boss BossID="127" NAME="卡尼斯" BossLV="70" BossHP="2000" CatchMonLV="10" ScoreNormal = "50"
+	ScoreRule = "60" OnlyFlagIndex = "209" MaxLvl = "70" PreID = "82">
+		<Items>
+			<Item ID="300065" Count="1" Flag="1"/>
+			<Item ID="500028" Count="1" Flag="2"/>
+			<Item ID="500027" Count="1" Flag="3"/>
+			<Item ID="100149" Count="1" />
+			<Item ID="100150" Count="1" />
+			<Item ID="100151" Count="1" />
+			<Item ID="100152" Count="1" />
+			<Item ID="0" Count="1"/>
+		</Items>
+	</Boss>	
+	<Boss BossID="157" NAME="菲亚斯" BossLV="80" BossHP="3000"  BossAtk="482" BossDef="464" BossSpAtk="512"
+	BossSpDef="470" BossSpd="477" CatchMonLV="10" ScoreNormal = "50" ScoreRule = "60" OnlyFlagIndex = "364"
+	MaxLvl = "80" PreID = "127" PreDoubleCon="11" >
+	<BossAttrs>
+		<Attr BossLV="100" BossHP = "1500" BossAtk="482" BossDef="464" BossSpAtk="512" BossSpDef="470" BossSpd="480" />
+		<Attr BossLV="100" BossHP = "1500" BossAtk="482" BossDef="464" BossSpAtk="512" BossSpDef="470" BossSpd="479" />
+	</BossAttrs>
+		<Items>
+			<Item ID="300078" Count="1" Flag="1"/>
+			<Item ID="500039" Count="1" Flag="2"/>
+			<Item ID="500038" Count="1" Flag="3"/>
+			<Item ID="100259" Count="1" />
+			<Item ID="100260" Count="1" />
+			<Item ID="100261" Count="1" />
+			<Item ID="100262" Count="1" />
+			<Item ID="100263" Count="1" />
+			<Item ID="0" Count="1"/>
+		</Items>
+	</Boss>	
+	<Boss BossID="215" NAME="艾丽希斯" BossLV="90" BossHP="5000"  BossAtk="500" BossDef="467" BossSpAtk="500"
+	BossSpDef="467" BossSpd="472" CatchMonLV="10" ScoreNormal = "50" ScoreRule = "60" OnlyFlagIndex = "378"
+	MaxLvl = "80" PreID = "157" TimeLimitIndex="5" >
+		<Items>
+			<Item ID="300106" Count="1" Flag="1"/>
+			<Item ID="500041" Count="1" Flag="2"/>
+			<Item ID="500040" Count="1" Flag="3"/>
+			<Item ID="100318" Count="1" />
+			<Item ID="100319" Count="1" />
+			<Item ID="100320" Count="1" />
+			<Item ID="100321" Count="1" />
+			<Item ID="100322" Count="1" />
+			<Item ID="0" Count="1"/>
+		</Items>
+	</Boss>
+	<Boss BossID="248" NAME="卡多斯" BossLV="95" BossHP="6000"  BossAtk="564" BossDef="495" BossSpAtk="506"
+	BossSpDef="462" BossSpd="480" CatchMonLV="10" ScoreNormal = "50" ScoreRule = "60" OnlyFlagIndex = "428"
+	MaxLvl = "90" PreID = "215" >
+		<Items>
+			<Item ID="300122" Count="1" Flag="1"/>
+			<Item ID="500050" Count="1" Flag="2"/>
+			<Item ID="500049" Count="1" Flag="3"/>
+			<Item ID="100449" Count="1" />
+			<Item ID="100450" Count="1" />
+			<Item ID="100451" Count="1" />
+			<Item ID="100452" Count="1" />
+			<Item ID="100453" Count="1" />
+			<Item ID="0" Count="1"/>
+		</Items>
+	</Boss>
+
+	<Boss BossID="401" NAME="特米提" BossLV="100" BossHP="8000"  BossAtk="513" BossDef="500" BossSpAtk="506"
+	BossSpDef="500" BossSpd="467" CatchMonLV="10" ScoreNormal = "50" ScoreRule = "60" OnlyFlagIndex = "737"
+	MaxLvl = "100" PreID = "248" >
+		<Items>
+			<Item ID="300202" Count="1" Flag="1"/>
+			<Item ID="500132" Count="1" Flag="2"/>
+			<Item ID="500133" Count="1" Flag="3"/>
+			<Item ID="100823" Count="1" />
+			<Item ID="100824" Count="1" />
+			<Item ID="100825" Count="1" />
+			<Item ID="100826" Count="1" />
+			<Item ID="100827" Count="1" />
+			<Item ID="0" Count="1"/>
+		</Items>
+	</Boss>
+
+	<Boss BossID="895" NAME="梵尔尼" BossLV="100" BossHP="8000"  BossAtk="506" BossDef="500" BossSpAtk="513"
+	BossSpDef="500" BossSpd="470" CatchMonLV="10" ScoreNormal = "50" ScoreRule = "60" OnlyFlagIndex = "779"
+	MaxLvl = "100" PreID = "401" >
+		<Items>
+			<Item ID="300526" Count="1" Flag="1"/>
+			<Item ID="500269" Count="1" Flag="2"/>
+			<Item ID="500270" Count="1" Flag="3"/>
+			<Item ID="101571" Count="1" />
+			<Item ID="101572" Count="1" />
+			<Item ID="101573" Count="1" />
+			<Item ID="101574" Count="1" />
+			<Item ID="101575" Count="1" />
+			<Item ID="0" Count="1"/>
+		</Items>
+	</Boss>
+	<Boss BossID="997" NAME="撒莱尔" BossLV="100" BossHP="20000"  BossAtk="850" BossDef="1050" BossSpAtk="800"
+	BossSpDef="1050" BossSpd="700" CatchMonLV="10" ScoreNormal = "50" ScoreRule = "60" OnlyFlagIndex = "780"
+	MaxLvl = "100" PreID = "895" >
+	    <Items>
+	      <Item ID="300598" Count="1" Flag="1"/>
+	      <Item ID="500314" Count="1" Flag="2"/>
+	      <Item ID="500315" Count="1" Flag="3"/>
+	      <Item ID="100721" Count="1" />
+	      <Item ID="101722" Count="1" />
+	      <Item ID="101723" Count="1" />
+	      <Item ID="101724" Count="1" />
+	      <Item ID="101725" Count="1" />
+	      <Item ID="0" Count="1"/>
+	    </Items>
+  	</Boss>
+
+
+</Bosses>

@@ -1,0 +1,469 @@
+<!--套装表-->
+
+<Suits>
+	<Suit id="11" name="博士青蛙"/>
+	<Suit id="12" name="巨蛮机甲"/>
+	<Suit id="13" name="熔岩机甲"/>
+	<Suit id="14" name="水凝机甲"/>
+	<Suit id="15" name="队长机甲"/>
+	<Suit id="16" name="队长机甲"/>
+	<Suit id="17" name="试炼员"/>
+	<Suit id="18" name="训练师"/>
+	<Suit id="19" name="三兽合体"/>
+	<Suit id="20" name="迪兰装甲"/>
+	<Suit id="21" name="休咻装甲"/>	
+	<Suit id="22" name="拉奥装甲"/>
+	<Suit id="23" name="士官装甲"/>
+	<Suit id="24" name="赤色装甲"/>	
+	<Suit id="25" name="麦麦装甲"/>
+	<Suit id="27" name="巨星装甲"/>
+	<Suit id="30" name="6番队队服"/>
+	<Suit id="31" name="沙皇套装"/>	
+	<Suit id="32" name="巨锤套装"/>	
+	<Suit id="33" name="风俗套装"/>	
+	<Suit id="34" name="风俗套装"/>	
+	<Suit id="35" name="万圣节套装"/>	
+	<Suit id="36" name="星星队长"/>	
+	<Suit id="37" name="树根牛仔"/>	
+	<Suit id="41" name="冰后套装"/>	
+	<Suit id="42" name="维京海盗"/>	
+	<Suit id="43" name="合金侠"/>
+	<Suit id="44" name="突击队服"/>
+	<Suit id="45" name="斩魂武士"/>									
+	<Suit id="47" name="野兽之灵"/>
+	<Suit id="48" name="5队队服"/>
+	<Suit id="49" name="沙漠之神"/>	
+	<Suit id="68" name="圣诞套装"/>	
+	<Suit id="74" name="米奇林之怒"/>	
+	<Suit id="75" name="4番队队服"/>		
+	<Suit id="76" name="葛蕾芬套装"/>	
+	<Suit id="77" name="提灯侠套装"/>	
+	<Suit id="82" name="沙族套装"/>		
+	<Suit id="83" name="地族套装"/>	
+	<Suit id="86" name="狮鹫套装"/>
+	<Suit id="87" name="菲亚斯套装"/>
+	<Suit id="90" name="向日葵园丁"/>		
+	<Suit id="91" name="咩咩套装"/>
+	<Suit id="92" name="雷昂套装"/>	
+	<Suit id="95" name="海将军"/>
+	<Suit id="96" name="擎天柱"/>
+	<Suit id="97" name="海盗"/>	
+	<Suit id="99" name="威震天"/>
+	<Suit id="100" name="突击队长"/>	
+	<Suit id="101" name="孙行者"/>
+	<Suit id="102" name="大黄蜂"/>
+	<Suit id="103" name="艾丽希斯"/>	
+	<Suit id="106" name="白爷爷"/>	
+	<Suit id="107" name="红叔叔"/>	
+	<Suit id="108" name="雷伊"/>
+	<Suit id="109" name="小丑套装"/>
+	<Suit id="110" name="红粉骑士"/>
+	<Suit id="111" name="宇航员"/>
+	<Suit id="113" name="稻草人"/>	
+	<Suit id="115" name="潮汐猎手"/>	
+	<Suit id="116" name="天龙星"/>	
+	<Suit id="117" name="星际牛仔"/>	
+	<Suit id="118" name="牧羊女"/>
+	<Suit id="121" name="埃鲁达尔"/>	
+	<Suit id="123" name="熊熊仔"/>		
+	<Suit id="124" name="卡特琳娜"/>		
+	<Suit id="129" name="暑假套装"/>		
+	<Suit id="130" name="萨兰古尔"/>		
+	<Suit id="131" name="雷神之锤"/>	
+	<Suit id="132" name="洛基套装"/>	
+	<Suit id="133" name="黑超特警"/>
+	<Suit id="135" name="西太郎套装"/>
+	<Suit id="136" name="黄金天枰装"/>
+	<Suit id="137" name="强袭套装"/>
+	<Suit id="138" name="羽翼护卫装"/>
+	<Suit id="144" name="娜娜套装"/>
+	<Suit id="145" name="卡多斯套装"/>
+	<Suit id="146" name="赛尔表情"/>		
+	<Suit id="150" name="黄金室女装"/>
+	<Suit id="154" name="白骑士套装"/>
+	<Suit id="155" name="黑骑士套装"/>
+	<Suit id="156" name="炎帝套装"/>
+	<Suit id="157" name="萨伦卫兵装"/>
+	<Suit id="160" name="艾力克装"/>
+	<Suit id="161" name="蜘蛛侠套装"/>
+	<Suit id="162" name="蝙蝠侠套装"/>
+	<Suit id="163" name="五星士官装"/>
+	<Suit id="170" name="肥猫阿宝装"/>
+	<Suit id="175" name="南瓜古拉装"/>
+	<Suit id="176" name="青枫兵套装"/>
+	<Suit id="177" name="神笔马良装"/>
+	<Suit id="178" name="橡皮小君装"/>
+
+	<Suit id="179" name="幽灵王套装"/>	
+	<Suit id="188" name="天蝎守护装"/>
+	<Suit id="200" name="浴火凤凰装"/>
+	<Suit id="203" name="射手守护装"/>
+	<Suit id="206" name="雪绒套装"/>
+	<Suit id="207" name="御风机甲装"/>
+	<Suit id="211" name="米咔红套装"/>
+	<Suit id="212" name="超级战警装"/>
+	<Suit id="214" name="超级赛亚人"/>
+	<Suit id="218" name="太阳神之光"/>
+	<Suit id="215" name="康特套装"/>
+	<Suit id="219" name="彩蛋套装"/>
+	<Suit id="232" name="青竹玄云装"/>
+	<Suit id="227" name="黑金霸王装"/>
+	<Suit id="222" name="摩羯套装"/>
+	<Suit id="220" name="影战套装"/>
+	<Suit id="236" name="金蛇郎君装"/>
+	<Suit id="237" name="金蛇娘子装"/>
+
+	<Suit id="234" name="水瓶守护装"/>
+	<Suit id="240" name="爆炎热火装"/>
+	<Suit id="241" name="雷喉黑云装"/>
+	<Suit id="250" name="零式套装"/>
+	<Suit id="254" name="双鱼守护装"/>
+	<Suit id="256" name="壹式套装"/>
+
+	<Suit id="257" name="地伊特套装"/>
+	<Suit id="258" name="龙伊特套装"/>
+
+
+
+	<Suit id="271" name="白羊守护装"/>
+	<Suit id="267" name="光翼黑魔装"/>
+	<Suit id="266" name="光翼红魔装"/>
+	<Suit id="273" name="暗黑恶魔装"/>
+	<Suit id="275" name="暗黑死神装"/>
+	<Suit id="276" name="月神套装"/>
+
+	<Suit id="277" name="暗月兔装"/>
+
+	<Suit id="279" name="渡鸦之首装"/>
+
+
+	<Suit id="284" name="精灵探索者"/>
+	<Suit id="285" name="金牛守护装"/>
+
+	<Suit id="291" name="撒旦套装"/>
+
+	<Suit id="292" name="爱国者套装"/>
+	<Suit id="293" name="呆目蜥套装"/>
+	<Suit id="294" name="奥黛丽套装"/>
+	<Suit id="296" name="火爆猴套装"/>
+
+	<Suit id="298" name="特米提套装"/>
+	<Suit id="299" name="原始人套装"/>
+	<Suit id="300" name="双子守护装"/>
+	<Suit id="301" name="猛犸套装"/>
+
+	<Suit id="305" name="赫本套装"/>
+	<Suit id="308" name="伊利套装"/>
+
+	<Suit id="312" name="瓢虫套装"/>
+
+
+	<Suit id="317" name="巨蟹守护装"/>
+	<Suit id="315" name="船长套装"/>
+
+	<Suit id="315" name="船长套装"/>
+	<Suit id="319" name="星光套装"/>
+
+	<Suit id="321" name="超人套装"/>
+
+	<Suit id="323" name="圣龙套装"/>
+	<Suit id="325" name="圣龙套特装"/>
+
+
+	<Suit id="330" name="激浪套装"/>
+	<Suit id="331" name="热火套装"/>
+	<Suit id="332" name="原野套装"/>
+
+	<Suit id="333" name="争霸冲锋装"/>
+	<Suit id="334" name="幻翼幽冥装"/>
+
+
+
+	<Suit id="335" name="约瑟王套装"/>
+	<Suit id="336" name="狮子守护装"/>
+
+	<Suit id="338" name="幻影飓风装"/>
+	<Suit id="339" name="幻齿骤雨装"/>
+
+	<Suit id="343" name="幻蹄雷电装"/>
+
+
+	<Suit id="344" name="处女守护装"/>
+
+
+	<Suit id="356" name="天秤守护装"/>
+	<Suit id="357" name="卡修斯战甲"/>
+	<Suit id="358" name="盖亚战甲"/>
+	<Suit id="359" name="雷神战甲"/>
+	<Suit id="360" name="炎帝战甲"/>
+	<Suit id="362" name="超伊特战甲"/>
+	<Suit id="363" name="神伊特战甲"/>
+	<Suit id="361" name="冰封巨龙装"/>
+
+	<Suit id="368" name="异形套装"/>
+	<Suit id="369" name="狼神套装"/>
+
+
+	<Suit id="370" name="震天虎套装"/>
+	<Suit id="371" name="僵尸博士装"/>
+	<Suit id="372" name="吸血女王装"/>
+
+	<Suit id="373" name="神力超猪装"/>
+	<Suit id="374" name="电魂巴图装"/>
+
+	<Suit id="375" name="银脉紫煞装"/>
+	<Suit id="376" name="火羽强攻装"/>
+	<Suit id="377" name="龙影飞速装"/>
+
+
+	<Suit id="379" name="巨石托尔装"/>
+	<Suit id="381" name="机甲苍龙装"/>
+
+	<Suit id="382" name="女神赫拉装"/>
+
+	<Suit id="383" name="爆焰努尔装"/>
+
+	<Suit id="385" name="上古魔尊装"/>
+
+	<Suit id="386" name="布莱克战甲"/>
+
+	<Suit id="387" name="神龙王战甲"/>
+	<Suit id="389" name="赤焰机甲装"/>
+
+	<Suit id="390" name="森林战士装"/>
+
+	<Suit id="393" name="圣兽天尊装"/>
+
+	<Suit id="396" name="暗魄套装"/>
+
+    <Suit id="398" name="小木马套装"/>
+
+	<Suit id="401" name="暗黑雷煞装"/>
+
+	<Suit id="402" name="光轮机甲装"/>
+
+	<Suit id="403" name="魔轮冥驹装"/>
+
+	<Suit id="405" name="战神缪斯装"/>
+
+	<Suit id="406" name="新年红包装"/>
+
+
+	<Suit id="409" name="火魔炎煞装"/>
+
+	<Suit id="408" name="汤圆套装"/>
+
+	<Suit id="410" name="海王纳斯装"/>
+
+	<Suit id="412" name="龙族王子装"/>
+
+	<Suit id="413" name="战魔武煞装"/>
+
+	<Suit id="414" name="山魔地煞装"/>
+
+	<Suit id="416" name="新手报道装"/>
+
+	<Suit id="415" name="擎天机甲装"/>
+
+	<Suit id="417" name="异魔超煞装"/>
+
+	<Suit id="420" name="影魔暗煞装"/>
+
+	<Suit id="419" name="极冰凤皇装"/>
+
+	<Suit id="423" name="阿波罗战甲"/>
+
+	<Suit id="422" name="太阳战车"/>
+
+	<Suit id="421" name="刀锋战士装"/>
+
+
+	<Suit id="424" name="雅典娜战甲"/>  
+
+	<Suit id="425" name="暴风女战甲"/>
+
+	<Suit id="426" name="铁甲墨菲装"/>
+	<Suit id="457" name="魔尊右使装"/>
+	<Suit id="458" name="逆世装"/>
+	<Suit id="428" name="潘多拉战甲"/>
+
+	<Suit id="430" name="占星者战甲"/>
+
+	<Suit id="431" name="天煞战甲"/>
+
+	<Suit id="432" name="宙斯战甲"/>
+
+	<Suit id="433" name="傲世机甲装"/>
+
+	<Suit id="435" name="巴比隆装"/>
+
+	<Suit id="436" name="加百列装"/>
+
+	<Suit id="437" name="上古雷尊装"/>
+
+	<Suit id="439" name="双面冥王装"/>
+
+
+
+	<Suit id="450" name="乔布斯装"/>
+    
+	<Suit id="453" name="极光机甲装"/>
+	<Suit id="454" name="上古战神装"/>
+
+	<Suit id="455" name="魔尊左使装"/>
+	<Suit id="456" name="撼地山神装"/>
+
+
+
+	<Suit id="459" name="万劫魔尊装"/>
+	<Suit id="460" name="始祖龙皇装"/>
+
+
+
+	<Suit id="461" name="沙虎战将装"/>
+
+	<Suit id="462" name="圣灵天尊装"/>
+
+	<Suit id="465" name="魔渊梦神装"/>
+
+	<Suit id="466" name="星座之王装"/>
+
+	<Suit id="468" name="圣翼雷神装"/>
+
+	<Suit id="469" name="帝刃雷神装"/>
+
+	<Suit id="470" name="影流机甲装"/>
+
+	<Suit id="472" name="赵云盔甲装"/>
+	<Suit id="473" name="邪神盔甲装"/>
+
+	<Suit id="474" name="创世队盔甲"/>
+	<Suit id="475" name="开元队盔甲"/>
+
+	<Suit id="476" name="混沌队盔甲"/>
+
+	<Suit id="481" name="刘备套装"/>
+
+	<Suit id="482" name="缪斯女神装"/>
+
+	<Suit id="483" name="崛地机甲装"/>
+
+	<Suit id="484" name="苍耀神尊装"/>
+
+	<Suit id="485" name="开元帝王装"/>
+
+	<Suit id="487" name="混沌帝王装"/>
+
+	<Suit id="490" name="关羽盔甲装"/>
+
+	<Suit id="493" name="里格队长装"/>
+
+	<Suit id="494" name="爆焱战狐装"/>
+
+	<Suit id="495" name="圣冰十尾装"/>
+
+	<Suit id="496" name="冰山机甲装"/>
+
+	<Suit id="497" name="萌萌月套装"/>
+
+	<Suit id="498" name="张飞盔甲套装"/>
+
+	<Suit id="499" name="雷霆套装"/>
+
+	<Suit id="501" name="毁灭者套装"/>
+
+	<Suit id="502" name="机甲王套装"/>
+	<Suit id="504" name="银河星王套装"/>
+	<Suit id="505" name="瓦力套装"/>
+	<Suit id="506" name="烂皮鞋花瓶（手持）"/>
+	<Suit id="507" name="定情黑雨伞（手持）"/>
+	<Suit id="508" name="鸢尾蝴蝶翅膀（背装）"/>
+	<Suit id="509" name="地心兽套装"/>
+	<Suit id="511" name="超念灵妖套装"/>
+
+
+	<Suit id="512" name="鬼瞳套装"/>
+	<Suit id="521" name="宇宙骑士装"/>
+
+	<Suit id="522" name="风神卡多装"/>
+
+	<Suit id="523" name="斗魂灵妖装"/>
+
+
+	<Suit id="524" name="夜行骑士装"/>
+
+	<Suit id="525" name="疾风骑士装"/>
+	<Suit id="526" name="梵尔尼战甲"/>
+
+
+
+
+	<Suit id="527" name="雪宝装"/>
+	<Suit id="528" name="天启骑士装"/>
+
+
+	<Suit id="531" name="武道修罗"/>
+
+
+
+	<Suit id="529" name="末日咆哮"/>
+	<Suit id="530" name="末日咆哮（特）"/>
+	<Suit id="532" name="啸天战甲"/>
+
+
+
+	<Suit id="535" name="小羊萌装"/>
+
+	<Suit id="538" name="界王神年甲"/>
+	<Suit id="537" name="西界王战甲"/>
+
+
+
+
+	<Suit id="539" name="哈迪斯战甲"/>
+
+	<Suit id="540" name="魔神战甲"/>
+
+
+	<Suit id="541" name="赤焰之龙战甲"/>
+	<Suit id="542" name="恶灵兽战甲"/>
+
+
+
+	<Suit id="545" name="春田花花装"/>
+	<Suit id="546" name="春田柳树装"/>
+
+
+	<Suit id="547" name="神迹米咔装"/>
+
+
+	<Suit id="549" name="冥雷煞战甲"/>
+	<Suit id="550" name="魔炎煞战甲"/>
+	<Suit id="551" name="浴火涅槃装"/>
+
+
+	<Suit id="552" name="火神之矛装"/>
+	<Suit id="553" name="火神之盾装"/>
+
+	<Suit id="554" name="暗黑超梦装"/>
+
+	<Suit id="555" name="大白套装"/>
+
+	<Suit id="560" name="雷锘套装"/>
+	<Suit id="561" name="无极影神装"/>
+
+
+
+	<Suit id="562" name="罪恶之触装"/>
+	<Suit id="563" name="传奇真龙装"/>
+	<Suit id="564" name="白胡子套装"/>
+	<Suit id="565" name="撒莱尔套装"/>
+	<Suit id="566" name="大圣套装"/>
+	
+	<Suit id="566" name="大圣套装"/>
+	<Suit id="575" name="暮洛套装"/>
+
+</Suits>
+
+
+

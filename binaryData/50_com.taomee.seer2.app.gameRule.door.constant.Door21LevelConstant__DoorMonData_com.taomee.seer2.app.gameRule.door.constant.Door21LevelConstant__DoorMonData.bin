@@ -1,0 +1,1031 @@
+<!--精灵的玩法配置文件 -->
+<!--Method ID表示玩法的ID号 1表示试炼之门 -->
+<!--FightMonNum表示参加战斗的精灵的数目，TotalGate表示玩法的总关卡数 -->
+<!--Items表示通关送的物品 -->
+<!-- Mons表示送的物品 -->
+<!-- Flag为1表示获取所有装扮之后，固定给的物品 Flag为2表示给的勋章 
+Flag为50代表PVP中胜利50次给的勋章,Flag为100代表pvp中胜利100次给的勋章.-->
+<!-- 正常模式通关可以选择精灵，50V50送装扮 -->
+<!-- ScoreFifty 50V50模式下输出的训练师的分数，ScoreNormal模式下输出的训练师的分数 -->
+<!-- FiftyOnlyFlagIndex 表示是否领取过50V50模式下的领取过训练师分数,开始ID -->
+<!-- NormalOnlyFlagIndex 表示是否在正常模式下领取过训练师的分数,开始ID -->
+<!-- ScoreFiftyPVP 表示PVP(50v50模式)前10场获胜训练师分数 -->
+<!-- ScoreNormalPVP 表示PVP(普通模式)前10场获胜训练师分数 -->
+<!-- HonourNumPVP50v50 表示PVP(50v50模式)前10场获胜训荣誉点数 -->
+<!-- HonourNumPVP50v50DayLimitType 表示PVP(50v50模式)前10场获胜训荣誉点数,每日上限类型 -->
+<!-- HonourNumPVP 表示PVP(普通模式)前10场获胜训荣誉点数 -->
+<!-- HonourNumPVPDayLimitType 表示PVP(普通模式)前10场获胜训荣誉点数,每日上限类型 -->
+<PlayingMethodes>
+	<!-- 试炼之门 -->
+	<Method ID = "1" GateName = "试炼之门" FightMonNum = "1" TotalGate = "21" ScoreFifty = "10" FiftyOnlyFlagIndex = "10"
+	ScoreNormal = "10" NormalOnlyFlagIndex = "31" NormalDayLimitType = "33" NormalDayMaxNum = "5" FiftyVFiftyDayLimitType = "34" FiftyVFiftyDayMaxNum = "5"  ScoreFiftyPVP="10" ScoreNormalPVP="10" HonourNumPVP50v50="15" HonourNumPVP50v50DayLimitType="69" HonourNumPVP="15" HonourNumPVPDayLimitType="301" >
+		<Items>
+			<Item ID = "100064" Count = "1" />
+			<Item ID = "100063" Count = "1" />
+			<Item ID = "100062" Count = "1" />
+			<Item ID = "100061" Count = "1" />
+			<Item ID = "100060" Count = "1" />
+			<Item ID = "1" Count = "200" Flag = "1" />							
+			<Item ID = "500013" Count = "1" Flag = "2" />
+			<Item ID = "500017" Count = "1" Flag = "50" />	
+			<Item ID = "500018" Count = "1" Flag = "100" />				
+		</Items>
+		<Gate ID = "1">
+			<Mons>
+				<Mon ID = "011" LV="10" />
+			</Mons>
+		</Gate>
+		<Gate ID = "2">
+			<Mons>
+				<Mon ID = "001" LV="10" />
+			</Mons>
+		</Gate>
+		<Gate ID = "3">
+			<Mons>
+				<Mon ID = "032" LV="10" />
+			</Mons>
+		</Gate>
+		<Gate ID = "4">
+			<Mons>
+				<Mon ID = "018" LV="10" />
+			</Mons>
+		</Gate>
+		<Gate ID = "5">
+			<Mons>
+				<Mon ID = "021" LV="10" />
+			</Mons>
+		</Gate>
+		<Gate ID = "6">
+			<Mons>
+				<Mon ID = "004" LV="10" />
+			</Mons>
+		</Gate>
+		<Gate ID = "7">
+			<Mons>
+				<Mon ID = "013" LV="12" />
+				<Mon ID = "039" LV="12" />
+				<Mon ID = "002" LV="12" />
+			</Mons>
+		    <Items>
+			  <Item ID = "200213" Count = "1" rate = "30"/>
+			  <Item ID = "200214" Count = "1" rate = "30"/>
+			  <Item ID = "200002" Count = "1" rate = "40"/>
+		    </Items>
+		</Gate>
+		<Gate ID = "8">
+			<Mons>
+				<Mon ID = "026" LV="11" />
+			</Mons>
+		</Gate>
+		<Gate ID = "9">
+			<Mons>
+				<Mon ID = "035" LV="12" />
+			</Mons>
+		</Gate>
+		<Gate ID = "10">
+			<Mons>
+				<Mon ID = "023" LV="13" />
+			</Mons>
+		</Gate>
+		<Gate ID = "11">
+			<Mons>
+				<Mon ID = "028" LV="14" />
+			</Mons>
+		</Gate>
+		<Gate ID = "12">
+			<Mons>
+				<Mon ID = "040" LV="15" />
+			</Mons>
+		</Gate>
+		<Gate ID = "13">
+			<Mons>
+				<Mon ID = "008" LV="16" />
+			</Mons>
+		</Gate>
+		<Gate ID = "14">
+			<Mons>
+				<Mon ID = "041" LV="18" />
+				<Mon ID = "011" LV="18" />
+				<Mon ID = "023" LV="18" />
+			</Mons>
+			<Items>
+			  <Item ID = "200214" Count = "1" rate = "60"/>
+			  <Item ID = "200221" Count = "1" rate = "5"/>
+			  <Item ID = "200003" Count = "1" rate = "35"/>
+		    </Items>
+		</Gate>
+		<Gate ID = "15">
+			<Mons>
+				<Mon ID = "005" LV="17" />
+			</Mons>
+		</Gate>
+		<Gate ID = "16">
+			<Mons>
+				<Mon ID = "014" LV="18" />
+			</Mons>
+		</Gate>
+		<Gate ID = "17">
+			<Mons>
+				<Mon ID = "044" LV="19" />
+			</Mons>
+		</Gate>
+		<Gate ID = "18">
+			<Mons>
+				<Mon ID = "021" LV="20" />
+			</Mons>
+		</Gate>
+		<Gate ID = "19">
+			<Mons>
+				<Mon ID = "035" LV="21" />
+			</Mons>
+		</Gate>
+		<Gate ID = "20">
+			<Mons>
+				<Mon ID = "008" LV="22" />
+			</Mons>
+		</Gate>
+		<Gate ID = "21">
+			<Mons>
+				<Mon ID = "047" LV="24" />
+				<Mon ID = "028" LV="24" />
+				<Mon ID = "032" LV="24" />
+			</Mons>
+		</Gate>
+	</Method>
+	<!--勇士之门 -->
+	<Method ID = "2" GateName = "勇士之门" FightMonNum = "3" TotalGate = "21" ScoreFifty = "10" FiftyOnlyFlagIndex = "56"
+	ScoreNormal = "10" NormalOnlyFlagIndex = "77" NormalDayLimitType = "50" NormalDayMaxNum = "5" FiftyVFiftyDayLimitType = "51" FiftyVFiftyDayMaxNum = "5"  ScoreFiftyPVP="10" ScoreNormalPVP="10"	HonourNumPVP50v50="30" HonourNumPVP50v50DayLimitType="70" HonourNumPVP="30" HonourNumPVPDayLimitType="302">
+		<Items>
+			<Item ID = "100092" Count = "1" />
+			<Item ID = "100091" Count = "1" />
+			<Item ID = "100090" Count = "1" />
+			<Item ID = "100089" Count = "1" />
+			<Item ID = "100088" Count = "1" />
+			<Item ID = "1" Count = "300" Flag = "1" />							
+			<Item ID = "500014" Count = "1" Flag = "2" />
+			<Item ID = "500019" Count = "1" Flag = "50" />	
+			<Item ID = "500020" Count = "1" Flag = "100" />				
+		</Items>
+		<Gate ID = "1">
+			<Mons>
+				<Mon ID = "011" LV="27" />
+				<Mon ID = "008" LV="27" />
+				<Mon ID = "021" LV="27" />				
+			</Mons>
+		</Gate>
+		<Gate ID = "2">
+			<Mons>
+				<Mon ID = "002" LV="27" />
+				<Mon ID = "019" LV="27" />
+				<Mon ID = "023" LV="27" />								
+			</Mons>
+		</Gate>
+		<Gate ID = "3">
+			<Mons>
+				<Mon ID = "026" LV="27" />
+				<Mon ID = "028" LV="27" />
+				<Mon ID = "032" LV="27" />								
+			</Mons>
+		</Gate>
+		<Gate ID = "4">
+			<Mons>
+				<Mon ID = "019" LV="27" />
+				<Mon ID = "035" LV="27" />
+				<Mon ID = "041" LV="27" />							
+			</Mons>
+		</Gate>
+		<Gate ID = "5">
+			<Mons>
+				<Mon ID = "021" LV="27" />
+				<Mon ID = "044" LV="27" />
+				<Mon ID = "049" LV="27" />								
+			</Mons>
+		</Gate>
+		<Gate ID = "6">
+			<Mons>
+				<Mon ID = "005" LV="27" />
+				<Mon ID = "011" LV="27" />
+				<Mon ID = "040" LV="27" />								
+			</Mons>
+		</Gate>
+		<Gate ID = "7">
+			<Mons>
+				<Mon ID = "014" LV="30" />
+				<Mon ID = "040" LV="30" />
+				<Mon ID = "002" LV="30" />
+				<Mon ID = "047" LV="30" />
+				<Mon ID = "019" LV="30" />
+				<Mon ID = "026" LV="30" />				
+			</Mons>
+		    <Items>
+			  <Item ID = "200213" Count = "1" rate = "30"/>
+			  <Item ID = "200214" Count = "1" rate = "30"/>
+			  <Item ID = "200002" Count = "1" rate = "40"/>
+		    </Items>
+		</Gate>
+		<Gate ID = "8">
+			<Mons>
+				<Mon ID = "026" LV="28" />
+				<Mon ID = "044" LV="28" />
+				<Mon ID = "040" LV="28" />								
+			</Mons>
+		</Gate>
+		<Gate ID = "9">
+			<Mons>
+				<Mon ID = "035" LV="29" />
+				<Mon ID = "032" LV="29" />
+				<Mon ID = "028" LV="29" />				
+			</Mons>
+		</Gate>
+		<Gate ID = "10">
+			<Mons>
+				<Mon ID = "023" LV="30" />
+				<Mon ID = "014" LV="30" />
+				<Mon ID = "021" LV="30" />
+			</Mons>
+		</Gate>
+		<Gate ID = "11">
+			<Mons>
+				<Mon ID = "029" LV="31" />
+				<Mon ID = "026" LV="31" />
+				<Mon ID = "019" LV="31" />	
+			</Mons>
+		</Gate>
+		<Gate ID = "12">
+			<Mons>
+				<Mon ID = "040" LV="32" />
+				<Mon ID = "026" LV="32" />
+				<Mon ID = "040" LV="32" />				
+			</Mons>
+		</Gate>
+		<Gate ID = "13">
+			<Mons>
+				<Mon ID = "008" LV="33" />
+				<Mon ID = "029" LV="33" />
+				<Mon ID = "042" LV="33" />
+			</Mons>
+		</Gate>
+		<Gate ID = "14">
+			<Mons>
+				<Mon ID = "029" LV="35" />
+				<Mon ID = "011" LV="35" />
+				<Mon ID = "023" LV="35" />
+				<Mon ID = "005" LV="35" />
+				<Mon ID = "050" LV="35" />
+				<Mon ID = "026" LV="35" />				
+			</Mons>
+			<Items>
+			  <Item ID = "200214" Count = "1" rate = "60"/>
+			  <Item ID = "200221" Count = "1" rate = "5"/>
+			  <Item ID = "200003" Count = "1" rate = "35"/>
+		    </Items>
+		</Gate>
+		<Gate ID = "15">
+			<Mons>
+				<Mon ID = "005" LV="34" />
+				<Mon ID = "023" LV="34" />
+				<Mon ID = "029" LV="34" />				
+			</Mons>
+		</Gate>
+		<Gate ID = "16">
+			<Mons>
+				<Mon ID = "014" LV="35" />
+				<Mon ID = "040" LV="35" />
+				<Mon ID = "014" LV="35" />
+			</Mons>
+		</Gate>
+		<Gate ID = "17">
+			<Mons>
+				<Mon ID = "044" LV="36" />
+				<Mon ID = "019" LV="36" />
+				<Mon ID = "021" LV="36" />
+			</Mons>
+		</Gate>
+		<Gate ID = "18">
+			<Mons>
+				<Mon ID = "050" LV="37" />
+				<Mon ID = "021" LV="37" />
+				<Mon ID = "040" LV="37" />			
+			</Mons>
+		</Gate>
+		<Gate ID = "19">
+			<Mons>
+				<Mon ID = "035" LV="38" />
+				<Mon ID = "035" LV="38" />
+				<Mon ID = "035" LV="38" />				
+			</Mons>
+		</Gate>
+		<Gate ID = "20">
+			<Mons>
+				<Mon ID = "008" LV="39" />
+				<Mon ID = "012" LV="39" />
+				<Mon ID = "024" LV="39" />								
+			</Mons>
+		</Gate>
+		<Gate ID = "21">
+			<Mons>
+				<Mon ID = "050" LV="40" />
+				<Mon ID = "042" LV="40" />
+				<Mon ID = "033" LV="40" />
+				<Mon ID = "012" LV="40" />
+				<Mon ID = "060" LV="40" />
+				<Mon ID = "024" LV="40" />				
+			</Mons>
+		</Gate>
+	</Method>
+	<!--竞技之门 -->
+	<Method ID = "3" GateName = "竞技之门" FightMonNum = "3" TotalGate = "21" ScoreFifty = "10" FiftyOnlyFlagIndex = "156"
+	ScoreNormal = "10" NormalOnlyFlagIndex = "129" NormalDayLimitType = "67" NormalDayMaxNum = "5" FiftyVFiftyDayLimitType = "68" FiftyVFiftyDayMaxNum = "5"  ScoreFiftyPVP="10" ScoreNormalPVP="10" HonourNumPVP50v50="30" HonourNumPVP50v50DayLimitType="71" HonourNumPVP="30" HonourNumPVPDayLimitType="303">
+		<Items>
+			<Item ID = "100111" Count = "1" />
+			<Item ID = "100110" Count = "1" />
+			<Item ID = "100109" Count = "1" />
+			<Item ID = "100108" Count = "1" />
+			<Item ID = "1" Count = "300" Flag = "1" />							
+			<Item ID = "500021" Count = "1" Flag = "2" />	
+			<Item ID = "500029" Count = "1" Flag = "50" />	
+			<Item ID = "500030" Count = "1" Flag = "100" />						
+		</Items>
+		<Gate ID = "1">
+			<Mons>
+				<Mon ID = "071" LV="37" />
+				<Mon ID = "008" LV="37" />
+				<Mon ID = "073" LV="37" />				
+			</Mons>
+		</Gate>
+		<Gate ID = "2">
+			<Mons>
+				<Mon ID = "002" LV="37" />
+				<Mon ID = "026" LV="37" />
+				<Mon ID = "040" LV="37" />								
+			</Mons>
+		</Gate>
+		<Gate ID = "3">
+			<Mons>
+				<Mon ID = "023" LV="37" />
+				<Mon ID = "019" LV="37" />
+				<Mon ID = "026" LV="37" />								
+			</Mons>
+		</Gate>
+		<Gate ID = "4">
+			<Mons>
+				<Mon ID = "044" LV="37" />
+				<Mon ID = "036" LV="37" />
+				<Mon ID = "066" LV="37" />							
+			</Mons>
+		</Gate>
+		<Gate ID = "5">
+			<Mons>
+				<Mon ID = "029" LV="37" />
+				<Mon ID = "019" LV="37" />
+				<Mon ID = "008" LV="37" />								
+			</Mons>
+		</Gate>
+		<Gate ID = "6">
+			<Mons>
+				<Mon ID = "005" LV="37" />
+				<Mon ID = "012" LV="37" />
+				<Mon ID = "040" LV="37" />								
+			</Mons>
+		</Gate>
+		<Gate ID = "7">
+			<Mons>
+				<Mon ID = "054" LV="40" />
+				<Mon ID = "040" LV="40" />
+				<Mon ID = "003" LV="40" />
+				<Mon ID = "048" LV="40" />
+				<Mon ID = "024" LV="40" />
+				<Mon ID = "045" LV="40" />				
+			</Mons>
+		    <Items>
+			  <Item ID = "200213" Count = "1" rate = "30"/>
+			  <Item ID = "200214" Count = "1" rate = "30"/>
+			  <Item ID = "200002" Count = "1" rate = "40"/>
+		    </Items>
+		</Gate>
+		<Gate ID = "8">
+			<Mons>
+				<Mon ID = "014" LV="38" />
+				<Mon ID = "036" LV="38" />
+				<Mon ID = "040" LV="38" />								
+			</Mons>
+		</Gate>
+		<Gate ID = "9">
+			<Mons>
+				<Mon ID = "027" LV="39" />
+				<Mon ID = "012" LV="39" />
+				<Mon ID = "008" LV="39" />				
+			</Mons>
+		</Gate>
+		<Gate ID = "10">
+			<Mons>
+				<Mon ID = "024" LV="40" />
+				<Mon ID = "073" LV="40" />
+				<Mon ID = "036" LV="40" />
+			</Mons>
+		</Gate>
+		<Gate ID = "11">
+			<Mons>
+				<Mon ID = "071" LV="41" />
+				<Mon ID = "045" LV="41" />
+				<Mon ID = "015" LV="41" />	
+			</Mons>
+		</Gate>
+		<Gate ID = "12">
+			<Mons>
+				<Mon ID = "040" LV="42" />
+				<Mon ID = "042" LV="42" />
+				<Mon ID = "040" LV="42" />				
+			</Mons>
+		</Gate>
+		<Gate ID = "13">
+			<Mons>
+				<Mon ID = "009" LV="43" />
+				<Mon ID = "029" LV="43" />
+				<Mon ID = "027" LV="43" />
+			</Mons>
+		</Gate>
+		<Gate ID = "14">
+			<Mons>
+				<Mon ID = "027" LV="45" />
+				<Mon ID = "012" LV="45" />
+				<Mon ID = "015" LV="45" />
+				<Mon ID = "006" LV="45" />
+				<Mon ID = "050" LV="45" />
+				<Mon ID = "060" LV="45" />				
+			</Mons>
+			<Items>
+			  <Item ID = "200214" Count = "1" rate = "60"/>
+			  <Item ID = "200221" Count = "1" rate = "5"/>
+			  <Item ID = "200003" Count = "1" rate = "35"/>
+		    </Items>
+		</Gate>
+		<Gate ID = "15">
+			<Mons>
+				<Mon ID = "066" LV="44" />
+				<Mon ID = "036" LV="44" />
+				<Mon ID = "029" LV="44" />				
+			</Mons>
+		</Gate>
+		<Gate ID = "16">
+			<Mons>
+				<Mon ID = "015" LV="45" />
+				<Mon ID = "040" LV="45" />
+				<Mon ID = "015" LV="45" />
+			</Mons>
+		</Gate>
+		<Gate ID = "17">
+			<Mons>
+				<Mon ID = "036" LV="46" />
+				<Mon ID = "033" LV="46" />
+				<Mon ID = "029" LV="46" />
+			</Mons>
+		</Gate>
+		<Gate ID = "18">
+			<Mons>
+				<Mon ID = "050" LV="47" />
+				<Mon ID = "054" LV="47" />
+				<Mon ID = "033" LV="47" />			
+			</Mons>
+		</Gate>
+		<Gate ID = "19">
+			<Mons>
+				<Mon ID = "036" LV="48" />
+				<Mon ID = "036" LV="48" />
+				<Mon ID = "036" LV="48" />				
+			</Mons>
+		</Gate>
+		<Gate ID = "20">
+			<Mons>
+				<Mon ID = "003" LV="49" />
+				<Mon ID = "012" LV="49" />
+				<Mon ID = "024" LV="49" />								
+			</Mons>
+		</Gate>
+		<Gate ID = "21">
+			<Mons>
+				<Mon ID = "071" LV="50" />
+				<Mon ID = "073" LV="50" />
+				<Mon ID = "040" LV="50" />
+				<Mon ID = "019" LV="50" />
+				<Mon ID = "078" LV="50" />
+				<Mon ID = "066" LV="50" />				
+			</Mons>
+		</Gate>
+	</Method>
+	<!--英雄之门 -->
+	<Method ID = "4" GateName = "英雄之门" FightMonNum = "6" FightMonNumMin = "1" TotalGate = "21" ScoreFifty = "10" FiftyOnlyFlagIndex = "224"
+	ScoreNormal = "10" NormalOnlyFlagIndex = "245" NormalDayLimitType = "273" NormalDayMaxNum = "5" FiftyVFiftyDayLimitType = "274" FiftyVFiftyDayMaxNum = "5"  ScoreFiftyPVP="10" ScoreNormalPVP="10" HonourNumPVP50v50="30" HonourNumPVP50v50DayLimitType="275" HonourNumPVP="30" HonourNumPVPDayLimitType="304">
+		<Items>
+			<Item ID = "100181" Count = "1" />
+			<Item ID = "100180" Count = "1" />
+			<Item ID = "100179" Count = "1" />
+			<Item ID = "100178" Count = "1" />
+			<Item ID = "100177" Count = "1" />			
+			<Item ID = "1" Count = "300" Flag = "1" />							
+			<Item ID = "500031" Count = "1" Flag = "2" />
+			<Item ID = "500032" Count = "1" Flag = "50" />	
+			<Item ID = "500033" Count = "1" Flag = "100" />							
+		</Items>
+		<Gate ID = "1" FightMonNum = "4">
+			<Mons>
+				<Mon ID = "015" LV="50" />
+				<Mon ID = "009" LV="50" />
+				<Mon ID = "019" LV="50" />
+				<Mon ID = "003" LV="50" />					
+			</Mons>
+		</Gate>
+		<Gate ID = "2" FightMonNum = "4">
+			<Mons>
+				<Mon ID = "003" LV="52" />
+				<Mon ID = "027" LV="52" />
+				<Mon ID = "040" LV="52" />
+				<Mon ID = "073" LV="52" />									
+			</Mons>
+		</Gate>
+		<Gate ID = "3" FightMonNum = "4">
+			<Mons>
+				<Mon ID = "024" LV="54" />
+				<Mon ID = "019" LV="54" />
+				<Mon ID = "027" LV="54" />	
+				<Mon ID = "021" LV="54" />								
+			</Mons>
+		</Gate>
+		<Gate ID = "4" FightMonNum = "4">
+			<Mons>
+				<Mon ID = "027" LV="56" />
+				<Mon ID = "036" LV="56" />
+				<Mon ID = "066" LV="56" />
+				<Mon ID = "045" LV="56" />								
+			</Mons>
+		</Gate>
+		<Gate ID = "5" FightMonNum = "4">
+			<Mons>
+				<Mon ID = "050" LV="58" />
+				<Mon ID = "019" LV="58" />
+				<Mon ID = "009" LV="58" />
+				<Mon ID = "033" LV="58" />									
+			</Mons>
+		</Gate>
+		<Gate ID = "6" FightMonNum = "4">
+			<Mons>
+				<Mon ID = "006" LV="60" />
+				<Mon ID = "129" LV="60" />
+				<Mon ID = "040" LV="60" />
+				<Mon ID = "073" LV="60" />									
+			</Mons>
+		</Gate>
+		<Gate ID = "7">
+			<Mons>
+				<Mon ID = "089" LV="60" />
+				<Mon ID = "087" LV="60" />
+				<Mon ID = "015" LV="60" />
+				<Mon ID = "006" LV="60" />
+				<Mon ID = "062" LV="60" />
+				<Mon ID = "060" LV="60" />				
+			</Mons>
+		    <Items>
+			  <Item ID = "200213" Count = "1" rate = "30"/>
+			  <Item ID = "200214" Count = "1" rate = "30"/>
+			  <Item ID = "200002" Count = "1" rate = "40"/>
+		    </Items>
+		</Gate>
+		<Gate ID = "8" FightMonNum = "5">
+			<Mons>
+				<Mon ID = "014" LV="62" />
+				<Mon ID = "036" LV="62" />
+				<Mon ID = "040" LV="62" />	
+				<Mon ID = "045" LV="62" />
+				<Mon ID = "042" LV="62" />								
+			</Mons>
+		</Gate>
+		<Gate ID = "9" FightMonNum = "5">
+			<Mons>
+				<Mon ID = "027" LV="64" />
+				<Mon ID = "012" LV="64" />
+				<Mon ID = "009" LV="64" />	
+				<Mon ID = "029" LV="64" />
+				<Mon ID = "073" LV="64" />			
+			</Mons>
+		</Gate>
+		<Gate ID = "10" FightMonNum = "5">
+			<Mons>
+				<Mon ID = "024" LV="66" />
+				<Mon ID = "092" LV="66" />
+				<Mon ID = "036" LV="66" />
+				<Mon ID = "064" LV="66" />	
+				<Mon ID = "066" LV="66" />
+			</Mons>
+		</Gate>
+		<Gate ID = "11" FightMonNum = "5">
+			<Mons>
+				<Mon ID = "076" LV="68" />
+				<Mon ID = "045" LV="68" />
+				<Mon ID = "015" LV="68" />	
+				<Mon ID = "085" LV="68" />
+				<Mon ID = "073" LV="68" />	
+			</Mons>
+		</Gate>
+		<Gate ID = "12" FightMonNum = "5">
+			<Mons>
+				<Mon ID = "040" LV="70" />
+				<Mon ID = "042" LV="70" />
+				<Mon ID = "094" LV="70" />	
+				<Mon ID = "040" LV="70" />
+				<Mon ID = "089" LV="70" />				
+			</Mons>
+		</Gate>
+		<Gate ID = "13" FightMonNum = "5">
+			<Mons>
+				<Mon ID = "009" LV="72" />
+				<Mon ID = "029" LV="72" />
+				<Mon ID = "027" LV="72" />
+				<Mon ID = "112" LV="72" />	
+				<Mon ID = "114" LV="72" />
+			</Mons>
+		</Gate>
+		<Gate ID = "14">
+			<Mons>
+				<Mon ID = "012" LV="72" />
+				<Mon ID = "069" LV="72" />
+				<Mon ID = "139" LV="72" />
+				<Mon ID = "009" LV="72" />
+				<Mon ID = "078" LV="72" />
+				<Mon ID = "066" LV="72" />				
+			</Mons>
+			<Items>
+			  <Item ID = "200214" Count = "1" rate = "60"/>
+			  <Item ID = "200221" Count = "1" rate = "5"/>
+			  <Item ID = "200003" Count = "1" rate = "35"/>
+		    </Items>
+		</Gate>
+		<Gate ID = "15">
+			<Mons>
+				<Mon ID = "066" LV="74" />
+				<Mon ID = "036" LV="74" />
+				<Mon ID = "029" LV="74" />	
+				<Mon ID = "116" LV="74" />	
+				<Mon ID = "121" LV="74" />
+				<Mon ID = "076" LV="74" />			
+			</Mons>
+		</Gate>
+		<Gate ID = "16">
+			<Mons>
+				<Mon ID = "015" LV="76" />
+				<Mon ID = "040" LV="76" />
+				<Mon ID = "015" LV="76" />
+				<Mon ID = "125" LV="76" />
+				<Mon ID = "069" LV="76" />
+				<Mon ID = "129" LV="76" />
+			</Mons>
+		</Gate>
+		<Gate ID = "17">
+			<Mons>
+				<Mon ID = "036" LV="78" />
+				<Mon ID = "033" LV="78" />
+				<Mon ID = "029" LV="78" />
+				<Mon ID = "132" LV="78" />	
+				<Mon ID = "027" LV="78" />
+				<Mon ID = "139" LV="78" />
+			</Mons>
+		</Gate>
+		<Gate ID = "18">
+			<Mons>
+				<Mon ID = "050" LV="80" />
+				<Mon ID = "054" LV="80" />
+				<Mon ID = "033" LV="80" />	
+				<Mon ID = "073" LV="80" />	
+				<Mon ID = "073" LV="80" />
+				<Mon ID = "073" LV="80" />		
+			</Mons>
+		</Gate>
+		<Gate ID = "19">
+			<Mons>
+				<Mon ID = "036" LV="82" />
+				<Mon ID = "036" LV="82" />
+				<Mon ID = "036" LV="82" />
+				<Mon ID = "125" LV="82" />
+				<Mon ID = "123" LV="82" />
+				<Mon ID = "048" LV="82" />				
+			</Mons>
+		</Gate>
+		<Gate ID = "20">
+			<Mons>
+				<Mon ID = "003" LV="84" />
+				<Mon ID = "012" LV="84" />
+				<Mon ID = "044" LV="84" />
+				<Mon ID = "052" LV="84" />
+				<Mon ID = "054" LV="84" />
+				<Mon ID = "069" LV="84" />								
+			</Mons>
+		</Gate>
+		<Gate ID = "21">
+			<Mons>
+				<Mon ID = "121" LV="86" />
+				<Mon ID = "114" LV="86" />
+				<Mon ID = "015" LV="86" />
+				<Mon ID = "019" LV="86" />
+				<Mon ID = "050" LV="86" />
+				<Mon ID = "134" LV="86" />				
+			</Mons>
+		</Gate>
+	</Method>
+	<!--双子之门 -->
+	<Method ID = "5" GateName = "双子之门" FightMonNum = "2" FightMonNumMin = "2" TotalGate = "42" ScoreFifty = "10" FiftyOnlyFlagIndex = "274"
+	ScoreNormal = "10" NormalOnlyFlagIndex = "316" NormalDayLimitType = "298" NormalDayMaxNum = "5" FiftyVFiftyDayLimitType = "299" FiftyVFiftyDayMaxNum = "5" ScoreFiftyPVP="10" ScoreNormalPVP="10" HonourNumPVP50v50="30" HonourNumPVP50v50DayLimitType="300" HonourNumPVP="30" HonourNumPVPDayLimitType="305">
+		<Items>		
+			<Item ID = "1" Count = "300" Flag = "1" />							
+			<Item ID = "500035" Count = "1" Flag = "2" />
+			<Item ID = "500036" Count = "1" Flag = "50" />	
+			<Item ID = "500037" Count = "1" Flag = "100" />							
+		</Items>
+		<Gate ID = "1">
+			<Mons>
+				<Mon ID = "089" LV="55" />
+				<Mon ID = "087" LV="55" />				
+			</Mons>
+		</Gate>
+		<Gate ID = "2">
+			<Mons>
+				<Mon ID = "027" LV="56" />
+				<Mon ID = "040" LV="56" />				
+			</Mons>
+		</Gate>
+		<Gate ID = "3">
+			<Mons>
+				<Mon ID = "145" LV="57" />
+				<Mon ID = "118" LV="57" />				
+			</Mons>
+		</Gate>
+		<Gate ID = "4">
+			<Mons>
+				<Mon ID = "042" LV="58" />
+				<Mon ID = "036" LV="58" />				
+			</Mons>
+		</Gate>
+		<Gate ID = "5">
+			<Mons>
+				<Mon ID = "012" LV="59" />
+				<Mon ID = "062" LV="59" />				
+			</Mons>
+		</Gate>
+		<Gate ID = "6">
+			<Mons>
+				<Mon ID = "042" LV="60" />
+				<Mon ID = "076" LV="60" />				
+			</Mons>
+		</Gate>
+		<Gate ID = "7">
+			<Mons>
+				<Mon ID = "069" LV="62" />
+				<Mon ID = "069" LV="62" />				
+			</Mons>
+			<Items>
+			  <Item ID = "200214" Count = "1" rate = "60"/>
+			  <Item ID = "200221" Count = "1" rate = "5"/>
+			  <Item ID = "200003" Count = "1" rate = "35"/>
+		    </Items>
+		</Gate>
+		<Gate ID = "8">
+			<Mons>
+				<Mon ID = "089" LV="63" />
+				<Mon ID = "139" LV="63" />				
+			</Mons>
+		</Gate>
+		<Gate ID = "9">
+			<Mons>
+				<Mon ID = "015" LV="64" />
+				<Mon ID = "050" LV="64" />				
+			</Mons>
+		</Gate>
+		<Gate ID = "10">
+			<Mons>
+				<Mon ID = "071" LV="65" />
+				<Mon ID = "171" LV="65" />				
+			</Mons>
+		</Gate>
+		<Gate ID = "11">
+			<Mons>
+				<Mon ID = "045" LV="66" />
+				<Mon ID = "071" LV="66" />				
+			</Mons>
+		</Gate>
+		<Gate ID = "12">
+			<Mons>
+				<Mon ID = "057" LV="67" />
+				<Mon ID = "015" LV="67" />				
+			</Mons>
+		</Gate>
+		<Gate ID = "13">
+			<Mons>
+				<Mon ID = "085" LV="68" />
+				<Mon ID = "110" LV="68" />				
+			</Mons>
+		</Gate>
+		<Gate ID = "14">
+			<Mons>
+				<Mon ID = "096" LV="70" />
+				<Mon ID = "095" LV="70" />				
+			</Mons>
+			<Items>
+			  <Item ID = "200214" Count = "1" rate = "60"/>
+			  <Item ID = "200221" Count = "1" rate = "5"/>
+			  <Item ID = "200003" Count = "1" rate = "35"/>
+		    </Items>
+		</Gate>
+		<Gate ID = "15">
+			<Mons>
+				<Mon ID = "110" LV="71" />
+				<Mon ID = "112" LV="71" />				
+			</Mons>
+		</Gate>
+		<Gate ID = "16">
+			<Mons>
+				<Mon ID = "114" LV="72" />
+				<Mon ID = "116" LV="72" />				
+			</Mons>
+		</Gate>
+		<Gate ID = "17">
+			<Mons>
+				<Mon ID = "171" LV="73" />
+				<Mon ID = "045" LV="73" />				
+			</Mons>
+		</Gate>
+		<Gate ID = "18">
+			<Mons>
+				<Mon ID = "129" LV="74" />
+				<Mon ID = "048" LV="74" />				
+			</Mons>
+		</Gate>
+		<Gate ID = "19">
+			<Mons>
+				<Mon ID = "031" LV="75" />
+				<Mon ID = "038" LV="75" />				
+			</Mons>
+		</Gate>
+		<Gate ID = "20">
+			<Mons>
+				<Mon ID = "015" LV="76" />
+				<Mon ID = "009" LV="76" />				
+			</Mons>
+		</Gate>
+		<Gate ID = "21">
+			<Mons>
+				<Mon ID = "175" LV="78" />
+				<Mon ID = "009" LV="78" />				
+			</Mons>
+			<Items>
+			  <Item ID = "200214" Count = "1" rate = "60"/>
+			  <Item ID = "200221" Count = "1" rate = "5"/>
+			  <Item ID = "200003" Count = "1" rate = "35"/>
+		    </Items>
+			<AddMon>
+				<Mon ID = "174" LV="10" FOREVER_EVENT_ID="202016"/>
+			</AddMon>
+		</Gate>
+		<Gate ID = "22">
+			<Mons>
+				<Mon ID = "148" LV="100" />
+				<Mon ID = "150" LV="100" />				
+			</Mons>
+		</Gate>
+		<Gate ID = "23">
+			<Mons>
+				<Mon ID = "052" LV="100" />
+				<Mon ID = "112" LV="100" />				
+			</Mons>
+		</Gate>
+		<Gate ID = "24">
+			<Mons>
+				<Mon ID = "078" LV="100" />
+				<Mon ID = "143" LV="100" />				
+			</Mons>
+		</Gate>
+		<Gate ID = "25">
+			<Mons>
+				<Mon ID = "015" LV="100" />
+				<Mon ID = "009" LV="100" />				
+			</Mons>
+		</Gate>
+		<Gate ID = "26">
+			<Mons>
+				<Mon ID = "141" LV="100" />
+				<Mon ID = "143" LV="100" />				
+			</Mons>
+		</Gate>
+		<Gate ID = "27">
+			<Mons>
+				<Mon ID = "165" LV="100" />
+				<Mon ID = "017" LV="100" />				
+			</Mons>
+		</Gate>
+		<Gate ID = "28">
+			<Mons>
+				<Mon ID = "080" LV="100" />
+				<Mon ID = "082" LV="100" />				
+			</Mons>
+			<Items>
+			  <Item ID = "200214" Count = "1" rate = "60"/>
+			  <Item ID = "200221" Count = "1" rate = "5"/>
+			  <Item ID = "200003" Count = "1" rate = "35"/>
+		    </Items>
+		</Gate>
+		<Gate ID = "29">
+			<Mons>
+				<Mon ID = "021" LV="100" />
+				<Mon ID = "033" LV="100" />				
+			</Mons>
+		</Gate>
+		<Gate ID = "30">
+			<Mons>
+				<Mon ID = "064" LV="100" />
+				<Mon ID = "123" LV="100" />				
+			</Mons>
+		</Gate>
+		<Gate ID = "31">
+			<Mons>
+				<Mon ID = "092" LV="100" />
+				<Mon ID = "062" LV="100" />				
+			</Mons>
+		</Gate>
+		<Gate ID = "32">
+			<Mons>
+				<Mon ID = "076" LV="100" />
+				<Mon ID = "078" LV="100" />				
+			</Mons>
+		</Gate>
+		<Gate ID = "33">
+			<Mons>
+				<Mon ID = "019" LV="100" />
+				<Mon ID = "017" LV="100" />				
+			</Mons>
+		</Gate>
+		<Gate ID = "34">
+			<Mons>
+				<Mon ID = "137" LV="100" />
+				<Mon ID = "110" LV="100" />				
+			</Mons>
+		</Gate>
+		<Gate ID = "35">
+			<Mons>
+				<Mon ID = "132" LV="100" HP="554" Atk="501" Def="460" SpAtk="501" SpDef="464" Spd="468"/>
+				<Mon ID = "093" LV="100" HP="564" Atk="517" Def="473" SpAtk="475" SpDef="464" Spd="467"/>				
+			</Mons>
+			<Items>
+			  <Item ID = "200214" Count = "1" rate = "60"/>
+			  <Item ID = "200221" Count = "1" rate = "5"/>
+			  <Item ID = "200003" Count = "1" rate = "35"/>
+		    </Items>
+		</Gate>
+		<Gate ID = "36">
+			<Mons>
+				<Mon ID = "006" LV="100" HP="562" Atk="532" Def="468" SpAtk="470" SpDef="466" Spd="488"/>
+				<Mon ID = "009" LV="100" HP="586" Atk="453" Def="517" SpAtk="473" SpDef="528" Spd="433"/>				
+			</Mons>
+		</Gate>
+		<Gate ID = "37">
+			<Mons>
+				<Mon ID = "134" LV="100" HP="554" Atk="510" Def="459" SpAtk="495" SpDef="466" Spd="455"/>
+				<Mon ID = "048" LV="100" HP="556" Atk="510" Def="474" SpAtk="492" SpDef="466" Spd="442"/>				
+			</Mons>
+		</Gate>
+		<Gate ID = "38">
+			<Mons>
+				<Mon ID = "060" LV="100" HP="554" Atk="503" Def="466" SpAtk="503" SpDef="466" Spd="447"/>
+				<Mon ID = "060" LV="100" HP="554" Atk="503" Def="466" SpAtk="503" SpDef="466" Spd="447"/>				
+			</Mons>
+		</Gate>
+		<Gate ID = "39">
+			<Mons>
+				<Mon ID = "092" LV="100" HP="562" Atk="479" Def="459" SpAtk="512" SpDef="477" Spd="475"/>
+				<Mon ID = "096" LV="100" HP="564" Atk="510" Def="466" SpAtk="486" SpDef="471" Spd="471"/>				
+			</Mons>
+		</Gate>
+		<Gate ID = "40">
+			<Mons>
+				<Mon ID = "062" LV="100" HP="564" Atk="477" Def="477" SpAtk="521" SpDef="466" Spd="477"/>
+				<Mon ID = "006" LV="100" HP="562" Atk="532" Def="468" SpAtk="470" SpDef="466" Spd="488"/>				
+			</Mons>
+		</Gate>
+		<Gate ID = "41">
+			<Mons>
+				<Mon ID = "050" LV="100" HP="564" Atk="464" Def="479" SpAtk="506" SpDef="479" Spd="442"/>
+				<Mon ID = "050" LV="100" HP="564" Atk="464" Def="479" SpAtk="506" SpDef="479" Spd="442"/>				
+			</Mons>
+		</Gate>
+		<Gate ID = "42">
+			<Mons>
+				<Mon ID = "177" LV="100" HP="560" Atk="482" Def="464" SpAtk="512" SpDef="470" Spd="477"/>
+				<Mon ID = "175" LV="100" HP="558" Atk="519" Def="469" SpAtk="486" SpDef="464" Spd="470"/>				
+			</Mons>
+			<Items>
+			  <Item ID = "200214" Count = "1" rate = "60"/>
+			  <Item ID = "200221" Count = "1" rate = "5"/>
+			  <Item ID = "200003" Count = "2" rate = "35"/>
+		    </Items>
+			<AddMon>
+				<Mon ID = "176" LV="10" FOREVER_EVENT_ID="202017"/>
+			</AddMon>
+		</Gate>
+	</Method>
+</PlayingMethodes>

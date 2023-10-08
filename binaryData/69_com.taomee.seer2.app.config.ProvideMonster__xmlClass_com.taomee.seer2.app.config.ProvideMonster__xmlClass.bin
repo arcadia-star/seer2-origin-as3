@@ -1,0 +1,11 @@
+<!--����2����ʹ�� NumbersID ID��Ӧmonster����, InheritableMoves��ʾ�ܼ̳еļ��ܣ�Ҳ��Ӧmonster�����-->
+<Monsters>
+   			<Monster NumbersID="1" ID="1">
+   				  <InheritableMoves>
+               <Move ID="10001" LearningLv="1" SoundID="03_1_002" EffectID="03_1_014"/>
+               <Move ID="10002" LearningLv="5" SoundID="03_2_003" EffectID="03_2_013"/>
+               <Move ID="10003" LearningLv="10" SoundID="03_3_001" EffectID="03_3_004"/>
+               <Move ID="10004" LearningLv="15" SoundID="03_1_002" EffectID="03_1_014"/>
+           </InheritableMoves>
+          </Monster>
+</Monsters>

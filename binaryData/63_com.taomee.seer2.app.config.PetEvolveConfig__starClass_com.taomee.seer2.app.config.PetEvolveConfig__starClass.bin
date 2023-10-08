@@ -1,0 +1,18 @@
+﻿<Stars>
+	<Star ID="1" Name="神化一星" Atk="10" SpAtk="10" Def="10" SpDef="10" Spd="5" Hp="30" All="75" Crystal="100" border="0" bg="0"/>
+	<Star ID="2" Name="神化二星" Atk="15" SpAtk="15" Def="15" SpDef="15" Spd="10" Hp="35" All="105" Crystal="133" border="0" bg="0"/>
+	<Star ID="3" Name="神化三星" Atk="20" SpAtk="20" Def="20" SpDef="20" Spd="15" Hp="40" All="135" Crystal="177" border="0" bg="0"/>
+	<Star ID="4" Name="神化四星" Atk="25" SpAtk="25" Def="25" SpDef="25" Spd="20" Hp="45" All="165" Crystal="237" border="0" bg="0"/>
+	<Star ID="5" Name="圣化一星" Atk="30" SpAtk="30" Def="30" SpDef="30" Spd="25" Hp="50" All="195" Crystal="316" border="0" bg="0"/>
+	<Star ID="6" Name="圣化二星" Atk="35" SpAtk="35" Def="35" SpDef="35" Spd="30" Hp="55" All="225" Crystal="421" border="0" bg="0"/>
+	<Star ID="7" Name="圣化三星" Atk="40" SpAtk="40" Def="40" SpDef="40" Spd="35" Hp="60" All="255" Crystal="561" border="0" bg="0"/>
+	<Star ID="8" Name="圣化四星" Atk="45" SpAtk="45" Def="45" SpDef="45" Spd="40" Hp="65" All="285" Crystal="749" border="0" bg="0"/>
+	<Star ID="1001" Name="魔化一星" Atk="20" SpAtk="20" Def="0" SpDef="0" Spd="5" Hp="30" All="75" Crystal="100" border="0" bg="0"/>
+	<Star ID="1002" Name="魔化二星" Atk="30" SpAtk="30" Def="0" SpDef="0" Spd="10" Hp="35" All="105" Crystal="133" border="0" bg="0"/>
+	<Star ID="1003" Name="魔化三星" Atk="40" SpAtk="40" Def="0" SpDef="0" Spd="15" Hp="40" All="135" Crystal="177" border="0" bg="0"/>
+	<Star ID="1004" Name="魔化四星" Atk="50" SpAtk="50" Def="0" SpDef="0" Spd="20" Hp="45" All="165" Crystal="237" border="0" bg="0"/>
+	<Star ID="1005" Name="冥化一星" Atk="60" SpAtk="60" Def="0" SpDef="0" Spd="25" Hp="50" All="195" Crystal="316" border="0" bg="0"/>
+	<Star ID="1006" Name="冥化二星" Atk="70" SpAtk="70" Def="0" SpDef="0" Spd="30" Hp="55" All="225" Crystal="421" border="0" bg="0"/>
+	<Star ID="1007" Name="冥化三星" Atk="80" SpAtk="80" Def="0" SpDef="0" Spd="35" Hp="60" All="255" Crystal="561" border="0" bg="0"/>
+	<Star ID="1008" Name="冥化四星" Atk="90" SpAtk="90" Def="0" SpDef="0" Spd="40" Hp="65" All="285" Crystal="749" border="0" bg="0"/>
+</Stars>

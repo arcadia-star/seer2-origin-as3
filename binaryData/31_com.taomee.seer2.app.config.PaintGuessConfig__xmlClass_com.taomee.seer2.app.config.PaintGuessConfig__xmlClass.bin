@@ -1,0 +1,230 @@
+<!-- 
+    type 组的类型 pet为精灵 equip为装备
+	sort 是序列
+	id 要么是精灵的唯一ID 要么是装备的ID 要么是别的ID 
+	optionList是答案列表
+	yesOption是正确答案
+	isOpen为1是表示开放 为0表示不开放 
+-->
+<paints>
+	<paint type="pet" sort="1">
+		<group>
+			<item id = "001" optionList="水泡泡|迪兰|蓝色妖精" yesOption="迪兰" isOpen="1"/> 
+			<item id = "010" optionList="法拉|小不点|大眼睛" yesOption="法拉" isOpen="1"/> 
+			<item id = "013" optionList="向日葵|小树根|小小葵" yesOption="小小葵" isOpen="1"/> 
+			<item id = "018" optionList="小树根|小木头|小树枝" yesOption="小树根" isOpen="1"/> 
+			<item id = "020" optionList="奇鲁|大头鱼|咕噜" yesOption="奇鲁" isOpen="1"/> 
+			<item id = "022" optionList="毒斯|古斯|毒草" yesOption="古斯" isOpen="1"/> 
+			<item id = "028" optionList="蓝鲸|蓝鱼|蓝喵" yesOption="蓝喵" isOpen="1"/> 
+			<item id = "032" optionList="尤尼|乔尼|鲁尼" yesOption="尤尼" isOpen="1"/> 
+			<item id = "037" optionList="小龙虾|霍克|铁头" yesOption="霍克" isOpen="1"/> 
+			<item id = "039" optionList="小河豚|小赤豚|小火豚" yesOption="小赤豚" isOpen="1"/> 
+			<item id = "061" optionList="晓月兔|新月兔|宿月兔" yesOption="晓月兔" isOpen="1"/> 
+			<item id = "063" optionList="格鲁克|格西克|喷火牛" yesOption="格西克" isOpen="1"/> 
+			<item id = "065" optionList="狸猫|浣熊|浣浣" yesOption="浣浣" isOpen="1"/> 
+			<item id = "067" optionList="小雏鸡|稚壳鸡|河童鸡" yesOption="稚壳鸡" isOpen="1"/> 
+			<item id = "070" optionList="嘟嘟|啾啾|咕咕" yesOption="嘟嘟" isOpen="1"/> 			
+			</group>
+			
+		<group>
+			<item id = "053" optionList="犀牛宝宝|魔装牛|牛牛" yesOption="牛牛" isOpen="1"/> 
+			<item id = "142" optionList="荷玛|荷米|荷依" yesOption="荷玛" isOpen="1"/> 
+			<item id = "144" optionList="乔尼|乔巴|乔顿" yesOption="乔巴" isOpen="1"/> 
+			<item id = "146" optionList="大眼独角|尖锐独角|独角仙" yesOption="大眼独角" isOpen="1"/> 
+			<item id = "149" optionList="小巴|小电|小磁" yesOption="小巴" isOpen="1"/> 
+			<item id = "154" optionList="小紫|舜紫|阿紫" yesOption="阿紫" isOpen="1"/> 
+			<item id = "156" optionList="菲尼|菲亚|菲里" yesOption="菲亚" isOpen="1"/> 
+			<item id = "161" optionList="雷克|雷顿|雷萨" yesOption="雷克" isOpen="1"/> 
+			<item id = "164" optionList="桃子|米米|桃太郎" yesOption="米米" isOpen="1"/> 
+			<item id = "179" optionList="尼古|尼布|尼亚" yesOption="尼古" isOpen="1"/> 
+			<item id = "200" optionList="荧光蝶|荧光蛾|萤火蝶" yesOption="荧光蝶" isOpen="1"/> 
+			<item id = "204" optionList="芙拉|芙伦|伦斯" yesOption="芙拉" isOpen="1"/> 
+			<item id = "206" optionList="拳套猴|雷金|小狒" yesOption="雷金" isOpen="1"/> 
+			<item id = "208" optionList="莉亚|玛丽|安吉" yesOption="安吉" isOpen="1"/> 
+			<item id = "212" optionList="石像鬼|石头蝠|石像魔" yesOption="石像鬼" isOpen="1"/> 
+
+		</group>
+
+		<group>
+			<item id = "128" optionList="波利|波尼|乌里" yesOption="波利" isOpen="1"/> 
+			<item id = "130" optionList="火花鲤|岩浆鲤|赤炎鲤" yesOption="火花鲤" isOpen="1"/> 
+			<item id = "133" optionList="小关|小结|小博" yesOption="小结" isOpen="1"/> 
+			<item id = "135" optionList="鲁伯|沙鲁|鲁鲁" yesOption="鲁鲁" isOpen="1"/> 
+			<item id = "140" optionList="虚鳐|希捷|希曼" yesOption="希捷" isOpen="1"/> 
+			<item id = "072" optionList="乌古|乌达|布达" yesOption="乌达" isOpen="1"/> 
+			<item id = "074" optionList="达达|多多|迪迪" yesOption="达达" isOpen="1"/> 
+			<item id = "077" optionList="齿轮鹰|艾木迪|米共鸟" yesOption="齿轮鹰" isOpen="1"/> 
+			<item id = "124" optionList="冰朵|伊露|朵伊" yesOption="伊露" isOpen="1"/> 
+			<item id = "126" optionList="妮露|菲露|尼娅" yesOption="尼娅" isOpen="1"/> 
+			<item id = "113" optionList="蹦蹦鼠|袋袋鼠|跳跳鼠" yesOption="跳跳鼠" isOpen="1"/> 
+			<item id = "115" optionList="胖胖|肥肥|滚滚" yesOption="胖胖" isOpen="1"/> 
+			<item id = "117" optionList="乃伊|阿布|冤魂" yesOption="阿布" isOpen="1"/> 
+			<item id = "119" optionList="豚豚|冰豚|雪豚" yesOption="豚豚" isOpen="1"/> 
+			<item id = "122" optionList="冻气龟|冰川龟|雪地龟" yesOption="冻气龟" isOpen="1"/> 
+		</group>
+
+		<group>
+			<item id = "083" optionList="拖把头|茅草头|扫把头" yesOption="扫把头" isOpen="1"/> 
+			<item id = "088" optionList="皮尔|皮格|猪头" yesOption="皮格" isOpen="1"/> 
+			<item id = "090" optionList="雷伊|雷神|雷鸣" yesOption="雷伊" isOpen="1"/> 
+			<item id = "109" optionList="食蚁兽|埃卡|地精" yesOption="埃卡" isOpen="1"/> 
+			<item id = "111" optionList="砂砂|响尾蛇|沙地蛇" yesOption="砂砂" isOpen="1"/> 		
+			<item id = "166" optionList="芬芬|蕾蕾|葛葛" yesOption="芬芬" isOpen="1"/> 
+			<item id = "169" optionList="小小恶魔|小恶魔|恶魔" yesOption="小小恶魔" isOpen="1"/> 
+			<item id = "172" optionList="阿童钢|阿童铁|阿童木" yesOption="阿童铁" isOpen="1"/> 
+			<item id = "174" optionList="卡罗|卡普|卡特" yesOption="卡特" isOpen="1"/>  
+			<item id = "176" optionList="卡特|卡普|卡罗" yesOption="卡罗" isOpen="1"/> 
+			<item id = "041" optionList="水墨海马|水墨飞飞|水墨点点" yesOption="水墨点点" isOpen="1"/>  
+			<item id = "043" optionList="啾啾|唧唧|咕咕" yesOption="啾啾" isOpen="1"/> 
+			<item id = "049" optionList="巴布|多摩|咔嚓" yesOption="多摩" isOpen="1"/>  
+			<item id = "051" optionList="阿宝|阿财|阿贝" yesOption="阿宝" isOpen="1"/>  
+			<item id = "058" optionList="大眼猴|大耳猴|大嘴猴" yesOption="大耳猴" isOpen="1"/> 
+			<item id = "181" optionList="狮鹫|萨萨|小虎" yesOption="萨萨" isOpen="1"/> 
+			<item id = "188" optionList="费德|伍德|茅茅" yesOption="费德" isOpen="1"/>  
+			<item id = "190" optionList="诺基|洛基|N君" yesOption="诺基" isOpen="1"/> 
+			<item id = "194" optionList="小飞机|克里普|探测机" yesOption="克里普" isOpen="1"/>  
+			<item id = "198" optionList="时光鸟|肥肥|泰姆" yesOption="泰姆" isOpen="1"/> 	
+		</group>
+	</paint>
+	
+	<paint type="upPet" sort="2">
+		<group>
+			<item id = "014" optionList="呆呆葵|小小葵|葵花花" yesOption="呆呆葵" isOpen="1"/> 
+			<item id = "019" optionList="树根勇者|树根使者|大树根" yesOption="树根使者" isOpen="1"/> 
+			<item id = "021" optionList="库奇鲁|库鲁奇|库奇" yesOption="库奇鲁" isOpen="1"/> 
+			<item id = "023" optionList="古加罗|古罗斯|古加罗斯" yesOption="古加罗" isOpen="1"/> 
+			<item id = "029" optionList="蓝鲸鱼|鲸鱼|蓝虎鲸" yesOption="蓝虎鲸" isOpen="1"/> 
+			<item id = "032" optionList="乔尼|尤尼|尼乔" yesOption="尤尼" isOpen="1"/> 
+			<item id = "044" optionList="爱心熊|维尼啾啾|维尼熊" yesOption="维尼啾啾" isOpen="1"/> 
+			<item id = "047" optionList="泰尼|战斗熊|鲁尼" yesOption="泰尼" isOpen="1"/> 
+			<item id = "050" optionList="多摩桑|多摩|阿宝" yesOption="多摩桑" isOpen="1"/> 
+			<item id = "054" optionList="犀牛顿|犀牛|牛顿" yesOption="牛顿" isOpen="1"/> 
+			<item id = "059" optionList="长臂猿|长臂猴|拳套猴" yesOption="拳套猴" isOpen="1"/> 
+			<item id = "062" optionList="月亮兔|晓拂兔|拂晓兔" yesOption="拂晓兔" isOpen="1"/> 
+			<item id = "066" optionList="浣狸|浣熊|浣浣" yesOption="浣狸" isOpen="1"/> 
+			<item id = "068" optionList="蛋壳鸡|酷壳鸡|稚壳鸡" yesOption="酷壳鸡" isOpen="1"/> 
+			<item id = "075" optionList="达克尔|达达|达克" yesOption="达克尔" isOpen="1"/> 
+			<item id = "097" optionList="电伊特|飞伊特|风伊特" yesOption="飞伊特" isOpen="1"/> 
+			<item id = "109" optionList="大鼻子|小猪|埃卡" yesOption="埃卡" isOpen="1"/> 
+			<item id = "115" optionList="胖胖|肥肥|嘟嘟" yesOption="胖胖" isOpen="1"/> 
+			<item id = "118" optionList="阿布|阿布布|阿布尔" yesOption="阿布布" isOpen="1"/> 
+			<item id = "128" optionList="冰熊|波利|小波利" yesOption="波利" isOpen="1"/> 
+			<item id = "131" optionList="火花仔|火花鲤|鲤鱼" yesOption="火花仔" isOpen="1"/> 
+			<item id = "134" optionList="小关|小结|大关" yesOption="大关" isOpen="1"/> 
+			<item id = "137" optionList="鲁卜利|鲁卜哈利|沙沙" yesOption="鲁卜哈利" isOpen="1"/> 
+			<item id = "139" optionList="多普利|多利|企鹅" yesOption="多普利" isOpen="1"/> 
+			<item id = "143" optionList="荷依米|大耳朵|大蝴蝶" yesOption="荷依米" isOpen="1"/> 
+		</group>
+		<group>
+			<item id = "037" optionList="霍克努尔|霍克|小霍" yesOption="霍克" isOpen="1"/> 
+			<item id = "040" optionList="野猪|火猪|赤焰兽" yesOption="赤焰兽" isOpen="1"/> 
+			<item id = "045" optionList="球球|啾啾|卡顿啾啾" yesOption="卡顿啾啾" isOpen="1"/> 
+			<item id = "026" optionList="章鱼|安亚|水墨点点" yesOption="安亚" isOpen="1"/> 
+			<item id = "016" optionList="布尔|布尔托|胖胖" yesOption="布尔" isOpen="1"/> 
+			<item id = "011" optionList="法娜|法拉|法萨" yesOption="法娜" isOpen="1"/> 
+			<item id = "208" optionList="安亚|安吉|海马" yesOption="安吉" isOpen="1"/> 
+			<item id = "210" optionList="蘑菇|弗格斯|弗格" yesOption="弗格" isOpen="1"/> 
+			<item id = "213" optionList="石像鬼|石像魔|石像妖" yesOption="石像魔" isOpen="1"/> 
+			<item id = "218" optionList="诺斯|耐普|波利" yesOption="耐普" isOpen="1"/> 
+			<item id = "223" optionList="维克多|超人猪|小飞猪" yesOption="维克多" isOpen="1"/> 
+			<item id = "226" optionList="小詹姆|詹姆斯|詹姆" yesOption="詹姆" isOpen="1"/> 
+			<item id = "229" optionList="米诺诺|米诺|米诺尔" yesOption="米诺诺" isOpen="1"/> 
+			<item id = "233" optionList="帕帕米拉|米拉|帕帕拉" yesOption="帕帕米拉" isOpen="1"/> 
+			<item id = "235" optionList="兰萨尔|萨兰|萨兰尔" yesOption="萨兰" isOpen="1"/> 
+			<item id = "238" optionList="卡拉尔|卡拉|卡卡拉" yesOption="卡拉尔" isOpen="1"/> 
+			<item id = "239" optionList="海特尔|海特|伊特" yesOption="海特" isOpen="1"/> 
+			<item id = "241" optionList="咩咩|哞哞|牛牛" yesOption="哞哞" isOpen="1"/> 
+			<item id = "243" optionList="熊吉|熊吉吉|小熊" yesOption="熊吉" isOpen="1"/> 
+			<item id = "252" optionList="小路叶|大叶子|利路姆" yesOption="利路姆" isOpen="1"/> 
+			<item id = "253" optionList="海葵|海小葵|台风" yesOption="海小葵" isOpen="1"/> 
+			<item id = "257" optionList="莫克|莫古|霍克" yesOption="莫克" isOpen="1"/> 
+			<item id = "264" optionList="骰子怪|骰子|巴博" yesOption="巴博" isOpen="1"/> 
+			<item id = "272" optionList="小马|马良|神笔" yesOption="小马" isOpen="1"/> 
+			<item id = "077" optionList="猫头怪|齿轮鹰|猫头鹰" yesOption="齿轮鹰" isOpen="1"/>
+		</group>
+		<group>
+			<item id = "008" optionList="拉奥花|拉奥|拉奥苗" yesOption="拉奥苗" isOpen="1"/> 
+			<item id = "063" optionList="格西克|格尔西克|皮皮格" yesOption="格西克" isOpen="1"/> 
+			<item id = "073" optionList="达达|达克尔|乌古达" yesOption="乌古达" isOpen="1"/> 
+			<item id = "084" optionList="草莓头|梅花头|扫把头" yesOption="梅花头" isOpen="1"/> 
+			<item id = "089" optionList="卡格|皮皮格|皮格" yesOption="皮皮格" isOpen="1"/> 
+			<item id = "096" optionList="光伊特|电伊特|亮伊特" yesOption="光伊特" isOpen="1"/> 
+			<item id = "113" optionList="跳袋鼠|跳跳鼠|袋鼠" yesOption="跳跳鼠" isOpen="1"/> 
+			<item id = "119" optionList="冰豚|雪豚|豚豚" yesOption="豚豚" isOpen="1"/> 
+			<item id = "086" optionList="三眼|蝎子|三眼蝎" yesOption="三眼蝎" isOpen="1"/>  
+			<item id = "161" optionList="霍克|雷克|霸克" yesOption="雷克" isOpen="1"/> 
+			<item id = "164" optionList="米米|小米|米球" yesOption="米米" isOpen="1"/> 
+			<item id = "170" optionList="小恶魔|恶魔|小小恶魔" yesOption="小恶魔" isOpen="1"/> 
+			<item id = "191" optionList="诺基尔|诺基亚|诺基博" yesOption="诺基博" isOpen="1"/> 
+			<item id = "199" optionList="泰姆尔|泰姆钟|泰姆鹰" yesOption="泰姆尔" isOpen="1"/> 
+			<item id = "205" optionList="梅花头|芙拉伦斯|美丽花" yesOption="芙拉伦斯" isOpen="1"/> 
+			<item id = "218" optionList="埃鲁|耐普|斯维因" yesOption="耐普" isOpen="1"/> 
+			<item id = "228" optionList="落米|糯米|米诺" yesOption="米诺" isOpen="1"/> 
+			<item id = "255" optionList="比丘|丘比特|丘比塔" yesOption="比丘" isOpen="1"/> 
+			<item id = "259" optionList="X龙|英菲|黑龙" yesOption="英菲" isOpen="1"/> 
+			<item id = "280" optionList="南瓜怪|南瓜精|南瓜" yesOption="南瓜" isOpen="1"/> 
+			<item id = "149" optionList="小结|小卡|小巴" yesOption="小巴" isOpen="1"/> 
+			<item id = "153" optionList="蜜蜂|黄蜂|青蜂" yesOption="青蜂" isOpen="1"/> 
+			<item id = "155" optionList="紫电|紫光|紫风" yesOption="紫电" isOpen="1"/> 
+			<item id = "109" optionList="埃卡|埃特|埃尔" yesOption="埃卡" isOpen="1"/> 
+			<item id = "137" optionList="哈利|鲁卜哈利|哈利波特" yesOption="鲁卜哈利" isOpen="1"/>
+		</group>
+		<group>
+			<item id = "040" optionList="小火猪|赤焰兽|赤焰猪" yesOption="赤焰兽" isOpen="1"/> 
+			<item id = "047" optionList="泰尔|泰尼克|泰尼" yesOption="泰尼" isOpen="1"/> 
+			<item id = "052" optionList="阿大|阿宝|阿财" yesOption="阿财" isOpen="1"/> 
+			<item id = "070" optionList="球球|嘟嘟|胖胖" yesOption="嘟嘟" isOpen="1"/> 
+			<item id = "078" optionList="大眼齿轮鹰|呆目齿轮鹰|巨目齿轮鹰" yesOption="呆目齿轮鹰" isOpen="1"/> 
+			<item id = "098" optionList="风伊特|沙伊特|光伊特" yesOption="沙伊特" isOpen="1"/> 
+			<item id = "110" optionList="埃卡维特|战斗埃卡|埃卡维力" yesOption="埃卡维特" isOpen="1"/> 
+			<item id = "148" optionList="独角怪|重甲独角|独角兽" yesOption="重甲独角" isOpen="1"/> 
+			<item id = "156" optionList="菲亚斯|亚飞斯|菲亚" yesOption="菲亚" isOpen="1"/> 
+			<item id = "172" optionList="阿童铁|阿童木|阿童钢" yesOption="阿童铁" isOpen="1"/> 
+			<item id = "184" optionList="丘尔|丘比|丘丁" yesOption="丘丁" isOpen="1"/> 
+			<item id = "188" optionList="费德德|费德|洋葱头" yesOption="费德" isOpen="1"/>
+			<item id = "193" optionList="琳瑟|凯琳|凯瑟琳" yesOption="凯瑟琳" isOpen="1"/>
+			<item id = "201" optionList="飘逸蝶|七彩蝶|幻彩蝶" yesOption="幻彩蝶" isOpen="1"/>
+			<item id = "209" optionList="安吉丽尔|安吉丽塔|安吉丽娜" yesOption="安吉丽塔" isOpen="1"/>
+			<item id = "236" optionList="萨兰古尔|萨兰克|萨尔克斯" yesOption="萨兰古尔" isOpen="1"/>
+			<item id = "268" optionList="奥兰德巴|奥罗吉尔|奥克吉他" yesOption="奥罗吉尔" isOpen="1"/>
+			<item id = "202" optionList="青蜂|石蜂|黄蜂" yesOption="石蜂" isOpen="1"/>
+			<item id = "187" optionList="巴多|巴克|多克" yesOption="巴多" isOpen="1"/>
+			<item id = "180" optionList="乔尼|尼克|尼禄" yesOption="尼禄" isOpen="1"/>
+			<item id = "177" optionList="卡罗特|卡特罗|卡巴罗" yesOption="卡罗特" isOpen="1"/>
+			<item id = "175" optionList="卡菲特|卡特罗|卡罗特" yesOption="卡特罗" isOpen="1"/>
+			<item id = "168" optionList="蕾葛芬|葛蕾芬|芬利特" yesOption="葛蕾芬" isOpen="1"/>
+			<item id = "163" optionList="卡雷克斯|雷克斯|雷克萨斯" yesOption="雷克萨斯" isOpen="1"/>
+			<item id = "155" optionList="紫电|小紫|紫紫" yesOption="紫电" isOpen="1"/>
+		</group>
+	</paint>
+	
+<!-- 	<paint type="equip" sort="3"> -->
+<!-- 		<group> -->
+<!-- 			<item id = "263" optionList="草泥马|长颈鹿|卜古塔" yesOption="草泥马" isOpen="0"/>  -->
+<!-- 			<item id = "263" optionList="草泥马|长颈鹿|卜古塔" yesOption="草泥马" isOpen="0"/>  -->
+<!-- 			<item id = "263" optionList="草泥马|长颈鹿|卜古塔" yesOption="草泥马" isOpen="0"/>  -->
+<!-- 			<item id = "263" optionList="草泥马|长颈鹿|卜古塔" yesOption="草泥马" isOpen="0"/>  -->
+<!-- 		</group> -->
+		
+<!-- 		<group> -->
+<!-- 			<item id = "263" optionList="草泥马|长颈鹿|卜古塔" yesOption="草泥马" isOpen="0"/>  -->
+<!-- 			<item id = "263" optionList="草泥马|长颈鹿|卜古塔" yesOption="草泥马" isOpen="0"/>  -->
+<!-- 			<item id = "263" optionList="草泥马|长颈鹿|卜古塔" yesOption="草泥马" isOpen="0"/>  -->
+<!-- 			<item id = "263" optionList="草泥马|长颈鹿|卜古塔" yesOption="草泥马" isOpen="0"/>  -->
+<!-- 		</group> -->
+		
+<!-- 		<group> -->
+<!-- 			<item id = "263" optionList="草泥马|长颈鹿|卜古塔" yesOption="草泥马" isOpen="0"/>  -->
+<!-- 			<item id = "263" optionList="草泥马|长颈鹿|卜古塔" yesOption="草泥马" isOpen="0"/>  -->
+<!-- 			<item id = "263" optionList="草泥马|长颈鹿|卜古塔" yesOption="草泥马" isOpen="0"/>  -->
+<!-- 			<item id = "263" optionList="草泥马|长颈鹿|卜古塔" yesOption="草泥马" isOpen="0"/>  -->
+<!-- 		</group> -->
+		
+<!-- 		<group> -->
+<!-- 			<item id = "263" optionList="草泥马|长颈鹿|卜古塔" yesOption="草泥马" isOpen="0"/>  -->
+<!-- 			<item id = "263" optionList="草泥马|长颈鹿|卜古塔" yesOption="草泥马" isOpen="0"/>  -->
+<!-- 			<item id = "263" optionList="草泥马|长颈鹿|卜古塔" yesOption="草泥马" isOpen="0"/>  -->
+<!-- 			<item id = "263" optionList="草泥马|长颈鹿|卜古塔" yesOption="草泥马" isOpen="0"/>  -->
+<!-- 		</group> -->
+<!-- 	</paint> -->
+</paints>

@@ -1,0 +1,56 @@
+<!-- 
+	答题题库:
+	id(题目id号，1000-1999为某一种类型段位，具体意义有策划补充，每种类型题数1000应该足够拓展)
+	ask(问题)
+	selectItems(选择项)
+	answer(答案 1,2,3,4代表A,B,C,D)
+ -->
+ 
+<copys>
+  	<item id="1000" ask="简称是LOL的游戏中文全名叫什么？" selectItems="英雄联盟;撸啊撸;德玛西亚;提莫必须死" answer="1"/>
+  	<item id="1001" ask="下面哪个不是《喜羊羊与灰太狼》中的角色？" selectItems="灰太狼;美羊羊;慢羊羊;MT" answer="4"/>
+  	<item id="1002" ask="好莱坞位于哪个国家？" selectItems="意大利;泰国;美国;中国" answer="3"/>
+  	<item id="1003" ask="下列哪个选项是一支乐队？" selectItems="周杰伦;五月天;张杰;张杰" answer="2"/>
+  	<item id="1004" ask="以下哪个动画形象是只猫？" selectItems="淘气;熊大;史努比;Hello Kitty" answer="4"/>
+  	<item id="1005" ask="天马流星拳是哪部动漫里的招式？" selectItems="圣斗士星矢;爱情公寓;灌篮高手;铠甲勇士" answer="1"/>
+  	<item id="1006" ask="金庸小说《鹿鼎记》中，主人公韦小宝是天地会中哪一堂的堂主？" selectItems="青木堂;金木堂;紫木堂;伞木堂" answer="1"/>
+  	<item id="1007" ask="电影1985年3月22日诞生于哪里？" selectItems="西班牙;法国;瑞士;英国" answer="2"/>
+  	<item id="1008" ask="《千与千寻中》中，与汤婆婆是双胞胎的是谁？" selectItems="菜婆婆 ;辛婆婆;钱婆婆;阳婆婆" answer="3"/>
+  	<item id="1009" ask="下面哪部漫画至今销售量最大？" selectItems="黑猫警长;海贼王;死神;七龙珠" answer="2"/>
+
+
+  	<item id="2000" ask="创作有《蒙娜丽莎》，通过画作宣扬“人文主义”的文艺复兴巨匠是？" selectItems="拉斐尔;达•芬奇;米开朗基罗;毕加索" answer="2"/>
+  	<item id="2001" ask="世界第一长河的文明代表建筑是？" selectItems="长城;通天塔;金字塔;间歇泉" answer="3"/>
+  	<item id="2002" ask="下列不属于中国三国时期的大国的是？" selectItems="明;魏;吴;蜀" answer="1"/>
+  	<item id="2003" ask="中国第一位真正意义上的皇帝是？" selectItems="宋徽宗;汉武帝;唐太宗;秦始皇" answer="4"/>
+  	<item id="2004" ask="至今，一共发生过几次世界大战？" selectItems="1;2;3;4" answer="2"/>
+  	<item id="2005" ask="至今，只有哪个国家受到过原子弹的攻击？" selectItems="日本;法国;澳大利亚;马来西亚" answer="1"/>
+  	<item id="2006" ask="下列哪项不是中国的四大发明？" selectItems="造纸术;指南针;火药;书法" answer="4"/>
+  	<item id="2007" ask="下列哪个不是四大文明古国？" selectItems="古罗马;古印度;古巴比伦;古埃及" answer="1"/>
+  	<item id="2008" ask="雅尔塔体系内容中最能体现其实质的是？" selectItems="对战败国领土的处置;对法西斯战犯的审判;消灭战败国;重建战败国的民主制度" answer="1"/>
+  	<item id="2009" ask="参加诺曼底登陆的主要国家是？" selectItems="苏联、美国;英国、法国;美国、英国;美国、法国" answer="3"/>
+
+
+
+    <item id="3000" ask="以下哪个不是植物？" selectItems="西瓜;银杏;知了;青菜" answer="3"/>
+    <item id="3001" ask="至今世界上最大的动物是？" selectItems="蓝鲸;大象;长颈鹿;河马" answer="1"/>
+    <item id="3002" ask="太阳系八大行星中离太阳最近的是？" selectItems="地球;水星;木星;土星" answer="2"/>
+    <item id="3003" ask="光年是什么的单位？" selectItems="时间 ;距离;速度;质量" answer="2"/>
+    <item id="3004" ask="人们在星空中看到的绝大多数星星是？" selectItems="行星;恒星;卫星;小天体" answer="2"/> 
+	<item id="3005" ask="下面哪种动物的鼻子最长？" selectItems="猪;狗;猫;大象" answer="4"/>
+    <item id="3006" ask="太阳系中哪个行星有美丽的光环？" selectItems="地球;金星;火星;土星" answer="4"/>
+    <item id="3007" ask="一年的节气有？" selectItems="24;23;22;21" answer="1"/>
+    <item id="3008" ask="1986年的2月有几天？" selectItems="29;28;30;21" answer="2"/>
+    <item id="3009" ask="《本草纲目》是本记录什么的书？" selectItems="木工;药学;地理;兵法" answer="2"/>
+
+    <item id="4000" ask="下列哪个品牌没有生产过手机？" selectItems="小米;苹果;宝马;诺基亚" answer="3"/>
+    <item id="4001" ask="一般控制车辆方向的装置叫做？" selectItems="方向盘;离合器;油门;后备箱" answer="1"/>
+    <item id="4002" ask="一般键盘上没有下列哪个键？" selectItems="Shift;Yes;Ctrl;Delete" answer="2"/>
+    <item id="4003" ask="下列哪个奖是表彰科学方面的杰出贡献的？" selectItems="奥斯卡;金钟奖;诺贝尔;金狮奖" answer="3"/>
+    <item id="4004" ask="下列哪位科学家发现了万有引力？" selectItems="霍金;牛顿;伽利略;卡斯特" answer="2"/> 
+	<item id="4005" ask="汽车的轮胎一般是用什么材质制作的？" selectItems="塑料;纸;木材;橡胶" answer="4"/>
+    <item id="4006" ask="下列哪个是电脑的输出设备？" selectItems="鼠标;麦克风;电源;显示器" answer="4"/>
+    <item id="4007" ask="10GB等于多少MB？" selectItems="10276;10275;10274;10273" answer="1"/>
+    <item id="4008" ask="CPU的中文全称是什么？" selectItems="中枢处理器;自动处理器;中央处理器;集中处理器" answer="3"/>
+    <item id="4009" ask="著名的苹果公司总部在美国哪个州？" selectItems="阿拉斯加州;纽约州;加利福尼亚州;德克萨斯州" answer="3"/>
+</copys>

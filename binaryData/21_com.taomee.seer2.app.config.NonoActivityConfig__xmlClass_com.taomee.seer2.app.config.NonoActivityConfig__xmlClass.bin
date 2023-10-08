@@ -1,0 +1,16 @@
+<!-- NONO活动的内容
+	content是文本框里的内容
+	isShowGo是否显示GO按钮
+	goType点击Go的类型gotoMap为跳转地图module为打开面板
+	goContent 点GO后的内容
+-->
+<root>
+	<activity content="全员火神令牌，可兑换创世三帝等五星精灵" isShowGo="1" goType="module" goContent="VipMonthlyBackPanel"/>
+	<activity content="累积充值12个月VIP送2015年兽界王神！享9大特权5重豪礼" isShowGo="1" goType="module" goContent="NewYearVipPetPanel"/>
+	<activity content="精灵惊喜包开出1-5星精灵及纹章，VIP获得双倍免费礼包！" isShowGo="1" goType="module" goContent="FallenGhostPupilPanel"/>
+	<activity content="VIP火神节礼包领取！神迹凯萨NONO装等价值350星钻！" isShowGo="1" goType="module" goContent=" VipChristmasPanel"/>
+	<activity content="星钻碎片融合，VIP消耗星钻碎片减半，每日融合上限增加！" isShowGo="1" goType="gotoMap" goContent="40"/>
+	<activity content="经验之门VIP福利升级，每天最多可得40W经验" isShowGo="1" goType="gotoMap" goContent="3831"/>
+
+
+</root>

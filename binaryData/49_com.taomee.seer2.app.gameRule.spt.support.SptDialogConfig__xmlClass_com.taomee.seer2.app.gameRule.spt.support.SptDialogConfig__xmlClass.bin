@@ -1,0 +1,1381 @@
+<!--  SPT 的对话配置文件 -->
+<spts>
+	<spt sptid="17" name="布鲁托 ">
+		<dialogs>
+			<sptDialog id="1">
+				<dialog npcId="11" npcName="多罗" transport="">
+					<branch id="default">
+						<node emotion="1">
+							<![CDATA[队…队长，现在挑战布鲁托好危险啊，等精灵 {0} 级再来吧！]]>
+						</node>
+						<reply action="close">
+							<![CDATA[可怜的小树根，我会再来的。]]>
+						</reply>
+					</branch>
+				</dialog>
+			</sptDialog>
+
+			<sptDialog id="2">
+				<dialog npcId="201" npcName="布鲁托" transport="">
+					<branch id="default">
+						<node emotion="3">
+							<![CDATA[哼！一群不知死活的小鬼，不要多管闲事！]]>
+						</node>
+						<reply action="goToBranch" params="next">
+							<![CDATA[欺负人的坏蛋，我管定了！]]>
+						</reply>
+						<reply action="close">
+							<![CDATA[我只是路过而已。]]>
+						</reply>
+					</branch>
+					<branch id="next">
+						<node emotion="1">
+							<![CDATA[哈哈哈！！好，你来给我当凳子坐，也不错！]]>
+						</node>
+						<reply action="close" params="fight">
+							<![CDATA[少说废话！来吧！]]>
+						</reply>
+						<reply action="close">
+							<![CDATA[我才不干，再见！]]>
+						</reply>
+					</branch>
+				</dialog>
+			</sptDialog>
+
+			<sptDialog id="3">
+				<dialog npcId="10" npcName="巴蒂" transport="">
+					<branch id="default">
+						<node emotion="0">
+							<![CDATA[队长，别泄气，我看到布鲁托的弱点了！只要你的精灵等级比它高一些，应该很容易打赢哦！]]>
+						</node>
+						<reply action="close">
+							<![CDATA[嗯，下次我一定能打败它！]]>
+						</reply>
+					</branch>
+				</dialog>
+			</sptDialog>
+
+			<sptDialog id="4">
+				<dialog npcId="10" npcName="巴蒂" transport="">
+					<branch id="default">
+						<node emotion="4">
+							<![CDATA[好样的，队长！看看我们的SPT先锋队任务，用其它的方式打败布鲁托，会得到精灵纹章和装备哦！]]>
+						</node>
+						<reply action="close">
+							<![CDATA[嗯，我这就去看看！]]>
+						</reply>
+					</branch>
+				</dialog>
+			</sptDialog>
+		</dialogs>
+	</spt>
+
+	<spt sptid="31" name="阿卡纳斯 ">
+		<talks>
+			<talk content="队长，我总感觉蓝喵等级再高点的话，一定能领悟到可以穿透盾的技能！"/>
+			<talk content="队长，使用草系精灵或许更容易击败它哦！"/>
+			<talk content="队长，我想到了，布鲁托有个技能是'推倒'!"/>
+		</talks>
+		<dialogs>
+			<sptDialog id="1">
+				<dialog npcId="10" npcName="巴蒂" transport="">
+					<branch id="default">
+						<node emotion="0">
+							<![CDATA[{0}]]>
+						</node>
+						<reply action="close">
+							<![CDATA[嗯，下次我一定能打败它！]]>
+						</reply>
+					</branch>
+				</dialog>
+			</sptDialog>
+
+			<sptDialog id="2">
+				<dialog npcId="202" npcName="阿卡纳斯" transport="">
+					<branch id="default">
+						<node emotion="0">
+							<![CDATA[我只为力量的荣耀而战！]]>
+						</node>
+						<reply action="goToBranch" params="next">
+							<![CDATA[那就开始吧！]]>
+						</reply>
+						<reply action="close">
+							<![CDATA[我只是路过而已。]]>
+						</reply>
+					</branch>
+					<branch id="next">
+						<node emotion="0">
+							<![CDATA[ 好小子，希望你的脑袋有蓝虎鲸一般硬，还有它屡败屡战的勇气！]]>
+						</node>
+						<reply action="close" params="fight">
+							<![CDATA[我可不是靠蛮力的，开打！]]>
+						</reply>
+						<reply action="close">
+							<![CDATA[谁要用脑门跟你战斗，再见！]]>
+						</reply>
+					</branch>
+				</dialog>
+			</sptDialog>
+
+			<sptDialog id="3">
+				<dialog npcId="10" npcName="巴蒂" transport="">
+					<branch id="default">
+						<node emotion="4">
+							<![CDATA[队长，太棒了！看看我们的SPT先锋队任务，用其它的方式打败阿卡纳斯，会得到精灵纹章和装备哦！]]>
+						</node>
+						<reply action="close">
+							<![CDATA[嗯，我这就去看看！]]>
+						</reply>
+					</branch>
+				</dialog>
+			</sptDialog>
+
+			<sptDialog id="4">
+				<dialog npcId="11" npcName="多罗" transport="">
+					<branch id="default">
+						<node emotion="1">
+							<![CDATA[队…队长，是超强水盾的阿卡纳斯啊！我们的精灵 {0}级后，并且捕获了布鲁托再来吧！]]>
+						</node>
+						<reply action="close">
+							<![CDATA[嗯，我知道了！]]>
+						</reply>
+					</branch>
+				</dialog>
+			</sptDialog>
+		</dialogs>
+	</spt>
+	<spt sptid="57" name="麦麦迪 ">
+		<talks>
+			<talk content="队长，乔尼可以让麦麦迪烧伤哦！或许会很有用的！"/>
+			<talk content="队长，一定要小心麦麦迪的麦麦金针！"/>
+			<talk content="队长，使用火系精灵或许更容易击败它哦！"/>
+		</talks>
+		<dialogs>
+			<sptDialog id="1">
+				<dialog npcId="10" npcName="巴蒂" transport="">
+					<branch id="default">
+						<node emotion="0">
+							<![CDATA[{0}]]>
+						</node>
+						<reply action="close">
+							<![CDATA[嗯，下次我一定能打败它！]]>
+						</reply>
+					</branch>
+				</dialog>
+			</sptDialog>
+			<sptDialog id="2">
+				<dialog npcId="205" npcName="麦麦迪" transport="">
+					<branch id="default">
+						<node emotion="0">
+							<![CDATA[小不点，你是谁啊？不要惹我，我很强哦！]]>
+						</node>
+						<reply action="close" params="next">
+							<![CDATA[哼，我才很强呢！]]>
+						</reply>
+						<reply action="close">
+							<![CDATA[我只是路过而已。]]>
+						</reply>
+					</branch>
+				</dialog>
+			</sptDialog>
+			<sptDialog id="3">
+				<dialog npcId="404" npcName="呆呆葵" transport="">
+					<branch id="next">
+						<node emotion="0">
+							<![CDATA[你、你是谁，麦麦迪是我的朋友！我们好不容易才又见面了！不许你欺、欺负它！]]>
+						</node>
+						<reply action="close" params="next">
+							<![CDATA[没事的，我只是想比试比试！]]>
+						</reply>
+						<reply action="close">
+							<![CDATA[还有帮手啊，再见！]]>
+						</reply>
+					</branch>
+				</dialog>
+			</sptDialog>
+			<sptDialog id="4">
+				<dialog npcId="10" npcName="巴蒂" transport="">
+					<branch id="next">
+						<node emotion="0">
+							<![CDATA[ 队长，看看背包，带上<font color="#FF0000">中级胶囊</font>了吗？麦麦迪45级了，要用<font color="#FF0000">中级胶囊</font>才能抓住它！]]>
+						</node>
+						<reply action="close" params="fight">
+							<![CDATA[嗯，放心，我带上了！]]>
+						</reply>
+						<reply action="close">
+							<![CDATA[啊，我先去看看背包！]]>
+						</reply>
+					</branch>
+				</dialog>
+			</sptDialog>
+			<sptDialog id="5">
+				<dialog npcId="10" npcName="巴蒂" transport="">
+					<branch id="default">
+						<node emotion="4">
+							<![CDATA[ 队长！我们还有两种方式打败麦麦迪，会得到精灵纹章和装备哦！]]>
+						</node>
+						<reply action="close">
+							<![CDATA[嗯，我这就去看看！]]>
+						</reply>
+					</branch>
+				</dialog>
+			</sptDialog>
+			<sptDialog id="6">
+				<dialog npcId="11" npcName="多罗" transport="">
+					<branch id="default">
+						<node emotion="1">
+							<![CDATA[队…队长，麦麦迪好多刺啊，我们、我们等捕获霍克努尔，并且精灵 {0} 级再来吧！]]>
+						</node>
+						<reply action="close">
+							<![CDATA[等着吧，我很快会回来的。]]>
+						</reply>
+					</branch>
+				</dialog>
+			</sptDialog>
+		</dialogs>
+	</spt>
+
+	<spt sptid="38" name="霍克">
+		<talks>
+			<talk content="队长，用阿卡纳斯的“水纹屏障”可以吸收伤害哦！"/>
+			<talk content="队长，我们使用水系精灵或许更容易击败它哦！"/>
+			<talk content="队长，别泄气，如果多带一些恢复药剂应该会有帮助吧！"/>
+		</talks>
+		<dialogs>
+			<sptDialog id="1">
+				<dialog npcId="10" npcName="巴蒂" transport="">
+					<branch id="default">
+						<node emotion="0">
+							<![CDATA[{0}]]>
+						</node>
+						<reply action="close">
+							<![CDATA[嗯，下次我一定能打败它！]]>
+						</reply>
+					</branch>
+				</dialog>
+			</sptDialog>
+			<sptDialog id="2">
+				<dialog npcId="10" npcName="巴蒂" transport="">
+					<branch id="default">
+						<node emotion="4">
+							<![CDATA[ 队长！我们还有两种方式打败霍克努尔，会得到精灵纹章和装备哦！]]>
+						</node>
+						<reply action="close">
+							<![CDATA[嗯，我这就去看看！]]>
+						</reply>
+					</branch>
+				</dialog>
+			</sptDialog>
+			<sptDialog id="3">
+				<dialog npcId="203" npcName="霍克努尔" transport="">
+					<branch id="default">
+						<node emotion="3">
+							<![CDATA[哼哼哼~~你敢挑战我？输了，就留下给我当小弟！]]>
+						</node>
+						<reply action="close" params="joniDialog">
+							<![CDATA[哼，谁怕谁呀！]]>
+						</reply>
+						<reply action="close">
+							<![CDATA[我只是路过而已。]]>
+						</reply>
+					</branch>
+				</dialog>
+			</sptDialog>
+			<sptDialog id="4">
+				<dialog npcId="204" npcName="乔尼" transport="">
+					<branch id="default">
+						<node emotion="0">
+							<![CDATA[嘿~嗨——老大，让我们先来对付这个菜鸟！]]>
+						</node>
+						<reply action="close" params="badiDialog">
+							<![CDATA[少说废话！你们一起来吧！]]>
+						</reply>
+						<reply action="close">
+							<![CDATA[还有帮手啊，再见！]]>
+						</reply>
+					</branch>
+				</dialog>
+			</sptDialog>
+			<sptDialog id="5">
+				<dialog npcId="10" npcName="巴蒂" transport="">
+					<branch id="default">
+						<node emotion="0">
+							<![CDATA[ 队长，看看背包，带上中级胶囊了吗？霍克努尔 <font color="#FF0000">{0}级</font>了，要用 <font color="#FF0000">中级胶囊</font>才能抓住它！]]>
+						</node>
+						<reply action="close" params="fight">
+							<![CDATA[嗯，放心，我带上了！]]>
+						</reply>
+						<reply action="close">
+							<![CDATA[啊，我先去看看背包！]]>
+						</reply>
+					</branch>
+				</dialog>
+			</sptDialog>
+			<sptDialog id="6">
+				<dialog npcId="11" npcName="多罗" transport="">
+					<branch id="default">
+						<node emotion="2">
+							<![CDATA[队…队长，我们等精灵  <font color="#FF0000">{0} 级</font>，并且捕获阿卡纳斯后再来吧！霍克努尔太强了！ ]]>
+						</node>
+						<reply action="close">
+							<![CDATA[等着吧，我很快会回来的。]]>
+						</reply>
+					</branch>
+				</dialog>
+			</sptDialog>
+		</dialogs>
+	</spt>
+
+	<spt sptid="80" name="莫古">
+		<talks>
+			<talk content="队长，水墨飞马的光滑皮肤可以闪避敌人的攻击！"/>
+			<talk content="队长，使用水系精灵或许更容易击败它哦！"/>
+			<talk content="队长，一定要小心它的破防一击！"/>
+		</talks>
+		<dialogs>
+			<sptDialog id="1">
+				<dialog npcId="10" npcName="巴蒂" transport="">
+					<branch id="default">
+						<node emotion="0">
+							<![CDATA[{0}]]>
+						</node>
+						<reply action="close">
+							<![CDATA[嗯，下次我一定能打败它！]]>
+						</reply>
+					</branch>
+				</dialog>
+			</sptDialog>
+			<sptDialog id="2">
+				<dialog npcId="10" npcName="巴蒂" transport="">
+					<branch id="default">
+						<node emotion="4">
+							<![CDATA[ 队长！我们还有两种方式打败巨锤莫古，会得到精灵纹章和装备哦！]]>
+						</node>
+						<reply action="close">
+							<![CDATA[嗯，我这就去看看！]]>
+						</reply>
+					</branch>
+				</dialog>
+			</sptDialog>
+			<sptDialog id="3">
+				<dialog npcId="206" npcName="巨锤莫古" transport="">
+					<branch id="default">
+						<node emotion="0">
+							<![CDATA[ 你是谁，你是他们派来的吗？我再也不要回到那个地方！]]>
+						</node>
+						<reply action="close" params="next">
+							<![CDATA[不，我是来挑战你的！]]>
+						</reply>
+						<reply action="close">
+							<![CDATA[我只是路过而已。]]>
+						</reply>
+					</branch>
+				</dialog>
+			</sptDialog>
+			<sptDialog id="4">
+				<dialog npcId="206" npcName="巨锤莫古" transport="">
+					<branch id="next">
+						<node emotion="0">
+							<![CDATA[挑战？除了沙皇鸟，我还没被谁打败过！]]>
+						</node>
+						<reply action="close" params="next">
+							<![CDATA[口气真大，开始喽！]]>
+						</reply>
+						<reply action="close">
+							<![CDATA[吓，这么强，再见！]]>
+						</reply>
+					</branch>
+				</dialog>
+			</sptDialog>
+			<sptDialog id="5">
+				<dialog npcId="10" npcName="巴蒂" transport="">
+					<branch id="next">
+						<node emotion="0">
+							<![CDATA[ 队长，看看背包，带上<font color="#FF0000">中级胶囊</font>了吗？巨锤莫古要用<font color="#FF0000">中级胶囊</font>才能抓住它！]]>
+						</node>
+						<reply action="close" params="fight">
+							<![CDATA[嗯，放心，我带上了！]]>
+						</reply>
+						<reply action="close">
+							<![CDATA[啊，我先去看看背包！]]>
+						</reply>
+					</branch>
+				</dialog>
+			</sptDialog>
+			<sptDialog id="6">
+				<dialog npcId="11" npcName="多罗" transport="">
+					<branch id="default">
+						<node emotion="1">
+							<![CDATA[队…队长，它真的是巨锤啊……我们、我们等精灵到了 {0} 级,并且打败麦麦迪再来吧！]]>
+						</node>
+						<reply action="close">
+							<![CDATA[等着吧，我很快会回来的。]]>
+						</reply>
+					</branch>
+				</dialog>
+			</sptDialog>
+		</dialogs>
+	</spt>
+
+	<spt sptid="82" name="沙织鹤">
+		<talks>
+			<talk content="队长，拉奥的寄生种子可以同时伤害敌人并恢复自己！"/>
+			<talk content="队长，使用草系精灵或许更容易击败它哦！"/>
+			<talk content="队长，一定要小心它的沙鹤之光！"/>
+		</talks>
+		<dialogs>
+			<sptDialog id="1">
+				<dialog npcId="10" npcName="巴蒂" transport="">
+					<branch id="default">
+						<node emotion="0">
+							<![CDATA[{0}]]>
+						</node>
+						<reply action="close">
+							<![CDATA[嗯，下次我一定能打败它！]]>
+						</reply>
+					</branch>
+				</dialog>
+			</sptDialog>
+			<sptDialog id="2">
+				<dialog npcId="207" npcName="沙皇鸟" transport="">
+					<branch id="default">
+						<node emotion="0">
+							<![CDATA[ 勇敢的家伙，你知道沙爪氏族是怎么称呼我的吗？]]>
+						</node>
+						<reply action="close" params="next">
+							<![CDATA[ 哼，怎么称呼的？]]>
+						</reply>
+						<reply action="close">
+							<![CDATA[我只是路过而已。]]>
+						</reply>
+					</branch>
+				</dialog>
+			</sptDialog>
+			<sptDialog id="3">
+				<dialog npcId="207" npcName="沙皇鸟" transport="">
+					<branch id="next">
+						<node emotion="0">
+							<![CDATA[他们称我为沙漠之鹰的不败将军！在沙漠之鹰的斗鸡场上，我从来没有战败过！]]>
+						</node>
+						<reply action="close" params="next">
+							<![CDATA[口气真大，开始喽！]]>
+						</reply>
+						<reply action="close">
+							<![CDATA[吓，这么强，再见！]]>
+						</reply>
+					</branch>
+				</dialog>
+			</sptDialog>
+			<sptDialog id="4">
+				<dialog npcId="10" npcName="巴蒂" transport="">
+					<branch id="next">
+						<node emotion="0">
+							<![CDATA[ 队长，看看背包，带上<font color="#FF0000">中级胶囊</font>了吗？沙皇鸟要用<font color="#FF0000">中级胶囊</font>才能抓住它！]]>
+						</node>
+						<reply action="close" params="fight">
+							<![CDATA[嗯，放心，我带上了！]]>
+						</reply>
+						<reply action="close">
+							<![CDATA[啊，我先去看看背包！]]>
+						</reply>
+					</branch>
+				</dialog>
+			</sptDialog>
+			<sptDialog id="5">
+				<dialog npcId="11" npcName="多罗" transport="">
+					<branch id="default">
+						<node emotion="1">
+							<![CDATA[队…队长，沙皇鸟太可怕了……我们、我们等精灵到了 {0} 级,并且打败巨锤莫古再来吧！]]>
+						</node>
+						<reply action="close">
+							<![CDATA[等着吧，我很快会回来的。]]>
+						</reply>
+					</branch>
+				</dialog>
+			</sptDialog>
+			<sptDialog id="6">
+				<dialog npcId="10" npcName="巴蒂" transport="">
+					<branch id="default">
+						<node emotion="4">
+							<![CDATA[ 队长！我们还有两种方式打败沙皇鸟，会得到精灵纹章和装备哦！]]>
+						</node>
+						<reply action="close">
+							<![CDATA[嗯，我这就去看看！]]>
+						</reply>
+					</branch>
+				</dialog>
+			</sptDialog>
+		</dialogs>
+	</spt>
+
+	<spt sptid="127" name="卡尼亚">
+		<talks>
+			<talk content="队长我看你还是再去提升下精灵等级再来试试吧！"/>
+			<talk content="卡尼娅是冰系的精灵，如果找到可以克制它的系应该会很轻松！"/>
+			<talk content="用拉奥叶的净化汁液可以消除对手的增益效果！"/>
+		</talks>
+		<dialogs>
+			<sptDialog id="1">
+				<dialog npcId="208" npcName="卡尼娅" transport="">
+					<branch id="next">
+						<node emotion="3">
+							<![CDATA[鼠辈……汝等的贪婪……令吾相当厌恶！]]>
+						</node>
+						<reply action="close">
+							<![CDATA[我错了！]]>
+						</reply>
+						<reply action="close" params="next">
+							<![CDATA[那就开始吧！]]>
+						</reply>
+					</branch>
+				</dialog>
+			</sptDialog>
+			<sptDialog id="2">
+				<dialog npcId="208" npcName="卡尼娅" transport="">
+					<branch id="next">
+						<node emotion="0">
+							<![CDATA[又要……说吾是灾难的使者吗……又要……将吾等封印吗……]]>
+						</node>
+						<reply action="close">
+							<![CDATA[我只是想和你一较高下！]]>
+						</reply>
+					</branch>
+				</dialog>
+			</sptDialog>
+			<sptDialog id="3">
+				<dialog npcId="10" npcName="巴蒂" transport="">
+					<branch id="default">
+						<node emotion="1">
+							<![CDATA[队长！我们还有两种方式打败卡尼娅，会得到精灵纹章和装备哦！]]>
+						</node>
+						<reply action="close" params="next">
+							<![CDATA[嗯，我这就去看看！]]>
+						</reply>
+					</branch>
+				</dialog>
+			</sptDialog>
+			<sptDialog id="4">
+				<dialog npcId="10" npcName="巴蒂" transport="">
+					<branch id="default">
+						<node emotion="0">
+							<![CDATA[{0}]]>
+						</node>
+						<reply action="close">
+							<![CDATA[嗯，下次我一定能打败它！]]>
+						</reply>
+					</branch>
+				</dialog>
+			</sptDialog>
+			<sptDialog id="5">
+				<dialog npcId="11" npcName="多罗" transport="">
+					<branch id="default">
+						<node emotion="2">
+							<![CDATA[队长！卡尼娅是严寒的使者，如果不是特别强大的精灵就无法应对！我们等精灵到了<font color="#FF0000">{0}级</font>，并且打败<font color="#FF0000">沙皇鸟</font>再来吧！]]>
+						</node>
+						<reply action="close">
+							<![CDATA[嗯，等变强了再来！]]>
+						</reply>
+					</branch>
+				</dialog>
+			</sptDialog>
+			<sptDialog id="6">
+				<dialog npcId="208" npcName="卡尼娅" transport="">
+					<branch id="next">
+						<node emotion="1">
+							<![CDATA[又一个……嗯……这是第几个呢……呵呵，来吧……]]>
+						</node>
+						<reply action="close">
+							<![CDATA[（还是算了）]]>
+						</reply>
+						<reply action="close" params="next">
+							<![CDATA[你只要记得我是第一个打败你的赛尔！]]>
+						</reply>
+					</branch>
+				</dialog>
+			</sptDialog>
+			<sptDialog id="7">
+				<dialog npcId="208" npcName="卡尼娅" transport="">
+					<branch id="next">
+						<node emotion="1">
+							<![CDATA[啊……大言不惭的鼠辈……吃几个都不够……]]>
+						</node>
+						<reply action="close">
+							<![CDATA[（还是算了）]]>
+						</reply>
+						<reply action="close" params="next">
+							<![CDATA[恐怕你才是大言不惭！]]>
+						</reply>
+					</branch>
+				</dialog>
+			</sptDialog>
+			<sptDialog id="8">
+				<dialog npcId="10" npcName="巴蒂" transport="">
+					<branch id="default">
+						<node emotion="0">
+							<![CDATA[ 听伊娃博士说，卡尼娅身边的<font color="#FF0000">5根冰晶棱柱</font>是她的能力来源！击碎它就可以削弱卡尼娅了。]]>
+						</node>
+						<reply action="close" params="next">
+							<![CDATA[ 要怎么做呢？]]>
+						</reply>
+						<reply action="close" params="fight">
+							<![CDATA[ 哼，我现在就可以打败它！]]>
+						</reply>
+					</branch>
+				</dialog>
+			</sptDialog>
+			<sptDialog id="9">
+				<dialog npcId="10" npcName="巴蒂" transport="">
+					<branch id="default">
+						<node emotion="0">
+							<![CDATA[那5根冰晶棱柱分别代表她的5种能力，用赛尔的<font color="#FF0000">火焰头部射击</font>可以击碎它！]]>
+						</node>
+						<reply action="close" params="shoot">
+							<![CDATA[ （用火焰头部射击破坏棱柱）]]>
+						</reply>
+						<reply action="close" params="fight">
+							<![CDATA[ 哼，我现在就可以打败它！]]>
+						</reply>
+					</branch>
+				</dialog>
+			</sptDialog>
+			<sptDialog id="10">
+				<dialog npcId="10" npcName="巴蒂" transport="">
+					<branch id="default">
+						<node emotion="0">
+							<![CDATA[队长，看看背包，带上高级胶囊了吗？卡尼娅要用<font color="#FF0000">高级胶囊</font>才能抓住它！]]>
+						</node>
+						<reply action="close">
+							<![CDATA[ 我先去看看背包！]]>
+						</reply>
+						<reply action="close" params="fight">
+							<![CDATA[嗯，放心，带上了！]]>
+						</reply>
+					</branch>
+				</dialog>
+			</sptDialog>
+		</dialogs>
+	</spt>
+
+	<spt sptid="1033" name="莫古沙之鹤 组合">
+		<talks>
+			<talk content=""/>
+		</talks>
+		<dialogs>
+			<sptDialog id="1">
+				<dialog npcId="207" npcName="沙皇鸟" transport="">
+					<branch id="next">
+						<node emotion="0">
+							<![CDATA[ 又一个挑战者，让我们重新体验并肩战斗的感觉吧！]]>
+						</node>
+						<reply action="close" params="fight">
+							<![CDATA[两个一起上，我也不怕！]]>
+						</reply>
+						<reply action="close">
+							<![CDATA[  两个一起上啊，不玩了！]]>
+						</reply>
+					</branch>
+				</dialog>
+			</sptDialog>
+			<sptDialog id="2">
+				<dialog npcId="206" npcName="巨锤莫古" transport="">
+					<branch id="next">
+						<node emotion="0">
+							<![CDATA[沙皇鸟，又有赛尔来挑战了！]]>
+						</node>
+						<reply action="close">
+							<![CDATA[（听听沙皇鸟怎么说）]]>
+						</reply>
+					</branch>
+				</dialog>
+			</sptDialog>
+
+			<sptDialog id="3">
+				<dialog npcId="207" npcName="沙皇鸟" transport="">
+					<branch id="next">
+						<node emotion="0">
+							<![CDATA[哈，正好，让我们重新体验并肩战斗的感觉，开始吧！]]>
+						</node>
+						<reply action="close" params="fight">
+							<![CDATA[两个一起上，我也不怕！]]>
+						</reply>
+						<reply action="close">
+							<![CDATA[  两个一起上啊，不玩了！]]>
+						</reply>
+					</branch>
+				</dialog>
+			</sptDialog>
+			<sptDialog id="4">
+				<dialog npcId="11" npcName="多罗" transport="">
+					<branch id="default">
+						<node emotion="1">
+							<![CDATA[队…队长，沙皇鸟太可怕了……队…队长，我们要<font color="#FF0000">同时完成巨锤莫古和沙皇鸟的挑战1</font>，他们才会接受我们的挑战！]]>
+						</node>
+						<reply action="close">
+							<![CDATA[等着吧，我很快会回来的。]]>
+						</reply>
+					</branch>
+				</dialog>
+			</sptDialog>
+		</dialogs>
+	</spt>
+
+	<spt sptid="157" name="菲亚">
+		<talks>
+			<talk content="队长，你的等级还不够，再去提升下吧 "/>
+			<talk content="队长，电和冰系的精灵在飞行系面前更有优势哦"/>
+			<talk content="队长，卡尼娅看来可以轻易的击败它！"/>
+		</talks>
+		<dialogs>
+			<sptDialog id="1">
+				<dialog npcId="11" npcName="多罗" transport="">
+					<branch id="default">
+						<node emotion="1">
+							<![CDATA[队…队长，菲亚斯看起来好厉害，我们、我们等打败卡尼娅，并且精灵{0}级再来吧！]]>
+						</node>
+						<reply action="close">
+							<![CDATA[等着吧，我很快会回来的。]]>
+						</reply>
+					</branch>
+				</dialog>
+			</sptDialog>
+			<sptDialog id="2">
+				<dialog npcId="10" npcName="巴蒂" transport="">
+					<branch id="default">
+						<node emotion="1">
+							<![CDATA[队长！我们还有两种方式打败菲亚斯，会得到精灵纹章和装备哦！]]>
+						</node>
+						<reply action="close" params="next">
+							<![CDATA[嗯，我这就去看看！]]>
+						</reply>
+					</branch>
+				</dialog>
+			</sptDialog>
+			<sptDialog id="3">
+				<dialog npcId="10" npcName="巴蒂" transport="">
+					<branch id="default">
+						<node emotion="0">
+							<![CDATA[{0}]]>
+						</node>
+						<reply action="close">
+							<![CDATA[嗯，下次我一定能打败它！]]>
+						</reply>
+					</branch>
+				</dialog>
+			</sptDialog>
+			
+			<sptDialog id="4">
+				<dialog npcId="464" npcName="菲亚斯" transport="">
+					<branch id="default">
+						<node emotion="0">
+							<![CDATA[你是谁……是你吗？我的伙伴！我想履行我的承诺……！！]]>
+						</node>
+						<reply action="close" params="next">
+							<![CDATA[究竟发生过什么？]]>
+						</reply>
+						<reply action="close">
+							<![CDATA[我只是路过而已。]]>
+						</reply>
+					</branch>
+				</dialog>
+			</sptDialog>
+			
+			<sptDialog id="5">
+				<dialog npcId="464" npcName="菲亚斯" transport="">
+					<branch id="next">
+						<node emotion="0">
+							<![CDATA[不，你不是它……难道只有沉眠才能暂时忘却残酷的事实？……既然惊醒了我，就用爽快的战斗来偿还吧！！]]>
+						</node>
+						<reply action="close" params="next">
+							<![CDATA[很好！爽快地战斗吧！]]>
+						</reply>
+						<reply action="close">
+							<![CDATA[继续睡吧，再见！]]>
+						</reply>
+					</branch>
+				</dialog>
+			</sptDialog>
+			
+			<sptDialog id="6">
+				<dialog npcId="10" npcName="巴蒂" transport="">
+					<branch id="next">
+						<node emotion="0">
+							<![CDATA[ 队长，看看背包，带上<font color="#FF0000">高级胶囊</font>了吗？菲亚斯80级了，要用<font color="#FF0000">高级胶囊</font>才能抓住它！]]>
+						</node>
+						<reply action="close" params="fight">
+							<![CDATA[嗯，放心，我带上了！]]>
+						</reply>
+						<reply action="close">
+							<![CDATA[啊，我先去看看背包！]]>
+						</reply>
+					</branch>
+				</dialog>
+			</sptDialog>
+			
+			
+		</dialogs>
+	</spt>
+	
+	<spt sptid="215" name="艾丽希斯">
+		<talks>
+			<talk content="艾丽希斯的光之泉非常厉害，如果可以让她无法释放..."/>
+			<talk content="队长我觉得菲亚斯可能会是艾丽希斯的克星！"/>
+			<talk content="队长你还是多带一些100级的精灵再来挑战吧！"/>
+		</talks>
+		<dialogs>
+			<sptDialog id="1">
+				<dialog npcId="11" npcName="多罗" transport="">
+					<branch id="default">
+						<node emotion="2">
+							<![CDATA[队…队长，尹莫顿看起来好厉害，我们、我们等打败艾丽希斯，并且精灵{0}级再来吧！]]>
+						</node>
+						<reply action="close">
+							<![CDATA[等着吧，我很快会回来的。]]>
+						</reply>
+					</branch>
+				</dialog>
+			</sptDialog>
+			<sptDialog id="2">
+				<dialog npcId="10" npcName="巴蒂" transport="">
+					<branch id="default">
+						<node emotion="1">
+							<![CDATA[队长！我们还有两种方式打败艾丽希斯，会得到精灵纹章和装备哦！]]>
+						</node>
+						<reply action="close" params="next">
+							<![CDATA[嗯，我这就去看看！]]>
+						</reply>
+					</branch>
+				</dialog>
+			</sptDialog>
+			<sptDialog id="3">
+				<dialog npcId="10" npcName="巴蒂" transport="">
+					<branch id="default">
+						<node emotion="0">
+							<![CDATA[{0}]]>
+						</node>
+						<reply action="close">
+							<![CDATA[嗯，下次我一定能打败它！]]>
+						</reply>
+					</branch>
+				</dialog>
+			</sptDialog>
+			
+			<sptDialog id="4">
+				<dialog npcId="209" npcName="艾丽希斯" transport="">
+					<branch id="default">
+						<node emotion="3">
+							<![CDATA[别——想——圣地——进入——]]>
+						</node>
+						<reply action="close" params="next">
+							<![CDATA[别想进入圣地？]]>
+						</reply>
+						<reply action="close">
+							<![CDATA[我只是路过而已。]]>
+						</reply>
+					</branch>
+				</dialog>
+			</sptDialog>
+			
+			<sptDialog id="5">
+				<dialog npcId="209" npcName="艾丽希斯" transport="">
+					<branch id="next">
+						<node emotion="3">
+							<![CDATA[星球勇士——只有——进入试炼——希望——]]>
+						</node>
+						<reply action="close" params="next">
+							<![CDATA[勇士？哼哼我就是勇士！]]>
+						</reply>
+						<reply action="close">
+							<![CDATA[我只是路过！]]>
+						</reply>
+					</branch>
+				</dialog>
+			</sptDialog>
+			
+			<sptDialog id="6">
+				<dialog npcId="10" npcName="巴蒂" transport="">
+					<branch id="next">
+						<node emotion="0">
+							<![CDATA[ 队长，看看背包，带上<font color="#FF0000">高级胶囊</font>了吗？艾丽希斯90级了，要用<font color="#FF0000">高级胶囊</font>才能抓住它！]]>
+						</node>
+						<reply action="close" params="fight">
+							<![CDATA[嗯，放心，我带上了！]]>
+						</reply>
+						<reply action="close">
+							<![CDATA[啊，我先去看看背包！]]>
+						</reply>
+					</branch>
+				</dialog>
+			</sptDialog>
+			<sptDialog id="7">
+				<dialog npcId="11" npcName="多罗" transport="">
+					<branch id="default">
+						<node emotion="2">
+							<![CDATA[队…队长，艾丽希斯只有在<font color="#FF0000">每天13:00-15:00</font>阳光最烈的时候才能够挑战！]]>
+						</node>
+						<reply action="close">
+							<![CDATA[嗯……那我等时间到了再来。]]>
+						</reply>
+					</branch>
+				</dialog>
+			</sptDialog>
+			<sptDialog id="8">
+				<dialog npcId="11" npcName="多罗" transport="">
+					<branch id="default">
+						<node emotion="2">
+							<![CDATA[队…队长，艾丽希斯只有在<font color="#FF0000">4月1日</font>以后的<font color="#FF0000">每天13:00-15:00</font>阳光最烈的时候才能够挑战！]]>
+						</node>
+						<reply action="close">
+							<![CDATA[嗯……那我等时间到了再来。]]>
+						</reply>
+					</branch>
+				</dialog>
+			</sptDialog>
+			
+		</dialogs>
+	</spt>
+	<spt sptid="248" name="卡多斯">
+		<talks>
+			<talk content="艾丽希斯的光之泉非常厉害，如果可以让她无法释放..."/>
+			<talk content="队长我觉得菲亚斯可能会是艾丽希斯的克星！"/>
+			<talk content="队长你还是多带一些100级的精灵再来挑战吧！"/>
+		</talks>
+		<dialogs>
+			<sptDialog id="1">
+				<dialog npcId="11" npcName="多罗" transport="">
+					<branch id="default">
+						<node emotion="0">
+							<![CDATA[队…队长，卡多斯看起来好厉害，我们、我们等<font color="#FF0000">打败艾利希斯</font>，并且精灵<font color="#FF0000">90级</font>再来吧！]]>
+						</node>
+						<reply action="close">
+							<![CDATA[等着吧，我很快会回来的。]]>
+						</reply>
+					</branch>
+				</dialog>
+			</sptDialog>
+			<sptDialog id="2">
+				<dialog npcId="212" npcName="卡多斯" transport="">
+					<branch id="default">
+						<node emotion="0">
+							<![CDATA[谁？难道是菲亚斯？不可能，背弃约定的他怎么可能会来。]]>
+						</node>
+						<reply action="goToBranch" params="next1">
+							<![CDATA[你是菲亚斯的伙伴？]]>
+						</reply>
+						<reply action="close">
+							<![CDATA[我只是路过而已。]]>
+						</reply>
+					</branch>
+					<branch id="next1">
+						<node emotion="3">
+							<![CDATA[伙伴？相信伙伴的家伙全都是傻瓜！！既然你认得他，就先和我打一场！！]]>
+						</node>
+						<reply action="close" params="prepareFight">
+							<![CDATA[很好！爽快地战斗吧！]]>
+						</reply>
+						<reply action="close">
+							<![CDATA[继续睡吧，再见！]]>
+						</reply>
+					</branch>
+				</dialog>
+			</sptDialog>
+			<sptDialog id="3">
+				<dialog npcId="212" npcName="卡多斯" transport="">
+					<branch id="default">
+						<node emotion="0">
+							<![CDATA[……！（看着卡多斯惊讶的表情，就知道他已经将所有的愤怒和埋怨都放下了）]]>
+						</node>
+						<reply action="close" params="nextTwoStyle">
+							<![CDATA[总有一天你们可以履行当初的约定的！]]>
+						</reply>
+					</branch>
+				</dialog>
+			</sptDialog>
+			<sptDialog id="4">
+				<dialog npcId="10" npcName="巴蒂" transport="">
+					<branch id="default">
+						<node emotion="0">
+							<![CDATA[队长，别泄气，我看到卡多斯的弱点了！<font color="#FF0000">小心卡多斯预知未来后的连续攻击！</font>]]>
+						</node>
+						<reply action="close">
+							<![CDATA[ 嗯，下次我一定能打败它！]]>
+						</reply>
+					</branch>
+				</dialog>
+			</sptDialog>
+			<sptDialog id="5">
+				<dialog npcId="10" npcName="巴蒂" transport="">
+					<branch id="default">
+						<node emotion="0">
+							<![CDATA[队长，别泄气，我看到卡多斯的弱点了！<font color="#FF0000">卡多斯有预知未来时击败他会使他重生！</font>]]>
+						</node>
+						<reply action="close">
+							<![CDATA[ 嗯，下次我一定能打败它！]]>
+						</reply>
+					</branch>
+				</dialog>
+			</sptDialog>
+			<sptDialog id="6">
+				<dialog npcId="10" npcName="巴蒂" transport="">
+					<branch id="default">
+						<node emotion="0">
+							<![CDATA[队长，别泄气，我看到卡多斯的弱点了！<font color="#FF0000">用火系冰系超能系的精灵会更容易击败卡多斯！</font>]]>
+						</node>
+						<reply action="close">
+							<![CDATA[ 嗯，下次我一定能打败它！]]>
+						</reply>
+					</branch>
+				</dialog>
+			</sptDialog>
+			<sptDialog id="7">
+				<dialog npcId="10" npcName="巴蒂" transport="">
+					<branch id="default">
+						<node emotion="0">
+							<![CDATA[队长，看看背包，带上<font color="#FF0000">高级胶囊</font>了吗？卡多斯<font color="#FF0000">95级</font>了，要用高级胶囊才能抓住它！]]>
+						</node>
+						<reply action="close" params="fight">
+							<![CDATA[嗯，放心，我带上了！]]>
+						</reply>
+						<reply action="close">
+							<![CDATA[啊，我先去看看背包！]]>
+						</reply>
+					</branch>
+				</dialog>
+			</sptDialog>
+			<sptDialog id="8">
+				<dialog npcId="10" npcName="巴蒂" transport="">
+					<branch id="default">
+						<node emotion="0">
+							<![CDATA[ 队长！我们还有两种方式打败卡多斯，会得到精灵纹章和装备哦！]]>
+						</node>
+						<reply action="close" >
+							<![CDATA[嗯，我这就去看看！]]>
+						</reply>
+					</branch>
+				</dialog>
+			</sptDialog>
+		</dialogs>
+	</spt>
+	<spt sptid="401" name="特米提">
+		<talks>
+			<talk content="队长，别泄气，我看到特米提的弱点了！用火系、飞行系、战斗系、神秘系、特质系更容易打败特米提！"/>
+			<talk content="队长，别泄气，我看到特米提的弱点了！特米提用月翼袭时遇到微弱属性的精灵时威力会翻倍且必中。"/>
+			<talk content="队长，别泄气，我看到特米提的弱点了！小心特米提在使用必杀技后的恢复能力。"/>
+		</talks>
+		<dialogs>
+			<sptDialog id="1">
+				<dialog npcId="11" npcName="多罗" transport="">
+					<branch id="default">
+						<node emotion="0">
+							<![CDATA[队…队长，特米提看起来好厉害，我们、我们等<font color="#FF0000">打败卡多斯</font>，并且精灵<font color="#FF0000">{100}级</font>再来吧！]]>
+						</node>
+						<reply action="close">
+							<![CDATA[等着吧，我很快会回来的。]]>
+						</reply>
+					</branch>
+				</dialog>
+			</sptDialog>
+			<sptDialog id="2">
+				<dialog npcId="213" npcName="特米提" transport="">
+					<branch id="default">
+						<node emotion="0">
+							<![CDATA[我只听从笛声主人的命令，其他人休想让我做任何事情。]]>
+						</node>
+						<reply action="goToBranch" params="next1">
+							<![CDATA[笛声的主人？]]>
+						</reply>
+						<reply action="close">
+							<![CDATA[我只是路过而已。]]>
+						</reply>
+					</branch>
+					<branch id="next1">
+						<node emotion="0">
+							<![CDATA[对，只有她不会嫌弃我，只有他会永远陪伴我，你要阻止我，除非先打赢我再说！！]]>
+						</node>
+						<reply action="close" params="prepareFight">
+							<![CDATA[好吧，让我们开始战斗吧！]]>
+						</reply>
+						<reply action="close">
+							<![CDATA[你继续忙，再见！]]>
+						</reply>
+					</branch>
+				</dialog>
+			</sptDialog>
+			<sptDialog id="3">
+				<dialog npcId="10" npcName="巴蒂" transport="">
+					<branch id="default">
+						<node emotion="0">
+							<![CDATA[队长，看看背包，带上<font color="#FF0000">高级胶囊</font>了吗？特米提<font color="#FF0000">100</font>级了，要用高级胶囊才能抓住它！]]>
+						</node>
+						<reply action="close" params="fight">
+							<![CDATA[嗯，放心，我带上了！]]>
+						</reply>
+						<reply action="close">
+							<![CDATA[啊，我先去看看背包！]]>
+						</reply>
+					</branch>
+				</dialog>
+			</sptDialog>
+			<sptDialog id="4">
+				<dialog npcId="213" npcName="特米提" transport="">
+					<branch id="default">
+						<node emotion="0">
+							<![CDATA[我依然会在这里等待笛声主人的出现！]]>
+						</node>
+						<reply action="close" params="next2">
+							<![CDATA[ （看样子这个笛声对它来说真的很重要啊！）]]>
+						</reply>
+					</branch>
+				</dialog>
+			</sptDialog>
+			<sptDialog id="5">
+				<dialog npcId="10" npcName="巴蒂" transport="">
+					<branch id="default">
+						<node emotion="0">
+							<![CDATA[ 队长！我们还有两种方式打败特米提，会得到精灵纹章和装备哦！]]>
+						</node>
+						<reply action="close" >
+							<![CDATA[嗯，我这就去看看！]]>
+						</reply>
+					</branch>
+				</dialog>
+			</sptDialog>
+			<sptDialog id="6">
+				<dialog npcId="10" npcName="巴蒂" transport="">
+					<branch id="default">
+						<node emotion="0">
+							<![CDATA[{0}]]>
+						</node>
+						<reply action="close">
+							<![CDATA[嗯，下次我一定能打败它！]]>
+						</reply>
+					</branch>
+				</dialog>
+			</sptDialog>
+		</dialogs>
+	</spt>
+	
+	<spt sptid="895" name="梵尔尼">
+		<talks>
+			<talk content="队长，别泄气，我看到梵尔尼的弱点了！用虫系、光系、暗影系更容易打败梵尔尼！"/>
+			<talk content="队长，别泄气，我看到梵尔尼的弱点了！梵尔尼用虚空爆裂时遇到灵能虚空状态的精灵时威力会变得非常巨大。"/>
+			<talk content="队长，别泄气，我看到梵尔尼的弱点了！小心梵尔尼在使用必杀技后有一定几率使对手混乱。"/>
+		</talks>
+		<dialogs>
+			<sptDialog id="1">
+				<dialog npcId="11" npcName="多罗" transport="">
+					<branch id="default">
+						<node emotion="0">
+							<![CDATA[队…队长，梵尔尼看起来好厉害，我们、我们等<font color="#FF0000">打败梵尔尼</font>，并且精灵<font color="#FF0000">{100}级</font>再来吧！]]>
+						</node>
+						<reply action="close">
+							<![CDATA[等着吧，我很快会回来的。]]>
+						</reply>
+					</branch>
+				</dialog>
+			</sptDialog>
+			<sptDialog id="2">
+				<dialog npcId="895" npcName="梵尔尼" transport="">
+					<branch id="default">
+						<node emotion="0">
+							<![CDATA[我受梵拉的召唤而来。]]>
+						</node>
+						<reply action="goToBranch" params="next1">
+							<![CDATA[怪不得你和召唤师长的一模一样！]]>
+						</reply>
+						<reply action="close">
+							<![CDATA[我只是路过而已。]]>
+						</reply>
+					</branch>
+					<branch id="next1">
+						<node emotion="0">
+							<![CDATA[对，我们一同成长，共同守护超能氏族，想要获得超能氏族的肯定，先打赢我再说！]]>
+						</node>
+						<reply action="close" params="prepareFight">
+							<![CDATA[好，让我们开始战斗吧！]]>
+						</reply>
+						<reply action="close">
+							<![CDATA[你看起来好强，我等一下再来！]]>
+						</reply>
+					</branch>
+				</dialog>
+			</sptDialog>
+			<sptDialog id="3">
+				<dialog npcId="10" npcName="巴蒂" transport="">
+					<branch id="default">
+						<node emotion="0">
+							<![CDATA[队长，看看背包，带上<font color="#FF0000">高级胶囊</font>了吗？梵尔尼<font color="#FF0000">100</font>级了，要用高级胶囊才能抓住它！]]>
+						</node>
+						<reply action="close" params="fight">
+							<![CDATA[嗯，放心，我带上了！]]>
+						</reply>
+						<reply action="close">
+							<![CDATA[啊，我先去看看背包！]]>
+						</reply>
+					</branch>
+				</dialog>
+			</sptDialog>
+			<sptDialog id="4">
+				<dialog npcId="895" npcName="梵尔尼" transport="">
+					<branch id="default">
+						<node emotion="0">
+							<![CDATA[你们已经得到了我和通灵师的认可，就等于得到了超能氏族的认可！]]>
+						</node>
+						<reply action="close" params="next2">
+							<![CDATA[ 看样子你们在超能氏族的地位相当高啊！]]>
+						</reply>
+					</branch>
+				</dialog>
+			</sptDialog>
+			<sptDialog id="5">
+				<dialog npcId="10" npcName="巴蒂" transport="">
+					<branch id="default">
+						<node emotion="0">
+							<![CDATA[ 队长！我们还有两种方式打败梵尔尼，会得到精灵纹章和装备哦！]]>
+						</node>
+						<reply action="close" >
+							<![CDATA[嗯，我这就去看看！]]>
+						</reply>
+					</branch>
+				</dialog>
+			</sptDialog>
+			<sptDialog id="6">
+				<dialog npcId="10" npcName="巴蒂" transport="">
+					<branch id="default">
+						<node emotion="0">
+							<![CDATA[{0}]]>
+						</node>
+						<reply action="close">
+							<![CDATA[嗯，下次我一定能打败它！]]>
+						</reply>
+					</branch>
+				</dialog>
+			</sptDialog>
+		</dialogs>
+	</spt>
+
+	<spt sptid="997" name="撒莱尔">
+		<talks>
+			<talk content="队长，别泄气，我看到撒莱尔的弱点了！用草系、电系、特质系、光系、龙系更容易打败撒莱尔！"/>
+			<talk content="队长，别泄气，我看到撒莱尔的弱点了！撒莱尔会通过邪念不断累积速度值来提高爆发及生存能力。"/>
+			<talk content="队长，别泄气，我看到撒莱尔的弱点了！小心撒莱尔在使用必杀技后有一定几率使对手害怕"/>
+		</talks>
+		<dialogs>
+			<sptDialog id="1">
+				<dialog npcId="11" npcName="多罗" transport="">
+					<branch id="default">
+						<node emotion="0">
+							<![CDATA[队…队长，撒莱尔看起来好厉害，我们、我们等<font color="#FF0000">打败梵尔尼</font>，并且精灵<font color="#FF0000">{100}级</font>再来吧！]]>
+						</node>
+						<reply action="close">
+							<![CDATA[等着吧，我很快会回来的。]]>
+						</reply>
+					</branch>
+				</dialog>
+			</sptDialog>
+			<sptDialog id="2">
+				<dialog npcId="997" npcName="撒莱尔" transport="">
+					<branch id="default">
+						<node emotion="0">
+							<![CDATA[黑暗法典在哪里？任何人都不能损坏它。]]>
+						</node>
+						<reply action="goToBranch" params="next1">
+							<![CDATA[你先别着急，我们也在找。]]>
+						</reply>
+						<reply action="close">
+							<![CDATA[我只是路过而已。]]>
+						</reply>
+					</branch>
+					<branch id="next1">
+						<node emotion="0">
+							<![CDATA[我，因黑暗法典而生，守护黑暗法典和影灵兽是我的职责，想要知道他们的秘密，先打赢我再说！]]>
+						</node>
+						<reply action="close" params="prepareFight">
+							<![CDATA[好，让我们开始战斗吧！]]>
+						</reply>
+						<reply action="close">
+							<![CDATA[你看起来好强，我等一下再来！]]>
+						</reply>
+					</branch>
+				</dialog>
+			</sptDialog>
+			<sptDialog id="3">
+				<dialog npcId="10" npcName="巴蒂" transport="">
+					<branch id="default">
+						<node emotion="0">
+							<![CDATA[队长，看看背包，带上<font color="#FF0000">高级胶囊</font>了吗？撒莱尔<font color="#FF0000">100</font>级了，要用高级胶囊才能抓住它！]]>
+						</node>
+						<reply action="close" params="fight">
+							<![CDATA[嗯，放心，我带上了！]]>
+						</reply>
+						<reply action="close">
+							<![CDATA[啊，我先去看看背包！]]>
+						</reply>
+					</branch>
+				</dialog>
+			</sptDialog>
+			<sptDialog id="4">
+				<dialog npcId="997" npcName="撒莱尔" transport="">
+					<branch id="default">
+						<node emotion="0">
+							<![CDATA[小赛尔，你很厉害，希望你可以帮我找回剩余的黑暗法典。]]>
+						</node>
+						<reply action="close" params="next2">
+							<![CDATA[我答应你，一定会找回黑暗法典的。]]>
+						</reply>
+					</branch>
+				</dialog>
+			</sptDialog>
+			<sptDialog id="5">
+				<dialog npcId="10" npcName="巴蒂" transport="">
+					<branch id="default">
+						<node emotion="0">
+							<![CDATA[队长！我们还有两种方式打败赛莱尔，会得到精灵纹章和装备哦！]]>
+						</node>
+						<reply action="close" >
+							<![CDATA[嗯，我这就去看看！]]>
+						</reply>
+					</branch>
+				</dialog>
+			</sptDialog>
+			<sptDialog id="6">
+				<dialog npcId="10" npcName="巴蒂" transport="">
+					<branch id="default">
+						<node emotion="0">
+							<![CDATA[{0}]]>
+						</node>
+						<reply action="close">
+							<![CDATA[嗯，下次我一定能打败它！]]>
+						</reply>
+					</branch>
+				</dialog>
+			</sptDialog>
+		</dialogs>
+	</spt>
+</spts>
+
+<!--
+
+	<spt sptid="" name="">
+		<talks>
+			<talk content=""/>
+			<talk content=""/>
+			<talk content=""/>
+		</talks>
+		<dialogs>
+			<sptDialog id="1">
+			</sptDialog>
+			<sptDialog id="2">
+			</sptDialog>
+			<sptDialog id="3">
+			</sptDialog>
+			<sptDialog id="4">
+			</sptDialog>
+			<sptDialog id="5">
+			</sptDialog>
+			<sptDialog id="6">
+			</sptDialog>
+		</dialogs>
+	</spt>
+
+
+ -->

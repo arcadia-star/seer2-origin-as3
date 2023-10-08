@@ -1,0 +1,75 @@
+<!-- des：信息描述
+-----mobile:模型ID  0为玩家,其他为精灵id
+-----className:事件处理类
+-----stopTime:停留时间
+-----tileType:格子类型 0.运势牌 1.机会牌 2.宝箱 3.加赛尔豆 4.减赛尔豆 5.精灵事件
+-----thingId：事件类型对应的事件ID
+-----strikeId：触发id 宝箱为mineid 赛尔豆为对应swapid 战斗为战斗id
+-----fightType：战斗类型
+-----stopTime：触发时间
+-----x：格子寻路x
+-----y：格子寻路y
+ -->
+<dice>
+	<maps>
+<!-- 		<map>1030</map> -->
+<!-- 		<map>1031</map> -->
+<!-- 		<map>1032</map> -->
+<!-- 		<map>1033</map> -->
+<!-- 		<map>1034</map> -->
+<!-- 		<map>1035</map> -->
+<!-- 		<map>1036</map> -->
+<!-- 		<map>1037</map> -->
+		<map>1038</map>
+	</maps>
+	<things>
+		<lucky des="幸运牌事件">
+			<thing id="0"  stopTime="10"  className="StopThing"  des="精灵伙伴闹着要赏月，在原地停留10秒陪他们"/>
+			<thing id="1"  stopTime="20"  className="StopThing"  des="在原地停留20秒接受骰子星SZTV电视台采访"/>
+			<thing id="2"  moveTile="1"   className="ChangTileThing"  des="你闻到了蝙蝠侠的汗臭，能量激增，前进1格"/>
+			<thing id="3"  moveTile="-1"   className="ChangTileThing"  des="骰子星突降陨石雨，你被陨石击中，打回1格"/>
+			<thing id="4"  moveTile="500"   className="ChangTileThing"  des="狼妖怒吼，口臭的威力把你打回了原点……“扫瑞额”"/>
+		</lucky>
+		<box des="宝箱事件">
+			<thing id="0" strikeId="166"  className="BoxThing"  des="普通宝箱"/>
+			<thing id="1" strikeId="172"  className="StarBoxThing"  des="获取金币事件"/>
+		</box>
+		<chance des="机会事件">
+			<thing id="0"  className="LimitTimeAnswerThing" des="狼妖问答"/>
+			<thing id="1"  className="HighPickThing" des="高空接物"/>
+			<!-- <thing id="2"  className="HotRockThing" des="火箭游戏"/> -->
+		</chance>
+		<addMoney des="加赛尔豆">
+			<thing id="0" strikeId="595" className="MoneyThing" des="加200赛尔豆"/>
+		</addMoney>
+		<subMoney des="减赛尔豆">
+			<thing id="0" strikeId="596" className="MoneyThing" des="减50赛尔豆"/>
+		</subMoney>
+		<fight des="精灵对战">
+			<thing id="0"  strikeId="169" fightType="wild" className="FightThing" des="打骰子精灵"/>
+			<thing id="1"  strikeId="284" fightType="wild" className="FightThing" des="打雪精灵"/>
+			<thing id="2"  strikeId="365" fightType="wild" className="FightThing" des="打晓月兔精灵"/>
+			<thing id="3"  strikeId="462" fightType="wild" className="FightThing" des="随机打一只精灵"/>
+			<thing id="4"  strikeId="515" fightType="wild" className="FightThing" des="打瑟咪娅"/>
+			<thing id="5"  strikeId="796" fightType="wild" className="FightThing" des="阿布布"/>
+			<thing id="6"  strikeId="801" fightType="wild" className="FightThing" des="托尼乔巴"/>
+			<thing id="7"  strikeId="802" fightType="wild" className="FightThing" des="尼禄"/>
+			<thing id="8"  strikeId="803" fightType="wild" className="FightThing" des="维克多"/>
+			<thing id="9"  strikeId="804" fightType="wild" className="FightThing" des="神笔马良"/>
+			<thing id="10"  strikeId="805" fightType="wild" className="FightThing" des="橡皮"/>
+			<thing id="11"  strikeId="806" fightType="wild" className="FightThing" des="赤绒尾"/>
+			<thing id="12"  strikeId="807" fightType="wild" className="FightThing" des="咔斯奇"/>
+			<thing id="13"  strikeId="808" fightType="wild" className="FightThing" des="包芯棕"/>
+			<thing id="14"  strikeId="809" fightType="wild" className="FightThing" des="猛犸象"/>
+			<thing id="15"  strikeId="810" fightType="wild" className="FightThing" des="布克"/>
+			<thing id="16"  strikeId="811" fightType="wild" className="FightThing" des="巨岩怪"/>
+		</fight >
+		<reverse des="格子倒退">
+			<thing id="0"  moveTile="-1"   className="ReverseThing"  des="狼妖怒吼，口臭的威力把你打回了原点……“扫瑞额”"/>
+			<thing id="1"  moveTile="-2"   className="ReverseThing"  des="狼妖怒吼，口臭的威力把你打回了原点……“扫瑞额”"/>
+			<thing id="2"  moveTile="-3"   className="ReverseThing"  des="狼妖怒吼，口臭的威力把你打回了原点……“扫瑞额”"/>
+			<thing id="3"  moveTile="-4"   className="ReverseThing"  des="狼妖怒吼，口臭的威力把你打回了原点……“扫瑞额”"/>
+			<thing id="4"  moveTile="-5"   className="ReverseThing"  des="狼妖怒吼，口臭的威力把你打回了原点……“扫瑞额”"/>
+		</reverse>		
+	</things>
+</dice>

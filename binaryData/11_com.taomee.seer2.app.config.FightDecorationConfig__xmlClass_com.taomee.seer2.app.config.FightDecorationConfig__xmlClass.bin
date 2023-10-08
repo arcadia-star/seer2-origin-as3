@@ -1,0 +1,5 @@
+<!-- petId=为精灵ID -->
+<!-- fightType=为对战类型  PVE为PVE时候显示 PVP为PVP时候显示  ALL为PVE和PVP都显示 -->
+<root>
+	<fight petId="1111" fightType="PVE"/> 
+</root>

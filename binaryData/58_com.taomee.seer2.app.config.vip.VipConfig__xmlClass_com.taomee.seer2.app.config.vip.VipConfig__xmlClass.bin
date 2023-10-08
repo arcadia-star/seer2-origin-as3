@@ -1,0 +1,40 @@
+<!-- NewVipPanel面板配置信息 -->
+<!-- sort在第几行 -->
+<!-- ResId icon资源对应id 在Client/res/vip/unitIcon下-->
+<!-- ClickType点击之后处理类型 module打开面板 tip显示文字提示 gotoMap跳转场景 animation点击时播放的图片或者动画 -->
+<!-- animation的Effect 在Client/res/vip/animation  -->
+	
+
+<root>
+  <item Sort="4" nameT="活动" ResId="1" ClickType="module" Effect="VipRechargeBasePanel"/>
+  <item Sort="4" nameT="活动" ResId="2" ClickType="module" Effect="DecorationStampPanel"/>
+  <item Sort="4" nameT="活动" ResId="3" ClickType="module" Effect="VipStarStone"/>
+  <item Sort="4" nameT="活动" ResId="4" ClickType="module" Effect="VipDailyLottery"/>
+  <item Sort="4" nameT="活动" ResId="5" ClickType="module" Effect="VipPyramidPanel"/>  
+  
+  <item Sort="2" nameT="礼包" ResId="6" ClickType="module" Effect="VipGiftBagPanel"/>
+  <item Sort="2" nameT="礼包" ResId="7" ClickType="module" Effect="VipGiftBagPanel"/>
+  <item Sort="2" nameT="礼包" ResId="8" ClickType="module" Effect="VipChristmasPanel"/>
+  <item Sort="2" nameT="礼包" ResId="9" ClickType="tip" Effect="首次加入VIP可获得价值30元的大礼包，充值后直接发放"/>
+  <item Sort="2" nameT="礼包" ResId="10" ClickType="tip" Effect="VIP用户不定期会收到丰富的幸运大礼哦"/>
+  
+  <item Sort="0" nameT="专属" ResId="27" ClickType="tip" Effect="VIP全员提升5%战斗伤害加成，2014年费VIP提升10%！"/>
+  <item Sort="0" nameT="专属" ResId="11" ClickType="animation" Effect="1"/>
+  <item Sort="0" nameT="专属" ResId="12" ClickType="animation" Effect="2"/>
+  <item Sort="0" nameT="专属" ResId="13" ClickType="animation" Effect="3"/>
+  <item Sort="0" nameT="专属" ResId="14" ClickType="gotoMap" Effect="8011"/>
+  <item Sort="0" nameT="专属" ResId="15" ClickType="animation" Effect="4"/>
+  
+  <item Sort="1" nameT="尊贵" ResId="26" ClickType="module"  Effect="PetRideAdsPanel"/> <!-- 骑宠介绍面板 -->
+  <item Sort="1" nameT="尊贵" ResId="16" ClickType="animation" Effect="5"/>
+  <item Sort="1" nameT="尊贵" ResId="17" ClickType="tip" Effect="独特红名"/>
+  <item Sort="1" nameT="尊贵" ResId="18" ClickType="animation" Effect="6"/>
+  <item Sort="1" nameT="尊贵" ResId="19" ClickType="gotoMap" Effect="8011"/> 
+  <item Sort="1" nameT="尊贵" ResId="20" ClickType="animation" Effect="7"/>
+  
+  <item Sort="3" nameT="优惠" ResId="21" ClickType="animation" Effect="8"/>
+  <item Sort="3" nameT="优惠" ResId="22" ClickType="animation" Effect="9"/>
+  <item Sort="3" nameT="优惠" ResId="23" ClickType="tip" Effect="VIP在活动中享有更多免费机会"/>
+  <item Sort="3" nameT="优惠" ResId="24" ClickType="animation" Effect="10"/>
+  <item Sort="3" nameT="优惠" ResId="25" ClickType="animation" Effect="11"/>
+</root>

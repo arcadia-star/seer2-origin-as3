@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<!-- CircleType: 表示活动的周期类型（-1 表示和时间无关, 0 表示只有一次, 1 表示每天, 2 表示每周, 3 表示每月, 4 表示每年）-->
+<!-- CircleDate: 表示活动的周期内对应的日期值（CircleType为0时用具体年月日来填充, CircleType为1时用0来填充, CircleType为2时用【0-6】表示周日到周六, CircleType为3时用0-30表示当月的日期值, CircleType为4时用月日日期值）-->
+<!-- Phase：表示一次活动的时间定义 -->
+<!-- ActivityPet：活动野怪的属性定义 -->
+
+<activities>
+	<activity ID="1" name="草系保卫战" circleType="1" circleDate="0" processor="GrassBlade">
+		<activityPet id="1" name="萨伦帝国卫兵">
+			<sloganArr>
+				<slogan value ="萨伦帝国万岁!"/>
+			</sloganArr>
+		</activityPet>
+		<activityPet id="2" name="萨伦帝国士官">
+			<sloganArr>
+				<slogan value ="你们这是自寻死路!"/>
+			</sloganArr>
+		</activityPet>
+		<phase value="11:30, 12:30" detail="11:30, 11:55, 11:55, 12:15, 12:15, 12:30"/>
+		<phase value="19:30, 20:30" detail="19:30, 19:55, 19:55, 20:15, 20:15, 20:30"/>
+	</activity>
+	
+	<activity ID="2" name="重夺水源之心" circleType="1" circleDate="0" processor="WaterRecapture">
+		<activityPet id="4" name="紫电卫兵">
+			<sloganArr>
+				<slogan value ="缇娜队长一定会教训你们的!"/>
+			</sloganArr>
+		</activityPet>
+		<activityPet id="5" name="紫电士官">
+			<sloganArr>
+				<slogan value ="缇娜队长一定会教训你们的!"/>
+			</sloganArr>
+		</activityPet>
+		<phase value="13:30, 14:30" detail="13:30, 13:55, 13:55, 14:15, 14:15, 14:30"/>
+		<phase value="17:30, 18:30" detail="17:30, 17:55, 17:55, 18:15, 18:15, 18:30"/>
+	</activity>
+	
+	<activity ID="3" name="M5巡演" circleType="3" circleDate="5,6,7,8,9,10,11,12,13,14,15,16,17,18,19" processor="CutePetTour">
+		<phase value="13:00, 15:00" detail="13:00, 15:00"/>
+	</activity>
+	
+	<activity ID="4" name="火焰山激斗" circleType="1" circleDate="0" processor="FlameBattle">
+		<activityPet id="7" name="巴尔卡卫兵">
+			<sloganArr>
+				<slogan value ="巴尔卡的朋友就是我的朋友"/>
+			</sloganArr>
+		</activityPet>
+		<activityPet id="8" name="洛克侍卫">
+			<sloganArr>
+				<slogan value ="没有人可以和洛克作对"/>
+			</sloganArr>
+		</activityPet>
+		<phase value="15:30, 16:30" detail="15:30, 15:40, 15:45, 15:55, 16:00, 16:10, 16:15, 16:30"/>
+		<phase value="20:30, 21:30" detail="20:30, 20:40, 20:45, 20:55, 21:00, 21:10, 21:15, 21:30"/>
+	</activity>
+	
+	<activity ID="5" name="对战葛蕾芬" circleType="-1" processor="FlySeriesFight" />
+	
+	<activity ID="6" name="穿越时空的礼物" circleType="0" circleDate="2012120" processor="GiftFromSeer">
+		<phase value="15:00, 16:00" detail="15:00, 16:00"/>
+	</activity>
+	
+	<activity ID="7" name="对战萨伯尔" circleType="-1" processor="FightSaBoEr" />
+	
+	<activity ID="8" name="三八双雄战" circleType="1" circleDate="0" processor="ThreeEightDualFight">
+		<phase value="12:30, 13:30" detail="12:30, 13:30"/>
+		<phase value="16:30, 17:30" detail="16:30, 17:30"/>
+	</activity>
+	
+	<activity ID="9" name="召唤雷伊" circleType="0" circleDate="2012817" processor="CallLeiyi">
+		<activityPet id="9" name="萨伦帝国卫兵">
+			<sloganArr>
+				<slogan value ="我们一定要阻止雷伊现身！"/>
+				<slogan value ="兄弟们，上！"/>
+				<slogan value ="我要把这个地方轰个稀巴烂！"/>
+				<slogan value ="把这里的机器都给砸啦!"/>
+			</sloganArr>
+		</activityPet>
+		<phase value="13:00, 14:00" detail="13:00, 14:00"/>
+	</activity>
+	
+</activities>

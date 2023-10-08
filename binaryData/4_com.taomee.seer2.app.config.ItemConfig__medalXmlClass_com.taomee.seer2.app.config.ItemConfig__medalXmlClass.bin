@@ -1,0 +1,8 @@
+<!--勋章表-->
+
+<Medals>
+	<Medal id="500001" name="图鉴收集1" level="3" des="完成精灵图鉴中收集5只精灵" title="无"/>
+	<Medal id="500002" name="图鉴收集2" level="3" des="完成精灵图鉴中收集10只精灵" title="无"/>
+	<Medal id="500003" name="图鉴收集3" level="3" des="完成精灵图鉴中收集15只精灵" title="无"/>
+</Medals>
+

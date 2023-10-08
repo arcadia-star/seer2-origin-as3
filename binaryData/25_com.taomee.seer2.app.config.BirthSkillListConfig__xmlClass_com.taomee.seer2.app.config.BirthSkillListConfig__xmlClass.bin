@@ -1,0 +1,62 @@
+<Monsters>
+<Monster ID="15" >
+	<Item skillid="10068" />
+	<Item skillid="10069" />
+	<Item skillid="10071" />
+	<Item skillid="10078" />
+</Monster>
+<Monster ID="27" >
+    <Item skillid="10152" />
+    <Item skillid="10120" />
+    <Item skillid="10157" />
+    <Item skillid="10158" />
+</Monster>
+<Monster ID="40" >
+    <Item skillid="10193" />
+    <Item skillid="10236" />
+    <Item skillid="10238" />
+    <Item skillid="10239" />
+</Monster>
+<Monster ID="50" >
+    <Item skillid="10290" />
+    <Item skillid="10291" />
+    <Item skillid="10294" />
+    <Item skillid="10300" />
+</Monster>
+<Monster ID="203" >
+    <Item skillid="11256" />
+    <Item skillid="11258" />
+    <Item skillid="11259" />
+    <Item skillid="11261" />
+</Monster>
+<Monster ID="112" >
+    <Item skillid="10572" />
+    <Item skillid="10571" />
+    <Item skillid="10574" />
+    <Item skillid="10577" />
+</Monster>
+<Monster ID="69" >
+    <Item skillid="10209" />
+    <Item skillid="10407" />
+    <Item skillid="10408" />
+    <Item skillid="10409" />
+</Monster>
+<Monster ID="123" >
+    <Item skillid="10654" />
+    <Item skillid="10659" />
+    <Item skillid="10660" />
+    <Item skillid="10662" />
+</Monster>
+<Monster ID="89" >
+    <Item skillid="10555" />
+    <Item skillid="10556" />
+    <Item skillid="10560" />
+    <Item skillid="10563" />
+</Monster>
+<Monster ID="143" >
+    <Item skillid="10053" />
+    <Item skillid="10276" />
+    <Item skillid="10879" />
+    <Item skillid="10880" />
+</Monster>
+</Monsters>

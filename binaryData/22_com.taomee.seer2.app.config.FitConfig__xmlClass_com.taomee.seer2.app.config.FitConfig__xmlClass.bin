@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- *list：合体精灵种类ID列表 必须配置 -->
+<!-- type: 根据TYPE条件来触发 -->
+<!-- content: 根据content来获得条件内容-->
+<!-- id：合体精灵种类ID -->
+<!-- fatherId：合体A精灵种类ID -->
+<!-- motherId：合体B精灵种类ID -->
+<!-- special: 特殊要求 -->
+<!-- skillId：使用必杀技ID -->
+<!-- anger：附加怒气值(这个本来基础上增加怒气) -->
+<fits list="1299|213|216|233|475|474|473|547">
+	<fit skillId="11618"  id="1299" fatherId="115" motherId="38" anger="5" type="void" content="0" special="void"/>
+	<fit skillId="11619"  id="1299" fatherId="115" motherId="38" anger="5" type="void" content="0" special="void"/>
+	<fit skillId="12961"  id="216" fatherId="38" motherId="218" anger="5" type="void" content="0" special="void"/>
+	<fit skillId="13236"  id="233" fatherId="115" motherId="232" anger="5" type="void" content="0" special="void"/>
+	<fit skillId="12908"  id="213" fatherId="212" motherId="0" anger="5" type="item" content="400176" special="gad"/>
+	<fit skillId="16077"  id="473" fatherId="459" motherId="0" anger="5" type="void" content="0" special="void"/>
+	<fit skillId="16078"  id="474" fatherId="467" motherId="0" anger="5" type="void" content="0" special="void"/>
+	<fit skillId="16079"  id="475" fatherId="468" motherId="0" anger="5" type="void" content="0" special="void"/>
+	<fit skillId="17163"  id="547" fatherId="531" motherId="0" anger="5" type="void" content="0" special="void"/>
+</fits>

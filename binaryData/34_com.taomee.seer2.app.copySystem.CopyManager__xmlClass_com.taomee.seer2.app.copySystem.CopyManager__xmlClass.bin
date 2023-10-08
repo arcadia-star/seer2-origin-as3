@@ -1,0 +1,31 @@
+<!-- 
+	副本客户端副本数据表（注:副本顺序需按照层级次序，模式顺序也需由小到大排列,只加要上的副本)
+	
+	地图id范围(8001~9000)
+	hLinkId 横向关联id: 如：剧情模式关联挑战模式id,挑战模式关联炼狱模式，没有关联项，则“0”
+	vLinkId 纵向关联id: 如：炼狱一层剧情模式关联炼狱二层剧情模式id,没有关联项，则“0”
+	isOpen:是否开启，一般副本的第一个默认开启
+	animationStr:副本使用场景资源名称，如
+	passMiId:一键通关米币id
+	miFull:一键通关全屏名称
+ -->
+<copys>
+  <copy id="1" name="七宗炼狱">
+  	<child name="欲望回廊" mapId="80001" mode="1" isOpen="1" hLinkId="80002" vLinkId="80004" tipOpen="欲望回廊  Boss：莫利亚 \n奖励：炼狱粉末*10" tipClose="" animationStr="1" passMiId="603567" miFull="lianyu0"/>
+  	<child name="欲望回廊" mapId="80002" mode="2" isOpen="0" hLinkId="0" vLinkId="0" tipOpen="欲望回廊  Boss：莫利亚\n奖励：炼狱粉末*30" tipClose="需要完成欲望回廊的剧情模式才可开启" animationStr="1" passMiId="603553" miFull="lianyu0"/>
+  	<child name="暴食回廊" mapId="80004" mode="1" isOpen="0" hLinkId="80005" vLinkId="80007" tipOpen="暴食回廊  Boss：布里米亚 \n奖励：炼狱粉末*30" tipClose="需要完成欲望回廊的剧情模式才可开启" animationStr="2" passMiId="603568" miFull="lianyu1"/>
+  	<child name="暴食回廊" mapId="80005" mode="2" isOpen="0" hLinkId="0" vLinkId="0" tipOpen="暴食回廊  Boss：布里米亚\n奖励：炼狱粉末*50" tipClose="需要完成暴食回廊的剧情模式才可开启" animationStr="2" passMiId="603554" miFull="lianyu1"/>
+  	<child name="贪婪回廊" mapId="80007" mode="1" isOpen="0" hLinkId="80008" vLinkId="80014" tipOpen="贪婪回廊  Boss：伊莉塔\n奖励：炼狱星尘*50" tipClose="需要完成暴食回廊的剧情模式才可开启" animationStr="3" passMiId="603569" miFull="lianyu2"/>
+  	<child name="贪婪回廊" mapId="80008" mode="2" isOpen="0" hLinkId="0" vLinkId="0" tipOpen="贪婪回廊  Boss：伊莉塔\n奖励：炼狱星尘*50" tipClose="需要完成贪婪回廊的剧情模式才可开启" animationStr="3" passMiId="603555" miFull="lianyu2"/>
+  	<child name="虚弱大厅" mapId="80014" mode="1" isOpen="0" hLinkId="80015" vLinkId="80022" tipOpen="虚弱大厅  Boss：泰瑞纳斯\n奖励：虚弱之尘*10" tipClose="需要完成贪婪回廊的剧情模式才可开启" animationStr="4" passMiId="603570" miFull="lianyu3"/>
+  	<child name="虚弱大厅" mapId="80015" mode="2" isOpen="0" hLinkId="0" vLinkId="0" tipOpen="虚弱大厅  Boss：泰瑞纳斯\n奖励：虚弱之尘*50" tipClose="需要完成虚弱大厅 的剧情模式才可开启" animationStr="4" passMiId="603556" miFull="lianyu3"/>
+  	<child name="狂暴回廊" mapId="80022" mode="1" isOpen="0" hLinkId="80023" vLinkId="80025" tipOpen="狂暴回廊  Boss：埃尔萨斯\n奖励：狂暴之尘*10" tipClose="需要完成虚弱大厅的剧情模式才可开启" animationStr="5" passMiId="603571" miFull="lianyu4"/>
+  	<child name="狂暴回廊" mapId="80023" mode="2" isOpen="0" hLinkId="0" vLinkId="0" tipOpen="狂暴回廊  Boss：埃尔萨斯\n奖励：狂暴之尘*50" tipClose="需要完成狂暴回廊 的剧情模式才可开启" animationStr="5" passMiId="603557" miFull="lianyu4"/>
+  	<child name="妒忌回廊" mapId="80025" mode="1" isOpen="0" hLinkId="80026" vLinkId="80028" tipOpen="妒忌回廊  Boss：汉尼拔\n奖励：妒忌之尘*10" tipClose="需要完成狂暴回廊的剧情模式才可开启" animationStr="6" passMiId="603572" miFull="lianyu5"/>
+  	<child name="妒忌回廊" mapId="80026" mode="2" isOpen="0" hLinkId="0" vLinkId="0" tipOpen="妒忌回廊  Boss：汉尼拔\n奖励：妒忌之尘*50" tipClose="需要完成妒忌回廊 的剧情模式才可开启" animationStr="6" passMiId="603558" miFull="lianyu5"/>
+  	<child name="傲慢大厅" mapId="80028" mode="1" isOpen="0" hLinkId="80029" vLinkId="80031" tipOpen="傲慢大厅  Boss：伊利丹\n奖励：傲慢之芯*1" tipClose="需要完成妒忌回廊的剧情模式才可开启" animationStr="7" passMiId="603573" miFull="lianyu6"/>
+  	<child name="傲慢大厅" mapId="80029" mode="2" isOpen="0" hLinkId="0" vLinkId="0" tipOpen="傲慢大厅  Boss：伊利丹\n奖励：傲慢之芯*1" tipClose="需要完成傲慢大厅的剧情模式才可开启" animationStr="7" passMiId="603559" miFull="lianyu6"/>
+  	<child name="忏悔殿宗" mapId="80031" mode="1" isOpen="0" hLinkId="80032" vLinkId="0" tipOpen="忏悔殿宗  Boss：撒旦\n奖励：忏悔之心*1" tipClose="需要完成傲慢大厅的剧情模式才可开启" animationStr="8"/>
+  	<child name="忏悔殿宗" mapId="80032" mode="2" isOpen="0" hLinkId="0" vLinkId="0" tipOpen="忏悔殿宗  Boss：撒旦\n奖励：忏悔之心*8" tipClose="需要完成忏悔殿宗的剧情模式才可开启" animationStr="8"/>
+  </copy>
+</copys>

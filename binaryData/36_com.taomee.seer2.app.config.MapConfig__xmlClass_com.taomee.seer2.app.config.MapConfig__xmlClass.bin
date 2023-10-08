@@ -1,0 +1,2334 @@
+<!-- ID地图的ID号 MapType表示地图是否有黑田白夜，0表示只有白天，1表示有白天和黑夜 -->
+<!-- ScreenNum表示地图是几屏，Weather表示地图上的天气，默认是0表示没有天气，1表示晴天，2表示雨天，3表示炎热， 4表示暴风雪，
+	5表示沙尘暴， 6表示地震，7表示雷暴天， 8表示飓风， 9表示夜幕 -->
+<!-- InitX InitY表示用户进入地图的初始坐标 -->
+<!-- dream 为1表示下次上线不返回到的地图，为0是正常地图，默认不填且为0 -->
+<!-- Monsters 配置刷的野怪，必须配置9个点 -->
+<!-- Dark 0表示白天刷的怪，1表示黑夜刷的怪 -->
+<!-- Boss 表示配置SPT的ID号 -->
+<!-- EscapeRound 表示多少回合会逃跑 -->
+<!-- RareMon 表示地图刷稀有怪，CheckTime 表示需要校验的时间表中的编号，即怪出现的特定时刻， Interval表示每几分钟刷新，Remain表示怪停留的时间，
+	Mon怪的信息 GetItem表示打败了稀有精灵，赠送的物品 -->
+
+<!-- 请按顺序编写地图id 并插入对应位置 -->
+<Maps>
+	<Map ID="1" Name="监狱" MapType="0" ScreenNum="1" InitX="500" InitY="400">
+		<Monsters Dark="0">
+			<Monster ID="1001" LV="2 2" />
+			<Monster ID="1001" LV="2 2" />
+			<Monster ID="1001" LV="2 2" />
+			<Monster ID="1001" LV="2 2" />
+			<Monster ID="1001" LV="2 2" />
+			<Monster ID="1001" LV="2 2" />
+			<Monster ID="1001" LV="2 2" />
+			<Monster ID="1001" LV="2 2" />
+			<Monster ID="1001" LV="2 2" />
+		</Monsters>
+		<Task>
+			<Monster ID="1001" LV="2 2" />
+		</Task>
+	</Map>
+	<Map ID="2" Name="冰室" MapType="0" ScreenNum="1" InitX="400" InitY="340" />
+	<Map ID="3" Name="新手任务房间" MapType="0" ScreenNum="1" InitX="500"  InitY="350" />
+	<Map ID="4" Name="新手任务动力室" MapType="0" ScreenNum="1" InitX="480"  InitY="380" />
+	<Map ID="5" Name="新手任务船长室" MapType="0" ScreenNum="1" InitX="460"  InitY="400" />
+	<Map ID="6" Name="新手任务实验室" MapType="0" ScreenNum="1" InitX="392"  InitY="258" />
+
+	<Map ID="10" Name="船长室" MapType="0" ScreenNum="1" InitX="480"  InitY="380" />
+	<Map ID="20" Name="实验室" MapType="0" ScreenNum="1" InitX="480"  InitY="380" />
+	<Map ID="30" Name="资料室" MapType="0" ScreenNum="1" InitX="480"  InitY="380" />
+	<Map ID="40" Name="动力室" MapType="0" ScreenNum="1" InitX="480"  InitY="380" />
+	<Map ID="50" Name="机械室" MapType="0" ScreenNum="1" InitX="480"  InitY="380" />
+	<Map ID="60" Name="教官室" MapType="0" ScreenNum="1" InitX="480"  InitY="380" />
+	<Map ID="70" Name="传送室" MapType="0" ScreenNum="1" InitX="480"  InitY="380" />
+	<Map ID="80" Name="游戏室" MapType="0" ScreenNum="1" InitX="480"  InitY="380" />
+
+	<Map ID="81" Name="英格瓦要塞" MapType="0" ScreenNum="1" InitX="480"  InitY="380" />
+	<Map ID="82" Name="要塞B1" MapType="0" ScreenNum="1" InitX="480"  InitY="380" />
+	<Map ID="83" Name="要塞B2" MapType="0" ScreenNum="1" InitX="480"  InitY="380" />
+	<Map ID="84" Name="要塞B3" MapType="0" ScreenNum="1" InitX="480"  InitY="380" />
+	<Map ID="85" Name="要塞B4" MapType="0" ScreenNum="1" InitX="480"  InitY="380" />
+	<Map ID="86" Name="要塞B5" MapType="0" ScreenNum="1" InitX="480"  InitY="380" />
+	<Map ID="87" Name="要塞B6" MapType="0" ScreenNum="1" InitX="480"  InitY="380" />
+	<Map ID="88" Name="要塞B7" MapType="0" ScreenNum="1" InitX="480"  InitY="380" />
+	<Map ID="89" Name="要塞B8" MapType="0" ScreenNum="1" InitX="480"  InitY="380" />
+
+	<Map ID="90" Name="草系主城" MapType="0" ScreenNum="1" InitX="290"  InitY="380" />
+	<Map ID="100" Name="信奉广场" MapType="0" ScreenNum="1" InitX="120"  InitY="380" />
+	<Map ID="101" Name="碧玉森林" MapType="0" ScreenNum="1" InitX="500"  InitY="400" />
+	<Map ID="110" Name="权力之帐" MapType="0" ScreenNum="1" InitX="400"  InitY="300" />
+	<Map ID="121" Name="异蘑世界" MapType="0" ScreenNum="1" InitX="120"  InitY="380" Weather="1">
+		<Monsters Dark="0">
+			<Monster ID="10" LV="2 4" />
+			<Monster ID="10" LV="2 4" />
+			<Monster ID="10" LV="2 4" />
+			<Monster ID="10" LV="2 4" />
+			<Monster ID="10" LV="2 4" />
+			<Monster ID="10" LV="2 4" />
+			<Monster ID="10" LV="2 4" />
+			<Monster ID="10" LV="2 4" />
+			<Monster ID="10" LV="2 4" />
+		</Monsters>
+		<RareMon CheckTime="3" Interval="400 450 500" Remain="50"
+			GetItem="200539">
+			<Mon ID="10" LV="7 9" />
+		</RareMon>
+	</Map>
+	<Map ID="1211" Name="异蘑世界幻境" MapType="0" ScreenNum="1" InitX="120"  InitY="380" />
+	<Map ID="122" Name="朽木桥" MapType="0" ScreenNum="1" InitX="120"  InitY="380" Weather="1">
+		<Monsters Dark="0">
+			<Monster ID="43" LV="5 7" />
+			<Monster ID="10" LV="5 7" />
+			<Monster ID="18" LV="5 7" />
+			<Monster ID="43" LV="5 7" />
+			<Monster ID="10" LV="5 7" />
+			<Monster ID="18" LV="5 7" />
+			<Monster ID="43" LV="5 7" />
+			<Monster ID="10" LV="5 7" />
+			<Monster ID="18" LV="5 7" />
+		</Monsters>
+		<RareMon CheckTime="3" Interval="400 450 500" Remain="50"
+			GetItem="200544">
+			<Mon ID="43" LV="10 12" />
+		</RareMon>
+	</Map>
+	<Map ID="123" Name="异蘑小径" MapType="0" ScreenNum="1" InitX="120"  InitY="380">
+		<Monsters Dark="0">
+			<Monster ID="65" LV="8 10" />
+			<Monster ID="10" LV="8 10" />
+			<Monster ID="43" LV="8 10" />
+			<Monster ID="65" LV="8 10" />
+			<Monster ID="10" LV="8 10" />
+			<Monster ID="43" LV="8 10" />
+			<Monster ID="65" LV="8 10" />
+			<Monster ID="10" LV="8 10" />
+			<Monster ID="43" LV="8 10" />
+		</Monsters>
+		<RareMon CheckTime="3" Interval="400 450 500" Remain="50"
+			GetItem="200542">
+			<Mon ID="65" LV="13 15" />
+		</RareMon>
+	</Map>
+	<Map ID="1231" Name="异蘑小径幻境" MapType="0" ScreenNum="1" InitX="120"  InitY="380" />
+	<Map ID="124" Name="异蘑谷" MapType="0" ScreenNum="1" InitX="120"  InitY="380">
+		<Monsters Dark="0">
+			<Monster ID="204" LV="20 20" />
+			<Monster ID="10" LV="20 20" />
+			<Monster ID="49" LV="20 20" />
+			<Monster ID="204" LV="20 20" />
+			<Monster ID="10" LV="20 20" />
+			<Monster ID="49" LV="20 20" />
+			<Monster ID="204" LV="20 20" />
+			<Monster ID="10" LV="20 20" />
+			<Monster ID="49" LV="20 20" />
+		</Monsters>
+	</Map>
+	<Map ID="1240" Name="树洞" MapType="0" ScreenNum="1" InitX="120"  InitY="380" />
+	<Map ID="1241" Name="异蘑谷幻境" MapType="0" ScreenNum="1" InitX="120"  InitY="380" />
+
+	<Map ID="125" Name="七味小厨" MapType="0" ScreenNum="1" InitX="529"  InitY="427" />
+	<Map ID="131" Name="荆棘林" MapType="1" ScreenNum="1" InitX="500"  InitY="400" Weather="1">
+		<Monsters Dark="0">
+			<Monster ID="13" LV="5 7" />
+			<Monster ID="13" LV="5 7" />
+			<Monster ID="13" LV="5 7" />
+			<Monster ID="13" LV="5 7" />
+			<Monster ID="516" LV="33 35" />
+			<Monster ID="516" LV="33 35" />
+			<Monster ID="516" LV="33 35" />
+			<Monster ID="516" LV="33 35" />
+			<Monster ID="516" LV="33 35" />
+		</Monsters>
+		<Monsters Dark="1">
+			<Monster ID="516" LV="13 15" />
+			<Monster ID="516" LV="13 15" />
+			<Monster ID="516" LV="13 15" />
+			<Monster ID="516" LV="13 15" />
+			<Monster ID="516" LV="13 15" />
+			<Monster ID="516" LV="13 15" />
+			<Monster ID="516" LV="13 15" />
+			<Monster ID="516" LV="13 15" />
+			<Monster ID="516" LV="13 15" />
+			<Monster ID="13" LV="5 7" />
+		</Monsters>
+		<RareMon CheckTime="3" Interval="400 450 500" Remain="50"
+			GetItem="200543">
+			<Mon ID="13" LV="10 12" />
+		</RareMon>
+	</Map>
+	<Map ID="1311" Name="荆棘林幻境" MapType="0" ScreenNum="1" InitX="529"  InitY="427" />
+	<Map ID="1312" Name="荆棘林幻境" MapType="0" ScreenNum="1" InitX="529"  InitY="427" />
+
+	<Map ID="132" Name="荆棘小道" MapType="1" ScreenNum="1" InitX="350"  InitY="400">
+		<Monsters Dark="0">
+			<Monster ID="10" LV="6 8" />
+			<Monster ID="204" LV="6 8" />
+			<Monster ID="43" LV="6 8" />
+			<Monster ID="10" LV="6 8" />
+			<Monster ID="516" LV="33 35" />
+			<Monster ID="516" LV="33 35" />
+			<Monster ID="516" LV="33 35" />
+			<Monster ID="516" LV="33 35" />
+			<Monster ID="516" LV="33 35" />
+		</Monsters>
+		<Monsters Dark="1">
+			<Monster ID="516" LV="13 15" />
+			<Monster ID="516" LV="13 15" />
+			<Monster ID="516" LV="13 15" />
+			<Monster ID="516" LV="13 15" />
+			<Monster ID="516" LV="13 15" />
+			<Monster ID="516" LV="13 15" />
+			<Monster ID="516" LV="13 15" />
+			<Monster ID="516" LV="13 15" />
+			<Monster ID="516" LV="13 15" />
+		</Monsters>
+	</Map>
+	<Map ID="133" Name="深幽沼泽" MapType="0" ScreenNum="1" InitX="620"  InitY="460">
+		<Monsters Dark="0">
+			<Monster ID="200" LV="12 14" />
+			<Monster ID="10" LV="12 14" />
+			<Monster ID="49" LV="12 14" />
+			<Monster ID="200" LV="12 14" />
+			<Monster ID="10" LV="12 14" />
+			<Monster ID="49" LV="12 14" />
+			<Monster ID="200" LV="12 14" />
+			<Monster ID="10" LV="12 14" />
+			<Monster ID="49" LV="12 14" />
+		</Monsters>
+		<RareMon CheckTime="3" Interval="400 450 500" Remain="50"
+			GetItem="200540">
+			<Mon ID="200" LV="17 19" />
+		</RareMon>
+	</Map>
+	<Map ID="1334" Name="深幽沼泽幻境" MapType="0" ScreenNum="1" InitX="620"  InitY="460" />
+	<Map ID="137" Name="小小葵梦境" MapType="0" ScreenNum="1" InitX="370"  InitY="440" dream="1" />
+	<Map ID="138" Name="小小葵梦境" MapType="0" ScreenNum="1" InitX="370"  InitY="440" dream="1" />
+	<Map ID="139" Name="小小葵梦境" MapType="0" ScreenNum="1" InitX="370"  InitY="440" dream="1">
+		<Monsters Dark="0">
+			<Monster ID="22" LV="6 8" />
+			<Monster ID="22" LV="6 8" />
+			<Monster ID="22" LV="6 8" />
+			<Monster ID="22" LV="6 8" />
+			<Monster ID="22" LV="6 8" />
+			<Monster ID="22" LV="6 8" />
+			<Monster ID="22" LV="6 8" />
+			<Monster ID="22" LV="6 8" />
+			<Monster ID="22" LV="6 8" />
+		</Monsters>
+	</Map>
+	<Map ID="141" Name="幻影崖" MapType="0" ScreenNum="1" InitX="120"  InitY="380">
+		<Monsters Dark="0">
+			<Monster ID="18" LV="9 11" />
+			<Monster ID="10" LV="9 11" />
+			<Monster ID="43" LV="9 11" />
+			<Monster ID="18" LV="9 11" />
+			<Monster ID="10" LV="9 11" />
+			<Monster ID="43" LV="9 11" />
+			<Monster ID="18" LV="9 11" />
+			<Monster ID="10" LV="9 11" />
+			<Monster ID="43" LV="9 11" />
+		</Monsters>
+		<RareMon CheckTime="3" Interval="400 450 500" Remain="50"
+			GetItem="200545">
+			<Mon ID="18" LV="14 16" />
+		</RareMon>
+		<Task>
+			<Monster ID="18" LV="9 11" />
+		</Task>
+	</Map>
+	<Map ID="1411" Name="幻影崖幻境" MapType="0" ScreenNum="1" InitX="120"  InitY="380" />
+
+	<Map ID="142" Name="巨石洞穴" MapType="0" ScreenNum="1" InitX="120"  InitY="380">
+		<Bosses ID="17">
+			<Boss BossID="17" />
+		</Bosses>
+	</Map>
+	<Map ID="1421" Name="巨石洞穴幻境" MapType="0" ScreenNum="1" InitX="120"  InitY="380" />
+	<Map ID="1422" Name="巨石洞穴副本1" MapType="0" ScreenNum="1" InitX="120"  InitY="380" />
+	<Map ID="1423" Name="巨石洞穴副本2" MapType="0" ScreenNum="1" InitX="120"  InitY="380" dream="1" />
+	<Map ID="151" Name="水仙草界" MapType="0" ScreenNum="1" InitX="120"  InitY="380" Weather="2">
+		<Monsters Dark="0">
+			<Monster ID="20" LV="12 14" />
+			<Monster ID="20" LV="12 14" />
+			<Monster ID="20" LV="12 14" />
+			<Monster ID="20" LV="12 14" />
+			<Monster ID="20" LV="12 14" />
+			<Monster ID="20" LV="12 14" />
+			<Monster ID="20" LV="12 14" />
+			<Monster ID="20" LV="12 14" />
+			<Monster ID="20" LV="12 14" />
+		</Monsters>
+		<RareMon CheckTime="3" Interval="400 450 500" Remain="50"
+			GetItem="200541">
+			<Mon ID="20" LV="17 19" />
+		</RareMon>
+	</Map>
+	<Map ID="1523" Name="水仙溪口" MapType="0" ScreenNum="1" InitX="120"  InitY="380" dream="1" />
+	<Map ID="1522" Name="水仙溪口" MapType="0" ScreenNum="1" InitX="120"  InitY="380" />
+	<Map ID="152" Name="水仙溪口" MapType="0" ScreenNum="1" InitX="120"  InitY="380">
+		<Bosses ID="57">
+			<Boss BossID="14" />
+			<Boss BossID="57" />
+		</Bosses>
+	</Map>
+	<Map ID="153" Name="水仙溪口" MapType="0" ScreenNum="1" InitX="120"  InitY="380">
+	</Map>
+	<Map ID="160" Name="水系主城" MapType="0" ScreenNum="1" InitX="580"  InitY="430" />
+	<Map ID="170" Name="深水之城" MapType="0" ScreenNum="1" InitX="480"  InitY="380" />
+	<Map ID="171" Name="水源之心" MapType="0" ScreenNum="1" InitX="450"  InitY="400" />
+	<Map ID="1700" Name="王者遗迹" MapType="0" ScreenNum="1" InitX="422"  InitY="462" />
+	<Map ID="1711" Name="水源之心" MapType="0" ScreenNum="1" InitX="450"  InitY="400" />
+	<Map ID="172" Name="梦境深水之城" MapType="0" ScreenNum="1" InitX="480"  InitY="380" />
+	<Map ID="173" Name="梦境水源之心" MapType="0" ScreenNum="1" InitX="450"  InitY="380" />
+	<Map ID="180" Name="银脉山脊" MapType="1" ScreenNum="1" InitX="590"  InitY="450">
+		<Monsters Dark="1">
+			<Monster ID="41" LV="16 18" />
+			<Monster ID="41" LV="16 18" />
+			<Monster ID="41" LV="16 18" />
+			<Monster ID="41" LV="16 18" />
+			<Monster ID="41" LV="16 18" />
+			<Monster ID="41" LV="16 18" />
+			<Monster ID="41" LV="16 18" />
+			<Monster ID="41" LV="16 18" />
+			<Monster ID="41" LV="16 18" />
+		</Monsters>
+		<Monsters Dark="0">
+			<Monster ID="41" LV="16 18" />
+			<Monster ID="41" LV="16 18" />
+			<Monster ID="41" LV="16 18" />
+			<Monster ID="41" LV="16 18" />
+			<Monster ID="41" LV="16 18" />
+			<Monster ID="41" LV="16 18" />
+			<Monster ID="41" LV="16 18" />
+			<Monster ID="41" LV="16 18" />
+			<Monster ID="41" LV="16 18" />
+		</Monsters>
+		<RareMon CheckTime="3" Interval="400 450 500" Remain="50"
+			GetItem="200550">
+			<Mon ID="41" LV="21 23" />
+		</RareMon>
+	</Map>
+	<Map ID="1801" Name="银脉山脊" MapType="1" ScreenNum="1" InitX="590"  InitY="450" />
+	<Map ID="1911" Name="残骸入口" MapType="0" ScreenNum="1" InitX="490"  InitY="450" />
+	<Map ID="1190" Name="爪灵兽祭坛" MapType="0" ScreenNum="1" InitX="490"  InitY="450" />
+	<!-- <Map ID="1250" Name="翼灵空岛" MapType="0" ScreenNum="1" InitX="490" InitY="450"/> -->
+	<Map ID="191" Name="残骸入口" MapType="0" ScreenNum="1" InitX="490"  InitY="450">
+		<Monsters Dark="0">
+			<Monster ID="25" LV="15 17" />
+			<Monster ID="25" LV="15 17" />
+			<Monster ID="25" LV="15 17" />
+			<Monster ID="25" LV="15 17" />
+			<Monster ID="25" LV="15 17" />
+			<Monster ID="25" LV="15 17" />
+			<Monster ID="25" LV="15 17" />
+			<Monster ID="25" LV="15 17" />
+			<Monster ID="25" LV="15 17" />
+		</Monsters>
+		<RareMon CheckTime="3" Interval="400 450 500" Remain="50"
+			GetItem="200546">
+			<Mon ID="25" LV="20 22" />
+		</RareMon>
+	</Map>
+	<Map ID="192" Name="残骸通道" MapType="0" ScreenNum="1" InitX="360"  InitY="460">
+		<Monsters Dark="0">
+			<Monster ID="28" LV="19 21" />
+			<Monster ID="28" LV="19 21" />
+			<Monster ID="28" LV="19 21" />
+			<Monster ID="28" LV="19 21" />
+			<Monster ID="28" LV="19 21" />
+			<Monster ID="28" LV="19 21" />
+			<Monster ID="28" LV="19 21" />
+			<Monster ID="28" LV="19 21" />
+			<Monster ID="28" LV="19 21" />
+		</Monsters>
+		<Task>
+			<Monster ID="29" LV="31 31" />
+		</Task>
+		<RareMon CheckTime="3" Interval="400 450 500" Remain="50"
+			GetItem="200549">
+			<Mon ID="28" LV="24 26" />
+		</RareMon>
+	</Map>
+	<Map ID="1931" Name="悲伤残骸" MapType="0" ScreenNum="1" InitX="290"  InitY="430" />
+	<Map ID="1932" Name="悲伤残骸" MapType="0" ScreenNum="1" InitX="290"  InitY="430" />
+	<Map ID="1933" Name="悲伤残骸" MapType="0" ScreenNum="1" InitX="290"  InitY="430" dream="1" />
+	<Map ID="193" Name="悲伤残骸" MapType="0" ScreenNum="1" InitX="290"  InitY="430">
+		<Bosses ID="31">
+			<Boss BossID="31" />
+		</Bosses>
+	</Map>
+	<Map ID="201" Name="彩虹珊瑚湾" MapType="0" ScreenNum="1" InitX="520"  InitY="490">
+		<Monsters Dark="0">
+			<Monster ID="26" LV="20 22" />
+			<Monster ID="28" LV="20 22" />
+			<Monster ID="140" LV="20 22" />
+			<Monster ID="26" LV="20 22" />
+			<Monster ID="28" LV="20 22" />
+			<Monster ID="140" LV="20 22" />
+			<Monster ID="26" LV="20 22" />
+			<Monster ID="28" LV="20 22" />
+			<Monster ID="140" LV="20 22" />
+		</Monsters>
+	</Map>
+	<Map ID="2021" Name="珊瑚路" MapType="0" ScreenNum="1" InitX="660"  InitY="310" />
+	<Map ID="202" Name="珊瑚路" MapType="0" ScreenNum="1" InitX="660"  InitY="310">
+		<Monsters Dark="0">
+			<Monster ID="26" LV="25 26" />
+			<Monster ID="28" LV="25 26" />
+			<Monster ID="21" LV="25 26" />
+			<Monster ID="26" LV="25 26" />
+			<Monster ID="28" LV="25 26" />
+			<Monster ID="21" LV="25 26" />
+			<Monster ID="26" LV="25 26" />
+			<Monster ID="28" LV="25 26" />
+			<Monster ID="21" LV="25 26" />
+		</Monsters>
+		<RareMon CheckTime="3" Interval="400 450 500" Remain="50"
+			GetItem="200548">
+			<Mon ID="21" LV="30 31" />
+		</RareMon>
+	</Map>
+	<Map ID="2031" Name="幻彩珊瑚" MapType="1" ScreenNum="1" InitX="570"  InitY="330" />
+	<Map ID="203" Name="幻彩珊瑚" MapType="1" ScreenNum="1" InitX="570"  InitY="330">
+		<Monsters Dark="0">
+			<Monster ID="72" LV="23 25" />
+			<Monster ID="72" LV="23 25" />
+			<Monster ID="72" LV="23 25" />
+			<Monster ID="72" LV="23 25" />
+			<Monster ID="72" LV="23 25" />
+			<Monster ID="72" LV="23 25" />
+			<Monster ID="72" LV="23 25" />
+			<Monster ID="72" LV="23 25" />
+			<Monster ID="72" LV="23 25" />
+		</Monsters>
+
+		<Task>
+			<Monster ID="29" LV="40 40" />
+		</Task>
+	</Map>
+	<Map ID="2041" Name="幽静珊瑚穴" MapType="0" ScreenNum="1" InitX="470"  InitY="280" />
+	<Map ID="204" Name="幽静珊瑚穴" MapType="0" ScreenNum="1" InitX="470"  InitY="280">
+		<Monsters Dark="0">
+			<Monster ID="21" LV="26 28" />
+			<Monster ID="72" LV="26 28" />
+			<Monster ID="140" LV="26 28" />
+			<Monster ID="21" LV="26 28" />
+			<Monster ID="72" LV="26 28" />
+			<Monster ID="140" LV="26 28" />
+			<Monster ID="21" LV="26 28" />
+			<Monster ID="72" LV="26 28" />
+			<Monster ID="140" LV="26 28" />
+		</Monsters>
+		<RareMon CheckTime="3" Interval="400 450 500" Remain="50"
+			GetItem="200547">
+			<Mon ID="140" LV="31 33" />
+		</RareMon>
+	</Map>
+	<Map ID="2111" Name="漩涡谷地" MapType="0" ScreenNum="1" InitX="330"  InitY="440" />
+	<Map ID="2112" Name="漩涡谷地" MapType="0" ScreenNum="1" InitX="330"  InitY="440" />
+	<Map ID="211" Name="漩涡谷地" MapType="0" ScreenNum="1" InitX="330"  InitY="440">
+		<Monsters Dark="0">
+			<Monster ID="25" LV="9 12" />
+			<Monster ID="21" LV="9 12" />
+			<Monster ID="72" LV="9 12" />
+			<Monster ID="25" LV="9 12" />
+			<Monster ID="21" LV="9 12" />
+			<Monster ID="72" LV="9 12" />
+			<Monster ID="25" LV="9 12" />
+			<Monster ID="21" LV="9 12" />
+			<Monster ID="72" LV="9 12" />
+		</Monsters>
+		<RareMon CheckTime="3" Interval="400 450 500" Remain="50"
+			GetItem="200546">
+			<Mon ID="25" LV="14 17" />
+		</RareMon>
+	</Map>
+	<Map ID="212" Name="漩涡峡谷" MapType="0" ScreenNum="1" InitX="540"  InitY="480">
+		<Monsters Dark="0">
+			<Monster ID="28" LV="14 15" />
+			<Monster ID="21" LV="14 15" />
+			<Monster ID="26" LV="14 15" />
+			<Monster ID="28" LV="14 15" />
+			<Monster ID="21" LV="14 15" />
+			<Monster ID="26" LV="14 15" />
+			<Monster ID="28" LV="14 15" />
+			<Monster ID="21" LV="14 15" />
+			<Monster ID="26" LV="14 15" />
+		</Monsters>
+		<RareMon CheckTime="3" Interval="400 450 500" Remain="50"
+			GetItem="200549">
+			<Mon ID="28" LV="19 20" />
+		</RareMon>
+	</Map>
+	<Map ID="213" Name="狂暴漩涡" MapType="0" ScreenNum="1" InitX="580"  InitY="450">
+		<Monsters Dark="0">
+			<Monster ID="25" LV="15 17" />
+			<Monster ID="25" LV="15 17" />
+			<Monster ID="25" LV="15 17" />
+			<Monster ID="25" LV="15 17" />
+			<Monster ID="25" LV="15 17" />
+			<Monster ID="366" LV="15 17" />
+			<Monster ID="366" LV="15 17" />
+			<Monster ID="366" LV="15 17" />
+			<Monster ID="366" LV="15 17" />
+		</Monsters>
+		<Monsters Dark="1">
+			<Monster ID="25" LV="15 17" />
+			<Monster ID="25" LV="15 17" />
+			<Monster ID="25" LV="15 17" />
+			<Monster ID="25" LV="15 17" />
+			<Monster ID="25" LV="15 17" />
+			<Monster ID="366" LV="15 17" />
+			<Monster ID="366" LV="15 17" />
+			<Monster ID="366" LV="15 17" />
+			<Monster ID="366" LV="15 17" />
+		</Monsters>
+		<RareMon CheckTime="3" Interval="400 450 500" Remain="50"
+			GetItem="200546">
+			<Mon ID="25" LV="20 22" />
+		</RareMon>
+	</Map>
+	<Map ID="220" Name="幽静浅滩" MapType="0" ScreenNum="1" InitX="750"  InitY="440">
+		<Monsters Dark="0">
+			<Monster ID="51" LV="29 29" EscapeRound="5" />
+			<Monster ID="51" LV="29 29" EscapeRound="5" />
+			<Monster ID="51" LV="29 29" EscapeRound="5" />
+			<Monster ID="51" LV="29 29" EscapeRound="5" />
+			<Monster ID="51" LV="29 29" EscapeRound="5" />
+			<Monster ID="51" LV="29 29" EscapeRound="5" />
+			<Monster ID="51" LV="29 29" EscapeRound="5" />
+			<Monster ID="51" LV="29 29" EscapeRound="5" />
+			<Monster ID="51" LV="29 29" EscapeRound="5" />
+		</Monsters>
+	</Map>
+	<Map ID="221" Name="乌达的梦境" MapType="0" ScreenNum="1" InitX="370"  InitY="440" dream="1" />
+	<Map ID="222" Name="乌达的梦境" MapType="0" ScreenNum="1" InitX="370"  InitY="440" dream="1" />
+	<Map ID="223" Name="乌达的梦境" MapType="0" ScreenNum="1" InitX="370"  InitY="440" dream="1" />
+	<Map ID="224" Name="幽静浅滩" MapType="0" ScreenNum="1" InitX="750"  InitY="440" />
+	<Map ID="230" Name="火幻氏族主城" MapType="0" ScreenNum="1" InitX="300"  InitY="440" />
+	<Map ID="240" Name="蛮神战场" MapType="0" ScreenNum="1" InitX="300"  InitY="440" />
+	<Map ID="2611" Name="赤链山脉" MapType="0" ScreenNum="1" InitX="447"  InitY="427" />
+	<Map ID="261" Name="赤链山脉" MapType="0" ScreenNum="1" InitX="447"  InitY="427" Weather="3">
+		<Monsters Dark="0">
+			<Monster ID="39" LV="24 26" />
+			<Monster ID="39" LV="24 26" />
+			<Monster ID="39" LV="24 26" />
+			<Monster ID="39" LV="24 26" />
+			<Monster ID="39" LV="24 26" />
+			<Monster ID="39" LV="24 26" />
+			<Monster ID="39" LV="24 26" />
+			<Monster ID="39" LV="24 26" />
+			<Monster ID="39" LV="24 26" />
+		</Monsters>
+		<RareMon CheckTime="3" Interval="400 450 500" Remain="50"
+			GetItem="200553">
+			<Mon ID="39" LV="29 31" />
+		</RareMon>
+	</Map>
+	<Map ID="2621" Name="烈焰峡谷" MapType="0" ScreenNum="1" InitX="500"  InitY="400" />
+	<Map ID="2622" Name="烈焰峡谷" MapType="0" ScreenNum="1" InitX="500"  InitY="400" Weather="3" dream="1" />
+	<Map ID="262" Name="烈焰峡谷" MapType="0" ScreenNum="1" InitX="500"  InitY="400" Weather="3" />
+	<Map ID="263" Name="火焰山" MapType="0" ScreenNum="1" InitX="510"  InitY="320" Weather="3" dream="1" />
+	<Map ID="2702" Name="魅罗门" MapType="0" ScreenNum="1" InitX="120"  InitY="400" />
+	<Map ID="2703" Name="魅罗门" MapType="0" ScreenNum="1" InitX="120"  InitY="400" dream="1" />
+	<Map ID="2701" Name="魅罗门" MapType="0" ScreenNum="1" InitX="120"  InitY="400" />
+	<Map ID="270" Name="魅罗门" MapType="0" ScreenNum="1" InitX="120"  InitY="400">
+		<Bosses ID="38">
+			<Boss BossID="36" />
+			<Boss BossID="33" />
+			<Boss BossID="38" />
+		</Bosses>
+	</Map>
+	<Map ID="2811" Name="焰之森" MapType="0" ScreenNum="1" InitX="500"  InitY="390" />
+	<Map ID="2812" Name="焰之森" MapType="0" ScreenNum="1" InitX="500"  InitY="390" />
+	<Map ID="281" Name="焰之森" MapType="0" ScreenNum="1" InitX="500"  InitY="390">
+		<Monsters Dark="0">
+			<Monster ID="49" LV="20 22" />
+			<Monster ID="39" LV="20 22" />
+			<Monster ID="32" LV="20 22" />
+			<Monster ID="49" LV="20 22" />
+			<Monster ID="39" LV="20 22" />
+			<Monster ID="32" LV="20 22" />
+			<Monster ID="49" LV="20 22" />
+			<Monster ID="39" LV="20 22" />
+			<Monster ID="32" LV="20 22" />
+		</Monsters>
+		<RareMon CheckTime="3" Interval="400 450 500" Remain="50"
+			GetItem="200554">
+			<Mon ID="49" LV="25 27" />
+		</RareMon>
+	</Map>
+	<Map ID="2911" Name="幻空通道" MapType="0" ScreenNum="1" InitX="520"  InitY="400" />
+	<Map ID="2912" Name="幻空通道" MapType="0" ScreenNum="1" InitX="520"  InitY="400" />
+	<Map ID="2913" Name="幻空通道" MapType="0" ScreenNum="1" InitX="520"  InitY="400" />
+	<Map ID="291" Name="幻空通道" MapType="0" ScreenNum="1" InitX="520"  InitY="400">
+		<Monsters Dark="0">
+			<Monster ID="32" LV="22 24" />
+			<Monster ID="32" LV="22 24" />
+			<Monster ID="32" LV="22 24" />
+			<Monster ID="32" LV="22 24" />
+			<Monster ID="32" LV="22 24" />
+			<Monster ID="32" LV="22 24" />
+			<Monster ID="32" LV="22 24" />
+			<Monster ID="32" LV="22 24" />
+			<Monster ID="32" LV="22 24" />
+		</Monsters>
+		<Task>
+			<Monster ID="32" LV="22 24" />
+		</Task>
+		<RareMon CheckTime="3" Interval="400 450 500" Remain="50"
+			GetItem="200552">
+			<Mon ID="32" LV="27 29" />
+		</RareMon>
+	</Map>
+	<Map ID="292" Name="幻空岭" MapType="0" ScreenNum="1" InitX="520"  InitY="400" Weather="3" />
+	<Map ID="3011" Name="灰烬之地" MapType="0" ScreenNum="1" InitX="615"  InitY="430" />
+	<Map ID="3012" Name="灰烬之地" MapType="0" ScreenNum="1" InitX="615"  InitY="430" />
+	<Map ID="3013" Name="灰烬之地" MapType="0" ScreenNum="1" InitX="615"  InitY="430" />
+	<Map ID="301" Name="灰烬之地" MapType="0" ScreenNum="1" InitX="615"  InitY="430">
+		<Monsters Dark="0">
+			<Monster ID="35" LV="25 27" />
+			<Monster ID="32" LV="25 27" />
+			<Monster ID="207" LV="25 27" />
+			<Monster ID="35" LV="25 27" />
+			<Monster ID="32" LV="25 27" />
+			<Monster ID="207" LV="25 27" />
+			<Monster ID="35" LV="25 27" />
+			<Monster ID="32" LV="25 27" />
+			<Monster ID="207" LV="25 27" />
+		</Monsters>
+		<RareMon CheckTime="3" Interval="400 450 500" Remain="50"
+			GetItem="200551">
+			<Mon ID="35" LV="30 32" />
+		</RareMon>
+	</Map>
+	<Map ID="3021" Name="灰烬岔口" MapType="0" ScreenNum="1" InitX="394"  InitY="454" />
+	<Map ID="302" Name="灰烬岔口" MapType="0" ScreenNum="1" InitX="394"  InitY="454">
+		<Monsters Dark="0">
+			<Monster ID="40" LV="32 33" />
+			<Monster ID="35" LV="32 33" />
+			<Monster ID="207" LV="32 33" />
+			<Monster ID="40" LV="32 33" />
+			<Monster ID="35" LV="32 33" />
+			<Monster ID="207" LV="32 33" />
+			<Monster ID="40" LV="32 33" />
+			<Monster ID="35" LV="32 33" />
+			<Monster ID="207" LV="32 33" />
+		</Monsters>
+		<RareMon CheckTime="3" Interval="400 450 500" Remain="50"
+			GetItem="200553">
+			<Mon ID="40" LV="37 38" />
+		</RareMon>
+	</Map>
+	<Map ID="304" Name="灰烬深渊" MapType="0" ScreenNum="1" InitX="653"  InitY="452">
+	</Map>
+
+	<!-- 为了病毒来袭游戏 -->
+	<Map ID="3041" Name="灰烬深渊" MapType="0" ScreenNum="1" InitX="653"  InitY="452">
+	</Map>
+
+	<Map ID="305" Name="深渊派对" MapType="0" ScreenNum="1" InitX="653"  InitY="452">
+	</Map>
+	<Map ID="310" Name="三八跑道线(沙)" MapType="0" ScreenNum="1" InitX="547"  InitY="362">
+		<Monsters Dark="0">
+			<Monster ID="114" LV="37 39" />
+			<Monster ID="211" LV="37 39" />
+			<Monster ID="68" LV="37 39" />
+			<Monster ID="114" LV="37 39" />
+			<Monster ID="211" LV="37 39" />
+			<Monster ID="68" LV="37 39" />
+			<Monster ID="114" LV="37 39" />
+			<Monster ID="211" LV="37 39" />
+			<Monster ID="68" LV="37 39" />
+		</Monsters>
+	</Map>
+	<Map ID="3100" Name="三八跑道线梦境(沙)" MapType="0" ScreenNum="1" InitX="547"  InitY="362" dream="1" />
+	<Map ID="320" Name="沙爪氏族主城" MapType="0" ScreenNum="1" InitX="467"  InitY="322" />
+	<Map ID="330" Name="淘米市场" MapType="0" ScreenNum="1" InitX="445"  InitY="442" />
+	<Map ID="3301" Name="淘米市场" MapType="0" ScreenNum="1" InitX="445"  InitY="442" />
+	<Map ID="340" Name="娜钱莱宫殿" MapType="0" ScreenNum="1" InitX="500"  InitY="379" />
+	<Map ID="350" Name="沙漠之鹰" MapType="0" ScreenNum="1" InitX="641"  InitY="394" />
+	<Map ID="360" Name="黄金之路" MapType="0" ScreenNum="1" InitX="451"  InitY="461">
+		<Monsters Dark="0">
+			<Monster ID="68" LV="34 36" />
+			<Monster ID="50" LV="34 36" />
+			<Monster ID="211" LV="34 36" />
+			<Monster ID="68" LV="34 36" />
+			<Monster ID="50" LV="34 36" />
+			<Monster ID="211" LV="34 36" />
+			<Monster ID="68" LV="34 36" />
+			<Monster ID="50" LV="34 36" />
+			<Monster ID="211" LV="34 36" />
+		</Monsters>
+	</Map>
+	<Map ID="3702" Name="海市蜃楼" MapType="1" ScreenNum="1" InitX="420"  InitY="450" dream="1" />
+	<Map ID="3701" Name="海市蜃楼" MapType="1" ScreenNum="1" InitX="420"  InitY="450" />
+	<Map ID="3704" Name="海市蜃楼" MapType="1" ScreenNum="1" InitX="420"  InitY="450" />
+	<Map ID="370" Name="海市蜃楼" MapType="1" ScreenNum="1" InitX="420"  InitY="450">
+		<Bosses ID="82">
+			<Boss BossID="82" />
+		</Bosses>
+	</Map>
+	<Map ID="3804" Name="沙之迷穴" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="3805" Name="沙之迷穴" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="3806" Name="沙之迷穴" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="380" Name="沙之迷穴" MapType="0" ScreenNum="1" InitX="550"  InitY="380">
+		<Task>
+			<Monster ID="50" LV="10 10" />
+		</Task>
+	</Map>
+
+	<Map ID="390" Name="三八跑道线(地)" MapType="0" ScreenNum="1" InitX="500"  InitY="430" />
+
+	<!-- 400 ~ 450 被门战占用 -->
+	<!-- B1 -->
+	<Map ID="400" Name="试炼之门" MapType="0" ScreenNum="1" InitX="480"  InitY="380" dream="1" />
+	<Map ID="401" Name="试炼之门(50V50)" MapType="0" ScreenNum="1" InitX="480"  InitY="380" dream="1" />
+	<Map ID="402" Name="试炼之战" MapType="0" ScreenNum="1" InitX="480"  InitY="380" dream="1" />
+	<Map ID="403" Name="试炼之战(50V50)" MapType="0" ScreenNum="1" InitX="480"  InitY="380" dream="1" />
+
+	<!-- B2 -->
+	<Map ID="404" Name="勇士之门" MapType="0" ScreenNum="1" InitX="480"  InitY="380" dream="1" />
+	<Map ID="405" Name="勇士之门(50V50)" MapType="0" ScreenNum="1" InitX="480"  InitY="380" dream="1" />
+	<Map ID="406" Name="勇士之战" MapType="0" ScreenNum="1" InitX="480"  InitY="380" dream="1" />
+	<Map ID="407" Name="勇士之战(50V50)" MapType="0" ScreenNum="1" InitX="480"  InitY="380" dream="1" />
+
+	<!-- B3 -->
+	<Map ID="408" Name="竞技之门" MapType="0" ScreenNum="1" InitX="480"  InitY="380" dream="1" />
+	<Map ID="409" Name="竞技之门(50V50)" MapType="0" ScreenNum="1" InitX="480"  InitY="380" dream="1" />
+	<Map ID="410" Name="竞技之战" MapType="0" ScreenNum="1" InitX="480"  InitY="380" dream="1" />
+	<Map ID="411" Name="竞技之战(50V50)" MapType="0" ScreenNum="1" InitX="480"  InitY="380" dream="1" />
+
+	<!-- B4 -->
+	<Map ID="416" Name="英雄之门" MapType="0" ScreenNum="1" InitX="480"  InitY="380" dream="1" />
+	<Map ID="417" Name="英雄之门(50V50)" MapType="0" ScreenNum="1" InitX="480"  InitY="380" dream="1" />
+	<Map ID="418" Name="英雄之战" MapType="0" ScreenNum="1" InitX="480"  InitY="380" dream="1" />
+	<Map ID="419" Name="英雄之战(50V50)" MapType="0" ScreenNum="1" InitX="480"  InitY="380" dream="1" />
+
+	<!-- B5 -->
+	<Map ID="420" Name="双子之门(上)" MapType="0" ScreenNum="1" InitX="480"  InitY="380" dream="1" />
+	<Map ID="421" Name="双子之门(下)" MapType="0" ScreenNum="1" InitX="480"  InitY="380" dream="1" />
+	<Map ID="422" Name="双子之战(上)" MapType="0" ScreenNum="1" InitX="480"  InitY="380" dream="1" />
+	<Map ID="423" Name="双子之战(下)" MapType="0" ScreenNum="1" InitX="480"  InitY="380" dream="1" />
+
+	<!-- B7 -->
+	<Map ID="412" Name="孤独之门" MapType="0" ScreenNum="1" InitX="480"  InitY="380" dream="1" />
+	<Map ID="413" Name="孤独之门(50V50)" MapType="0" ScreenNum="1" InitX="480"  InitY="380" dream="1" />
+	<Map ID="414" Name="孤独之战" MapType="0" ScreenNum="1" InitX="480"  InitY="380" dream="1" />
+	<Map ID="415" Name="孤独之战(50V50)" MapType="0" ScreenNum="1" InitX="480"  InitY="380" dream="1" />
+
+	<!-- 门战 PVP专区 -->
+	<Map ID="450" Name="精灵王之战" MapType="0" ScreenNum="1" InitX="713"  InitY="360" dream="1" />
+
+	<Map ID="470" Name="地月氏族主城" MapType="0" ScreenNum="1" InitX="420"  InitY="450" />
+	<Map ID="480" Name="地铁站" MapType="0" ScreenNum="1" InitX="484"  InitY="329">
+		<Monsters Dark="0">
+			<Monster ID="129" LV="39 41" />
+			<Monster ID="64" LV="39 41" />
+			<Monster ID="203" LV="39 41" />
+			<Monster ID="129" LV="39 41" />
+			<Monster ID="64" LV="39 41" />
+			<Monster ID="203" LV="39 41" />
+			<Monster ID="129" LV="39 41" />
+			<Monster ID="64" LV="39 41" />
+			<Monster ID="203" LV="39 41" />
+		</Monsters>
+	</Map>
+	<Map ID="490" Name="地下黑市" MapType="0" ScreenNum="1" InitX="367"  InitY="453">
+		<Monsters Dark="0">
+			<Monster ID="112" LV="37 39" />
+			<Monster ID="64" LV="37 39" />
+			<Monster ID="203" LV="37 39" />
+			<Monster ID="112" LV="37 39" />
+			<Monster ID="64" LV="37 39" />
+			<Monster ID="203" LV="37 39" />
+			<Monster ID="112" LV="37 39" />
+			<Monster ID="64" LV="37 39" />
+			<Monster ID="203" LV="37 39" />
+		</Monsters>
+	</Map>
+	<Map ID="500" Name="实验禁地" MapType="0" ScreenNum="1" InitX="320"  InitY="360">
+	</Map>
+	<Map ID="5001" Name="实验禁地" MapType="0" ScreenNum="1" InitX="320"  InitY="360">
+	</Map>
+	<Map ID="510" Name="地道之路" MapType="0" ScreenNum="1" InitX="320"  InitY="360">
+		<Monsters Dark="0">
+			<Monster ID="64" LV="31 33" />
+			<Monster ID="64" LV="31 33" />
+			<Monster ID="64" LV="31 33" />
+			<Monster ID="64" LV="31 33" />
+			<Monster ID="64" LV="31 33" />
+			<Monster ID="64" LV="31 33" />
+			<Monster ID="64" LV="31 33" />
+			<Monster ID="64" LV="31 33" />
+			<Monster ID="64" LV="31 33" />
+		</Monsters>
+		<Task>
+			<Monster ID="64" LV="10 10" />
+		</Task>
+	</Map>
+	<Map ID="520" Name="乌黑矿坑" MapType="0" ScreenNum="1" InitX="432"  InitY="402">
+		<Monsters Dark="0">
+			<Monster ID="89" LV="34 36" />
+			<Monster ID="89" LV="34 36" />
+			<Monster ID="89" LV="34 36" />
+			<Monster ID="89" LV="34 36" />
+			<Monster ID="89" LV="34 36" />
+			<Monster ID="89" LV="34 36" />
+			<Monster ID="89" LV="34 36" />
+			<Monster ID="89" LV="34 36" />
+			<Monster ID="89" LV="34 36" />
+		</Monsters>
+	</Map>
+	<Map ID="5306" Name="黑岩旋梯[捣蛋鬼奇遇记]" MapType="0" ScreenNum="1" InitX="420"  InitY="450" dream="1" />
+	<Map ID="5303" Name="黑岩旋梯" MapType="0" ScreenNum="1" InitX="420"  InitY="450" dream="1" />
+	<Map ID="5302" Name="黑岩旋梯" MapType="0" ScreenNum="1" InitX="420"  InitY="450" />
+	<Map ID="5301" Name="黑岩旋梯" MapType="0" ScreenNum="1" InitX="420"  InitY="450" />
+	<Map ID="530" Name="黑岩旋梯" MapType="0" ScreenNum="1" InitX="420"  InitY="450">
+		<Bosses ID="80">
+			<Boss BossID="80" />
+		</Bosses>
+	</Map>
+	<Map ID="540" Name="冰之谷" MapType="0" ScreenNum="1" InitX="420"  InitY="450">
+		<Task>
+			<Monster ID="32" LV="10 10" />
+		</Task>
+		<Monsters Dark="0">
+			<Monster ID="123" LV="40 42" />
+			<Monster ID="125" LV="40 42" />
+			<Monster ID="230" LV="40 42" />
+			<Monster ID="123" LV="40 42" />
+			<Monster ID="125" LV="40 42" />
+			<Monster ID="230" LV="40 42" />
+			<Monster ID="123" LV="40 42" />
+			<Monster ID="125" LV="40 42" />
+			<Monster ID="230" LV="40 42" />
+		</Monsters>
+	</Map>
+	<Map ID="550" Name="冰沁宫殿" MapType="0" ScreenNum="1" InitX="485"  InitY="432">
+		<Task>
+			<Monster ID="1002" LV="31 31" />
+		</Task>
+		<Monsters Dark="0">
+			<Monster ID="123" LV="40 42" />
+			<Monster ID="125" LV="40 42" />
+			<Monster ID="129" LV="40 42" />
+			<Monster ID="123" LV="40 42" />
+			<Monster ID="125" LV="40 42" />
+			<Monster ID="129" LV="40 42" />
+			<Monster ID="123" LV="40 42" />
+			<Monster ID="125" LV="40 42" />
+			<Monster ID="129" LV="40 42" />
+		</Monsters>
+	</Map>
+	<Map ID="570" Name="冰之监狱" MapType="0" ScreenNum="1" InitX="500"  InitY="400">
+	</Map>
+	<Map ID="590" Name="冰沁神殿" MapType="0" ScreenNum="1" InitX="630"  InitY="360" />
+	<Map ID="5900" Name="冰沁神殿" MapType="0" ScreenNum="1" InitX="630"  InitY="360" />
+	<Map ID="5901" Name="冰沁神殿(稀有精灵多人活动)" MapType="0" ScreenNum="1"  InitX="630" InitY="360" />
+	<Map ID="6103" Name="冰晶矿场" MapType="0" ScreenNum="1" InitX="420"  InitY="450" dream="1" />
+	<Map ID="6102" Name="冰晶矿场" MapType="0" ScreenNum="1" InitX="420"  InitY="450" />
+	<Map ID="610" Name="冰晶矿场" MapType="0" ScreenNum="1" InitX="420"  InitY="450" Weather="4">
+		<Bosses ID="127">
+			<Boss BossID="127" />
+		</Bosses>
+	</Map>
+	<Map ID="620" Name="冰脊山脉" MapType="0" ScreenNum="1" InitX="875"  InitY="206">
+		<Monsters Dark="0">
+			<Monster ID="125" LV="46 48" />
+			<Monster ID="129" LV="46 48" />
+			<Monster ID="230" LV="46 48" />
+			<Monster ID="125" LV="46 48" />
+			<Monster ID="129" LV="46 48" />
+			<Monster ID="230" LV="46 48" />
+			<Monster ID="125" LV="46 48" />
+			<Monster ID="129" LV="46 48" />
+			<Monster ID="230" LV="46 48" />
+		</Monsters>
+	</Map>
+	<Map ID="640" Name="冰脊之巅" MapType="0" ScreenNum="1" InitX="617"  InitY="460">
+	</Map>
+	<Map ID="650" Name="冰封之轴" MapType="0" ScreenNum="1" InitX="313"  InitY="417">
+	</Map>
+	<Map ID="660" Name="飞翼氏族主城" MapType="0" ScreenNum="1" InitX="510"  InitY="340">
+	</Map>
+	<Map ID="700" Name="时镜之岛" MapType="0" ScreenNum="1" InitX="570"  InitY="409">
+		<Monsters Dark="0">
+			<Monster ID="195" LV="50 52" />
+			<Monster ID="213" LV="50 52" />
+			<Monster ID="209" LV="50 52" />
+			<Monster ID="195" LV="50 52" />
+			<Monster ID="213" LV="50 52" />
+			<Monster ID="209" LV="50 52" />
+			<Monster ID="195" LV="50 52" />
+			<Monster ID="213" LV="50 52" />
+			<Monster ID="209" LV="50 52" />
+		</Monsters>
+	</Map>
+	<Map ID="7101" Name="遗忘之岛" MapType="0" ScreenNum="1" InitX="375"  InitY="323" dream="1" />
+	<Map ID="710" Name="遗忘之岛" MapType="0" ScreenNum="1" InitX="375"  InitY="323">
+		<Bosses ID="157">
+			<Boss BossID="157" />
+		</Bosses>
+	</Map>
+	<Map ID="720" Name="飞翼之核" MapType="0" ScreenNum="1" InitX="510"  InitY="340">
+		<Monsters Dark="0">
+			<Monster ID="213" LV="56 58" />
+			<Monster ID="199" LV="56 58" />
+			<Monster ID="173" LV="56 58" />
+			<Monster ID="213" LV="56 58" />
+			<Monster ID="199" LV="56 58" />
+			<Monster ID="173" LV="56 58" />
+			<Monster ID="213" LV="56 58" />
+			<Monster ID="199" LV="56 58" />
+			<Monster ID="173" LV="56 58" />
+		</Monsters>
+	</Map>
+	<Map ID="7201" Name="飞翼之核(为了自由而战)" MapType="0" ScreenNum="1" InitX="510"  InitY="340" dream="1" />
+	<Map ID="7206" Name="飞翼之核" MapType="0" ScreenNum="1" InitX="510"  InitY="340" />
+	<Map ID="760" Name="汲雨之岛" MapType="0" ScreenNum="1" InitX="767"  InitY="455">
+		<Monsters Dark="0">
+			<Monster ID="209" LV="58 60" />
+			<Monster ID="213" LV="58 60" />
+			<Monster ID="199" LV="58 60" />
+			<Monster ID="209" LV="58 60" />
+			<Monster ID="213" LV="58 60" />
+			<Monster ID="199" LV="58 60" />
+			<Monster ID="209" LV="58 60" />
+			<Monster ID="213" LV="58 60" />
+			<Monster ID="199" LV="58 60" />
+		</Monsters>
+	</Map>
+	<Map ID="730" Name="羽冠之岛" MapType="0" ScreenNum="1" InitX="564"  InitY="374">
+		<Monsters Dark="0">
+			<Monster ID="199" LV="53 55" />
+			<Monster ID="173" LV="53 55" />
+			<Monster ID="195" LV="53 55" />
+			<Monster ID="199" LV="53 55" />
+			<Monster ID="173" LV="53 55" />
+			<Monster ID="195" LV="53 55" />
+			<Monster ID="199" LV="53 55" />
+			<Monster ID="173" LV="53 55" />
+			<Monster ID="195" LV="53 55" />
+		</Monsters>
+	</Map>
+	<Map ID="740" Name="街心花园" MapType="0" ScreenNum="1" InitX="375"  InitY="323">
+	</Map>
+	<Map ID="770" Name="空港" MapType="0" ScreenNum="1" InitX="375"  InitY="323">
+	</Map>
+	<Map ID="780" Name="三八擂台" MapType="0" ScreenNum="1" InitX="568"  InitY="475" dream="1">
+	</Map>
+	<Map ID="7901" Name="微光湖畔(副本)" MapType="0" ScreenNum="1" InitX="120"  InitY="380" dream="1" />
+	<Map ID="790" Name="微光湖畔" MapType="0" ScreenNum="1" InitX="120"  InitY="380">
+		<Bosses ID="215">
+			<Boss BossID="215" />
+		</Bosses>
+	</Map>
+	<Map ID="800" Name="视界原野" MapType="0" ScreenNum="1" InitX="453"  InitY="455" />
+	<Map ID="801" Name="游戏室(夜)" MapType="0" ScreenNum="1" InitX="480"  InitY="380" />
+	<Map ID="810" Name="脉流之瀑" MapType="0" ScreenNum="1" InitX="453"  InitY="455" />
+	<Map ID="820" Name="火源通径" MapType="0" ScreenNum="1" InitX="425"  InitY="463" />
+	<Map ID="830" Name="纠结之藤" MapType="0" ScreenNum="1" InitX="232"  InitY="324" />
+	<Map ID="840" Name="冰晶魔域" MapType="0" ScreenNum="1" InitX="467"  InitY="443" />
+	<Map ID="850" Name="旋云之冠" MapType="0" ScreenNum="1" InitX="380"  InitY="354" />
+
+	<Map ID="8502" Name="旋云之冠" MapType="0" ScreenNum="1" InitX="380"  InitY="354" />
+
+	<Map ID="860" Name="赫尔卡星荒地" MapType="0" ScreenNum="1" InitX="550"  InitY="380" />
+	<Map ID="861" Name="梦境荒地" MapType="0" ScreenNum="1" InitX="550"  InitY="380" />
+	<Map ID="870" Name="诺亚方舟" MapType="0" ScreenNum="1" InitX="785"  InitY="414" />
+	<Map ID="880" Name="能源之潮" MapType="0" ScreenNum="1" InitX="785"  InitY="414" />
+	<Map ID="88001" Name="能源之潮副本" MapType="0" ScreenNum="1" InitX="785"  InitY="414" dream="1" />
+	<Map ID="890" Name="风暴悬崖" MapType="0" ScreenNum="1" InitX="785"  InitY="414" />
+	<Map ID="891" Name="风暴悬崖" MapType="0" ScreenNum="1" InitX="785"  InitY="414">
+		<Monsters Dark="0">
+			<Monster ID="240" LV="60 62" />
+			<Monster ID="240" LV="60 62" />
+			<Monster ID="240" LV="60 62" />
+			<Monster ID="240" LV="60 62" />
+			<Monster ID="240" LV="60 62" />
+			<Monster ID="240" LV="60 62" />
+			<Monster ID="240" LV="60 62" />
+			<Monster ID="240" LV="60 62" />
+			<Monster ID="240" LV="60 62" />
+		</Monsters>
+	</Map>
+	<Map ID="900" Name="风刃氏族主城" MapType="0" ScreenNum="1" InitX="200"  InitY="251">
+		<Monsters Dark="0">
+			<Monster ID="712" LV="40 45" />
+			<Monster ID="712" LV="40 45" />
+			<Monster ID="712" LV="40 45" />
+			<Monster ID="712" LV="40 45" />
+			<Monster ID="712" LV="40 45" />
+			<Monster ID="712" LV="40 45" />
+			<Monster ID="712" LV="40 45" />
+			<Monster ID="712" LV="40 45" />
+			<Monster ID="712" LV="40 45" />
+		</Monsters>
+	</Map>
+	<Map ID="910" Name="神风祭台" MapType="0" ScreenNum="1" InitX="785"  InitY="414">
+		<Bosses ID="248">
+			<Boss BossID="248" />
+		</Bosses>
+	</Map>
+	<Map ID="920" Name="流离街" MapType="0" ScreenNum="1" InitX="862"  InitY="251">
+	</Map>
+	<Map ID="930" Name="御风中枢" MapType="0" ScreenNum="1" InitX="862"  InitY="251">
+		<Monsters Dark="0">
+			<Monster ID="268" LV="62 64" />
+			<Monster ID="268" LV="62 64" />
+			<Monster ID="268" LV="62 64" />
+			<Monster ID="268" LV="62 64" />
+			<Monster ID="268" LV="62 64" />
+			<Monster ID="268" LV="62 64" />
+			<Monster ID="268" LV="62 64" />
+			<Monster ID="268" LV="62 64" />
+			<Monster ID="268" LV="62 64" />
+		</Monsters>
+	</Map>
+	<Map ID="940" Name="风涡工房" MapType="0" ScreenNum="1" InitX="862"  InitY="251">
+	</Map>
+	<Map ID="950" Name="神秘研究院" MapType="0" ScreenNum="1" InitX="862"  InitY="251">
+	</Map>
+	<Map ID="951" Name="瞳魂风库" MapType="0" ScreenNum="1" InitX="862"  InitY="251">
+	</Map>
+	<Map ID="980" Name="王者广场" MapType="0" ScreenNum="1" InitX="862"  InitY="251">
+	</Map>
+	<Map ID="981" Name="万圣糖果树" MapType="0" ScreenNum="1" InitX="862"  InitY="251">
+	</Map>
+
+	<Map ID="982" Name="雪人村" MapType="0" ScreenNum="1" InitX="862"  InitY="251">
+	</Map>
+
+	<Map ID="983" Name="约瑟战境" MapType="0" ScreenNum="1" InitX="480"  InitY="380" />
+
+	<Map ID="984" Name="约瑟战境(百变神君版)" MapType="0" ScreenNum="1" InitX="480"  InitY="380" />
+
+	<Map ID="990" Name="普兰特山脚" MapType="0" ScreenNum="1" InitX="862"  InitY="251">
+	</Map>
+	<Map ID="991" Name="噬魂塔" MapType="0" ScreenNum="1" InitX="862"  InitY="251">
+	</Map>
+	<Map ID="1000" Name="目灵祭台" MapType="0" ScreenNum="1" InitX="862"  InitY="251">
+	</Map>
+	<Map ID="1012" Name="信奉广场黑暗梦境" MapType="0" ScreenNum="1" InitX="200"  InitY="251" dream="1">
+	</Map>
+	<Map ID="1013" Name="信奉广场黑暗梦境" MapType="0" ScreenNum="1" InitX="200"  InitY="251" dream="1">
+	</Map>
+	<Map ID="1050" Name="农场小屋" MapType="0" ScreenNum="1" InitX="516"  InitY="325" />
+	<Map ID="1110" Name="使命召唤地" MapType="0" ScreenNum="1" InitX="370"  InitY="440" />
+	<Map ID="1111" Name="使命召唤地" MapType="0" ScreenNum="1" InitX="370"  InitY="440" />
+	<Map ID="1180" Name="梅花三弄" MapType="0" ScreenNum="1" InitX="370"  InitY="440" />
+	<Map ID="1181" Name="梅花三弄" MapType="0" ScreenNum="1" InitX="370"  InitY="440" />
+	<Map ID="1182" Name="研究院地下" MapType="0" ScreenNum="1" InitX="550"  InitY="380"  />
+	<Map ID="1183" Name="御风赛场" MapType="0" ScreenNum="1" InitX="550"  InitY="380"  />
+
+	<Map ID="37002" Name="海市蜃楼（黑夜）" MapType="1" ScreenNum="1" InitX="420"  InitY="450" />
+	<Map ID="3700" Name="海市蜃楼（黑夜）" MapType="1" ScreenNum="1" InitX="420"  InitY="450">
+		<Monsters Dark="1">
+			<Monster ID="516" LV="33 35" />
+			<Monster ID="516" LV="33 35" />
+			<Monster ID="516" LV="33 35" />
+			<Monster ID="516" LV="33 35" />
+			<Monster ID="516" LV="33 35" />
+			<Monster ID="516" LV="33 35" />
+			<Monster ID="516" LV="33 35" />
+			<Monster ID="516" LV="33 35" />
+			<Monster ID="516" LV="33 35" />
+		</Monsters>
+		<Bosses ID="1033">
+			<Boss BossID="1031" />
+			<Boss BossID="1033" />
+		</Bosses>
+	</Map>
+
+	<Map ID="8002" Name="视界原野" MapType="0" ScreenNum="1" InitX="453"  InitY="455" />
+
+	<Map ID="8011" Name="vip乐园" MapType="0" ScreenNum="1" InitX="467"  InitY="322" />
+	<!-- 下架场景下架场景 END -->
+	<Map ID="8022" Name="姜饼城" MapType="0" ScreenNum="1" InitX="467"  InitY="322">
+		<!--<Monsters Dark="0"> <Monster ID="145" LV="41 43"/> <Monster ID="145"
+			LV="41 43"/> <Monster ID="145" LV="41 43"/> <Monster ID="145" LV="41 43"/>
+			<Monster ID="145" LV="41 43"/> <Monster ID="145" LV="41 43"/> <Monster ID="145"
+			LV="41 43"/> <Monster ID="145" LV="41 43"/> <Monster ID="145" LV="41 43"/>
+			</Monsters> -->
+	</Map>
+	<Map ID="8802" Name="能源之潮(副本)" MapType="0" ScreenNum="1" InitX="785"  InitY="414" />
+	<Map ID="8030" Name="观星台" MapType="0" ScreenNum="1" InitX="467"  InitY="322" />
+	<Map ID="126" Name="梦境异蘑谷" MapType="0" ScreenNum="1" InitX="600"  InitY="170" dream="1" />
+	<Map ID="1331" Name="深幽沼泽梦境" MapType="0" ScreenNum="1" InitX="370"  InitY="440" dream="1" />
+	<Map ID="1332" Name="船长室梦境" MapType="0" ScreenNum="1" InitX="370"  InitY="440" dream="1" />
+	<Map ID="1030" Name="骰子星寻宝图" MapType="0" ScreenNum="1" InitX="370"  InitY="440" dream="1" />
+	<Map ID="1031" Name="骰子星草地" MapType="0" ScreenNum="1" InitX="370"  InitY="440" dream="1" />
+	<Map ID="1032" Name="骰子星沙漠" MapType="0" ScreenNum="1" InitX="370"  InitY="440" dream="1" />
+	<Map ID="1033" Name="骰子星雪地" MapType="0" ScreenNum="1" InitX="370"  InitY="440" dream="1" />
+	<Map ID="1034" Name="骰子星水城" MapType="0" ScreenNum="1" InitX="370"  InitY="440" dream="1" />
+	<Map ID="1035" Name="暗黑骰子星" MapType="0" ScreenNum="1" InitX="370"  InitY="440" dream="1" />
+	<Map ID="1036" Name="暗黑星端午节" MapType="0" ScreenNum="1" InitX="370"  InitY="440" dream="1" />
+	<Map ID="1037" Name="骰子星海滩" MapType="0" ScreenNum="1" InitX="370"  InitY="440" dream="1" />
+	<Map ID="1038" Name="时光迷城" MapType="0" ScreenNum="1" InitX="370"  InitY="440" dream="1" />
+	<Map ID="1040" Name="骰子星机关城" MapType="0" ScreenNum="1" InitX="200"  InitY="251" />
+	<Map ID="1041" Name="骰子星擂台" MapType="0" ScreenNum="1" InitX="200"  InitY="251" />
+	<Map ID="1042" Name="天使回廊" MapType="0" ScreenNum="1" InitX="200"  InitY="251" />
+	<Map ID="10000" Name="黑暗梦境" MapType="0" ScreenNum="1" InitX="370"  InitY="440" dream="1" />
+	<Map ID="8031" Name="禁食山脚" MapType="0" ScreenNum="1" InitX="467"  InitY="322" />
+	<Map ID="50000" Name="基地" MapType="0" ScreenNum="1" InitX="500"  InitY="350" />
+	<Map ID="70000" Name="农场" MapType="0" ScreenNum="1" InitX="516"  InitY="325" />
+	<Map ID="8032" Name="禁食山顶" MapType="0" ScreenNum="1" InitX="467"  InitY="322" />
+	<Map ID="20000" Name="信奉广场夜晚" MapType="0" ScreenNum="1" InitX="500"  InitY="350" />
+	<Map ID="1000000" Name="能源之潮(活动)" MapType="0" ScreenNum="1" InitX="785"  InitY="414" />
+	<Map ID="10106" Name="隐居木屋" MapType="0" ScreenNum="1" InitX="370"  InitY="440" />
+	<Map ID="10107" Name="异蘑小径夜间" MapType="0" ScreenNum="1" InitX="370"  InitY="440" />
+	<Map ID="10108" Name="雪人村" MapType="0" ScreenNum="1" InitX="370"  InitY="440" />
+	<Map ID="10109" Name="雪人村（活动）" MapType="1" ScreenNum="1" InitX="370"  InitY="440" />
+	<Map ID="1070" Name="炼狱入口" MapType="0" ScreenNum="1" InitX="370"  InitY="440" />
+	<Map ID="1071" Name="炼狱入口" MapType="0" ScreenNum="1" InitX="370"  InitY="440" dream="1"/>
+	<Map ID="1080" Name="欲望回廊" MapType="0" ScreenNum="1" InitX="370"  InitY="440" />
+	<Map ID="1160" Name="神龙栖地" MapType="0" ScreenNum="1" InitX="370"  InitY="440" />
+	<Map ID="1161" Name="远古荒地" MapType="0" ScreenNum="1" InitX="370"  InitY="440" />
+	<Map ID="1170" Name="伊特角斗场" MapType="0" ScreenNum="1" InitX="370"  InitY="440" />
+	<Map ID="1090" Name="青竹迷境" MapType="0" ScreenNum="1" InitX="370"  InitY="440" />
+	<Map ID="1091" Name="青竹迷境" MapType="0" ScreenNum="1" InitX="370"  InitY="440" />
+	<Map ID="1200" Name="虫林小径" MapType="0" ScreenNum="1" InitX="370"  InitY="440" />
+	<Map ID="1210" Name="虫群氏族主城" MapType="0" ScreenNum="1" InitX="370"  InitY="440" />
+	<Map ID="10371" Name="海滩寻宝" MapType="0" ScreenNum="1" InitX="370"  InitY="440" dream="1" />
+	<Map ID="10372" Name="太古深海" MapType="0" ScreenNum="1" InitX="370"  InitY="440" dream="1" />
+	<Map ID="10373" Name="北海餐厅" MapType="0" ScreenNum="1" InitX="370"  InitY="440" dream="1" />
+	<Map ID="10374" Name="机械恐龙集结号" MapType="0" ScreenNum="1" InitX="370"  InitY="440" dream="1" />
+	<Map ID="1220" Name="虫穴地牢" MapType="0" ScreenNum="1" InitX="370"  InitY="440">
+		<Bosses ID="401">
+			<Boss BossID="401" />
+		</Bosses>
+		<Monsters Dark="1">
+			<Monster ID="705" LV="40 50" />
+			<Monster ID="705" LV="40 50" />
+			<Monster ID="705" LV="40 50" />
+			<Monster ID="705" LV="40 50" />
+			<Monster ID="705" LV="40 50" />
+			<Monster ID="705" LV="40 50" />
+			<Monster ID="705" LV="40 50" />
+			<Monster ID="705" LV="40 50" />
+			<Monster ID="705" LV="40 50" />
+		</Monsters>
+		<Monsters Dark="0">
+			<Monster ID="705" LV="40 50" />
+			<Monster ID="705" LV="40 50" />
+			<Monster ID="705" LV="40 50" />
+			<Monster ID="705" LV="40 50" />
+			<Monster ID="705" LV="40 50" />
+			<Monster ID="705" LV="40 50" />
+			<Monster ID="705" LV="40 50" />
+			<Monster ID="705" LV="40 50" />
+			<Monster ID="705" LV="40 50" />
+		</Monsters>
+	</Map>
+	<!-- 1221是为了一个打不同层的游戏 -->
+	<Map ID="1221" Name="虫穴地牢" MapType="0" ScreenNum="1" InitX="370"  InitY="440">
+	</Map>
+
+	<Map ID="1230" Name="后花园" MapType="0" ScreenNum="1" InitX="370"  InitY="440">
+	</Map>
+
+	<Map ID="1250" Name="翼灵空岛" MapType="0" ScreenNum="1" InitX="490"  InitY="450" Weather="8" />
+
+	<Map ID="1300" Name="巅峰竞技场" MapType="0" ScreenNum="1" InitX="370"  InitY="440" />
+	<Map ID="1301" Name="巅峰竞技场(圣光争夺战)" MapType="0" ScreenNum="1" InitX="370"  InitY="440" />
+	<Map ID="1500" Name="熔岩地穴" MapType="0" ScreenNum="1" InitX="313"  InitY="417" />
+	<Map ID="1501" Name="庆典海滩" MapType="0" ScreenNum="1" InitX="467"  InitY="322" />
+	<Map ID="15001" Name="庆典海滩" MapType="0" ScreenNum="1" InitX="467"  InitY="322" />
+	<Map ID="1600" Name="坐骑训练场" MapType="0" ScreenNum="1" InitX="620"  InitY="360" />
+
+	<Map ID="1900" Name="坛塔" MapType="0" ScreenNum="1" InitX="620"  InitY="360" />
+
+	<Map ID="9001" Name="风刃氏族主城(副本)" dream="1" MapType="0" ScreenNum="1"  InitX="200" InitY="251" />
+	<Map ID="7701" Name="空港(副本)" dream="1" MapType="0" ScreenNum="1"  InitX="375" InitY="323" />
+	<Map ID="8001" Name="视界原野(副本)" dream="1" MapType="0" ScreenNum="1"  InitX="453" InitY="455" />
+	<Map ID="8101" Name="脉流之瀑(副本)" dream="1" MapType="0" ScreenNum="1"  InitX="453" InitY="455" />
+	<Map ID="8301" Name="纠结之藤(副本)" dream="1" MapType="0" ScreenNum="1"  InitX="232" InitY="324" />
+	<Map ID="8401" Name="冰晶魔域(副本)" dream="1" MapType="0" ScreenNum="1"  InitX="467" InitY="443" />
+	<Map ID="8501" Name="旋云之冠(副本)" dream="1" MapType="0" ScreenNum="1"  InitX="380" InitY="354" />
+	<Map ID="5701" Name="冰之监狱" MapType="0" ScreenNum="1" InitX="500"  InitY="400" />
+	<Map ID="5702" Name="冰之监狱" MapType="0" ScreenNum="1" InitX="500"  InitY="400" />
+	<Map ID="5703" Name="冰之监狱" MapType="0" ScreenNum="1" InitX="500"  InitY="400" />
+	<Map ID="5704" Name="冰之监狱" MapType="0" ScreenNum="1" InitX="500"  InitY="400" />
+	<Map ID="5705" Name="冰之监狱" MapType="0" ScreenNum="1" InitX="500"  InitY="400" />
+	<Map ID="5706" Name="冰之监狱" MapType="0" ScreenNum="1" InitX="500"  InitY="400" />
+	<Map ID="5707" Name="冰之监狱" MapType="0" ScreenNum="1" InitX="500"  InitY="400" />
+	<Map ID="5708" Name="冰之监狱" MapType="0" ScreenNum="1" InitX="500"  InitY="400" />
+	<Map ID="5709" Name="冰之监狱" MapType="0" ScreenNum="1" InitX="500"  InitY="400" />
+	<Map ID="5710" Name="冰之监狱" MapType="0" ScreenNum="1" InitX="500"  InitY="400" />
+	<Map ID="5711" Name="冰之监狱" MapType="0" ScreenNum="1" InitX="500"  InitY="400" />
+	<Map ID="5712" Name="冰之监狱" MapType="0" ScreenNum="1" InitX="500"  InitY="400" />
+	<Map ID="1400" Name="暴风山谷" MapType="0" ScreenNum="1" InitX="313"  InitY="417" />
+
+	<Map ID="4804" Name="地铁站" MapType="0" ScreenNum="1" InitX="484"  InitY="329" />
+	<Map ID="4805" Name="地铁站" MapType="0" ScreenNum="1" InitX="484"  InitY="329" dream="1" />
+	<Map ID="4904" Name="地下黑市" MapType="0" ScreenNum="1" InitX="367"  InitY="453" />
+	<Map ID="4905" Name="地下黑市" MapType="0" ScreenNum="1" InitX="367"  InitY="453" dream="1" />
+	<Map ID="5104" Name="地道之路" MapType="0" ScreenNum="1" InitX="320"  InitY="360" />
+	<Map ID="5105" Name="地道之路" MapType="0" ScreenNum="1" InitX="320"  InitY="360" dream="1" />
+	<Map ID="5106" Name="地道之路[捣蛋鬼奇遇记]" MapType="0" ScreenNum="1" InitX="320"  InitY="360" dream="1" />
+	<Map ID="5107" Name="地道之路[好孩子和坏孩子]" MapType="0" ScreenNum="1" InitX="320"  InitY="360" >
+		<Task>
+			<Monster ID="64" LV="10 10" />
+		</Task>
+	</Map>
+	<Map ID="5204" Name="乌黑矿坑" MapType="0" ScreenNum="1" InitX="432"  InitY="402" />
+	<Map ID="5205" Name="乌黑矿坑" MapType="0" ScreenNum="1" InitX="432"  InitY="402" dream="1" />
+	<Map ID="5206" Name="乌黑矿坑[捣蛋鬼奇遇记]" MapType="0" ScreenNum="1" InitX="432"  InitY="402" dream="1" />
+	<Map ID="5207" Name="乌黑矿坑[好孩子和坏孩子]" MapType="0" ScreenNum="1" InitX="432"  InitY="402" dream="1" />
+	<Map ID="5208" Name="乌黑矿坑[蠢动的杀意]" MapType="0" ScreenNum="1" InitX="432"  InitY="402" dream="1" />
+	<Map ID="4704" Name="地月氏族主城" MapType="0" ScreenNum="1" InitX="420"  InitY="450" />
+	<Map ID="4705" Name="地月氏族主城" MapType="0" ScreenNum="1" InitX="420"  InitY="450" dream="1" />
+	<Map ID="3904" Name="三八跑道线(地)" MapType="0" ScreenNum="1" InitX="500"  InitY="430" />
+
+	<Map ID="5201" Name="乌黑矿坑" MapType="0" ScreenNum="1" InitX="432"  InitY="402" />
+	<Map ID="5101" Name="地道之路" MapType="0" ScreenNum="1" InitX="320"  InitY="360" />
+	<Map ID="4701" Name="地月氏族主城" MapType="0" ScreenNum="1" InitX="420"  InitY="450" />
+	<Map ID="4901" Name="地下黑市" MapType="0" ScreenNum="1" InitX="367"  InitY="453" />
+	<Map ID="4801" Name="地铁站" MapType="0" ScreenNum="1" InitX="484"  InitY="329" />
+	<Map ID="3501" Name="沙漠之鹰" MapType="0" ScreenNum="1" InitX="641"  InitY="394" />
+	<Map ID="3703" Name="海市蜃楼" MapType="1" ScreenNum="1" InitX="420"  InitY="450" />
+
+	<Map ID="8600" Name="虫穴地牢一层" MapType="0" ScreenNum="1" InitX="313"  InitY="417" />
+	<Map ID="8601" Name="虫穴地牢二层" MapType="0" ScreenNum="1" InitX="313"  InitY="417" />
+	<Map ID="8602" Name="虫穴地牢三层" MapType="0" ScreenNum="1" InitX="313"  InitY="417" />
+	<Map ID="8603" Name="虫穴地牢四层" MapType="0" ScreenNum="1" InitX="313"  InitY="417" />
+	<Map ID="8604" Name="虫穴地牢五层" MapType="0" ScreenNum="1" InitX="313"  InitY="417" />
+	<Map ID="8605" Name="虫穴地牢底层" MapType="0" ScreenNum="1" InitX="313"  InitY="417" />
+
+	<Map ID="3800" Name="武战之炼" MapType="1" ScreenNum="1" InitX="420"  InitY="450" />
+	<Map ID="3801" Name="疾速之炼" MapType="1" ScreenNum="1" InitX="420"  InitY="450">
+		<Monsters Dark="1">
+			<Monster ID="559" LV="41 43" />
+			<Monster ID="559" LV="41 43" />
+			<Monster ID="559" LV="41 43" />
+			<Monster ID="559" LV="41 43" />
+			<Monster ID="559" LV="41 43" />
+			<Monster ID="559" LV="41 43" />
+			<Monster ID="559" LV="41 43" />
+			<Monster ID="559" LV="41 43" />
+			<Monster ID="559" LV="41 43" />
+		</Monsters>
+		<Monsters Dark="0">
+			<Monster ID="559" LV="41 43" />
+			<Monster ID="559" LV="41 43" />
+			<Monster ID="559" LV="41 43" />
+			<Monster ID="559" LV="41 43" />
+			<Monster ID="559" LV="41 43" />
+			<Monster ID="559" LV="41 43" />
+			<Monster ID="559" LV="41 43" />
+			<Monster ID="559" LV="41 43" />
+			<Monster ID="559" LV="41 43" />
+		</Monsters>
+	</Map>
+	<Map ID="3802" Name="月影之炼" MapType="1" ScreenNum="1" InitX="420"  InitY="450" />
+	<Map ID="3803" Name="魔神之炼" MapType="1" ScreenNum="1" InitX="420"  InitY="450" />
+	<Map ID="3807" Name="血煞之炼" MapType="1" ScreenNum="1" InitX="420"  InitY="450" />
+
+	<Map ID="3808" Name="切尔诺荒原" MapType="1" ScreenNum="5" InitX="420"  InitY="450" />
+
+	<Map ID="3809" Name="恐怖实验室" MapType="1" ScreenNum="5" InitX="420"  InitY="450" />
+
+	<Map ID="3810" Name="僵尸世界大战" MapType="1" ScreenNum="5" InitX="420"  InitY="450" />
+
+	<Map ID="3811" Name="原始雪森林" MapType="1" ScreenNum="5" InitX="420"  InitY="450" />
+
+	<Map ID="3812" Name="雪之湖泊" MapType="1" ScreenNum="5" InitX="420"  InitY="450" />
+
+	<Map ID="3813" Name="雪之溶洞" MapType="1" ScreenNum="5" InitX="420"  InitY="450" />
+
+	<Map ID="3814" Name="冰封魔域" MapType="1" ScreenNum="5" InitX="420"  InitY="450" />
+
+	<Map ID="3815" Name="神域天门" MapType="1" ScreenNum="5" InitX="420"  InitY="450" />
+
+	<Map ID="3816" Name="神域回廊" MapType="1" ScreenNum="5" InitX="420"  InitY="450" />
+	<Map ID="3817" Name="神域天尊殿" MapType="1" ScreenNum="5" InitX="420"  InitY="450" />
+	<Map ID="3818" Name="星球战境" MapType="1" ScreenNum="5" InitX="420"  InitY="450" />
+	<Map ID="3819" Name="暗魄" MapType="1" ScreenNum="5" InitX="420"  InitY="450" />
+	<Map ID="3820" Name="街心花园" MapType="0" ScreenNum="1" InitX="375"  InitY="323" />
+	<Map ID="3821" Name="武煞" MapType="0" ScreenNum="1" InitX="375"  InitY="323" />
+	<Map ID="3822" Name="六煞魔宫" MapType="0" ScreenNum="1" InitX="375"  InitY="323" />
+	<Map ID="3823" Name="诸神之殿" MapType="0" ScreenNum="1" InitX="375"  InitY="323" />
+	<Map ID="3824" Name="帝王战境" MapType="0" ScreenNum="1" InitX="375"  InitY="323" />
+	<Map ID="3825" Name="萤火之墓" MapType="0" ScreenNum="1" InitX="375"  InitY="323" />
+	<Map ID="3826" Name="帝王星域" MapType="0" ScreenNum="1" InitX="375"  InitY="323" />
+	<Map ID="3827" Name="秘密基地" MapType="0" ScreenNum="1" InitX="375"  InitY="323" />
+	<Map ID="3828" Name="灵能通径" MapType="0" ScreenNum="1" InitX="375"  InitY="323">
+		<Monsters Dark="1">
+			<Monster ID="884" LV="45 47" />
+			<Monster ID="884" LV="45 47" />
+			<Monster ID="884" LV="45 47" />
+			<Monster ID="884" LV="45 47" />
+			<Monster ID="884" LV="45 47" />
+			<Monster ID="884" LV="45 47" />
+			<Monster ID="884" LV="45 47" />
+			<Monster ID="884" LV="45 47" />
+			<Monster ID="884" LV="45 47" />
+		</Monsters>
+		<Monsters Dark="0">
+			<Monster ID="884" LV="45 47" />
+			<Monster ID="884" LV="45 47" />
+			<Monster ID="884" LV="45 47" />
+			<Monster ID="884" LV="45 47" />
+			<Monster ID="884" LV="45 47" />
+			<Monster ID="884" LV="45 47" />
+			<Monster ID="884" LV="45 47" />
+			<Monster ID="884" LV="45 47" />
+			<Monster ID="884" LV="45 47" />
+		</Monsters>
+	</Map>
+	<Map ID="3830" Name="超能广场" MapType="0" ScreenNum="1" InitX="375"  InitY="323" >
+		<Bosses ID="895">
+			<Boss BossID="895" />
+		</Bosses>
+	</Map>
+	<Map ID="3831" Name="经验之门" MapType="0" ScreenNum="1" InitX="375"  InitY="323" />
+	<Map ID="3832" Name="太空武斗场" MapType="0" ScreenNum="1" InitX="375"  InitY="323" />
+	<Map ID="3833" Name="地球表面" MapType="0" ScreenNum="1" InitX="375"  InitY="323" />
+	<Map ID="3834" Name="战地海岸" MapType="0" ScreenNum="1" InitX="375"  InitY="323" />
+	<Map ID="3835" Name="要塞指挥室" MapType="0" ScreenNum="1" InitX="375"  InitY="323" />
+	<Map ID="3836" Name="能量工厂" MapType="0" ScreenNum="1" InitX="375"  InitY="323" >
+		<Monsters Dark="0">
+			<Monster ID="880" LV="45 47" />
+			<Monster ID="880" LV="45 47" />
+			<Monster ID="880" LV="45 47" />
+			<Monster ID="880" LV="45 47" />
+			<Monster ID="880" LV="45 47" />
+			<Monster ID="880" LV="45 47" />
+			<Monster ID="880" LV="45 47" />
+			<Monster ID="880" LV="45 47" />
+			<Monster ID="880" LV="45 47" />
+		</Monsters>
+		<Monsters Dark="1">
+			<Monster ID="880" LV="45 47" />
+			<Monster ID="880" LV="45 47" />
+			<Monster ID="880" LV="45 47" />
+			<Monster ID="880" LV="45 47" />
+			<Monster ID="880" LV="45 47" />
+			<Monster ID="880" LV="45 47" />
+			<Monster ID="880" LV="45 47" />
+			<Monster ID="880" LV="45 47" />
+			<Monster ID="880" LV="45 47" />
+		</Monsters>
+	</Map>
+	<Map ID="3837" Name="穹顶大厅" MapType="0" ScreenNum="1" InitX="375"  InitY="323" />
+	<Map ID="3838" Name="虫林仙境" MapType="0" ScreenNum="1" InitX="375"  InitY="323" />
+	<Map ID="3839" Name="界王圣域" MapType="0" ScreenNum="1" InitX="375"  InitY="323" />
+	<Map ID="3840" Name="永恒殿" MapType="0" ScreenNum="1" InitX="375"  InitY="323" />
+
+	<Map ID="3842" Name="巅峰神域" MapType="0" ScreenNum="1" InitX="375"  InitY="323" />
+
+	<Map ID="3843" Name="放烟花啦" MapType="0" ScreenNum="1" InitX="375"  InitY="323" />
+	<Map ID="3844" Name="神迹领域" MapType="0" ScreenNum="1" InitX="375"  InitY="323" />
+	<Map ID="3845" Name="火神道场" MapType="0" ScreenNum="1" InitX="375"  InitY="323"  dream="1"/>
+	<Map ID="3846" Name="能量之源" MapType="0" ScreenNum="1" InitX="375"  InitY="323" />
+	<Map ID="3847" Name="影月林" MapType="0" ScreenNum="1" InitX="375"  InitY="323" >
+		<Monsters Dark="0">
+			<Monster ID="170" LV="41 43" />
+			<Monster ID="170" LV="41 43" />
+			<Monster ID="170" LV="41 43" />
+			<Monster ID="170" LV="41 43" />
+			<Monster ID="170" LV="41 43" />
+			<Monster ID="170" LV="41 43" />
+			<Monster ID="170" LV="41 43" />
+			<Monster ID="170" LV="41 43" />
+			<Monster ID="170" LV="41 43" />
+		</Monsters>
+		<Monsters Dark="1">
+			<Monster ID="170" LV="41 43" />
+			<Monster ID="170" LV="41 43" />
+			<Monster ID="170" LV="41 43" />
+			<Monster ID="170" LV="41 43" />
+			<Monster ID="170" LV="41 43" />
+			<Monster ID="170" LV="41 43" />
+			<Monster ID="170" LV="41 43" />
+			<Monster ID="170" LV="41 43" />
+			<Monster ID="170" LV="41 43" />
+		</Monsters>
+	</Map>
+	<Map ID="3848" Name="暗影氏族主城" MapType="0" ScreenNum="1" InitX="375"  InitY="323" />
+	<Map ID="3849" Name="娜钱莱宫殿(小梦的轰趴派对)" MapType="0" ScreenNum="1" InitX="500"  InitY="379" />
+	<Map ID="3850" Name="王者之门" MapType="0" ScreenNum="1" InitX="375"  InitY="323" />
+	<Map ID="3851" Name="战神遗迹" MapType="0" ScreenNum="1" InitX="375"  InitY="323" />
+	<Map ID="3852" Name="要塞B8" MapType="0" ScreenNum="1" InitX="480"  InitY="380"  dream="1"/>
+	<Map ID="3853" Name="王者广场" MapType="0" ScreenNum="1" InitX="480"  InitY="380"/>
+	<Map ID="3854" Name="影子密室" MapType="0" ScreenNum="1" InitX="480"  InitY="380">
+	    <Bosses ID="997">
+			<Boss BossID="997" />
+		</Bosses>
+	</Map>
+	<Map ID="3855" Name="永恒殿" MapType="0" ScreenNum="1" InitX="375"  InitY="323" />
+	<Map ID="3856" Name="雪人村" MapType="0" ScreenNum="1" InitX="375"  InitY="323" />
+
+	<Map ID="3857" Name="天宫" MapType="0" ScreenNum="1" InitX="375"  InitY="323" />
+	<Map ID="3858" Name="约瑟战境（希望之光杯精灵王争霸赛）" MapType="0" ScreenNum="1" InitX="480"  InitY="380" />
+
+	<!-- 80000以前为常规场景，之后为副本，注意不与以前重复,并且副本必须配置dream="1" 属于副本的foreverlimit从500000开始 -->
+	<Map ID="80001" Name="炼狱模式1" MapType="0" ScreenNum="1" InitX="467"  InitY="322" MaxTimes="1" ForeverLimit="500000" dream="1">
+		<Monsters Dark="0">
+			<Monster ID="170" LV="41 43" />
+			<Monster ID="170" LV="41 43" />
+			<Monster ID="170" LV="41 43" />
+			<Monster ID="170" LV="41 43" />
+			<Monster ID="170" LV="41 43" />
+			<Monster ID="170" LV="41 43" />
+			<Monster ID="170" LV="41 43" />
+			<Monster ID="170" LV="41 43" />
+			<Monster ID="170" LV="41 43" />
+		</Monsters>
+		<OutOnCopyComplete>
+			<Item ID="500549" Count="10" />
+		</OutOnCopyComplete>
+	</Map>
+	<Map ID="80002" Name="炼狱模式2" MapType="0" ScreenNum="1" InitX="467"  InitY="322" dream="1" Prev="80001" MaxTimes="300" ForeverLimit="500001">
+		<Monsters Dark="0">
+			<Monster ID="170" LV="41 43" />
+			<Monster ID="170" LV="41 43" />
+			<Monster ID="170" LV="41 43" />
+			<Monster ID="170" LV="41 43" />
+			<Monster ID="170" LV="41 43" />
+			<Monster ID="170" LV="41 43" />
+			<Monster ID="170" LV="41 43" />
+			<Monster ID="170" LV="41 43" />
+			<Monster ID="170" LV="41 43" />
+		</Monsters>
+		<OutOnCopyComplete>
+			<Item ID="500549" Count="30" />
+		</OutOnCopyComplete>
+	</Map>
+	<Map ID="80004" Name="暴食回廊(剧情)" MapType="0" ScreenNum="1" InitX="467"  InitY="322" MaxTimes="1" ForeverLimit="500003" dream="1">
+		<OutOnCopyComplete>
+			<Item ID="500549" Count="30" />
+		</OutOnCopyComplete>
+	</Map>
+	<Map ID="80005" Name="暴食回廊(挑战)" MapType="0" ScreenNum="1" InitX="467"  InitY="322" dream="1" Prev="80001" MaxTimes="300" ForeverLimit="500004">
+		<OutOnCopyComplete>
+			<Item ID="500549" Count="50" />
+		</OutOnCopyComplete>
+	</Map>
+
+	<Map ID="80007" Name="贪婪回廊(剧情)" MapType="0" ScreenNum="1" InitX="467"  InitY="322" MaxTimes="1" ForeverLimit="500000" dream="1">
+		<OutOnCopyComplete>
+			<Item ID="500554" Count="50" />
+		</OutOnCopyComplete>
+	</Map>
+
+	<Map ID="80008" Name="贪婪回廊(挑战)" MapType="0" ScreenNum="1" InitX="467"  InitY="322" MaxTimes="1" ForeverLimit="500000" dream="1">
+		<OutOnCopyComplete>
+			<Item ID="500554" Count="50" />
+		</OutOnCopyComplete>
+	</Map>
+	<Map ID="80010" Name="伊特角斗场(副本)" MapType="0" ScreenNum="1" InitX="370"  InitY="440" />
+	<Map ID="80011" Name="暗黑死神第一关" MapType="0" ScreenNum="1" InitX="467"  InitY="322" MaxTimes="1" ForeverLimit="500000" dream="1" />
+	<Map ID="80012" Name="暗黑死神第二关" MapType="0" ScreenNum="1" InitX="467"  InitY="322" MaxTimes="1" ForeverLimit="500000" dream="1" />
+	<Map ID="80013" Name="暗黑死神第三关" MapType="0" ScreenNum="1" InitX="467"  InitY="322" MaxTimes="1" ForeverLimit="500000" dream="1" />
+	<Map ID="80014" Name="虚弱大厅(剧情)" MapType="0" ScreenNum="1" InitX="467"  InitY="322" MaxTimes="1" ForeverLimit="500000" dream="1" />
+	<Map ID="80015" Name="虚弱大厅(挑战)" MapType="0" ScreenNum="1" InitX="467"  InitY="322" MaxTimes="1" ForeverLimit="500000" dream="1" />
+	<Map ID="80017" Name="荆棘小道(副本)" MapType="0" ScreenNum="1" InitX="467"  InitY="322" />
+	<Map ID="80018" Name="视界原野(副本)" MapType="0" ScreenNum="1" InitX="453"  InitY="455" />
+	<Map ID="80019" Name="暗月岭地牢(副本)" MapType="0" ScreenNum="1" InitX="453"  InitY="455" dream="1" />
+	<Map ID="80020" Name="暗月岭(暗月兔变身)" MapType="0" ScreenNum="1" InitX="467"  InitY="322" MaxTimes="1" ForeverLimit="500000" dream="1" />
+	<Map ID="80021" Name="神宠领域(副本)" MapType="0" ScreenNum="1" InitX="467"  InitY="322" MaxTimes="1" ForeverLimit="500000" dream="1" />
+	<Map ID="80022" Name="狂暴回廊(剧情)" MapType="0" ScreenNum="1" InitX="467"  InitY="322" MaxTimes="1" ForeverLimit="500000" dream="1" />
+	<Map ID="80023" Name="狂暴回廊(挑战)" MapType="0" ScreenNum="1" InitX="467"  InitY="322" MaxTimes="1" ForeverLimit="500000" dream="1" />
+	<Map ID="80025" Name="妒忌回廊(剧情)" MapType="0" ScreenNum="1" InitX="467"  InitY="322" MaxTimes="1" ForeverLimit="500000" dream="1" Weather="9" />
+	<Map ID="80026" Name="妒忌回廊(挑战)" MapType="0" ScreenNum="1" InitX="467"  InitY="322" MaxTimes="1" ForeverLimit="500000" dream="1" Weather="9" />
+	<Map ID="80028" Name="傲慢大厅(剧情)" MapType="0" ScreenNum="1" InitX="467"  InitY="322" MaxTimes="1" ForeverLimit="500000" dream="1" Weather="9" />
+	<Map ID="80029" Name="傲慢大厅(挑战)" MapType="0" ScreenNum="1" InitX="467"  InitY="322" MaxTimes="1" ForeverLimit="500000" dream="1" Weather="9" />
+	<Map ID="80030" Name="傲慢大厅1号副本" MapType="0" ScreenNum="1" InitX="467"  InitY="322" MaxTimes="1" ForeverLimit="500000" dream="1" Weather="9" />
+	<Map ID="80031" Name="忏悔殿宗(剧情)" MapType="0" ScreenNum="1" InitX="467"  InitY="322" MaxTimes="1" ForeverLimit="500000" dream="1" />
+	<Map ID="80032" Name="忏悔殿宗(挑战)" MapType="0" ScreenNum="1" InitX="467"  InitY="322" MaxTimes="1" ForeverLimit="500000" dream="1" />
+	<Map ID="80033" Name="雷神之斩收费" MapType="0" ScreenNum="1" InitX="467"  InitY="322" MaxTimes="1" ForeverLimit="500000" dream="1" />
+	<Map ID="80034" Name="雷神之斩免费" MapType="0" ScreenNum="1" InitX="467"  InitY="322" MaxTimes="1" ForeverLimit="500000" dream="1" />
+	<Map ID="80035" Name="冰沁神殿(副本)" MapType="0" ScreenNum="1" InitX="630"  InitY="360" />
+	<Map ID="80036" Name="赫尔卡星荒地(副本)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="80037" Name="观星者副本" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="80038" Name="烈焰山口(副本)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="80039" Name="骤雨搏击副本1" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1">
+		<Monsters Dark="0">
+			<Monster ID="41" LV="90  100" />
+			<Monster ID="25" LV="90  100" />
+			<Monster ID="28" LV="90  100" />
+			<Monster ID="26" LV="80  100" />
+			<Monster ID="140" LV="90  100" />
+			<Monster ID="21" LV="40  60" />
+			<Monster ID="26" LV="60  80" />
+			<Monster ID="28" LV="80  100" />
+			<Monster ID="72" LV="60  80" />
+		</Monsters>
+	</Map>
+	<Map ID="80040" Name="骤雨搏击副本2" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="80041" Name="骤雨搏击副本3" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="80042" Name="烈焰山口(副本)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="80043" Name="烈焰山口(副本)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="80044" Name="深渊沼泽(副本)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="80045" Name="汲雨之岛(副本)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="80046" Name="微光湖畔副本" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="80047" Name="旋云之冠副本" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="80048" Name="冰晶魔域副本" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="80049" Name="异蘑世界(副本)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="80050" Name="荆棘小道(副本)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="80051" Name="信奉广场(副本)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="80052" Name="裂空(副本)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="80053" Name="冰封之轴(副本)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="80054" Name="魔次元(副本)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="80055" Name="树洞(副本)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="80056" Name="神次元(副本)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="80057" Name="亡灵13区(副本)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="80058" Name="月神(副本)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="80059" Name="骑士团(副本)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="80060" Name="切尔诺荒地(副本)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="80061" Name="幻影崖(副本)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="80062" Name="旋云之冠(副本)" MapType="0" ScreenNum="1" InitX="380"  InitY="354" />
+	<Map ID="80063" Name="假面舞会(副本)" MapType="0" ScreenNum="1" InitX="380"  InitY="354" />
+	<Map ID="80064" Name="恐怖实验室(副本)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="80065" Name="切尔诺荒原(副本)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="80066" Name="切尔诺荒原(副本)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="80067" Name="盘龙水境(副本)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="80068" Name="赫尔卡星荒地(副本)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="80069" Name="巨树森林(副本)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="80070" Name="白龙岩阵(副本)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="80071" Name="银脉山脊(副本)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="80072" Name="白龙岩阵(副本)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="80073" Name="三八跑道线(副本)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="80074" Name="冰沁宫殿(副本)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="80075" Name="冰封魔域(副本)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="80076" Name="忏悔殿宗(副本)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="80077" Name="原始雪森林(副本)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="80078" Name="荆棘小道(副本)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="80079" Name="异磨谷(副本)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="80080" Name="巨石洞穴(副本)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="80081" Name="巨石洞穴(副本)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="80082" Name="魅罗门(副本)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="80083" Name="火焰山(副本)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="80084" Name="火源通径(副本)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="80085" Name="深渊派对(副本)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="80086" Name="神魔之界(副本)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="80087" Name="雪之湖泊(副本)" MapType="1" ScreenNum="5" InitX="420"  InitY="450" />
+	<Map ID="80088" Name="魅罗门(副本)" MapType="1" ScreenNum="5" InitX="420"  InitY="450" dream="1" />
+	<Map ID="80089" Name="雪之溶洞(副本)" MapType="1" ScreenNum="5" InitX="420"  InitY="450" dream="1" />
+	<Map ID="80090" Name="魅罗门(副本)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="80091" Name="姜饼城(副本)" MapType="0" ScreenNum="1" InitX="420"  InitY="450" dream="1">
+		<Monsters Dark="0">
+			<Monster ID="145" LV="41 43" />
+			<Monster ID="145" LV="41 43" />
+			<Monster ID="145" LV="41 43" />
+			<Monster ID="145" LV="41 43" />
+			<Monster ID="145" LV="41 43" />
+			<Monster ID="145" LV="41 43" />
+			<Monster ID="145" LV="41 43" />
+			<Monster ID="145" LV="41 43" />
+			<Monster ID="145" LV="41 43" />
+		</Monsters>
+	</Map>
+	<Map ID="80092" Name="雪之溶洞(副本)" MapType="1" ScreenNum="5" InitX="420"  InitY="450" dream="1" />
+	<Map ID="80093" Name="冰脊山脉(副本)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="80094" Name="冰封魔域(副本)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="80095" Name="雪域(副本)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="80096" Name="原始雪森林(副本)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="80097" Name="雪之湖泊(副本)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="80098" Name="雪之溶洞(副本)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="80099" Name="冰封魔域(副本)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="80100" Name="冰封魔域(副本)" MapType="1" ScreenNum="5" InitX="420"  InitY="450" dream="1" />
+	<Map ID="80101" Name="冰封魔域(副本)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="80102" Name="神谕副本(副本)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="80103" Name="神域天门(副本)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="80104" Name="麦麦迪12轮" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="80105" Name="麦麦迪超进化(副本)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="80106" Name="神域回廊(副本)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="80107" Name="神域回廊(副本)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="80108" Name="监狱(副本)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="80109" Name="神域回廊(副本)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="80110" Name="监狱(副本)" MapType="0" ScreenNum="1" InitX="500"  InitY="400" dream="1">
+		<Monsters Dark="0">
+			<Monster ID="148" LV="8 15" />
+			<Monster ID="148" LV="8 15" />
+			<Monster ID="148" LV="8 15" />
+			<Monster ID="148" LV="8 15" />
+			<Monster ID="148" LV="8 15" />
+			<Monster ID="148" LV="8 15" />
+			<Monster ID="148" LV="8 15" />
+			<Monster ID="148" LV="8 15" />
+			<Monster ID="148" LV="8 15" />
+		</Monsters>
+	</Map>
+	<Map ID="80111" Name="神域回廊(副本)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+
+	<Map ID="80112" Name="风暴悬崖(副本)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="80113" Name="风刃氏族主城(副本)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="80114" Name="流离街(副本)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="80115" Name="御风中枢(副本)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="80116" Name="风涡工房(副本)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="80117" Name="神风祭台(副本)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="80118" Name="虫林小径(副本)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="80119" Name="后花园(副本)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="80120" Name="树洞(副本)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="80121" Name="虫穴地牢(副本)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="80122" Name="玄云之冠（副本地图）" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="80123" Name="后花园(副本)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="80124" Name="荆棘小道(副本)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="80125" Name="深幽沼泽(副本)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+
+	<Map ID="80126" Name="船长室(副本)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="80127" Name="实验室(副本)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="80128" Name="冰之谷(副本)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="80129" Name="空港(副本)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="80130" Name="镜之岛(副本)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="80131" Name="飞翼之核(副本)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="80132" Name="能源之潮(副本)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="80133" Name="赫尔卡星荒地(副本地图)" MapType="0" ScreenNum="1"  InitX="550" InitY="380" dream="1" />
+	<Map ID="80134" Name="赫尔卡星荒地(副本地图)" MapType="0" ScreenNum="1"  InitX="550" InitY="380" dream="1" />
+
+	<Map ID="80135" Name="冰脊之巅(副本)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="80136" Name="恐怖实验室(副本)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="80137" Name="神域天尊殿(黑天马副本)" MapType="1" ScreenNum="5"  InitX="420" InitY="450" dream="1" />
+	<Map ID="80138" Name="汲雨之岛(副本)" MapType="1" ScreenNum="5" InitX="420"  InitY="450" dream="1" />
+	<Map ID="80139" Name="幽静珊瑚穴(副本)" MapType="1" ScreenNum="5" InitX="420"  InitY="450" dream="1" />
+	<Map ID="80140" Name="幻影崖(副本)" MapType="1" ScreenNum="5" InitX="420"  InitY="450" dream="1" />
+	<Map ID="80141" Name="赤链山脉(副本)" MapType="1" ScreenNum="5" InitX="420"  InitY="450" dream="1" />
+	<Map ID="80142" Name="冰沁宫殿(副本)" MapType="1" ScreenNum="5" InitX="420"  InitY="450" dream="1" />
+
+	<Map ID="80143" Name="信奉广场(副本)" MapType="1" ScreenNum="5" InitX="420"  InitY="450" dream="1" />
+	<Map ID="80144" Name="教官室(副本)" MapType="1" ScreenNum="5" InitX="420"  InitY="450" dream="1" />
+	<Map ID="80145" Name="帝国废墟(副本)" MapType="1" ScreenNum="5" InitX="420"  InitY="450" dream="1" />
+	<Map ID="80146" Name="王者遗迹(副本)" MapType="1" ScreenNum="5" InitX="420"  InitY="450" dream="1" />
+	<Map ID="80147" Name="帝国废墟(副本)" MapType="1" ScreenNum="5" InitX="420"  InitY="450" dream="1" />
+	<Map ID="80148" Name="β空间(副本)" MapType="1" ScreenNum="5" InitX="420"  InitY="450" dream="1" />
+	<Map ID="80149" Name="火源通径(副本)" MapType="1" ScreenNum="5" InitX="420"  InitY="450" dream="1" />
+	<Map ID="80150" Name="悲伤残骸(副本)" MapType="1" ScreenNum="5" InitX="420"  InitY="450" dream="1" />
+	<Map ID="80151" Name="悲伤残骸(副本)" MapType="1" ScreenNum="5" InitX="420"  InitY="450" dream="1" />
+	<Map ID="80152" Name="火焰山(副本)" MapType="1" ScreenNum="5" InitX="420"  InitY="450" dream="1" />
+
+	<Map ID="80153" Name="帝国废墟(副本)" MapType="1" ScreenNum="5" InitX="420"  InitY="450" dream="1" />
+	<Map ID="80154" Name="恐怖实验室(副本)" MapType="1" ScreenNum="5" InitX="420"  InitY="450" dream="1" />
+	<Map ID="80155" Name="冰沁神殿(副本)" MapType="1" ScreenNum="5" InitX="420"  InitY="450" dream="1" />
+	<Map ID="80156" Name="熔岩地穴(副本)" MapType="1" ScreenNum="5" InitX="313"  InitY="417" />
+	<Map ID="80158" Name="星球战境(副本)" MapType="1" ScreenNum="5" InitX="313"  InitY="417" dream="1" />
+	<Map ID="80159" Name="月影之炼(副本)" MapType="1" ScreenNum="5" InitX="313"  InitY="417" dream="1" />
+	<Map ID="80160" Name="幽静浅滩(副本)" MapType="1" ScreenNum="5" InitX="313"  InitY="417" dream="1" />
+	<Map ID="80161" Name="暗月岭(影魔暗煞)" MapType="0" ScreenNum="1" InitX="420"  InitY="450" dream="1" />
+	<Map ID="80162" Name="珊瑚路(副本)" MapType="0" ScreenNum="1" InitX="660"  InitY="310" dream="1" />
+	<Map ID="80163" Name="异蘑世界(副本)" MapType="0" ScreenNum="1" InitX="120"  InitY="380" Weather="1" dream="1">
+		<Monsters Dark="0">
+			<Monster ID="10" LV="2 4" />
+			<Monster ID="10" LV="2 4" />
+			<Monster ID="10" LV="2 4" />
+			<Monster ID="10" LV="2 4" />
+			<Monster ID="10" LV="2 4" />
+			<Monster ID="10" LV="2 4" />
+			<Monster ID="10" LV="2 4" />
+			<Monster ID="10" LV="2 4" />
+			<Monster ID="10" LV="2 4" />
+		</Monsters>
+		<RareMon CheckTime="3" Interval="400 450 500" Remain="50"
+			GetItem="200539">
+			<Mon ID="10" LV="7 9" />
+		</RareMon>
+	</Map>
+	<Map ID="80164" Name="异蘑谷(副本)" MapType="0" ScreenNum="1" InitX="120"  InitY="380" dream="1">
+		<Monsters Dark="0">
+			<Monster ID="204" LV="20 20" />
+			<Monster ID="10" LV="20 20" />
+			<Monster ID="49" LV="20 20" />
+			<Monster ID="204" LV="20 20" />
+			<Monster ID="10" LV="20 20" />
+			<Monster ID="49" LV="20 20" />
+			<Monster ID="204" LV="20 20" />
+			<Monster ID="10" LV="20 20" />
+			<Monster ID="49" LV="20 20" />
+		</Monsters>
+	</Map>
+	<Map ID="80165" Name="水仙草界(副本)" MapType="0" ScreenNum="1" InitX="120"  InitY="380" Weather="2" dream="1">
+		<Monsters Dark="0">
+			<Monster ID="20" LV="12 14" />
+			<Monster ID="20" LV="12 14" />
+			<Monster ID="20" LV="12 14" />
+			<Monster ID="20" LV="12 14" />
+			<Monster ID="20" LV="12 14" />
+			<Monster ID="20" LV="12 14" />
+			<Monster ID="20" LV="12 14" />
+			<Monster ID="20" LV="12 14" />
+			<Monster ID="20" LV="12 14" />
+		</Monsters>
+		<RareMon CheckTime="3" Interval="400 450 500" Remain="50"
+			GetItem="200541">
+			<Mon ID="20" LV="17 19" />
+		</RareMon>
+	</Map>
+	<Map ID="80166" Name="幻空通道(副本)" MapType="0" ScreenNum="1" InitX="520"  InitY="400" dream="1">
+		<Monsters Dark="0">
+			<Monster ID="32" LV="22 24" />
+			<Monster ID="32" LV="22 24" />
+			<Monster ID="32" LV="22 24" />
+			<Monster ID="32" LV="22 24" />
+			<Monster ID="32" LV="22 24" />
+			<Monster ID="32" LV="22 24" />
+			<Monster ID="32" LV="22 24" />
+			<Monster ID="32" LV="22 24" />
+			<Monster ID="32" LV="22 24" />
+		</Monsters>
+		<Task>
+			<Monster ID="32" LV="22 24" />
+		</Task>
+		<RareMon CheckTime="3" Interval="400 450 500" Remain="50"
+			GetItem="200552">
+			<Mon ID="32" LV="27 29" />
+		</RareMon>
+	</Map>
+	<Map ID="80167" Name="冰室(副本)" MapType="1" ScreenNum="5" InitX="400"  InitY="340" dream="1" />
+	<Map ID="80168" Name="神宠领域(副本地图)" MapType="0" ScreenNum="1" InitX="660"  InitY="310" dream="1" />
+	<Map ID="80169" Name="旋云之冠" MapType="1" ScreenNum="1" InitX="380"  InitY="354" />
+	<Map ID="80170" Name="冰晶矿场(副本地图)" MapType="0" ScreenNum="1" InitX="660"  InitY="310" dream="1" />
+	<Map ID="80171" Name="观星者副本" MapType="0" ScreenNum="1" InitX="660"  InitY="310" dream="1" />
+	<Map ID="80172" Name="冰晶矿场" MapType="0" ScreenNum="1" InitX="420"  InitY="450" />
+	<Map ID="80173" Name="诸神之殿" MapType="0" ScreenNum="1" InitX="420"  InitY="450" />
+	<Map ID="80174" Name="烈焰峡谷1（副本地国)" MapType="0" ScreenNum="1" InitX="420"  InitY="450" />
+	<Map ID="80175" Name="烈焰山口(副本)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="80176" Name="幻空通道(副本)" MapType="1" ScreenNum="5" InitX="520"  InitY="400" />
+	<Map ID="80177" Name="诸神之殿(副本)" MapType="0" ScreenNum="1" InitX="420"  InitY="450" dream="1" />
+	<Map ID="80178" Name="深渊派对" MapType="0" ScreenNum="1" InitX="653"  InitY="452" dream="1" />
+	<Map ID="80179" Name="地道之路" MapType="0" ScreenNum="1" InitX="320"  InitY="360" />
+	<Map ID="80180" Name="忏悔殿宗(挑战)" MapType="0" ScreenNum="1" InitX="467"  InitY="322" dream="1" />
+	<Map ID="80181" Name="奥林匹斯山(宙斯副本)" MapType="0" ScreenNum="1" InitX="467"  InitY="322" dream="1" />
+	<Map ID="80182" Name="潘多拉宫(宙斯副本)" MapType="0" ScreenNum="1" InitX="467"  InitY="322" dream="1" />
+	<Map ID="80183" Name="雅典娜宫(宙斯副本)" MapType="0" ScreenNum="1" InitX="467"  InitY="322" dream="1" />
+	<Map ID="80184" Name="阿波罗宫(宙斯副本)" MapType="0" ScreenNum="1" InitX="467"  InitY="322" dream="1" />
+	<Map ID="80185" Name="奥林匹斯山顶(宙斯副本) " MapType="0" ScreenNum="1"  InitX="467" InitY="322" dream="1" />
+	<Map ID="80186" Name="天煞魔帝挑战(副本) " MapType="0" ScreenNum="1" InitX="467"  InitY="322" dream="1" />
+	<Map ID="80187" Name="灰烬深渊[副本]" MapType="0" ScreenNum="1" InitX="467"  InitY="322" dream="1" />
+	<Map ID="80188" Name="赫尔卡星（副本地图）" MapType="0" ScreenNum="1" InitX="467"  InitY="322" dream="1" />
+	<Map ID="80189" Name="幻空通道" MapType="0" ScreenNum="1" InitX="520"  InitY="400" dream="1">
+		<Monsters Dark="0">
+			<Monster ID="33" LV="8 15" />
+			<Monster ID="33" LV="8 15" />
+			<Monster ID="33" LV="8 15" />
+			<Monster ID="33" LV="8 15" />
+			<Monster ID="33" LV="8 15" />
+			<Monster ID="33" LV="8 15" />
+			<Monster ID="33" LV="8 15" />
+			<Monster ID="33" LV="8 15" />
+			<Monster ID="33" LV="8 15" />
+		</Monsters>
+	</Map>
+	<Map ID="80190" Name="赤链山脉" MapType="0" ScreenNum="1" InitX="447"  InitY="427" dream="1">
+		<Monsters Dark="0">
+			<Monster ID="39" LV="8 15" />
+			<Monster ID="39" LV="8 15" />
+			<Monster ID="39" LV="8 15" />
+			<Monster ID="39" LV="8 15" />
+			<Monster ID="39" LV="8 15" />
+			<Monster ID="39" LV="8 15" />
+			<Monster ID="39" LV="8 15" />
+			<Monster ID="39" LV="8 15" />
+			<Monster ID="39" LV="8 15" />
+		</Monsters>
+	</Map>
+	<Map ID="80191" Name="烈焰峡谷" MapType="0" ScreenNum="1" InitX="500"  InitY="400" dream="1">
+		<Monsters Dark="0">
+			<Monster ID="75" LV="8 15" />
+			<Monster ID="75" LV="8 15" />
+			<Monster ID="75" LV="8 15" />
+			<Monster ID="75" LV="8 15" />
+			<Monster ID="75" LV="8 15" />
+			<Monster ID="75" LV="8 15" />
+			<Monster ID="75" LV="8 15" />
+			<Monster ID="75" LV="8 15" />
+			<Monster ID="75" LV="8 15" />
+		</Monsters>
+	</Map>
+	<Map ID="80192" Name="灰烬深渊" MapType="0" ScreenNum="1" InitX="653"  InitY="452" dream="1">
+		<Monsters Dark="0">
+			<Monster ID="131" LV="8 15" />
+			<Monster ID="131" LV="8 15" />
+			<Monster ID="131" LV="8 15" />
+			<Monster ID="131" LV="8 15" />
+			<Monster ID="131" LV="8 15" />
+			<Monster ID="131" LV="8 15" />
+			<Monster ID="131" LV="8 15" />
+			<Monster ID="131" LV="8 15" />
+			<Monster ID="131" LV="8 15" />
+		</Monsters>
+	</Map>
+	<Map ID="80193" Name="黑岩旋梯（莫古超进化）" MapType="0" ScreenNum="1" InitX="467"  InitY="322" dream="1" />
+
+	<Map ID="80194" Name="欲望回廊" MapType="0" ScreenNum="1" InitX="370"  InitY="440" />
+	<Map ID="80195" Name="暴食回廊" MapType="0" ScreenNum="1" InitX="467"  InitY="322" />
+	<Map ID="80196" Name="贪婪回廊" MapType="0" ScreenNum="1" InitX="467"  InitY="322" />
+	<Map ID="80197" Name="虚弱大厅" MapType="0" ScreenNum="1" InitX="467"  InitY="322" />
+	<Map ID="80198" Name="狂暴回廊" MapType="0" ScreenNum="1" InitX="467"  InitY="322" />
+	<Map ID="80199" Name="妒忌回廊" MapType="0" ScreenNum="1" InitX="467"  InitY="322" />
+	<Map ID="80200" Name="傲慢大厅" MapType="0" ScreenNum="1" InitX="467"  InitY="322" />
+	<Map ID="80201" Name="忏悔殿宗" MapType="0" ScreenNum="1" InitX="467"  InitY="322" />
+	<Map ID="80202" Name="黑岩旋梯" MapType="0" ScreenNum="1" InitX="467"  InitY="322" dream="1" />
+	<Map ID="80203" Name="复活岛" MapType="0" ScreenNum="1" InitX="467"  InitY="322" dream="1" />
+	<Map ID="80204" Name="流离街(副本)" MapType="0" ScreenNum="1" InitX="467"  InitY="322" dream="1" />
+	<Map ID="80205" Name="神魔之界" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="80206" Name="阎罗之殿" MapType="0" ScreenNum="1" InitX="467"  InitY="322" dream="1" />
+	<Map ID="80207" Name="神宠领域" MapType="0" ScreenNum="1" InitX="660"  InitY="310" dream="1" />
+	<Map ID="80208" Name="帝国废墟(副本)" MapType="1" ScreenNum="5" InitX="420"  InitY="450" dream="1" />
+	<Map ID="80209" Name="火焰山(凯萨超进化副本)" MapType="1" ScreenNum="5"  InitX="420" InitY="450" dream="1" />
+	<Map ID="80210" Name="烈焰山口(凯萨超进化副本)" MapType="0" ScreenNum="1"  InitX="550" InitY="380" dream="1" />
+	<Map ID="80211" Name="火源通径(凯萨超进化副本)" MapType="1" ScreenNum="5"  InitX="420" InitY="450" dream="1" />
+	<Map ID="80212" Name="烈焰山口(凯萨超进化副本)" MapType="0" ScreenNum="1"  InitX="550" InitY="380" dream="1" />
+	<Map ID="80213" Name="时空裂缝(踏空副本)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="80214" Name="诸神之殿(卡修斯超进化副本)" MapType="1" ScreenNum="5"  InitX="420" InitY="450" dream="1" />
+	<Map ID="80215" Name="黑岩旋梯(卡修斯超进化副本)" MapType="0" ScreenNum="1"  InitX="550" InitY="380" dream="1" />
+	<Map ID="80216" Name="奥林匹斯山(卡修斯超进化副本)" MapType="1" ScreenNum="5"  InitX="420" InitY="450" dream="1" />
+	<Map ID="80217" Name="王者遗迹(卡修斯超进化副本)" MapType="0" ScreenNum="1"  InitX="550" InitY="380" dream="1" />
+	<Map ID="80218" Name="神秘研究院(副本)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="80219" Name="六煞魔宫(逆世盖亚副本)" MapType="0" ScreenNum="1"  InitX="550" InitY="380" dream="1" />
+	<Map ID="80220" Name="海市蜃楼（黑夜）" MapType="1" ScreenNum="1" InitX="420"  InitY="450" dream="1" />
+	<Map ID="80221" Name="远古荒地(副本)" MapType="1" ScreenNum="1" InitX="420"  InitY="450" dream="1" />
+	<Map ID="80222" Name="狂暴回廊(万劫魔尊)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="80223" Name="目灵祭坛(副本)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="80224" Name="梦境目灵祭坛(副本)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="80225" Name="暴怒目灵祭坛(副本)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="80226" Name="信奉广场(副本)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="80227" Name="烈焰峡谷(副本)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="80228" Name="六煞魔宫(盖亚超进化副本)" MapType="1" ScreenNum="5"  InitX="420" InitY="450" dream="1" />
+	<Map ID="80229" Name="监狱(盖亚超进化副本)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="80230" Name="帝国废墟(盖亚超进化副本)" MapType="1" ScreenNum="5"  InitX="420" InitY="450" dream="1" />
+	<Map ID="80231" Name="赫尔卡星荒地(盖亚超进化副本)" MapType="0" ScreenNum="1"  InitX="550" InitY="380" dream="1" />
+	<Map ID="80232" Name="目灵祭坛(副本)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+
+	<Map ID="80233" Name="盗梦空间(副本)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="80234" Name="盗梦空间(副本)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+
+	<Map ID="80235" Name="影魂(布莱克超进化副本)" MapType="0" ScreenNum="1"  InitX="420" InitY="450" dream="1" />
+	<Map ID="80236" Name="魔靥(布莱克超进化副本)" MapType="0" ScreenNum="1"  InitX="500" InitY="400" />
+	<Map ID="80237" Name="龙影(布莱克超进化副本)" MapType="1" ScreenNum="5"  InitX="420" InitY="450" dream="1" />
+	<Map ID="80238" Name="圣坛(布莱克超进化副本)" MapType="0" ScreenNum="1"  InitX="422" InitY="462" />
+
+	<Map ID="80239" Name="β空间(副本)" MapType="1" ScreenNum="5" InitX="420"  InitY="450" dream="1" />
+
+	<Map ID="80240" Name="魔域军团(副本)" MapType="1" ScreenNum="5" InitX="420"  InitY="450" dream="1" />
+
+	<Map ID="80241" Name="赫尔卡星荒地(圣翼雷神副本)" MapType="0" ScreenNum="1"  InitX="420" InitY="450" dream="1" />
+	<Map ID="80242" Name="赫尔卡星荒地(圣翼雷神副本)" MapType="0" ScreenNum="1"  InitX="500" InitY="400" dream="1" />
+	<Map ID="80243" Name="能源之潮(圣翼雷神副本)" MapType="0" ScreenNum="1"  InitX="420" InitY="450" dream="1" />
+	<Map ID="80244" Name="赫然卡荒地(圣翼雷神副本)" MapType="0" ScreenNum="1"  InitX="422" InitY="462" dream="1" />
+
+	<Map ID="80245" Name="雷伊超进化(副本)" MapType="0" ScreenNum="1" InitX="422"  InitY="462" dream="1" />
+
+	<Map ID="80246" Name="最后一战(副本)" MapType="1" ScreenNum="5" InitX="420"  InitY="450" dream="1" />
+	<Map ID="80247" Name="草目氏族主城(副本)" MapType="1" ScreenNum="5" InitX="420"  InitY="450" dream="1" />
+	<Map ID="80248" Name="火焰山(朱雀超进化)" MapType="0" ScreenNum="1" InitX="422"  InitY="462" dream="1" />
+	<Map ID="80249" Name="水源之心(脉灵神超进化)" MapType="0" ScreenNum="1"  InitX="422" InitY="462" dream="1" />
+	<Map ID="80300" Name="神域天尊殿" MapType="1" ScreenNum="5" InitX="420"  InitY="450" />
+
+	<Map ID="80301" Name="邪神降临(副本)" MapType="1" ScreenNum="5" InitX="420"  InitY="450" dream="1" />
+	<Map ID="80302" Name="王者遗迹(副本)" MapType="1" ScreenNum="5" InitX="420"  InitY="450" dream="1" />
+	<Map ID="80303" Name="星球战境(副本)" MapType="1" ScreenNum="5" InitX="420"  InitY="450" />
+	<Map ID="80304" Name="庆典海滩" MapType="0" ScreenNum="1" InitX="467"  InitY="322" />
+	<Map ID="80305" Name="神域天门" MapType="1" ScreenNum="5" InitX="420"  InitY="450" />
+	<Map ID="80308" Name="创界大帝降临" MapType="1" ScreenNum="5" InitX="420"  InitY="450" />
+	<Map ID="80307" Name="玄云之冠" MapType="1" ScreenNum="5" InitX="420"  InitY="450" />
+	<Map ID="80306" Name="遗忘之岛" MapType="0" ScreenNum="1" InitX="375"  InitY="323" dream="1" />
+	<Map ID="80309" Name="遗忘之岛" MapType="0" ScreenNum="1" InitX="375" InitY="323" dream="1"/>
+	<Map ID="80310" Name="创世三帝" MapType="1" ScreenNum="5" InitX="420"  InitY="450" dream="1"/>
+	<Map ID="80311" Name="冰沁宫殿(副本)" MapType="1" ScreenNum="5" InitX="420"  InitY="450" dream="1"/>
+
+	<Map ID="80312" Name="β空间(副本)" MapType="1" ScreenNum="5" InitX="420" InitY="450" />
+	<Map ID="80313" Name="奥林匹斯山(副本)" MapType="1" ScreenNum="5" InitX="420"  InitY="450" />
+	<Map ID="80314" Name="王命之涯" MapType="1" ScreenNum="5" InitX="420"  InitY="450" />
+	<Map ID="80315" Name="开元大帝" MapType="1" ScreenNum="5" InitX="420" InitY="450" dream = "1"/>
+	<Map ID="80316" Name="幽静珊瑚穴副本" MapType="1" ScreenNum="5" InitX="420"  InitY="450" dream = "1"/>
+
+	<Map ID="80317" Name="幻空岭(副本)" MapType="1" ScreenNum="5" InitX="420"  InitY="450" dream = "1"/>
+	<Map ID="80318" Name="烈火版幻空领" MapType="1" ScreenNum="5" InitX="420"  InitY="450" dream = "1"/>
+	<Map ID="80319" Name="伊特角斗场(副本)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="80320" Name="烈焰峡谷[副本]" MapType="1" ScreenNum="5" InitX="420"  InitY="450" dream = "1"/>
+	<Map ID="80321" Name="神域天尊殿(副本)" MapType="0" ScreenNum="1" InitX="660"  InitY="310" dream="1" />
+	<Map ID="80322" Name="混沌出现" MapType="0" ScreenNum="1" InitX="660"  InitY="310" dream="1" />
+	<Map ID="80323" Name="幽静珊瑚穴(副本)" MapType="0" ScreenNum="1" InitX="660"  InitY="310" dream="1" />
+	<Map ID="80324" Name="风暴悬崖(副本)" MapType="0" ScreenNum="1" InitX="660"  InitY="310" dream="1" />
+	<Map ID="80325" Name="虫穴地牢[副本]" MapType="0" ScreenNum="1" InitX="467"  InitY="322" dream="1" />
+	<Map ID="80326" Name="萤火之墓" MapType="0" ScreenNum="1" InitX="300"  InitY="440" />
+
+	<Map ID="80327" Name="秘密基地(副本2)" MapType="0" ScreenNum="1" InitX="300"  InitY="440" dream="1"/>
+	<Map ID="80328" Name="幽静珊瑚穴(副本)" MapType="0" ScreenNum="1" InitX="300"  InitY="440" dream="1"/>
+	<Map ID="80329" Name="噬魂塔(副本)" MapType="0" ScreenNum="1" InitX="300"  InitY="440" dream="1"/>
+	<Map ID="80330" Name="帝王星域(副本)" MapType="0" ScreenNum="1" InitX="300"  InitY="440" dream="1"/>
+
+	<Map ID="80550" Name="微光湖畔(副本)" MapType="0" ScreenNum="1" InitX="300"  InitY="440" dream="1"/>
+		<Map ID="80331" Name="幽静珊瑚穴(副本)" MapType="0" ScreenNum="1" InitX="660"  InitY="310" dream="1" />
+	<Map ID="80332" Name="风暴悬崖(副本)" MapType="0" ScreenNum="1" InitX="660"  InitY="310" dream="1" />
+
+	<Map ID="80333" Name="秘密基地(副本)" MapType="0" ScreenNum="1" InitX="660"  InitY="310" dream="1" />
+	<!--
+	<Map ID="80334" Name="灵能通径" MapType="0" ScreenNum="1" InitX="660"  InitY="310" dream="1" />
+	 -->
+	<Map ID="80335" Name="梦魇冰轴" MapType="0" ScreenNum="1" InitX="660"  InitY="310" dream="1" />
+	<Map ID="80336" Name="沁灵之雪" MapType="0" ScreenNum="1" InitX="660"  InitY="310" dream="1" />
+	<Map ID="80337" Name="漩涡风眼" MapType="0" ScreenNum="1" InitX="660"  InitY="310" dream="1" />
+
+	<Map ID="80338" Name="冰脊之巅(九尾冰系超进化副本)" MapType="1" ScreenNum="5"  InitX="420" InitY="450" dream="1" />
+	<Map ID="80339" Name="雪之湖泊(九尾冰系超进化副本)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="80340" Name="原始雪森林(九尾冰系超进化副本)" MapType="1" ScreenNum="5"  InitX="420" InitY="450" dream="1" />
+	<Map ID="80341" Name="雪之溶洞(九尾冰系超进化副本)" MapType="0" ScreenNum="1"  InitX="550" InitY="380" dream="1" />
+	<Map ID="80342" Name="经验之门关卡(副本)" MapType="0" ScreenNum="1"  InitX="550" InitY="380" dream="1" />
+	<Map ID="80343" Name="诺亚方舟(副本)" MapType="0" ScreenNum="1"  InitX="550" InitY="380" dream="1" />
+
+	<Map ID="80344" Name="船长室-新(副本)" MapType="0" ScreenNum="1"  InitX="480" InitY="380" dream="1" />
+	<Map ID="80345" Name="帝国废墟(副本)" MapType="0" ScreenNum="1"  InitX="420" InitY="450" dream="1" />
+	<Map ID="80346" Name="灵能通径(副本)" MapType="0" ScreenNum="1"  InitX="375" InitY="323" dream="1" />
+	<Map ID="80347" Name="船长室-旧(副本)" MapType="0" ScreenNum="1"  InitX="480" InitY="380" dream="1" />
+	<Map ID="80348" Name="太空武斗场(斗神超进化挑战1副本)" MapType="0" ScreenNum="1"  InitX="480" InitY="380" dream="1" />
+	<Map ID="80349" Name="太空武斗场(斗神超进化挑战2副本)" MapType="0" ScreenNum="1"  InitX="480" InitY="380" dream="1" />
+
+	<Map ID="80350" Name="新手引导场景1" MapType="0" ScreenNum="1"  InitX="480" InitY="380" dream="1" />
+	<Map ID="80351" Name="新手引导场景2" MapType="0" ScreenNum="1"  InitX="480" InitY="380" dream="1" />
+	<Map ID="80352" Name="新手引导场景3" MapType="0" ScreenNum="1"  InitX="480" InitY="380" dream="1" />
+	<Map ID="80353" Name="新手引导场景4" MapType="0" ScreenNum="1"  InitX="480" InitY="380" dream="1" />
+	<Map ID="80354" Name="新手引导场景5" MapType="0" ScreenNum="1"  InitX="480" InitY="380" dream="1" />
+	<Map ID="80361" Name="神秘的太空武斗场" MapType="0" ScreenNum="1"  InitX="480" InitY="380" dream="1" />
+	<Map ID="80362" Name="神秘的太空武斗场(副本)" MapType="0" ScreenNum="1"  InitX="480" InitY="380" dream="1" />
+	<Map ID="80363" Name="船长室(英雄雷霆挑战副本)" MapType="0" ScreenNum="1"  InitX="550" InitY="380" dream="1" />
+
+	<Map ID="80364" Name="观星台(副本)" MapType="0" ScreenNum="1"  InitX="467"  InitY="322" dream="1" />
+
+	<Map ID="80365" Name="异蘑世界(副本)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="80366" Name="荆棘小道(副本)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="80367" Name="信奉广场(副本)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="80368" Name="地球表面(副本)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="80369" Name="地心兽追击" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="80370" Name="地壳" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="80371" Name="地幔" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="80372" Name="地核" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="80373" Name="地球表面(副本)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="80374" Name="战地海岸(副本)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="80375" Name="要塞指挥室(副本)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="80376" Name="基地(副本)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="80378" Name="萤火之墓(副本)" MapType="0" ScreenNum="1" InitX="300"  InitY="440" />
+	<Map ID="80379" Name="诺亚方舟(副本2)" MapType="0" ScreenNum="1"  InitX="550" InitY="380" dream="1" />
+	<Map ID="80380" Name="世界BOSS" MapType="0" ScreenNum="1"  InitX="550" InitY="380"/>
+	<Map ID="80381" Name="后花园(副本)" MapType="0" ScreenNum="1"  InitX="550" InitY="380" dream="1"/>
+	<Map ID="80382" Name="万圣糖果树(副本)" MapType="0" ScreenNum="1"  InitX="550" InitY="380" dream="1"/>
+	<Map ID="80383" Name="地球表面(封印!远古地魔副本)" MapType="0" ScreenNum="1"  InitX="510" InitY="510" dream="1"/>
+	<Map ID="80384" Name="能量工厂(一步之遥副本)" MapType="0" ScreenNum="1"  InitX="510" InitY="510" dream="1"/>
+	<Map ID="80385" Name="超能广场(回归超能氏族副本)" MapType="0" ScreenNum="1"  InitX="510" InitY="510" dream="1"/>
+	<Map ID="80386" Name="穹顶大厅(鬼瞳)" MapType="0" ScreenNum="1" InitX="300" InitY="500" dream="1"/>
+	<Map ID="80387" Name="神风祭台(副本)" MapType="0" ScreenNum="1" InitX="420"  InitY="450" dream="1" />
+	<Map ID="80388" Name="镜中世界-主城" MapType="0" ScreenNum="1" InitX="420"  InitY="450" dream="1"/>
+	<Map ID="80389" Name="镜中世界-萤火之墓" MapType="0" ScreenNum="1" InitX="420"  InitY="450" dream="1"/>
+	<Map ID="80390" Name="镜中世界-虫穴地牢" MapType="0" ScreenNum="1" InitX="420"  InitY="450" dream="1"/>
+	<Map ID="80391" Name="梦空间" MapType="0" ScreenNum="1" InitX="375" InitY="323" dream="1"/>
+	<Map ID="80392" Name="异空间" MapType="0" ScreenNum="1" InitX="420" InitY="450" dream="1"/>
+	<Map ID="80393" Name="星魂空间" MapType="0" ScreenNum="1" InitX="550" InitY="380" dream="1" />
+	<Map ID="80394" Name="虫林仙境(副本)" MapType="0" ScreenNum="1" InitX="550" InitY="380" dream="1" />
+
+	<Map ID="80395" Name="坛塔(副本)" MapType="0" ScreenNum="1" InitX="620"  InitY="360" dream="1"/>
+	<Map ID="80396" Name="巨树森林(驯龙战纪副本)" MapType="0" ScreenNum="1" InitX="574"  InitY="328" dream="1" />
+	<Map ID="80397" Name="神龙栖地(天龙骑士副本)" MapType="0" ScreenNum="1" InitX="370"  InitY="440" dream="1"/>
+	<Map ID="80398" Name="冰封魔域(天龙骑士副本)" MapType="0" ScreenNum="1" InitX="420"  InitY="450" dream="1"/>
+	<Map ID="80399" Name="海市蜃楼(天龙骑士副本)" MapType="0" ScreenNum="1" InitX="420"  InitY="450" dream="1"/>
+	<Map ID="80400" Name="地道之路(迪克超进化副本)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="80401" Name="冰封魔域(迪克超进化副本)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="80403" Name="冰脊之脉(驯龙第四季副本)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+
+	<Map ID="80404" Name="蛮神战场(东界王活动副本)" MapType="0" ScreenNum="1"  InitX="420" InitY="450" dream="1" />
+	<Map ID="80405" Name="六煞魔宫(东界王活动副本)" MapType="0" ScreenNum="1"  InitX="500" InitY="400" dream="1" />
+	<Map ID="80406" Name="火焰山(东界王活动副本)" MapType="0" ScreenNum="1"  InitX="420" InitY="450" dream="1" />
+	<Map ID="80407" Name="神域回廊(东界王活动副本)" MapType="0" ScreenNum="1"  InitX="422" InitY="462" dream="1" />
+
+	<Map ID="80408" Name="三八跑道线(沙)(西界王活动副本)" MapType="0" ScreenNum="1"  InitX="420" InitY="450" dream="1" />
+	<Map ID="80409" Name="三八擂台(西界王活动副本)" MapType="0" ScreenNum="1"  InitX="500" InitY="400" dream="1" />
+	<Map ID="80410" Name="海市蜃楼(西界王活动副本)" MapType="0" ScreenNum="1"  InitX="420" InitY="450" dream="1" />
+	<Map ID="80411" Name="神域回廊(西界王活动副本)" MapType="0" ScreenNum="1"  InitX="422" InitY="462" dream="1" />
+
+	<Map ID="80412" Name="烈焰峡谷(南界王活动副本)" MapType="0" ScreenNum="1"  InitX="420" InitY="450" dream="1" />
+	<Map ID="80413" Name="赤链山脉(南界王活动副本)" MapType="0" ScreenNum="1"  InitX="500" InitY="400" dream="1" />
+	<Map ID="80414" Name="火焰山(南界王活动副本)" MapType="0" ScreenNum="1"  InitX="420" InitY="450" dream="1" />
+	<Map ID="80415" Name="神域回廊(南界王活动副本)" MapType="0" ScreenNum="1"  InitX="422" InitY="462" dream="1" />
+
+	<Map ID="80416" Name="漩涡谷地(北界王活动副本)" MapType="0" ScreenNum="1"  InitX="420" InitY="450" dream="1" />
+	<Map ID="80417" Name="六煞魔宫(北界王活动副本)" MapType="0" ScreenNum="1"  InitX="500" InitY="400" dream="1" />
+	<Map ID="80418" Name="狂暴漩涡(北界王活动副本)" MapType="0" ScreenNum="1"  InitX="420" InitY="450" dream="1" />
+	<Map ID="80419" Name="神域回廊(北界王活动副本)" MapType="0" ScreenNum="1"  InitX="422" InitY="462" dream="1" />
+	<Map ID="80420" Name="贪婪回廊(副本)" MapType="0" ScreenNum="1" InitX="467"  InitY="322" dream="1"/>
+
+	<Map ID="80421" Name="残骸入口(梦境宝藏)" MapType="0" ScreenNum="1" InitX="490"  InitY="450" dream="1"/>
+	<Map ID="80422" Name="水仙草界(梦境宝藏)" MapType="0" ScreenNum="1" InitX="120"  InitY="380" Weather="2" dream="1"/>
+	<Map ID="80423" Name="荆棘林(梦境宝藏)" MapType="1" ScreenNum="1" InitX="500"  InitY="400" Weather="1" dream="1"/>
+	<Map ID="80424" Name="幻影崖(梦境宝藏)" MapType="0" ScreenNum="1" InitX="120"  InitY="380" dream="1"/>
+	<Map ID="80425" Name="漩涡峡谷(梦境宝藏)" MapType="0" ScreenNum="1" InitX="540"  InitY="480" dream="1"/>
+	<Map ID="80426" Name="残骸通道(梦境宝藏)" MapType="0" ScreenNum="1" InitX="360"  InitY="460" dream="1"/>
+	<Map ID="80427" Name="幽静珊瑚穴(梦境宝藏)" MapType="0" ScreenNum="1" InitX="470"  InitY="280" dream="1"/>
+	<Map ID="80428" Name="淘米市场(梦境宝藏)" MapType="0" ScreenNum="1" InitX="445"  InitY="442" dream="1"/>
+	<Map ID="80429" Name="三八跑道线(梦境宝藏)" MapType="0" ScreenNum="1" InitX="500"  InitY="430" dream="1"/>
+	<Map ID="80430" Name="黄金之路(梦境宝藏)" MapType="0" ScreenNum="1" InitX="451"  InitY="461" dream="1"/>
+	<Map ID="80431" Name="灰烬岔口(梦境宝藏)" MapType="0" ScreenNum="1" InitX="394"  InitY="454" dream="1"/>
+	<Map ID="80432" Name="冰之谷(梦境宝藏)" MapType="0" ScreenNum="1" InitX="420"  InitY="450" dream="1"/>
+	<Map ID="80433" Name="娜钱莱宫殿(梦境宝藏)" MapType="0" ScreenNum="1" InitX="500"  InitY="379" dream="1"/>
+	<Map ID="80434" Name="地下黑市(梦境宝藏)" MapType="0" ScreenNum="1" InitX="367"  InitY="453" dream="1"/>
+	<Map ID="80435" Name="沙漠之鹰(梦境宝藏)" MapType="0" ScreenNum="1" InitX="641"  InitY="394" dream="1"/>
+
+	<Map ID="80436" Name="焰之森(斑斓圣焰)" MapType="0" ScreenNum="1" InitX="500"  InitY="390">
+		<Monsters Dark="0">
+			<Monster ID="49" LV="20 22" />
+			<Monster ID="39" LV="20 22" />
+			<Monster ID="32" LV="20 22" />
+			<Monster ID="49" LV="20 22" />
+			<Monster ID="39" LV="20 22" />
+			<Monster ID="32" LV="20 22" />
+			<Monster ID="49" LV="20 22" />
+			<Monster ID="39" LV="20 22" />
+			<Monster ID="32" LV="20 22" />
+		</Monsters>
+		<RareMon CheckTime="3" Interval="400 450 500" Remain="50"
+			GetItem="200554">
+			<Mon ID="49" LV="25 27" />
+		</RareMon>
+	</Map>
+
+	<Map ID="80437" Name="三八跑道线(沙)(斑斓圣焰)" MapType="0" ScreenNum="1" InitX="547"  InitY="362">
+		<Monsters Dark="0">
+			<Monster ID="114" LV="37 39" />
+			<Monster ID="211" LV="37 39" />
+			<Monster ID="68" LV="37 39" />
+			<Monster ID="114" LV="37 39" />
+			<Monster ID="211" LV="37 39" />
+			<Monster ID="68" LV="37 39" />
+			<Monster ID="114" LV="37 39" />
+			<Monster ID="211" LV="37 39" />
+			<Monster ID="68" LV="37 39" />
+		</Monsters>
+	</Map>
+	<Map ID="80438" Name="彩虹珊瑚湾(斑斓圣焰)" MapType="0" ScreenNum="1" InitX="520"  InitY="490">
+		<Monsters Dark="0">
+			<Monster ID="26" LV="20 22" />
+			<Monster ID="28" LV="20 22" />
+			<Monster ID="140" LV="20 22" />
+			<Monster ID="26" LV="20 22" />
+			<Monster ID="28" LV="20 22" />
+			<Monster ID="140" LV="20 22" />
+			<Monster ID="26" LV="20 22" />
+			<Monster ID="28" LV="20 22" />
+			<Monster ID="140" LV="20 22" />
+		</Monsters>
+	</Map>
+	<Map ID="80439" Name="贪婪回廊(哈迪斯活动)"  MapType="0" ScreenNum="1"  InitX="420" InitY="450" dream="1"/>
+	<Map ID="80440" Name="冰封魔域(库贝萨超进化活动)"  MapType="0" ScreenNum="1"  InitX="420" InitY="450" dream="1"/>
+	<Map ID="80441" Name="船长室(恶灵兽副本)" MapType="0" ScreenNum="1"  InitX="550" InitY="380" dream="1" />
+
+	<Map ID="800001" Name="冰封魔域(库贝萨超进化活动)"  MapType="0" ScreenNum="1"  InitX="420" InitY="450" dream="1"/>
+	<Map ID="800002" Name="冰封魔域(库贝萨超进化活动)"  MapType="0" ScreenNum="1"  InitX="420" InitY="450" dream="1"/>
+	<Map ID="800003" Name="冰封魔域(库贝萨超进化活动)"  MapType="0" ScreenNum="1"  InitX="420" InitY="450" dream="1"/>
+	<Map ID="800004" Name="冰封魔域(库贝萨超进化活动)"  MapType="0" ScreenNum="1"  InitX="420" InitY="450" dream="1"/>
+	<Map ID="800005" Name="冰封魔域(库贝萨超进化活动)"  MapType="0" ScreenNum="1"  InitX="420" InitY="450" dream="1"/>
+	<Map ID="800006" Name="冰封魔域(库贝萨超进化活动)"  MapType="0" ScreenNum="1"  InitX="420" InitY="450" dream="1"/>
+	<Map ID="800007" Name="冰封魔域(库贝萨超进化活动)"  MapType="0" ScreenNum="1"  InitX="420" InitY="450" dream="1"/>
+	<Map ID="800008" Name="冰封魔域(库贝萨超进化活动)"  MapType="0" ScreenNum="1"  InitX="420" InitY="450" dream="1"/>
+	<Map ID="800009" Name="冰封魔域(库贝萨超进化活动)"  MapType="0" ScreenNum="1"  InitX="420" InitY="450" dream="1"/>
+	<Map ID="800010" Name="冰封魔域(库贝萨超进化活动)"  MapType="0" ScreenNum="1"  InitX="420" InitY="450" dream="1"/>
+	<Map ID="800011" Name="冰封魔域(库贝萨超进化活动)"  MapType="0" ScreenNum="1"  InitX="420" InitY="450" dream="1"/>
+	<Map ID="800012" Name="冰封魔域(库贝萨超进化活动)"  MapType="0" ScreenNum="1"  InitX="420" InitY="450" dream="1"/>
+	<Map ID="800013" Name="冰封魔域(库贝萨超进化活动)"  MapType="0" ScreenNum="1"  InitX="420" InitY="450" dream="1"/>
+
+	<Map ID="800101" Name="冰封魔域(库贝萨超进化活动)"  MapType="0" ScreenNum="1"  InitX="420" InitY="450" dream="1"/>
+	<Map ID="800102" Name="冰封魔域(库贝萨超进化活动)"  MapType="0" ScreenNum="1"  InitX="420" InitY="450" dream="1"/>
+	<Map ID="800103" Name="冰封魔域(库贝萨超进化活动)"  MapType="0" ScreenNum="1"  InitX="420" InitY="450" dream="1"/>
+	<Map ID="800104" Name="冰封魔域(库贝萨超进化活动)"  MapType="0" ScreenNum="1"  InitX="420" InitY="450" dream="1"/>
+	<Map ID="800105" Name="冰封魔域(库贝萨超进化活动)"  MapType="0" ScreenNum="1"  InitX="420" InitY="450" dream="1"/>
+	<Map ID="800106" Name="冰封魔域(库贝萨超进化活动)"  MapType="0" ScreenNum="1"  InitX="420" InitY="450" dream="1"/>
+	<Map ID="800107" Name="冰封魔域(库贝萨超进化活动)"  MapType="0" ScreenNum="1"  InitX="420" InitY="450" dream="1"/>
+	<Map ID="800108" Name="冰封魔域(库贝萨超进化活动)"  MapType="0" ScreenNum="1"  InitX="420" InitY="450" dream="1"/>
+	<Map ID="800109" Name="冰封魔域(库贝萨超进化活动)"  MapType="0" ScreenNum="1"  InitX="420" InitY="450" dream="1"/>
+	<Map ID="800110" Name="冰封魔域(库贝萨超进化活动)"  MapType="0" ScreenNum="1"  InitX="420" InitY="450" dream="1"/>
+	<Map ID="800111" Name="冰封魔域(库贝萨超进化活动)"  MapType="0" ScreenNum="1"  InitX="420" InitY="450" dream="1"/>
+	<Map ID="800112" Name="冰封魔域(库贝萨超进化活动)"  MapType="0" ScreenNum="1"  InitX="420" InitY="450" dream="1"/>
+	<Map ID="800113" Name="冰封魔域(库贝萨超进化活动)"  MapType="0" ScreenNum="1"  InitX="420" InitY="450" dream="1"/>
+
+	<Map ID="800201" Name="冰封魔域(库贝萨超进化活动)"  MapType="0" ScreenNum="1"  InitX="420" InitY="450" dream="1"/>
+	<Map ID="800202" Name="冰封魔域(库贝萨超进化活动)"  MapType="0" ScreenNum="1"  InitX="420" InitY="450" dream="1"/>
+	<Map ID="800203" Name="冰封魔域(库贝萨超进化活动)"  MapType="0" ScreenNum="1"  InitX="420" InitY="450" dream="1"/>
+	<Map ID="800204" Name="冰封魔域(库贝萨超进化活动)"  MapType="0" ScreenNum="1"  InitX="420" InitY="450" dream="1"/>
+	<Map ID="800205" Name="冰封魔域(库贝萨超进化活动)"  MapType="0" ScreenNum="1"  InitX="420" InitY="450" dream="1"/>
+	<Map ID="800206" Name="冰封魔域(库贝萨超进化活动)"  MapType="0" ScreenNum="1"  InitX="420" InitY="450" dream="1"/>
+	<Map ID="800207" Name="冰封魔域(库贝萨超进化活动)"  MapType="0" ScreenNum="1"  InitX="420" InitY="450" dream="1"/>
+	<Map ID="800208" Name="冰封魔域(库贝萨超进化活动)"  MapType="0" ScreenNum="1"  InitX="420" InitY="450" dream="1"/>
+	<Map ID="800209" Name="冰封魔域(库贝萨超进化活动)"  MapType="0" ScreenNum="1"  InitX="420" InitY="450" dream="1"/>
+	<Map ID="800210" Name="冰封魔域(库贝萨超进化活动)"  MapType="0" ScreenNum="1"  InitX="420" InitY="450" dream="1"/>
+	<Map ID="800211" Name="冰封魔域(库贝萨超进化活动)"  MapType="0" ScreenNum="1"  InitX="420" InitY="450" dream="1"/>
+	<Map ID="800212" Name="冰封魔域(库贝萨超进化活动)"  MapType="0" ScreenNum="1"  InitX="420" InitY="450" dream="1"/>
+
+	<Map ID="800301" Name="冰封魔域(库贝萨超进化活动)"  MapType="0" ScreenNum="1"  InitX="420" InitY="450" dream="1"/>
+	<Map ID="800302" Name="冰封魔域(库贝萨超进化活动)"  MapType="0" ScreenNum="1"  InitX="420" InitY="450" dream="1"/>
+	<Map ID="800303" Name="冰封魔域(库贝萨超进化活动)"  MapType="0" ScreenNum="1"  InitX="420" InitY="450" dream="1"/>
+	<Map ID="800304" Name="冰封魔域(库贝萨超进化活动)"  MapType="0" ScreenNum="1"  InitX="420" InitY="450" dream="1"/>
+	<Map ID="800305" Name="冰封魔域(库贝萨超进化活动)"  MapType="0" ScreenNum="1"  InitX="420" InitY="450" dream="1"/>
+	<Map ID="800306" Name="冰封魔域(库贝萨超进化活动)"  MapType="0" ScreenNum="1"  InitX="420" InitY="450" dream="1"/>
+	<Map ID="800307" Name="冰封魔域(库贝萨超进化活动)"  MapType="0" ScreenNum="1"  InitX="420" InitY="450" dream="1"/>
+	<Map ID="800308" Name="冰封魔域(库贝萨超进化活动)"  MapType="0" ScreenNum="1"  InitX="420" InitY="450" dream="1"/>
+	<Map ID="800309" Name="冰封魔域(库贝萨超进化活动)"  MapType="0" ScreenNum="1"  InitX="420" InitY="450" dream="1"/>
+	<Map ID="800310" Name="冰封魔域(库贝萨超进化活动)"  MapType="0" ScreenNum="1"  InitX="420" InitY="450" dream="1"/>
+	<Map ID="800311" Name="冰封魔域(库贝萨超进化活动)"  MapType="0" ScreenNum="1"  InitX="420" InitY="450" dream="1"/>
+	<Map ID="800312" Name="冰封魔域(库贝萨超进化活动)"  MapType="0" ScreenNum="1"  InitX="420" InitY="450" dream="1"/>
+	<Map ID="800313" Name="冰封魔域(库贝萨超进化活动)"  MapType="0" ScreenNum="1"  InitX="420" InitY="450" dream="1"/>
+
+	<Map ID="80442" Name="资料室(雷霆超进化)" MapType="0" ScreenNum="1" InitX="480"  InitY="380" dream="1"/>
+	<Map ID="80443" Name="王者遗迹(世界Boss约瑟王活动副本)" MapType="1" ScreenNum="5" InitX="420"  InitY="450" dream="1"/>
+	<Map ID="80444" Name="微光湖畔(副本)"  MapType="0" ScreenNum="1"  InitX="420" InitY="450" dream="1"/>
+	<Map ID="80445" Name="视界原野(副本)"  MapType="0" ScreenNum="1"  InitX="420" InitY="450" dream="1"/>
+	<Map ID="80446" Name="脉流之瀑(副本)"  MapType="0" ScreenNum="1"  InitX="420" InitY="450" dream="1"/>
+	<Map ID="80447" Name="火源通径(副本)"  MapType="0" ScreenNum="1"  InitX="420" InitY="450" dream="1"/>
+	<Map ID="80448" Name="纠结之藤(副本)"  MapType="0" ScreenNum="1"  InitX="420" InitY="450" dream="1"/>
+	<Map ID="80449" Name="翼灵空岛(翼灵兽超进化)" MapType="0" ScreenNum="1" InitX="490"  InitY="450" Weather="8" dream="1"/>
+	<Map ID="80450" Name="微光湖畔(副本)"  MapType="0" ScreenNum="1"  InitX="420" InitY="450" dream="1"/>
+	<Map ID="80451" Name="微光湖畔(副本)"  MapType="0" ScreenNum="1"  InitX="420" InitY="450" dream="1"/>
+	<Map ID="80452" Name="切尔诺荒原(雷煞超进化副本)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="80453" Name="切尔诺荒原(雷煞超进化BOSS副本)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="80454" Name="乌黑矿坑" MapType="0" ScreenNum="1" InitX="432"  InitY="402" dream="1"/>
+	<Map ID="80456" Name="熔岩地穴(翼灵兽超进化)" MapType="1" ScreenNum="5" InitX="313"  InitY="417" dream="1"/>
+	<Map ID="80457" Name="幻空通道(火神诏令)" MapType="0" ScreenNum="1" InitX="520"  InitY="400" dream="1" />
+	<Map ID="80458" Name="灰烬深渊(火神诏令)" MapType="0" ScreenNum="1" InitX="467"  InitY="322" dream="1" />
+	<Map ID="80459" Name="赤链山脉(火神诏令)" MapType="0" ScreenNum="1"  InitX="500" InitY="400" dream="1" />
+	<Map ID="80460" Name="火源通径(凤凰超进化)" MapType="1" ScreenNum="5"  InitX="420" InitY="450" dream="1" />
+	<Map ID="80461" Name="风涡工房(陶神超进化副本)" MapType="0" ScreenNum="1" InitX="862"  InitY="251" dream="1">
+		<Monsters Dark="0">
+			<Monster ID="266" LV="20 25" />
+			<Monster ID="266" LV="20 25" />
+			<Monster ID="266" LV="20 25" />
+			<Monster ID="266" LV="20 25" />
+			<Monster ID="266" LV="20 25" />
+			<Monster ID="266" LV="20 25" />
+			<Monster ID="266" LV="20 25" />
+			<Monster ID="266" LV="20 25" />
+			<Monster ID="266" LV="20 25" />
+		</Monsters>
+		<Monsters Dark="1">
+			<Monster ID="266" LV="20 25" />
+			<Monster ID="266" LV="20 25" />
+			<Monster ID="266" LV="20 25" />
+			<Monster ID="266" LV="20 25" />
+			<Monster ID="266" LV="20 25" />
+			<Monster ID="266" LV="20 25" />
+			<Monster ID="266" LV="20 25" />
+			<Monster ID="266" LV="20 25" />
+			<Monster ID="266" LV="20 25" />
+		</Monsters>
+	</Map>
+	<Map ID="80462" Name="隐居木屋(S炼狱告急副本)" MapType="0" ScreenNum="1" InitX="862"  InitY="251" dream="1"/>
+	<Map ID="80463" Name="炼狱入口(S炼狱告急副本)" MapType="0" ScreenNum="1" InitX="370"  InitY="440" dream="1"/>
+	<Map ID="80464" Name="亡灵13区(黑暗的狙击)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="80465" Name="沙之迷穴(原魂兽第二章)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+<!-- 	<Map ID="80466" Name="娜钱莱宫殿(小梦的轰趴派对)" MapType="0" ScreenNum="1" InitX="500"  InitY="379" dream="1"/> -->
+	<Map ID="80467" Name="姜饼城(梦想回馈礼)" MapType="0" ScreenNum="1" InitX="500"  InitY="379" dream="1"/>
+	<Map ID="80468" Name="神域天门(战神的天阶)" MapType="0" ScreenNum="1" InitX="500"  InitY="379" dream="1"/>
+	<Map ID="80469" Name="萤火之墓(夜行龙骑士)" MapType="0" ScreenNum="1" InitX="300"  InitY="440" dream="1"/>
+	<Map ID="80470" Name="六煞魔宫(盖亚神迹觉醒)" MapType="1" ScreenNum="5"  InitX="420" InitY="450" dream="1" />
+	<Map ID="80471" Name="战神觉醒坛(界王神超进化)" MapType="1" ScreenNum="5"  InitX="420" InitY="450" dream="1" />
+	<Map ID="80472" Name="神域天门(界王神超进化)" MapType="1" ScreenNum="5"  InitX="420" InitY="450" dream="1" />
+	<Map ID="80473" Name="界王圣域(界王神超进化)" MapType="1" ScreenNum="5"  InitX="420" InitY="450" dream="1" />
+	<Map ID="80474" Name="界王圣域(界王神超进化)" MapType="1" ScreenNum="5"  InitX="420" InitY="450" dream="1" />
+	<Map ID="80475" Name="诺亚方舟(神盾破坏王)" MapType="0" ScreenNum="1"  InitX="550" InitY="380" dream="1" />
+	<Map ID="80476" Name="旋云之冠(萨兰古尔之剑)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="80478" Name="神魔之界(缪斯神迹觉醒)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="80479" Name="神坛(世界Boss圣王皓玥活动副本)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="80480" Name="赫尔卡星荒地(雷神之翼初现)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="80481" Name="赫尔卡星荒地(家族荣耀雷诺)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="80482" Name="灰烬深渊(神迹休罗斯)" MapType="0" ScreenNum="1" InitX="653"  InitY="452" dream="1" />
+	<Map ID="80483" Name="帝国废墟(萨伦那些事)" MapType="1" ScreenNum="5" InitX="420"  InitY="450" dream="1" />
+	<Map ID="80484" Name="漩涡风眼(万龙之尊)" MapType="0" ScreenNum="1" InitX="660"  InitY="310" dream="1" />
+
+	<Map ID="80485" Name="青竹迷境(兔爷的月关胶囊)" MapType="0" ScreenNum="1" InitX="660"  InitY="310" dream="1" />
+	<Map ID="80486" Name="水源之心(神迹迪兰特)" MapType="0" ScreenNum="1" InitX="653"  InitY="452" dream="1" />
+	<Map ID="80487" Name="目灵祭台(神遁拉奥叶)" MapType="0" ScreenNum="1" InitX="862"  InitY="251" dream="1" />
+	<Map ID="80488" Name="月宫通道(神迹月神)" MapType="0" ScreenNum="1" InitX="862"  InitY="251" dream="1" />
+	<Map ID="80489" Name="冰封魔域(世界boss)" MapType="0" ScreenNum="1" InitX="862"  InitY="251" dream="1" />
+
+	<Map ID="80491" Name="新手引导改版场景2" MapType="0" ScreenNum="1"  InitX="480" InitY="380" dream="1" />
+	<Map ID="80492" Name="神宠领域" MapType="0" ScreenNum="1"  InitX="480" InitY="380" dream="1" />
+
+	<Map ID="80493" Name="风涡工房(维奇输出副本)" MapType="0" ScreenNum="1" InitX="861"  InitY="252" dream="1">
+		<Monsters Dark="0">
+			<Monster ID="712" LV="15 20" />
+			<Monster ID="712" LV="15 20" />
+			<Monster ID="712" LV="15 20" />
+			<Monster ID="712" LV="15 20" />
+			<Monster ID="712" LV="15 20" />
+			<Monster ID="712" LV="15 20" />
+			<Monster ID="712" LV="15 20" />
+			<Monster ID="712" LV="15 20" />
+			<Monster ID="712" LV="15 20" />
+		</Monsters>
+	</Map>
+
+	<Map ID="80494" Name="庆典海滩(无禽动物园副本)" MapType="0" ScreenNum="1" InitX="861"  InitY="252" dream="1"/>
+	<Map ID="80495" Name="影月林(艾瑞克输出副本)" MapType="0" ScreenNum="1" InitX="375"  InitY="323"  dream="1">
+		<Monsters Dark="0">
+			<Monster ID="170" LV="15 20" />
+			<Monster ID="170" LV="15 20" />
+			<Monster ID="170" LV="15 20" />
+			<Monster ID="170" LV="15 20" />
+			<Monster ID="170" LV="15 20" />
+			<Monster ID="170" LV="15 20" />
+			<Monster ID="170" LV="15 20" />
+			<Monster ID="170" LV="15 20" />
+			<Monster ID="170" LV="15 20" />
+		</Monsters>
+	</Map>
+	<Map ID="80496" Name="飞翼之核(万斯输出)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" >
+	    <Monsters Dark="0">
+			<Monster ID="172" LV="15 20" />
+			<Monster ID="172" LV="15 20" />
+			<Monster ID="172" LV="15 20" />
+			<Monster ID="172" LV="15 20" />
+			<Monster ID="172" LV="15 20" />
+			<Monster ID="172" LV="15 20" />
+			<Monster ID="172" LV="15 20" />
+			<Monster ID="172" LV="15 20" />
+			<Monster ID="172" LV="15 20" />
+		</Monsters>
+	</Map>
+	<Map ID="80497" Name="六煞魔宫(萨特)" MapType="0" ScreenNum="1" InitX="467"  InitY="322" dream="1" />
+	<Map ID="80498" Name="爪灵兽祭坛(爪灵兽超进化)" MapType="0" ScreenNum="1" InitX="490"  InitY="450" />
+	<Map ID="80499" Name="熔岩地穴(圣甲雷鸣)" MapType="1" ScreenNum="5" InitX="313"  InitY="417" />
+	<Map ID="80500" Name="秘密基地(圣甲幻瞳)" MapType="0" ScreenNum="1" InitX="660"  InitY="310" dream="1" />
+	<Map ID="80501" Name="星球战境(圣甲狂战)" MapType="0" ScreenNum="5" InitX="313"  InitY="417" dream="1" />
+	<Map ID="80502" Name="切尔诺荒原(圣甲地裂)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="80503" Name="β空间(圣甲永夜)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="80504" Name="遗忘之岛(清风白帝)" MapType="0" ScreenNum="1" InitX="375" InitY="323" dream="1"/>
+	<Map ID="80505" Name="影子密室(混元黑帝)" MapType="0" ScreenNum="1" InitX="245" InitY="377" dream="1"/>
+	<Map ID="80506" Name="蛮神战场(罗刹青帝)" MapType="0" ScreenNum="1" InitX="245" InitY="377" dream="1"/>
+	<Map ID="80507" Name="火神道场(赤火炎帝)" MapType="0" ScreenNum="1" InitX="245" InitY="377" dream="1"/>
+	<Map ID="80508" Name="神次元(光明皇帝)" MapType="0" ScreenNum="1" InitX="800" InitY="600" dream="1"/>
+	<Map ID="80509" Name="影子密室(副本)" MapType="0" ScreenNum="1" InitX="480"  InitY="380"/>
+	<Map ID="80510" Name="暗影氏族主城(副本)" MapType="0" ScreenNum="1" InitX="375"  InitY="323" />
+	<Map ID="80511" Name="影月林(副本)" MapType="0" ScreenNum="1" InitX="375"  InitY="323" />
+	<Map ID="80512" Name="实验禁地(副本-暗伊特)" MapType="0" ScreenNum="1" InitX="320"  InitY="360"/>
+	<Map ID="80513" Name="暗影氏族主城(副本-暗伊特)" MapType="0" ScreenNum="1" InitX="375"  InitY="323" />
+	<Map ID="80514" Name="伊特角斗场(副本-暗伊特)" MapType="0" ScreenNum="1" InitX="370"  InitY="440" />
+	<Map ID="80515" Name="暗影氏族主城(主线副本)" MapType="0" ScreenNum="1" InitX="375"  InitY="323" />
+	<Map ID="80516" Name="神秘研究院(主线副本)" MapType="0" ScreenNum="1" InitX="862"  InitY="251"/>
+	<Map ID="80517" Name="御风中枢(主线副本)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="80518" Name="约瑟战境(副本)" MapType="0" ScreenNum="1" InitX="480"  InitY="380" />
+	<Map ID="80519" Name="飞翼氏族主城(主线副本)"  MapType="0" ScreenNum="1" InitX="510"  InitY="340"/>
+	<Map ID="80520" Name="资料室(主线副本)" MapType="0" ScreenNum="1" InitX="480"  InitY="380" dream="1"/>
+	<Map ID="80521" Name="研究院(主线副本)" MapType="0" ScreenNum="1" InitX="871"  InitY="537" dream="1"/>
+	<Map ID="80522" Name="汲雨之岛(主线副本)" MapType="0" ScreenNum="1" InitX="767"  InitY="455" dream="1"/>
+	<Map ID="80523" Name="云海藏书(主线副本)" MapType="0" ScreenNum="1" InitX="715"  InitY="510" dream="1"/>
+	<Map ID="80524" Name="研究院(主线副本2)" MapType="0" ScreenNum="1" InitX="80"  InitY="550" dream="1"/>
+	<Map ID="80525" Name="星象之台(主线副本)" MapType="0" ScreenNum="1" InitX="80"  InitY="550" dream="1"/>
+	<Map ID="80526" Name="云海藏书" MapType="0" ScreenNum="1" InitX="715"  InitY="510" dream="1"/>
+	<Map ID="80527" Name="研究院" MapType="0" ScreenNum="1" InitX="871"  InitY="537" dream="1"/>
+	<Map ID="80528" Name="能源之潮(副本)" MapType="0" ScreenNum="1" InitX="785"  InitY="414" />
+	<Map ID="80529" Name="玄云之冠(主线)" MapType="1" ScreenNum="5" InitX="420"  InitY="450" />
+	<Map ID="80530" Name="能源之潮(主线)" MapType="0" ScreenNum="1" InitX="785"  InitY="414" />
+	<Map ID="80531" Name="赫尔卡星荒地(副本)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" />
+	<Map ID="80532" Name="火源通径" MapType="0" ScreenNum="1" InitX="425"  InitY="463" />
+	<Map ID="80533" Name="忏悔殿宗" MapType="0" ScreenNum="1" InitX="467"  InitY="322" />
+
+	<Map ID="80534" Name="风暴悬崖(伊特副本)" MapType="0" ScreenNum="1" InitX="785"  InitY="414" />
+	<Map ID="80535" Name="风涡工房(伊特副本)" MapType="0" ScreenNum="1" InitX="862"  InitY="251">
+	</Map>
+	<Map ID="80536" Name="遗忘之岛(主线)" MapType="0" ScreenNum="1" InitX="375"  InitY="323" dream="1" />
+	<Map ID="80537" Name="云海藏书(主线)" MapType="0" ScreenNum="1" InitX="715"  InitY="510" dream="1"/>
+	<Map ID="80538" Name="遗忘之岛(主)" MapType="0" ScreenNum="1" InitX="375"  InitY="323" dream="1" />
+
+	<Map ID="80539" Name="实验禁地(副本-飞伊特)" MapType="0" ScreenNum="1" InitX="320"  InitY="360"/>
+	<Map ID="80540" Name="遗忘之岛(副本-飞伊特)" MapType="0" ScreenNum="1" InitX="375"  InitY="323" dream="1"/>
+	<Map ID="80541" Name="翼灵空岛(副本-飞伊特)" MapType="0" ScreenNum="1" InitX="490"  InitY="450" Weather="8" />
+
+    <Map ID="80542" Name="飞翼氏族主城(副本-飞伊特)" MapType="0" ScreenNum="1" InitX="510"  InitY="340" />
+    <Map ID="80543" Name="时镜之岛(副本-飞伊特)" MapType="0" ScreenNum="1" InitX="570"  InitY="409" />
+    <Map ID="80544" Name="羽冠之岛(副本-飞伊特)" MapType="0" ScreenNum="1" InitX="564"  InitY="374"/>
+
+    <Map ID="80545" Name="荆棘林(星之躯影)" MapType="1" ScreenNum="1" InitX="500"  InitY="400" Weather="1" dream="1"/>
+    <Map ID="80546" Name="焰之森(星之躯影)" MapType="1" ScreenNum="1" InitX="500"  InitY="400" Weather="1" dream="1"/>
+    <Map ID="80547" Name="银脉山脊(星之躯影)" MapType="1" ScreenNum="1" InitX="500"  InitY="400" Weather="1" dream="1"/>
+
+    <Map ID="80548" Name="资料室(尘封的篇章)" MapType="0" ScreenNum="1" InitX="480"  InitY="380" />
+    <Map ID="80549" Name="王者遗迹(尘封的篇章)" MapType="0" ScreenNum="1" InitX="422"  InitY="462" />
+
+    <Map ID="80551" Name="海市蜃楼(星之臂影)" MapType="1" ScreenNum="1" InitX="420"  InitY="450"/>
+    <Map ID="80552" Name="烈焰峡谷(星之臂影)" MapType="0" ScreenNum="1" InitX="500"  InitY="400" />
+    <Map ID="80553" Name="空港(星之臂影)" MapType="0" ScreenNum="1" InitX="375"  InitY="323"/>
+
+    <Map ID="80554" Name="资料室(另一个星球的守护者)" MapType="0" ScreenNum="1" InitX="480"  InitY="380" />
+    <Map ID="80555" Name="信奉广场(另一个星球的守护者)" MapType="0" ScreenNum="1" InitX="120"  InitY="380" />
+
+
+    <Map ID="80556" Name="奇异的翘曲点" MapType="0" ScreenNum="1" InitX="862"  InitY="251" dream="1" />
+    <Map ID="80557" Name="船长室" MapType="0" ScreenNum="1" InitX="480"  InitY="380" dream="1"/>
+
+    <Map ID="80558" Name="影月林(副本-尼禄)" MapType="0" ScreenNum="1" InitX="375"  InitY="323" dream="1"/>
+    <Map ID="80559" Name="荆棘林(副本-尼禄)" MapType="1" ScreenNum="1" InitX="500"  InitY="400" Weather="1" dream="1"/>
+
+     <Map ID="80560" Name="资料室(炽热的意志)" MapType="0" ScreenNum="1" InitX="480"  InitY="380" dream="1"/>
+     <Map ID="80561" Name="火源通径(炽热的意志)" MapType="0" ScreenNum="1" InitX="425"  InitY="463" dream="1"/>
+
+    <Map ID="80562" Name="地铁站(星之足影)" MapType="0" ScreenNum="1" InitX="484"  InitY="329" dream="1"/>
+    <Map ID="80563" Name="魅罗门(星之足影)" MapType="0" ScreenNum="1" InitX="120"  InitY="400" dream="1"/>
+    <Map ID="80564" Name="微光湖畔(星之足影)" MapType="0" ScreenNum="1" InitX="120"  InitY="380" dream="1"/>
+
+    <Map ID="80565" Name="船长室-旧(副本-帕拉丁)" MapType="0" ScreenNum="1"  InitX="480" InitY="380" dream="1" />
+
+    <Map ID="80566" Name="云海藏书(记忆门扉的开启)" MapType="0" ScreenNum="1" InitX="715"  InitY="510" dream="1"/>
+    <Map ID="80567" Name="研究院(记忆门扉的开启)" MapType="0" ScreenNum="1" InitX="871"  InitY="537" dream="1"/>
+
+
+    <Map ID="80568" Name="风涡工房(星之背影)" MapType="0" ScreenNum="1" InitX="862"  InitY="251" dream="1">
+	</Map>
+	<Map ID="80569" Name="影月林(星之背影)" MapType="0" ScreenNum="1" InitX="375"  InitY="323" dream="1"/>
+	<Map ID="80570" Name="冰晶魔域(星之背影)" MapType="0" ScreenNum="1" InitX="467"  InitY="443" dream="1"/>
+
+
+	<Map ID="80571" Name="风涡工房(星之心影)" MapType="0" ScreenNum="1" InitX="862"  InitY="251" dream="1">
+	</Map>
+	<Map ID="80572" Name="影月林(星之心影)" MapType="0" ScreenNum="1" InitX="375"  InitY="323" dream="1"/>
+	<Map ID="80573" Name="冰晶魔域(星之心影)" MapType="0" ScreenNum="1" InitX="467"  InitY="443" dream="1"/>
+
+	<Map ID="80574" Name="资料室(记忆门扉的开启)" MapType="0" ScreenNum="1" InitX="480"  InitY="380" dream="1"/>
+
+	<Map ID="80575" Name="研究院(回忆门扉的开启)" MapType="0" ScreenNum="1" InitX="871"  InitY="537" dream="1"/>
+	<Map ID="80576" Name="七味小厨(副本)" MapType="0" ScreenNum="1" InitX="529"  InitY="427" />
+
+	<Map ID="80577" Name="研究院(坠落与苏醒之后)" MapType="0" ScreenNum="1" InitX="871"  InitY="537" dream="1"/>
+	<Map ID="80578" Name="研究所地下(坠落与苏醒之后)" MapType="0" ScreenNum="1" InitX="871"  InitY="537" dream="1"/>
+
+    <Map ID="80579" Name="裂空(副本)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+    <Map ID="80580" Name="裂研究所地下(诗风副本)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+
+    <Map ID="80581" Name="研究院地下(坠落与苏醒之后续)" MapType="0" ScreenNum="1" InitX="871"  InitY="537" dream="1"/>
+    <Map ID="80582" Name="神秘研究院(坠落与苏醒之后续)" MapType="0" ScreenNum="1" InitX="862"  InitY="251" dream="1"/>
+    <Map ID="80583" Name="研究所地下(坠落与苏醒之后续1)" MapType="0" ScreenNum="1" InitX="871"  InitY="537" dream="1"/>
+	<Map ID="80584" Name="研究所地下(沉默的风声)" MapType="0" ScreenNum="1" InitX="871"  InitY="537" dream="1"/>
+	<Map ID="80585" Name="神秘研究院(沉默的风声)" MapType="0" ScreenNum="1" InitX="862"  InitY="251" dream="1"/>
+	<Map ID="80586" Name="姜饼城" MapType="0" ScreenNum="1" InitX="467"  InitY="322" dream="1" />
+	<Map ID="80587" Name="微光湖畔" MapType="0" ScreenNum="1" InitX="120"  InitY="380" dream="1" />
+
+	<Map ID="80588" Name="研究院(热血与冷酷的交锋副本)" MapType="0" ScreenNum="1" InitX="871"  InitY="537" dream="1"/>
+	<Map ID="80589" Name="风刃氏族主城(热血与冷酷的交锋副本)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />π
+	<Map ID="80590" Name="风暴(热血与冷酷的交锋副本)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="80591" Name="羽冠之岛(御风赛场)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="80592" Name="御风赛场(御风支线)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="80593" Name="研究院(挣脱的锋芒)" MapType="0" ScreenNum="1" InitX="871"  InitY="537" dream="1"/>
+	<Map ID="80594" Name="风暴(挣脱的锋芒)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
+	<Map ID="80595" Name="冰之谷(副本)" MapType="0" ScreenNum="1" InitX="420"  InitY="450"  dream="1"/>
+	<Map ID="80596" Name="冰之监狱(副本)" MapType="0" ScreenNum="1" InitX="875"  InitY="206" dream="1"/>
+	<Map ID="80597" Name="冰脊山脉(副本)" MapType="0" ScreenNum="1" InitX="420"  InitY="450"  dream="1"/>
+	<Map ID="80598" Name="冰沁宫殿(副本)" MapType="0" ScreenNum="1" InitX="485"  InitY="432"  dream="1"/>
+	<Map ID="80599" Name="研究院(回忆与未来的苦涩)" MapType="0" ScreenNum="1" InitX="871"  InitY="537" dream="1"/>
+	<Map ID="80600" Name="神风祭台(回忆与未来的苦涩)" MapType="0" ScreenNum="1" InitX="871"  InitY="537" dream="1"/>
+	<Map ID="80601" Name="神风祭台(回忆与未来的苦涩)" MapType="0" ScreenNum="1" InitX="785"  InitY="414"  dream="1"/>
+	
+	<Map ID="80602" Name="研究院(故人殊未来)" MapType="0" ScreenNum="1" InitX="871"  InitY="537" dream="1"/>
+	<Map ID="80603" Name="神风祭台(故人殊未来)" MapType="0" ScreenNum="1" InitX="871"  InitY="537" dream="1"/>
+	<Map ID="80604" Name="研究院(故人殊未来)" MapType="0" ScreenNum="1" InitX="871"  InitY="537" dream="1"/>
+
+	<Map ID="80605" Name="研究院(阴谋的踪迹)" MapType="0" ScreenNum="1" InitX="871"  InitY="537" dream="1"/>
+	<Map ID="80606" Name="羽冠之岛(阴谋的踪迹)" MapType="0" ScreenNum="1" InitX="871"  InitY="537" dream="1"/>
+	<Map ID="80607" Name="时镜之岛(阴谋的踪迹)" MapType="0" ScreenNum="1" InitX="871"  InitY="537" dream="1"/>
+	<Map ID="80608" Name="飞翼氏族主城(阴谋的踪迹)" MapType="0" ScreenNum="1" InitX="871"  InitY="537" dream="1"/>
+	
+	<Map ID="80609" Name="研究院(危机与降临)" MapType="0" ScreenNum="1" InitX="871"  InitY="537" dream="1"/>
+	<Map ID="80610" Name="街心花园(危机与降临)" MapType="0" ScreenNum="1" InitX="375"  InitY="323" dream="1"/>
+	<Map ID="80611" Name="飞翼之核(危机与降临)" MapType="0" ScreenNum="1" InitX="510"  InitY="340" dream="1"/>
+	
+	<Map ID="80612" Name="飞翼之核(自由的传承)" MapType="0" ScreenNum="1" InitX="510"  InitY="340" dream="1"/>
+	<Map ID="80613" Name="空港(自由的传承)" MapType="0" ScreenNum="1"  InitX="375" InitY="323" dream="1"/>
+	<Map ID="80614" Name="羽冠之岛(自由的传承)" MapType="0" ScreenNum="1" InitX="871"  InitY="537" dream="1"/>
+	<Map ID="80615" Name="街心花园(自由的传承)" MapType="0" ScreenNum="1" InitX="375"  InitY="323" dream="1"/>
+	<Map ID="80616" Name="星象之台(活动副本)" MapType="0" ScreenNum="1" InitX="80"  InitY="550" dream="1"/>	
+</Maps>

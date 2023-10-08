@@ -1,0 +1,41 @@
+<!-- 
+	id    
+	name 
+	speed 速度:
+		默认36
+	type 为射击类型：
+		中间的1是移动的，两边的都是不移动只播放动画
+		001 无发射效果，无过程，有结束效果。
+		010 无发射效果，有过程，无结束效果。
+		011 无发射效果，有过程，有结束效果。
+		111 有发射效果，有过程，有结束效果。
+		101 有发射效果，无过程，有结束效果。
+		102 有发射效果，无过程，有结束效果，结果效果播放完后才执行状态。
+	stateType 在角色身上显示的状态类型:
+		0 赛尔没有效果
+		1 赛尔隐藏
+		默认值为0
+	lastTime 效果播放时间，以秒为单位
+		默认值为0，即播放完特效就结束
+	overlap  特效是否覆盖
+		true 可覆盖
+		false 不可覆盖
+		默认值为true
+		暂时都为true吧，o(︶︿︶)o ~~~~
+-->
+<root>
+	<item id="0" type="011" name="敌人攻击" speed="50" stateType="0" lastTime="0" overlap="true" sound="0"/>
+	<item id="1" type="011" name="飞叶腾击" speed="50" stateType="0" lastTime="0" overlap="true" sound="1"/>
+	<item id="2" type="011" name="水枪喷射" speed="50" stateType="0" lastTime="0" overlap="true" sound="2"/>
+	<item id="3" type="011" name="烈焰火枪" speed="50" stateType="0" lastTime="0" overlap="true" sound="3"/>
+	<item id="4" type="011" name="天使射击" speed="50" stateType="1" lastTime="0" overlap="true" isYearVip="true" sound="4"/>
+	<item id="5" type="011" name="VIP射击" speed="50" stateType="1" lastTime="0" overlap="true" isVip="true" sound="5"/>
+	<item id="6" type="011" name="雪球射击" speed="50" stateType="0" lastTime="0" overlap="true" itemId="400216" sound="6"/>
+	
+	<!-- 特殊物品 头部射击（M5活动赠送）-->
+	<item id="7" type="011" name="烈焰之爪" speed="50" stateType="0" lastTime="0" overlap="true" itemId="400226" sound="7"/>
+	<item id="8" type="011" name="深海漩涡" speed="50" stateType="0" lastTime="0" overlap="true" itemId="400227" sound="8"/>
+	<item id="9" type="011" name="种子炸弹" speed="50" stateType="0" lastTime="0" overlap="true" itemId="400228" sound="9"/>
+	<item id="10" type="011" name="拂晓光华" speed="50" stateType="0" lastTime="0" overlap="true" itemId="400229" sound="10"/>
+	<item id="11" type="011" name="水纹屏障" speed="50" stateType="0" lastTime="0" overlap="true" itemId="400230" sound="11"/>
+</root>

@@ -1,0 +1,4 @@
+<!--startDate为活动开启时间 activityName=为活动名称 isOpen=是否开启倒计时显示 -->
+<root>
+	<info startDate="2014|04|24" activityName="VIP" isOpen="true"/>
+</root>

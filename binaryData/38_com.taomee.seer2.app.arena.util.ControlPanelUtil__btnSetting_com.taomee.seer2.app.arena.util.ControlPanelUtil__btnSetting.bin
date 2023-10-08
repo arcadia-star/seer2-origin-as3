@@ -1,0 +1,99 @@
+<root> <!-- flase 0  true 1 -->
+<!--
+e_battle_vs_wild_mon = 1, /* 和野怪对战 */
+    e_battle_vs_training_mon = 2, /* 和训练精灵对战 */
+    e_battle_vs_spt      = 3, /* 和spt对战 */               本来能捕捉的。现在改成不能　　zoyi  　然后根据条件再切换到能捕捉     
+    e_battle_vs_npc_normal_gate     = 4, /* 跟NPC门对战中，正常模式 */
+    e_battle_vs_npc_50_vs_50_gate   = 5, /* 跟NPC门对战中，50V50模式 */
+    e_battle_vs_dream_mon    = 6, /* 跟梦境中的精灵对战 */
+    e_battle_vs_activity_boss = 7, /* 跟活动中的boss对战 */
+    e_battle_vs_train_init_mon = 8, /* 初始精灵训练 */
+    e_battle_vs_make_trouble = 9, /* 捣蛋反攻战 */
+    e_battle_vs_use_npc = 10,/* 使用NPC作战*/
+    e_battle_vs_chook_fight = 11, /* “鸡”毛与沙   */
+    e_battle_vs_activity_boss_use_one_mon = 12, /* 跟活动中的boss单精灵对战 */
+    e_battle_vs_npc_max, /*和NPC战斗模式*/
+	e_battle_vs_self_1v1 = 14, /* 与自己对战 1V1 */
+    e_battle_vs_self_3v3 = 15, /* 与自己对战 3V3 */
+
+    //以下添加PVP模式!!
+    e_battle_vs_pvp = 100,/*pvp模式*/
+    e_battle_vs_pvp_arena = 101,//擂台
+    e_battle_vs_pvp_normal_gate     = 102, /* PVP门对战中，正常模式 */
+    e_battle_vs_pvp_50_vs_50_gate   = 103, /* PVP门对战中，50V50模式 */
+    e_battle_vs_pvp_activity        = 104, /* 跟活动中的PVP对战 */
+    e_battle_vs_invite_1v1 = 105,/* 邀请对战(1v1)*/
+    e_battle_vs_invite_nvn = 106,/* 邀请对战(n vs n)*/
+    e_battle_vs_invite_2v2 = 107,/* 邀请对战(2 vs 2)*/
+	e_battle_vs_invite_2v2 = 108,/* 群体对战2V2*/
+	 e_battle_vs_pvp_wohoo        = 109, /* 单挑王(1v1) */
+
+这里的id是战斗模式，不是战斗索引！！！！！！！！！
+-->
+
+
+	<mode id="0" fightEnabled="1" catchEnabled="1" itemEnabled="1" petEnabled="1" escapeEnabled="1"/>
+	<mode id="1" fightEnabled="1" catchEnabled="1" itemEnabled="1" petEnabled="1" escapeEnabled="1"/>
+	<mode id="2" fightEnabled="1" catchEnabled="0" itemEnabled="1" petEnabled="1" escapeEnabled="1"/>
+	<mode id="3" fightEnabled="1" catchEnabled="0" itemEnabled="1" petEnabled="1" escapeEnabled="1"/>
+	<mode id="4" fightEnabled="1" catchEnabled="0" itemEnabled="1" petEnabled="1" escapeEnabled="1"/>
+	<mode id="5" fightEnabled="1" catchEnabled="0" itemEnabled="1" petEnabled="1" escapeEnabled="1"/>
+	<mode id="6" fightEnabled="1" catchEnabled="1" itemEnabled="1" petEnabled="1" escapeEnabled="1"/>
+	<mode id="7" fightEnabled="1" catchEnabled="1" itemEnabled="1" petEnabled="1" escapeEnabled="1"/>
+	<mode id="8" fightEnabled="1" catchEnabled="1" itemEnabled="1" petEnabled="1" escapeEnabled="1"/>
+		
+	<mode id="9" fightEnabled="1" catchEnabled="1" itemEnabled="1" petEnabled="1" escapeEnabled="1"/>
+	<mode id="10" fightEnabled="1" catchEnabled="1" itemEnabled="1" petEnabled="1" escapeEnabled="1"/>
+	<mode id="11" fightEnabled="1" catchEnabled="1" itemEnabled="1" petEnabled="1" escapeEnabled="1"/>
+	<mode id="12" fightEnabled="1" catchEnabled="1" itemEnabled="1" petEnabled="1" escapeEnabled="1"/>
+	<mode id="13" fightEnabled="0" catchEnabled="0" itemEnabled="1" petEnabled="1" escapeEnabled="1"/>
+	<mode id="14" fightEnabled="1" catchEnabled="0" itemEnabled="1" petEnabled="0" escapeEnabled="1"/>
+	<mode id="15" fightEnabled="1" catchEnabled="0" itemEnabled="1" petEnabled="1" escapeEnabled="1"/>
+	<mode id="16" fightEnabled="1" catchEnabled="0" itemEnabled="0" petEnabled="1" escapeEnabled="1"/>
+	<mode id="17" fightEnabled="1" catchEnabled="0" itemEnabled="0" petEnabled="1" escapeEnabled="1"/>
+	<mode id="18" fightEnabled="1" catchEnabled="0" itemEnabled="1" petEnabled="1" escapeEnabled="1"/>
+	<mode id="19" fightEnabled="1" catchEnabled="0" itemEnabled="0" petEnabled="1" escapeEnabled="1"/>
+	<mode id="20" fightEnabled="1" catchEnabled="0" itemEnabled="1" petEnabled="1" escapeEnabled="1"/>
+	<mode id="21" fightEnabled="1" catchEnabled="0" itemEnabled="1" petEnabled="1" escapeEnabled="1"/>
+	<mode id="22" fightEnabled="1" catchEnabled="0" itemEnabled="1" petEnabled="1" escapeEnabled="1"/>
+	<mode id="23" fightEnabled="1" catchEnabled="0" itemEnabled="1" petEnabled="1" escapeEnabled="1"/>
+	<mode id="24" fightEnabled="1" catchEnabled="0" itemEnabled="0" petEnabled="1" escapeEnabled="1"/>
+	<mode id="25" fightEnabled="1" catchEnabled="0" itemEnabled="0" petEnabled="1" escapeEnabled="1"/>
+	<mode id="26" fightEnabled="1" catchEnabled="0" itemEnabled="1" petEnabled="1" escapeEnabled="1"/>
+	<mode id="27" fightEnabled="1" catchEnabled="0" itemEnabled="1" petEnabled="1" escapeEnabled="1"/>
+	<mode id="28" fightEnabled="1" catchEnabled="1" itemEnabled="1" petEnabled="1" escapeEnabled="1"/>
+	<mode id="100" fightEnabled="1" catchEnabled="1" itemEnabled="1" petEnabled="1" escapeEnabled="1"/>
+	<mode id="101" fightEnabled="1" catchEnabled="0" itemEnabled="0" petEnabled="1" escapeEnabled="1"/>
+	<mode id="102" fightEnabled="1" catchEnabled="0" itemEnabled="0" petEnabled="1" escapeEnabled="1"/>
+	<mode id="103" fightEnabled="1" catchEnabled="0" itemEnabled="0" petEnabled="1" escapeEnabled="1"/>
+	<mode id="104" fightEnabled="1" catchEnabled="1" itemEnabled="1" petEnabled="1" escapeEnabled="1"/>
+	<mode id="105" fightEnabled="1" catchEnabled="0" itemEnabled="1" petEnabled="1" escapeEnabled="1"/>
+	<mode id="106" fightEnabled="1" catchEnabled="0" itemEnabled="1" petEnabled="1" escapeEnabled="1"/>
+	<mode id="107" fightEnabled="1" catchEnabled="0" itemEnabled="1" petEnabled="0" escapeEnabled="1"/>
+	<mode id="108" fightEnabled="1" catchEnabled="0" itemEnabled="0" petEnabled="1" escapeEnabled="1"/>
+	<mode id="109" fightEnabled="1" catchEnabled="0" itemEnabled="0" petEnabled="0" escapeEnabled="1"/>
+	<mode id="110" fightEnabled="1" catchEnabled="0" itemEnabled="1" petEnabled="1" escapeEnabled="1"/>
+	<mode id="111" fightEnabled="1" catchEnabled="0" itemEnabled="0" petEnabled="0" escapeEnabled="1"/>
+	<mode id="112" fightEnabled="1" catchEnabled="0" itemEnabled="0" petEnabled="1" escapeEnabled="1"/>
+	<mode id="149" fightEnabled="1" catchEnabled="1" itemEnabled="1" petEnabled="1" escapeEnabled="1"/>
+	<mode id="192" fightEnabled="1" catchEnabled="1" itemEnabled="1" petEnabled="1" escapeEnabled="1"/>
+	<mode id="201" fightEnabled="1" catchEnabled="0" itemEnabled="1" petEnabled="1" escapeEnabled="1"/>
+	<mode id="202" fightEnabled="1" catchEnabled="0" itemEnabled="1" petEnabled="1" escapeEnabled="1"/>
+	<mode id="203" fightEnabled="1" catchEnabled="0" itemEnabled="1" petEnabled="1" escapeEnabled="1"/>
+	<mode id="204" fightEnabled="1" catchEnabled="0" itemEnabled="0" petEnabled="1" escapeEnabled="1"/>
+	<mode id="205" fightEnabled="1" catchEnabled="0" itemEnabled="0" petEnabled="1" escapeEnabled="1"/>
+	<mode id="206" fightEnabled="1" catchEnabled="0" itemEnabled="0" petEnabled="1" escapeEnabled="1"/>
+	<mode id="207" fightEnabled="1" catchEnabled="0" itemEnabled="0" petEnabled="1" escapeEnabled="1"/>
+	<mode id="208" fightEnabled="1" catchEnabled="0" itemEnabled="0" petEnabled="1" escapeEnabled="1"/>
+	<mode id="209" fightEnabled="1" catchEnabled="0" itemEnabled="0" petEnabled="1" escapeEnabled="1"/>
+	<mode id="210" fightEnabled="1" catchEnabled="0" itemEnabled="0" petEnabled="1" escapeEnabled="1"/>
+	<mode id="211" fightEnabled="1" catchEnabled="0" itemEnabled="0" petEnabled="1" escapeEnabled="1"/>
+	<mode id="212" fightEnabled="1" catchEnabled="0" itemEnabled="0" petEnabled="1" escapeEnabled="1"/>
+	<mode id="214" fightEnabled="1" catchEnabled="0" itemEnabled="0" petEnabled="1" escapeEnabled="1"/>
+	<mode id="215" fightEnabled="1" catchEnabled="0" itemEnabled="0" petEnabled="1" escapeEnabled="1"/>
+	<mode id="216" fightEnabled="1" catchEnabled="0" itemEnabled="0" petEnabled="1" escapeEnabled="1"/>
+	<mode id="217" fightEnabled="1" catchEnabled="0" itemEnabled="0" petEnabled="1" escapeEnabled="1"/>
+	<mode id="218" fightEnabled="1" catchEnabled="0" itemEnabled="0" petEnabled="1" escapeEnabled="1"/>
+	<mode id="219" fightEnabled="1" catchEnabled="0" itemEnabled="0" petEnabled="1" escapeEnabled="1"/>
+	<mode id="220" fightEnabled="1" catchEnabled="0" itemEnabled="0" petEnabled="1" escapeEnabled="1"/>
+</root>

@@ -1,0 +1,73 @@
+<!--精灵大乱斗奖励配置表
+petMelee.xml说明by Tyleryang
+Ranking排名奖励
+title content：赛季序列以及赛季时间区间
+activity：大乱斗面板宣传板块文字
+index：顺序
+title：第几块
+content：文字宣传
+itemList：物品
+itemCount：物品数量
+lastwin：标示练成场次条件
+totalWin：累积胜场条件
+
+物品数量配0 表示精灵
+-->
+<melee>
+	<title content = "每届精灵大乱斗排名赛活动时间：周一至周日"/>
+	<activity index="1" title="第一块" content="黑暗斗魂来袭！小赛尔们要小心咯！每天参与精灵大乱斗，对战结束后有概率遇到黑暗斗魂，战胜他就能获得这只精灵咯！"/>
+	<activity index="2" title="第二块" content="参加大乱斗累积胜利31场即可获得稀有精灵大眼仔！"  itemList="800006" itemCount="1"/>
+	<activity index="3" title="第三块" content="只要参与大乱斗即可获得海量经验奖励！"  itemList="200214,200215,200230,200225" itemCount="1,1,1,1"/>
+	
+<!--通常大乱斗奖励
+	<ranking index="1" itemList="200230,200591,201038" itemCount="3,3,3"/>
+	<ranking index="2" itemList="200230,200591,201038" itemCount="2,2,2"/>
+	<ranking index="3" itemList="200230,200591,201038" itemCount="1,1,1"/>
+	<ranking index="4" itemList="200223,200239,201025" itemCount="1,7,1"/>
+	<ranking index="5" itemList="200223,200239,201025" itemCount="1,6,1"/>
+	<ranking index="6" itemList="200223,200239,201025" itemCount="1,5,1"/>
+	<ranking index="7" itemList="200222,200239,201032" itemCount="1,4,1"/>
+	<ranking index="8" itemList="200222,200239,201032" itemCount="1,3,1"/>
+	<ranking index="9" itemList="200222,200239,201032" itemCount="1,2,1"/>
+	<ranking index="10" itemList="200222,200239,201032" itemCount="1,1,1"/>
+	
+
+	<win index="1" tip="在本届大乱斗中累积获得1场胜利" itemList="202001,202002,1,400350" itemCount="1,1,200,45" lastWin="0" totalWin="1"/>
+	<win index="2" tip="在本届大乱斗中累积获得5场胜利" itemList="200214,1,400350" itemCount="1,500,90" lastWin="0" totalWin="5"/>
+	<win index="3" tip="在本届大乱斗中累积获得10场胜利" itemList="201024,200605,1,400350" itemCount="1,1,1000,165" lastWin="0" totalWin="10"/>
+	<win index="4" tip="在本届大乱斗中累积获得31场胜利" itemList="800006,400350" itemCount="1,480" lastWin="0" totalWin="31"/>
+	<win index="5" tip="在本届大乱斗中累积获得50场胜利" itemList="200062,200215,200239,400350" itemCount="1,1,1,765" lastWin="0" totalWin="50"/>
+	<win index="6" tip="在本届大乱斗中累积获得80场胜利" itemList="200222,200215,800001,400350" itemCount="1,1,5000,1215" lastWin="0" totalWin="80"/>
+	<win index="7" tip="在本届大乱斗中累积获得100场胜利" itemList="200230,800006,400350" itemCount="1,1,1350" lastWin="0" totalWin="100"/>
+	<win index="8" tip="在本届大乱斗中连续获得3场胜利" itemList="202001,202002,200213,400350" itemCount="1,1,1,75" lastWin="3" totalWin="0"/>
+	<win index="9" tip="在本届大乱斗中连续获得6场胜利" itemList="202005,202006,200214,400350" itemCount="1,1,1,120" lastWin="6" totalWin="0"/>
+	<win index="10" tip="在本届大乱斗中连续获得15场胜利" itemList="202007,202008,400350" itemCount="1,1,255" lastWin="15" totalWin="0"/>
+	<win index="11" tip="在本届大乱斗中连续获得26场胜利" itemList="202007,202008,201053,400350" itemCount="1,1,1,420" lastWin="26" totalWin="0"/>
+-->
+
+
+<!--星魂守护者活动奖励-->
+	<ranking index="1" itemList="200230,200591,201038" itemCount="3,3,3"/>
+	<ranking index="2" itemList="200230,200591,201038" itemCount="2,2,2"/>
+	<ranking index="3" itemList="200230,200591,201038" itemCount="1,1,1"/>
+	<ranking index="4" itemList="200223,200239,201025" itemCount="1,7,1"/>
+	<ranking index="5" itemList="200223,200239,201025" itemCount="1,6,1"/>
+	<ranking index="6" itemList="200223,200239,201025" itemCount="1,5,1"/>
+	<ranking index="7" itemList="200222,200239,201032" itemCount="1,4,1"/>
+	<ranking index="8" itemList="200222,200239,201032" itemCount="1,3,1"/>
+	<ranking index="9" itemList="200222,200239,201032" itemCount="1,2,1"/>
+	<ranking index="10" itemList="200222,200239,201032" itemCount="1,1,1"/>
+	
+
+	<win index="1" tip="累积获得1场胜利" itemList="202001,202002,400350" itemCount="1,1,45" lastWin="0" totalWin="1"/>
+	<win index="2" tip="累积获得5场胜利" itemList="200214,1,400350" itemCount="1,500,90" lastWin="0" totalWin="5"/>
+	<win index="3" tip="累积获得10场胜利" itemList="201024,200605,400350" itemCount="1,1,165" lastWin="0" totalWin="10"/>
+	<win index="4" tip="累积获得31场胜利" itemList="439,400350" itemCount="0,480" lastWin="0" totalWin="31"/>
+	<win index="5" tip="累积获得50场胜利" itemList="200062,200215,400350" itemCount="1,1,765" lastWin="0" totalWin="50"/>
+	<win index="6" tip="累积获得80场胜利" itemList="200222,943,400350" itemCount="1,0,1215" lastWin="0" totalWin="80"/>
+	<win index="7" tip="累积获得100场胜利" itemList="200230,800006,400350" itemCount="1,1,1350" lastWin="0" totalWin="100"/>
+	<win index="8" tip="连续获得3场胜利" itemList="202001,202002,400350" itemCount="1,1,75" lastWin="3" totalWin="0"/>
+	<win index="9" tip="连续获得6场胜利" itemList="202005,202006,400350" itemCount="1,1,120" lastWin="6" totalWin="0"/>
+	<win index="10" tip="连续获得15场胜利" itemList="202007,202008,400350" itemCount="1,1,255" lastWin="15" totalWin="0"/>
+	<win index="11" tip="连续获得26场胜利" itemList="202007,202008,201053,400350" itemCount="1,1,1,420" lastWin="26" totalWin="0"/>
+</melee>

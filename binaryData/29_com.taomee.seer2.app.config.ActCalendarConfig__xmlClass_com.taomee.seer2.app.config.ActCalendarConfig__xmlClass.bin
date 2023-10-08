@@ -1,0 +1,6332 @@
+<!--活动日程表
+acts节点:
+day值为0-6,分别表示星期日到星期六；
+
+act节点:
+name为活动的名称;
+isPet为是否是精灵活动，0为否1为是；
+willOver为是否将要下架，0为否1为是；
+timeDes为当日活动时间段；
+startTime活动开始时间；
+endTime活动结束时间;
+go为go到得面板名或者地图id；
+
+reward节点:
+pet精灵item为普通物品。id为对应id；
+-->
+<root>
+	<acts day="1" >
+
+
+	<act name="爆焰努尔" iconId="1097"  isPet="1" willOver="0"  detailDes="为了弟兄和自己的尊严！霍克努尔终于爆发了！" timeDes="全天候" startTime="00:00" endTime="23:00" go="HuoKeNuErSuperProcessPanel">
+			<reward>
+			<pet id="590" />
+			<item id="101087" count="1" />
+			<item id="101088" count="1" />
+			</reward>	
+		</act>
+
+	<act name="炼金师迪克" iconId="1098"  isPet="1" willOver="0"  detailDes="天马四骑士第三尊炼金师迪克出场！" timeDes="全天候" startTime="00:00" endTime="23:00" go="FightVsDickPanel">
+			<reward>
+			<pet id="591" />
+			<pet id="592" />
+			</reward>	
+		</act>
+
+
+
+
+	<act name="永恒炽翼" iconId="1096"  isPet="1" willOver="0"  detailDes="燃圣火种，火系凯瑟琳将进化为炽翼女神赫拉！" timeDes="全天候" startTime="00:00" endTime="23:00" go="KaiSeLinSuperProcessPanel">
+			<reward>
+			<pet id="587" />
+			<item id="101083" count="1" />
+			<item id="101084" count="1" />
+			</reward>	
+		</act>
+	<act name="跨年龙战" iconId="1095"  isPet="1" willOver="0"  detailDes="8条神龙跨年而来，每周开启两条神龙挑战！" timeDes="全天候" startTime="00:00" endTime="23:00" go="KuaNianLongZhanPanel">
+			<reward>
+			<pet id="410" />
+			<pet id="394" />
+			</reward>	
+		</act>
+	<act name="圣灵师海罗"  iconId="1093"  isPet="1" willOver="0"  detailDes="每天修炼就能获得天马四骑士——圣灵师海罗" timeDes="全天候" startTime="00:00" endTime="23:00" go="FightVsHelloPanel">
+			<reward>
+			<pet id="588" />
+			<pet id="589" />
+			</reward>	
+		</act>
+
+
+
+
+
+
+
+
+
+
+	<act name="巨石托尔" iconId="1087"  isPet="1" willOver="0"  detailDes="SPT超进化生日派对！帮布鲁托完成生日心愿！" timeDes="全天候" startTime="00:00" endTime="23:00" go="BuNuTuoSuperProcessPanel">
+			<reward>
+			<pet id="586" />
+			<item id="101072" count="1" />
+			<item id="101073" count="1" />
+			</reward>	
+		</act>
+
+
+
+	<act name="圣猎人拜瑞" iconId="1090"  isPet="1" willOver="0"  detailDes="每天修炼就能获得天马四骑士——圣猎人拜瑞！" timeDes="全天候" startTime="00:00" endTime="23:00" go="FightVsBarryPanel">
+			<reward>
+			<pet id="582" />
+			<pet id="583" />
+			</reward>	
+		</act>
+
+
+	<act name="直捣炼狱战魔王" iconId="1088"  isPet="1" willOver="0"  detailDes="炼狱七大魔王弱化挑战启动！挑战胜利得魔王！" timeDes="全天候" startTime="00:00" endTime="23:00" go="FightVsBarryPanel">
+			<reward>
+			<pet id="325" />
+			<pet id="322" />
+			<pet id="340" />
+			</reward>	
+		</act>
+
+
+
+	<act name="冰封魔域库贝萨" iconId="1086"  isPet="1" willOver="0"  detailDes="小当家意外走失，你在冰封魔域的冒险已经开始！" timeDes="全天候" startTime="00:00" endTime="23:00" go="BingfengQuestMianPanel">
+			<reward>
+			<pet id="581" />
+			<item id="200214" count="1" />
+			</reward>	
+		</act>
+
+
+
+	<act name="银脉紫煞" iconId="1083"  isPet="1" willOver="0"  detailDes="紫电将在银脉山脊完成超进化！" timeDes="全天候" startTime="00:00" endTime="23:00" go="ZiDianSuperProcessPanel">
+			<reward>
+			<pet id="580" />
+			<item id="200215" count="1" />
+			<item id="200011" count="1" />
+			</reward>	
+		</act>
+
+
+
+
+
+
+	<act name="电魂巴图" iconId="1080"  isPet="1" willOver="0"  detailDes="巴图领悟了电闪雷鸣之力后蜕变为【电魂巴图】！" timeDes="全天候" startTime="00:00" endTime="23:00" go="XiaoBaEvolutionPanel">
+			<reward>
+			<pet id="578" />
+			<item id="101052" count="1" />
+			<item id="101053" count="1" />
+			</reward>	
+		</act>
+<!--
+	<act name="探索王之超魄" iconId="1081"  isPet="1" willOver="0"  detailDes="星球大探索，搜索阿卡迪亚星寻找王之超魄！" timeDes="全天候" startTime="00:00" endTime="23:00" go="StarSearchPanel">
+			<reward>
+			<pet id="518" />
+			<item id="200222" count="1" />
+			<item id="200215" count="1" />
+			</reward>	
+		</act>
+
+	<act name="小当家去哪儿" iconId="1082"  isPet="1" willOver="0"  detailDes="完成村长每天布置的3个任务就能领取绝版小当家" timeDes="全天候" startTime="00:00" endTime="23:00" go="XiaodangjiaPanel">
+			<reward>
+			<pet id="579" />
+			</reward>	
+		</act>
+-->
+
+
+
+
+	<act name="神力超猪侠" iconId="1078"  isPet="1" willOver="0"  detailDes="美食神猪维克多+宇宙超级大饭团=神力超猪侠！" timeDes="全天候" startTime="00:00" endTime="23:00" go="FoodPigSuperProcessPanel">
+			<reward>
+			<pet id="577" />
+			<item id="200206" count="1" />
+			<item id="200222" count="1" />
+			</reward>	
+		</act>
+
+	<act name="忍者龙剑坛" iconId="1079"  isPet="1" willOver="0"  detailDes="【地忍百魁】在白龙岩阵的肃杀挑战！" timeDes="全天候" startTime="00:00" endTime="23:00" go="80069">
+			<reward>
+			<pet id="546" />
+			<item id="201021" count="1" />
+			<item id="201036" count="1" />
+			</reward>	
+		</act>
+
+
+
+
+	<act name="僵尸博士大逃杀" iconId="1071"  isPet="1" willOver="0"  detailDes="僵尸博士变异，全程追缉！你能抓住它吗？" timeDes="全天候" startTime="00:00" endTime="23:00" go="ZombieDrEscapePanel">
+			<reward>
+			<pet id="563" />
+			</reward>	
+		</act>
+
+	<act name="万圣假面舞会" iconId="1072"  isPet="1" willOver="0"  detailDes="万圣舞会迎来伊特家族第14只伊特【特伊特】！" timeDes="全天候" startTime="00:00" endTime="23:00" go="DanceShowPanel">
+			<reward>
+			<pet id="105" />
+			</reward>	
+		</act>
+
+
+
+	<act name="宇宙机甲战士" iconId="1076"  isPet="1" willOver="0"  detailDes="包月就送宇宙机甲战士，包3个月再送机甲装" timeDes="全天候" startTime="00:00" endTime="23:00" go="VipGaoDaPanel">
+			<reward>
+			<pet id="565" />
+			<item id="101033" count="1" />
+			<item id="101034" count="1" />
+			</reward>	
+		</act>
+
+
+	<act name="圣诞许愿树" iconId="1074"  isPet="1" willOver="0"  detailDes="超强BOSS、绝版精灵、米币道具、绝版装扮送出" timeDes="全天候" startTime="00:00" endTime="23:00" go="TwoYearWishPanel">
+			<reward>
+		    <pet id="377" />
+			<pet id="280" />
+			<item id="101042" count="1" />
+			</reward>	
+		</act>
+
+
+
+
+
+		<act name="初影忍者" iconId="1066"  isPet="1" willOver="0"  detailDes="忍者系列首席【绝影忍者】的修炼全面开启！" timeDes="全天候" startTime="00:00" endTime="23:00" go="NinjaPractiseSkillPanel">
+			<reward>
+				<pet id="541" />
+			    <item id="200246" />
+			    <item id="200247" />
+			</reward>	
+		</act>
+
+
+		<act name="吸血魔咒女王" iconId="1067"  isPet="1" willOver="0"  detailDes="始祖吸血女王阿卡莎驾到！" timeDes="全天候" startTime="00:00" endTime="23:00" go="BloodKingActPanel">
+			<reward>
+				<pet id="541" />
+				<pet id="546" />
+			    <item id="200013" />
+			</reward>	
+		</act>
+
+
+
+		<act name="狂炼狼神" iconId="1062"  isPet="1" willOver="0"  detailDes="通过5重历炼就能使狼妖进化为狼神！" timeDes="全天候" startTime="00:00" endTime="23:00" go="WolfSuperPanel">
+			<reward>
+			<pet id="560" />
+			</reward>	
+		</act>
+
+		<act name="异形的危机" iconId="1063"  isPet="1" willOver="0"  detailDes="始祖吸血病毒入侵星球！小赛尔们我们行动起来！" timeDes="全天候" startTime="00:00" endTime="23:00" go="YiXingMainPanel">
+			<reward>
+			<pet id="558" />
+			</reward>	
+		</act>
+
+
+
+		<act name="七龙忍者阵" iconId="1061"  isPet="1" willOver="0"  detailDes="首只忍者系精灵【初影忍者】诞生！它是忍者之源" timeDes="全天候" startTime="00:00" endTime="23:00" go="SevenDragonNinjaPanel">
+			<reward>
+			<pet id="540" />
+			</reward>	
+		</act>
+
+
+
+
+		<act name="百变神君神伊特" iconId="1057"  isPet="1" willOver="0"  detailDes="第13只伊特【神伊特】出场！收集伊特有大奖！" timeDes="全天候" startTime="00:00" endTime="23:00" go="YiteMorphActPanel">
+			<reward>
+			<pet id="104" />
+			<item id="200206" count="1" />
+			<item id="200222" count="1" />
+			</reward>	
+		</act>
+
+
+		<act name="黄金12宫" iconId="1056"  isPet="1" willOver="0"  detailDes="在星空下许愿免费得黄金十二宫星座守护！" timeDes="全天候" startTime="00:00" endTime="23:00" go="Gold12Panel">
+			<reward>
+			<pet id="154" />
+			<pet id="155" />
+			<pet id="156" />
+			</reward>	
+		</act>
+
+
+
+<!--
+		<act name="神魔之月" iconId="1054"  isPet="1" willOver="0"  detailDes="中秋特献！月神开启神化、魔化双线超进化！" timeDes="全天候" startTime="00:00" endTime="23:00" go="LunaEvolvePanel">
+			<reward>
+				<pet id="530" />
+				<pet id="531" />
+				<item id="400194" />
+			</reward>	
+		</act>
+
+
+
+
+		<act name="奔月旅程" iconId="1052"  isPet="1" willOver="0"  detailDes="小赛尔们，让我们一起奔向月亮！" timeDes="全天候" startTime="00:00" endTime="23:00" go="GoMoonTravelPanel">
+			<reward>
+				<pet id="402" />
+				<pet id="375" />
+				<pet id="216" />
+			</reward>	
+		</act>
+-->
+
+
+
+		<act name="魔神前传" iconId="1047"  isPet="1" willOver="0"  detailDes="首只魔化精灵！免费领取小魔神1只，VIP2只！" timeDes="全天候" startTime="00:00" endTime="23:00" go="PetProcessActPanel">
+			<reward>
+			<pet id="523" />
+			<pet id="524" />
+			<item id="200062" count="1" />
+			</reward>	
+		</act>
+<!--
+		<act name="晨羽！王之空魄" iconId="1046"  isPet="1" willOver="0"  detailDes="收集齐6颗羽翼图腾，王之空魄的秘密将再现！" timeDes="全天候" startTime="00:00" endTime="23:00" go="KingSoulWithSkyPanel">
+			<reward>
+			<item id="800008" count="1" />
+			</reward>	
+		</act>
+
+		<act name="王者助力 超速变强" iconId="1049"  isPet="0" willOver="0"  detailDes="8.8满级、满资质力、满学习力，为你节省34元！" timeDes="全天候" startTime="00:00" endTime="23:00" go="KingHelpStrongerPanel">
+			<reward>
+			<item id="200591" count="1" />
+			<item id="201035" count="1" />
+			<item id="201038" count="1" />
+			</reward>	
+		</act>
+
+
+		<act name="精灵开学返课堂" iconId="1050"  isPet="1" willOver="0"  detailDes="绝版精灵开学回归第一弹！8只绝版轻松拿！" timeDes="全天候" startTime="00:00" endTime="23:00" go="PetBackClassPanel">
+			<reward>
+			<pet id="421" />
+			<pet id="423" />
+			<pet id="287" />
+			</reward>	
+		</act>
+
+
+		<act name="约瑟祥福提灯怪" iconId="1048"  isPet="1" willOver="0"  detailDes="异度空间的尼古！在小屋点击祈福红包参加活动！" timeDes="全天候" startTime="00:00" endTime="23:00" go="50000">
+			<reward>
+			<pet id="179" />
+			<item id="400194" count="1" />
+			</reward>	
+		</act>
+-->
+
+
+		<act name="进击的超伊特" iconId="1041"  isPet="1" willOver="0"  detailDes="伊特家族再战！翻族牌迎接超伊特的降临！" timeDes="全天候" startTime="00:00" endTime="23:00" go="YiteSuperPetPanel">
+			<reward>
+			<item id="200718" count="1" />
+			<item id="200335" count="1" />
+			<item id="200334" count="1" />
+			</reward>	
+		</act>
+
+		<act name="晨战！王之冰魄！" iconId="1042"  isPet="1" willOver="0"  detailDes="挑战最新BOOSS晨璨，四战胜利得王之冰魄！" timeDes="全天候" startTime="00:00" endTime="23:00" go="KingSoulWithIcePanel">
+			<reward>
+			<pet id="512" />
+			<item id="200221" count="1" />
+			<item id="200225" count="1" />
+			</reward>	
+		</act>
+
+		<act name="BOSS晨璨真心朋友" iconId="1043"  isPet="1" willOver="0"  detailDes="拥有四重性格！亲历晨璨的过去时光吧！" timeDes="全天候" startTime="00:00" endTime="23:00" go="KingSoulWithIcePanel">
+			<reward>
+			<pet id="492" />
+			</reward>	
+		</act>
+
+
+		<act name="尖叫的大毛怪" iconId="1044"  isPet="1" willOver="0"  detailDes="种植园里有怪兽！大毛怪和大眼怪来了！" timeDes="全天候" startTime="00:00" endTime="23:00" go="70000">
+			<reward>
+			<pet id="457" />
+			<pet id="458" />
+			<item id="400006" count="1" />
+			</reward>	
+		</act>
+
+
+<!--
+		<act name="诅咒之子卡修斯" iconId="1037"  isPet="1" willOver="0"  detailDes="传说战神联盟卡修斯就在神秘裂空中！" timeDes="全天候" startTime="00:00" endTime="23:00" go="KaXiuSiActPanel">
+			<reward>
+			<pet id="494" />
+			<item id="200215" count="1" />
+			<item id="200221" count="1" />
+			</reward>	
+		</act>
+-->
+
+
+		<act name="VIP宇宙嘉年华" iconId="11"  isPet="1" willOver="0"  detailDes="加入VIP送宇宙机甲震天虎+灵朱雀！" timeDes="全天候" startTime="00:00" endTime="23:00" go="VipRechargeBasePanel">
+			<reward>
+			<pet id="537" />
+			<pet id="565" />
+			</reward>	
+		</act>
+
+		<act name="约瑟17魂魄篇开启" iconId="1035"  isPet="1" willOver="0"  detailDes="约瑟魂魄已出！17属性17魂魄！" timeDes="全天候" startTime="00:00" endTime="23:00" go="KingSoulPanel">
+			<reward>
+			<pet id="505" />
+			<pet id="506" />
+			<pet id="507" />
+			</reward>	
+		</act>
+
+
+		<act name="王之召唤" iconId="1036"  isPet="1" willOver="0"  detailDes="邀请好友、老兵回归、新兵报道，三重大礼送出！" timeDes="全天候" startTime="00:00" endTime="23:00" go="KingSoulPanel">
+			<reward>
+			<pet id="039" />
+			<pet id="053" />
+			<pet id="364" />
+			</reward>	
+		</act>
+
+
+<!--
+		<act name="经验大爆炸" iconId="1038"  isPet="0" willOver="0"  detailDes="收集经验换精灵、米币道具！" timeDes="全天候" startTime="00:00" endTime="23:00" go="KingWithTrainPanel">
+			<reward>
+			<item id="200239" count="1" />
+			<item id="200223" count="1" />
+			<item id="400194" count="1" />
+			</reward>	
+		</act>
+
+
+		<act name="疯狂米币送不停" iconId="1039"  isPet="0" willOver="0"  detailDes="用盛宴礼券抽取百万米币和各类道具吧！" timeDes="全天候" startTime="00:00" endTime="23:00" go="KingDinnerPanel">
+			<reward>
+			<item id="200234" count="1" />
+			<item id="200221" count="1" />
+			<item id="200215" count="1" />
+			</reward>	
+		</act>
+-->
+
+
+
+		<act name="暴走的雷电" iconId="1028"  isPet="1" willOver="0"  detailDes="幻灵骑士团最后一员【幻蹄雷电】！" timeDes="全天候" startTime="00:00" endTime="23:00" go="BaozouLeidianPanel">
+			<reward>
+			<pet id="451" />
+			</reward>	
+		</act>
+
+
+		<act name="太阳神之子" iconId="1029"  isPet="1" willOver="0"  detailDes="米咔超进化！就在太阳神殿加冕为太阳神之子！" timeDes="全天候" startTime="00:00" endTime="23:00" go="SonOfSunGoldPanel">
+			<reward>
+				<pet id="456" />
+				<item id="201024" />
+				<item id="200206" />
+			</reward>	
+		</act>
+
+		<act name="孤独的巴鲁金斯" iconId="1030"  isPet="1" willOver="0"  detailDes="收集精灵签名兑换孤独的巴鲁金斯！" timeDes="全天候" startTime="00:00" endTime="23:00" go="RollerLotteryPanel">
+			<reward>
+				<pet id="456" />
+				<item id="201024" />
+				<item id="200206" />
+			</reward>	
+		</act>
+
+<!--
+
+		<act name="争霸赛颁奖礼" iconId="1027"  isPet="0" willOver="0"  detailDes="争霸赛团队领奖就在约瑟战境，有神秘嘉宾！" timeDes="全天候" startTime="00:00" endTime="23:00" go="983">
+			<reward>
+				<item id="100957" />
+				<item id="200591" />
+				<item id="200230" />
+			</reward>	
+		</act>
+
+
+
+		<act name="咪娅冲冲冲" iconId="1033"  isPet="1" willOver="0"  detailDes="2周年绝版精灵约咪娅和瑟咪娅回归！" timeDes="全天候" startTime="00:00" endTime="23:00" go="983">
+			<reward>
+				<pet id="420" />
+				<pet id="422" />
+				<item id="400188" />
+			</reward>	
+		</act>
+
+
+
+		<act name="矿石秘宝" iconId="1034"  isPet="1" willOver="0"  detailDes="开启秘宝！后面藏着丰富的宝藏呢！" timeDes="全天候" startTime="00:00" endTime="23:00" go="OreSwapPanel">
+			<reward>
+				<item id="200223" />
+				<item id="200225" />
+				<item id="200591" />
+			</reward>	
+		</act>
+-->
+
+
+
+
+
+		<act name="炎帝之焰爪" iconId="1023"  isPet="1" willOver="0"  detailDes="获得焰爪，它就能让凯萨蜕变为炎帝！" timeDes="全天候" startTime="00:00" endTime="23:00" go="FireClawActPanel">
+			<reward>
+			<pet id="1101" />
+			<pet id="499" />
+			</reward>	
+		</act>
+
+		<act name="骤雨的搏击" iconId="1022"  isPet="1" willOver="0"  detailDes="搏杀三关就可得精灵【幻齿骤雨】" timeDes="全天候" startTime="00:00" endTime="23:00" go="BrashStrikePanel">
+			<reward>
+			<pet id="448" />
+			</reward>	
+		</act>
+
+<!--
+		<act name="星神降临 直面赛尔" iconId="1021"  isPet="1" willOver="0"  detailDes="观星者免费弱化挑战开启！仅2周！" timeDes="全天候" startTime="00:00" endTime="23:00" go="SkyFallPanel">
+			<reward>
+			<pet id="503" />
+			</reward>	
+		</act>
+
+
+		<act name="口袋里的精灵" iconId="1024"  isPet="1" willOver="0"  detailDes="竹谜境里的大麻袋里有稀有精灵哦" timeDes="全天候" startTime="00:00" endTime="23:00" go="PetCardsExchangePanel">
+			<reward>
+			<pet id="242" />
+			<pet id="244" />
+			<pet id="353" />
+			</reward>	
+		</act>
+
+
+
+		<act name="闪亮啦啦队" iconId="1025"  isPet="0" willOver="0"  detailDes="成为啦啦队员在线时长就能换积分！" timeDes="全天候" startTime="00:00" endTime="23:00" go="CheerLeaderPanel">
+			<reward>
+			<item id="400188" count="1" />
+			</reward>	
+		</act>
+
+
+		<act name="队长暗袭行动" iconId="1026"  isPet="0" willOver="0"  detailDes="挑战争霸赛三队队长，为本队获得积分！" timeDes="全天候" startTime="00:00" endTime="23:00" go="PetTeamOnePanel">
+			<reward>
+			<item id="400188" count="1" />
+			</reward>	
+		</act>
+
+-->
+
+		<act name="咆哮的飓风" iconId="1019"  isPet="1" willOver="0"  detailDes="幻灵骑士团第二尊：幻影飓风席卷全球！" timeDes="全天候" startTime="00:00" endTime="23:00" go="PetKingWindMainPanel">
+			<reward>
+			<pet id="440" />
+			<item id="200221" count="1" />
+			<item id="200214" count="1" />
+			</reward>	
+		</act>
+
+<!--
+		<act name="飓风来袭" iconId="1020"  isPet="1" willOver="0"  detailDes="进入好友家园消灭飓风就能得到争霸赛积分！" timeDes="全天候" startTime="00:00" endTime="23:00" go="FriendFindPetPanel">
+			<reward>
+			<item id="400188" count="1" />
+			<item id="200205" count="1" />
+			<item id="400086" count="1" />
+			</reward>	
+		</act>
+
+
+
+		<act name="时尚三元素" iconId="1017"  isPet="1" willOver="0"  detailDes="水火草三元素就在种植园等你" timeDes="全天候" startTime="00:00" endTime="23:00" go="70000">
+			<reward>
+			<pet id="419" />
+			<pet id="411" />
+			<pet id="396" />
+			</reward>	
+		</act>
+
+
+		<act name="冥王七日破晓" iconId="1013"  isPet="1" willOver="0"  detailDes="冥王撒旦弱化周！仅7天！免费试炼、得纹章！" timeDes="全天候" startTime="00:00" endTime="23:00" go="SevenDaysPanel">
+			<reward>
+			<pet id="496" />
+			<item id="400309" count="1" />
+			<item id="400173" count="1" />
+			</reward>	
+		</act>
+-->
+
+
+
+
+		<act name="精灵大乱斗" iconId="1000"  isPet="1" willOver="0"  detailDes="精灵大乱斗加盟争霸赛！更多选择更多惊喜！" timeDes="全天候" startTime="00:00" endTime="23:00" go="PetMeleePanel">
+			<reward>
+			<item id="200223" count="1" />
+			<item id="200214" count="1" />
+			</reward>	
+		</act>
+<!--
+		<act name="观星者本尊挑战" iconId="3"  isPet="1" willOver="0"  detailDes="宇宙至尊、观星者本尊挑战开放!" timeDes="全天候" startTime="00:00" endTime="23:00" go="StargazerFightPanel">
+			<reward>
+				<pet id="503" />
+			</reward>
+		</act>
+
+
+		<act name="精灵王争霸赛" iconId="1012"  isPet="1" willOver="0"  detailDes="争霸赛正式开赛！赢积分、得奖牌，换奖品！" timeDes="全天候" startTime="00:00" endTime="23:00" go="983">
+			<reward>
+			<item id="100926" count="1" />
+			<item id="102043" count="1" />
+			<item id="200225" count="1" />
+			</reward>	
+		</act>
+-->
+
+		<act name="时空之客伊鲁达" iconId="1009"  isPet="1" willOver="0"  detailDes="用光的速度穿越时空，和克拉克战宠伊鲁达相遇！" timeDes="全天候" startTime="00:00" endTime="23:00" go="YiludaActPanel">
+			<reward>
+			<pet id="434" />
+			<item id="200244" count="1" />
+			</reward>	
+		</act>
+
+
+		<act name="幻翼的召唤" iconId="1010"  isPet="1" willOver="0"  detailDes="幻灵骑士团首席幽冥等你召唤！召唤成功赠送纹章！" timeDes="全天候" startTime="00:00" endTime="23:00" go="HuanyiCallActPanel">
+			<reward>
+			<pet id="431" />
+			<item id="200230" count="1" />
+			<item id="200702" count="1" />
+			</reward>	
+		</act>
+
+
+		<act name="幻灵骑士团" iconId="1011"  isPet="0" willOver="0"  detailDes="飞船告急！暗影幻灵骑士团四大战将纷至而来！" timeDes="全天候" startTime="00:00" endTime="23:00" go="EidolonPanel">
+			<reward>
+			<item id="200214" count="1" />
+			<item id="400187" count="1" />
+			</reward>	
+		</act>
+
+
+<!--
+		<act name="斗战宿命之巅" iconId="1005"  isPet="1" willOver="0"  detailDes="战胜联盟的盖亚强袭阿卡迪亚！挑战战神吧！" timeDes="全天候" startTime="00:00" endTime="23:00" go="GaiyaActPanel">
+			<reward>
+			<pet id="495" />
+			</reward>	
+		</act>
+
+		<act name="周年庆典 烟花闭幕" iconId="1006"  isPet="1" willOver="0"  detailDes="花焰精灵华丽送别！延长一周概率翻倍！" timeDes="13:00-15:00" startTime="13:00" endTime="15:00" go="FireworksPanel">
+			<reward>
+			<pet id="427" />
+			<item id="200064" count="1" />
+			<item id="201024" count="1" />
+			</reward>	
+		</act>
+
+
+
+		<act name="蒂姆森超能战纪" iconId="1007"  isPet="1" willOver="0"  detailDes="单枪匹马or唯五独尊！选择你自己的超能精英蒂姆森！" timeDes="全天候" startTime="00:00" endTime="23:00" go="SpecialPetActMainPanel">
+			<reward>
+			<pet id="429" />
+			<item id="200215" count="1" />
+			<item id="200019" count="1" />
+			</reward>	
+		</act>
+
+		<act name="精灵王争霸赛序曲" iconId="1008"  isPet="0" willOver="0"  detailDes="海选吉祥物！选队伍！领队服喽！" timeDes="全天候" startTime="00:00" endTime="23:00" go="PetKingMatch2Panel">
+			<reward>
+			<item id="100911" count="1" />
+			<item id="100916" count="1" />
+			<item id="100921" count="1" />
+			</reward>	
+		</act>
+
+
+		<act name="奥黛丽！赫本！" iconId="85"  isPet="1" willOver="0"  detailDes="奥黛丽！赫本！双生挑战齐开！仅2周！" timeDes="全天候" startTime="00:00" endTime="23:00" go="AodailiHebenActivityPanel">
+			<reward>
+			<pet id="395" />
+			<pet id="412" />
+			</reward>	
+		</act>
+
+
+		<act name="消费砸冰乐" iconId="1003"  isPet="1" willOver="0"  detailDes="消费砸冰抽奖品！凯萨唯一免费输出！" timeDes="全天候" startTime="00:00" endTime="23:00" go="SummerHitIcePanel">
+			<reward>
+			<pet id="234" />
+			<pet id="343" />
+			<item id="200240" count="1" />
+			</reward>	
+		</act>
+
+
+
+		<act name="超级明星大比拼" iconId="1004"  isPet="1" willOver="0"  detailDes="谁是超级精灵大王？大王荣誉/满级精灵送！" timeDes="全天候" startTime="00:00" endTime="23:00" go="SuperPetChallengePanel">
+			<reward>
+			<pet id="414" />
+			<item id="100908" count="1" />
+			<item id="102042" count="1" />
+			</reward>	
+		</act>
+-->
+
+	
+
+		<act name="雷神之斩" iconId="67"  isPet="1" willOver="0"  detailDes="上古器灵问世！雷伊结合雷切将会成为雷神！" timeDes="全天候" startTime="00:00" endTime="23:00" go="LeiyiGunPetPanel">
+			<reward>
+			<pet id="1100" />
+			<pet id="498" />
+			<item id="200222" count="1" />
+			</reward>	
+		</act>
+
+
+
+
+
+
+		<act name="闪电之躯" iconId="97"  isPet="0" willOver="0"  detailDes="雷伊求助！快去帮助雷神还可获雷鸣裂空装！" timeDes="全天候" startTime="00:00" endTime="23:00" go="LeiyiChargingPanel">
+			<reward>
+				<item id="100868" />
+				<item id="200221" />
+				<item id="200234" />
+			</reward>	
+		</act>
+		
+		
+		
+		<act name="螳螂101次信念" iconId="95"  isPet="1" willOver="0"  detailDes="周年庆典精灵第一尊！贾斯汀的至尊螳螂！" timeDes="全天候" startTime="00:00" endTime="23:00" go="MantisActPanel">
+			<reward>
+				<pet id="158" />
+				<item id="200241" />
+				<item id="500135" />
+			</reward>	
+		</act>
+
+
+<!--
+		<act name="约瑟许愿碑" iconId="88"  isPet="1" willOver="0"  detailDes="BOSS/绝版精灵/米币道具/约瑟王套装送!" timeDes="全天候" startTime="00:00" endTime="23:00" go="TwoYearWishPanel">
+			<reward>
+				<pet id="290" />
+				<pet id="377" />
+				<item id="100936" />
+			</reward>	
+		</act>
+
+
+
+	
+		<act name="伊特嘉年华" iconId="64"  isPet="1" willOver="0"  detailDes="龙伊特、地伊特等11个伊特大集合！" timeDes="全天候" startTime="00:00" endTime="23:00" go="YiteMainPanel">
+			<reward>
+				<item id="200332" />
+				<item id="100714" />
+				<item id="200221" />
+			</reward>	
+		</act>
+
+
+
+		<act name="悲伤马戏团" iconId="87"  isPet="1" willOver="0"  detailDes="悲伤马戏团，和猛犸象一起过六一" timeDes="全天候" startTime="00:00" endTime="23:00" go="CircusPanel">
+			<reward>
+				<pet id="404" />
+				<item id="200221" />
+				<item id="202007" />
+			</reward>	
+		</act>
+	-->
+		<act name="啊！蜻蜓！" iconId="86"  isPet="1" willOver="0"  detailDes="看！有蜻蜓！快拿网兜兜住它！" timeDes="全天候" startTime="00:00" endTime="23:00" go="DragonPanel">
+			<reward>
+				<pet id="402" />
+				<item id="102036" />
+				<item id="200676" />
+
+			</reward>	
+		</act>
+
+
+		<act name="埃卡维特爱吃鱼" iconId="75"  isPet="1" willOver="0"  detailDes="给点鱼吧！吃了维特就和你过过招！" timeDes="全天候" startTime="00:00" endTime="23:00" go="152">
+			<reward>
+				<pet id="109" />
+			</reward>	
+		</act>
+
+
+
+
+
+		<act name="最牛精灵训练营" iconId="82"  isPet="1" willOver="0"  detailDes="免费领取火爆猴和变色蜥！打造优质精灵！" timeDes="全天候" startTime="00:00" endTime="23:00" go="PetTrainActPanel">
+			<reward>
+				<pet id="397" />
+				<pet id="390" />
+				<item id="200221" />
+
+			</reward>	
+		</act>
+
+
+
+		<act name="薄暮蜕变 暗夜变身" iconId="79"  isPet="1" willOver="0"  detailDes="汲取暗月能的薄暮兔神奇大变身！" timeDes="全天候" startTime="00:00" endTime="23:00" go="RabitDressPanel">
+			<reward>
+				<pet id="388" />
+			</reward>	
+		</act>
+
+
+		<act name="撒旦崛起凯伊对决" iconId="80"  isPet="0" willOver="0"  detailDes="3V1对战冥王撒旦！获得撒旦战袍！" timeDes="全天候" startTime="00:00" endTime="23:00" go="SaDanFightPanel">
+			<reward>
+				<item id="100795" />
+				<item id="200221" />
+				<item id="200016" />
+			</reward>	
+		</act>
+
+
+		<act name="神秘九尾的挑战" iconId="78"  isPet="1" willOver="0"  detailDes="挑战获胜得精灵九尾、精灵纹章！" timeDes="全天候" startTime="00:00" endTime="23:00" go="640">
+			<reward>
+				<pet id="387" />
+				<item id="200213" />
+				<item id="200214" />
+			</reward>	
+		</act>
+
+	
+
+
+
+
+		<act name="奇遇暗月兔" iconId="47"  isPet="1" willOver="0"  detailDes="骰子星寻宝就能撞见暗月兔！" timeDes="全天候" startTime="00:00" endTime="23:00" go="DarkMoonRabbitPanel">
+			<reward>
+			<pet id="385" />
+			<item id="102031" count="1" />
+			<item id="601030" count="1" />>
+			</reward>	
+		</act>
+
+<!--
+		<act name="审判！暗黑死神！" iconId="5"  isPet="1" willOver="0"  detailDes="闯关三重门，你就是死神猎手！" timeDes="全天候" startTime="00:00" endTime="23:00" go="DarkDeathPanel">
+			<reward>
+			<pet id="170" />
+			<pet id="377" />
+			<item id="100753" count="1" />
+			</reward>	
+		</act>
+-->
+
+		<act name="王者的追溯" iconId="53"  isPet="1" willOver="0"  detailDes="挑战弱化版雷伊凯萨就可得精灵！" timeDes="全天候" startTime="00:00" endTime="23:00" go="LeiyiKaisaGadMainPanel">
+			<reward>
+			<pet id="090" />
+			<pet id="234" />
+			<item id="400279" count="1" />
+			</reward>
+		</act>
+
+		<act name="天宫四宿灵朱雀" iconId="52"  isPet="1" willOver="0"  detailDes="现在充值1-3个月VIP就送灵朱雀！" timeDes="全天候" startTime="00:00" endTime="23:00" go="TempleFourSeasonPanel">
+			<reward>
+			<pet id="418" />
+			</reward>
+		</act>
+
+		<act name="暗黑魔盒" iconId="60"  isPet="1" willOver="0"  detailDes="约瑟之钥！开启暗黑魔盒释放绝版精灵" timeDes="全天候" startTime="00:00" endTime="23:00" go="DarkMagicBoxPanel">
+			<reward>
+			<pet id="387" />
+			<pet id="389" />
+			<pet id="216" />
+			</reward>
+		</act>
+
+
+
+		<act name="精灵扭蛋机" iconId="9"  isPet="1" willOver="0"  detailDes="扭蛋机最新推出初影忍者尼加、河童、布布！" timeDes="全天候" startTime="00:00" endTime="23:00" go="GiftMachinePanel">
+			<reward>
+				<pet id="405" />
+				<pet id="295" />
+				<pet id="353" />
+			</reward>
+		</act>
+
+
+		<act name="周年狂欢撞头彩" iconId="59"  isPet="0" willOver="0"  detailDes="米币豪车大集结！送全新二周年黄金座驾！" timeDes="全天候" startTime="00:00" endTime="23:00" go="NewGoodStartMainPanel">
+			<reward>
+			<item id="100886" count="1" />
+			<item id="100852" count="1" />
+			<item id="100833" count="1" />
+			</reward>
+		</act>
+
+
+
+
+		<act name="伊特大乱斗" iconId="17"  isPet="1" willOver="0"  detailDes="伊特家族大乱斗，各种伊特精灵，伊特纹章送！" timeDes="全天候" startTime="00:00" endTime="23:00" go="YiteFightTipsPanel">
+			<reward>
+				<item id="200582" />
+				<item id="200583" />
+				<item id="200584" />
+			</reward>
+		</act>
+
+		<act name="赏金电麒麟" iconId="8"  isPet="0" willOver="0"  detailDes="去赏金猎人处接任务，换取麒麟进化芯片！" timeDes="全天候" startTime="00:00" endTime="23:00" go="60">
+			<reward>
+			<item id="200329" count="1" />
+			<item id="200330" count="1" />
+			<item id="200225" count="1" />
+			</reward>
+		</act>
+
+
+
+
+
+		<act name="灵兽的试炼" iconId="2"  isPet="0" willOver="0"  detailDes="草、火、水三大灵兽试炼及挑战已开启！" timeDes="全天候" startTime="00:00" endTime="23:00" go="BagginsLogPanel">
+			<reward>
+				<pet id="301" />
+				<pet id="302" />
+				<pet id="303" />
+			</reward>
+		</act>
+
+
+
+
+
+		<act name="商城每日抽奖" iconId="4"  isPet="0" willOver="0"  detailDes="商城送星石！普通用户每日3次抽奖（VIP5次）" timeDes="全天候" startTime="00:00" endTime="23:00" go="EnergyLotteryPanel">
+			<reward>
+				<item id="17" />
+			</reward>
+		</act>
+
+
+		<act name="神龙火圈" iconId="7"  isPet="1" willOver="0"  detailDes="冰封巨龙迈巴赫问世！新增15连抛必中！" timeDes="全天候" startTime="00:00" endTime="23:00" go="LuckyDialMeePanel">
+			<reward>
+				<pet id="426" />
+				<pet id="410" />
+				<pet id="529" />
+			</reward>
+		</act>
+
+
+
+		<act name="VIP乐园金字塔" iconId="6"  isPet="0" willOver="0"  detailDes="问鼎百万豪车，2013年VIP金子塔奖励已升级！" timeDes="全天候" startTime="00:00" endTime="23:00" go="VipPyramidPanel">
+			<reward>
+				<item id="100595" />
+				<item id="200605" />
+				<item id="200225" />
+			</reward>
+		</act>
+
+
+		<act name="重金悬赏令！" iconId="8"  isPet="1" willOver="0"  detailDes="猎人金库为你敞开！跨年精灵悬赏令全球发动！" timeDes="全天候" startTime="00:00" endTime="23:00" go="60">
+			<reward>
+				<item id="200234" />
+				<item id="200214" />
+				<item id="200224" />
+			</reward>
+		</act>
+
+
+
+		<act name="星座守护者计划" iconId="10"  isPet="0" willOver="0"  detailDes="VIP填生日获尊贵星座标记、黄金圣衣及座驾哦" timeDes="全天候" startTime="00:00" endTime="23:00" go="VipDecorationPanel">
+			<reward>
+			<pet id="319" />
+			<item id="100965" count="1" />
+			<item id="100966" count="1" />
+			</reward>
+		</act>
+
+
+
+		<act name="VIP神魔之月礼" iconId="13"  isPet="0" willOver="0"  detailDes="VIP尊享绝版NONO等18米币周年庆礼盒送给你！" timeDes="全天候" startTime="00:00" endTime="23:00" go="VipChristmasPanel">
+			<reward>
+				<item id="202007" />
+				<item id="102045" />
+				<item id="200223" />
+			</reward>
+		</act>
+
+
+
+		<act name="娜娜和斯缇姆军团" iconId="15"  isPet="1" willOver="0"  detailDes="超强技师娜娜和她引以为傲的精灵斯缇姆迎战！" timeDes="全天候" startTime="00:00" endTime="23:00" go="900">
+			<reward>
+				<pet id="245" />
+				<item id="100444" />
+				<item id="100448" />
+			</reward>
+		</act>
+
+		<act name="迷雾杀手" iconId="16"  isPet="1" willOver="0"  detailDes="工房迷雾杀手艾力克的斯莫克军团让人闻风丧胆！" timeDes="全天候" startTime="00:00" endTime="23:00" go="940">
+			<reward>
+				<pet id="257" />
+				<item id="100487" />
+				<item id="100491" />
+			</reward>
+		</act>
+
+		<act name="后花园游乐场" iconId="33"  isPet="1" willOver="0"  detailDes="马里奥的游戏开始了！可得七星瓢虫哦" timeDes="12:00-13:00午间版" startTime="12:00" endTime="13:00" go="1230">
+			<reward>
+				<pet id="413" />
+			</reward>
+		</act>
+
+
+
+		<act name="冰封之轴" iconId="27"  isPet="1" willOver="0"  detailDes="冰沁氏族发现百年难见的异样奇景！到底是什么？" timeDes="13:00—14:00午间版" startTime="13:00" endTime="14:00" go="650">
+			<reward>
+				<pet id="278" />
+				<item id="400212" />
+				<item id="400213" />
+			</reward>
+		</act>
+
+		<act name="重夺水源之心" iconId="25"  isPet="1" willOver="0"  detailDes="重夺水源之心迫在眉睫，新增精灵纹章奖励！" timeDes="13:00-14:00午间版" startTime="13:00" endTime="14:00" go="171">
+			<reward>
+				<pet id="150" />
+				<pet id="154" />
+				<item id="200595" />
+			</reward>
+		</act>
+
+
+
+		<act name="睡懒觉的吃货" iconId="29"  isPet="1" willOver="0"  detailDes="诺基博从懒觉中醒来！赶快做美味的料理吧~" timeDes="13:00-16:00" startTime="13:00" endTime="16:00" go="125">
+			<reward>
+				<pet id="190" />
+			</reward>
+		</act>
+
+
+
+		<act name="谁敢打搅达达用餐" iconId="45"  isPet="1" willOver="0"  detailDes="先用头部射击击中达克尔才有机会与达达交战哦！" timeDes="13:00-14:00" startTime="13:00" endTime="14:00" go="262">
+			<reward>
+				<pet id="074" />
+			</reward>
+		</act>
+
+		<act name="帕帕米拉的造型" iconId="46"  isPet="1" willOver="0"  detailDes="在焰之森和多摩对战，就有几率碰见美发大王哦" timeDes="13:00-14:00午间版" startTime="13:00" endTime="14:00" go="281">
+			<reward>
+				<pet id="231" />
+			</reward>
+		</act>
+
+		<act name="七星连珠唤神龙" iconId="65"  isPet="0" willOver="0"  detailDes="召唤出神龙，它会实现你的心愿！" timeDes="14:00-15:00午间版" startTime="14:00" endTime="15:00" go="CallDragonPanel">
+			<reward>
+			<item id="100606" count="1" />
+			<item id="400137" count="1" />
+			<item id="102015" count="1" />
+			</reward>
+		</act>
+
+
+		<act name="寻找神秘的歌声" iconId="30"  isPet="1" willOver="0"  detailDes="会唱歌会伪装的神秘草系精灵，你找的到吗？" timeDes="13:30-14:30" startTime="13:30" endTime="14:30" go="100">
+			<reward>
+				<pet id="251" />
+			</reward>
+		</act>
+
+		<act name="谁偷吃了我的料理" iconId="33"  isPet="1" willOver="0"  detailDes="超胆小精灵冰湖豚登场！听说它也喜欢料理？" timeDes="18:00-20:00" startTime="18:00" endTime="20:00" go="125">
+			<reward>
+				<pet id="119" />
+			</reward>
+		</act>
+
+		<act name="后花园游乐场" iconId="46"  isPet="1" willOver="0"  detailDes="马里奥的游戏开始了！可得七星瓢虫哦" timeDes="18:00-19:00夜间版" startTime="18:00" endTime="19:00" go="1230">
+			<reward>
+				<pet id="413" />
+			</reward>
+		</act> 
+
+
+		<act name="七星连珠唤神龙" iconId="65"  isPet="0" willOver="0"  detailDes="召唤出神龙，它会实现你的心愿！" timeDes="19:00-20:00夜间版" startTime="19:00" endTime="20:00" go="CallDragonPanel">
+			<reward>
+			<item id="100606" count="1" />
+			<item id="400137" count="1" />
+			<item id="102015" count="1" />
+			</reward>
+		</act>
+
+
+
+		<act name="重夺水源之心" iconId="25"  isPet="1" willOver="0"  detailDes="重夺水源之心迫在眉睫，新增精灵纹章奖励！" timeDes="19:00-20:00夜间版" startTime="19:00" endTime="20:00" go="171">
+			<reward>
+				<pet id="150" />
+				<pet id="154" />
+				<item id="200595" />
+			</reward>
+		</act>
+		<act name="帕帕米拉的造型" iconId="46"  isPet="1" willOver="0"  detailDes="在焰之森和多摩对战，就有几率碰见美发大王哦" timeDes="19:00-20:00夜间版" startTime="19:00" endTime="20:00" go="281">
+			<reward>
+				<pet id="231" />
+			</reward>
+		</act>
+
+		<act name="冰封之轴" iconId="27"  isPet="1" willOver="0"  detailDes="冰沁氏族发现百年难见的异样奇景！到底是什么？" timeDes="20:00—21:00夜间版" startTime="20:00" endTime="21:00" go="650">
+			<reward>
+				<pet id="278" />
+				<item id="400212" />
+				<item id="400213" />
+			</reward>
+		</act>
+
+		<act name="双倍荣誉" iconId="19"  isPet="0" willOver="0"  detailDes="去试炼和勇士之战50V50就可获得双倍荣誉点了！" timeDes="20:00-21:00" startTime="20:00" endTime="21:00" go="450">
+			<reward>
+				<item id="300001" />
+				<item id="300002" />
+				<item id="200221" />
+			</reward>
+		</act>
+
+
+		<act name="骰子星寻宝" iconId="21"  isPet="1" willOver="0"  detailDes="去骰子星寻宝，绝版装扮等星币奖品！" timeDes="全天候" startTime="00:00" endTime="23:00" go="1030">
+			<reward>
+				<pet id="269" />
+				<pet id="264" />
+				<item id="601030" />
+			</reward>
+		</act>
+
+
+		<act name="目灵兽终极挑战" iconId="40"  isPet="1" willOver="0"  detailDes="目灵祭台，沉睡的目灵兽，四大守护精灵！" timeDes="全天候" startTime="00:00" endTime="23:00" go="1000">
+			<reward>
+				<pet id="301" />
+			</reward>
+		</act>
+
+		<act name="神目守护特鲁伊！" iconId="41"  isPet="1" willOver="0"  detailDes="权利之帐，神目酋长的守护精灵特鲁伊向你挑战！" timeDes="全天候" startTime="00:00" endTime="23:00" go="110">
+			<reward>
+				<pet id="293" />
+			</reward>
+		</act>
+
+		<act name="水之翘楚爱丽斯" iconId="42"  isPet="1" willOver="0"  detailDes="爱丽斯，水脉精灵之翘楚！神谕之挑战已开启！" timeDes="全天候" startTime="00:00" endTime="23:00" go="160">
+			<reward>
+				<pet id="341" />
+			</reward>
+		</act>
+
+
+
+		<act name="海小葵的喷嚏" iconId="31"  isPet="1" willOver="0"  detailDes="流离街出现了陌生的精灵，它的名字叫“海葵”！" timeDes="全天候" startTime="00:00" endTime="23:00" go="920">
+			<reward>
+				<pet id="253" />
+			</reward>
+		</act>
+
+		<act name="三眼蝎的舞步" iconId="32"  isPet="1" willOver="0"  detailDes="去矿坑找大板牙，照他说的做就能引来三眼石蝎！" timeDes="全天候" startTime="00:00" endTime="23:00" go="520">
+			<reward>
+				<pet id="086" />
+			</reward>
+		</act>
+
+
+
+		<act name="爱之拂晓兔" iconId="34"  isPet="1" willOver="0"  detailDes="晓晓和月月，以爱的名义等待你的到来！" timeDes="全天候" startTime="00:00" endTime="23:00" go="132">
+			<reward>
+				<pet id="61" />
+			</reward>
+		</act>
+
+		<act name="谜一样的精灵" iconId="35"  isPet="1" willOver="0"  detailDes="它是谁？先去幽静浅滩点小猪储蓄罐唤它出来吧！" timeDes="全天候" startTime="00:00" endTime="23:00" go="220">
+			<reward>
+				<pet id="51" />
+			</reward>
+		</act>
+
+		<act name="迷途的小海马" iconId="36"  isPet="1" willOver="0"  detailDes="维拉发现了一个迷途的小海马，它在说什么呢？" timeDes="全天候" startTime="00:00" endTime="23:00" go="151">
+			<reward>
+				<pet id="41" />
+			</reward>
+		</act>
+
+		<act name="多利的雪人计划" iconId="37"  isPet="1" willOver="0"  detailDes="多利竟然没有雪球用来堆雪人了，一起来帮它。" timeDes="全天候" startTime="00:00" endTime="23:00" go="540">
+			<reward>
+				<pet id="138" />
+			</reward>
+		</act>
+
+		<act name="小小葵的梦境" iconId="38"  isPet="1" willOver="0"  detailDes="小小葵的梦境你去探索过了吗？这里藏了许多秘密" timeDes="全天候" startTime="00:00" endTime="23:00" go="131">
+			<reward>
+				<pet id="13" />
+			</reward>
+		</act>
+
+		<act name="摇滚天王爆炸头" iconId="39"  isPet="1" willOver="0"  detailDes="传说它喜欢迷穴中的财宝，迷穴之可是凶多吉少呢" timeDes="全天候" startTime="00:00" endTime="23:00" go="340">
+			<reward>
+				<pet id="83" />
+			</reward>
+		</act>
+
+
+		<act name="鸡毛与沙" iconId="43"  isPet="1" willOver="0"  detailDes="谁是真正的战斗鸡？周扒皮的斗鸡生意等你捧场！" timeDes="全天候" startTime="00:00" endTime="23:00" go="350">
+			<reward>
+				<item  id="1" />
+			</reward>
+		</act>
+
+
+
+	</acts>
+	<acts day="2">
+
+	<act name="爆焰努尔" iconId="1097"  isPet="1" willOver="0"  detailDes="为了弟兄和自己的尊严！霍克努尔终于爆发了！" timeDes="全天候" startTime="00:00" endTime="23:00" go="HuoKeNuErSuperProcessPanel">
+			<reward>
+			<pet id="590" />
+			<item id="101087" count="1" />
+			<item id="101088" count="1" />
+			</reward>	
+		</act>
+
+	<act name="炼金师迪克" iconId="1098"  isPet="1" willOver="0"  detailDes="天马四骑士第三尊炼金师迪克出场！" timeDes="全天候" startTime="00:00" endTime="23:00" go="FightVsDickPanel">
+			<reward>
+			<pet id="591" />
+			<pet id="592" />
+			</reward>	
+		</act>
+
+
+	<act name="永恒炽翼" iconId="1096"  isPet="1" willOver="0"  detailDes="燃圣火种，火系凯瑟琳将进化为炽翼女神赫拉！" timeDes="全天候" startTime="00:00" endTime="23:00" go="KaiSeLinSuperProcessPanel">
+			<reward>
+			<pet id="587" />
+			<item id="101083" count="1" />
+			<item id="101084" count="1" />
+			</reward>	
+		</act>
+	<act name="跨年龙战" iconId="1095"  isPet="1" willOver="0"  detailDes="8条神龙跨年而来，每周开启两条神龙挑战！" timeDes="全天候" startTime="00:00" endTime="23:00" go="KuaNianLongZhanPanel">
+			<reward>
+			<pet id="410" />
+			<pet id="394" />
+			</reward>	
+		</act>
+	<act name="圣灵师海罗"  iconId="1093"  isPet="1" willOver="0"  detailDes="每天修炼就能获得天马四骑士——圣灵师海罗" timeDes="全天候" startTime="00:00" endTime="23:00" go="FightVsHelloPanel">
+			<reward>
+			<pet id="588" />
+			<pet id="589" />
+			</reward>	
+		</act>
+
+	<act name="巨石托尔" iconId="1087"  isPet="1" willOver="0"  detailDes="SPT超进化生日派对！帮布鲁托完成生日心愿！" timeDes="全天候" startTime="00:00" endTime="23:00" go="BuNuTuoSuperProcessPanel">
+			<reward>
+			<pet id="586" />
+			<item id="101072" count="1" />
+			<item id="101073" count="1" />
+			</reward>	
+		</act>
+
+
+
+	<act name="圣猎人拜瑞" iconId="1090"  isPet="1" willOver="0"  detailDes="每天修炼就能获得天马四骑士——圣猎人拜瑞！" timeDes="全天候" startTime="00:00" endTime="23:00" go="FightVsBarryPanel">
+			<reward>
+			<pet id="582" />
+			<pet id="583" />
+			</reward>	
+		</act>
+
+
+	<act name="直捣炼狱战魔王" iconId="1088"  isPet="1" willOver="0"  detailDes="炼狱七大魔王弱化挑战启动！挑战胜利得魔王！" timeDes="全天候" startTime="00:00" endTime="23:00" go="FightVsBarryPanel">
+			<reward>
+			<pet id="325" />
+			<pet id="322" />
+			<pet id="340" />
+			</reward>	
+		</act>
+
+
+
+
+	<act name="冰封魔域库贝萨" iconId="1086"  isPet="1" willOver="0"  detailDes="小当家意外走失，你在冰封魔域的冒险已经开始！" timeDes="全天候" startTime="00:00" endTime="23:00" go="BingfengQuestMianPanel">
+			<reward>
+			<pet id="581" />
+			<item id="200214" count="1" />
+			</reward>	
+		</act>
+
+
+
+	<act name="银脉紫煞" iconId="1083"  isPet="1" willOver="0"  detailDes="紫电将在银脉山脊完成超进化！" timeDes="全天候" startTime="00:00" endTime="23:00" go="ZiDianSuperProcessPanel">
+			<reward>
+			<pet id="580" />
+			<item id="200215" count="1" />
+			<item id="200011" count="1" />
+			</reward>	
+		</act>
+
+
+
+	<act name="电魂巴图" iconId="1080"  isPet="1" willOver="0"  detailDes="巴图领悟了电闪雷鸣之力后蜕变为【电魂巴图】！" timeDes="全天候" startTime="00:00" endTime="23:00" go="XiaoBaEvolutionPanel">
+			<reward>
+			<pet id="578" />
+			<item id="101052" count="1" />
+			<item id="101053" count="1" />
+			</reward>	
+		</act>
+
+
+
+
+
+
+
+
+	<act name="神力超猪侠" iconId="1078"  isPet="1" willOver="0"  detailDes="美食神猪维克多+宇宙超级大饭团=神力超猪侠！" timeDes="全天候" startTime="00:00" endTime="23:00" go="FoodPigSuperProcessPanel">
+			<reward>
+			<pet id="577" />
+			<item id="200206" count="1" />
+			<item id="200222" count="1" />
+			</reward>	
+		</act>
+
+	<act name="忍者龙剑坛" iconId="1079"  isPet="1" willOver="0"  detailDes="【地忍百魁】在白龙岩阵的肃杀挑战！" timeDes="全天候" startTime="00:00" endTime="23:00" go="80069">
+			<reward>
+			<pet id="546" />
+			<item id="201021" count="1" />
+			<item id="201036" count="1" />
+			</reward>	
+		</act>
+
+	<act name="僵尸博士大逃杀" iconId="1071"  isPet="1" willOver="0"  detailDes="僵尸博士变异，全程追缉！你能抓住它吗？" timeDes="全天候" startTime="00:00" endTime="23:00" go="ZombieDrEscapePanel">
+			<reward>
+			<pet id="563" />
+			</reward>	
+		</act>
+
+	<act name="万圣假面舞会" iconId="1072"  isPet="1" willOver="0"  detailDes="万圣舞会迎来伊特家族第14只伊特【特伊特】！" timeDes="全天候" startTime="00:00" endTime="23:00" go="DanceShowPanel">
+			<reward>
+			<pet id="105" />
+			</reward>	
+		</act>
+
+
+
+	<act name="宇宙机甲战士" iconId="1076"  isPet="1" willOver="0"  detailDes="包月就送宇宙机甲战士，包3个月再送机甲装" timeDes="全天候" startTime="00:00" endTime="23:00" go="VipGaoDaPanel">
+			<reward>
+			<pet id="565" />
+			<item id="101033" count="1" />
+			<item id="101034" count="1" />
+			</reward>	
+		</act>
+
+
+	<act name="圣诞许愿树" iconId="1074"  isPet="1" willOver="0"  detailDes="超强BOSS、绝版精灵、米币道具、绝版装扮送出" timeDes="全天候" startTime="00:00" endTime="23:00" go="TwoYearWishPanel">
+			<reward>
+		    <pet id="377" />
+			<pet id="280" />
+			<item id="101042" count="1" />
+			</reward>	
+		</act>
+
+
+
+
+
+
+
+
+
+
+
+		<act name="初影忍者" iconId="1066"  isPet="1" willOver="0"  detailDes="忍者系列首席【绝影忍者】的修炼全面开启！" timeDes="全天候" startTime="00:00" endTime="23:00" go="NinjaPractiseSkillPanel">
+			<reward>
+				<pet id="541" />
+			    <item id="200246" />
+			    <item id="200247" />
+			</reward>	
+		</act>
+
+
+		<act name="吸血魔咒女王" iconId="1067"  isPet="1" willOver="0"  detailDes="始祖吸血女王阿卡莎驾到！" timeDes="全天候" startTime="00:00" endTime="23:00" go="BloodKingActPanel">
+			<reward>
+				<pet id="541" />
+				<pet id="546" />
+			    <item id="200013"/> 
+			</reward>	
+		</act>
+
+
+
+
+		<act name="狂炼狼神" iconId="1062"  isPet="1" willOver="0"  detailDes="通过5重历炼就能使狼妖进化为狼神！" timeDes="全天候" startTime="00:00" endTime="23:00" go="WolfSuperPanel">
+			<reward>
+			<pet id="560" />
+			</reward>	
+		</act>
+
+		<act name="异形的危机" iconId="1063"  isPet="1" willOver="0"  detailDes="始祖吸血病毒入侵星球！小赛尔们我们行动起来！" timeDes="全天候" startTime="00:00" endTime="23:00" go="YiXingMainPanel">
+			<reward>
+			<pet id="558" />
+			</reward>	
+		</act>
+
+
+
+
+
+
+
+
+		<act name="七龙忍者阵" iconId="1061"  isPet="1" willOver="0"  detailDes="首只忍者系精灵【初影忍者】诞生！它是忍者之源" timeDes="全天候" startTime="00:00" endTime="23:00" go="SevenDragonNinjaPanel">
+			<reward>
+			<pet id="540" />
+			</reward>	
+		</act>
+
+
+
+
+
+
+		<act name="百变神君神伊特" iconId="1057"  isPet="1" willOver="0"  detailDes="第13只伊特【神伊特】出场！收集伊特有大奖！" timeDes="全天候" startTime="00:00" endTime="23:00" go="YiteMorphActPanel">
+			<reward>
+			<pet id="104" />
+			<item id="200206" count="1" />
+			<item id="200222" count="1" />
+			</reward>	
+		</act>
+
+
+		<act name="黄金12宫" iconId="1056"  isPet="1" willOver="0"  detailDes="在星空下许愿免费得黄金十二宫星座守护！" timeDes="全天候" startTime="00:00" endTime="23:00" go="Gold12Panel">
+			<reward>
+			<pet id="154" />
+			<pet id="155" />
+			<pet id="156" />
+			</reward>	
+		</act>
+
+
+
+
+
+		<act name="魔神前传" iconId="1047"  isPet="1" willOver="0"  detailDes="首只魔化精灵！小魔神免费领取1只，VIP2只！" timeDes="全天候" startTime="00:00" endTime="23:00" go="PetProcessActPanel">
+			<reward>
+			<pet id="523" />
+			<pet id="524" />
+			<item id="200062" count="1" />
+			</reward>	
+		</act>
+
+
+
+
+		<act name="进击的超伊特" iconId="1041"  isPet="1" willOver="0"  detailDes="伊特家族再战！翻族牌迎接超伊特的降临！" timeDes="全天候" startTime="00:00" endTime="23:00" go="YiteSuperPetPanel">
+			<reward>
+			<item id="200718" count="1" />
+			<item id="200335" count="1" />
+			<item id="200334" count="1" />
+			</reward>	
+		</act>
+
+		<act name="晨战！王之冰魄！" iconId="1042"  isPet="1" willOver="0"  detailDes="挑战最新BOOSS晨璨，四战胜利得王之冰魄！" timeDes="全天候" startTime="00:00" endTime="23:00" go="KingSoulWithIcePanel">
+			<reward>
+			<pet id="512" />
+			<item id="200221" count="1" />
+			<item id="200225" count="1" />
+			</reward>	
+		</act>
+
+		<act name="BOSS晨璨真心朋友" iconId="1043"  isPet="1" willOver="0"  detailDes="拥有四重性格！亲历晨璨的过去时光吧！" timeDes="全天候" startTime="00:00" endTime="23:00" go="KingSoulWithIcePanel">
+			<reward>
+			<pet id="492" />
+			</reward>	
+		</act>
+
+
+		<act name="尖叫的大毛怪" iconId="1044"  isPet="1" willOver="0"  detailDes="种植园里有怪兽！大毛怪和大眼怪来了！" timeDes="全天候" startTime="00:00" endTime="23:00" go="70000">
+			<reward>
+			<pet id="457" />
+			<pet id="458" />
+			<item id="400006" count="1" />
+			</reward>	
+		</act>
+
+
+
+
+
+
+		<act name="VIP宇宙嘉年华" iconId="11"  isPet="1" willOver="0"  detailDes="加入VIP送宇宙机甲震天虎+灵朱雀！" timeDes="全天候" startTime="00:00" endTime="23:00" go="VipRechargeBasePanel">
+			<reward>
+			<pet id="537" />
+			<pet id="565" />
+			</reward>	
+		</act>
+
+		<act name="约瑟17魂魄篇开启" iconId="1035"  isPet="1" willOver="0"  detailDes="约瑟魂魄已出！17属性17魂魄！" timeDes="全天候" startTime="00:00" endTime="23:00" go="KingSoulPanel">
+			<reward>
+			<pet id="505" />
+			<pet id="506" />
+			<pet id="507" />
+			</reward>	
+		</act>
+
+
+		<act name="王之召唤" iconId="1036"  isPet="1" willOver="0"  detailDes="邀请好友、老兵回归、新兵报道，三重大礼送出！" timeDes="全天候" startTime="00:00" endTime="23:00" go="KingSoulPanel">
+			<reward>
+			<pet id="039" />
+			<pet id="053" />
+			<pet id="364" />
+			</reward>	
+		</act>
+
+	
+
+
+		<act name="经验大爆炸" iconId="1038"  isPet="0" willOver="0"  detailDes="收集经验换精灵、米币道具！" timeDes="全天候" startTime="00:00" endTime="23:00" go="KingWithTrainPanel">
+			<reward>
+			<item id="200239" count="1" />
+			<item id="200223" count="1" />
+			<item id="400194" count="1" />
+			</reward>	
+		</act>
+
+
+
+
+		<act name="暴走的雷电" iconId="1028"  isPet="1" willOver="0"  detailDes="幻灵骑士团最后一员【幻蹄雷电】！" timeDes="全天候" startTime="00:00" endTime="23:00" go="BaozouLeidianPanel">
+			<reward>
+			<pet id="451" />
+			</reward>	
+		</act>
+
+
+		<act name="太阳神之子" iconId="1029"  isPet="1" willOver="0"  detailDes="米咔超进化！就在太阳神殿加冕为太阳神之子！" timeDes="全天候" startTime="00:00" endTime="23:00" go="SonOfSunGoldPanel">
+			<reward>
+				<pet id="456" />
+				<item id="201024" />
+				<item id="200206" />
+			</reward>	
+		</act>
+
+		<act name="孤独的巴鲁金斯" iconId="1030"  isPet="1" willOver="0"  detailDes="收集精灵签名兑换孤独的巴鲁金斯！" timeDes="全天候" startTime="00:00" endTime="23:00" go="RollerLotteryPanel">
+			<reward>
+				<pet id="456" />
+				<item id="201024" />
+				<item id="200206" />
+			</reward>	
+		</act>
+
+
+
+
+
+	
+
+		<act name="炎帝之焰爪" iconId="1023"  isPet="1" willOver="0"  detailDes="获得焰爪，它就能让凯萨蜕变为炎帝！" timeDes="全天候" startTime="00:00" endTime="23:00" go="FireClawActPanel">
+			<reward>
+			<pet id="1101" />
+			<pet id="499" />
+			</reward>	
+		</act>
+
+		<act name="骤雨的搏击" iconId="1022"  isPet="1" willOver="0"  detailDes="搏杀三关就可得精灵【幻齿骤雨】" timeDes="全天候" startTime="00:00" endTime="23:00" go="BrashStrikePanel">
+			<reward>
+			<pet id="448" />
+			</reward>	
+		</act>
+
+
+
+
+
+
+
+		<act name="咆哮的飓风" iconId="1019"  isPet="1" willOver="0"  detailDes="幻灵骑士团第二尊：幻影飓风席卷全球！" timeDes="全天候" startTime="00:00" endTime="23:00" go="PetKingWindMainPanel">
+			<reward>
+			<pet id="440" />
+			<item id="200221" count="1" />
+			<item id="200214" count="1" />
+			</reward>	
+		</act>
+
+
+	
+
+
+
+
+
+		<act name="精灵大乱斗" iconId="1000"  isPet="1" willOver="0"  detailDes="精灵大乱斗加盟争霸赛！更多选择更多惊喜！" timeDes="全天候" startTime="00:00" endTime="23:00" go="PetMeleePanel">
+			<reward>
+			<item id="200223" count="1" />
+			<item id="200214" count="1" />
+			</reward>	
+		</act>
+
+		<act name="观星者本尊挑战" iconId="3"  isPet="1" willOver="0"  detailDes="宇宙至尊、观星者本尊挑战开放!" timeDes="全天候" startTime="00:00" endTime="23:00" go="StargazerFightPanel">
+			<reward>
+				<pet id="503" />
+			</reward>
+		</act>
+
+
+	
+
+
+		<act name="时空之客伊鲁达" iconId="1009"  isPet="1" willOver="0"  detailDes="用光的速度穿越时空，和克拉克战宠伊鲁达相遇！" timeDes="全天候" startTime="00:00" endTime="23:00" go="YiludaActPanel">
+			<reward>
+			<pet id="434" />
+			<item id="200244" count="1" />
+			</reward>	
+		</act>
+
+
+		<act name="幻翼的召唤" iconId="1010"  isPet="1" willOver="0"  detailDes="幻灵骑士团首席幽冥等你召唤！召唤成功赠送纹章！" timeDes="全天候" startTime="00:00" endTime="23:00" go="HuanyiCallActPanel">
+			<reward>
+			<pet id="431" />
+			<item id="200230" count="1" />
+			<item id="200702" count="1" />
+			</reward>	
+		</act>
+
+
+		<act name="幻灵骑士团" iconId="1011"  isPet="0" willOver="0"  detailDes="飞船告急！暗影幻灵骑士团四大战将纷至而来！" timeDes="全天候" startTime="00:00" endTime="23:00" go="EidolonPanel">
+			<reward>
+			<item id="200214" count="1" />
+			<item id="400187" count="1" />
+			</reward>	
+		</act>
+
+
+
+
+
+		<act name="雷神之斩" iconId="67"  isPet="1" willOver="0"  detailDes="上古器灵问世！雷伊结合雷切将会成为雷神！" timeDes="全天候" startTime="00:00" endTime="23:00" go="LeiyiGunPetPanel">
+			<reward>
+			<pet id="1100" />
+			<pet id="498" />
+			<item id="200222" count="1" />
+			</reward>	
+		</act>
+
+
+
+
+
+
+
+
+
+
+		<act name="螳螂101次信念" iconId="95"  isPet="1" willOver="0"  detailDes="周年庆典精灵第一尊！贾斯汀的至尊螳螂！" timeDes="全天候" startTime="00:00" endTime="23:00" go="MantisActPanel">
+			<reward>
+				<pet id="158" />
+				<item id="200241" />
+				<item id="500135" />
+			</reward>	
+		</act>
+
+		<act name="闪电之躯" iconId="97"  isPet="0" willOver="0"  detailDes="雷伊求助！快去帮助雷神还可获雷鸣裂空装！" timeDes="全天候" startTime="00:00" endTime="23:00" go="LeiyiChargingPanel">
+			<reward>
+				<item id="100868" />
+				<item id="200221" />
+				<item id="200234" />
+			</reward>	
+		</act>
+
+
+
+		
+		<act name="啊！蜻蜓！" iconId="86"  isPet="1" willOver="0"  detailDes="看！有蜻蜓！快拿网兜兜住它！" timeDes="全天候" startTime="00:00" endTime="23:00" go="DragonPanel">
+			<reward>
+				<pet id="402" />
+				<item id="102036" />
+				<item id="200676" />
+
+			</reward>	
+		</act>
+
+
+		<act name="埃卡维特爱吃鱼" iconId="75"  isPet="1" willOver="0"  detailDes="给点鱼吧！吃了维特就和你过过招！" timeDes="全天候" startTime="00:00" endTime="23:00" go="152">
+			<reward>
+				<pet id="109" />
+			</reward>	
+		</act>
+
+
+
+		<act name="最牛精灵训练营" iconId="82"  isPet="1" willOver="0"  detailDes="免费领取火爆猴和变色蜥！打造优质精灵！" timeDes="全天候" startTime="00:00" endTime="23:00" go="PetTrainActPanel">
+			<reward>
+				<pet id="397" />
+				<pet id="390" />
+				<item id="200221" />
+
+			</reward>	
+		</act>
+
+
+
+		<act name="薄暮蜕变 暗夜变身" iconId="79"  isPet="1" willOver="0"  detailDes="汲取暗月能的薄暮兔神奇大变身！" timeDes="全天候" startTime="00:00" endTime="23:00" go="RabitDressPanel">
+			<reward>
+				<pet id="388" />
+			</reward>	
+		</act>
+
+
+		<act name="撒旦崛起凯伊对决" iconId="80"  isPet="0" willOver="0"  detailDes="3V1对战冥王撒旦！获得撒旦战袍！" timeDes="全天候" startTime="00:00" endTime="23:00" go="SaDanFightPanel">
+			<reward>
+				<item id="100795" />
+				<item id="200221" />
+				<item id="200016" />
+			</reward>	
+		</act>
+
+
+		<act name="神秘九尾的挑战" iconId="78"  isPet="1" willOver="0"  detailDes="挑战获胜得精灵九尾、精灵纹章！" timeDes="全天候" startTime="00:00" endTime="23:00" go="640">
+			<reward>
+				<pet id="387" />
+				<item id="200213" />
+				<item id="200214" />
+			</reward>	
+		</act>
+
+
+
+
+
+
+
+		<act name="奇遇暗月兔" iconId="47"  isPet="1" willOver="0"  detailDes="骰子星寻宝就能撞见暗月兔！" timeDes="全天候" startTime="00:00" endTime="23:00" go="DarkMoonRabbitPanel">
+			<reward>
+			<pet id="385" />
+			<item id="102031" count="1" />
+			<item id="601030" count="1" />>
+			</reward>	
+		</act>
+
+
+
+		<act name="王者的追溯" iconId="53"  isPet="1" willOver="0"  detailDes="挑战弱化版雷伊凯萨就可得精灵！" timeDes="全天候" startTime="00:00" endTime="23:00" go="LeiyiKaisaGadMainPanel">
+			<reward>
+			<pet id="090" />
+			<pet id="234" />
+			<item id="400279" count="1" />
+			</reward>
+		</act>
+
+		<act name="天宫四宿灵朱雀" iconId="52"  isPet="1" willOver="0"  detailDes="现在充值1-3个月VIP就送灵朱雀！" timeDes="全天候" startTime="00:00" endTime="23:00" go="TempleFourSeasonPanel">
+			<reward>
+			<pet id="418" />
+			</reward>
+		</act>
+
+
+
+
+		<act name="暗黑魔盒" iconId="60"  isPet="1" willOver="0"  detailDes="约瑟之钥！开启暗黑魔盒释放绝版精灵" timeDes="全天候" startTime="00:00" endTime="23:00" go="DarkMagicBoxPanel">
+			<reward>
+			<pet id="387" />
+			<pet id="389" />
+			<pet id="216" />
+			</reward>
+		</act>
+
+
+
+		<act name="周年狂欢撞头彩" iconId="59"  isPet="0" willOver="0"  detailDes="米币豪车大集结！送全新二周年黄金座驾！" timeDes="全天候" startTime="00:00" endTime="23:00" go="NewGoodStartMainPanel">
+			<reward>
+			<item id="100886" count="1" />
+			<item id="100852" count="1" />
+			<item id="100833" count="1" />
+			</reward>
+		</act>
+
+
+
+		<act name="精灵扭蛋机" iconId="9"  isPet="1" willOver="0"  detailDes="扭蛋机最新推出初影忍者尼加、河童、布布！" timeDes="全天候" startTime="00:00" endTime="23:00" go="GiftMachinePanel">
+			<reward>
+				<pet id="405" />
+				<pet id="295" />
+				<pet id="353" />
+			</reward>
+		</act>
+		<act name="伊特大乱斗" iconId="17"  isPet="0" willOver="0"  detailDes="伊特家族大乱斗，各种伊特精灵，伊特纹章送！" timeDes="全天候" startTime="00:00" endTime="23:00" go="YiteFightTipsPanel">
+			<reward>
+				<item id="200582" />
+				<item id="200583" />
+				<item id="200584" />
+			</reward>
+		</act>
+		<act name="赏金电麒麟" iconId="8"  isPet="0" willOver="0"  detailDes="去赏金猎人处接任务，换取麒麟进化芯片！" timeDes="全天候" startTime="00:00" endTime="23:00" go="60">
+			<reward>
+			<item id="200329" count="1" />
+			<item id="200330" count="1" />
+			<item id="200225" count="1" />
+			</reward>
+		</act>
+
+
+
+		<act name="摇滚天王爆炸头" iconId="39"  isPet="1" willOver="0"  detailDes="传说它喜欢迷穴中的财宝，迷穴之可是凶多吉少呢" timeDes="全天候" startTime="00:00" endTime="23:00" go="340">
+			<reward>
+				<pet id="83" />
+			</reward>
+		</act>
+		<act name="鸡毛与沙" iconId="43"  isPet="1" willOver="0"  detailDes="谁是真正的战斗鸡？周扒皮的斗鸡生意等你捧场！" timeDes="全天候" startTime="00:00" endTime="23:00" go="350">
+			<reward>
+				<item  id="1" />
+			</reward>
+		</act>
+       <act name="海小葵的喷嚏" iconId="31"  isPet="1" willOver="0"  detailDes="流离街出现了陌生的精灵，它的名字叫“海葵”！" timeDes="全天候" startTime="00:00" endTime="23:00" go="920">
+			<reward>
+				<pet id="253" />
+			</reward>
+		</act>
+		<act name="三眼蝎的舞步" iconId="32"  isPet="1" willOver="0"  detailDes="去矿坑找大板牙，照他说的做就能引来三眼石蝎！" timeDes="全天候" startTime="00:00" endTime="23:00" go="520">
+			<reward>
+				<pet id="086" />
+			</reward>
+		</act>
+		<act name="爱之拂晓兔" iconId="34"  isPet="1" willOver="0"  detailDes="晓晓和月月，以爱的名义等待你的到来！" timeDes="全天候" startTime="00:00" endTime="23:00" go="132">
+			<reward>
+				<pet id="61" />
+			</reward>
+		</act>
+		<act name="谜一样的精灵" iconId="35"  isPet="1" willOver="0"  detailDes="它是谁？先去幽静浅滩点小猪储蓄罐唤它出来吧！" timeDes="全天候" startTime="00:00" endTime="23:00" go="220">
+			<reward>
+				<pet id="51" />
+			</reward>
+		</act>
+
+
+
+
+
+		<act name="灵兽的试炼" iconId="2"  isPet="0" willOver="0"  detailDes="草、火、水三大灵兽试炼及挑战已开启！" timeDes="全天候" startTime="00:00" endTime="23:00" go="BagginsLogPanel">
+			<reward>
+				<pet id="301" />
+				<pet id="302" />
+				<pet id="303" />
+			</reward>
+		</act>
+
+
+
+
+
+		<act name="商城每日抽奖" iconId="4"  isPet="0" willOver="0"  detailDes="商城送星石！普通用户每日3次抽奖（VIP5次）" timeDes="全天候" startTime="00:00" endTime="23:00" go="EnergyLotteryPanel">
+			<reward>
+				<item id="17" />
+			</reward>
+		</act>
+
+
+		<act name="神龙火圈" iconId="7"  isPet="1" willOver="0"  detailDes="冰封巨龙迈巴赫问世！新增15连抛必中！" timeDes="全天候" startTime="00:00" endTime="23:00" go="LuckyDialMeePanel">
+			<reward>
+				<pet id="426" />
+				<pet id="410" />
+				<pet id="529" />
+			</reward>
+		</act>
+
+
+
+		<act name="VIP乐园金字塔" iconId="6"  isPet="0" willOver="0"  detailDes="问鼎百万豪车，2013年VIP金子塔奖励已升级！" timeDes="全天候" startTime="00:00" endTime="23:00" go="VipPyramidPanel">
+			<reward>
+				<item id="100595" />
+				<item id="200605" />
+				<item id="200225" />
+			</reward>
+		</act>
+
+
+		<act name="重金悬赏令！" iconId="8"  isPet="1" willOver="0"  detailDes="猎人金库为你敞开！跨年精灵悬赏令全球发动！" timeDes="全天候" startTime="00:00" endTime="23:00" go="60">
+			<reward>
+				<item id="200234" />
+				<item id="200214" />
+				<item id="200224" />
+			</reward>
+		</act>
+
+
+
+		<act name="星座守护者计划" iconId="10"  isPet="0" willOver="0"  detailDes="VIP填生日获尊贵星座标记、黄金圣衣及座驾哦" timeDes="全天候" startTime="00:00" endTime="23:00" go="VipDecorationPanel">
+			<reward>
+			<pet id="319" />
+			<item id="100965" count="1" />
+			<item id="100966" count="1" />
+			</reward>
+		</act>
+
+
+		
+
+
+		<act name="VIP神魔之月礼" iconId="13"  isPet="0" willOver="0"  detailDes="VIP尊享绝版NONO等18米币周年庆礼盒送给你！" timeDes="全天候" startTime="00:00" endTime="23:00" go="VipChristmasPanel">
+			<reward>
+				<item id="202007" />
+				<item id="102045" />
+				<item id="200223" />
+			</reward>
+		</act>
+
+
+
+
+		<act name="娜娜和斯缇姆军团" iconId="15"  isPet="1" willOver="0"  detailDes="超强技师娜娜和她引以为傲的精灵斯缇姆迎战！" timeDes="全天候" startTime="00:00" endTime="23:00" go="900">
+			<reward>
+				<pet id="245" />
+				<item id="100444" />
+				<item id="100448" />
+			</reward>
+		</act>
+
+		<act name="迷雾杀手" iconId="16"  isPet="1" willOver="0"  detailDes="工房迷雾杀手艾力克的斯莫克军团让人闻风丧胆！" timeDes="全天候" startTime="00:00" endTime="23:00" go="940">
+			<reward>
+				<pet id="257" />
+				<item id="100487" />
+				<item id="100491" />
+			</reward>
+		</act>
+
+
+
+
+
+		<act name="后花园游乐场" iconId="33"  isPet="1" willOver="0"  detailDes="马里奥的游戏开始了！可得七星瓢虫哦" timeDes="12:00-13:00午间版" startTime="12:00" endTime="13:00" go="1230">
+			<reward>
+				<pet id="413" />
+			</reward>
+		</act>
+
+
+
+		<act name="重夺水源之心" iconId="25"  isPet="1" willOver="0"  detailDes="重夺水源之心迫在眉睫，新增精灵纹章奖励！" timeDes="13:00-14:00午间版" startTime="13:00" endTime="14:00" go="171">
+			<reward>
+				<pet id="150" />
+				<pet id="154" />
+				<item id="200595" />
+			</reward>
+		</act>
+
+
+
+
+
+		<act name="冰封之轴" iconId="27"  isPet="1" willOver="0"  detailDes="冰沁氏族发现百年难见的异样奇景！到底是什么？" timeDes="13:00—14:00午间版" startTime="13:00" endTime="14:00" go="650">
+			<reward>
+				<pet id="278" />
+				<item id="400212" />
+				<item id="400213" />
+			</reward>
+		</act>
+
+
+
+
+
+		<act name="睡懒觉的吃货" iconId="29"  isPet="1" willOver="0"  detailDes="诺基博从懒觉中醒来！赶快做美味的料理吧~" timeDes="13:00-16:00" startTime="13:00" endTime="16:00" go="125">
+			<reward>
+				<pet id="190" />
+			</reward>
+		</act>
+
+
+		<act name="谁敢打搅达达用餐" iconId="45"  isPet="1" willOver="0"  detailDes="先用头部射击击中达克尔才有机会与达达交战哦！" timeDes="13:00-14:00" startTime="13:00" endTime="14:00" go="262">
+			<reward>
+				<pet id="074" />
+			</reward>
+		</act>
+
+		<act name="帕帕米拉的造型" iconId="46"  isPet="1" willOver="0"  detailDes="在焰之森和多摩对战，就有几率碰见美发大王哦" timeDes="13:00-14:00午间版" startTime="13:00" endTime="14:00" go="281">
+			<reward>
+				<pet id="231" />
+			</reward>
+		</act>
+
+		<act name="寻找神秘的歌声" iconId="30"  isPet="1" willOver="0"  detailDes="会唱歌会伪装的神秘草系精灵，你找的到吗？" timeDes="13:30-14:30" startTime="13:30" endTime="14:30" go="100">
+			<reward>
+				<pet id="251" />
+			</reward>
+		</act>
+		<act name="七星连珠唤神龙" iconId="65"  isPet="0" willOver="0"  detailDes="召唤出神龙，它会实现你的心愿！" timeDes="14:00-15:00午间版" startTime="14:00" endTime="15:00" go="CallDragonPanel">
+			<reward>
+			<item id="100606" count="1" />
+			<item id="400137" count="1" />
+			<item id="102015" count="1" />
+			</reward>
+		</act>
+
+
+		<act name="后花园游乐场" iconId="46"  isPet="1" willOver="0"  detailDes="马里奥的游戏开始了！可得七星瓢虫哦" timeDes="18:00-19:00夜间版" startTime="18:00" endTime="19:00" go="1230">
+			<reward>
+				<pet id="413" />
+			</reward>
+		</act> 
+
+
+
+
+		<act name="谁偷吃了我的料理" iconId="33"  isPet="1" willOver="0"  detailDes="超胆小精灵冰湖豚登场！听说它也喜欢料理？" timeDes="18:00-20:00" startTime="18:00" endTime="20:00" go="125">
+			<reward>
+				<pet id="119" />
+			</reward>
+		</act>
+		<act name="七星连珠唤神龙" iconId="65"  isPet="0" willOver="0"  detailDes="召唤出神龙，它会实现你的心愿！" timeDes="19:00-20:00夜间版" startTime="19:00" endTime="20:00" go="CallDragonPanel">
+			<reward>
+			<item id="100606" count="1" />
+			<item id="400137" count="1" />
+			<item id="102015" count="1" />
+			</reward>
+		</act>
+		<act name="帕帕米拉的造型" iconId="46"  isPet="1" willOver="0"  detailDes="在焰之森和多摩对战，就有几率碰见美发大王哦" timeDes="19:00-20:00夜间版" startTime="19:00" endTime="20:00" go="281">
+			<reward>
+				<pet id="231" />
+			</reward>
+		</act>
+		<act name="重夺水源之心" iconId="25"  isPet="1" willOver="0"  detailDes="重夺水源之心迫在眉睫，新增精灵纹章奖励！" timeDes="19:00-20:00夜间版" startTime="19:00" endTime="20:00" go="171">
+			<reward>
+				<pet id="150" />
+				<pet id="154" />
+				<item id="200595" />
+			</reward>
+		</act>
+
+		<act name="冰封之轴" iconId="27"  isPet="1" willOver="0"  detailDes="冰沁氏族发现百年难见的异样奇景！到底是什么？" timeDes="20:00—21:00夜间版" startTime="20:00" endTime="21:00" go="650">
+			<reward>
+				<pet id="278" />
+				<item id="400212" />
+				<item id="400213" />
+			</reward>
+		</act>
+
+
+
+
+		<act name="双倍荣誉" iconId="19"  isPet="0" willOver="0"  detailDes="去试炼和勇士之战50V50就可获得双倍荣誉点了！" timeDes="20:00-21:00" startTime="20:00" endTime="21:00" go="450">
+			<reward>
+				<item id="300001" />
+				<item id="300002" />
+				<item id="200221" />
+			</reward>
+		</act>
+
+
+		<act name="骰子星寻宝" iconId="21"  isPet="1" willOver="0"  detailDes="去骰子星寻宝，绝版装扮等星币奖品！" timeDes="全天候" startTime="00:00" endTime="23:00" go="1030">
+			<reward>
+				<pet id="269" />
+				<pet id="264" />
+				<item id="601030" />
+			</reward>
+		</act>
+
+		<act name="神目守护特鲁伊！" iconId="41"  isPet="1" willOver="0"  detailDes="权利之帐，神目酋长的守护精灵特鲁伊向你挑战！" timeDes="全天候" startTime="00:00" endTime="23:00" go="110">
+			<reward>
+				<pet id="293" />
+			</reward>
+		</act>
+		<act name="水之翘楚爱丽斯" iconId="42"  isPet="1" willOver="0"  detailDes="爱丽斯，水脉精灵之翘楚！神谕之挑战已开启！" timeDes="全天候" startTime="00:00" endTime="23:00" go="160">
+			<reward>
+				<pet id="341" />
+			</reward>
+		</act>
+
+
+
+		
+		<act name="迷途的小海马" iconId="36"  isPet="1" willOver="0"  detailDes="维拉发现了一个迷途的小海马，它在说什么呢？" timeDes="全天候" startTime="00:00" endTime="23:00" go="151">
+			<reward>
+				<pet id="41" />
+			</reward>
+		</act>
+		<act name="多利的雪人计划" iconId="37"  isPet="1" willOver="0"  detailDes="多利竟然没有雪球用来堆雪人了，一起来帮它。" timeDes="全天候" startTime="00:00" endTime="23:00" go="540">
+			<reward>
+				<pet id="138" />
+			</reward>
+		</act>
+		<act name="小小葵的梦境" iconId="38"  isPet="1" willOver="0"  detailDes="小小葵的梦境你去探索过了吗？这里藏了许多秘密" timeDes="全天候" startTime="00:00" endTime="23:00" go="131">
+			<reward>
+				<pet id="13" />
+			</reward>
+		</act>
+
+
+
+
+
+	</acts>
+	<acts day="3">
+
+	<act name="爆焰努尔" iconId="1097"  isPet="1" willOver="0"  detailDes="为了弟兄和自己的尊严！霍克努尔终于爆发了！" timeDes="全天候" startTime="00:00" endTime="23:00" go="HuoKeNuErSuperProcessPanel">
+			<reward>
+			<pet id="590" />
+			<item id="101087" count="1" />
+			<item id="101088" count="1" />
+			</reward>	
+		</act>
+
+	<act name="炼金师迪克" iconId="1098"  isPet="1" willOver="0"  detailDes="天马四骑士第三尊炼金师迪克出场！" timeDes="全天候" startTime="00:00" endTime="23:00" go="FightVsDickPanel">
+			<reward>
+			<pet id="591" />
+			<pet id="592" />
+			</reward>	
+		</act>
+
+
+
+
+	<act name="永恒炽翼" iconId="1096"  isPet="1" willOver="0"  detailDes="燃圣火种，火系凯瑟琳将进化为炽翼女神赫拉！" timeDes="全天候" startTime="00:00" endTime="23:00" go="KaiSeLinSuperProcessPanel">
+			<reward>
+			<pet id="587" />
+			<item id="101083" count="1" />
+			<item id="101084" count="1" />
+			</reward>	
+		</act>
+	<act name="跨年龙战" iconId="1095"  isPet="1" willOver="0"  detailDes="8条神龙跨年而来，每周开启两条神龙挑战！" timeDes="全天候" startTime="00:00" endTime="23:00" go="KuaNianLongZhanPanel">
+			<reward>
+			<pet id="410" />
+			<pet id="394" />
+			</reward>	
+		</act>
+	<act name="圣灵师海罗"  iconId="1093"  isPet="1" willOver="0"  detailDes="每天修炼就能获得天马四骑士——圣灵师海罗" timeDes="全天候" startTime="00:00" endTime="23:00" go="FightVsHelloPanel">
+			<reward>
+			<pet id="588" />
+			<pet id="589" />
+			</reward>	
+		</act>
+
+
+
+
+
+
+
+
+
+
+	<act name="巨石托尔" iconId="1087"  isPet="1" willOver="0"  detailDes="SPT超进化生日派对！帮布鲁托完成生日心愿！" timeDes="全天候" startTime="00:00" endTime="23:00" go="BuNuTuoSuperProcessPanel">
+			<reward>
+			<pet id="586" />
+			<item id="101072" count="1" />
+			<item id="101073" count="1" />
+			</reward>	
+		</act>
+
+
+
+	<act name="圣猎人拜瑞" iconId="1090"  isPet="1" willOver="0"  detailDes="每天修炼就能获得天马四骑士——圣猎人拜瑞！" timeDes="全天候" startTime="00:00" endTime="23:00" go="FightVsBarryPanel">
+			<reward>
+			<pet id="582" />
+			<pet id="583" />
+			</reward>	
+		</act>
+
+
+	<act name="直捣炼狱战魔王" iconId="1088"  isPet="1" willOver="0"  detailDes="炼狱七大魔王弱化挑战启动！挑战胜利得魔王！" timeDes="全天候" startTime="00:00" endTime="23:00" go="FightVsBarryPanel">
+			<reward>
+			<pet id="325" />
+			<pet id="322" />
+			<pet id="340" />
+			</reward>	
+		</act>
+
+
+
+	<act name="冰封魔域库贝萨" iconId="1086"  isPet="1" willOver="0"  detailDes="小当家意外走失，你在冰封魔域的冒险已经开始！" timeDes="全天候" startTime="00:00" endTime="23:00" go="BingfengQuestMianPanel">
+			<reward>
+			<pet id="581" />
+			<item id="200214" count="1" />
+			</reward>	
+		</act>
+
+
+
+	<act name="银脉紫煞" iconId="1083"  isPet="1" willOver="0"  detailDes="紫电将在银脉山脊完成超进化！" timeDes="全天候" startTime="00:00" endTime="23:00" go="ZiDianSuperProcessPanel">
+			<reward>
+			<pet id="580" />
+			<item id="200215" count="1" />
+			<item id="200011" count="1" />
+			</reward>	
+		</act>
+
+
+
+	<act name="电魂巴图" iconId="1080"  isPet="1" willOver="0"  detailDes="巴图领悟了电闪雷鸣之力后蜕变为【电魂巴图】！" timeDes="全天候" startTime="00:00" endTime="23:00" go="XiaoBaEvolutionPanel">
+			<reward>
+			<pet id="578" />
+			<item id="101052" count="1" />
+			<item id="101053" count="1" />
+			</reward>	
+		</act>
+
+
+
+
+
+
+
+	<act name="神力超猪侠" iconId="1078"  isPet="1" willOver="0"  detailDes="美食神猪维克多+宇宙超级大饭团=神力超猪侠！" timeDes="全天候" startTime="00:00" endTime="23:00" go="FoodPigSuperProcessPanel">
+			<reward>
+			<pet id="577" />
+			<item id="200206" count="1" />
+			<item id="200222" count="1" />
+			</reward>	
+		</act>
+
+	<act name="忍者龙剑坛" iconId="1079"  isPet="1" willOver="0"  detailDes="【地忍百魁】在白龙岩阵的肃杀挑战！" timeDes="全天候" startTime="00:00" endTime="23:00" go="80069">
+			<reward>
+			<pet id="546" />
+			<item id="201021" count="1" />
+			<item id="201036" count="1" />
+			</reward>	
+		</act>
+
+
+	<act name="僵尸博士大逃杀" iconId="1071"  isPet="1" willOver="0"  detailDes="僵尸博士变异，全程追缉！你能抓住它吗？" timeDes="全天候" startTime="00:00" endTime="23:00" go="ZombieDrEscapePanel">
+			<reward>
+			<pet id="563" />
+			</reward>	
+		</act>
+
+	<act name="万圣假面舞会" iconId="1072"  isPet="1" willOver="0"  detailDes="万圣舞会迎来伊特家族第14只伊特【特伊特】！" timeDes="全天候" startTime="00:00" endTime="23:00" go="DanceShowPanel">
+			<reward>
+			<pet id="105" />
+			</reward>	
+		</act>
+
+
+
+	<act name="宇宙机甲战士" iconId="1076"  isPet="1" willOver="0"  detailDes="包月就送宇宙机甲战士，包3个月再送机甲装" timeDes="全天候" startTime="00:00" endTime="23:00" go="VipGaoDaPanel">
+			<reward>
+			<pet id="565" />
+			<item id="101033" count="1" />
+			<item id="101034" count="1" />
+			</reward>	
+		</act>
+
+
+	<act name="圣诞许愿树" iconId="1074"  isPet="1" willOver="0"  detailDes="超强BOSS、绝版精灵、米币道具、绝版装扮送出" timeDes="全天候" startTime="00:00" endTime="23:00" go="TwoYearWishPanel">
+			<reward>
+		    <pet id="377" />
+			<pet id="280" />
+			<item id="101042" count="1" />
+			</reward>	
+		</act>
+
+
+
+
+
+
+
+
+
+		<act name="初影忍者" iconId="1066"  isPet="1" willOver="0"  detailDes="忍者系列首席【绝影忍者】的修炼全面开启！" timeDes="全天候" startTime="00:00" endTime="23:00" go="NinjaPractiseSkillPanel">
+			<reward>
+				<pet id="541" />
+			    <item id="200246" />
+			    <item id="200247" />
+			</reward>	
+		</act>
+
+
+		<act name="吸血魔咒女王" iconId="1067"  isPet="1" willOver="0"  detailDes="始祖吸血女王阿卡莎驾到！" timeDes="全天候" startTime="00:00" endTime="23:00" go="BloodKingActPanel">
+			<reward>
+				<pet id="541" />
+				<pet id="546" />
+			    <item id="200013"/> 
+			</reward>	
+		</act>
+
+		<act name="狂炼狼神" iconId="1062"  isPet="1" willOver="0"  detailDes="通过5重历炼就能使狼妖进化为狼神！" timeDes="全天候" startTime="00:00" endTime="23:00" go="WolfSuperPanel">
+			<reward>
+			<pet id="560" />
+			</reward>	
+		</act>
+
+		<act name="异形的危机" iconId="1063"  isPet="1" willOver="0"  detailDes="始祖吸血病毒入侵星球！小赛尔们我们行动起来！" timeDes="全天候" startTime="00:00" endTime="23:00" go="YiXingMainPanel">
+			<reward>
+			<pet id="558" />
+			</reward>	
+		</act>
+
+
+		<act name="七龙忍者阵" iconId="1061"  isPet="1" willOver="0"  detailDes="首只忍者系精灵【初影忍者】诞生！它是忍者之源" timeDes="全天候" startTime="00:00" endTime="23:00" go="SevenDragonNinjaPanel">
+			<reward>
+			<pet id="540" />
+			</reward>	
+		</act>
+
+
+
+
+
+
+
+		<act name="百变神君神伊特" iconId="1057"  isPet="1" willOver="0"  detailDes="第13只伊特【神伊特】出场！收集伊特有大奖！" timeDes="全天候" startTime="00:00" endTime="23:00" go="YiteMorphActPanel">
+			<reward>
+			<pet id="104" />
+			<item id="200206" count="1" />
+			<item id="200222" count="1" />
+			</reward>	
+		</act>
+
+
+		<act name="黄金12宫" iconId="1056"  isPet="1" willOver="0"  detailDes="在星空下许愿免费得黄金十二宫星座守护！" timeDes="全天候" startTime="00:00" endTime="23:00" go="Gold12Panel">
+			<reward>
+			<pet id="154" />
+			<pet id="155" />
+			<pet id="156" />
+			</reward>	
+		</act>
+
+
+
+
+
+
+
+		<act name="魔神前传" iconId="1047"  isPet="1" willOver="0"  detailDes="首只魔化精灵！小魔神免费领取1只，VIP2只！" timeDes="全天候" startTime="00:00" endTime="23:00" go="PetProcessActPanel">
+			<reward>
+			<pet id="523" />
+			<pet id="524" />
+			<item id="200062" count="1" />
+			</reward>	
+		</act>
+
+
+
+
+		<act name="进击的超伊特" iconId="1041"  isPet="1" willOver="0"  detailDes="伊特家族再战！翻族牌迎接超伊特的降临！" timeDes="全天候" startTime="00:00" endTime="23:00" go="YiteSuperPetPanel">
+			<reward>
+			<item id="200718" count="1" />
+			<item id="200335" count="1" />
+			<item id="200334" count="1" />
+			</reward>	
+		</act>
+
+		<act name="晨战！王之冰魄！" iconId="1042"  isPet="1" willOver="0"  detailDes="挑战最新BOOSS晨璨，四战胜利得王之冰魄！" timeDes="全天候" startTime="00:00" endTime="23:00" go="KingSoulWithIcePanel">
+			<reward>
+			<pet id="512" />
+			<item id="200221" count="1" />
+			<item id="200225" count="1" />
+			</reward>	
+		</act>
+
+		<act name="BOSS晨璨真心朋友" iconId="1043"  isPet="1" willOver="0"  detailDes="拥有四重性格！亲历晨璨的过去时光吧！" timeDes="全天候" startTime="00:00" endTime="23:00" go="KingSoulWithIcePanel">
+			<reward>
+			<pet id="492" />
+			</reward>	
+		</act>
+
+
+		<act name="尖叫的大毛怪" iconId="1044"  isPet="1" willOver="0"  detailDes="种植园里有怪兽！大毛怪和大眼怪来了！" timeDes="全天候" startTime="00:00" endTime="23:00" go="70000">
+			<reward>
+			<pet id="457" />
+			<pet id="458" />
+			<item id="400006" count="1" />
+			</reward>	
+		</act>
+
+
+
+
+
+		<act name="VIP宇宙嘉年华" iconId="11"  isPet="1" willOver="0"  detailDes="加入VIP送宇宙机甲震天虎+灵朱雀！" timeDes="全天候" startTime="00:00" endTime="23:00" go="VipRechargeBasePanel">
+			<reward>
+			<pet id="537" />
+			<pet id="565" />
+			</reward>	
+		</act>
+
+		<act name="约瑟17魂魄篇开启" iconId="1035"  isPet="1" willOver="0"  detailDes="约瑟魂魄已出！17属性17魂魄！" timeDes="全天候" startTime="00:00" endTime="23:00" go="KingSoulPanel">
+			<reward>
+			<pet id="505" />
+			<pet id="506" />
+			<pet id="507" />
+			</reward>	
+		</act>
+
+
+		<act name="王之召唤" iconId="1036"  isPet="1" willOver="0"  detailDes="邀请好友、老兵回归、新兵报道，三重大礼送出！" timeDes="全天候" startTime="00:00" endTime="23:00" go="KingSoulPanel">
+			<reward>
+			<pet id="039" />
+			<pet id="053" />
+			<pet id="364" />
+			</reward>	
+		</act>
+
+
+
+		<act name="经验大爆炸" iconId="1038"  isPet="0" willOver="0"  detailDes="收集经验换精灵、米币道具！" timeDes="全天候" startTime="00:00" endTime="23:00" go="KingWithTrainPanel">
+			<reward>
+			<item id="200239" count="1" />
+			<item id="200223" count="1" />
+			<item id="400194" count="1" />
+			</reward>	
+		</act>
+
+
+	
+
+
+
+		<act name="暴走的雷电" iconId="1028"  isPet="1" willOver="0"  detailDes="幻灵骑士团最后一员【幻蹄雷电】！" timeDes="全天候" startTime="00:00" endTime="23:00" go="BaozouLeidianPanel">
+			<reward>
+			<pet id="451" />
+			</reward>	
+		</act>
+
+
+		<act name="太阳神之子" iconId="1029"  isPet="1" willOver="0"  detailDes="米咔超进化！就在太阳神殿加冕为太阳神之子！" timeDes="全天候" startTime="00:00" endTime="23:00" go="SonOfSunGoldPanel">
+			<reward>
+				<pet id="456" />
+				<item id="201024" />
+				<item id="200206" />
+			</reward>	
+		</act>
+
+		<act name="孤独的巴鲁金斯" iconId="1030"  isPet="1" willOver="0"  detailDes="收集精灵签名兑换孤独的巴鲁金斯！" timeDes="全天候" startTime="00:00" endTime="23:00" go="RollerLotteryPanel">
+			<reward>
+				<pet id="456" />
+				<item id="201024" />
+				<item id="200206" />
+			</reward>	
+		</act>
+
+
+
+
+
+		<act name="炎帝之焰爪" iconId="1023"  isPet="1" willOver="0"  detailDes="获得焰爪，它就能让凯萨蜕变为炎帝！" timeDes="全天候" startTime="00:00" endTime="23:00" go="FireClawActPanel">
+			<reward>
+			<pet id="1101" />
+			<pet id="499" />
+			</reward>	
+		</act>
+
+		<act name="骤雨的搏击" iconId="1022"  isPet="1" willOver="0"  detailDes="搏杀三关就可得精灵【幻齿骤雨】" timeDes="全天候" startTime="00:00" endTime="23:00" go="BrashStrikePanel">
+			<reward>
+			<pet id="448" />
+			</reward>	
+		</act>
+
+
+
+
+
+
+		<act name="咆哮的飓风" iconId="1019"  isPet="1" willOver="0"  detailDes="幻灵骑士团第二尊：幻影飓风席卷全球！" timeDes="全天候" startTime="00:00" endTime="23:00" go="PetKingWindMainPanel">
+			<reward>
+			<pet id="440" />
+			<item id="200221" count="1" />
+			<item id="200214" count="1" />
+			</reward>	
+		</act>
+
+
+
+
+
+
+
+		<act name="精灵大乱斗" iconId="1000"  isPet="1" willOver="0"  detailDes="精灵大乱斗加盟争霸赛！更多选择更多惊喜！" timeDes="全天候" startTime="00:00" endTime="23:00" go="PetMeleePanel">
+			<reward>
+			<item id="200223" count="1" />
+			<item id="200214" count="1" />
+			</reward>	
+		</act>
+
+		<act name="观星者本尊挑战" iconId="3"  isPet="1" willOver="0"  detailDes="宇宙至尊、观星者本尊挑战开放!" timeDes="全天候" startTime="00:00" endTime="23:00" go="StargazerFightPanel">
+			<reward>
+				<pet id="503" />
+			</reward>
+		</act>
+
+
+
+
+		<act name="时空之客伊鲁达" iconId="1009"  isPet="1" willOver="0"  detailDes="用光的速度穿越时空，和克拉克战宠伊鲁达相遇！" timeDes="全天候" startTime="00:00" endTime="23:00" go="YiludaActPanel">
+			<reward>
+			<pet id="434" />
+			<item id="200244" count="1" />
+			</reward>	
+		</act>
+
+
+		<act name="幻翼的召唤" iconId="1010"  isPet="1" willOver="0"  detailDes="幻灵骑士团首席幽冥等你召唤！召唤成功赠送纹章！" timeDes="全天候" startTime="00:00" endTime="23:00" go="HuanyiCallActPanel">
+			<reward>
+			<pet id="431" />
+			<item id="200230" count="1" />
+			<item id="200702" count="1" />
+			</reward>	
+		</act>
+
+
+		<act name="幻灵骑士团" iconId="1011"  isPet="0" willOver="0"  detailDes="飞船告急！暗影幻灵骑士团四大战将纷至而来！" timeDes="全天候" startTime="00:00" endTime="23:00" go="EidolonPanel">
+			<reward>
+			<item id="200214" count="1" />
+			<item id="400187" count="1" />
+			</reward>	
+		</act>
+
+
+
+
+
+
+
+
+		<act name="雷神之斩" iconId="67"  isPet="1" willOver="0"  detailDes="上古器灵问世！雷伊结合雷切将会成为雷神！" timeDes="全天候" startTime="00:00" endTime="23:00" go="LeiyiGunPetPanel">
+			<reward>
+			<pet id="1100" />
+			<pet id="498" />
+			<item id="200222" count="1" />
+			</reward>	
+		</act>
+
+
+
+
+		<act name="闪电之躯" iconId="97"  isPet="0" willOver="0"  detailDes="雷伊求助！快去帮助雷神还可获雷鸣裂空装！" timeDes="全天候" startTime="00:00" endTime="23:00" go="LeiyiChargingPanel">
+			<reward>
+				<item id="100868" />
+				<item id="200221" />
+				<item id="200234" />
+			</reward>	
+		</act>
+
+
+
+
+		<act name="螳螂101次信念" iconId="95"  isPet="1" willOver="0"  detailDes="周年庆典精灵第一尊！贾斯汀的至尊螳螂！" timeDes="全天候" startTime="00:00" endTime="23:00" go="MantisActPanel">
+			<reward>
+				<pet id="158" />
+				<item id="200241" />
+				<item id="500135" />
+			</reward>	
+		</act>
+
+
+		<act name="啊！蜻蜓！" iconId="86"  isPet="1" willOver="0"  detailDes="看！有蜻蜓！快拿网兜兜住它！" timeDes="全天候" startTime="00:00" endTime="23:00" go="DragonPanel">
+			<reward>
+				<pet id="402" />
+				<item id="102036" />
+				<item id="200676" />
+
+			</reward>	
+		</act>
+
+		
+		<act name="埃卡维特爱吃鱼" iconId="75"  isPet="1" willOver="0"  detailDes="给点鱼吧！吃了维特就和你过过招！" timeDes="全天候" startTime="00:00" endTime="23:00" go="152">
+			<reward>
+				<pet id="109" />
+			</reward>	
+		</act>
+		
+
+		
+		<act name="最牛精灵训练营" iconId="82"  isPet="1" willOver="0"  detailDes="免费领取火爆猴和变色蜥！打造优质精灵！" timeDes="全天候" startTime="00:00" endTime="23:00" go="PetTrainActPanel">
+			<reward>
+				<pet id="397" />
+				<pet id="390" />
+				<item id="200221" />
+
+			</reward>	
+		</act>
+
+
+		<act name="薄暮蜕变 暗夜变身" iconId="79"  isPet="1" willOver="0"  detailDes="汲取暗月能的薄暮兔神奇大变身！" timeDes="全天候" startTime="00:00" endTime="23:00" go="RabitDressPanel">
+			<reward>
+				<pet id="388" />
+			</reward>	
+		</act>
+
+
+		<act name="撒旦崛起凯伊对决" iconId="80"  isPet="0" willOver="0"  detailDes="3V1对战冥王撒旦！获得撒旦战袍！" timeDes="全天候" startTime="00:00" endTime="23:00" go="SaDanFightPanel">
+			<reward>
+				<item id="100795" />
+				<item id="200221" />
+				<item id="200016" />
+			</reward>	
+		</act>
+
+
+		<act name="神秘九尾的挑战" iconId="78"  isPet="1" willOver="0"  detailDes="挑战获胜得精灵九尾、精灵纹章！" timeDes="全天候" startTime="00:00" endTime="23:00" go="640">
+			<reward>
+				<pet id="387" />
+				<item id="200213" />
+				<item id="200214" />
+			</reward>	
+		</act>
+
+		
+
+
+		<act name="奇遇暗月兔" iconId="47"  isPet="1" willOver="0"  detailDes="骰子星寻宝就能撞见暗月兔！" timeDes="全天候" startTime="00:00" endTime="23:00" go="DarkMoonRabbitPanel">
+			<reward>
+			<pet id="385" />
+			<item id="102031" count="1" />
+			<item id="601030" count="1" />>
+			</reward>	
+		</act>
+
+
+
+
+
+		<act name="精灵扭蛋机" iconId="9"  isPet="1" willOver="0"  detailDes="扭蛋机最新推出初影忍者尼加、河童、布布！" timeDes="全天候" startTime="00:00" endTime="23:00" go="GiftMachinePanel">
+			<reward>
+				<pet id="405" />
+				<pet id="295" />
+				<pet id="353" />
+			</reward>
+		</act>
+
+
+
+		<act name="王者的追溯" iconId="53"  isPet="1" willOver="0"  detailDes="挑战弱化版雷伊凯萨就可得精灵！" timeDes="全天候" startTime="00:00" endTime="23:00" go="LeiyiKaisaGadMainPanel">
+			<reward>
+			<pet id="090" />
+			<pet id="234" />
+			<item id="400279" count="1" />
+			</reward>
+		</act>
+
+		<act name="天宫四宿灵朱雀" iconId="52"  isPet="1" willOver="0"  detailDes="现在充值1-3个月VIP就送灵朱雀！" timeDes="全天候" startTime="00:00" endTime="23:00" go="TempleFourSeasonPanel">
+			<reward>
+			<pet id="418" />
+			</reward>
+		</act>
+		<act name="暗黑魔盒" iconId="60"  isPet="1" willOver="0"  detailDes="约瑟之钥！开启暗黑魔盒释放绝版精灵" timeDes="全天候" startTime="00:00" endTime="23:00" go="DarkMagicBoxPanel">
+			<reward>
+			<pet id="387" />
+			<pet id="389" />
+			<pet id="216" />
+			</reward>
+		</act>
+
+
+		<act name="伊特大乱斗" iconId="17"  isPet="0" willOver="0"  detailDes="伊特家族大乱斗，各种伊特精灵，伊特纹章送！" timeDes="全天候" startTime="00:00" endTime="23:00" go="YiteFightTipsPanel">
+			<reward>
+				<item id="200582" />
+				<item id="200583" />
+				<item id="200584" />
+			</reward>
+		</act>
+
+		<act name="赏金电麒麟" iconId="8"  isPet="0" willOver="0"  detailDes="去赏金猎人处接任务，换取麒麟进化芯片！" timeDes="全天候" startTime="00:00" endTime="23:00" go="60">
+			<reward>
+			<item id="200329" count="1" />
+			<item id="200330" count="1" />
+			<item id="200225" count="1" />
+			</reward>
+		</act>
+
+
+		<act name="周年狂欢撞头彩" iconId="59"  isPet="0" willOver="0"  detailDes="米币豪车大集结！送全新二周年黄金座驾！" timeDes="全天候" startTime="00:00" endTime="23:00" go="NewGoodStartMainPanel">
+			<reward>
+			<item id="100886" count="1" />
+			<item id="100852" count="1" />
+			<item id="100833" count="1" />
+			</reward>
+		</act>
+
+		<act name="后花园游乐场" iconId="33"  isPet="1" willOver="0"  detailDes="马里奥的游戏开始了！可得七星瓢虫哦" timeDes="12:00-13:00午间版" startTime="12:00" endTime="13:00" go="1230">
+			<reward>
+				<pet id="413" />
+			</reward>
+		</act>
+
+		<act name="重夺水源之心" iconId="25"  isPet="1" willOver="0"  detailDes="重夺水源之心迫在眉睫，新增精灵纹章奖励！" timeDes="13:00-14:00午间版" startTime="13:00" endTime="14:00" go="171">
+			<reward>
+				<pet id="150" />
+				<pet id="154" />
+				<item id="200595" />
+			</reward>
+		</act>
+
+
+		<act name="睡懒觉的吃货" iconId="29"  isPet="1" willOver="0"  detailDes="诺基博从懒觉中醒来！赶快做美味的料理吧~" timeDes="13:00-16:00" startTime="13:00" endTime="16:00" go="125">
+			<reward>
+				<pet id="190" />
+			</reward>
+		</act>
+
+
+		<act name="冰封之轴" iconId="27"  isPet="1" willOver="0"  detailDes="冰沁氏族发现百年难见的异样奇景！到底是什么？" timeDes="13:00—14:00午间版" startTime="13:00" endTime="14:00" go="650">
+			<reward>
+				<pet id="278" />
+				<item id="400212" />
+				<item id="400213" />
+			</reward>
+		</act>
+
+
+
+		<act name="谁敢打搅达达用餐" iconId="45"  isPet="1" willOver="0"  detailDes="先用头部射击击中达克尔才有机会与达达交战哦！" timeDes="13:00-14:00" startTime="13:00" endTime="14:00" go="262">
+			<reward>
+				<pet id="074" />
+			</reward>
+		</act>
+
+		<act name="帕帕米拉的造型" iconId="46"  isPet="1" willOver="0"  detailDes="在焰之森和多摩对战，就有几率碰见美发大王哦" timeDes="13:00-14:00午间版" startTime="13:00" endTime="14:00" go="281">
+			<reward>
+				<pet id="231" />
+			</reward>
+		</act>
+
+		<act name="寻找神秘的歌声" iconId="30"  isPet="1" willOver="0"  detailDes="会唱歌会伪装的神秘草系精灵，你找的到吗？" timeDes="13:30-14:30" startTime="13:30" endTime="14:30" go="100">
+			<reward>
+				<pet id="251" />
+			</reward>
+		</act>
+		<act name="七星连珠唤神龙" iconId="65"  isPet="0" willOver="0"  detailDes="召唤出神龙，它会实现你的心愿！" timeDes="14:00-15:00午间版" startTime="14:00" endTime="15:00" go="CallDragonPanel">
+			<reward>
+			<item id="100606" count="1" />
+			<item id="400137" count="1" />
+			<item id="102015" count="1" />
+			</reward>
+		</act>
+
+
+
+
+		<act name="VIP神魔之月礼" iconId="13"  isPet="0" willOver="0"  detailDes="VIP尊享绝版NONO等18米币周年庆礼盒送给你！" timeDes="全天候" startTime="00:00" endTime="23:00" go="VipChristmasPanel">
+			<reward>
+				<item id="202007" />
+				<item id="102045" />
+				<item id="200223" />
+			</reward>
+		</act>
+
+
+		<act name="娜娜和斯缇姆军团" iconId="15"  isPet="1" willOver="0"  detailDes="超强技师娜娜和她引以为傲的精灵斯缇姆迎战！" timeDes="全天候" startTime="00:00" endTime="23:00" go="900">
+			<reward>
+				<pet id="245" />
+				<item id="100444" />
+				<item id="100448" />
+			</reward>
+		</act>
+
+		<act name="迷雾杀手" iconId="16"  isPet="1" willOver="0"  detailDes="工房迷雾杀手艾力克的斯莫克军团让人闻风丧胆！" timeDes="全天候" startTime="00:00" endTime="23:00" go="940">
+			<reward>
+				<pet id="257" />
+				<item id="100487" />
+				<item id="100491" />
+			</reward>
+		</act>
+
+
+
+		<act name="灵兽的试炼" iconId="2"  isPet="0" willOver="0"  detailDes="草、火、水三大灵兽试炼及挑战已开启！" timeDes="全天候" startTime="00:00" endTime="23:00" go="BagginsLogPanel">
+			<reward>
+				<pet id="301" />
+				<pet id="302" />
+				<pet id="303" />
+			</reward>
+		</act>
+
+		<act name="观星者本尊挑战" iconId="3"  isPet="1" willOver="0"  detailDes="宇宙至尊、观星者本尊挑战开放!" timeDes="全天候" startTime="00:00" endTime="23:00" go="StargazerFightPanel">
+			<reward>
+				<pet id="503" />
+			</reward>
+		</act>
+
+
+
+		<act name="商城每日抽奖" iconId="4"  isPet="0" willOver="0"  detailDes="商城送星石！普通用户每日3次抽奖（VIP5次）" timeDes="全天候" startTime="00:00" endTime="23:00" go="EnergyLotteryPanel">
+			<reward>
+				<item id="17" />
+			</reward>
+		</act>
+
+
+		<act name="神龙火圈" iconId="7"  isPet="1" willOver="0"  detailDes="冰封巨龙迈巴赫问世！新增15连抛必中！" timeDes="全天候" startTime="00:00" endTime="23:00" go="LuckyDialMeePanel">
+			<reward>
+				<pet id="426" />
+				<pet id="410" />
+				<pet id="529" />
+			</reward>
+		</act>
+
+
+
+		<act name="VIP乐园金字塔" iconId="6"  isPet="0" willOver="0"  detailDes="问鼎百万豪车，2013年VIP金子塔奖励已升级！" timeDes="全天候" startTime="00:00" endTime="23:00" go="VipPyramidPanel">
+			<reward>
+				<item id="100595" />
+				<item id="200605" />
+				<item id="200225" />
+			</reward>
+		</act>
+
+
+		<act name="重金悬赏令！" iconId="8"  isPet="1" willOver="0"  detailDes="猎人金库为你敞开！跨年精灵悬赏令全球发动！" timeDes="全天候" startTime="00:00" endTime="23:00" go="60">
+			<reward>
+				<item id="200234" />
+				<item id="200214" />
+				<item id="200224" />
+			</reward>
+		</act>
+
+
+
+		<act name="星座守护者计划" iconId="10"  isPet="0" willOver="0"  detailDes="VIP填生日获尊贵星座标记、黄金圣衣及座驾哦" timeDes="全天候" startTime="00:00" endTime="23:00" go="VipDecorationPanel">
+			<reward>
+			<pet id="319" />
+			<item id="100965" count="1" />
+			<item id="100966" count="1" />
+			</reward>
+		</act>
+
+		<act name="后花园游乐场" iconId="46"  isPet="1" willOver="0"  detailDes="马里奥的游戏开始了！可得七星瓢虫哦" timeDes="18:00-19:00夜间版" startTime="18:00" endTime="19:00" go="1230">
+			<reward>
+				<pet id="413" />
+			</reward>
+		</act> 
+
+
+		<act name="谁偷吃了我的料理" iconId="33"  isPet="1" willOver="0"  detailDes="超胆小精灵冰湖豚登场！听说它也喜欢料理？" timeDes="18:00-20:00" startTime="18:00" endTime="20:00" go="125">
+			<reward>
+				<pet id="119" />
+			</reward>
+		</act>
+
+		<act name="七星连珠唤神龙" iconId="65"  isPet="0" willOver="0"  detailDes="召唤出神龙，它会实现你的心愿！" timeDes="19:00-20:00夜间版" startTime="19:00" endTime="20:00" go="CallDragonPanel">
+			<reward>
+			<item id="100606" count="1" />
+			<item id="400137" count="1" />
+			<item id="102015" count="1" />
+			</reward>
+		</act>
+
+		<act name="重夺水源之心" iconId="25"  isPet="1" willOver="0"  detailDes="重夺水源之心迫在眉睫，新增精灵纹章奖励！" timeDes="19:00-20:00夜间版" startTime="19:00" endTime="20:00" go="171">
+			<reward>
+				<pet id="150" />
+				<pet id="154" />
+				<item id="200595" />
+			</reward>
+		</act>
+
+		<act name="帕帕米拉的造型" iconId="46"  isPet="1" willOver="0"  detailDes="在焰之森和多摩对战，就有几率碰见美发大王哦" timeDes="19:00-20:00夜间版" startTime="19:00" endTime="20:00" go="281">
+			<reward>
+				<pet id="231" />
+			</reward>
+		</act>
+		<act name="双倍荣誉" iconId="19"  isPet="0" willOver="0"  detailDes="去试炼和勇士之战50V50就可获得双倍荣誉点了！" timeDes="20:00-21:00" startTime="20:00" endTime="21:00" go="450">
+			<reward>
+				<item id="300001" />
+				<item id="300002" />
+				<item id="200221" />
+			</reward>
+		</act>
+
+
+		<act name="冰封之轴" iconId="27"  isPet="1" willOver="0"  detailDes="冰沁氏族发现百年难见的异样奇景！到底是什么？" timeDes="20:00—21:00夜间版" startTime="20:00" endTime="21:00" go="650">
+			<reward>
+				<pet id="278" />
+				<item id="400212" />
+				<item id="400213" />
+			</reward>
+		</act>
+
+
+
+		<act name="骰子星寻宝" iconId="21"  isPet="1" willOver="0"  detailDes="去骰子星寻宝，绝版装扮等星币奖品！" timeDes="全天候" startTime="00:00" endTime="23:00" go="1030">
+			<reward>
+				<pet id="269" />
+				<pet id="264" />
+				<item id="601030" />
+			</reward>
+		</act>
+
+
+		<act name="神目守护特鲁伊！" iconId="41"  isPet="1" willOver="0"  detailDes="权利之帐，神目酋长的守护精灵特鲁伊向你挑战！" timeDes="全天候" startTime="00:00" endTime="23:00" go="110">
+			<reward>
+				<pet id="293" />
+			</reward>
+		</act>
+
+		<act name="水之翘楚爱丽斯" iconId="42"  isPet="1" willOver="0"  detailDes="爱丽斯，水脉精灵之翘楚！神谕之挑战已开启！" timeDes="全天候" startTime="00:00" endTime="23:00" go="160">
+			<reward>
+				<pet id="341" />
+			</reward>
+		</act>
+
+	
+
+
+		<act name="海小葵的喷嚏" iconId="31"  isPet="1" willOver="0"  detailDes="流离街出现了陌生的精灵，它的名字叫“海葵”！" timeDes="全天候" startTime="00:00" endTime="23:00" go="920">
+			<reward>
+				<pet id="253" />
+			</reward>
+		</act>
+
+		<act name="三眼蝎的舞步" iconId="32"  isPet="1" willOver="0"  detailDes="去矿坑找大板牙，照他说的做就能引来三眼石蝎！" timeDes="全天候" startTime="00:00" endTime="23:00" go="520">
+			<reward>
+				<pet id="086" />
+			</reward>
+		</act>
+
+
+
+		<act name="爱之拂晓兔" iconId="34"  isPet="1" willOver="0"  detailDes="晓晓和月月，以爱的名义等待你的到来！" timeDes="全天候" startTime="00:00" endTime="23:00" go="132">
+			<reward>
+				<pet id="61" />
+			</reward>
+		</act>
+
+		<act name="谜一样的精灵" iconId="35"  isPet="1" willOver="0"  detailDes="它是谁？先去幽静浅滩点小猪储蓄罐唤它出来吧！" timeDes="全天候" startTime="00:00" endTime="23:00" go="220">
+			<reward>
+				<pet id="51" />
+			</reward>
+		</act>
+
+		<act name="迷途的小海马" iconId="36"  isPet="1" willOver="0"  detailDes="维拉发现了一个迷途的小海马，它在说什么呢？" timeDes="全天候" startTime="00:00" endTime="23:00" go="151">
+			<reward>
+				<pet id="41" />
+			</reward>
+		</act>
+
+		<act name="多利的雪人计划" iconId="37"  isPet="1" willOver="0"  detailDes="多利竟然没有雪球用来堆雪人了，一起来帮它。" timeDes="全天候" startTime="00:00" endTime="23:00" go="540">
+			<reward>
+				<pet id="138" />
+			</reward>
+		</act>
+
+		<act name="小小葵的梦境" iconId="38"  isPet="1" willOver="0"  detailDes="小小葵的梦境你去探索过了吗？这里藏了许多秘密" timeDes="全天候" startTime="00:00" endTime="23:00" go="131">
+			<reward>
+				<pet id="13" />
+			</reward>
+		</act>
+
+		<act name="摇滚天王爆炸头" iconId="39"  isPet="1" willOver="0"  detailDes="传说它喜欢迷穴中的财宝，迷穴之可是凶多吉少呢" timeDes="全天候" startTime="00:00" endTime="23:00" go="340">
+			<reward>
+				<pet id="83" />
+			</reward>
+		</act>
+
+
+		<act name="鸡毛与沙" iconId="43"  isPet="1" willOver="0"  detailDes="谁是真正的战斗鸡？周扒皮的斗鸡生意等你捧场！" timeDes="全天候" startTime="00:00" endTime="23:00" go="350">
+			<reward>
+				<item  id="1" />
+			</reward>
+		</act>
+
+
+	</acts>
+	<acts day="4">
+
+	<act name="爆焰努尔" iconId="1097"  isPet="1" willOver="0"  detailDes="为了弟兄和自己的尊严！霍克努尔终于爆发了！" timeDes="全天候" startTime="00:00" endTime="23:00" go="HuoKeNuErSuperProcessPanel">
+			<reward>
+			<pet id="590" />
+			<item id="101087" count="1" />
+			<item id="101088" count="1" />
+			</reward>	
+		</act>
+
+	<act name="炼金师迪克" iconId="1098"  isPet="1" willOver="0"  detailDes="天马四骑士第三尊炼金师迪克出场！" timeDes="全天候" startTime="00:00" endTime="23:00" go="FightVsDickPanel">
+			<reward>
+			<pet id="591" />
+			<pet id="592" />
+			</reward>	
+		</act>
+
+
+	<act name="永恒炽翼" iconId="1096"  isPet="1" willOver="0"  detailDes="燃圣火种，火系凯瑟琳将进化为炽翼女神赫拉！" timeDes="全天候" startTime="00:00" endTime="23:00" go="KaiSeLinSuperProcessPanel">
+			<reward>
+			<pet id="587" />
+			<item id="101083" count="1" />
+			<item id="101084" count="1" />
+			</reward>	
+		</act>
+	<act name="跨年龙战" iconId="1095"  isPet="1" willOver="0"  detailDes="8条神龙跨年而来，每周开启两条神龙挑战！" timeDes="全天候" startTime="00:00" endTime="23:00" go="KuaNianLongZhanPanel">
+			<reward>
+			<pet id="410" />
+			<pet id="394" />
+			</reward>	
+		</act>
+	<act name="圣灵师海罗"  iconId="1093"  isPet="1" willOver="0"  detailDes="每天修炼就能获得天马四骑士——圣灵师海罗" timeDes="全天候" startTime="00:00" endTime="23:00" go="FightVsHelloPanel">
+			<reward>
+			<pet id="588" />
+			<pet id="589" />
+			</reward>	
+		</act>
+
+
+
+	<act name="巨石托尔" iconId="1087"  isPet="1" willOver="0"  detailDes="SPT超进化生日派对！帮布鲁托完成生日心愿！" timeDes="全天候" startTime="00:00" endTime="23:00" go="BuNuTuoSuperProcessPanel">
+			<reward>
+			<pet id="586" />
+			<item id="101072" count="1" />
+			<item id="101073" count="1" />
+			</reward>	
+		</act>
+
+
+
+	<act name="圣猎人拜瑞" iconId="1090"  isPet="1" willOver="0"  detailDes="每天修炼就能获得天马四骑士——圣猎人拜瑞！" timeDes="全天候" startTime="00:00" endTime="23:00" go="FightVsBarryPanel">
+			<reward>
+			<pet id="582" />
+			<pet id="583" />
+			</reward>	
+		</act>
+
+
+	<act name="直捣炼狱战魔王" iconId="1088"  isPet="1" willOver="0"  detailDes="炼狱七大魔王弱化挑战启动！挑战胜利得魔王！" timeDes="全天候" startTime="00:00" endTime="23:00" go="FightVsBarryPanel">
+			<reward>
+			<pet id="325" />
+			<pet id="322" />
+			<pet id="340" />
+			</reward>	
+		</act>
+
+
+	<act name="冰封魔域库贝萨" iconId="1086"  isPet="1" willOver="0"  detailDes="小当家意外走失，你在冰封魔域的冒险已经开始！" timeDes="全天候" startTime="00:00" endTime="23:00" go="BingfengQuestMianPanel">
+			<reward>
+			<pet id="581" />
+			<item id="200214" count="1" />
+			</reward>	
+		</act>
+
+
+
+	<act name="银脉紫煞" iconId="1083"  isPet="1" willOver="0"  detailDes="紫电将在银脉山脊完成超进化！" timeDes="全天候" startTime="00:00" endTime="23:00" go="ZiDianSuperProcessPanel">
+			<reward>
+			<pet id="580" />
+			<item id="200215" count="1" />
+			<item id="200011" count="1" />
+			</reward>	
+		</act>
+
+
+
+
+	<act name="电魂巴图" iconId="1080"  isPet="1" willOver="0"  detailDes="巴图领悟了电闪雷鸣之力后蜕变为【电魂巴图】！" timeDes="全天候" startTime="00:00" endTime="23:00" go="XiaoBaEvolutionPanel">
+			<reward>
+			<pet id="578" />
+			<item id="101052" count="1" />
+			<item id="101053" count="1" />
+			</reward>	
+		</act>
+
+
+
+
+
+	<act name="神力超猪侠" iconId="1078"  isPet="1" willOver="0"  detailDes="美食神猪维克多+宇宙超级大饭团=神力超猪侠！" timeDes="全天候" startTime="00:00" endTime="23:00" go="FoodPigSuperProcessPanel">
+			<reward>
+			<pet id="577" />
+			<item id="200206" count="1" />
+			<item id="200222" count="1" />
+			</reward>	
+		</act>
+
+	<act name="忍者龙剑坛" iconId="1079"  isPet="1" willOver="0"  detailDes="【地忍百魁】在白龙岩阵的肃杀挑战！" timeDes="全天候" startTime="00:00" endTime="23:00" go="80069">
+			<reward>
+			<pet id="546" />
+			<item id="201021" count="1" />
+			<item id="201036" count="1" />
+			</reward>	
+		</act>
+
+
+	<act name="僵尸博士大逃杀" iconId="1071"  isPet="1" willOver="0"  detailDes="僵尸博士变异，全程追缉！你能抓住它吗？" timeDes="全天候" startTime="00:00" endTime="23:00" go="ZombieDrEscapePanel">
+			<reward>
+			<pet id="563" />
+			</reward>	
+		</act>
+
+	<act name="万圣假面舞会" iconId="1072"  isPet="1" willOver="0"  detailDes="万圣舞会迎来伊特家族第14只伊特【特伊特】！" timeDes="全天候" startTime="00:00" endTime="23:00" go="DanceShowPanel">
+			<reward>
+			<pet id="105" />
+			</reward>	
+		</act>
+
+
+
+	<act name="宇宙机甲战士" iconId="1076"  isPet="1" willOver="0"  detailDes="包月就送宇宙机甲战士，包3个月再送机甲装" timeDes="全天候" startTime="00:00" endTime="23:00" go="VipGaoDaPanel">
+			<reward>
+			<pet id="565" />
+			<item id="101033" count="1" />
+			<item id="101034" count="1" />
+			</reward>	
+		</act>
+
+
+	<act name="圣诞许愿树" iconId="1074"  isPet="1" willOver="0"  detailDes="超强BOSS、绝版精灵、米币道具、绝版装扮送出" timeDes="全天候" startTime="00:00" endTime="23:00" go="TwoYearWishPanel">
+			<reward>
+		    <pet id="377" />
+			<pet id="280" />
+			<item id="101042" count="1" />
+			</reward>	
+		</act>
+
+
+		<act name="初影忍者" iconId="1066"  isPet="1" willOver="0"  detailDes="忍者系列首席【绝影忍者】的修炼全面开启！" timeDes="全天候" startTime="00:00" endTime="23:00" go="NinjaPractiseSkillPanel">
+			<reward>
+				<pet id="541" />
+			    <item id="200246" />
+			    <item id="200247" />
+			</reward>	
+		</act>
+
+
+		<act name="吸血魔咒女王" iconId="1067"  isPet="1" willOver="0"  detailDes="始祖吸血女王阿卡莎驾到！" timeDes="全天候" startTime="00:00" endTime="23:00" go="BloodKingActPanel">
+			<reward>
+				<pet id="541" />
+				<pet id="546" />
+			    <item id="200013"/> 
+			</reward>	
+		</act>
+
+
+
+		<act name="狂炼狼神" iconId="1062"  isPet="1" willOver="0"  detailDes="通过5重历炼就能使狼妖进化为狼神！" timeDes="全天候" startTime="00:00" endTime="23:00" go="WolfSuperPanel">
+			<reward>
+			<pet id="560" />
+			</reward>	
+		</act>
+
+		<act name="异形的危机" iconId="1063"  isPet="1" willOver="0"  detailDes="始祖吸血病毒入侵星球！小赛尔们我们行动起来！" timeDes="全天候" startTime="00:00" endTime="23:00" go="YiXingMainPanel">
+			<reward>
+			<pet id="558" />
+			</reward>	
+		</act>
+
+		<act name="七龙忍者阵" iconId="1061"  isPet="1" willOver="0"  detailDes="首只忍者系精灵【初影忍者】诞生！它是忍者之源" timeDes="全天候" startTime="00:00" endTime="23:00" go="SevenDragonNinjaPanel">
+			<reward>
+			<pet id="540" />
+			</reward>	
+		</act>
+
+
+
+
+		<act name="百变神君神伊特" iconId="1057"  isPet="1" willOver="0"  detailDes="第13只伊特【神伊特】出场！收集伊特有大奖！" timeDes="全天候" startTime="00:00" endTime="23:00" go="YiteMorphActPanel">
+			<reward>
+			<pet id="104" />
+			<item id="200206" count="1" />
+			<item id="200222" count="1" />
+			</reward>	
+		</act>
+
+
+		<act name="黄金12宫" iconId="1056"  isPet="1" willOver="0"  detailDes="在星空下许愿免费得黄金十二宫星座守护！" timeDes="全天候" startTime="00:00" endTime="23:00" go="Gold12Panel">
+			<reward>
+			<pet id="154" />
+			<pet id="155" />
+			<pet id="156" />
+			</reward>	
+		</act>
+
+
+
+
+
+		<act name="爱吃月饼的小精灵" iconId="1053"  isPet="1" willOver="0"  detailDes="小精灵最爱吃月饼了！赶快做个让它们过来吃吧！" timeDes="全天候" startTime="14:00" endTime="15:00" go="EatCakePetPanel">
+			<reward>
+				<pet id="402" />
+				<pet id="375" />
+				<pet id="216" />
+			</reward>	
+		</act>
+
+
+
+
+
+		<act name="魔神前传" iconId="1047"  isPet="1" willOver="0"  detailDes="首只魔化精灵！小魔神免费领取1只，VIP2只！" timeDes="全天候" startTime="00:00" endTime="23:00" go="PetProcessActPanel">
+			<reward>
+			<pet id="523" />
+			<pet id="524" />
+			<item id="200062" count="1" />
+			</reward>	
+		</act>
+
+	
+	
+
+		<act name="进击的超伊特" iconId="1041"  isPet="1" willOver="0"  detailDes="伊特家族再战！翻族牌迎接超伊特的降临！" timeDes="全天候" startTime="00:00" endTime="23:00" go="YiteSuperPetPanel">
+			<reward>
+			<item id="200718" count="1" />
+			<item id="200335" count="1" />
+			<item id="200334" count="1" />
+			</reward>	
+		</act>
+
+		<act name="晨战！王之冰魄！" iconId="1042"  isPet="1" willOver="0"  detailDes="挑战最新BOOSS晨璨，四战胜利得王之冰魄！" timeDes="全天候" startTime="00:00" endTime="23:00" go="KingSoulWithIcePanel">
+			<reward>
+			<pet id="512" />
+			<item id="200221" count="1" />
+			<item id="200225" count="1" />
+			</reward>	
+		</act>
+
+		<act name="BOSS晨璨真心朋友" iconId="1043"  isPet="1" willOver="0"  detailDes="拥有四重性格！亲历晨璨的过去时光吧！" timeDes="全天候" startTime="00:00" endTime="23:00" go="KingSoulWithIcePanel">
+			<reward>
+			<pet id="492" />
+			</reward>	
+		</act>
+
+
+		<act name="尖叫的大毛怪" iconId="1044"  isPet="1" willOver="0"  detailDes="种植园里有怪兽！大毛怪和大眼怪来了！" timeDes="全天候" startTime="00:00" endTime="23:00" go="70000">
+			<reward>
+			<pet id="457" />
+			<pet id="458" />
+			<item id="400006" count="1" />
+			</reward>	
+		</act>
+
+
+
+
+
+		<act name="VIP宇宙嘉年华" iconId="11"  isPet="1" willOver="0"  detailDes="加入VIP送宇宙机甲震天虎+灵朱雀！" timeDes="全天候" startTime="00:00" endTime="23:00" go="VipRechargeBasePanel">
+			<reward>
+			<pet id="537" />
+			<pet id="565" />
+			</reward>	
+		</act>
+
+		<act name="约瑟17魂魄篇开启" iconId="1035"  isPet="1" willOver="0"  detailDes="约瑟魂魄已出！17属性17魂魄！" timeDes="全天候" startTime="00:00" endTime="23:00" go="KingSoulPanel">
+			<reward>
+			<pet id="505" />
+			<pet id="506" />
+			<pet id="507" />
+			</reward>	
+		</act>
+
+
+		<act name="王之召唤" iconId="1036"  isPet="1" willOver="0"  detailDes="邀请好友、老兵回归、新兵报道，三重大礼送出！" timeDes="全天候" startTime="00:00" endTime="23:00" go="KingSoulPanel">
+			<reward>
+			<pet id="039" />
+			<pet id="053" />
+			<pet id="364" />
+			</reward>	
+		</act>
+
+
+
+		<act name="经验大爆炸" iconId="1038"  isPet="0" willOver="0"  detailDes="收集经验换精灵、米币道具！" timeDes="全天候" startTime="00:00" endTime="23:00" go="KingWithTrainPanel">
+			<reward>
+			<item id="200239" count="1" />
+			<item id="200223" count="1" />
+			<item id="400194" count="1" />
+			</reward>	
+		</act>
+
+
+
+
+		<act name="暴走的雷电" iconId="1028"  isPet="1" willOver="0"  detailDes="幻灵骑士团最后一员【幻蹄雷电】！" timeDes="全天候" startTime="00:00" endTime="23:00" go="BaozouLeidianPanel">
+			<reward>
+			<pet id="451" />
+			</reward>	
+		</act>
+
+
+		<act name="太阳神之子" iconId="1029"  isPet="1" willOver="0"  detailDes="米咔超进化！就在太阳神殿加冕为太阳神之子！" timeDes="全天候" startTime="00:00" endTime="23:00" go="SonOfSunGoldPanel">
+			<reward>
+				<pet id="456" />
+				<item id="201024" />
+				<item id="200206" />
+			</reward>	
+		</act>
+
+		<act name="孤独的巴鲁金斯" iconId="1030"  isPet="1" willOver="0"  detailDes="收集精灵签名兑换孤独的巴鲁金斯！" timeDes="全天候" startTime="00:00" endTime="23:00" go="RollerLotteryPanel">
+			<reward>
+				<pet id="456" />
+				<item id="201024" />
+				<item id="200206" />
+			</reward>	
+		</act>
+
+
+
+
+
+
+
+		<act name="炎帝之焰爪" iconId="1023"  isPet="1" willOver="0"  detailDes="获得焰爪，它就能让凯萨蜕变为炎帝！" timeDes="全天候" startTime="00:00" endTime="23:00" go="FireClawActPanel">
+			<reward>
+			<pet id="1101" />
+			<pet id="499" />
+			</reward>	
+		</act>
+
+		<act name="骤雨的搏击" iconId="1022"  isPet="1" willOver="0"  detailDes="搏杀三关就可得精灵【幻齿骤雨】" timeDes="全天候" startTime="00:00" endTime="23:00" go="BrashStrikePanel">
+			<reward>
+			<pet id="448" />
+			</reward>	
+		</act>
+
+
+	
+		<act name="咆哮的飓风" iconId="1019"  isPet="1" willOver="0"  detailDes="幻灵骑士团第二尊：幻影飓风席卷全球！" timeDes="全天候" startTime="00:00" endTime="23:00" go="PetKingWindMainPanel">
+			<reward>
+			<pet id="440" />
+			<item id="200221" count="1" />
+			<item id="200214" count="1" />
+			</reward>	
+		</act>
+
+
+
+
+
+		<act name="精灵大乱斗" iconId="1000"  isPet="1" willOver="0"  detailDes="精灵大乱斗加盟争霸赛！更多选择更多惊喜！" timeDes="全天候" startTime="00:00" endTime="23:00" go="PetMeleePanel">
+			<reward>
+			<item id="200223" count="1" />
+			<item id="200214" count="1" />
+			</reward>	
+		</act>
+
+		<act name="观星者本尊挑战" iconId="3"  isPet="1" willOver="0"  detailDes="宇宙至尊、观星者本尊挑战开放!" timeDes="全天候" startTime="00:00" endTime="23:00" go="StargazerFightPanel">
+			<reward>
+				<pet id="503" />
+			</reward>
+		</act>
+
+	
+
+
+		<act name="时空之客伊鲁达" iconId="1009"  isPet="1" willOver="0"  detailDes="用光的速度穿越时空，和克拉克战宠伊鲁达相遇！" timeDes="全天候" startTime="00:00" endTime="23:00" go="YiludaActPanel">
+			<reward>
+			<pet id="434" />
+			<item id="200244" count="1" />
+			</reward>	
+		</act>
+
+
+		<act name="幻翼的召唤" iconId="1010"  isPet="1" willOver="0"  detailDes="幻灵骑士团首席幽冥等你召唤！召唤成功赠送纹章！" timeDes="全天候" startTime="00:00" endTime="23:00" go="HuanyiCallActPanel">
+			<reward>
+			<pet id="431" />
+			<item id="200230" count="1" />
+			<item id="200702" count="1" />
+			</reward>	
+		</act>
+
+
+		<act name="幻灵骑士团" iconId="1011"  isPet="0" willOver="0"  detailDes="飞船告急！暗影幻灵骑士团四大战将纷至而来！" timeDes="全天候" startTime="00:00" endTime="23:00" go="EidolonPanel">
+			<reward>
+			<item id="200214" count="1" />
+			<item id="400187" count="1" />
+			</reward>	
+		</act>
+
+	
+
+
+		<act name="雷神之斩" iconId="67"  isPet="1" willOver="0"  detailDes="上古器灵问世！雷伊结合雷切将会成为雷神！" timeDes="全天候" startTime="00:00" endTime="23:00" go="LeiyiGunPetPanel">
+			<reward>
+			<pet id="1100" />
+			<pet id="498" />
+			<item id="200222" count="1" />
+			</reward>	
+		</act>
+
+
+
+
+		<act name="闪电之躯" iconId="97"  isPet="0" willOver="0"  detailDes="雷伊求助！快去帮助雷神还可获雷鸣裂空装！" timeDes="全天候" startTime="00:00" endTime="23:00" go="LeiyiChargingPanel">
+			<reward>
+				<item id="100868" />
+				<item id="200221" />
+				<item id="200234" />
+			</reward>	
+		</act>
+
+
+		<act name="约瑟许愿碑" iconId="88"  isPet="1" willOver="0"  detailDes="BOSS/绝版精灵/米币道具/约瑟王套装送!" timeDes="全天候" startTime="00:00" endTime="23:00" go="TwoYearWishPanel">
+			<reward>
+				<pet id="290" />
+				<pet id="377" />
+				<item id="100936" />
+			</reward>	
+		</act>
+
+
+		<act name="螳螂101次信念" iconId="95"  isPet="1" willOver="0"  detailDes="周年庆典精灵第一尊！贾斯汀的至尊螳螂！" timeDes="全天候" startTime="00:00" endTime="23:00" go="MantisActPanel">
+			<reward>
+				<pet id="158" />
+				<item id="200241" />
+				<item id="500135" />
+			</reward>	
+		</act>
+
+
+
+		<act name="啊！蜻蜓！" iconId="86"  isPet="1" willOver="0"  detailDes="看！有蜻蜓！快拿网兜兜住它！" timeDes="全天候" startTime="00:00" endTime="23:00" go="DragonPanel">
+			<reward>
+				<pet id="402" />
+				<item id="102036" />
+				<item id="200676" />
+
+			</reward>	
+		</act>
+
+
+
+
+		<act name="最牛精灵训练营" iconId="82"  isPet="1" willOver="0"  detailDes="免费领取火爆猴和变色蜥！打造优质精灵！" timeDes="全天候" startTime="00:00" endTime="23:00" go="PetTrainActPanel">
+			<reward>
+				<pet id="397" />
+				<pet id="390" />
+				<item id="200221" />
+
+			</reward>	
+		</act>
+
+
+		<act name="薄暮蜕变 暗夜变身" iconId="79"  isPet="1" willOver="0"  detailDes="汲取暗月能的薄暮兔神奇大变身！" timeDes="全天候" startTime="00:00" endTime="23:00" go="RabitDressPanel">
+			<reward>
+				<pet id="388" />
+			</reward>	
+		</act>
+
+
+		<act name="撒旦崛起凯伊对决" iconId="80"  isPet="0" willOver="0"  detailDes="3V1对战冥王撒旦！获得撒旦战袍！" timeDes="全天候" startTime="00:00" endTime="23:00" go="SaDanFightPanel">
+			<reward>
+				<item id="100795" />
+				<item id="200221" />
+				<item id="200016" />
+			</reward>	
+		</act>
+
+
+		<act name="神秘九尾的挑战" iconId="78"  isPet="1" willOver="0"  detailDes="挑战获胜得精灵九尾、精灵纹章！" timeDes="全天候" startTime="00:00" endTime="23:00" go="640">
+			<reward>
+				<pet id="387" />
+				<item id="200213" />
+				<item id="200214" />
+			</reward>	
+		</act>
+
+
+
+
+		<act name="埃卡维特爱吃鱼" iconId="75"  isPet="1" willOver="0"  detailDes="给点鱼吧！吃了维特就和你过过招！" timeDes="全天候" startTime="00:00" endTime="23:00" go="152">
+			<reward>
+				<pet id="109" />
+			</reward>	
+		</act>
+		<act name="后花园游乐场" iconId="33"  isPet="1" willOver="0"  detailDes="马里奥的游戏开始了！可得七星瓢虫哦" timeDes="12:00-13:00午间版" startTime="12:00" endTime="13:00" go="1230">
+			<reward>
+				<pet id="413" />
+			</reward>
+		</act>
+
+
+		<act name="奇遇暗月兔" iconId="47"  isPet="1" willOver="0"  detailDes="骰子星寻宝就能撞见暗月兔！" timeDes="全天候" startTime="00:00" endTime="23:00" go="DarkMoonRabbitPanel">
+			<reward>
+			<pet id="385" />
+			<item id="102031" count="1" />
+			<item id="601030" count="1" />>
+			</reward>	
+		</act>
+
+
+		<act name="王者的追溯" iconId="53"  isPet="1" willOver="0"  detailDes="挑战弱化版雷伊凯萨就可得精灵！" timeDes="全天候" startTime="00:00" endTime="23:00" go="LeiyiKaisaGadMainPanel">
+			<reward>
+			<pet id="090" />
+			<pet id="234" />
+			<item id="400279" count="1" />
+			</reward>
+		</act>
+
+		<act name="天宫四宿灵朱雀" iconId="52"  isPet="1" willOver="0"  detailDes="现在充值1-3个月VIP就送灵朱雀！" timeDes="全天候" startTime="00:00" endTime="23:00" go="TempleFourSeasonPanel">
+			<reward>
+			<pet id="418" />
+			</reward>
+		</act>
+
+		<act name="暗黑魔盒" iconId="60"  isPet="1" willOver="0"  detailDes="约瑟之钥！开启暗黑魔盒释放绝版精灵" timeDes="全天候" startTime="00:00" endTime="23:00" go="DarkMagicBoxPanel">
+			<reward>
+			<pet id="387" />
+			<pet id="389" />
+			<pet id="216" />
+			</reward>
+		</act>
+
+	
+
+		<act name="伊特大乱斗" iconId="17"  isPet="0" willOver="0"  detailDes="伊特家族大乱斗，各种伊特精灵，伊特纹章送！" timeDes="全天候" startTime="00:00" endTime="23:00" go="YiteFightTipsPanel">
+			<reward>
+				<item id="200582" />
+				<item id="200583" />
+				<item id="200584" />
+			</reward>
+		</act>
+		<act name="周年狂欢撞头彩" iconId="59"  isPet="0" willOver="0"  detailDes="米币豪车大集结！送全新二周年黄金座驾！" timeDes="全天候" startTime="00:00" endTime="23:00" go="NewGoodStartMainPanel">
+			<reward>
+			<item id="100886" count="1" />
+			<item id="100852" count="1" />
+			<item id="100833" count="1" />
+			</reward>
+		</act>
+
+
+		<act name="精灵扭蛋机" iconId="9"  isPet="1" willOver="0"  detailDes="扭蛋机最新推出初影忍者尼加、河童、布布！" timeDes="全天候" startTime="00:00" endTime="23:00" go="GiftMachinePanel">
+			<reward>
+				<pet id="405" />
+				<pet id="295" />
+				<pet id="353" />
+			</reward>
+		</act>
+
+
+		<act name="重夺水源之心" iconId="25"  isPet="1" willOver="0"  detailDes="重夺水源之心迫在眉睫，新增精灵纹章奖励！" timeDes="13:00-14:00午间版" startTime="13:00" endTime="14:00" go="171">
+			<reward>
+				<pet id="150" />
+				<pet id="154" />
+				<item id="200595" />
+			</reward>
+		</act>
+
+		<act name="七星连珠唤神龙" iconId="65"  isPet="0" willOver="0"  detailDes="召唤出神龙，它会实现你的心愿！" timeDes="14:00-15:00午间版" startTime="14:00" endTime="15:00" go="CallDragonPanel">
+			<reward>
+			<item id="100606" count="1" />
+			<item id="400137" count="1" />
+			<item id="102015" count="1" />
+			</reward>
+		</act>
+
+
+
+		<act name="VIP乐园金字塔" iconId="6"  isPet="0" willOver="0"  detailDes="问鼎百万豪车，2013年VIP金子塔奖励已升级！" timeDes="全天候" startTime="00:00" endTime="23:00" go="VipPyramidPanel">
+			<reward>
+				<item id="100595" />
+				<item id="200605" />
+				<item id="200225" />
+			</reward>
+		</act>
+
+
+		<act name="重金悬赏令！" iconId="8"  isPet="1" willOver="0"  detailDes="猎人金库为你敞开！跨年精灵悬赏令全球发动！" timeDes="全天候" startTime="00:00" endTime="23:00" go="60">
+			<reward>
+				<item id="200234" />
+				<item id="200214" />
+				<item id="200224" />
+			</reward>
+		</act>
+
+
+
+
+		<act name="灵兽的试炼" iconId="2"  isPet="0" willOver="0"  detailDes="草、火、水三大灵兽试炼及挑战已开启！" timeDes="全天候" startTime="00:00" endTime="23:00" go="BagginsLogPanel">
+			<reward>
+				<pet id="301" />
+				<pet id="302" />
+				<pet id="303" />
+			</reward>
+		</act>
+
+
+
+		<act name="观星者本尊挑战" iconId="3"  isPet="1" willOver="0"  detailDes="宇宙至尊、观星者本尊挑战开放!" timeDes="全天候" startTime="00:00" endTime="23:00" go="StargazerFightPanel">
+			<reward>
+				<pet id="503" />
+			</reward>
+		</act>
+
+
+
+		<act name="商城每日抽奖" iconId="4"  isPet="0" willOver="0"  detailDes="商城送星石！普通用户每日3次抽奖（VIP5次）" timeDes="全天候" startTime="00:00" endTime="23:00" go="EnergyLotteryPanel">
+			<reward>
+				<item id="17" />
+			</reward>
+		</act>
+
+
+		<act name="神龙火圈" iconId="7"  isPet="1" willOver="0"  detailDes="冰封巨龙迈巴赫问世！新增15连抛必中！" timeDes="全天候" startTime="00:00" endTime="23:00" go="LuckyDialMeePanel">
+			<reward>
+				<pet id="426" />
+				<pet id="410" />
+				<pet id="529" />
+			</reward>
+		</act>
+
+
+
+
+		<act name="星座守护者计划" iconId="10"  isPet="0" willOver="0"  detailDes="VIP填生日获尊贵星座标记、黄金圣衣及座驾哦" timeDes="全天候" startTime="00:00" endTime="23:00" go="VipDecorationPanel">
+			<reward>
+			<pet id="319" />
+			<item id="100965" count="1" />
+			<item id="100966" count="1" />
+			</reward>
+		</act>
+
+
+
+
+
+
+		<act name="VIP神魔之月礼" iconId="13"  isPet="0" willOver="0"  detailDes="VIP尊享绝版NONO等18米币周年庆礼盒送给你！" timeDes="全天候" startTime="00:00" endTime="23:00" go="VipChristmasPanel">
+			<reward>
+				<item id="202007" />
+				<item id="102045" />
+				<item id="200223" />
+			</reward>
+		</act>
+
+
+
+		<act name="娜娜和斯缇姆军团" iconId="15"  isPet="1" willOver="0"  detailDes="超强技师娜娜和她引以为傲的精灵斯缇姆迎战！" timeDes="全天候" startTime="00:00" endTime="23:00" go="900">
+			<reward>
+				<pet id="245" />
+				<item id="100444" />
+				<item id="100448" />
+			</reward>
+		</act>
+
+		<act name="迷雾杀手" iconId="16"  isPet="1" willOver="0"  detailDes="工房迷雾杀手艾力克的斯莫克军团让人闻风丧胆！" timeDes="全天候" startTime="00:00" endTime="23:00" go="940">
+			<reward>
+				<pet id="257" />
+				<item id="100487" />
+				<item id="100491" />
+			</reward>
+		</act>
+
+
+
+
+		<act name="冰封之轴" iconId="27"  isPet="1" willOver="0"  detailDes="冰沁氏族发现百年难见的异样奇景！到底是什么？" timeDes="13:00—14:00午间版" startTime="13:00" endTime="14:00" go="650">
+			<reward>
+				<pet id="278" />
+				<item id="400212" />
+				<item id="400213" />
+			</reward>
+		</act>
+
+
+
+		<act name="睡懒觉的吃货" iconId="29"  isPet="1" willOver="0"  detailDes="诺基博从懒觉中醒来！赶快做美味的料理吧~" timeDes="13:00-16:00" startTime="13:00" endTime="16:00" go="125">
+			<reward>
+				<pet id="190" />
+			</reward>
+		</act>
+
+
+		<act name="谁敢打搅达达用餐" iconId="45"  isPet="1" willOver="0"  detailDes="先用头部射击击中达克尔才有机会与达达交战哦！" timeDes="13:00-14:00" startTime="13:00" endTime="14:00" go="262">
+			<reward>
+				<pet id="074" />
+			</reward>
+		</act>
+
+		<act name="帕帕米拉的造型" iconId="46"  isPet="1" willOver="0"  detailDes="在焰之森和多摩对战，就有几率碰见美发大王哦" timeDes="13:00-14:00午间版" startTime="13:00" endTime="14:00" go="281">
+			<reward>
+				<pet id="231" />
+			</reward>
+		</act>
+
+		<act name="寻找神秘的歌声" iconId="30"  isPet="1" willOver="0"  detailDes="会唱歌会伪装的神秘草系精灵，你找的到吗？" timeDes="13:30-14:30" startTime="13:30" endTime="14:30" go="100">
+			<reward>
+				<pet id="251" />
+			</reward>
+		</act>
+
+		<act name="后花园游乐场" iconId="46"  isPet="1" willOver="0"  detailDes="马里奥的游戏开始了！可得七星瓢虫哦" timeDes="18:00-19:00夜间版" startTime="18:00" endTime="19:00" go="1230">
+			<reward>
+				<pet id="413" />
+			</reward>
+		</act> 
+
+		<act name="谁偷吃了我的料理" iconId="33"  isPet="1" willOver="0"  detailDes="超胆小精灵冰湖豚登场！听说它也喜欢料理？" timeDes="18:00-20:00" startTime="18:00" endTime="20:00" go="125">
+			<reward>
+				<pet id="119" />
+			</reward>
+		</act>
+		<act name="帕帕米拉的造型" iconId="46"  isPet="1" willOver="0"  detailDes="在焰之森和多摩对战，就有几率碰见美发大王哦" timeDes="19:00-20:00夜间版" startTime="19:00" endTime="20:00" go="281">
+			<reward>
+				<pet id="231" />
+			</reward>
+		</act>
+		<act name="重夺水源之心" iconId="25"  isPet="1" willOver="0"  detailDes="重夺水源之心迫在眉睫，新增精灵纹章奖励！" timeDes="19:00-20:00夜间版" startTime="19:00" endTime="20:00" go="171">
+			<reward>
+				<pet id="150" />
+				<pet id="154" />
+				<item id="200595" />
+			</reward>
+		</act>
+		<act name="七星连珠唤神龙" iconId="65"  isPet="0" willOver="0"  detailDes="召唤出神龙，它会实现你的心愿！" timeDes="19:00-20:00夜间版" startTime="19:00" endTime="20:00" go="CallDragonPanel">
+			<reward>
+			<item id="100606" count="1" />
+			<item id="400137" count="1" />
+			<item id="102015" count="1" />
+			</reward>
+		</act>
+
+
+		<act name="双倍荣誉" iconId="19"  isPet="0" willOver="0"  detailDes="去试炼和勇士之战50V50就可获得双倍荣誉点了！" timeDes="20:00-21:00" startTime="20:00" endTime="21:00" go="450">
+			<reward>
+				<item id="300001" />
+				<item id="300002" />
+				<item id="200221" />
+			</reward>
+		</act>
+		<act name="冰封之轴" iconId="27"  isPet="1" willOver="0"  detailDes="冰沁氏族发现百年难见的异样奇景！到底是什么？" timeDes="20:00—21:00夜间版" startTime="20:00" endTime="21:00" go="650">
+			<reward>
+				<pet id="278" />
+				<item id="400212" />
+				<item id="400213" />
+			</reward>
+		</act>
+
+
+		<act name="骰子星寻宝" iconId="21"  isPet="1" willOver="0"  detailDes="去骰子星寻宝，绝版装扮等星币奖品！" timeDes="全天候" startTime="00:00" endTime="23:00" go="1030">
+			<reward>
+				<pet id="269" />
+				<pet id="264" />
+				<item id="601030" />
+			</reward>
+		</act>
+
+
+		<act name="神目守护特鲁伊！" iconId="41"  isPet="1" willOver="0"  detailDes="权利之帐，神目酋长的守护精灵特鲁伊向你挑战！" timeDes="全天候" startTime="00:00" endTime="23:00" go="110">
+			<reward>
+				<pet id="293" />
+			</reward>
+		</act>
+
+		<act name="水之翘楚爱丽斯" iconId="42"  isPet="1" willOver="0"  detailDes="爱丽斯，水脉精灵之翘楚！神谕之挑战已开启！" timeDes="全天候" startTime="00:00" endTime="23:00" go="160">
+			<reward>
+				<pet id="341" />
+			</reward>
+		</act>
+
+
+
+		<act name="海小葵的喷嚏" iconId="31"  isPet="1" willOver="0"  detailDes="流离街出现了陌生的精灵，它的名字叫“海葵”！" timeDes="全天候" startTime="00:00" endTime="23:00" go="920">
+			<reward>
+				<pet id="253" />
+			</reward>
+		</act>
+
+		<act name="三眼蝎的舞步" iconId="32"  isPet="1" willOver="0"  detailDes="去矿坑找大板牙，照他说的做就能引来三眼石蝎！" timeDes="全天候" startTime="00:00" endTime="23:00" go="520">
+			<reward>
+				<pet id="086" />
+			</reward>
+		</act>
+
+
+
+		<act name="爱之拂晓兔" iconId="34"  isPet="1" willOver="0"  detailDes="晓晓和月月，以爱的名义等待你的到来！" timeDes="全天候" startTime="00:00" endTime="23:00" go="132">
+			<reward>
+				<pet id="61" />
+			</reward>
+		</act>
+
+		<act name="谜一样的精灵" iconId="35"  isPet="1" willOver="0"  detailDes="它是谁？先去幽静浅滩点小猪储蓄罐唤它出来吧！" timeDes="全天候" startTime="00:00" endTime="23:00" go="220">
+			<reward>
+				<pet id="51" />
+			</reward>
+		</act>
+
+		<act name="迷途的小海马" iconId="36"  isPet="1" willOver="0"  detailDes="维拉发现了一个迷途的小海马，它在说什么呢？" timeDes="全天候" startTime="00:00" endTime="23:00" go="151">
+			<reward>
+				<pet id="41" />
+			</reward>
+		</act>
+
+		<act name="多利的雪人计划" iconId="37"  isPet="1" willOver="0"  detailDes="多利竟然没有雪球用来堆雪人了，一起来帮它。" timeDes="全天候" startTime="00:00" endTime="23:00" go="540">
+			<reward>
+				<pet id="138" />
+			</reward>
+		</act>
+
+		<act name="小小葵的梦境" iconId="38"  isPet="1" willOver="0"  detailDes="小小葵的梦境你去探索过了吗？这里藏了许多秘密" timeDes="全天候" startTime="00:00" endTime="23:00" go="131">
+			<reward>
+				<pet id="13" />
+			</reward>
+		</act>
+
+		<act name="摇滚天王爆炸头" iconId="39"  isPet="1" willOver="0"  detailDes="传说它喜欢迷穴中的财宝，迷穴之可是凶多吉少呢" timeDes="全天候" startTime="00:00" endTime="23:00" go="340">
+			<reward>
+				<pet id="83" />
+			</reward>
+		</act>
+
+
+		<act name="鸡毛与沙" iconId="43"  isPet="1" willOver="0"  detailDes="谁是真正的战斗鸡？周扒皮的斗鸡生意等你捧场！" timeDes="全天候" startTime="00:00" endTime="23:00" go="350">
+			<reward>
+				<item  id="1" />
+			</reward>
+		</act>
+
+
+	</acts>
+	<acts day="5">
+
+	<act name="爆焰努尔" iconId="1097"  isPet="1" willOver="0"  detailDes="为了弟兄和自己的尊严！霍克努尔终于爆发了！" timeDes="全天候" startTime="00:00" endTime="23:00" go="HuoKeNuErSuperProcessPanel">
+			<reward>
+			<pet id="590" />
+			<item id="101087" count="1" />
+			<item id="101088" count="1" />
+			</reward>	
+		</act>
+
+	<act name="炼金师迪克" iconId="1098"  isPet="1" willOver="0"  detailDes="天马四骑士第三尊炼金师迪克出场！" timeDes="全天候" startTime="00:00" endTime="23:00" go="FightVsDickPanel">
+			<reward>
+			<pet id="591" />
+			<pet id="592" />
+			</reward>	
+		</act>
+
+
+
+
+	<act name="永恒炽翼" iconId="1096"  isPet="1" willOver="0"  detailDes="燃圣火种，火系凯瑟琳将进化为炽翼女神赫拉！" timeDes="全天候" startTime="00:00" endTime="23:00" go="KaiSeLinSuperProcessPanel">
+			<reward>
+			<pet id="587" />
+			<item id="101083" count="1" />
+			<item id="101084" count="1" />
+			</reward>	
+		</act>
+	<act name="跨年龙战" iconId="1095"  isPet="1" willOver="0"  detailDes="8条神龙跨年而来，每周开启两条神龙挑战！" timeDes="全天候" startTime="00:00" endTime="23:00" go="KuaNianLongZhanPanel">
+			<reward>
+			<pet id="410" />
+			<pet id="394" />
+			</reward>	
+		</act>
+	<act name="圣灵师海罗"  iconId="1093"  isPet="1" willOver="0"  detailDes="每天修炼就能获得天马四骑士——圣灵师海罗" timeDes="全天候" startTime="00:00" endTime="23:00" go="FightVsHelloPanel">
+			<reward>
+			<pet id="588" />
+			<pet id="589" />
+			</reward>	
+		</act>
+
+	<act name="巨石托尔" iconId="1087"  isPet="1" willOver="0"  detailDes="SPT超进化生日派对！帮布鲁托完成生日心愿！" timeDes="全天候" startTime="00:00" endTime="23:00" go="BuNuTuoSuperProcessPanel">
+			<reward>
+			<pet id="586" />
+			<item id="101072" count="1" />
+			<item id="101073" count="1" />
+			</reward>	
+		</act>
+
+
+
+	<act name="圣猎人拜瑞" iconId="1090"  isPet="1" willOver="0"  detailDes="每天修炼就能获得天马四骑士——圣猎人拜瑞！" timeDes="全天候" startTime="00:00" endTime="23:00" go="FightVsBarryPanel">
+			<reward>
+			<pet id="582" />
+			<pet id="583" />
+			</reward>	
+		</act>
+
+
+	<act name="直捣炼狱战魔王" iconId="1088"  isPet="1" willOver="0"  detailDes="炼狱七大魔王弱化挑战启动！挑战胜利得魔王！" timeDes="全天候" startTime="00:00" endTime="23:00" go="FightVsBarryPanel">
+			<reward>
+			<pet id="325" />
+			<pet id="322" />
+			<pet id="340" />
+			</reward>	
+		</act>
+
+	<act name="冰封魔域库贝萨" iconId="1086"  isPet="1" willOver="0"  detailDes="小当家意外走失，你在冰封魔域的冒险已经开始！" timeDes="全天候" startTime="00:00" endTime="23:00" go="BingfengQuestMianPanel">
+			<reward>
+			<pet id="581" />
+			<item id="200214" count="1" />
+			</reward>	
+		</act>
+
+
+
+	<act name="银脉紫煞" iconId="1083"  isPet="1" willOver="0"  detailDes="紫电将在银脉山脊完成超进化！" timeDes="全天候" startTime="00:00" endTime="23:00" go="ZiDianSuperProcessPanel">
+			<reward>
+			<pet id="580" />
+			<item id="200215" count="1" />
+			<item id="200011" count="1" />
+			</reward>	
+		</act>
+
+
+	<act name="电魂巴图" iconId="1080"  isPet="1" willOver="0"  detailDes="巴图领悟了电闪雷鸣之力后蜕变为【电魂巴图】！" timeDes="全天候" startTime="00:00" endTime="23:00" go="XiaoBaEvolutionPanel">
+			<reward>
+			<pet id="578" />
+			<item id="101052" count="1" />
+			<item id="101053" count="1" />
+			</reward>	
+		</act>
+
+
+
+
+	<act name="神力超猪侠" iconId="1078"  isPet="1" willOver="0"  detailDes="美食神猪维克多+宇宙超级大饭团=神力超猪侠！" timeDes="全天候" startTime="00:00" endTime="23:00" go="FoodPigSuperProcessPanel">
+			<reward>
+			<pet id="577" />
+			<item id="200206" count="1" />
+			<item id="200222" count="1" />
+			</reward>	
+		</act>
+
+	<act name="忍者龙剑坛" iconId="1079"  isPet="1" willOver="0"  detailDes="【地忍百魁】在白龙岩阵的肃杀挑战！" timeDes="全天候" startTime="00:00" endTime="23:00" go="80069">
+			<reward>
+			<pet id="546" />
+			<item id="201021" count="1" />
+			<item id="201036" count="1" />
+			</reward>	
+		</act>
+
+
+	<act name="僵尸博士大逃杀" iconId="1071"  isPet="1" willOver="0"  detailDes="僵尸博士变异，全程追缉！你能抓住它吗？" timeDes="全天候" startTime="00:00" endTime="23:00" go="ZombieDrEscapePanel">
+			<reward>
+			<pet id="563" />
+			</reward>	
+		</act>
+
+	<act name="万圣假面舞会" iconId="1072"  isPet="1" willOver="0"  detailDes="万圣舞会迎来伊特家族第14只伊特【特伊特】！" timeDes="全天候" startTime="00:00" endTime="23:00" go="DanceShowPanel">
+			<reward>
+			<pet id="105" />
+			</reward>	
+		</act>
+
+
+
+	<act name="宇宙机甲战士" iconId="1076"  isPet="1" willOver="0"  detailDes="包月就送宇宙机甲战士，包3个月再送机甲装" timeDes="全天候" startTime="00:00" endTime="23:00" go="VipGaoDaPanel">
+			<reward>
+			<pet id="565" />
+			<item id="101033" count="1" />
+			<item id="101034" count="1" />
+			</reward>	
+		</act>
+
+
+	<act name="圣诞许愿树" iconId="1074"  isPet="1" willOver="0"  detailDes="超强BOSS、绝版精灵、米币道具、绝版装扮送出" timeDes="全天候" startTime="00:00" endTime="23:00" go="TwoYearWishPanel">
+			<reward>
+		    <pet id="377" />
+			<pet id="280" />
+			<item id="101042" count="1" />
+			</reward>	
+		</act>
+
+		<act name="初影忍者" iconId="1066"  isPet="1" willOver="0"  detailDes="忍者系列首席【绝影忍者】的修炼全面开启！" timeDes="全天候" startTime="00:00" endTime="23:00" go="NinjaPractiseSkillPanel">
+			<reward>
+				<pet id="541" />
+			    <item id="200246" />
+			    <item id="200247" />
+			</reward>	
+		</act>
+
+
+		<act name="吸血魔咒女王" iconId="1067"  isPet="1" willOver="0"  detailDes="始祖吸血女王阿卡莎驾到！" timeDes="全天候" startTime="00:00" endTime="23:00" go="BloodKingActPanel">
+			<reward>
+				<pet id="541" />
+				<pet id="546" />
+			    <item id="200013"/> 
+			</reward>	
+		</act>
+
+
+		<act name="狂炼狼神" iconId="1062"  isPet="1" willOver="0"  detailDes="通过5重历炼就能使狼妖进化为狼神！" timeDes="全天候" startTime="00:00" endTime="23:00" go="WolfSuperPanel">
+			<reward>
+			<pet id="560" />
+			</reward>	
+		</act>
+
+		<act name="异形的危机" iconId="1063"  isPet="1" willOver="0"  detailDes="始祖吸血病毒入侵星球！小赛尔们我们行动起来！" timeDes="全天候" startTime="00:00" endTime="23:00" go="YiXingMainPanel">
+			<reward>
+			<pet id="558" />
+			</reward>	
+		</act>
+
+		<act name="七龙忍者阵" iconId="1061"  isPet="1" willOver="0"  detailDes="首只忍者系精灵【初影忍者】诞生！它是忍者之源" timeDes="全天候" startTime="00:00" endTime="23:00" go="SevenDragonNinjaPanel">
+			<reward>
+			<pet id="540" />
+			</reward>	
+		</act>
+
+
+
+
+
+		<act name="百变神君神伊特" iconId="1057"  isPet="1" willOver="0"  detailDes="第13只伊特【神伊特】出场！收集伊特有大奖！" timeDes="全天候" startTime="00:00" endTime="23:00" go="YiteMorphActPanel">
+			<reward>
+			<pet id="104" />
+			<item id="200206" count="1" />
+			<item id="200222" count="1" />
+			</reward>	
+		</act>
+
+
+		<act name="黄金12宫" iconId="1056"  isPet="1" willOver="0"  detailDes="在星空下许愿免费得黄金十二宫星座守护！" timeDes="全天候" startTime="00:00" endTime="23:00" go="Gold12Panel">
+			<reward>
+			<pet id="154" />
+			<pet id="155" />
+			<pet id="156" />
+			</reward>	
+		</act>
+
+
+
+
+		<act name="魔神前传" iconId="1047"  isPet="1" willOver="0"  detailDes="首只魔化精灵！小魔神免费领取1只，VIP2只！" timeDes="全天候" startTime="00:00" endTime="23:00" go="PetProcessActPanel">
+			<reward>
+			<pet id="523" />
+			<pet id="524" />
+			<item id="200062" count="1" />
+			</reward>	
+		</act>
+
+
+
+		<act name="进击的超伊特" iconId="1041"  isPet="1" willOver="0"  detailDes="伊特家族再战！翻族牌迎接超伊特的降临！" timeDes="全天候" startTime="00:00" endTime="23:00" go="YiteSuperPetPanel">
+			<reward>
+			<item id="200718" count="1" />
+			<item id="200335" count="1" />
+			<item id="200334" count="1" />
+			</reward>	
+		</act>
+
+		<act name="晨战！王之冰魄！" iconId="1042"  isPet="1" willOver="0"  detailDes="挑战最新BOOSS晨璨，四战胜利得王之冰魄！" timeDes="全天候" startTime="00:00" endTime="23:00" go="KingSoulWithIcePanel">
+			<reward>
+			<pet id="512" />
+			<item id="200221" count="1" />
+			<item id="200225" count="1" />
+			</reward>	
+		</act>
+
+		<act name="BOSS晨璨真心朋友" iconId="1043"  isPet="1" willOver="0"  detailDes="拥有四重性格！亲历晨璨的过去时光吧！" timeDes="全天候" startTime="00:00" endTime="23:00" go="KingSoulWithIcePanel">
+			<reward>
+			<pet id="492" />
+			</reward>	
+		</act>
+
+
+		<act name="尖叫的大毛怪" iconId="1044"  isPet="1" willOver="0"  detailDes="种植园里有怪兽！大毛怪和大眼怪来了！" timeDes="全天候" startTime="00:00" endTime="23:00" go="70000">
+			<reward>
+			<pet id="457" />
+			<pet id="458" />
+			<item id="400006" count="1" />
+			</reward>	
+		</act>
+
+
+
+
+		<act name="VIP宇宙嘉年华" iconId="11"  isPet="1" willOver="0"  detailDes="加入VIP送宇宙机甲震天虎+灵朱雀！" timeDes="全天候" startTime="00:00" endTime="23:00" go="VipRechargeBasePanel">
+			<reward>
+			<pet id="537" />
+			<pet id="565" />
+			</reward>	
+		</act>
+
+		<act name="约瑟17魂魄篇开启" iconId="1035"  isPet="1" willOver="0"  detailDes="约瑟魂魄已出！17属性17魂魄！" timeDes="全天候" startTime="00:00" endTime="23:00" go="KingSoulPanel">
+			<reward>
+			<pet id="505" />
+			<pet id="506" />
+			<pet id="507" />
+			</reward>	
+		</act>
+
+
+		<act name="王之召唤" iconId="1036"  isPet="1" willOver="0"  detailDes="邀请好友、老兵回归、新兵报道，三重大礼送出！" timeDes="全天候" startTime="00:00" endTime="23:00" go="KingSoulPanel">
+			<reward>
+			<pet id="039" />
+			<pet id="053" />
+			<pet id="364" />
+			</reward>	
+		</act>
+
+
+
+		<act name="经验大爆炸" iconId="1038"  isPet="0" willOver="0"  detailDes="收集经验换精灵、米币道具！" timeDes="全天候" startTime="00:00" endTime="23:00" go="KingWithTrainPanel">
+			<reward>
+			<item id="200239" count="1" />
+			<item id="200223" count="1" />
+			<item id="400194" count="1" />
+			</reward>	
+		</act>
+
+
+
+
+
+		<act name="暴走的雷电" iconId="1028"  isPet="1" willOver="0"  detailDes="幻灵骑士团最后一员【幻蹄雷电】！" timeDes="全天候" startTime="00:00" endTime="23:00" go="BaozouLeidianPanel">
+			<reward>
+			<pet id="451" />
+			</reward>	
+		</act>
+
+
+		<act name="太阳神之子" iconId="1029"  isPet="1" willOver="0"  detailDes="米咔超进化！就在太阳神殿加冕为太阳神之子！" timeDes="全天候" startTime="00:00" endTime="23:00" go="SonOfSunGoldPanel">
+			<reward>
+				<pet id="456" />
+				<item id="201024" />
+				<item id="200206" />
+			</reward>	
+		</act>
+
+		<act name="孤独的巴鲁金斯" iconId="1030"  isPet="1" willOver="0"  detailDes="收集精灵签名兑换孤独的巴鲁金斯！" timeDes="全天候" startTime="00:00" endTime="23:00" go="RollerLotteryPanel">
+			<reward>
+				<pet id="456" />
+				<item id="201024" />
+				<item id="200206" />
+			</reward>	
+		</act>
+
+
+
+
+
+
+		<act name="炎帝之焰爪" iconId="1023"  isPet="1" willOver="0"  detailDes="获得焰爪，它就能让凯萨蜕变为炎帝！" timeDes="全天候" startTime="00:00" endTime="23:00" go="FireClawActPanel">
+			<reward>
+			<pet id="1101" />
+			<pet id="499" />
+			</reward>	
+		</act>
+
+		<act name="骤雨的搏击" iconId="1022"  isPet="1" willOver="0"  detailDes="搏杀三关就可得精灵【幻齿骤雨】" timeDes="全天候" startTime="00:00" endTime="23:00" go="BrashStrikePanel">
+			<reward>
+			<pet id="448" />
+			</reward>	
+		</act>
+
+
+
+
+		<act name="咆哮的飓风" iconId="1019"  isPet="1" willOver="0"  detailDes="幻灵骑士团第二尊：幻影飓风席卷全球！" timeDes="全天候" startTime="00:00" endTime="23:00" go="PetKingWindMainPanel">
+			<reward>
+			<pet id="440" />
+			<item id="200221" count="1" />
+			<item id="200214" count="1" />
+			</reward>	
+		</act>
+
+
+
+
+	
+
+
+
+		<act name="精灵大乱斗" iconId="1000"  isPet="1" willOver="0"  detailDes="精灵大乱斗加盟争霸赛！更多选择更多惊喜！" timeDes="全天候" startTime="00:00" endTime="23:00" go="PetMeleePanel">
+			<reward>
+			<item id="200223" count="1" />
+			<item id="200214" count="1" />
+			</reward>	
+		</act>
+
+		<act name="观星者本尊挑战" iconId="3"  isPet="1" willOver="0"  detailDes="宇宙至尊、观星者本尊挑战开放!" timeDes="全天候" startTime="00:00" endTime="23:00" go="StargazerFightPanel">
+			<reward>
+				<pet id="503" />
+			</reward>
+		</act>
+
+
+
+
+		<act name="时空之客伊鲁达" iconId="1009"  isPet="1" willOver="0"  detailDes="用光的速度穿越时空，和克拉克战宠伊鲁达相遇！" timeDes="全天候" startTime="00:00" endTime="23:00" go="YiludaActPanel">
+			<reward>
+			<pet id="434" />
+			<item id="200244" count="1" />
+			</reward>	
+		</act>
+
+
+		<act name="幻翼的召唤" iconId="1010"  isPet="1" willOver="0"  detailDes="幻灵骑士团首席幽冥等你召唤！召唤成功赠送纹章！" timeDes="全天候" startTime="00:00" endTime="23:00" go="HuanyiCallActPanel">
+			<reward>
+			<pet id="431" />
+			<item id="200230" count="1" />
+			<item id="200702" count="1" />
+			</reward>	
+		</act>
+
+
+		<act name="幻灵骑士团" iconId="1011"  isPet="0" willOver="0"  detailDes="飞船告急！暗影幻灵骑士团四大战将纷至而来！" timeDes="全天候" startTime="00:00" endTime="23:00" go="EidolonPanel">
+			<reward>
+			<item id="200214" count="1" />
+			<item id="400187" count="1" />
+			</reward>	
+		</act>
+
+
+
+
+
+		<act name="雷神之斩" iconId="67"  isPet="1" willOver="0"  detailDes="上古器灵问世！雷伊结合雷切将会成为雷神！" timeDes="全天候" startTime="00:00" endTime="23:00" go="LeiyiGunPetPanel">
+			<reward>
+			<pet id="1100" />
+			<pet id="498" />
+			<item id="200222" count="1" />
+			</reward>	
+		</act>
+
+
+
+
+
+
+		<act name="闪电之躯" iconId="97"  isPet="0" willOver="0"  detailDes="雷伊求助！快去帮助雷神还可获雷鸣裂空装！" timeDes="全天候" startTime="00:00" endTime="23:00" go="LeiyiChargingPanel">
+			<reward>
+				<item id="100868" />
+				<item id="200221" />
+				<item id="200234" />
+			</reward>	
+		</act>
+
+		<act name="螳螂101次信念" iconId="95"  isPet="1" willOver="0"  detailDes="周年庆典精灵第一尊！贾斯汀的至尊螳螂！" timeDes="全天候" startTime="00:00" endTime="23:00" go="MantisActPanel">
+			<reward>
+				<pet id="158" />
+				<item id="200241" />
+				<item id="500135" />
+			</reward>	
+		</act>
+
+	
+
+		<act name="啊！蜻蜓！" iconId="86"  isPet="1" willOver="0"  detailDes="看！有蜻蜓！快拿网兜兜住它！" timeDes="全天候" startTime="00:00" endTime="23:00" go="DragonPanel">
+			<reward>
+				<pet id="402" />
+				<item id="102036" />
+				<item id="200676" />
+
+			</reward>	
+		</act>
+
+
+
+		<act name="最牛精灵训练营" iconId="82"  isPet="1" willOver="0"  detailDes="免费领取火爆猴和变色蜥！打造优质精灵！" timeDes="全天候" startTime="00:00" endTime="23:00" go="PetTrainActPanel">
+			<reward>
+				<pet id="397" />
+				<pet id="390" />
+				<item id="200221" />
+
+			</reward>	
+		</act>
+
+
+
+		<act name="薄暮蜕变 暗夜变身" iconId="79"  isPet="1" willOver="0"  detailDes="汲取暗月能的薄暮兔神奇大变身！" timeDes="全天候" startTime="00:00" endTime="23:00" go="RabitDressPanel">
+			<reward>
+				<pet id="388" />
+			</reward>	
+		</act>
+
+
+		<act name="撒旦崛起凯伊对决" iconId="80"  isPet="0" willOver="0"  detailDes="3V1对战冥王撒旦！获得撒旦战袍！" timeDes="全天候" startTime="00:00" endTime="23:00" go="SaDanFightPanel">
+			<reward>
+				<item id="100795" />
+				<item id="200221" />
+				<item id="200016" />
+			</reward>	
+		</act>
+
+
+		<act name="神秘九尾的挑战" iconId="78"  isPet="1" willOver="0"  detailDes="挑战获胜得精灵九尾、精灵纹章！" timeDes="全天候" startTime="00:00" endTime="23:00" go="640">
+			<reward>
+				<pet id="387" />
+				<item id="200213" />
+				<item id="200214" />
+			</reward>	
+		</act>
+	
+		
+	
+
+		<act name="奇遇暗月兔" iconId="47"  isPet="1" willOver="0"  detailDes="骰子星寻宝就能撞见暗月兔！" timeDes="全天候" startTime="00:00" endTime="23:00" go="DarkMoonRabbitPanel">
+			<reward>
+			<pet id="385" />
+			<item id="102031" count="1" />
+			<item id="601030" count="1" />>
+			</reward>	
+		</act>
+
+
+		<act name="王者的追溯" iconId="53"  isPet="1" willOver="0"  detailDes="挑战弱化版雷伊凯萨就可得精灵！" timeDes="全天候" startTime="00:00" endTime="23:00" go="LeiyiKaisaGadMainPanel">
+			<reward>
+			<pet id="090" />
+			<pet id="234" />
+			<item id="400279" count="1" />
+			</reward>
+		</act>
+		<act name="后花园游乐场" iconId="33"  isPet="1" willOver="0"  detailDes="马里奥的游戏开始了！可得七星瓢虫哦" timeDes="12:00-13:00午间版" startTime="12:00" endTime="13:00" go="1230">
+			<reward>
+				<pet id="413" />
+			</reward>
+		</act>
+		<act name="天宫四宿灵朱雀" iconId="52"  isPet="1" willOver="0"  detailDes="现在充值1-3个月VIP就送灵朱雀！" timeDes="全天候" startTime="00:00" endTime="23:00" go="TempleFourSeasonPanel">
+			<reward>
+			<pet id="418" />
+			</reward>
+		</act>
+
+		<act name="精灵扭蛋机" iconId="9"  isPet="1" willOver="0"  detailDes="扭蛋机最新推出初影忍者尼加、河童、布布！" timeDes="全天候" startTime="00:00" endTime="23:00" go="GiftMachinePanel">
+			<reward>
+				<pet id="405" />
+				<pet id="295" />
+				<pet id="353" />
+			</reward>
+		</act>
+
+		<act name="暗黑魔盒" iconId="60"  isPet="1" willOver="0"  detailDes="约瑟之钥！开启暗黑魔盒释放绝版精灵" timeDes="全天候" startTime="00:00" endTime="23:00" go="DarkMagicBoxPanel">
+			<reward>
+			<pet id="387" />
+			<pet id="389" />
+			<pet id="216" />
+			</reward>
+		</act>
+
+		<act name="伊特大乱斗" iconId="17"  isPet="0" willOver="0"  detailDes="伊特家族大乱斗，各种伊特精灵，伊特纹章送！" timeDes="全天候" startTime="00:00" endTime="23:00" go="YiteFightTipsPanel">
+			<reward>
+				<item id="200582" />
+				<item id="200583" />
+				<item id="200584" />
+			</reward>
+		</act>
+
+        <act name="周年狂欢撞头彩" iconId="59"  isPet="0" willOver="0"  detailDes="米币豪车大集结！送全新二周年黄金座驾！" timeDes="全天候" startTime="00:00" endTime="23:00" go="NewGoodStartMainPanel">
+			<reward>
+			<item id="100886" count="1" />
+			<item id="100852" count="1" />
+			<item id="100833" count="1" />
+			</reward>
+		</act>
+
+		<act name="赏金电麒麟" iconId="8"  isPet="0" willOver="0"  detailDes="去赏金猎人处接任务，换取麒麟进化芯片！" timeDes="全天候" startTime="00:00" endTime="23:00" go="60">
+			<reward>
+			<item id="200329" count="1" />
+			<item id="200330" count="1" />
+			<item id="200225" count="1" />
+			</reward>
+		</act>
+
+		<act name="埃卡维特爱吃鱼" iconId="75"  isPet="1" willOver="0"  detailDes="给点鱼吧！吃了维特就和你过过招！" timeDes="全天候" startTime="00:00" endTime="23:00" go="152">
+			<reward>
+				<pet id="109" />
+			</reward>	
+		</act>
+
+	
+		<act name="重夺水源之心" iconId="25"  isPet="1" willOver="0"  detailDes="重夺水源之心迫在眉睫，新增精灵纹章奖励！" timeDes="13:00-14:00午间版" startTime="13:00" endTime="14:00" go="171">
+			<reward>
+				<pet id="150" />
+				<pet id="154" />
+				<item id="200595" />
+			</reward>
+		</act>
+
+
+		<act name="七星连珠唤神龙" iconId="65"  isPet="0" willOver="0"  detailDes="召唤出神龙，它会实现你的心愿！" timeDes="14:00-15:00午间版" startTime="14:00" endTime="15:00" go="CallDragonPanel">
+			<reward>
+			<item id="100606" count="1" />
+			<item id="400137" count="1" />
+			<item id="102015" count="1" />
+			</reward>
+		</act>
+
+
+
+	    <act name="重金悬赏令！" iconId="8"  isPet="1" willOver="0"  detailDes="猎人金库为你敞开！跨年精灵悬赏令全球发动！" timeDes="全天候" startTime="00:00" endTime="23:00" go="60">
+			<reward>
+				<item id="200234" />
+				<item id="200214" />
+				<item id="200224" />
+			</reward>
+		</act>
+		<act name="神龙火圈" iconId="7"  isPet="1" willOver="0"  detailDes="冰封巨龙迈巴赫问世！新增15连抛必中！" timeDes="全天候" startTime="00:00" endTime="23:00" go="LuckyDialMeePanel">
+			<reward>
+				<pet id="426" />
+				<pet id="410" />
+				<pet id="529" />
+			</reward>
+		</act>
+
+
+		<act name="VIP乐园金字塔" iconId="6"  isPet="0" willOver="0"  detailDes="问鼎百万豪车，2013年VIP金子塔奖励已升级！" timeDes="全天候" startTime="00:00" endTime="23:00" go="VipPyramidPanel">
+			<reward>
+				<item id="100595" />
+				<item id="200605" />
+				<item id="200225" />
+			</reward>
+		</act>
+		<act name="观星者本尊挑战" iconId="3"  isPet="1" willOver="0"  detailDes="宇宙至尊、观星者本尊挑战开放!" timeDes="全天候" startTime="00:00" endTime="23:00" go="StargazerFightPanel">
+			<reward>
+				<pet id="503" />
+			</reward>
+		</act>
+
+
+		<act name="冰封之轴" iconId="27"  isPet="1" willOver="0"  detailDes="冰沁氏族发现百年难见的异样奇景！到底是什么？" timeDes="13:00—14:00午间版" startTime="13:00" endTime="14:00" go="650">
+			<reward>
+				<pet id="278" />
+				<item id="400212" />
+				<item id="400213" />
+			</reward>
+		</act>
+
+
+		<act name="睡懒觉的吃货" iconId="29"  isPet="1" willOver="0"  detailDes="诺基博从懒觉中醒来！赶快做美味的料理吧~" timeDes="13:00-16:00" startTime="13:00" endTime="16:00" go="125">
+			<reward>
+				<pet id="190" />
+			</reward>
+		</act>
+
+
+		<act name="谁敢打搅达达用餐" iconId="45"  isPet="1" willOver="0"  detailDes="先用头部射击击中达克尔才有机会与达达交战哦！" timeDes="13:00-14:00" startTime="13:00" endTime="14:00" go="262">
+			<reward>
+				<pet id="074" />
+			</reward>
+		</act>
+
+		<act name="帕帕米拉的造型" iconId="46"  isPet="1" willOver="0"  detailDes="在焰之森和多摩对战，就有几率碰见美发大王哦" timeDes="13:00-14:00午间版" startTime="13:00" endTime="14:00" go="281">
+			<reward>
+				<pet id="231" />
+			</reward>
+		</act>
+
+		<act name="寻找神秘的歌声" iconId="30"  isPet="1" willOver="0"  detailDes="会唱歌会伪装的神秘草系精灵，你找的到吗？" timeDes="13:30-14:30" startTime="13:30" endTime="14:30" go="100">
+			<reward>
+				<pet id="251" />
+			</reward>
+		</act>
+
+		<act name="敌报！萨伦入侵" iconId="24"  isPet="1" willOver="0"  detailDes="草系部落告急！萨伦帝国偷袭！快去击败敌军！" timeDes="14:00-15:00午间版" startTime="14:00" endTime="15:00" go="100">
+			<reward>
+				<pet id="146" />
+				<pet id="151" />
+				<item  id="400021" />
+			</reward>
+		</act>
+
+
+
+		<act name="商城每日抽奖" iconId="4"  isPet="0" willOver="0"  detailDes="商城送星石！普通用户每日3次抽奖（VIP5次）" timeDes="全天候" startTime="00:00" endTime="23:00" go="EnergyLotteryPanel">
+			<reward>
+				<item id="17" />
+			</reward>
+		</act>
+
+
+		<act name="灵兽的试炼" iconId="2"  isPet="0" willOver="0"  detailDes="草、火、水三大灵兽试炼及挑战已开启！" timeDes="全天候" startTime="00:00" endTime="23:00" go="BagginsLogPanel">
+			<reward>
+				<pet id="301" />
+				<pet id="302" />
+				<pet id="303" />
+			</reward>
+		</act>
+	    <act name="骰子星寻宝" iconId="21"  isPet="1" willOver="0"  detailDes="去骰子星寻宝，绝版装扮等星币奖品！" timeDes="全天候" startTime="00:00" endTime="23:00" go="1030">
+			<reward>
+				<pet id="269" />
+				<pet id="264" />
+				<item id="601030" />
+			</reward>
+		</act>
+
+
+
+		<act name="神目守护特鲁伊！" iconId="41"  isPet="1" willOver="0"  detailDes="权利之帐，神目酋长的守护精灵特鲁伊向你挑战！" timeDes="全天候" startTime="00:00" endTime="23:00" go="110">
+			<reward>
+				<pet id="293" />
+			</reward>
+		</act>
+
+		<act name="水之翘楚爱丽斯" iconId="42"  isPet="1" willOver="0"  detailDes="爱丽斯，水脉精灵之翘楚！神谕之挑战已开启！" timeDes="全天候" startTime="00:00" endTime="23:00" go="160">
+			<reward>
+				<pet id="341" />
+			</reward>
+		</act>
+
+
+
+
+		<act name="星座守护者计划" iconId="10"  isPet="0" willOver="0"  detailDes="VIP填生日获尊贵星座标记、黄金圣衣及座驾哦" timeDes="全天候" startTime="00:00" endTime="23:00" go="VipDecorationPanel">
+			<reward>
+			<pet id="319" />
+			<item id="100965" count="1" />
+			<item id="100966" count="1" />
+			</reward>
+		</act>
+
+
+
+
+		<act name="VIP神魔之月礼" iconId="13"  isPet="0" willOver="0"  detailDes="VIP尊享绝版NONO等18米币周年庆礼盒送给你！" timeDes="全天候" startTime="00:00" endTime="23:00" go="VipChristmasPanel">
+			<reward>
+				<item id="202007" />
+				<item id="102045" />
+				<item id="200223" />
+			</reward>
+		</act>
+
+
+
+		<act name="娜娜和斯缇姆军团" iconId="15"  isPet="1" willOver="0"  detailDes="超强技师娜娜和她引以为傲的精灵斯缇姆迎战！" timeDes="全天候" startTime="00:00" endTime="23:00" go="900">
+			<reward>
+				<pet id="245" />
+				<item id="100444" />
+				<item id="100448" />
+			</reward>
+		</act>
+
+		<act name="迷雾杀手" iconId="16"  isPet="1" willOver="0"  detailDes="工房迷雾杀手艾力克的斯莫克军团让人闻风丧胆！" timeDes="全天候" startTime="00:00" endTime="23:00" go="940">
+			<reward>
+				<pet id="257" />
+				<item id="100487" />
+				<item id="100491" />
+			</reward>
+		</act>
+
+		<act name="后花园游乐场" iconId="46"  isPet="1" willOver="0"  detailDes="马里奥的游戏开始了！可得七星瓢虫哦" timeDes="18:00-19:00夜间版" startTime="18:00" endTime="19:00" go="1230">
+			<reward>
+				<pet id="413" />
+			</reward>
+		</act> 
+
+		<act name="谁偷吃了我的料理" iconId="33"  isPet="1" willOver="0"  detailDes="超胆小精灵冰湖豚登场！听说它也喜欢料理？" timeDes="18:00-20:00" startTime="18:00" endTime="20:00" go="125">
+			<reward>
+				<pet id="119" />
+			</reward>
+		</act>
+
+		<act name="敌报！萨伦入侵" iconId="24"  isPet="1" willOver="0"  detailDes="草系部落告急！萨伦帝国偷袭！快去击败敌军！" timeDes="19:00-20:00夜间版" startTime="19:00" endTime="20:00" go="100">
+			<reward>
+				<pet id="146" />
+				<pet id="151" />
+				<item  id="400021" />
+			</reward>
+		</act>
+		<act name="重夺水源之心" iconId="25"  isPet="1" willOver="0"  detailDes="重夺水源之心迫在眉睫，新增精灵纹章奖励！" timeDes="19:00-20:00夜间版" startTime="19:00" endTime="20:00" go="171">
+			<reward>
+				<pet id="150" />
+				<pet id="154" />
+				<item id="200595" />
+			</reward>
+		</act>
+		<act name="七星连珠唤神龙" iconId="65"  isPet="0" willOver="0"  detailDes="召唤出神龙，它会实现你的心愿！" timeDes="19:00-20:00夜间版" startTime="19:00" endTime="20:00" go="CallDragonPanel">
+			<reward>
+			<item id="100606" count="1" />
+			<item id="400137" count="1" />
+			<item id="102015" count="1" />
+			</reward>
+		</act>
+
+		<act name="帕帕米拉的造型" iconId="46"  isPet="1" willOver="0"  detailDes="在焰之森和多摩对战，就有几率碰见美发大王哦" timeDes="19:00-20:00夜间版" startTime="19:00" endTime="20:00" go="281">
+			<reward>
+				<pet id="231" />
+			</reward>
+		</act>
+
+		<act name="冰封之轴" iconId="27"  isPet="1" willOver="0"  detailDes="冰沁氏族发现百年难见的异样奇景！到底是什么？" timeDes="20:00—21:00夜间版" startTime="20:00" endTime="21:00" go="650">
+			<reward>
+				<pet id="278" />
+				<item id="400212" />
+				<item id="400213" />
+			</reward>
+		</act>
+
+
+		<act name="双倍荣誉" iconId="19"  isPet="0" willOver="0"  detailDes="去试炼和勇士之战50V50就可获得双倍荣誉点了！" timeDes="20:00-21:00" startTime="20:00" endTime="21:00" go="450">
+			<reward>
+				<item id="300001" />
+				<item id="300002" />
+				<item id="200221" />
+			</reward>
+		</act>
+
+	
+
+
+		<act name="海小葵的喷嚏" iconId="31"  isPet="1" willOver="0"  detailDes="流离街出现了陌生的精灵，它的名字叫“海葵”！" timeDes="全天候" startTime="00:00" endTime="23:00" go="920">
+			<reward>
+				<pet id="253" />
+			</reward>
+		</act>
+
+		<act name="三眼蝎的舞步" iconId="32"  isPet="1" willOver="0"  detailDes="去矿坑找大板牙，照他说的做就能引来三眼石蝎！" timeDes="全天候" startTime="00:00" endTime="23:00" go="520">
+			<reward>
+				<pet id="086" />
+			</reward>
+		</act>
+
+		<act name="爱之拂晓兔" iconId="34"  isPet="1" willOver="0"  detailDes="晓晓和月月，以爱的名义等待你的到来！" timeDes="全天候" startTime="00:00" endTime="23:00" go="132">
+			<reward>
+				<pet id="61" />
+			</reward>
+		</act>
+
+		<act name="谜一样的精灵" iconId="35"  isPet="1" willOver="0"  detailDes="它是谁？先去幽静浅滩点小猪储蓄罐唤它出来吧！" timeDes="全天候" startTime="00:00" endTime="23:00" go="220">
+			<reward>
+				<pet id="51" />
+			</reward>
+		</act>
+
+		<act name="迷途的小海马" iconId="36"  isPet="1" willOver="0"  detailDes="维拉发现了一个迷途的小海马，它在说什么呢？" timeDes="全天候" startTime="00:00" endTime="23:00" go="151">
+			<reward>
+				<pet id="41" />
+			</reward>
+		</act>
+
+		<act name="多利的雪人计划" iconId="37"  isPet="1" willOver="0"  detailDes="多利竟然没有雪球用来堆雪人了，一起来帮它。" timeDes="全天候" startTime="00:00" endTime="23:00" go="540">
+			<reward>
+				<pet id="138" />
+			</reward>
+		</act>
+
+		<act name="小小葵的梦境" iconId="38"  isPet="1" willOver="0"  detailDes="小小葵的梦境你去探索过了吗？这里藏了许多秘密" timeDes="全天候" startTime="00:00" endTime="23:00" go="131">
+			<reward>
+				<pet id="13" />
+			</reward>
+		</act>
+
+		<act name="摇滚天王爆炸头" iconId="39"  isPet="1" willOver="0"  detailDes="传说它喜欢迷穴中的财宝，迷穴之可是凶多吉少呢" timeDes="全天候" startTime="00:00" endTime="23:00" go="340">
+			<reward>
+				<pet id="83" />
+			</reward>
+		</act>
+
+
+		<act name="鸡毛与沙" iconId="43"  isPet="1" willOver="0"  detailDes="谁是真正的战斗鸡？周扒皮的斗鸡生意等你捧场！" timeDes="全天候" startTime="00:00" endTime="23:00" go="350">
+			<reward>
+				<item  id="1" />
+			</reward>
+		</act>
+
+
+	</acts>
+	<acts day="6">
+
+	<act name="爆焰努尔" iconId="1097"  isPet="1" willOver="0"  detailDes="为了弟兄和自己的尊严！霍克努尔终于爆发了！" timeDes="全天候" startTime="00:00" endTime="23:00" go="HuoKeNuErSuperProcessPanel">
+			<reward>
+			<pet id="590" />
+			<item id="101087" count="1" />
+			<item id="101088" count="1" />
+			</reward>	
+		</act>
+
+	<act name="炼金师迪克" iconId="1098"  isPet="1" willOver="0"  detailDes="天马四骑士第三尊炼金师迪克出场！" timeDes="全天候" startTime="00:00" endTime="23:00" go="FightVsDickPanel">
+			<reward>
+			<pet id="591" />
+			<pet id="592" />
+			</reward>	
+		</act>
+
+
+	<act name="永恒炽翼" iconId="1096"  isPet="1" willOver="0"  detailDes="燃圣火种，火系凯瑟琳将进化为炽翼女神赫拉！" timeDes="全天候" startTime="00:00" endTime="23:00" go="KaiSeLinSuperProcessPanel">
+			<reward>
+			<pet id="587" />
+			<item id="101083" count="1" />
+			<item id="101084" count="1" />
+			</reward>	
+		</act>
+	<act name="跨年龙战" iconId="1095"  isPet="1" willOver="0"  detailDes="8条神龙跨年而来，每周开启两条神龙挑战！" timeDes="全天候" startTime="00:00" endTime="23:00" go="KuaNianLongZhanPanel">
+			<reward>
+			<pet id="410" />
+			<pet id="394" />
+			</reward>	
+		</act>
+	<act name="圣灵师海罗"  iconId="1093"  isPet="1" willOver="0"  detailDes="每天修炼就能获得天马四骑士——圣灵师海罗" timeDes="全天候" startTime="00:00" endTime="23:00" go="FightVsHelloPanel">
+			<reward>
+			<pet id="588" />
+			<pet id="589" />
+			</reward>	
+		</act>
+
+	<act name="巨石托尔" iconId="1087"  isPet="1" willOver="0"  detailDes="SPT超进化生日派对！帮布鲁托完成生日心愿！" timeDes="全天候" startTime="00:00" endTime="23:00" go="BuNuTuoSuperProcessPanel">
+			<reward>
+			<pet id="586" />
+			<item id="101072" count="1" />
+			<item id="101073" count="1" />
+			</reward>	
+		</act>
+
+
+
+	<act name="圣猎人拜瑞" iconId="1090"  isPet="1" willOver="0"  detailDes="每天修炼就能获得天马四骑士——圣猎人拜瑞！" timeDes="全天候" startTime="00:00" endTime="23:00" go="FightVsBarryPanel">
+			<reward>
+			<pet id="582" />
+			<pet id="583" />
+			</reward>	
+		</act>
+
+
+	<act name="直捣炼狱战魔王" iconId="1088"  isPet="1" willOver="0"  detailDes="炼狱七大魔王弱化挑战启动！挑战胜利得魔王！" timeDes="全天候" startTime="00:00" endTime="23:00" go="FightVsBarryPanel">
+			<reward>
+			<pet id="325" />
+			<pet id="322" />
+			<pet id="340" />
+			</reward>	
+		</act>
+
+
+	<act name="冰封魔域库贝萨" iconId="1086"  isPet="1" willOver="0"  detailDes="小当家意外走失，你在冰封魔域的冒险已经开始！" timeDes="全天候" startTime="00:00" endTime="23:00" go="BingfengQuestMianPanel">
+			<reward>
+			<pet id="581" />
+			<item id="200214" count="1" />
+			</reward>	
+		</act>
+
+
+
+	<act name="银脉紫煞" iconId="1083"  isPet="1" willOver="0"  detailDes="紫电将在银脉山脊完成超进化！" timeDes="全天候" startTime="00:00" endTime="23:00" go="ZiDianSuperProcessPanel">
+			<reward>
+			<pet id="580" />
+			<item id="200215" count="1" />
+			<item id="200011" count="1" />
+			</reward>	
+		</act>
+
+
+
+	<act name="电魂巴图" iconId="1080"  isPet="1" willOver="0"  detailDes="巴图领悟了电闪雷鸣之力后蜕变为【电魂巴图】！" timeDes="全天候" startTime="00:00" endTime="23:00" go="XiaoBaEvolutionPanel">
+			<reward>
+			<pet id="578" />
+			<item id="101052" count="1" />
+			<item id="101053" count="1" />
+			</reward>	
+		</act>
+
+	
+
+	<act name="神力超猪侠" iconId="1078"  isPet="1" willOver="0"  detailDes="美食神猪维克多+宇宙超级大饭团=神力超猪侠！" timeDes="全天候" startTime="00:00" endTime="23:00" go="FoodPigSuperProcessPanel">
+			<reward>
+			<pet id="577" />
+			<item id="200206" count="1" />
+			<item id="200222" count="1" />
+			</reward>	
+		</act>
+
+	<act name="忍者龙剑坛" iconId="1079"  isPet="1" willOver="0"  detailDes="【地忍百魁】在白龙岩阵的肃杀挑战！" timeDes="全天候" startTime="00:00" endTime="23:00" go="80069">
+			<reward>
+			<pet id="546" />
+			<item id="201021" count="1" />
+			<item id="201036" count="1" />
+			</reward>	
+		</act>
+
+	<act name="僵尸博士大逃杀" iconId="1071"  isPet="1" willOver="0"  detailDes="僵尸博士变异，全程追缉！你能抓住它吗？" timeDes="全天候" startTime="00:00" endTime="23:00" go="ZombieDrEscapePanel">
+			<reward>
+			<pet id="563" />
+			</reward>	
+		</act>
+
+	<act name="万圣假面舞会" iconId="1072"  isPet="1" willOver="0"  detailDes="万圣舞会迎来伊特家族第14只伊特【特伊特】！" timeDes="全天候" startTime="00:00" endTime="23:00" go="DanceShowPanel">
+			<reward>
+			<pet id="105" />
+			</reward>	
+		</act>
+
+
+
+	<act name="宇宙机甲战士" iconId="1076"  isPet="1" willOver="0"  detailDes="包月就送宇宙机甲战士，包3个月再送机甲装" timeDes="全天候" startTime="00:00" endTime="23:00" go="VipGaoDaPanel">
+			<reward>
+			<pet id="565" />
+			<item id="101033" count="1" />
+			<item id="101034" count="1" />
+			</reward>	
+		</act>
+
+
+	<act name="圣诞许愿树" iconId="1074"  isPet="1" willOver="0"  detailDes="超强BOSS、绝版精灵、米币道具、绝版装扮送出" timeDes="全天候" startTime="00:00" endTime="23:00" go="TwoYearWishPanel">
+			<reward>
+		    <pet id="377" />
+			<pet id="280" />
+			<item id="101042" count="1" />
+			</reward>	
+		</act>
+
+
+
+
+
+
+
+
+		<act name="初影忍者" iconId="1066"  isPet="1" willOver="0"  detailDes="忍者系列首席【绝影忍者】的修炼全面开启！" timeDes="全天候" startTime="00:00" endTime="23:00" go="NinjaPractiseSkillPanel">
+			<reward>
+				<pet id="541" />
+			    <item id="200246" />
+			    <item id="200247" />
+			</reward>	
+		</act>
+
+
+		<act name="吸血魔咒女王" iconId="1067"  isPet="1" willOver="0"  detailDes="始祖吸血女王阿卡莎驾到！" timeDes="全天候" startTime="00:00" endTime="23:00" go="BloodKingActPanel">
+			<reward>
+				<pet id="541" />
+				<pet id="546" />
+			    <item id="200013"/> 
+			</reward>	
+		</act>
+
+
+		<act name="狂炼狼神" iconId="1062"  isPet="1" willOver="0"  detailDes="通过5重历炼就能使狼妖进化为狼神！" timeDes="全天候" startTime="00:00" endTime="23:00" go="WolfSuperPanel">
+			<reward>
+			<pet id="560" />
+			</reward>	
+		</act>
+
+		<act name="异形的危机" iconId="1063"  isPet="1" willOver="0"  detailDes="始祖吸血病毒入侵星球！小赛尔们我们行动起来！" timeDes="全天候" startTime="00:00" endTime="23:00" go="YiXingMainPanel">
+			<reward>
+			<pet id="558" />
+			</reward>	
+		</act>
+
+
+		<act name="七龙忍者阵" iconId="1061"  isPet="1" willOver="0"  detailDes="首只忍者系精灵【初影忍者】诞生！它是忍者之源" timeDes="全天候" startTime="00:00" endTime="23:00" go="SevenDragonNinjaPanel">
+			<reward>
+			<pet id="540" />
+			</reward>	
+		</act>
+
+
+
+		<act name="百变神君神伊特" iconId="1057"  isPet="1" willOver="0"  detailDes="第13只伊特【神伊特】出场！收集伊特有大奖！" timeDes="全天候" startTime="00:00" endTime="23:00" go="YiteMorphActPanel">
+			<reward>
+			<pet id="104" />
+			<item id="200206" count="1" />
+			<item id="200222" count="1" />
+			</reward>	
+		</act>
+
+
+		<act name="黄金12宫" iconId="1056"  isPet="1" willOver="0"  detailDes="在星空下许愿免费得黄金十二宫星座守护！" timeDes="全天候" startTime="00:00" endTime="23:00" go="Gold12Panel">
+			<reward>
+			<pet id="154" />
+			<pet id="155" />
+			<pet id="156" />
+			</reward>	
+		</act>
+
+
+
+		<act name="魔神前传" iconId="1047"  isPet="1" willOver="0"  detailDes="首只魔化精灵！小魔神免费领取1只，VIP2只！" timeDes="全天候" startTime="00:00" endTime="23:00" go="PetProcessActPanel">
+			<reward>
+			<pet id="523" />
+			<pet id="524" />
+			<item id="200062" count="1" />
+			</reward>	
+		</act>
+
+
+	
+
+		<act name="进击的超伊特" iconId="1041"  isPet="1" willOver="0"  detailDes="伊特家族再战！翻族牌迎接超伊特的降临！" timeDes="全天候" startTime="00:00" endTime="23:00" go="YiteSuperPetPanel">
+			<reward>
+			<item id="200718" count="1" />
+			<item id="200335" count="1" />
+			<item id="200334" count="1" />
+			</reward>	
+		</act>
+
+		<act name="晨战！王之冰魄！" iconId="1042"  isPet="1" willOver="0"  detailDes="挑战最新BOOSS晨璨，四战胜利得王之冰魄！" timeDes="全天候" startTime="00:00" endTime="23:00" go="KingSoulWithIcePanel">
+			<reward>
+			<pet id="512" />
+			<item id="200221" count="1" />
+			<item id="200225" count="1" />
+			</reward>	
+		</act>
+
+		<act name="BOSS晨璨真心朋友" iconId="1043"  isPet="1" willOver="0"  detailDes="拥有四重性格！亲历晨璨的过去时光吧！" timeDes="全天候" startTime="00:00" endTime="23:00" go="KingSoulWithIcePanel">
+			<reward>
+			<pet id="492" />
+			</reward>	
+		</act>
+
+
+		<act name="尖叫的大毛怪" iconId="1044"  isPet="1" willOver="0"  detailDes="种植园里有怪兽！大毛怪和大眼怪来了！" timeDes="全天候" startTime="00:00" endTime="23:00" go="70000">
+			<reward>
+			<pet id="457" />
+			<pet id="458" />
+			<item id="400006" count="1" />
+			</reward>	
+		</act>
+
+
+
+
+		<act name="VIP宇宙嘉年华" iconId="11"  isPet="1" willOver="0"  detailDes="加入VIP送宇宙机甲震天虎+灵朱雀！" timeDes="全天候" startTime="00:00" endTime="23:00" go="VipRechargeBasePanel">
+			<reward>
+			<pet id="537" />
+			<pet id="565" />
+			</reward>	
+		</act>
+
+		<act name="约瑟17魂魄篇开启" iconId="1035"  isPet="1" willOver="0"  detailDes="约瑟魂魄已出！17属性17魂魄！" timeDes="全天候" startTime="00:00" endTime="23:00" go="KingSoulPanel">
+			<reward>
+			<pet id="505" />
+			<pet id="506" />
+			<pet id="507" />
+			</reward>	
+		</act>
+
+
+		<act name="王之召唤" iconId="1036"  isPet="1" willOver="0"  detailDes="邀请好友、老兵回归、新兵报道，三重大礼送出！" timeDes="全天候" startTime="00:00" endTime="23:00" go="KingSoulPanel">
+			<reward>
+			<pet id="039" />
+			<pet id="053" />
+			<pet id="364" />
+			</reward>	
+		</act>
+
+
+
+		<act name="经验大爆炸" iconId="1038"  isPet="0" willOver="0"  detailDes="收集经验换精灵、米币道具！" timeDes="全天候" startTime="00:00" endTime="23:00" go="KingWithTrainPanel">
+			<reward>
+			<item id="200239" count="1" />
+			<item id="200223" count="1" />
+			<item id="400194" count="1" />
+			</reward>	
+		</act>
+
+
+
+<!--
+		<act name="太阳之雨" iconId="1031"  isPet="0" willOver="0"  detailDes="免费获得太阳之冠（米咔进化道具）" timeDes="全天候" startTime="14:00" endTime="14:30" go="RainOfSunPanel">
+			<reward>
+				<item id="400315" />
+				<item id="200003" />
+				<item id="200221" />
+			</reward>	
+		</act>
+
+
+
+	
+		<act name="直捣魔窟救月神" iconId="71"  isPet="1" willOver="0"  detailDes="暗月地牢，击破魔怪，抽取生死签拯救月神！" timeDes="全天候" startTime="00:00" endTime="23:00" go="RescueLunaPanel">
+			<reward>
+			<pet id="389" />
+			<item id="400080" />
+			<item id="100781" />
+			</reward>	
+		</act>
+-->
+
+		<act name="暴走的雷电" iconId="1028"  isPet="1" willOver="0"  detailDes="幻灵骑士团最后一员【幻蹄雷电】！" timeDes="全天候" startTime="00:00" endTime="23:00" go="BaozouLeidianPanel">
+			<reward>
+			<pet id="451" />
+			</reward>	
+		</act>
+
+
+		<act name="太阳神之子" iconId="1029"  isPet="1" willOver="0"  detailDes="米咔超进化！就在太阳神殿加冕为太阳神之子！" timeDes="全天候" startTime="00:00" endTime="23:00" go="SonOfSunGoldPanel">
+			<reward>
+				<pet id="456" />
+				<item id="201024" />
+				<item id="200206" />
+			</reward>	
+		</act>
+
+		<act name="孤独的巴鲁金斯" iconId="1030"  isPet="1" willOver="0"  detailDes="收集精灵签名兑换孤独的巴鲁金斯！" timeDes="全天候" startTime="00:00" endTime="23:00" go="RollerLotteryPanel">
+			<reward>
+				<pet id="456" />
+				<item id="201024" />
+				<item id="200206" />
+			</reward>	
+		</act>
+
+
+
+
+
+
+
+
+		<act name="炎帝之焰爪" iconId="1023"  isPet="1" willOver="0"  detailDes="获得焰爪，它就能让凯萨蜕变为炎帝！" timeDes="全天候" startTime="00:00" endTime="23:00" go="FireClawActPanel">
+			<reward>
+			<pet id="1101" />
+			<pet id="499" />
+			</reward>	
+		</act>
+
+		<act name="骤雨的搏击" iconId="1022"  isPet="1" willOver="0"  detailDes="搏杀三关就可得精灵【幻齿骤雨】" timeDes="全天候" startTime="00:00" endTime="23:00" go="BrashStrikePanel">
+			<reward>
+			<pet id="448" />
+			</reward>	
+		</act>
+
+
+
+
+
+		<act name="咆哮的飓风" iconId="1019"  isPet="1" willOver="0"  detailDes="幻灵骑士团第二尊：幻影飓风席卷全球！" timeDes="全天候" startTime="00:00" endTime="23:00" go="PetKingWindMainPanel">
+			<reward>
+			<pet id="440" />
+			<item id="200221" count="1" />
+			<item id="200214" count="1" />
+			</reward>	
+		</act>
+
+
+
+
+
+
+		<act name="精灵大乱斗" iconId="1000"  isPet="1" willOver="0"  detailDes="精灵大乱斗加盟争霸赛！更多选择更多惊喜！" timeDes="全天候" startTime="00:00" endTime="23:00" go="PetMeleePanel">
+			<reward>
+			<item id="200223" count="1" />
+			<item id="200214" count="1" />
+			</reward>	
+		</act>
+
+		<act name="观星者本尊挑战" iconId="3"  isPet="1" willOver="0"  detailDes="宇宙至尊、观星者本尊挑战开放!" timeDes="全天候" startTime="00:00" endTime="23:00" go="StargazerFightPanel">
+			<reward>
+				<pet id="503" />
+			</reward>
+		</act>
+
+
+	
+
+		<act name="时空之客伊鲁达" iconId="1009"  isPet="1" willOver="0"  detailDes="用光的速度穿越时空，和克拉克战宠伊鲁达相遇！" timeDes="全天候" startTime="00:00" endTime="23:00" go="YiludaActPanel">
+			<reward>
+			<pet id="434" />
+			<item id="200244" count="1" />
+			</reward>	
+		</act>
+
+
+		<act name="幻翼的召唤" iconId="1010"  isPet="1" willOver="0"  detailDes="幻灵骑士团首席幽冥等你召唤！召唤成功赠送纹章！" timeDes="全天候" startTime="00:00" endTime="23:00" go="HuanyiCallActPanel">
+			<reward>
+			<pet id="431" />
+			<item id="200230" count="1" />
+			<item id="200702" count="1" />
+			</reward>	
+		</act>
+
+
+		<act name="幻灵骑士团" iconId="1011"  isPet="0" willOver="0"  detailDes="飞船告急！暗影幻灵骑士团四大战将纷至而来！" timeDes="全天候" startTime="00:00" endTime="23:00" go="EidolonPanel">
+			<reward>
+			<item id="200214" count="1" />
+			<item id="400187" count="1" />
+			</reward>	
+		</act>
+
+
+
+
+
+	
+		<act name="雷神之斩" iconId="67"  isPet="1" willOver="0"  detailDes="上古器灵问世！雷伊结合雷切将会成为雷神！" timeDes="全天候" startTime="00:00" endTime="23:00" go="LeiyiGunPetPanel">
+			<reward>
+			<pet id="1100" />
+			<pet id="498" />
+			<item id="200222" count="1" />
+			</reward>	
+		</act>
+
+
+
+
+		<act name="闪电之躯" iconId="97"  isPet="0" willOver="0"  detailDes="雷伊求助！快去帮助雷神还可获雷鸣裂空装！" timeDes="全天候" startTime="00:00" endTime="23:00" go="LeiyiChargingPanel">
+			<reward>
+				<item id="100868" />
+				<item id="200221" />
+				<item id="200234" />
+			</reward>	
+		</act>
+
+
+
+
+		<act name="螳螂101次信念" iconId="95"  isPet="1" willOver="0"  detailDes="周年庆典精灵第一尊！贾斯汀的至尊螳螂！" timeDes="全天候" startTime="00:00" endTime="23:00" go="MantisActPanel">
+			<reward>
+				<pet id="158" />
+				<item id="200241" />
+				<item id="500135" />
+			</reward>	
+		</act>
+
+
+
+		<act name="啊！蜻蜓！" iconId="86"  isPet="1" willOver="0"  detailDes="看！有蜻蜓！快拿网兜兜住它！" timeDes="全天候" startTime="00:00" endTime="23:00" go="DragonPanel">
+			<reward>
+				<pet id="402" />
+				<item id="102036" />
+				<item id="200676" />
+
+			</reward>	
+		</act>
+
+
+
+		<act name="最牛精灵训练营" iconId="82"  isPet="1" willOver="0"  detailDes="免费领取火爆猴和变色蜥！打造优质精灵！" timeDes="全天候" startTime="00:00" endTime="23:00" go="PetTrainActPanel">
+			<reward>
+				<pet id="397" />
+				<pet id="390" />
+				<item id="200221" />
+
+			</reward>	
+		</act>
+
+
+		<act name="薄暮蜕变 暗夜变身" iconId="79"  isPet="1" willOver="0"  detailDes="汲取暗月能的薄暮兔神奇大变身！" timeDes="全天候" startTime="00:00" endTime="23:00" go="RabitDressPanel">
+			<reward>
+				<pet id="388" />
+			</reward>	
+		</act>
+
+
+		<act name="撒旦崛起凯伊对决" iconId="80"  isPet="0" willOver="0"  detailDes="3V1对战冥王撒旦！获得撒旦战袍！" timeDes="全天候" startTime="00:00" endTime="23:00" go="SaDanFightPanel">
+			<reward>
+				<item id="100795" />
+				<item id="200221" />
+				<item id="200016" />
+			</reward>	
+		</act>
+
+
+		<act name="神秘九尾的挑战" iconId="78"  isPet="1" willOver="0"  detailDes="挑战获胜得精灵九尾、精灵纹章！" timeDes="全天候" startTime="00:00" endTime="23:00" go="640">
+			<reward>
+				<pet id="387" />
+				<item id="200213" />
+				<item id="200214" />
+			</reward>	
+		</act>
+
+
+
+
+
+		<act name="奇遇暗月兔" iconId="47"  isPet="1" willOver="0"  detailDes="骰子星寻宝就能撞见暗月兔！" timeDes="全天候" startTime="00:00" endTime="23:00" go="DarkMoonRabbitPanel">
+			<reward>
+			<pet id="385" />
+			<item id="102031" count="1" />
+			<item id="601030" count="1" />>
+			</reward>	
+		</act>
+		<act name="王者的追溯" iconId="53"  isPet="1" willOver="0"  detailDes="挑战弱化版雷伊凯萨就可得精灵！" timeDes="全天候" startTime="00:00" endTime="23:00" go="LeiyiKaisaGadMainPanel">
+			<reward>
+			<pet id="090" />
+			<pet id="234" />
+			<item id="400279" count="1" />
+			</reward>
+		</act>
+
+		<act name="天宫四宿灵朱雀" iconId="52"  isPet="1" willOver="0"  detailDes="现在充值1-3个月VIP就送灵朱雀！" timeDes="全天候" startTime="00:00" endTime="23:00" go="TempleFourSeasonPanel">
+			<reward>
+			<pet id="418" />
+			</reward>
+		</act>
+
+
+		<act name="暗黑魔盒" iconId="60"  isPet="1" willOver="0"  detailDes="约瑟之钥！开启暗黑魔盒释放绝版精灵" timeDes="全天候" startTime="00:00" endTime="23:00" go="DarkMagicBoxPanel">
+			<reward>
+			<pet id="387" />
+			<pet id="389" />
+			<pet id="216" />
+			</reward>
+		</act>
+
+
+
+
+		<act name="伊特大乱斗" iconId="17"  isPet="0" willOver="0"  detailDes="伊特家族大乱斗，各种伊特精灵，伊特纹章送！" timeDes="全天候" startTime="00:00" endTime="23:00" go="YiteFightTipsPanel">
+			<reward>
+				<item id="200582" />
+				<item id="200583" />
+				<item id="200584" />
+			</reward>
+		</act>
+
+		<act name="周年狂欢撞头彩" iconId="59"  isPet="0" willOver="0"  detailDes="米币豪车大集结！送全新二周年黄金座驾！" timeDes="全天候" startTime="00:00" endTime="23:00" go="NewGoodStartMainPanel">
+			<reward>
+			<item id="100886" count="1" />
+			<item id="100852" count="1" />
+			<item id="100833" count="1" />
+			</reward>
+		</act>
+		<act name="精灵扭蛋机" iconId="9"  isPet="1" willOver="0"  detailDes="扭蛋机最新推出初影忍者尼加、河童、布布！" timeDes="全天候" startTime="00:00" endTime="23:00" go="GiftMachinePanel">
+			<reward>
+				<pet id="405" />
+				<pet id="295" />
+				<pet id="353" />
+			</reward>
+		</act>
+
+		<act name="神龙火圈" iconId="7"  isPet="1" willOver="0"  detailDes="冰封巨龙迈巴赫问世！新增15连抛必中！" timeDes="全天候" startTime="00:00" endTime="23:00" go="LuckyDialMeePanel">
+			<reward>
+				<pet id="426" />
+				<pet id="410" />
+				<pet id="529" />
+			</reward>
+		</act>
+
+		<act name="后花园游乐场" iconId="33"  isPet="1" willOver="0"  detailDes="马里奥的游戏开始了！可得七星瓢虫哦" timeDes="12:00-13:00午间版" startTime="12:00" endTime="13:00" go="1230">
+			<reward>
+				<pet id="413" />
+			</reward>
+		</act>
+
+
+
+		<act name="赏金电麒麟" iconId="8"  isPet="0" willOver="0"  detailDes="去赏金猎人处接任务，换取麒麟进化芯片！" timeDes="全天候" startTime="00:00" endTime="23:00" go="60">
+			<reward>
+			<item id="200329" count="1" />
+			<item id="200330" count="1" />
+			<item id="200225" count="1" />
+			</reward>
+		</act>
+
+
+
+		<act name="商城每日抽奖" iconId="4"  isPet="0" willOver="0"  detailDes="商城送星石！普通用户每日3次抽奖（VIP5次）" timeDes="全天候" startTime="00:00" endTime="23:00" go="EnergyLotteryPanel">
+			<reward>
+				<item id="17" />
+			</reward>
+		</act>
+
+
+		<act name="重夺水源之心" iconId="25"  isPet="1" willOver="0"  detailDes="重夺水源之心迫在眉睫，新增精灵纹章奖励！" timeDes="13:00-14:00午间版" startTime="13:00" endTime="14:00" go="171">
+			<reward>
+				<pet id="150" />
+				<pet id="154" />
+				<item id="200595" />
+			</reward>
+		</act>
+
+		<act name="七星连珠唤神龙" iconId="65"  isPet="0" willOver="0"  detailDes="召唤出神龙，它会实现你的心愿！" timeDes="14:00-15:00午间版" startTime="14:00" endTime="15:00" go="CallDragonPanel">
+			<reward>
+			<item id="100606" count="1" />
+			<item id="400137" count="1" />
+			<item id="102015" count="1" />
+			</reward>
+		</act>
+		<act name="伊特大乱斗" iconId="17"  isPet="0" willOver="0"  detailDes="伊特家族大乱斗，各种伊特精灵，伊特纹章送！" timeDes="全天候" startTime="00:00" endTime="23:00" go="YiteFightTipsPanel">
+			<reward>
+				<item id="200582" />
+				<item id="200583" />
+				<item id="200584" />
+			</reward>
+		</act>
+
+
+
+
+		<act name="冰封之轴" iconId="27"  isPet="1" willOver="0"  detailDes="冰沁氏族发现百年难见的异样奇景！到底是什么？" timeDes="13:00—14:00午间版" startTime="13:00" endTime="14:00" go="650">
+			<reward>
+				<pet id="278" />
+				<item id="400212" />
+				<item id="400213" />
+			</reward>
+		</act>
+
+
+		<act name="睡懒觉的吃货" iconId="29"  isPet="1" willOver="0"  detailDes="诺基博从懒觉中醒来！赶快做美味的料理吧~" timeDes="13:00-16:00" startTime="13:00" endTime="16:00" go="125">
+			<reward>
+				<pet id="190" />
+			</reward>
+		</act>
+		<act name="谁敢打搅达达用餐" iconId="45"  isPet="1" willOver="0"  detailDes="先用头部射击击中达克尔才有机会与达达交战哦！" timeDes="13:00-14:00" startTime="13:00" endTime="14:00" go="262">
+			<reward>
+				<pet id="074" />
+			</reward>
+		</act>
+		<act name="帕帕米拉的造型" iconId="46"  isPet="1" willOver="0"  detailDes="在焰之森和多摩对战，就有几率碰见美发大王哦" timeDes="13:00-14:00午间版" startTime="13:00" endTime="14:00" go="281">
+			<reward>
+				<pet id="231" />
+			</reward>
+		</act>
+
+
+
+
+		<act name="寻找神秘的歌声" iconId="30"  isPet="1" willOver="0"  detailDes="会唱歌会伪装的神秘草系精灵，你找的到吗？" timeDes="13:30-14:30" startTime="13:30" endTime="14:30" go="100">
+			<reward>
+				<pet id="251" />
+			</reward>
+		</act>
+
+
+		<act name="深渊派对" iconId="48"  isPet="1" willOver="0"  detailDes="灰烬深渊正在举办一场死亡尽头的派对……" timeDes="14:00-16:00" startTime="14:00" endTime="16:00" go="305">
+			<reward>
+				<pet id="350" />
+				<item id="200205" />
+				<item id="200221" />
+			</reward>
+		</act>
+
+
+
+		<act name="我画你猜" iconId="23"  isPet="1" willOver="0"  detailDes="马良画画你来猜，通关就得精灵神笔马良哦" timeDes="14:00-15:00" startTime="14:00" endTime="15:00" go="PaintGuessStartPanel">
+			<reward>
+				<pet id="273" />
+				<item id="200215" />
+				<item id="200214" />
+			</reward>
+		</act>
+
+
+		<act name="雷鸣炎破之战" iconId="20"  isPet="0" willOver="0"  detailDes="雷伊凯萨合体的必杀技习得，就在火源通径！" timeDes="14:00-15:00" startTime="14:00" endTime="15:00" go="820">
+			<reward>
+				<item id="200214" />
+				<item id="200221" />
+			</reward>
+		</act>
+		<act name="冰封之轴" iconId="27"  isPet="1" willOver="0"  detailDes="冰沁氏族发现百年难见的异样奇景！到底是什么？" timeDes="13:00—14:00午间版" startTime="13:00" endTime="14:00" go="650">
+			<reward>
+				<pet id="278" />
+				<item id="400212" />
+				<item id="400213" />
+			</reward>
+		</act>
+
+
+
+		<act name="三八双雄战" iconId="28"  isPet="1" willOver="0"  detailDes="三八双雄战！化敌为友的地沙氏族携手打擂台！" timeDes="15:00—16:00" startTime="15:00" endTime="16:00" go="310">
+			<reward>
+				<pet id="184" />
+				<pet id="186" />
+			</reward>
+		</act>
+
+
+		<act name="后花园游乐场" iconId="46"  isPet="1" willOver="0"  detailDes="马里奥的游戏开始了！可得七星瓢虫哦" timeDes="18:00-19:00夜间版" startTime="18:00" endTime="19:00" go="1230">
+			<reward>
+				<pet id="413" />
+			</reward>
+		</act>
+
+
+		<act name="谁偷吃了我的料理" iconId="33"  isPet="1" willOver="0"  detailDes="超胆小精灵冰湖豚登场！听说它也喜欢料理？" timeDes="18:00-20:00" startTime="18:00" endTime="20:00" go="125">
+			<reward>
+				<pet id="119" />
+			</reward>
+		</act>
+
+
+		<act name="七星连珠唤神龙" iconId="65"  isPet="0" willOver="0"  detailDes="召唤出神龙，它会实现你的心愿！" timeDes="19:00-20:00夜间版" startTime="19:00" endTime="20:00" go="CallDragonPanel">
+			<reward>
+			<item id="100606" count="1" />
+			<item id="400137" count="1" />
+			<item id="102015" count="1" />
+			</reward>
+		</act>
+
+
+
+		<act name="帕帕米拉的造型" iconId="46"  isPet="1" willOver="0"  detailDes="在焰之森和多摩对战，就有几率碰见美发大王哦" timeDes="19:00-20:00夜间版" startTime="19:00" endTime="20:00" go="281">
+			<reward>
+				<pet id="231" />
+			</reward>
+		</act>
+		<act name="重夺水源之心" iconId="25"  isPet="1" willOver="0"  detailDes="重夺水源之心迫在眉睫，新增精灵纹章奖励！" timeDes="19:00-20:00夜间版" startTime="19:00" endTime="20:00" go="171">
+			<reward>
+				<pet id="150" />
+				<pet id="154" />
+				<item id="200595" />
+			</reward>
+		</act>
+
+		<act name="冰封之轴" iconId="27"  isPet="1" willOver="0"  detailDes="冰沁氏族发现百年难见的异样奇景！到底是什么？" timeDes="20:00—21:00夜间版" startTime="20:00" endTime="21:00" go="650">
+			<reward>
+				<pet id="278" />
+				<item id="400212" />
+				<item id="400213" />
+			</reward>
+		</act>
+
+		<act name="守擂达人" iconId="44"  isPet="1" willOver="0"  detailDes="要塞的擂台高手云集！连胜10次好礼送给你!" timeDes="20:00-21:00" startTime="20:00" endTime="21:00" go="81">
+			<reward>
+				<item id="200214" />
+			</reward>
+		</act>
+		<act name="双倍荣誉" iconId="19"  isPet="0" willOver="0"  detailDes="去试炼和勇士之战50V50就可获得双倍荣誉点了！" timeDes="20:00-21:00" startTime="20:00" endTime="21:00" go="450">
+			<reward>
+				<item id="300001" />
+				<item id="300002" />
+				<item id="200221" />
+			</reward>
+		</act>
+
+
+
+
+
+
+		<act name="灵兽的试炼" iconId="2"  isPet="0" willOver="0"  detailDes="草、火、水三大灵兽试炼及挑战已开启！" timeDes="全天候" startTime="00:00" endTime="23:00" go="BagginsLogPanel">
+			<reward>
+				<pet id="301" />
+				<pet id="302" />
+				<pet id="303" />
+			</reward>
+		</act>
+		<act name="观星者本尊挑战" iconId="3"  isPet="1" willOver="0"  detailDes="宇宙至尊、观星者本尊挑战开放!" timeDes="全天候" startTime="00:00" endTime="23:00" go="StargazerFightPanel">
+			<reward>
+				<pet id="503" />
+			</reward>
+		</act>
+
+
+
+
+		<act name="VIP乐园金字塔" iconId="6"  isPet="0" willOver="0"  detailDes="问鼎百万豪车，2013年VIP金子塔奖励已升级！" timeDes="全天候" startTime="00:00" endTime="23:00" go="VipPyramidPanel">
+			<reward>
+				<item id="100595" />
+				<item id="200605" />
+				<item id="200225" />
+			</reward>
+		</act>
+
+
+		<act name="重金悬赏令！" iconId="8"  isPet="1" willOver="0"  detailDes="猎人金库为你敞开！跨年精灵悬赏令全球发动！" timeDes="全天候" startTime="00:00" endTime="23:00" go="60">
+			<reward>
+				<item id="200234" />
+				<item id="200214" />
+				<item id="200224" />
+			</reward>
+		</act>
+
+
+
+		<act name="星座守护者计划" iconId="10"  isPet="0" willOver="0"  detailDes="VIP填生日获尊贵星座标记、黄金圣衣及座驾哦" timeDes="全天候" startTime="00:00" endTime="23:00" go="VipDecorationPanel">
+			<reward>
+			<pet id="319" />
+			<item id="100965" count="1" />
+			<item id="100966" count="1" />
+			</reward>
+		</act>
+
+
+
+
+
+
+		<act name="VIP神魔之月礼" iconId="13"  isPet="0" willOver="0"  detailDes="VIP尊享绝版NONO等18米币周年庆礼盒送给你！" timeDes="全天候" startTime="00:00" endTime="23:00" go="VipChristmasPanel">
+			<reward>
+				<item id="202007" />
+				<item id="102045" />
+				<item id="200223" />
+			</reward>
+		</act>
+
+
+
+		<act name="娜娜和斯缇姆军团" iconId="15"  isPet="1" willOver="0"  detailDes="超强技师娜娜和她引以为傲的精灵斯缇姆迎战！" timeDes="全天候" startTime="00:00" endTime="23:00" go="900">
+			<reward>
+				<pet id="245" />
+				<item id="100444" />
+				<item id="100448" />
+			</reward>
+		</act>
+
+		<act name="迷雾杀手" iconId="16"  isPet="1" willOver="0"  detailDes="工房迷雾杀手艾力克的斯莫克军团让人闻风丧胆！" timeDes="全天候" startTime="00:00" endTime="23:00" go="940">
+			<reward>
+				<pet id="257" />
+				<item id="100487" />
+				<item id="100491" />
+			</reward>
+		</act>
+
+
+	
+
+		<act name="骰子星寻宝" iconId="21"  isPet="1" willOver="0"  detailDes="去骰子星寻宝，绝版装扮等星币奖品！" timeDes="全天候" startTime="00:00" endTime="23:00" go="1030">
+			<reward>
+				<pet id="269" />
+				<pet id="264" />
+				<item id="601030" />
+			</reward>
+		</act>
+
+
+
+		<act name="神目守护特鲁伊！" iconId="41"  isPet="1" willOver="0"  detailDes="权利之帐，神目酋长的守护精灵特鲁伊向你挑战！" timeDes="全天候" startTime="00:00" endTime="23:00" go="110">
+			<reward>
+				<pet id="293" />
+			</reward>
+		</act>
+
+		<act name="水之翘楚爱丽斯" iconId="42"  isPet="1" willOver="0"  detailDes="爱丽斯，水脉精灵之翘楚！神谕之挑战已开启！" timeDes="全天候" startTime="00:00" endTime="23:00" go="160">
+			<reward>
+				<pet id="341" />
+			</reward>
+		</act>
+
+		<act name="埃卡维特爱吃鱼" iconId="75"  isPet="1" willOver="0"  detailDes="给点鱼吧！吃了维特就和你过过招！" timeDes="全天候" startTime="00:00" endTime="23:00" go="152">
+			<reward>
+				<pet id="109" />
+			</reward>	
+		</act>
+
+
+		<act name="海小葵的喷嚏" iconId="31"  isPet="1" willOver="0"  detailDes="流离街出现了陌生的精灵，它的名字叫“海葵”！" timeDes="全天候" startTime="00:00" endTime="23:00" go="920">
+			<reward>
+				<pet id="253" />
+			</reward>
+		</act>
+
+		<act name="三眼蝎的舞步" iconId="32"  isPet="1" willOver="0"  detailDes="去矿坑找大板牙，照他说的做就能引来三眼石蝎！" timeDes="全天候" startTime="00:00" endTime="23:00" go="520">
+			<reward>
+				<pet id="086" />
+			</reward>
+		</act>
+
+
+
+		<act name="爱之拂晓兔" iconId="34"  isPet="1" willOver="0"  detailDes="晓晓和月月，以爱的名义等待你的到来！" timeDes="全天候" startTime="00:00" endTime="23:00" go="132">
+			<reward>
+				<pet id="61" />
+			</reward>
+		</act>
+
+		<act name="谜一样的精灵" iconId="35"  isPet="1" willOver="0"  detailDes="它是谁？先去幽静浅滩点小猪储蓄罐唤它出来吧！" timeDes="全天候" startTime="00:00" endTime="23:00" go="220">
+			<reward>
+				<pet id="51" />
+			</reward>
+		</act>
+
+		<act name="迷途的小海马" iconId="36"  isPet="1" willOver="0"  detailDes="维拉发现了一个迷途的小海马，它在说什么呢？" timeDes="全天候" startTime="00:00" endTime="23:00" go="151">
+			<reward>
+				<pet id="41" />
+			</reward>
+		</act>
+
+		<act name="多利的雪人计划" iconId="37"  isPet="1" willOver="0"  detailDes="多利竟然没有雪球用来堆雪人了，一起来帮它。" timeDes="全天候" startTime="00:00" endTime="23:00" go="540">
+			<reward>
+				<pet id="138" />
+			</reward>
+		</act>
+
+		<act name="小小葵的梦境" iconId="38"  isPet="1" willOver="0"  detailDes="小小葵的梦境你去探索过了吗？这里藏了许多秘密" timeDes="全天候" startTime="00:00" endTime="23:00" go="131">
+			<reward>
+				<pet id="13" />
+			</reward>
+		</act>
+
+		<act name="摇滚天王爆炸头" iconId="39"  isPet="1" willOver="0"  detailDes="传说它喜欢迷穴中的财宝，迷穴之可是凶多吉少呢" timeDes="全天候" startTime="00:00" endTime="23:00" go="340">
+			<reward>
+				<pet id="83" />
+			</reward>
+		</act>
+
+
+		<act name="鸡毛与沙" iconId="43"  isPet="1" willOver="0"  detailDes="谁是真正的战斗鸡？周扒皮的斗鸡生意等你捧场！" timeDes="全天候" startTime="00:00" endTime="23:00" go="350">
+			<reward>
+				<item  id="1" />
+			</reward>
+		</act>
+
+
+	</acts>
+	<acts day="0">
+
+	<act name="爆焰努尔" iconId="1097"  isPet="1" willOver="0"  detailDes="为了弟兄和自己的尊严！霍克努尔终于爆发了！" timeDes="全天候" startTime="00:00" endTime="23:00" go="HuoKeNuErSuperProcessPanel">
+			<reward>
+			<pet id="590" />
+			<item id="101087" count="1" />
+			<item id="101088" count="1" />
+			</reward>	
+		</act>
+
+	<act name="炼金师迪克" iconId="1098"  isPet="1" willOver="0"  detailDes="天马四骑士第三尊炼金师迪克出场！" timeDes="全天候" startTime="00:00" endTime="23:00" go="FightVsDickPanel">
+			<reward>
+			<pet id="591" />
+			<pet id="592" />
+			</reward>	
+		</act>
+
+
+	<act name="永恒炽翼" iconId="1096"  isPet="1" willOver="0"  detailDes="燃圣火种，火系凯瑟琳将进化为炽翼女神赫拉！" timeDes="全天候" startTime="00:00" endTime="23:00" go="KaiSeLinSuperProcessPanel">
+			<reward>
+			<pet id="587" />
+			<item id="101083" count="1" />
+			<item id="101084" count="1" />
+			</reward>	
+		</act>
+	<act name="跨年龙战" iconId="1095"  isPet="1" willOver="0"  detailDes="8条神龙跨年而来，每周开启两条神龙挑战！" timeDes="全天候" startTime="00:00" endTime="23:00" go="KuaNianLongZhanPanel">
+			<reward>
+			<pet id="410" />
+			<pet id="394" />
+			</reward>	
+		</act>
+	<act name="圣灵师海罗"  iconId="1093"  isPet="1" willOver="0"  detailDes="每天修炼就能获得天马四骑士——圣灵师海罗" timeDes="全天候" startTime="00:00" endTime="23:00" go="FightVsHelloPanel">
+			<reward>
+			<pet id="588" />
+			<pet id="589" />
+			</reward>	
+		</act>
+
+
+	<act name="巨石托尔" iconId="1087"  isPet="1" willOver="0"  detailDes="SPT超进化生日派对！帮布鲁托完成生日心愿！" timeDes="全天候" startTime="00:00" endTime="23:00" go="BuNuTuoSuperProcessPanel">
+			<reward>
+			<pet id="586" />
+			<item id="101072" count="1" />
+			<item id="101073" count="1" />
+			</reward>	
+		</act>
+
+
+
+	<act name="圣猎人拜瑞" iconId="1090"  isPet="1" willOver="0"  detailDes="每天修炼就能获得天马四骑士——圣猎人拜瑞！" timeDes="全天候" startTime="00:00" endTime="23:00" go="FightVsBarryPanel">
+			<reward>
+			<pet id="582" />
+			<pet id="583" />
+			</reward>	
+		</act>
+
+
+	<act name="直捣炼狱战魔王" iconId="1088"  isPet="1" willOver="0"  detailDes="炼狱七大魔王弱化挑战启动！挑战胜利得魔王！" timeDes="全天候" startTime="00:00" endTime="23:00" go="FightVsBarryPanel">
+			<reward>
+			<pet id="325" />
+			<pet id="322" />
+			<pet id="340" />
+			</reward>	
+		</act>
+
+
+
+
+
+
+	<act name="冰封魔域库贝萨" iconId="1086"  isPet="1" willOver="0"  detailDes="小当家意外走失，你在冰封魔域的冒险已经开始！" timeDes="全天候" startTime="00:00" endTime="23:00" go="BingfengQuestMianPanel">
+			<reward>
+			<pet id="581" />
+			<item id="200214" count="1" />
+			</reward>	
+		</act>
+
+
+
+	<act name="银脉紫煞" iconId="1083"  isPet="1" willOver="0"  detailDes="紫电将在银脉山脊完成超进化！" timeDes="全天候" startTime="00:00" endTime="23:00" go="ZiDianSuperProcessPanel">
+			<reward>
+			<pet id="580" />
+			<item id="200215" count="1" />
+			<item id="200011" count="1" />
+			</reward>	
+		</act>
+
+
+
+
+
+	<act name="电魂巴图" iconId="1080"  isPet="1" willOver="0"  detailDes="巴图领悟了电闪雷鸣之力后蜕变为【电魂巴图】！" timeDes="全天候" startTime="00:00" endTime="23:00" go="XiaoBaEvolutionPanel">
+			<reward>
+			<pet id="578" />
+			<item id="101052" count="1" />
+			<item id="101053" count="1" />
+			</reward>	
+		</act>
+
+	
+
+
+
+
+	<act name="神力超猪侠" iconId="1078"  isPet="1" willOver="0"  detailDes="美食神猪维克多+宇宙超级大饭团=神力超猪侠！" timeDes="全天候" startTime="00:00" endTime="23:00" go="FoodPigSuperProcessPanel">
+			<reward>
+			<pet id="577" />
+			<item id="200206" count="1" />
+			<item id="200222" count="1" />
+			</reward>	
+		</act>
+
+	<act name="忍者龙剑坛" iconId="1079"  isPet="1" willOver="0"  detailDes="【地忍百魁】在白龙岩阵的肃杀挑战！" timeDes="全天候" startTime="00:00" endTime="23:00" go="80069">
+			<reward>
+			<pet id="546" />
+			<item id="201021" count="1" />
+			<item id="201036" count="1" />
+			</reward>	
+		</act>
+
+	<act name="僵尸博士大逃杀" iconId="1071"  isPet="1" willOver="0"  detailDes="僵尸博士变异，全程追缉！你能抓住它吗？" timeDes="全天候" startTime="00:00" endTime="23:00" go="ZombieDrEscapePanel">
+			<reward>
+			<pet id="563" />
+			</reward>	
+		</act>
+
+	<act name="万圣假面舞会" iconId="1072"  isPet="1" willOver="0"  detailDes="万圣舞会迎来伊特家族第14只伊特【特伊特】！" timeDes="全天候" startTime="00:00" endTime="23:00" go="DanceShowPanel">
+			<reward>
+			<pet id="105" />
+			</reward>	
+		</act>
+
+
+
+	<act name="宇宙机甲战士" iconId="1076"  isPet="1" willOver="0"  detailDes="包月就送宇宙机甲战士，包3个月再送机甲装" timeDes="全天候" startTime="00:00" endTime="23:00" go="VipGaoDaPanel">
+			<reward>
+			<pet id="565" />
+			<item id="101033" count="1" />
+			<item id="101034" count="1" />
+			</reward>	
+		</act>
+
+
+	<act name="圣诞许愿树" iconId="1074"  isPet="1" willOver="0"  detailDes="超强BOSS、绝版精灵、米币道具、绝版装扮送出" timeDes="全天候" startTime="00:00" endTime="23:00" go="TwoYearWishPanel">
+			<reward>
+		    <pet id="377" />
+			<pet id="280" />
+			<item id="101042" count="1" />
+			</reward>	
+		</act>
+
+
+
+
+
+
+
+		<act name="初影忍者" iconId="1066"  isPet="1" willOver="0"  detailDes="忍者系列首席【绝影忍者】的修炼全面开启！" timeDes="全天候" startTime="00:00" endTime="23:00" go="NinjaPractiseSkillPanel">
+			<reward>
+				<pet id="541" />
+			    <item id="200246" />
+			    <item id="200247" />
+			</reward>	
+		</act>
+
+
+		<act name="吸血魔咒女王" iconId="1067"  isPet="1" willOver="0"  detailDes="始祖吸血女王阿卡莎驾到！" timeDes="全天候" startTime="00:00" endTime="23:00" go="BloodKingActPanel">
+			<reward>
+				<pet id="541" />
+				<pet id="546" />
+			    <item id="200013"/> 
+			</reward>	
+		</act>
+
+
+
+		<act name="狂炼狼神" iconId="1062"  isPet="1" willOver="0"  detailDes="通过5重历炼就能使狼妖进化为狼神！" timeDes="全天候" startTime="00:00" endTime="23:00" go="WolfSuperPanel">
+			<reward>
+			<pet id="560" />
+			</reward>	
+		</act>
+
+		<act name="异形的危机" iconId="1063"  isPet="1" willOver="0"  detailDes="始祖吸血病毒入侵星球！小赛尔们我们行动起来！" timeDes="全天候" startTime="00:00" endTime="23:00" go="YiXingMainPanel">
+			<reward>
+			<pet id="558" />
+			</reward>	
+		</act>
+
+
+
+		<act name="七龙忍者阵" iconId="1061"  isPet="1" willOver="0"  detailDes="首只忍者系精灵【初影忍者】诞生！它是忍者之源" timeDes="全天候" startTime="00:00" endTime="23:00" go="SevenDragonNinjaPanel">
+			<reward>
+			<pet id="540" />
+			</reward>	
+		</act>
+
+
+
+		<act name="百变神君神伊特" iconId="1057"  isPet="1" willOver="0"  detailDes="第13只伊特【神伊特】出场！收集伊特有大奖！" timeDes="全天候" startTime="00:00" endTime="23:00" go="YiteMorphActPanel">
+			<reward>
+			<pet id="104" />
+			<item id="200206" count="1" />
+			<item id="200222" count="1" />
+			</reward>	
+		</act>
+
+
+		<act name="黄金12宫" iconId="1056"  isPet="1" willOver="0"  detailDes="在星空下许愿免费得黄金十二宫星座守护！" timeDes="全天候" startTime="00:00" endTime="23:00" go="Gold12Panel">
+			<reward>
+			<pet id="154" />
+			<pet id="155" />
+			<pet id="156" />
+			</reward>	
+		</act>
+
+		<act name="魔神前传" iconId="1047"  isPet="1" willOver="0"  detailDes="首只魔化精灵！小魔神免费领取1只，VIP2只！" timeDes="全天候" startTime="00:00" endTime="23:00" go="PetProcessActPanel">
+			<reward>
+			<pet id="523" />
+			<pet id="524" />
+			<item id="200062" count="1" />
+			</reward>	
+		</act>
+
+	
+		<act name="进击的超伊特" iconId="1041"  isPet="1" willOver="0"  detailDes="伊特家族再战！翻族牌迎接超伊特的降临！" timeDes="全天候" startTime="00:00" endTime="23:00" go="YiteSuperPetPanel">
+			<reward>
+			<item id="200718" count="1" />
+			<item id="200335" count="1" />
+			<item id="200334" count="1" />
+			</reward>	
+		</act>
+
+		<act name="晨战！王之冰魄！" iconId="1042"  isPet="1" willOver="0"  detailDes="挑战最新BOOSS晨璨，四战胜利得王之冰魄！" timeDes="全天候" startTime="00:00" endTime="23:00" go="KingSoulWithIcePanel">
+			<reward>
+			<pet id="512" />
+			<item id="200221" count="1" />
+			<item id="200225" count="1" />
+			</reward>	
+		</act>
+
+		<act name="BOSS晨璨真心朋友" iconId="1043"  isPet="1" willOver="0"  detailDes="拥有四重性格！亲历晨璨的过去时光吧！" timeDes="全天候" startTime="00:00" endTime="23:00" go="KingSoulWithIcePanel">
+			<reward>
+			<pet id="492" />
+			</reward>	
+		</act>
+
+
+		<act name="尖叫的大毛怪" iconId="1044"  isPet="1" willOver="0"  detailDes="种植园里有怪兽！大毛怪和大眼怪来了！" timeDes="全天候" startTime="00:00" endTime="23:00" go="70000">
+			<reward>
+			<pet id="457" />
+			<pet id="458" />
+			<item id="400006" count="1" />
+			</reward>	
+		</act>
+
+
+
+
+
+		<act name="VIP宇宙嘉年华" iconId="11"  isPet="1" willOver="0"  detailDes="加入VIP送宇宙机甲震天虎+灵朱雀！" timeDes="全天候" startTime="00:00" endTime="23:00" go="VipRechargeBasePanel">
+			<reward>
+			<pet id="537" />
+			<pet id="565" />
+			</reward>	
+		</act>
+
+		<act name="约瑟17魂魄篇开启" iconId="1035"  isPet="1" willOver="0"  detailDes="约瑟魂魄已出！17属性17魂魄！" timeDes="全天候" startTime="00:00" endTime="23:00" go="KingSoulPanel">
+			<reward>
+			<pet id="505" />
+			<pet id="506" />
+			<pet id="507" />
+			</reward>	
+		</act>
+
+
+		<act name="王之召唤" iconId="1036"  isPet="1" willOver="0"  detailDes="邀请好友、老兵回归、新兵报道，三重大礼送出！" timeDes="全天候" startTime="00:00" endTime="23:00" go="KingSoulPanel">
+			<reward>
+			<pet id="039" />
+			<pet id="053" />
+			<pet id="364" />
+			</reward>	
+		</act>
+
+
+
+		<act name="经验大爆炸" iconId="1038"  isPet="0" willOver="0"  detailDes="收集经验换精灵、米币道具！" timeDes="全天候" startTime="00:00" endTime="23:00" go="KingWithTrainPanel">
+			<reward>
+			<item id="200239" count="1" />
+			<item id="200223" count="1" />
+			<item id="400194" count="1" />
+			</reward>	
+		</act>
+
+
+
+
+		<act name="暴走的雷电" iconId="1028"  isPet="1" willOver="0"  detailDes="幻灵骑士团最后一员【幻蹄雷电】！" timeDes="全天候" startTime="00:00" endTime="23:00" go="BaozouLeidianPanel">
+			<reward>
+			<pet id="451" />
+			</reward>	
+		</act>
+
+
+		<act name="太阳神之子" iconId="1029"  isPet="1" willOver="0"  detailDes="米咔超进化！就在太阳神殿加冕为太阳神之子！" timeDes="全天候" startTime="00:00" endTime="23:00" go="SonOfSunGoldPanel">
+			<reward>
+				<pet id="456" />
+				<item id="201024" />
+				<item id="200206" />
+			</reward>	
+		</act>
+
+		<act name="孤独的巴鲁金斯" iconId="1030"  isPet="1" willOver="0"  detailDes="收集精灵签名兑换孤独的巴鲁金斯！" timeDes="全天候" startTime="00:00" endTime="23:00" go="RollerLotteryPanel">
+			<reward>
+				<pet id="456" />
+				<item id="201024" />
+				<item id="200206" />
+			</reward>	
+		</act>
+
+
+
+
+
+		<act name="炎帝之焰爪" iconId="1023"  isPet="1" willOver="0"  detailDes="获得焰爪，它就能让凯萨蜕变为炎帝！" timeDes="全天候" startTime="00:00" endTime="23:00" go="FireClawActPanel">
+			<reward>
+			<pet id="1101" />
+			<pet id="499" />
+			</reward>	
+		</act>
+
+		<act name="骤雨的搏击" iconId="1022"  isPet="1" willOver="0"  detailDes="搏杀三关就可得精灵【幻齿骤雨】" timeDes="全天候" startTime="00:00" endTime="23:00" go="BrashStrikePanel">
+			<reward>
+			<pet id="448" />
+			</reward>	
+		</act>
+
+
+
+
+		<act name="咆哮的飓风" iconId="1019"  isPet="1" willOver="0"  detailDes="幻灵骑士团第二尊：幻影飓风席卷全球！" timeDes="全天候" startTime="00:00" endTime="23:00" go="PetKingWindMainPanel">
+			<reward>
+			<pet id="440" />
+			<item id="200221" count="1" />
+			<item id="200214" count="1" />
+			</reward>	
+		</act>
+
+
+	
+
+	
+
+		<act name="时空之客伊鲁达" iconId="1009"  isPet="1" willOver="0"  detailDes="用光的速度穿越时空，和克拉克战宠伊鲁达相遇！" timeDes="全天候" startTime="00:00" endTime="23:00" go="YiludaActPanel">
+			<reward>
+			<pet id="434" />
+			<item id="200244" count="1" />
+			</reward>	
+		</act>
+
+
+		<act name="幻翼的召唤" iconId="1010"  isPet="1" willOver="0"  detailDes="幻灵骑士团首席幽冥等你召唤！召唤成功赠送纹章！" timeDes="全天候" startTime="00:00" endTime="23:00" go="HuanyiCallActPanel">
+			<reward>
+			<pet id="431" />
+			<item id="200230" count="1" />
+			<item id="200702" count="1" />
+			</reward>	
+		</act>
+
+
+		<act name="幻灵骑士团" iconId="1011"  isPet="0" willOver="0"  detailDes="飞船告急！暗影幻灵骑士团四大战将纷至而来！" timeDes="全天候" startTime="00:00" endTime="23:00" go="EidolonPanel">
+			<reward>
+			<item id="200214" count="1" />
+			<item id="400187" count="1" />
+			</reward>	
+		</act>
+
+
+
+	
+		<act name="雷神之斩" iconId="67"  isPet="1" willOver="0"  detailDes="上古器灵问世！雷伊结合雷切将会成为雷神！" timeDes="全天候" startTime="00:00" endTime="23:00" go="LeiyiGunPetPanel">
+			<reward>
+			<pet id="1100" />
+			<pet id="498" />
+			<item id="200222" count="1" />
+			</reward>	
+		</act>
+
+
+
+
+
+
+		<act name="闪电之躯" iconId="97"  isPet="0" willOver="0"  detailDes="雷伊求助！快去帮助雷神还可获雷鸣裂空装！" timeDes="全天候" startTime="00:00" endTime="23:00" go="LeiyiChargingPanel">
+			<reward>
+				<item id="100868" />
+				<item id="200221" />
+				<item id="200234" />
+			</reward>	
+		</act>
+
+
+		<act name="螳螂101次信念" iconId="95"  isPet="1" willOver="0"  detailDes="周年庆典精灵第一尊！贾斯汀的至尊螳螂！" timeDes="全天候" startTime="00:00" endTime="23:00" go="MantisActPanel">
+			<reward>
+				<pet id="158" />
+				<item id="200241" />
+				<item id="500135" />
+			</reward>	
+		</act>
+
+
+
+
+
+		<act name="后花园游乐场" iconId="33"  isPet="1" willOver="0"  detailDes="马里奥的游戏开始了！可得七星瓢虫哦" timeDes="12:00-13:00午间版" startTime="12:00" endTime="13:00" go="1230">
+			<reward>
+				<pet id="413" />
+			</reward>
+		</act>
+
+
+		<act name="啊！蜻蜓！" iconId="86"  isPet="1" willOver="0"  detailDes="看！有蜻蜓！快拿网兜兜住它！" timeDes="全天候" startTime="00:00" endTime="23:00" go="DragonPanel">
+			<reward>
+				<pet id="402" />
+				<item id="102036" />
+				<item id="200676" />
+
+			</reward>	
+		</act>
+
+
+
+		<act name="最牛精灵训练营" iconId="82"  isPet="1" willOver="0"  detailDes="免费领取火爆猴和变色蜥！打造优质精灵！" timeDes="全天候" startTime="00:00" endTime="23:00" go="PetTrainActPanel">
+			<reward>
+				<pet id="397" />
+				<pet id="390" />
+				<item id="200221" />
+
+			</reward>	
+		</act>
+
+
+
+
+		<act name="薄暮蜕变 暗夜变身" iconId="79"  isPet="1" willOver="0"  detailDes="汲取暗月能的薄暮兔神奇大变身！" timeDes="全天候" startTime="00:00" endTime="23:00" go="RabitDressPanel">
+			<reward>
+				<pet id="388" />
+			</reward>	
+		</act>
+
+
+		<act name="撒旦崛起凯伊对决" iconId="80"  isPet="0" willOver="0"  detailDes="3V1对战冥王撒旦！获得撒旦战袍！" timeDes="全天候" startTime="00:00" endTime="23:00" go="SaDanFightPanel">
+			<reward>
+				<item id="100795" />
+				<item id="200221" />
+				<item id="200016" />
+			</reward>	
+		</act>
+
+
+		<act name="神秘九尾的挑战" iconId="78"  isPet="1" willOver="0"  detailDes="挑战获胜得精灵九尾、精灵纹章！" timeDes="全天候" startTime="00:00" endTime="23:00" go="640">
+			<reward>
+				<pet id="387" />
+				<item id="200213" />
+				<item id="200214" />
+			</reward>	
+		</act>
+
+
+
+		<act name="奇遇暗月兔" iconId="47"  isPet="1" willOver="0"  detailDes="骰子星寻宝就能撞见暗月兔！" timeDes="全天候" startTime="00:00" endTime="23:00" go="DarkMoonRabbitPanel">
+			<reward>
+			<pet id="385" />
+			<item id="102031" count="1" />
+			<item id="601030" count="1" />>
+			</reward>	
+		</act>
+
+		<act name="王者的追溯" iconId="53"  isPet="1" willOver="0"  detailDes="挑战弱化版雷伊凯萨就可得精灵！" timeDes="全天候" startTime="00:00" endTime="23:00" go="LeiyiKaisaGadMainPanel">
+			<reward>
+			<pet id="090" />
+			<pet id="234" />
+			<item id="400279" count="1" />
+			</reward>
+		</act>
+
+		<act name="天宫四宿灵朱雀" iconId="52"  isPet="1" willOver="0"  detailDes="现在充值1-3个月VIP就送灵朱雀！" timeDes="全天候" startTime="00:00" endTime="23:00" go="TempleFourSeasonPanel">
+			<reward>
+			<pet id="418" />
+			</reward>
+		</act>
+
+
+ 		<act name="暗黑魔盒" iconId="60"  isPet="1" willOver="0"  detailDes="约瑟之钥！开启暗黑魔盒释放绝版精灵" timeDes="全天候" startTime="00:00" endTime="23:00" go="DarkMagicBoxPanel">
+			<reward>
+			<pet id="387" />
+			<pet id="389" />
+			<pet id="216" />
+			</reward>
+		</act>
+
+ 		<act name="精灵扭蛋机" iconId="9"  isPet="1" willOver="0"  detailDes="扭蛋机最新推出初影忍者尼加、河童、布布！" timeDes="全天候" startTime="00:00" endTime="23:00" go="GiftMachinePanel">
+			<reward>
+				<pet id="405" />
+				<pet id="295" />
+				<pet id="353" />
+			</reward>
+		</act>
+
+
+		<act name="伊特大乱斗" iconId="17"  isPet="0" willOver="0"  detailDes="伊特家族大乱斗，各种伊特精灵，伊特纹章送！" timeDes="全天候" startTime="00:00" endTime="23:00" go="YiteFightTipsPanel">
+			<reward>
+				<item id="200582" />
+				<item id="200583" />
+				<item id="200584" />
+			</reward>
+		</act>
+
+
+	   <act name="重夺水源之心" iconId="25"  isPet="1" willOver="0"  detailDes="重夺水源之心迫在眉睫，新增精灵纹章奖励！" timeDes="13:00-14:00午间版" startTime="13:00" endTime="14:00" go="171">
+			<reward>
+				<pet id="150" />
+				<pet id="154" />
+				<item id="200595" />
+			</reward>
+		</act>
+
+		<act name="七星连珠唤神龙" iconId="65"  isPet="0" willOver="0"  detailDes="召唤出神龙，它会实现你的心愿！" timeDes="14:00-15:00午间版" startTime="14:00" endTime="15:00" go="CallDragonPanel">
+			<reward>
+			<item id="100606" count="1" />
+			<item id="400137" count="1" />
+			<item id="102015" count="1" />
+			</reward>
+		</act>
+
+		<act name="周年狂欢撞头彩" iconId="59"  isPet="0" willOver="0"  detailDes="米币豪车大集结！送全新二周年黄金座驾！" timeDes="全天候" startTime="00:00" endTime="23:00" go="NewGoodStartMainPanel">
+			<reward>
+			<item id="100886" count="1" />
+			<item id="100852" count="1" />
+			<item id="100833" count="1" />
+			</reward>
+		</act>
+
+
+
+
+		<act name="赏金电麒麟" iconId="8"  isPet="0" willOver="0"  detailDes="去赏金猎人处接任务，换取麒麟进化芯片！" timeDes="全天候" startTime="00:00" endTime="23:00" go="60">
+			<reward>
+			<item id="200329" count="1" />
+			<item id="200330" count="1" />
+			<item id="200225" count="1" />
+			</reward>
+		</act>
+
+
+
+
+		<act name="神龙火圈" iconId="7"  isPet="1" willOver="0"  detailDes="冰封巨龙迈巴赫问世！新增15连抛必中！" timeDes="全天候" startTime="00:00" endTime="23:00" go="LuckyDialMeePanel">
+			<reward>
+				<pet id="426" />
+				<pet id="410" />
+				<pet id="529" />
+			</reward>
+		</act>
+		<act name="伊特大乱斗" iconId="17"  isPet="0" willOver="0"  detailDes="伊特家族大乱斗，各种伊特精灵，伊特纹章送！" timeDes="全天候" startTime="00:00" endTime="23:00" go="YiteFightTipsPanel">
+			<reward>
+				<item id="200582" />
+				<item id="200583" />
+				<item id="200584" />
+			</reward>
+		</act>
+
+		<act name="冰封之轴" iconId="27"  isPet="1" willOver="0"  detailDes="冰沁氏族发现百年难见的异样奇景！到底是什么？" timeDes="13:00—14:00午间版" startTime="13:00" endTime="14:00" go="650">
+			<reward>
+				<pet id="278" />
+				<item id="400212" />
+				<item id="400213" />
+			</reward>
+		</act>
+
+
+
+		<act name="睡懒觉的吃货" iconId="29"  isPet="1" willOver="0"  detailDes="诺基博从懒觉中醒来！赶快做美味的料理吧~" timeDes="13:00-16:00" startTime="13:00" endTime="16:00" go="125">
+			<reward>
+				<pet id="190" />
+			</reward>
+		</act>
+		<act name="谁敢打搅达达用餐" iconId="45"  isPet="1" willOver="0"  detailDes="先用头部射击击中达克尔才有机会与达达交战哦！" timeDes="13:00-14:00" startTime="13:00" endTime="14:00" go="262">
+			<reward>
+				<pet id="074" />
+			</reward>
+		</act>
+
+		<act name="帕帕米拉的造型" iconId="46"  isPet="1" willOver="0"  detailDes="在焰之森和多摩对战，就有几率碰见美发大王哦" timeDes="13:00-14:00午间版" startTime="13:00" endTime="14:00" go="281">
+			<reward>
+				<pet id="231" />
+			</reward>
+		</act>
+	    <act name="海小葵的喷嚏" iconId="31"  isPet="1" willOver="0"  detailDes="流离街出现了陌生的精灵，它的名字叫“海葵”！" timeDes="全天候" startTime="00:00" endTime="23:00" go="920">
+			<reward>
+				<pet id="253" />
+			</reward>
+		</act>
+		<act name="三眼蝎的舞步" iconId="32"  isPet="1" willOver="0"  detailDes="去矿坑找大板牙，照他说的做就能引来三眼石蝎！" timeDes="全天候" startTime="00:00" endTime="23:00" go="520">
+			<reward>
+				<pet id="086" />
+			</reward>
+		</act>
+
+		<act name="爱之拂晓兔" iconId="34"  isPet="1" willOver="0"  detailDes="晓晓和月月，以爱的名义等待你的到来！" timeDes="全天候" startTime="00:00" endTime="23:00" go="132">
+			<reward>
+				<pet id="61" />
+			</reward>
+		</act>
+
+		<act name="谜一样的精灵" iconId="35"  isPet="1" willOver="0"  detailDes="它是谁？先去幽静浅滩点小猪储蓄罐唤它出来吧！" timeDes="全天候" startTime="00:00" endTime="23:00" go="220">
+			<reward>
+				<pet id="51" />
+			</reward>
+		</act>
+
+		<act name="寻找神秘的歌声" iconId="30"  isPet="1" willOver="0"  detailDes="会唱歌会伪装的神秘草系精灵，你找的到吗？" timeDes="13:30-14:30" startTime="13:30" endTime="14:30" go="100">
+			<reward>
+				<pet id="251" />
+			</reward>
+		</act>
+
+		<act name="深渊派对" iconId="48"  isPet="1" willOver="0"  detailDes="灰烬深渊正在举办一场死亡尽头的派对……" timeDes="14:00-16:00" startTime="14:00" endTime="16:00" go="305">
+			<reward>
+				<pet id="350" />
+				<item id="200205" />
+				<item id="200221" />
+			</reward>
+		</act>
+
+
+		<act name="雷鸣炎破之战" iconId="20"  isPet="0" willOver="0"  detailDes="雷伊凯萨合体的必杀技习得，就在火源通径！" timeDes="14:00-15:00" startTime="14:00" endTime="15:00" go="820">
+			<reward>
+				<item id="200214" />
+				<item id="200221" />
+				<pet id="303" />
+			</reward>
+		</act>
+
+		<act name="火焰山激斗" iconId="26"  isPet="0" willOver="0"  detailDes="火焰山激斗升级！在赤炼山脉报名参加大乱斗！" timeDes="14:00-15:00午间版" startTime="14:00" endTime="15:00" go="261">
+			<reward>
+				<pet id="192" />
+			</reward>
+		</act>
+
+
+
+
+
+
+		<act name="三八双雄战" iconId="28"  isPet="1" willOver="0"  detailDes="三八双雄战！化敌为友的地沙氏族携手打擂台！" timeDes="15:00—16:00" startTime="15:00" endTime="16:00" go="310">
+			<reward>
+				<pet id="184" />
+				<pet id="186" />
+			</reward>
+		</act>
+  
+
+		<act name="灵兽的试炼" iconId="2"  isPet="0" willOver="0"  detailDes="草、火、水三大灵兽试炼及挑战已开启！" timeDes="全天候" startTime="00:00" endTime="23:00" go="BagginsLogPanel">
+			<reward>
+				<pet id="301" />
+				<pet id="302" />
+				<pet id="303" />
+			</reward>
+		</act>
+		<act name="观星者本尊挑战" iconId="3"  isPet="1" willOver="0"  detailDes="宇宙至尊、观星者本尊挑战开放!" timeDes="全天候" startTime="00:00" endTime="23:00" go="StargazerFightPanel">
+			<reward>
+				<pet id="503" />
+			</reward>
+		</act>
+		<act name="商城每日抽奖" iconId="4"  isPet="0" willOver="0"  detailDes="商城送星石！普通用户每日3次抽奖（VIP5次）" timeDes="全天候" startTime="00:00" endTime="23:00" go="EnergyLotteryPanel">
+			<reward>
+				<item id="17" />
+			</reward>
+		</act>
+
+		<act name="VIP乐园金字塔" iconId="6"  isPet="0" willOver="0"  detailDes="问鼎百万豪车，2013年VIP金子塔奖励已升级！" timeDes="全天候" startTime="00:00" endTime="23:00" go="VipPyramidPanel">
+			<reward>
+				<item id="100595" />
+				<item id="200605" />
+				<item id="200225" />
+			</reward>
+		</act>
+		<act name="重金悬赏令！" iconId="8"  isPet="1" willOver="0"  detailDes="猎人金库为你敞开！跨年精灵悬赏令全球发动！" timeDes="全天候" startTime="00:00" endTime="23:00" go="60">
+			<reward>
+				<item id="200234" />
+				<item id="200214" />
+				<item id="200224" />
+			</reward>
+		</act>
+		<act name="星座守护者计划" iconId="10"  isPet="0" willOver="0"  detailDes="VIP填生日获尊贵星座标记、黄金圣衣及座驾哦" timeDes="全天候" startTime="00:00" endTime="23:00" go="VipDecorationPanel">
+			<reward>
+			<pet id="319" />
+			<item id="100965" count="1" />
+			<item id="100966" count="1" />
+			</reward>
+		</act>
+
+
+
+
+
+		<act name="VIP约瑟降临礼" iconId="13"  isPet="0" willOver="0"  detailDes="VIP尊享绝版NONO等18米币周年庆礼盒送给你！" timeDes="全天候" startTime="00:00" endTime="23:00" go="VipChristmasPanel">
+			<reward>
+				<item id="202007" />
+				<item id="102047" />
+				<item id="200223" />
+			</reward>
+		</act>
+
+
+
+		<act name="娜娜和斯缇姆军团" iconId="15"  isPet="1" willOver="0"  detailDes="超强技师娜娜和她引以为傲的精灵斯缇姆迎战！" timeDes="全天候" startTime="00:00" endTime="23:00" go="900">
+			<reward>
+				<pet id="245" />
+				<item id="100444" />
+				<item id="100448" />
+			</reward>
+		</act>
+
+		<act name="迷雾杀手" iconId="16"  isPet="1" willOver="0"  detailDes="工房迷雾杀手艾力克的斯莫克军团让人闻风丧胆！" timeDes="全天候" startTime="00:00" endTime="23:00" go="940">
+			<reward>
+				<pet id="257" />
+				<item id="100487" />
+				<item id="100491" />
+			</reward>
+		</act>
+
+	
+
+
+		<act name="骰子星寻宝" iconId="21"  isPet="1" willOver="0"  detailDes="去骰子星寻宝，绝版装扮等星币奖品！" timeDes="全天候" startTime="00:00" endTime="23:00" go="1030">
+			<reward>
+				<pet id="269" />
+				<pet id="264" />
+				<item id="601030" />
+			</reward>
+		</act>
+
+
+		<act name="神目守护特鲁伊！" iconId="41"  isPet="1" willOver="0"  detailDes="权利之帐，神目酋长的守护精灵特鲁伊向你挑战！" timeDes="全天候" startTime="00:00" endTime="23:00" go="110">
+			<reward>
+				<pet id="293" />
+			</reward>
+		</act>
+
+		<act name="水之翘楚爱丽斯" iconId="42"  isPet="1" willOver="0"  detailDes="爱丽斯，水脉精灵之翘楚！神谕之挑战已开启！" timeDes="全天候" startTime="00:00" endTime="23:00" go="160">
+			<reward>
+				<pet id="341" />
+			</reward>
+		</act>
+
+
+		<act name="迷途的小海马" iconId="36"  isPet="1" willOver="0"  detailDes="维拉发现了一个迷途的小海马，它在说什么呢？" timeDes="全天候" startTime="00:00" endTime="23:00" go="151">
+			<reward>
+				<pet id="41" />
+			</reward>
+		</act>
+
+		<act name="多利的雪人计划" iconId="37"  isPet="1" willOver="0"  detailDes="多利竟然没有雪球用来堆雪人了，一起来帮它。" timeDes="全天候" startTime="00:00" endTime="23:00" go="540">
+			<reward>
+				<pet id="138" />
+			</reward>
+		</act>
+
+		<act name="小小葵的梦境" iconId="38"  isPet="1" willOver="0"  detailDes="小小葵的梦境你去探索过了吗？这里藏了许多秘密" timeDes="全天候" startTime="00:00" endTime="23:00" go="131">
+			<reward>
+				<pet id="13" />
+			</reward>
+		</act>
+
+		<act name="摇滚天王爆炸头" iconId="39"  isPet="1" willOver="0"  detailDes="传说它喜欢迷穴中的财宝，迷穴之可是凶多吉少呢" timeDes="全天候" startTime="00:00" endTime="23:00" go="340">
+			<reward>
+				<pet id="83" />
+			</reward>
+		</act>
+
+
+		<act name="鸡毛与沙" iconId="43"  isPet="1" willOver="0"  detailDes="谁是真正的战斗鸡？周扒皮的斗鸡生意等你捧场！" timeDes="全天候" startTime="00:00" endTime="23:00" go="350">
+			<reward>
+				<item  id="1" />
+			</reward>
+		</act>
+
+
+
+		<act name="埃卡维特爱吃鱼" iconId="75"  isPet="1" willOver="0"  detailDes="给点鱼吧！吃了维特就和你过过招！" timeDes="全天候" startTime="00:00" endTime="23:00" go="152">
+			<reward>
+				<pet id="109" />
+			</reward>	
+		</act>
+		<act name="后花园游乐场" iconId="46"  isPet="1" willOver="0"  detailDes="马里奥的游戏开始了！可得七星瓢虫哦" timeDes="18:00-19:00夜间版" startTime="18:00" endTime="19:00" go="1230">
+			<reward>
+				<pet id="413" />
+			</reward>
+		</act> 
+
+		<act name="谁偷吃了我的料理" iconId="33"  isPet="1" willOver="0"  detailDes="超胆小精灵冰湖豚登场！听说它也喜欢料理？" timeDes="18:00-20:00" startTime="18:00" endTime="20:00" go="125">
+			<reward>
+				<pet id="119" />
+			</reward>
+		</act>
+		<act name="帕帕米拉的造型" iconId="46"  isPet="1" willOver="0"  detailDes="在焰之森和多摩对战，就有几率碰见美发大王哦" timeDes="19:00-20:00夜间版" startTime="19:00" endTime="20:00" go="281">
+			<reward>
+				<pet id="231" />
+			</reward>
+		</act>  
+  		<act name="七星连珠唤神龙" iconId="65"  isPet="0" willOver="0"  detailDes="召唤出神龙，它会实现你的心愿！" timeDes="19:00-20:00夜间版" startTime="19:00" endTime="20:00" go="CallDragonPanel">
+			<reward>
+			<item id="100606" count="1" />
+			<item id="400137" count="1" />
+			<item id="102015" count="1" />
+			</reward>
+		</act>
+
+	   	<act name="重夺水源之心" iconId="25"  isPet="1" willOver="0"  detailDes="重夺水源之心迫在眉睫，新增精灵纹章奖励！" timeDes="19:00-20:00夜间版" startTime="19:00" endTime="20:00" go="171">
+			<reward>
+				<pet id="150" />
+				<pet id="154" />
+				<item id="200595" />
+			</reward>
+		</act>
+		<act name="火焰山激斗" iconId="26"  isPet="0" willOver="0"  detailDes="火焰山激斗升级！在赤炼山脉报名参加大乱斗！" timeDes="19:00-20:00夜间版" startTime="19:00" endTime="20:00" go="261">
+			<reward>
+				<pet id="192" />
+			</reward>
+		</act>
+
+		<act name="冰封之轴" iconId="27"  isPet="1" willOver="0"  detailDes="冰沁氏族发现百年难见的异样奇景！到底是什么？" timeDes="20:00—21:00夜间版" startTime="20:00" endTime="21:00" go="650">
+			<reward>
+				<pet id="278" />
+				<item id="400212" />
+				<item id="400213" />
+			</reward>
+		</act>
+
+		<act name="双倍荣誉" iconId="19"  isPet="0" willOver="0"  detailDes="去试炼和勇士之战50V50就可获得双倍荣誉点了！" timeDes="20:00-21:00" startTime="20:00" endTime="21:00" go="450">
+			<reward>
+				<item id="300001" />
+				<item id="300002" />
+				<item id="200221" />
+			</reward>
+		</act>
+		<act name="守擂达人" iconId="44"  isPet="1" willOver="0"  detailDes="要塞的擂台高手云集！连胜10次好礼送给你!" timeDes="20:00-21:00" startTime="20:00" endTime="21:00" go="81">
+			<reward>
+				<item id="200214" />
+			</reward>
+		</act>
+	</acts>
+</root>

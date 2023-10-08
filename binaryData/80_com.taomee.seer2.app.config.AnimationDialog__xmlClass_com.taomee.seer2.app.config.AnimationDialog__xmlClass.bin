@@ -1,0 +1,26 @@
+<root>
+	<dialog id="0">
+		<item content="听说最近为了欢度万圣节准备了很多糖果嘛……" select1="shide" select2="meiyou" yesIndex="1"/>
+		<item content="所以所以，你拿到糖果了嘛？" select1="shide" select2="meiyou" yesIndex="1"/>
+		<item content="所以所以，本着“好东西要和大家一起分享”的精神，你能分给我一些糖果嘛？" select1="haoba" select2="zoukai" yesIndex="1"/>
+		<item content="你真是个好人嘛，我打算跟着你啦！" select1="" select2="" yesIndex=""/>
+	</dialog>
+	<dialog id="1">
+		<item content="听说最近为了欢度万圣节准备了很多糖果嘛……" select1="shide" select2="meiyou" yesIndex="1"/>
+		<item content="所以所以，你拿到糖果了嘛？" select1="shide" select2="meiyou" yesIndex="1"/>
+		<item content="所以所以，本着“好东西要和大家一起分享”的精神，你能分给我一些糖果嘛？" select1="haoba" select2="zoukai" yesIndex="1"/>
+		<item content="你真是个好人嘛，我打算跟着你啦！" select1="" select2="" yesIndex=""/>
+	</dialog>
+	<dialog id="2">
+		<item content="你知道【鬼影子摸不着 偷袭无敌手 恐惧大魔王】：幽灵王嘛？" select1="shide" select2="meiyou" yesIndex="1"/>
+		<item content="也？你居然听说过这个名号？那只是我瞎编的……" select1="shide" select2="meiyou" yesIndex="1"/>
+		<item content="其实，我们做幽灵的，都很怕它嘛……我能在你这里避避风头嘛？" select1="haoba" select2="zoukai" yesIndex="1"/>
+		<item content="哎哟，你真是个大好人，顺便也给我点糖果尝尝嘛~" select1="" select2="" yesIndex=""/>
+	</dialog>
+	<dialog id="3">
+		<item content="南瓜，南瓜……我有哪点比不上南瓜嘛……！你说对不对？！" select1="dui" select2="budui" yesIndex="1"/>
+		<item content="所以，为什么万圣节主角不是我嘛？！我不管，我要你带我去【万圣节主场景】" select1="haoba" select2="zoukai" yesIndex="1"/>
+		<item content="哼，到时候我就让大家知道什么叫万圣节明星！先给我一点糖果提提神！" select1="haoba" select2="zoukai" yesIndex="1"/>
+		<item content="你就跟着我混了，等我称霸万圣节……！！一定会有你的好处！" select1="" select2="" yesIndex=""/>
+	</dialog>
+</root>

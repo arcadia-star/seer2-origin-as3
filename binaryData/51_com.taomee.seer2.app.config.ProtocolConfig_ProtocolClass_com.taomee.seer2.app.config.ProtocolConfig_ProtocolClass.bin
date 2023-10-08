@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Protocols>
+
+	<Protocol ID="1055" Name="cli_swap_item" Description="交换或者获取物品" HaveRequest="1" HaveReturn="1">
+		<RequestPack>
+			<Parameter PID="0" Name="index" Type="uint32" IsArray="0" Length="1" FixedLen="" Description="配置文件中的标号"></Parameter>
+			<Parameter PID="1" Name="num" Type="uint32" IsArray="0" Length="1" FixedLen="" Description="兑换的数目"></Parameter>
+			<Parameter PID="2" Name="count" Type="uint32" IsArray="1" Length="1024" FixedLen="" Description="特殊字段，处理以后出现的需求"></Parameter>
+		</RequestPack>
+		
+		<ReturnPack>
+			<Parameter PID="0" Name="del_item" Type="struct" IsArray="1" Length="100" FixedLen="" Description="删除的物品信息">
+				<Parameter PID="0" Name="item_id" Type="uint32" IsArray="0" Length="1" FixedLen="" Description="物品ID"></Parameter>
+				<Parameter PID="1" Name="count" Type="uint16" IsArray="0" Length="1" FixedLen="" Description="物品数量"></Parameter>
+				<Parameter PID="2" Name="get_time" Type="uint32" IsArray="0" Length="1" FixedLen="" Description="获得时间 （传给客户端时，为到期时间）"></Parameter>
+			</Parameter>
+			
+			<Parameter PID="1" Name="add_item" Type="struct" IsArray="1" Length="100" FixedLen="" Description="增加的物品信息">
+				<Parameter PID="0" Name="item_id" Type="uint32" IsArray="0" Length="1" FixedLen="" Description="物品ID"></Parameter>
+				<Parameter PID="1" Name="count" Type="uint16" IsArray="0" Length="1" FixedLen="" Description="物品数量"></Parameter>
+				<Parameter PID="2" Name="get_time" Type="uint32" IsArray="0" Length="1" FixedLen="" Description="获得时间 （传给客户端时，为到期时间）"></Parameter>
+			</Parameter>
+			
+			<Parameter PID="2" Name="mon_id" Type="uint32" IsArray="0" Length="1" FixedLen="" Description="获得的精灵的ID号"></Parameter>
+			<Parameter PID="3" Name="catch_time" Type="uint32" IsArray="0" Length="1" FixedLen="" Description="获得的精灵的捕获时间"></Parameter>
+			<Parameter PID="4" Name="signet_id" Type="uint32" IsArray="0" Length="1" FixedLen="" Description="兑换得到的纹章ID"></Parameter>
+			<Parameter PID="5" Name="catch_time_for_signet_id" Type="uint32" IsArray="0" Length="1" FixedLen="" Description="被加纹章的精灵捕捉时间"></Parameter>
+			<Parameter PID="6" Name="chip_put_time" Type="uint32" IsArray="0" Length="1" FixedLen="" Description="芯片放置时间"></Parameter>
+		</ReturnPack>
+	</Protocol>
+	
+	<Protocol ID="1090" Name="cli_get_legion_member_simply_info" Description="获得战队成员的简单信息" HaveRequest="1" HaveReturn="1">
+		<RequestPack>
+			<Parameter PID="0" Name="user_id" Type="uint32" IsArray="0" Length="1" FixedLen="" Description="米米号"></Parameter>
+		</RequestPack>
+		
+		<ReturnPack>
+			<Parameter PID="0" Name="user_id" Type="uint32" IsArray="0" Length="1" FixedLen="" Description="用户的米米号"></Parameter>
+			<Parameter PID="1" Name="legion_id" Type="uint32" IsArray="0" Length="1" FixedLen="" Description="军团ID"></Parameter>
+			<Parameter PID="2" Name="nick" Type="char" IsArray="0" Length="1" FixedLen="16" Description="用户昵称"></Parameter>
+			<Parameter PID="3" Name="duty" Type="uint8" IsArray="0" Length="1" FixedLen="" Description="职务"></Parameter>
+			<Parameter PID="4" Name="contribution" Type="uint32" IsArray="0" Length="1" FixedLen="" Description="贡献值"></Parameter>
+			<Parameter PID="5" Name="contribution_exp_lvl" Type="uint32" IsArray="0" Length="1" FixedLen="" Description="贡献值经验等级"></Parameter>
+			<Parameter PID="6" Name="contribution_today" Type="uint32" IsArray="0" Length="1" FixedLen="" Description="今日贡献值"></Parameter>
+		</ReturnPack>
+	</Protocol>
+	
+	<Protocol ID="1102" Name="cli_week_month_forever_limit" Description="拉取周活动，月活动，永久活动的参与次数" HaveRequest="1" HaveReturn="1">
+		<RequestPack>
+			<Parameter PID="0" Name="user_id" Type="uint32" IsArray="0" Length="999" FixedLen="" Description="聊天对象ID, 0表示群聊（当前地图中所有用户都可看到）,2表示军团群聊"></Parameter>
+			<Parameter PID="1" Name="msg" Type="char" IsArray="1" Length="140" FixedLen="" Description="聊天内容，以‘\0’结尾，不多于135个字节(最多45个汉字)
+note：注意数组变长，AS在协议解析时，请自行加入uint32_t的len"></Parameter>
+		</RequestPack>
+		
+		<ReturnPack>
+			<Parameter PID="0" Name="sender_id" Type="uint32" IsArray="0" Length="999" FixedLen="" Description="发起聊天者ID"></Parameter>
+			<Parameter PID="1" Name="nick" Type="char" IsArray="1" Length="999" FixedLen="16" Description="发起聊天者昵称"></Parameter>
+			<Parameter PID="2" Name="receiver_id" Type="uint32" IsArray="0" Length="999" FixedLen="" Description="接收者ID"></Parameter>
+			<Parameter PID="3" Name="type" Type="uint8" IsArray="0" Length="999" FixedLen="" Description="群聊为0，私聊为1，2表示军团群聊"></Parameter>
+			<Parameter PID="4" Name="msg" Type="char" IsArray="1" Length="140" FixedLen="" Description="聊天内容，以‘\0’结尾，不多于135个字节"></Parameter>
+		</ReturnPack>
+	</Protocol>
+	
+	<Protocol ID="1142" Name="cli_week_month_forever_limit" Description="拉取周活动，月活动，永久活动的参与次数" HaveRequest="1" HaveReturn="1">
+		<RequestPack>
+			<Parameter PID="0" Name="types" Type="uint32" IsArray="1" Length="999" FixedLen="" Description="活动类型ID"></Parameter>
+		</RequestPack>
+		
+		<ReturnPack>
+			<Parameter PID="0" Name="times" Type="uint32" IsArray="1" Length="999" FixedLen="" Description="已参加次数"></Parameter>
+		</ReturnPack>
+	</Protocol>
+	
+	<Protocol ID="1241" Name="get_day_limit_range" Description="拉取一定范围的每日限制" HaveRequest="1" HaveReturn="1">
+		<RequestPack>
+			<Parameter PID="0" Name="day_limit_type" Type="uint32" IsArray="1" Length="9999" FixedLen="" Description="每日上限类型 (玩法1：33:门战普通模式,34:门战50v50模式) (玩法2：50:门战普通模式,51:门战50v50模式) (玩法3：67:门战普通模式,68:门战50v50模式)195:每日垃圾打扫次数"></Parameter>
+		</RequestPack>
+		
+		<ReturnPack>
+			<Parameter PID="0" Name="day_limit_info" Type="struct" IsArray="1" Length="9999" FixedLen="" Description="daylimit值">
+				<Parameter PID="0" Name="day_limit_type" Type="uint32" IsArray="0" Length="1" FixedLen="" Description="每日上限类型 (玩法1：33:门战普通模式,34:门战50v50模式) (玩法2：50:门战普通模式,51:门战50v50模式) (玩法3：67:门战普通模式,68:门战50v50模式)195:每日垃圾打扫次数"></Parameter>
+				<Parameter PID="1" Name="day_limit_times" Type="uint32" IsArray="0" Length="1" FixedLen="" Description="每日上限的已完成次数"></Parameter>
+			</Parameter>
+		</ReturnPack>
+	</Protocol>
+	
+	<Protocol ID="1500" Name="cli_fight_wild_mon" Description="对战野怪\n打野怪流程：1.客户端发1500请求；2.服务器端回应1500后，主动发送4通知包； 3.客户端收到4通知包后，发送1请求包； 4.服务器发送1返回包； 5.客户端发送1501请求； 6.服务器端回应1501后，（待对战双方的1501请求都发送后）主动发送2通知包；" HaveRequest="1" HaveReturn="0">
+		<RequestPack>
+			<Parameter PID="0" Name="region_id" Type="uint32" IsArray="0" Length="1" FixedLen="" Description="怪出现的地点号(1~9表示刷出来的怪的点，10~19任务中用的点，20~49是特殊条件下用的点, 50~149表示稀有精灵的,150:双精灵测试)"></Parameter>
+		</RequestPack>
+	</Protocol>
+	
+</Protocols>
