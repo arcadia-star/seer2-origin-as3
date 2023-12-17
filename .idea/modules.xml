@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/seer2-origin-as3.iml" filepath="$PROJECT_DIR$/seer2-origin-as3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Seer2CoreDLL.iml" filepath="$PROJECT_DIR$/Seer2CoreDLL.iml" />
     </modules>
   </component>
 </project>
