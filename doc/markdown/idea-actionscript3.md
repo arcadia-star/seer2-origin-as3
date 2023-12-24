@@ -31,7 +31,8 @@ Flex/AIR SDK:
 - AIRSDK_Windows, 通常选这个
 - AIRSDK_Flex_Windows, 一般用不到
 - apache-flex-sdk-4.16.1-bin, 一般也用不到
-  ![img.png](../images/img-idea-flex-3.png)
+
+![img.png](../images/img-idea-flex-3.png)
 
 ## 使用类库
 
@@ -55,7 +56,7 @@ idea 支持调试 flash
 
 ![img.png](../images/img-idea-debug-1.png)
 
-然后需要使用 debug 版本得 flash player，右键连接本地调试器
+然后需要使用 debug 版本的 flash player，右键连接本地调试器
 
 ![img.png](../images/img-idea-debug-2.png)
 
