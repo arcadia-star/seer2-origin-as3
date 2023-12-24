@@ -71,9 +71,9 @@ package com.taomee.seer2.app.debugTools
       public static function setUp(param1:uint) : void
       {
          uiLoadedFlag = true;
-         JumpTestNpcPanel.instance().getConfigData(param1);
-         JumpTestNpcPanel.instance().getPanelData(param1);
-         MapPanelProtocolPanel.instance().getConfigData(param1);
+         //JumpTestNpcPanel.instance().getConfigData(param1);
+         //JumpTestNpcPanel.instance().getPanelData(param1);
+         //MapPanelProtocolPanel.instance().getConfigData(param1);
       }
       
       public static function getInstance() : DebugTools

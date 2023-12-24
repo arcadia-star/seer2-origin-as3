@@ -291,7 +291,7 @@ package com.taomee.seer2.core.debugTools
             }
             _loc3_++;
          }
-         this.setConfigData(_loc2_);
+         //this.setConfigData(_loc2_);
       }
       
       public function addLog(param1:uint, param2:String) : void

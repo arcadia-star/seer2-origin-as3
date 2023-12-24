@@ -77,7 +77,7 @@ package com.taomee.analytics
          var stage:Stage = param3;
          var _dataBinding:Function = param4;
          var url:String = URLUitl.reviseURL(webAddr + "/crossdomain.xml");
-         Security.loadPolicyFile(url);
+         //Security.loadPolicyFile(url);
          _productID = productID;
          _webAddr = webAddr;
          _stage = stage;
@@ -232,7 +232,7 @@ package com.taomee.analytics
                request.url = URLUitl.reviseURL(_webAddr + "/error_report/report.php?gameid=" + _productID);
                try
                {
-                  sendToURL(request);
+                  //sendToURL(request);
                }
                catch(error:Error)
                {
@@ -290,7 +290,7 @@ package com.taomee.analytics
             request.url = URLUitl.reviseURL(_webAddr + "/error_report/statistics.php?gameid=" + _productID);
             try
             {
-               sendToURL(request);
+               //sendToURL(request);
             }
             catch(error:Error)
             {

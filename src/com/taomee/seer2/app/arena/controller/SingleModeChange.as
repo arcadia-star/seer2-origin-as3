@@ -87,7 +87,7 @@ package com.taomee.seer2.app.arena.controller
             _scene.sortAllFighters();
          };
          var fightMode:uint = _scene.arenaData.fightMode;
-         hasDeadFighter = hasDeadFighter();
+         hasDeadFighter = false;
          isPvpMode = FightMode.isPVPMode(fightMode);
          fighter.fighterInfo.fightAnger = angerVaule;
          if(!FitConfig.isPetFit(fighter.fighterInfo.bunchId))

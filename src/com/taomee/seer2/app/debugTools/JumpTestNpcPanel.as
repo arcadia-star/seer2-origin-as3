@@ -304,7 +304,7 @@ package com.taomee.seer2.app.debugTools
                   _loc2_["p" + (_loc3_ + 2)] = this._panelItemArr[_loc3_];
                   _loc3_++;
                }
-               this.setConfigData(this._savePanelAndMapUrl,_loc2_);
+               //this.setConfigData(this._savePanelAndMapUrl,_loc2_);
             }
          }
       }
@@ -335,7 +335,7 @@ package com.taomee.seer2.app.debugTools
             NpcPosHandle.setMovableState(true);
             _loc2_.p2 = 1;
          }
-         this.setConfigData(this._configUrl,_loc2_);
+         //this.setConfigData(this._configUrl,_loc2_);
       }
       
       private function onTestDialogBtnClick(param1:*) : void
