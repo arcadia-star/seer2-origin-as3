@@ -3,6 +3,7 @@ package com.taomee.seer2.app.controls
    import com.adobe.crypto.MD5;
    import com.greensock.TweenLite;
    import com.greensock.easing.Expo;
+   import com.taomee.seer2.app.MainEntry;
    import com.taomee.seer2.app.actor.ActorManager;
    import com.taomee.seer2.app.actor.data.UserInfo;
    import com.taomee.seer2.app.actor.events.UserInfoEvent;
@@ -298,6 +299,7 @@ package com.taomee.seer2.app.controls
          this._actorMC.addEventListener(MouseEvent.ROLL_OVER,this.onActorMcOver);
          this._jumpBtn.addEventListener(MouseEvent.CLICK,this.onJumpBianQiang);
          this._actorMC.addEventListener(MouseEvent.ROLL_OUT,this.onActorMcOut);
+         TooltipManager.addCommonTip(this._jumpBtn,"内网调试工具");
          TooltipManager.addCommonTip(this._actorMC,"训练师资料");
          ActorManager.actorInfo.addEventListener(UserInfoEvent.TRAINER_SCORE_UPDATE,this.onTrainerScoreUpdate);
          this._vipMC.addEventListener(MouseEvent.CLICK,this.onVip);
@@ -316,7 +318,8 @@ package com.taomee.seer2.app.controls
       
       private function onJumpBianQiang(param1:MouseEvent) : void
       {
-         ModuleManager.showAppModule("NewGuidelines");
+         //ModuleManager.showAppModule("NewGuidelines");
+         MainEntry.showDebugToolPanel(true);
       }
       
       private function onPetPowerUpdate(param1:Event = null) : void

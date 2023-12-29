@@ -19,7 +19,7 @@ package com.taomee.seer2.app.cmdl.tempHandler
          if(param1 && param1.eventDataVec && param1.eventDataVec.length > 0)
          {
             _loc2_ = uint(param1.eventDataVec[0]);
-            ServerMessager.addMessage("恭喜你获得" + StarMagicConfig.getInfoById(_loc2_).nameT);
+            //ServerMessager.addMessage("恭喜你获得" + StarMagicConfig.getInfoById(_loc2_).nameT);
          }
       }
    }

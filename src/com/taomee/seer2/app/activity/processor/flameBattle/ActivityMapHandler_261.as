@@ -174,7 +174,7 @@ package com.taomee.seer2.app.activity.processor.flameBattle
          {
             return;
          }
-         var _loc1_:XML = <teleport name="火焰山" pos="200,340" targetMapId="263" targetPos="510,320"/>;
+         var _loc1_:XML = <teleport name="火焰山" pos="200,400" targetMapId="263" targetPos="510,320"/>;
          this._teleport = new Teleport();
          this._teleport.setData(_loc1_);
          SceneManager.active.mapModel.content.addChild(this._teleport);

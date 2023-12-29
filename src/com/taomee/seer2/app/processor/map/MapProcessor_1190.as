@@ -238,11 +238,11 @@ package com.taomee.seer2.app.processor.map
       
       private function toFightBadu(param1:MouseEvent) : void
       {
-         if(!QuestManager.isComplete(10197))
-         {
-            AlertManager.showAlert("你还没完成相关挑战章节不能对战!!");
-            return;
-         }
+//         if(!QuestManager.isComplete(10197))
+//         {
+//            AlertManager.showAlert("你还没完成相关挑战章节不能对战!!");
+//            return;
+//         }
          var _loc2_:int = this.guard_list.indexOf(param1.target as Mobile);
          FightManager.startFightWithWild(this.FIGHT_IDS[_loc2_]);
       }

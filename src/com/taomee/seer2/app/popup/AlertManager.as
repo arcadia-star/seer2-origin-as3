@@ -15,6 +15,7 @@ package com.taomee.seer2.app.popup
    import com.taomee.seer2.core.utils.DisplayObjectUtil;
    import flash.display.DisplayObject;
    import flash.events.Event;
+   import seer2.next.fight.auto.AutoFightPanel;
    
    public class AlertManager
    {
@@ -256,6 +257,10 @@ package com.taomee.seer2.app.popup
       public static function showIndulgeAlert(param1:String) : void
       {
          closeAllPopUp();
+         if(AutoFightPanel.isRunning)
+         {
+            return;
+         }
          showPopUp(AlertType.INDULGE,new AlertInitInfo(param1,null),true,false);
       }
       
@@ -283,6 +288,10 @@ package com.taomee.seer2.app.popup
       
       public static function showItemGainedAlert(param1:uint, param2:uint = 1, param3:Function = null, param4:String = "") : void
       {
+         if(AutoFightPanel.isRunning)
+         {
+            return;
+         }
          var _loc5_:AlertInitInfo;
          (_loc5_ = new AlertInitInfo(param4,param3)).referenceId = param1;
          _loc5_.quantity = param2;

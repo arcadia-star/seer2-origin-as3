@@ -1,19 +1,28 @@
 <root>
-
-	<fish id="400811" name="金鱼小米" description="只有五月才会出现的金色小鱼，有了它可以获得劳动节纪念版米咔" minWeight="0.15" maxWeight="0.4" minLength="10" maxLength="15" mapId="261"/>	
-
-
-
 	<fish id="400801" name="小黄鱼" description="小黄鱼是非常常见的一种鱼类，身体细长，看上去就像一片叶子在水里穿梭。" minWeight="0.2" maxWeight="0.45" minLength="10" maxLength="20" mapId="152"/>
 	<fish id="400802" name="河蟹" description="河蟹隐伏在石砾或水草丛中，挥舞着大螯来惊退敌人" minWeight="0.1" maxWeight="0.35" minLength="5" maxLength="15" mapId="152"/>
 	<fish id="400803" name="气泡鱼" description="背部有着鲜艳的色彩，遇到敌人或者受到惊吓时，则会虚张声势，使肚子膨胀起来，像一个大大的气泡" minWeight="0.05" maxWeight="0.15" minLength="7" maxLength="15" mapId="152"/>
 	<fish id="400804" name="灯笼鱼" description="灯笼鱼头上顶着小球，在黑暗中会微微发亮。这其实它来引诱猎物的工具。" minWeight="0.5" maxWeight="0.7" minLength="10" maxLength="15" mapId="152"/>
 	<fish id="400805" name="石斑鱼" description="石斑鱼的背部分布着不规则的灰色斑点，这使得它和周围的坏境看起来很像，极具隐蔽性" minWeight="0.25" maxWeight="0.5" minLength="10" maxLength="20" mapId="152"/>
+	<fish id="400806" name="水草" description="钓鱼的安慰奖" minWeight="0.25" maxWeight="0.5" minLength="10" maxLength="20" mapId="152"/>
 	<fish id="400807" name="赤鳍鳗鱼" description="赤鳍鳗鱼的身体像蛇一样，同时在岩浆中生活中的它进化成了赤色的鱼鳍" minWeight="0.7" maxWeight="1" minLength="30" maxLength="50" mapId="261"/>
 	<fish id="400808" name="大口紫鲶" description="浑身上下都是紫色的，鱼鳍的颜色则和熔岩的颜色一模一样，嘴巴可以张得很大" minWeight="0.2" maxWeight="0.5" minLength="20" maxLength="30" mapId="261"/>	
 	<fish id="400809" name="红胡子鲇鱼" description="有着大大的鱼头和长长的红色胡子，看上去就像是鱼里面的老寿星" minWeight="0.5" maxWeight="1" minLength="10" maxLength="15" mapId="261"/>
 	<fish id="400810" name="红尾泥鳅" description="红尾泥鳅有着华丽的大尾巴，游起来慢悠悠的，舒展的尾巴看上去十分漂亮" minWeight="0.2" maxWeight="0.4" minLength="8" maxLength="15" mapId="261"/>
 	<fish id="400811" name="火鳞鳝鱼" description="火鳞鳝鱼的腹部有着许多细小的火焰一般的鳞片，能帮助它在岩浆中快速游动" minWeight="0.25" maxWeight="0.5" minLength="15" maxLength="25" mapId="261"/>	
+	<fish id="400812" name="烈焰藻" description="钓鱼的安慰奖" minWeight="0.25" maxWeight="0.5" minLength="15" maxLength="25" mapId="261"/>	
+	<fish id="400813" name="独龙鱼" description="只在钓鱼大赛时出现的特殊鱼类" minWeight="0.25" maxWeight="0.5" minLength="15" maxLength="25" mapId="261"/>	
+	<fish id="400814" name="两栖鱼" description="只在钓鱼大赛时出现的特殊鱼类" minWeight="0.25" maxWeight="0.5" minLength="15" maxLength="25" mapId="261"/>	
+	<fish id="400815" name="三角鱼" description="只在钓鱼大赛时出现的特殊鱼类" minWeight="0.25" maxWeight="0.5" minLength="15" maxLength="25" mapId="261"/>	
+	<fish id="400816" name="四爪鱼" description="只在钓鱼大赛时出现的特殊鱼类" minWeight="0.25" maxWeight="0.5" minLength="15" maxLength="25" mapId="261"/>	
+	<fish id="400817" name="九幽龙鱼" description="只在钓鱼大赛时出现的特殊鱼类" minWeight="0.25" maxWeight="0.5" minLength="15" maxLength="25" mapId="261"/>	
+	<fish id="400818" name="笑眯眯鲨鱼" description="凤凰杯赛时出现过的特殊鱼类" minWeight="0.25" maxWeight="0.5" minLength="15" maxLength="25" mapId="261"/>	
+	<fish id="400819" name="绿豆豆鱼" description="凤凰杯赛时出现过的特殊鱼类" minWeight="0.25" maxWeight="0.5" minLength="15" maxLength="25" mapId="261"/>	
+	<fish id="400820" name="小美人鱼" description="凤凰杯赛时出现过的特殊鱼类" minWeight="0.25" maxWeight="0.5" minLength="15" maxLength="25" mapId="261"/>	
+	<fish id="400821" name="黄不拉吉鱼" description="凤凰杯赛时出现过的特殊鱼类" minWeight="0.25" maxWeight="0.5" minLength="15" maxLength="25" mapId="261"/>	
+	<fish id="400822" name="玄玉鲤鱼" description="完成青竹迷境的每日任务中获得" minWeight="0.25" maxWeight="0.5" minLength="15" maxLength="25" mapId="261"/>	
+	<fish id="400823" name="金鱼小米" description="只有五月才会出现的金色小鱼，有了它可以获得劳动节纪念版米咔" minWeight="0.15" maxWeight="0.4" minLength="10" maxLength="15" mapId="261"/>	
+	<fish id="400824" name="烈火黑岩" description="烈火黑岩" minWeight="0.25" maxWeight="0.5" minLength="15" maxLength="25" mapId="261"/>	
 
 
 

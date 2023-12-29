@@ -121,11 +121,11 @@ package com.taomee.seer2.app.processor.map
       {
          var index:int = 0;
          var event:MouseEvent = param1;
-         if(!QuestManager.isComplete(10181))
-         {
-            AlertManager.showAlert("你还没有完成沁灵兽的试炼任务，不能挑战我");
-            return;
-         }
+//         if(!QuestManager.isComplete(10181))
+//         {
+//            AlertManager.showAlert("你还没有完成沁灵兽的试炼任务，不能挑战我");
+//            return;
+//         }
          index = this.mobiles.indexOf(event.target as Mobile);
          if(index != 4)
          {

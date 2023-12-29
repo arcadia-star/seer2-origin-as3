@@ -221,7 +221,7 @@ package com.taomee.seer2.app.controls
          this.addWidget(DicInputFrameWidget.DIC_INPUT,new DicInputFrameWidget(this._mainUI["dicPanel"]));
          this.addWidget(YueseNonoWidgetClick.YUESE_NONO,new YueseNonoWidgetClick(this._mainUI["yueseNono"]));
          this.addWidget(SystemWidgetClick.SYSTEM_WIDGET,new SystemWidgetClick(this._mainUI["systemPanel"]));
-         this.addWidget(ShouyouWidgetClick.SHOUYOU_WIDGET,new ShouyouWidgetClick(this._mainUI["shouyouBtn"]));
+         //this.addWidget(ShouyouWidgetClick.SHOUYOU_WIDGET,new ShouyouWidgetClick(this._mainUI["shouyouBtn"]));
          this._mainUI["userUp"].gotoAndStop(1);
          this._mainUI["userUp"].buttonMode = true;
          this._mainUI.addChild(this._mainUI["userUp"]);

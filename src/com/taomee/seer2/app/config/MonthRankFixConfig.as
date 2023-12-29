@@ -91,7 +91,7 @@ package com.taomee.seer2.app.config
          }
          else
          {
-            AlertManager.showAlert("请配置 MonthRankFix.xml.更新排行榜数据！");
+            AlertManager.showAlert("请清理浏览器缓存 以更新排行榜数据！");
          }
          return 0;
       }

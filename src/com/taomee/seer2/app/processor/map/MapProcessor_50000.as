@@ -150,7 +150,8 @@ package com.taomee.seer2.app.processor.map
          this._mimaMC = _map.content["mimaMC"];
          this._mimaMC.buttonMode = true;
          this._mimaMC.addEventListener(MouseEvent.CLICK,this.onMima);
-         this.initSemiya();
+         this.initBirth();
+         //this.initSemiya();
          this.initNextyearActivity();
          this.lovePaoPoaActInit();
          this.initFoolDay();

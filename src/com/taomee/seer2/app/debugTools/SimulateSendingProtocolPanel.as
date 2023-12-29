@@ -8,7 +8,9 @@ package com.taomee.seer2.app.debugTools
    import com.taomee.seer2.app.net.CommandSet;
    import com.taomee.seer2.app.net.Connection;
    import com.taomee.seer2.app.net.ErrorMap;
+   import com.taomee.seer2.app.popup.AlertManager;
    import com.taomee.seer2.app.shopManager.ShopManager;
+   import com.taomee.seer2.app.swap.SwapManager;
    import com.taomee.seer2.core.map.grids.HashMap;
    import com.taomee.seer2.core.net.LittleEndianByteArray;
    import com.taomee.seer2.core.net.MessageEvent;
@@ -89,9 +91,10 @@ package com.taomee.seer2.app.debugTools
          this._parameterTxt = this._mainUI["parameterTxt"];
          this._parameterTxt.text = "";
          this._formatTxt = this._mainUI["formatTxt"];
-         this._formatTxt.text = "";
+         this._formatTxt.text = "这里不填";
+         this._formatTxt.mouseEnabled = this._formatTxt.mouseWheelEnabled = false;
          this._msgContentTxt = this._mainUI["msgContentTxt"];
-         this._msgContentTxt.text = "";
+         this._msgContentTxt.text = "协议号:1055 兑换 1224 购买 1500 对战\n" + "兑换类参数:\n2413 约瑟 3466 紫魂 2772 日常3钻 4658 养成 4659 星屑 3915 神迹米咔\n" + "对战类参数:\n1095 龙魄 1432 阿兹尔 1505 无限D药 1655 罗澜 1897 雷克萨斯\n" + "购买类参数:\n203415 复苏纹章 401245 鸿蒙晶体 201097 10钻无敌胶囊";
          this._msgContentTxt.mouseEnabled = this._msgContentTxt.mouseWheelEnabled = false;
          this._scrollBar = new Scroller(this._mainUI["scroll"]);
          this._scrollBar.x = 510;
@@ -115,7 +118,7 @@ package com.taomee.seer2.app.debugTools
          var _loc2_:Array = null;
          var _loc3_:Object = null;
          this._curCommand = Command.getCommand(uint(this._protocolNumTxt.text));
-         if(this._curCommand)
+         if(this._protocolNumTxt.text != 9999)
          {
             this._protocol = ProtocolConfig.getProtocol(this._curCommand.id);
             _loc3_ = this._specialCmdMap.getValue(this._curCommand);
@@ -128,7 +131,7 @@ package com.taomee.seer2.app.debugTools
                this.appendMsgText(this._protocol.toString());
                if(this._protocol.haveReturn)
                {
-                  this.addCommandListenner(this._curCommand);
+                  //this.addCommandListenner(this._curCommand);
                }
                if(this._parameterTxt.text != "")
                {
@@ -462,11 +465,11 @@ package com.taomee.seer2.app.debugTools
          this.appendMsgText("\n" + this._curCommand.toString() + ":成功回包\n");
          for each(_loc4_ in _loc2_)
          {
-            this.appendMsgText(_loc3_ + ":" + _loc4_ + "\n");
-            _loc3_++;
+//            this.appendMsgText(_loc3_ + ":" + _loc4_ + "\n");
+//            _loc3_++;
          }
       }
-      
+
       private function errorMsgHandler(param1:MessageEvent) : void
       {
          Connection.removeCommandListener(this._curCommand,this.rightMsgHandler);
@@ -480,6 +483,8 @@ package com.taomee.seer2.app.debugTools
          this._specialCmdMap = new HashMap();
          this._specialCmdMap.put(CommandSet.FIGHT_START_WILD_1500,{"handler":this.fightWithWildHandler});
          this._specialCmdMap.put(CommandSet.MI_BUY_ITEM_1224,{"handler":this.buyItemHandler});
+         this._specialCmdMap.put(CommandSet.FIGHT_NPC_1511,{"handler":this.fightWithNPCdHandler});
+         this._specialCmdMap.put(CommandSet.ITEM_EXCHANGE_1055,{"handler":this.swapItemHandler});
       }
       
       private function fightWithWildHandler(param1:String) : void
@@ -522,6 +527,31 @@ package com.taomee.seer2.app.debugTools
          else
          {
             ShopManager.buyVirtualItem(_loc3_);
+         }
+      }
+
+      private function fightWithNPCdHandler(param1:String) : void
+      {
+         if(isNaN(Number(param1)))
+         {
+            this._errorVector.push("错误：战斗id非法");
+         }
+         else
+         {
+            FightManager.startFightWithNPC(uint(param1));
+         }
+      }
+
+      private function swapItemHandler(param1:String) : void
+      {
+         if(param1 == "4309" || param1 == "3547" || param1 == "3596" || param1 == "3633" || param1 == "3800" || param1 == "3827" || param1 == "3923" || param1 == "4650" || param1 == "4301")
+         {
+            this._errorVector.push("三思而后行");
+            AlertManager.showAlert("已经领取过");
+         }
+         else
+         {
+            SwapManager.swapItem(uint(param1));
          }
       }
    }

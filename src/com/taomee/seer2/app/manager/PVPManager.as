@@ -42,7 +42,7 @@ package com.taomee.seer2.app.manager
          _loc3_.onComplete = startMate;
          _loc3_.isShowSelected = _pvpInfo.isShowTag;
          _loc3_.defaultPets = getDefaultPets(_pvpInfo.mode,PetInfoManager.getAllBagPetInfo());
-         if(_pvpInfo.minPetNum == 6 && _pvpInfo.maxPetNum == 6)
+         if(_pvpInfo.minPetNum == 7 && _pvpInfo.maxPetNum == 7)
          {
             _loc4_ = new Vector.<uint>();
             for each(_loc5_ in _loc3_.defaultPets)

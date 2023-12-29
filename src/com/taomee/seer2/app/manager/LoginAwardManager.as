@@ -73,7 +73,7 @@ package com.taomee.seer2.app.manager
          }
          showLoginReward();
          showConisActivityPanel();
-         showPhoneGamePanle();
+         //showPhoneGamePanle();
          showAttentionPanel();
          KingFightTrialWinHandle();
          if(SceneManager.active.type == SceneType.LOBBY && SceneManager.prevSceneType != SceneType.ARENA)

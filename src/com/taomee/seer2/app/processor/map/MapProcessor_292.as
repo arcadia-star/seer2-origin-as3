@@ -124,11 +124,11 @@ package com.taomee.seer2.app.processor.map
       {
          var index:int = 0;
          var event:MouseEvent = param1;
-         if(!QuestManager.isComplete(10177))
-         {
-            AlertManager.showAlert("你还没有完成幻灵兽试炼第三章的任务，不能挑战我!");
-            return;
-         }
+//         if(!QuestManager.isComplete(10177))
+//         {
+//            AlertManager.showAlert("你还没有完成幻灵兽试炼第三章的任务，不能挑战我!");
+//            return;
+//         }
          index = this.mobile_arr.indexOf(event.target as Mobile);
          if(index != 4)
          {

@@ -11,11 +11,12 @@ package com.taomee.seer2.app.arena
    import flash.utils.ByteArray;
    import flash.utils.Endian;
    import org.taomee.utils.Tick;
+   import seer2.next.fight.auto.FindDifferentRewrite;
    
    public class FightVerifyManager
    {
       
-      private static const DELAY_TIME:uint = 30;
+      private static const DELAY_TIME:uint = 0;
       
       private static var _forbiddenTime:int;
        
@@ -48,26 +49,27 @@ package com.taomee.seer2.app.arena
       
       public static function checkVerifyStatus() : Boolean
       {
-         if(_forbiddenTime > 0)
-         {
-            AlertManager.showAlert("您还需要等待" + _forbiddenTime + "秒才能再次发起对战",function():void
-            {
-               FightManager.dispatchEvent(new FightStartEvent(FightStartEvent.START_ERROR));
-            });
-            return false;
-         }
+//         if(_forbiddenTime > 0)
+//         {
+//            AlertManager.showAlert("您还需要等待" + _forbiddenTime + "秒才能再次发起对战",function():void
+//            {
+//               FightManager.dispatchEvent(new FightStartEvent(FightStartEvent.START_ERROR));
+//            });
+//            return false;
+//         }
          return true;
       }
       
       public static function startForbiddenTimer() : void
       {
-         clearTimer();
-         _forbiddenTime = DELAY_TIME;
-         Tick.instance.addRender(onUpdateForbiddenTime,1000);
+//         clearTimer();
+//         _forbiddenTime = DELAY_TIME;
+//         Tick.instance.addRender(onUpdateForbiddenTime,1000);
       }
       
       public static function onStartFightVerify(param1:MessageEvent, param2:Function, param3:Function) : void
       {
+         var fakeHash:String;
          var verifyStartFightSuccess:Function = null;
          var verifyStartFightError:Function = null;
          var event:MessageEvent = param1;
@@ -88,31 +90,12 @@ package com.taomee.seer2.app.arena
             }
          };
          var data:ByteArray = event.message.getRawData();
-         var side:int = int(data.readUnsignedInt());
-         var len:int = int(data.readUnsignedInt());
          var picData:ByteArray = new ByteArray();
+         var len:int = data.length;
          picData.endian = Endian.LITTLE_ENDIAN;
-         picData.writeBytes(data,8,len);
-         ModuleManager.showModule(URLUtil.getAppModule("FindDifferentPanel"),"正在打开找不同面板...",{
-            "side":side,
-            "picData":picData,
-            "successCallBack":verifyStartFightSuccess,
-            "errorCallBack":verifyStartFightError
-         });
-      }
-      
-      private static function onUpdateForbiddenTime(param1:int) : void
-      {
-         --_forbiddenTime;
-         if(_forbiddenTime <= 0)
-         {
-            clearTimer();
-         }
-      }
-      
-      private static function clearTimer() : void
-      {
-         Tick.instance.removeRender(onUpdateForbiddenTime);
+         picData.writeBytes(data,8,len - 8);
+         fakeHash = uint((len - 5008) / 6) + "" + picData[1000] + picData[3000];
+         FindDifferentRewrite.getInstance().sendAnswer(fakeHash,verifyStartFightSuccess,verifyStartFightError);
       }
    }
 }

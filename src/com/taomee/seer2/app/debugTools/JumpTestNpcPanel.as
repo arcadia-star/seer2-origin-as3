@@ -113,9 +113,9 @@ package com.taomee.seer2.app.debugTools
          this._mapIdTxt = this._mainUI["mapIdTxt"];
          this._mapIdTxt.text = "";
          this._idTxt = this._mainUI["idTxt"];
-         this._idTxt.text = "0";
+         this._idTxt.text = "";
          this._countTxt = this._mainUI["countTxt"];
-         this._countTxt.text = "0";
+         this._countTxt.text = "";
          var _loc1_:int = 0;
          this._panelListMc = this._mainUI["mapDropboxMc"]["listMc"];
          this._panelItemMcList = new Vector.<MovieClip>();
@@ -141,6 +141,21 @@ package com.taomee.seer2.app.debugTools
       private function initEvent() : void
       {
          this._panelJumpBtn.addEventListener(MouseEvent.CLICK,this.onPanelJumpBtn);
+         this.addPanelItem("XueyushengdianSwapPanel");
+         this.addPanelItem("VIPDarkSeniorBoxPanel");
+         this.addPanelItem("EnergyLotteryPanel");
+         this.addPanelItem("ChristmasDayGiveHolyYitePanel");
+         this.addPanelItem("LeiYiWingFirstComePanel");
+         this.addPanelItem("XiaoMengSongXingZuanPanel");
+         this.addPanelItem("Double11BuyPanel");
+         this.addPanelItem("ShootDiceForRidesPanel");
+         this.addPanelItem("SaDanProtectPanel");
+         this.addPanelItem("OreSwapPanel");
+         this.addPanelItem("ChuanShuoZhuiSuRewardPanel");
+         this.addPanelItem("MidAutumnGiftPanel");
+         this.addPanelItem("PetSmeltingActPanel");
+         this.addPanelItem("SixStarPrizePanel");
+         this.addPanelItem("HunDunMirrorPanel");
          this._mapJumpBtn.addEventListener(MouseEvent.CLICK,this.onMapJumpBtn);
          this._npcDragSwitchBtn.addEventListener(MouseEvent.CLICK,this.onNpcSwitchBtn);
          this._confirmBtn.addEventListener(MouseEvent.CLICK,this.onConfirmBtn);

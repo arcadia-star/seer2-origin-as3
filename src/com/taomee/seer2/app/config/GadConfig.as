@@ -37,6 +37,7 @@ package com.taomee.seer2.app.config
          for each(_loc2_ in _loc1_)
          {
             initXML(_loc2_);
+            storeXml(_loc2_);
          }
       }
       

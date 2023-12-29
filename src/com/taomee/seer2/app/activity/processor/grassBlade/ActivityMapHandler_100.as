@@ -137,7 +137,7 @@ package com.taomee.seer2.app.activity.processor.grassBlade
          this._ufo.y = 1.25;
          SceneManager.active.mapModel.ground.addChild(this._ufo);
          this._teleport = new Teleport();
-         this._teleport.setData(<teleport name="碧玉森林" pos="490,110" targetMapId="101" targetPos="280,370"/>);
+         this._teleport.setData(<teleport name="碧玉森林" pos="620,100" targetMapId="101" targetPos="300,450"/>);
          this._teleport.addEventListener(MouseEvent.CLICK,this.onActivityTeleportClick,false,1);
          SceneManager.active.mapModel.content.addChild(this._teleport);
          this._teleportAniamtion = SceneManager.active.mapModel.libManager.getMovieClip("SMOKE");

@@ -36,7 +36,7 @@ package com.taomee.seer2.app.processor.map
          this._dreamOneMainMC = _map.content["dreamOneMainMC"];
          this._dreamOneEggMC = _map.content["dreamOneEggMC"];
          DreamOneEntry.dreamOneEntry(this._dreamOneMainMC,this._dreamOneEggMC);
-         VipMonGiftPetDreamStrongManager.init();
+         //VipMonGiftPetDreamStrongManager.init();
       }
       
       private function onPetSmelt(param1:MouseEvent) : void

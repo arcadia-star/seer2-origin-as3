@@ -595,7 +595,7 @@ package com.taomee.seer2.app.inventory
       {
          var _loc2_:IDataInput = param1.message.getRawData();
          var _loc3_:uint = uint(_loc2_.readUnsignedInt());
-         AlertManager.showAlert("获得了" + _loc3_ + "赛尔豆");
+         ServerMessager.addMessage("获得了" + _loc3_ + "赛尔豆");
          ActorManager.actorInfo.coins += _loc3_;
       }
       

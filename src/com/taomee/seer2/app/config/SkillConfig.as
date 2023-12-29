@@ -73,7 +73,7 @@ package com.taomee.seer2.app.config
          addSkillDefinition(_loc3_,_loc4_,_loc5_,_loc6_,_loc7_,_loc8_,_loc9_);
       }
       
-      private static function parseNormalSklls(param1:XML) : void
+      public static function parseNormalSklls(param1:XML) : void
       {
          var _loc3_:XML = null;
          var _loc2_:XMLList = param1.descendants("Move");

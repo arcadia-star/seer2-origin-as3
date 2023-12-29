@@ -143,6 +143,18 @@ package com.taomee.seer2.app.config
             {
                _loc2_ = "神·";
             }
+            else if(param1 <= 5)
+            {
+               _loc2_ = "圣1·";
+            }
+            else if(param1 <= 6)
+            {
+               _loc2_ = "圣2·";
+            }
+            else if(param1 <= 7)
+            {
+               _loc2_ = "圣3·";
+            }
             else if(param1 <= 8)
             {
                _loc2_ = "圣·";
@@ -150,6 +162,18 @@ package com.taomee.seer2.app.config
             else if(param1 <= 1004)
             {
                _loc2_ = "魔·";
+            }
+            else if(param1 <= 1005)
+            {
+               _loc2_ = "冥1·";
+            }
+            else if(param1 <= 1006)
+            {
+               _loc2_ = "冥2·";
+            }
+            else if(param1 <= 1007)
+            {
+               _loc2_ = "冥3·";
             }
             else
             {

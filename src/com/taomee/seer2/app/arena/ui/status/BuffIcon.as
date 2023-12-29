@@ -40,6 +40,7 @@ package com.taomee.seer2.app.arena.ui.status
       public function setBuffId(param1:int) : void
       {
          this._buffId = param1;
+         trace("buffid: " + this._buffId);
          this._buffUrl = URLUtil.getSkillSideEffectIcon(this._buffId);
          this._icon.setIconUrl(this._buffUrl);
       }

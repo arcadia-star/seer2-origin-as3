@@ -245,11 +245,11 @@ package com.taomee.seer2.app.processor.map
       
       private function toFight(param1:MouseEvent) : void
       {
-         if(!this.isCanFight)
-         {
-            AlertManager.showAlert("必须完成目灵兽试炼第三章的挑战精灵才可以和我们对战！！");
-            return;
-         }
+//         if(!this.isCanFight)
+//         {
+//            AlertManager.showAlert("必须完成目灵兽试炼第三章的挑战精灵才可以和我们对战！！");
+//            return;
+//         }
          var _loc2_:Sprite = param1.target as Sprite;
          var _loc3_:int = this.petVec.indexOf(_loc2_);
          if(_loc3_ == 4)

@@ -54,7 +54,7 @@ package com.taomee.seer2.app.arena.ui.status
       
       private var _wuduiList:Array;
       
-      public function BuffIconBar(param1:int, param2:uint = 6)
+      public function BuffIconBar(param1:int, param2:uint = 8)
       {
          this._iconMap = new HashMap();
          this._specialList = [0,3363,3364,3365,3366,3367,3368];
@@ -216,12 +216,12 @@ package com.taomee.seer2.app.arena.ui.status
          var tip:String = this.getTraitTip(traitIndex);
          if(changedValue > 0)
          {
-            tip += "提升";
+            tip += "强化";
             iconLinkage = "UI_FightFighterTraitIncrease_" + this.getPropIconResLink(traitIndex);
          }
          else
          {
-            tip += "下降";
+            tip += "弱化";
             iconLinkage = "UI_FightFighterTraitDecrease_" + this.getPropIconResLink(traitIndex);
          }
          tip += Math.abs(changedValue);

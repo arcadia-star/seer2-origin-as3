@@ -266,7 +266,7 @@ package com.taomee.seer2.app.net
          {
             if(errorMessage != "")
             {
-               AlertManager.showAlert(errorMessage + "!");
+               //AlertManager.showAlert(errorMessage + "!");
             }
          }
          catch(e:Error)

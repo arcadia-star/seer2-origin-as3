@@ -38,26 +38,26 @@ package com.taomee.seer2.app.manager
       
       public static function init() : void
       {
-         if(SceneManager.prevSceneType == SceneType.ARENA)
-         {
-            if(FIGHT_ID == FightManager.currentFightRecord.initData.positionIndex)
-            {
-               TweenNano.delayedCall(1,function():void
-               {
-                  SceneManager.changeScene(SceneType.LOBBY,70);
-                  TweenNano.delayedCall(1,function():void
-                  {
-                     ModuleManager.showAppModule("AegisDestoryKingPanel");
-                  });
-               });
-            }
-         }
-         else
+//         if(SceneManager.prevSceneType == SceneType.ARENA)
+//         {
+//            if(FIGHT_ID == FightManager.currentFightRecord.initData.positionIndex)
+//            {
+//               TweenNano.delayedCall(1,function():void
+//               {
+//                  SceneManager.changeScene(SceneType.LOBBY,70);
+//                  TweenNano.delayedCall(1,function():void
+//                  {
+//                     ModuleManager.showAppModule("AegisDestoryKingPanel");
+//                  });
+//               });
+//            }
+//         }
+//         else
          {
             _map = SceneManager.active.mapModel;
             mapID = _map.id;
             contentMc = _map.content as MovieClip;
-            if(TimeLimitConfig.InLimitTime(263))
+            //if(TimeLimitConfig.InLimitTime(263))
             {
                CommonUseManager.hideLobbyMenu();
                QueueLoader.load(URLUtil.getActivityAnimation("aegisdestoryking"),LoadType.SWF,onResLoaded);

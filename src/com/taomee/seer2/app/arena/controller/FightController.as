@@ -34,6 +34,7 @@ package com.taomee.seer2.app.arena.controller
    import com.taomee.seer2.core.utils.URLUtil;
    import flash.display.Sprite;
    import flash.events.Event;
+   import seer2.next.fight.auto.AutoFightPanel;
    
    public class FightController implements IFightController
    {
@@ -262,6 +263,11 @@ package com.taomee.seer2.app.arena.controller
                showTeamWin(this.rightTeam);
                showTeamFailure(this.leftTeam);
             }
+            if(AutoFightPanel.isRunning)
+            {
+               this.exitFight();
+               return;
+            }
             fightMode = this._scene.fightMode;
             delayTime = 0;
             if(fightMode == FightMode.FIGHT_RING)
@@ -457,6 +463,7 @@ package com.taomee.seer2.app.arena.controller
             showPetGainEmblemMessage(this._resultInfo.gainedEmblemPetId,this._resultInfo.gainedEmblemId);
          }
          this._scene.exitFight();
+         AutoFightPanel.FightOverEvent.dispatchEvent(new Event("fightOverEvent"));
          if(FightManager.hasEventListener(FightStartEvent.FIGHT_OVER))
          {
             SceneManager.addEventListener(SceneEvent.SWITCH_COMPLETE,this.onSwitchEvent);

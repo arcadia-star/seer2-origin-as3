@@ -97,8 +97,8 @@ package com.taomee.seer2.app.arena.ui.status.panel
          }
          else
          {
-            this._isVip = false;
-            this._deposite.gotoAndStop(2);
+            this._isVip = true;
+            this._deposite.gotoAndStop(1);
          }
          this._depositTxtMc = FightUIManager.getMovieClip("New_UI_DepositTxt");
          this._depositTxtMc.x = 490;
@@ -376,7 +376,7 @@ package com.taomee.seer2.app.arena.ui.status.panel
       {
          this._title = FightUIManager.getMovieClip("New_UI_FighterTitle");
          this._title.x = 535;
-         if(ArenaUIIsNew.isNewUI)
+         //if(ArenaUIIsNew.isNewUI)
          {
             addChild(this._title);
          }

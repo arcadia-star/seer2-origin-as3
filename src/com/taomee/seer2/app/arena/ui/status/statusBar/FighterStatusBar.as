@@ -295,9 +295,10 @@ package com.taomee.seer2.app.arena.ui.status.statusBar
                if(_loc3_.length > 0)
                {
                   this.border = UIManager.getMovieClip(_loc3_);
-                  this.border.mouseEnabled = this.border.mouseChildren = false;
-                  this.border.x = 7;
-                  this.border.y = 2;
+                  this.border.mouseChildren = false;
+                  this.border.mouseEnabled = false;
+                  this.border.x = 0;
+                  this.border.y = 0;
                   _loc5_ = this.getCurBorderTargetIndex();
                   addChildAt(this.border,_loc5_ + 1);
                }
@@ -382,8 +383,7 @@ package com.taomee.seer2.app.arena.ui.status.statusBar
             this._levelSprite.removeChildAt(1);
          }
          var _loc1_:Sprite = UINumberGenerator.generateFighterLevelNumber(this._fighter.fighterInfo.level);
-         var _loc2_:int = 30;
-         _loc1_.x = _loc2_;
+         _loc1_.x = 30;
          this._levelSprite.addChild(_loc1_);
       }
       
@@ -397,7 +397,8 @@ package com.taomee.seer2.app.arena.ui.status.statusBar
          this._typeIcon.clear();
          var _loc1_:int = this._fighter.fighterInfo.typeId;
          this._typeIcon.type = _loc1_;
-         this._typeIcon.scaleX = this._typeIcon.scaleY = 0.5;
+         this._typeIcon.scaleY = 0.5;
+         this._typeIcon.scaleX = 0.5;
       }
       
       protected function setChildPosition(param1:DisplayObject, param2:int, param3:int) : void

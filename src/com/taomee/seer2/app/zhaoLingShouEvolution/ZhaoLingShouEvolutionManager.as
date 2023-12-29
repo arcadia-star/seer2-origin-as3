@@ -421,7 +421,7 @@ package com.taomee.seer2.app.zhaoLingShouEvolution
             }
             _loc3_++;
          }
-         var _loc4_:int = (_loc4_ = int(param1.infoVec[1] * 0.5)) > 100 ? 100 : _loc4_;
+         var _loc4_:int = (_loc4_ = int(param1.infoVec[1])) > 200 ? 200 : _loc4_;
          this._barMc.gotoAndStop(_loc4_);
          TooltipManager.addCommonTip(this._barMc,_loc4_.toString());
          this._mainUI.visible = true;

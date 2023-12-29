@@ -12,6 +12,7 @@ package com.taomee.seer2.app.debugTools
    import flash.text.TextField;
    import flash.ui.Mouse;
    import flash.ui.MouseCursor;
+   import seer2.next.fight.auto.AutoFightPanel;
    
    public class DebugTools extends Sprite
    {
@@ -65,6 +66,8 @@ package com.taomee.seer2.app.debugTools
          this.addSpriteToPanel(SimulateSendingProtocolPanel.instance());
          this.addBtnToPanel(new this.FuncBtn(),"修改","跳转地图、拖动NPC");
          this.addSpriteToPanel(JumpTestNpcPanel.instance());
+         this.addBtnToPanel(new this.FuncBtn(),"战斗","自动刷怪");
+         this.addSpriteToPanel(AutoFightPanel.instance());
          addChild(this._mainUI);
       }
       

@@ -24,7 +24,9 @@ package com.taomee.seer2.app.arena
    import com.taomee.seer2.core.scene.LayerManager;
    import com.taomee.seer2.core.scene.SceneManager;
    import flash.display.Sprite;
+   import flash.events.Event;
    import flash.utils.setTimeout;
+   import seer2.next.fight.auto.AutoFightPanel;
    
    public class ArenaScene extends BaseScene
    {
@@ -96,6 +98,7 @@ package com.taomee.seer2.app.arena
             _loc1_ = PVPDoorSupport.getInstance().supportInfo.targetMapId;
          }
          SceneManager.changeScene(SceneManager.prevSceneType,_loc1_);
+         AutoFightPanel.FightOverEvent.dispatchEvent(new Event("fightOverEvent"));
       }
       
       public function updateWeather(param1:uint) : void

@@ -25,6 +25,7 @@ package com.taomee.seer2.app.arena.controller
    import com.taomee.seer2.core.utils.DisplayObjectUtil;
    import flash.display.Sprite;
    import flash.events.Event;
+   import seer2.next.fight.auto.AutoFightPanel;
    
    public class ArenaUIController implements IArenaUIController
    {
@@ -90,7 +91,7 @@ package com.taomee.seer2.app.arena.controller
       {
          this._fightPointPanel = new FightPointPanel();
          this._fightPointPanel.y = 541;
-         if(ArenaUIIsNew.isNewUI)
+         //if(ArenaUIIsNew.isNewUI)
          {
             this._contentValue.addChild(this._fightPointPanel);
          }
@@ -137,7 +138,7 @@ package com.taomee.seer2.app.arena.controller
          this._controlPanel = this.creControl();
          if(ArenaUIIsNew.isNewUI == false)
          {
-            this._controlPanel.x = 0;
+            this._controlPanel.x = 246;
             this._controlPanel.y = 513;
          }
          else
@@ -203,7 +204,11 @@ package com.taomee.seer2.app.arena.controller
             _scene.sortAllFighters();
             activeControlSkillPanel(fighter);
             updateStatusPanelInfo();
-            if(ArenaUIIsNew.isDeposit == false)
+            if(AutoFightPanel.isRunning)
+            {
+               _controlPanel.automate2();
+            }
+            else if(ArenaUIIsNew.isDeposit == false)
             {
                ArenaAnimationManager.showCountDown(_scene.fightMode,_controlPanel);
             }

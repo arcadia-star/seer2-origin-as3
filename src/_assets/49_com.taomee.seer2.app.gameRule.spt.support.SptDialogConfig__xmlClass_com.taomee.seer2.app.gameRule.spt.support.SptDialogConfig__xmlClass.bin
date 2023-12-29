@@ -910,10 +910,10 @@
 				<dialog npcId="11" npcName="多罗" transport="">
 					<branch id="default">
 						<node emotion="2">
-							<![CDATA[队…队长，艾丽希斯只有在<font color="#FF0000">每天13:00-15:00</font>阳光最烈的时候才能够挑战！]]>
+							<![CDATA[队…队长，艾丽希斯只有在<font color="#FF0000">2012年4月1日至2022年4月2日的13:00~15:00</font>阳光最烈的时候才能够挑战！]]>
 						</node>
 						<reply action="close">
-							<![CDATA[嗯……那我等时间到了再来。]]>
+							<![CDATA[嗯……已经错过了，后面的冒险无法继续了]]>
 						</reply>
 					</branch>
 				</dialog>
@@ -1165,7 +1165,7 @@
 				<dialog npcId="11" npcName="多罗" transport="">
 					<branch id="default">
 						<node emotion="0">
-							<![CDATA[队…队长，梵尔尼看起来好厉害，我们、我们等<font color="#FF0000">打败梵尔尼</font>，并且精灵<font color="#FF0000">{100}级</font>再来吧！]]>
+							<![CDATA[队…队长，梵尔尼看起来好厉害，我们、我们等<font color="#FF0000">打败特米提</font>，并且精灵<font color="#FF0000">{100}级</font>再来吧！]]>
 						</node>
 						<reply action="close">
 							<![CDATA[等着吧，我很快会回来的。]]>
@@ -1255,9 +1255,9 @@
 
 	<spt sptid="997" name="撒莱尔">
 		<talks>
-			<talk content="队长，别泄气，我看到撒莱尔的弱点了！用草系、电系、特质系、光系、龙系更容易打败撒莱尔！"/>
+			<talk content="队长，别泄气，我看到撒莱尔的弱点了！用水系、电系、特质系、光系、暗影系更容易打败撒莱尔！"/>
 			<talk content="队长，别泄气，我看到撒莱尔的弱点了！撒莱尔会通过邪念不断累积速度值来提高爆发及生存能力。"/>
-			<talk content="队长，别泄气，我看到撒莱尔的弱点了！小心撒莱尔在使用必杀技后有一定几率使对手害怕"/>
+			<talk content="队长，别泄气，我看到撒莱尔的弱点了！小心撒莱尔在使用必杀后有一定几率使对手害怕"/>
 		</talks>
 		<dialogs>
 			<sptDialog id="1">

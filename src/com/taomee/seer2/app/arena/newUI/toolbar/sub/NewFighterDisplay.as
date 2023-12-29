@@ -11,6 +11,7 @@ package com.taomee.seer2.app.arena.newUI.toolbar.sub
    import flash.display.Shape;
    import flash.display.Sprite;
    import flash.text.TextField;
+   import flash.text.TextFormat;
    
    public class NewFighterDisplay extends Sprite
    {
@@ -40,9 +41,17 @@ package com.taomee.seer2.app.arena.newUI.toolbar.sub
       
       private var _shape:Shape;
       
+      private var keZhiDisplay:TextField;
+      
+      private var myFont:TextFormat;
+      
       public function NewFighterDisplay()
       {
          super();
+         keZhiDisplay = new TextField();
+         myFont = new TextFormat();
+         myFont.size = 15;
+         myFont.bold = true;
          this.mouseChildren = false;
          this.buttonMode = true;
          this._backBtn = FightUIManager.getMovieClip("New_UI_FightPetBtn");
@@ -96,6 +105,34 @@ package com.taomee.seer2.app.arena.newUI.toolbar.sub
       {
          var _loc2_:uint = uint(PetPressConfig.getFrame(this._fighter.fighterInfo.typeId,param1));
          this._backBtn.gotoAndStop(_loc2_);
+         var _loc3_:uint = uint(PetPressConfig.getFrame(param1,this._fighter.fighterInfo.typeId));
+         this.keZhiDisplay.alpha = 0.9;
+         this.keZhiDisplay.backgroundColor = 263172;
+         this.keZhiDisplay.background = true;
+         this.keZhiDisplay.width = 68;
+         this.keZhiDisplay.height = 20;
+         this.keZhiDisplay.x = -10;
+         this.keZhiDisplay.y = -60;
+         switch(_loc3_)
+         {
+            case 1:
+               this.keZhiDisplay.background = false;
+               keZhiDisplay.text = "";
+               break;
+            case 2:
+               keZhiDisplay.text = "被克制❌";
+               myFont.color = 16462392;
+               break;
+            case 3:
+               keZhiDisplay.text = "可防御🔰";
+               myFont.color = 7929644;
+               break;
+            case 4:
+               keZhiDisplay.text = "可免疫🌟";
+               myFont.color = 7400439;
+         }
+         this.keZhiDisplay.setTextFormat(myFont);
+         addChild(this.keZhiDisplay);
       }
       
       public function clear() : void

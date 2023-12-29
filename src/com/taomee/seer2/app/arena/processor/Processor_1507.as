@@ -52,7 +52,7 @@ package com.taomee.seer2.app.arena.processor
          var _loc4_:String;
          if((_loc4_ = fightController.state) == FightState.ESCAPE)
          {
-            AlertManager.showAutoCloseAlert("逃跑成功",3,_loc3_);
+            AlertManager.showAutoCloseAlert("逃跑成功",1,_loc3_);
             SoundManager.backgroundSoundEnabled = true;
             return;
          }

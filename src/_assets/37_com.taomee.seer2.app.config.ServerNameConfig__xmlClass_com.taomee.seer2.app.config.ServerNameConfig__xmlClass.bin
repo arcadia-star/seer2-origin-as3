@@ -51,9 +51,9 @@
 	<node id="48" name="信奉广场8"/>
 	<node id="49" name="信奉广场9"/>
 	<node id="50" name="信奉广场10"/>
-	<node id="51" name="新手服务器1" isNew="1"/>
-	<node id="52" name="新手服务器2" isNew="1"/>
-	<node id="53" name="新手服务器3" isNew="1"/>
+	<node id="51" name="新手服务器1" isNew="0"/>
+	<node id="52" name="新手服务器2" isNew="0"/>
+	<node id="53" name="新手服务器3" isNew="0"/>
 	<node id="54" name="新手服务器4" isNew="1"/>
 	<node id="55" name="新手服务器5" isNew="1"/>
 	<node id="56" name="新手服务器6" isNew="1"/>

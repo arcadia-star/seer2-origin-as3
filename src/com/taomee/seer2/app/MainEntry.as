@@ -62,7 +62,7 @@ package com.taomee.seer2.app
       
       private var _isConection:Boolean = false;
       
-      private var _root:Sprite;
+      public var _root:Sprite;
       
       private var _bg:Sprite;
       
@@ -70,7 +70,7 @@ package com.taomee.seer2.app
       {
          super();
       }
-      
+
       public function setXML(param1:XML, param2:XML) : void
       {
          ClientConfig.setXML(param1);
@@ -121,6 +121,13 @@ package com.taomee.seer2.app
          SceneManager.addEventListener(SceneEvent.SWITCH_COMPLETE,this.onSwitchComplete);
          TaomeeManager.stage.addEventListener(Event.RESIZE,this.onResize);
          this.onResize(null);
+         try
+         {
+            //Seer2NextEntry.initialize();
+         }
+         catch(e:*)
+         {
+         }
       }
       
       public function getImageModuleShow() : void
@@ -219,12 +226,31 @@ package com.taomee.seer2.app
          return _loc1_;
       }
       
-      public function showDebugToolPanel(param1:Boolean = false) : void
+//      public function showDebugToolPanel(param1:Boolean = false) : void
+//      {
+//         if(param1)
+//         {
+//            DebugTools.setUp(LoginInfo.account);
+//            return;
+//         }
+//         if(DebugTools.uiLoadedFlag)
+//         {
+//            if(!LayerManager.topLayer.contains(DebugTools.getInstance()))
+//            {
+//               LayerManager.topLayer.addChild(DebugTools.getInstance());
+//            }
+//            else
+//            {
+//               DisplayObjectUtil.removeFromParent(DebugTools.getInstance());
+//            }
+//         }
+//      }
+
+      public static function showDebugToolPanel(param1:Boolean = true) : void
       {
          if(param1)
          {
             DebugTools.setUp(LoginInfo.account);
-            return;
          }
          if(DebugTools.uiLoadedFlag)
          {
@@ -234,11 +260,11 @@ package com.taomee.seer2.app
             }
             else
             {
-               DisplayObjectUtil.removeFromParent(DebugTools.getInstance());
+               LayerManager.topLayer.addChild(DebugTools.getInstance());
             }
          }
       }
-      
+
       private function runConnection(param1:int) : void
       {
          if(!this._isConection)
@@ -296,7 +322,7 @@ package com.taomee.seer2.app
       {
          LoadingBar.show("正在进入地图");
          UIManager.setup(param1.content);
-         this.showDebugToolPanel(true);
+         showDebugToolPanel(false);
          this.initBean();
          StatisticsManager.newSendNovice("_newtrans_","fLoadInfoSucc","加载资源成功");
       }

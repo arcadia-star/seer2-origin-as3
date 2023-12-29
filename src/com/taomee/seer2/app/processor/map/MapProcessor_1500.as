@@ -126,11 +126,11 @@ package com.taomee.seer2.app.processor.map
       {
          var index:int = 0;
          var e:MouseEvent = param1;
-         if(!QuestManager.isComplete(10190))
-         {
-            AlertManager.showAlert("你还没有完成月灵兽的试炼任务，不能挑战我");
-            return;
-         }
+//         if(!QuestManager.isComplete(10190))
+//         {
+//            AlertManager.showAlert("你还没有完成月灵兽的试炼任务，不能挑战我");
+//            return;
+//         }
          index = this._mobiles.indexOf(e.currentTarget as Mobile);
          if(index != 4)
          {

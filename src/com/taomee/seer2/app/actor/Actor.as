@@ -151,9 +151,9 @@ package com.taomee.seer2.app.actor
       
       protected var _curDogId:int = 0;
       
-      protected const DOGZ_RUN_SPEED:uint = 10;
+      protected const DOGZ_RUN_SPEED:uint = 25;
       
-      protected const NOMARL_RUN_SPEED:uint = 7;
+      protected const NOMARL_RUN_SPEED:uint = 20;
       
       protected var _isFloat:Boolean = true;
       

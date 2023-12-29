@@ -145,5 +145,14 @@ package com.taomee.seer2.app.config
          }
          return _loc1_;
       }
+      
+      public static function parseBuffConfigXml(param1:XML) : void
+      {
+         var _loc2_:XML = null;
+         for each(_loc2_ in param1.descendants("buff"))
+         {
+            addDefinition(uint(_loc2_.@Id),String(_loc2_.@name),String(_loc2_.@description),uint(_loc2_.@flag));
+         }
+      }
    }
 }

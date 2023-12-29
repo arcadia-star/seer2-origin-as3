@@ -38,7 +38,7 @@ package com.taomee.seer2.app.controls
       
       private var _mainPanel:MovieClip;
       
-      private var _isRetract:Boolean = true;
+      private var _isRetract:Boolean;
       
       private var _recoverBtn:SimpleButton;
       
@@ -122,7 +122,7 @@ package com.taomee.seer2.app.controls
          addChild(this._mainPanel);
          this.checkIcon();
          this._recoverBtn = this._mainPanel["recoverBtn"];
-         TooltipManager.addCommonTip(this._recoverBtn,"恢复全部精灵体力");
+         TooltipManager.addCommonTip(this._recoverBtn,"精灵恢复");
          this._petListSp = new Sprite();
          this._petListSp.x = 180;
          this._petListSp.y = 31;
@@ -136,8 +136,8 @@ package com.taomee.seer2.app.controls
          this._petListSp.addEventListener(MouseEvent.ROLL_OUT,this.onPetListHide);
          this._petListBg = this._mainPanel["petListBg"];
          this._petListSp.addChild(this._petListBg);
-         this._petListBg.x = -100 - 185;
-         this._petListBg.y = -33 + 37;
+         this._petListBg.x = -285;
+         this._petListBg.y = 4;
          this._petListBg.visible = false;
          this._mainPetItem = new PetItem();
          addChild(this._mainPetItem);
@@ -147,10 +147,10 @@ package com.taomee.seer2.app.controls
       
       private function onPetListShow(param1:MouseEvent) : void
       {
-         var _loc3_:PetInfo = null;
-         var _loc4_:PetItem = null;
+         var _loc3_:* = null;
+         var _loc4_:* = null;
          var _loc5_:int = 0;
-         var _loc6_:PetItem = null;
+         var _loc6_:* = null;
          if(this._startingPetInfo == null)
          {
             return;
@@ -179,7 +179,7 @@ package com.taomee.seer2.app.controls
             _loc4_ = new PetItem();
             this._petListSp.addChild(_loc4_);
             this._petList.push(_loc4_);
-            _loc4_.x = 3 - 185;
+            _loc4_.x = -182;
             _loc4_.y = 2 + (_loc4_.height + 2) * _loc5_ + 37;
             _loc4_.info = _loc2_[_loc5_];
             _loc5_++;
@@ -197,7 +197,7 @@ package com.taomee.seer2.app.controls
       
       private function onPetListHide(param1:MouseEvent) : void
       {
-         var _loc2_:PetItem = null;
+         var _loc2_:* = null;
          if(this._petList)
          {
             for each(_loc2_ in this._petList)
@@ -316,7 +316,7 @@ package com.taomee.seer2.app.controls
       
       private function onAddAllPetBlood(param1:MessageEvent) : void
       {
-         var _loc3_:PetInfo = null;
+         var _loc3_:* = null;
          var _loc4_:int = 0;
          Connection.removeCommandListener(CommandSet.TREAT_ALL_PET_1215,this.onAddAllPetBlood);
          var _loc2_:Vector.<PetInfo> = PetInfoManager.getAllBagPetInfo();
@@ -326,7 +326,7 @@ package com.taomee.seer2.app.controls
             PetInfoManager.dispatchEvent(PetInfoEvent.PET_PROPERTIES_CHANGE,_loc3_);
          }
          _loc4_ = int(param1.message.getRawData().readUnsignedInt());
-         ActorManager.actorInfo.coins = _loc4_;
+         ActorManager.actorInfo.coins = uint(_loc4_);
          ServerMessager.addMessage("你是VIP，每次战斗之后自动并且免费回血哦。");
       }
       
@@ -375,7 +375,7 @@ package com.taomee.seer2.app.controls
       private function onShowPetBag(param1:MouseEvent) : void
       {
          StatisticsManager.sendNovice(StatisticsManager.ui_interact_315);
-         ModuleManager.toggleModule(URLUtil.getAppModule("PetBagPanel"),"正在打开" + "精灵背包" + "...");
+         ModuleManager.toggleModule(URLUtil.getAppModule("PetBagPanel"),"正在打开精灵背包...");
       }
       
       public function dispose() : void

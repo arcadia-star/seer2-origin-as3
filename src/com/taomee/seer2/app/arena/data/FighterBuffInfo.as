@@ -45,28 +45,28 @@ package com.taomee.seer2.app.arena.data
          {
             if(ITEM_LIST.indexOf(this.buffId) != -1)
             {
-               _loc2_ = SkillSideEffectConfig.getDescription(this.buffId) + this.dummy0 + "点";
+               _loc2_ = SkillSideEffectConfig.getDescription(this.buffId).replace(",0","").replace("，",",").replace("，",",").replace("，",",").replace(" 持续直到战斗结束","").replace(" 持续到战斗结束","") + this.dummy0;
             }
             else if(EQUIP_LIST.indexOf(this.buffId) != -1)
             {
-               _loc2_ = "永久提升" + this.dummy0 + SkillSideEffectConfig.getDescription(this.buffId);
+               _loc2_ = "永久提升" + this.dummy0 + SkillSideEffectConfig.getDescription(this.buffId).replace(",0","").replace("，",",").replace("，",",");
             }
             else
             {
-               _loc2_ = SkillSideEffectConfig.getDescription(this.buffId).replace("x","" + this.round).replace("y",this.dummy0);
+               _loc2_ = SkillSideEffectConfig.getDescription(this.buffId).replace("x","" + this.round).replace("y",this.dummy0).replace(",0","").replace("，",",").replace("，",",").replace(" 持续直到战斗结束","").replace(" 持续到战斗结束","");
             }
          }
          else if(ITEM_LIST.indexOf(this.buffId) != -1)
          {
-            _loc2_ = SkillSideEffectConfig.getDescription(this.buffId) + this.dummy0 + "点";
+            _loc2_ = SkillSideEffectConfig.getDescription(this.buffId).replace(",0","") + this.dummy0 + "点";
          }
          else if(EQUIP_LIST.indexOf(this.buffId) != -1)
          {
-            _loc2_ = "永久提升" + this.dummy0 + SkillSideEffectConfig.getDescription(this.buffId);
+            _loc2_ = "永久提升" + this.dummy0 + SkillSideEffectConfig.getDescription(this.buffId).replace(",0","");
          }
          else
          {
-            _loc2_ = SkillSideEffectConfig.getDescription(this.buffId).replace("x","" + this.round).replace("y",this.dummy0);
+            _loc2_ = SkillSideEffectConfig.getDescription(this.buffId).replace("x","" + this.round).replace("y",this.dummy0).replace(",0","").replace("，",",").replace("，",",").replace(" 持续直到战斗结束","").replace(" 持续到战斗结束","");
          }
          if(this.dummy2 > 0 && EQUIP_LIST.indexOf(this.buffId) == -1)
          {
@@ -98,21 +98,21 @@ package com.taomee.seer2.app.arena.data
                }
                else
                {
-                  _loc1_ += "持续直到战斗结束";
+                  _loc1_ += ",持续到战斗结束";
                }
             }
          }
          else if(this.round <= TYPE_NEXT_TIME && this.round > TYPE_PERMANENT)
          {
-            _loc1_ += "下一回合生效";
+            _loc1_ += ",下一回合生效";
          }
          else if(this.round <= TYPE_NEXT_ROUND && this.round > TYPE_NEXT_TIME)
          {
-            _loc1_ += "下一次生效";
+            _loc1_ += ",下一次生效";
          }
          else
          {
-            _loc1_ += "持续回合" + this.round;
+            _loc1_ += ",持续回合" + this.round;
          }
          return _loc1_;
       }

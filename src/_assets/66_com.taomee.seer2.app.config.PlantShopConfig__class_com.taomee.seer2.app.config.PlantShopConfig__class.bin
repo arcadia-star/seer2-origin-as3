@@ -67,7 +67,8 @@
 		<!--桃花种子-->
 		<item referenceId="601032" price="200"/>
 		<!--芭蕉种子-->
-		<!--  			<item referenceId="601049" price="500"/>赛元宝种子-->
+		<item referenceId="601049" price="500"/>
+		<!--赛元宝种子-->
 		<item referenceId="601050" price="300"/>
 		<!--巨无霸种子-->
 		<item referenceId="601051" price="300"/>
@@ -76,9 +77,186 @@
 		<!--海棠种子-->
 		<item referenceId="601053" price="400"/>
 		<!--鸢尾种子-->
-
 		<item referenceId="601016" price="60"/>
 		<!--万圣糖果种子-->
+		<item referenceId="601572" price="0"/>
+		<!--爱泡泡-->
+		<item referenceId="601566" price="0"/>
+		<!--包心生菜-->
+		<item referenceId="601567" price="0"/>
+		<!--奶油生菜-->
+		<item referenceId="601571" price="0"/>
+		<!--恨泡泡-->
+		<item referenceId="601500" price="0"/>
+		<!--笑笑花-->
+		<item referenceId="601501" price="0"/>
+		<!--藤蔓花-->
+		<item referenceId="601502" price="0"/>
+		<!--狗尾巴草-->
+		<item referenceId="601503" price="0"/>
+		<!--蒲公英-->
+		<item referenceId="601504" price="0"/>
+		<!--雪白蒲公英-->
+		<item referenceId="601505" price="0"/>
+		<!--满天星-->
+		<item referenceId="601506" price="0"/>
+		<!--发光满天星-->
+		<item referenceId="601507" price="0"/>
+		<!--豌豆兵-->
+		<item referenceId="601508" price="0"/>
+		<!--坚硬豌豆-->
+		<item referenceId="601509" price="0"/>
+		<!--宝石花-->
+		<item referenceId="601510" price="0"/>
+		<!--炫目宝石花-->
+		<item referenceId="601511" price="0"/>
+		<!--肥硕狗尾巴草-->
+		<item referenceId="601512" price="0"/>
+		<!--铃铛果-->
+		<item referenceId="601513" price="0"/>
+		<!--闹钟铃铛-->
+		<item referenceId="601514" price="0"/>
+		<!--风信子-->
+		<item referenceId="601515" price="0"/>
+		<!--湛蓝风信子-->
+		<item referenceId="601516" price="0"/>
+		<!--百合花-->
+		<item referenceId="601517" price="0"/>
+		<!--粉色百合-->
+		<item referenceId="601518" price="0"/>
+		<!--向日葵-->
+		<item referenceId="601519" price="0"/>
+		<!--金色向日葵-->
+		<item referenceId="601520" price="0"/>
+		<!--三叶草-->
+		<item referenceId="601521" price="0"/>
+		<!--四叶草-->
+		<item referenceId="601522" price="0"/>
+		<!--亮顶蘑菇-->
+		<item referenceId="601523" price="0"/>
+		<!--蘑菇灯-->
+		<item referenceId="601524" price="0"/>
+		<!--南瓜-->
+		<item referenceId="601525" price="0"/>
+		<!--南瓜仙-->
+		<item referenceId="601527" price="0"/>
+		<!--万圣节糖果-->
+		<item referenceId="601528" price="0"/>
+		<!--孔雀花-->
+		<item referenceId="601529" price="0"/>
+		<!--栀子花-->
+		<item referenceId="601530" price="0"/>
+		<!--榛果-->
+		<item referenceId="601531" price="0"/>
+		<!--天使羽毛-->
+		<item referenceId="601532" price="0"/>
+		<!--栀子花蜜-->
+		<item referenceId="601533" price="0"/>
+		<!--奶香榛果-->
+		<item referenceId="601534" price="0"/>
+		<!--樱花-->
+		<item referenceId="601535" price="0"/>
+		<!--粉红樱花-->
+		<item referenceId="601536" price="0"/>
+		<!--葫芦-->
+		<item referenceId="601537" price="0"/>
+		<!--紫葫芦-->
+		<item referenceId="601538" price="0"/>
+		<!--胡萝卜-->
+		<item referenceId="601539" price="0"/>
+		<!--雪人胡萝卜-->
+		<item referenceId="601540" price="0"/>
+		<!--圣诞树-->
+		<item referenceId="601541" price="0"/>
+		<!--腊梅-->
+		<item referenceId="601542" price="0"/>
+		<!--含香腊梅-->
+		<item referenceId="601543" price="0"/>
+		<!--棉花-->
+		<item referenceId="601544" price="0"/>
+		<!--棉花糖-->
+		<item referenceId="601545" price="0"/>
+		<!--竹叶-->
+		<item referenceId="601546" price="0"/>
+		<!--竹片-->
+		<item referenceId="601547" price="0"/>
+		<!--迎春花-->
+		<item referenceId="601548" price="0"/>
+		<!--迎春花蕊-->
+		<item referenceId="601549" price="0"/>
+		<!--牡丹-->
+		<item referenceId="601550" price="0"/>
+		<!--七色牡丹-->
+		<item referenceId="601551" price="0"/>
+		<!--黑天使羽毛-->
+		<item referenceId="601552" price="0"/>
+		<!--桃花-->
+		<item referenceId="601553" price="0"/>
+		<!--蜜桃-->
+		<item referenceId="601554" price="0"/>
+		<!--芭蕉-->
+		<item referenceId="601555" price="0"/>
+		<!--芭蕉叶-->
+		<item referenceId="601556" price="0"/>
+		<!--太阳魔法花-->
+		<item referenceId="601557" price="0"/>
+		<!--恶魔魔法花-->
+		<item referenceId="601558" price="0"/>
+		<!--火元素奖杯-->
+		<item referenceId="601559" price="0"/>
+		<!--水元素奖杯-->
+		<item referenceId="601560" price="0"/>
+		<!--草元素奖杯-->
+		<item referenceId="601561" price="0"/>
+		<!--惊叫果-->
+		<item referenceId="601562" price="0"/>
+		<!--桂花-->
+		<item referenceId="601563" price="0"/>
+		<!--桂花蕊-->
+		<item referenceId="601564" price="0"/>
+		<!--番茄-->
+		<item referenceId="601565" price="0"/>
+		<!--番茄酱-->
+		<item referenceId="601568" price="0"/>
+		<!--毛线球球-->
+		<item referenceId="601569" price="0"/>
+		<!--毛线熊-->
+		<item referenceId="601570" price="0"/>
+		<!--红包-->
+		<item referenceId="601574" price="0"/>
+		<!--樱花果-->
+		<item referenceId="601575" price="0"/>
+		<!--被整徽章-->
+		<item referenceId="601576" price="0"/>
+		<!--整蛊徽章-->
+		<item referenceId="601578" price="0"/>
+		<!--辛勤果实-->
+		<item referenceId="601579" price="0"/>
+		<!--西瓜-->
+		<item referenceId="601580" price="0"/>
+		<!--赛元宝-->
+		<item referenceId="601581" price="0"/>
+		<!--赛小宝-->
+		<item referenceId="601583" price="0"/>
+		<!--饼之魂魄-->
+		<item referenceId="601584" price="0"/>
+		<!--月饼原料-->
+		<item referenceId="601585" price="0"/>
+		<!--大米-->
+		<item referenceId="601586" price="0"/>
+		<!--海棠花-->
+		<item referenceId="601587" price="0"/>
+		<!--垂丝海棠-->
+		<item referenceId="601588" price="0"/>
+		<!--鸢尾花-->
+		<item referenceId="601589" price="0"/>
+		<!--爱丽丝花-->
+		<item referenceId="601590" price="0"/>
+		<!--柳小树-->
+		<item referenceId="601591" price="0"/>
+		<!--氧气-->
+		<item referenceId="601592" price="0"/>
+		<!--满分果-->
 
 
 
@@ -125,7 +303,8 @@
 		<item referenceId="601019" price="70"/>
 		<item referenceId="602003" price="150"/>
 		<item referenceId="601027" price="300"/>
-		<!--<item referenceId="601024" price="200"/>圣诞树种子-->
+		<item referenceId="601024" price="200"/>
+		<!--圣诞树种子-->
 		<item referenceId="601030" price="100"/>
 		<!--暗黑天使种子-->
 	</vipShop>
@@ -314,6 +493,8 @@
 
 		<item referenceId="601589" price="150"/>
 		<!--爱丽丝花-->
+		<item referenceId="601527" price="0"/>
+		<!--万圣节糖果-->
 
 
 

@@ -17,7 +17,7 @@ package com.taomee.seer2.app.arena
    import flash.events.Event;
    import flash.events.EventDispatcher;
    import org.taomee.ds.HashMap;
-   
+   import seer2.next.fight.auto.AutoFightPanel;
    public class FightManager extends EventDispatcher
    {
       
@@ -218,8 +218,11 @@ package com.taomee.seer2.app.arena
             "positionIndex":param1,
             "type":FightRecordData.FIGHT_WILD
          },param4,param5);
-         _fightRecords.add(_loc6_.uid,_loc6_.fightRecordData);
-         _currentFightRecord = _loc6_.fightRecordData;
+         if(!AutoFightPanel.isYanshu)
+         {
+            _fightRecords.add(_loc6_.uid,_loc6_.fightRecordData);
+            _currentFightRecord = _loc6_.fightRecordData;
+         }
          return _loc6_.uid;
       }
       
@@ -232,8 +235,11 @@ package com.taomee.seer2.app.arena
             "type":FightRecordData.FIGHT_WILD,
             "bloodType":1
          },param4,param5);
-         _fightRecords.add(_loc6_.uid,_loc6_.fightRecordData);
-         _currentFightRecord = _loc6_.fightRecordData;
+         if(!AutoFightPanel.isYanshu)
+         {
+            _fightRecords.add(_loc6_.uid,_loc6_.fightRecordData);
+            _currentFightRecord = _loc6_.fightRecordData;
+         }
          return _loc6_.uid;
       }
       
@@ -244,8 +250,11 @@ package com.taomee.seer2.app.arena
             "positionIndex":param1,
             "type":FightRecordData.FIGHT_MINI_BOSS
          },param4,param5);
-         _fightRecords.add(_loc6_.uid,_loc6_.fightRecordData);
-         _currentFightRecord = _loc6_.fightRecordData;
+         if(!AutoFightPanel.isYanshu)
+         {
+            _fightRecords.add(_loc6_.uid,_loc6_.fightRecordData);
+            _currentFightRecord = _loc6_.fightRecordData;
+         }
          return _loc6_.uid;
       }
       
@@ -299,8 +308,11 @@ package com.taomee.seer2.app.arena
             "singlePetFight":param6,
             "petIds":param7
          },param5,param8);
-         _fightRecords.add(_loc9_.uid,_loc9_.fightRecordData);
-         _currentFightRecord = _loc9_.fightRecordData;
+         if(!AutoFightPanel.isYanshu)
+         {
+            _fightRecords.add(_loc9_.uid,_loc9_.fightRecordData);
+            _currentFightRecord = _loc9_.fightRecordData;
+         }
          return _loc9_.uid;
       }
       
@@ -312,8 +324,11 @@ package com.taomee.seer2.app.arena
             "count":param2,
             "lebData":param3
          },param6);
-         _fightRecords.add(_loc7_.uid,_loc7_.fightRecordData);
-         _currentFightRecord = _loc7_.fightRecordData;
+         if(!AutoFightPanel.isYanshu)
+         {
+            _fightRecords.add(_loc7_.uid,_loc7_.fightRecordData);
+            _currentFightRecord = _loc7_.fightRecordData;
+         }
          return _loc7_.uid;
       }
       
