@@ -11,6 +11,9 @@
             <entry library-id="6b3a1f1f-e3ff-47be-a00e-4089b018f37c">
               <dependency linkage="Merged" />
             </entry>
+            <entry library-id="66688d90-7d85-4705-af76-5fc7d629a574">
+              <dependency linkage="Merged" />
+            </entry>
           </entries>
           <sdk name="AIRSDK_Windows" />
         </dependencies>
@@ -44,6 +47,16 @@
         <properties id="6b3a1f1f-e3ff-47be-a00e-4089b018f37c" />
         <CLASSES>
           <root url="jar://$MODULE_DIR$/lib/greensock-taomee.swc!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library type="flex">
+        <properties id="66688d90-7d85-4705-af76-5fc7d629a574" />
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/textLayout.swc!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
