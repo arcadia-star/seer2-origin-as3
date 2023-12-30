@@ -125,11 +125,12 @@ package com.taomee.seer2.core.utils
       
       private static var _moduleResBase:String;
       
-      public static function rewrite(param1:String):String
+      public static var  rewrite:Function;
+
       {
-         return param1;
-      }
-      {
+         rewrite = function (param1:String):String {
+            return param1;
+         }
          initialize();
       }
       

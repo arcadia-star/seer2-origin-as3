@@ -49,7 +49,8 @@ package com.taomee.seer2.app
    import org.taomee.manager.TaomeeManager;
    import org.taomee.utils.StringUtil;
    import org.taomee.utils.Tick;
-   
+   import seer2.next.entry.NextEntry;
+
    public class MainEntry
    {
        
@@ -123,7 +124,7 @@ package com.taomee.seer2.app
          this.onResize(null);
          try
          {
-            //Seer2NextEntry.initialize();
+            NextEntry.initialize();
          }
          catch(e:*)
          {

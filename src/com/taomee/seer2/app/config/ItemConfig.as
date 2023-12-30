@@ -118,7 +118,7 @@ package com.taomee.seer2.app.config
          _suitMap.add(_loc2_,new SuitDefinition(_loc2_,parseString(param1,"name")));
       }
       
-      private static function parseItems(param1:XML) : void
+      public static function parseItems(param1:XML) : void
       {
          var _loc3_:XML = null;
          var _loc2_:XMLList = param1.descendants("Item");
