@@ -34,7 +34,7 @@ package com.taomee.seer2.app.arena.controller
             _scene.sortAllFighters();
          };
          var fightMode:uint = _scene.arenaData.fightMode;
-         var hasDeadFighter:Boolean = hasDeadFighter();
+         var hasDeadFighter:Boolean = this.hasDeadFighter();
          var isPvpMode:Boolean = FightMode.isPVPMode(fightMode);
          fighter.fighterInfo.fightAnger = angerVaule;
          leftTeam.replaceFighterPosition(FightPostion.MAIN,fighter);
