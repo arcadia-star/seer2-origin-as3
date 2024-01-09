@@ -114,6 +114,7 @@ package com.taomee.seer2.app.config
          _loc2_.Weight = param1.attribute("Weight");
          _loc2_.Features = param1.attribute("Features");
          _loc2_.emblemID = param1.attribute("emblemID");
+         _loc2_.emblem2ID = param1.attribute("emblem2ID");
          _loc2_.Foundin = param1.attribute("Foundin");
          _loc2_.intro = param1.attribute("intro");
          _loc2_.chara = param1.attribute("chara");
@@ -142,6 +143,7 @@ package com.taomee.seer2.app.config
          var _loc31_:String = null;
          var _loc32_:String = null;
          var _loc33_:String = null;
+         var _loc34_:uint = 0;
          var _loc2_:uint = uint(param1.@NumbersID);
          var _loc3_:String = String(param1.@ID);
          var _loc4_:PetDictionaryInfo = getPetDefinitionInfo(int(_loc3_));
@@ -179,11 +181,12 @@ package com.taomee.seer2.app.config
             _loc31_ = _loc4_.Weight;
             _loc32_ = _loc4_.chara;
             _loc33_ = _loc4_.charaPoint;
+            _loc34_ = addUintPropertyToResult(_loc4_.emblem2ID);
          }
-         addPetDefinition(_loc2_,uint(_loc3_),_loc6_,_loc29_,_loc7_,_loc8_,_loc32_,_loc33_,_loc9_,_loc10_,_loc30_,_loc31_,_loc11_,_loc27_,_loc28_,_loc12_,_loc26_,_loc13_,_loc14_,_loc15_,_loc16_,_loc17_,_loc18_,_loc19_,_loc25_,[_loc23_,_loc24_],_loc20_,_loc21_,_loc22_);
+         addPetDefinition(_loc2_,uint(_loc3_),_loc6_,_loc29_,_loc7_,_loc8_,_loc32_,_loc33_,_loc9_,_loc10_,_loc30_,_loc31_,_loc11_,_loc27_,_loc28_,_loc12_,_loc26_,_loc13_,_loc14_,_loc15_,_loc16_,_loc17_,_loc18_,_loc19_,_loc25_,[_loc23_,_loc24_],_loc20_,_loc21_,_loc22_,_loc34_);
       }
       
-      private static function addPetDefinition(param1:uint, param2:uint, param3:String, param4:int, param5:uint, param6:uint, param7:String, param8:String, param9:uint, param10:uint, param11:String, param12:String, param13:uint, param14:String, param15:uint, param16:String, param17:String, param18:uint, param19:uint, param20:uint, param21:uint, param22:uint, param23:uint, param24:Boolean, param25:String, param26:Array, param27:uint, param28:uint, param29:uint) : void
+      private static function addPetDefinition(param1:uint, param2:uint, param3:String, param4:int, param5:uint, param6:uint, param7:String, param8:String, param9:uint, param10:uint, param11:String, param12:String, param13:uint, param14:String, param15:uint, param16:String, param17:String, param18:uint, param19:uint, param20:uint, param21:uint, param22:uint, param23:uint, param24:Boolean, param25:String, param26:Array, param27:uint, param28:uint, param29:uint, param30:uint) : void
       {
          if(_maxPetResourceId < param2 && (param2 <= 1000 || param2 >= 2500 && param2 <= 3000))
          {
@@ -193,7 +196,7 @@ package com.taomee.seer2.app.config
          {
             _petNewVec.push(param2);
          }
-         _petDefinitionMap.add(param2,new PetDefinition(param1,param2,param3,param5,param6,param7,param8,param9,param10,param11,param12,param13,param14,param15,param16,param17,param18,param19,param20,param21,param22,param23,param24,param25,param26,param27,param28,param29));
+         _petDefinitionMap.add(param2,new PetDefinition(param1,param2,param3,param5,param6,param7,param8,param9,param10,param11,param12,param13,param14,param15,param16,param17,param18,param19,param20,param21,param22,param23,param24,param25,param26,param27,param28,param29,param30));
       }
       
       private static function addPetSkillSettingDefinition(param1:uint, param2:uint, param3:uint, param4:String, param5:String) : void

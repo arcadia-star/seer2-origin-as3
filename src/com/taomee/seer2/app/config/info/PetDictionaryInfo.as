@@ -15,7 +15,9 @@ package com.taomee.seer2.app.config.info
       public var Features:String;
       
       public var emblemID:String;
-      
+
+      public var emblem2ID:String;
+
       public var Foundin:String;
       
       public var intro:String;

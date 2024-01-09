@@ -31,7 +31,9 @@ package com.taomee.seer2.app.config.pet
       public var featureDescription:String;
       
       public var emblemId:uint;
-      
+
+      public var emblem2Id:uint;
+
       public var gender:String;
       
       public var foundPlace:String;
@@ -60,7 +62,7 @@ package com.taomee.seer2.app.config.pet
       
       public var realId:uint;
       
-      public function PetDefinition(param1:uint, param2:int, param3:String, param4:int, param5:int, param6:String, param7:String, param8:uint, param9:uint, param10:String, param11:String, param12:uint, param13:String, param14:uint, param15:String, param16:String, param17:uint, param18:uint, param19:uint, param20:uint, param21:uint, param22:uint, param23:Boolean, param24:String, param25:Array, param26:uint, param27:uint, param28:uint)
+      public function PetDefinition(param1:uint, param2:int, param3:String, param4:int, param5:int, param6:String, param7:String, param8:uint, param9:uint, param10:String, param11:String, param12:uint, param13:String, param14:uint, param15:String, param16:String, param17:uint, param18:uint, param19:uint, param20:uint, param21:uint, param22:uint, param23:Boolean, param24:String, param25:Array, param26:uint, param27:uint, param28:uint, param29:uint)
       {
          super();
          this.bunchId = param1;
@@ -95,6 +97,7 @@ package com.taomee.seer2.app.config.pet
          {
             this.realId = param2;
          }
+         this.emblem2Id = param29;
       }
    }
 }
