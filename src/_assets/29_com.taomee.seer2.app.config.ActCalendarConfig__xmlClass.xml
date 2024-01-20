@@ -1,0 +1,1206 @@
+<!--活动日程表
+acts节点:
+day值为0-6,分别表示星期日到星期六；
+act节点:
+name为活动的名称;
+isPet为是否是精灵活动，0为否1为是；
+willOver为是否将要下架，0为否1为是；
+timeDes为当日活动时间段；
+startTime活动开始时间；
+endTime活动结束时间;
+go为go到得面板名或者地图id；
+reward节点:
+pet精灵item为普通物品。id为对应id；
+-->
+<root>
+	<acts day="1" >
+		<act name="六星豪礼" iconId="1139"  isPet="1" willOver="0"  detailDes="豪礼天天送" timeDes="全天候" startTime="00:00" endTime="23:59" go="SixStarPrizePanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="商城每日抽奖" iconId="1139"  isPet="1" willOver="0"  detailDes="商城送星石！普通用户每日3次抽奖（VIP5次）" timeDes="全天候" startTime="00:00" endTime="23:59" go="EnergyLotteryPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="商城每日签到" iconId="1139"  isPet="1" willOver="0"  detailDes="每天签到领星石" timeDes="全天候" startTime="00:00" endTime="23:59" go="SignPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="暗黑至尊魔箱" iconId="1139"  isPet="1" willOver="0"  detailDes="开启暗黑魔箱，100%获得赛元宝种子、冥翼之芯等奖励" timeDes="全天候" startTime="00:00" endTime="23:59" go="VIPDarkSeniorBoxPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="双11特购计划"  iconId="1139"  isPet="1" willOver="0"  detailDes="巅峰精灵特价" timeDes="全天候" startTime="00:00" endTime="23:59" go="Double11BuyPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="纹章特卖大超市" iconId="1139"  isPet="1" willOver="0"  detailDes="纹章大特卖哦，各种纹章大折扣" timeDes="全天候" startTime="00:00" endTime="23:59" go="GadSuperBuyPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="进化圆梦超值购" iconId="1139"  isPet="1" willOver="0"  detailDes="进化芯片套餐！超多！超值！" timeDes="全天候" startTime="00:00" endTime="23:59" go="SuperEvolvePanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="暗黑魔盒 万圣将至" iconId="1139"  isPet="1" willOver="0"  detailDes="用约瑟之钥开启魔盒！5大绝版精灵释放而出！" timeDes="全天候" startTime="00:00" endTime="23:59" go="DarkMagicBoxPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="金球豪装撞头彩" iconId="1139"  isPet="1" willOver="0"  detailDes="金球豪装撞头彩，纪念版坐骑等你拿！" timeDes="全天候" startTime="00:00" endTime="23:59" go="NewGoodStartMainPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="回归•战神觉醒" iconId="1139"  isPet="1" willOver="0"  detailDes="收集战神印记，战神联盟免费超进化及专属超强觉醒技轻松得" timeDes="全天候" startTime="00:00" endTime="23:59" go="BackBattleGodWakedPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="精灵放生仓" iconId="1139"  isPet="1" willOver="0"  detailDes="放生精灵 获取扭蛋碎片" timeDes="全天候" startTime="00:00" endTime="23:59" go="PetSmeltingActPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="战神的天阶" iconId="1139"  isPet="1" willOver="0"  detailDes="登入天阶寻找战神觉醒的线索，天阶碎片换奖励" timeDes="全天候" startTime="00:00" endTime="23:59" go="FightHolySkyPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="六煞的深渊" iconId="1139"  isPet="1" willOver="0"  detailDes="跃出深渊，兑换暗黑六煞及精元晶石" timeDes="全天候" startTime="00:00" endTime="23:59" go="DeepRiverOfSixShaPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="商城疯了！抢1星钻精元蛋！" iconId="1139"  isPet="1" willOver="0"  detailDes="特价精元蛋，每天限时抢！暑假更新啦！" timeDes="全天候" startTime="00:00" endTime="23:59" go="CrazyShopPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="雷神之翼——初现" iconId="1139"  isPet="1" willOver="0"  detailDes="雷伊的哥哥雷诺首次现身！" timeDes="全天候" startTime="00:00" endTime="23:59" go="LeiYiWingFirstComePanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="玩转中秋送大礼" iconId="1139"  isPet="1" willOver="0"  detailDes="玩转中秋，累计礼券，兑换超值大礼！" timeDes="全天候" startTime="00:00" endTime="23:59" go="MidAutumnGiftPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="极品坐骑摇出来" iconId="1139"  isPet="1" willOver="0"  detailDes="极品坐骑摇出来，暴风、轰天免费拿" timeDes="全天候" startTime="00:00" endTime="23:59" go="ShootDiceForRidesPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="黄金12宫" iconId="1139"  isPet="1" willOver="0"  detailDes="在星空下许愿免费得黄金十二宫星座守护！" timeDes="全天候" startTime="00:00" endTime="23:59" go="Gold12Panel">
+			<reward>
+			</reward>
+		</act>
+		<act name="稀有纹章端午大放送" iconId="1139"  isPet="1" willOver="0"  detailDes="鲤鱼王、尼古拉斯、暗夜兔纹章大放送！免费得！" timeDes="全天候" startTime="00:00" endTime="23:59" go="GadIssueActPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="迎圣诞" iconId="1139"  isPet="1" willOver="0"  detailDes="王伊特 神王伊特免费得" timeDes="全天候" startTime="00:00" endTime="23:59" go="ChristmasDayGiveHolyYitePanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="小梦星钻大馈赠" iconId="1139"  isPet="1" willOver="0"  detailDes="小梦送星钻了！" timeDes="全天候" startTime="00:00" endTime="23:59" go="XiaoMengSongXingZuanPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="混沌之镜" iconId="1139"  isPet="0" willOver="0"  detailDes="混沌之镜预言属于你的精灵!" timeDes="全天候" startTime="00:00" endTime="23:59" go="HunDunMirrorPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="感恩幸运扭蛋" iconId="1139"  isPet="1" willOver="0"  detailDes="免费幸运扭蛋，各类精元蛋和丰富奖励送出！" timeDes="全天候" startTime="00:00" endTime="23:59" go="NewGiftMachinePanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="神龙豪车队" iconId="1139"  isPet="1" willOver="0"  detailDes="完成【神回答】就送四神龙及其进化芯片哦" timeDes="全天候" startTime="00:00" endTime="23:59" go="ShenLongHaoCheDuiPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="希望之光争霸赛" iconId="1139"  isPet="1" willOver="0"  detailDes="传说的追溯" timeDes="全天候" startTime="00:00" endTime="23:59" go="YueseCraft2016MainPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="绝版装扮清仓扫货" iconId="1139"  isPet="1" willOver="0"  detailDes="买装扮！全场清货一件不留了哦！" timeDes="全天候" startTime="00:00" endTime="23:59" go="EquipSupermarketPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="商城换季大清仓" iconId="1139"  isPet="1" willOver="0"  detailDes="全场1~3折 最高100钻" timeDes="全天候" startTime="00:00" endTime="23:59" go="SuperShopPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="绝版回归 春季特卖" iconId="1139"  isPet="1" willOver="0"  detailDes="全场装备最低10钻！" timeDes="全天候" startTime="00:00" endTime="23:59" go="SpringShopPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="年甲雄风" iconId="1139"  isPet="1" willOver="0"  detailDes="全新品！限量出！" timeDes="全天候" startTime="00:00" endTime="23:59" go="YearShopPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="新年特卖场" iconId="1139"  isPet="1" willOver="0"  detailDes="绝版风潮" timeDes="全天候" startTime="00:00" endTime="23:59" go="ChrismasSalePanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="骑乘晶片商店" iconId="1139"  isPet="1" willOver="0"  detailDes="免费领骑乘晶片！" timeDes="全天候" startTime="00:00" endTime="23:59" go="1600">
+			<reward>
+			</reward>
+		</act>
+		<act name="复活节跳蚤市集" iconId="1139"  isPet="1" willOver="0"  detailDes="氏族组织的跳蚤市集！1星钻跳蚤商品限购喽！" timeDes="全天候" startTime="00:00" endTime="23:59" go="EasterShopPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="凯萨的战书" iconId="1139"  isPet="1" willOver="0"  detailDes="凯萨挑战SPT 拿炎魔称号" timeDes="全天候" startTime="00:00" endTime="23:59" go="KSBattleSptPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="凯萨的战利品" iconId="1139"  isPet="1" willOver="0"  detailDes="凯萨挑战SPT 拿炎魔称号" timeDes="全天候" startTime="00:00" endTime="23:59" go="KSWarTrophiesPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="M5第2季萌宠海选" iconId="1139"  isPet="0" willOver="0"  detailDes="投票得荧光棒" timeDes="全天候" startTime="00:00" endTime="23:59" go="M5TwoSelectPetPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="矿石秘宝" iconId="1139"  isPet="1" willOver="0"  detailDes="开启秘宝！后面藏着丰富的宝藏呢！" timeDes="全天候" startTime="00:00" endTime="23:59" go="OreSwapPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="时尚三元素" iconId="1139"  isPet="1" willOver="0"  detailDes="水火草三元素就在种植园等你" timeDes="全天候" startTime="00:00" endTime="23:59" go="FashionPetPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="双倍荣誉" iconId="1139"  isPet="0" willOver="0"  detailDes="去试炼和勇士之战50V50就可获得双倍荣誉点了！" timeDes="20:00-21:00" startTime="20:00" endTime="21:00" go="450">
+			<reward>
+			</reward>
+		</act>
+		<act name="VIP翻牌" iconId="1139"  isPet="1" willOver="0"  detailDes="翻斗乐之暗夜摩托" timeDes="全天候" startTime="00:00" endTime="23:59" go="VipTurnCardPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="登录7日大礼包" iconId="1139"  isPet="1" willOver="0"  detailDes="领星座精灵+7天试用VIP！" timeDes="全天候" startTime="00:00" endTime="23:59" go="QuestNewPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="王的回归礼" iconId="1139"  isPet="1" willOver="0"  detailDes="领取回归礼物" timeDes="全天候" startTime="00:00" endTime="23:59" go="OldPlayerActPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="2周年再见礼" iconId="1139"  isPet="1" willOver="0"  detailDes="全员领取周年礼物" timeDes="全天候" startTime="00:00" endTime="23:59" go="TwoYearsEndingPanel">
+			<reward>
+			</reward>
+		</act>
+	</acts>
+	<acts day="2">
+		<act name="六星豪礼" iconId="1139"  isPet="1" willOver="0"  detailDes="豪礼天天送" timeDes="全天候" startTime="00:00" endTime="23:59" go="SixStarPrizePanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="商城每日抽奖" iconId="1139"  isPet="1" willOver="0"  detailDes="商城送星石！普通用户每日3次抽奖（VIP5次）" timeDes="全天候" startTime="00:00" endTime="23:59" go="EnergyLotteryPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="商城每日签到" iconId="1139"  isPet="1" willOver="0"  detailDes="每天签到领星石" timeDes="全天候" startTime="00:00" endTime="23:59" go="SignPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="暗黑至尊魔箱" iconId="1139"  isPet="1" willOver="0"  detailDes="开启暗黑魔箱，100%获得赛元宝种子、冥翼之芯等奖励" timeDes="全天候" startTime="00:00" endTime="23:59" go="VIPDarkSeniorBoxPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="双11特购计划"  iconId="1139"  isPet="1" willOver="0"  detailDes="巅峰精灵特价" timeDes="全天候" startTime="00:00" endTime="23:59" go="Double11BuyPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="纹章特卖大超市" iconId="1139"  isPet="1" willOver="0"  detailDes="纹章大特卖哦，各种纹章大折扣" timeDes="全天候" startTime="00:00" endTime="23:59" go="GadSuperBuyPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="进化圆梦超值购" iconId="1139"  isPet="1" willOver="0"  detailDes="进化芯片套餐！超多！超值！" timeDes="全天候" startTime="00:00" endTime="23:59" go="SuperEvolvePanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="暗黑魔盒 万圣将至" iconId="1139"  isPet="1" willOver="0"  detailDes="用约瑟之钥开启魔盒！5大绝版精灵释放而出！" timeDes="全天候" startTime="00:00" endTime="23:59" go="DarkMagicBoxPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="金球豪装撞头彩" iconId="1139"  isPet="1" willOver="0"  detailDes="金球豪装撞头彩，纪念版坐骑等你拿！" timeDes="全天候" startTime="00:00" endTime="23:59" go="NewGoodStartMainPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="回归•战神觉醒" iconId="1139"  isPet="1" willOver="0"  detailDes="收集战神印记，战神联盟免费超进化及专属超强觉醒技轻松得" timeDes="全天候" startTime="00:00" endTime="23:59" go="BackBattleGodWakedPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="精灵放生仓" iconId="1139"  isPet="1" willOver="0"  detailDes="放生精灵 获取扭蛋碎片" timeDes="全天候" startTime="00:00" endTime="23:59" go="PetSmeltingActPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="战神的天阶" iconId="1139"  isPet="1" willOver="0"  detailDes="登入天阶寻找战神觉醒的线索，天阶碎片换奖励" timeDes="全天候" startTime="00:00" endTime="23:59" go="FightHolySkyPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="六煞的深渊" iconId="1139"  isPet="1" willOver="0"  detailDes="跃出深渊，兑换暗黑六煞及精元晶石" timeDes="全天候" startTime="00:00" endTime="23:59" go="DeepRiverOfSixShaPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="商城疯了！抢1星钻精元蛋！" iconId="1139"  isPet="1" willOver="0"  detailDes="特价精元蛋，每天限时抢！暑假更新啦！" timeDes="全天候" startTime="00:00" endTime="23:59" go="CrazyShopPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="雷神之翼——初现" iconId="1139"  isPet="1" willOver="0"  detailDes="雷伊的哥哥雷诺首次现身！" timeDes="全天候" startTime="00:00" endTime="23:59" go="LeiYiWingFirstComePanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="玩转中秋送大礼" iconId="1139"  isPet="1" willOver="0"  detailDes="玩转中秋，累计礼券，兑换超值大礼！" timeDes="全天候" startTime="00:00" endTime="23:59" go="MidAutumnGiftPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="极品坐骑摇出来" iconId="1139"  isPet="1" willOver="0"  detailDes="极品坐骑摇出来，暴风、轰天免费拿" timeDes="全天候" startTime="00:00" endTime="23:59" go="ShootDiceForRidesPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="黄金12宫" iconId="1139"  isPet="1" willOver="0"  detailDes="在星空下许愿免费得黄金十二宫星座守护！" timeDes="全天候" startTime="00:00" endTime="23:59" go="Gold12Panel">
+			<reward>
+			</reward>
+		</act>
+		<act name="稀有纹章端午大放送" iconId="1139"  isPet="1" willOver="0"  detailDes="鲤鱼王、尼古拉斯、暗夜兔纹章大放送！免费得！" timeDes="全天候" startTime="00:00" endTime="23:59" go="GadIssueActPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="迎圣诞" iconId="1139"  isPet="1" willOver="0"  detailDes="王伊特 神王伊特免费得" timeDes="全天候" startTime="00:00" endTime="23:59" go="ChristmasDayGiveHolyYitePanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="小梦星钻大馈赠" iconId="1139"  isPet="1" willOver="0"  detailDes="小梦送星钻了！" timeDes="全天候" startTime="00:00" endTime="23:59" go="XiaoMengSongXingZuanPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="混沌之镜" iconId="1139"  isPet="0" willOver="0"  detailDes="混沌之镜预言属于你的精灵!" timeDes="全天候" startTime="00:00" endTime="23:59" go="HunDunMirrorPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="感恩幸运扭蛋" iconId="1139"  isPet="1" willOver="0"  detailDes="免费幸运扭蛋，各类精元蛋和丰富奖励送出！" timeDes="全天候" startTime="00:00" endTime="23:59" go="NewGiftMachinePanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="神龙豪车队" iconId="1139"  isPet="1" willOver="0"  detailDes="完成【神回答】就送四神龙及其进化芯片哦" timeDes="全天候" startTime="00:00" endTime="23:59" go="ShenLongHaoCheDuiPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="希望之光争霸赛" iconId="1139"  isPet="1" willOver="0"  detailDes="传说的追溯" timeDes="全天候" startTime="00:00" endTime="23:59" go="YueseCraft2016MainPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="绝版装扮清仓扫货" iconId="1139"  isPet="1" willOver="0"  detailDes="买装扮！全场清货一件不留了哦！" timeDes="全天候" startTime="00:00" endTime="23:59" go="EquipSupermarketPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="商城换季大清仓" iconId="1139"  isPet="1" willOver="0"  detailDes="全场1~3折 最高100钻" timeDes="全天候" startTime="00:00" endTime="23:59" go="SuperShopPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="绝版回归 春季特卖" iconId="1139"  isPet="1" willOver="0"  detailDes="全场装备最低10钻！" timeDes="全天候" startTime="00:00" endTime="23:59" go="SpringShopPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="年甲雄风" iconId="1139"  isPet="1" willOver="0"  detailDes="全新品！限量出！" timeDes="全天候" startTime="00:00" endTime="23:59" go="YearShopPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="新年特卖场" iconId="1139"  isPet="1" willOver="0"  detailDes="绝版风潮" timeDes="全天候" startTime="00:00" endTime="23:59" go="ChrismasSalePanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="骑乘晶片商店" iconId="1139"  isPet="1" willOver="0"  detailDes="免费领骑乘晶片！" timeDes="全天候" startTime="00:00" endTime="23:59" go="1600">
+			<reward>
+			</reward>
+		</act>
+		<act name="复活节跳蚤市集" iconId="1139"  isPet="1" willOver="0"  detailDes="氏族组织的跳蚤市集！1星钻跳蚤商品限购喽！" timeDes="全天候" startTime="00:00" endTime="23:59" go="EasterShopPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="凯萨的战书" iconId="1139"  isPet="1" willOver="0"  detailDes="凯萨挑战SPT 拿炎魔称号" timeDes="全天候" startTime="00:00" endTime="23:59" go="KSBattleSptPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="凯萨的战利品" iconId="1139"  isPet="1" willOver="0"  detailDes="凯萨挑战SPT 拿炎魔称号" timeDes="全天候" startTime="00:00" endTime="23:59" go="KSWarTrophiesPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="M5第2季萌宠海选" iconId="1139"  isPet="0" willOver="0"  detailDes="投票得荧光棒" timeDes="全天候" startTime="00:00" endTime="23:59" go="M5TwoSelectPetPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="矿石秘宝" iconId="1139"  isPet="1" willOver="0"  detailDes="开启秘宝！后面藏着丰富的宝藏呢！" timeDes="全天候" startTime="00:00" endTime="23:59" go="OreSwapPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="时尚三元素" iconId="1139"  isPet="1" willOver="0"  detailDes="水火草三元素就在种植园等你" timeDes="全天候" startTime="00:00" endTime="23:59" go="FashionPetPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="双倍荣誉" iconId="1139"  isPet="0" willOver="0"  detailDes="去试炼和勇士之战50V50就可获得双倍荣誉点了！" timeDes="20:00-21:00" startTime="20:00" endTime="21:00" go="450">
+			<reward>
+			</reward>
+		</act>
+		<act name="VIP翻牌" iconId="1139"  isPet="1" willOver="0"  detailDes="翻斗乐之暗夜摩托" timeDes="全天候" startTime="00:00" endTime="23:59" go="VipTurnCardPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="登录7日大礼包" iconId="1139"  isPet="1" willOver="0"  detailDes="领星座精灵+7天试用VIP！" timeDes="全天候" startTime="00:00" endTime="23:59" go="QuestNewPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="王的回归礼" iconId="1139"  isPet="1" willOver="0"  detailDes="领取回归礼物" timeDes="全天候" startTime="00:00" endTime="23:59" go="OldPlayerActPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="2周年再见礼" iconId="1139"  isPet="1" willOver="0"  detailDes="全员领取周年礼物" timeDes="全天候" startTime="00:00" endTime="23:59" go="TwoYearsEndingPanel">
+			<reward>
+			</reward>
+		</act>
+	</acts>
+	<acts day="3">
+		<act name="六星豪礼" iconId="1139"  isPet="1" willOver="0"  detailDes="豪礼天天送" timeDes="全天候" startTime="00:00" endTime="23:59" go="SixStarPrizePanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="商城每日抽奖" iconId="1139"  isPet="1" willOver="0"  detailDes="商城送星石！普通用户每日3次抽奖（VIP5次）" timeDes="全天候" startTime="00:00" endTime="23:59" go="EnergyLotteryPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="商城每日签到" iconId="1139"  isPet="1" willOver="0"  detailDes="每天签到领星石" timeDes="全天候" startTime="00:00" endTime="23:59" go="SignPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="暗黑至尊魔箱" iconId="1139"  isPet="1" willOver="0"  detailDes="开启暗黑魔箱，100%获得赛元宝种子、冥翼之芯等奖励" timeDes="全天候" startTime="00:00" endTime="23:59" go="VIPDarkSeniorBoxPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="双11特购计划"  iconId="1139"  isPet="1" willOver="0"  detailDes="巅峰精灵特价" timeDes="全天候" startTime="00:00" endTime="23:59" go="Double11BuyPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="纹章特卖大超市" iconId="1139"  isPet="1" willOver="0"  detailDes="纹章大特卖哦，各种纹章大折扣" timeDes="全天候" startTime="00:00" endTime="23:59" go="GadSuperBuyPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="进化圆梦超值购" iconId="1139"  isPet="1" willOver="0"  detailDes="进化芯片套餐！超多！超值！" timeDes="全天候" startTime="00:00" endTime="23:59" go="SuperEvolvePanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="暗黑魔盒 万圣将至" iconId="1139"  isPet="1" willOver="0"  detailDes="用约瑟之钥开启魔盒！5大绝版精灵释放而出！" timeDes="全天候" startTime="00:00" endTime="23:59" go="DarkMagicBoxPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="金球豪装撞头彩" iconId="1139"  isPet="1" willOver="0"  detailDes="金球豪装撞头彩，纪念版坐骑等你拿！" timeDes="全天候" startTime="00:00" endTime="23:59" go="NewGoodStartMainPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="回归•战神觉醒" iconId="1139"  isPet="1" willOver="0"  detailDes="收集战神印记，战神联盟免费超进化及专属超强觉醒技轻松得" timeDes="全天候" startTime="00:00" endTime="23:59" go="BackBattleGodWakedPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="精灵放生仓" iconId="1139"  isPet="1" willOver="0"  detailDes="放生精灵 获取扭蛋碎片" timeDes="全天候" startTime="00:00" endTime="23:59" go="PetSmeltingActPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="战神的天阶" iconId="1139"  isPet="1" willOver="0"  detailDes="登入天阶寻找战神觉醒的线索，天阶碎片换奖励" timeDes="全天候" startTime="00:00" endTime="23:59" go="FightHolySkyPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="六煞的深渊" iconId="1139"  isPet="1" willOver="0"  detailDes="跃出深渊，兑换暗黑六煞及精元晶石" timeDes="全天候" startTime="00:00" endTime="23:59" go="DeepRiverOfSixShaPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="商城疯了！抢1星钻精元蛋！" iconId="1139"  isPet="1" willOver="0"  detailDes="特价精元蛋，每天限时抢！暑假更新啦！" timeDes="全天候" startTime="00:00" endTime="23:59" go="CrazyShopPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="雷神之翼——初现" iconId="1139"  isPet="1" willOver="0"  detailDes="雷伊的哥哥雷诺首次现身！" timeDes="全天候" startTime="00:00" endTime="23:59" go="LeiYiWingFirstComePanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="玩转中秋送大礼" iconId="1139"  isPet="1" willOver="0"  detailDes="玩转中秋，累计礼券，兑换超值大礼！" timeDes="全天候" startTime="00:00" endTime="23:59" go="MidAutumnGiftPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="极品坐骑摇出来" iconId="1139"  isPet="1" willOver="0"  detailDes="极品坐骑摇出来，暴风、轰天免费拿" timeDes="全天候" startTime="00:00" endTime="23:59" go="ShootDiceForRidesPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="黄金12宫" iconId="1139"  isPet="1" willOver="0"  detailDes="在星空下许愿免费得黄金十二宫星座守护！" timeDes="全天候" startTime="00:00" endTime="23:59" go="Gold12Panel">
+			<reward>
+			</reward>
+		</act>
+		<act name="稀有纹章端午大放送" iconId="1139"  isPet="1" willOver="0"  detailDes="鲤鱼王、尼古拉斯、暗夜兔纹章大放送！免费得！" timeDes="全天候" startTime="00:00" endTime="23:59" go="GadIssueActPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="迎圣诞" iconId="1139"  isPet="1" willOver="0"  detailDes="王伊特 神王伊特免费得" timeDes="全天候" startTime="00:00" endTime="23:59" go="ChristmasDayGiveHolyYitePanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="小梦星钻大馈赠" iconId="1139"  isPet="1" willOver="0"  detailDes="小梦送星钻了！" timeDes="全天候" startTime="00:00" endTime="23:59" go="XiaoMengSongXingZuanPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="混沌之镜" iconId="1139"  isPet="0" willOver="0"  detailDes="混沌之镜预言属于你的精灵!" timeDes="全天候" startTime="00:00" endTime="23:59" go="HunDunMirrorPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="感恩幸运扭蛋" iconId="1139"  isPet="1" willOver="0"  detailDes="免费幸运扭蛋，各类精元蛋和丰富奖励送出！" timeDes="全天候" startTime="00:00" endTime="23:59" go="NewGiftMachinePanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="神龙豪车队" iconId="1139"  isPet="1" willOver="0"  detailDes="完成【神回答】就送四神龙及其进化芯片哦" timeDes="全天候" startTime="00:00" endTime="23:59" go="ShenLongHaoCheDuiPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="希望之光争霸赛" iconId="1139"  isPet="1" willOver="0"  detailDes="传说的追溯" timeDes="全天候" startTime="00:00" endTime="23:59" go="YueseCraft2016MainPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="绝版装扮清仓扫货" iconId="1139"  isPet="1" willOver="0"  detailDes="买装扮！全场清货一件不留了哦！" timeDes="全天候" startTime="00:00" endTime="23:59" go="EquipSupermarketPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="商城换季大清仓" iconId="1139"  isPet="1" willOver="0"  detailDes="全场1~3折 最高100钻" timeDes="全天候" startTime="00:00" endTime="23:59" go="SuperShopPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="绝版回归 春季特卖" iconId="1139"  isPet="1" willOver="0"  detailDes="全场装备最低10钻！" timeDes="全天候" startTime="00:00" endTime="23:59" go="SpringShopPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="年甲雄风" iconId="1139"  isPet="1" willOver="0"  detailDes="全新品！限量出！" timeDes="全天候" startTime="00:00" endTime="23:59" go="YearShopPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="新年特卖场" iconId="1139"  isPet="1" willOver="0"  detailDes="绝版风潮" timeDes="全天候" startTime="00:00" endTime="23:59" go="ChrismasSalePanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="骑乘晶片商店" iconId="1139"  isPet="1" willOver="0"  detailDes="免费领骑乘晶片！" timeDes="全天候" startTime="00:00" endTime="23:59" go="1600">
+			<reward>
+			</reward>
+		</act>
+		<act name="复活节跳蚤市集" iconId="1139"  isPet="1" willOver="0"  detailDes="氏族组织的跳蚤市集！1星钻跳蚤商品限购喽！" timeDes="全天候" startTime="00:00" endTime="23:59" go="EasterShopPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="凯萨的战书" iconId="1139"  isPet="1" willOver="0"  detailDes="凯萨挑战SPT 拿炎魔称号" timeDes="全天候" startTime="00:00" endTime="23:59" go="KSBattleSptPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="凯萨的战利品" iconId="1139"  isPet="1" willOver="0"  detailDes="凯萨挑战SPT 拿炎魔称号" timeDes="全天候" startTime="00:00" endTime="23:59" go="KSWarTrophiesPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="M5第2季萌宠海选" iconId="1139"  isPet="0" willOver="0"  detailDes="投票得荧光棒" timeDes="全天候" startTime="00:00" endTime="23:59" go="M5TwoSelectPetPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="矿石秘宝" iconId="1139"  isPet="1" willOver="0"  detailDes="开启秘宝！后面藏着丰富的宝藏呢！" timeDes="全天候" startTime="00:00" endTime="23:59" go="OreSwapPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="时尚三元素" iconId="1139"  isPet="1" willOver="0"  detailDes="水火草三元素就在种植园等你" timeDes="全天候" startTime="00:00" endTime="23:59" go="FashionPetPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="双倍荣誉" iconId="1139"  isPet="0" willOver="0"  detailDes="去试炼和勇士之战50V50就可获得双倍荣誉点了！" timeDes="20:00-21:00" startTime="20:00" endTime="21:00" go="450">
+			<reward>
+			</reward>
+		</act>
+		<act name="VIP翻牌" iconId="1139"  isPet="1" willOver="0"  detailDes="翻斗乐之暗夜摩托" timeDes="全天候" startTime="00:00" endTime="23:59" go="VipTurnCardPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="登录7日大礼包" iconId="1139"  isPet="1" willOver="0"  detailDes="领星座精灵+7天试用VIP！" timeDes="全天候" startTime="00:00" endTime="23:59" go="QuestNewPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="王的回归礼" iconId="1139"  isPet="1" willOver="0"  detailDes="领取回归礼物" timeDes="全天候" startTime="00:00" endTime="23:59" go="OldPlayerActPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="2周年再见礼" iconId="1139"  isPet="1" willOver="0"  detailDes="全员领取周年礼物" timeDes="全天候" startTime="00:00" endTime="23:59" go="TwoYearsEndingPanel">
+			<reward>
+			</reward>
+		</act>
+	</acts>
+	<acts day="4">
+		<act name="六星豪礼" iconId="1139"  isPet="1" willOver="0"  detailDes="豪礼天天送" timeDes="全天候" startTime="00:00" endTime="23:59" go="SixStarPrizePanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="商城每日抽奖" iconId="1139"  isPet="1" willOver="0"  detailDes="商城送星石！普通用户每日3次抽奖（VIP5次）" timeDes="全天候" startTime="00:00" endTime="23:59" go="EnergyLotteryPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="商城每日签到" iconId="1139"  isPet="1" willOver="0"  detailDes="每天签到领星石" timeDes="全天候" startTime="00:00" endTime="23:59" go="SignPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="暗黑至尊魔箱" iconId="1139"  isPet="1" willOver="0"  detailDes="开启暗黑魔箱，100%获得赛元宝种子、冥翼之芯等奖励" timeDes="全天候" startTime="00:00" endTime="23:59" go="VIPDarkSeniorBoxPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="双11特购计划"  iconId="1139"  isPet="1" willOver="0"  detailDes="巅峰精灵特价" timeDes="全天候" startTime="00:00" endTime="23:59" go="Double11BuyPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="纹章特卖大超市" iconId="1139"  isPet="1" willOver="0"  detailDes="纹章大特卖哦，各种纹章大折扣" timeDes="全天候" startTime="00:00" endTime="23:59" go="GadSuperBuyPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="进化圆梦超值购" iconId="1139"  isPet="1" willOver="0"  detailDes="进化芯片套餐！超多！超值！" timeDes="全天候" startTime="00:00" endTime="23:59" go="SuperEvolvePanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="暗黑魔盒 万圣将至" iconId="1139"  isPet="1" willOver="0"  detailDes="用约瑟之钥开启魔盒！5大绝版精灵释放而出！" timeDes="全天候" startTime="00:00" endTime="23:59" go="DarkMagicBoxPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="金球豪装撞头彩" iconId="1139"  isPet="1" willOver="0"  detailDes="金球豪装撞头彩，纪念版坐骑等你拿！" timeDes="全天候" startTime="00:00" endTime="23:59" go="NewGoodStartMainPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="回归•战神觉醒" iconId="1139"  isPet="1" willOver="0"  detailDes="收集战神印记，战神联盟免费超进化及专属超强觉醒技轻松得" timeDes="全天候" startTime="00:00" endTime="23:59" go="BackBattleGodWakedPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="精灵放生仓" iconId="1139"  isPet="1" willOver="0"  detailDes="放生精灵 获取扭蛋碎片" timeDes="全天候" startTime="00:00" endTime="23:59" go="PetSmeltingActPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="战神的天阶" iconId="1139"  isPet="1" willOver="0"  detailDes="登入天阶寻找战神觉醒的线索，天阶碎片换奖励" timeDes="全天候" startTime="00:00" endTime="23:59" go="FightHolySkyPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="六煞的深渊" iconId="1139"  isPet="1" willOver="0"  detailDes="跃出深渊，兑换暗黑六煞及精元晶石" timeDes="全天候" startTime="00:00" endTime="23:59" go="DeepRiverOfSixShaPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="商城疯了！抢1星钻精元蛋！" iconId="1139"  isPet="1" willOver="0"  detailDes="特价精元蛋，每天限时抢！暑假更新啦！" timeDes="全天候" startTime="00:00" endTime="23:59" go="CrazyShopPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="雷神之翼——初现" iconId="1139"  isPet="1" willOver="0"  detailDes="雷伊的哥哥雷诺首次现身！" timeDes="全天候" startTime="00:00" endTime="23:59" go="LeiYiWingFirstComePanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="玩转中秋送大礼" iconId="1139"  isPet="1" willOver="0"  detailDes="玩转中秋，累计礼券，兑换超值大礼！" timeDes="全天候" startTime="00:00" endTime="23:59" go="MidAutumnGiftPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="极品坐骑摇出来" iconId="1139"  isPet="1" willOver="0"  detailDes="极品坐骑摇出来，暴风、轰天免费拿" timeDes="全天候" startTime="00:00" endTime="23:59" go="ShootDiceForRidesPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="黄金12宫" iconId="1139"  isPet="1" willOver="0"  detailDes="在星空下许愿免费得黄金十二宫星座守护！" timeDes="全天候" startTime="00:00" endTime="23:59" go="Gold12Panel">
+			<reward>
+			</reward>
+		</act>
+		<act name="稀有纹章端午大放送" iconId="1139"  isPet="1" willOver="0"  detailDes="鲤鱼王、尼古拉斯、暗夜兔纹章大放送！免费得！" timeDes="全天候" startTime="00:00" endTime="23:59" go="GadIssueActPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="迎圣诞" iconId="1139"  isPet="1" willOver="0"  detailDes="王伊特 神王伊特免费得" timeDes="全天候" startTime="00:00" endTime="23:59" go="ChristmasDayGiveHolyYitePanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="小梦星钻大馈赠" iconId="1139"  isPet="1" willOver="0"  detailDes="小梦送星钻了！" timeDes="全天候" startTime="00:00" endTime="23:59" go="XiaoMengSongXingZuanPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="混沌之镜" iconId="1139"  isPet="0" willOver="0"  detailDes="混沌之镜预言属于你的精灵!" timeDes="全天候" startTime="00:00" endTime="23:59" go="HunDunMirrorPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="感恩幸运扭蛋" iconId="1139"  isPet="1" willOver="0"  detailDes="免费幸运扭蛋，各类精元蛋和丰富奖励送出！" timeDes="全天候" startTime="00:00" endTime="23:59" go="NewGiftMachinePanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="神龙豪车队" iconId="1139"  isPet="1" willOver="0"  detailDes="完成【神回答】就送四神龙及其进化芯片哦" timeDes="全天候" startTime="00:00" endTime="23:59" go="ShenLongHaoCheDuiPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="希望之光争霸赛" iconId="1139"  isPet="1" willOver="0"  detailDes="传说的追溯" timeDes="全天候" startTime="00:00" endTime="23:59" go="YueseCraft2016MainPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="绝版装扮清仓扫货" iconId="1139"  isPet="1" willOver="0"  detailDes="买装扮！全场清货一件不留了哦！" timeDes="全天候" startTime="00:00" endTime="23:59" go="EquipSupermarketPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="商城换季大清仓" iconId="1139"  isPet="1" willOver="0"  detailDes="全场1~3折 最高100钻" timeDes="全天候" startTime="00:00" endTime="23:59" go="SuperShopPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="绝版回归 春季特卖" iconId="1139"  isPet="1" willOver="0"  detailDes="全场装备最低10钻！" timeDes="全天候" startTime="00:00" endTime="23:59" go="SpringShopPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="年甲雄风" iconId="1139"  isPet="1" willOver="0"  detailDes="全新品！限量出！" timeDes="全天候" startTime="00:00" endTime="23:59" go="YearShopPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="新年特卖场" iconId="1139"  isPet="1" willOver="0"  detailDes="绝版风潮" timeDes="全天候" startTime="00:00" endTime="23:59" go="ChrismasSalePanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="骑乘晶片商店" iconId="1139"  isPet="1" willOver="0"  detailDes="免费领骑乘晶片！" timeDes="全天候" startTime="00:00" endTime="23:59" go="1600">
+			<reward>
+			</reward>
+		</act>
+		<act name="复活节跳蚤市集" iconId="1139"  isPet="1" willOver="0"  detailDes="氏族组织的跳蚤市集！1星钻跳蚤商品限购喽！" timeDes="全天候" startTime="00:00" endTime="23:59" go="EasterShopPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="凯萨的战书" iconId="1139"  isPet="1" willOver="0"  detailDes="凯萨挑战SPT 拿炎魔称号" timeDes="全天候" startTime="00:00" endTime="23:59" go="KSBattleSptPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="凯萨的战利品" iconId="1139"  isPet="1" willOver="0"  detailDes="凯萨挑战SPT 拿炎魔称号" timeDes="全天候" startTime="00:00" endTime="23:59" go="KSWarTrophiesPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="M5第2季萌宠海选" iconId="1139"  isPet="0" willOver="0"  detailDes="投票得荧光棒" timeDes="全天候" startTime="00:00" endTime="23:59" go="M5TwoSelectPetPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="矿石秘宝" iconId="1139"  isPet="1" willOver="0"  detailDes="开启秘宝！后面藏着丰富的宝藏呢！" timeDes="全天候" startTime="00:00" endTime="23:59" go="OreSwapPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="时尚三元素" iconId="1139"  isPet="1" willOver="0"  detailDes="水火草三元素就在种植园等你" timeDes="全天候" startTime="00:00" endTime="23:59" go="FashionPetPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="双倍荣誉" iconId="1139"  isPet="0" willOver="0"  detailDes="去试炼和勇士之战50V50就可获得双倍荣誉点了！" timeDes="20:00-21:00" startTime="20:00" endTime="21:00" go="450">
+			<reward>
+			</reward>
+		</act>
+		<act name="VIP翻牌" iconId="1139"  isPet="1" willOver="0"  detailDes="翻斗乐之暗夜摩托" timeDes="全天候" startTime="00:00" endTime="23:59" go="VipTurnCardPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="登录7日大礼包" iconId="1139"  isPet="1" willOver="0"  detailDes="领星座精灵+7天试用VIP！" timeDes="全天候" startTime="00:00" endTime="23:59" go="QuestNewPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="王的回归礼" iconId="1139"  isPet="1" willOver="0"  detailDes="领取回归礼物" timeDes="全天候" startTime="00:00" endTime="23:59" go="OldPlayerActPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="2周年再见礼" iconId="1139"  isPet="1" willOver="0"  detailDes="全员领取周年礼物" timeDes="全天候" startTime="00:00" endTime="23:59" go="TwoYearsEndingPanel">
+			<reward>
+			</reward>
+		</act>
+	</acts>
+	<acts day="5">
+		<act name="六星豪礼" iconId="1139"  isPet="1" willOver="0"  detailDes="豪礼天天送" timeDes="全天候" startTime="00:00" endTime="23:59" go="SixStarPrizePanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="商城每日抽奖" iconId="1139"  isPet="1" willOver="0"  detailDes="商城送星石！普通用户每日3次抽奖（VIP5次）" timeDes="全天候" startTime="00:00" endTime="23:59" go="EnergyLotteryPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="商城每日签到" iconId="1139"  isPet="1" willOver="0"  detailDes="每天签到领星石" timeDes="全天候" startTime="00:00" endTime="23:59" go="SignPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="暗黑至尊魔箱" iconId="1139"  isPet="1" willOver="0"  detailDes="开启暗黑魔箱，100%获得赛元宝种子、冥翼之芯等奖励" timeDes="全天候" startTime="00:00" endTime="23:59" go="VIPDarkSeniorBoxPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="双11特购计划"  iconId="1139"  isPet="1" willOver="0"  detailDes="巅峰精灵特价" timeDes="全天候" startTime="00:00" endTime="23:59" go="Double11BuyPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="纹章特卖大超市" iconId="1139"  isPet="1" willOver="0"  detailDes="纹章大特卖哦，各种纹章大折扣" timeDes="全天候" startTime="00:00" endTime="23:59" go="GadSuperBuyPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="进化圆梦超值购" iconId="1139"  isPet="1" willOver="0"  detailDes="进化芯片套餐！超多！超值！" timeDes="全天候" startTime="00:00" endTime="23:59" go="SuperEvolvePanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="暗黑魔盒 万圣将至" iconId="1139"  isPet="1" willOver="0"  detailDes="用约瑟之钥开启魔盒！5大绝版精灵释放而出！" timeDes="全天候" startTime="00:00" endTime="23:59" go="DarkMagicBoxPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="金球豪装撞头彩" iconId="1139"  isPet="1" willOver="0"  detailDes="金球豪装撞头彩，纪念版坐骑等你拿！" timeDes="全天候" startTime="00:00" endTime="23:59" go="NewGoodStartMainPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="回归•战神觉醒" iconId="1139"  isPet="1" willOver="0"  detailDes="收集战神印记，战神联盟免费超进化及专属超强觉醒技轻松得" timeDes="全天候" startTime="00:00" endTime="23:59" go="BackBattleGodWakedPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="精灵放生仓" iconId="1139"  isPet="1" willOver="0"  detailDes="放生精灵 获取扭蛋碎片" timeDes="全天候" startTime="00:00" endTime="23:59" go="PetSmeltingActPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="战神的天阶" iconId="1139"  isPet="1" willOver="0"  detailDes="登入天阶寻找战神觉醒的线索，天阶碎片换奖励" timeDes="全天候" startTime="00:00" endTime="23:59" go="FightHolySkyPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="六煞的深渊" iconId="1139"  isPet="1" willOver="0"  detailDes="跃出深渊，兑换暗黑六煞及精元晶石" timeDes="全天候" startTime="00:00" endTime="23:59" go="DeepRiverOfSixShaPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="商城疯了！抢1星钻精元蛋！" iconId="1139"  isPet="1" willOver="0"  detailDes="特价精元蛋，每天限时抢！暑假更新啦！" timeDes="全天候" startTime="00:00" endTime="23:59" go="CrazyShopPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="雷神之翼——初现" iconId="1139"  isPet="1" willOver="0"  detailDes="雷伊的哥哥雷诺首次现身！" timeDes="全天候" startTime="00:00" endTime="23:59" go="LeiYiWingFirstComePanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="玩转中秋送大礼" iconId="1139"  isPet="1" willOver="0"  detailDes="玩转中秋，累计礼券，兑换超值大礼！" timeDes="全天候" startTime="00:00" endTime="23:59" go="MidAutumnGiftPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="极品坐骑摇出来" iconId="1139"  isPet="1" willOver="0"  detailDes="极品坐骑摇出来，暴风、轰天免费拿" timeDes="全天候" startTime="00:00" endTime="23:59" go="ShootDiceForRidesPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="黄金12宫" iconId="1139"  isPet="1" willOver="0"  detailDes="在星空下许愿免费得黄金十二宫星座守护！" timeDes="全天候" startTime="00:00" endTime="23:59" go="Gold12Panel">
+			<reward>
+			</reward>
+		</act>
+		<act name="稀有纹章端午大放送" iconId="1139"  isPet="1" willOver="0"  detailDes="鲤鱼王、尼古拉斯、暗夜兔纹章大放送！免费得！" timeDes="全天候" startTime="00:00" endTime="23:59" go="GadIssueActPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="迎圣诞" iconId="1139"  isPet="1" willOver="0"  detailDes="王伊特 神王伊特免费得" timeDes="全天候" startTime="00:00" endTime="23:59" go="ChristmasDayGiveHolyYitePanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="小梦星钻大馈赠" iconId="1139"  isPet="1" willOver="0"  detailDes="小梦送星钻了！" timeDes="全天候" startTime="00:00" endTime="23:59" go="XiaoMengSongXingZuanPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="混沌之镜" iconId="1139"  isPet="0" willOver="0"  detailDes="混沌之镜预言属于你的精灵!" timeDes="全天候" startTime="00:00" endTime="23:59" go="HunDunMirrorPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="感恩幸运扭蛋" iconId="1139"  isPet="1" willOver="0"  detailDes="免费幸运扭蛋，各类精元蛋和丰富奖励送出！" timeDes="全天候" startTime="00:00" endTime="23:59" go="NewGiftMachinePanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="神龙豪车队" iconId="1139"  isPet="1" willOver="0"  detailDes="完成【神回答】就送四神龙及其进化芯片哦" timeDes="全天候" startTime="00:00" endTime="23:59" go="ShenLongHaoCheDuiPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="希望之光争霸赛" iconId="1139"  isPet="1" willOver="0"  detailDes="传说的追溯" timeDes="全天候" startTime="00:00" endTime="23:59" go="YueseCraft2016MainPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="绝版装扮清仓扫货" iconId="1139"  isPet="1" willOver="0"  detailDes="买装扮！全场清货一件不留了哦！" timeDes="全天候" startTime="00:00" endTime="23:59" go="EquipSupermarketPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="商城换季大清仓" iconId="1139"  isPet="1" willOver="0"  detailDes="全场1~3折 最高100钻" timeDes="全天候" startTime="00:00" endTime="23:59" go="SuperShopPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="绝版回归 春季特卖" iconId="1139"  isPet="1" willOver="0"  detailDes="全场装备最低10钻！" timeDes="全天候" startTime="00:00" endTime="23:59" go="SpringShopPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="年甲雄风" iconId="1139"  isPet="1" willOver="0"  detailDes="全新品！限量出！" timeDes="全天候" startTime="00:00" endTime="23:59" go="YearShopPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="新年特卖场" iconId="1139"  isPet="1" willOver="0"  detailDes="绝版风潮" timeDes="全天候" startTime="00:00" endTime="23:59" go="ChrismasSalePanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="骑乘晶片商店" iconId="1139"  isPet="1" willOver="0"  detailDes="免费领骑乘晶片！" timeDes="全天候" startTime="00:00" endTime="23:59" go="1600">
+			<reward>
+			</reward>
+		</act>
+		<act name="复活节跳蚤市集" iconId="1139"  isPet="1" willOver="0"  detailDes="氏族组织的跳蚤市集！1星钻跳蚤商品限购喽！" timeDes="全天候" startTime="00:00" endTime="23:59" go="EasterShopPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="凯萨的战书" iconId="1139"  isPet="1" willOver="0"  detailDes="凯萨挑战SPT 拿炎魔称号" timeDes="全天候" startTime="00:00" endTime="23:59" go="KSBattleSptPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="凯萨的战利品" iconId="1139"  isPet="1" willOver="0"  detailDes="凯萨挑战SPT 拿炎魔称号" timeDes="全天候" startTime="00:00" endTime="23:59" go="KSWarTrophiesPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="M5第2季萌宠海选" iconId="1139"  isPet="0" willOver="0"  detailDes="投票得荧光棒" timeDes="全天候" startTime="00:00" endTime="23:59" go="M5TwoSelectPetPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="矿石秘宝" iconId="1139"  isPet="1" willOver="0"  detailDes="开启秘宝！后面藏着丰富的宝藏呢！" timeDes="全天候" startTime="00:00" endTime="23:59" go="OreSwapPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="时尚三元素" iconId="1139"  isPet="1" willOver="0"  detailDes="水火草三元素就在种植园等你" timeDes="全天候" startTime="00:00" endTime="23:59" go="FashionPetPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="双倍荣誉" iconId="1139"  isPet="0" willOver="0"  detailDes="去试炼和勇士之战50V50就可获得双倍荣誉点了！" timeDes="20:00-21:00" startTime="20:00" endTime="21:00" go="450">
+			<reward>
+			</reward>
+		</act>
+		<act name="VIP翻牌" iconId="1139"  isPet="1" willOver="0"  detailDes="翻斗乐之暗夜摩托" timeDes="全天候" startTime="00:00" endTime="23:59" go="VipTurnCardPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="登录7日大礼包" iconId="1139"  isPet="1" willOver="0"  detailDes="领星座精灵+7天试用VIP！" timeDes="全天候" startTime="00:00" endTime="23:59" go="QuestNewPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="王的回归礼" iconId="1139"  isPet="1" willOver="0"  detailDes="领取回归礼物" timeDes="全天候" startTime="00:00" endTime="23:59" go="OldPlayerActPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="2周年再见礼" iconId="1139"  isPet="1" willOver="0"  detailDes="全员领取周年礼物" timeDes="全天候" startTime="00:00" endTime="23:59" go="TwoYearsEndingPanel">
+			<reward>
+			</reward>
+		</act>
+	</acts>
+	<acts day="6">
+		<act name="六星豪礼" iconId="1139"  isPet="1" willOver="0"  detailDes="豪礼天天送" timeDes="全天候" startTime="00:00" endTime="23:59" go="SixStarPrizePanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="商城每日抽奖" iconId="1139"  isPet="1" willOver="0"  detailDes="商城送星石！普通用户每日3次抽奖（VIP5次）" timeDes="全天候" startTime="00:00" endTime="23:59" go="EnergyLotteryPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="商城每日签到" iconId="1139"  isPet="1" willOver="0"  detailDes="每天签到领星石" timeDes="全天候" startTime="00:00" endTime="23:59" go="SignPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="暗黑至尊魔箱" iconId="1139"  isPet="1" willOver="0"  detailDes="开启暗黑魔箱，100%获得赛元宝种子、冥翼之芯等奖励" timeDes="全天候" startTime="00:00" endTime="23:59" go="VIPDarkSeniorBoxPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="双11特购计划"  iconId="1139"  isPet="1" willOver="0"  detailDes="巅峰精灵特价" timeDes="全天候" startTime="00:00" endTime="23:59" go="Double11BuyPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="纹章特卖大超市" iconId="1139"  isPet="1" willOver="0"  detailDes="纹章大特卖哦，各种纹章大折扣" timeDes="全天候" startTime="00:00" endTime="23:59" go="GadSuperBuyPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="进化圆梦超值购" iconId="1139"  isPet="1" willOver="0"  detailDes="进化芯片套餐！超多！超值！" timeDes="全天候" startTime="00:00" endTime="23:59" go="SuperEvolvePanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="暗黑魔盒 万圣将至" iconId="1139"  isPet="1" willOver="0"  detailDes="用约瑟之钥开启魔盒！5大绝版精灵释放而出！" timeDes="全天候" startTime="00:00" endTime="23:59" go="DarkMagicBoxPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="金球豪装撞头彩" iconId="1139"  isPet="1" willOver="0"  detailDes="金球豪装撞头彩，纪念版坐骑等你拿！" timeDes="全天候" startTime="00:00" endTime="23:59" go="NewGoodStartMainPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="回归•战神觉醒" iconId="1139"  isPet="1" willOver="0"  detailDes="收集战神印记，战神联盟免费超进化及专属超强觉醒技轻松得" timeDes="全天候" startTime="00:00" endTime="23:59" go="BackBattleGodWakedPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="精灵放生仓" iconId="1139"  isPet="1" willOver="0"  detailDes="放生精灵 获取扭蛋碎片" timeDes="全天候" startTime="00:00" endTime="23:59" go="PetSmeltingActPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="战神的天阶" iconId="1139"  isPet="1" willOver="0"  detailDes="登入天阶寻找战神觉醒的线索，天阶碎片换奖励" timeDes="全天候" startTime="00:00" endTime="23:59" go="FightHolySkyPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="六煞的深渊" iconId="1139"  isPet="1" willOver="0"  detailDes="跃出深渊，兑换暗黑六煞及精元晶石" timeDes="全天候" startTime="00:00" endTime="23:59" go="DeepRiverOfSixShaPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="商城疯了！抢1星钻精元蛋！" iconId="1139"  isPet="1" willOver="0"  detailDes="特价精元蛋，每天限时抢！暑假更新啦！" timeDes="全天候" startTime="00:00" endTime="23:59" go="CrazyShopPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="雷神之翼——初现" iconId="1139"  isPet="1" willOver="0"  detailDes="雷伊的哥哥雷诺首次现身！" timeDes="全天候" startTime="00:00" endTime="23:59" go="LeiYiWingFirstComePanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="玩转中秋送大礼" iconId="1139"  isPet="1" willOver="0"  detailDes="玩转中秋，累计礼券，兑换超值大礼！" timeDes="全天候" startTime="00:00" endTime="23:59" go="MidAutumnGiftPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="极品坐骑摇出来" iconId="1139"  isPet="1" willOver="0"  detailDes="极品坐骑摇出来，暴风、轰天免费拿" timeDes="全天候" startTime="00:00" endTime="23:59" go="ShootDiceForRidesPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="黄金12宫" iconId="1139"  isPet="1" willOver="0"  detailDes="在星空下许愿免费得黄金十二宫星座守护！" timeDes="全天候" startTime="00:00" endTime="23:59" go="Gold12Panel">
+			<reward>
+			</reward>
+		</act>
+		<act name="稀有纹章端午大放送" iconId="1139"  isPet="1" willOver="0"  detailDes="鲤鱼王、尼古拉斯、暗夜兔纹章大放送！免费得！" timeDes="全天候" startTime="00:00" endTime="23:59" go="GadIssueActPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="迎圣诞" iconId="1139"  isPet="1" willOver="0"  detailDes="王伊特 神王伊特免费得" timeDes="全天候" startTime="00:00" endTime="23:59" go="ChristmasDayGiveHolyYitePanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="小梦星钻大馈赠" iconId="1139"  isPet="1" willOver="0"  detailDes="小梦送星钻了！" timeDes="全天候" startTime="00:00" endTime="23:59" go="XiaoMengSongXingZuanPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="混沌之镜" iconId="1139"  isPet="0" willOver="0"  detailDes="混沌之镜预言属于你的精灵!" timeDes="全天候" startTime="00:00" endTime="23:59" go="HunDunMirrorPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="感恩幸运扭蛋" iconId="1139"  isPet="1" willOver="0"  detailDes="免费幸运扭蛋，各类精元蛋和丰富奖励送出！" timeDes="全天候" startTime="00:00" endTime="23:59" go="NewGiftMachinePanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="神龙豪车队" iconId="1139"  isPet="1" willOver="0"  detailDes="完成【神回答】就送四神龙及其进化芯片哦" timeDes="全天候" startTime="00:00" endTime="23:59" go="ShenLongHaoCheDuiPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="希望之光争霸赛" iconId="1139"  isPet="1" willOver="0"  detailDes="传说的追溯" timeDes="全天候" startTime="00:00" endTime="23:59" go="YueseCraft2016MainPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="绝版装扮清仓扫货" iconId="1139"  isPet="1" willOver="0"  detailDes="买装扮！全场清货一件不留了哦！" timeDes="全天候" startTime="00:00" endTime="23:59" go="EquipSupermarketPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="商城换季大清仓" iconId="1139"  isPet="1" willOver="0"  detailDes="全场1~3折 最高100钻" timeDes="全天候" startTime="00:00" endTime="23:59" go="SuperShopPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="绝版回归 春季特卖" iconId="1139"  isPet="1" willOver="0"  detailDes="全场装备最低10钻！" timeDes="全天候" startTime="00:00" endTime="23:59" go="SpringShopPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="年甲雄风" iconId="1139"  isPet="1" willOver="0"  detailDes="全新品！限量出！" timeDes="全天候" startTime="00:00" endTime="23:59" go="YearShopPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="新年特卖场" iconId="1139"  isPet="1" willOver="0"  detailDes="绝版风潮" timeDes="全天候" startTime="00:00" endTime="23:59" go="ChrismasSalePanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="骑乘晶片商店" iconId="1139"  isPet="1" willOver="0"  detailDes="免费领骑乘晶片！" timeDes="全天候" startTime="00:00" endTime="23:59" go="1600">
+			<reward>
+			</reward>
+		</act>
+		<act name="复活节跳蚤市集" iconId="1139"  isPet="1" willOver="0"  detailDes="氏族组织的跳蚤市集！1星钻跳蚤商品限购喽！" timeDes="全天候" startTime="00:00" endTime="23:59" go="EasterShopPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="凯萨的战书" iconId="1139"  isPet="1" willOver="0"  detailDes="凯萨挑战SPT 拿炎魔称号" timeDes="全天候" startTime="00:00" endTime="23:59" go="KSBattleSptPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="凯萨的战利品" iconId="1139"  isPet="1" willOver="0"  detailDes="凯萨挑战SPT 拿炎魔称号" timeDes="全天候" startTime="00:00" endTime="23:59" go="KSWarTrophiesPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="M5第2季萌宠海选" iconId="1139"  isPet="0" willOver="0"  detailDes="投票得荧光棒" timeDes="全天候" startTime="00:00" endTime="23:59" go="M5TwoSelectPetPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="矿石秘宝" iconId="1139"  isPet="1" willOver="0"  detailDes="开启秘宝！后面藏着丰富的宝藏呢！" timeDes="全天候" startTime="00:00" endTime="23:59" go="OreSwapPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="时尚三元素" iconId="1139"  isPet="1" willOver="0"  detailDes="水火草三元素就在种植园等你" timeDes="全天候" startTime="00:00" endTime="23:59" go="FashionPetPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="双倍荣誉" iconId="1139"  isPet="0" willOver="0"  detailDes="去试炼和勇士之战50V50就可获得双倍荣誉点了！" timeDes="20:00-21:00" startTime="20:00" endTime="21:00" go="450">
+			<reward>
+			</reward>
+		</act>
+		<act name="VIP翻牌" iconId="1139"  isPet="1" willOver="0"  detailDes="翻斗乐之暗夜摩托" timeDes="全天候" startTime="00:00" endTime="23:59" go="VipTurnCardPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="登录7日大礼包" iconId="1139"  isPet="1" willOver="0"  detailDes="领星座精灵+7天试用VIP！" timeDes="全天候" startTime="00:00" endTime="23:59" go="QuestNewPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="王的回归礼" iconId="1139"  isPet="1" willOver="0"  detailDes="领取回归礼物" timeDes="全天候" startTime="00:00" endTime="23:59" go="OldPlayerActPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="2周年再见礼" iconId="1139"  isPet="1" willOver="0"  detailDes="全员领取周年礼物" timeDes="全天候" startTime="00:00" endTime="23:59" go="TwoYearsEndingPanel">
+			<reward>
+			</reward>
+		</act>
+	</acts>
+	<acts day="0">
+		<act name="六星豪礼" iconId="1139"  isPet="1" willOver="0"  detailDes="豪礼天天送" timeDes="全天候" startTime="00:00" endTime="23:59" go="SixStarPrizePanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="商城每日抽奖" iconId="1139"  isPet="1" willOver="0"  detailDes="商城送星石！普通用户每日3次抽奖（VIP5次）" timeDes="全天候" startTime="00:00" endTime="23:59" go="EnergyLotteryPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="商城每日签到" iconId="1139"  isPet="1" willOver="0"  detailDes="每天签到领星石" timeDes="全天候" startTime="00:00" endTime="23:59" go="SignPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="暗黑至尊魔箱" iconId="1139"  isPet="1" willOver="0"  detailDes="开启暗黑魔箱，100%获得赛元宝种子、冥翼之芯等奖励" timeDes="全天候" startTime="00:00" endTime="23:59" go="VIPDarkSeniorBoxPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="双11特购计划"  iconId="1139"  isPet="1" willOver="0"  detailDes="巅峰精灵特价" timeDes="全天候" startTime="00:00" endTime="23:59" go="Double11BuyPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="纹章特卖大超市" iconId="1139"  isPet="1" willOver="0"  detailDes="纹章大特卖哦，各种纹章大折扣" timeDes="全天候" startTime="00:00" endTime="23:59" go="GadSuperBuyPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="进化圆梦超值购" iconId="1139"  isPet="1" willOver="0"  detailDes="进化芯片套餐！超多！超值！" timeDes="全天候" startTime="00:00" endTime="23:59" go="SuperEvolvePanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="暗黑魔盒 万圣将至" iconId="1139"  isPet="1" willOver="0"  detailDes="用约瑟之钥开启魔盒！5大绝版精灵释放而出！" timeDes="全天候" startTime="00:00" endTime="23:59" go="DarkMagicBoxPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="金球豪装撞头彩" iconId="1139"  isPet="1" willOver="0"  detailDes="金球豪装撞头彩，纪念版坐骑等你拿！" timeDes="全天候" startTime="00:00" endTime="23:59" go="NewGoodStartMainPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="回归•战神觉醒" iconId="1139"  isPet="1" willOver="0"  detailDes="收集战神印记，战神联盟免费超进化及专属超强觉醒技轻松得" timeDes="全天候" startTime="00:00" endTime="23:59" go="BackBattleGodWakedPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="精灵放生仓" iconId="1139"  isPet="1" willOver="0"  detailDes="放生精灵 获取扭蛋碎片" timeDes="全天候" startTime="00:00" endTime="23:59" go="PetSmeltingActPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="战神的天阶" iconId="1139"  isPet="1" willOver="0"  detailDes="登入天阶寻找战神觉醒的线索，天阶碎片换奖励" timeDes="全天候" startTime="00:00" endTime="23:59" go="FightHolySkyPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="六煞的深渊" iconId="1139"  isPet="1" willOver="0"  detailDes="跃出深渊，兑换暗黑六煞及精元晶石" timeDes="全天候" startTime="00:00" endTime="23:59" go="DeepRiverOfSixShaPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="商城疯了！抢1星钻精元蛋！" iconId="1139"  isPet="1" willOver="0"  detailDes="特价精元蛋，每天限时抢！暑假更新啦！" timeDes="全天候" startTime="00:00" endTime="23:59" go="CrazyShopPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="雷神之翼——初现" iconId="1139"  isPet="1" willOver="0"  detailDes="雷伊的哥哥雷诺首次现身！" timeDes="全天候" startTime="00:00" endTime="23:59" go="LeiYiWingFirstComePanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="玩转中秋送大礼" iconId="1139"  isPet="1" willOver="0"  detailDes="玩转中秋，累计礼券，兑换超值大礼！" timeDes="全天候" startTime="00:00" endTime="23:59" go="MidAutumnGiftPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="极品坐骑摇出来" iconId="1139"  isPet="1" willOver="0"  detailDes="极品坐骑摇出来，暴风、轰天免费拿" timeDes="全天候" startTime="00:00" endTime="23:59" go="ShootDiceForRidesPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="黄金12宫" iconId="1139"  isPet="1" willOver="0"  detailDes="在星空下许愿免费得黄金十二宫星座守护！" timeDes="全天候" startTime="00:00" endTime="23:59" go="Gold12Panel">
+			<reward>
+			</reward>
+		</act>
+		<act name="稀有纹章端午大放送" iconId="1139"  isPet="1" willOver="0"  detailDes="鲤鱼王、尼古拉斯、暗夜兔纹章大放送！免费得！" timeDes="全天候" startTime="00:00" endTime="23:59" go="GadIssueActPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="迎圣诞" iconId="1139"  isPet="1" willOver="0"  detailDes="王伊特 神王伊特免费得" timeDes="全天候" startTime="00:00" endTime="23:59" go="ChristmasDayGiveHolyYitePanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="小梦星钻大馈赠" iconId="1139"  isPet="1" willOver="0"  detailDes="小梦送星钻了！" timeDes="全天候" startTime="00:00" endTime="23:59" go="XiaoMengSongXingZuanPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="混沌之镜" iconId="1139"  isPet="0" willOver="0"  detailDes="混沌之镜预言属于你的精灵!" timeDes="全天候" startTime="00:00" endTime="23:59" go="HunDunMirrorPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="感恩幸运扭蛋" iconId="1139"  isPet="1" willOver="0"  detailDes="免费幸运扭蛋，各类精元蛋和丰富奖励送出！" timeDes="全天候" startTime="00:00" endTime="23:59" go="NewGiftMachinePanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="神龙豪车队" iconId="1139"  isPet="1" willOver="0"  detailDes="完成【神回答】就送四神龙及其进化芯片哦" timeDes="全天候" startTime="00:00" endTime="23:59" go="ShenLongHaoCheDuiPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="希望之光争霸赛" iconId="1139"  isPet="1" willOver="0"  detailDes="传说的追溯" timeDes="全天候" startTime="00:00" endTime="23:59" go="YueseCraft2016MainPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="绝版装扮清仓扫货" iconId="1139"  isPet="1" willOver="0"  detailDes="买装扮！全场清货一件不留了哦！" timeDes="全天候" startTime="00:00" endTime="23:59" go="EquipSupermarketPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="商城换季大清仓" iconId="1139"  isPet="1" willOver="0"  detailDes="全场1~3折 最高100钻" timeDes="全天候" startTime="00:00" endTime="23:59" go="SuperShopPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="绝版回归 春季特卖" iconId="1139"  isPet="1" willOver="0"  detailDes="全场装备最低10钻！" timeDes="全天候" startTime="00:00" endTime="23:59" go="SpringShopPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="年甲雄风" iconId="1139"  isPet="1" willOver="0"  detailDes="全新品！限量出！" timeDes="全天候" startTime="00:00" endTime="23:59" go="YearShopPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="新年特卖场" iconId="1139"  isPet="1" willOver="0"  detailDes="绝版风潮" timeDes="全天候" startTime="00:00" endTime="23:59" go="ChrismasSalePanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="骑乘晶片商店" iconId="1139"  isPet="1" willOver="0"  detailDes="免费领骑乘晶片！" timeDes="全天候" startTime="00:00" endTime="23:59" go="1600">
+			<reward>
+			</reward>
+		</act>
+		<act name="复活节跳蚤市集" iconId="1139"  isPet="1" willOver="0"  detailDes="氏族组织的跳蚤市集！1星钻跳蚤商品限购喽！" timeDes="全天候" startTime="00:00" endTime="23:59" go="EasterShopPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="凯萨的战书" iconId="1139"  isPet="1" willOver="0"  detailDes="凯萨挑战SPT 拿炎魔称号" timeDes="全天候" startTime="00:00" endTime="23:59" go="KSBattleSptPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="凯萨的战利品" iconId="1139"  isPet="1" willOver="0"  detailDes="凯萨挑战SPT 拿炎魔称号" timeDes="全天候" startTime="00:00" endTime="23:59" go="KSWarTrophiesPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="M5第2季萌宠海选" iconId="1139"  isPet="0" willOver="0"  detailDes="投票得荧光棒" timeDes="全天候" startTime="00:00" endTime="23:59" go="M5TwoSelectPetPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="矿石秘宝" iconId="1139"  isPet="1" willOver="0"  detailDes="开启秘宝！后面藏着丰富的宝藏呢！" timeDes="全天候" startTime="00:00" endTime="23:59" go="OreSwapPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="时尚三元素" iconId="1139"  isPet="1" willOver="0"  detailDes="水火草三元素就在种植园等你" timeDes="全天候" startTime="00:00" endTime="23:59" go="FashionPetPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="双倍荣誉" iconId="1139"  isPet="0" willOver="0"  detailDes="去试炼和勇士之战50V50就可获得双倍荣誉点了！" timeDes="20:00-21:00" startTime="20:00" endTime="21:00" go="450">
+			<reward>
+			</reward>
+		</act>
+		<act name="VIP翻牌" iconId="1139"  isPet="1" willOver="0"  detailDes="翻斗乐之暗夜摩托" timeDes="全天候" startTime="00:00" endTime="23:59" go="VipTurnCardPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="登录7日大礼包" iconId="1139"  isPet="1" willOver="0"  detailDes="领星座精灵+7天试用VIP！" timeDes="全天候" startTime="00:00" endTime="23:59" go="QuestNewPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="王的回归礼" iconId="1139"  isPet="1" willOver="0"  detailDes="领取回归礼物" timeDes="全天候" startTime="00:00" endTime="23:59" go="OldPlayerActPanel">
+			<reward>
+			</reward>
+		</act>
+		<act name="2周年再见礼" iconId="1139"  isPet="1" willOver="0"  detailDes="全员领取周年礼物" timeDes="全天候" startTime="00:00" endTime="23:59" go="TwoYearsEndingPanel">
+			<reward>
+			</reward>
+		</act>
+	</acts>
+</root>

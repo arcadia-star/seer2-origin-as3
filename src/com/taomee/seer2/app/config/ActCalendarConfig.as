@@ -25,8 +25,13 @@ package com.taomee.seer2.app.config
       {
          return weekActList[param1];
       }
-      
+
       private static function setup() : void
+      {
+         loadConfig(XML(new _xmlClass()));
+      }
+      
+      public static function loadConfig(xml:XML) : void
       {
          var _loc4_:Array = null;
          var _loc5_:XML = null;
@@ -39,7 +44,7 @@ package com.taomee.seer2.app.config
          var _loc12_:XMLList = null;
          var _loc13_:XML = null;
          weekActList = new Vector.<Vector.<ActDetailInfo>>(7);
-         var _loc1_:XML = XML(new _xmlClass());
+         var _loc1_:XML = xml;
          var _loc2_:XMLList = _loc1_.descendants("acts");
          var _loc3_:Date = new Date(TimeManager.getServerTime() * 1000);
          for each(_loc5_ in _loc2_)

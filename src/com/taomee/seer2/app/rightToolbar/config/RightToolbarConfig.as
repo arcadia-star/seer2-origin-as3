@@ -31,6 +31,11 @@ package com.taomee.seer2.app.rightToolbar.config
       
       public static function setup() : void
       {
+         loadConfig(XML(new _xmlClass()));
+      }
+
+      public static function loadConfig(xml:XML) : void
+      {
          var _loc1_:RightToolbarInfo = null;
          var _loc5_:XMLList = null;
          var _loc6_:RightToolbarInfo = null;
@@ -38,7 +43,7 @@ package com.taomee.seer2.app.rightToolbar.config
          var _loc8_:String = null;
          var _loc9_:XML = null;
          var _loc10_:uint = 0;
-         _xml = XML(new _xmlClass());
+         _xml = xml;
          _rightToolbarInfoVec = Vector.<RightToolbarInfo>([]);
          _upToolbarInfoVec = Vector.<RightToolbarInfo>([]);
          _leftToolbarInfoVec = Vector.<RightToolbarInfo>([]);
