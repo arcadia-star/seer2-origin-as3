@@ -4,6 +4,7 @@ package com.taomee.seer2.app.config
    import com.taomee.seer2.app.config.item.EquipItemDefinition;
    import com.taomee.seer2.app.vip.VipManager;
    import org.taomee.ds.HashMap;
+   import seer2.next.entry.DynConfig;
    
    public class ShopPanelConfig
    {
@@ -99,7 +100,7 @@ package com.taomee.seer2.app.config
 
       private static function setup() : void
       {
-         loadConfig(XML(new _class()))
+         loadConfig(DynConfig.shopPanelConfigXML || XML(new _class()))
       }
 
       public static function loadConfig(xml:XML) : void

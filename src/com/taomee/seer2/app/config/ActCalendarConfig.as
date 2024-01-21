@@ -2,7 +2,8 @@ package com.taomee.seer2.app.config
 {
    import com.taomee.seer2.app.config.info.ActDetailInfo;
    import com.taomee.seer2.core.manager.TimeManager;
-   
+   import seer2.next.entry.DynConfig;
+
    public class ActCalendarConfig
    {
       
@@ -28,7 +29,7 @@ package com.taomee.seer2.app.config
 
       private static function setup() : void
       {
-         loadConfig(XML(new _xmlClass()));
+         loadConfig(DynConfig.actCalendarConfigXML || XML(new _xmlClass()));
       }
       
       public static function loadConfig(xml:XML) : void

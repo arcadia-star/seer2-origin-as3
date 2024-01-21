@@ -7,7 +7,6 @@ package com.taomee.seer2.app.manager
    import com.taomee.seer2.core.quest.events.QuestEvent;
    import flash.net.URLRequest;
    import flash.net.URLRequestMethod;
-   import flash.net.sendToURL;
    
    public class StatisticsManager
    {
@@ -1270,6 +1269,11 @@ package com.taomee.seer2.app.manager
       public static function newSendNovice(param1:String, param2:String, param3:String) : void
       {
          StatisticsManager2.sendHttpStat(param1,param2,param3,LoginInfo.account);
+      }
+
+      private static function sendToURL(urlRequest:URLRequest) : void
+      {
+         trace("StatisticsManager error ", urlRequest);
       }
    }
 }

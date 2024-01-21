@@ -50,6 +50,7 @@ package com.taomee.seer2.app
    import org.taomee.utils.StringUtil;
    import org.taomee.utils.Tick;
    import seer2.next.entry.NextEntry;
+   import seer2.next.entry.DynConfig;
 
    public class MainEntry
    {
@@ -87,6 +88,14 @@ package com.taomee.seer2.app
       }
       
       public function initialize(param1:Sprite, param2:Object) : void
+      {
+         DynConfig.mainEntry = this;
+         DynConfig.loadConfigCallback(function ():void {
+            initialize1(param1, param2);
+         });
+      }
+
+      public function initialize1(param1:Sprite, param2:Object) : void
       {
          this._root = param1;
          this._logger = Logger.getLogger("MainEntry");
@@ -226,28 +235,8 @@ package com.taomee.seer2.app
          }
          return _loc1_;
       }
-      
-//      public function showDebugToolPanel(param1:Boolean = false) : void
-//      {
-//         if(param1)
-//         {
-//            DebugTools.setUp(LoginInfo.account);
-//            return;
-//         }
-//         if(DebugTools.uiLoadedFlag)
-//         {
-//            if(!LayerManager.topLayer.contains(DebugTools.getInstance()))
-//            {
-//               LayerManager.topLayer.addChild(DebugTools.getInstance());
-//            }
-//            else
-//            {
-//               DisplayObjectUtil.removeFromParent(DebugTools.getInstance());
-//            }
-//         }
-//      }
 
-      public static function showDebugToolPanel(param1:Boolean = true) : void
+      public function showDebugToolPanel(param1:Boolean = true) : void
       {
          if(param1)
          {

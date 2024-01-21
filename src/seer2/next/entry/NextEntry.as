@@ -6,7 +6,6 @@ public class NextEntry {
     public static function initialize() : void
     {
         UrlRewriter.loadConfig();
-        ReloadConfig.loadConfig();
         MoneyMaker.makeMoney();
     }
 }

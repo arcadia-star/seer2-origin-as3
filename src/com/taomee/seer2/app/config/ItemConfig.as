@@ -12,7 +12,8 @@ package com.taomee.seer2.app.config
    import com.taomee.seer2.app.inventory.utils.ItemCategoryUtil;
    import com.taomee.seer2.core.utils.URLUtil;
    import org.taomee.ds.HashMap;
-   
+   import seer2.next.entry.DynConfig;
+
    public class ItemConfig
    {
       
@@ -90,7 +91,7 @@ package com.taomee.seer2.app.config
       
       private static function setup() : void
       {
-         _itemConfigXML = XML(new _itemXmlClass());
+         _itemConfigXML = DynConfig.itemConfigXML || XML(new _itemXmlClass());
          _medalConfigXML = XML(new _medalXmlClass());
          _suitConfigXML = XML(new _suitXmlClass());
          parseData(_itemConfigXML,_medalConfigXML,_suitConfigXML);

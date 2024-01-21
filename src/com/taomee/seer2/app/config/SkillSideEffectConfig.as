@@ -3,6 +3,7 @@ package com.taomee.seer2.app.config
    import com.taomee.seer2.app.config.skill.SkillSideEffectDefinition;
    import com.taomee.seer2.app.config.skill.SkillSideEffectType;
    import org.taomee.ds.HashMap;
+   import seer2.next.entry.DynConfig;
    
    public class SkillSideEffectConfig
    {
@@ -26,7 +27,7 @@ package com.taomee.seer2.app.config
       {
          var _loc2_:XML = null;
          _map = new HashMap();
-         _buffConfigXML = XML(new _buffXmlClass());
+         _buffConfigXML = DynConfig.buffConfigXML || XML(new _buffXmlClass());
          var _loc1_:XMLList = _buffConfigXML.descendants("buff");
          for each(_loc2_ in _loc1_)
          {

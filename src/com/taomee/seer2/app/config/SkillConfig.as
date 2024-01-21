@@ -3,6 +3,7 @@ package com.taomee.seer2.app.config
    import com.taomee.seer2.app.config.skill.HideSkillDefinition;
    import com.taomee.seer2.app.config.skill.SkillDefinition;
    import org.taomee.ds.HashMap;
+   import seer2.next.entry.DynConfig;
    
    public class SkillConfig
    {
@@ -37,7 +38,7 @@ package com.taomee.seer2.app.config
       
       private static function setup() : void
       {
-         _movesConfigXML = XML(new _movesXmlClass());
+         _movesConfigXML = DynConfig.movesConfigXML || XML(new _movesXmlClass());
          _hideMovesConfigXML = XML(new _hideMovesXmlClass());
          parseNormalSklls(_movesConfigXML);
          parseHideSklls(_hideMovesConfigXML);

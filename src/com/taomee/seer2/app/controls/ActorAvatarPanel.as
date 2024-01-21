@@ -38,6 +38,7 @@ package com.taomee.seer2.app.controls
    import flash.text.TextField;
    import org.taomee.filter.ColorFilter;
    import org.taomee.manager.EventManager;
+   import seer2.next.entry.DynConfig;
    
    public class ActorAvatarPanel extends Sprite
    {
@@ -319,7 +320,7 @@ package com.taomee.seer2.app.controls
       private function onJumpBianQiang(param1:MouseEvent) : void
       {
          //ModuleManager.showAppModule("NewGuidelines");
-         MainEntry.showDebugToolPanel(true);
+         DynConfig.mainEntry.showDebugToolPanel(true);
       }
       
       private function onPetPowerUpdate(param1:Event = null) : void

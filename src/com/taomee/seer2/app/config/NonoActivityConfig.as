@@ -1,6 +1,7 @@
 package com.taomee.seer2.app.config
 {
    import com.taomee.seer2.app.config.info.NonoActivityInfo;
+   import seer2.next.entry.DynConfig;
    
    public class NonoActivityConfig
    {
@@ -22,7 +23,7 @@ package com.taomee.seer2.app.config
       
       public static function setup() : void
       {
-         loadConfig(XML(new _xmlClass()));
+         loadConfig(DynConfig.nonoActivityConfigXML || XML(new _xmlClass()));
       }
 
       public static function loadConfig(xml:XML) : void

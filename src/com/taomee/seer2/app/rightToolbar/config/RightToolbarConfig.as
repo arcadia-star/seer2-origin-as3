@@ -2,6 +2,7 @@ package com.taomee.seer2.app.rightToolbar.config
 {
    import com.taomee.seer2.app.actor.ActorManager;
    import com.taomee.seer2.app.newPlayerGuideVerOne.NewPlayerGuideTimeManager;
+   import seer2.next.entry.DynConfig;
    
    public class RightToolbarConfig
    {
@@ -31,7 +32,7 @@ package com.taomee.seer2.app.rightToolbar.config
       
       public static function setup() : void
       {
-         loadConfig(XML(new _xmlClass()));
+         loadConfig(DynConfig.rightToolbarConfigXML || XML(new _xmlClass()));
       }
 
       public static function loadConfig(xml:XML) : void
