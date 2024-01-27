@@ -1,12 +1,9 @@
-package com.taomee.seer2.app.plantSystem
-{
-   public class PlantShowCompleteSp
-   {
-       
-      
-      public function PlantShowCompleteSp()
-      {
-         super();
-      }
-   }
+package com.taomee.seer2.app.plantSystem {
+public class PlantShowCompleteSp {
+
+
+    public function PlantShowCompleteSp() {
+        super();
+    }
+}
 }

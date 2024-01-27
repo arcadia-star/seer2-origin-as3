@@ -23,332 +23,380 @@ map：关卡
   boss：本关boss
 -->
 <root>
-	<family id="1" isSwapPet="1" petType="2" itemIdList="401160,401161,401162,401163" totalItemCountList="10,10,10,10" clickMapIdList="1,4,6,8">
-		<map id="1" mapId="800001" prevMapId="100" name="信奉广场" monsterId="11" monsterCount="2" threeStar="使用小梦/超梦/极梦击败树根使者" nextId="2">
-			<item id="401160" count="1"/>
-			<item id="401146" count="1"/>
-			<item id="401146" count="2"/>
-			<boss id="19" level="30"/>
-		</map>
-		<map id="2" mapId="800002" prevMapId="151" name="水仙草界" monsterId="44" monsterCount="2" threeStar="小梦/超梦/极梦达到40级后击败树根使者" nextId="3">
-			<item id="401160" count="1"/>
-			<item id="401146" count="1"/>
-			<item id="401146" count="2"/>
-			<boss id="19" level="30"/>
-		</map>
-		<map id="3" mapId="800003" prevMapId="152" name="水仙溪口" monsterId="46" monsterCount="2" threeStar="小梦/超梦/极梦达到45级后击败拉奥苗" nextId="4">
-			<item id="401163" count="1"/>
-			<item id="401146" count="1"/>
-			<item id="401146" count="2"/>
-			<boss id="188" level="30"/>
-			<boss id="1600" level="38"/>
-		</map>
-		<map id="4" mapId="800004" prevMapId="131" name="荆棘林" monsterId="880" monsterCount="3" threeStar="为小梦/超梦/极梦分配学习力45点后击败芙拉伦斯" nextId="5">
-			<item id="401161" count="1"/>
-			<item id="401146" count="1"/>
-			<item id="401146" count="2"/>
-			<boss level="35" id="251"/>
-			<boss level="40" id="1601"/>
-		</map>
-		<map id="5" mapId="800005" prevMapId="132" name="荆棘小道" monsterId="880" monsterCount="2" threeStar="为小梦/超梦/极梦装备1枚星魂后击败碧芙莱" nextId="6">
-			<item id="401161" count="1"/>
-			<item id="401146" count="1"/>
-			<item id="401146" count="2"/>
-			<boss level="40" id="211"/>
-			<boss level="45" id="1602"/>
-		</map>
-		<map id="6" mapId="800006" prevMapId="133" name="深幽沼泽" monsterId="14" monsterCount="2" threeStar="自身具有3级及以上特攻强化击败芙拉伦斯" nextId="7">
-			<item id="401162" count="1"/>
-			<item id="401146" count="1"/>
-			<item id="401146" count="2"/>
-			<boss level="55" id="12"/>
-			<boss level="55" id="1601"/>
-		</map>
-		<map id="7" mapId="800007" prevMapId="141" name="幻影崖" monsterId="406" monsterCount="2" threeStar="与巴鲁金斯的战斗中超梦/极梦使用过必杀技" nextId="8">
-			<item id="401162" count="1"/>
-			<item id="401146" count="1"/>
-			<item id="401146" count="2"/>
-			<boss level="55" id="688"/>
-			<boss level="60" id="1603"/>
-		</map>
-		<map id="8" mapId="800008" prevMapId="121" name="异蘑世界" threeStar="在与拉奥叶的战斗中使用过100级精灵" nextId="9,13">
-			<item id="401163" count="1"/>
-			<item id="401146" count="1"/>
-			<item id="401146" count="2"/>
-			<boss level="65" id="1604"/>
-			<boss level="70" id="1605"/>
-		</map>
-		<map id="9" mapId="800009" prevMapId="122" name="朽木桥" threeStar="自身具有麦迪金针状态时击败麦迪侠" nextId="10">
-			<item id="400313" count="2"/>
-			<item id="401146" count="1"/>
-			<item id="401146" count="2"/>
-			<boss level="100" id="1108"/>
-			<boss level="100" id="1332"/>
-		</map>
-		<map id="10" mapId="800010" prevMapId="123" name="异蘑小径" threeStar="自身体力低于20%时击败特鲁伊" nextId="11">
-			<item id="400313" count="2"/>
-			<item id="401148" count="1"/>
-			<item id="401153" count="1"/>
-			<boss level="100" id="1606"/>
-			<boss level="100" id="1047"/>
-		</map>
-		<map id="11" mapId="800011" prevMapId="124" name="异蘑谷" threeStar="自身体力低于50%时击败拉奥兽" nextId="12">
-			<item id="400313" count="2"/>
-			<item id="401148" count="1"/>
-			<item id="401153" count="1"/>
-			<boss level="100" id="1330"/>
-			<boss level="100" id="1333"/>
-		</map>
-		<map id="12" mapId="800012" prevMapId="90" name="草系主城" threeStar="与目灵神的战斗中不使用能力弱化技能">
-			<item id="400313" count="3"/>
-			<item id="401148" count="5"/>
-			<item id="401153" count="1"/>
-			<boss level="100" id="1284"/>
-		</map>
-		<map id="13" mapId="800013" prevMapId="142" name="巨石洞穴" isWelfare="1" threeStar="（开启条件：需要草目梦境总星数达到29颗）挑战树根使者，10回合内对树根使者造成的伤害越高可获得的奖励越丰厚！">
-			<item id="1" count="???"/>
-			<boss level="100" id="19"/>
-		</map>
-	</family>
-	<family id="2" isSwapPet="1" petType="3" itemIdList="401164,401165,401166,401167" totalItemCountList="10,10,10,10" clickMapIdList="101,105,106,103">
-		<map id="101" mapId="800101" prevMapId="170" name="深水之城" monsterId="21" monsterCount="3" threeStar="水元素具有汲取水分状态时击败它" nextId="102">
-			<item id="401164" count="1"/>
-			<item id="401146" count="1"/>
-			<item id="401146" count="2"/>
-			<boss level="65" id="365"/>
-			<boss level="70" id="396"/>
-		</map>
-		<map id="102" mapId="800102" prevMapId="201" name="彩虹珊瑚湾" monsterId="21" monsterCount="3" threeStar="在进入雨天环境之前击败爱丽斯" nextId="103">
-			<item id="401164" count="1"/>
-			<item id="401146" count="1"/>
-			<item id="401146" count="2"/>
-			<boss level="65" id="444"/>
-			<boss level="70" id="1049"/>
-		</map>
-		<map id="103" mapId="800103" prevMapId="204" name="幽静珊瑚穴" monsterId="21" monsterCount="2" threeStar="溺水状态下击败迪兰特" nextId="104">
-			<item id="401167" count="1"/>
-			<item id="401146" count="1"/>
-			<item id="401146" count="2"/>
-			<boss level="70" id="1150"/>
-			<boss level="75" id="1607"/>
-		</map>
-		<map id="104" mapId="800104" prevMapId="203" name="幻彩珊瑚" monsterId="27" monsterCount="3" threeStar="与哞哞王战斗中只使用物攻技能" nextId="105">
-			<item id="401165" count="1"/>
-			<item id="401146" count="1"/>
-			<item id="401146" count="2"/>
-			<boss level="80" id="285"/>
-			<boss level="80" id="1608"/>
-		</map>
-		<map id="105" mapId="800105" prevMapId="202" name="珊瑚路" monsterId="27" monsterCount="3" threeStar="溺水状态下击败尼奥比" nextId="106">
-			<item id="401165" count="1"/>
-			<item id="401146" count="1"/>
-			<item id="401146" count="2"/>
-			<boss level="80" id="285"/>
-			<boss level="85" id="1293"/>
-		</map>
-		<map id="106" mapId="800106" prevMapId="1801" name="银脉山脊" monsterId="27" monsterCount="3" threeStar="安吉丽塔具有流水圈时击败它" nextId="107">
-			<item id="401166" count="1"/>
-			<item id="401146" count="1"/>
-			<item id="401146" count="2"/>
-			<boss level="85" id="365"/>
-			<boss level="90" id="1609"/>
-		</map>
-		<map id="107" mapId="800107" prevMapId="1911" name="残骸入口" monsterId="27" monsterCount="3" threeStar="小梦/超梦/极梦达到100级击败雅柏菲卡" nextId="108">
-			<item id="401166" count="1"/>
-			<item id="401146" count="1"/>
-			<item id="401146" count="2"/>
-			<boss level="95" id="141"/>
-			<boss level="100" id="1610"/>
-		</map>
-		<map id="108" mapId="800108" prevMapId="192" name="残骸通道" monsterId="29" monsterCount="3" threeStar="水墨飞马具有光滑皮肤状态时击败它" nextId="109,113">
-			<item id="401167" count="1"/>
-			<item id="401146" count="1"/>
-			<item id="401153" count="1"/>
-			<boss level="100" id="1087"/>
-			<boss level="100" id="1611"/>
-		</map>
-		<map id="109" mapId="800109" prevMapId="211" name="漩涡谷地" threeStar="自身物攻弱化4~6级时用物攻技能击败海王纳斯" nextId="110">
-			<item id="400313" count="2"/>
-			<item id="401146" count="1"/>
-			<item id="401153" count="1"/>
-			<boss level="100" id="1107"/>
-			<boss level="100" id="1612"/>
-		</map>
-		<map id="110" mapId="800110" prevMapId="220" name="幽静浅滩" threeStar="提塔哈克具有连攻状态时击败它" nextId="111">
-			<item id="400313" count="2"/>
-			<item id="401148" count="1"/>
-			<item id="401153" count="1"/>
-			<boss level="100" id="1613"/>
-			<boss level="100" id="1387"/>
-		</map>
-		<map id="111" mapId="800111" prevMapId="213" name="狂暴漩涡" threeStar="无法3星" nextId="112">
-			<item id="400313" count="1"/>
-			<item id="401148" count="1"/>
-			<item id="401153" count="2"/>
-			<boss level="100" id="1407"/>
-			<boss level="100" id="1160"/>
-		</map>
-		<map id="112" mapId="800112" prevMapId="160" name="水脉氏族主城" threeStar="与脉灵神的战斗中不使用能力强化技能并且快速击败">
-			<item id="400313" count="1"/>
-			<item id="401148" count="1"/>
-			<item id="401153" count="2"/>
-			<boss level="100" id="1319"/>
-		</map>
-		<map id="113" mapId="800113" prevMapId="193" name="悲伤残骸" isWelfare="1" threeStar="（开启条件：需要水脉梦境总星数达到29颗）1v1挑战涟漪，生存的回合数越多可获得的奖励越丰厚！">
-			<item id="1" count="???"/>
-			<boss level="100" id="1107"/>
-		</map>
-	</family>
-	<family id="3" isSwapPet="1" petType="4" itemIdList="401168,401169,401170,401171" totalItemCountList="10,10,10,10" clickMapIdList="201,203,207,204">
-		<map id="201" mapId="800201" prevMapId="292" name="幻空岭" monsterId="40" monsterCount="3" threeStar="战斗中有100级水系精灵出场" nextId="202">
-			<item id="401168" count="1"/>
-			<item id="401146" count="1"/>
-			<item id="401146" count="2"/>
-			<boss level="100" id="372"/>
-			<boss level="100" id="411"/>
-		</map>
-		<map id="202" mapId="800202" prevMapId="291" name="幻空通道" monsterId="40" monsterCount="3" threeStar="与伊利亚斯的战斗中，最后一击先出手" nextId="203">
-			<item id="401168" count="1"/>
-			<item id="401146" count="1"/>
-			<item id="401146" count="2"/>
-			<boss level="100" id="287"/>
-			<boss level="100" id="1192"/>
-		</map>
-		<map id="203" mapId="800203" prevMapId="301" name="灰烬之地" monsterId="40" monsterCount="2" threeStar="自身体力低于1/2时击败炎煞" nextId="204">
-			<item id="401169" count="1"/>
-			<item id="401146" count="1"/>
-			<item id="401148" count="2"/>
-			<boss level="100" id="372"/>
-			<boss level="100" id="1161"/>
-		</map>
-		<map id="204" mapId="800204" prevMapId="302" name="灰烬岔口" monsterId="70" monsterCount="3" threeStar="自身体力低于1/3时击败萨弗拉" nextId="205">
-			<item id="401171" count="1"/>
-			<item id="401146" count="1"/>
-			<item id="401146" count="2"/>
-			<boss level="100" id="287"/>
-			<boss level="100" id="1120"/>
-		</map>
-		<map id="205" mapId="800205" prevMapId="304" name="灰烬深渊" monsterId="70" monsterCount="3" threeStar="自身具有烧伤状态击败炎赫" nextId="206">
-			<item id="401171" count="1"/>
-			<item id="401146" count="1"/>
-			<item id="401146" count="2"/>
-			<boss level="100" id="38"/>
-			<boss level="100" id="1380"/>
-		</map>
-		<map id="206" mapId="800206" prevMapId="281" name="焰之森" monsterId="428" monsterCount="3" threeStar="三只主宠在与艾妮维娅的战斗中有2只及以上出场" nextId="207">
-			<item id="401171" count="1"/>
-			<item id="401146" count="1"/>
-			<item id="401146" count="2"/>
-			<boss level="100" id="812"/>
-			<boss level="100" id="1121"/>
-		</map>
-		<map id="207" mapId="800207" prevMapId="240" name="蛮神战场" monsterId="428" monsterCount="2" threeStar="使用超梦/极梦击败烈焰伊尔" nextId="208,212,301">
-			<item id="401170" count="1"/>
-			<item id="401146" count="1"/>
-			<item id="401146" count="2"/>
-			<boss level="100" id="1340"/>
-			<boss level="100" id="1341"/>
-		</map>
-		<map id="208" mapId="800208" prevMapId="261" name="赤链山脉" threeStar="战胜爆焱战狐时，爆焱战狐具有3层及以上物攻强化状态" nextId="209">
-			<item id="400313" count="1"/>
-			<item id="401148" count="1"/>
-			<item id="401153" count="2"/>
-			<boss level="100" id="1318"/>
-			<boss level="100" id="1357"/>
-		</map>
-		<map id="209" mapId="800209" prevMapId="2621" name="烈焰峡谷" threeStar="所有精灵血量未降低到30%以下的情况下击败神将张飞" nextId="210">
-			<item id="400313" count="1"/>
-			<item id="401148" count="1"/>
-			<item id="401153" count="2"/>
-			<boss level="100" id="1380"/>
-			<boss level="100" id="1394"/>
-		</map>
-		<map id="210" mapId="800210" prevMapId="2702" name="魅罗门" threeStar="3星条件未知" nextId="211">
-			<item id="400313" count="1"/>
-			<item id="401148" count="1"/>
-			<item id="401153" count="2"/>
-			<boss level="100" id="1262"/>
-			<boss level="100" id="1373"/>
-		</map>
-		<map id="211" mapId="800211" prevMapId="230" name="火幻氏族主城" threeStar="自身具有3层及以上防御类强化状态时击败幻灵神">
-			<item id="400313" count="1"/>
-			<item id="401148" count="1"/>
-			<item id="401153" count="2"/>
-			<boss level="100" id="1348"/>
-		</map>
-		<map id="212" mapId="800212" prevMapId="263" name="火焰山" threeStar="（开启条件：需要火幻梦境总星数达到24颗）6v1挑战奎尔斯之影，自身存活精灵越多得到的奖励越丰厚！" isWelfare="1">
-			<item id="1" count="???"/>
-			<boss level="100" id="1417"/>
-		</map>
-	</family>
-	<family id="4" isSwapPet="1" petType="10" itemIdList="401206,401207,401208,401209" totalItemCountList="10,10,10,10" clickMapIdList="301,303,304,306">
-		<map id="301" mapId="800301" prevMapId="3811" name="原始雪森林" monsterId="121" monsterCount="4" threeStar="自身体力低于1/4时击败卡特琳娜" nextId="302">
-			<item id="401206" count="1"/>
-			<item id="401146" count="1"/>
-			<item id="401146" count="2"/>
-			<boss level="100" id="1176"/>
-		</map>
-		<map id="302" mapId="800302" prevMapId="550" name="冰沁宫殿" monsterId="121" monsterCount="4" threeStar="自身具有3层及以上能力强化的情况下击败极地雪兔" nextId="303">
-			<item id="401206" count="1"/>
-			<item id="401146" count="1"/>
-			<item id="401146" count="2"/>
-			<boss level="100" id="1187"/>
-		</map>
-		<map id="303" mapId="800303" prevMapId="590" name="冰沁神殿" monsterId="121" monsterCount="4" threeStar="九尾冰狐具有极地冰封状态时击败它" nextId="304">
-			<item id="401207" count="1"/>
-			<item id="401146" count="1"/>
-			<item id="401148" count="2"/>
-			<boss level="100" id="1177"/>
-		</map>
-		<map id="304" mapId="800304" prevMapId="620" name="冰脊山脉" monsterId="139" monsterCount="4" threeStar="先出手时击败加缪奥斯" nextId="305">
-			<item id="401208" count="1"/>
-			<item id="401146" count="1"/>
-			<item id="401146" count="2"/>
-			<boss level="100" id="1198"/>
-		</map>
-		<map id="305" mapId="800305" prevMapId="640" name="冰脊之巅" monsterId="139" monsterCount="4" threeStar="所有精灵血量不未降低到60%以下的情况下击败卡尼娅" nextId="306">
-			<item id="401208" count="1"/>
-			<item id="401146" count="1"/>
-			<item id="401146" count="2"/>
-			<boss level="100" id="1175"/>
-		</map>
-		<map id="306" mapId="800306" prevMapId="570" name="冰之监狱" monsterId="230" monsterCount="3" threeStar="自身具有2项及以上的能力强化状态时战胜极冰凤皇" nextId="307,311">
-			<item id="401209" count="1"/>
-			<item id="401146" count="1"/>
-			<item id="401146" count="2"/>
-			<boss level="100" id="1176"/>
-			<boss level="100" id="1359"/>
-		</map>
-		<map id="307" mapId="800307" prevMapId="3812" name="雪之湖泊" threeStar="自身处于冻伤状态时击败怒海娜迦" nextId="308">
-			<item id="400313" count="2"/>
-			<item id="401149" count="1"/>
-			<item id="401153" count="1"/>
-			<boss level="100" id="1175"/>
-			<boss level="100" id="1178"/>
-		</map>
-		<map id="308" mapId="800308" prevMapId="3813" name="雪之溶洞" threeStar="后出手击败圣冰十尾" nextId="309">
-			<item id="400313" count="2"/>
-			<item id="401149" count="1"/>
-			<item id="401153" count="1"/>
-			<boss level="100" id="1198"/>
-			<boss level="100" id="1358"/>
-		</map>
-		<map id="309" mapId="800309" prevMapId="610" name="冰晶矿场" threeStar="自身具有3层及以上减速状态时击败暴雪领主" nextId="310">
-			<item id="400313" count="2"/>
-			<item id="401149" count="1"/>
-			<item id="401153" count="1"/>
-			<boss level="100" id="1177"/>
-			<boss level="100" id="1405"/>
-		</map>
-		<map id="310" mapId="800310" prevMapId="540" name="冰之谷" threeStar="自身具有冻伤状态击败沁灵神">
-			<item id="400313" count="2"/>
-			<item id="401149" count="1"/>
-			<item id="401153" count="1"/>
-			<boss level="100" id="1354"/>
-		</map>
-		<map id="311" mapId="800311" prevMapId="3814" name="冰封魔域" threeStar="（开启条件：需要冰沁梦境总星数达到24颗）在战斗中尽力打出更高的伤害，技能造成的最高伤害越多得到的奖励越丰厚！" isWelfare="1">
-			<item id="1" count="???"/>
-			<boss level="100" id="575"/>
-		</map>
-	</family>
+    <family id="1" isSwapPet="1" petType="2" itemIdList="401160,401161,401162,401163" totalItemCountList="10,10,10,10"
+            clickMapIdList="1,4,6,8">
+        <map id="1" mapId="800001" prevMapId="100" name="信奉广场" monsterId="11" monsterCount="2"
+             threeStar="使用小梦/超梦/极梦击败树根使者" nextId="2">
+            <item id="401160" count="1"/>
+            <item id="401146" count="1"/>
+            <item id="401146" count="2"/>
+            <boss id="19" level="30"/>
+        </map>
+        <map id="2" mapId="800002" prevMapId="151" name="水仙草界" monsterId="44" monsterCount="2"
+             threeStar="小梦/超梦/极梦达到40级后击败树根使者" nextId="3">
+            <item id="401160" count="1"/>
+            <item id="401146" count="1"/>
+            <item id="401146" count="2"/>
+            <boss id="19" level="30"/>
+        </map>
+        <map id="3" mapId="800003" prevMapId="152" name="水仙溪口" monsterId="46" monsterCount="2"
+             threeStar="小梦/超梦/极梦达到45级后击败拉奥苗" nextId="4">
+            <item id="401163" count="1"/>
+            <item id="401146" count="1"/>
+            <item id="401146" count="2"/>
+            <boss id="188" level="30"/>
+            <boss id="1600" level="38"/>
+        </map>
+        <map id="4" mapId="800004" prevMapId="131" name="荆棘林" monsterId="880" monsterCount="3"
+             threeStar="为小梦/超梦/极梦分配学习力45点后击败芙拉伦斯" nextId="5">
+            <item id="401161" count="1"/>
+            <item id="401146" count="1"/>
+            <item id="401146" count="2"/>
+            <boss level="35" id="251"/>
+            <boss level="40" id="1601"/>
+        </map>
+        <map id="5" mapId="800005" prevMapId="132" name="荆棘小道" monsterId="880" monsterCount="2"
+             threeStar="为小梦/超梦/极梦装备1枚星魂后击败碧芙莱" nextId="6">
+            <item id="401161" count="1"/>
+            <item id="401146" count="1"/>
+            <item id="401146" count="2"/>
+            <boss level="40" id="211"/>
+            <boss level="45" id="1602"/>
+        </map>
+        <map id="6" mapId="800006" prevMapId="133" name="深幽沼泽" monsterId="14" monsterCount="2"
+             threeStar="自身具有3级及以上特攻强化击败芙拉伦斯" nextId="7">
+            <item id="401162" count="1"/>
+            <item id="401146" count="1"/>
+            <item id="401146" count="2"/>
+            <boss level="55" id="12"/>
+            <boss level="55" id="1601"/>
+        </map>
+        <map id="7" mapId="800007" prevMapId="141" name="幻影崖" monsterId="406" monsterCount="2"
+             threeStar="与巴鲁金斯的战斗中超梦/极梦使用过必杀技" nextId="8">
+            <item id="401162" count="1"/>
+            <item id="401146" count="1"/>
+            <item id="401146" count="2"/>
+            <boss level="55" id="688"/>
+            <boss level="60" id="1603"/>
+        </map>
+        <map id="8" mapId="800008" prevMapId="121" name="异蘑世界" threeStar="在与拉奥叶的战斗中使用过100级精灵"
+             nextId="9,13">
+            <item id="401163" count="1"/>
+            <item id="401146" count="1"/>
+            <item id="401146" count="2"/>
+            <boss level="65" id="1604"/>
+            <boss level="70" id="1605"/>
+        </map>
+        <map id="9" mapId="800009" prevMapId="122" name="朽木桥" threeStar="自身具有麦迪金针状态时击败麦迪侠"
+             nextId="10">
+            <item id="400313" count="2"/>
+            <item id="401146" count="1"/>
+            <item id="401146" count="2"/>
+            <boss level="100" id="1108"/>
+            <boss level="100" id="1332"/>
+        </map>
+        <map id="10" mapId="800010" prevMapId="123" name="异蘑小径" threeStar="自身体力低于20%时击败特鲁伊" nextId="11">
+            <item id="400313" count="2"/>
+            <item id="401148" count="1"/>
+            <item id="401153" count="1"/>
+            <boss level="100" id="1606"/>
+            <boss level="100" id="1047"/>
+        </map>
+        <map id="11" mapId="800011" prevMapId="124" name="异蘑谷" threeStar="自身体力低于50%时击败拉奥兽" nextId="12">
+            <item id="400313" count="2"/>
+            <item id="401148" count="1"/>
+            <item id="401153" count="1"/>
+            <boss level="100" id="1330"/>
+            <boss level="100" id="1333"/>
+        </map>
+        <map id="12" mapId="800012" prevMapId="90" name="草系主城" threeStar="与目灵神的战斗中不使用能力弱化技能">
+            <item id="400313" count="3"/>
+            <item id="401148" count="5"/>
+            <item id="401153" count="1"/>
+            <boss level="100" id="1284"/>
+        </map>
+        <map id="13" mapId="800013" prevMapId="142" name="巨石洞穴" isWelfare="1"
+             threeStar="（开启条件：需要草目梦境总星数达到29颗）挑战树根使者，10回合内对树根使者造成的伤害越高可获得的奖励越丰厚！">
+            <item id="1" count="???"/>
+            <boss level="100" id="19"/>
+        </map>
+    </family>
+    <family id="2" isSwapPet="1" petType="3" itemIdList="401164,401165,401166,401167" totalItemCountList="10,10,10,10"
+            clickMapIdList="101,105,106,103">
+        <map id="101" mapId="800101" prevMapId="170" name="深水之城" monsterId="21" monsterCount="3"
+             threeStar="水元素具有汲取水分状态时击败它" nextId="102">
+            <item id="401164" count="1"/>
+            <item id="401146" count="1"/>
+            <item id="401146" count="2"/>
+            <boss level="65" id="365"/>
+            <boss level="70" id="396"/>
+        </map>
+        <map id="102" mapId="800102" prevMapId="201" name="彩虹珊瑚湾" monsterId="21" monsterCount="3"
+             threeStar="在进入雨天环境之前击败爱丽斯" nextId="103">
+            <item id="401164" count="1"/>
+            <item id="401146" count="1"/>
+            <item id="401146" count="2"/>
+            <boss level="65" id="444"/>
+            <boss level="70" id="1049"/>
+        </map>
+        <map id="103" mapId="800103" prevMapId="204" name="幽静珊瑚穴" monsterId="21" monsterCount="2"
+             threeStar="溺水状态下击败迪兰特" nextId="104">
+            <item id="401167" count="1"/>
+            <item id="401146" count="1"/>
+            <item id="401146" count="2"/>
+            <boss level="70" id="1150"/>
+            <boss level="75" id="1607"/>
+        </map>
+        <map id="104" mapId="800104" prevMapId="203" name="幻彩珊瑚" monsterId="27" monsterCount="3"
+             threeStar="与哞哞王战斗中只使用物攻技能" nextId="105">
+            <item id="401165" count="1"/>
+            <item id="401146" count="1"/>
+            <item id="401146" count="2"/>
+            <boss level="80" id="285"/>
+            <boss level="80" id="1608"/>
+        </map>
+        <map id="105" mapId="800105" prevMapId="202" name="珊瑚路" monsterId="27" monsterCount="3"
+             threeStar="溺水状态下击败尼奥比" nextId="106">
+            <item id="401165" count="1"/>
+            <item id="401146" count="1"/>
+            <item id="401146" count="2"/>
+            <boss level="80" id="285"/>
+            <boss level="85" id="1293"/>
+        </map>
+        <map id="106" mapId="800106" prevMapId="1801" name="银脉山脊" monsterId="27" monsterCount="3"
+             threeStar="安吉丽塔具有流水圈时击败它" nextId="107">
+            <item id="401166" count="1"/>
+            <item id="401146" count="1"/>
+            <item id="401146" count="2"/>
+            <boss level="85" id="365"/>
+            <boss level="90" id="1609"/>
+        </map>
+        <map id="107" mapId="800107" prevMapId="1911" name="残骸入口" monsterId="27" monsterCount="3"
+             threeStar="小梦/超梦/极梦达到100级击败雅柏菲卡" nextId="108">
+            <item id="401166" count="1"/>
+            <item id="401146" count="1"/>
+            <item id="401146" count="2"/>
+            <boss level="95" id="141"/>
+            <boss level="100" id="1610"/>
+        </map>
+        <map id="108" mapId="800108" prevMapId="192" name="残骸通道" monsterId="29" monsterCount="3"
+             threeStar="水墨飞马具有光滑皮肤状态时击败它" nextId="109,113">
+            <item id="401167" count="1"/>
+            <item id="401146" count="1"/>
+            <item id="401153" count="1"/>
+            <boss level="100" id="1087"/>
+            <boss level="100" id="1611"/>
+        </map>
+        <map id="109" mapId="800109" prevMapId="211" name="漩涡谷地"
+             threeStar="自身物攻弱化4~6级时用物攻技能击败海王纳斯" nextId="110">
+            <item id="400313" count="2"/>
+            <item id="401146" count="1"/>
+            <item id="401153" count="1"/>
+            <boss level="100" id="1107"/>
+            <boss level="100" id="1612"/>
+        </map>
+        <map id="110" mapId="800110" prevMapId="220" name="幽静浅滩" threeStar="提塔哈克具有连攻状态时击败它"
+             nextId="111">
+            <item id="400313" count="2"/>
+            <item id="401148" count="1"/>
+            <item id="401153" count="1"/>
+            <boss level="100" id="1613"/>
+            <boss level="100" id="1387"/>
+        </map>
+        <map id="111" mapId="800111" prevMapId="213" name="狂暴漩涡" threeStar="无法3星" nextId="112">
+            <item id="400313" count="1"/>
+            <item id="401148" count="1"/>
+            <item id="401153" count="2"/>
+            <boss level="100" id="1407"/>
+            <boss level="100" id="1160"/>
+        </map>
+        <map id="112" mapId="800112" prevMapId="160" name="水脉氏族主城"
+             threeStar="与脉灵神的战斗中不使用能力强化技能并且快速击败">
+            <item id="400313" count="1"/>
+            <item id="401148" count="1"/>
+            <item id="401153" count="2"/>
+            <boss level="100" id="1319"/>
+        </map>
+        <map id="113" mapId="800113" prevMapId="193" name="悲伤残骸" isWelfare="1"
+             threeStar="（开启条件：需要水脉梦境总星数达到29颗）1v1挑战涟漪，生存的回合数越多可获得的奖励越丰厚！">
+            <item id="1" count="???"/>
+            <boss level="100" id="1107"/>
+        </map>
+    </family>
+    <family id="3" isSwapPet="1" petType="4" itemIdList="401168,401169,401170,401171" totalItemCountList="10,10,10,10"
+            clickMapIdList="201,203,207,204">
+        <map id="201" mapId="800201" prevMapId="292" name="幻空岭" monsterId="40" monsterCount="3"
+             threeStar="战斗中有100级水系精灵出场" nextId="202">
+            <item id="401168" count="1"/>
+            <item id="401146" count="1"/>
+            <item id="401146" count="2"/>
+            <boss level="100" id="372"/>
+            <boss level="100" id="411"/>
+        </map>
+        <map id="202" mapId="800202" prevMapId="291" name="幻空通道" monsterId="40" monsterCount="3"
+             threeStar="与伊利亚斯的战斗中，最后一击先出手" nextId="203">
+            <item id="401168" count="1"/>
+            <item id="401146" count="1"/>
+            <item id="401146" count="2"/>
+            <boss level="100" id="287"/>
+            <boss level="100" id="1192"/>
+        </map>
+        <map id="203" mapId="800203" prevMapId="301" name="灰烬之地" monsterId="40" monsterCount="2"
+             threeStar="自身体力低于1/2时击败炎煞" nextId="204">
+            <item id="401169" count="1"/>
+            <item id="401146" count="1"/>
+            <item id="401148" count="2"/>
+            <boss level="100" id="372"/>
+            <boss level="100" id="1161"/>
+        </map>
+        <map id="204" mapId="800204" prevMapId="302" name="灰烬岔口" monsterId="70" monsterCount="3"
+             threeStar="自身体力低于1/3时击败萨弗拉" nextId="205">
+            <item id="401171" count="1"/>
+            <item id="401146" count="1"/>
+            <item id="401146" count="2"/>
+            <boss level="100" id="287"/>
+            <boss level="100" id="1120"/>
+        </map>
+        <map id="205" mapId="800205" prevMapId="304" name="灰烬深渊" monsterId="70" monsterCount="3"
+             threeStar="自身具有烧伤状态击败炎赫" nextId="206">
+            <item id="401171" count="1"/>
+            <item id="401146" count="1"/>
+            <item id="401146" count="2"/>
+            <boss level="100" id="38"/>
+            <boss level="100" id="1380"/>
+        </map>
+        <map id="206" mapId="800206" prevMapId="281" name="焰之森" monsterId="428" monsterCount="3"
+             threeStar="三只主宠在与艾妮维娅的战斗中有2只及以上出场" nextId="207">
+            <item id="401171" count="1"/>
+            <item id="401146" count="1"/>
+            <item id="401146" count="2"/>
+            <boss level="100" id="812"/>
+            <boss level="100" id="1121"/>
+        </map>
+        <map id="207" mapId="800207" prevMapId="240" name="蛮神战场" monsterId="428" monsterCount="2"
+             threeStar="使用超梦/极梦击败烈焰伊尔" nextId="208,212,301">
+            <item id="401170" count="1"/>
+            <item id="401146" count="1"/>
+            <item id="401146" count="2"/>
+            <boss level="100" id="1340"/>
+            <boss level="100" id="1341"/>
+        </map>
+        <map id="208" mapId="800208" prevMapId="261" name="赤链山脉"
+             threeStar="战胜爆焱战狐时，爆焱战狐具有3层及以上物攻强化状态" nextId="209">
+            <item id="400313" count="1"/>
+            <item id="401148" count="1"/>
+            <item id="401153" count="2"/>
+            <boss level="100" id="1318"/>
+            <boss level="100" id="1357"/>
+        </map>
+        <map id="209" mapId="800209" prevMapId="2621" name="烈焰峡谷"
+             threeStar="所有精灵血量未降低到30%以下的情况下击败神将张飞" nextId="210">
+            <item id="400313" count="1"/>
+            <item id="401148" count="1"/>
+            <item id="401153" count="2"/>
+            <boss level="100" id="1380"/>
+            <boss level="100" id="1394"/>
+        </map>
+        <map id="210" mapId="800210" prevMapId="2702" name="魅罗门" threeStar="3星条件未知" nextId="211">
+            <item id="400313" count="1"/>
+            <item id="401148" count="1"/>
+            <item id="401153" count="2"/>
+            <boss level="100" id="1262"/>
+            <boss level="100" id="1373"/>
+        </map>
+        <map id="211" mapId="800211" prevMapId="230" name="火幻氏族主城"
+             threeStar="自身具有3层及以上防御类强化状态时击败幻灵神">
+            <item id="400313" count="1"/>
+            <item id="401148" count="1"/>
+            <item id="401153" count="2"/>
+            <boss level="100" id="1348"/>
+        </map>
+        <map id="212" mapId="800212" prevMapId="263" name="火焰山"
+             threeStar="（开启条件：需要火幻梦境总星数达到24颗）6v1挑战奎尔斯之影，自身存活精灵越多得到的奖励越丰厚！"
+             isWelfare="1">
+            <item id="1" count="???"/>
+            <boss level="100" id="1417"/>
+        </map>
+    </family>
+    <family id="4" isSwapPet="1" petType="10" itemIdList="401206,401207,401208,401209" totalItemCountList="10,10,10,10"
+            clickMapIdList="301,303,304,306">
+        <map id="301" mapId="800301" prevMapId="3811" name="原始雪森林" monsterId="121" monsterCount="4"
+             threeStar="自身体力低于1/4时击败卡特琳娜" nextId="302">
+            <item id="401206" count="1"/>
+            <item id="401146" count="1"/>
+            <item id="401146" count="2"/>
+            <boss level="100" id="1176"/>
+        </map>
+        <map id="302" mapId="800302" prevMapId="550" name="冰沁宫殿" monsterId="121" monsterCount="4"
+             threeStar="自身具有3层及以上能力强化的情况下击败极地雪兔" nextId="303">
+            <item id="401206" count="1"/>
+            <item id="401146" count="1"/>
+            <item id="401146" count="2"/>
+            <boss level="100" id="1187"/>
+        </map>
+        <map id="303" mapId="800303" prevMapId="590" name="冰沁神殿" monsterId="121" monsterCount="4"
+             threeStar="九尾冰狐具有极地冰封状态时击败它" nextId="304">
+            <item id="401207" count="1"/>
+            <item id="401146" count="1"/>
+            <item id="401148" count="2"/>
+            <boss level="100" id="1177"/>
+        </map>
+        <map id="304" mapId="800304" prevMapId="620" name="冰脊山脉" monsterId="139" monsterCount="4"
+             threeStar="先出手时击败加缪奥斯" nextId="305">
+            <item id="401208" count="1"/>
+            <item id="401146" count="1"/>
+            <item id="401146" count="2"/>
+            <boss level="100" id="1198"/>
+        </map>
+        <map id="305" mapId="800305" prevMapId="640" name="冰脊之巅" monsterId="139" monsterCount="4"
+             threeStar="所有精灵血量不未降低到60%以下的情况下击败卡尼娅" nextId="306">
+            <item id="401208" count="1"/>
+            <item id="401146" count="1"/>
+            <item id="401146" count="2"/>
+            <boss level="100" id="1175"/>
+        </map>
+        <map id="306" mapId="800306" prevMapId="570" name="冰之监狱" monsterId="230" monsterCount="3"
+             threeStar="自身具有2项及以上的能力强化状态时战胜极冰凤皇" nextId="307,311">
+            <item id="401209" count="1"/>
+            <item id="401146" count="1"/>
+            <item id="401146" count="2"/>
+            <boss level="100" id="1176"/>
+            <boss level="100" id="1359"/>
+        </map>
+        <map id="307" mapId="800307" prevMapId="3812" name="雪之湖泊" threeStar="自身处于冻伤状态时击败怒海娜迦"
+             nextId="308">
+            <item id="400313" count="2"/>
+            <item id="401149" count="1"/>
+            <item id="401153" count="1"/>
+            <boss level="100" id="1175"/>
+            <boss level="100" id="1178"/>
+        </map>
+        <map id="308" mapId="800308" prevMapId="3813" name="雪之溶洞" threeStar="后出手击败圣冰十尾" nextId="309">
+            <item id="400313" count="2"/>
+            <item id="401149" count="1"/>
+            <item id="401153" count="1"/>
+            <boss level="100" id="1198"/>
+            <boss level="100" id="1358"/>
+        </map>
+        <map id="309" mapId="800309" prevMapId="610" name="冰晶矿场" threeStar="自身具有3层及以上减速状态时击败暴雪领主"
+             nextId="310">
+            <item id="400313" count="2"/>
+            <item id="401149" count="1"/>
+            <item id="401153" count="1"/>
+            <boss level="100" id="1177"/>
+            <boss level="100" id="1405"/>
+        </map>
+        <map id="310" mapId="800310" prevMapId="540" name="冰之谷" threeStar="自身具有冻伤状态击败沁灵神">
+            <item id="400313" count="2"/>
+            <item id="401149" count="1"/>
+            <item id="401153" count="1"/>
+            <boss level="100" id="1354"/>
+        </map>
+        <map id="311" mapId="800311" prevMapId="3814" name="冰封魔域"
+             threeStar="（开启条件：需要冰沁梦境总星数达到24颗）在战斗中尽力打出更高的伤害，技能造成的最高伤害越多得到的奖励越丰厚！"
+             isWelfare="1">
+            <item id="1" count="???"/>
+            <boss level="100" id="575"/>
+        </map>
+    </family>
 </root>

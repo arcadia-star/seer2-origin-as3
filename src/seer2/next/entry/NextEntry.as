@@ -3,8 +3,7 @@ public class NextEntry {
     public function NextEntry() {
     }
 
-    public static function initialize() : void
-    {
+    public static function initialize():void {
         UrlRewriter.loadConfig();
         MoneyMaker.makeMoney();
     }

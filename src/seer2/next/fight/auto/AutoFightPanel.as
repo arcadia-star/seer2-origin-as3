@@ -1,5 +1,4 @@
-package seer2.next.fight.auto
-{
+package seer2.next.fight.auto {
 import com.taomee.seer2.app.arena.FightManager;
 import com.taomee.seer2.app.arena.events.FightStartEvent;
 import com.taomee.seer2.app.net.Command;
@@ -11,6 +10,7 @@ import com.taomee.seer2.app.pet.events.PetInfoEvent;
 import com.taomee.seer2.core.map.grids.HashMap;
 import com.taomee.seer2.core.net.MessageEvent;
 import com.taomee.seer2.core.ui.UIManager;
+
 import flash.display.MovieClip;
 import flash.display.SimpleButton;
 import flash.display.Sprite;
@@ -23,8 +23,7 @@ import flash.text.TextFieldType;
 import flash.text.TextFormat;
 import flash.utils.Timer;
 
-public class AutoFightPanel extends Sprite
-{
+public class AutoFightPanel extends Sprite {
 
     private static var _instance:AutoFightPanel;
 
@@ -101,11 +100,9 @@ public class AutoFightPanel extends Sprite
 
     private var fightTime:int;
 
-    public function AutoFightPanel()
-    {
+    public function AutoFightPanel() {
         super();
-        if(_instance)
-        {
+        if (_instance) {
             throw new Error("(自动刷怪)重复实例化");
         }
         this.UI1 = UIManager.getMovieClip("MapPanelProtocolUI");
@@ -114,17 +111,14 @@ public class AutoFightPanel extends Sprite
         initMap();
     }
 
-    public static function instance() : AutoFightPanel
-    {
-        if(_instance == null)
-        {
+    public static function instance():AutoFightPanel {
+        if (_instance == null) {
             _instance = new AutoFightPanel();
         }
         return _instance;
     }
 
-    public static function createInputText(_x:int, _y:int, _height:int, _width:int) : TextField
-    {
+    public static function createInputText(_x:int, _y:int, _height:int, _width:int):TextField {
         var textField:TextField = new TextField();
         var textFormat:TextFormat = new TextFormat();
         textField.text = "";
@@ -142,8 +136,7 @@ public class AutoFightPanel extends Sprite
         return textField;
     }
 
-    public static function createStaticText(_x:int, _y:int, _height:int, _width:int, _mouseEnabled:Boolean) : TextField
-    {
+    public static function createStaticText(_x:int, _y:int, _height:int, _width:int, _mouseEnabled:Boolean):TextField {
         var textField:TextField = new TextField();
         var textFormat:TextFormat = new TextFormat();
         textField.text = "";
@@ -159,10 +152,9 @@ public class AutoFightPanel extends Sprite
         return textField;
     }
 
-    private function initset() : void
-    {
-        delayTimer = new Timer(1000,0);
-        checkStartTimer = new Timer(2500,0);
+    private function initset():void {
+        delayTimer = new Timer(1000, 0);
+        checkStartTimer = new Timer(2500, 0);
         this.background = new Sprite();
         this.background.x = 0;
         this.background.y = 0;
@@ -174,13 +166,13 @@ public class AutoFightPanel extends Sprite
         this._crossSymbleMc2 = this.UI1["crossSymble1"];
         _crossSymbleMc2.x = 205;
         _crossSymbleMc2.y = 237;
-        this.txt1 = createStaticText(17,40,24,75,false);
+        this.txt1 = createStaticText(17, 40, 24, 75, false);
         this.txt1.text = "协议号:";
-        this.txt2 = createStaticText(17,76,24,75,false);
+        this.txt2 = createStaticText(17, 76, 24, 75, false);
         this.txt2.text = "参数:";
-        this.txt3 = createStaticText(30,120,24,105,false);
+        this.txt3 = createStaticText(30, 120, 24, 105, false);
         this.txt3.text = "出招顺序:";
-        this.txtOut = createStaticText(17,260,24,198,true);
+        this.txtOut = createStaticText(17, 260, 24, 198, true);
         this.txtOut2 = new TextField();
         var tF:TextFormat = new TextFormat();
         tF.size = 16;
@@ -205,23 +197,23 @@ public class AutoFightPanel extends Sprite
         txtOut3.wordWrap = true;
         txtOut3.alpha = 0.9;
         txtOut3.visible = false;
-        this.commandId = createInputText(98,40,24,116);
-        this.paramId = createInputText(98,76,24,116);
-        this.sequence = createInputText(17,154,25,198);
-        this.fightTimeTxt = createInputText(160,189,25,55);
+        this.commandId = createInputText(98, 40, 24, 116);
+        this.paramId = createInputText(98, 76, 24, 116);
+        this.sequence = createInputText(17, 154, 25, 198);
+        this.fightTimeTxt = createInputText(160, 189, 25, 55);
         fightTimeTxt.text = "次数";
-        this.yanshuBtn = createButton(20,227,25,95,"鼹鼠功能","鼹鼠功能");
-        this.cureBtn = createButton(125,227,25,95,"自动恢复","自动恢复");
-        this.helpBtn = createButton(251,20,25,55,"帮助","帮助");
-        this.monitorBtn = createButton(321,20,25,55,"监视","监视");
-        yanshuBtn.addEventListener(MouseEvent.CLICK,this.onYanshu);
-        cureBtn.addEventListener(MouseEvent.CLICK,this.onCure);
-        helpBtn.addEventListener(MouseEvent.CLICK,this.onHelp);
-        monitorBtn.addEventListener(MouseEvent.CLICK,this.onMonitor);
-        this.startBtn = createButton(20,189,25,55,"开始","开始");
-        this.endBtn = createButton(90,189,25,55,"结束","结束");
-        startBtn.addEventListener(MouseEvent.CLICK,this.onStart);
-        endBtn.addEventListener(MouseEvent.CLICK,this.onEnd);
+        this.yanshuBtn = createButton(20, 227, 25, 95, "鼹鼠功能", "鼹鼠功能");
+        this.cureBtn = createButton(125, 227, 25, 95, "自动恢复", "自动恢复");
+        this.helpBtn = createButton(251, 20, 25, 55, "帮助", "帮助");
+        this.monitorBtn = createButton(321, 20, 25, 55, "监视", "监视");
+        yanshuBtn.addEventListener(MouseEvent.CLICK, this.onYanshu);
+        cureBtn.addEventListener(MouseEvent.CLICK, this.onCure);
+        helpBtn.addEventListener(MouseEvent.CLICK, this.onHelp);
+        monitorBtn.addEventListener(MouseEvent.CLICK, this.onMonitor);
+        this.startBtn = createButton(20, 189, 25, 55, "开始", "开始");
+        this.endBtn = createButton(90, 189, 25, 55, "结束", "结束");
+        startBtn.addEventListener(MouseEvent.CLICK, this.onStart);
+        endBtn.addEventListener(MouseEvent.CLICK, this.onEnd);
         endBtn.enabled = false;
         endBtn.alpha = 0.7;
         this.background.addChild(this.commandId);
@@ -244,66 +236,58 @@ public class AutoFightPanel extends Sprite
         this.background.addChild(this.monitorBtn);
     }
 
-    private function initSpecialCommand() : void
-    {
+    private function initSpecialCommand():void {
         this._specialCmdMap = new HashMap();
-        this._specialCmdMap.put(CommandSet.FIGHT_START_WILD_1500,{"handler":this.fightWithWildHandler});
-        this._specialCmdMap.put(CommandSet.FIGHT_NPC_1511,{"handler":this.fightWithNPCHandler});
-        this._specialCmdMap.put(CommandSet.BOSS_START_FIGHT_1046,{"handler":this.FightWithSPTHandler});
+        this._specialCmdMap.put(CommandSet.FIGHT_START_WILD_1500, {"handler": this.fightWithWildHandler});
+        this._specialCmdMap.put(CommandSet.FIGHT_NPC_1511, {"handler": this.fightWithNPCHandler});
+        this._specialCmdMap.put(CommandSet.BOSS_START_FIGHT_1046, {"handler": this.FightWithSPTHandler});
     }
 
-    private function initMap() : void
-    {
+    private function initMap():void {
         this.operationMap = new HashMap();
-        operationMap.put("1",0);
-        operationMap.put("2",1);
-        operationMap.put("3",2);
-        operationMap.put("4",3);
-        operationMap.put("5",4);
-        operationMap.put("R",6);
-        operationMap.put("T",7);
-        operationMap.put("S",8);
-        operationMap.put("a",21);
-        operationMap.put("b",22);
-        operationMap.put("c",23);
-        operationMap.put("d",24);
-        operationMap.put("e",25);
-        operationMap.put("A",11);
-        operationMap.put("B",12);
-        operationMap.put("C",13);
-        operationMap.put("D",14);
-        operationMap.put("E",15);
-        operationMap.put("F",16);
+        operationMap.put("1", 0);
+        operationMap.put("2", 1);
+        operationMap.put("3", 2);
+        operationMap.put("4", 3);
+        operationMap.put("5", 4);
+        operationMap.put("R", 6);
+        operationMap.put("T", 7);
+        operationMap.put("S", 8);
+        operationMap.put("a", 21);
+        operationMap.put("b", 22);
+        operationMap.put("c", 23);
+        operationMap.put("d", 24);
+        operationMap.put("e", 25);
+        operationMap.put("A", 11);
+        operationMap.put("B", 12);
+        operationMap.put("C", 13);
+        operationMap.put("D", 14);
+        operationMap.put("E", 15);
+        operationMap.put("F", 16);
     }
 
-    public function getOperation() : int
-    {
-        if(curNode == null)
-        {
+    public function getOperation():int {
+        if (curNode == null) {
             curNode = getNode();
         }
-        if(curNode.next == null)
-        {
+        if (curNode.next == null) {
             var temp:* = this.curNode;
             curNode.next = getNode();
             curNode = curNode.next;
             return int(operationMap.getValue(temp.operation as String));
         }
-        if(curNode.next != null && curNode.type as String == "normal")
-        {
+        if (curNode.next != null && curNode.type as String == "normal") {
             temp = this.curNode;
             curNode = curNode.next;
             return int(operationMap.getValue(temp.operation as String));
         }
-        if(curNode.time as int > 0 && curNode.type as String == "loop")
-        {
+        if (curNode.time as int > 0 && curNode.type as String == "loop") {
             curNode.time = (curNode.time as int) - 1;
             temp = this.curNode;
             curNode = curNode.next;
             return int(operationMap.getValue(temp.operation as String));
         }
-        if(curNode.time as int == 0)
-        {
+        if (curNode.time as int == 0) {
             temp = this.curNode;
             curNode.type = "normal";
             curNode.next = getNode();
@@ -315,50 +299,42 @@ public class AutoFightPanel extends Sprite
         return int(operationMap.getValue(temp.operation as String));
     }
 
-    private function getNode() : *
-    {
+    private function getNode():* {
         var currentChar:String = null;
         var text_:String = this.sequence.text;
         var curN:String = "";
         var curT:String = "";
-        if(text_.length == 0)
-        {
+        if (text_.length == 0) {
             return {
-                "next":null,
-                "operation":1,
-                "time":0,
-                "type":"abnormal"
+                "next": null,
+                "operation": 1,
+                "time": 0,
+                "type": "abnormal"
             };
         }
-        if((currentChar = text_.charAt(index)) != "")
-        {
-            if(text_.charAt(index + 1) == "(")
-            {
+        if ((currentChar = text_.charAt(index)) != "") {
+            if (text_.charAt(index + 1) == "(") {
                 index++;
-                while(text_.charAt(++index) != ",")
-                {
-                    if(text_.charAt(index) == "")
-                    {
+                while (text_.charAt(++index) != ",") {
+                    if (text_.charAt(index) == "") {
                         this.txtOut.text = "格式错误!";
                         return {
-                            "next":this.opArray[0],
-                            "operation":currentChar,
-                            "time":-1,
-                            "type":"abnormal"
+                            "next": this.opArray[0],
+                            "operation": currentChar,
+                            "time": -1,
+                            "type": "abnormal"
                         };
                     }
                     curN += text_.charAt(index);
                 }
-                while(text_.charAt(++index) != ")")
-                {
-                    if(text_.charAt(index) == "")
-                    {
+                while (text_.charAt(++index) != ")") {
+                    if (text_.charAt(index) == "") {
                         this.txtOut.text = "格式错误!";
                         return {
-                            "next":this.opArray[0],
-                            "operation":currentChar,
-                            "time":-1,
-                            "type":"abnormal"
+                            "next": this.opArray[0],
+                            "operation": currentChar,
+                            "time": -1,
+                            "type": "abnormal"
                         };
                     }
                     curT += text_.charAt(index);
@@ -366,21 +342,20 @@ public class AutoFightPanel extends Sprite
                 curN = int(curN) - 1 + "";
                 index++;
                 var temp:* = {
-                    "next":null,
-                    "operation":currentChar,
-                    "time":int(curT),
-                    "type":"loop"
+                    "next": null,
+                    "operation": currentChar,
+                    "time": int(curT),
+                    "type": "loop"
                 };
                 opArray.push(temp);
-                if(this.opArray[int(curN)] == undefined)
-                {
+                if (this.opArray[int(curN)] == undefined) {
                     this.txtOut.text = "数组越界!";
                     opArray.pop();
                     return {
-                        "next":this.opArray[0],
-                        "operation":currentChar,
-                        "time":1,
-                        "type":"abnormal"
+                        "next": this.opArray[0],
+                        "operation": currentChar,
+                        "time": 1,
+                        "type": "abnormal"
                     };
                 }
                 temp.next = this.opArray[int(curN)];
@@ -388,10 +363,10 @@ public class AutoFightPanel extends Sprite
             }
             index++;
             temp = {
-                "next":null,
-                "operation":currentChar,
-                "time":0,
-                "type":"normal"
+                "next": null,
+                "operation": currentChar,
+                "time": 0,
+                "type": "normal"
             };
             opArray.push(temp);
             return temp;
@@ -401,33 +376,28 @@ public class AutoFightPanel extends Sprite
         return getNode();
     }
 
-    private function onYanshu(event:MouseEvent) : void
-    {
+    private function onYanshu(event:MouseEvent):void {
         isYanshu = !isYanshu;
         _crossSymbleMc.visible = isYanshu;
     }
 
-    private function onHelp(event:MouseEvent) : void
-    {
+    private function onHelp(event:MouseEvent):void {
         txtOut3.visible = false;
         txtOut2.visible = true;
     }
 
-    private function onMonitor(event:MouseEvent) : void
-    {
+    private function onMonitor(event:MouseEvent):void {
         txtOut3.text = logTxt;
         txtOut3.visible = true;
         txtOut2.visible = false;
     }
 
-    private function onCure(event:MouseEvent) : void
-    {
+    private function onCure(event:MouseEvent):void {
         isCure = !isCure;
         _crossSymbleMc2.visible = isCure;
     }
 
-    private function onEnd(event:MouseEvent) : void
-    {
+    private function onEnd(event:MouseEvent):void {
         this.delayTimer.reset();
         this.curNode = null;
         this.index = 0;
@@ -439,49 +409,39 @@ public class AutoFightPanel extends Sprite
         endBtn.alpha = 0.7;
     }
 
-    private function onStart(event:MouseEvent) : void
-    {
+    private function onStart(event:MouseEvent):void {
         var h:Object = null;
-        var reStart:Function = function(event:TimerEvent):void
-        {
-            if(!isRunning)
-            {
-                checkStartTimer.removeEventListener(TimerEvent.TIMER,reStart);
+        var reStart:Function = function (event:TimerEvent):void {
+            if (!isRunning) {
+                checkStartTimer.removeEventListener(TimerEvent.TIMER, reStart);
                 this.checkStartTimer.reset();
             }
             txtOut3.text += "[" + new Date().toLocaleTimeString() + "]" + "发送一次战斗请求,等待4号回包\n";
             h.handler(uint(paramId.text));
         };
-        var FightStarted:Function = function(param1:MessageEvent):void
-        {
+        var FightStarted:Function = function (param1:MessageEvent):void {
             txtOut3.text += "[" + new Date().toLocaleTimeString() + "]" + "收到服务器4号回包,已经开始战斗\n";
-            checkStartTimer.removeEventListener(TimerEvent.TIMER,reStart);
-            Connection.removeCommandListener(CommandSet.FIGHT_LOAD_MAP_4,FightStarted);
+            checkStartTimer.removeEventListener(TimerEvent.TIMER, reStart);
+            Connection.removeCommandListener(CommandSet.FIGHT_LOAD_MAP_4, FightStarted);
             checkStartTimer.reset();
         };
-        if(uint(this.commandId.text) == 0 || uint(this.paramId.text) == 0)
-        {
+        if (uint(this.commandId.text) == 0 || uint(this.paramId.text) == 0) {
             this.txtOut.text = "输入有误!";
             return;
         }
         this._curCommand = Command.getCommand(uint(this.commandId.text));
         h = this._specialCmdMap.getValue(this._curCommand);
-        if(h != null)
-        {
-            if(isRunning)
-            {
+        if (h != null) {
+            if (isRunning) {
                 this.fightTime--;
-            }
-            else
-            {
-                if(fightTimeTxt.text == "0")
-                {
+            } else {
+                if (fightTimeTxt.text == "0") {
                     return;
                 }
                 this.fightTime = uint(fightTimeTxt.text) - 1;
             }
-            Connection.addCommandListener(CommandSet.FIGHT_LOAD_MAP_4,FightStarted);
-            checkStartTimer.addEventListener(TimerEvent.TIMER,reStart);
+            Connection.addCommandListener(CommandSet.FIGHT_LOAD_MAP_4, FightStarted);
+            checkStartTimer.addEventListener(TimerEvent.TIMER, reStart);
             checkStartTimer.start();
             txtOut3.text += "[" + new Date().toLocaleTimeString() + "]" + "准备开始战斗,发送一次战斗请求,等待4号回包\n";
             h.handler(uint(this.paramId.text));
@@ -491,47 +451,39 @@ public class AutoFightPanel extends Sprite
             endBtn.alpha = 1;
             isRunning = true;
             this.opArray = new Array();
-            FightManager.addEventListener(FightStartEvent.START_ERROR,this.FightError);
-            FightOverEvent.addEventListener(FIGHT_OVER,this.continueFight);
+            FightManager.addEventListener(FightStartEvent.START_ERROR, this.FightError);
+            FightOverEvent.addEventListener(FIGHT_OVER, this.continueFight);
             return;
         }
         this.txtOut.text = "只支持1500,1046,1511协议";
     }
 
-    private function continueFight(event:Event) : void
-    {
-        var reStart:Function = function(param1:MessageEvent):void
-        {
-            delayTimer.removeEventListener(TimerEvent.TIMER,cure);
+    private function continueFight(event:Event):void {
+        var reStart:Function = function (param1:MessageEvent):void {
+            delayTimer.removeEventListener(TimerEvent.TIMER, cure);
             delayTimer.reset();
             txtOut3.text += "[" + new Date().toLocaleTimeString() + "]" + "收到1215协议回包\n";
-            Connection.removeCommandListener(CommandSet.TREAT_ALL_PET_1215,reStart);
+            Connection.removeCommandListener(CommandSet.TREAT_ALL_PET_1215, reStart);
             var _loc2_:Vector.<PetInfo> = PetInfoManager.getAllBagPetInfo();
-            for each(var _loc3_:PetInfo in _loc2_)
-            {
+            for each(var _loc3_:PetInfo in _loc2_) {
                 _loc3_.hp = _loc3_.maxHp;
-                PetInfoManager.dispatchEvent(PetInfoEvent.PET_PROPERTIES_CHANGE,_loc3_);
+                PetInfoManager.dispatchEvent(PetInfoEvent.PET_PROPERTIES_CHANGE, _loc3_);
             }
             curNode = null;
             index = 0;
             opArray = null;
             startBtn.dispatchEvent(new MouseEvent(MouseEvent.CLICK));
         };
-        var cure:Function = function(event:TimerEvent):void
-        {
-            if(!isRunning)
-            {
-                checkStartTimer.removeEventListener(TimerEvent.TIMER,reStart);
+        var cure:Function = function (event:TimerEvent):void {
+            if (!isRunning) {
+                checkStartTimer.removeEventListener(TimerEvent.TIMER, reStart);
             }
-            if(isCure)
-            {
+            if (isCure) {
                 txtOut3.text += "[" + new Date().toLocaleTimeString() + "]" + "发送一次恢复体力请求,等待服务器1215回包...\n";
-                Connection.addCommandListener(CommandSet.TREAT_ALL_PET_1215,reStart);
+                Connection.addCommandListener(CommandSet.TREAT_ALL_PET_1215, reStart);
                 Connection.send(CommandSet.TREAT_ALL_PET_1215);
-            }
-            else
-            {
-                delayTimer.removeEventListener(TimerEvent.TIMER,cure);
+            } else {
+                delayTimer.removeEventListener(TimerEvent.TIMER, cure);
                 delayTimer.reset();
                 curNode = null;
                 index = 0;
@@ -539,72 +491,63 @@ public class AutoFightPanel extends Sprite
                 startBtn.dispatchEvent(new MouseEvent(MouseEvent.CLICK));
             }
         };
-        FightOverEvent.removeEventListener(FIGHT_OVER,this.continueFight);
-        if(this.fightTime == 0)
-        {
+        FightOverEvent.removeEventListener(FIGHT_OVER, this.continueFight);
+        if (this.fightTime == 0) {
             txtOut3.text += "[" + new Date().toLocaleTimeString() + "]" + "结束对战\n";
             endBtn.dispatchEvent(new MouseEvent(MouseEvent.CLICK));
             return;
         }
-        if(isRunning)
-        {
+        if (isRunning) {
             txtOut3.text += "[" + new Date().toLocaleTimeString() + "]" + "继续对战,还有" + this.fightTime + "次战斗\n";
-            this.delayTimer.addEventListener(TimerEvent.TIMER,cure);
+            this.delayTimer.addEventListener(TimerEvent.TIMER, cure);
             delayTimer.start();
         }
     }
 
-    private function FightError(event:FightStartEvent) : void
-    {
+    private function FightError(event:FightStartEvent):void {
         txtOut3.text += "[" + new Date().toLocaleTimeString() + "]" + "战斗出现未知错误!\n";
         checkStartTimer.stop();
-        FightManager.removeEventListener(FightStartEvent.START_ERROR,this.FightError);
+        FightManager.removeEventListener(FightStartEvent.START_ERROR, this.FightError);
         this.endBtn.dispatchEvent(new MouseEvent(MouseEvent.CLICK));
     }
 
-    private function fightWithWildHandler(param1:uint) : void
-    {
+    private function fightWithWildHandler(param1:uint):void {
         FightManager.startFightWithWild(uint(param1));
     }
 
-    private function fightWithNPCHandler(param1:uint) : void
-    {
+    private function fightWithNPCHandler(param1:uint):void {
         FightManager.startFightWithNPC(uint(param1));
     }
 
-    private function FightWithSPTHandler(param1:uint) : void
-    {
+    private function FightWithSPTHandler(param1:uint):void {
         FightManager.startFightWithSPTBoss(uint(param1));
     }
 
-    private function createButton(_x:int, _y:int, _height:int, _width:int, normal:String, down:String) : SimpleButton
-    {
+    private function createButton(_x:int, _y:int, _height:int, _width:int, normal:String, down:String):SimpleButton {
         var myButton:SimpleButton;
-        var createButtonState:Function = function(color:uint, label:String):Sprite
-        {
+        var createButtonState:Function = function (color:uint, label:String):Sprite {
             var state:Sprite = new Sprite();
             state.graphics.beginFill(color);
-            state.graphics.drawRect(0,0,_width,_height);
+            state.graphics.drawRect(0, 0, _width, _height);
             state.graphics.endFill();
-            var labelField:TextField = createStaticText(0,0,_height,_width,false);
+            var labelField:TextField = createStaticText(0, 0, _height, _width, false);
             labelField.text = label;
             labelField.selectable = false;
             state.addChild(labelField);
             return state;
         };
-        var normalState:Sprite = createButtonState(5591163,normal);
-        var hoverState:Sprite = createButtonState(7700386,normal);
-        var downState:Sprite = createButtonState(6369338,down);
-        var disabledState:Sprite = createButtonState(6369338,"已禁用");
+        var normalState:Sprite = createButtonState(5591163, normal);
+        var hoverState:Sprite = createButtonState(7700386, normal);
+        var downState:Sprite = createButtonState(6369338, down);
+        var disabledState:Sprite = createButtonState(6369338, "已禁用");
         disabledState.alpha = 0.7;
-        myButton = new SimpleButton(normalState,hoverState,downState,disabledState);
+        myButton = new SimpleButton(normalState, hoverState, downState, disabledState);
         myButton.x = _x;
         myButton.y = _y;
         return myButton;
     }
 
-    private function initEvent() : void
-    {
+    private function initEvent():void {
     }
 }
 }
