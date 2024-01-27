@@ -59,7 +59,7 @@ public class MapProcessor_1041 extends MapProcessor {
 
     override public function init():void {
         super.init();
-        SwapManager.swapItem(603, 1, this.onStart);
+        //SwapManager.swapItem(603, 1, this.onStart);
     }
 
     private function showTips(param1:int = 0):void {
@@ -122,16 +122,16 @@ public class MapProcessor_1041 extends MapProcessor {
 
     override public function dispose():void {
         super.dispose();
-        var _loc1_:int = 0;
-        while (_loc1_ < 5) {
-            this.boxVec[_loc1_].removeEventListener(MouseEvent.CLICK, this.clickBox);
-            _loc1_++;
-        }
-        ShootController.removeEventListener(ShootEvent.PLAY_END, this.checkTarget);
-        ShootController.removeEventListener(ShootEvent.PLAY_START, this.disEnableMap);
-        Tick.instance.removeRender(this.changTime);
-        Tick.instance.removeRender(this.showTips);
-        ActorManager.showRemoteActor = true;
+//        var _loc1_:int = 0;
+//        while (_loc1_ < 5) {
+//            this.boxVec[_loc1_].removeEventListener(MouseEvent.CLICK, this.clickBox);
+//            _loc1_++;
+//        }
+//        ShootController.removeEventListener(ShootEvent.PLAY_END, this.checkTarget);
+//        ShootController.removeEventListener(ShootEvent.PLAY_START, this.disEnableMap);
+//        Tick.instance.removeRender(this.changTime);
+//        Tick.instance.removeRender(this.showTips);
+//        ActorManager.showRemoteActor = true;
     }
 
     private function clickBox(param1:MouseEvent):void {

@@ -92,7 +92,7 @@ public class SimulateSendingProtocolPanel extends Sprite {
         this._msgContentTxt = this._mainUI["msgContentTxt"];
         this._msgContentTxt.text = DynSwitch.simulateSendingProtocolHint
                 || "协议号:1055 兑换 1224 购买 1500 对战\n兑换类参数:\n2413 约瑟 4658 养成 4659 星屑 3915 神迹米咔\n对战类参数:\n1095 龙魄 1432 阿兹尔 1505 无限D药 1655 罗澜 1897 雷克萨斯";
-        this._msgContentTxt.mouseEnabled = this._msgContentTxt.mouseWheelEnabled = false;
+        this._msgContentTxt.mouseEnabled = this._msgContentTxt.mouseWheelEnabled = true;
         this._scrollBar = new Scroller(this._mainUI["scroll"]);
         this._scrollBar.x = 510;
         this._scrollBar.y = 3;
@@ -100,6 +100,9 @@ public class SimulateSendingProtocolPanel extends Sprite {
         this._scrollBar.maxScrollPosition = 10;
         this._scrollBar.wheelObject = this._wheelObjMc;
         this._mainUI.addChild(this._scrollBar);
+        // 隐藏没啥用的组件
+        this._clearBtn.visible = false;
+        this._scrollBar.visible = false;
     }
 
     private function initEvent():void {
