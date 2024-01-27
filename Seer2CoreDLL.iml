@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module type="Flex" version="4">
+  <component name="FacetManager">
+    <facet type="Python" name="Python">
+      <configuration sdkName="Python 3.7" />
+    </facet>
+  </component>
   <component name="FlexBuildConfigurationManager" active="Seer2CoreDLL">
     <configurations>
       <configuration name="Seer2CoreDLL" pure-as="true" output-type="Library" output-file="Seer2CoreDLL.swc" output-folder="$MODULE_DIR$/out">
@@ -62,5 +67,6 @@
         <SOURCES />
       </library>
     </orderEntry>
+    <orderEntry type="library" name="Python 3.7 interpreter library" level="application" />
   </component>
 </module>
