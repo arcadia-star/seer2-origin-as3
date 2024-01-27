@@ -13,6 +13,7 @@ public class DynConfig {
     public static var itemConfigXML:XML;
     public static var buffConfigXML:XML;
     public static var movesConfigXML:XML;
+    public static var hideMovesConfigXML:XML;
     public static var nonoActivityConfigXML:XML;
     public static var actCalendarConfigXML:XML;
     public static var shopPanelConfigXML:XML;
@@ -29,6 +30,9 @@ public class DynConfig {
         });
         loadXML("config/binaryData/15_com.taomee.seer2.app.config.SkillConfig__movesXmlClass.xml", function (xml:XML):void {
             movesConfigXML = xml;
+        });
+        loadXML("config/binaryData/23_com.taomee.seer2.app.config.SkillConfig__hideMovesXmlClass.xml", function (xml:XML):void {
+            hideMovesConfigXML = xml;
         });
         loadXML("config/binaryData/21_com.taomee.seer2.app.config.NonoActivityConfig__xmlClass.xml", function (xml:XML):void {
             nonoActivityConfigXML = xml;
@@ -48,6 +52,9 @@ public class DynConfig {
         loadXML("config/binaryData/45_com.taomee.seer2.app.config.PetConfig__dictionaryXmlClass.xml", function (xml:XML):void {
             dictionaryConfigXML = xml;
         });
+        loadXML("config/dyn-client-config.xml", function (xml:XML):void {
+            DynSwitch.loadConfig(xml);
+        })
     }
 
     private static function loadXML(url:String, success:Function):void {

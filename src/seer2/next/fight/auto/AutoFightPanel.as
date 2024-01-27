@@ -202,7 +202,7 @@ public class AutoFightPanel extends Sprite {
         this.sequence = createInputText(17, 154, 25, 198);
         this.fightTimeTxt = createInputText(160, 189, 25, 55);
         fightTimeTxt.text = "次数";
-        this.yanshuBtn = createButton(20, 227, 25, 95, "鼹鼠功能", "鼹鼠功能");
+        this.yanshuBtn = createButton(20, 227, 25, 95, "无限对战", "无限对战");
         this.cureBtn = createButton(125, 227, 25, 95, "自动恢复", "自动恢复");
         this.helpBtn = createButton(251, 20, 25, 55, "帮助", "帮助");
         this.monitorBtn = createButton(321, 20, 25, 55, "监视", "监视");

@@ -61,6 +61,10 @@ public class ItemManager extends BaseBean {
 
     private static var _success:Function;
 
+    /**
+     * 嘤嘤怪用，这里先保留了
+     */
+    public static var _getCoinsMessageSwitch:Boolean = true;
 
     public function ItemManager() {
         super();
@@ -500,7 +504,9 @@ public class ItemManager extends BaseBean {
     private static function onGetConis(param1:MessageEvent):void {
         var _loc2_:IDataInput = param1.message.getRawData();
         var _loc3_:uint = uint(_loc2_.readUnsignedInt());
-        ServerMessager.addMessage("获得了" + _loc3_ + "赛尔豆");
+        if (_getCoinsMessageSwitch) {
+            ServerMessager.addMessage("获得了" + _loc3_ + "赛尔豆");
+        }
         ActorManager.actorInfo.coins += _loc3_;
     }
 

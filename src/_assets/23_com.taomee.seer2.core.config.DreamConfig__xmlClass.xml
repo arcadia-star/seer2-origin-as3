@@ -349,7 +349,7 @@ map：关卡
             <boss level="100" id="1198"/>
         </map>
         <map id="305" mapId="800305" prevMapId="640" name="冰脊之巅" monsterId="139" monsterCount="4"
-             threeStar="所有精灵血量不未降低到60%以下的情况下击败卡尼娅" nextId="306">
+             threeStar="所有精灵血量均＞60%的情况下击败卡尼娅" nextId="306">
             <item id="401208" count="1"/>
             <item id="401146" count="1"/>
             <item id="401146" count="2"/>

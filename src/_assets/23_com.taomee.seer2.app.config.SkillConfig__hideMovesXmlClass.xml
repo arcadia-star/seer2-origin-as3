@@ -1,0 +1,2445 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<HideMovesTbl>
+    <HideMoves>
+        <HideMove ID="10014" Tips="获得50场战斗胜利"/>
+        <HideMove ID="10015" Tips="雨天时战胜对手"/>
+        <HideMove ID="10016" Tips="自己体力低于1/8时击败对手"/>
+        <HideMove ID="10017" Tips="三主宠分别上过场，其中最后用必杀技击败对手的领悟技能"/>
+        <HideMove ID="10031" Tips="获得50场战斗胜利"/>
+        <HideMove ID="10032" Tips="自己体力低于1/8时击败对手"/>
+        <HideMove ID="10033" Tips="使用嗜血技能使自己体力降到1点后结束战斗"/>
+        <HideMove ID="10017" Tips="三主宠分别上过场，其中最后用必杀技击败对手的领悟技能"/>
+        <HideMove ID="10047" Tips="在自己满血状态下战胜不低于60级的精灵"/>
+        <HideMove ID="10048" Tips="获得50场战斗胜利"/>
+        <HideMove ID="10049" Tips="使用寄生炸弹技能击败不低于60级的精灵"/>
+        <HideMove ID="10017" Tips="三主宠分别上过场，其中最后用必杀技击败对手的领悟技能"/>
+        <HideMove ID="10063" Tips="获得50场战斗胜利"/>
+        <HideMove ID="10064" Tips="对手处于魅惑状态时击败对手"/>
+        <HideMove ID="10065" Tips="学会幻觉状态技能后并且使用10次"/>
+        <HideMove ID="10066" Tips="使用手下无情击败对手30次"/>
+        <HideMove ID="10080" Tips="使用七叶夺命技能击败对手30次"/>
+        <HideMove ID="10081" Tips="在晴天环境下战胜对手"/>
+        <HideMove ID="10082" Tips="学会毒草技能后并且使用10次"/>
+        <HideMove ID="10083" Tips="获得50场战斗胜利"/>
+        <HideMove ID="10097" Tips="使用体重压迫击败对手30次"/>
+        <HideMove ID="10098" Tips="获得50场战斗胜利"/>
+        <HideMove ID="10099" Tips="对手处于害怕状态时击败对手"/>
+        <HideMove ID="10100" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="10114" Tips="后发出场的条件下击败对手"/>
+        <HideMove ID="10115" Tips="对手处于流血状态时击败对手"/>
+        <HideMove ID="10116" Tips="获得50场战斗胜利"/>
+        <HideMove ID="10117" Tips="自己体力低于1/4时击败对手"/>
+        <HideMove ID="10131" Tips="使用穿击波击败对手30次"/>
+        <HideMove ID="10132" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="10133" Tips="自己体力低于1/4时击败对手"/>
+        <HideMove ID="10134" Tips="获得50场战斗胜利"/>
+        <HideMove ID="10146" Tips="获得50场战斗胜利"/>
+        <HideMove ID="10147" Tips="对手处于慢性毒药状态下击败对手"/>
+        <HideMove ID="10148" Tips="自己体力低于1/4时击败对手"/>
+        <HideMove ID="10149" Tips="学会以毒攻毒技能后并且使用10次"/>
+        <HideMove ID="10161" Tips="自己空气值大于99的情况下击败对手"/>
+        <HideMove ID="10162" Tips="自己空气值小于19的情况下击败对手"/>
+        <HideMove ID="10163" Tips="获得50场战斗胜利"/>
+        <HideMove ID="10164" Tips="自己体力不低于3/4的情况下击败对手"/>
+        <HideMove ID="10175" Tips="使用全力冲撞击败对手30次"/>
+        <HideMove ID="10176" Tips="获得50场战斗胜利"/>
+        <HideMove ID="10177" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="10178" Tips="自己处于能力下降状态时击败对手"/>
+        <HideMove ID="10189" Tips="使用反射水盾的反弹效果击败对手"/>
+        <HideMove ID="10190" Tips="获得50场战斗胜利"/>
+        <HideMove ID="10191" Tips="在雨天环境下战胜对手"/>
+        <HideMove ID="10192" Tips="使用蓄水炮击败对手30次"/>
+        <HideMove ID="10189" Tips="使用反射水盾的反弹效果击败对手"/>
+        <HideMove ID="10190" Tips="获得50场战斗胜利"/>
+        <HideMove ID="10191" Tips="在雨天环境下战胜对手"/>
+        <HideMove ID="10192" Tips="使用蓄水炮击败对手30次"/>
+        <HideMove ID="10204" Tips="10次战斗都率先出手"/>
+        <HideMove ID="10205" Tips="对手处于烧伤状态下击败对手"/>
+        <HideMove ID="10206" Tips="获得50场战斗胜利"/>
+        <HideMove ID="10207" Tips="自己体力低于1/4时击败对手"/>
+        <HideMove ID="10219" Tips="获得50场战斗胜利"/>
+        <HideMove ID="10220" Tips="使用怪力钳击败对手30次"/>
+        <HideMove ID="10221" Tips="使用火焰钳击败对手30次"/>
+        <HideMove ID="10222" Tips="对手处于眩晕状态下击败对手"/>
+        <HideMove ID="10219" Tips="获得50场战斗胜利"/>
+        <HideMove ID="10220" Tips="使用怪力钳击败对手30次"/>
+        <HideMove ID="10221" Tips="使用火焰钳击败对手30次"/>
+        <HideMove ID="10222" Tips="对手处于眩晕状态下击败对手"/>
+        <HideMove ID="10232" Tips="使用滚烫冲击击败对手30次"/>
+        <HideMove ID="10233" Tips="使用高温火环击败对手30次"/>
+        <HideMove ID="10234" Tips="在炎热环境下战胜对手"/>
+        <HideMove ID="10235" Tips="获得50场战斗胜利"/>
+        <HideMove ID="10232" Tips="使用滚烫冲击击败对手30次"/>
+        <HideMove ID="10233" Tips="使用高温火环击败对手30次"/>
+        <HideMove ID="10234" Tips="在炎热环境下战胜对手"/>
+        <HideMove ID="10235" Tips="获得50场战斗胜利"/>
+        <HideMove ID="10245" Tips="获得50场战斗胜利"/>
+        <HideMove ID="10246" Tips="战斗开始第1回合击败对手"/>
+        <HideMove ID="10247" Tips="自己处于火系伤害增加状态时击败对手"/>
+        <HideMove ID="10248" Tips="对手处于烧伤状态下击败对手"/>
+        <HideMove ID="10259" Tips="使用旋转水枪击败对手30次"/>
+        <HideMove ID="10260" Tips="使用旋转冲锋击败对手30次"/>
+        <HideMove ID="10261" Tips="自己处于能力下降状态时击败对手"/>
+        <HideMove ID="10262" Tips="获得50场战斗胜利"/>
+        <HideMove ID="10272" Tips="获得50场战斗胜利"/>
+        <HideMove ID="10273" Tips="使用红心50次"/>
+        <HideMove ID="10274" Tips="使用心之印记50次"/>
+        <HideMove ID="10275" Tips="自己体力低于1/4时击败对手"/>
+        <HideMove ID="10286" Tips="使用紫光炮击败对手30次"/>
+        <HideMove ID="10287" Tips="使用绊倒击败对手30次"/>
+        <HideMove ID="10288" Tips="1次战斗中分别使用1次流星拳、彗星拳、碎星拳后击败对手"/>
+        <HideMove ID="10289" Tips="获得50场战斗胜利"/>
+        <HideMove ID="10302" Tips="获得50场战斗胜利"/>
+        <HideMove ID="10303" Tips="使用深呼吸50次"/>
+        <HideMove ID="10304" Tips="使用音波炸弹击败对手30次"/>
+        <HideMove ID="10305" Tips="使用禁音和噪音各30次"/>
+        <HideMove ID="10314" Tips="获得50场战斗胜利"/>
+        <HideMove ID="10315" Tips="使用生财击败对手30次"/>
+        <HideMove ID="10316" Tips="使用挖宝击败对手30次"/>
+        <HideMove ID="10317" Tips="学会长鸣不止技能后并且使用10次"/>
+        <HideMove ID="10327" Tips="1次战斗中分别使用1次群牛践踏、勇猛践踏后击败对手"/>
+        <HideMove ID="10328" Tips="1次战斗中分别使用1次鲁莽冲撞、碎石冲撞后击败对手"/>
+        <HideMove ID="10329" Tips="使用衰退50次"/>
+        <HideMove ID="10330" Tips="获得50场战斗胜利"/>
+        <HideMove ID="10341" Tips="获得50场战斗胜利"/>
+        <HideMove ID="10342" Tips="使用拔出金针击败对手30次"/>
+        <HideMove ID="10343" Tips="使用麦麦金针击败对手30次"/>
+        <HideMove ID="10344" Tips="学会麦迪金针后并使用10次"/>
+        <HideMove ID="10341" Tips="获得50场战斗胜利"/>
+        <HideMove ID="10342" Tips="使用拔出金针击败对手30次"/>
+        <HideMove ID="10343" Tips="使用麦麦金针击败对手30次"/>
+        <HideMove ID="10344" Tips="学会麦迪金针后并使用10次"/>
+        <HideMove ID="10354" Tips="使用下勾拳击败对手30次"/>
+        <HideMove ID="10355" Tips="使用左摆拳击败对手30次"/>
+        <HideMove ID="10356" Tips="使用上勾拳击败对手30次"/>
+        <HideMove ID="10357" Tips="使用右摆拳击败对手30次"/>
+        <HideMove ID="10371" Tips="在自己满血状态下战胜不低于60级的精灵"/>
+        <HideMove ID="10372" Tips="使用静养生息50次"/>
+        <HideMove ID="10373" Tips="自己处于能力下降状态时击败对手"/>
+        <HideMove ID="10374" Tips="自己处于不良状态下击败对手"/>
+        <HideMove ID="10341" Tips="获得50场战斗胜利"/>
+        <HideMove ID="10342" Tips="使用拔出金针击败对手30次"/>
+        <HideMove ID="10343" Tips="使用麦麦金针击败对手30次"/>
+        <HideMove ID="10344" Tips="学会麦迪金针后并使用10次"/>
+        <HideMove ID="10399" Tips="1次战斗中分别使用1次气囊弹、气囊爆弹后击败对手"/>
+        <HideMove ID="10400" Tips="1次战斗中分别使用1次气概冲锋、气魄冲撞后击败对手"/>
+        <HideMove ID="10401" Tips="使用学习50次"/>
+        <HideMove ID="10402" Tips="使用观察50次"/>
+        <HideMove ID="10327" Tips="1次战斗中分别使用1次群牛践踏、勇猛践踏后击败对手"/>
+        <HideMove ID="10328" Tips="1次战斗中分别使用1次鲁莽冲撞、碎石冲撞后击败对手"/>
+        <HideMove ID="10329" Tips="使用衰退50次"/>
+        <HideMove ID="10330" Tips="获得50场战斗胜利"/>
+        <HideMove ID="10423" Tips="使用红心印记击败对手30次"/>
+        <HideMove ID="10424" Tips="自己具有心之印记时击败对手"/>
+        <HideMove ID="10425" Tips="使用红心碰撞击败对手30次"/>
+        <HideMove ID="10426" Tips="自己体力低于1/8时击败对手"/>
+        <HideMove ID="10434" Tips="使用吸水50次"/>
+        <HideMove ID="10435" Tips="学会大口吸水后，再使用30次"/>
+        <HideMove ID="10436" Tips="战斗开始第1回合击败对手"/>
+        <HideMove ID="10437" Tips="自己处于能力提升状态时击败不低于60级的对手"/>
+        <HideMove ID="10446" Tips="在试炼之战普通模式中获得10次胜利"/>
+        <HideMove ID="10447" Tips="在勇士之战普通模式中获得5次胜利"/>
+        <HideMove ID="10448" Tips="自己物攻和特攻都强化到6级后战胜不低于60级的对手"/>
+        <HideMove ID="10449" Tips="使用极速火环击败对手30次"/>
+        <HideMove ID="10385" Tips="获得50场战斗胜利"/>
+        <HideMove ID="10386" Tips="使用蓄力冲锋败对手30次"/>
+        <HideMove ID="10387" Tips="自己处于能力下降状态时击败对手"/>
+        <HideMove ID="10388" Tips="1次战斗中分别使用1次破防冲锋、蛮力冲锋后击败对手"/>
+        <HideMove ID="10463" Tips="每次都先手使用鹰之爪击败不低于60级的对手"/>
+        <HideMove ID="10464" Tips="每次都后手使用鹰之羽翼击败不低于60级的对手"/>
+        <HideMove ID="10465" Tips="每次都先手使用硬爪突击击败不低于60级的对手"/>
+        <HideMove ID="10466" Tips="每次都后手使用白羽切割击败不低于60级的对手"/>
+        <HideMove ID="10412" Tips="获得50场战斗胜利"/>
+        <HideMove ID="10413" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="10414" Tips="使用沙之脚击败对手30次"/>
+        <HideMove ID="10415" Tips="使用飞沙击败对手30次"/>
+        <HideMove ID="10476" Tips="自己体力低于1/8时击败对手"/>
+        <HideMove ID="10477" Tips="一次战斗中使用5次流星锤后击败对手"/>
+        <HideMove ID="10478" Tips="一次战斗中使用5次碎石突击后击败对手"/>
+        <HideMove ID="10479" Tips="一次战斗中使用5次猛烈突击后击败对手"/>
+        <HideMove ID="10489" Tips="一次战斗中受到5次伤害低于50的攻击后击败对手"/>
+        <HideMove ID="10490" Tips="战斗开始第1回合击败对手"/>
+        <HideMove ID="10491" Tips="一次战斗中受到1次伤害高于150的攻击后击败对手"/>
+        <HideMove ID="10492" Tips="使用沙皇之驱击败对手30次"/>
+        <HideMove ID="10567" Tips="使用精神波动击败对手30次"/>
+        <HideMove ID="10568" Tips="使用恶梦袭并使对手害怕后击败对手"/>
+        <HideMove ID="10569" Tips="使用睡眠光线30次"/>
+        <HideMove ID="10570" Tips="自己处于能力下降状态时击败对手"/>
+        <HideMove ID="10531" Tips="使用伊特领域30次"/>
+        <HideMove ID="10532" Tips="一次战斗中先使用伊特领域再使用另一种领域后击败不低于60级的对手"/>
+        <HideMove ID="10533" Tips="战斗结束后自己的怒气小于16"/>
+        <HideMove ID="10534" Tips="风伊特、电伊特、冰伊特分别上场，最后用必杀技击败对手即可领悟"/>
+        <HideMove ID="10542" Tips="使用伊特领域30次"/>
+        <HideMove ID="10543" Tips="一次战斗中先使用伊特领域再使用另一种领域后击败不低于60级的对手"/>
+        <HideMove ID="10544" Tips="获得50场战斗胜利"/>
+        <HideMove ID="10534" Tips="风伊特、电伊特、冰伊特分别上场，最后用必杀技击败对手即可领悟"/>
+        <HideMove ID="10552" Tips="使用伊特领域30次"/>
+        <HideMove ID="10553" Tips="一次战斗中先使用伊特领域再使用另一种领域后击败不低于60级的对手"/>
+        <HideMove ID="10554" Tips="在战斗中受到一次大于100的伤害后击败对手"/>
+        <HideMove ID="10534" Tips="风伊特、电伊特、冰伊特分别上场，最后用必杀技击败对手即可领悟"/>
+        <HideMove ID="10503" Tips="在一次战斗中仅先使用一根发丝再使用两根发丝这两个技能就击败对手"/>
+        <HideMove ID="10504" Tips="获得50场战斗胜利"/>
+        <HideMove ID="10505" Tips="使用沙腿重后踢击败对手30次"/>
+        <HideMove ID="10506" Tips="自己体力低于1/4时击败对手"/>
+        <HideMove ID="10582" Tips="使用柔软30次"/>
+        <HideMove ID="10583" Tips="使用卷紧击败对手30次"/>
+        <HideMove ID="10584" Tips="使用砂毒穿刺击败对手30次"/>
+        <HideMove ID="10585" Tips="使用砂毒之痛和砂毒之血各15次"/>
+        <HideMove ID="10594" Tips="使用伊特领域30次"/>
+        <HideMove ID="10595" Tips="一次战斗中先使用伊特领域再使用另一种领域后击败不低于60级的对手"/>
+        <HideMove ID="10596" Tips="使用恶作剧30次"/>
+        <HideMove ID="10597" Tips="无法领悟"/>
+        <HideMove ID="10608" Tips="获得50场战斗胜利"/>
+        <HideMove ID="10609" Tips="使用以守转攻30次"/>
+        <HideMove ID="10610" Tips="学会闪躲后并且使用10次"/>
+        <HideMove ID="10611" Tips="自己处于能力下降状态时击败对手"/>
+        <HideMove ID="10516" Tips="对手处于害怕状态时击败对手"/>
+        <HideMove ID="10517" Tips="对手处于石化状态下击败对手"/>
+        <HideMove ID="10518" Tips="对手同时处于中毒和石化状态时击败对手"/>
+        <HideMove ID="10519" Tips="对手同时处于精神错乱和害怕状态时击败对手"/>
+        <HideMove ID="10622" Tips="获得50场战斗胜利"/>
+        <HideMove ID="10623" Tips="使用痛苦之触击败对手30次"/>
+        <HideMove ID="10624" Tips="使用绷带锁紧击败对手30次"/>
+        <HideMove ID="10625" Tips="使用阿布之怨击败对手30次"/>
+        <HideMove ID="10634" Tips="对手处于冻伤状态下击败对手"/>
+        <HideMove ID="10635" Tips="使用冰锥和冰雨击败对手各15次"/>
+        <HideMove ID="10636" Tips="使用冻气冲撞和全力一击击败对手各15次"/>
+        <HideMove ID="10637" Tips="自己处于不良状态下击败对手"/>
+        <HideMove ID="10650" Tips="战斗结束后自己的怒气大于84"/>
+        <HideMove ID="10651" Tips="使用满面红光30次"/>
+        <HideMove ID="10652" Tips="在战斗中自己出现一次昏迷状态后击败对手"/>
+        <HideMove ID="10653" Tips="使用饮酒30次"/>
+        <HideMove ID="10665" Tips="对手处于冰冻状态下击败对手"/>
+        <HideMove ID="10666" Tips="获得50场战斗胜利"/>
+        <HideMove ID="10667" Tips="在战斗中受到一次大于100的伤害后击败对手"/>
+        <HideMove ID="10668" Tips="使用冻气冲锋击败对手30次"/>
+        <HideMove ID="10680" Tips="在暴风雪环境下击败对手"/>
+        <HideMove ID="10681" Tips="战斗开始第1回合击败对手"/>
+        <HideMove ID="10682" Tips="获得50场战斗胜利"/>
+        <HideMove ID="10683" Tips="被对手击败20次之后再获得1场胜利"/>
+        <HideMove ID="10697" Tips="使用坚定30次"/>
+        <HideMove ID="10698" Tips="被对手击败20次之后再获得1场胜利"/>
+        <HideMove ID="10699" Tips="一次战斗中依次使用化冰、化雪后击败对手"/>
+        <HideMove ID="10700" Tips="一次战斗中依次使用幻想之影、幻想之形、幻想之念后击败对手"/>
+        <HideMove ID="10712" Tips="获得50场战斗胜利"/>
+        <HideMove ID="10713" Tips="对手处于害怕状态时击败对手"/>
+        <HideMove ID="10714" Tips="使用野蛮冲击和蛮熊之力各击败对手15次"/>
+        <HideMove ID="10715" Tips="使用怪笑30次"/>
+        <HideMove ID="10726" Tips="使用火花刻印、火花引爆、火花突袭，总和50次"/>
+        <HideMove ID="10727" Tips="对手处于烧伤状态下击败对手"/>
+        <HideMove ID="10728" Tips="使用火球连射击败对手30次"/>
+        <HideMove ID="10729" Tips="获得50场战斗胜利"/>
+        <HideMove ID="10741" Tips="自己首发出场，之后让多摩或多摩桑上场并击败对手"/>
+        <HideMove ID="10742" Tips="由多摩或多摩桑首发出场，之后换自己上场并击败对手"/>
+        <HideMove ID="10743" Tips="获得50场战斗胜利"/>
+        <HideMove ID="10744" Tips="对手处于冻伤状态下击败对手"/>
+        <HideMove ID="10771" Tips="对手处于能力提升状态时击败对手"/>
+        <HideMove ID="10772" Tips="使用戏法一式、戏法二式、戏法三式，总和50次"/>
+        <HideMove ID="10773" Tips="自己处于不良状态下击败对手"/>
+        <HideMove ID="10774" Tips="对手处于混乱状态时击败对手"/>
+        <HideMove ID="10757" Tips="获得50场战斗胜利"/>
+        <HideMove ID="10758" Tips="使用百贯落击败对手30次"/>
+        <HideMove ID="10759" Tips="使用百裂腿击败对手30次"/>
+        <HideMove ID="10760" Tips="使用仕切势、尘手势、蹲踞势，总和50次"/>
+        <HideMove ID="10787" Tips="使用砂之矛击败对手30次"/>
+        <HideMove ID="10788" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="10789" Tips="使用砂瀑送葬击败对手30次"/>
+        <HideMove ID="10790" Tips="使用砂流葬击败对手30次"/>
+        <HideMove ID="10798" Tips="使用伊特领域30次"/>
+        <HideMove ID="10799" Tips="一次战斗中先使用伊特领域再使用另一种领域后击败不低于60级的对手"/>
+        <HideMove ID="10800" Tips="获得50场战斗胜利"/>
+        <HideMove ID="10597" Tips="光伊特、暗伊特分别上场，最后用必杀技击败对手即可领悟"/>
+        <HideMove ID="10813" Tips="自己在暴走状态下击败不低于60级的对手"/>
+        <HideMove ID="10814" Tips="使用落樱缤纷蹄击败对手30次"/>
+        <HideMove ID="10815" Tips="获得50场战斗胜利"/>
+        <HideMove ID="10816" Tips="被对手击败20次之后再获得1场胜利"/>
+        <HideMove ID="10828" Tips="自己体力低于1/4时击败对手"/>
+        <HideMove ID="10829" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="10830" Tips="对手处于中毒状态时击败对手"/>
+        <HideMove ID="10831" Tips="对手处于流血状态时击败对手"/>
+        <HideMove ID="10845" Tips="获得50场战斗胜利"/>
+        <HideMove ID="10846" Tips="对手处于麻痹状态时击败对手"/>
+        <HideMove ID="10847" Tips="使用雷光闪击败对手30次"/>
+        <HideMove ID="10848" Tips="对手处于昏迷状态时击败对手"/>
+        <HideMove ID="10885" Tips="使用颤抖冲击击败对手30次"/>
+        <HideMove ID="10886" Tips="使用怪异冲击击败对手30次"/>
+        <HideMove ID="10887" Tips="获得50场战斗胜利"/>
+        <HideMove ID="10888" Tips="使用苦涩抽打击败对手30次"/>
+        <HideMove ID="10859" Tips="使用龙之怒击败对手30次"/>
+        <HideMove ID="10860" Tips="自己物攻和特攻都强化到6级后战胜不低于60级的对手"/>
+        <HideMove ID="10861" Tips="一次战斗中造成超过2W的伤害后战胜对手"/>
+        <HideMove ID="10862" Tips="自己体力低于1/8时击败对手"/>
+        <HideMove ID="10871" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="10872" Tips="获得50场战斗胜利"/>
+        <HideMove ID="10873" Tips="自己进入过崩坏状态30次"/>
+        <HideMove ID="10874" Tips="被对手击败20次之后再获得1场胜利"/>
+        <HideMove ID="10272" Tips="获得50场战斗胜利"/>
+        <HideMove ID="10893" Tips="一次战斗中受到1次伤害高于150的攻击后击败对手"/>
+        <HideMove ID="10274" Tips="使用心之印记50次"/>
+        <HideMove ID="10275" Tips="自己体力低于1/4时击败对手"/>
+        <HideMove ID="10905" Tips="使用虚空袭击击败对手30次"/>
+        <HideMove ID="10906" Tips="获得50场战斗胜利"/>
+        <HideMove ID="10907" Tips="使用虚空炸弹击败对手30次"/>
+        <HideMove ID="10908" Tips="一次战斗中受到1次伤害高于150的攻击后击败对手"/>
+        <HideMove ID="10859" Tips="使用龙之怒击败对手30次"/>
+        <HideMove ID="10860" Tips="在自己满血状态下战胜不低于60级的精灵"/>
+        <HideMove ID="10861" Tips="一次战斗中造成超过2W的伤害后战胜对手"/>
+        <HideMove ID="10862" Tips="自己体力低于1/8时击败对手"/>
+        <HideMove ID="10922" Tips="获得50场战斗胜利"/>
+        <HideMove ID="10923" Tips="在双子之战中获得10场胜利"/>
+        <HideMove ID="10924" Tips="在双子之战中获得20场胜利"/>
+        <HideMove ID="10925" Tips="在双精灵模式中，卡特罗、卡罗特分别使用过必杀技后结束战斗"/>
+        <HideMove ID="10936" Tips="获得50场战斗胜利"/>
+        <HideMove ID="10937" Tips="在双子之战中获得10场胜利"/>
+        <HideMove ID="10938" Tips="在双子之战中获得20场胜利"/>
+        <HideMove ID="10925" Tips="在双精灵模式中，卡特罗、卡罗特分别使用过必杀技后结束战斗"/>
+        <HideMove ID="10968" Tips="使用通缉令击败对手30次"/>
+        <HideMove ID="10969" Tips="被对手击败20次之后再获得1场胜利"/>
+        <HideMove ID="10970" Tips="获得50场战斗胜利"/>
+        <HideMove ID="10971" Tips="战斗结束后自己的怒气小于16"/>
+        <HideMove ID="10951" Tips="被对手击败20次之后再获得1场胜利"/>
+        <HideMove ID="10952" Tips="获得50场战斗胜利"/>
+        <HideMove ID="10953" Tips="使用阿玛迪斯光击败对手20次"/>
+        <HideMove ID="10954" Tips="使用高速姿态30次"/>
+        <HideMove ID="10984" Tips="使用夜幕30次"/>
+        <HideMove ID="10985" Tips="使用暗之水30次"/>
+        <HideMove ID="10986" Tips="使用暗之光30次"/>
+        <HideMove ID="10987" Tips="获得50场战斗胜利"/>
+        <HideMove ID="10999" Tips="在对手身上具有通缉令的情况下击败对手"/>
+        <HideMove ID="11000" Tips="使用拷问者击败对手30次"/>
+        <HideMove ID="11001" Tips="自己处于能力下降状态时击败对手"/>
+        <HideMove ID="11002" Tips="使用通缉联协击败对手20次"/>
+        <HideMove ID="11029" Tips="获得50场战斗胜利"/>
+        <HideMove ID="11030" Tips="使用尖刺翻滚击败30次"/>
+        <HideMove ID="11031" Tips="使用尖刺甲壳击败对手10次"/>
+        <HideMove ID="11032" Tips="使用倒刺甲壳30次"/>
+        <HideMove ID="11045" Tips="获得50场战斗胜利"/>
+        <HideMove ID="11046" Tips="使用灵魂连打击败对手30次"/>
+        <HideMove ID="11047" Tips="使用噬魂灵柜击败对手1次"/>
+        <HideMove ID="11048" Tips="自己体力低于1/8时击败对手"/>
+        <HideMove ID="11131" Tips="使用腐蚀花粉击败对手30次"/>
+        <HideMove ID="11132" Tips="使用虚弱花粉击败对手30次"/>
+        <HideMove ID="11133" Tips="自己体力低于1/8时击败对手"/>
+        <HideMove ID="11134" Tips="战斗开始第1回合击败对手"/>
+        <HideMove ID="11013" Tips="使用闪空翔烈破击败对手30次"/>
+        <HideMove ID="11014" Tips="获得50场战斗胜利"/>
+        <HideMove ID="11015" Tips="使用翔天冲击败对手30次"/>
+        <HideMove ID="11016" Tips="使用翔天舞击败对手30次"/>
+        <HideMove ID="10234" Tips="在炎热环境下战胜对手"/>
+        <HideMove ID="11057" Tips="使用炽热火焰击败对手30次"/>
+        <HideMove ID="11058" Tips="使用炽热火苗击败对手30次"/>
+        <HideMove ID="11059" Tips="自己体力低于1/8时击败对手"/>
+        <HideMove ID="11072" Tips="使用燃烧弹击败对手30次"/>
+        <HideMove ID="11073" Tips="获得50场战斗胜利"/>
+        <HideMove ID="11074" Tips="经历80次战斗"/>
+        <HideMove ID="11075" Tips="1场战斗中分别使用空空弹、空地弹、空航弹后战斗对手"/>
+        <HideMove ID="11086" Tips="使用定时炸弹击败对手30次"/>
+        <HideMove ID="11087" Tips="速度强化到达6级后击败对手30次"/>
+        <HideMove ID="11088" Tips="自己体力低于1/8时击败对手"/>
+        <HideMove ID="11089" Tips="使用时光流束击败对手30次"/>
+        <HideMove ID="11102" Tips="战斗结束后自己的怒气大于84"/>
+        <HideMove ID="11103" Tips="经历80次战斗"/>
+        <HideMove ID="11104" Tips="与飞行系精灵战斗40次"/>
+        <HideMove ID="11105" Tips="获得50场战斗胜利"/>
+        <HideMove ID="11117" Tips="获得50场战斗胜利"/>
+        <HideMove ID="11118" Tips="使用炫彩光束击败对手30次"/>
+        <HideMove ID="11119" Tips="使用炫彩爆破击败对手30次"/>
+        <HideMove ID="11120" Tips="使用炫彩闪光击败对手30次"/>
+        <HideMove ID="11144" Tips="使用石像突击击败对手30次"/>
+        <HideMove ID="11145" Tips="自己体力不低于3/4的情况下击败对手"/>
+        <HideMove ID="11146" Tips="使用石像形态30次"/>
+        <HideMove ID="11147" Tips="自己体力低于1/8时击败对手"/>
+        <HideMove ID="11173" Tips="使用流水激射击败对手30次"/>
+        <HideMove ID="11174" Tips="使用激流冲撞击败对手30次"/>
+        <HideMove ID="11175" Tips="使用流水圈后击败不低于60级的对手"/>
+        <HideMove ID="11176" Tips="使用激流圈后击败不低于60级的对手"/>
+        <HideMove ID="11160" Tips="使用光烈冲击败对手30次"/>
+        <HideMove ID="11161" Tips="使用光源弹击败对手30次"/>
+        <HideMove ID="11162" Tips="获得50场战斗胜利"/>
+        <HideMove ID="11163" Tips="经历80次战斗"/>
+        <HideMove ID="11190" Tips="自己体力低于1/8时击败对手"/>
+        <HideMove ID="11191" Tips="获得50场战斗胜利"/>
+        <HideMove ID="11192" Tips="经历80次战斗"/>
+        <HideMove ID="11193" Tips="等级达到100级，在火源通径雷鸣炎破之战中取得30场胜利"/>
+        <HideMove ID="11204" Tips="使用二连钉拳击败对手30次"/>
+        <HideMove ID="11205" Tips="使用三连钉拳击败对手30次"/>
+        <HideMove ID="11206" Tips="使用五连钉拳击败对手30次"/>
+        <HideMove ID="11207" Tips="获得50场战斗胜利"/>
+        <HideMove ID="11220" Tips="使用旋转击击败对手30次"/>
+        <HideMove ID="11221" Tips="使用毒攻击击败对手30次"/>
+        <HideMove ID="11222" Tips="获得50场战斗胜利"/>
+        <HideMove ID="11223" Tips="自己体力低于1/8时击败对手"/>
+        <HideMove ID="11264" Tips="战胜一次等级不低于60级的雄性精灵"/>
+        <HideMove ID="11265" Tips="战胜一次等级不低于60级的雌性精灵"/>
+        <HideMove ID="11266" Tips="战胜50次雄性精灵"/>
+        <HideMove ID="11267" Tips="战胜50次雌性精灵"/>
+        <HideMove ID="11231" Tips="使用伊特领域30次"/>
+        <HideMove ID="11232" Tips="一次战斗中先使用伊特领域再使用另一种领域后击败不低于60级的对手"/>
+        <HideMove ID="11233" Tips="使用飞空能量30次"/>
+        <HideMove ID="11234" Tips="飞伊特、沙伊特、虫伊特分别上场，最后用必杀技击败对手即可领悟"/>
+        <HideMove ID="11242" Tips="使用伊特领域30次"/>
+        <HideMove ID="11243" Tips="一次战斗中先使用伊特领域再使用另一种领域后击败不低于60级的对手"/>
+        <HideMove ID="11244" Tips="使用沙尘之力30次"/>
+        <HideMove ID="11234" Tips="飞伊特、沙伊特、虫伊特分别上场，最后用必杀技击败对手即可领悟"/>
+        <HideMove ID="11252" Tips="使用伊特领域30次"/>
+        <HideMove ID="11253" Tips="一次战斗中先使用伊特领域再使用另一种领域后击败不低于60级的对手"/>
+        <HideMove ID="11254" Tips="使用虫群之心30次"/>
+        <HideMove ID="11234" Tips="飞伊特、沙伊特、虫伊特分别上场，最后用必杀技击败对手即可领悟"/>
+        <HideMove ID="11279" Tips="使用水流30次"/>
+        <HideMove ID="11280" Tips="自己处于能力下降状态时击败对手"/>
+        <HideMove ID="11281" Tips="使用逐浪追击击败对手30次"/>
+        <HideMove ID="11282" Tips="使用逆行反击击败对手30次"/>
+        <HideMove ID="11295" Tips="获得50场战斗胜利"/>
+        <HideMove ID="11296" Tips="使用亮叶光束击败对手30次"/>
+        <HideMove ID="11297" Tips="使用毒枝乱打击败对手30次"/>
+        <HideMove ID="11298" Tips="使用七彩花枝击败对手30次"/>
+        <HideMove ID="11309" Tips="获得50场战斗胜利"/>
+        <HideMove ID="11310" Tips="战斗结束后自己的怒气大于84"/>
+        <HideMove ID="11311" Tips="被对手击败20次之后再获得1场胜利"/>
+        <HideMove ID="11312" Tips="自己体力低于1/4时击败对手"/>
+        <HideMove ID="11322" Tips="在战斗中被处于能力强化状态下的对手击败"/>
+        <HideMove ID="11323" Tips="在战斗中被体力低于75的对手击败"/>
+        <HideMove ID="11324" Tips="在战斗中替换上场达到3次以上"/>
+        <HideMove ID="11325" Tips="在战斗中被对手一击秒杀"/>
+        <HideMove ID="11339" Tips="使用怒气食物30次"/>
+        <HideMove ID="11340" Tips="使用美食披风和特质披风各击败对手15次"/>
+        <HideMove ID="11341" Tips="获得50场战斗胜利"/>
+        <HideMove ID="11342" Tips="使用香料吐息和美食义理各15次"/>
+        <HideMove ID="11354" Tips="使用N计划和B计划各击败对手15次"/>
+        <HideMove ID="11355" Tips="使用万事俱备击败对手30次"/>
+        <HideMove ID="11356" Tips="使用强力扫尾和连续扫尾各击败对手15次"/>
+        <HideMove ID="11357" Tips="使用飞羽连突和飞羽压击各击败对手15次"/>
+        <HideMove ID="11368" Tips="获得50场战斗胜利"/>
+        <HideMove ID="11369" Tips="击败火系精灵30次"/>
+        <HideMove ID="11370" Tips="使用细水长流击败对手30次"/>
+        <HideMove ID="11371" Tips="使用霜后安魂曲击败对手15次"/>
+        <HideMove ID="11383" Tips="获得50场战斗胜利"/>
+        <HideMove ID="11384" Tips="经历80次战斗"/>
+        <HideMove ID="11385" Tips="战斗开始第1回合击败对手"/>
+        <HideMove ID="11386" Tips="在战斗中被对手一击秒杀"/>
+        <HideMove ID="11396" Tips="获得50场战斗胜利"/>
+        <HideMove ID="11397" Tips="使用紫光斩击败对手30次"/>
+        <HideMove ID="11398" Tips="使用紫光波击败对手30次"/>
+        <HideMove ID="11399" Tips="自己体力低于1/8时击败对手"/>
+        <HideMove ID="11424" Tips="对手处于能力提升状态时击败对手"/>
+        <HideMove ID="11425" Tips="在自己满血状态下战胜不低于60级的精灵"/>
+        <HideMove ID="11426" Tips="获得50场战斗胜利"/>
+        <HideMove ID="11427" Tips="经历80次战斗"/>
+        <HideMove ID="11411" Tips="用拼命击败对手30次"/>
+        <HideMove ID="11412" Tips="在体力高于7/8的条件下击败对手30次"/>
+        <HideMove ID="11413" Tips="使用冰冻重击击败对手30次"/>
+        <HideMove ID="11414" Tips="在3回合内击败对手30次"/>
+        <HideMove ID="11447" Tips="获得50场战斗胜利"/>
+        <HideMove ID="11448" Tips="使用羽突四式、羽突八式、羽突十六式分别击败对手10次"/>
+        <HideMove ID="11449" Tips="使用羽突一式击败对手30次"/>
+        <HideMove ID="11450" Tips="使用羽突零式击败对手30次"/>
+        <HideMove ID="11435" Tips="使用伊特领域30次"/>
+        <HideMove ID="11436" Tips="一次战斗中先使用伊特领域再使用另一种领域后击败不低于60级的对手"/>
+        <HideMove ID="11437" Tips="获得50场战斗胜利"/>
+        <HideMove ID="11438" Tips="使用战狂闪空破击败对手50次"/>
+        <HideMove ID="11478" Tips="使用偷袭击败对手30次"/>
+        <HideMove ID="11479" Tips="获得50场战斗胜利"/>
+        <HideMove ID="11480" Tips="使用憋气30次"/>
+        <HideMove ID="11481" Tips="使用清洗秀发30次"/>
+        <HideMove ID="11493" Tips="自己身上有风球的情况下击败对手30次"/>
+        <HideMove ID="11494" Tips="在3回合内击败对手30次"/>
+        <HideMove ID="11495" Tips="在自己的体力值低于1/4的情况下击败对手15次"/>
+        <HideMove ID="11496" Tips="在不使用任何风球的情况下击败对手30次"/>
+        <HideMove ID="11508" Tips="获得50场战斗胜利"/>
+        <HideMove ID="11509" Tips="使用海浪震炮击败对手30次"/>
+        <HideMove ID="11510" Tips="在满血情况下击败对手30次"/>
+        <HideMove ID="11511" Tips="使用哞王神技击败对手30次"/>
+        <HideMove ID="11523" Tips="体力＜1/4时击败对手15次"/>
+        <HideMove ID="11524" Tips="使用元气削弱击败对手30次"/>
+        <HideMove ID="11525" Tips="使用熊武郎斗术击败对手30次"/>
+        <HideMove ID="11526" Tips="在元气盾状态下击败对手10次"/>
+        <HideMove ID="11568" Tips="在沉默游戏状态下击败对手30次"/>
+        <HideMove ID="11569" Tips="获得50场战斗胜利"/>
+        <HideMove ID="11570" Tips="在噩梦状态下击败对手50次"/>
+        <HideMove ID="11571" Tips="自己处于能力下降状态时击败对手"/>
+        <HideMove ID="11553" Tips="使用蒸汽动能30次"/>
+        <HideMove ID="11554" Tips="使用动力开关30次"/>
+        <HideMove ID="11555" Tips="使用能源开关30次"/>
+        <HideMove ID="11556" Tips="经历80次战斗"/>
+        <HideMove ID="11538" Tips="经历80次战斗"/>
+        <HideMove ID="11539" Tips="获得50场战斗胜利"/>
+        <HideMove ID="11540" Tips="使用旋转风压击败对手30次"/>
+        <HideMove ID="11541" Tips="使用二段风刃击败对手30次"/>
+        <HideMove ID="11598" Tips="自己体力低于1/8时击败对手"/>
+        <HideMove ID="11599" Tips="使用暗夜索魂曲击败对手30次"/>
+        <HideMove ID="11600" Tips="以致命一击击败不低于60级的对手"/>
+        <HideMove ID="11601" Tips="使用地狱深渊击败对手30次"/>
+        <HideMove ID="11583" Tips="经历80次战斗"/>
+        <HideMove ID="11584" Tips="使用惩戒之光击败对手30次"/>
+        <HideMove ID="11585" Tips="获得50场战斗胜利"/>
+        <HideMove ID="11586" Tips="使用复仇光冲击败对手30次"/>
+        <HideMove ID="11464" Tips="在炎热环境下战胜对手"/>
+        <HideMove ID="11465" Tips="自己处于能力下降状态时击败对手"/>
+        <HideMove ID="11466" Tips="获得50场战斗胜利"/>
+        <HideMove ID="11618" Tips="等级达到100级，在火源通径雷鸣炎破之战中取得30场胜利"/>
+        <HideMove ID="11614" Tips="获得50场战斗胜利"/>
+        <HideMove ID="11615" Tips="利用反弹击败对手"/>
+        <HideMove ID="11616" Tips="使用生命的礼赞击败对手30次"/>
+        <HideMove ID="11617" Tips="在不使用复苏的情况下击败对手30次"/>
+        <HideMove ID="11631" Tips="在不使用台风预报的情况下击败对手30次"/>
+        <HideMove ID="11632" Tips="使用十二级台风击败对手30次"/>
+        <HideMove ID="11633" Tips="使用台风之灾30次"/>
+        <HideMove ID="11634" Tips="使用十四级台风击败对手30次"/>
+        <HideMove ID="11646" Tips="使用跨时空信件击败对手30次"/>
+        <HideMove ID="11647" Tips="在后出手的情况下击败对手30次"/>
+        <HideMove ID="11648" Tips="在先出手的情况下击败对手30次"/>
+        <HideMove ID="11649" Tips="使用EMS技能击败对手30次"/>
+        <HideMove ID="11661" Tips="在对手身上具有蒸汽效果的情况下击败对手30次"/>
+        <HideMove ID="11662" Tips="在自己身上具有蒸馏水效果的情况下击败对手30次"/>
+        <HideMove ID="11663" Tips="用水汽蒸发击败对手30次"/>
+        <HideMove ID="11664" Tips="在自己的体力值低于1/4的情况下击败对手15次"/>
+        <HideMove ID="11676" Tips="获得50场战斗胜利"/>
+        <HideMove ID="11677" Tips="在自己满血状态下战胜不低于60级的精灵"/>
+        <HideMove ID="11678" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="11679" Tips="以致命一击击败不低于60级的对手"/>
+        <HideMove ID="11691" Tips="自己体力低于1/8时击败对手"/>
+        <HideMove ID="11692" Tips="获得50场战斗胜利"/>
+        <HideMove ID="11693" Tips="在自己拥有不良效果的情况下击败对手"/>
+        <HideMove ID="11694" Tips="使用狂暴风雷袭击败对手30次"/>
+        <HideMove ID="11619" Tips="等级达到100级，在火源通径雷鸣炎破之战中取得30场胜利"/>
+        <HideMove ID="11618" Tips="等级达到100级，在火源通径雷鸣炎破之战中取得30场胜利"/>
+        <HideMove ID="11707" Tips="使用嗜血追猎击败对手30次"/>
+        <HideMove ID="11708" Tips="经历80次战斗"/>
+        <HideMove ID="11709" Tips="自己体力低于1/8时击败对手"/>
+        <HideMove ID="11710" Tips="获得50场战斗胜利"/>
+        <HideMove ID="11723" Tips="使用掷骰子30次"/>
+        <HideMove ID="11724" Tips="使用奇妙骰子30次"/>
+        <HideMove ID="11725" Tips="使用极端骰子30次"/>
+        <HideMove ID="11726" Tips="一次战斗中分别使用4种骰子技能后击败对手"/>
+        <HideMove ID="11738" Tips="在15场战斗中使用自我提升并获得胜利"/>
+        <HideMove ID="11739" Tips="在15场战斗中使用自我安慰并获得胜利"/>
+        <HideMove ID="11740" Tips="在15场战斗中使用自我激励并获得胜利"/>
+        <HideMove ID="11741" Tips="在15场战斗中使用自我麻痹并获得胜利"/>
+        <HideMove ID="11770" Tips="在有豆子效果的情况下获得30场胜利"/>
+        <HideMove ID="11771" Tips="使用集中射击击败对手30次"/>
+        <HideMove ID="11772" Tips="击败卡妮亚1次"/>
+        <HideMove ID="11773" Tips="秒杀对手15次"/>
+        <HideMove ID="11754" Tips="使用补充染料和触发灵感各30次"/>
+        <HideMove ID="11755" Tips="使用自画像30次"/>
+        <HideMove ID="11756" Tips="使用报复临摹和窃取临摹各30次"/>
+        <HideMove ID="11757" Tips="使用涂鸦套餐30次"/>
+        <HideMove ID="11785" Tips="获得50场战斗胜利"/>
+        <HideMove ID="11786" Tips="在具有冰妖的情况下击败对手30次"/>
+        <HideMove ID="11787" Tips="在具有冰魔的情况下击败对手15次"/>
+        <HideMove ID="11788" Tips="自己处于不良状态下击败对手"/>
+        <HideMove ID="11799" Tips="使用万圣前奏30次"/>
+        <HideMove ID="11800" Tips="使用南瓜诅咒30次"/>
+        <HideMove ID="11801" Tips="自己处于能力下降状态时击败对手"/>
+        <HideMove ID="11802" Tips="使用万圣狂欢宴胜利20次"/>
+        <HideMove ID="11814" Tips="使用添加橡胶和弹力加成各30次"/>
+        <HideMove ID="11815" Tips="使用灵巧攻击击败对手30次"/>
+        <HideMove ID="11816" Tips="使用治愈橡胶30次"/>
+        <HideMove ID="11817" Tips="获得50场战斗胜利"/>
+        <HideMove ID="11829" Tips="灵魂出窍30次"/>
+        <HideMove ID="11830" Tips="使用恶灵附体30次"/>
+        <HideMove ID="11831" Tips="自己体力低于1/8时击败对手"/>
+        <HideMove ID="11832" Tips="使用亡者之怒战胜对手50次"/>
+        <HideMove ID="11844" Tips="使用鹤灵30次"/>
+        <HideMove ID="11845" Tips="使用祈愿30次"/>
+        <HideMove ID="11846" Tips="在对手处于羽舞状态下将其击败10"/>
+        <HideMove ID="11847" Tips="在自己处于特防下降的状态下将其击败"/>
+        <HideMove ID="11892" Tips="使用火烈姿态60次"/>
+        <HideMove ID="11893" Tips="在站立的状态下击败对手15次"/>
+        <HideMove ID="11894" Tips="使用火羽之网30次"/>
+        <HideMove ID="11895" Tips="使用火焰笼罩30次"/>
+        <HideMove ID="11878" Tips="等级到达100级，在星宿领域下击败对手30次"/>
+        <HideMove ID="11879" Tips="在速度等级提升6级的情况下击败对手15次"/>
+        <HideMove ID="11880" Tips="等级到达100级，使用流星击败对手15次"/>
+        <HideMove ID="11877" Tips="等级到达100级，在任意一场战斗中获得胜利"/>
+        <HideMove ID="11905" Tips="使用森林祝福50次"/>
+        <HideMove ID="11906" Tips="获得50场战斗胜利"/>
+        <HideMove ID="11907" Tips="在晴天环境下战胜对手"/>
+        <HideMove ID="11908" Tips="使用原始突进击败对手30次"/>
+        <HideMove ID="11919" Tips="使用雀鸣60次"/>
+        <HideMove ID="11920" Tips="使用雀翎击败对手30次"/>
+        <HideMove ID="11921" Tips="自己体力不低于3/4的情况下击败对手"/>
+        <HideMove ID="11922" Tips="使用雀灵击败对手30次"/>
+        <HideMove ID="11934" Tips="自己体力低于1/8时击败对手"/>
+        <HideMove ID="11935" Tips="获得50场战斗胜利"/>
+        <HideMove ID="11936" Tips="使用苍翼旋袭击败对手30次"/>
+        <HideMove ID="11937" Tips="使用凤凰神羽30次"/>
+        <HideMove ID="11877" Tips="等级到达100级，在任意一场战斗中获得胜利"/>
+        <HideMove ID="11949" Tips="自己体力低于1/8时击败对手"/>
+        <HideMove ID="11950" Tips="使用致命射击击败对手30次"/>
+        <HideMove ID="11951" Tips="获得50场战斗胜利"/>
+        <HideMove ID="11967" Tips="使用飞踢击败对手30次"/>
+        <HideMove ID="11968" Tips="使用透明光束击败对手30次"/>
+        <HideMove ID="11969" Tips="使用急速飞踢击败对手30次"/>
+        <HideMove ID="11970" Tips="获得50场战斗胜利"/>
+        <HideMove ID="10191" Tips="在雨天环境下战胜对手"/>
+        <HideMove ID="11982" Tips="使用红色穿击击败对手30次"/>
+        <HideMove ID="11983" Tips="使用蓝色浪花击败对手30次"/>
+        <HideMove ID="11984" Tips="自己体力低于1/8时击败对手"/>
+        <HideMove ID="11996" Tips="获得50场战斗胜利"/>
+        <HideMove ID="11997" Tips="在自己满血状态下战胜不低于60级的精灵"/>
+        <HideMove ID="11998" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="11999" Tips="战胜50次雄性精灵"/>
+        <HideMove ID="12053" Tips="使用追杀击败对手30次"/>
+        <HideMove ID="12054" Tips="使用肉搏击败对手30次"/>
+        <HideMove ID="12055" Tips="获得50场战斗胜利"/>
+        <HideMove ID="12056" Tips="自己体力低于1/8时击败对手"/>
+        <HideMove ID="12068" Tips="获得50场战斗胜利"/>
+        <HideMove ID="12069" Tips="自己在后出手的情况下击败对手10次"/>
+        <HideMove ID="12070" Tips="使用寒冰之体击败对手30次"/>
+        <HideMove ID="12071" Tips="自己体力低于1/8时击败对手"/>
+        <HideMove ID="11877" Tips="等级到达100级，在任意一场战斗中获得胜利"/>
+        <HideMove ID="12083" Tips="使用艾斯卡里巴15次"/>
+        <HideMove ID="12084" Tips="使用鳍角双连击败对手30次"/>
+        <HideMove ID="12085" Tips="获得50场战斗胜利"/>
+        <HideMove ID="12097" Tips="在自身体力低于1/8时击败对手"/>
+        <HideMove ID="12098" Tips="在自己满血状态下战胜不低于60级的精灵"/>
+        <HideMove ID="12099" Tips="使用叠罗汉60次"/>
+        <HideMove ID="12100" Tips="获得50场战斗胜利"/>
+        <HideMove ID="12118" Tips="使用影子剥夺50次"/>
+        <HideMove ID="12119" Tips="使用飞散蝙蝠击败对手30次"/>
+        <HideMove ID="12120" Tips="使用黑刃击败对手30次"/>
+        <HideMove ID="12121" Tips="自己体力低于1/8时击败对手"/>
+        <HideMove ID="12132" Tips="在自身具有火焰仆从状态时击败对手30次"/>
+        <HideMove ID="12133" Tips="在自己满血状态下战胜不低于60级的精灵"/>
+        <HideMove ID="12134" Tips="使用熔岩冲击击败对手30次"/>
+        <HideMove ID="12135" Tips="使用爆裂打击击败对手30次"/>
+        <HideMove ID="12147" Tips="使用大地回春50次"/>
+        <HideMove ID="12148" Tips="使用大地制裁击败对手30次"/>
+        <HideMove ID="12149" Tips="使用大地惩戒击败对手30次"/>
+        <HideMove ID="12150" Tips="使用乾坤挪移50次"/>
+        <HideMove ID="12163" Tips="使用致命缠绕击败对手30次"/>
+        <HideMove ID="12164" Tips="使用寒冰护体50次"/>
+        <HideMove ID="12165" Tips="使用冰凌镜50次"/>
+        <HideMove ID="12166" Tips="在自己满血状态下战胜不低于60级的精灵"/>
+        <HideMove ID="12179" Tips="自己体力低于1/8时击败对手"/>
+        <HideMove ID="12180" Tips="使用蓄怒蛮袭击败对手50次"/>
+        <HideMove ID="12181" Tips="经历80次战斗"/>
+        <HideMove ID="12182" Tips="在自己的体力值低于1/4的情况下击败对手15次"/>
+        <HideMove ID="11877" Tips="等级到达100级，在任意一场战斗中获得胜利"/>
+        <HideMove ID="12194" Tips="自己处于能力下降状态时击败对手"/>
+        <HideMove ID="12195" Tips="使用冰灵裁决击败对手30次"/>
+        <HideMove ID="12196" Tips="对手处于冰冻状态下击败对手"/>
+        <HideMove ID="12225" Tips="获得50场战斗胜利"/>
+        <HideMove ID="12226" Tips="在自己满血状态下战胜不低于60级的精灵"/>
+        <HideMove ID="12227" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="12228" Tips="使用针锋相对击败对手30次"/>
+        <HideMove ID="12243" Tips="在自己的体力值低于1/4的情况下击败对手15次"/>
+        <HideMove ID="12244" Tips="使用毒液强袭击败对手30次"/>
+        <HideMove ID="12245" Tips="经历80次战斗"/>
+        <HideMove ID="12246" Tips="在自己满血状态下战胜不低于60级的精灵"/>
+        <HideMove ID="12256" Tips="自己体力低于1/8时击败对手"/>
+        <HideMove ID="12257" Tips="使用电磁脉冲击败对手30次"/>
+        <HideMove ID="12258" Tips="使用电磁积蓄50次"/>
+        <HideMove ID="12259" Tips="在自己满血状态下战胜不低于60级的精灵"/>
+        <HideMove ID="12271" Tips="使用聚水盾50次"/>
+        <HideMove ID="12272" Tips="自己体力低于1/8时击败对手"/>
+        <HideMove ID="12273" Tips="使用高速水箭50次"/>
+        <HideMove ID="12274" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="12287" Tips="获得50场战斗胜利"/>
+        <HideMove ID="12288" Tips="累积使用30次恶食"/>
+        <HideMove ID="12289" Tips="对手处于害怕状态时击败对手"/>
+        <HideMove ID="12290" Tips="在对手具有强化状态时击败对手"/>
+        <HideMove ID="12302" Tips="使用清汤火锅50次"/>
+        <HideMove ID="12303" Tips="使用辣椒油和辣椒酱技能各15次"/>
+        <HideMove ID="12304" Tips="使用滚烫高汤击败对手30次"/>
+        <HideMove ID="12305" Tips="自己体力低于1/8时击败对手"/>
+        <HideMove ID="11877" Tips="等级到达100级，在任意一场战斗中获得胜利"/>
+        <HideMove ID="12318" Tips="在自己满血状态下战胜不低于60级的精灵"/>
+        <HideMove ID="12319" Tips="使用束缚水藻50次"/>
+        <HideMove ID="12320" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="12332" Tips="使用伊特领域30次"/>
+        <HideMove ID="12333" Tips="一次战斗中先使用伊特领域再使用另一种领域后击败不低于60级的对手"/>
+        <HideMove ID="12334" Tips="获得50场战斗胜利"/>
+        <HideMove ID="12335" Tips="地伊特、龙伊特分别上场，最后用必杀技击败对手即可领悟"/>
+        <HideMove ID="12343" Tips="使用伊特领域30次"/>
+        <HideMove ID="12344" Tips="一次战斗中先使用伊特领域再使用另一种领域后击败不低于60级的对手"/>
+        <HideMove ID="12345" Tips="获得50场战斗胜利"/>
+        <HideMove ID="12346" Tips="地伊特、龙伊特分别上场，最后用必杀技击败对手即可领悟"/>
+        <HideMove ID="12357" Tips="自己处于不良状态下击败对手"/>
+        <HideMove ID="12358" Tips="自己体力低于1/8时击败对手"/>
+        <HideMove ID="12359" Tips="经历80次战斗"/>
+        <HideMove ID="12360" Tips="在战斗中被对手一击秒杀"/>
+        <HideMove ID="12372" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="12373" Tips="使用奥术风暴击败对手50次"/>
+        <HideMove ID="12374" Tips="使用月暮术击败对手50次"/>
+        <HideMove ID="12375" Tips="以致命一击击败不低于60级的对手"/>
+        <HideMove ID="11877" Tips="等级到达100级，在任意一场战斗中获得胜利"/>
+        <HideMove ID="12387" Tips="使用密林之壁50次"/>
+        <HideMove ID="12388" Tips="在第一回合击败对手30次"/>
+        <HideMove ID="12389" Tips="使用林之锢30次"/>
+        <HideMove ID="12405" Tips="使用苦痛技能50次"/>
+        <HideMove ID="12406" Tips="在自己体力低于1/8时使用牺牲之力击败对手20次"/>
+        <HideMove ID="12407" Tips="自己血量不低于3/4的情况下击败等级不低于60级的精灵20次"/>
+        <HideMove ID="12408" Tips="在魔鬼契约状态下击败对手30次"/>
+        <HideMove ID="12422" Tips="获得50场战斗胜利"/>
+        <HideMove ID="12423" Tips="在瞬步状态下击败对手30次"/>
+        <HideMove ID="12424" Tips="使用断魂斩击败对手30次"/>
+        <HideMove ID="12425" Tips="获得100场战斗胜利"/>
+        <HideMove ID="12454" Tips="使用恐吓尖啸50次"/>
+        <HideMove ID="12455" Tips="使用尖翼空袭击败不低于60级的对手20次"/>
+        <HideMove ID="12456" Tips="使用绝地突袭击败不低于60级的对手30次"/>
+        <HideMove ID="12457" Tips="在对手具有负担状态下击败不低于60级的对手20次"/>
+        <HideMove ID="12469" Tips="获得50场战斗胜利"/>
+        <HideMove ID="12470" Tips="在自己满血状态下战胜不低于60级的精灵"/>
+        <HideMove ID="12471" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="12472" Tips="使用飓风爆袭击败不低于60级的对手20次"/>
+        <HideMove ID="12486" Tips="在自己满血状态下战胜不低于60级的精灵"/>
+        <HideMove ID="12487" Tips="使用封闭心门击败对手30次"/>
+        <HideMove ID="12488" Tips="自己处于能力下降状态时击败对手"/>
+        <HideMove ID="12489" Tips="自己处于不良状态下击败对手"/>
+        <HideMove ID="12500" Tips="获得50场战斗胜利"/>
+        <HideMove ID="12501" Tips="使用幻术渡鸦击败对手30次"/>
+        <HideMove ID="12502" Tips="在对手速度下降的情况下击败对手30次"/>
+        <HideMove ID="12503" Tips="在对手具有渡鸦分身状态下击败不低于60级的精灵20次"/>
+        <HideMove ID="12516" Tips="自己体力低于1/8时击败对手"/>
+        <HideMove ID="12517" Tips="在对手处于能力下降状态下击败对手30次"/>
+        <HideMove ID="12518" Tips="在夜幕的环境下使用绝情打击击败对手30次"/>
+        <HideMove ID="12519" Tips="使用迷之风暴50次"/>
+        <HideMove ID="11877" Tips="等级到达100级，在任意一场战斗中获得胜利"/>
+        <HideMove ID="12531" Tips="使用蛮行霸道击败对手30次"/>
+        <HideMove ID="12532" Tips="在第一回合击败对手30次"/>
+        <HideMove ID="12581" Tips="使用巨型号角击败对手30次"/>
+        <HideMove ID="12544" Tips="使用极地六尾袭击败对手30次"/>
+        <HideMove ID="12545" Tips="获得50场战斗胜利"/>
+        <HideMove ID="12546" Tips="在极品资质情况下获得一场战斗胜利"/>
+        <HideMove ID="12547" Tips="在暴风雪环境下击败对手"/>
+        <HideMove ID="12561" Tips="在具有月光女神状态下击败对手30次"/>
+        <HideMove ID="12562" Tips="自己处于能力下降状态时击败对手"/>
+        <HideMove ID="12563" Tips="获得50场战斗胜利"/>
+        <HideMove ID="12564" Tips="自己体力低于1/8时击败对手"/>
+        <HideMove ID="12576" Tips="获得50场战斗胜利"/>
+        <HideMove ID="12577" Tips="在自己满血状态下战胜不低于60级的精灵"/>
+        <HideMove ID="12578" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="12579" Tips="使用暴怒穿击击败不低于60级的对手20次"/>
+        <HideMove ID="12611" Tips="获得50场战斗胜利"/>
+        <HideMove ID="12612" Tips="使用曝沙之罚击败对手30次"/>
+        <HideMove ID="12613" Tips="使用自截再生技能50次"/>
+        <HideMove ID="12614" Tips="使用变色技能50次"/>
+        <HideMove ID="12630" Tips="经历80次战斗"/>
+        <HideMove ID="12631" Tips="使用死光击败对手50次"/>
+        <HideMove ID="12632" Tips="在后出手的情况下击败对手30次"/>
+        <HideMove ID="12633" Tips="使用冥界逆光击败对手50次"/>
+        <HideMove ID="12645" Tips="使用蓄怒打击击败对手30次"/>
+        <HideMove ID="12646" Tips="使用激怒技能50次"/>
+        <HideMove ID="12647" Tips="自己物攻等级达到6的情况下击败对手10次"/>
+        <HideMove ID="12648" Tips="战斗结束后自己的怒气小于16"/>
+        <HideMove ID="12659" Tips="在对手溺水状态下击败对手20次"/>
+        <HideMove ID="12660" Tips="获得50场战斗胜利"/>
+        <HideMove ID="12661" Tips="自己体力低于1/8时击败对手"/>
+        <HideMove ID="12662" Tips="在雨天状态下使用水箭炮击败对手30次"/>
+        <HideMove ID="12675" Tips="在体力低于1/8情况下使用怒气冥焰击败对手20次"/>
+        <HideMove ID="12676" Tips="经历80次战斗"/>
+        <HideMove ID="12677" Tips="获得50场战斗胜利"/>
+        <HideMove ID="12678" Tips="使用愤怒玄铁击败对手30次"/>
+        <HideMove ID="12689" Tips="使用羽化技能50次"/>
+        <HideMove ID="12690" Tips="获得50场战斗胜利"/>
+        <HideMove ID="12691" Tips="击败微弱属性的对手30次"/>
+        <HideMove ID="12692" Tips="使用群蛾冲锋击败对手30次"/>
+        <HideMove ID="12704" Tips="经历50场战斗胜利"/>
+        <HideMove ID="12705" Tips="使用盘旋连打击败对手30次"/>
+        <HideMove ID="12706" Tips="使用精准虚弱经历50场战斗"/>
+        <HideMove ID="12707" Tips="在一场战斗中受到致命一击并击败对手"/>
+        <HideMove ID="11877" Tips="等级到达100级，在任意一场战斗中获得胜利"/>
+        <HideMove ID="12719" Tips="使用双子连击击败对手30次"/>
+        <HideMove ID="12720" Tips="等级达到60次，在第一回合击败对手30次"/>
+        <HideMove ID="12721" Tips="使用幻胧魔皇拳击败对手30次"/>
+        <HideMove ID="12733" Tips="获得50场战斗胜利"/>
+        <HideMove ID="12734" Tips="在夜幕的环境下使用痛恨击败对手30次"/>
+        <HideMove ID="12735" Tips="使用诋毁击败对手30次"/>
+        <HideMove ID="12736" Tips="以致命一击击败不低于60级的对手"/>
+        <HideMove ID="12750" Tips="经历50场战斗胜利"/>
+        <HideMove ID="12751" Tips="等级达到100级，获得一场战斗胜利"/>
+        <HideMove ID="12752" Tips="使用巨力踩踏击败对手30次"/>
+        <HideMove ID="12753" Tips="后出手击败对手50次"/>
+        <HideMove ID="12765" Tips="经历50场战斗胜利"/>
+        <HideMove ID="12766" Tips="在自己满血状态下战胜不低于60级的精灵"/>
+        <HideMove ID="12767" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="12768" Tips="使用飞影爆袭击败对手30次"/>
+        <HideMove ID="12780" Tips="无法正常习得 建议一键习得"/>
+        <HideMove ID="12781" Tips="使用技能鲜肉馅击败对手30次"/>
+        <HideMove ID="12782" Tips="经历50场战斗胜利"/>
+        <HideMove ID="12783" Tips="在自身拥有不良状态下击败对手10次"/>
+        <HideMove ID="12795" Tips="经历80次战斗"/>
+        <HideMove ID="12796" Tips="使用复仇羽刺击败不低于60级的对手30次"/>
+        <HideMove ID="12797" Tips="在后出手的情况下击败对手30次"/>
+        <HideMove ID="12798" Tips="在异空间环境下击败对手30次"/>
+        <HideMove ID="12828" Tips="使用火焰环绕50次"/>
+        <HideMove ID="12829" Tips="使用致命火焰击败对手30次"/>
+        <HideMove ID="12830" Tips="击败在燃烧状态下的对手30次"/>
+        <HideMove ID="12831" Tips="获得50场战斗胜利"/>
+        <HideMove ID="12843" Tips="获得50场战斗胜利"/>
+        <HideMove ID="12844" Tips="自己体力低于1/8时击败对手"/>
+        <HideMove ID="12845" Tips="在第一回合击败对手30次"/>
+        <HideMove ID="12846" Tips="在对手身上具有魔祭状态下击败对手20次"/>
+        <HideMove ID="12859" Tips="获得50场战斗胜利"/>
+        <HideMove ID="12860" Tips="在自己满血状态下战胜不低于60级的精灵"/>
+        <HideMove ID="12861" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="12862" Tips="分别破地绝袭刺和苍月连空斩击败对手30次"/>
+        <HideMove ID="12874" Tips="在对手物攻或特攻强化的状态下击败对手10次"/>
+        <HideMove ID="12875" Tips="在对手物防和特防强化的状态下击败对手10次"/>
+        <HideMove ID="12876" Tips="使用星耀闪光50次"/>
+        <HideMove ID="12877" Tips="在自身满血的状态下击败60级以上的对手10次"/>
+        <HideMove ID="11877" Tips="等级到达100级，在任意一场战斗中获得胜利"/>
+        <HideMove ID="12889" Tips="使用技能尸鬼缠绕50次"/>
+        <HideMove ID="12890" Tips="使用技能横行霸道击败对手30次"/>
+        <HideMove ID="12891" Tips="使用技能尸鬼魂反击败对手30次"/>
+        <HideMove ID="12905" Tips="获得50场战斗胜利"/>
+        <HideMove ID="12906" Tips="自己处于能力下降状态时击败对手"/>
+        <HideMove ID="12907" Tips="在对手处于魅惑状态下击败对手20次"/>
+        <HideMove ID="12908" Tips="等级达到100级，获得30场战斗胜利"/>
+        <HideMove ID="12938" Tips="使用元气冲撞击败不低于60级的对手30次"/>
+        <HideMove ID="12939" Tips="在自己满血状态下战胜不低于60级的精灵"/>
+        <HideMove ID="12940" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="12941" Tips="等级达到100级，在自身体力低于1/8的情况下击败对手20次"/>
+        <HideMove ID="12704" Tips="获得50场战斗胜利"/>
+        <HideMove ID="12705" Tips="使用盘旋连打击败对手30次"/>
+        <HideMove ID="12706" Tips="使用精准虚弱经历50场战斗"/>
+        <HideMove ID="12707" Tips="在一场战斗中受到暴击并击败对手"/>
+        <HideMove ID="12971" Tips="使用狂暴之心50次"/>
+        <HideMove ID="12972" Tips="使用元素精华50次"/>
+        <HideMove ID="12973" Tips="使用飞叶风暴击败对手30次"/>
+        <HideMove ID="12974" Tips="在晴天环境下击败在对手10次"/>
+        <HideMove ID="12953" Tips="获得50场战斗胜利"/>
+        <HideMove ID="12954" Tips="在自己满血状态下战胜不低于60级的精灵"/>
+        <HideMove ID="12955" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="12956" Tips="后出手的情况下战胜对手30次"/>
+        <HideMove ID="12987" Tips="使用技能聚能50次"/>
+        <HideMove ID="12988" Tips="使用技能心灵压迫击败对手30次"/>
+        <HideMove ID="12989" Tips="使用技能致命头槌击败对手30次"/>
+        <HideMove ID="12990" Tips="获得50场战斗胜利"/>
+        <HideMove ID="13024" Tips="获得50场战斗胜利"/>
+        <HideMove ID="13025" Tips="在自己满血状态下战胜不低于60级的精灵"/>
+        <HideMove ID="13026" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="13027" Tips="使用致命穿击击败不低于60级的对手20次"/>
+        <HideMove ID="13039" Tips="击败处于燃烧状态下对手30次"/>
+        <HideMove ID="13040" Tips="获得50场战斗胜利"/>
+        <HideMove ID="13041" Tips="击败处于烧伤状态下对手10次"/>
+        <HideMove ID="13042" Tips="使用溅射火芯击败不低于60级的对手30次"/>
+        <HideMove ID="13056" Tips="获得50场战斗胜利"/>
+        <HideMove ID="13057" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="13058" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="13059" Tips="敬请期待"/>
+        <HideMove ID="13072" Tips="获得50场战斗胜利"/>
+        <HideMove ID="13073" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="13074" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="13075" Tips="使用必杀技将不低于60级的对手击败20次"/>
+        <HideMove ID="13087" Tips="在夜幕的环境下使用影之刃败对手30次"/>
+        <HideMove ID="13088" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="13089" Tips="在夜幕的环境下使用幻影利爪击败对手30次"/>
+        <HideMove ID="13090" Tips="在夜幕的环境下使用幻影收割击败对手30次"/>
+        <HideMove ID="13120" Tips="在古战场的环境下使用新月头槌击败对手30次"/>
+        <HideMove ID="13121" Tips="在古战场的环境下使用月银暴袭击败对手30次"/>
+        <HideMove ID="13122" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="13123" Tips="在古战场的环境下使用烈破斩月袭击败不低于60级的对手30次"/>
+
+        <HideMove ID="13138" Tips="自己体力不低于3/4的情况下击败对手"/>
+        <HideMove ID="13139" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="13140" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="13141" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="11877" Tips="等级到达100级，在任意一场战斗中获得胜利"/>
+        <HideMove ID="13153" Tips="获得50场战斗胜利"/>
+        <HideMove ID="13154" Tips="等级达到60次，在第一回合击败对手30次"/>
+        <HideMove ID="13155" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="13183" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="13184" Tips="获得50场战斗胜利"/>
+        <HideMove ID="13185" Tips="自己体力低于1/8时击败对手"/>
+        <HideMove ID="13186" Tips="对手处于流血状态时击败对手"/>
+        <HideMove ID="13168" Tips="获得50场战斗胜利"/>
+        <HideMove ID="13169" Tips="使用灵能陷阱击败对手30次"/>
+        <HideMove ID="13170" Tips="自己体力低于1/8时击败对手"/>
+        <HideMove ID="13171" Tips="在自身拥有能力强化状态击败不低于60级的对手20次"/>
+        <HideMove ID="13198" Tips="获得50场战斗胜利"/>
+        <HideMove ID="13199" Tips="自己体力低于1/8时击败对手"/>
+        <HideMove ID="13200" Tips="在自己满血状态下战胜不低于60级的精灵"/>
+        <HideMove ID="13201" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="13213" Tips="获得50场战斗胜利"/>
+        <HideMove ID="13214" Tips="自己体力低于1/8时击败对手"/>
+        <HideMove ID="13215" Tips="在自己满血状态下战胜不低于60级的精灵"/>
+        <HideMove ID="13216" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="13228" Tips="使用勇往直前击败不低于60级的对手20次"/>
+        <HideMove ID="13229" Tips="自己体力低于1/8时击败对手"/>
+        <HideMove ID="13230" Tips="获得50场战斗胜利"/>
+        <HideMove ID="13231" Tips="击败处于昏迷状态的对手20次"/>
+        <HideMove ID="13248" Tips="获得50场战斗胜利"/>
+        <HideMove ID="13249" Tips="自己体力低于1/8时击败对手"/>
+        <HideMove ID="13250" Tips="在自己满血状态下战胜不低于60级的精灵"/>
+        <HideMove ID="13251" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="13265" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="13266" Tips="获得50场战斗胜利"/>
+        <HideMove ID="13267" Tips="自己体力低于1/8时击败对手"/>
+        <HideMove ID="13268" Tips="对手处于流血状态时击败对手"/>
+        <HideMove ID="13280" Tips="使用技能幻蹄50次"/>
+        <HideMove ID="13281" Tips="获得50场战斗胜利"/>
+        <HideMove ID="13282" Tips="在自身具有不良状态的情况下击败不低于60级的对手"/>
+        <HideMove ID="13283" Tips="使用技能电蹄蹬击败对手30次"/>
+        <HideMove ID="13285" Tips="进化成米瑞尔并达到80级，在自己具有能力下降状态下击败对手20次"/>
+        <HideMove ID="13286" Tips="进化成米瑞尔并达到80级，使用光速突击击败对手30次"/>
+        <HideMove ID="13291" Tips="进化成米瑞尔并达到80级，在自己具有能力下降状态下使用破阳无双击败对手30次"/>
+        <HideMove ID="13290" Tips="进化成米瑞尔并达到80级，使用阿玛迪斯光击败对手50次"/>
+        <HideMove ID="13305" Tips="使用致命一击将对手击败20次"/>
+        <HideMove ID="13306" Tips="在4回合内击败不低于60级的对手20次"/>
+        <HideMove ID="13307" Tips="击败任意一项能力强化不低于3级的对手20次"/>
+        <HideMove ID="13308" Tips="击败所有能力强化不低于5级的对手20次"/>
+        <HideMove ID="11877" Tips="等级到达100级，在任意一场战斗中获得胜利"/>
+        <HideMove ID="13340" Tips="使用技能凝神50次"/>
+        <HideMove ID="13341" Tips="使用技能神之惩戒击败对手30次"/>
+        <HideMove ID="13342" Tips="使用技能幻影迷踪击败对手30次"/>
+        <HideMove ID="13356" Tips="使用技能如果没有你技能击败不低于60级的精灵15次"/>
+        <HideMove ID="13357" Tips="使用她的眼泪击败对手30次"/>
+        <HideMove ID="13358" Tips="使用原点击败对手30次"/>
+        <HideMove ID="13359" Tips="使用承认技能击败对手20次"/>
+        <HideMove ID="13372" Tips="使用伊特领域30次"/>
+        <HideMove ID="13373" Tips="一次战斗中先使用伊特领域再使用另一种领域后击败不低于60级的对手"/>
+        <HideMove ID="13374" Tips="获得50场战斗胜利"/>
+        <HideMove ID="13375" Tips="超伊特、神伊特分别上场，最后用必杀技击败对手即可领悟"/>
+        <HideMove ID="13387" Tips="获得50场战斗胜利"/>
+        <HideMove ID="13388" Tips="自己体力低于1/8时击败对手"/>
+        <HideMove ID="13389" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="13390" Tips="战斗开始第1回合击败对手"/>
+        <HideMove ID="13402" Tips="获得50场战斗胜利"/>
+        <HideMove ID="13403" Tips="自己体力低于1/8时击败对手"/>
+        <HideMove ID="13404" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="13405" Tips="战斗开始第1回合击败对手"/>
+        <HideMove ID="13417" Tips="使用技能防御之页50次"/>
+        <HideMove ID="13418" Tips="使用技能愈合之页50次"/>
+        <HideMove ID="13419" Tips="获得50场战斗胜利"/>
+        <HideMove ID="13420" Tips="在自己体力低于1/3时击败不低于60级的对手10次"/>
+        <HideMove ID="13437" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="13438" Tips="获得50场战斗胜利"/>
+        <HideMove ID="13439" Tips="自己体力低于1/8时击败对手"/>
+        <HideMove ID="13440" Tips="在自己满血状态下战胜不低于60级的精灵"/>
+        <HideMove ID="13452" Tips="在蜷缩格挡状态下击败对手20次"/>
+        <HideMove ID="13453" Tips="获得50场战斗胜利"/>
+        <HideMove ID="13454" Tips="在自身体力低于1/4时击败对手20次"/>
+        <HideMove ID="13455" Tips="在刺拳状态下使用直拳击败对手10次"/>
+        <HideMove ID="13467" Tips="获得50场战斗胜利"/>
+        <HideMove ID="13468" Tips="在自己满血状态下战胜不低于60级的精灵"/>
+        <HideMove ID="13469" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="13470" Tips="自己体力低于1/8时击败对手"/>
+        <HideMove ID="13478" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="13479" Tips="获得50场战斗胜利"/>
+        <HideMove ID="13480" Tips="自己体力低于1/8时击败对手"/>
+        <HideMove ID="13481" Tips="在自己满血状态下战胜不低于60级的精灵"/>
+        <HideMove ID="11877" Tips="等级到达100级，在任意一场战斗中获得胜利"/>
+        <HideMove ID="13496" Tips="使用技能淬炼50次"/>
+        <HideMove ID="13497" Tips="使用技能庐山升龙霸击败对手30次"/>
+        <HideMove ID="13498" Tips="使用技能庐山龙飞翔击败对手30次"/>
+        <HideMove ID="13506" Tips="在自己满血状态下战胜不低于60级的精灵"/>
+        <HideMove ID="13507" Tips="使用神之隐袭击败对手30次"/>
+        <HideMove ID="13508" Tips="使用神之瞬击击败对手20次"/>
+        <HideMove ID="13509" Tips="使用必杀技击败不低于60级的对手20次"/>
+        <HideMove ID="13521" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="13522" Tips="使用猎杀击败对手30次"/>
+        <HideMove ID="13523" Tips="使用搏斗击败对手30次"/>
+        <HideMove ID="13524" Tips="使用致命撕咬击败对手30次"/>
+        <HideMove ID="13538" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="13539" Tips="使用火雀灵30次"/>
+        <HideMove ID="13540" Tips="使用轸宿彩尾击败对手60次"/>
+        <HideMove ID="13541" Tips="在自身体力低于1/6时使用必杀技击败不低于60级对手15次"/>
+        <HideMove ID="13558" Tips="使用技能巨石硬化50次"/>
+        <HideMove ID="13559" Tips="在对手具有能力强化的条件下击败对手30次"/>
+        <HideMove ID="13560" Tips="在自身处于能力弱化的条件下击败对手30次"/>
+        <HideMove ID="13561" Tips="获得50场战斗胜利"/>
+        <HideMove ID="13605" Tips="在自己满血状态下战胜不低于60级的精灵"/>
+        <HideMove ID="13606" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="11709" Tips="自己体力低于1/8时击败对手"/>
+        <HideMove ID="11710" Tips="获得50场战斗胜利"/>
+        <HideMove ID="13592" Tips="使用技能生化魔能50次"/>
+        <HideMove ID="13593" Tips="获得50场战斗胜利"/>
+        <HideMove ID="13594" Tips="击败获得伤口感染状态时对手30次"/>
+        <HideMove ID="13595" Tips="使用技能嗜血逆袭击败对手30次"/>
+        <HideMove ID="13623" Tips="使用技能血之饥渴50次"/>
+        <HideMove ID="13624" Tips="获得50场战斗胜利"/>
+        <HideMove ID="13625" Tips="在自身先出手时击败不低于60级的对手30次"/>
+        <HideMove ID="13626" Tips="在自身体力低于1/4时击败不低于60级的对手30次"/>
+        <HideMove ID="13634" Tips="使用伊特领域30次"/>
+        <HideMove ID="13635" Tips="一次战斗中先使用伊特领域再使用另一种领域后击败不低于60级的对手"/>
+        <HideMove ID="13636" Tips="获得50场战斗胜利"/>
+        <HideMove ID="13637" Tips="特伊特、超伊特、神伊特分别上场，最后用必杀技击败对手即可领悟"/>
+        <HideMove ID="13664" Tips="获得50场战斗胜利"/>
+        <HideMove ID="13665" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="13666" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="13667" Tips="在对手昏迷的状态下将对手击败5次"/>
+        <HideMove ID="13649" Tips="使用重锤击败对手30次"/>
+        <HideMove ID="13650" Tips="使用怒震击败不低于60级对手20次"/>
+        <HideMove ID="13651" Tips="获得50场战斗胜利"/>
+        <HideMove ID="13652" Tips="在对手具有恶心状态下击败对手15次"/>
+        <HideMove ID="13716" Tips="获得50场战斗胜利"/>
+        <HideMove ID="13717" Tips="自己体力低于1/8时击败对手"/>
+        <HideMove ID="13718" Tips="在自己满血状态下战胜不低于60级的精灵"/>
+        <HideMove ID="13719" Tips="击败火系精灵30次"/>
+        <HideMove ID="13763" Tips="获得50场战斗胜利"/>
+        <HideMove ID="13764" Tips="自己体力低于1/8时击败对手"/>
+        <HideMove ID="13765" Tips="在自己满血状态下战胜不低于60级的精灵"/>
+        <HideMove ID="13766" Tips="在战斗中被必杀技击败"/>
+        <HideMove ID="13778" Tips="获得50场战斗胜利"/>
+        <HideMove ID="13779" Tips="自己体力低于1/8时击败对手"/>
+        <HideMove ID="13780" Tips="在自己满血状态下战胜不低于60级的精灵"/>
+        <HideMove ID="13781" Tips="在战斗中被必杀技击败"/>
+        <HideMove ID="13798" Tips="获得50场战斗胜利"/>
+        <HideMove ID="13799" Tips="自己体力低于1/8时击败对手"/>
+        <HideMove ID="13800" Tips="在自己满血状态下战胜不低于60级的精灵"/>
+        <HideMove ID="13801" Tips="在战斗中被必杀技击败"/>
+        <HideMove ID="13818" Tips="获得50场战斗胜利"/>
+        <HideMove ID="13819" Tips="自己体力低于1/8时击败对手"/>
+        <HideMove ID="13764" Tips="体力＜1/8时击败对手"/>
+        <HideMove ID="13820" Tips="在战斗中被必杀技击败"/>
+        <HideMove ID="13852" Tips="获得50场战斗胜利"/>
+        <HideMove ID="13853" Tips="自己体力低于1/8时击败对手"/>
+        <HideMove ID="13854" Tips="在自己满血状态下战胜不低于60级的精灵"/>
+        <HideMove ID="13855" Tips="在战斗中被必杀技击败"/>
+        <HideMove ID="13837" Tips="获得50场战斗胜利"/>
+        <HideMove ID="13838" Tips="自己体力低于1/8时击败对手"/>
+        <HideMove ID="13839" Tips="在自己满血状态下战胜不低于60级的精灵"/>
+        <HideMove ID="13840" Tips="在战斗中被必杀技击败"/>
+        <HideMove ID="13911" Tips="获得50场战斗胜利"/>
+        <HideMove ID="13912" Tips="自己体力低于1/8时击败对手"/>
+        <HideMove ID="13913" Tips="在自己满血状态下战胜不低于60级的精灵"/>
+        <HideMove ID="13914" Tips="在战斗中被必杀技击败"/>
+        <HideMove ID="13896" Tips="获得50场战斗胜利"/>
+        <HideMove ID="13897" Tips="自己体力低于1/8时击败对手"/>
+        <HideMove ID="13898" Tips="在自己满血状态下战胜不低于60级的精灵"/>
+        <HideMove ID="13899" Tips="在战斗中被必杀技击败"/>
+        <HideMove ID="13874" Tips="获得50场战斗胜利"/>
+        <HideMove ID="13876" Tips="自己体力低于1/8时击败对手"/>
+        <HideMove ID="13877" Tips="在自己满血状态下战胜不低于60级的精灵"/>
+        <HideMove ID="13878" Tips="在战斗中被必杀技击败"/>
+        <HideMove ID="13950" Tips="获得50场战斗胜利"/>
+        <HideMove ID="13951" Tips="自己体力低于1/8时击败对手"/>
+        <HideMove ID="13952" Tips="在自己满血状态下战胜不低于60级的精灵"/>
+        <HideMove ID="13953" Tips="在战斗中被必杀技击败"/>
+        <HideMove ID="13965" Tips="获得50场战斗胜利"/>
+        <HideMove ID="13966" Tips="在自己满血状态下战胜不低于60级的精灵"/>
+        <HideMove ID="13967" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="13968" Tips="体力低于1/8时击败对手"/>
+        <HideMove ID="13994" Tips="获得50场战斗胜利"/>
+        <HideMove ID="13995" Tips="自己体力低于1/8时击败对手"/>
+        <HideMove ID="13996" Tips="在自己满血状态下战胜不低于60级的精灵"/>
+        <HideMove ID="13997" Tips="在战斗中被必杀技击败"/>
+        <HideMove ID="13980" Tips="获得50场战斗胜利"/>
+        <HideMove ID="13981" Tips="自己体力低于1/8时击败对手"/>
+        <HideMove ID="13982" Tips="在自己满血状态下战胜不低于60级的精灵"/>
+        <HideMove ID="13998" Tips="在战斗中被必杀技击败"/>
+        <HideMove ID="14015" Tips="获得50场战斗胜利"/>
+        <HideMove ID="14016" Tips="自己体力低于1/8时击败对手"/>
+        <HideMove ID="14017" Tips="在自己满血状态下战胜不低于60级的精灵"/>
+        <HideMove ID="14018" Tips="在战斗中被必杀技击败"/>
+        <HideMove ID="14036" Tips="获得50场战斗胜利"/>
+        <HideMove ID="14037" Tips="自己体力低于1/8时击败对手"/>
+        <HideMove ID="14038" Tips="在自己满血状态下战胜不低于60级的精灵"/>
+        <HideMove ID="14039" Tips="在战斗中被必杀技击败"/>
+        <HideMove ID="14051" Tips="获得50场战斗胜利"/>
+        <HideMove ID="14052" Tips="自己体力低于1/8时击败对手"/>
+        <HideMove ID="14053" Tips="在自己满血状态下战胜不低于60级的精灵"/>
+        <HideMove ID="14054" Tips="在战斗中被必杀技击败"/>
+        <HideMove ID="14082" Tips="获得50场战斗胜利"/>
+        <HideMove ID="14083" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="14084" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="14085" Tips="经历80次战斗"/>
+        <HideMove ID="14097" Tips="获得50场战斗胜利"/>
+        <HideMove ID="14098" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="14099" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="14100" Tips="经历80次战斗"/>
+        <HideMove ID="14129" Tips="获得50场战斗胜利"/>
+        <HideMove ID="14130" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="14131" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="14132" Tips="经历80次战斗"/>
+        <HideMove ID="14114" Tips="获得50场战斗胜利"/>
+        <HideMove ID="14115" Tips="在自己满血状态下战胜不低于60级的精灵"/>
+        <HideMove ID="14116" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="14117" Tips="自己体力低于1/8时击败对手"/>
+        <HideMove ID="14159" Tips="获得50场战斗胜利"/>
+        <HideMove ID="14160" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="14161" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="14162" Tips="经历80次战斗"/>
+        <HideMove ID="14184" Tips="获得50场战斗胜利"/>
+        <HideMove ID="11191" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="14185" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="14186" Tips="经历80次战斗"/>
+        <HideMove ID="14199" Tips="获得50场战斗胜利"/>
+        <HideMove ID="14200" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="14201" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="14202" Tips="经历80次战斗"/>
+        <HideMove ID="14253" Tips="获得50场战斗胜利"/>
+        <HideMove ID="14254" Tips="在自己满血状态下战胜不低于60级的精灵"/>
+        <HideMove ID="14255" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="14256" Tips="自己体力低于1/8时击败对手"/>
+        <HideMove ID="14268" Tips="获得50场战斗胜利"/>
+        <HideMove ID="14269" Tips="在自己满血状态下战胜不低于60级的精灵"/>
+        <HideMove ID="14270" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="14271" Tips="自己体力低于1/8时击败对手"/>
+        <HideMove ID="14232" Tips="获得50场战斗胜利"/>
+        <HideMove ID="14233" Tips="在自己满血状态下战胜不低于60级的精灵"/>
+        <HideMove ID="14234" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="14235" Tips="自己体力低于1/8时击败对手"/>
+        <HideMove ID="14215" Tips="获得50场战斗胜利"/>
+        <HideMove ID="14216" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="14217" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="14218" Tips="经历80次战斗"/>
+        <HideMove ID="14283" Tips="获得50场战斗胜利"/>
+        <HideMove ID="14284" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="14285" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="14286" Tips="经历80次战斗"/>
+        <HideMove ID="14315" Tips="获得50场战斗胜利"/>
+        <HideMove ID="14316" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="14317" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="14318" Tips="经历80次战斗"/>
+        <HideMove ID="14298" Tips="获得50场战斗胜利"/>
+        <HideMove ID="14299" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="14300" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="14301" Tips="经历80次战斗"/>
+        <HideMove ID="14332" Tips="自身具有王者纹章情况下击败1次超能系精灵"/>
+        <HideMove ID="14333" Tips="自身具有王者纹章的情况下击败1次暗影系精灵"/>
+        <HideMove ID="14334" Tips="自身具有王者纹章情况下击败1次风系精灵"/>
+        <HideMove ID="14335" Tips="自身具有王者纹章情况下击败1次光系精灵"/>
+        <HideMove ID="14347" Tips="获得50场战斗胜利"/>
+        <HideMove ID="11465" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="14348" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="14349" Tips="经历80次战斗"/>
+        <HideMove ID="13467" Tips="获得50场战斗胜利"/>
+        <HideMove ID="14395" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="13469" Tips="迈巴赫习得条件：在1场10回合的战斗中获得胜利；圣冰骑士习得条件：击败具有弱化的对手"/>
+        <HideMove ID="11586" Tips="帕拉丁习得条件：使用复仇光冲击败对手30次； 圣冰骑士习得条件：经历80次战斗"/>
+        <HideMove ID="14386" Tips="获得50场战斗胜利"/>
+        <HideMove ID="14387" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="14388" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="14389" Tips="经历80次战斗"/>
+        <HideMove ID="14371" Tips="获得50场战斗胜利"/>
+        <HideMove ID="14372" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="14373" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="14374" Tips="经历80次战斗"/>
+        <HideMove ID="13305" Tips="获得50场战斗胜利"/>
+        <HideMove ID="14409" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="14410" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="14411" Tips="经历80次战斗"/>
+        <HideMove ID="14421" Tips="获得50场战斗胜利"/>
+        <HideMove ID="14422" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="13058" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="14423" Tips="经历80次战斗"/>
+        <HideMove ID="14431" Tips="获得50场战斗胜利"/>
+        <HideMove ID="14432" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="14433" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="14434" Tips="经历80次战斗"/>
+        <HideMove ID="14463" Tips="获得50场战斗胜利"/>
+        <HideMove ID="14464" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="14465" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="14466" Tips="经历80次战斗"/>
+        <HideMove ID="14448" Tips="获得50场战斗胜利"/>
+        <HideMove ID="14449" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="14450" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="14451" Tips="经历80次战斗"/>
+        <HideMove ID="14480" Tips="获得50场战斗胜利"/>
+        <HideMove ID="14481" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="14482" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="14483" Tips="经历80次战斗"/>
+        <HideMove ID="14494" Tips="获得50场战斗胜利"/>
+        <HideMove ID="14495" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="14496" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="14497" Tips="经历80次战斗"/>
+        <HideMove ID="14508" Tips="获得50场战斗胜利"/>
+        <HideMove ID="14509" Tips="自己体力低于1/8时击败对手"/>
+        <HideMove ID="13952" Tips="在自己满血状态下战胜不低于60级的精灵"/>
+        <HideMove ID="14510" Tips="在战斗中被必杀技击败"/>
+        <HideMove ID="14522" Tips="获得50场战斗胜利"/>
+        <HideMove ID="14523" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="14524" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="14525" Tips="经历80次战斗"/>
+        <HideMove ID="14537" Tips="获得50场战斗胜利"/>
+        <HideMove ID="14538" Tips="在自己满血状态下战胜不低于60级的精灵"/>
+        <HideMove ID="14539" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="14540" Tips="自己体力低于1/8时击败对手"/>
+        <HideMove ID="14548" Tips="获得50场战斗胜利"/>
+        <HideMove ID="14549" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="14550" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="14551" Tips="经历80次战斗"/>
+        <HideMove ID="14565" Tips="获得50场战斗胜利"/>
+        <HideMove ID="14566" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="14567" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="14568" Tips="经历80次战斗"/>
+        <HideMove ID="14612" Tips="获得50场战斗胜利"/>
+        <HideMove ID="12796"
+                  Tips="赫本习得条件：使用复仇羽刺击败不低于60级的对手30次； 奥黛丽赫本习得条件：在1场10回合的战斗中获得胜利"/>
+        <HideMove ID="14613" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="14614" Tips="经历80次战斗"/>
+        <HideMove ID="14598" Tips="获得50场战斗胜利"/>
+        <HideMove ID="14599" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="14600" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="14601" Tips="经历80次战斗"/>
+        <HideMove ID="14576" Tips="获得50场战斗胜利"/>
+        <HideMove ID="14577" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="14578" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="14579" Tips="经历80次战斗"/>
+        <HideMove ID="14634" Tips="获得50场战斗胜利"/>
+        <HideMove ID="14635" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="14636" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="14637" Tips="经历80次战斗"/>
+        <HideMove ID="14669" Tips="获得50场战斗胜利"/>
+        <HideMove ID="14670" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="14671" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="14672" Tips="经历80次战斗"/>
+        <HideMove ID="14685" Tips="获得50场战斗胜利"/>
+
+
+        <HideMove ID="14686" Tips="经历80次战斗"/>
+        <HideMove ID="14652" Tips="获得50场战斗胜利"/>
+        <HideMove ID="14653" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="14654" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="14655" Tips="经历80次战斗"/>
+        <HideMove ID="14713" Tips="使用起风技能30次"/>
+        <HideMove ID="14714" Tips="获得50场战斗胜利"/>
+        <HideMove ID="14715" Tips="在自身能量弱化的时候击败对手20次"/>
+        <HideMove ID="14716" Tips="自身速度值在550以上是击败对手"/>
+        <HideMove ID="14698" Tips="获得50场战斗胜利"/>
+        <HideMove ID="14699" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="14700" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="14701" Tips="经历80次战斗"/>
+        <HideMove ID="14735" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="14736" Tips="获得50场战斗胜利"/>
+        <HideMove ID="14737" Tips="自己体力低于1/8时击败对手"/>
+        <HideMove ID="14738" Tips="经历80次战斗"/>
+        <HideMove ID="14752" Tips="使用坚韧利爪技能30次"/>
+        <HideMove ID="14753" Tips="获得50场战斗胜利"/>
+        <HideMove ID="14754" Tips="自身怒气低于对手时击败对手30次"/>
+        <HideMove ID="14755" Tips="对手拥有流血状态时击败对手30次"/>
+        <HideMove ID="14767" Tips="获得50场战斗胜利"/>
+        <HideMove ID="14768" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="14769" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="14770" Tips="经历80次战斗"/>
+        <HideMove ID="14784" Tips="获得50场战斗胜利"/>
+        <HideMove ID="14785" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="14786" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="14787" Tips="经历80次战斗"/>
+        <HideMove ID="14811" Tips="获得50场战斗胜利"/>
+        <HideMove ID="14812" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="14813" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="14814" Tips="经历80次战斗"/>
+        <HideMove ID="11934" Tips="自己体力低于1/8时击败对手"/>
+        <HideMove ID="11935" Tips="获得50场战斗胜利"/>
+        <HideMove ID="14798" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="14799" Tips="经历80次战斗"/>
+        <HideMove ID="14866" Tips="获得50场战斗胜利"/>
+        <HideMove ID="14867" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="14868" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="14869" Tips="经历80次战斗"/>
+        <HideMove ID="14832" Tips="获得50场战斗胜利"/>
+        <HideMove ID="14833" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="14834" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="14835" Tips="经历80次战斗"/>
+        <HideMove ID="14849" Tips="获得50场战斗胜利"/>
+        <HideMove ID="14850" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="14851" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="14852" Tips="经历80次战斗"/>
+        <HideMove ID="14881" Tips="自身在冥卵形态效果下击败对手30次"/>
+        <HideMove ID="14882" Tips="自身在冥虫形态效果下击败对手30次"/>
+        <HideMove ID="14883" Tips="自身在冥蝶形态效果下击败对手30次"/>
+        <HideMove ID="14884" Tips="获得50场战斗胜利"/>
+        <HideMove ID="14896" Tips="获得50场战斗胜利"/>
+        <HideMove ID="14897" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="14898" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="14899" Tips="自己体力低于1/8时击败对手"/>
+        <HideMove ID="14913" Tips="获得50场战斗胜利"/>
+        <HideMove ID="14914" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="14915" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="14916" Tips="经历80次战斗"/>
+        <HideMove ID="14931" Tips="获得50场战斗胜利"/>
+        <HideMove ID="14932" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="14933" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="14934" Tips="经历80次战斗"/>
+        <HideMove ID="14942" Tips="使用星辰祝福技能30次"/>
+        <HideMove ID="14943" Tips="使用镜像世界技能30次"/>
+        <HideMove ID="14944" Tips="击败获得烧伤状态的对手20次"/>
+        <HideMove ID="14945" Tips="获得50场战斗胜利"/>
+        <HideMove ID="14957" Tips="获得50场战斗胜利"/>
+        <HideMove ID="14958" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="14959" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="14960" Tips="经历80次战斗"/>
+        <HideMove ID="14972" Tips="获得50场战斗胜利"/>
+        <HideMove ID="14973" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="14974" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="14975" Tips="经历80次战斗"/>
+        <HideMove ID="14987" Tips="获得50场战斗胜利"/>
+        <HideMove ID="14988" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="14989" Tips="经历80次战斗"/>
+        <HideMove ID="14990" Tips="对手处于能力下降状态时击败对手"/>
+        <!-- <HideMove ID="15008" Tips="获得50场战斗胜利"/> -->
+        <HideMove ID="12906" Tips="自己处于能力下降状态时击败对手"/>
+        <HideMove ID="15009" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="15010" Tips="经历80次战斗"/>
+        <HideMove ID="15030" Tips="获得50场战斗胜利"/>
+        <HideMove ID="15031" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="15032" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="15033" Tips="经历80次战斗"/>
+        <HideMove ID="15060" Tips="获得50场战斗胜利"/>
+        <HideMove ID="15061" Tips="经历80次战斗"/>
+        <HideMove ID="15062" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="15063" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="15045" Tips="获得50场战斗胜利"/>
+        <HideMove ID="15046" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="15047" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="15048" Tips="经历80次战斗"/>
+        <HideMove ID="15077" Tips="获得50场战斗胜利"/>
+        <HideMove ID="15078" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="15079" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="15080" Tips="经历80次战斗"/>
+        <HideMove ID="15092" Tips="获得50场战斗胜利"/>
+        <HideMove ID="15093" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="15094" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="15095" Tips="经历80次战斗"/>
+        <HideMove ID="15107" Tips="获得50场战斗胜利"/>
+        <HideMove ID="15108" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="15109" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="15110" Tips="经历80次战斗"/>
+        <HideMove ID="15122" Tips="获得50场战斗胜利"/>
+        <HideMove ID="15123" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="15124" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="15125" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="15139" Tips="获得50场战斗胜利"/>
+        <HideMove ID="15140" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="15141" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="15142" Tips="经历80次战斗"/>
+        <HideMove ID="15154" Tips="获得50场战斗胜利"/>
+        <HideMove ID="15155" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="15156" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="15157" Tips="经历80次战斗"/>
+        <HideMove ID="15170" Tips="获得50场战斗胜利"/>
+        <HideMove ID="15171" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="15172" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="15173" Tips="经历80次战斗"/>
+        <!-- 影劫   -->
+        <HideMove ID="15186" Tips="获得50场战斗胜利"/>
+        <HideMove ID="15187" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="15188" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="15189" Tips="经历80次战斗"/>
+        <!-- 极光   -->
+        <HideMove ID="15201" Tips="获得50场战斗胜利"/>
+        <HideMove ID="15202" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="15203" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="15204" Tips="自己体力低于1/8时击败对手"/>
+        <!-- 铃铛阿财   -->
+        <HideMove ID="15175" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="15176" Tips="使用技能心灵压迫击败对手30次"/>
+        <HideMove ID="15177" Tips="使用体重压迫击败对手30次"/>
+        <HideMove ID="15178" Tips="使用体重压迫击败对手30次"/>
+        <!-- 地狱阎罗   -->
+        <HideMove ID="14987" Tips="获得50场战斗胜利"/>
+        <HideMove ID="14990" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="14988" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="12425" Tips="获得100场战斗胜利"/>
+        <!-- 远古树神   -->
+        <HideMove ID="15218" Tips="获得50场战斗胜利"/>
+        <HideMove ID="15219" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="15220" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="15221" Tips="经历80次战斗"/>
+        <!-- 黑武士   -->
+        <HideMove ID="15245" Tips="获得50场战斗胜利"/>
+        <HideMove ID="15246" Tips="经历80次战斗"/>
+        <HideMove ID="15247" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="15248" Tips="对手处于能力下降状态时击败对手"/>
+        <!-- 战神泰坦   -->
+        <HideMove ID="15301" Tips="获得50场战斗胜利"/>
+        <HideMove ID="15302" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="15303" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="15304" Tips="经历80次战斗"/>
+        <!-- 水果猫王   -->
+        <HideMove ID="15261" Tips="获得50场战斗胜利"/>
+        <HideMove ID="15262" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="15263" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="15264" Tips="经历80次战斗"/>
+        <!-- 古奇  -->
+        <HideMove ID="15278" Tips="获得50场战斗胜利"/>
+        <HideMove ID="15279" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="15280" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="15281" Tips="经历80次战斗"/>
+        <!-- 尼奥比   -->
+        <HideMove ID="15322" Tips="获得50场战斗胜利"/>
+        <HideMove ID="15323" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="15324" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="15325" Tips="经历80次战斗"/>
+        <!-- 踏天   -->
+        <HideMove ID="15352" Tips="获得50场战斗胜利"/>
+        <HideMove ID="15353" Tips="经历80次战斗"/>
+        <HideMove ID="15354" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="15355" Tips="对手处于能力下降状态时击败对手"/>
+        <!-- 魔尊左使   -->
+        <HideMove ID="15370" Tips="获得50场战斗胜利"/>
+        <HideMove ID="15371" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="15372" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="15373" Tips="经历80次战斗"/>
+        <!-- 维奥拉   -->
+        <HideMove ID="15337" Tips="获得50场战斗胜利"/>
+        <HideMove ID="15338" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="15339" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="15340" Tips="经历80次战斗"/>
+        <!-- 时空霸主   -->
+        <HideMove ID="15385" Tips="获得50场战斗胜利"/>
+        <HideMove ID="15387" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="15388" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="15386" Tips="经历80次战斗"/>
+        <!-- 逆世盖亚   -->
+        <HideMove ID="15400" Tips="获得50场战斗胜利"/>
+        <HideMove ID="15401" Tips="经历80次战斗"/>
+        <HideMove ID="15402" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="15403" Tips="对手处于能力下降状态时击败对手"/>
+        <!-- 魔尊右使   -->
+        <HideMove ID="15422" Tips="获得50场战斗胜利"/>
+        <HideMove ID="15423" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="15424" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="15425" Tips="经历80次战斗"/>
+        <!-- 奥德曼   -->
+        <HideMove ID="15454" Tips="获得50场战斗胜利"/>
+        <HideMove ID="15455" Tips="经历80次战斗"/>
+        <HideMove ID="15456" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="15457" Tips="对手处于能力下降状态时击败对手"/>
+        <!-- 万劫魔尊   -->
+        <HideMove ID="15497" Tips="获得50场战斗胜利"/>
+        <HideMove ID="15498" Tips="经历80次战斗"/>
+        <HideMove ID="15499" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="15500" Tips="对手处于能力下降状态时击败对手"/>
+        <!-- 西路费都   -->
+        <HideMove ID="15487" Tips="获得50场战斗胜利"/>
+        <HideMove ID="15488" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="15489" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="15490" Tips="经历80次战斗"/>
+        <!--沙虎-->
+        <HideMove ID="15571" Tips="获得50场战斗胜利"/>
+        <HideMove ID="15572" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="15573" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="15574" Tips="自己体力低于1/8时击败对手"/>
+        <!--圣灵天尊-->
+        <HideMove ID="15557" Tips="获得50场战斗胜利"/>
+        <HideMove ID="15558" Tips="经历80次战斗"/>
+        <HideMove ID="15559" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="15575" Tips="对手处于能力下降状态时击败对手"/>
+        <!--神粽王-->
+        <HideMove ID="15547" Tips="获得50场战斗胜利"/>
+        <HideMove ID="15548" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="15549" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="15550" Tips="经历80次战斗"/>
+        <!--哆啦A萌-->
+        <HideMove ID="15527" Tips="获得50场战斗胜利"/>
+        <HideMove ID="15528" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="15529" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="15530" Tips="经历80次战斗"/>
+        <!--王伊特-->
+        <HideMove ID="15588" Tips="使用伊特领域30次"/>
+        <HideMove ID="15589" Tips="一次战斗中先使用伊特领域再使用另一种领域后击败不低于60级的对手"/>
+        <HideMove ID="15590" Tips="战斗结束后自己的怒气小于16"/>
+        <HideMove ID="15591" Tips="装备纹章皇朝之后进行一场战斗"/>
+        <!--梦魇-->
+        <HideMove ID="15603" Tips="获得50场战斗胜利"/>
+        <HideMove ID="15604" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="15605" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="15606" Tips="经历80次战斗"/>
+        <!--星魂守护者-->
+        <HideMove ID="15641" Tips="获得50场战斗胜利"/>
+        <HideMove ID="15642" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="15643" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="15644" Tips="经历80次战斗"/>
+        <!--魔渊梦神-->
+        <HideMove ID="15620" Tips="获得50场战斗胜利"/>
+        <HideMove ID="15621" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="15622" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="15623" Tips="经历80次战斗"/>
+        <!--西瓜状元-->
+        <HideMove ID="15661" Tips="获得50场战斗胜利"/>
+        <HideMove ID="15662" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="15663" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="15664" Tips="经历80次战斗"/>
+        <!--星魂元神-->
+        <HideMove ID="15676" Tips="获得50场战斗胜利"/>
+        <HideMove ID="15677" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="15678" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="15679" Tips="经历80次战斗"/>
+        <!--星座之王-->
+        <HideMove ID="15693" Tips="获得50场战斗胜利"/>
+        <HideMove ID="15694" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="15695" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="15696" Tips="经历80次战斗"/>
+        <!--暗流-->
+        <HideMove ID="15724" Tips="获得50场战斗胜利"/>
+        <HideMove ID="15725" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="15726" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="15727" Tips="自己体力低于1/8时击败对手"/>
+        <!--路飞-->
+        <HideMove ID="15741" Tips="获得50场战斗胜利"/>
+        <HideMove ID="15742" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="15743" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="15744" Tips="经历80次战斗"/>
+        <!--索隆-->
+        <HideMove ID="15788" Tips="获得50场战斗胜利"/>
+        <HideMove ID="15789" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="15790" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="15791" Tips="经历80次战斗"/>
+        <!--赵云-->
+        <HideMove ID="15760" Tips="获得50场战斗胜利"/>
+        <HideMove ID="15761" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="15762" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="15763" Tips="经历80次战斗"/>
+        <!--白龙驹-->
+        <HideMove ID="15821" Tips="获得50场战斗胜利"/>
+        <HideMove ID="15822" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="15823" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="15824" Tips="经历80次战斗"/>
+        <!--娜美-->
+        <HideMove ID="15839" Tips="获得50场战斗胜利"/>
+        <HideMove ID="15840" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="15841" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="15842" Tips="经历80次战斗"/>
+        <!--邪神-->
+        <HideMove ID="15806" Tips="获得50场战斗胜利"/>
+        <HideMove ID="15808" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="15809" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="15807" Tips="经历80次战斗"/>
+        <!--香吉士-->
+        <HideMove ID="15863" Tips="获得50场战斗胜利"/>
+        <HideMove ID="15864" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="15865" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="15866" Tips="经历80次战斗"/>
+        <!--神将赵云-->
+        <HideMove ID="15887" Tips="获得50场战斗胜利"/>
+        <HideMove ID="15888" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="15889" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="15890" Tips="经历80次战斗"/>
+        <!--刘备-->
+        <HideMove ID="15878" Tips="获得50场战斗胜利"/>
+        <HideMove ID="15879" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="15880" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="15881" Tips="经历80次战斗"/>
+        <!--鬼骨神龙-->
+        <HideMove ID="15940" Tips="获得50场战斗胜利"/>
+        <HideMove ID="15941" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="15942" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="15943" Tips="经历80次战斗"/>
+        <!--的卢-->
+        <HideMove ID="15907" Tips="获得50场战斗胜利"/>
+        <HideMove ID="15908" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="15909" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="15910" Tips="经历80次战斗"/>
+        <!--创世大帝-->
+        <HideMove ID="15925" Tips="获得50场战斗胜利"/>
+        <HideMove ID="15927" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="15926" Tips="经历80次战斗"/>
+        <HideMove ID="15928" Tips="自身具有觉醒石情况下击败1次任意精灵"/>
+        <HideMove ID="16077" Tips="自身具有创世觉醒石情况下击败1次任意精灵"/>
+
+
+        <!--开元大帝-->
+        <HideMove ID="15963" Tips="获得50场战斗胜利"/>
+        <HideMove ID="15964" Tips="经历80次战斗"/>
+        <HideMove ID="15965" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="16097" Tips="自身具有觉醒石情况下击败1次任意精灵"/>
+        <HideMove ID="16078" Tips="自身具有开元觉醒石情况下击败1次任意精灵"/>
+        <!--崛地-->
+        <HideMove ID="15982" Tips="获得50场战斗胜利"/>
+        <HideMove ID="15983" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="15984" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="15985" Tips="自己体力低于1/8时击败对手"/>
+
+        <!--灵鹊-->
+        <HideMove ID="15996" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="15997" Tips="被击败20次之后再获得1场胜利"/>
+        <HideMove ID="15998" Tips="获得50场战斗胜利"/>
+        <HideMove ID="15999" Tips="战斗结束后自己的怒气小于16"/>
+
+
+        <!--暗翼之影-->
+        <HideMove ID="16015" Tips="获得50场战斗胜利"/>
+        <HideMove ID="16016" Tips="经历80次战斗"/>
+        <HideMove ID="16017" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="16018" Tips="光翼之芒和暗翼之影分别上场，最后用必杀技击败对手即可领悟"/>
+
+        <!--光翼之芒-->
+        <HideMove ID="16032" Tips="获得50场战斗胜利"/>
+        <HideMove ID="16033" Tips="经历80次战斗"/>
+        <HideMove ID="16034" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="16066" Tips="光翼之芒和暗翼之影分别上场，最后用必杀技击败对手即可领悟"/>
+        <!--零式长牙狮-->
+        <HideMove ID="16046" Tips="获得50场战斗胜利"/>
+        <HideMove ID="16047" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="16048" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="16049" Tips="经历80次战斗"/>
+        <!--混沌大帝-->
+        <HideMove ID="16063" Tips="获得50场战斗胜利"/>
+        <HideMove ID="16064" Tips="经历80次战斗"/>
+        <HideMove ID="16065" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="16098" Tips="自身具有觉醒石情况下击败1次任意精灵"/>
+        <HideMove ID="16079" Tips="自身具有混沌觉醒石情况下击败1次任意精灵"/>
+
+        <!--关羽-->
+        <HideMove ID="16091" Tips="获得50场战斗胜利"/>
+        <HideMove ID="16092" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="16093" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="16094" Tips="关羽习得条件：经历80次战斗；神将·关羽习得条件：对手处于能力下降状态时击败对手"/>
+
+        <!--神将刘备-->
+        <HideMove ID="16108" Tips="获得50场战斗胜利"/>
+        <HideMove ID="16109" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="16110" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="16111" Tips="经历80次战斗"/>
+
+        <!--坠天-->
+        <HideMove ID="16125" Tips="获得50场战斗胜利"/>
+        <HideMove ID="16127" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="16128" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="16126" Tips="经历80次战斗"/>
+        <!--伟恩-->
+        <HideMove ID="16140" Tips="获得50场战斗胜利"/>
+        <HideMove ID="16142" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="16143" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="16141" Tips="经历80次战斗"/>
+        <!--赤兔-->
+        <HideMove ID="16155" Tips="获得50场战斗胜利"/>
+        <HideMove ID="16157" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="16156" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="16158" Tips="经历80次战斗"/>
+        <!--冰山-->
+        <HideMove ID="16222" Tips="获得50场战斗胜利"/>
+        <HideMove ID="16223" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="16224" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="16225" Tips="自己体力低于1/8时击败对手"/>
+        <!--反速翼龙-->
+        <HideMove ID="16171" Tips="获得50场战斗胜利"/>
+        <HideMove ID="16172" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="16173" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="16174" Tips="经历80次战斗"/>
+
+        <!--暗黑斗魂-->
+        <HideMove ID="16259" Tips="获得50场战斗胜利"/>
+        <HideMove ID="16260" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="16261" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="16262" Tips="经历80次战斗"/>
+
+        <!--萌萌大月饼-->
+        <HideMove ID="16274" Tips="获得50场战斗胜利"/>
+        <HideMove ID="16276" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="16277" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="16275" Tips="经历80次战斗"/>
+        <!--超梦小梦-->
+        <HideMove ID="16244" Tips="获得50场战斗胜利"/>
+        <HideMove ID="16246" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="16247" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="16245" Tips="经历80次战斗"/>
+        <!--魔念黯灵-->
+        <HideMove ID="16290" Tips="获得50场战斗胜利"/>
+        <HideMove ID="16291" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="16292" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="16293" Tips="经历80次战斗"/>
+        <!--张飞-->
+        <HideMove ID="16305" Tips="获得50场战斗胜利"/>
+        <HideMove ID="16306" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="16307" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="16308" Tips="经历80次战斗"/>
+
+        <!--苍耀-->
+        <HideMove ID="16354" Tips="获得50场战斗胜利"/>
+        <HideMove ID="16355" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="16356" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="16357" Tips="经历80次战斗"/>
+        <!--雷霆-->
+        <HideMove ID="16322" Tips="获得50场战斗胜利"/>
+        <HideMove ID="16323" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="16324" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="16325" Tips="经历80次战斗"/>
+        <!--焰豪-->
+        <HideMove ID="16337" Tips="获得50场战斗胜利"/>
+        <HideMove ID="16338" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="16339" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="16340" Tips="自己体力低于1/8时击败对手"/>
+
+        <!--毁灭者-->
+        <HideMove ID="16369" Tips="获得50场战斗胜利"/>
+        <HideMove ID="16370" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="16371" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="16372" Tips="体力低于1/8时击败对手"/>
+        <!--傲辰-->
+        <HideMove ID="16386" Tips="获得50场战斗胜利"/>
+        <HideMove ID="16387" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="16388" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="16389" Tips="经历80次战斗"/>
+        <!--银河星王-->
+        <HideMove ID="16412" Tips="获得50场战斗胜利"/>
+        <HideMove ID="16413" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="16414" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="16415" Tips="经历80次战斗"/>
+        <!--机甲王-->
+        <HideMove ID="16449" Tips="获得50场战斗胜利"/>
+        <HideMove ID="16450" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="16451" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="16452" Tips="自己体力低于1/8时击败对手"/>
+        <!--秘瞬-->
+        <HideMove ID="16432" Tips="获得50场战斗胜利"/>
+        <HideMove ID="16433" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="16434" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="16435" Tips="经历80次战斗"/>
+        <!--瓦力-->
+        <HideMove ID="16464" Tips="获得50场战斗胜利"/>
+        <HideMove ID="16465" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="16466" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="16467" Tips="经历80次战斗"/>
+        <!--萨格拉克-->
+        <HideMove ID="16479" Tips="获得50场战斗胜利"/>
+        <HideMove ID="16480" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="16481" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="16482" Tips="经历80次战斗"/>
+
+
+        <!--神将关羽-->
+        <HideMove ID="16487" Tips="获得50场战斗胜利"/>
+        <HideMove ID="16488" Tips="经历80次战斗"/>
+        <!--阿兹尔-->
+        <HideMove ID="16502" Tips="获得50场战斗胜利"/>
+        <HideMove ID="16503" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="16504" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="16505" Tips="经历80次战斗"/>
+        <!--可洛-->
+        <HideMove ID="16517" Tips="获得50场战斗胜利"/>
+        <HideMove ID="16518" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="16519" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="16520" Tips="自己体力低于1/8时击败对手"/>
+        <!--提塔哈克-->
+        <HideMove ID="16532" Tips="获得50场战斗胜利"/>
+        <HideMove ID="16533" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="16534" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="16535" Tips="经历80次战斗"/>
+        <!--小法师-->
+        <HideMove ID="16557" Tips="获得50场战斗胜利"/>
+        <HideMove ID="16558" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="16559" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="16560" Tips="自己体力低于1/8时击败对手"/>
+        <!--超念灵妖-->
+        <HideMove ID="16572" Tips="进化为第二形态后进行1场战斗"/>
+        <HideMove ID="16573" Tips="进化为第二形态后进行1场战斗"/>
+        <HideMove ID="16574" Tips="进化为第二形态后进行1场战斗"/>
+        <HideMove ID="16575" Tips="进化为第二形态后进行1场战斗"/>
+        <!--神将张飞-->
+        <HideMove ID="16579" Tips="获得50场战斗胜利"/>
+        <HideMove ID="16613" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="16580" Tips="经历80次战斗"/>
+        <!--拉斯拉克-->
+        <HideMove ID="16594" Tips="获得50场战斗胜利"/>
+        <HideMove ID="16595" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="16596" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="16597" Tips="经历80次战斗"/>
+        <!--格鲁特-->
+        <HideMove ID="16609" Tips="获得50场战斗胜利"/>
+        <HideMove ID="16610" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="16611" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="16612" Tips="自己体力低于1/8时击败对手"/>
+        <!--鬼瞳-->
+        <HideMove ID="16627" Tips="获得50场战斗胜利"/>
+        <HideMove ID="16628" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="16629" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="16630" Tips="经历80次战斗"/>
+        <!--迪赛-->
+        <HideMove ID="16642" Tips="获得50场战斗胜利"/>
+        <HideMove ID="16643" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="16644" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="16645" Tips="自己体力低于1/8时击败对手"/>
+
+        <!--战小天-->
+        <HideMove ID="16662" Tips="获得50场战斗胜利"/>
+        <HideMove ID="16663" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="16664" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="16665" Tips="自己体力低于1/8时击败对手"/>
+        <!--斗魂灵妖-->
+        <HideMove ID="16709" Tips="进化为第二形态后进行1场战斗"/>
+        <HideMove ID="16710" Tips="进化为第二形态后进行1场战斗"/>
+        <HideMove ID="16711" Tips="进化为第二形态后进行1场战斗"/>
+        <HideMove ID="16712" Tips="进化为第二形态后进行1场战斗"/>
+        <!--米勒斯-->
+        <HideMove ID="16694" Tips="获得50场战斗胜利"/>
+        <HideMove ID="16695" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="16696" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="16697" Tips="自己体力低于1/8时击败对手"/>
+        <!--宇宙骑士-->
+        <HideMove ID="16679" Tips="获得50场战斗胜利"/>
+        <HideMove ID="16680" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="16681" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="16682" Tips="体力＜1/8时击败对手"/>
+        <!--哲叔-->
+        <HideMove ID="16724" Tips="获得50场战斗胜利"/>
+        <HideMove ID="16725" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="16726" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="16727" Tips="自己体力低于1/8时击败对手"/>
+
+        <!--钢锁暴龙-->
+        <HideMove ID="16756" Tips="获得50场战斗胜利"/>
+        <HideMove ID="16757" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="16758" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="16759" Tips="自己体力低于1/8时击败对手"/>
+        <!--希卡普-->
+        <HideMove ID="16773" Tips="获得50场战斗胜利"/>
+        <HideMove ID="16774" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="16775" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="16776" Tips="自己体力低于1/8时击败对手"/>
+
+        <!--格鲁尔-->
+        <HideMove ID="16790" Tips="获得50场战斗胜利"/>
+        <HideMove ID="16791" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="16792" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="16793" Tips="自己体力低于1/8时击败对手"/>
+
+        <!--梵尔尼-->
+        <HideMove ID="16807" Tips="获得50场战斗胜利"/>
+        <HideMove ID="16808" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="16809" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="16810" Tips="经历80次战斗"/>
+
+        <!--末日咆哮-->
+        <HideMove ID="16839" Tips="获得50场战斗胜利"/>
+        <HideMove ID="16840" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="16841" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="16842" Tips="自己体力低于1/8时击败对手"/>
+        <!--暴雪领主-->
+        <HideMove ID="16822" Tips="获得50场战斗胜利"/>
+        <HideMove ID="16823" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="16824" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="16825" Tips="经历80次战斗"/>
+        <!--史图依克-->
+        <HideMove ID="16856" Tips="获得50场战斗胜利"/>
+        <HideMove ID="16857" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="16858" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="16859" Tips="自己体力低于1/8时击败对手"/>
+
+        <!--拉达曼迪-->
+        <HideMove ID="16876" Tips="获得50场战斗胜利"/>
+        <HideMove ID="16877" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="16878" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="16879" Tips="自己体力低于1/8时击败对手"/>
+
+        <!--战啸天-->
+        <HideMove ID="16898" Tips="获得50场战斗胜利"/>
+        <HideMove ID="16899" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="16900" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="16901" Tips="自己体力低于1/8时击败对手"/>
+
+        <!--东方界王-->
+        <HideMove ID="16916" Tips="获得50场战斗胜利"/>
+        <HideMove ID="16917" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="16918" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="16919" Tips="自己体力低于1/8时击败对手"/>
+
+        <!--佩格文-->
+        <HideMove ID="16931" Tips="获得50场战斗胜利"/>
+        <HideMove ID="16932" Tips="对手具有弱化时击败对手"/>
+        <HideMove ID="16933" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="16934" Tips="自己体力低于1/8时击败对手"/>
+
+        <!--西方界王-->
+        <HideMove ID="16963" Tips="获得50场战斗胜利"/>
+        <HideMove ID="16964" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="16965" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="16966" Tips="自己体力低于1/8时击败对手"/>
+        <!--闪电-->
+        <HideMove ID="16946" Tips="获得50场战斗胜利"/>
+        <HideMove ID="16948" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="16947" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="16949" Tips="自己体力低于1/8时击败对手"/>
+
+        <!--南方界王-->
+        <HideMove ID="16980" Tips="获得50场战斗胜利"/>
+        <HideMove ID="16981" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="16982" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="16983" Tips="自己体力低于1/8时击败对手"/>
+        <!--发财萌-->
+        <HideMove ID="16997" Tips="获得50场战斗胜利"/>
+        <HideMove ID="16999" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="16998" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="17000" Tips="自己体力低于1/8时击败对手"/>
+        <!--界王神-->
+        <HideMove ID="17031" Tips="获得50场战斗胜利"/>
+        <HideMove ID="17032" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="17033" Tips="对手处于能力下降状态时击败对手"/>
+        <!--北方界王-->
+        <HideMove ID="17014" Tips="获得50场战斗胜利"/>
+        <HideMove ID="17015" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="17016" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="17017" Tips="自己体力低于1/8时击败对手"/>
+
+        <!--四九战灵-->
+        <HideMove ID="17064" Tips="获得50场战斗胜利"/>
+        <HideMove ID="17065" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="17066" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="17067" Tips="自己体力低于1/8时击败对手"/>
+
+
+        <!--哈迪斯-->
+        <HideMove ID="17047" Tips="获得50场战斗胜利"/>
+        <HideMove ID="17048" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="17049" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="17050" Tips="自己体力低于1/8时击败对手"/>
+
+        <!--战神觉醒-->
+        <HideMove ID="17069" Tips="收集战神印记 领悟战神联盟合体必杀技"/>
+        <HideMove ID="17068" Tips="收集战神印记 领悟战神联盟合体必杀技"/>
+        <HideMove ID="17070" Tips="收集战神印记 领悟战神联盟合体必杀技"/>
+        <HideMove ID="17071" Tips="收集战神印记 领悟战神联盟合体必杀技"/>
+        <HideMove ID="17072" Tips="收集战神印记 领悟战神联盟合体必杀技"/>
+
+
+        <!--梦梦草-->
+        <HideMove ID="17094" Tips="获得50场战斗胜利"/>
+        <HideMove ID="17095" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="17096" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="17097" Tips="自己体力低于1/8时击败对手"/>
+        <!--梦梦蓝-->
+        <HideMove ID="17109" Tips="获得50场战斗胜利"/>
+        <HideMove ID="17110" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="17111" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="17112" Tips="自己体力低于1/8时击败对手"/>
+
+        <!--恶灵兽-->
+        <HideMove ID="17142" Tips="获得50场战斗胜利"/>
+        <HideMove ID="17143" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="17144" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="17145" Tips="自己体力低于1/8时击败对手"/>
+        <!--奎尔斯之影-->
+        <HideMove ID="17126" Tips="获得50场战斗胜利"/>
+        <HideMove ID="17127" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="17128" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="17129" Tips="自己体力低于1/8时击败对手"/>
+        <!--赤焰之龙-->
+        <HideMove ID="17159" Tips="获得50场战斗胜利"/>
+        <HideMove ID="17160" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="17161" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="17162" Tips="自己体力低于1/8时击败对手"/>
+        <!--梦梦焰-->
+        <HideMove ID="17180" Tips="获得50场战斗胜利"/>
+        <HideMove ID="17181" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="17182" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="17183" Tips="自己体力低于1/8时击败对手"/>
+        <!--梦梦雪-->
+        <HideMove ID="17210" Tips="获得50场战斗胜利"/>
+        <HideMove ID="17211" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="17212" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="17213" Tips="自己体力低于1/8时击败对手"/>
+
+        <!--堕落之翼-->
+        <HideMove ID="17250" Tips="获得50场战斗胜利"/>
+        <HideMove ID="17251" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="17252" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="17253" Tips="自己体力低于1/8时击败对手"/>
+
+        <!--神迹米咔-->
+        <HideMove ID="17184" Tips="使用神迹米咔技能石领悟"/>
+        <HideMove ID="17185" Tips="使用神迹米咔技能石领悟"/>
+        <HideMove ID="17187" Tips="使用神迹米咔技能石领悟"/>
+        <HideMove ID="17188" Tips="使用神迹米咔技能石领悟"/>
+        <!--扭蛋鸡-->
+        <HideMove ID="17270" Tips="获得50场战斗胜利"/>
+        <HideMove ID="17271" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="17272" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="17273" Tips="自己体力低于1/8时击败对手"/>
+
+        <!--神迹拂晓兔-->
+        <HideMove ID="17274" Tips="使用神迹拂晓兔技能石领悟"/>
+        <HideMove ID="17275" Tips="使用神迹拂晓兔技能石领悟"/>
+        <HideMove ID="17276" Tips="使用神迹拂晓兔技能石领悟"/>
+        <HideMove ID="17277" Tips="使用神迹拂晓兔技能石领悟"/>
+
+        <!--神迹凯萨-->
+        <HideMove ID="17305" Tips="使用神迹凯萨技能石领悟"/>
+        <HideMove ID="17306" Tips="使用神迹凯萨技能石领悟"/>
+        <HideMove ID="17307" Tips="使用神迹凯萨技能石领悟"/>
+        <HideMove ID="17308" Tips="使用神迹凯萨技能石领悟"/>
+
+        <!--加内特-->
+        <HideMove ID="17340" Tips="活动解锁"/>
+        <HideMove ID="17341" Tips="活动解锁"/>
+        <HideMove ID="17342" Tips="活动解锁"/>
+        <HideMove ID="17343" Tips="活动解锁"/>
+
+        <!--暗黑超梦-->
+        <HideMove ID="17375" Tips="活动解锁"/>
+        <HideMove ID="17376" Tips="活动解锁"/>
+        <HideMove ID="17377" Tips="活动解锁"/>
+        <HideMove ID="17378" Tips="活动解锁"/>
+
+        <!--神迹撒旦-->
+        <HideMove ID="17379" Tips="使用神迹撒旦技能石领悟"/>
+        <HideMove ID="17380" Tips="使用神迹撒旦技能石领悟"/>
+        <HideMove ID="17381" Tips="使用神迹撒旦技能石领悟"/>
+        <HideMove ID="17382" Tips="使用神迹撒旦技能石领悟"/>
+
+        <!--星河游侠-->
+        <HideMove ID="17413" Tips="获得50场战斗胜利"/>
+        <HideMove ID="17414" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="17415" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="17416" Tips="自己体力低于1/8时击败对手"/>
+
+        <!--洛基-->
+        <HideMove ID="17435" Tips="获得50场战斗胜利"/>
+        <HideMove ID="17436" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="17437" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="17438" Tips="自己体力低于1/8时击败对手"/>
+
+        <!--圣舞龙王-->
+        <HideMove ID="11996" Tips="获得50场战斗胜利"/>
+        <HideMove ID="11999" Tips="战胜50次雄性精灵"/>
+        <HideMove ID="13820" Tips="在战斗中被必杀技击败"/>
+        <HideMove ID="17443" Tips="自己体力低于1/8时击败对手"/>
+
+        <!--神迹盖亚-->
+        <HideMove ID="17444" Tips="使用神迹盖亚技能石领悟"/>
+        <HideMove ID="17445" Tips="使用神迹盖亚技能石领悟"/>
+        <HideMove ID="17446" Tips="使用神迹盖亚技能石领悟"/>
+        <HideMove ID="17447" Tips="使用神迹盖亚技能石领悟"/>
+
+        <!--神迹卡修斯-->
+        <HideMove ID="17471" Tips="使用神迹卡修斯技能石领悟"/>
+        <HideMove ID="17472" Tips="使用神迹卡修斯技能石领悟"/>
+        <HideMove ID="17473" Tips="使用神迹卡修斯技能石领悟"/>
+        <HideMove ID="17474" Tips="使用神迹卡修斯技能石领悟"/>
+
+        <!--神盾破坏王-->
+        <HideMove ID="17505" Tips="获得50场战斗胜利"/>
+        <HideMove ID="17506" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="17507" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="17508" Tips="自己体力低于1/8时击败对手"/>
+
+        <!--奥古斯特-->
+        <HideMove ID="17522" Tips="获得50场战斗胜利"/>
+        <HideMove ID="17523" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="17524" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="17525" Tips="自己体力低于1/8时击败对手"/>
+
+        <!--神迹缪斯-->
+        <HideMove ID="17526" Tips="使用神迹缪斯技能石领悟"/>
+        <HideMove ID="17527" Tips="使用神迹缪斯技能石领悟"/>
+        <HideMove ID="17528" Tips="使用神迹缪斯技能石领悟"/>
+        <HideMove ID="17529" Tips="使用神迹缪斯技能石领悟"/>
+
+        <!--神迹缪斯-->
+        <HideMove ID="17526" Tips="使用神迹缪斯技能石领悟"/>
+        <HideMove ID="17527" Tips="使用神迹缪斯技能石领悟"/>
+        <HideMove ID="17528" Tips="使用神迹缪斯技能石领悟"/>
+        <HideMove ID="17529" Tips="使用神迹缪斯技能石领悟"/>
+
+        <!--奥古斯特-->
+        <HideMove ID="17587" Tips="获得50场战斗胜利"/>
+        <HideMove ID="17588" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="17589" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="17590" Tips="自己体力低于1/8时击败对手"/>
+
+        <!--神迹布莱克-->
+        <HideMove ID="17591" Tips="使用神迹布莱克技能石领悟"/>
+        <HideMove ID="17592" Tips="使用神迹布莱克技能石领悟"/>
+        <HideMove ID="17593" Tips="使用神迹布莱克技能石领悟"/>
+        <HideMove ID="17594" Tips="使用神迹布莱克技能石领悟"/>
+
+        <!--雷锘-->
+        <HideMove ID="17625" Tips="获得50场战斗胜利"/>
+        <HideMove ID="17626" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="17627" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="17628" Tips="自己体力低于1/8时击败对手"/>
+
+        <!--双子星王-->
+        <HideMove ID="17642" Tips="获得50场战斗胜利"/>
+        <HideMove ID="17643" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="17644" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="17645" Tips="自己体力低于1/8时击败对手"/>
+
+        <!--圣灵伊特-->
+        <HideMove ID="17554" Tips="获得50场战斗胜利"/>
+        <HideMove ID="17555" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="17556" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="17557" Tips="自己体力低于1/8时击败对手"/>
+
+        <!--上古伊特-->
+        <HideMove ID="17570" Tips="获得50场战斗胜利"/>
+        <HideMove ID="17571" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="17572" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="17573" Tips="自己体力低于1/8时击败对手"/>
+
+        <!--神迹雷伊-->
+        <HideMove ID="17650" Tips="使用神迹雷伊技能石领悟"/>
+        <HideMove ID="17651" Tips="使用神迹雷伊技能石领悟"/>
+        <HideMove ID="17652" Tips="使用神迹雷伊技能石领悟"/>
+        <HideMove ID="17653" Tips="使用神迹雷伊技能石领悟"/>
+
+        <!--神迹休罗斯-->
+        <HideMove ID="17671" Tips="使用神迹休罗斯技能石领悟"/>
+        <HideMove ID="17672" Tips="使用神迹休罗斯技能石领悟"/>
+        <HideMove ID="17673" Tips="使用神迹休罗斯技能石领悟"/>
+        <HideMove ID="17674" Tips="使用神迹休罗斯技能石领悟"/>
+
+        <!--伦迪特-->
+        <HideMove ID="17709" Tips="获得50场战斗胜利"/>
+        <HideMove ID="17710" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="17711" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="17712" Tips="自己体力低于1/8时击败对手"/>
+
+        <!--罗澜-->
+        <HideMove ID="17750" Tips="获得50场战斗胜利"/>
+        <HideMove ID="17751" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="17752" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="17753" Tips="自己体力低于1/8时击败对手"/>
+
+        <!--神迹迪兰特-->
+        <HideMove ID="17754" Tips="使用神迹迪兰特技能石领悟"/>
+        <HideMove ID="17755" Tips="使用神迹迪兰特技能石领悟"/>
+        <HideMove ID="17756" Tips="使用神迹迪兰特技能石领悟"/>
+        <HideMove ID="17757" Tips="使用神迹迪兰特技能石领悟"/>
+
+        <!--神迹月神-->
+        <HideMove ID="17716" Tips="使用神迹月神技能石领悟"/>
+        <HideMove ID="17717" Tips="使用神迹月神技能石领悟"/>
+        <HideMove ID="17718" Tips="使用神迹月神技能石领悟"/>
+        <HideMove ID="17719" Tips="使用神迹月神技能石领悟"/>
+
+        <!--万龙尊者-->
+        <HideMove ID="17786" Tips="获得50场战斗胜利"/>
+        <HideMove ID="17787" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="17788" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="17789" Tips="自己体力低于1/8时击败对手"/>
+
+        <!--神遁拉奥叶-->
+        <HideMove ID="17790" Tips="使用神遁拉奥叶技能石领悟"/>
+        <HideMove ID="17791" Tips="使用神遁拉奥叶技能石领悟"/>
+        <HideMove ID="17792" Tips="使用神遁拉奥叶技能石领悟"/>
+        <HideMove ID="17793" Tips="使用神遁拉奥叶技能石领悟"/>
+
+        <!--邪魔浩劫-->
+        <HideMove ID="17821" Tips="获得50场战斗胜利"/>
+        <HideMove ID="17822" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="17823" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="17824" Tips="自己体力低于1/8时击败对手"/>
+
+        <!--蚀恶-->
+        <HideMove ID="17838" Tips="获得50场战斗胜利"/>
+        <HideMove ID="17839" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="17840" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="17841" Tips="自己体力低于1/8时击败对手"/>
+
+        <!--撒莱尔-->
+        <HideMove ID="17870" Tips="获得50场战斗胜利"/>
+        <HideMove ID="17871" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="17872" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="17873" Tips="自己体力低于1/8时击败对手"/>
+
+        <!--神迹晨璨-->
+        <HideMove ID="17884" Tips="使用神迹晨璨技能石领悟"/>
+        <HideMove ID="17885" Tips="使用神迹晨璨技能石领悟"/>
+        <HideMove ID="17886" Tips="使用神迹晨璨技能石领悟"/>
+        <HideMove ID="17887" Tips="使用神迹晨璨技能石领悟"/>
+
+        <!--齐天大圣-->
+        <HideMove ID="18001" Tips="获得50场战斗胜利"/>
+        <HideMove ID="18002" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="18003" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="18004" Tips="自身具有大圣纹章情况下击败1次任意精灵"/>
+
+        <!--宵宵-->
+        <HideMove ID="18022" Tips="获得50场战斗胜利"/>
+        <HideMove ID="18023" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="18024" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="18025" Tips="自己体力低于1/8时击败对手"/>
+
+        <!--奥斯卡-->
+        <HideMove ID="18037" Tips="获得50场战斗胜利"/>
+        <HideMove ID="18038" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="18039" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="18040" Tips="自己体力低于1/8时击败对手"/>
+
+        <!--圣甲雷鸣-->
+        <HideMove ID="18051" Tips="获得50场战斗胜利"/>
+        <HideMove ID="18052" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="18053" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="18054" Tips="自己体力低于1/8时击败对手"/>
+
+        <!--圣甲幻瞳-->
+        <HideMove ID="18063" Tips="获得50场战斗胜利"/>
+        <HideMove ID="18064" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="18065" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="18066" Tips="自己体力低于1/8时击败对手"/>
+
+        <!--圣甲狂战-->
+        <HideMove ID="18073" Tips="获得50场战斗胜利"/>
+        <HideMove ID="18074" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="18075" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="18076" Tips="自己体力低于1/8时击败对手"/>
+
+        <!--圣甲地裂-->
+        <HideMove ID="18082" Tips="获得50场战斗胜利"/>
+        <HideMove ID="18083" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="18084" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="18085" Tips="自己体力低于1/8时击败对手"/>
+
+        <!--圣甲永夜-->
+        <HideMove ID="18093" Tips="获得50场战斗胜利"/>
+        <HideMove ID="18094" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="18095" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="18096" Tips="自己体力低于1/8时击败对手"/>
+
+        <!--黑龙王-->
+        <HideMove ID="18110" Tips="获得50场战斗胜利"/>
+        <HideMove ID="18111" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="18112" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="18113" Tips="自己体力低于1/8时击败对手"/>
+
+        <!--昊希娜-->
+        <HideMove ID="18125" Tips="获得50场战斗胜利"/>
+        <HideMove ID="18126" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="18127" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="18128" Tips="自己体力低于1/8时击败对手"/>
+
+        <!--夜叉-->
+        <HideMove ID="18139" Tips="获得50场战斗胜利"/>
+        <HideMove ID="18140" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="18141" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="18142" Tips="自己体力低于1/8时击败对手"/>
+
+        <!--达克斯特-->
+        <HideMove ID="18151" Tips="获得50场战斗胜利"/>
+        <HideMove ID="18152" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="18153" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="18154" Tips="自己体力低于1/8时击败对手"/>
+
+        <!--苏希斯-->
+        <HideMove ID="18167" Tips="获得50场战斗胜利"/>
+        <HideMove ID="18168" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="18169" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="18170" Tips="自己体力低于1/8时击败对手"/>
+
+        <!--弗雷姆-->
+        <HideMove ID="18183" Tips="获得50场战斗胜利"/>
+        <HideMove ID="18184" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="18185" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="18186" Tips="自己体力低于1/8时击败对手"/>
+
+        <!--帝龙邪尊-->
+        <HideMove ID="18200" Tips="获得50场战斗胜利"/>
+        <HideMove ID="18201" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="18202" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="18203" Tips="自己体力低于1/8时击败对手"/>
+
+        <!--履霜冰至-->
+        <HideMove ID="18217" Tips="获得50场战斗胜利"/>
+        <HideMove ID="18218" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="18219" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="18220" Tips="自己体力低于1/8时击败对手"/>
+
+        <!--萨夫特-->
+        <HideMove ID="18231" Tips="获得50场战斗胜利"/>
+        <HideMove ID="18232" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="18233" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="18234" Tips="自己体力低于1/8时击败对手"/>
+
+        <!--天玄界王-->
+        <HideMove ID="18247" Tips="在天玄界王活动中使用天界虎印兑换"/>
+        <HideMove ID="18248" Tips="在天玄界王活动中使用天界虎印兑换"/>
+        <HideMove ID="18249" Tips="在天玄界王活动中使用天界虎印兑换"/>
+        <HideMove ID="18250" Tips="在天玄界王活动中使用天界虎印兑换"/>
+
+        <!--瀚海界王-->
+        <HideMove ID="18262" Tips="在瀚海界王活动中使用青玄怒角兑换"/>
+        <HideMove ID="18263" Tips="在瀚海界王活动中使用青玄怒角兑换"/>
+        <HideMove ID="18264" Tips="在瀚海界王活动中使用青玄怒角兑换"/>
+        <HideMove ID="18265" Tips="在瀚海界王活动中使用青玄怒角兑换"/>
+
+        <!--地藏界王-->
+        <HideMove ID="18275" Tips="在地藏界王活动中使用大地之心兑换"/>
+        <HideMove ID="18276" Tips="在地藏界王活动中使用大地之心兑换"/>
+        <HideMove ID="18277" Tips="在地藏界王活动中使用大地之心兑换"/>
+        <HideMove ID="18278" Tips="在地藏界王活动中使用大地之心兑换"/>
+
+        <!--莉莲娜-->
+        <HideMove ID="18289" Tips="获得50场战斗胜利"/>
+        <HideMove ID="18290" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="18291" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="18292" Tips="自己体力低于1/8时击败对手"/>
+
+        <!--混沌界王-->
+        <HideMove ID="18301" Tips="在混沌界王活动中使用混沌之尘兑换"/>
+        <HideMove ID="18302" Tips="在混沌界王活动中使用混沌之尘兑换"/>
+        <HideMove ID="18303" Tips="在混沌界王活动中使用混沌之尘兑换"/>
+        <HideMove ID="18304" Tips="在混沌界王活动中使用混沌之尘兑换"/>
+
+        <!--时空界王-->
+        <HideMove ID="18317" Tips="在时空界王活动中使用时空之尘兑换"/>
+        <HideMove ID="18318" Tips="在时空界王活动中使用时空之尘兑换"/>
+        <HideMove ID="18319" Tips="在时空界王活动中使用时空之尘兑换"/>
+        <HideMove ID="18320" Tips="在时空界王活动中使用时空之尘兑换"/>
+
+        <!--幻境界王-->
+        <HideMove ID="18333" Tips="在时空界王活动中使用幻境碎片兑换"/>
+        <HideMove ID="18334" Tips="在时空界王活动中使用幻境碎片兑换"/>
+        <HideMove ID="18335" Tips="在时空界王活动中使用幻境碎片兑换"/>
+        <HideMove ID="18336" Tips="在时空界王活动中使用幻境碎片兑换"/>
+
+        <!--天石灵尊-->
+        <HideMove ID="18349" Tips="获得50场战斗胜利"/>
+        <HideMove ID="18350" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="18351" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="18352" Tips="自己体力低于1/8时击败对手"/>
+
+        <!--邪念魔尊-->
+        <HideMove ID="18365" Tips="获得50场战斗胜利"/>
+        <HideMove ID="18366" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="18367" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="18368" Tips="自己体力低于1/8时击败对手"/>
+
+        <!--暗翼魔圣-->
+        <HideMove ID="18387" Tips="获得50场战斗胜利"/>
+        <HideMove ID="18388" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="18389" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="18390" Tips="自己体力低于1/8时击败对手"/>
+
+        <!--皮埃纳-->
+        <HideMove ID="18403" Tips="获得50场战斗胜利"/>
+        <HideMove ID="18404" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="18405" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="18406" Tips="自己体力低于1/8时击败对手"/>
+
+        <!--影灵的幻视-->
+        <HideMove ID="18467" Tips="获得50场战斗胜利"/>
+        <HideMove ID="18468" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="18469" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="18470" Tips="自己体力低于1/8时击败对手"/>
+
+        <!--尤米茜-->
+        <HideMove ID="18488" Tips="获得50场战斗胜利"/>
+        <HideMove ID="18489" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="18490" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="18491" Tips="自己体力低于1/8时击败对手"/>
+
+        <!--星之首影-->
+        <HideMove ID="18504" Tips="获得50场战斗胜利"/>
+        <HideMove ID="11955" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="13133" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="13131" Tips="自己体力低于1/8时击败对手"/>
+
+        <!--星之躯影-->
+        <HideMove ID="18523" Tips="获得50场战斗胜利"/>
+        <HideMove ID="18524" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="18525" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="18526" Tips="自己体力低于1/8时击败对手"/>
+
+        <!--星之臂影-->
+        <HideMove ID="18540" Tips="获得50场战斗胜利"/>
+        <HideMove ID="11955" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="18542" Tips="体力低于1/8时击败对手"/>
+        <HideMove ID="18543" Tips="自己体力低于1/8时击败对手"/>
+
+        <!--赛纳留斯圣徒-->
+        <HideMove ID="18556" Tips="获得50场战斗胜利"/>
+        <HideMove ID="18557" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="18558" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="18559" Tips="自己体力低于1/8时击败对手"/>
+
+        <!--星之足影-->
+        <HideMove ID="18573" Tips="获得50场战斗胜利"/>
+        <HideMove ID="18574" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="18575" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="18576" Tips="自己体力低于1/8时击败对手"/>
+
+        <!--塔西亚-->
+        <HideMove ID="18590" Tips="获得50场战斗胜利"/>
+        <HideMove ID="18591" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="18592" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="18593" Tips="自己体力低于1/8时击败对手"/>
+
+        <!--塔克林-->
+        <HideMove ID="18605" Tips="获得50场战斗胜利"/>
+        <HideMove ID="18606" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="18607" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="18608" Tips="自己体力低于1/8时击败对手"/>
+
+        <!--纳法里奥圣徒-->
+        <HideMove ID="18622" Tips="获得50场战斗胜利"/>
+        <HideMove ID="18623" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="18624" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="18625" Tips="自己体力低于1/8时击败对手"/>
+
+        <!--塞维尔-->
+        <HideMove ID="18637" Tips="获得50场战斗胜利"/>
+        <HideMove ID="18638" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="18639" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="18640" Tips="自己体力低于1/8时击败对手"/>
+
+        <!--星之背影-->
+        <HideMove ID="18654" Tips="获得50场战斗胜利"/>
+        <HideMove ID="18655" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="18656" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="18657" Tips="自己体力低于1/8时击败对手"/>
+
+        <!--星之心影-->
+        <HideMove ID="18671" Tips="获得50场战斗胜利"/>
+        <HideMove ID="18672" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="18673" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="18674" Tips="自己体力低于1/8时击败对手"/>
+
+        <!--奎尔塞拉圣徒-->
+        <HideMove ID="18693" Tips="获得50场战斗胜利"/>
+        <HideMove ID="18694" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="18695" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="18696" Tips="自己体力低于1/8时击败对手"/>
+
+        <!--诗风-->
+        <HideMove ID="18710" Tips="获得50场战斗胜利"/>
+        <HideMove ID="18711" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="18712" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="18713" Tips="自己体力低于1/8时击败对手"/>
+
+        <!--邪恶魔神-->
+        <HideMove ID="18743" Tips="获得50场战斗胜利"/>
+        <HideMove ID="18744" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="18745" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="18746" Tips="自己体力低于1/8时击败对手"/>
+
+        <!--炼狱魔神-->
+        <HideMove ID="18776" Tips="获得50场战斗胜利"/>
+        <HideMove ID="18777" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="18778" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="18779" Tips="自己体力低于1/8时击败对手"/>
+
+        <!--不餍-->
+        <HideMove ID="18809" Tips="获得50场战斗胜利"/>
+        <HideMove ID="18810" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="18811" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="18812" Tips="自己体力低于1/8时击败对手"/>
+
+        <!--诺克萨斯圣徒-->
+        <HideMove ID="18727" Tips="获得50场战斗胜利"/>
+        <HideMove ID="18728" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="18729" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="18730" Tips="自己体力低于1/8时击败对手"/>
+
+        <!--奥比休斯圣徒-->
+        <HideMove ID="18837" Tips="获得50场战斗胜利"/>
+        <HideMove ID="18838" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="18839" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="18840" Tips="自己体力低于1/8时击败对手"/>
+
+        <!--毁灭魔神-->
+        <HideMove ID="18853" Tips="获得50场战斗胜利"/>
+        <HideMove ID="18854" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="18855" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="18856" Tips="自己体力低于1/8时击败对手"/>
+
+        <!--泰尔瑞斯圣徒-->
+        <HideMove ID="18870" Tips="获得50场战斗胜利"/>
+        <HideMove ID="18871" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="18872" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="18873" Tips="自己体力低于1/8时击败对手"/>
+
+        <!--碧珞-->
+        <HideMove ID="18887" Tips="装备北冥纹章获得50场战斗胜利"/>
+        <HideMove ID="18888" Tips="获得50场战斗胜利"/>
+        <HideMove ID="18889" Tips="经历80次战斗"/>
+        <HideMove ID="18890" Tips="装备北冥纹章获得80场战斗胜利"/>
+
+        <!--圣武缚灵-->
+        <HideMove ID="18926" Tips="无法正常习得 建议一键习得"/>
+        <HideMove ID="18927" Tips="获得50场战斗胜利"/>
+        <HideMove ID="18928" Tips="经历80次战斗"/>
+        <HideMove ID="18929" Tips="无法正常习得 建议一键习得"/>
+
+        <!--柯尼塞格-->
+        <HideMove ID="18953" Tips="获得50场战斗胜利"/>
+        <HideMove ID="18954" Tips="在一场10回合的战斗中获得胜利"/>
+        <HideMove ID="18955" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="18956" Tips="自己体力低于1/8时击败对手"/>
+
+    </HideMoves>
+</HideMovesTbl>

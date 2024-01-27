@@ -36,7 +36,7 @@ public class SkillConfig {
 
     private static function setup():void {
         _movesConfigXML = DynConfig.movesConfigXML || XML(new _movesXmlClass());
-        _hideMovesConfigXML = XML(new _hideMovesXmlClass());
+        _hideMovesConfigXML = DynConfig.hideMovesConfigXML || XML(new _hideMovesXmlClass());
         parseNormalSklls(_movesConfigXML);
         parseHideSklls(_hideMovesConfigXML);
     }

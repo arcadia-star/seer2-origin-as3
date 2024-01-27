@@ -26,7 +26,7 @@ public class UrlRewriter {
                     return param1;
                 }
                 trace("seer2-next-url-rewrite miss: " + param1);
-                return "//seer2.61.com/" + param1;
+                return (DynSwitch.bloomfilterFallbackUrl || "//seer2.61.com/") + param1;
             };
         });
     }
