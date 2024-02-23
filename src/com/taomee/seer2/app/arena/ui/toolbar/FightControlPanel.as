@@ -184,6 +184,10 @@ public class FightControlPanel extends Sprite {
         this.endInput(_loc1_);
     }
 
+    public function runOp():void {
+        endInput(new OperateEvent(OperateEvent.OPERATE_ESCAPE, 0, OperateEvent.OPERATE_END));
+    }
+
     private function hideAll():void {
         DisplayObjectUtil.removeFromParent(this._capsulePanel);
         DisplayObjectUtil.removeFromParent(this._fighterPanel);

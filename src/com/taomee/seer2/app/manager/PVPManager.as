@@ -4,6 +4,7 @@ import com.taomee.seer2.app.gameRule.data.FighterSelectPanelVO;
 import com.taomee.seer2.app.info.PVPInfo;
 import com.taomee.seer2.app.pet.data.PetInfo;
 import com.taomee.seer2.app.pet.data.PetInfoManager;
+import com.taomee.seer2.app.pet.data.SkillInfo;
 import com.taomee.seer2.app.popup.AlertManager;
 import com.taomee.seer2.core.module.ModuleManager;
 import com.taomee.seer2.core.utils.URLUtil;
@@ -24,28 +25,41 @@ public class PVPManager {
     public static function requestPVP(param1:PVPInfo, param2:Function = null):void {
         var _loc4_:Vector.<uint> = null;
         var _loc5_:PetInfo = null;
+        var bagInfo:Vector.<PetInfo> = PetInfoManager.getAllBagPetInfo();
         _pvpInfo = param1;
         _mateFun = param2;
-        if (PetInfoManager.getAllBagPetInfo().length < _pvpInfo.minPetNum) {
+        if (bagInfo.length < _pvpInfo.minPetNum) {
             AlertManager.showAlert("出战精灵数量不足");
             return;
+        }
+        if (param1.gate == 112 && param1.mode == 105) {
+            for each (var info:PetInfo in bagInfo) {
+                if ((info.resourceId == 2522 && info.hp < 600) || info.resourceId == 2565) {
+                    _pvpInfo.gate = 60;
+                    _pvpInfo.mode = 106;
+                    break;
+                }
+                if (info.resourceId == 2592) {
+                    for each(var skill:SkillInfo in info.skillInfo.skillInfoVec) {
+                        if (skill.id == 18877) {
+                            _pvpInfo.gate = 60;
+                            _pvpInfo.mode = 106;
+                            break;
+                        }
+                    }
+                }
+
+            }
         }
         var _loc3_:FighterSelectPanelVO = new FighterSelectPanelVO();
         _loc3_.minSelectedPetCount = _pvpInfo.minPetNum;
         _loc3_.maxSelectedPetCount = _pvpInfo.maxPetNum;
-        _loc3_.pets = PetInfoManager.getAllBagPetInfo();
+        _loc3_.pets = bagInfo;
         _loc3_.onComplete = startMate;
         _loc3_.isShowSelected = _pvpInfo.isShowTag;
-        _loc3_.defaultPets = getDefaultPets(_pvpInfo.mode, PetInfoManager.getAllBagPetInfo());
-        if (_pvpInfo.minPetNum == 7 && _pvpInfo.maxPetNum == 7) {
-            _loc4_ = new Vector.<uint>();
-            for each(_loc5_ in _loc3_.defaultPets) {
-                _loc4_.push(_loc5_.catchTime);
-            }
-            startMate(_loc4_);
-        } else {
-            ModuleManager.toggleModule(URLUtil.getAppModule("FighterSelectPanel"), "打开面板中...", _loc3_);
-        }
+        _loc3_.defaultPets = getDefaultPets(_pvpInfo.mode, bagInfo);
+        ModuleManager.toggleModule(URLUtil.getAppModule("FighterSelectPanel"), "打开面板中...", _loc3_);
+
     }
 
     private static function getDefaultPets(param1:uint, param2:Vector.<PetInfo>):Vector.<PetInfo> {

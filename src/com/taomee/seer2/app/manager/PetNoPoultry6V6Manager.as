@@ -14,6 +14,7 @@ import com.taomee.seer2.app.net.Connection;
 import com.taomee.seer2.app.net.ErrorMap;
 import com.taomee.seer2.app.pet.data.PetInfo;
 import com.taomee.seer2.app.pet.data.PetInfoManager;
+import com.taomee.seer2.app.pet.data.SkillInfo;
 import com.taomee.seer2.app.popup.AlertManager;
 import com.taomee.seer2.app.utils.MovieClipUtil;
 import com.taomee.seer2.core.module.ModuleManager;
@@ -67,6 +68,33 @@ public class PetNoPoultry6V6Manager {
         _pvpInfo.type = param4;
         _pvpInfo.isStartFight = false;
         _pvpInfo.isShowTag = false;
+        if (param2 == 21 || param2 == 22) {
+            var bagInfo:Vector.<PetInfo> = PetInfoManager.getAllBagPetInfo();
+            for each (var info:PetInfo in bagInfo) {
+                if (info.emblemId == 300137 || (info.resourceId == 106 && info.emblemId != 0) || info.resourceId == 292 || info.resourceId == 435) {
+                    //复苏,草1,凤凰,白狗
+                    _pvpInfo.mode = 215;
+                    break;
+                } else if (info.resourceId == 108) {
+                    //火1bug大招
+                    for each(var skill:SkillInfo in info.skillInfo.skillInfoVec) {
+                        if (skill.id == 14579) {
+                            _pvpInfo.mode = 215;
+                            break;
+                        }
+                    }
+                } else if (info.resourceId == 325) {
+                    //肉钩
+                    for each(var skill2:SkillInfo in info.skillInfo.skillInfoVec) {
+                        if (skill.id == 12278) {
+                            _pvpInfo.mode = 215;
+                            break;
+                        }
+                    }
+                }
+
+            }
+        }
         if (PetInfoManager.getAllBagPetInfo().length < _pvpInfo.minPetNum) {
             AlertManager.showAlert("出战精灵数量不足");
             return;
@@ -193,7 +221,8 @@ public class PetNoPoultry6V6Manager {
         for each(petInfo in _thisPetList) {
             iconDisplayer = new IconDisplayer();
             iconDisplayer.setIconUrl(URLUtil.getPetIcon(petInfo.resourceId));
-            iconDisplayer.scaleX = iconDisplayer.scaleY = 1;
+            iconDisplayer.scaleY = 1;
+            iconDisplayer.scaleX = 1;
             _thisIconList.push(iconDisplayer);
         }
         for each(petInfo in _remotePetList) {
@@ -227,10 +256,11 @@ public class PetNoPoultry6V6Manager {
         LayerManager.hideMap();
         _thisPreview.x = 260;
         _thisPreview.y = 440;
-        LayerManager.topLayer.addChild(_thisPreview);
+        _mc.addChild(_thisPreview);
         var _loc1_:int = 0;
         while (_loc1_ < 6) {
-            _thisIconList[_loc1_].x = _thisIconList[_loc1_].y = 0;
+            _thisIconList[_loc1_].y = 0;
+            _thisIconList[_loc1_].x = 0;
             _loc2_ = _mc["myIconList" + _loc1_]["iconMc"]["icon"];
             DisplayObjectUtil.removeAllChildren(_loc2_);
             _loc2_.addChild(_thisIconList[_loc1_]);
@@ -243,11 +273,12 @@ public class PetNoPoultry6V6Manager {
         var _loc2_:MovieClip = null;
         _remotePreview.x = 950;
         _remotePreview.y = 440;
-        LayerManager.topLayer.addChild(_remotePreview);
+        _mc.addChild(_remotePreview);
         var _loc1_:int = 0;
         while (_loc1_ < 6) {
             MovieClip(_mc["enIconList" + _loc1_]).gotoAndStop(1);
-            _remoteIconList[_loc1_].x = _remoteIconList[_loc1_].y = 0;
+            _remoteIconList[_loc1_].y = 0;
+            _remoteIconList[_loc1_].x = 0;
             _loc2_ = _mc["enIconList" + _loc1_]["iconMc"]["icon"];
             DisplayObjectUtil.removeAllChildren(_loc2_);
             _loc2_.addChild(_remoteIconList[_loc1_]);

@@ -35,6 +35,10 @@ public class ArenaAnimationManager {
 
     private static var _indicatorAnimation:IndicatorAnimation;
 
+    public static var showCountDownTime:int = 0;
+
+    public static var forCheckStuck:int = -1;
+
 
     public function ArenaAnimationManager() {
         super();
@@ -213,9 +217,14 @@ public class ArenaAnimationManager {
 
     public static function showCountDown(param1:uint, param2:*):void {
         var onCountDownEnd:Function = null;
-        var fightMode:uint = param1;
         var controlPanel:* = param2;
+        showCountDownTime++;
         onCountDownEnd = function ():void {
+            if (FightMode.isPVPMode(param1) && (forCheckStuck == (showCountDownTime - 1))) {
+                controlPanel.runOp();
+                return;
+            }
+            forCheckStuck = showCountDownTime;
             controlPanel.automate();
         };
         abortCountDown();

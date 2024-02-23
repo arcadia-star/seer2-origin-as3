@@ -22,7 +22,7 @@ public class AutoFightVerifyConfig {
 
     public static function setup():void {
         _xml = XML(new _xmlClass());
-        for each(var imageXML in _xml.descendants("answerQuery")) {
+        for each(var imageXML:XML in _xml.descendants("answerQuery")) {
             var fakeHash:String = String(imageXML.attribute("fakeHash"));
             var imageId:uint = uint(imageXML.attribute("id"));
             var answer:uint = uint(imageXML.attribute("answer"));
