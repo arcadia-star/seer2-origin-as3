@@ -35,9 +35,10 @@ public class AutoFightPanel extends Sprite {
 
     public static var isYanshu:Boolean = false;
 
-    private static const HELP:String = "☆该版本为第四代测试版,可能存在一定bug,若出现bug可以在星火群或二号船群反馈;出招顺序可不填,默认使用第一个技能;次数可不填,默认无限循环;点击监视,可以查看剩余次数;\n出招顺序格式:\n如 2342(2,2)T3(3,-1)\n代表依次使用第二 三 四 二个技能,括号内第一个数字\"2\"代表从出招顺序的第二个技能开始循环,第二个数字代表循环次数,如果第二个数字为-1,则代表无限循环\n注意,括号和逗号请使用英文括号和逗号;不允许出现\"( , )( , )\",也就是说,两个循环不可以写在一块;每个循环只生效一次,比如在上面的例子中,(2,2)生效过一次后,就不再生效了\n所以上面的这个例子,相当于 2342342342T342T342T342T342T3...\n行动代号表: 1,2,3,4,5 技能 ; R 逃跑 ; T 补血(默认使用350高效药) ; S 捕捉 ; a,b,c,d,e 不同种类的怒气药 ; A,B,C,D,E,F 换场(换死亡的精灵会直接使用高级复活药,换现在正在战斗的精灵会直接使用一技能)";
-
-    public static var logTxt:String = new String();
+    private static const HELP:String = "(可以向下滑动!!!)\n无限对战功能是全局的,开启之后可以直接到原活动去打,也可以在\"协议\"面板发送协议打,也可在\"战斗\"面板(也就是现在你所在的页面)发送协议打;\n在\"战斗\"面板发起对战都是自动战斗,除非点击结束,否则无法手动操作;\n!!!即使打开无限战斗功能,也不是所有的挑战都可以无限战斗;另外.无限战斗功能有小概率仍消耗次数,如果不放心,可以开启无限对战后，先试打看看是否消耗次数，再进行对战;\n" +
+            "自动刷怪使用说明:出招顺序可不填,默认使用第一个技能;次数可不填,默认无限循环;点击监视,可以查看剩余次数;\n出招顺序格式:\n如 2342(2,2)T3(3,-1)\n代表依次使用第二 三 四 二个技能,括号内第一个数字\"2\"代表从出招顺序的第二个技能开始循环,第二个数字代表循环次数,如果第二个数字为-1,则代表无限循环\n注意,括号和逗号请使用英文括号和逗号;不允许出现\"( , )( , )\",也就是说,两个循环不可以写在一块;每个循环只生效一次,比如在上面的例子中,(2,2)生效过一次后,就不再生效了\n所以上面的这个例子,相当于 2342342342T342T342T342T342T3...\n" +
+            "行动代号表: 1,2,3,4,5 技能 ; R 逃跑 ; T 补血(默认使用350高效药) ; S 捕捉 ; a,b,c,d,e 不同种类的怒气药 ; A,B,C,D,E,F 换场(换死亡的精灵会直接使用高级复活药,换现在正在战斗的精灵会直接使用一技能)\n" +
+            "自动刷怪出问题，一般要么是输入了错误码导致卡死，要么就是掉线了，要么就是到达上限(上限是1500协议对战的上限，799局左右，和PVP和spt战斗(1046协议)等无关)";
 
 
     private var isCure:Boolean = true;
@@ -188,7 +189,6 @@ public class AutoFightPanel extends Sprite {
         txtOut2.alpha = 0.9;
         this.txtOut3 = new TextField();
         txtOut3.defaultTextFormat = tF;
-        txtOut3.text = logTxt;
         txtOut3.x = 251;
         txtOut3.y = 53;
         txtOut3.height = 240;
@@ -372,7 +372,7 @@ public class AutoFightPanel extends Sprite {
             return temp;
         }
         this.index = 0;
-        this.opArray = new Array();
+        this.opArray = [];
         return getNode();
     }
 
@@ -387,7 +387,7 @@ public class AutoFightPanel extends Sprite {
     }
 
     private function onMonitor(event:MouseEvent):void {
-        txtOut3.text = logTxt;
+        txtOut3.text = "";
         txtOut3.visible = true;
         txtOut2.visible = false;
     }
@@ -414,7 +414,7 @@ public class AutoFightPanel extends Sprite {
         var reStart:Function = function (event:TimerEvent):void {
             if (!isRunning) {
                 checkStartTimer.removeEventListener(TimerEvent.TIMER, reStart);
-                this.checkStartTimer.reset();
+                checkStartTimer.reset();
             }
             txtOut3.text += "[" + new Date().toLocaleTimeString() + "]" + "发送一次战斗请求,等待4号回包\n";
             h.handler(uint(paramId.text));
@@ -450,7 +450,7 @@ public class AutoFightPanel extends Sprite {
             endBtn.enabled = true;
             endBtn.alpha = 1;
             isRunning = true;
-            this.opArray = new Array();
+            this.opArray = [];
             FightManager.addEventListener(FightStartEvent.START_ERROR, this.FightError);
             FightOverEvent.addEventListener(FIGHT_OVER, this.continueFight);
             return;
@@ -546,9 +546,5 @@ public class AutoFightPanel extends Sprite {
         myButton.y = _y;
         return myButton;
     }
-
-    private function initEvent():void {
-    }
 }
 }
-

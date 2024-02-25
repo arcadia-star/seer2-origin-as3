@@ -252,7 +252,7 @@ public class NewFightControlPanel extends Sprite {
         }
     }
 
-    private function runOp():void {
+    public function runOp():void {
         endInput(new OperateEvent(OperateEvent.OPERATE_ESCAPE, 0, OperateEvent.OPERATE_END));
     }
 
