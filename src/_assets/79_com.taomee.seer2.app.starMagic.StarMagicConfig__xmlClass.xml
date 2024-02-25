@@ -1,0 +1,77 @@
+﻿<!-- 星魂配置表 -->
+<!-- runes index:星魂索引，也是星魂对应在battle/battle.cpp下attribute的id 每个星魂的index唯一，不能重复-->
+<!-- Name:星魂名称 -->
+<!-- Type:星魂类型 0-碎片 1-绿色星魂 2-蓝色星魂 3-紫色星魂 4-金色星魂 -->
+<!-- value:星魂能转换成多少星力 如果type=0，则该字段表示能兑换成多少赛尔豆 -->
+<!-- lvl_cof:星魂升级时所需的经验系数 -->
+<!-- max_lvl:星魂升级能够达到的最高等级 -->
+
+<runes>
+    <runes index="1" name="小碎片" type="0" value="1000" lvl_cof="0" max_lvl="1" needExp="0" effv="0,10,20,30,40,50,100"
+           desc="小星魂碎片可兑换1000赛尔豆" effdesc="小星魂" buffSwf="0"/>
+    <runes index="2" name="大碎片" type="0" value="2000" lvl_cof="0" max_lvl="1" needExp="0" effv="0,10,20,30,40,50,100"
+           desc="大星魂碎片可兑换2000赛尔豆" effdesc="小星魂" buffSwf="0"/>
+    <runes index="11113" name="百钧" type="1" value="30" lvl_cof="120" max_lvl="6" needExp="0,120,240,480,960,1920"
+           effv="0,10,20,30,40,50,100" desc="满级增加100点物攻值" effdesc="物攻" buffSwf="1"/>
+    <runes index="11114" name="超灵" type="1" value="30" lvl_cof="120" max_lvl="6" needExp="0,120,240,480,960,1920"
+           effv="0,10,20,30,40,50,100" desc="满级增加100点特攻值" effdesc="特攻" buffSwf="2"/>
+    <runes index="11115" name="千钧" type="2" value="60" lvl_cof="360" max_lvl="6" needExp="0,360,720,1440,2880,5760"
+           effv="0,25,60,95,130,160,200" desc="满级增加200点物攻值" effdesc="物攻" buffSwf="1"/>
+    <runes index="11116" name="神灵" type="2" value="60" lvl_cof="360" max_lvl="6" needExp="0,360,720,1440,2880,5760"
+           effv="0,25,60,95,130,160,200" desc="满级增加200点特攻值" effdesc="特攻" buffSwf="2"/>
+    <runes index="11117" name="钢盾" type="2" value="60" lvl_cof="360" max_lvl="6" needExp="0,360,720,1440,2880,5760"
+           effv="0,25,60,95,130,160,200" desc="满级增加200点物防值" effdesc="物防" buffSwf="3"/>
+    <runes index="11118" name="灵界" type="2" value="60" lvl_cof="360" max_lvl="6" needExp="0,360,720,1440,2880,5760"
+           effv="0,25,60,95,130,160,200" desc="满级增加200点特防值" effdesc="特防" buffSwf="4"/>
+    <runes index="11119" name="鬼助" type="2" value="60" lvl_cof="360" max_lvl="6" needExp="0,360,720,1440,2880,5760"
+           effv="0,2,4,6,8,10,12" desc="满级增加12%暴击率" effdesc="暴击" buffSwf="5"/>
+    <runes index="11120" name="精准" type="2" value="60" lvl_cof="360" max_lvl="6" needExp="0,360,720,1440,2880,5760"
+           effv="0,2,4,6,8,10,12" desc="满级增加12%命中率" effdesc="命中" buffSwf="6"/>
+    <runes index="11121" name="鬼步" type="2" value="60" lvl_cof="360" max_lvl="6" needExp="0,360,720,1440,2880,5760"
+           effv="0,2,4,6,8,10,12" desc="满级增加12%闪避率" effdesc="闪避" buffSwf="7"/>
+    <runes index="11122" name="万钧" type="3" value="120" lvl_cof="480" max_lvl="6" needExp="0,480,960,1920,3840,7680"
+           effv="0,50,100,150,200,250,300" desc="满级增加300点物攻值" effdesc="物攻" buffSwf="1"/>
+    <runes index="11123" name="圣灵" type="3" value="120" lvl_cof="480" max_lvl="6" needExp="0,480,960,1920,3840,7680"
+           effv="0,50,100,150,200,250,300" desc="满级增加300点特攻值" effdesc="特攻" buffSwf="2"/>
+    <runes index="11124" name="钻盾" type="3" value="120" lvl_cof="480" max_lvl="6" needExp="0,480,960,1920,3840,7680"
+           effv="0,50,100,150,200,250,300" desc="满级增加300点物防值" effdesc="物防" buffSwf="3"/>
+    <runes index="11125" name="魂界" type="3" value="120" lvl_cof="480" max_lvl="6" needExp="0,480,960,1920,3840,7680"
+           effv="0,50,100,150,200,250,300" desc="满级增加300点特防值" effdesc="特防" buffSwf="4"/>
+    <runes index="11126" name="神耀" type="3" value="120" lvl_cof="480" max_lvl="6" needExp="0,480,960,1920,3840,7680"
+           effv="0,5,7,9,11,13,15" desc="满级增加15%暴击率" effdesc="暴击" buffSwf="5"/>
+    <runes index="11127" name="锁魂" type="3" value="120" lvl_cof="480" max_lvl="6" needExp="0,480,960,1920,3840,7680"
+           effv="0,5,7,9,11,13,15" desc="满级增加15%命中率" effdesc="命中" buffSwf="6"/>
+    <runes index="11128" name="虚灵" type="3" value="120" lvl_cof="480" max_lvl="6" needExp="0,480,960,1920,3840,7680"
+           effv="0,5,7,9,11,13,15" desc="满级增加15%闪避率" effdesc="闪避" buffSwf="7"/>
+    <runes index="11129" name="怒劫" type="3" value="120" lvl_cof="480" max_lvl="6" needExp="0,480,960,1920,3840,7680"
+           effv="0,5,7,9,11,13,15" desc="满级每回合恢复15点怒气" effdesc="增怒" buffSwf="8"/>
+    <runes index="30001" name="魔耀" type="4" value="240" lvl_cof="960" max_lvl="6" needExp="0,960,1920,3840,7680,15360"
+           effv="0,10,12,14,16,18,20" desc="满级增加20%暴击率（官方预案 未实装）" effdesc="暴击" buffSwf="5"/>
+    <runes index="30002" name="魔灵" type="4" value="240" lvl_cof="960" max_lvl="6" needExp="0,960,1920,3840,7680,15360"
+           effv="0,10,15,20,25,30,35" desc="满级每回合恢复35点怒气（官方预案 未实装）" effdesc="增怒" buffSwf="8"/>
+    <runes index="30003" name="界神" type="4" value="240" lvl_cof="960" max_lvl="6" needExp="0,960,1920,3840,7680,15360"
+           effv="0,1,2,3,4,5,6;0,1,2,3,4,5,6" desc="满级使首发精灵特攻伤害增加6% 受到特攻伤害减少6%（bug效果）"
+           effdesc="全队增益" buffSwf="100"/>
+    <runes index="30004" name="鬼协" type="2" value="60" lvl_cof="360" max_lvl="6" needExp="0,360,720,1440,2880,5760"
+           effv="0,5,7,9,11,13,15" desc="满级增加15%抗爆率" effdesc="抗爆" buffSwf="9"/>
+    <runes index="30005" name="神辉" type="3" value="120" lvl_cof="480" max_lvl="6" needExp="0,480,960,1920,3840,7680"
+           effv="0,10,12,14,16,18,20" desc="满级增加20%抗爆率" effdesc="抗爆" buffSwf="9"/>
+    <runes index="30006" name="怒浩" type="3" value="120" lvl_cof="480" max_lvl="6" needExp="0,480,960,1920,3840,7680"
+           effv="0,5,7,9,11,13,15" desc="满级每回合结束时减少对手15点怒气" effdesc="减怒" buffSwf="10"/>
+    <runes index="30007" name="制念" type="4" value="240" lvl_cof="960" max_lvl="6" needExp="0,960,1920,3840,7680,15360"
+           effv="0,10,20,40,60,80,100" desc="满级免疫超能系技能伤害" effdesc="减伤" buffSwf="101"/>
+    <runes index="30008" name="王恩" type="4" value="240" lvl_cof="960" max_lvl="6" needExp="0,960,1920,3840,7680,15360"
+           effv="0,5,10,15,20,30,40" desc="满级我方非约瑟王的首发精灵受到伤害减少40%" effdesc="全队增益" buffSwf="102"/>
+    <runes index="30009" name="齐天" type="4" value="240" lvl_cof="960" max_lvl="6" needExp="0,960,1920,3840,7680,15360"
+           effv="0,60,120,180,240,300,360" desc="满级增加360点物攻值" effdesc="物攻" buffSwf="1"/>
+    <runes index="30010" name="金鸡" type="4" value="240" lvl_cof="960" max_lvl="6" needExp="0,960,1920,3840,7680,15360"
+           effv="0,5,7,9,11,13,15" desc="满级我方精灵必杀暴击率提升15% 对罗亚啼克效果2倍 已绝版" effdesc="全队增益"
+           buffSwf="103"/>
+    <runes index="30011" name="界神" type="4" value="240" lvl_cof="960" max_lvl="6" needExp="0,960,1920,3840,7680,15360"
+           effv="0,1,2,4,6,8,10;0,1,2,4,6,8,10" desc="满级使全队特攻伤害增加10% 受到特攻伤害减少10%（原设效果）"
+           effdesc="全队增益" buffSwf="100"/>
+    <runes index="30012" name="无极" type="2" value="60" lvl_cof="360" max_lvl="6" needExp="0,360,720,1440,2880,5760"
+           effv="0,2,4,6,8,10,12" desc="满级每回合恢复12点怒气（官方预案 未实装）" effdesc="增怒" buffSwf="8"/>
+    <runes index="30013" name="光启" type="4" value="240" lvl_cof="960" max_lvl="6" needExp="0,480,960,1920,3840,7680"
+           effv="0,10,12,14,16,18,20" desc="紫色星魂 效果未知（官方预案 未实装）" effdesc="未知" buffSwf="9"/>
+</runes>
