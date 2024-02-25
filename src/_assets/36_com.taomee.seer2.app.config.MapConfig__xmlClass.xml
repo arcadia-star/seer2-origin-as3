@@ -2299,7 +2299,7 @@
 	<Map ID="80587" Name="微光湖畔" MapType="0" ScreenNum="1" InitX="120"  InitY="380" dream="1" />
 
 	<Map ID="80588" Name="研究院(热血与冷酷的交锋副本)" MapType="0" ScreenNum="1" InitX="871"  InitY="537" dream="1"/>
-	<Map ID="80589" Name="风刃氏族主城(热血与冷酷的交锋副本)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />π
+	<Map ID="80589" Name="风刃氏族主城(热血与冷酷的交锋副本)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
 	<Map ID="80590" Name="风暴(热血与冷酷的交锋副本)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
 	<Map ID="80591" Name="羽冠之岛(御风赛场)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
 	<Map ID="80592" Name="御风赛场(御风支线)" MapType="0" ScreenNum="1" InitX="550"  InitY="380" dream="1" />
