@@ -4,6 +4,8 @@ import com.taomee.seer2.app.config.PetConfig;
 
 import org.taomee.ds.HashMap;
 
+import seer2.next.entry.DynConfig;
+
 public class HitInfoConfig {
 
     private static var _hitData:Class = HitInfoConfig__hitData;
@@ -31,7 +33,7 @@ public class HitInfoConfig {
     private static function setup():void {
         var _loc5_:XML = null;
         var _loc6_:AnimiationHitInfo = null;
-        var _loc1_:XML = XML(new _hitData());
+        var _loc1_:XML = DynConfig.hitInfoConfigXML || XML(new _hitData());
         var _loc2_:XMLList = _loc1_.child("fighter");
         var _loc3_:uint = uint(_loc2_.length());
         var _loc4_:uint = 0;

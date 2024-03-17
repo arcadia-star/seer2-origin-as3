@@ -688,215 +688,88 @@
         <doc><![CDATA[我……我没什么可说的！也不需要你们帮我！]]></doc>
     </quest>
 
-    <quest id="17" name="冰封的求援信" type="0" track="1" autoNext="0"
-           needAcceptMark="1" relatedMapIds="125, 152, 110, 160, 90" acceptMapId="125"
-           onlineTime="2011-11-03" monLvlUp="1">
-        <prerequisite questId="1" level="1"
-        />
-        <acceptDialog transport="" npcId="314">
-            <branch id="default" npcId="314"
-                    npcName="舒尔">
-                <node emotion="0"><![CDATA[小黄鱼……河蟹……完了，根本来不及补充物资！]]></node>
-                <reply action="goToBranch" params="next1"><![CDATA[发生什么事情了……]]></reply>
-            </branch>
-            <branch id="next1" npcId="314" npcName="舒尔">
-                <node emotion="0"><![CDATA[不知怎么回事，这两天水产的消耗数量和库存数量总是对不上……]]></node>
-                <reply action="goToBranch" params="next2"><![CDATA[是你算数不好的关系吗？]]></reply>
-            </branch>
-            <branch id="next2" npcId="314" npcName="舒尔">
-                <node emotion="0"><![CDATA[不可能……但也不是完全不可能……总之，你能帮我个忙吗？]]></node>
-                <reply action="goToBranch" params="next3"><![CDATA[说说看？]]></reply>
-            </branch>
-            <branch id="next3" npcId="314" npcName="舒尔">
-                <node emotion="0">
-                    <![CDATA[这么说你是答应了？太好啦，去水仙溪口钓一些鱼给我吧！如果再不补充物资，我这里就要关门大吉了……神厨大叔回来会伤心的！]]></node>
-                <reply action="" params="17_0"><![CDATA[钓鱼？小菜一碟！（去水仙溪口）]]></reply>
-            </branch>
-        </acceptDialog>
-        <steps>
-            <step id="1" name="愉快的钓鱼家" sum="水仙溪口——钓鱼"
-                  des="七味小厨的物资被神秘人抢走？先去水仙溪口钓鱼补充物资吧！"/>
-            <step id="2" name="神秘的贪吃鬼" sum="草木氏族七味小厨——舒尔"
-                  des="贪吃鬼抢走了鱼，却留下了一封神秘的信件。去七味小厨告诉舒尔。">
-                <dialog npcId="314" npcName="舒尔" transport="">
-                    <branch id="default">
-                        <node
-                                emotion="3"><![CDATA[神秘的贪吃鬼？难道这几天丢失的物资都是它干的好事？！]]></node>
-                        <reply action="goToBranch"
-                               params="next"><![CDATA[（递上神秘信件）]]></reply>
-                    </branch>
-                    <branch id="next">
-                        <node
-                                emotion="0">
-                            <![CDATA[呜哇好冷！……舒尔还小，上面的字都不认得……你们还是拿给神目酋长看吧！哎……有个贪吃鬼，这可怎么办呢……]]></node>
-                        <reply action="" params="17_1"><![CDATA[（去权力之帐找神目酋长吧）]]></reply>
-                    </branch>
-                </dialog>
-            </step>
-            <step id="3" name="费解的神秘信件" sum="草目氏族主城——神目酋长"
-                  des="这封信件看起来很有来头，请博学的神目酋长来解读。">
-                <dialog npcId="16" npcName="酋长" transport="">
-                    <branch id="default">
-                        <node
-                                emotion="4"><![CDATA[这……这么冰冷的感觉，难道是……那个氏族……]]></node>
-                        <reply action="goToBranch"
-                               params="next1"><![CDATA[是什么？]]></reply>
-                    </branch>
-                    <branch id="next1">
-                        <node
-                                emotion="4">
-                            <![CDATA[冰沁氏族……对于那里的居民们来说，自由这个字眼过于奢侈了……常年遭遇外部的侵略，它们却只能忍气吞声、默默祈祷。]]></node>
-                        <reply action="goToBranch" params="next2"><![CDATA[怎么会这样！]]></reply>
-                    </branch>
-                    <branch id="next2">
-                        <node emotion="0">
-                            <![CDATA[这封信的确非同小可。但是被海水浸湿已经无法阅读上面的内容了。你可以前往水脉氏族，请洛水想想办法。]]></node>
-                        <reply action="" params="17_2"><![CDATA[（去水脉氏族主城找洛水吧）]]></reply>
-                    </branch>
-                </dialog>
-            </step>
-            <step id="4" name="神谕祭司的还原秘方" sum="水脉氏族主城——神谕祭司"
-                  des="信件上的标记来自北方的冰沁氏族，到水系主城，请神谕祭司帮忙还原信件吧！">
-                <dialog npcId="23" npcName="洛水" transport="">
-                    <branch id="default">
-                        <node
-                                emotion="0">
-                            <![CDATA[还原信件上的文字？我的确可以帮得上忙。不过，我的秘方里还缺少一样东西。]]></node>
-                        <reply
-                                action="" params="17_3"><![CDATA[是什么？]]></reply>
-                    </branch>
-                </dialog>
-            </step>
-            <step id="5" name="沉重的远古使命" sum="草目氏族主城——神目酋长"
-                  des="在神谕祭司的帮助下终于还原了神秘信件，神目酋长究竟会解读出什么内容？">
-                <dialog npcId="16" npcName="酋长" transport="">
-                    <branch id="default">
-                        <node
-                                emotion="0"><![CDATA[这的确是冰沁氏族的文字……]]></node>
-                        <reply action="goToBranch" params="next"><![CDATA[酋长，那上面写的什么？]]></reply>
-                    </branch>
-                    <branch id="next">
-                        <node emotion="4"><![CDATA[目……之……魂……冰封……]]></node>
-                        <reply action="" params="17_4"><![CDATA[目之魂？]]></reply>
-                    </branch>
-                </dialog>
-                <outcome>
-                    <item giveId="1" cnt="500"/>
-                </outcome>
-            </step>
-        </steps>
-        <doc><![CDATA[是谁！是谁动了我的鱼！！]]></doc>
-    </quest>
-    <quest id="18" name="开战前夕" type="0" track="1" autoNext="0" needAcceptMark="1"
-           relatedMapIds="110, 10, 20, 540" acceptMapId="110" onlineTime="2011-11-10"
-           monLvlUp="1">
-        <prerequisite questId="17" level="1"/>
-        <acceptDialog transport=""
-                      npcId="16" npcName="神目酋长">
-            <branch id="default" npcName="神目酋长">
-                <node emotion="2"><![CDATA[不行……必须要去一次……但是那温度……]]></node>
-                <reply action="goToBranch" params="next"><![CDATA[发生什么事情了？]]></reply>
-            </branch>
-            <branch id="next" npcName="神目酋长">
-                <node emotion="0"><![CDATA[自从上次看过目之魂展现给我们的画面后，我一直非常担心冰沁氏族的情况……]]></node>
-                <reply action="" params="18_0"><![CDATA[我也非常担心！]]></reply>
-            </branch>
-        </acceptDialog>
-        <steps>
-            <step id="1" name="调查申请" sum="船长室——辛迪船长"
-                  des="根据神目酋掌的请求，小赛尔们打算登陆冰沁氏族。去船长室请示辛迪船长！">
-                <dialog npcId="1" npcName="辛迪船长" transport="">
-                    <branch id="default" npcId="11"
-                            npcName="多罗">
-                        <node emotion="4">
-                            <![CDATA[报报报报告船船长！！我们亮晶晶……（噎到）亮晶晶第七小队，发现了一封信，那里面有个，魂，魂……（噎到）然后，那个冰，冰，冰住了！！]]></node>
-                        <reply action="goToBranch" params="next1"><![CDATA[多罗你别激动……囧]]></reply>
-                    </branch>
-                    <branch id="next1" npcId="10" npcName="巴蒂">
-                        <node emotion="0"><![CDATA[报告船长，是这样的……（口齿清晰地将之前发生的事情叙述了一遍）]]></node>
-                        <reply action="goToBranch" params="next2"><![CDATA[嗯嗯，就是这样。]]></reply>
-                    </branch>
-                    <branch id="next2" npcId="1" npcName="辛迪船长">
-                        <node emotion="0"><![CDATA[其实，我最近也有意向要派遣一支赛尔小队去当地勘测……]]></node>
-                        <reply action="" params="18_1"><![CDATA[哦？]]></reply>
-                    </branch>
-                </dialog>
-            </step>
-            <step id="2" name="恒温装置" sum="实验室——伊娃博士"
-                  des="辛迪船长说，前往冰沁氏族必需要有博士的装置！去实验室问问伊娃博士。">
-                <dialog npcId="2" npcName="伊娃" transport="">
-                    <branch id="default">
-                        <node
-                                emotion="0">
-                            <![CDATA[有了我的恒温装置，严寒和酷暑都不成问题！！不过……我还缺少一个至关重要的材料……]]></node>
-                        <reply
-                                action="goToBranch" params="next"><![CDATA[是什么？]]></reply>
-                    </branch>
-                    <branch
-                            id="next">
-                        <node emotion="0">
-                            <![CDATA[那个材料在火幻氏族的蛮神战场上，凝聚了长久以来战士的热量……被称之为“赤炎火苗”，只有用它才能让这个恒温装置运作起来！]]></node>
-                        <reply action="close"><![CDATA[（去蛮神战场找找）]]></reply>
-                        <reply action="close"
-                               params="18_2"><![CDATA[我这里就有]]></reply>
-                    </branch>
-                </dialog>
-            </step>
-            <step
-                    id="3" name="冰封世界" sum="冰之谷" des="已经得到博士研发的恒温装置，出发！冰之谷！！"/>
-            <step id="4"
-                  name="勘测生命" sum="冰之谷——勘测生命" des="冰之谷被冰封了！巴蒂那里有生命勘测仪，去看看！"/>
-            <step id="5"
-                  name="破冰而出" sum="冰之谷——火系头部射击融化冰层!" des="按照目之魂的指示，用头部射击的火焰熔化冰层！">
-                <outcome>
-                    <item giveId="1" cnt="500"/>
-                    <item giveId="100142" cnt="1"/>
-                </outcome>
-            </step>
-        </steps>
-        <doc><![CDATA[前去勘测冰沁氏族的族民都没有回来……请前去调查！]]></doc>
-    </quest>
-    <quest
-            id="19" name="冰冷的阴谋" type="0" track="1" autoNext="0" needAcceptMark="1" relatedMapIds="50000,
-		540, 570" acceptMapId="50000" onlineTime="2011-11-18" monLvlUp="1">
-        <prerequisite
-                questId="18" level="1"/>
-        <steps>
-            <step id="1" name="恩人的承诺" sum="冰之谷——找到冰湖豚的家人"
-                  des="目之魂的信件中说，已经救出冰湖豚的家人！去冰之谷汇合！"/>
-            <step id="2" name="复苏的恶魔" sum="冰之谷——护送冰湖豚一家"
-                  des="终于和家人团聚，现在不是感动的时候，护送冰湖豚一家离开！"/>
-            <step id="3" name="坚强的报恩" sum="禁地监狱——营救族人"
-                  des="冰沁氏族的族人被关押在禁地监狱！赶快前去营救！"/>
-            <step id="4" name="灵魂的呼唤" sum="禁地监狱——突破阿修"
-                  des="就快救出族人，却遭遇了阿修队长的拦截！勇敢地突破重围！">
-                <outcome>
-                    <item giveId="1" cnt="500"/>
-                </outcome>
-            </step>
-        </steps>
-        <doc><![CDATA[目之魂再次委托胆小精灵带来信笺，它是否在冰沁氏族发现了什么？]]></doc>
-    </quest>
-    <quest id="20" name="灵魂故乡的野望" type="0" track="1" autoNext="0" needAcceptMark="1"
-           relatedMapIds="540, 550" acceptMapId="540" onlineTime="2011-11-25" monLvlUp="1">
-        <prerequisite questId="19" level="1"/>
-        <steps>
-            <step id="1" name="深入敌方的据点"
-                  sum="冰沁宫殿——萨伦帝国士兵" des="萨伦帝国冰封冰沁氏族的目的究竟是什么？去帝国最后的据点冰沁宫殿调查"/>
-            <step id="2"
-                  name="间谍专用的乔装" sum="冰之谷——冰系酋长" des="盲目进攻是没有办法问出真相的，问问冰系酋长的意见。"/>
-            <step id="3"
-                  name="面不改色的问答" sum="冰沁宫殿——萨伦帝国士兵"
-                  des="好不容易欺骗了普通士兵的眼睛，却迎来了阿修队长！能否顺利过关呢？"/>
-            <step id="4" name="怒火中烧的突围" sum="冰沁宫殿——阿修" des="我们的伪装早就被阿修识破了？？突围！冰沁宫殿！">
-                <outcome>
-                    <item giveId="1" cnt="500"/>
-                    <item giveId="400215" cnt="1"/>
-                </outcome>
-            </step>
-        </steps>
-        <doc><![CDATA[冰沁氏族不会忘记任何一个帮助过本族的人，我决定，冰沁氏族正式和赛尔结盟，共同抵御萨伦帝国！]]></doc>
-    </quest>
+    <!-- 下线开始喽 <quest id="17" name="冰封的求援信" type="0" track="1" autoNext="0"
+		needAcceptMark="1" relatedMapIds="125, 152, 110, 160, 90" acceptMapId="125"
+		onlineTime="2011-11-03" monLvlUp="1"> <prerequisite questId="1" level="1"
+		/> <acceptDialog transport="" npcId="314"> <branch id="default" npcId="314"
+		npcName="舒尔"> <node emotion="0"><![CDATA[小黄鱼……河蟹……完了，根本来不及补充物资！]]></node>
+		<reply action="goToBranch" params="next1"><![CDATA[发生什么事情了……]]></reply> </branch>
+		<branch id="next1" npcId="314" npcName="舒尔"> <node emotion="0"><![CDATA[不知怎么回事，这两天水产的消耗数量和库存数量总是对不上……]]></node>
+		<reply action="goToBranch" params="next2"><![CDATA[是你算数不好的关系吗？]]></reply>
+		</branch> <branch id="next2" npcId="314" npcName="舒尔"> <node emotion="0"><![CDATA[不可能……但也不是完全不可能……总之，你能帮我个忙吗？]]></node>
+		<reply action="goToBranch" params="next3"><![CDATA[说说看？]]></reply> </branch>
+		<branch id="next3" npcId="314" npcName="舒尔"> <node emotion="0"><![CDATA[这么说你是答应了？太好啦，去水仙溪口钓一些鱼给我吧！如果再不补充物资，我这里就要关门大吉了……神厨大叔回来会伤心的！]]></node>
+		<reply action="" params="17_0"><![CDATA[钓鱼？小菜一碟！（去水仙溪口）]]></reply> </branch>
+		</acceptDialog> <steps> <step id="1" name="愉快的钓鱼家" sum="水仙溪口——钓鱼" des="七味小厨的物资被神秘人抢走？先去水仙溪口钓鱼补充物资吧！"/>
+		<step id="2" name="神秘的贪吃鬼" sum="草木氏族七味小厨——舒尔" des="贪吃鬼抢走了鱼，却留下了一封神秘的信件。去七味小厨告诉舒尔。">
+		<dialog npcId="314" npcName="舒尔" transport=""> <branch id="default"> <node
+		emotion="3"><![CDATA[神秘的贪吃鬼？难道这几天丢失的物资都是它干的好事？！]]></node> <reply action="goToBranch"
+		params="next"><![CDATA[（递上神秘信件）]]></reply> </branch> <branch id="next"> <node
+		emotion="0"><![CDATA[呜哇好冷！……舒尔还小，上面的字都不认得……你们还是拿给神目酋长看吧！哎……有个贪吃鬼，这可怎么办呢……]]></node>
+		<reply action="" params="17_1"><![CDATA[（去权力之帐找神目酋长吧）]]></reply> </branch>
+		</dialog> </step> <step id="3" name="费解的神秘信件" sum="草目氏族主城——神目酋长" des="这封信件看起来很有来头，请博学的神目酋长来解读。">
+		<dialog npcId="16" npcName="酋长" transport=""> <branch id="default"> <node
+		emotion="4"><![CDATA[这……这么冰冷的感觉，难道是……那个氏族……]]></node> <reply action="goToBranch"
+		params="next1"><![CDATA[是什么？]]></reply> </branch> <branch id="next1"> <node
+		emotion="4"><![CDATA[冰沁氏族……对于那里的居民们来说，自由这个字眼过于奢侈了……常年遭遇外部的侵略，它们却只能忍气吞声、默默祈祷。]]></node>
+		<reply action="goToBranch" params="next2"><![CDATA[怎么会这样！]]></reply> </branch>
+		<branch id="next2"> <node emotion="0"><![CDATA[这封信的确非同小可。但是被海水浸湿已经无法阅读上面的内容了。你可以前往水脉氏族，请洛水想想办法。]]></node>
+		<reply action="" params="17_2"><![CDATA[（去水脉氏族主城找洛水吧）]]></reply> </branch>
+		</dialog> </step> <step id="4" name="神谕祭司的还原秘方" sum="水脉氏族主城——神谕祭司" des="信件上的标记来自北方的冰沁氏族，到水系主城，请神谕祭司帮忙还原信件吧！">
+		<dialog npcId="23" npcName="洛水" transport=""> <branch id="default"> <node
+		emotion="0"><![CDATA[还原信件上的文字？我的确可以帮得上忙。不过，我的秘方里还缺少一样东西。]]></node> <reply
+		action="" params="17_3"><![CDATA[是什么？]]></reply> </branch> </dialog> </step>
+		<step id="5" name="沉重的远古使命" sum="草目氏族主城——神目酋长" des="在神谕祭司的帮助下终于还原了神秘信件，神目酋长究竟会解读出什么内容？">
+		<dialog npcId="16" npcName="酋长" transport=""> <branch id="default"> <node
+		emotion="0"><![CDATA[这的确是冰沁氏族的文字……]]></node> <reply action="goToBranch" params="next"><![CDATA[酋长，那上面写的什么？]]></reply>
+		</branch> <branch id="next"> <node emotion="4"><![CDATA[目……之……魂……冰封……]]></node>
+		<reply action="" params="17_4"><![CDATA[目之魂？]]></reply> </branch> </dialog>
+		<outcome> <item giveId="1" cnt="500"/> </outcome> </step> </steps> <doc><![CDATA[是谁！是谁动了我的鱼！！]]></doc>
+		</quest> <quest id="18" name="开战前夕" type="0" track="1" autoNext="0" needAcceptMark="1"
+		relatedMapIds="110, 10, 20, 540" acceptMapId="110" onlineTime="2011-11-10"
+		monLvlUp="1"> <prerequisite questId="17" level="1" /> <acceptDialog transport=""
+		npcId="16" npcName="神目酋长"> <branch id="default" npcName="神目酋长"> <node emotion="2"><![CDATA[不行……必须要去一次……但是那温度……]]></node>
+		<reply action="goToBranch" params="next"><![CDATA[发生什么事情了？]]></reply> </branch>
+		<branch id="next" npcName="神目酋长"> <node emotion="0"><![CDATA[自从上次看过目之魂展现给我们的画面后，我一直非常担心冰沁氏族的情况……]]></node>
+		<reply action="" params="18_0"><![CDATA[我也非常担心！]]></reply> </branch> </acceptDialog>
+		<steps> <step id="1" name="调查申请" sum="船长室——辛迪船长" des="根据神目酋掌的请求，小赛尔们打算登陆冰沁氏族。去船长室请示辛迪船长！">
+		<dialog npcId="1" npcName="辛迪船长" transport=""> <branch id="default" npcId="11"
+		npcName="多罗"> <node emotion="4"><![CDATA[报报报报告船船长！！我们亮晶晶……（噎到）亮晶晶第七小队，发现了一封信，那里面有个，魂，魂……（噎到）然后，那个冰，冰，冰住了！！]]></node>
+		<reply action="goToBranch" params="next1"><![CDATA[多罗你别激动……囧]]></reply> </branch>
+		<branch id="next1" npcId="10" npcName="巴蒂"> <node emotion="0"><![CDATA[报告船长，是这样的……（口齿清晰地将之前发生的事情叙述了一遍）]]></node>
+		<reply action="goToBranch" params="next2"><![CDATA[嗯嗯，就是这样。]]></reply> </branch>
+		<branch id="next2" npcId="1" npcName="辛迪船长"> <node emotion="0"><![CDATA[其实，我最近也有意向要派遣一支赛尔小队去当地勘测……]]></node>
+		<reply action="" params="18_1"><![CDATA[哦？]]></reply> </branch> </dialog>
+		</step> <step id="2" name="恒温装置" sum="实验室——伊娃博士" des="辛迪船长说，前往冰沁氏族必需要有博士的装置！去实验室问问伊娃博士。">
+		<dialog npcId="2" npcName="伊娃" transport=""> <branch id="default"> <node
+		emotion="0"><![CDATA[有了我的恒温装置，严寒和酷暑都不成问题！！不过……我还缺少一个至关重要的材料……]]></node> <reply
+		action="goToBranch" params="next"><![CDATA[是什么？]]></reply> </branch> <branch
+		id="next"> <node emotion="0"><![CDATA[那个材料在火幻氏族的蛮神战场上，凝聚了长久以来战士的热量……被称之为“赤炎火苗”，只有用它才能让这个恒温装置运作起来！]]></node>
+		<reply action="close"><![CDATA[（去蛮神战场找找）]]></reply> <reply action="close"
+		params="18_2"><![CDATA[我这里就有]]></reply> </branch> </dialog> </step> <step
+		id="3" name="冰封世界" sum="冰之谷" des="已经得到博士研发的恒温装置，出发！冰之谷！！"/> <step id="4"
+		name="勘测生命" sum="冰之谷——勘测生命" des="冰之谷被冰封了！巴蒂那里有生命勘测仪，去看看！"/> <step id="5"
+		name="破冰而出" sum="冰之谷——火系头部射击融化冰层!" des="按照目之魂的指示，用头部射击的火焰熔化冰层！"> <outcome>
+		<item giveId="1" cnt="500"/> <item giveId="100142" cnt="1"/> </outcome> </step>
+		</steps> <doc><![CDATA[前去勘测冰沁氏族的族民都没有回来……请前去调查！]]></doc> </quest> <quest
+		id="19" name="冰冷的阴谋" type="0" track="1" autoNext="0" needAcceptMark="1" relatedMapIds="50000,
+		540, 570" acceptMapId="50000" onlineTime="2011-11-18" monLvlUp="1"> <prerequisite
+		questId="18" level="1" /> <steps> <step id="1" name="恩人的承诺" sum="冰之谷——找到冰湖豚的家人"
+		des="目之魂的信件中说，已经救出冰湖豚的家人！去冰之谷汇合！"/> <step id="2" name="复苏的恶魔" sum="冰之谷——护送冰湖豚一家"
+		des="终于和家人团聚，现在不是感动的时候，护送冰湖豚一家离开！"/> <step id="3" name="坚强的报恩" sum="禁地监狱——营救族人"
+		des="冰沁氏族的族人被关押在禁地监狱！赶快前去营救！"/> <step id="4" name="灵魂的呼唤" sum="禁地监狱——突破阿修"
+		des="就快救出族人，却遭遇了阿修队长的拦截！勇敢地突破重围！"> <outcome> <item giveId="1" cnt="500"/>
+		</outcome> </step> </steps> <doc><![CDATA[目之魂再次委托胆小精灵带来信笺，它是否在冰沁氏族发现了什么？]]></doc>
+		</quest> <quest id="20" name="灵魂故乡的野望" type="0" track="1" autoNext="0" needAcceptMark="1"
+		relatedMapIds="540, 550" acceptMapId="540" onlineTime="2011-11-25" monLvlUp="1">
+		<prerequisite questId="19" level="1" /> <steps> <step id="1" name="深入敌方的据点"
+		sum="冰沁宫殿——萨伦帝国士兵" des="萨伦帝国冰封冰沁氏族的目的究竟是什么？去帝国最后的据点冰沁宫殿调查"/> <step id="2"
+		name="间谍专用的乔装" sum="冰之谷——冰系酋长" des="盲目进攻是没有办法问出真相的，问问冰系酋长的意见。"/> <step id="3"
+		name="面不改色的问答" sum="冰沁宫殿——萨伦帝国士兵" des="好不容易欺骗了普通士兵的眼睛，却迎来了阿修队长！能否顺利过关呢？"/>
+		<step id="4" name="怒火中烧的突围" sum="冰沁宫殿——阿修" des="我们的伪装早就被阿修识破了？？突围！冰沁宫殿！">
+		<outcome> <item giveId="1" cnt="500"/> <item giveId="400215" cnt="1"/> </outcome>
+		</step> </steps> <doc><![CDATA[冰沁氏族不会忘记任何一个帮助过本族的人，我决定，冰沁氏族正式和赛尔结盟，共同抵御萨伦帝国！]]></doc>
+		</quest> 下线结束喽 -->
 
     <quest id="21" name="好孩子和坏孩子" type="0" track="1" autoNext="0"
            needAcceptMark="1" relatedMapIds="390, 470, 5107, 5207, 500"
@@ -2165,39 +2038,18 @@
             <![CDATA[为大家的坚定决心所动，沁灵兽在最危难的时刻现身了。但是，冰沁酋长却流露出了卡尼娅没有背叛大家的意思。这究竟是怎么回事儿呢？]]></doc>
     </quest>
 
-    <quest id="53" name="冒险准备" type="0" track="1" autoNext="0" needAcceptMark="1"
-           relatedMapIds="" acceptMapId="" onlineTime="" monLvlUp="16">
-        <prerequisite
-                questId="1" level="1"/>
-        <steps>
-            <step id="1" name="穿好衣服" sum="穿上装备" des="打开背包穿上第一件属于自己的装备吧！"/>
-            <step id="2" name="使用任务面板" sum="前往实验室" des="去#实验室#伊娃博士那里买点生活必需品哦！"/>
-            <step
-                    id="3" name="购买道具" sum="购买胶囊" des="在#实验室#伊娃博士旁边购买一个胶囊！">
-                <dialog npcId="2"
-                        npcName="伊娃" transport="">
-                    <branch id="default">
-                        <node emotion="0"><![CDATA[让冒险之旅变得更为有趣，背包里必须要有充足的道具哦！赶紧打开旁边的<font
-		color='#ffcc00'>胶囊商店</font>购买吧。]]></node>
-                        <reply action="" params="53_2"><![CDATA[嗯，我来试试。]]></reply>
-                    </branch>
-                </dialog>
-                <outcome>
-                    <item giveId="200011" cnt="5"/>
-                </outcome>
-            </step>
-            <step id="4" name="精灵对战" sum="精灵对战"
-                  des="在#实验室#伊娃博士学习对战技巧,这样很快你就成为赛尔明日之星咯！">
-                <outcome>
-                    <item giveId="43" cnt="1" isPet="true"/>
-                </outcome>
-            </step>
-            <step
-                    id="5" name="精灵恢复" sum="精灵恢复"
-                    des="点击精灵快速恢复按钮,在野外寻宝的时候可以快速恢复虚弱精灵勒。"/>
-        </steps>
-        <doc><![CDATA[这里是新手进阶必经之路,稍安勿躁,只需一会你就能学会生存之道！]]></doc>
-    </quest>
+    <!--<quest id="53" name="冒险准备" type="0" track="1" autoNext="0" needAcceptMark="1"
+		relatedMapIds="" acceptMapId="" onlineTime="" monLvlUp="16"> <prerequisite
+		questId="1" level="1"/> <steps> <step id="1" name="穿好衣服" sum="穿上装备" des="打开背包穿上第一件属于自己的装备吧！"/>
+		<step id="2" name="使用任务面板" sum="前往实验室" des="去#实验室#伊娃博士那里买点生活必需品哦！"/> <step
+		id="3" name="购买道具" sum="购买胶囊" des="在#实验室#伊娃博士旁边购买一个胶囊！"> <dialog npcId="2"
+		npcName="伊娃" transport=""> <branch id="default"> <node emotion="0"><![CDATA[让冒险之旅变得更为有趣，背包里必须要有充足的道具哦！赶紧打开旁边的<font
+		color='#ffcc00'>胶囊商店</font>购买吧。]]></node> <reply action="" params="53_2"><![CDATA[嗯，我来试试。]]></reply>
+		</branch> </dialog> <outcome> <item giveId="200011" cnt="5"/> </outcome>
+		</step> <step id="4" name="精灵对战" sum="精灵对战" des="在#实验室#伊娃博士学习对战技巧,这样很快你就成为赛尔明日之星咯！">
+		<outcome> <item giveId="43" cnt="1" isPet="true"/> </outcome> </step> <step
+		id="5" name="精灵恢复" sum="精灵恢复" des="点击精灵快速恢复按钮,在野外寻宝的时候可以快速恢复虚弱精灵勒。"/> </steps>
+		<doc><![CDATA[这里是新手进阶必经之路,稍安勿躁,只需一会你就能学会生存之道！]]></doc> </quest> -->
 
     <quest id="54" name="坚强的真正含义" type="0" track="1" autoNext="0"
            needAcceptMark="1" relatedMapIds="640,641" acceptMapId="640"
@@ -3641,22 +3493,20 @@
                 </dialog>
             </step>
             <step id="3" name="暗影守护者" sum="影子密室" des="去#影子密室#向博士请教。">
-                <dialog npcId="3020" npcName="费雷德" transport="">
-                    <branch npcId="3020" npcName="费雷德" id="default">
-                        <node emotion="0">
-                            <![CDATA[好了~现在我们需要施法召唤暗影守护者！在这期间我需要你们帮我个忙……]]></node>
-                        <reply action="goToBranch" params="branch1"><![CDATA[要我们做什么尽管说吧！？]]></reply>
-                    </branch>
-                    <branch npcId="3020" npcName="费雷德" id="branch1">
-                        <node emotion="0">
-                            <![CDATA[我们会在祭坛中使用法典的力量开始召唤仪式？这强大的法力涌动肯定会引起精灵的躁动甚至惊动萨伦帝国……]]></node>
-                        <reply action="goToBranch" params="branch2"><![CDATA[YE！放心，我会帮你赶跑他们]]></reply>
-                    </branch>
-                    <branch npcId="3020" npcName="费雷德" id="branch2">
-                        <node emotion="0"><![CDATA[你办事~我放心！这事就交给你了可别让他们中断我们的召唤！]]></node>
-                        <reply action="" params="98_3"><![CDATA[当然当然？]]></reply>
-                    </branch>
-                </dialog>
+                <!-- 				<dialog npcId="3020" npcName="费雷德" transport=""> -->
+                <!-- 					<branch npcId="3020" npcName="费雷德" id="default"> -->
+                <!-- 						<node emotion="0"><![CDATA[好了~现在我们需要施法召唤暗影守护者！在这期间我需要你们帮我个忙……]]></node>  -->
+                <!-- 						<reply action="goToBranch" params="branch1"><![CDATA[要我们做什么尽管说吧！？]]></reply> -->
+                <!-- 					</branch> -->
+                <!-- 					<branch npcId="3020" npcName="费雷德" id="branch1"> -->
+                <!-- 						<node emotion="0"><![CDATA[我们会在祭坛中使用法典的力量开始召唤仪式？这强大的法力涌动肯定会引起精灵的躁动甚至惊动萨伦帝国……]]></node> -->
+                <!-- 						<reply action="goToBranch" params="branch2"><![CDATA[YE！放心，我会帮你赶跑他们]]></reply> -->
+                <!-- 					</branch> -->
+                <!-- 					<branch npcId="3020" npcName="费雷德" id="branch2"> -->
+                <!-- 						<node emotion="0"><![CDATA[你办事~我放心！这事就交给你了可别让他们中断我们的召唤！]]></node> -->
+                <!-- 						<reply action="" params="98_3"><![CDATA[当然当然？]]></reply> -->
+                <!-- 					</branch> -->
+                <!-- 				</dialog> -->
             </step>
         </steps>
     </quest>
@@ -5015,19 +4865,10 @@
         <doc><![CDATA[掘土是埃卡维特最大的爱好，强有力的爪子是它最有利的工具。]]></doc>
     </quest>
 
-    <quest id="10040" name="" type="4" track="0" autoNext="0" needAcceptMark="0"
-           relatedMapIds="70, 8021, 8022" acceptMapId="">
-        <prerequisite questId="1"
-                      level="1"/>
-        <steps>
-            <step id="1" name=""/>
-            <step id="2" name="">
-                <outcome>
-                    <item giveId="100210" cnt="1"/>
-                </outcome>
-            </step>
-        </steps>
-    </quest>
+    <!--<quest id="10040" name="" type="4" track="0" autoNext="0" needAcceptMark="0"
+		relatedMapIds="70, 8021, 8022" acceptMapId=""> <prerequisite questId="1"
+		level="1"/> <steps> <step id="1" name=""/> <step id="2" name=""> <outcome>
+		<item giveId="100210" cnt="1"/> </outcome> </step> </steps> </quest> -->
 
     <!-- 功夫派联运的任务 -->
     <quest id="10041" name="" type="4" track="0" autoNext="0"
@@ -5475,116 +5316,44 @@
         </steps>
     </quest>
     <!-- 能量值活动任务 -->
-    <quest id="10059" name="能量值活动任务1-1" type="4" track="0" autoNext="0"
-           needAcceptMark="0" relatedMapIds="" acceptMapId="">
-        <prerequisite questId="1"
-                      level="1"/>
-        <steps>
-            <step id="1" name="">
-                <target type="dailyWild" count="1"
-                        params="141" alert="你找回了{num}根木头, 还剩下{leftNum}根木头！"/>
-                <outcome>
-                    <item giveId="500501"
-                          cnt="1"/>
-                </outcome>
-            </step>
-        </steps>
-    </quest>
-    <quest id="10060" name="能量值活动任务1-2"
-           type="4" track="0" autoNext="0" needAcceptMark="0" relatedMapIds="" acceptMapId="">
-        <prerequisite questId="1" level="1"/>
-        <steps>
-            <step id="1" name="">
-                <target
-                        type="dailyWild" count="1" params="192" alert="你找回了{num}个星光, 还剩下{leftNum}个星光！"/>
-            </step>
-        </steps>
-    </quest>
-    <quest id="10061" name="能量值活动任务1-3" type="4" track="0"
-           autoNext="0" needAcceptMark="0" relatedMapIds="" acceptMapId="">
-        <prerequisite
-                questId="1" level="1"/>
-        <steps>
-            <step id="1" name="">
-                <target type="dailyWild"
-                        count="1" params="291" alert="你找回了{num}块奇石, 还剩下{leftNum}块奇石！"/>
-            </step>
-        </steps>
-    </quest>
-    <quest id="10062" name="能量值活动任务2-1" type="4" track="0" autoNext="0"
-           needAcceptMark="0" relatedMapIds="" acceptMapId="">
-        <prerequisite questId="1"
-                      level="1"/>
-        <steps>
-            <step id="1" name="">
-                <target type="dailyWild" count="1"
-                        params="122" alert="你找回了{num}根干草, 还剩下{leftNum}根干草！"/>
-            </step>
-        </steps>
-    </quest>
-    <quest id="10063" name="能量值活动任务2-2" type="4" track="0" autoNext="0" needAcceptMark="0"
-           relatedMapIds="" acceptMapId="">
-        <prerequisite questId="1" level="1"/>
-        <steps>
-            <step id="1" name="">
-                <target type="dailyWild" count="1" params="151" alert="你找回了{num}束鲜花,
-		还剩下{leftNum}束鲜花！"/>
-            </step>
-        </steps>
-    </quest>
-    <quest id="10064" name="能量值活动任务2-3"
-           type="4" track="0" autoNext="0" needAcceptMark="0" relatedMapIds="" acceptMapId="">
-        <prerequisite questId="1" level="1"/>
-        <steps>
-            <step id="1" name="">
-                <target
-                        type="dailyWild" count="1" params="201" alert="你找回了{num}处珊瑚, 还剩下{leftNum}处珊瑚！"/>
-            </step>
-        </steps>
-    </quest>
-    <quest id="10065" name="能量值活动任务3-1" type="4" track="0"
-           autoNext="0" needAcceptMark="0" relatedMapIds="" acceptMapId="">
-        <prerequisite
-                questId="1" level="1"/>
-        <steps>
-            <step id="1" name="">
-                <target type="dailyWild"
-                        count="1" params="123" alert="你找回了{num}块晶片, 还剩下{leftNum}块晶片！"/>
-            </step>
-        </steps>
-    </quest>
-    <quest id="10066" name="能量值活动任务3-2" type="4" track="0" autoNext="0"
-           needAcceptMark="0" relatedMapIds="" acceptMapId="">
-        <prerequisite questId="1"
-                      level="1"/>
-        <steps>
-            <step id="1" name="">
-                <target type="dailyWild" count="1"
-                        params="204" alert="你找回了{num}个海螺, 还剩下{leftNum}个海螺！"/>
-            </step>
-        </steps>
-    </quest>
-    <quest id="10067" name="能量值活动任务3-3" type="4" track="0" autoNext="0" needAcceptMark="0"
-           relatedMapIds="" acceptMapId="">
-        <prerequisite questId="1" level="1"/>
-        <steps>
-            <step id="1" name="">
-                <target type="dailyWild" count="1" params="261" alert="你找回了{num}块岩石,
-		还剩下{leftNum}块岩石！"/>
-            </step>
-        </steps>
-    </quest>
-    <quest id="10068" name="能量值活动领奖任务"
-           type="4" track="0" autoNext="0" needAcceptMark="0" relatedMapIds="" acceptMapId="">
-        <prerequisite questId="1" level="1"/>
-        <steps>
-            <step id="1" name="">
-                <outcome>
-                    <item giveId="500501" cnt="1"/>
-                </outcome>
-            </step>
-        </steps>
-    </quest>
+    <!--<quest id="10059" name="能量值活动任务1-1" type="4" track="0" autoNext="0"
+		needAcceptMark="0" relatedMapIds="" acceptMapId=""> <prerequisite questId="1"
+		level="1"/> <steps> <step id="1" name=""> <target type="dailyWild" count="1"
+		params="141" alert="你找回了{num}根木头, 还剩下{leftNum}根木头！"/> <outcome> <item giveId="500501"
+		cnt="1"/> </outcome> </step> </steps> </quest> <quest id="10060" name="能量值活动任务1-2"
+		type="4" track="0" autoNext="0" needAcceptMark="0" relatedMapIds="" acceptMapId="">
+		<prerequisite questId="1" level="1"/> <steps> <step id="1" name=""> <target
+		type="dailyWild" count="1" params="192" alert="你找回了{num}个星光, 还剩下{leftNum}个星光！"/>
+		</step> </steps> </quest> <quest id="10061" name="能量值活动任务1-3" type="4" track="0"
+		autoNext="0" needAcceptMark="0" relatedMapIds="" acceptMapId=""> <prerequisite
+		questId="1" level="1"/> <steps> <step id="1" name=""> <target type="dailyWild"
+		count="1" params="291" alert="你找回了{num}块奇石, 还剩下{leftNum}块奇石！"/> </step> </steps>
+		</quest> <quest id="10062" name="能量值活动任务2-1" type="4" track="0" autoNext="0"
+		needAcceptMark="0" relatedMapIds="" acceptMapId=""> <prerequisite questId="1"
+		level="1"/> <steps> <step id="1" name=""> <target type="dailyWild" count="1"
+		params="122" alert="你找回了{num}根干草, 还剩下{leftNum}根干草！"/> </step> </steps> </quest>
+		<quest id="10063" name="能量值活动任务2-2" type="4" track="0" autoNext="0" needAcceptMark="0"
+		relatedMapIds="" acceptMapId=""> <prerequisite questId="1" level="1"/> <steps>
+		<step id="1" name=""> <target type="dailyWild" count="1" params="151" alert="你找回了{num}束鲜花,
+		还剩下{leftNum}束鲜花！"/> </step> </steps> </quest> <quest id="10064" name="能量值活动任务2-3"
+		type="4" track="0" autoNext="0" needAcceptMark="0" relatedMapIds="" acceptMapId="">
+		<prerequisite questId="1" level="1"/> <steps> <step id="1" name=""> <target
+		type="dailyWild" count="1" params="201" alert="你找回了{num}处珊瑚, 还剩下{leftNum}处珊瑚！"/>
+		</step> </steps> </quest> <quest id="10065" name="能量值活动任务3-1" type="4" track="0"
+		autoNext="0" needAcceptMark="0" relatedMapIds="" acceptMapId=""> <prerequisite
+		questId="1" level="1"/> <steps> <step id="1" name=""> <target type="dailyWild"
+		count="1" params="123" alert="你找回了{num}块晶片, 还剩下{leftNum}块晶片！"/> </step> </steps>
+		</quest> <quest id="10066" name="能量值活动任务3-2" type="4" track="0" autoNext="0"
+		needAcceptMark="0" relatedMapIds="" acceptMapId=""> <prerequisite questId="1"
+		level="1"/> <steps> <step id="1" name=""> <target type="dailyWild" count="1"
+		params="204" alert="你找回了{num}个海螺, 还剩下{leftNum}个海螺！"/> </step> </steps> </quest>
+		<quest id="10067" name="能量值活动任务3-3" type="4" track="0" autoNext="0" needAcceptMark="0"
+		relatedMapIds="" acceptMapId=""> <prerequisite questId="1" level="1"/> <steps>
+		<step id="1" name=""> <target type="dailyWild" count="1" params="261" alert="你找回了{num}块岩石,
+		还剩下{leftNum}块岩石！"/> </step> </steps> </quest> <quest id="10068" name="能量值活动领奖任务"
+		type="4" track="0" autoNext="0" needAcceptMark="0" relatedMapIds="" acceptMapId="">
+		<prerequisite questId="1" level="1"/> <steps> <step id="1" name=""> <outcome>
+		<item giveId="500501" cnt="1"/> </outcome> </step> </steps> </quest> -->
 
     <!-- 火幻系列任务 -->
     <quest id="10069" name="无上的王冠" type="4" track="0" autoNext="0"
@@ -5872,100 +5641,40 @@
     <!--脉流守卫战活动 END -->
 
     <!--六一 -->
-    <quest id="10080" name="六一活动1" type="4" track="0" autoNext="0" needAcceptMark="0"
-           relatedMapIds="" acceptMapId="">
-        <prerequisite questId="1" level="1"/>
-        <steps>
-            <step id="1" name="">
-                <target type="dailyWild" count="1" params="141" alert="你找回了{num}根木头,
-		还剩下{leftNum}根木头！"/>
-            </step>
-        </steps>
-    </quest>
-    <quest id="10081" name="六一活动2"
-           type="4" track="0" autoNext="0" needAcceptMark="0" relatedMapIds="" acceptMapId="">
-        <prerequisite questId="1" level="1"/>
-        <steps>
-            <step id="1" name="">
-                <target
-                        type="dailyWild" count="1" params="192" alert="你找回了{num}个星光, 还剩下{leftNum}个星光！"/>
-            </step>
-        </steps>
-    </quest>
-    <quest id="10082" name="六一活动2" type="4" track="0"
-           autoNext="0" needAcceptMark="0" relatedMapIds="" acceptMapId="">
-        <prerequisite
-                questId="1" level="1"/>
-        <steps>
-            <step id="1" name="">
-                <target type="dailyWild"
-                        count="1" params="291" alert="你找回了{num}块奇石, 还剩下{leftNum}块奇石！"/>
-            </step>
-        </steps>
-    </quest>
-    <quest id="10083" name="能量值活动任务2-1" type="4" track="0" autoNext="0"
-           needAcceptMark="0" relatedMapIds="" acceptMapId="">
-        <prerequisite questId="1"
-                      level="1"/>
-        <steps>
-            <step id="1" name="">
-                <target type="dailyWild" count="1"
-                        params="122" alert="你找回了{num}根干草, 还剩下{leftNum}根干草！"/>
-            </step>
-        </steps>
-    </quest>
-    <quest id="10084" name="能量值活动任务2-2" type="4" track="0" autoNext="0" needAcceptMark="0"
-           relatedMapIds="" acceptMapId="">
-        <prerequisite questId="1" level="1"/>
-        <steps>
-            <step id="1" name="">
-                <target type="dailyWild" count="1" params="151" alert="你找回了{num}束鲜花,
-		还剩下{leftNum}束鲜花！"/>
-            </step>
-        </steps>
-    </quest>
-    <quest id="10085" name="能量值活动任务2-3"
-           type="4" track="0" autoNext="0" needAcceptMark="0" relatedMapIds="" acceptMapId="">
-        <prerequisite questId="1" level="1"/>
-        <steps>
-            <step id="1" name="">
-                <target
-                        type="dailyWild" count="1" params="201" alert="你找回了{num}处珊瑚, 还剩下{leftNum}处珊瑚！"/>
-            </step>
-        </steps>
-    </quest>
-    <quest id="10086" name="能量值活动任务3-1" type="4" track="0"
-           autoNext="0" needAcceptMark="0" relatedMapIds="" acceptMapId="">
-        <prerequisite
-                questId="1" level="1"/>
-        <steps>
-            <step id="1" name="">
-                <target type="dailyWild"
-                        count="1" params="123" alert="你找回了{num}块晶片, 还剩下{leftNum}块晶片！"/>
-            </step>
-        </steps>
-    </quest>
-    <quest id="10087" name="能量值活动任务3-2" type="4" track="0" autoNext="0"
-           needAcceptMark="0" relatedMapIds="" acceptMapId="">
-        <prerequisite questId="1"
-                      level="1"/>
-        <steps>
-            <step id="1" name="">
-                <target type="dailyWild" count="1"
-                        params="204" alert="你找回了{num}个海螺, 还剩下{leftNum}个海螺！"/>
-            </step>
-        </steps>
-    </quest>
-    <quest id="10088" name="能量值活动任务3-3" type="4" track="0" autoNext="0" needAcceptMark="0"
-           relatedMapIds="" acceptMapId="">
-        <prerequisite questId="1" level="1"/>
-        <steps>
-            <step id="1" name="">
-                <target type="dailyWild" count="1" params="261" alert="你找回了{num}块岩石,
-		还剩下{leftNum}块岩石！"/>
-            </step>
-        </steps>
-    </quest>
+    <!--<quest id="10080" name="六一活动1" type="4" track="0" autoNext="0" needAcceptMark="0"
+		relatedMapIds="" acceptMapId=""> <prerequisite questId="1" level="1"/> <steps>
+		<step id="1" name=""> <target type="dailyWild" count="1" params="141" alert="你找回了{num}根木头,
+		还剩下{leftNum}根木头！"/> </step> </steps> </quest> <quest id="10081" name="六一活动2"
+		type="4" track="0" autoNext="0" needAcceptMark="0" relatedMapIds="" acceptMapId="">
+		<prerequisite questId="1" level="1"/> <steps> <step id="1" name=""> <target
+		type="dailyWild" count="1" params="192" alert="你找回了{num}个星光, 还剩下{leftNum}个星光！"/>
+		</step> </steps> </quest> <quest id="10082" name="六一活动2" type="4" track="0"
+		autoNext="0" needAcceptMark="0" relatedMapIds="" acceptMapId=""> <prerequisite
+		questId="1" level="1"/> <steps> <step id="1" name=""> <target type="dailyWild"
+		count="1" params="291" alert="你找回了{num}块奇石, 还剩下{leftNum}块奇石！"/> </step> </steps>
+		</quest> <quest id="10083" name="能量值活动任务2-1" type="4" track="0" autoNext="0"
+		needAcceptMark="0" relatedMapIds="" acceptMapId=""> <prerequisite questId="1"
+		level="1"/> <steps> <step id="1" name=""> <target type="dailyWild" count="1"
+		params="122" alert="你找回了{num}根干草, 还剩下{leftNum}根干草！"/> </step> </steps> </quest>
+		<quest id="10084" name="能量值活动任务2-2" type="4" track="0" autoNext="0" needAcceptMark="0"
+		relatedMapIds="" acceptMapId=""> <prerequisite questId="1" level="1"/> <steps>
+		<step id="1" name=""> <target type="dailyWild" count="1" params="151" alert="你找回了{num}束鲜花,
+		还剩下{leftNum}束鲜花！"/> </step> </steps> </quest> <quest id="10085" name="能量值活动任务2-3"
+		type="4" track="0" autoNext="0" needAcceptMark="0" relatedMapIds="" acceptMapId="">
+		<prerequisite questId="1" level="1"/> <steps> <step id="1" name=""> <target
+		type="dailyWild" count="1" params="201" alert="你找回了{num}处珊瑚, 还剩下{leftNum}处珊瑚！"/>
+		</step> </steps> </quest> <quest id="10086" name="能量值活动任务3-1" type="4" track="0"
+		autoNext="0" needAcceptMark="0" relatedMapIds="" acceptMapId=""> <prerequisite
+		questId="1" level="1"/> <steps> <step id="1" name=""> <target type="dailyWild"
+		count="1" params="123" alert="你找回了{num}块晶片, 还剩下{leftNum}块晶片！"/> </step> </steps>
+		</quest> <quest id="10087" name="能量值活动任务3-2" type="4" track="0" autoNext="0"
+		needAcceptMark="0" relatedMapIds="" acceptMapId=""> <prerequisite questId="1"
+		level="1"/> <steps> <step id="1" name=""> <target type="dailyWild" count="1"
+		params="204" alert="你找回了{num}个海螺, 还剩下{leftNum}个海螺！"/> </step> </steps> </quest>
+		<quest id="10088" name="能量值活动任务3-3" type="4" track="0" autoNext="0" needAcceptMark="0"
+		relatedMapIds="" acceptMapId=""> <prerequisite questId="1" level="1"/> <steps>
+		<step id="1" name=""> <target type="dailyWild" count="1" params="261" alert="你找回了{num}块岩石,
+		还剩下{leftNum}块岩石！"/> </step> </steps> </quest> -->
 
     <quest id="10089" name="能量值活动领奖任务" type="4" track="0" autoNext="0"
            needAcceptMark="0" relatedMapIds="" acceptMapId="">
@@ -5999,21 +5708,12 @@
     <!--谁来拯救我的米咔 END -->
 
     <!--打工领“六一套装” -->
-    <quest id="10091" name="打工领六一套装" type="4" track="0" autoNext="0" needAcceptMark="1"
-           relatedMapIds="8011" acceptMapId="8011" isShow="1" isDaily="true">
-        <prerequisite
-                questId="1" level="1"/>
-        <steps>
-            <step id="1" name="做宣传大使" sum="vip乐园" des="在#vip乐园#找希尔顿打工之后可领取六一套装"/>
-            <step id="2" name="做六一大使" sum="vip乐园" des="在#vip乐园#找希尔顿打工之后可领取六一套装"/>
-            <step
-                    id="3" name="做六一大使" sum="vip乐园" des="任务已经完成了，在#vip乐园#找希尔顿领取六一套装吧">
-                <outcome>
-                    <item giveId="1" cnt="100"/>
-                </outcome>
-            </step>
-        </steps>
-    </quest>
+    <!--<quest id="10091" name="打工领六一套装" type="4" track="0" autoNext="0" needAcceptMark="1"
+		relatedMapIds="8011" acceptMapId="8011" isShow="1" isDaily="true"> <prerequisite
+		questId="1" level="1"/> <steps> <step id="1" name="做宣传大使" sum="vip乐园" des="在#vip乐园#找希尔顿打工之后可领取六一套装"/>
+		<step id="2" name="做六一大使" sum="vip乐园" des="在#vip乐园#找希尔顿打工之后可领取六一套装"/> <step
+		id="3" name="做六一大使" sum="vip乐园" des="任务已经完成了，在#vip乐园#找希尔顿领取六一套装吧"> <outcome>
+		<item giveId="1" cnt="100"/> </outcome> </step> </steps> </quest> -->
 
     <!--魔音圆舞曲” -->
     <quest id="10092" name="魔音圆舞曲" type="4" track="0" autoNext="0"
@@ -6131,351 +5831,117 @@
         </steps>
     </quest>
 
-    <quest id="10100" name="在试炼之门中赢得一场胜利" type="4" track="0" autoNext="0"
-           needAcceptMark="0" relatedMapIds="400" acceptMapId="" isDaily="true">
-        <prerequisite
-                questId="1" level="1"/>
-        <steps>
-            <step id="1" name="战胜1次试炼之门 " des="在#要塞B1#挑战一次试炼之门。"/>
-            <step id="2" name="领取奖励 " des="找队长领取奖励">
-                <outcome>
-                    <item giveId="1" cnt="300"/>
-                    <item giveId="200214" cnt="1"/>
-                    <item giveId="400131" cnt="5"/>
-                </outcome>
-            </step>
-        </steps>
-    </quest>
-    <quest id="10101" name="在试炼之门(50V50)中赢得一场胜利" type="4"
-           track="0" autoNext="0" needAcceptMark="0" relatedMapIds="401" acceptMapId=""
-           isDaily="true">
-        <prerequisite questId="1" level="1"/>
-        <steps>
-            <step id="1"
-                  name="战胜1次试炼之门(50V50) " des="在#要塞B1#挑战一次试炼之门(50V50)。"/>
-            <step id="2" name="领取奖励
-		" des="找队长领取奖励">
-                <outcome>
-                    <item giveId="1" cnt="300"/>
-                    <item giveId="200214"
-                          cnt="1"/>
-                    <item giveId="400131" cnt="5"/>
-                </outcome>
-            </step>
-        </steps>
-    </quest>
-    <quest id="10102" name="在勇士之门中赢得一场胜利" type="4" track="0" autoNext="0" needAcceptMark="0"
-           relatedMapIds="404" acceptMapId="" isDaily="true">
-        <prerequisite questId="1"
-                      level="1"/>
-        <steps>
-            <step id="1" name="战胜1次勇士之门 " des="在#要塞B2#挑战一次勇士之门。"/>
-            <step id="2" name="领取奖励 " des="找队长领取奖励">
-                <outcome>
-                    <item giveId="1" cnt="300"/>
-                    <item giveId="200214" cnt="1"/>
-                    <item giveId="400131" cnt="5"/>
-                </outcome>
-            </step>
-        </steps>
-    </quest>
-    <quest id="10103" name="在勇士之门(50V50)中赢得一场胜利" type="4"
-           track="0" autoNext="0" needAcceptMark="0" relatedMapIds="405" acceptMapId=""
-           isDaily="true">
-        <prerequisite questId="1" level="1"/>
-        <steps>
-            <step id="1"
-                  name="战胜1次勇士之门(50V50) " des="在#要塞B2#挑战一次勇士之门(50V50)。"/>
-            <step id="2" name="领取奖励
-		" des="找队长领取奖励">
-                <outcome>
-                    <item giveId="1" cnt="300"/>
-                    <item giveId="200214"
-                          cnt="1"/>
-                    <item giveId="400131" cnt="5"/>
-                </outcome>
-            </step>
-        </steps>
-    </quest>
-    <quest id="10104" name="在竞技之门中赢得一场胜利" type="4" track="0" autoNext="0" needAcceptMark="0"
-           relatedMapIds="408" acceptMapId="" isDaily="true">
-        <prerequisite questId="1"
-                      level="1"/>
-        <steps>
-            <step id="1" name="战胜1次竞技之门 " des="在#要塞B3#挑战一次竞技之门。"/>
-            <step id="2" name="领取奖励 " des="找队长领取奖励">
-                <outcome>
-                    <item giveId="1" cnt="300"/>
-                    <item giveId="200214" cnt="1"/>
-                    <item giveId="400131" cnt="5"/>
-                </outcome>
-            </step>
-        </steps>
-    </quest>
-    <quest id="10105" name="在竞技之门(50V50)中赢得一场胜利" type="4"
-           track="0" autoNext="0" needAcceptMark="0" relatedMapIds="409" acceptMapId=""
-           isDaily="true">
-        <prerequisite questId="1" level="1"/>
-        <steps>
-            <step id="1"
-                  name="战胜1次竞技之门(50V50) " des="在#要塞B3#挑战一次竞技之门(50V50)。"/>
-            <step id="2" name="领取奖励
-		" des="找队长领取奖励">
-                <outcome>
-                    <item giveId="1" cnt="300"/>
-                    <item giveId="200214"
-                          cnt="1"/>
-                    <item giveId="400131" cnt="5"/>
-                </outcome>
-            </step>
-        </steps>
-    </quest>
-    <quest id="10106" name="在英雄之门中赢得一场胜利" type="4" track="0" autoNext="0" needAcceptMark="0"
-           relatedMapIds="416" acceptMapId="" isDaily="true">
-        <prerequisite questId="1"
-                      level="1"/>
-        <steps>
-            <step id="1" name="战胜1次英雄之门 " des="在#要塞B4#挑战一次英雄之门。"/>
-            <step id="2" name="领取奖励 " des="找队长领取奖励">
-                <outcome>
-                    <item giveId="1" cnt="300"/>
-                    <item giveId="200214" cnt="1"/>
-                    <item giveId="400131" cnt="5"/>
-                </outcome>
-            </step>
-        </steps>
-    </quest>
-    <quest id="10107" name="在英雄之门(50V50)中赢得一场胜利" type="4"
-           track="0" autoNext="0" needAcceptMark="0" relatedMapIds="417" acceptMapId=""
-           isDaily="true">
-        <prerequisite questId="1" level="1"/>
-        <steps>
-            <step id="1"
-                  name="战胜1次英雄之门(50V50) " des="在#要塞B4#挑战一次英雄之门(50V50)。"/>
-            <step id="2" name="领取奖励
-		" des="找队长领取奖励">
-                <outcome>
-                    <item giveId="1" cnt="300"/>
-                    <item giveId="200214"
-                          cnt="1"/>
-                    <item giveId="400131" cnt="5"/>
-                </outcome>
-            </step>
-        </steps>
-    </quest>
-    <quest id="10108" name="战胜一次布鲁托" type="4" track="0" autoNext="0" needAcceptMark="0"
-           relatedMapIds="142" acceptMapId="" isDaily="true">
-        <prerequisite questId="1"
-                      level="1"/>
-        <steps>
-            <step id="1" name="战胜1次布鲁托 " des="战胜一次布鲁托"/>
-            <step id="2"
-                  name="领取奖励 " des="找队长领取奖励">
-                <outcome>
-                    <item giveId="1" cnt="300"/>
-                    <item
-                            giveId="200214" cnt="1"/>
-                    <item giveId="400131" cnt="5"/>
-                </outcome>
-            </step>
-        </steps>
-    </quest>
-    <quest id="10109" name="战胜一次阿卡纳斯" type="4" track="0" autoNext="0"
-           needAcceptMark="0" relatedMapIds="193" acceptMapId="" isDaily="true">
-        <prerequisite
-                questId="1" level="1"/>
-        <steps>
-            <step id="1" name="战胜1次阿卡纳斯 " des="战胜一次阿卡纳斯"/>
-            <step id="2" name="领取奖励 " des="找队长领取奖励">
-                <outcome>
-                    <item giveId="1" cnt="300"/>
-                    <item giveId="200214" cnt="1"/>
-                    <item giveId="400131" cnt="5"/>
-                </outcome>
-            </step>
-        </steps>
-    </quest>
-    <quest id="10110" name="战胜一次霍克努尔" type="4" track="0"
-           autoNext="0" needAcceptMark="0" relatedMapIds="270" acceptMapId="" isDaily="true">
-        <prerequisite questId="1" level="1"/>
-        <steps>
-            <step id="1" name="战胜1次霍克努尔
-		" des="战胜一次霍克努尔"/>
-            <step id="2" name="领取奖励 " des="找队长领取奖励">
-                <outcome>
-                    <item
-                            giveId="1" cnt="300"/>
-                    <item giveId="200214" cnt="1"/>
-                    <item giveId="400131"
-                          cnt="5"/>
-                </outcome>
-            </step>
-        </steps>
-    </quest>
-    <quest id="10111" name="战胜一次麦麦迪"
-           type="4" track="0" autoNext="0" needAcceptMark="0" relatedMapIds="152" acceptMapId=""
-           isDaily="true">
-        <prerequisite questId="1" level="1"/>
-        <steps>
-            <step id="1"
-                  name="战胜1次麦麦迪 " des="战胜一次麦麦迪"/>
-            <step id="2" name="领取奖励 " des="找队长领取奖励">
-                <outcome>
-                    <item giveId="1" cnt="300"/>
-                    <item giveId="200214" cnt="1"/>
-                    <item
-                            giveId="400131" cnt="5"/>
-                </outcome>
-            </step>
-        </steps>
-    </quest>
-    <quest id="10112"
-           name="战胜一次巨锤莫古" type="4" track="0" autoNext="0" needAcceptMark="0" relatedMapIds="530"
-           acceptMapId="" isDaily="true">
-        <prerequisite questId="1" level="1"/>
-        <steps>
-            <step id="1" name="战胜1次巨锤莫古 " des="战胜一次巨锤莫古"/>
-            <step id="2" name="领取奖励 "
-                  des="找队长领取奖励">
-                <outcome>
-                    <item giveId="1" cnt="300"/>
-                    <item giveId="200214"
-                          cnt="1"/>
-                    <item giveId="400131" cnt="5"/>
-                </outcome>
-            </step>
-        </steps>
-    </quest>
-    <quest id="10113" name="战胜一次沙皇鸟" type="4" track="0" autoNext="0" needAcceptMark="0"
-           relatedMapIds="370" acceptMapId="" isDaily="true">
-        <prerequisite questId="1"
-                      level="1"/>
-        <steps>
-            <step id="1" name="战胜1次沙皇鸟 " des="战胜一次沙皇鸟"/>
-            <step id="2"
-                  name="领取奖励 " des="找队长领取奖励">
-                <outcome>
-                    <item giveId="1" cnt="300"/>
-                    <item
-                            giveId="200214" cnt="1"/>
-                    <item giveId="400131" cnt="5"/>
-                </outcome>
-            </step>
-        </steps>
-    </quest>
-    <quest id="10114" name="凯撒加入争霸赛" type="4" track="0" autoNext="0"
-           needAcceptMark="0" relatedMapIds="230" acceptMapId="230" isDaily="true">
-        <prerequisite questId="1" level="1"/>
-        <steps>
-            <step id="1" name="凯撒加入争霸赛">
-            </step>
-        </steps>
-        <doc><![CDATA[凯撒加入争霸赛]]></doc>
-    </quest>
-    <quest id="10115" name="梦境S的分身" type="4" track="0" autoNext="0"
-           needAcceptMark="0" relatedMapIds="50000,126" acceptMapId="50000">
-        <prerequisite
-                questId="1" level="1"/>
-        <steps>
-            <step id="1" name="梦境S的现身"/>
-            <step id="2"
-                  name="灵元石板出现">
-                <outcome>
-                    <item giveId="1" cnt="500"/>
-                    <item giveId="200214"
-                          cnt="1"/>
-                </outcome>
-            </step>
-        </steps>
-    </quest>
-    <quest id="10116" name="被遗落的绯炎"
-           type="4" track="0" autoNext="0" needAcceptMark="0" relatedMapIds="50000,10000"
-           acceptMapId="50000">
-        <prerequisite questId="10115" level="1"/>
-        <steps>
-            <step
-                    id="1" name="一入梦境"/>
-            <step id="2" name="二入梦境"/>
-            <step id="3" name="三入梦境">
-                <outcome>
-                    <item giveId="1" cnt="500"/>
-                    <item giveId="200214" cnt="1"/>
-                </outcome>
-            </step>
-        </steps>
-    </quest>
-    <quest id="10117" name="勇敢者的白日梦" type="4" track="0"
-           autoNext="0" needAcceptMark="0" relatedMapIds="50000,1331" acceptMapId="50000">
-        <prerequisite questId="10116" level="1"/>
-        <steps>
-            <step id="1" name="抢救法拉"/>
-            <step id="2" name="雷伊找茬">
-                <outcome>
-                    <item giveId="1" cnt="500"/>
-                    <item giveId="200214"
-                          cnt="1"/>
-                </outcome>
-            </step>
-        </steps>
-    </quest>
-    <quest id="10118" name="唾弃光明的噩梦"
-           type="4" track="0" autoNext="0" needAcceptMark="0" relatedMapIds="50000,1012"
-           acceptMapId="50000">
-        <prerequisite questId="10117" level="1"/>
-        <steps>
-            <step
-                    id="1" name="战胜萨伦士兵 " des="战胜萨伦士兵">
-                <outcome>
-                    <item giveId="1" cnt="500"/>
-                    <item giveId="200214" cnt="1"/>
-                </outcome>
-            </step>
-        </steps>
-    </quest>
-    <quest
-            id="10119" name="目灵兽重生" type="4" track="0" autoNext="0" needAcceptMark="0"
-            relatedMapIds="50000,1013" acceptMapId="50000">
-        <prerequisite questId="10118"
-                      level="1"/>
-        <steps>
-            <step id="1" name="目灵兽重生 " des="目灵兽重生">
-                <outcome>
-                    <item
-                            giveId="1" cnt="500"/>
-                    <item giveId="200214" cnt="1"/>
-                </outcome>
-            </step>
-        </steps>
-    </quest>
-    <quest id="10120" name="战胜自己的恐惧" type="4" track="0" autoNext="0"
-           needAcceptMark="0" relatedMapIds="50000,1332" acceptMapId="50000">
-        <prerequisite
-                questId="10119" level="1"/>
-        <steps>
-            <step id="1" name="和船长对话 " des="和船长对话
-		"/>
-            <step id="2" name="第一次战斗 " des="第一次战斗"/>
-            <step id="3" name="第二次战斗" des="第二次战斗">
-                <outcome>
-                    <item giveId="1" cnt="500"/>
-                    <item giveId="200214" cnt="1"/>
-                </outcome>
-            </step>
-        </steps>
-    </quest>
-    <quest id="10121" name="火炬传递手米咔" type="4" track="0"
-           autoNext="0" needAcceptMark="0" relatedMapIds="133,100,122,124,203,2030,201,191,220,302,230,261,980"
-           acceptMapId="">
-        <prerequisite questId="1" level="1"/>
-        <steps>
-            <step id="1"
-                  name="深幽沼泽 " des="#深幽沼泽# ">
-                <outcome>
-                    <item giveId="1" cnt="200"/>
-                </outcome>
-            </step>
-        </steps>
-    </quest>
+    <!-- 任务下线开始 <quest id="10100" name="在试炼之门中赢得一场胜利" type="4" track="0" autoNext="0"
+		needAcceptMark="0" relatedMapIds="400" acceptMapId="" isDaily="true"> <prerequisite
+		questId="1" level="1"/> <steps> <step id="1" name="战胜1次试炼之门 " des="在#要塞B1#挑战一次试炼之门。"/>
+		<step id="2" name="领取奖励 " des="找队长领取奖励"> <outcome> <item giveId="1" cnt="300"/>
+		<item giveId="200214" cnt="1"/> <item giveId="400131" cnt="5"/> </outcome>
+		</step> </steps> </quest> <quest id="10101" name="在试炼之门(50V50)中赢得一场胜利" type="4"
+		track="0" autoNext="0" needAcceptMark="0" relatedMapIds="401" acceptMapId=""
+		isDaily="true"> <prerequisite questId="1" level="1"/> <steps> <step id="1"
+		name="战胜1次试炼之门(50V50) " des="在#要塞B1#挑战一次试炼之门(50V50)。"/> <step id="2" name="领取奖励
+		" des="找队长领取奖励"> <outcome> <item giveId="1" cnt="300"/> <item giveId="200214"
+		cnt="1"/> <item giveId="400131" cnt="5"/> </outcome> </step> </steps> </quest>
+		<quest id="10102" name="在勇士之门中赢得一场胜利" type="4" track="0" autoNext="0" needAcceptMark="0"
+		relatedMapIds="404" acceptMapId="" isDaily="true"> <prerequisite questId="1"
+		level="1"/> <steps> <step id="1" name="战胜1次勇士之门 " des="在#要塞B2#挑战一次勇士之门。"/>
+		<step id="2" name="领取奖励 " des="找队长领取奖励"> <outcome> <item giveId="1" cnt="300"/>
+		<item giveId="200214" cnt="1"/> <item giveId="400131" cnt="5"/> </outcome>
+		</step> </steps> </quest> <quest id="10103" name="在勇士之门(50V50)中赢得一场胜利" type="4"
+		track="0" autoNext="0" needAcceptMark="0" relatedMapIds="405" acceptMapId=""
+		isDaily="true"> <prerequisite questId="1" level="1"/> <steps> <step id="1"
+		name="战胜1次勇士之门(50V50) " des="在#要塞B2#挑战一次勇士之门(50V50)。"/> <step id="2" name="领取奖励
+		" des="找队长领取奖励"> <outcome> <item giveId="1" cnt="300"/> <item giveId="200214"
+		cnt="1"/> <item giveId="400131" cnt="5"/> </outcome> </step> </steps> </quest>
+		<quest id="10104" name="在竞技之门中赢得一场胜利" type="4" track="0" autoNext="0" needAcceptMark="0"
+		relatedMapIds="408" acceptMapId="" isDaily="true"> <prerequisite questId="1"
+		level="1"/> <steps> <step id="1" name="战胜1次竞技之门 " des="在#要塞B3#挑战一次竞技之门。"/>
+		<step id="2" name="领取奖励 " des="找队长领取奖励"> <outcome> <item giveId="1" cnt="300"/>
+		<item giveId="200214" cnt="1"/> <item giveId="400131" cnt="5"/> </outcome>
+		</step> </steps> </quest> <quest id="10105" name="在竞技之门(50V50)中赢得一场胜利" type="4"
+		track="0" autoNext="0" needAcceptMark="0" relatedMapIds="409" acceptMapId=""
+		isDaily="true"> <prerequisite questId="1" level="1"/> <steps> <step id="1"
+		name="战胜1次竞技之门(50V50) " des="在#要塞B3#挑战一次竞技之门(50V50)。"/> <step id="2" name="领取奖励
+		" des="找队长领取奖励"> <outcome> <item giveId="1" cnt="300"/> <item giveId="200214"
+		cnt="1"/> <item giveId="400131" cnt="5"/> </outcome> </step> </steps> </quest>
+		<quest id="10106" name="在英雄之门中赢得一场胜利" type="4" track="0" autoNext="0" needAcceptMark="0"
+		relatedMapIds="416" acceptMapId="" isDaily="true"> <prerequisite questId="1"
+		level="1"/> <steps> <step id="1" name="战胜1次英雄之门 " des="在#要塞B4#挑战一次英雄之门。"/>
+		<step id="2" name="领取奖励 " des="找队长领取奖励"> <outcome> <item giveId="1" cnt="300"/>
+		<item giveId="200214" cnt="1"/> <item giveId="400131" cnt="5"/> </outcome>
+		</step> </steps> </quest> <quest id="10107" name="在英雄之门(50V50)中赢得一场胜利" type="4"
+		track="0" autoNext="0" needAcceptMark="0" relatedMapIds="417" acceptMapId=""
+		isDaily="true"> <prerequisite questId="1" level="1"/> <steps> <step id="1"
+		name="战胜1次英雄之门(50V50) " des="在#要塞B4#挑战一次英雄之门(50V50)。"/> <step id="2" name="领取奖励
+		" des="找队长领取奖励"> <outcome> <item giveId="1" cnt="300"/> <item giveId="200214"
+		cnt="1"/> <item giveId="400131" cnt="5"/> </outcome> </step> </steps> </quest>
+		<quest id="10108" name="战胜一次布鲁托" type="4" track="0" autoNext="0" needAcceptMark="0"
+		relatedMapIds="142" acceptMapId="" isDaily="true"> <prerequisite questId="1"
+		level="1"/> <steps> <step id="1" name="战胜1次布鲁托 " des="战胜一次布鲁托"/> <step id="2"
+		name="领取奖励 " des="找队长领取奖励"> <outcome> <item giveId="1" cnt="300"/> <item
+		giveId="200214" cnt="1"/> <item giveId="400131" cnt="5"/> </outcome> </step>
+		</steps> </quest> <quest id="10109" name="战胜一次阿卡纳斯" type="4" track="0" autoNext="0"
+		needAcceptMark="0" relatedMapIds="193" acceptMapId="" isDaily="true"> <prerequisite
+		questId="1" level="1"/> <steps> <step id="1" name="战胜1次阿卡纳斯 " des="战胜一次阿卡纳斯"/>
+		<step id="2" name="领取奖励 " des="找队长领取奖励"> <outcome> <item giveId="1" cnt="300"/>
+		<item giveId="200214" cnt="1"/> <item giveId="400131" cnt="5"/> </outcome>
+		</step> </steps> </quest> <quest id="10110" name="战胜一次霍克努尔" type="4" track="0"
+		autoNext="0" needAcceptMark="0" relatedMapIds="270" acceptMapId="" isDaily="true">
+		<prerequisite questId="1" level="1"/> <steps> <step id="1" name="战胜1次霍克努尔
+		" des="战胜一次霍克努尔"/> <step id="2" name="领取奖励 " des="找队长领取奖励"> <outcome> <item
+		giveId="1" cnt="300"/> <item giveId="200214" cnt="1"/> <item giveId="400131"
+		cnt="5"/> </outcome> </step> </steps> </quest> <quest id="10111" name="战胜一次麦麦迪"
+		type="4" track="0" autoNext="0" needAcceptMark="0" relatedMapIds="152" acceptMapId=""
+		isDaily="true"> <prerequisite questId="1" level="1"/> <steps> <step id="1"
+		name="战胜1次麦麦迪 " des="战胜一次麦麦迪"/> <step id="2" name="领取奖励 " des="找队长领取奖励">
+		<outcome> <item giveId="1" cnt="300"/> <item giveId="200214" cnt="1"/> <item
+		giveId="400131" cnt="5"/> </outcome> </step> </steps> </quest> <quest id="10112"
+		name="战胜一次巨锤莫古" type="4" track="0" autoNext="0" needAcceptMark="0" relatedMapIds="530"
+		acceptMapId="" isDaily="true"> <prerequisite questId="1" level="1"/> <steps>
+		<step id="1" name="战胜1次巨锤莫古 " des="战胜一次巨锤莫古"/> <step id="2" name="领取奖励 "
+		des="找队长领取奖励"> <outcome> <item giveId="1" cnt="300"/> <item giveId="200214"
+		cnt="1"/> <item giveId="400131" cnt="5"/> </outcome> </step> </steps> </quest>
+		<quest id="10113" name="战胜一次沙皇鸟" type="4" track="0" autoNext="0" needAcceptMark="0"
+		relatedMapIds="370" acceptMapId="" isDaily="true"> <prerequisite questId="1"
+		level="1"/> <steps> <step id="1" name="战胜1次沙皇鸟 " des="战胜一次沙皇鸟"/> <step id="2"
+		name="领取奖励 " des="找队长领取奖励"> <outcome> <item giveId="1" cnt="300"/> <item
+		giveId="200214" cnt="1"/> <item giveId="400131" cnt="5"/> </outcome> </step>
+		</steps> </quest> <quest id="10114" name="凯撒加入争霸赛" type="4" track="0" autoNext="0"
+		needAcceptMark="0" relatedMapIds="230" acceptMapId="230" isDaily="true">
+		<prerequisite questId="1" level="1"/> <steps> <step id="1" name="凯撒加入争霸赛">
+		</step> </steps> <doc><![CDATA[凯撒加入争霸赛]]></doc> </quest> 任务下线结束 -->
+    <!-- 梦境六连发任务下线开始 <quest id="10115" name="梦境S的分身" type="4" track="0" autoNext="0"
+		needAcceptMark="0" relatedMapIds="50000,126" acceptMapId="50000"> <prerequisite
+		questId="1" level="1"/> <steps> <step id="1" name="梦境S的现身"/> <step id="2"
+		name="灵元石板出现"> <outcome> <item giveId="1" cnt="500"/> <item giveId="200214"
+		cnt="1"/> </outcome> </step> </steps> </quest> <quest id="10116" name="被遗落的绯炎"
+		type="4" track="0" autoNext="0" needAcceptMark="0" relatedMapIds="50000,10000"
+		acceptMapId="50000"> <prerequisite questId="10115" level="1"/> <steps> <step
+		id="1" name="一入梦境"/> <step id="2" name="二入梦境"/> <step id="3" name="三入梦境">
+		<outcome> <item giveId="1" cnt="500"/> <item giveId="200214" cnt="1"/> </outcome>
+		</step> </steps> </quest> <quest id="10117" name="勇敢者的白日梦" type="4" track="0"
+		autoNext="0" needAcceptMark="0" relatedMapIds="50000,1331" acceptMapId="50000">
+		<prerequisite questId="10116" level="1"/> <steps> <step id="1" name="抢救法拉"/>
+		<step id="2" name="雷伊找茬"> <outcome> <item giveId="1" cnt="500"/> <item giveId="200214"
+		cnt="1"/> </outcome> </step> </steps> </quest> <quest id="10118" name="唾弃光明的噩梦"
+		type="4" track="0" autoNext="0" needAcceptMark="0" relatedMapIds="50000,1012"
+		acceptMapId="50000"> <prerequisite questId="10117" level="1"/> <steps> <step
+		id="1" name="战胜萨伦士兵 " des="战胜萨伦士兵"> <outcome> <item giveId="1" cnt="500"/>
+		<item giveId="200214" cnt="1"/> </outcome> </step> </steps> </quest> <quest
+		id="10119" name="目灵兽重生" type="4" track="0" autoNext="0" needAcceptMark="0"
+		relatedMapIds="50000,1013" acceptMapId="50000"> <prerequisite questId="10118"
+		level="1"/> <steps> <step id="1" name="目灵兽重生 " des="目灵兽重生"> <outcome> <item
+		giveId="1" cnt="500"/> <item giveId="200214" cnt="1"/> </outcome> </step>
+		</steps> </quest> <quest id="10120" name="战胜自己的恐惧" type="4" track="0" autoNext="0"
+		needAcceptMark="0" relatedMapIds="50000,1332" acceptMapId="50000"> <prerequisite
+		questId="10119" level="1"/> <steps> <step id="1" name="和船长对话 " des="和船长对话
+		"/> <step id="2" name="第一次战斗 " des="第一次战斗"/> <step id="3" name="第二次战斗" des="第二次战斗">
+		<outcome> <item giveId="1" cnt="500"/> <item giveId="200214" cnt="1"/> </outcome>
+		</step> </steps> </quest> <quest id="10121" name="火炬传递手米咔" type="4" track="0"
+		autoNext="0" needAcceptMark="0" relatedMapIds="133,100,122,124,203,2030,201,191,220,302,230,261,980"
+		acceptMapId=""> <prerequisite questId="1" level="1"/> <steps> <step id="1"
+		name="深幽沼泽 " des="#深幽沼泽# "> <outcome> <item giveId="1" cnt="200"/> </outcome>
+		</step> </steps> </quest> 梦境六连发任务下线结束 -->
 
     <quest id="10124" name="海小葵的喷嚏" type="4" track="0" autoNext="0"
            needAcceptMark="0" relatedMapIds="920" acceptMapId="920">
@@ -6484,29 +5950,30 @@
             <step id="1" name="对战海葵 " des="#流离街# ">
                 <outcome>
                     <item giveId="253" cnt="10" isPet="true"/>
+                    o
                 </outcome>
             </step>
         </steps>
     </quest>
 
-    <quest id="10125" name="阿宝的旅行计划" type="4" track="0" autoNext="0" needAcceptMark="0"
-           relatedMapIds="220,201,204,192,180,1800,160,191,213" acceptMapId="220">
-        <prerequisite questId="1" level="1"/>
-        <steps>
-            <step id="1" name="挑战哈瑞 " des="寻找设计图"/>
-            <step id="2" name="提交设计图 " des="提交设计图"/>
-            <step id="3" name="采集矿石 " des="采集矿石"/>
-            <step id="4" name="提交矿石 " des="提交矿石"/>
-            <step id="5" name="制作挂件 " des="制作挂件"/>
-            <step id="6" name="推销产品 " des="推销产品">
-                <outcome>
-                    <item giveId="200205" cnt="1"/>
-                    <item giveId="200014" cnt="3"/>
-                    <item giveId="200221" cnt="1"/>
-                </outcome>
-            </step>
-        </steps>
-    </quest>
+    <!-- <quest id="10125" name="阿宝的旅行计划" type="4" track="0" autoNext="0" needAcceptMark="0"
+		relatedMapIds="220,201,204,192,180,1800,160,191,213" acceptMapId="220"> -->
+    <!-- <prerequisite questId="1" level="1"/> -->
+    <!-- <steps> -->
+    <!-- <step id="1" name="挑战哈瑞 " des="寻找设计图"/> -->
+    <!-- <step id="2" name="提交设计图 " des="提交设计图"/> -->
+    <!-- <step id="3" name="采集矿石 " des="采集矿石"/> -->
+    <!-- <step id="4" name="提交矿石 " des="提交矿石"/> -->
+    <!-- <step id="5" name="制作挂件 " des="制作挂件"/> -->
+    <!-- <step id="6" name="推销产品 " des="推销产品"> -->
+    <!-- <outcome> -->
+    <!-- <item giveId="200205" cnt="1" /> -->
+    <!-- <item giveId="200014" cnt="3" /> -->
+    <!-- <item giveId="200221" cnt="1" /> -->
+    <!-- </outcome> -->
+    <!-- </step> -->
+    <!-- </steps> -->
+    <!-- </quest> -->
 
     <quest id="10126" name="阿宝的减肥计划" type="4" track="0" autoNext="0"
            needAcceptMark="0" relatedMapIds="220,50000" acceptMapId="">
@@ -6539,158 +6006,60 @@
             </step>
         </steps>
     </quest>
-    <quest id="10127" name="阿宝星球寻宝记" type="4" track="0" autoNext="0"
-           needAcceptMark="1" relatedMapIds="110,151" acceptMapId="110">
-        <prerequisite
-                questId="0" level="1"/>
-        <acceptDialog npcId="16" npcName="神目酋长" transport="">
-            <branch id="default">
-                <node emotion="0">
-                    <![CDATA[咳咳——今天什么日子？为什么好多小赛尔都来找我啊？你能告诉我发生什么事情了吗？]]></node>
-                <reply action="" params="10127_0"><![CDATA[是这样的。酋长，阿宝它——]]></reply>
-            </branch>
-        </acceptDialog>
-        <steps>
-            <step id="1" name="">
-                <dialog npcId="19" npcName="维拉"
-                        transport="">
-                    <branch id="default" npcId="19" npcName="维拉">
-                        <node emotion="0">
-                            <![CDATA[最近新研制了一种药酒，如果再来1个蘑菇就好了！对！这酒还可以送给酋长，听说他腿病又犯了。]]></node>
-                        <reply action="" params="10127_1"><![CDATA[我有蘑菇哦！给你！]]></reply>
-                        <reply action=""><![CDATA[（去幻影崖采蘑菇）]]></reply>
-                    </branch>
-                </dialog>
-            </step>
-            <step id="2" name="">
-                <dialog npcId="16" npcName="神目酋长"
-                        transport="">
-                    <branch id="default" npcId="16" npcName="神目酋长">
-                        <node emotion="0"><![CDATA[哦，酒带来了吗？
-		喝完酒我就准备和你出发了，咳咳 !!]]></node>
-                        <reply action="goToBranch" params="next1"><![CDATA[酋长给您！维拉新研制的蘑蘑壮骨酒！]]></reply>
-                    </branch>
-                    <branch id="next1" npcId="16" npcName="神目酋长">
-                        <node emotion="0">
-                            <![CDATA[（此处略去酋长喝酒的各种赞美和回忆往事….）啧啧——不错不错，维拉的手艺从来没叫我失望。我这老腿舒坦多了。小赛尔！走走走！去给阿宝送行去。]]></node>
-                        <reply action="" params="10127_2"><![CDATA[太好了，酋长您一定要记得去哦！]]></reply>
-                    </branch>
-                </dialog>
-            </step>
-        </steps>
-    </quest>
-    <quest id="10128" name="阿宝星球寻宝记" type="4"
-           track="0" autoNext="0" needAcceptMark="1" relatedMapIds="160,213" acceptMapId="160">
-        <prerequisite questId="0" level="1"/>
-        <acceptDialog npcId="23" npcName="神谕祭司"
-                      transport="">
-            <branch id="default">
-                <node emotion="0"><![CDATA[秋天的海底好安静，有一种纯净的力量在这海浪的呼吸声里，你，听见了吗？]]></node>
-                <reply action="" params="10128_0"><![CDATA[是这样的。阿宝它——]]></reply>
-            </branch>
-        </acceptDialog>
-        <steps>
-            <step id="1" name="">
-                <dialog npcId="27" npcName="占卜婆婆"
-                        transport="">
-                    <branch id="default" npcId="27" npcName="占卜婆婆">
-                        <node emotion="0"><![CDATA[谁啊？这么好的天气来打搅我这个老太婆休息。]]></node>
-                        <reply action="goToBranch" params="next1">
-                            <![CDATA[婆婆婆婆，有一件咒语的事情想请你帮帮忙哪]]></reply>
-                    </branch>
-                    <branch id="next1" npcId="27" npcName="占卜婆婆">
-                        <node emotion="0"><![CDATA[哦?
-		我昨天就占卜到你今天会来找我的，你会问我要一句咒语，不过婆婆饿的时候可什么都想不出（想念我的偶像美食神猪了又）……]]></node>
-                        <reply
-                                action="" params="10128_1"><![CDATA[那我为做一碗浓汤吧！]]></reply>
-                    </branch>
-                </dialog>
-            </step>
-            <step id="2" name="">
-                <dialog npcId="23" npcName="神谕祭司" transport="">
-                    <branch id="default" npcId="23" npcName="神谕祭司">
-                        <node emotion="0"><![CDATA[小赛尔，你这么快就回来了？婆婆那边有我要的咒语吗？]]></node>
-                        <reply action="goToBranch" params="next1">
-                            <![CDATA[“西拉金拉泰拉哈皮拉薇拉吉”，就是它，什么意思啊？]]></reply>
-                    </branch>
-                    <branch id="next1" npcId="23" npcName="神谕祭司">
-                        <node emotion="0">
-                            <![CDATA[西拉金拉泰拉哈皮拉薇拉吉——秋天收获纯真和希望。婆婆的这个咒语极好的。]]></node>
-                        <reply action="" params="10128_2"><![CDATA[太好了，祭司姐姐您一定要记得去哦！]]></reply>
-                    </branch>
-                </dialog>
-            </step>
-        </steps>
-    </quest>
-    <quest id="10129" name="阿宝星球寻宝记" type="4"
-           track="0" autoNext="0" needAcceptMark="1" relatedMapIds="192" acceptMapId="192">
-        <prerequisite questId="0" level="1"/>
-        <acceptDialog npcId="31" npcName="巴尔卡"
-                      transport="">
-            <branch id="default">
-                <node emotion="0"><![CDATA[为什么我又开始悲伤了，这该死的秋天，总让我回忆起那些不愉快的事情。]]></node>
-                <reply action="" params="10129_0"><![CDATA[巴尔卡，对不起打断一下，阿宝它——]]></reply>
-            </branch>
-        </acceptDialog>
-        <steps>
-            <step id="1" name=""/>
-        </steps>
-    </quest>
-    <quest id="10130"
-           name="我乃神笔马良" type="4" track="0" autoNext="0" needAcceptMark="1"
-           relatedMapIds="142,141,302,301,230,340"
-           acceptMapId="">
-        <prerequisite questId="0" level="1"/>
-        <steps>
-            <step id="1"
-                  name="巨石洞穴发现字条：乃" sum="巨石洞穴" des="在#巨石洞穴#找到字条乃"/>
-            <step id="2" name="幻影崖发现字条：笔"
-                  sum="幻影崖" des="在#幻影崖#找到字条笔"/>
-            <step id="3" name="灰烬岔口发现：良" sum="灰烬岔口" des="在#灰烬岔口#找到字条良"/>
-            <step id="4" name="灰烬之地发现：神" sum="灰烬之地" des="在#灰烬之地#找到字条神"/>
-            <step id="5"
-                  name="火幻氏族主城：马" sum="火幻氏族" des="在#火幻氏族#找到字条马"/>
-            <step id="6" name="娜钱莱宫殿：我"
-                  sum="娜钱莱宫殿" des="在#娜钱莱宫殿#找到字条我"/>
-            <step id="7" name="拼字交互" sum="娜钱莱宫殿" des="在#娜钱莱宫殿#完成拼字"/>
-            <step id="8" name="画奖励" sum="娜钱莱宫殿" des="在#娜钱莱宫殿#完成画奖励">
-                <outcome>
-                    <item
-                            giveId="400006" cnt="10"/>
-                </outcome>
-            </step>
-            <step id="9" name="点亮赛尔豆" sum="娜钱莱宫殿"
-                  des="在#娜钱莱宫殿#完成点亮赛尔豆">
-                <outcome>
-                    <item giveId="1" cnt="2000"/>
-                </outcome>
-            </step>
-            <step id="10" name="成长果实涂色" sum="娜钱莱宫殿" des="在#娜钱莱宫殿#完成成长果实涂色">
-                <outcome>
-                    <item giveId="200214" cnt="1"/>
-                </outcome>
-            </step>
-        </steps>
-    </quest>
-    <quest
-            id="10131" name="笔笔" type="4" track="0" autoNext="0" needAcceptMark="1" relatedMapIds="891"
-            acceptMapId="891">
-        <prerequisite questId="0" level="1"/>
-        <steps>
-            <step id="1"
-                  name="橡橡的行动" sum="巨石洞穴" des="在#巨石洞穴#找到字条乃"/>
-            <step id="2" name="S出现啦" sum="幻影崖"
-                  des="在#幻影崖#找到字条笔"/>
-            <step id="3" name="萨伦士兵的阴谋" sum="灰烬岔口" des="在#灰烬岔口#找到字条良"/>
-            <step id="4" name="笔笔闯祸啦" sum="灰烬之地" des="在#灰烬之地#找到字条神">
-                <outcome>
-                    <item
-                            giveId="1" cnt="1000"/>
-                    <item giveId="200214" cnt="1"/>
-                </outcome>
-            </step>
-        </steps>
-    </quest>
+    <!-- 任务下线开始 <quest id="10127" name="阿宝星球寻宝记" type="4" track="0" autoNext="0"
+		needAcceptMark="1" relatedMapIds="110,151" acceptMapId="110"> <prerequisite
+		questId="0" level="1"/> <acceptDialog npcId="16" npcName="神目酋长" transport="">
+		<branch id="default"> <node emotion="0"><![CDATA[咳咳——今天什么日子？为什么好多小赛尔都来找我啊？你能告诉我发生什么事情了吗？]]></node>
+		<reply action="" params="10127_0"><![CDATA[是这样的。酋长，阿宝它——]]></reply> </branch>
+		</acceptDialog> <steps> <step id="1" name=""> <dialog npcId="19" npcName="维拉"
+		transport=""> <branch id="default" npcId="19" npcName="维拉"> <node emotion="0"><![CDATA[最近新研制了一种药酒，如果再来1个蘑菇就好了！对！这酒还可以送给酋长，听说他腿病又犯了。]]></node>
+		<reply action="" params="10127_1"><![CDATA[我有蘑菇哦！给你！]]></reply> <reply action=""><![CDATA[（去幻影崖采蘑菇）]]></reply>
+		</branch> </dialog> </step> <step id="2" name=""> <dialog npcId="16" npcName="神目酋长"
+		transport=""> <branch id="default" npcId="16" npcName="神目酋长"> <node emotion="0"><![CDATA[哦，酒带来了吗？
+		喝完酒我就准备和你出发了，咳咳 !!]]></node> <reply action="goToBranch" params="next1"><![CDATA[酋长给您！维拉新研制的蘑蘑壮骨酒！]]></reply>
+		</branch> <branch id="next1" npcId="16" npcName="神目酋长"> <node emotion="0"><![CDATA[（此处略去酋长喝酒的各种赞美和回忆往事….）啧啧——不错不错，维拉的手艺从来没叫我失望。我这老腿舒坦多了。小赛尔！走走走！去给阿宝送行去。]]></node>
+		<reply action="" params="10127_2"><![CDATA[太好了，酋长您一定要记得去哦！]]></reply> </branch>
+		</dialog> </step> </steps> </quest> <quest id="10128" name="阿宝星球寻宝记" type="4"
+		track="0" autoNext="0" needAcceptMark="1" relatedMapIds="160,213" acceptMapId="160">
+		<prerequisite questId="0" level="1"/> <acceptDialog npcId="23" npcName="神谕祭司"
+		transport=""> <branch id="default"> <node emotion="0"><![CDATA[秋天的海底好安静，有一种纯净的力量在这海浪的呼吸声里，你，听见了吗？]]></node>
+		<reply action="" params="10128_0"><![CDATA[是这样的。阿宝它——]]></reply> </branch>
+		</acceptDialog> <steps> <step id="1" name=""> <dialog npcId="27" npcName="占卜婆婆"
+		transport=""> <branch id="default" npcId="27" npcName="占卜婆婆"> <node emotion="0"><![CDATA[谁啊？这么好的天气来打搅我这个老太婆休息。]]></node>
+		<reply action="goToBranch" params="next1"><![CDATA[婆婆婆婆，有一件咒语的事情想请你帮帮忙哪]]></reply>
+		</branch> <branch id="next1" npcId="27" npcName="占卜婆婆"> <node emotion="0"><![CDATA[哦?
+		我昨天就占卜到你今天会来找我的，你会问我要一句咒语，不过婆婆饿的时候可什么都想不出（想念我的偶像美食神猪了又）……]]></node> <reply
+		action="" params="10128_1"><![CDATA[那我为做一碗浓汤吧！]]></reply> </branch> </dialog>
+		</step> <step id="2" name=""> <dialog npcId="23" npcName="神谕祭司" transport="">
+		<branch id="default" npcId="23" npcName="神谕祭司"> <node emotion="0"><![CDATA[小赛尔，你这么快就回来了？婆婆那边有我要的咒语吗？]]></node>
+		<reply action="goToBranch" params="next1"><![CDATA[“西拉金拉泰拉哈皮拉薇拉吉”，就是它，什么意思啊？]]></reply>
+		</branch> <branch id="next1" npcId="23" npcName="神谕祭司"> <node emotion="0"><![CDATA[西拉金拉泰拉哈皮拉薇拉吉——秋天收获纯真和希望。婆婆的这个咒语极好的。]]></node>
+		<reply action="" params="10128_2"><![CDATA[太好了，祭司姐姐您一定要记得去哦！]]></reply> </branch>
+		</dialog> </step> </steps> </quest> <quest id="10129" name="阿宝星球寻宝记" type="4"
+		track="0" autoNext="0" needAcceptMark="1" relatedMapIds="192" acceptMapId="192">
+		<prerequisite questId="0" level="1"/> <acceptDialog npcId="31" npcName="巴尔卡"
+		transport=""> <branch id="default"> <node emotion="0"><![CDATA[为什么我又开始悲伤了，这该死的秋天，总让我回忆起那些不愉快的事情。]]></node>
+		<reply action="" params="10129_0"><![CDATA[巴尔卡，对不起打断一下，阿宝它——]]></reply> </branch>
+		</acceptDialog> <steps> <step id="1" name=""/> </steps> </quest> <quest id="10130"
+		name="我乃神笔马良" type="4" track="0" autoNext="0" needAcceptMark="1" relatedMapIds="142,141,302,301,230,340"
+		acceptMapId=""> <prerequisite questId="0" level="1"/> <steps> <step id="1"
+		name="巨石洞穴发现字条：乃" sum="巨石洞穴" des="在#巨石洞穴#找到字条乃"/> <step id="2" name="幻影崖发现字条：笔"
+		sum="幻影崖" des="在#幻影崖#找到字条笔"/> <step id="3" name="灰烬岔口发现：良" sum="灰烬岔口" des="在#灰烬岔口#找到字条良"/>
+		<step id="4" name="灰烬之地发现：神" sum="灰烬之地" des="在#灰烬之地#找到字条神"/> <step id="5"
+		name="火幻氏族主城：马" sum="火幻氏族" des="在#火幻氏族#找到字条马"/> <step id="6" name="娜钱莱宫殿：我"
+		sum="娜钱莱宫殿" des="在#娜钱莱宫殿#找到字条我"/> <step id="7" name="拼字交互" sum="娜钱莱宫殿" des="在#娜钱莱宫殿#完成拼字"/>
+		<step id="8" name="画奖励" sum="娜钱莱宫殿" des="在#娜钱莱宫殿#完成画奖励"> <outcome> <item
+		giveId="400006" cnt="10"/> </outcome> </step> <step id="9" name="点亮赛尔豆" sum="娜钱莱宫殿"
+		des="在#娜钱莱宫殿#完成点亮赛尔豆"> <outcome> <item giveId="1" cnt="2000"/> </outcome>
+		</step> <step id="10" name="成长果实涂色" sum="娜钱莱宫殿" des="在#娜钱莱宫殿#完成成长果实涂色"> <outcome>
+		<item giveId="200214" cnt="1"/> </outcome> </step> </steps> </quest> <quest
+		id="10131" name="笔笔" type="4" track="0" autoNext="0" needAcceptMark="1" relatedMapIds="891"
+		acceptMapId="891"> <prerequisite questId="0" level="1"/> <steps> <step id="1"
+		name="橡橡的行动" sum="巨石洞穴" des="在#巨石洞穴#找到字条乃"/> <step id="2" name="S出现啦" sum="幻影崖"
+		des="在#幻影崖#找到字条笔"/> <step id="3" name="萨伦士兵的阴谋" sum="灰烬岔口" des="在#灰烬岔口#找到字条良"/>
+		<step id="4" name="笔笔闯祸啦" sum="灰烬之地" des="在#灰烬之地#找到字条神"> <outcome> <item
+		giveId="1" cnt="1000"/> <item giveId="200214" cnt="1"/> </outcome> </step>
+		</steps> </quest> -->
     <quest id="10132" name="消失的玛雅族" type="4" track="1" autoNext="0"
            needAcceptMark="1" relatedMapIds="213,212" acceptMapId="213">
         <prerequisite questId="30040" level="1"/>
@@ -6784,24 +6153,13 @@
             </step>
         </steps>
     </quest>
-    <quest id="10135" name="万圣惊魂夜" type="4" track="0" autoNext="0"
-           needAcceptMark="1" relatedMapIds="891,770,870" acceptMapId="891">
-        <prerequisite
-                questId="10131" level="1"/>
-        <steps>
-            <step id="1" name="追踪S的下落" sum="" des=""/>
-            <step id="2" name="拦截S！不许走！" sum="" des=""/>
-            <step id="3" name="马良的困惑" sum=""
-                  des=""/>
-            <step id="4" name="营救橡皮神君" sum="" des="">
-                <outcome>
-                    <item giveId="1"
-                          cnt="5000"/>
-                    <item giveId="601012" cnt="1"/>
-                </outcome>
-            </step>
-        </steps>
-    </quest>
+    <!-- 任务下线开始 <quest id="10135" name="万圣惊魂夜" type="4" track="0" autoNext="0"
+		needAcceptMark="1" relatedMapIds="891,770,870" acceptMapId="891"> <prerequisite
+		questId="10131" level="1"/> <steps> <step id="1" name="追踪S的下落" sum="" des=""/>
+		<step id="2" name="拦截S！不许走！" sum="" des=""/> <step id="3" name="马良的困惑" sum=""
+		des=""/> <step id="4" name="营救橡皮神君" sum="" des=""> <outcome> <item giveId="1"
+		cnt="5000"/> <item giveId="601012" cnt="1"/> </outcome> </step> </steps>
+		</quest> -->
     <quest id="10136" name="目灵兽第二章----预言3" type="4" track="0"
            autoNext="0" needAcceptMark="1" relatedMapIds="213" acceptMapId="213">
         <prerequisite questId="10134" level="1"/>
@@ -6913,91 +6271,37 @@
         </steps>
     </quest>
 
-    <quest id="10139" name="孔雀再开一次屏" type="4" track="0" autoNext="0" needAcceptMark="1"
-           relatedMapIds="124,110,151,160,192,220" acceptMapId="124">
-        <prerequisite
-                questId="10138" level="1"/>
-        <steps>
-            <step id="1" name="" sum="" des="">
-                <dialog
-                        npcId="16" npcName="神目酋长" transport="">
-                    <branch id="default" npcId="16" npcName="神目酋长">
-                        <node emotion="0"><![CDATA[小赛尔，这么急冲冲的找老朽有何贵干啊？]]></node>
-                        <reply action=""
-                               params="10139_0"><![CDATA[酋长，我想告诉你孔雀不开屏的原因]]></reply>
-                    </branch>
-                </dialog>
-            </step>
-            <step id="2" name="" sum="" des=""/>
-            <step id="3" name="" sum=""
-                  des="">
-                <dialog npcId="16" npcName="神目酋长" transport="">
-                    <branch id="default"
-                            npcId="16" npcName="神目酋长">
-                        <node emotion="0"><![CDATA[哈哈，不错不错，一朵花是不够的哟，你可以去问问巴尔卡。]]></node>
-                        <reply action="" params="10139_1"><![CDATA[这就去找巴尔卡]]></reply>
-                    </branch>
-                </dialog>
-            </step>
-            <step id="4" name="卡尔" sum="" des="">
-                <dialog npcId="31" npcName="巴尔卡"
-                        transport="">
-                    <branch id="default" npcId="31" npcName="巴尔卡">
-                        <node emotion="0"><![CDATA[小赛尔，何事让你如此着急啊？]]></node>
-                        <reply action="goToBranch" params="next0"><![CDATA[（将孔雀的事告诉巴尔卡）]]></reply>
-                    </branch>
-                    <branch id="next0">
-                        <node emotion="0">
-                            <![CDATA[原来如此，我这里有火幻氏族的火幻花，但是现在需要用赤炎火苗来让它盛开，如果你能找1个回来的话，我可以给你。]]></node>
-                        <reply action="" params="10139_2"><![CDATA[（去蛮神战场找到赤炎火苗）]]></reply>
-                    </branch>
-                </dialog>
-            </step>
-            <step id="5" name="" sum="" des="">
-                <dialog npcId="31"
-                        npcName="巴尔卡" transport="">
-                    <branch id="default" npcId="31" npcName="巴尔卡">
-                        <node emotion="0"><![CDATA[小赛尔，你有没有赤炎火苗啊？]]></node>
-                        <reply action="" params="10139_3"><![CDATA[我有赤炎火苗哦！给你！]]></reply>
-                        <reply action=""><![CDATA[（去蛮神战场找到赤炎火苗）]]></reply>
-                    </branch>
-                </dialog>
-            </step>
-            <step id="6" name="" sum="" des="">
-                <dialog npcId="31" npcName="巴尔卡" transport="">
-                    <branch id="default" npcId="31" npcName="巴尔卡">
-                        <node emotion="0"><![CDATA[我想你该去问问神谕祭司了。]]></node>
-                        <reply action="" params="10139_4"><![CDATA[出发！访问神谕祭司]]></reply>
-                    </branch>
-                </dialog>
-            </step>
-            <step id="7" name="" sum="" des="">
-                <dialog npcId="23"
-                        npcName="神谕祭司" transport="">
-                    <branch id="default" npcId="23" npcName="神谕祭司">
-                        <node emotion="0"><![CDATA[小赛尔，欢迎来到水脉氏族，我能帮你什么？]]></node>
-                        <reply action="goToBranch"
-                               params="next0"><![CDATA[（将孔雀的事告诉祭司）]]></reply>
-                    </branch>
-                    <branch id="next0">
-                        <node emotion="0"><![CDATA[原来如此，我们水脉氏族的水脉花在幽静浅滩，你可以去那里找找。]]></node>
-                        <reply
-                                action="" params="10139_5"><![CDATA[前往幽静浅滩]]></reply>
-                    </branch>
-                </dialog>
-            </step>
-            <step id="8" name="点击小精灵" sum="" des=""/>
-            <step id="9" name="点击红色漂流瓶"
-                  sum="" des="">
-                <outcome>
-                    <item giveId="602000" cnt="5"/>
-                    <item giveId="601020"
-                          cnt="5"/>
-                    <item giveId="200205" cnt="1"/>
-                </outcome>
-            </step>
-        </steps>
-    </quest>
+    <!-- <quest id="10139" name="孔雀再开一次屏" type="4" track="0" autoNext="0" needAcceptMark="1"
+		relatedMapIds="124,110,151,160,192,220" acceptMapId="124"> <prerequisite
+		questId="10138" level="1"/> <steps> <step id="1" name="" sum="" des=""> <dialog
+		npcId="16" npcName="神目酋长" transport=""> <branch id="default" npcId="16" npcName="神目酋长">
+		<node emotion="0"><![CDATA[小赛尔，这么急冲冲的找老朽有何贵干啊？]]></node> <reply action=""
+		params="10139_0"><![CDATA[酋长，我想告诉你孔雀不开屏的原因]]></reply> </branch> </dialog>
+		</step> <step id="2" name="" sum="" des=""/> <step id="3" name="" sum=""
+		des=""> <dialog npcId="16" npcName="神目酋长" transport=""> <branch id="default"
+		npcId="16" npcName="神目酋长"> <node emotion="0"><![CDATA[哈哈，不错不错，一朵花是不够的哟，你可以去问问巴尔卡。]]></node>
+		<reply action="" params="10139_1"><![CDATA[这就去找巴尔卡]]></reply> </branch> </dialog>
+		</step> <step id="4" name="卡尔" sum="" des=""> <dialog npcId="31" npcName="巴尔卡"
+		transport=""> <branch id="default" npcId="31" npcName="巴尔卡"> <node emotion="0"><![CDATA[小赛尔，何事让你如此着急啊？]]></node>
+		<reply action="goToBranch" params="next0"><![CDATA[（将孔雀的事告诉巴尔卡）]]></reply>
+		</branch> <branch id="next0"> <node emotion="0"><![CDATA[原来如此，我这里有火幻氏族的火幻花，但是现在需要用赤炎火苗来让它盛开，如果你能找1个回来的话，我可以给你。]]></node>
+		<reply action="" params="10139_2"><![CDATA[（去蛮神战场找到赤炎火苗）]]></reply> </branch>
+		</dialog> </step> <step id="5" name="" sum="" des=""> <dialog npcId="31"
+		npcName="巴尔卡" transport=""> <branch id="default" npcId="31" npcName="巴尔卡">
+		<node emotion="0"><![CDATA[小赛尔，你有没有赤炎火苗啊？]]></node> <reply action="" params="10139_3"><![CDATA[我有赤炎火苗哦！给你！]]></reply>
+		<reply action=""><![CDATA[（去蛮神战场找到赤炎火苗）]]></reply> </branch> </dialog> </step>
+		<step id="6" name="" sum="" des=""> <dialog npcId="31" npcName="巴尔卡" transport="">
+		<branch id="default" npcId="31" npcName="巴尔卡"> <node emotion="0"><![CDATA[我想你该去问问神谕祭司了。]]></node>
+		<reply action="" params="10139_4"><![CDATA[出发！访问神谕祭司]]></reply> </branch>
+		</dialog> </step> <step id="7" name="" sum="" des=""> <dialog npcId="23"
+		npcName="神谕祭司" transport=""> <branch id="default" npcId="23" npcName="神谕祭司">
+		<node emotion="0"><![CDATA[小赛尔，欢迎来到水脉氏族，我能帮你什么？]]></node> <reply action="goToBranch"
+		params="next0"><![CDATA[（将孔雀的事告诉祭司）]]></reply> </branch> <branch id="next0">
+		<node emotion="0"><![CDATA[原来如此，我们水脉氏族的水脉花在幽静浅滩，你可以去那里找找。]]></node> <reply
+		action="" params="10139_5"><![CDATA[前往幽静浅滩]]></reply> </branch> </dialog>
+		</step> <step id="8" name="点击小精灵" sum="" des=""/> <step id="9" name="点击红色漂流瓶"
+		sum="" des=""> <outcome> <item giveId="602000" cnt="5"/> <item giveId="601020"
+		cnt="5"/> <item giveId="200205" cnt="1"/> </outcome> </step> </steps> </quest> -->
 
     <quest id="10140" name="炼狱再现" type="4" track="0" autoNext="0"
            needAcceptMark="1" relatedMapIds="10106,1070" acceptMapId="10106">
@@ -7015,82 +6319,37 @@
     </quest>
 
 
-    <quest id="10141" name="跳舞的小人儿" type="4" track="0" autoNext="0" needAcceptMark="1"
-           relatedMapIds="123,10107" acceptMapId="123">
-        <prerequisite questId="1" level="1"/>
-        <steps>
-            <step id="1" name="" sum="" des=""/>
-            <step id="2" name="" sum=""
-                  des=""/>
-            <step id="3" name="" sum="" des="">
-                <outcome>
-                    <item giveId="1" cnt="1000"/>
-                    <item giveId="200214" cnt="1"/>
-                </outcome>
-            </step>
-        </steps>
-    </quest>
+    <!-- <quest id="10141" name="跳舞的小人儿" type="4" track="0" autoNext="0" needAcceptMark="1"
+		relatedMapIds="123,10107" acceptMapId="123"> <prerequisite questId="1" level="1"/>
+		<steps> <step id="1" name="" sum="" des=""/> <step id="2" name="" sum=""
+		des=""/> <step id="3" name="" sum="" des=""> <outcome> <item giveId="1" cnt="1000"/>
+		<item giveId="200214" cnt="1"/> </outcome> </step> </steps> </quest> -->
 
-    <quest id="10142" name="米咔的雪娃娃" type="4" track="0" autoNext="0" needAcceptMark="0"
-           relatedMapIds="590,550,640,620,540" acceptMapId="">
-        <prerequisite questId="1"
-                      level="1"/>
-        <steps>
-            <step id="1" name="冰沁神殿" des="#冰沁神殿# "/>
-        </steps>
-    </quest>
+    <!--<quest id="10142" name="米咔的雪娃娃" type="4" track="0" autoNext="0" needAcceptMark="0"
+		relatedMapIds="590,550,640,620,540" acceptMapId=""> <prerequisite questId="1"
+		level="1"/> <steps> <step id="1" name="冰沁神殿" des="#冰沁神殿# "/> </steps> </quest> -->
 
-    <quest id="10143" name="寻找大白熊" type="4" track="0" autoNext="0" needAcceptMark="1"
-           relatedMapIds="123,10108" acceptMapId="123">
-        <prerequisite questId="1" level="1"/>
-        <steps>
-            <step id="1" name="" sum="" des=""/>
-            <step id="2" name="" sum=""
-                  des=""/>
-            <step id="3" name="" sum="" des=""/>
-        </steps>
-    </quest>
+    <!--<quest id="10143" name="寻找大白熊" type="4" track="0" autoNext="0" needAcceptMark="1"
+		relatedMapIds="123,10108" acceptMapId="123"> <prerequisite questId="1" level="1"/>
+		<steps> <step id="1" name="" sum="" des=""/> <step id="2" name="" sum=""
+		des=""/> <step id="3" name="" sum="" des=""/> </steps> </quest> -->
 
 
-    <quest id="10144" name="白熊争夺战" type="4" track="0" autoNext="0" needAcceptMark="1"
-           relatedMapIds="480,10108" acceptMapId="480">
-        <prerequisite questId="10143"
-                      level="1"/>
-        <steps>
-            <step id="1" name="" sum="" des=""/>
-            <step id="2" name=""
-                  sum="" des=""/>
-            <step id="3" name="" sum="" des=""/>
-            <step id="4" name=""
-                  sum="" des=""/>
-            <step id="5" name="" sum="" des="">
-                <outcome>
-                    <item giveId="1"
-                          cnt="1000"/>
-                    <item giveId="200214" cnt="1"/>
-                </outcome>
-            </step>
-        </steps>
-    </quest>
+    <!--<quest id="10144" name="白熊争夺战" type="4" track="0" autoNext="0" needAcceptMark="1"
+		relatedMapIds="480,10108" acceptMapId="480"> <prerequisite questId="10143"
+		level="1"/> <steps> <step id="1" name="" sum="" des=""/> <step id="2" name=""
+		sum="" des=""/> <step id="3" name="" sum="" des=""/> <step id="4" name=""
+		sum="" des=""/> <step id="5" name="" sum="" des=""> <outcome> <item giveId="1"
+		cnt="1000"/> <item giveId="200214" cnt="1"/> </outcome> </step> </steps>
+		</quest> -->
 
-    <quest id="10145" name="追逐繁星的康特" type="4" track="0" autoNext="0" needAcceptMark="1"
-           relatedMapIds="10108,10110,202,10108" acceptMapId="10108">
-        <prerequisite
-                questId="10144" level="1"/>
-        <steps>
-            <step id="1" name="" sum="" des=""/>
-            <step id="2" name="" sum="" des=""/>
-            <step id="3" name="" sum="" des=""/>
-            <step id="4" name="" sum="" des=""/>
-            <step id="5" name="" sum="" des=""/>
-            <step id="6" name="" sum="" des="">
-                <outcome>
-                    <item giveId="1" cnt="1000"/>
-                    <item giveId="200214" cnt="1"/>
-                </outcome>
-            </step>
-        </steps>
-    </quest>
+    <!--<quest id="10145" name="追逐繁星的康特" type="4" track="0" autoNext="0" needAcceptMark="1"
+		relatedMapIds="10108,10110,202,10108" acceptMapId="10108"> <prerequisite
+		questId="10144" level="1"/> <steps> <step id="1" name="" sum="" des=""/>
+		<step id="2" name="" sum="" des=""/> <step id="3" name="" sum="" des=""/>
+		<step id="4" name="" sum="" des=""/> <step id="5" name="" sum="" des=""/>
+		<step id="6" name="" sum="" des=""> <outcome> <item giveId="1" cnt="1000"/>
+		<item giveId="200214" cnt="1"/> </outcome> </step> </steps> </quest> -->
 
     <quest id="10146" name="在深幽沼泽里、灰烬岔口、羽冠之岛中击败野怪将有机会遇到绣狮！去捕捉1只回来吧！"
            type="4" track="0" autoNext="0" needAcceptMark="1" relatedMapIds="730,302,133"
@@ -8257,50 +7516,46 @@
         </steps>
     </quest>
 
-    <quest id="10184" name="精灵训练营来历" type="4" track="0" autoNext="0"
-           needAcceptMark="1" relatedMapIds="110" acceptMapId="110">
-        <prerequisite questId="1" level="1"/>
-        <acceptDialog npcId="16" npcName="神目酋长" transport="">
-            <branch id="default">
-                <node emotion="0">
-                    <![CDATA[吼吼吼，前些天这里从南半球跑来一只可以变色的虫子，据说是变色蜥，真是神奇。]]></node>
-                <reply action="goToBranch" params="branch1"><![CDATA[变色蜥？]]></reply>
-            </branch>
-            <branch id="branch1">
-                <node emotion="0">
-                    <![CDATA[就是就是，它给我说南半球发生了战争灾难，它是跑过来避难的，并且告诫北半球必须加以防备，它还发生了很多有趣的经历哟。]]></node>
-                <reply action="goToBranch" params="branch2"><![CDATA[哦？酋长请慢慢道来]]></reply>
-            </branch>
-            <branch id="branch2">
-                <node emotion="0">
-                    <![CDATA[吼吼吼，说起来真是一只有趣的变色蜥，来来来，我给你慢慢说说它的故事。让我带你进入变色蜥的世界]]></node>
-                <reply action="" params="10184_0"><![CDATA[走着……]]></reply>
-            </branch>
-        </acceptDialog>
-        <steps>
-            <step id="1" name="" sum="" des="">
-                <dialog npcId="16" npcName="神目酋长" transport="">
-                    <branch npcId="576" npcName="变色蜥" id="default">
-                        <node emotion="0"><![CDATA[嘻嘻嘻，真好玩，他的动作真好玩，我要学一学。]]></node>
-                        <reply action="" params="10184_1"><![CDATA[走着……]]></reply>
-                    </branch>
-                </dialog>
-            </step>
-            <step id="2" name="" sum="" des="">
-                <dialog npcId="16" npcName="神目酋长" transport="">
-                    <branch id="default">
-                        <node emotion="0">
-                            <![CDATA[可恶的萨伦帝国又在肆无忌惮的破坏我们的家园了。不行，我们必须依靠自己的力量强大起来，对抗萨伦。]]></node>
-                        <reply action="" params="10184_2"><![CDATA[强大起来！]]></reply>
-                    </branch>
-                </dialog>
-                <outcome>
-                    <item giveId="390" cnt="1" isPet="true"/>
-                    <item giveId="1" cnt="1000"/>
-                </outcome>
-            </step>
-        </steps>
-    </quest>
+    <!--<quest id="10184" name="精灵训练营来历" type="4" track="0" autoNext="0"
+		needAcceptMark="1" relatedMapIds="110" acceptMapId="110">
+		<prerequisite questId="1" level="1" />
+		<acceptDialog npcId="16" npcName="神目酋长" transport="">
+			<branch id="default">
+				<node emotion="0"><![CDATA[吼吼吼，前些天这里从南半球跑来一只可以变色的虫子，据说是变色蜥，真是神奇。]]></node>
+				<reply action="goToBranch" params="branch1"><![CDATA[变色蜥？]]></reply>
+			</branch>
+			<branch id="branch1">
+				<node emotion="0"><![CDATA[就是就是，它给我说南半球发生了战争灾难，它是跑过来避难的，并且告诫北半球必须加以防备，它还发生了很多有趣的经历哟。]]></node>
+				<reply action="goToBranch" params="branch2"><![CDATA[哦？酋长请慢慢道来]]></reply>
+			</branch>
+			<branch id="branch2">
+				<node emotion="0"><![CDATA[吼吼吼，说起来真是一只有趣的变色蜥，来来来，我给你慢慢说说它的故事。让我带你进入变色蜥的世界]]></node>
+				<reply action="" params="10184_0"><![CDATA[走着……]]></reply>
+			</branch>
+		</acceptDialog>
+		<steps>
+			<step id="1" name="" sum="" des="">
+				<dialog npcId="16" npcName="神目酋长" transport="">
+					<branch npcId="576" npcName="变色蜥" id="default">
+						<node emotion="0"><![CDATA[嘻嘻嘻，真好玩，他的动作真好玩，我要学一学。]]></node>
+						<reply action="" params="10184_1"><![CDATA[走着……]]></reply>
+					</branch>
+				</dialog>
+			</step>
+			<step id="2" name="" sum="" des="">
+				<dialog npcId="16" npcName="神目酋长" transport="">
+					<branch id="default">
+						<node emotion="0"><![CDATA[可恶的萨伦帝国又在肆无忌惮的破坏我们的家园了。不行，我们必须依靠自己的力量强大起来，对抗萨伦。]]></node>
+						<reply action="" params="10184_2"><![CDATA[强大起来！]]></reply>
+					</branch>
+				</dialog>
+				<outcome>
+					<item giveId="390" cnt="1" isPet="true" />
+					<item giveId="1" cnt="1000" />
+				</outcome>
+			</step>
+		</steps>
+	</quest>-->
 
     <quest id="10185" name="愤怒的小猴" type="4" track="0" autoNext="0"
            needAcceptMark="1" relatedMapIds="490,340,330" acceptMapId="490">
@@ -8505,18 +7760,10 @@
         </steps>
     </quest>
 
-    <quest id="10191" name="火炬传递手米咔" type="4" track="0" autoNext="0" needAcceptMark="0"
-           relatedMapIds="133,100,122,124,203,2030,201,191,220,302,230,261,980" acceptMapId="">
-        <prerequisite questId="1" level="1"/>
-        <steps>
-            <step id="1" name="深幽沼泽 " des="#深幽沼泽#
-		">
-                <outcome>
-                    <item giveId="1" cnt="200"/>
-                </outcome>
-            </step>
-        </steps>
-    </quest>
+    <!--<quest id="10191" name="火炬传递手米咔" type="4" track="0" autoNext="0" needAcceptMark="0"
+		relatedMapIds="133,100,122,124,203,2030,201,191,220,302,230,261,980" acceptMapId="">
+		<prerequisite questId="1" level="1"/> <steps> <step id="1" name="深幽沼泽 " des="#深幽沼泽#
+		"> <outcome> <item giveId="1" cnt="200"/> </outcome> </step> </steps> </quest> -->
 
     <quest id="10192" name="双生战纪最终章" type="4" track="0" autoNext="0"
            needAcceptMark="0" relatedMapIds="8802" acceptMapId="">
@@ -8581,18 +7828,10 @@
         </steps>
     </quest>
 
-    <quest id="10194" name="火炬传递手米咔" type="4" track="0" autoNext="0" needAcceptMark="0"
-           relatedMapIds="133,100,122,124,203,2030,201,191,220,302,230,261,980" acceptMapId="">
-        <prerequisite questId="1" level="1"/>
-        <steps>
-            <step id="1" name="深幽沼泽 " des="#深幽沼泽#
-		">
-                <outcome>
-                    <item giveId="1" cnt="200"/>
-                </outcome>
-            </step>
-        </steps>
-    </quest>
+    <!--<quest id="10194" name="火炬传递手米咔" type="4" track="0" autoNext="0" needAcceptMark="0"
+		relatedMapIds="133,100,122,124,203,2030,201,191,220,302,230,261,980" acceptMapId="">
+		<prerequisite questId="1" level="1"/> <steps> <step id="1" name="深幽沼泽 " des="#深幽沼泽#
+		"> <outcome> <item giveId="1" cnt="200"/> </outcome> </step> </steps> </quest> -->
 
     <quest id="10195" name="爪灵兽试炼第二章" type="6" track="0" autoNext="0"
            needAcceptMark="1" relatedMapIds="330,5001" acceptMapId="330">
@@ -9121,18 +8360,10 @@
         </steps>
     </quest>
 
-    <quest id="10205" name="光能收集者米咔" type="4" track="0" autoNext="0" needAcceptMark="0"
-           relatedMapIds="133,100,122,124,203,2030,201,191,220,302,230,261,980" acceptMapId="">
-        <prerequisite questId="1" level="1"/>
-        <steps>
-            <step id="1" name="深幽沼泽 " des="#深幽沼泽#
-		">
-                <outcome>
-                    <item giveId="1" cnt="200"/>
-                </outcome>
-            </step>
-        </steps>
-    </quest>
+    <!--<quest id="10205" name="光能收集者米咔" type="4" track="0" autoNext="0" needAcceptMark="0"
+		relatedMapIds="133,100,122,124,203,2030,201,191,220,302,230,261,980" acceptMapId="">
+		<prerequisite questId="1" level="1"/> <steps> <step id="1" name="深幽沼泽 " des="#深幽沼泽#
+		"> <outcome> <item giveId="1" cnt="200"/> </outcome> </step> </steps> </quest> -->
 
     <quest id="10206" name="骑宠使用引导" type="4" track="0" autoNext="0"
            needAcceptMark="1" relatedMapIds="1600" acceptMapId="1600">
@@ -9167,18 +8398,10 @@
         </steps>
     </quest>
 
-    <quest id="10207" name="光能收集者米咔" type="4" track="0" autoNext="0" needAcceptMark="0"
-           relatedMapIds="133,100,122,124,203,2030,201,191,220,302,230,261,980" acceptMapId="">
-        <prerequisite questId="1" level="1"/>
-        <steps>
-            <step id="1" name="深幽沼泽 " des="#深幽沼泽#
-		">
-                <outcome>
-                    <item giveId="1" cnt="200"/>
-                </outcome>
-            </step>
-        </steps>
-    </quest>
+    <!--<quest id="10207" name="光能收集者米咔" type="4" track="0" autoNext="0" needAcceptMark="0"
+		relatedMapIds="133,100,122,124,203,2030,201,191,220,302,230,261,980" acceptMapId="">
+		<prerequisite questId="1" level="1"/> <steps> <step id="1" name="深幽沼泽 " des="#深幽沼泽#
+		"> <outcome> <item giveId="1" cnt="200"/> </outcome> </step> </steps> </quest> -->
 
     <quest id="10208" name="精灵神魔化指引" type="4" track="0" autoNext="0"
            needAcceptMark="0" relatedMapIds="20" acceptMapId="">
@@ -9329,61 +8552,29 @@
         <doc><![CDATA[原来雷克斯不是雷克的最终形态，它还能进化成雷克萨斯哦，这是光伊特带来的秘密！]]></doc>
     </quest>
 
-    <quest id="30003" name="召唤仪式" type="5" track="0" autoNext="0" needAcceptMark="1"
-           relatedMapIds="30,124,20000" acceptMapId="30" onlineTime="" monLvlUp="1">
-        <prerequisite questId="1" level="1"/>
-        <acceptDialog npcId="7" npcName="娜威拉"
-                      transport="">
-            <branch id="default" npcId="7" npcName="娜威拉">
-                <node emotion="1">
-                    <![CDATA[哟哟哟！这个不妙呐！草目氏族近日频频有神秘人出现！这难道和传说中异蘑谷的召唤文有关？快去调查下！不然就糟了！]]></node>
-                <reply action="" params="41_0"><![CDATA[（速速赶往异蘑谷）]]></reply>
-            </branch>
-        </acceptDialog>
-        <steps>
-            <step id="1" name="异蘑谷的神秘黑衣人" sum="异蘑谷" des="草目氏族频频出现外敌，这可能和#异蘑谷#的历史有关！"/>
-            <step id="2" name="萨伦帝国爪牙" sum="异蘑谷" des="那个家伙在#异蘑谷#鬼鬼祟祟的干嘛！快去阻止他！"/>
-            <step
-                    id="3" name="墙壁上的闪光字体" sum="异蘑谷"
-                    des="神秘黑衣人的出现难道就是因为#异蘑谷#的这几个闪光字体？"/>
-            <step
-                    id="4" name="一连串经文" sum="资料室" des="古老的咒语到底阐述了神秘？去#资料室#问问娜威拉！">
-                <dialog npcId="7"
-                        npcName="娜威拉" transport="">
-                    <branch id="default" npcId="7" npcName="娜威拉">
-                        <node emotion="1">
-                            <![CDATA[传说原来是真的！！真的有召唤咒语！！萨伦帝国究竟想要干嘛！不行我们一定要阻止他们！！！]]></node>
-                        <reply action="" params="41_1"><![CDATA[可是他们会在哪里举行召唤仪式呢？]]></reply>
-                    </branch>
-                </dialog>
-            </step>
-            <step id="5" name="信奉广场" sum="信奉广场"
-                  des="他们竟然准备在#信奉广场夜晚#召唤出地狱破坏魔！快赶过去看看！"/>
-            <step id="6" name="召唤祭祀" sum="信奉广场"
-                  des="这群萨伦帝国的爪牙果然在#信奉广场夜晚#召唤破坏魔！时间紧迫快阻止他们！"/>
-            <step id="7" name="娜威拉" sum="资料室" des="一系列的怪事让人难以捉摸！只有#资料室#的娜威拉才可能知道答案！">
-                <dialog npcId="7" npcName="娜威拉" transport="">
-                    <branch id="default" npcId="7"
-                            npcName="娜威拉">
-                        <node emotion="1">
-                            <![CDATA[真的假的！雷伊？我这辈子还没见过雷伊呢！！！听说他英俊不凡！气宇轩昂！当今能跟我匹敌的估计也就他了！！]]></node>
-                        <reply action="goToBranch" params="next1"><![CDATA[ 喂！别臭美了好吧！]]></reply>
-                    </branch>
-                    <branch id="next1" npcId="7" npcName="娜威拉">
-                        <node emotion="1">
-                            <![CDATA[什么！！！雷伊！！！雷伊！！真的有雷伊！！！？？？？召唤仪式！雷伊？小雷伊！！！容我三思！！！我思绪都错乱了！！我要整理下……]]></node>
-                        <reply action="" params="41_2"><![CDATA[得了……我自个儿去调查吧……]]></reply>
-                    </branch>
-                </dialog>
-                <outcome>
-                    <item giveId="1" cnt="2000"/>
-                    <item giveId="100333" cnt="1"/>
-                </outcome>
-            </step>
-        </steps>
-        <doc><![CDATA[赛尔号的传奇精灵怎么会出现？它又怎么会变成儿时？这会不会是一个全新的精灵时代？
-		]]></doc>
-    </quest>
+    <!--<quest id="30003" name="召唤仪式" type="5" track="0" autoNext="0" needAcceptMark="1"
+		relatedMapIds="30,124,20000" acceptMapId="30" onlineTime="" monLvlUp="1">
+		<prerequisite questId="1" level="1"/> <acceptDialog npcId="7" npcName="娜威拉"
+		transport=""> <branch id="default" npcId="7" npcName="娜威拉"> <node emotion="1"><![CDATA[哟哟哟！这个不妙呐！草目氏族近日频频有神秘人出现！这难道和传说中异蘑谷的召唤文有关？快去调查下！不然就糟了！]]></node>
+		<reply action="" params="41_0"><![CDATA[（速速赶往异蘑谷）]]></reply> </branch> </acceptDialog>
+		<steps> <step id="1" name="异蘑谷的神秘黑衣人" sum="异蘑谷" des="草目氏族频频出现外敌，这可能和#异蘑谷#的历史有关！"/>
+		<step id="2" name="萨伦帝国爪牙" sum="异蘑谷" des="那个家伙在#异蘑谷#鬼鬼祟祟的干嘛！快去阻止他！"/> <step
+		id="3" name="墙壁上的闪光字体" sum="异蘑谷" des="神秘黑衣人的出现难道就是因为#异蘑谷#的这几个闪光字体？"/> <step
+		id="4" name="一连串经文" sum="资料室" des="古老的咒语到底阐述了神秘？去#资料室#问问娜威拉！"> <dialog npcId="7"
+		npcName="娜威拉" transport=""> <branch id="default" npcId="7" npcName="娜威拉">
+		<node emotion="1"><![CDATA[传说原来是真的！！真的有召唤咒语！！萨伦帝国究竟想要干嘛！不行我们一定要阻止他们！！！]]></node>
+		<reply action="" params="41_1"><![CDATA[可是他们会在哪里举行召唤仪式呢？]]></reply> </branch>
+		</dialog> </step> <step id="5" name="信奉广场" sum="信奉广场" des="他们竟然准备在#信奉广场夜晚#召唤出地狱破坏魔！快赶过去看看！"/>
+		<step id="6" name="召唤祭祀" sum="信奉广场" des="这群萨伦帝国的爪牙果然在#信奉广场夜晚#召唤破坏魔！时间紧迫快阻止他们！"/>
+		<step id="7" name="娜威拉" sum="资料室" des="一系列的怪事让人难以捉摸！只有#资料室#的娜威拉才可能知道答案！">
+		<dialog npcId="7" npcName="娜威拉" transport=""> <branch id="default" npcId="7"
+		npcName="娜威拉"> <node emotion="1"><![CDATA[真的假的！雷伊？我这辈子还没见过雷伊呢！！！听说他英俊不凡！气宇轩昂！当今能跟我匹敌的估计也就他了！！]]></node>
+		<reply action="goToBranch" params="next1"><![CDATA[ 喂！别臭美了好吧！]]></reply>
+		</branch> <branch id="next1" npcId="7" npcName="娜威拉"> <node emotion="1"><![CDATA[什么！！！雷伊！！！雷伊！！真的有雷伊！！！？？？？召唤仪式！雷伊？小雷伊！！！容我三思！！！我思绪都错乱了！！我要整理下……]]></node>
+		<reply action="" params="41_2"><![CDATA[得了……我自个儿去调查吧……]]></reply> </branch>
+		</dialog> <outcome> <item giveId="1" cnt="2000"/> <item giveId="100333" cnt="1"/>
+		</outcome> </step> </steps> <doc><![CDATA[赛尔号的传奇精灵怎么会出现？它又怎么会变成儿时？这会不会是一个全新的精灵时代？
+		]]></doc> </quest> -->
 
     <quest id="30004" name="雷神的背后" type="5" track="0" autoNext="0"
            needAcceptMark="1" relatedMapIds="20, 133" acceptMapId="20"
@@ -9508,133 +8699,61 @@
         </steps>
         <doc><![CDATA[与神的对决！驾驭真正的能量！]]></doc>
     </quest>
-    <quest id="30008" name="美食神猪" type="5" track="0" autoNext="0" needAcceptMark="1"
-           relatedMapIds="30,110,213" acceptMapId="30" onlineTime="" monLvlUp="1">
-        <prerequisite
-                questId="1" level="1"/>
-        <acceptDialog npcId="7" npcName="娜威拉" transport="">
-            <branch id="default">
-                <node emotion="1"><![CDATA[咿呀呀！咿呀呀！啦啦哈哈！{$name}，我现在真是High得不得了啊！OMG！]]></node>
-                <reply action="goToBranch" params="branch1"><![CDATA[发生什么事了？]]></reply>
-            </branch>
-            <branch id="branch1" npcId="7" npcName="娜威拉">
-                <node emotion="1">
-                    <![CDATA[嘿嘿，我刚刚找到一份新资料，阿卡迪亚星每年的6月都极有可能会出现一种新生物哦。]]></node>
-                <reply action="goToBranch" params="branch2"><![CDATA[哇！真的吗！]]></reply>
-            </branch>
-            <branch id="branch2" npcId="7" npcName="娜威拉">
-                <node emotion="1">
-                    <![CDATA[嗯，但这个信息还是得去当地调查才能确认！你能帮我到草目氏族找神目酋长吗？相信那位年纪一大把的老爷子应该知道些什么！]]></node>
-                <reply action="accept"><![CDATA[Ok！看我的！（前往权力之帐）]]></reply>
-            </branch>
-        </acceptDialog>
-        <steps>
-            <step id="1" name="找神目酋长对话" sum="权力之帐"
-                  des="6月真的会有新生物降临阿卡迪亚星？去#权力之帐#找神目酋长谈谈吧！">
-                <dialog npcId="16" npcName="神目酋长" transport="">
-                    <branch id="default" npcId="9999">
-                        <node emotion="0">
-                            <![CDATA[神目酋长，据说阿卡迪亚星每年6月都会有一种神秘生物出现， 这是不是真的啊？]]></node>
-                        <reply action="goToBranch" params="next1"><![CDATA[……]]></reply>
-                    </branch>
-                    <branch id="next1" npcId="16" npcName="神目酋长">
-                        <node emotion="0"><![CDATA[呵呵，你消息还挺灵通嘛！看来“美食神猪”就要大红大紫咯！]]></node>
-                        <reply action="goToBranch" params="next2">
-                            <![CDATA[“美食神猪”？哈哈！酋长，把你知道的都告诉我吧！]]></reply>
-                    </branch>
-                    <branch id="next2" npcId="16" npcName="神目酋长">
-                        <node emotion="0"><![CDATA[瞧你急不可耐的样子，好！好！我现在就给你讲讲那个家伙的故事。]]></node>
-                        <reply action="" params="30008_0"><![CDATA[哈哈哈，快说，快说！]]></reply>
-                    </branch>
-                </dialog>
-            </step>
-            <step id="2" name="询问占卜婆婆" sum="狂暴漩涡" des="占卜婆婆见过“美食神猪”，去#狂暴漩涡#找她聊聊咯。">
-                <dialog npcId="27" npcName="占卜婆婆" transport="">
-                    <branch id="default" npcId="9999">
-                        <node emotion="0">
-                            <![CDATA[哇！占卜婆婆，听说你对“美食神猪”很有研究哦，给我说说吧，我的漂亮婆婆！]]></node>
-                        <reply action="goToBranch" params="next1"><![CDATA[……]]></reply>
-                    </branch>
-                    <branch id="next1" npcId="27" npcName="占卜婆婆">
-                        <node emotion="0">
-                            <![CDATA[哼哼，你个小屁孩！光耍嘴皮子是没有用的，有诚意的话，就帮老人家我干干体力活吧。]]></node>
-                        <reply action="goToBranch" params="next2"><![CDATA[……]]></reply>
-                    </branch>
-                    <branch id="next2" npcId="9999">
-                        <node emotion="0"><![CDATA[漂亮婆婆，你尽管说。]]></node>
-                        <reply action="goToBranch" params="next3"><![CDATA[……]]></reply>
-                    </branch>
-                    <branch id="next3" npcId="27" npcName="占卜婆婆">
-                        <node emotion="0">
-                            <![CDATA[你看到右边的青玉矿脉没！我现在需要一些青玉石来做占卜术。如果你不把东西拿来，就算叫妈我也不会告诉你！哼哼！]]></node>
-                        <reply action="goToBranch" params="next4"><![CDATA[……]]></reply>
-                    </branch>
-                    <branch id="next4" npcId="9999">
-                        <node emotion="0"><![CDATA[额……好好好，立刻开动！]]></node>
-                        <reply action="completeStep"><![CDATA[（点击右边的青玉矿脉，采集3个青玉石）]]></reply>
-                    </branch>
-                </dialog>
-            </step>
-            <step id="3" name="采集白坚石" sum="狂暴漩涡" des="在#狂暴漩涡#的青玉矿脉采集3颗青玉石给占卜婆婆。">
-                <dialog npcId="27" npcName="占卜婆婆" transport="">
-                    <branch id="default" npcId="27"
-                            npcName="占卜婆婆">
-                        <node emotion="0"><![CDATA[小子，你还没采集到3块青玉石， 别想忽悠我！]]></node>
-                        <reply action="close"><![CDATA[（点击右边的青玉矿脉，采集3个青玉石）]]></reply>
-                    </branch>
-                </dialog>
-            </step>
-            <step id="4" name="美食神猪的情报" sum="狂暴漩涡" des="青玉石已经搞定了，到#狂暴漩涡#听占卜婆婆讲故事咯。">
-                <dialog npcId="27" npcName="占卜婆婆" transport="">
-                    <branch id="default" npcId="9999">
-                        <node emotion="0"><![CDATA[占卜婆婆，青玉石搞定咯。]]></node>
-                        <reply action="goToBranch"
-                               params="next1"><![CDATA[……]]></reply>
-                    </branch>
-                    <branch id="next1" npcId="27"
-                            npcName="占卜婆婆">
-                        <node emotion="0">
-                            <![CDATA[哈哈哈，小家伙动作还挺快的嘛！那就先给你讲讲我和他之间的浪漫回忆吧！]]></node>
-                        <reply action="" params="30008_1"><![CDATA[（占卜婆婆开始讲述）]]></reply>
-                    </branch>
-                </dialog>
-                <outcome>
-                    <item giveId="1" cnt="5000"/>
-                </outcome>
-            </step>
-        </steps>
-        <doc><![CDATA[想知道最新的劲爆传闻吗？快去资料室找娜威拉！]]></doc>
-    </quest>
-    <quest id="30009" name="奇怪的漂流瓶" type="5" track="0" autoNext="0" needAcceptMark="1"
-           relatedMapIds="70,90,100,151,152" acceptMapId="70" onlineTime="" monLvlUp="1">
-        <prerequisite questId="1" level="1"/>
-        <acceptDialog npcId="8" npcName="艾农"
-                      transport="">
-            <branch id="default">
-                <node emotion="1">
-                    <![CDATA[不得了！最近草目氏族出现了奇怪的现象！很多很多青蛙迁徙……有人说星球要爆炸了！有人说精灵王要复活了！有人说……]]></node>
-                <reply action="goToBranch" params="next1"><![CDATA[咦……有蹊跷吧！]]></reply>
-            </branch>
-            <branch id="next1">
-                <node emotion="1">
-                    <![CDATA[具体情况我这里还没有进一步报道！<font color='#ffcc00'>{$name}</font>偷偷去调查一下吧……我怕事出有因！]]></node>
-                <reply action="" params="30009_0"><![CDATA[我这就动身前往！]]></reply>
-            </branch>
-        </acceptDialog>
-        <steps>
-            <step id="1" name="前往信奉广场的青蛙" sum="草系主城" des="#草系主城#的这些青蛙是要去哪里呢？"/>
-            <step id="2" name="信奉广场的板牙和金牙" sum="信奉广场" des="板牙和金牙在#信奉广场#说什么呢？去问问吧！"/>
-            <step id="3" name="往水仙溪口的青蛙" sum="水仙草界" des="跟随着青蛙的步伐我们来到#水仙草界#，触碰他们看看！"/>
-            <step id="4" name="钓鱼大师" sum="水仙溪口" des="无从下手的难题难道我们了！看来只有问#水仙溪口#的钓鱼大师！"/>
-            <step id="5" name="大鱼嘴巴里有漂流瓶" sum="水仙溪口"
-                  des="咦？这个#水仙溪口#出现的漂流瓶里面似乎有什么？拿起来看看！">
-                <outcome>
-                    <item giveId="100376" cnt="1"/>
-                </outcome>
-            </step>
-        </steps>
-        <doc><![CDATA[奇怪的漂流瓶、神秘失踪的芯片，还有那个黑衣人，故事才刚刚开始……]]></doc>
-    </quest>
+    <!--<quest id="30008" name="美食神猪" type="5" track="0" autoNext="0" needAcceptMark="1"
+		relatedMapIds="30,110,213" acceptMapId="30" onlineTime="" monLvlUp="1"> <prerequisite
+		questId="1" level="1"/> <acceptDialog npcId="7" npcName="娜威拉" transport="">
+		<branch id="default"> <node emotion="1"><![CDATA[咿呀呀！咿呀呀！啦啦哈哈！{$name}，我现在真是High得不得了啊！OMG！]]></node>
+		<reply action="goToBranch" params="branch1"><![CDATA[发生什么事了？]]></reply> </branch>
+		<branch id="branch1" npcId="7" npcName="娜威拉"> <node emotion="1"><![CDATA[嘿嘿，我刚刚找到一份新资料，阿卡迪亚星每年的6月都极有可能会出现一种新生物哦。]]></node>
+		<reply action="goToBranch" params="branch2"><![CDATA[哇！真的吗！]]></reply> </branch>
+		<branch id="branch2" npcId="7" npcName="娜威拉"> <node emotion="1"><![CDATA[嗯，但这个信息还是得去当地调查才能确认！你能帮我到草目氏族找神目酋长吗？相信那位年纪一大把的老爷子应该知道些什么！]]></node>
+		<reply action="accept"><![CDATA[Ok！看我的！（前往权力之帐）]]></reply> </branch> </acceptDialog>
+		<steps> <step id="1" name="找神目酋长对话" sum="权力之帐" des="6月真的会有新生物降临阿卡迪亚星？去#权力之帐#找神目酋长谈谈吧！">
+		<dialog npcId="16" npcName="神目酋长" transport=""> <branch id="default" npcId="9999">
+		<node emotion="0"><![CDATA[神目酋长，据说阿卡迪亚星每年6月都会有一种神秘生物出现， 这是不是真的啊？]]></node>
+		<reply action="goToBranch" params="next1"><![CDATA[……]]></reply> </branch>
+		<branch id="next1" npcId="16" npcName="神目酋长"> <node emotion="0"><![CDATA[呵呵，你消息还挺灵通嘛！看来“美食神猪”就要大红大紫咯！]]></node>
+		<reply action="goToBranch" params="next2"><![CDATA[“美食神猪”？哈哈！酋长，把你知道的都告诉我吧！]]></reply>
+		</branch> <branch id="next2" npcId="16" npcName="神目酋长"> <node emotion="0"><![CDATA[瞧你急不可耐的样子，好！好！我现在就给你讲讲那个家伙的故事。]]></node>
+		<reply action="" params="30008_0"><![CDATA[哈哈哈，快说，快说！]]></reply> </branch>
+		</dialog> </step> <step id="2" name="询问占卜婆婆" sum="狂暴漩涡" des="占卜婆婆见过“美食神猪”，去#狂暴漩涡#找她聊聊咯。">
+		<dialog npcId="27" npcName="占卜婆婆" transport=""> <branch id="default" npcId="9999">
+		<node emotion="0"><![CDATA[哇！占卜婆婆，听说你对“美食神猪”很有研究哦，给我说说吧，我的漂亮婆婆！]]></node>
+		<reply action="goToBranch" params="next1"><![CDATA[……]]></reply> </branch>
+		<branch id="next1" npcId="27" npcName="占卜婆婆"> <node emotion="0"><![CDATA[哼哼，你个小屁孩！光耍嘴皮子是没有用的，有诚意的话，就帮老人家我干干体力活吧。]]></node>
+		<reply action="goToBranch" params="next2"><![CDATA[……]]></reply> </branch>
+		<branch id="next2" npcId="9999"> <node emotion="0"><![CDATA[漂亮婆婆，你尽管说。]]></node>
+		<reply action="goToBranch" params="next3"><![CDATA[……]]></reply> </branch>
+		<branch id="next3" npcId="27" npcName="占卜婆婆"> <node emotion="0"><![CDATA[你看到右边的青玉矿脉没！我现在需要一些青玉石来做占卜术。如果你不把东西拿来，就算叫妈我也不会告诉你！哼哼！]]></node>
+		<reply action="goToBranch" params="next4"><![CDATA[……]]></reply> </branch>
+		<branch id="next4" npcId="9999"> <node emotion="0"><![CDATA[额……好好好，立刻开动！]]></node>
+		<reply action="completeStep"><![CDATA[（点击右边的青玉矿脉，采集3个青玉石）]]></reply> </branch>
+		</dialog> </step> <step id="3" name="采集白坚石" sum="狂暴漩涡" des="在#狂暴漩涡#的青玉矿脉采集3颗青玉石给占卜婆婆。">
+		<dialog npcId="27" npcName="占卜婆婆" transport=""> <branch id="default" npcId="27"
+		npcName="占卜婆婆"> <node emotion="0"><![CDATA[小子，你还没采集到3块青玉石， 别想忽悠我！]]></node>
+		<reply action="close"><![CDATA[（点击右边的青玉矿脉，采集3个青玉石）]]></reply> </branch> </dialog>
+		</step> <step id="4" name="美食神猪的情报" sum="狂暴漩涡" des="青玉石已经搞定了，到#狂暴漩涡#听占卜婆婆讲故事咯。">
+		<dialog npcId="27" npcName="占卜婆婆" transport=""> <branch id="default" npcId="9999">
+		<node emotion="0"><![CDATA[占卜婆婆，青玉石搞定咯。]]></node> <reply action="goToBranch"
+		params="next1"><![CDATA[……]]></reply> </branch> <branch id="next1" npcId="27"
+		npcName="占卜婆婆"> <node emotion="0"><![CDATA[哈哈哈，小家伙动作还挺快的嘛！那就先给你讲讲我和他之间的浪漫回忆吧！]]></node>
+		<reply action="" params="30008_1"><![CDATA[（占卜婆婆开始讲述）]]></reply> </branch>
+		</dialog> <outcome> <item giveId="1" cnt="5000"/> </outcome> </step> </steps>
+		<doc><![CDATA[想知道最新的劲爆传闻吗？快去资料室找娜威拉！]]></doc> </quest> -->
+    <!--<quest id="30009" name="奇怪的漂流瓶" type="5" track="0" autoNext="0" needAcceptMark="1"
+		relatedMapIds="70,90,100,151,152" acceptMapId="70" onlineTime="" monLvlUp="1">
+		<prerequisite questId="1" level="1"/> <acceptDialog npcId="8" npcName="艾农"
+		transport=""> <branch id="default"> <node emotion="1"><![CDATA[不得了！最近草目氏族出现了奇怪的现象！很多很多青蛙迁徙……有人说星球要爆炸了！有人说精灵王要复活了！有人说……]]></node>
+		<reply action="goToBranch" params="next1"><![CDATA[咦……有蹊跷吧！]]></reply> </branch>
+		<branch id="next1"> <node emotion="1"><![CDATA[具体情况我这里还没有进一步报道！<font color='#ffcc00'>{$name}</font>偷偷去调查一下吧……我怕事出有因！]]></node>
+		<reply action="" params="30009_0"><![CDATA[我这就动身前往！]]></reply> </branch>
+		</acceptDialog> <steps> <step id="1" name="前往信奉广场的青蛙" sum="草系主城" des="#草系主城#的这些青蛙是要去哪里呢？"/>
+		<step id="2" name="信奉广场的板牙和金牙" sum="信奉广场" des="板牙和金牙在#信奉广场#说什么呢？去问问吧！"/>
+		<step id="3" name="往水仙溪口的青蛙" sum="水仙草界" des="跟随着青蛙的步伐我们来到#水仙草界#，触碰他们看看！"/>
+		<step id="4" name="钓鱼大师" sum="水仙溪口" des="无从下手的难题难道我们了！看来只有问#水仙溪口#的钓鱼大师！"/>
+		<step id="5" name="大鱼嘴巴里有漂流瓶" sum="水仙溪口" des="咦？这个#水仙溪口#出现的漂流瓶里面似乎有什么？拿起来看看！">
+		<outcome> <item giveId="100376" cnt="1"/> </outcome> </step> </steps> <doc><![CDATA[奇怪的漂流瓶、神秘失踪的芯片，还有那个黑衣人，故事才刚刚开始……]]></doc>
+		</quest> -->
     <quest id="30010" name="米咔的现身" type="5" track="1" autoNext="0"
            needAcceptMark="1" relatedMapIds="20,50000,470,123,261" acceptMapId="20"
            onlineTime="" monLvlUp="1">
@@ -9669,78 +8788,36 @@
         </steps>
         <doc><![CDATA[我们惊喜的发现原来米咔一直都在我们身边，它什么时候会出现呢？]]></doc>
     </quest>
-    <quest id="30011" name="迎接美食神猪" type="5" track="0" autoNext="0" needAcceptMark="1"
-           relatedMapIds="213,30,50,90,160,230" acceptMapId="213" onlineTime="" monLvlUp="1">
-        <prerequisite questId="30008" level="1"/>
-        <acceptDialog npcId="27" npcName="占卜婆婆"
-                      transport="">
-            <branch id="default" npcId="9999">
-                <node emotion="1">
-                    <![CDATA[漂亮婆婆，都过去一个星期啦，你应该休息好了吧？关于美食神猪的秘密就告诉我嘛！]]></node>
-                <reply action="goToBranch" params="branch1"><![CDATA[……]]></reply>
-            </branch>
-            <branch id="branch1">
-                <node emotion="1"><![CDATA[嘿嘿， 看你这么有恒心，那现在就给你说说吧 。]]></node>
-                <reply action="accept"><![CDATA[哇哦哦！婆婆真好。]]></reply>
-            </branch>
-        </acceptDialog>
-        <steps>
-            <step id="1" name="找娜威拉对话" sum="资料室"
-                  des="美食神猪将在6月降临五大氏族的主城，赶紧回#资料室#找娜威拉商量对策！">
-                <dialog npcId="7" npcName="娜威拉" transport="">
-                    <branch id="default" npcId="9999">
-                        <node emotion="0">
-                            <![CDATA[娜威拉，关于美食神猪的情况，相信你也已经从我发送的文件里了解清楚了！咱们得立刻做准备咯。]]></node>
-                        <reply action="goToBranch" params="next1"><![CDATA[……]]></reply>
-                    </branch>
-                    <branch id="next1">
-                        <node emotion="1">
-                            <![CDATA[哈哈！放心吧，这段时间我和菲鲁研究出了最新的生命监测仪。只要美食神猪降临阿卡迪亚星，我们就一定能发现他。]]></node>
-                        <reply action="goToBranch" params="next2"><![CDATA[那机器这么厉害？]]></reply>
-                    </branch>
-                    <branch id="next2">
-                        <node emotion="1">
-                            <![CDATA[必须的，科技的力量是无穷的哦！你现在去机械室找菲鲁，他会教你如何操作的。]]></node>
-                        <reply action="completeStep"><![CDATA[好咧！（去机械室找菲鲁）]]></reply>
-                    </branch>
-                </dialog>
-            </step>
-            <step id="2" name="领取生命监测仪" sum="机械室" des="最新的生命监测仪研制成功了，去#机械室#找菲鲁领取吧。">
-                <dialog npcId="4" npcName="菲鲁" transport="">
-                    <branch id="default" npcId="9999">
-                        <node emotion="0"><![CDATA[菲鲁，我来领取最新的生命监测仪啦，这机器的操作复杂吗？]]></node>
-                        <reply action="goToBranch"
-                               params="next1"><![CDATA[……]]></reply>
-                    </branch>
-                    <branch id="next1">
-                        <node
-                                emotion="3">
-                            <![CDATA[嘿嘿，先进的东西，都是傻瓜式操作。程序我全编译好了，你只要把仪器放在合适的地点，然击点击就能启动啦！]]></node>
-                        <reply action="goToBranch" params="next2"><![CDATA[……]]></reply>
-                    </branch>
-                    <branch id="next2" npcId="9999">
-                        <node emotion="0"><![CDATA[哇哦！太棒了！我需要5台机器，分别放在阿卡迪亚星的五大主城。]]></node>
-                        <reply action="goToBranch" params="next3"><![CDATA[……]]></reply>
-                    </branch>
-                    <branch id="next3">
-                        <node emotion="3"><![CDATA[现在只制造出3台，另外2台要等到下周呢。]]></node>
-                        <reply action="goToBranch" params="next4"><![CDATA[……]]></reply>
-                    </branch>
-                    <branch id="next4" npcId="9999">
-                        <node emotion="0">
-                            <![CDATA[额……好，剩下的两台机器到时让多罗和巴蒂过来拿吧，辛苦你啦！我就先拿上这些出发咯。]]></node>
-                        <reply action="completeStep"><![CDATA[（立刻去草目氏族主城）]]></reply>
-                    </branch>
-                </dialog>
-            </step>
-            <step id="3" name="安装生命监测仪" sum="草系主城" des="立刻到#草系主城#安装生命监测仪。">
-                <outcome>
-                    <item giveId="1" cnt="1000"/>
-                </outcome>
-            </step>
-        </steps>
-        <doc><![CDATA[占卜婆婆收集了有关美食神猪绝密信息哦！]]></doc>
-    </quest>
+    <!--<quest id="30011" name="迎接美食神猪" type="5" track="0" autoNext="0" needAcceptMark="1"
+		relatedMapIds="213,30,50,90,160,230" acceptMapId="213" onlineTime="" monLvlUp="1">
+		<prerequisite questId="30008" level="1"/> <acceptDialog npcId="27" npcName="占卜婆婆"
+		transport=""> <branch id="default" npcId="9999"> <node emotion="1"><![CDATA[漂亮婆婆，都过去一个星期啦，你应该休息好了吧？关于美食神猪的秘密就告诉我嘛！]]></node>
+		<reply action="goToBranch" params="branch1"><![CDATA[……]]></reply> </branch>
+		<branch id="branch1"> <node emotion="1"><![CDATA[嘿嘿， 看你这么有恒心，那现在就给你说说吧 。]]></node>
+		<reply action="accept"><![CDATA[哇哦哦！婆婆真好。]]></reply> </branch> </acceptDialog>
+		<steps> <step id="1" name="找娜威拉对话" sum="资料室" des="美食神猪将在6月降临五大氏族的主城，赶紧回#资料室#找娜威拉商量对策！">
+		<dialog npcId="7" npcName="娜威拉" transport=""> <branch id="default" npcId="9999">
+		<node emotion="0"><![CDATA[娜威拉，关于美食神猪的情况，相信你也已经从我发送的文件里了解清楚了！咱们得立刻做准备咯。]]></node>
+		<reply action="goToBranch" params="next1"><![CDATA[……]]></reply> </branch>
+		<branch id="next1"> <node emotion="1"><![CDATA[哈哈！放心吧，这段时间我和菲鲁研究出了最新的生命监测仪。只要美食神猪降临阿卡迪亚星，我们就一定能发现他。]]></node>
+		<reply action="goToBranch" params="next2"><![CDATA[那机器这么厉害？]]></reply> </branch>
+		<branch id="next2"> <node emotion="1"><![CDATA[必须的，科技的力量是无穷的哦！你现在去机械室找菲鲁，他会教你如何操作的。]]></node>
+		<reply action="completeStep"><![CDATA[好咧！（去机械室找菲鲁）]]></reply> </branch> </dialog>
+		</step> <step id="2" name="领取生命监测仪" sum="机械室" des="最新的生命监测仪研制成功了，去#机械室#找菲鲁领取吧。">
+		<dialog npcId="4" npcName="菲鲁" transport=""> <branch id="default" npcId="9999">
+		<node emotion="0"><![CDATA[菲鲁，我来领取最新的生命监测仪啦，这机器的操作复杂吗？]]></node> <reply action="goToBranch"
+		params="next1"><![CDATA[……]]></reply> </branch> <branch id="next1"> <node
+		emotion="3"><![CDATA[嘿嘿，先进的东西，都是傻瓜式操作。程序我全编译好了，你只要把仪器放在合适的地点，然击点击就能启动啦！]]></node>
+		<reply action="goToBranch" params="next2"><![CDATA[……]]></reply> </branch>
+		<branch id="next2" npcId="9999"> <node emotion="0"><![CDATA[哇哦！太棒了！我需要5台机器，分别放在阿卡迪亚星的五大主城。]]></node>
+		<reply action="goToBranch" params="next3"><![CDATA[……]]></reply> </branch>
+		<branch id="next3"> <node emotion="3"><![CDATA[现在只制造出3台，另外2台要等到下周呢。]]></node>
+		<reply action="goToBranch" params="next4"><![CDATA[……]]></reply> </branch>
+		<branch id="next4" npcId="9999"> <node emotion="0"><![CDATA[额……好，剩下的两台机器到时让多罗和巴蒂过来拿吧，辛苦你啦！我就先拿上这些出发咯。]]></node>
+		<reply action="completeStep"><![CDATA[（立刻去草目氏族主城）]]></reply> </branch> </dialog>
+		</step> <step id="3" name="安装生命监测仪" sum="草系主城" des="立刻到#草系主城#安装生命监测仪。"> <outcome>
+		<item giveId="1" cnt="1000"/> </outcome> </step> </steps> <doc><![CDATA[占卜婆婆收集了有关美食神猪绝密信息哦！]]></doc>
+		</quest> -->
     <quest id="30012" name="星球末日" type="5" track="0" autoNext="0"
            needAcceptMark="1" relatedMapIds="770,870" acceptMapId="770"
            acceptNpcId="120" onlineTime="" monLvlUp="1">
@@ -9886,107 +8963,47 @@
         </steps>
         <doc><![CDATA[稀有精灵活动]]></doc>
     </quest>
-    <quest id="30021" name="神秘的某某" type="5" track="1" autoNext="0"
-           needAcceptMark="1" relatedMapIds="80,40,50,801" acceptMapId="80" onlineTime=""
-           monLvlUp="1">
-        <prerequisite questId="1" level="1"/>
-        <acceptDialog npcId="1001"
-                      npcName="伊娃" transport="">
-            <branch id="default">
-                <node emotion="0">
-                    <![CDATA[赛尔们对于精灵王争霸赛的参与热情让我振奋！在保证公平的前提下，让大家都能够畅快战斗是我们的义务！不过……]]></node>
-                <reply action="goToBranch" params="next1"><![CDATA[不过？]]></reply>
-            </branch>
-            <branch id="next1">
-                <node emotion="0"><![CDATA[有一件不太妙的事情发生了。现在我们几个队长还在调查中……]]></node>
-                <reply action="" params="30021_0"><![CDATA[什么不太妙的事情？]]></reply>
-            </branch>
-        </acceptDialog>
-        <steps>
-            <step id="1" name="胆小的恐怖分子 " sum="动力室" des="到#动力室#询问一下冰沁队队长，看看他有什么线索！">
-                <dialog npcId="1002" npcName="上尉" transport="">
-                    <branch id="default">
-                        <node
-                                emotion="0"><![CDATA[丧失公平的竞技不再是竞技，是“打架”！是“胡闹”！]]></node>
-                        <reply action=""
-                               params="30021_1"><![CDATA[上尉这边有什么线索吗？（看起来很生气啊）]]></reply>
-                    </branch>
-                </dialog>
-            </step>
-            <step id="2" name="更可怕的传闻" sum="机械室" des="到#机械室#询问一下丛林队队长，看看他有什么线索！">
-                <dialog npcId="1003" npcName="多罗" transport="">
-                    <branch id="default" npcId="1003">
-                        <node emotion="0">
-                            <![CDATA[队长，队长，好可怕啊，最近谣言四起，丛林队的队长还是给你做吧，我招架不住！]]></node>
-                        <reply action="" params="30021_2"><![CDATA[镇定！先把你知道的都告诉我！]]></reply>
-                    </branch>
-                </dialog>
-            </step>
-            <step id="3" name="神秘的某某" sum="游戏室(夜)" des="夜探#游戏室(夜)#揭开神秘队伍的真面目！！">
-                <dialog npcId="1003" npcName="多罗" transport="">
-                    <branch id="default" npcId="1003">
-                        <node emotion="0"><![CDATA[太可怕啦！！看来神秘队伍一定会获胜的！！！]]></node>
-                        <reply action=""
-                               params="30021_3"><![CDATA[交给我吧，我去夜探游戏室！！]]></reply>
-                    </branch>
-                </dialog>
-                <outcome>
-                    <item giveId="1" cnt="1000"/>
-                    <item giveId="200214" cnt="1"/>
-                    <item giveId="400131"
-                          cnt="10"/>
-                </outcome>
-            </step>
-        </steps>
-        <doc><![CDATA[英雄之传说]]></doc>
-    </quest>
-    <quest id="30023" name="我是宣传委员" type="5" track="0" autoNext="0" needAcceptMark="1"
-           relatedMapIds="10,70,50,141,40,202,80,261" acceptMapId="70" onlineTime=""
-           monLvlUp="1">
-        <prerequisite questId="1" level="1"/>
-        <acceptDialog npcId="8"
-                      npcName="艾农" transport="">
-            <branch id="default">
-                <node emotion="1"><![CDATA[GO
-		GO GO啊来啊来啊来！一年一度的精灵王争霸赛可谓是热闹非凡啊！对了，你被当选为你们队的宣传委员啦！]]></node>
-                <reply action="goToBranch"
-                       params="branch1"><![CDATA[额……宣传委员]]></reply>
-            </branch>
-            <branch id="branch1">
-                <node emotion="1">
-                    <![CDATA[还愣着干嘛！快去船长那里报到吧！他正在船长室等候你呢！记得扬你队威哦！哈哈！]]></node>
-                <reply action="accept" params="57_0"><![CDATA[ 是！我这就去！]]></reply>
-            </branch>
-        </acceptDialog>
-        <steps>
-            <step id="1" name="船长室" sum="船长室" des="还愣着干嘛！快去#船长室#那里报到吧！"
-            />
-        </steps>
-        <doc><![CDATA[一年一度的精灵王争霸赛正热闹的举办着，红绿蓝队也都摩拳擦掌。]]></doc>
-    </quest>
-    <quest id="30024" name="光与暗的觉醒" type="5" track="1" autoNext="0" needAcceptMark="1"
-           relatedMapIds="20,50,80" acceptMapId="20" onlineTime="" monLvlUp="1">
-        <prerequisite
-                questId="30021" level="1"/>
-        <acceptDialog npcId="2" npcName="伊娃" transport="">
-            <branch id="default">
-                <node emotion="0"><![CDATA[多罗发出警报了！快去飞船机械室查看一下出现了什么情况！]]></node>
-                <reply action="" params="30024_0"><![CDATA[好的！]]></reply>
-            </branch>
-        </acceptDialog>
-        <steps>
-            <step id="1" name="拯救神秘的某某 " sum="机械室" des="快到#机械室#一下，那里有紧急情况！"/>
-            <step id="2" name="光与暗的转变" sum="游戏室" des="难道这又是斯坦因邪恶的计划？快去#游戏室#一探究竟。"/>
-            <step
-                    id="3" name="卡拉尔" sum="游戏室" des="神秘的某某能否再次回归光之守卫队？快去#游戏室#寻找卡拉尔。">
-                <outcome>
-                    <item giveId="1" cnt="1000"/>
-                    <item giveId="200214" cnt="1"/>
-                </outcome>
-            </step>
-        </steps>
-        <doc><![CDATA[有情况！飞船机械室发出入侵警报！]]></doc>
-    </quest>
+    <!-- 任务下线开始 <quest id="30021" name="神秘的某某" type="5" track="1" autoNext="0"
+		needAcceptMark="1" relatedMapIds="80,40,50,801" acceptMapId="80" onlineTime=""
+		monLvlUp="1"> <prerequisite questId="1" level="1"/> <acceptDialog npcId="1001"
+		npcName="伊娃" transport=""> <branch id="default"> <node emotion="0"><![CDATA[赛尔们对于精灵王争霸赛的参与热情让我振奋！在保证公平的前提下，让大家都能够畅快战斗是我们的义务！不过……]]></node>
+		<reply action="goToBranch" params="next1"><![CDATA[不过？]]></reply> </branch>
+		<branch id="next1"> <node emotion="0"><![CDATA[有一件不太妙的事情发生了。现在我们几个队长还在调查中……]]></node>
+		<reply action="" params="30021_0"><![CDATA[什么不太妙的事情？]]></reply> </branch>
+		</acceptDialog> <steps> <step id="1" name="胆小的恐怖分子 " sum="动力室" des="到#动力室#询问一下冰沁队队长，看看他有什么线索！">
+		<dialog npcId="1002" npcName="上尉" transport=""> <branch id="default"> <node
+		emotion="0"><![CDATA[丧失公平的竞技不再是竞技，是“打架”！是“胡闹”！]]></node> <reply action=""
+		params="30021_1"><![CDATA[上尉这边有什么线索吗？（看起来很生气啊）]]></reply> </branch> </dialog>
+		</step> <step id="2" name="更可怕的传闻" sum="机械室" des="到#机械室#询问一下丛林队队长，看看他有什么线索！">
+		<dialog npcId="1003" npcName="多罗" transport=""> <branch id="default" npcId="1003">
+		<node emotion="0"><![CDATA[队长，队长，好可怕啊，最近谣言四起，丛林队的队长还是给你做吧，我招架不住！]]></node>
+		<reply action="" params="30021_2"><![CDATA[镇定！先把你知道的都告诉我！]]></reply> </branch>
+		</dialog> </step> <step id="3" name="神秘的某某" sum="游戏室(夜)" des="夜探#游戏室(夜)#揭开神秘队伍的真面目！！">
+		<dialog npcId="1003" npcName="多罗" transport=""> <branch id="default" npcId="1003">
+		<node emotion="0"><![CDATA[太可怕啦！！看来神秘队伍一定会获胜的！！！]]></node> <reply action=""
+		params="30021_3"><![CDATA[交给我吧，我去夜探游戏室！！]]></reply> </branch> </dialog> <outcome>
+		<item giveId="1" cnt="1000"/> <item giveId="200214" cnt="1"/> <item giveId="400131"
+		cnt="10"/> </outcome> </step> </steps> <doc><![CDATA[英雄之传说]]></doc> </quest>
+		<quest id="30023" name="我是宣传委员" type="5" track="0" autoNext="0" needAcceptMark="1"
+		relatedMapIds="10,70,50,141,40,202,80,261" acceptMapId="70" onlineTime=""
+		monLvlUp="1"> <prerequisite questId="1" level="1"/> <acceptDialog npcId="8"
+		npcName="艾农" transport=""> <branch id="default"> <node emotion="1"><![CDATA[GO
+		GO GO啊来啊来啊来！一年一度的精灵王争霸赛可谓是热闹非凡啊！对了，你被当选为你们队的宣传委员啦！]]></node> <reply action="goToBranch"
+		params="branch1"><![CDATA[额……宣传委员]]></reply> </branch> <branch id="branch1">
+		<node emotion="1"><![CDATA[还愣着干嘛！快去船长那里报到吧！他正在船长室等候你呢！记得扬你队威哦！哈哈！]]></node>
+		<reply action="accept" params="57_0"><![CDATA[ 是！我这就去！]]></reply> </branch>
+		</acceptDialog> <steps> <step id="1" name="船长室" sum="船长室" des="还愣着干嘛！快去#船长室#那里报到吧！"
+		/> </steps> <doc><![CDATA[一年一度的精灵王争霸赛正热闹的举办着，红绿蓝队也都摩拳擦掌。]]></doc> </quest>
+		<quest id="30024" name="光与暗的觉醒" type="5" track="1" autoNext="0" needAcceptMark="1"
+		relatedMapIds="20,50,80" acceptMapId="20" onlineTime="" monLvlUp="1"> <prerequisite
+		questId="30021" level="1"/> <acceptDialog npcId="2" npcName="伊娃" transport="">
+		<branch id="default"> <node emotion="0"><![CDATA[多罗发出警报了！快去飞船机械室查看一下出现了什么情况！]]></node>
+		<reply action="" params="30024_0"><![CDATA[好的！]]></reply> </branch> </acceptDialog>
+		<steps> <step id="1" name="拯救神秘的某某 " sum="机械室" des="快到#机械室#一下，那里有紧急情况！"/>
+		<step id="2" name="光与暗的转变" sum="游戏室" des="难道这又是斯坦因邪恶的计划？快去#游戏室#一探究竟。"/> <step
+		id="3" name="卡拉尔" sum="游戏室" des="神秘的某某能否再次回归光之守卫队？快去#游戏室#寻找卡拉尔。"> <outcome>
+		<item giveId="1" cnt="1000"/> <item giveId="200214" cnt="1"/> </outcome>
+		</step> </steps> <doc><![CDATA[有情况！飞船机械室发出入侵警报！]]></doc> </quest> 任务下线结束 -->
     <quest id="30025" name="会伪装的歌者" type="5" track="0" autoNext="0"
            needAcceptMark="0" relatedMapIds="100" onlineTime="2012-8-18"
            acceptMapId="100" isDaily="true">
@@ -9997,138 +9014,61 @@
         </steps>
         <doc><![CDATA[会伪装的歌者]]></doc>
     </quest>
-    <quest id="30026" name="墙壁粉刷" type="5" track="1" autoNext="0" needAcceptMark="1"
-           relatedMapIds="510" acceptMapId="" onlineTime="">
-        <prerequisite questId="1"
-                      level="1"/>
-        <steps>
-            <step id="1" name="抢回5把刷子" sum="地道之路" des="在#地道之路#与格尔希克对战，抢回5把刷子。"/>
-            <step id="2" name="粉刷墙壁" sum="传送室" des="让#传送室#的包工头刷墙壁"/>
-            <step id="3" name="粉刷完成"
-                  sum="传送室" des="#传送室#的粉刷即将完成啦"/>
-        </steps>
-        <doc><![CDATA[墙壁粉刷]]></doc>
-    </quest>
-    <quest id="30027" name="装饰布置" type="5" track="1" autoNext="0" needAcceptMark="1"
-           relatedMapIds="122, 220, 240" acceptMapId="" onlineTime="">
-        <prerequisite
-                questId="1" level="1"/>
-        <steps>
-            <step id="1" name="收集物品" sum="" des="在#朽木桥#,#幽静浅滩#,#蛮神战场#"/>
-            <step id="2" name="装饰布置" sum="传送室" des="让#传送室#的包工头装饰布置"/>
-            <step id="3" name="装饰完成"
-                  sum="传送室" des="#传送室#的装饰即将完成啦"/>
-        </steps>
-        <doc><![CDATA[装饰布置]]></doc>
-    </quest>
-    <quest id="30028" name="地板抛光" type="5" track="1" autoNext="0" needAcceptMark="1"
-           relatedMapIds="141" acceptMapId="" onlineTime="">
-        <prerequisite questId="1"
-                      level="1"/>
-        <steps>
-            <step id="1" name="得到10罐地蜡" sum="幻影崖" des="与#幻影崖#小树根对战，得到10罐地蜡"/>
-            <step id="2" name="地板抛光" sum="传送室" des="让#传送室#的包工头地板抛光"/>
-            <step id="3" name="抛光完成"
-                  sum="传送室" des="#传送室#的地板抛光即将完成啦"/>
-        </steps>
-        <doc><![CDATA[地板抛光]]></doc>
-    </quest>
-    <quest id="30029" name="开学祝福" type="5" track="1" autoNext="0" needAcceptMark="1"
-           relatedMapIds="10, 20, 60, 30" acceptMapId="" onlineTime="">
-        <prerequisite
-                questId="1" level="1"/>
-        <steps>
-            <step id="1" name="与4位船员对话" sum="" des="与4位船员对话，得到他们的开学祝福"/>
-            <step id="2" name="开学祝福结束" sum="" des="去#传送室#对话包工头">
-                <outcome>
-                    <item giveId="1"
-                          cnt="5000"/>
-                    <item giveId="200205" cnt="1"/>
-                    <item giveId="200014" cnt="3"/>
-                    <item giveId="200221" cnt="1"/>
-                    <item giveId="200225" cnt="1"/>
-                </outcome>
-            </step>
-        </steps>
-        <doc><![CDATA[开学祝福]]></doc>
-    </quest>
-    <quest id="30030" name="穿越时空的信使" type="5" track="1" autoNext="0"
-           needAcceptMark="1" relatedMapIds="10" acceptMapId="10" onlineTime="" monLvlUp="1">
-        <prerequisite questId="1" level="1"/>
-        <acceptDialog transport="" npcId="1">
-            <branch id="default" npcId="1" npcName="辛迪船长">
-                <node emotion="0"><![CDATA[快看！船仓外好像有个类似于球的东西朝飞船这边冲过来了！！！]]></node>
-                <reply action="" params="10122_0"><![CDATA[丝毫没有减速的迹象呀！船长快趴下！]]></reply>
-            </branch>
-        </acceptDialog>
-        <steps>
-            <step id="1" name="邮差的小癖好" sum="船长室"
-                  des="只有邮差精灵能够帮助我了，但是我要用什么打动它呢？去#船长室#看一下。"/>
-            <step id="2" name="飞翔吧！向着偶像的方向！" sum="船长室"
-                  des="让#船长室#的邮差精灵带着我的心意，向着贾斯汀的方向飞吧！">
-                <outcome>
-                    <item giveId="1" cnt="1000"/>
-                    <item giveId="200214" cnt="1"/>
-                </outcome>
-            </step>
-        </steps>
-    </quest>
-    <quest id="30031" name="荆棘林晒太阳" type="5" track="1" autoNext="0" needAcceptMark="1"
-           relatedMapIds="131" acceptMapId="" onlineTime="">
-        <prerequisite questId="1"
-                      level="1"/>
-        <steps>
-            <step id="1" name="前往荆棘林(需要白天)" sum="荆棘林" des="前往#荆棘林#"/>
-            <step id="2" name="到达荆棘林" sum="荆棘林" des="前往#荆棘林#"/>
-        </steps>
-    </quest>
-    <quest
-            id="30032" name="水仙溪口钓鱼" type="5" track="1" autoNext="0" needAcceptMark="1"
-            relatedMapIds="152" acceptMapId="" onlineTime="">
-        <prerequisite questId="30031"
-                      level="1"/>
-        <steps>
-            <step id="1" name="前往水仙溪口钓鱼" sum="水仙溪口" des="前往#水仙溪口#钓鱼"/>
-            <step id="2" name="钓鱼完成" sum="水仙溪口" des="前往#水仙溪口#钓鱼"/>
-        </steps>
-    </quest>
-    <quest id="30033" name="游戏室玩酒鬼胖胖" type="5" track="1" autoNext="0" needAcceptMark="1"
-           relatedMapIds="80" acceptMapId="" onlineTime="">
-        <prerequisite questId="30032"
-                      level="1"/>
-        <steps>
-            <step id="1" name="去游戏室玩酒鬼胖胖" sum="游戏室" des="去#游戏室#玩酒鬼胖胖"/>
-            <step id="2" name="完成酒鬼胖胖" sum="游戏室" des="去#游戏室#完成酒鬼胖胖"/>
-        </steps>
-    </quest>
-    <quest id="30034" name="陪他扁船长" type="5" track="1" autoNext="0" needAcceptMark="1"
-           relatedMapIds="10" acceptMapId="" onlineTime="">
-        <prerequisite questId="30033"
-                      level="1"/>
-        <steps>
-            <step id="1" name="陪他玩狂扁某某某" sum="船长室" des="去#船长室#陪他狂扁某某某"/>
-            <step id="2" name="完成狂扁某某某" sum="船长室" des="去#游戏室#完成狂扁某某某"/>
-        </steps>
-    </quest>
-    <quest id="30035" name="挑战布鲁托" type="5" track="1" autoNext="0" needAcceptMark="1"
-           relatedMapIds="142" acceptMapId="" onlineTime="">
-        <prerequisite questId="30034"
-                      level="1"/>
-        <steps>
-            <step id="1" name="战胜SPT布鲁托" sum="巨石洞穴" des="去#巨石洞穴#战胜布鲁托"/>
-            <step id="2" name="战胜布鲁托" sum="巨石洞穴" des="战胜了布鲁托"/>
-        </steps>
-    </quest>
-    <quest
-            id="30036" name="好友家挑战精灵" type="5" track="1" autoNext="0" needAcceptMark="1"
-            relatedMapIds="" acceptMapId="" onlineTime="">
-        <prerequisite questId="30035"
-                      level="1"/>
-        <steps>
-            <step id="1" name="去好友家挑战精灵" sum="好友家" des="去好友家挑战精灵"/>
-            <step id="2" name="在好友家挑战精灵成功" sum="好友家" des="挑战精灵成功"/>
-        </steps>
-    </quest>
+    <!--<quest id="30026" name="墙壁粉刷" type="5" track="1" autoNext="0" needAcceptMark="1"
+		relatedMapIds="510" acceptMapId="" onlineTime=""> <prerequisite questId="1"
+		level="1"/> <steps> <step id="1" name="抢回5把刷子" sum="地道之路" des="在#地道之路#与格尔希克对战，抢回5把刷子。"/>
+		<step id="2" name="粉刷墙壁" sum="传送室" des="让#传送室#的包工头刷墙壁"/> <step id="3" name="粉刷完成"
+		sum="传送室" des="#传送室#的粉刷即将完成啦"/> </steps> <doc><![CDATA[墙壁粉刷]]></doc> </quest>
+		<quest id="30027" name="装饰布置" type="5" track="1" autoNext="0" needAcceptMark="1"
+		relatedMapIds="122, 220, 240" acceptMapId="" onlineTime=""> <prerequisite
+		questId="1" level="1"/> <steps> <step id="1" name="收集物品" sum="" des="在#朽木桥#,#幽静浅滩#,#蛮神战场#"/>
+		<step id="2" name="装饰布置" sum="传送室" des="让#传送室#的包工头装饰布置"/> <step id="3" name="装饰完成"
+		sum="传送室" des="#传送室#的装饰即将完成啦"/> </steps> <doc><![CDATA[装饰布置]]></doc> </quest>
+		<quest id="30028" name="地板抛光" type="5" track="1" autoNext="0" needAcceptMark="1"
+		relatedMapIds="141" acceptMapId="" onlineTime=""> <prerequisite questId="1"
+		level="1"/> <steps> <step id="1" name="得到10罐地蜡" sum="幻影崖" des="与#幻影崖#小树根对战，得到10罐地蜡"/>
+		<step id="2" name="地板抛光" sum="传送室" des="让#传送室#的包工头地板抛光"/> <step id="3" name="抛光完成"
+		sum="传送室" des="#传送室#的地板抛光即将完成啦"/> </steps> <doc><![CDATA[地板抛光]]></doc> </quest>
+		<quest id="30029" name="开学祝福" type="5" track="1" autoNext="0" needAcceptMark="1"
+		relatedMapIds="10, 20, 60, 30" acceptMapId="" onlineTime=""> <prerequisite
+		questId="1" level="1"/> <steps> <step id="1" name="与4位船员对话" sum="" des="与4位船员对话，得到他们的开学祝福"/>
+		<step id="2" name="开学祝福结束" sum="" des="去#传送室#对话包工头"> <outcome> <item giveId="1"
+		cnt="5000"/> <item giveId="200205" cnt="1"/> <item giveId="200014" cnt="3"/>
+		<item giveId="200221" cnt="1"/> <item giveId="200225" cnt="1"/> </outcome>
+		</step> </steps> <doc><![CDATA[开学祝福]]></doc> </quest> -->
+    <!-- 下线开始喽 <quest id="30030" name="穿越时空的信使" type="5" track="1" autoNext="0"
+		needAcceptMark="1" relatedMapIds="10" acceptMapId="10" onlineTime="" monLvlUp="1">
+		<prerequisite questId="1" level="1"/> <acceptDialog transport="" npcId="1">
+		<branch id="default" npcId="1" npcName="辛迪船长"> <node emotion="0"><![CDATA[快看！船仓外好像有个类似于球的东西朝飞船这边冲过来了！！！]]></node>
+		<reply action="" params="10122_0"><![CDATA[丝毫没有减速的迹象呀！船长快趴下！]]></reply> </branch>
+		</acceptDialog> <steps> <step id="1" name="邮差的小癖好" sum="船长室" des="只有邮差精灵能够帮助我了，但是我要用什么打动它呢？去#船长室#看一下。"/>
+		<step id="2" name="飞翔吧！向着偶像的方向！" sum="船长室" des="让#船长室#的邮差精灵带着我的心意，向着贾斯汀的方向飞吧！">
+		<outcome> <item giveId="1" cnt="1000"/> <item giveId="200214" cnt="1"/> </outcome>
+		</step> </steps> </quest> 下线结束喽 -->
+    <!--<quest id="30031" name="荆棘林晒太阳" type="5" track="1" autoNext="0" needAcceptMark="1"
+		relatedMapIds="131" acceptMapId="" onlineTime=""> <prerequisite questId="1"
+		level="1"/> <steps> <step id="1" name="前往荆棘林(需要白天)" sum="荆棘林" des="前往#荆棘林#"/>
+		<step id="2" name="到达荆棘林" sum="荆棘林" des="前往#荆棘林#"/> </steps> </quest> <quest
+		id="30032" name="水仙溪口钓鱼" type="5" track="1" autoNext="0" needAcceptMark="1"
+		relatedMapIds="152" acceptMapId="" onlineTime=""> <prerequisite questId="30031"
+		level="1"/> <steps> <step id="1" name="前往水仙溪口钓鱼" sum="水仙溪口" des="前往#水仙溪口#钓鱼"/>
+		<step id="2" name="钓鱼完成" sum="水仙溪口" des="前往#水仙溪口#钓鱼"/> </steps> </quest>
+		<quest id="30033" name="游戏室玩酒鬼胖胖" type="5" track="1" autoNext="0" needAcceptMark="1"
+		relatedMapIds="80" acceptMapId="" onlineTime=""> <prerequisite questId="30032"
+		level="1"/> <steps> <step id="1" name="去游戏室玩酒鬼胖胖" sum="游戏室" des="去#游戏室#玩酒鬼胖胖"/>
+		<step id="2" name="完成酒鬼胖胖" sum="游戏室" des="去#游戏室#完成酒鬼胖胖"/> </steps> </quest>
+		<quest id="30034" name="陪他扁船长" type="5" track="1" autoNext="0" needAcceptMark="1"
+		relatedMapIds="10" acceptMapId="" onlineTime=""> <prerequisite questId="30033"
+		level="1"/> <steps> <step id="1" name="陪他玩狂扁某某某" sum="船长室" des="去#船长室#陪他狂扁某某某"/>
+		<step id="2" name="完成狂扁某某某" sum="船长室" des="去#游戏室#完成狂扁某某某"/> </steps> </quest>
+		<quest id="30035" name="挑战布鲁托" type="5" track="1" autoNext="0" needAcceptMark="1"
+		relatedMapIds="142" acceptMapId="" onlineTime=""> <prerequisite questId="30034"
+		level="1"/> <steps> <step id="1" name="战胜SPT布鲁托" sum="巨石洞穴" des="去#巨石洞穴#战胜布鲁托"/>
+		<step id="2" name="战胜布鲁托" sum="巨石洞穴" des="战胜了布鲁托"/> </steps> </quest> <quest
+		id="30036" name="好友家挑战精灵" type="5" track="1" autoNext="0" needAcceptMark="1"
+		relatedMapIds="" acceptMapId="" onlineTime=""> <prerequisite questId="30035"
+		level="1"/> <steps> <step id="1" name="去好友家挑战精灵" sum="好友家" des="去好友家挑战精灵"/>
+		<step id="2" name="在好友家挑战精灵成功" sum="好友家" des="挑战精灵成功"/> </steps> </quest> -->
     <quest id="30037" name="普兰特山麓传说" type="5" track="1" autoNext="0"
            needAcceptMark="1" relatedMapIds="20,990" acceptMapId="20" onlineTime="">
         <prerequisite questId="1" level="1"/>
@@ -10162,34 +9102,17 @@
         </steps>
         <doc><![CDATA[虽然我们已经决定要拯救普兰特山麓……但是没有教授的帮助是不行的！]]></doc>
     </quest>
-    <quest id="30039" name="阿卡迪亚夜幕哀号" type="5" track="1" autoNext="0" needAcceptMark="1"
-           relatedMapIds="10,124,520,620,640" acceptMapId="10" onlineTime="">
-        <prerequisite
-                questId="0" level="1"/>
-        <acceptDialog npcId="1" npcName="船长辛迪" transport="">
-            <branch id="default">
-                <node emotion="0"><![CDATA[赛尔！情况很紧急！异蘑谷上发生了一些离奇的事情！快过去看看吧！]]></node>
-                <reply action="" params="30038_0"><![CDATA[好的！（点击前往异蘑谷）]]></reply>
-                <reply
-                        action="close"><![CDATA[我才没空呢]]></reply>
-            </branch>
-        </acceptDialog>
-        <steps>
-            <step id="1" name="离奇的失踪 " sum="异蘑谷" des="#异蘑谷#发生了什么事情？快过去看一下！"/>
-            <step id="2"
-                  name="离奇的绑架" sum="乌黑矿坑" des="#乌黑矿坑#中的皮皮格也发出了警报！"/>
-            <step id="3" name="追击狼妖"
-                  sum="冰脊山脉" des="#冰脊山脉#中发现了一些线索！"/>
-            <step id="4" name="狼妖的哀求" sum="冰脊之巅" des="狼妖肯定就在#冰脊之巅#，我要赶快去那一探究竟！">
-                <outcome>
-                    <item giveId="1" cnt="500"/>
-                    <item giveId="200214" cnt="1"/>
-                    <item
-                            giveId="400243" cnt="1"/>
-                </outcome>
-            </step>
-        </steps>
-    </quest>
+    <!--<quest id="30039" name="阿卡迪亚夜幕哀号" type="5" track="1" autoNext="0" needAcceptMark="1"
+		relatedMapIds="10,124,520,620,640" acceptMapId="10" onlineTime=""> <prerequisite
+		questId="0" level="1"/> <acceptDialog npcId="1" npcName="船长辛迪" transport="">
+		<branch id="default"> <node emotion="0"><![CDATA[赛尔！情况很紧急！异蘑谷上发生了一些离奇的事情！快过去看看吧！]]></node>
+		<reply action="" params="30038_0"><![CDATA[好的！（点击前往异蘑谷）]]></reply> <reply
+		action="close"><![CDATA[我才没空呢]]></reply> </branch> </acceptDialog> <steps>
+		<step id="1" name="离奇的失踪 " sum="异蘑谷" des="#异蘑谷#发生了什么事情？快过去看一下！"/> <step id="2"
+		name="离奇的绑架" sum="乌黑矿坑" des="#乌黑矿坑#中的皮皮格也发出了警报！"/> <step id="3" name="追击狼妖"
+		sum="冰脊山脉" des="#冰脊山脉#中发现了一些线索！"/> <step id="4" name="狼妖的哀求" sum="冰脊之巅" des="狼妖肯定就在#冰脊之巅#，我要赶快去那一探究竟！">
+		<outcome> <item giveId="1" cnt="500"/> <item giveId="200214" cnt="1"/> <item
+		giveId="400243" cnt="1"/> </outcome> </step> </steps> </quest> -->
 
     <quest id="30040" name="目灵兽的试炼 第一章" type="5" track="1" autoNext="0"
            needAcceptMark="1" relatedMapIds="800,1311,1411,1241,1231,1334,1211,1421"
@@ -10483,61 +9406,28 @@
     </quest>
 
 
-    <quest id="30041" name="布置地毯" type="5" track="1" autoNext="0" needAcceptMark="1"
-           relatedMapIds="510" acceptMapId="" onlineTime="">
-        <prerequisite questId="1"
-                      level="1"/>
-        <steps>
-            <step id="1" name="得到5件针织毛纺" sum="地道之路" des="在#地道之路#与格尔希克对战，抢回5件针织毛纺。"/>
-            <step id="2" name="布置地毯" sum="传送室" des="让#传送室#的包工头完成装饰"/>
-            <step id="3" name="布置完成"
-                  sum="传送室" des="#传送室#的装饰即将完成啦"/>
-        </steps>
-        <doc><![CDATA[布置地毯]]></doc>
-    </quest>
-    <quest id="30042" name="绘制墙纸" type="5" track="1" autoNext="0" needAcceptMark="1"
-           relatedMapIds="122, 220, 240" acceptMapId="" onlineTime="">
-        <prerequisite
-                questId="1" level="1"/>
-        <steps>
-            <step id="1" name="收集物品" sum="" des="在#朽木桥#,#幽静浅滩#,#蛮神战场#"/>
-            <step id="2" name="装饰布置" sum="传送室" des="让#传送室#的包工头装饰布置"/>
-            <step id="3" name="装饰完成"
-                  sum="传送室" des="#传送室#的装饰即将完成啦"/>
-        </steps>
-        <doc><![CDATA[绘制墙纸]]></doc>
-    </quest>
-    <quest id="30043" name="装置装饰" type="5" track="1" autoNext="0" needAcceptMark="1"
-           relatedMapIds="141" acceptMapId="" onlineTime="">
-        <prerequisite questId="1"
-                      level="1"/>
-        <steps>
-            <step id="1" name="抢回10个彩角" sum="幻影崖" des="与#幻影崖#小树根对战，得到10个彩角"/>
-            <step id="2" name="地板抛光" sum="传送室" des="让#传送室#的包工头完成装置装饰"/>
-            <step id="3"
-                  name="装置装饰" sum="传送室" des="#传送室#的装置装饰即将完成啦"/>
-        </steps>
-        <doc><![CDATA[装置装饰]]></doc>
-    </quest>
-    <quest id="30044" name="新年祝福" type="5" track="1" autoNext="0" needAcceptMark="1"
-           relatedMapIds="10, 20, 60, 30" acceptMapId="" onlineTime="">
-        <prerequisite
-                questId="1" level="1"/>
-        <steps>
-            <step id="1" name="与4位船员对话" sum="" des="与4位船员对话，得到他们的开学祝福"/>
-            <step id="2" name="开学祝福结束" sum="" des="去#传送室#对话包工头">
-                <outcome>
-                    <item giveId="1"
-                          cnt="5000"/>
-                    <item giveId="200205" cnt="1"/>
-                    <item giveId="200014" cnt="3"/>
-                    <item giveId="200221" cnt="1"/>
-                    <item giveId="200225" cnt="1"/>
-                </outcome>
-            </step>
-        </steps>
-        <doc><![CDATA[新年祝福]]></doc>
-    </quest>
+    <!--<quest id="30041" name="布置地毯" type="5" track="1" autoNext="0" needAcceptMark="1"
+		relatedMapIds="510" acceptMapId="" onlineTime=""> <prerequisite questId="1"
+		level="1"/> <steps> <step id="1" name="得到5件针织毛纺" sum="地道之路" des="在#地道之路#与格尔希克对战，抢回5件针织毛纺。"/>
+		<step id="2" name="布置地毯" sum="传送室" des="让#传送室#的包工头完成装饰"/> <step id="3" name="布置完成"
+		sum="传送室" des="#传送室#的装饰即将完成啦"/> </steps> <doc><![CDATA[布置地毯]]></doc> </quest>
+		<quest id="30042" name="绘制墙纸" type="5" track="1" autoNext="0" needAcceptMark="1"
+		relatedMapIds="122, 220, 240" acceptMapId="" onlineTime=""> <prerequisite
+		questId="1" level="1"/> <steps> <step id="1" name="收集物品" sum="" des="在#朽木桥#,#幽静浅滩#,#蛮神战场#"/>
+		<step id="2" name="装饰布置" sum="传送室" des="让#传送室#的包工头装饰布置"/> <step id="3" name="装饰完成"
+		sum="传送室" des="#传送室#的装饰即将完成啦"/> </steps> <doc><![CDATA[绘制墙纸]]></doc> </quest>
+		<quest id="30043" name="装置装饰" type="5" track="1" autoNext="0" needAcceptMark="1"
+		relatedMapIds="141" acceptMapId="" onlineTime=""> <prerequisite questId="1"
+		level="1"/> <steps> <step id="1" name="抢回10个彩角" sum="幻影崖" des="与#幻影崖#小树根对战，得到10个彩角"/>
+		<step id="2" name="地板抛光" sum="传送室" des="让#传送室#的包工头完成装置装饰"/> <step id="3"
+		name="装置装饰" sum="传送室" des="#传送室#的装置装饰即将完成啦"/> </steps> <doc><![CDATA[装置装饰]]></doc>
+		</quest> <quest id="30044" name="新年祝福" type="5" track="1" autoNext="0" needAcceptMark="1"
+		relatedMapIds="10, 20, 60, 30" acceptMapId="" onlineTime=""> <prerequisite
+		questId="1" level="1"/> <steps> <step id="1" name="与4位船员对话" sum="" des="与4位船员对话，得到他们的开学祝福"/>
+		<step id="2" name="开学祝福结束" sum="" des="去#传送室#对话包工头"> <outcome> <item giveId="1"
+		cnt="5000"/> <item giveId="200205" cnt="1"/> <item giveId="200014" cnt="3"/>
+		<item giveId="200221" cnt="1"/> <item giveId="200225" cnt="1"/> </outcome>
+		</step> </steps> <doc><![CDATA[新年祝福]]></doc> </quest> -->
 
     <quest id="10179" name="渡鸦之咒  H7N9入侵" type="4" track="0"
            autoNext="0" needAcceptMark="1" relatedMapIds="80018,80017"
@@ -10632,24 +9522,12 @@
                     <item giveId="200214" cnt="1"/>
                 </outcome>
 
-                <outcome>
-                    <item giveId="200578" cnt="1"/>
-                    <item giveId="200214"
-                          cnt="1"/>
-                </outcome>
-                <income>
-                    <item giveId="603043" cnt="1"/>
-                    <item giveId="603044"
-                          cnt="1"/>
-                    <item giveId="603045" cnt="1"/>
-                    <item giveId="603046" cnt="1"/>
-                    <item giveId="603047" cnt="1"/>
-                    <item giveId="603048" cnt="1"/>
-                    <item giveId="603049"
-                          cnt="1"/>
-                    <item giveId="603050" cnt="1"/>
-                    <item giveId="603051" cnt="1"/>
-                </income>
+                <!-- <outcome> <item giveId="200578" cnt="1"/> <item giveId="200214"
+					cnt="1"/> </outcome> <income> <item giveId="603043" cnt="1"/> <item giveId="603044"
+					cnt="1"/> <item giveId="603045" cnt="1"/> <item giveId="603046" cnt="1"/>
+					<item giveId="603047" cnt="1"/> <item giveId="603048" cnt="1"/> <item giveId="603049"
+					cnt="1"/> <item giveId="603050" cnt="1"/> <item giveId="603051" cnt="1"/>
+					</income> -->
             </step>
         </steps>
     </quest>
@@ -10728,24 +9606,12 @@
                     <item giveId="200214" cnt="1"/>
                 </outcome>
 
-                <outcome>
-                    <item giveId="200578" cnt="1"/>
-                    <item giveId="200214"
-                          cnt="1"/>
-                </outcome>
-                <income>
-                    <item giveId="603043" cnt="1"/>
-                    <item giveId="603044"
-                          cnt="1"/>
-                    <item giveId="603045" cnt="1"/>
-                    <item giveId="603046" cnt="1"/>
-                    <item giveId="603047" cnt="1"/>
-                    <item giveId="603048" cnt="1"/>
-                    <item giveId="603049"
-                          cnt="1"/>
-                    <item giveId="603050" cnt="1"/>
-                    <item giveId="603051" cnt="1"/>
-                </income>
+                <!-- <outcome> <item giveId="200578" cnt="1"/> <item giveId="200214"
+					cnt="1"/> </outcome> <income> <item giveId="603043" cnt="1"/> <item giveId="603044"
+					cnt="1"/> <item giveId="603045" cnt="1"/> <item giveId="603046" cnt="1"/>
+					<item giveId="603047" cnt="1"/> <item giveId="603048" cnt="1"/> <item giveId="603049"
+					cnt="1"/> <item giveId="603050" cnt="1"/> <item giveId="603051" cnt="1"/>
+					</income> -->
             </step>
         </steps>
     </quest>
@@ -10808,13 +9674,13 @@
         </steps>
     </quest>
 
-    <quest id="10213" name="米咔的雪娃娃" type="4" track="0" autoNext="0" needAcceptMark="0"
-           relatedMapIds="590,550,640,620,540" acceptMapId="">
-        <prerequisite questId="1" level="1"/>
-        <steps>
-            <step id="1" name="冰沁神殿" des="#冰沁神殿# "/>
-        </steps>
-    </quest>
+    <!-- <quest id="10213" name="米咔的雪娃娃" type="4" track="0" autoNext="0" needAcceptMark="0"
+		relatedMapIds="590,550,640,620,540" acceptMapId=""> -->
+    <!-- <prerequisite questId="1" level="1"/> -->
+    <!-- <steps> -->
+    <!-- <step id="1" name="冰沁神殿" des="#冰沁神殿# "/> -->
+    <!-- </steps> -->
+    <!-- </quest> -->
 
     <quest id="10214" name="冰封魔域之魔王库贝萨" type="4" track="0" autoNext="0"
            needAcceptMark="1" relatedMapIds="80092,80100" acceptMapId="0">
@@ -10959,13 +9825,13 @@
         </steps>
     </quest>
 
-    <quest id="10219" name="米咔的雪娃娃" type="4" track="0" autoNext="0"
-           needAcceptMark="0" relatedMapIds="590,550,640,620,540" acceptMapId="">
-        <prerequisite questId="1" level="1"/>
-        <steps>
-            <step id="1" name="冰沁神殿" des="#冰沁神殿# "/>
-        </steps>
-    </quest>
+    <!-- 	<quest id="10219" name="米咔的雪娃娃" type="4" track="0" autoNext="0" -->
+    <!-- 		needAcceptMark="0" relatedMapIds="590,550,640,620,540" acceptMapId=""> -->
+    <!-- 		<prerequisite questId="1" level="1" /> -->
+    <!-- 		<steps> -->
+    <!-- 			<step id="1" name="冰沁神殿" des="#冰沁神殿# " /> -->
+    <!-- 		</steps> -->
+    <!-- 	</quest> -->
 
     <quest id="10220" name="王者降临 战争角逐" type="4" track="0" autoNext="0"
            needAcceptMark="0" relatedMapIds="80135,80136" acceptMapId="">
@@ -11465,8 +10331,7 @@
             <branch id="default">
                 <node emotion="0"><![CDATA[你是不是得到魂兽的消息了？]]></node>
                 <reply action="accept"><![CDATA[公主你真聪明！蚀魂兽正在向外界传递着什么信息。]]></reply>
-                <reply action="goToBranch" params="branch1">
-                    <![CDATA[公主你真聪明！蚀魂兽正在向外界传递着什么信息。]]></reply>
+                <!-- 				<reply action="goToBranch" params="branch1"><![CDATA[公主你真聪明！蚀魂兽正在向外界传递着什么信息。]]></reply> -->
             </branch>
             <!-- 			<branch id="branch1"> -->
             <!-- 				<node emotion="0"><![CDATA[蚀魂兽已经隐居了许多年，我的父辈都没有见过本族的守护魂兽。如今，它突然出现，也许是遇到危险了！不管怎样，只有找到蚀魂兽，我们才能知道原因。]]></node> -->

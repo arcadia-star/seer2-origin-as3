@@ -8837,7 +8837,6 @@
         <Item ID="201101" Name="一包龙鳞(双11）" Type="12" mibi="1">
             <Tip><![CDATA[每包含5片龙鳞（在神龙火圈中使用）+2个扭蛋牌（在精灵扭蛋机中使用）]]></Tip>
         </Item>
-        >
 
 
         <Item ID="201102" Name="超值经验礼包(双11）" Type="12" mibi="1">
@@ -26259,16 +26258,21 @@
         <Item ID="605006" Name="魔灵" Max="10000"/>
 
 
-        <Item ID="605007" Name="圣马驰骋星钻减员（丘布）" Max="10000" Price="3"/>
-        <Tip><![CDATA[圣马驰骋星钻减员（丘布）]]></Tip>
-        <Item ID="605008" Name="圣马驰骋星钻减员（白龙驹）" Max="10000" Price="3"/>
-        <Tip><![CDATA[圣马驰骋星钻减员（白龙驹）]]></Tip>
-        <Item ID="605009" Name="圣马驰骋星钻减员（冥界天尊）" Max="10000" Price="3"/>
-        <Tip><![CDATA[圣马驰骋星钻减员（冥界天尊）]]></Tip>
-        <Item ID="605010" Name="圣马驰骋星钻减员（的卢）" Max="10000" Price="3"/>
-        <Tip><![CDATA[圣马驰骋星钻减员（的卢）]]></Tip>
-        <Item ID="605011" Name="圣马驰骋星钻减员（影劫）" Max="10000" Price="3"/>
-        <Tip><![CDATA[圣马驰骋星钻减员（影劫）]]></Tip>
+        <Item ID="605007" Name="圣马驰骋星钻减员（丘布）" Max="10000" Price="3">
+            <Tip><![CDATA[圣马驰骋星钻减员（丘布）]]></Tip>
+        </Item>
+        <Item ID="605008" Name="圣马驰骋星钻减员（白龙驹）" Max="10000" Price="3">
+            <Tip><![CDATA[圣马驰骋星钻减员（白龙驹）]]></Tip>
+        </Item>
+        <Item ID="605009" Name="圣马驰骋星钻减员（冥界天尊）" Max="10000" Price="3">
+            <Tip><![CDATA[圣马驰骋星钻减员（冥界天尊）]]></Tip>
+        </Item>
+        <Item ID="605010" Name="圣马驰骋星钻减员（的卢）" Max="10000" Price="3">
+            <Tip><![CDATA[圣马驰骋星钻减员（的卢）]]></Tip>
+        </Item>
+        <Item ID="605011" Name="圣马驰骋星钻减员（影劫）" Max="10000" Price="3">
+            <Tip><![CDATA[圣马驰骋星钻减员（影劫）]]></Tip>
+        </Item>
 
 
         <!--20140807版本【开元帝王】-->
@@ -26459,18 +26463,24 @@
 
 
         <!--20140815版本【闪电麒麟超进化】-->
-        <Item ID="605070" Name="王域麒麟星钻减员（暗煞）" Max="10000" Price="1"/>
-        <Tip><![CDATA[王域麒麟星钻减员（暗煞）]]></Tip>
-        <Item ID="605071" Name="王域麒麟星钻减员（超煞）" Max="10000" Price="1"/>
-        <Tip><![CDATA[王域麒麟星钻减员（超煞）]]></Tip>
-        <Item ID="605072" Name="王域麒麟星钻减员（武煞）" Max="10000" Price="1"/>
-        <Tip><![CDATA[王域麒麟星钻减员（武煞）]]></Tip>
-        <Item ID="605073" Name="王域麒麟星钻减员（地煞）" Max="10000" Price="1"/>
-        <Tip><![CDATA[王域麒麟星钻减员（地煞）]]></Tip>
-        <Item ID="605074" Name="王域麒麟星钻减员（炎煞）" Max="10000" Price="1"/>
-        <Tip><![CDATA[王域麒麟星钻减员（炎煞）]]></Tip>
-        <Item ID="605075" Name="王域麒麟星钻减员（雷煞）" Max="10000" Price="1"/>
-        <Tip><![CDATA[王域麒麟星钻减员（雷煞）]]></Tip>
+        <Item ID="605070" Name="王域麒麟星钻减员（暗煞）" Max="10000" Price="1">
+            <Tip><![CDATA[王域麒麟星钻减员（暗煞）]]></Tip>
+        </Item>
+        <Item ID="605071" Name="王域麒麟星钻减员（超煞）" Max="10000" Price="1">
+            <Tip><![CDATA[王域麒麟星钻减员（超煞）]]></Tip>
+        </Item>
+        <Item ID="605072" Name="王域麒麟星钻减员（武煞）" Max="10000" Price="1">
+            <Tip><![CDATA[王域麒麟星钻减员（武煞）]]></Tip>
+        </Item>
+        <Item ID="605073" Name="王域麒麟星钻减员（地煞）" Max="10000" Price="1">
+            <Tip><![CDATA[王域麒麟星钻减员（地煞）]]></Tip>
+        </Item>
+        <Item ID="605074" Name="王域麒麟星钻减员（炎煞）" Max="10000" Price="1">
+            <Tip><![CDATA[王域麒麟星钻减员（炎煞）]]></Tip>
+        </Item>
+        <Item ID="605075" Name="王域麒麟星钻减员（雷煞）" Max="10000" Price="1">
+            <Tip><![CDATA[王域麒麟星钻减员（雷煞）]]></Tip>
+        </Item>
 
         <Item ID="605076" Name="精灵王域麒麟" mibi="1" Price="48">
             <Tip><![CDATA[一键购买精灵王域麒麟（LV10级）]]></Tip>
@@ -28649,7 +28659,6 @@
         <Item ID="605786" Name="给小黄鱼" Max="10000" mibi="1" Price="0.2">
             <Tip><![CDATA[烈火黑岩]]></Tip>
         </Item>
-        -->
         <Item ID="605787" Name="助熔矿石" Max="10000">
             <Tip><![CDATA[采集助熔矿石]]></Tip>
         </Item>

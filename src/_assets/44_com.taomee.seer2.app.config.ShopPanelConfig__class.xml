@@ -50,7 +50,7 @@
             <item referenceId="201026" price="8" name="一包扭蛋牌" tip="每包含10块扭蛋牌，在精灵扭蛋机中使用"/>
             <item referenceId="201015" name="超强辅助包裹" price="2"/>
             <item referenceId="201016" name="快速练级包裹" price="2"/>
-            <item referenceId="201059" name="初级强化礼包" price="8"/>-
+            <item referenceId="201059" name="初级强化礼包" price="8"/>
             <item referenceId="201060" name="中级强化礼包" price="15"/>
             <item referenceId="201061" name="高级强化礼包" price="28"/>
             <item referenceId="400405" name="天尊黄金强化包" price="50"/>
@@ -4195,7 +4195,7 @@
             <item referenceId="603824" name="精灵阿吒婆拘" price="35"/>
             <item referenceId="603825" name="地魁星至尊弱化挑战" price="6"/>
             <item referenceId="603826" name="地魁星弱化挑战" price="3"/>
-            <item referenceId="603830	" name="地魁星普通挑战" price="1"/>
+            <item referenceId="603830" name="地魁星普通挑战" price="1"/>
 
             <item referenceId="101292" name="魔纹龙骑" tip="魔纹龙骑" price="20" discount="6" isNew="1"/>
 
@@ -6413,10 +6413,10 @@
             <item referenceId="401217" price="0.1" name="拂晓兔技能石"/>
 
 
-            <!--			<item referenceId="201035" price="8" name="至尊资质果实" />
-                        <item referenceId="201003" price="3"   name="高级资质果实"  discount="8"/>
-                        <item referenceId="201002" price="2.5" name="中级资质果实" discount="8"/>
-                        <item referenceId="201001" price="2"   name="初级资质果实" discount="8"/>     -->
+            <item referenceId="201035" price="8" name="至尊资质果实"/>
+            <item referenceId="201003" price="3" name="高级资质果实" discount="8"/>
+            <item referenceId="201002" price="2.5" name="中级资质果实" discount="8"/>
+            <item referenceId="201001" price="2" name="初级资质果实" discount="8"/>
 
 
             <item referenceId="201030" price="10" name="精灵性格礼包"
