@@ -17,6 +17,8 @@ public class FunctionalityType {
 
     public static const FISHBOOK:String = "fishBook";
 
+    public static const YingYingGuai:String = "yingyingguai";
+
 
     public function FunctionalityType() {
         super();

@@ -16,6 +16,7 @@ public class FunctionalityUnitFactory {
         var _loc8_:ActiveUnit = null;
         var _loc9_:URLUnit = null;
         var _loc10_:FishBookUnit = null;
+        var _loc11_:YingYingGuaiUnit = null;
         switch (param1) {
             case FunctionalityType.GAME:
                 (_loc4_ = new GameUnit()).label = param2;
@@ -45,6 +46,10 @@ public class FunctionalityUnitFactory {
                 (_loc10_ = new FishBookUnit()).label = param2;
                 _loc10_.params = param3;
                 return _loc10_;
+            case FunctionalityType.YingYingGuai:
+                (_loc11_ = new YingYingGuaiUnit()).label = param2;
+                _loc11_.params = param3;
+                return _loc11_;
             default:
                 return new CustomUnit(param1, param2, param3);
         }
