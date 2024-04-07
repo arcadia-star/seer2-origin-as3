@@ -13,6 +13,7 @@ import flash.utils.IDataInput;
 
 public class ArenaResourceLoadCMD implements IArenaBaseCMD {
 
+    public static var theSide:uint;
 
     private var _arenaData:ArenaDataInfo;
 
@@ -40,9 +41,11 @@ public class ArenaResourceLoadCMD implements IArenaBaseCMD {
         var _loc3_:TeamInfo = new TeamInfo(_loc2_, this._arenaData.fightMode);
         var _loc4_:TeamInfo = new TeamInfo(_loc2_, this._arenaData.fightMode);
         if (_loc3_.clientSide == FightSide.LEFT) {
+            theSide = 1;
             this._arenaData.leftTeam = new FighterTeam(_loc3_);
             this._arenaData.rightTeam = new FighterTeam(_loc4_);
         } else {
+            theSide = 2;
             this._arenaData.rightTeam = new FighterTeam(_loc3_);
             this._arenaData.leftTeam = new FighterTeam(_loc4_);
         }

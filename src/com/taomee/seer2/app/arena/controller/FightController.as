@@ -12,7 +12,6 @@ import com.taomee.seer2.app.arena.decoration.DecorationControl;
 import com.taomee.seer2.app.arena.events.FightStartEvent;
 import com.taomee.seer2.app.arena.parser.FightTurnResultParser;
 import com.taomee.seer2.app.arena.processor.*;
-import com.taomee.seer2.app.arena.ui.status.panel.*;
 import com.taomee.seer2.app.arena.util.*;
 import com.taomee.seer2.app.config.FitConfig;
 import com.taomee.seer2.app.config.ItemConfig;
@@ -41,6 +40,15 @@ public class FightController implements IFightController {
 
     private static var _isFightAngle:Boolean;
 
+    public static var isChangeSuccess:uint = 0;
+
+    public static var isRightPetDead:Boolean;
+
+    public static var isLeftPetDead:Boolean;
+
+    private static var metamorphosis:Boolean;
+
+    private var angerCorrecter:AngerCorrecter;
 
     private var _processores:Vector.<ArenaProcessor>;
 
@@ -66,12 +74,16 @@ public class FightController implements IFightController {
         this._pvpFightChangeInfos = new Vector.<PvpFightChangeInfo>();
         super();
         this._scene = param1;
+        FightController.isChangeSuccess = 0;
+        FightController.isRightPetDead = false;
+        FightController.isLeftPetDead = false;
         this._fightChangeController = new FightChangeController(this._scene);
         this.changeFighterState(FightState.PRESENTATION);
         if (this._turnResultParser == null) {
             this._turnResultParser = new FightTurnResultParser(this._scene);
             this._turnResultParser.addEventListener(FightTurnResultParser.PARSE_END, this.turnParseEnd);
         }
+        this.angerCorrecter = AngerCorrecter.getInstance();
         this._turnResultInfoVec = new Vector.<TurnResultInfo>();
         this._buffResultInfoVec = new Vector.<BuffResultInfo>();
         this._processores = new Vector.<ArenaProcessor>();
@@ -117,11 +129,10 @@ public class FightController implements IFightController {
         this.checkPetFit();
         this.checkPlayCatchMovie();
         this.excutePvpFightInfo();
-        DecorationControl._trunCount += 1;
+        this.checkFightEnd();
         if (DecorationControl._isShowDecoration) {
             DecorationControl.update();
         }
-        this.checkFightEnd();
         this._turnResultParser.parsingTurnResultInfo = null;
     }
 
@@ -134,26 +145,30 @@ public class FightController implements IFightController {
         if (Boolean(_loc1_) && _loc2_ == false) {
             for each(_loc3_ in _loc1_.fighterTurnResultInfoVec) {
                 _loc4_ = this._scene.arenaData.getFighter(_loc3_.userId, _loc3_.catchTime);
-                if (_loc3_.isAtker) {
-                    if ((Boolean(_loc5_ = FitConfig.formSkillIdGetPetFitDefinition(_loc3_.skillId))) && (FitConfig.checkPetType(_loc5_) || _loc3_.userId != ActorManager.actorInfo.id)) {
-                        DisplayObjectUtil.removeFromParent(_loc4_);
-                        ArenaAnimationManager.abortCountDown();
-                        Connection.releaseCommand(CommandSet.FIT_CHANGE_HP_POS_18);
-                        Connection.blockCommand(CommandSet.FIT_CHANGE_HP_POS_18);
-                        if (_loc3_.userId == ActorManager.actorInfo.id) {
-                            this.updateFitPet(this.leftTeam, _loc5_);
-                            _isFightAngle = true;
-                            new UseChangeCMD(this.leftTeam.getFighterToBounchId(_loc5_.id).fighterInfo.catchTime).send();
-                            if (_loc5_.type != "void") {
-                                switch (_loc5_.type) {
-                                    case "item":
-                                        ItemManager.reduceItemQuantity(_loc5_.content, 1);
-                                }
-                            }
-                        } else {
-                            this.updateFitPet(this.rightTeam, _loc5_);
-                        }
-                    }
+                if (!_loc3_.isAtker) {
+                    continue;
+                }
+                if (!(Boolean(_loc5_ = FitConfig.formSkillIdGetPetFitDefinition(_loc3_.skillId)) && (FitConfig.checkPetType(_loc5_) || _loc3_.userId != ActorManager.actorInfo.id))) {
+                    continue;
+                }
+                DisplayObjectUtil.removeFromParent(_loc4_);
+                ArenaAnimationManager.abortCountDown();
+                Connection.releaseCommand(CommandSet.FIT_CHANGE_HP_POS_18);
+                Connection.blockCommand(CommandSet.FIT_CHANGE_HP_POS_18);
+                if (_loc3_.userId != ActorManager.actorInfo.id) {
+                    this.updateFitPet(this.rightTeam, _loc5_);
+                    continue;
+                }
+                this.updateFitPet(this.leftTeam, _loc5_);
+                _isFightAngle = true;
+                new UseChangeCMD(this.leftTeam.getFighterToBounchId(_loc5_.id).fighterInfo.catchTime).send();
+                if (_loc5_.type == "void") {
+                    continue;
+                }
+                switch (_loc5_.type) {
+                    case "item":
+                        ItemManager.reduceItemQuantity(_loc5_.content, 1);
+                        break;
                 }
             }
         }
@@ -322,15 +337,7 @@ public class FightController implements IFightController {
         }
     }
 
-    private function startNextTurn():void {
-        ArenaAnimationManager.hideWaiting();
-        this._fightChangeController.checkRightFighterChanged();
-        this.rightMainFighter.updateAnger(this.rightMainFighter.fighterInfo.fightAnger + 15);
-        if (_isFightAngle == false) {
-            this.leftMainFighter.updateAnger(this.leftMainFighter.fighterInfo.fightAnger + 15);
-        } else {
-            this.leftMainFighter.updateAnger(this.leftMainFighter.fighterInfo.fightAnger);
-        }
+    private function angerAndTurnCorrect():void {
         _isFightAngle = false;
         if (this.rightSubFighter != null) {
             this.rightSubFighter.updateAnger(this.rightSubFighter.fighterInfo.fightAnger + 15);
@@ -338,10 +345,44 @@ public class FightController implements IFightController {
         if (this.leftSubFighter != null) {
             this.leftSubFighter.updateAnger(this.leftSubFighter.fighterInfo.fightAnger + 15);
         }
+        if (isLeftPetDead) {
+            isLeftPetDead = false;
+            return;
+        }
+        if (isChangeSuccess == 1 && isRightPetDead) {
+            isChangeSuccess = 0;
+            isRightPetDead = false;
+            return;
+        }
+        if (metamorphosis) {
+            this.leftMainFighter.updateAnger(this.leftMainFighter.fighterInfo.fightAnger + 15);
+            metamorphosis = false;
+            Processor_19.isChangeIng = false;
+            return;
+        }
+        this.angerCorrecter.angerCalulater(this.leftMainFighter, this.rightMainFighter);
+        DecorationControl._trunCount += 1;
+    }
+
+    private function startNextTurn():void {
+        ArenaAnimationManager.hideWaiting();
+        this._fightChangeController.checkRightFighterChanged();
+        this.angerAndTurnCorrect();
+        if (isChangeSuccess == 1 || isRightPetDead) {
+            isChangeSuccess = 0;
+            isRightPetDead = false;
+        }
         this.arenaUIController.updateAngerBar();
         this.arenaUIController.startSelectOperate();
+        if (this.rightMainFighter.fighterInfo.hp <= 0 && !this._scene.arenaData.isDoubleMode) {
+            isRightPetDead = true;
+        }
         if (this.leftMainFighter.fighterInfo.hp <= 0 && !this._scene.arenaData.isDoubleMode) {
+            isLeftPetDead = true;
             this.arenaUIController.activeControlPetPanel(this.leftMainFighter);
+        }
+        if (Processor_19.isChangeIng) {
+            metamorphosis = true;
         }
     }
 

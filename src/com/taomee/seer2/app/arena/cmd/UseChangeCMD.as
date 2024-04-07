@@ -1,5 +1,6 @@
 package com.taomee.seer2.app.arena.cmd {
 import com.taomee.seer2.app.arena.ArenaScene;
+import com.taomee.seer2.app.arena.controller.FightController;
 import com.taomee.seer2.app.net.CommandSet;
 import com.taomee.seer2.app.net.Connection;
 import com.taomee.seer2.app.popup.ServerMessager;
@@ -22,11 +23,13 @@ public class UseChangeCMD implements IArenaBaseCMD {
     public function send():void {
         Connection.addErrorHandler(CommandSet.FIGHT_CHANGE_FIGHTER_1032, this.onError);
         Connection.send(CommandSet.FIGHT_CHANGE_FIGHTER_1032, this._operateId);
+        FightController.isChangeSuccess = 1;
     }
 
     private function onError(param1:MessageEvent):void {
         var _loc2_:ArenaScene = null;
         if (param1.message.statusCode == 200009) {
+            FightController.isChangeSuccess = 0;
             ServerMessager.addMessage("暂时无法替换精灵");
             _loc2_ = SceneManager.active as ArenaScene;
             _loc2_.fightController.arenaUIController.startSelectOperate();

@@ -92,6 +92,17 @@ public class FighterTurnResultInfo {
         return this._speed - this.CENTER_VALUE;
     }
 
+    public function sum():int {
+        return abs(this._atk - 6) + abs(this._defence - 6) + abs(this._specialAtk - 6) + abs(this._specialDefence - 6) + abs(this._speed - 6);
+    }
+
+    private function abs(num:int):uint {
+        if (num >= 0) {
+            return num;
+        }
+        return -num;
+    }
+
     public function get buffInfoVec():Vector.<FighterBuffInfo> {
         return this._buffInfoVec;
     }
@@ -118,6 +129,26 @@ public class FighterTurnResultInfo {
 
     public function get isAtker():Boolean {
         return this._isAtker;
+    }
+
+    public function set changedAtk(param1:int):void {
+        this._atk = param1 + this.CENTER_VALUE;
+    }
+
+    public function set changedDefence(param1:int):void {
+        this._defence = param1 + this.CENTER_VALUE;
+    }
+
+    public function set changedSpecialAtk(param1:int):void {
+        this._specialAtk = param1 + this.CENTER_VALUE;
+    }
+
+    public function set changedSpecialDefence(param1:int):void {
+        this._specialDefence = param1 + this.CENTER_VALUE;
+    }
+
+    public function set changedSpeed(param1:int):void {
+        this._speed = param1 + this.CENTER_VALUE;
     }
 }
 }
