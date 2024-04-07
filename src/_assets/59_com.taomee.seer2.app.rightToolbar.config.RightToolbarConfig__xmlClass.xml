@@ -31,7 +31,7 @@
     <toolbar type="up" sort="1" tip="英格瓦要塞" startTime="2013_2_27_6_0" endTime="2034_12_31_24_0" clickType="module"
              clickParams="DoorMapPanel" lightStartTime="" weekLimit="39" swapId="1816">
         <!--<toolbar type="xxx" sort="6"  tip="要塞" startTime="2012_8_20_6_0" endTime="2034_12_31_24_0" clickType="module" clickParams="DoorMapPanel"  lightStartTime="" weekLimit="39" swapId="1816"/>
-        <toolbar type="xxx" sort="7"  tip="万王之战等你来！" startTime="2012_8_20_6_0" endTime="2034_12_31_24_0" clickType="module"  clickParams="PVPDoorCampPanel"  lightStartTime="" weekLimit="39" swapId="1816"/>-->
+		<toolbar type="xxx" sort="7"  tip="万王之战等你来！" startTime="2012_8_20_6_0" endTime="2034_12_31_24_0" clickType="module"  clickParams="PVPDoorCampPanel"  lightStartTime="" weekLimit="39" swapId="1816"/>-->
     </toolbar>
 
     <toolbar type="up" sort="5" tip="天空竞技场" startTime="2012_8_20_6_0" endTime="2034_12_31_24_0" clickType="module"
@@ -71,7 +71,9 @@
 
     <toolbar type="up" sort="66" tip="活动日历表" startTime="2012_8_20_6_0" endTime="2034_12_31_24_0" clickType="module"
              clickParams="ActCalendarPanel" lightStartTime="" weekLimit="39" swapId="1816">
-        <!--	<toolbar type="xxx" sort="9"  tip="往期精彩活动" startTime="2012_8_20_6_0" endTime="2034_12_31_24_0" clickType="module"  clickParams="NoticeNewPanel"  lightStartTime="" weekLimit="39" swapId="1816"/>-->
+
+        <toolbar type="none" sort="41" tip="辅助功能" startTime="2012_8_20_6_0" endTime="2034_12_31_24_0"
+                 clickType="module" clickParams="GetedItemSwapPanel" lightStartTime="" weekLimit="39" swapId="1816"/>
         <!--	<toolbar type="xxx" sort="20"  tip="超进化" startTime="2012_8_20_6_0" endTime="2034_12_31_24_0" clickType="module"  clickParams="EvolutionDreamTeam"  lightStartTime="" weekLimit="39" swapId="1816"/>-->
         <!--	<toolbar type="xxx" sort="35"  tip="神迹精灵" startTime="2013_2_27_6_0" endTime="2034_12_31_24_0" clickType="module"  clickParams="HolyWayPetsPanel" lightStartTime="" weekLimit="39" swapId="1816"/>-->
 
@@ -81,10 +83,11 @@
     <!--<toolbar type="up" sort="11"  tip="学习力大放送" startTime="2012_8_20_6_0" endTime="2015_12_31_24_0"  clickType="module" clickParams="ThreeYearMainAllPanel" lightStartTime="" weekLimit="39" swapId="1816"/>-->
     <!--<toolbar type="up" sort="13"  tip="新的精灵加入啦！" startTime="2012_8_20_6_0" endTime="2034_12_31_24_0"  clickType="module"  clickParams="CallBoxPanel" lightStartTime="" weekLimit="39" swapId="1816"/>-->
     <toolbar type="up" sort="14" tip="许愿池" startTime="2012_8_20_6_0" endTime="2034_12_31_24_0" clickType="module"
-             clickParams="TwoYearWishPanel" lightStartTime="" weekLimit="39" swapId="1816"/>
+             clickParams="TwoYearWishPanel" class="TwoYearWishToolbar" lightStartTime="" weekLimit="39" swapId="1816"/>
     <toolbar type="up" sort="15" tip="在线拿大奖" startTime="2013_2_27_6_0" endTime="2034_12_31_24_0" clickType="module"
              clickParams="OnlineRewardPanel" class="OnlineRewardToolbar" lightStartTime="" weekLimit="39"
              swapId="1816"/>
+
     <!--<toolbar type="up" sort="29" tip="星钻任务送星钻 周末翻倍" class="DiamondTaskToolbar" startTime="2012_8_20_6_0" endTime="2034_12_31_24_0" clickType="module" clickParams="DiamondTaskNewPanel"  lightStartTime="" weekLimit="39" swapId="1816"/>-->
     <!--<toolbar type="up" sort="36"  tip="巅峰秒杀约瑟王精元蛋" startTime="2013_2_27_6_0" endTime="2034_12_31_24_0" clickType="module" clickParams="DianfengMiaoshaPanel" lightStartTime="" weekLimit="39" swapId="1816"/>-->
     <!--

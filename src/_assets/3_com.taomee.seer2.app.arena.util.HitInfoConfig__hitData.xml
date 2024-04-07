@@ -1751,7 +1751,7 @@
     <fighter id='1569' physics='27' attribute='25' special='54' critical='109' fit='0' />
     <fighter id='2559' physics='24' attribute='26' special='38' critical='118' fit='0' />
     <fighter id='1570' physics='24' attribute='26' special='38' critical='118' fit='0' />
-    <fighter id='2560' physics='91' attribute='54' special='45' critical='132' fit='0' />
+    <fighter id='2560' physics='115' attribute='54' special='69' critical='227' fit='0' />
     <fighter id='1571' physics='91' attribute='54' special='45' critical='132' fit='0' />
 
 

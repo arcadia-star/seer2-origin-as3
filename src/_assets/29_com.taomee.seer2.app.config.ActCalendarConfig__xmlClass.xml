@@ -61,17 +61,6 @@ pet精灵item为普通物品。id为对应id；
             <reward>
             </reward>
         </act>
-        <act name="回归•战神觉醒" iconId="1139" isPet="1" willOver="0"
-             detailDes="收集战神印记，战神联盟免费超进化及专属超强觉醒技轻松得" timeDes="全天候" startTime="00:00"
-             endTime="23:59" go="BackBattleGodWakedPanel">
-            <reward>
-            </reward>
-        </act>
-        <act name="精灵放生仓" iconId="1139" isPet="1" willOver="0" detailDes="放生精灵 获取扭蛋碎片" timeDes="全天候"
-             startTime="00:00" endTime="23:59" go="PetSmeltingActPanel">
-            <reward>
-            </reward>
-        </act>
         <act name="战神的天阶" iconId="1139" isPet="1" willOver="0"
              detailDes="登入天阶寻找战神觉醒的线索，天阶碎片换奖励" timeDes="全天候" startTime="00:00" endTime="23:59"
              go="FightHolySkyPanel">
@@ -140,11 +129,6 @@ pet精灵item为普通物品。id为对应id；
             <reward>
             </reward>
         </act>
-        <act name="希望之光争霸赛" iconId="1139" isPet="1" willOver="0" detailDes="传说的追溯" timeDes="全天候"
-             startTime="00:00" endTime="23:59" go="YueseCraft2016MainPanel">
-            <reward>
-            </reward>
-        </act>
         <act name="绝版装扮清仓扫货" iconId="1139" isPet="1" willOver="0" detailDes="买装扮！全场清货一件不留了哦！"
              timeDes="全天候" startTime="00:00" endTime="23:59" go="EquipSupermarketPanel">
             <reward>
@@ -198,11 +182,6 @@ pet精灵item为普通物品。id为对应id；
         </act>
         <act name="矿石秘宝" iconId="1139" isPet="1" willOver="0" detailDes="开启秘宝！后面藏着丰富的宝藏呢！"
              timeDes="全天候" startTime="00:00" endTime="23:59" go="OreSwapPanel">
-            <reward>
-            </reward>
-        </act>
-        <act name="时尚三元素" iconId="1139" isPet="1" willOver="0" detailDes="水火草三元素就在种植园等你"
-             timeDes="全天候" startTime="00:00" endTime="23:59" go="FashionPetPanel">
             <reward>
             </reward>
         </act>
@@ -280,17 +259,6 @@ pet精灵item为普通物品。id为对应id；
             <reward>
             </reward>
         </act>
-        <act name="回归•战神觉醒" iconId="1139" isPet="1" willOver="0"
-             detailDes="收集战神印记，战神联盟免费超进化及专属超强觉醒技轻松得" timeDes="全天候" startTime="00:00"
-             endTime="23:59" go="BackBattleGodWakedPanel">
-            <reward>
-            </reward>
-        </act>
-        <act name="精灵放生仓" iconId="1139" isPet="1" willOver="0" detailDes="放生精灵 获取扭蛋碎片" timeDes="全天候"
-             startTime="00:00" endTime="23:59" go="PetSmeltingActPanel">
-            <reward>
-            </reward>
-        </act>
         <act name="战神的天阶" iconId="1139" isPet="1" willOver="0"
              detailDes="登入天阶寻找战神觉醒的线索，天阶碎片换奖励" timeDes="全天候" startTime="00:00" endTime="23:59"
              go="FightHolySkyPanel">
@@ -359,11 +327,6 @@ pet精灵item为普通物品。id为对应id；
             <reward>
             </reward>
         </act>
-        <act name="希望之光争霸赛" iconId="1139" isPet="1" willOver="0" detailDes="传说的追溯" timeDes="全天候"
-             startTime="00:00" endTime="23:59" go="YueseCraft2016MainPanel">
-            <reward>
-            </reward>
-        </act>
         <act name="绝版装扮清仓扫货" iconId="1139" isPet="1" willOver="0" detailDes="买装扮！全场清货一件不留了哦！"
              timeDes="全天候" startTime="00:00" endTime="23:59" go="EquipSupermarketPanel">
             <reward>
@@ -417,11 +380,6 @@ pet精灵item为普通物品。id为对应id；
         </act>
         <act name="矿石秘宝" iconId="1139" isPet="1" willOver="0" detailDes="开启秘宝！后面藏着丰富的宝藏呢！"
              timeDes="全天候" startTime="00:00" endTime="23:59" go="OreSwapPanel">
-            <reward>
-            </reward>
-        </act>
-        <act name="时尚三元素" iconId="1139" isPet="1" willOver="0" detailDes="水火草三元素就在种植园等你"
-             timeDes="全天候" startTime="00:00" endTime="23:59" go="FashionPetPanel">
             <reward>
             </reward>
         </act>
@@ -499,17 +457,6 @@ pet精灵item为普通物品。id为对应id；
             <reward>
             </reward>
         </act>
-        <act name="回归•战神觉醒" iconId="1139" isPet="1" willOver="0"
-             detailDes="收集战神印记，战神联盟免费超进化及专属超强觉醒技轻松得" timeDes="全天候" startTime="00:00"
-             endTime="23:59" go="BackBattleGodWakedPanel">
-            <reward>
-            </reward>
-        </act>
-        <act name="精灵放生仓" iconId="1139" isPet="1" willOver="0" detailDes="放生精灵 获取扭蛋碎片" timeDes="全天候"
-             startTime="00:00" endTime="23:59" go="PetSmeltingActPanel">
-            <reward>
-            </reward>
-        </act>
         <act name="战神的天阶" iconId="1139" isPet="1" willOver="0"
              detailDes="登入天阶寻找战神觉醒的线索，天阶碎片换奖励" timeDes="全天候" startTime="00:00" endTime="23:59"
              go="FightHolySkyPanel">
@@ -578,11 +525,6 @@ pet精灵item为普通物品。id为对应id；
             <reward>
             </reward>
         </act>
-        <act name="希望之光争霸赛" iconId="1139" isPet="1" willOver="0" detailDes="传说的追溯" timeDes="全天候"
-             startTime="00:00" endTime="23:59" go="YueseCraft2016MainPanel">
-            <reward>
-            </reward>
-        </act>
         <act name="绝版装扮清仓扫货" iconId="1139" isPet="1" willOver="0" detailDes="买装扮！全场清货一件不留了哦！"
              timeDes="全天候" startTime="00:00" endTime="23:59" go="EquipSupermarketPanel">
             <reward>
@@ -636,11 +578,6 @@ pet精灵item为普通物品。id为对应id；
         </act>
         <act name="矿石秘宝" iconId="1139" isPet="1" willOver="0" detailDes="开启秘宝！后面藏着丰富的宝藏呢！"
              timeDes="全天候" startTime="00:00" endTime="23:59" go="OreSwapPanel">
-            <reward>
-            </reward>
-        </act>
-        <act name="时尚三元素" iconId="1139" isPet="1" willOver="0" detailDes="水火草三元素就在种植园等你"
-             timeDes="全天候" startTime="00:00" endTime="23:59" go="FashionPetPanel">
             <reward>
             </reward>
         </act>
@@ -718,17 +655,6 @@ pet精灵item为普通物品。id为对应id；
             <reward>
             </reward>
         </act>
-        <act name="回归•战神觉醒" iconId="1139" isPet="1" willOver="0"
-             detailDes="收集战神印记，战神联盟免费超进化及专属超强觉醒技轻松得" timeDes="全天候" startTime="00:00"
-             endTime="23:59" go="BackBattleGodWakedPanel">
-            <reward>
-            </reward>
-        </act>
-        <act name="精灵放生仓" iconId="1139" isPet="1" willOver="0" detailDes="放生精灵 获取扭蛋碎片" timeDes="全天候"
-             startTime="00:00" endTime="23:59" go="PetSmeltingActPanel">
-            <reward>
-            </reward>
-        </act>
         <act name="战神的天阶" iconId="1139" isPet="1" willOver="0"
              detailDes="登入天阶寻找战神觉醒的线索，天阶碎片换奖励" timeDes="全天候" startTime="00:00" endTime="23:59"
              go="FightHolySkyPanel">
@@ -797,11 +723,6 @@ pet精灵item为普通物品。id为对应id；
             <reward>
             </reward>
         </act>
-        <act name="希望之光争霸赛" iconId="1139" isPet="1" willOver="0" detailDes="传说的追溯" timeDes="全天候"
-             startTime="00:00" endTime="23:59" go="YueseCraft2016MainPanel">
-            <reward>
-            </reward>
-        </act>
         <act name="绝版装扮清仓扫货" iconId="1139" isPet="1" willOver="0" detailDes="买装扮！全场清货一件不留了哦！"
              timeDes="全天候" startTime="00:00" endTime="23:59" go="EquipSupermarketPanel">
             <reward>
@@ -855,11 +776,6 @@ pet精灵item为普通物品。id为对应id；
         </act>
         <act name="矿石秘宝" iconId="1139" isPet="1" willOver="0" detailDes="开启秘宝！后面藏着丰富的宝藏呢！"
              timeDes="全天候" startTime="00:00" endTime="23:59" go="OreSwapPanel">
-            <reward>
-            </reward>
-        </act>
-        <act name="时尚三元素" iconId="1139" isPet="1" willOver="0" detailDes="水火草三元素就在种植园等你"
-             timeDes="全天候" startTime="00:00" endTime="23:59" go="FashionPetPanel">
             <reward>
             </reward>
         </act>
@@ -937,17 +853,6 @@ pet精灵item为普通物品。id为对应id；
             <reward>
             </reward>
         </act>
-        <act name="回归•战神觉醒" iconId="1139" isPet="1" willOver="0"
-             detailDes="收集战神印记，战神联盟免费超进化及专属超强觉醒技轻松得" timeDes="全天候" startTime="00:00"
-             endTime="23:59" go="BackBattleGodWakedPanel">
-            <reward>
-            </reward>
-        </act>
-        <act name="精灵放生仓" iconId="1139" isPet="1" willOver="0" detailDes="放生精灵 获取扭蛋碎片" timeDes="全天候"
-             startTime="00:00" endTime="23:59" go="PetSmeltingActPanel">
-            <reward>
-            </reward>
-        </act>
         <act name="战神的天阶" iconId="1139" isPet="1" willOver="0"
              detailDes="登入天阶寻找战神觉醒的线索，天阶碎片换奖励" timeDes="全天候" startTime="00:00" endTime="23:59"
              go="FightHolySkyPanel">
@@ -1016,11 +921,6 @@ pet精灵item为普通物品。id为对应id；
             <reward>
             </reward>
         </act>
-        <act name="希望之光争霸赛" iconId="1139" isPet="1" willOver="0" detailDes="传说的追溯" timeDes="全天候"
-             startTime="00:00" endTime="23:59" go="YueseCraft2016MainPanel">
-            <reward>
-            </reward>
-        </act>
         <act name="绝版装扮清仓扫货" iconId="1139" isPet="1" willOver="0" detailDes="买装扮！全场清货一件不留了哦！"
              timeDes="全天候" startTime="00:00" endTime="23:59" go="EquipSupermarketPanel">
             <reward>
@@ -1074,11 +974,6 @@ pet精灵item为普通物品。id为对应id；
         </act>
         <act name="矿石秘宝" iconId="1139" isPet="1" willOver="0" detailDes="开启秘宝！后面藏着丰富的宝藏呢！"
              timeDes="全天候" startTime="00:00" endTime="23:59" go="OreSwapPanel">
-            <reward>
-            </reward>
-        </act>
-        <act name="时尚三元素" iconId="1139" isPet="1" willOver="0" detailDes="水火草三元素就在种植园等你"
-             timeDes="全天候" startTime="00:00" endTime="23:59" go="FashionPetPanel">
             <reward>
             </reward>
         </act>
@@ -1156,17 +1051,6 @@ pet精灵item为普通物品。id为对应id；
             <reward>
             </reward>
         </act>
-        <act name="回归•战神觉醒" iconId="1139" isPet="1" willOver="0"
-             detailDes="收集战神印记，战神联盟免费超进化及专属超强觉醒技轻松得" timeDes="全天候" startTime="00:00"
-             endTime="23:59" go="BackBattleGodWakedPanel">
-            <reward>
-            </reward>
-        </act>
-        <act name="精灵放生仓" iconId="1139" isPet="1" willOver="0" detailDes="放生精灵 获取扭蛋碎片" timeDes="全天候"
-             startTime="00:00" endTime="23:59" go="PetSmeltingActPanel">
-            <reward>
-            </reward>
-        </act>
         <act name="战神的天阶" iconId="1139" isPet="1" willOver="0"
              detailDes="登入天阶寻找战神觉醒的线索，天阶碎片换奖励" timeDes="全天候" startTime="00:00" endTime="23:59"
              go="FightHolySkyPanel">
@@ -1235,11 +1119,6 @@ pet精灵item为普通物品。id为对应id；
             <reward>
             </reward>
         </act>
-        <act name="希望之光争霸赛" iconId="1139" isPet="1" willOver="0" detailDes="传说的追溯" timeDes="全天候"
-             startTime="00:00" endTime="23:59" go="YueseCraft2016MainPanel">
-            <reward>
-            </reward>
-        </act>
         <act name="绝版装扮清仓扫货" iconId="1139" isPet="1" willOver="0" detailDes="买装扮！全场清货一件不留了哦！"
              timeDes="全天候" startTime="00:00" endTime="23:59" go="EquipSupermarketPanel">
             <reward>
@@ -1293,11 +1172,6 @@ pet精灵item为普通物品。id为对应id；
         </act>
         <act name="矿石秘宝" iconId="1139" isPet="1" willOver="0" detailDes="开启秘宝！后面藏着丰富的宝藏呢！"
              timeDes="全天候" startTime="00:00" endTime="23:59" go="OreSwapPanel">
-            <reward>
-            </reward>
-        </act>
-        <act name="时尚三元素" iconId="1139" isPet="1" willOver="0" detailDes="水火草三元素就在种植园等你"
-             timeDes="全天候" startTime="00:00" endTime="23:59" go="FashionPetPanel">
             <reward>
             </reward>
         </act>
@@ -1375,17 +1249,6 @@ pet精灵item为普通物品。id为对应id；
             <reward>
             </reward>
         </act>
-        <act name="回归•战神觉醒" iconId="1139" isPet="1" willOver="0"
-             detailDes="收集战神印记，战神联盟免费超进化及专属超强觉醒技轻松得" timeDes="全天候" startTime="00:00"
-             endTime="23:59" go="BackBattleGodWakedPanel">
-            <reward>
-            </reward>
-        </act>
-        <act name="精灵放生仓" iconId="1139" isPet="1" willOver="0" detailDes="放生精灵 获取扭蛋碎片" timeDes="全天候"
-             startTime="00:00" endTime="23:59" go="PetSmeltingActPanel">
-            <reward>
-            </reward>
-        </act>
         <act name="战神的天阶" iconId="1139" isPet="1" willOver="0"
              detailDes="登入天阶寻找战神觉醒的线索，天阶碎片换奖励" timeDes="全天候" startTime="00:00" endTime="23:59"
              go="FightHolySkyPanel">
@@ -1454,11 +1317,6 @@ pet精灵item为普通物品。id为对应id；
             <reward>
             </reward>
         </act>
-        <act name="希望之光争霸赛" iconId="1139" isPet="1" willOver="0" detailDes="传说的追溯" timeDes="全天候"
-             startTime="00:00" endTime="23:59" go="YueseCraft2016MainPanel">
-            <reward>
-            </reward>
-        </act>
         <act name="绝版装扮清仓扫货" iconId="1139" isPet="1" willOver="0" detailDes="买装扮！全场清货一件不留了哦！"
              timeDes="全天候" startTime="00:00" endTime="23:59" go="EquipSupermarketPanel">
             <reward>
@@ -1512,11 +1370,6 @@ pet精灵item为普通物品。id为对应id；
         </act>
         <act name="矿石秘宝" iconId="1139" isPet="1" willOver="0" detailDes="开启秘宝！后面藏着丰富的宝藏呢！"
              timeDes="全天候" startTime="00:00" endTime="23:59" go="OreSwapPanel">
-            <reward>
-            </reward>
-        </act>
-        <act name="时尚三元素" iconId="1139" isPet="1" willOver="0" detailDes="水火草三元素就在种植园等你"
-             timeDes="全天候" startTime="00:00" endTime="23:59" go="FashionPetPanel">
             <reward>
             </reward>
         </act>

@@ -38,19 +38,19 @@
     <buff Id="1008" name="慢性毒药" description="每层每回合失去10点体力 最多10层"/>
     <buff Id="1009" name="凋零" description="每回合失去35点体力 体力＜1/2时无效"/>
     <buff Id="1010" name="疾病" description="每回合失去15点体力 受到物攻伤害增加25% 换场继承"/>
-    <buff Id="1011" name="烫伤" description="受到特攻失去自身最大体力的1/8"/>
+    <buff Id="1011" name="烫伤" description="受到特攻失去自身最大体力的13%"/>
     <buff Id="1012" name="缠绕" description="每回合失去35点体力 体力＞1/2时无效"/>
     <buff Id="1013" name="燃烧" description="每回合失去20点体力"/>
-    <buff Id="1014" name="干裂" description="每回合失去最大体力的1/8 命中率降低10% 对风系无效"/>
+    <buff Id="1014" name="干裂" description="每回合失去最大体力的13% 命中率降低10% 对风系无效"/>
     <buff Id="1015" name="沙蚀" description="受到伤害增加50%"/>
     <buff Id="1016" name="星噬" description="每层每回合失去8点体力 最多5层"/>
     <buff Id="1017" name="失血" description="每回合失去300点体力"/>
     <buff Id="1018" name="重伤" description="结束时失去200点体力 换场保留"/>
     <buff Id="1019" name="嗜血虫" description="每层每回合被对手吸收10点体力 最多10层"/>
     <buff Id="1020" name="魂压缠绕" description="每回合失去最大体力的1/8 物防值降低25% 对上古系无效"/>
-    <buff Id="1021" name="血毒" description="每回合失去最大体力的1/8 体力＜1/2时无效"/>
+    <buff Id="1021" name="血毒" description="每回合失去最大体力的13% 体力＜1/2时无效"/>
     <buff Id="1022" name="流言" description="每回合失去15点体力 受到特攻伤害增加25% 换场继承"/>
-    <buff Id="1023" name="刺伤" description="受到物攻失去自身最大体力的1/8"/>
+    <buff Id="1023" name="刺伤" description="受到物攻失去自身最大体力的13%"/>
 
     <buff Id="3000" name="弱点记号" description="每个增加对手25点速度值 最多2个"/>
     <buff Id="3001" name="易伤" description="受到伤害增加y%"/>
@@ -126,7 +126,7 @@
     <buff Id="3071" name="火环之心 " description="每个使自身造成伤害增加10% 最多6个"/>
     <buff Id="3072" name="真空之心 " description=""/>
     <buff Id="3073" name="蓄力" description="每层增加攻击技能20点威力 最多5层"/>
-    <buff Id="3074" name="迅捷 " description="先制+1"/>
+    <buff Id="3074" name="迅捷 " description="先制+y"/>
     <buff Id="3075" name="沙之蛋壳 " description="受到伤害减少20%"/>
     <buff Id="3076" name="破防" description="受到伤害增加y%"/>
     <buff Id="3077" name="红宝石" description="使蓝宝石之力附加200点固伤"/>
@@ -189,7 +189,7 @@
     <buff Id="3134" name="无双势" description="获得受到伤害50%点数的无双力"/>
     <buff Id="3135" name="无双力" description="攻击技能威力增加y点"/>
     <buff Id="3136" name="砂分身" description=""/>
-    <buff Id="3137" name="光辉之影" description="后制-1"/>
+    <buff Id="3137" name="光辉之影" description="先制+y"/>
     <buff Id="3138" name="光之领域" description="增加光伊特恢复量20% 降低其他精灵恢复量20%"/>
     <buff Id="3139" name="光辉领域" description="增加光伊特 神王伊特恢复量40% 降低其他精灵恢复量40%"/>
     <buff Id="3140" name="蓝波" description="3个时使自身获得暴走 最多3个"/>
@@ -379,7 +379,7 @@
     <buff Id="3324" name="绚烂" description="使特性效果翻倍"/>
     <buff Id="3325" name="甘霖" description="恢复量提升50%"/>
     <buff Id="3326" name="最强" description=""/>
-    <buff Id="3327" name="扎根" description="每回合恢复自身最大体力的1/8"/>
+    <buff Id="3327" name="扎根" description="每回合恢复自身最大体力的13%"/>
     <buff Id="3328" name="六级台风" description="使六级台风增加50点威力 使对手失去12点体力"/>
     <buff Id="3329" name="八级台风" description="使八级台风造成伤害增加50% 使对手失去19点体力"/>
     <buff Id="3330" name="十级台风" description="使十级台风弱化对手速度1级 使对手失去26点体力"/>
@@ -533,7 +533,7 @@
     <buff Id="3478" name="清汤" description=""/>
     <buff Id="3479" name="麻辣" description=""/>
     <buff Id="3480" name="大还丹" description="使特性效果翻倍"/>
-    <buff Id="3481" name="血毒" description="每回合失去最大体力的1/8 体力＜1/2时无效"/>
+    <buff Id="3481" name="血毒" description="每回合失去最大体力的13% 体力＜1/2时无效"/>
     <buff Id="3482" name="水星" description="提升50点特攻值"/>
     <buff Id="3483" name="致命提升" description="暴击率提升y%"/>
     <buff Id="3484" name="地之领域" description="受到特攻伤害减少10% 造成特攻伤害增加10%"/>
@@ -556,7 +556,7 @@
     <buff Id="3501" name="水晶墙" description="受到伤害减少35% 抵挡自身特防值1/2的伤害"/>
     <buff Id="3502" name="密林之壁" description="受到普通系伤害减半"/>
     <buff Id="3503" name="特防提升" description="提升50点特防值"/>
-    <buff Id="3504" name="伤害上限" description="受到伤害不超过自身最大体力的1/8"/>
+    <buff Id="3504" name="伤害上限" description="受到伤害不超过自身最大体力的13%"/>
     <buff Id="3505" name="星辰回转" description="抵挡并反弹＞600点的伤害"/>
     <buff Id="3506" name="星屑" description="无法恢复体力"/>
     <buff Id="3507" name="魔鬼契约" description="特攻值增加75点"/>
@@ -686,7 +686,7 @@
     <buff Id="3629" name="坠地" description="速度降低45点 不与滞空共存"/>
     <buff Id="3630" name="滞空" description="无法闪避攻击 不与坠地共存"/>
     <buff Id="3631" name="反攻" description="对手攻击技能命中后会有70%概率受到35点伤害"/>
-    <buff Id="3632" name="星斑状态" description="每回合增加1颗 最多7颗 当精灵被换下或换上时也会增加星斑颗数"/>
+    <buff Id="3632" name="星斑" description="每回合增加1颗 最多7颗 当精灵被换下或换上时也会增加星斑颗数"/>
     <buff Id="3633" name="星耀闪光"
           description="每回合回复1/12体力，如果有星斑状态层数大于等于3，则调整成每回合回复1/8体力"/>
     <buff Id="3634" name="星耀来袭" description="额外增加105点特防值"/>
@@ -696,7 +696,7 @@
     <buff Id="3638" name="至尊冥王气血" description="获得150倍体力"/>
     <buff Id="3639" name="至尊冥王魔力" description="获得150倍魔力"/>
     <buff Id="3640" name="死亡召唤" description="击败对手时吸收对手剩余体力"/>
-    <buff Id="3641" name="宣判" description="被击败时使对手撒旦/暴走撒旦获得宣判者"/>
+    <buff Id="3641" name="宣判" description="被撒旦/暴走撒旦击败时使对手获得宣判者"/>
     <buff Id="3642" name="冥王觉醒" description="闪避率 暴击率增加10% 速度值增加300点"/>
     <buff Id="3643" name="磷气" description="恢复量增加25%"/>
     <buff Id="3644" name="冥界波" description="攻击技能无效"/>
@@ -1036,7 +1036,7 @@
     <buff Id="3970" name="神迹魔法" description="无法强化"/>
     <buff Id="3971" name="时光轮回" description="对手换场时会使自己恢复100点体力"/>
     <buff Id="3972" name="死亡裁决" description="击败对手时双倍吸收对手剩余体力"/>
-    <buff Id="3973" name="鬼翼宣判" description="被击败时使对手获得裁决者"/>
+    <buff Id="3973" name="鬼翼宣判" description="被冥翼撒旦击败时使对手获得裁决者"/>
     <buff Id="3974" name="碎魂" description="无法恢复体力"/>
     <buff Id="3975" name="炎攻" description="受到伤害增加75点"/>
     <buff Id="3976" name="裁决者" description="使对手失去最大体力的1/5"/>
@@ -1790,7 +1790,7 @@
     <buff Id="11581" name="圣之领域" description="恢复造成伤害20%的体力 反弹受到伤害的15%"/>
     <buff Id="11582" name="圣灵领域" description="恢复造成伤害40%的体力 反弹受到伤害的30%"/>
     <buff Id="11583" name="创世神域" description="每回合使自身全属性各强化1级并恢复1/4体力 最多200点"/>
-    <buff Id="11584" name="11584" description=""/>
+    <buff Id="11584" name="圣泪" description="使圣伊特之泪连续使用无效"/>
     <buff Id="11585" name="帝怒" description="每回合攻击命中后额外增加15点怒气"/>
     <buff Id="11586" name="11586" description=""/>
     <buff Id="11587" name="古之领域" description="攻击附加40点固伤 受到伤害减少40点"/>
@@ -2260,7 +2260,7 @@
     <buff Id="12027" name="焚神" description="每回合恢复170点体力"/>
     <buff Id="12028" name="焦土" description="攻击命中40%概率使对手烧伤"/>
     <buff Id="12029" name="耀光" description="先出手时技能威力翻倍 后出手时恢复20点怒气"/>
-    <buff Id="12030" name="光辉之影" description="所有技能后置制-1"/>
+    <buff Id="12030" name="光辉之影" description="后y制-1"/>
     <buff Id="12031" name="超新星"
           description="自身恢复体力时额外增加恢复值15%的怒气 当前每具有每1点怒气使自身回合初额外恢复1点体力 换场消失"/>
     <buff Id="12032" name="水之源" description="对火 地面 暗影系伤害翻倍 对草 水 特质 神秘 沙漠系伤害减半"/>

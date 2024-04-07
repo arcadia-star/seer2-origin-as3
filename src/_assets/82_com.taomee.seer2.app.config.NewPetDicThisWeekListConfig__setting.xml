@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root newPetId="">
+    <!-- 有用的就是id项 注意id要按顺序排列 id的排列顺序就是游戏里看到的顺序-->
+
+    <pet id="902"  index="1"/>
+    <pet id="914"  index="2"/>
+    <pet id="997"  index="3"/>
+    <pet id="2510"  index="4"/>
+    <pet id="2525"  index="5"/>
+    <pet id="2533"  index="6"/>
+    <pet id="2540"  index="7"/>
+    <pet id="2548"  index="8"/>
+    <pet id="2549"  index="9"/>
+    <pet id="2561"  index="10"/>
+    <pet id="2590"  index="11"/>
+
+</root>

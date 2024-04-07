@@ -1157,8 +1157,7 @@
         <HideMove ID="14567" Tips="对手处于能力下降状态时击败对手"/>
         <HideMove ID="14568" Tips="经历80次战斗"/>
         <HideMove ID="14612" Tips="获得50场战斗胜利"/>
-        <HideMove ID="12796"
-                  Tips="赫本习得条件：使用复仇羽刺击败不低于60级的对手30次； 奥黛丽赫本习得条件：在1场10回合的战斗中获得胜利"/>
+        <HideMove ID="12796" Tips="赫本习得条件：使用复仇羽刺击败不低于60级的对手30次； 奥黛丽赫本习得条件：在1场10回合的战斗中获得胜利"/>
         <HideMove ID="14613" Tips="对手处于能力下降状态时击败对手"/>
         <HideMove ID="14614" Tips="经历80次战斗"/>
         <HideMove ID="14598" Tips="获得50场战斗胜利"/>
@@ -1178,6 +1177,7 @@
         <HideMove ID="14671" Tips="对手处于能力下降状态时击败对手"/>
         <HideMove ID="14672" Tips="经历80次战斗"/>
         <HideMove ID="14685" Tips="获得50场战斗胜利"/>
+
 
 
         <HideMove ID="14686" Tips="经历80次战斗"/>
@@ -1542,6 +1542,7 @@
         <HideMove ID="15999" Tips="战斗结束后自己的怒气小于16"/>
 
 
+
         <!--暗翼之影-->
         <HideMove ID="16015" Tips="获得50场战斗胜利"/>
         <HideMove ID="16016" Tips="经历80次战斗"/>
@@ -1707,10 +1708,10 @@
         <HideMove ID="16559" Tips="对手处于能力下降状态时击败对手"/>
         <HideMove ID="16560" Tips="自己体力低于1/8时击败对手"/>
         <!--超念灵妖-->
-        <HideMove ID="16572" Tips="进化为第二形态后进行1场战斗"/>
-        <HideMove ID="16573" Tips="进化为第二形态后进行1场战斗"/>
-        <HideMove ID="16574" Tips="进化为第二形态后进行1场战斗"/>
-        <HideMove ID="16575" Tips="进化为第二形态后进行1场战斗"/>
+        <HideMove ID="16572" Tips="进行1场战斗"/>
+        <HideMove ID="16573" Tips="进行1场战斗"/>
+        <HideMove ID="16574" Tips="进行1场战斗"/>
+        <HideMove ID="16575" Tips="进行1场战斗"/>
         <!--神将张飞-->
         <HideMove ID="16579" Tips="获得50场战斗胜利"/>
         <HideMove ID="16613" Tips="在一场10回合的战斗中获得胜利"/>
@@ -1742,10 +1743,10 @@
         <HideMove ID="16664" Tips="对手处于能力下降状态时击败对手"/>
         <HideMove ID="16665" Tips="自己体力低于1/8时击败对手"/>
         <!--斗魂灵妖-->
-        <HideMove ID="16709" Tips="进化为第二形态后进行1场战斗"/>
-        <HideMove ID="16710" Tips="进化为第二形态后进行1场战斗"/>
-        <HideMove ID="16711" Tips="进化为第二形态后进行1场战斗"/>
-        <HideMove ID="16712" Tips="进化为第二形态后进行1场战斗"/>
+        <HideMove ID="16709" Tips="进行1场战斗"/>
+        <HideMove ID="16710" Tips="进行1场战斗"/>
+        <HideMove ID="16711" Tips="进行1场战斗"/>
+        <HideMove ID="16712" Tips="进行1场战斗"/>
         <!--米勒斯-->
         <HideMove ID="16694" Tips="获得50场战斗胜利"/>
         <HideMove ID="16695" Tips="在一场10回合的战斗中获得胜利"/>
@@ -1850,6 +1851,8 @@
         <HideMove ID="17031" Tips="获得50场战斗胜利"/>
         <HideMove ID="17032" Tips="在一场10回合的战斗中获得胜利"/>
         <HideMove ID="17033" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="17163" Tips="具有第二纹章时击败1次任意精灵后习得"/>
+
         <!--北方界王-->
         <HideMove ID="17014" Tips="获得50场战斗胜利"/>
         <HideMove ID="17015" Tips="在一场10回合的战斗中获得胜利"/>
@@ -1870,11 +1873,11 @@
         <HideMove ID="17050" Tips="自己体力低于1/8时击败对手"/>
 
         <!--战神觉醒-->
-        <HideMove ID="17069" Tips="收集战神印记 领悟战神联盟合体必杀技"/>
-        <HideMove ID="17068" Tips="收集战神印记 领悟战神联盟合体必杀技"/>
-        <HideMove ID="17070" Tips="收集战神印记 领悟战神联盟合体必杀技"/>
-        <HideMove ID="17071" Tips="收集战神印记 领悟战神联盟合体必杀技"/>
-        <HideMove ID="17072" Tips="收集战神印记 领悟战神联盟合体必杀技"/>
+        <HideMove ID="17069" Tips="一键习得"/>
+        <HideMove ID="17068" Tips="一键习得"/>
+        <HideMove ID="17070" Tips="一键习得"/>
+        <HideMove ID="17071" Tips="一键习得"/>
+        <HideMove ID="17072" Tips="一键习得"/>
 
 
         <!--梦梦草-->
@@ -1938,22 +1941,22 @@
         <HideMove ID="17277" Tips="使用神迹拂晓兔技能石领悟"/>
 
         <!--神迹凯萨-->
-        <HideMove ID="17305" Tips="使用神迹凯萨技能石领悟"/>
+        <HideMove ID="17305" Tips="【变身技能】使用神迹凯萨技能石领悟"/>
         <HideMove ID="17306" Tips="使用神迹凯萨技能石领悟"/>
         <HideMove ID="17307" Tips="使用神迹凯萨技能石领悟"/>
         <HideMove ID="17308" Tips="使用神迹凯萨技能石领悟"/>
 
         <!--加内特-->
-        <HideMove ID="17340" Tips="活动解锁"/>
-        <HideMove ID="17341" Tips="活动解锁"/>
-        <HideMove ID="17342" Tips="活动解锁"/>
-        <HideMove ID="17343" Tips="活动解锁"/>
+        <HideMove ID="17340" Tips="在精灵图鉴-活动解锁"/>
+        <HideMove ID="17341" Tips="在精灵图鉴-活动解锁"/>
+        <HideMove ID="17342" Tips="在精灵图鉴-活动解锁"/>
+        <HideMove ID="17343" Tips="在精灵图鉴-活动解锁"/>
 
         <!--暗黑超梦-->
-        <HideMove ID="17375" Tips="活动解锁"/>
-        <HideMove ID="17376" Tips="活动解锁"/>
-        <HideMove ID="17377" Tips="活动解锁"/>
-        <HideMove ID="17378" Tips="活动解锁"/>
+        <HideMove ID="17375" Tips="在精灵图鉴-活动解锁"/>
+        <HideMove ID="17376" Tips="在精灵图鉴-活动解锁"/>
+        <HideMove ID="17377" Tips="在精灵图鉴-活动解锁"/>
+        <HideMove ID="17378" Tips="在精灵图鉴-活动解锁"/>
 
         <!--神迹撒旦-->
         <HideMove ID="17379" Tips="使用神迹撒旦技能石领悟"/>
@@ -1980,7 +1983,7 @@
         <HideMove ID="17443" Tips="自己体力低于1/8时击败对手"/>
 
         <!--神迹盖亚-->
-        <HideMove ID="17444" Tips="使用神迹盖亚技能石领悟"/>
+        <HideMove ID="17444" Tips="【变身技能】使用神迹盖亚技能石领悟"/>
         <HideMove ID="17445" Tips="使用神迹盖亚技能石领悟"/>
         <HideMove ID="17446" Tips="使用神迹盖亚技能石领悟"/>
         <HideMove ID="17447" Tips="使用神迹盖亚技能石领悟"/>
@@ -2002,12 +2005,6 @@
         <HideMove ID="17523" Tips="在一场10回合的战斗中获得胜利"/>
         <HideMove ID="17524" Tips="对手处于能力下降状态时击败对手"/>
         <HideMove ID="17525" Tips="自己体力低于1/8时击败对手"/>
-
-        <!--神迹缪斯-->
-        <HideMove ID="17526" Tips="使用神迹缪斯技能石领悟"/>
-        <HideMove ID="17527" Tips="使用神迹缪斯技能石领悟"/>
-        <HideMove ID="17528" Tips="使用神迹缪斯技能石领悟"/>
-        <HideMove ID="17529" Tips="使用神迹缪斯技能石领悟"/>
 
         <!--神迹缪斯-->
         <HideMove ID="17526" Tips="使用神迹缪斯技能石领悟"/>
@@ -2078,7 +2075,7 @@
         <!--神迹迪兰特-->
         <HideMove ID="17754" Tips="使用神迹迪兰特技能石领悟"/>
         <HideMove ID="17755" Tips="使用神迹迪兰特技能石领悟"/>
-        <HideMove ID="17756" Tips="使用神迹迪兰特技能石领悟"/>
+        <HideMove ID="17756" Tips="【变身技能】使用神迹迪兰特技能石领悟"/>
         <HideMove ID="17757" Tips="使用神迹迪兰特技能石领悟"/>
 
         <!--神迹月神-->
@@ -2127,7 +2124,7 @@
         <HideMove ID="18001" Tips="获得50场战斗胜利"/>
         <HideMove ID="18002" Tips="在一场10回合的战斗中获得胜利"/>
         <HideMove ID="18003" Tips="对手处于能力下降状态时击败对手"/>
-        <HideMove ID="18004" Tips="自身具有大圣纹章情况下击败1次任意精灵"/>
+        <HideMove ID="18004" Tips="具有大圣纹章时击败1次任意精灵"/>
 
         <!--宵宵-->
         <HideMove ID="18022" Tips="获得50场战斗胜利"/>
@@ -2262,10 +2259,10 @@
         <HideMove ID="18320" Tips="在时空界王活动中使用时空之尘兑换"/>
 
         <!--幻境界王-->
-        <HideMove ID="18333" Tips="在时空界王活动中使用幻境碎片兑换"/>
-        <HideMove ID="18334" Tips="在时空界王活动中使用幻境碎片兑换"/>
-        <HideMove ID="18335" Tips="在时空界王活动中使用幻境碎片兑换"/>
-        <HideMove ID="18336" Tips="在时空界王活动中使用幻境碎片兑换"/>
+        <HideMove ID="18333" Tips="在幻境界王活动中使用幻境碎片兑换"/>
+        <HideMove ID="18334" Tips="在幻境界王活动中使用幻境碎片兑换"/>
+        <HideMove ID="18335" Tips="在幻境界王活动中使用幻境碎片兑换"/>
+        <HideMove ID="18336" Tips="在幻境界王活动中使用幻境碎片兑换"/>
 
         <!--天石灵尊-->
         <HideMove ID="18349" Tips="获得50场战斗胜利"/>
@@ -2440,6 +2437,33 @@
         <HideMove ID="18954" Tips="在一场10回合的战斗中获得胜利"/>
         <HideMove ID="18955" Tips="对手处于能力下降状态时击败对手"/>
         <HideMove ID="18956" Tips="自己体力低于1/8时击败对手"/>
+
+        <!--穹末雷影-->
+        <HideMove ID="18420" Tips="在NONO-福利-器灵突破中习得"/>
+        <HideMove ID="18421" Tips="在NONO-福利-器灵突破中习得"/>
+        <HideMove ID="18422" Tips="在NONO-福利-器灵突破中习得"/>
+
+        <!--熔焰炎蛮-->
+        <HideMove ID="18437" Tips="在NONO-福利-器灵突破中习得"/>
+        <HideMove ID="18438" Tips="在NONO-福利-器灵突破中习得"/>
+        <HideMove ID="18439" Tips="在NONO-福利-器灵突破中习得"/>
+
+        <!--邪念罪魔-->
+        <HideMove ID="18450" Tips="在活动日历-希望之光争霸赛-传说的追溯-传说奖励中习得"/>
+        <HideMove ID="18451" Tips="在活动日历-希望之光争霸赛-传说的追溯-传说奖励中习得"/>
+        <HideMove ID="18452" Tips="在活动日历-希望之光争霸赛-传说的追溯-传说奖励中习得"/>
+        <HideMove ID="18453" Tips="在活动日历-希望之光争霸赛-传说的追溯-传说奖励中习得"/>
+
+
+
+
+
+
+
+
+
+
+
 
     </HideMoves>
 </HideMovesTbl>
