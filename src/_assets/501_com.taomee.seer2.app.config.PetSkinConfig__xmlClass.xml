@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- 精灵皮肤系统 -->
+<!-- resourceId是精灵序号，skinId是对应的换成的皮肤序号，可以换别的精灵的皮肤，暂时只能一个精灵对应一个皮肤-->
+<!-- 皮肤id对应的id，必须要有动画，在3-hitInfo.xml里也必须配置相应打击帧 -->
+<pets>
+    <pet resourceId="17" skinId="0"/>
+</pets>
