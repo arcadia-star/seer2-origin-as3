@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- 精灵皮肤定义系统 -->
+<!-- 这里定义了精灵拥有的皮肤 -->
+<!-- resourceId是精灵序号，skinId是对应的皮肤序号，可以一个精灵对应多个皮肤-->
+<pets>
+    <pet resourceId="2535" skinId="366"/>
+    <pet resourceId="2535" skinId="180"/>
+    <pet resourceId="2542" skinId="96"/>
+</pets>

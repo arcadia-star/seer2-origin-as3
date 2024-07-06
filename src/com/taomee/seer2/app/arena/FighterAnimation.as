@@ -5,6 +5,7 @@ import com.taomee.seer2.app.arena.util.HitInfoConfig;
 import com.taomee.seer2.core.animation.IAnimation;
 import com.taomee.seer2.core.config.ClientConfig;
 import com.taomee.seer2.core.player.FighterMoviePlayer;
+import com.taomee.seer2.app.config.PetSkinConfig;
 
 import flash.display.FrameLabel;
 import flash.display.MovieClip;
