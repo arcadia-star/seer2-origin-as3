@@ -1,0 +1,116 @@
+<!-- vip
+type   1 物品交换     index 后台swapIndex  cost 需要多少能量格  isNew是否需要new标志(1是0否)  id 兑换物品id tip需兑换的物品说明  swapType兑换的类型1为兑换，2为涂装 vipLevel Vip几级可以兑换
+type   2 礼包    level为礼包等级  weekIndex周礼包后台配置的index  monthIndex月礼包后台配置的index
+type   3 特权    id特权说明的resourcesID
+type   4 幸运礼包  id 幸运礼包种类  tip  幸运礼包对应的提示
+type   5 幸运转盘 level 转盘等级  rewardIcon 十种奖励对应的icon；count表示数量
+-->
+
+<vipConfig>
+
+
+    <vip type="1" index="" cost="5" isNew="0" id="" tip="改变赛尔外形颜色" swapType="2" vipLevel="1"/>
+    <vip type="1" index="821" cost="30" isNew="1" id="400141" tip="小荷包里有1W赛尔豆哦" swapType="4" vipLevel="1"/>
+    <vip type="1" index="118" cost="1" isNew="0" id="400102" tip="可兑换1个游戏牌,用于玩VIP乐园的游戏" swapType="1"
+         vipLevel="1"/>
+    <vip type="1" index="304" cost="40" isNew="0" id="" tip="学习秘典，兑换20点学习力" swapType="5" vipLevel="1"/>
+    <vip type="1" index="819" cost="40" isNew="0" id="200215"
+         tip="神秘果实，在精灵背包中使用，听说精灵吃了会得到成长，等级越高效果越大" swapType="1" vipLevel="1"/>
+
+    <!--	<vip type="1" index="120" cost="50" isNew="0" id="200221" tip="初级资质果实,改变精灵资质，小几率出极品资质" swapType="1" vipLevel="2"/>-->
+    <vip type="1" index="824" cost="50" isNew="1" id="400142" tip="中荷包里有2W赛尔豆哦" swapType="4" vipLevel="2"/>
+    <vip type="1" index="822" cost="2" isNew="1" id="400139" tip="可兑换3个游戏牌,用于玩VIP乐园的游戏" swapType="1"
+         vipLevel="2"/>
+    <vip type="1" index="122" cost="50" isNew="0" id="200224" tip="平衡之粉尘,重新分配精灵的学习力" swapType="1"
+         vipLevel="2"/>
+
+
+    <!--		<vip type="1" index="158" cost="120" isNew="0" id="200222" tip="中级资质果实,改变精灵资质，中等几率出极品资质" swapType="1" vipLevel="3"/>-->
+    <vip type="1" index="826" cost="70" isNew="1" id="400143" tip="大荷包里有3W赛尔豆哦" swapType="4" vipLevel="3"/>
+    <vip type="1" index="825" cost="3" isNew="1" id="400140" tip="可兑换5个游戏牌,用于玩VIP乐园的游戏" swapType="1"
+         vipLevel="3"/>
+    <vip type="1" index="165" cost="100" isNew="0" id="200225" tip="性格重置秘药,改变精灵性格" swapType="1"
+         vipLevel="3"/>
+    <vip type="1" index="166" cost="180" isNew="0" id="200226"
+         tip="自持的苦柠,重置精灵性格为孤独、大胆、保守、沉着、胆小、害羞或认真" swapType="1" vipLevel="3"/>
+    <vip type="1" index="167" cost="180" isNew="0" id="200227"
+         tip="内执的辛柚,重置精灵性格为固执、顽皮、稳重、温顺、急躁或实干" swapType="1" vipLevel="3"/>
+    <vip type="1" index="168" cost="180" isNew="0" id="200228"
+         tip="外忱的甜橙,重置精灵性格为调皮、无虑、马虎、慎重、开朗或坦率" swapType="1" vipLevel="3"/>
+    <vip type="1" index="169" cost="180" isNew="0" id="200229"
+         tip="独恪的酸檬,重置精灵性格为勇敢、悠闲、冷静、狂妄、天真或浮躁" swapType="1" vipLevel="3"/>
+
+    <!--	<vip type="1" index="160" cost="200" isNew="0" id="200223" tip="高级资质果实,改变精灵资质，大几率出极品资质" swapType="1" vipLevel="4"/>-->
+    <vip type="1" index="827" cost="90" isNew="1" id="400144" tip="小金库里有5W赛尔豆哦" swapType="4" vipLevel="4"/>
+    <vip type="1" index="834" cost="80" isNew="1" id="200062"
+         tip="初级复活药水，在PVE对战中使用，可以复活已战败的精灵并恢复1/2体力。（双精灵对战除外）" swapType="1"
+         vipLevel="4"/>
+    <vip type="1" index="830" cost="80" isNew="1" id="202001"
+         tip="1级物攻药剂，在精灵背包中使用，使精灵在下3场对战中物攻值提升50点（仅PVE）" swapType="1" vipLevel="4"/>
+    <vip type="1" index="832" cost="80" isNew="1" id="202002"
+         tip="1级特攻药剂，在精灵背包中使用，使精灵在下3场对战中特攻值提升50点（仅PVE）" swapType="1" vipLevel="4"/>
+    <vip type="1" index="831" cost="80" isNew="1" id="202005"
+         tip="1级物防药剂，在精灵背包中使用，使用后的3场战斗内物防值提升50点（仅PVE）" swapType="1" vipLevel="4"/>
+    <vip type="1" index="833" cost="80" isNew="1" id="202006"
+         tip="1级特防药剂，在精灵背包中使用，使用后的3场战斗内特防值提升50点（仅PVE）" swapType="1" vipLevel="4"/>
+
+
+    <!--	<vip type="1" index="820" cost="300" isNew="0" id="200230" tip="至尊资质果实,在精灵背包中使用，提升1点资质。" swapType="1" vipLevel="5"/>-->
+    <vip type="1" index="829" cost="300" isNew="1" id="200232" tip="荇藻微光之块，在精灵背包中使用，使精灵获得10W经验"
+         swapType="1" vipLevel="5"/>
+    <vip type="1" index="837" cost="150" isNew="1" id="200064"
+         tip="高级复活药水，在PVE对战中使用，可以复活已战败的精灵并恢复100%体力。（双精灵对战除外）" swapType="1"
+         vipLevel="5"/>
+    <vip type="1" index="835" cost="100" isNew="1" id="202007"
+         tip="2级物攻药剂，在精灵背包中使用，使精灵在下3场对战中物攻值提升75点（仅PVE）" swapType="1" vipLevel="5"/>
+    <vip type="1" index="836" cost="100" isNew="1" id="202008"
+         tip="2级特攻药剂，在精灵背包中使用，使精灵在下3场对战中特攻值提升75点（仅PVE）" swapType="1" vipLevel="5"/>
+
+
+    <vip type="2" level="0" weekIndex="252" monthIndex="253" checkWeek="17" checkMonth="100006"/>
+    <vip type="2" level="1" weekIndex="108" monthIndex="113" checkWeek="10" checkMonth="100001"/>
+    <vip type="2" level="2" weekIndex="109" monthIndex="114" checkWeek="11" checkMonth="100002"/>
+    <vip type="2" level="3" weekIndex="110" monthIndex="115" checkWeek="12" checkMonth="100003"/>
+    <vip type="2" level="4" weekIndex="111" monthIndex="116" checkWeek="13" checkMonth="100004"/>
+    <vip type="2" level="5" weekIndex="112" monthIndex="117" checkWeek="14" checkMonth="100005"/>
+
+    <vip type="3" id="15" map="0"/>
+    <vip type="3" id="16" map="0"/>
+    <vip type="3" id="17" map="0"/>
+    <vip type="3" id="1" map="0"/>
+    <vip type="3" id="2" map="0"/>
+    <vip type="3" id="3" map="0"/>
+    <vip type="3" id="4" map="0"/>
+    <vip type="3" id="5" map="0"/>
+    <vip type="3" id="6" map="0"/>
+    <vip type="3" id="7" map="0"/>
+    <vip type="3" id="8" map="0"/>
+    <vip type="3" id="9" map="0"/>
+    <vip type="3" id="10" map="0"/>
+    <vip type="3" id="11" map="0"/>
+    <vip type="3" id="12" map="0"/>
+    <vip type="3" id="13" map="0"/>
+    <vip type="3" id="14" map="0"/>
+
+    <vip type="4" id="1" tip="精灵成长精华×1（价值5米币）,超强辅助包裹×1（价值2米币）"/>
+    <vip type="4" id="2" tip="初级资质果实×3（价值6米币）,性格重置秘药×3（价值6米币）"/>
+    <vip type="4" id="3" tip="精灵成长精华×1（价值5米币）,高级资质果实×3（价值9米币）"/>
+    <vip type="4" id="4" tip="精灵成长精华×1（价值5米币）,高级资质果实×3（价值9米币）,高级复活药水×3（价值6米币）"/>
+    <vip type="4" id="5" tip="精灵成长精华×1（价值5米币）,高级资质果实×3（价值9米币）,高级复活药水×3（价值6米币）"/>
+    <vip type="4" id="6" tip="精灵成长精华×1（价值5米币）"/>
+    <vip type="4" id="7" tip="精灵扭蛋牌×5（价值5米币）"/>
+    <vip type="4" id="8" tip="高级资质果实×1（价值3米币）,中级资质果实×2（价值5米币）"/>
+    <vip type="4" id="9" tip="精灵成长精华（价值5米币）"/>
+    <vip type="4" id="12" tip="三倍加速器×1,精灵学习机×1,赛尔豆×10000,经验芯片5k×1"/>
+
+    <vip type="5" level="1" rewardIcon="1,200213,200001,1,1,200062,200213,200221,200001,200214"
+         count="100,1,3,50,100,1,1,1,3,1"/>
+    <vip type="5" level="2" rewardIcon="1,200213,200002,1,1,200062 ,200214,200221,200002,202001"
+         count="150,1,3,50,150,1,1,1,3,1"/>
+    <vip type="5" level="3" rewardIcon="1,200214,200002,1,202002,200002,200222,200062,1,202001"
+         count="200,1,3,100,1,3,1,1,200,1"/>
+    <vip type="5" level="4" rewardIcon="1,200214,200003,1,1,200222,200064,200225,202001,202002"
+         count="250,1,2,100,250,1,1,1,1,1"/>
+    <vip type="5" level="5" rewardIcon="1,200213,200003,1,1,200223,200064,200225,202001,202002"
+         count="300,3,2,150,300,1,1,1,1,1"/>
+</vipConfig>
