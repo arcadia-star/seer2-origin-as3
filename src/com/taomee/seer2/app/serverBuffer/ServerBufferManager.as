@@ -49,5 +49,25 @@ public class ServerBufferManager {
         var _loc4_:UpdateServerBufferList = new UpdateServerBufferList(param1, param2, param3);
         getServerBuffer(param1, _loc4_.updateServerBufferHandler);
     }
+
+    //todo dev
+    public static function getPetSkin(monsterId:int, cb:Function) {
+        if (monsterId > 10000) {
+            cb(-1);
+            return;
+        }
+        ServerBufferManager.getServerBuffer(10000 + monsterId, function (buffer:ServerBuffer) {
+            var skinId = buffer.readDataAtPostionGetInt(0);
+            cb(skinId);
+        });
+    }
+
+    //todo dev
+    public static function setPetSkin(monsterId:int, skinId:int) {
+        if (monsterId > 10000) {
+            return;
+        }
+        ServerBufferManager.updateServerBuffer(10000 + monsterId, 0, skinId);
+    }
 }
 }
