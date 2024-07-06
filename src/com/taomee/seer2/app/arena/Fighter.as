@@ -26,6 +26,7 @@ import com.taomee.seer2.core.scene.LayerManager;
 import com.taomee.seer2.core.scene.SceneManager;
 import com.taomee.seer2.core.utils.DisplayObjectUtil;
 import com.taomee.seer2.core.utils.URLUtil;
+import com.taomee.seer2.app.config.PetSkinConfig;
 
 import flash.display.MovieClip;
 import flash.events.Event;
@@ -95,7 +96,21 @@ public class Fighter extends AnimateElement {
             this.y = 50;
         }
         this.updatePosition();
-        this._resourceUrl = URLUtil.getPetFightSwf(this._fighterInfo.resourceId);
+        if(this._fighterSide == FightSide.LEFT)
+        {
+            if(PetSkinConfig.getSkinId(this._fighterInfo.resourceId))
+            {
+                this._resourceUrl = URLUtil.getPetFightSwf(PetSkinConfig.getSkinId(this._fighterInfo.resourceId));
+            }
+            else
+            {
+                this._resourceUrl = URLUtil.getPetFightSwf(this._fighterInfo.resourceId);
+            }
+        }
+        else
+        {
+            this._resourceUrl = URLUtil.getPetFightSwf(this._fighterInfo.resourceId);
+        }
     }
 
     override public function dispose():void {
@@ -281,7 +296,21 @@ public class Fighter extends AnimateElement {
         }
         if (this._fighterAnimation == null) {
             this._fighterAnimation = new FighterAnimation();
-            this._fighterAnimation.setup(this._fighterMC, this._fighterInfo.resourceId);
+            if(this._fighterSide == FightSide.LEFT)
+            {
+                if(PetSkinConfig.getSkinId(this._fighterInfo.resourceId))
+                {
+                    this._fighterAnimation.setup(this._fighterMC, PetSkinConfig.getSkinId(this._fighterInfo.resourceId));
+                }
+                else
+                {
+                    this._fighterAnimation.setup(this._fighterMC,this._fighterInfo.resourceId);
+                }
+            }
+            else
+            {
+                this._fighterAnimation.setup(this._fighterMC,this._fighterInfo.resourceId);
+            }
             animation = this._fighterAnimation;
         }
         this.action = this._currentAction;

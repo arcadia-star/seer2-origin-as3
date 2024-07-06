@@ -1,6 +1,7 @@
 package com.taomee.seer2.core.utils {
 import com.taomee.seer2.core.config.ClientConfig;
 import com.taomee.seer2.core.manager.VersionManager;
+import com.taomee.seer2.app.config.PetSkinConfig;
 
 import flash.utils.getDefinitionByName;
 
@@ -639,6 +640,10 @@ public class URLUtil {
     }
 
     public static function getPetDemo(param1:uint):String {
+        if(PetSkinConfig.getSkinId(param1))
+        {
+            param1 = PetSkinConfig.getSkinId(param1);
+        }
         param1 = getResRealId(param1);
         var _loc2_:String = _petDemoBase + param1 + POSTFIX_SWF;
         return rewrite(ClientConfig.rootURL + VersionManager.getURL(_loc2_));

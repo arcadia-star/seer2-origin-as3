@@ -21,6 +21,8 @@ public class DynConfig {
     public static var petConfigXML:XML;
     public static var dictionaryConfigXML:XML;
     public static var hitInfoConfigXML:XML;
+    public static var petSkinConfigXML:XML;
+    public static var petSkinDefineConfigXML:XML;
 
     private static function loadConfig():void {
         loadXML("config/binaryData/2_com.taomee.seer2.app.config.ItemConfig__itemXmlClass.xml", function (xml:XML):void {
@@ -55,6 +57,12 @@ public class DynConfig {
         });
         loadXML("config/binaryData/3_com.taomee.seer2.app.arena.util.HitInfoConfig__hitData.xml", function (xml:XML):void {
             hitInfoConfigXML = xml;
+        });
+        loadXML("config/binaryData/501_com.taomee.seer2.app.config.PetSkinConfig__xmlClass.xml", function (xml:XML):void {
+            petSkinConfigXML = xml;
+        });
+        loadXML("config/binaryData/502_com.taomee.seer2.app.config.PetSkinDefineConfig__xmlClass.xml", function (xml:XML):void {
+            petSkinDefineConfigXML = xml;
         });
         loadXML("config/dyn-client-config.xml", function (xml:XML):void {
             DynSwitch.loadConfig(xml);
