@@ -11641,7 +11641,6 @@ ChgMonId：神迹变身后精灵monID，变身前后都要配
             <Move ID="15188" LearningLv="2021" SoundID="01_2_003" EffectID="13_2_012"/>
             <Move ID="15189" LearningLv="2185" SoundID="01_2_003" EffectID="13_2_012"/>
         </LearnableMoves>
-        、
     </Monster>
     <Monster NumbersID="401" ID="703" DefName="冥翼撒旦" Type="17" GrowthType="5" HP="180" Atk="139" Def="110"
              SpAtk="128" SpDef="110" Spd="122" YieldingExp="140" CatchRate="0" YieldingEV="1" EvolvesFrom="496"
@@ -23309,7 +23308,6 @@ ChgMonId：神迹变身后精灵monID，变身前后都要配
             <Move ID="15188" LearningLv="2021" SoundID=" " EffectID="   "/>
             <Move ID="15189" LearningLv="2185" SoundID=" " EffectID=" "/>
         </LearnableMoves>
-        、
     </Monster>
     <Monster NumbersID="1230" ID="1257" DefName="远古树神" Type="1" GrowthType="4" HP="185" Atk="135" Def="115"
              SpAtk="115" SpDef="109" Spd="112" YieldingExp="130" CatchRate="0" YieldingEV="1" EvolvesFrom="0" ride="0"

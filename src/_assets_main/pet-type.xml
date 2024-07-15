@@ -1,0 +1,441 @@
+<root>
+    <type id="1" name="普通">
+        <matchup id="19" value="75"/>
+        <matchup id="20" value="75"/>
+        <matchup id="22" value="125"/>
+        <matchup id="23" value="50"/>
+    </type>
+    <type id="2" name="草">
+        <matchup id="2" value="50"/>
+        <matchup id="3" value="200"/>
+        <matchup id="4" value="50"/>
+        <matchup id="6" value="50"/>
+        <matchup id="7" value="50"/>
+        <matchup id="10" value="50"/>
+        <matchup id="12" value="200"/>
+        <matchup id="16" value="200"/>
+        <matchup id="18" value="50"/>
+        <matchup id="19" value="75"/>
+        <matchup id="20" value="75"/>
+        <matchup id="22" value="125"/>
+        <matchup id="23" value="50"/>
+    </type>
+    <type id="3" name="水">
+        <matchup id="2" value="50"/>
+        <matchup id="3" value="50"/>
+        <matchup id="4" value="200"/>
+        <matchup id="9" value="200"/>
+        <matchup id="13" value="200"/>
+        <matchup id="16" value="50"/>
+        <matchup id="17" value="50"/>
+        <matchup id="18" value="50"/>
+        <matchup id="19" value="75"/>
+        <matchup id="20" value="75"/>
+        <matchup id="22" value="125"/>
+        <matchup id="23" value="50"/>
+    </type>
+    <type id="4" name="火">
+        <matchup id="2" value="200"/>
+        <matchup id="3" value="50"/>
+        <matchup id="4" value="50"/>
+        <matchup id="5" value="200"/>
+        <matchup id="6" value="200"/>
+        <matchup id="10" value="200"/>
+        <matchup id="14" value="50"/>
+        <matchup id="15" value="50"/>
+        <matchup id="16" value="50"/>
+        <matchup id="18" value="50"/>
+        <matchup id="19" value="75"/>
+        <matchup id="20" value="75"/>
+        <matchup id="22" value="125"/>
+        <matchup id="23" value="50"/>
+    </type>
+    <type id="5" name="风">
+        <matchup id="5" value="50"/>
+        <matchup id="6" value="50"/>
+        <matchup id="9" value="200"/>
+        <matchup id="10" value="0"/>
+        <matchup id="14" value="200"/>
+        <matchup id="15" value="50"/>
+        <matchup id="16" value="200"/>
+        <matchup id="17" value="50"/>
+        <matchup id="18" value="50"/>
+        <matchup id="19" value="75"/>
+        <matchup id="20" value="75"/>
+        <matchup id="22" value="125"/>
+        <matchup id="23" value="50"/>
+    </type>
+    <type id="6" name="虫">
+        <matchup id="2" value="200"/>
+        <matchup id="4" value="50"/>
+        <matchup id="7" value="50"/>
+        <matchup id="10" value="50"/>
+        <matchup id="11" value="200"/>
+        <matchup id="13" value="50"/>
+        <matchup id="14" value="50"/>
+        <matchup id="15" value="200"/>
+        <matchup id="18" value="200"/>
+        <matchup id="19" value="75"/>
+        <matchup id="20" value="75"/>
+        <matchup id="22" value="125"/>
+        <matchup id="23" value="50"/>
+    </type>
+    <type id="7" name="飞行">
+        <matchup id="2" value="200"/>
+        <matchup id="6" value="200"/>
+        <matchup id="7" value="50"/>
+        <matchup id="8" value="50"/>
+        <matchup id="9" value="200"/>
+        <matchup id="12" value="50"/>
+        <matchup id="13" value="50"/>
+        <matchup id="15" value="50"/>
+        <matchup id="18" value="50"/>
+        <matchup id="19" value="75"/>
+        <matchup id="20" value="75"/>
+        <matchup id="22" value="125"/>
+        <matchup id="23" value="50"/>
+    </type>
+    <type id="8" name="电">
+        <matchup id="2" value="50"/>
+        <matchup id="3" value="200"/>
+        <matchup id="5" value="50"/>
+        <matchup id="7" value="200"/>
+        <matchup id="8" value="50"/>
+        <matchup id="9" value="0"/>
+        <matchup id="13" value="200"/>
+        <matchup id="17" value="50"/>
+        <matchup id="18" value="50"/>
+        <matchup id="19" value="75"/>
+        <matchup id="20" value="75"/>
+        <matchup id="22" value="125"/>
+        <matchup id="23" value="50"/>
+    </type>
+    <type id="9" name="地面">
+        <matchup id="2" value="50"/>
+        <matchup id="4" value="200"/>
+        <matchup id="5" value="50"/>
+        <matchup id="7" value="0"/>
+        <matchup id="8" value="200"/>
+        <matchup id="11" value="50"/>
+        <matchup id="12" value="200"/>
+        <matchup id="13" value="50"/>
+        <matchup id="15" value="50"/>
+        <matchup id="17" value="50"/>
+        <matchup id="18" value="200"/>
+        <matchup id="19" value="75"/>
+        <matchup id="20" value="75"/>
+        <matchup id="22" value="125"/>
+        <matchup id="23" value="50"/>
+    </type>
+    <type id="10" name="冰">
+        <matchup id="3" value="50"/>
+        <matchup id="4" value="50"/>
+        <matchup id="5" value="200"/>
+        <matchup id="6" value="50"/>
+        <matchup id="7" value="200"/>
+        <matchup id="10" value="50"/>
+        <matchup id="14" value="50"/>
+        <matchup id="16" value="200"/>
+        <matchup id="18" value="50"/>
+        <matchup id="19" value="75"/>
+        <matchup id="20" value="75"/>
+        <matchup id="22" value="125"/>
+        <matchup id="23" value="50"/>
+    </type>
+    <type id="11" name="超能">
+        <matchup id="5" value="200"/>
+        <matchup id="6" value="50"/>
+        <matchup id="8" value="50"/>
+        <matchup id="9" value="50"/>
+        <matchup id="11" value="50"/>
+        <matchup id="12" value="50"/>
+        <matchup id="14" value="200"/>
+        <matchup id="17" value="200"/>
+        <matchup id="18" value="50"/>
+        <matchup id="19" value="75"/>
+        <matchup id="20" value="75"/>
+        <matchup id="22" value="125"/>
+        <matchup id="23" value="50"/>
+    </type>
+    <type id="12" name="光">
+        <matchup id="2" value="0"/>
+        <matchup id="6" value="50"/>
+        <matchup id="10" value="50"/>
+        <matchup id="11" value="200"/>
+        <matchup id="12" value="50"/>
+        <matchup id="13" value="200"/>
+        <matchup id="16" value="50"/>
+        <matchup id="17" value="200"/>
+        <matchup id="18" value="200"/>
+        <matchup id="19" value="75"/>
+        <matchup id="20" value="75"/>
+        <matchup id="22" value="125"/>
+        <matchup id="23" value="50"/>
+    </type>
+    <type id="13" name="暗影">
+        <matchup id="3" value="50"/>
+        <matchup id="6" value="50"/>
+        <matchup id="9" value="50"/>
+        <matchup id="11" value="200"/>
+        <matchup id="12" value="50"/>
+        <matchup id="13" value="200"/>
+        <matchup id="15" value="200"/>
+        <matchup id="18" value="200"/>
+        <matchup id="19" value="75"/>
+        <matchup id="20" value="75"/>
+        <matchup id="22" value="125"/>
+        <matchup id="23" value="50"/>
+    </type>
+    <type id="14" name="战斗">
+        <matchup id="3" value="50"/>
+        <matchup id="5" value="50"/>
+        <matchup id="6" value="200"/>
+        <matchup id="10" value="200"/>
+        <matchup id="11" value="50"/>
+        <matchup id="14" value="50"/>
+        <matchup id="15" value="200"/>
+        <matchup id="18" value="50"/>
+        <matchup id="19" value="75"/>
+        <matchup id="20" value="75"/>
+        <matchup id="22" value="125"/>
+        <matchup id="23" value="50"/>
+    </type>
+    <type id="15" name="龙">
+        <matchup id="3" value="200"/>
+        <matchup id="7" value="50"/>
+        <matchup id="8" value="50"/>
+        <matchup id="10" value="200"/>
+        <matchup id="11" value="50"/>
+        <matchup id="13" value="50"/>
+        <matchup id="17" value="200"/>
+        <matchup id="18" value="200"/>
+        <matchup id="19" value="75"/>
+        <matchup id="20" value="75"/>
+        <matchup id="22" value="125"/>
+        <matchup id="23" value="50"/>
+    </type>
+    <type id="16" name="沙漠">
+        <matchup id="2" value="50"/>
+        <matchup id="4" value="200"/>
+        <matchup id="5" value="50"/>
+        <matchup id="6" value="50"/>
+        <matchup id="8" value="200"/>
+        <matchup id="10" value="50"/>
+        <matchup id="16" value="50"/>
+        <matchup id="17" value="50"/>
+        <matchup id="18" value="200"/>
+        <matchup id="19" value="75"/>
+        <matchup id="20" value="75"/>
+        <matchup id="22" value="125"/>
+        <matchup id="23" value="50"/>
+    </type>
+    <type id="17" name="神秘">
+        <matchup id="6" value="200"/>
+        <matchup id="7" value="200"/>
+        <matchup id="9" value="50"/>
+        <matchup id="14" value="50"/>
+        <matchup id="15" value="50"/>
+        <matchup id="16" value="200"/>
+        <matchup id="17" value="50"/>
+        <matchup id="18" value="50"/>
+        <matchup id="19" value="75"/>
+        <matchup id="20" value="75"/>
+        <matchup id="22" value="125"/>
+        <matchup id="23" value="50"/>
+    </type>
+    <type id="18" name="特质">
+        <matchup id="2" value="50"/>
+        <matchup id="3" value="50"/>
+        <matchup id="4" value="50"/>
+        <matchup id="5" value="50"/>
+        <matchup id="6" value="200"/>
+        <matchup id="7" value="50"/>
+        <matchup id="8" value="50"/>
+        <matchup id="9" value="200"/>
+        <matchup id="10" value="50"/>
+        <matchup id="11" value="50"/>
+        <matchup id="12" value="200"/>
+        <matchup id="13" value="200"/>
+        <matchup id="14" value="50"/>
+        <matchup id="15" value="200"/>
+        <matchup id="16" value="200"/>
+        <matchup id="17" value="50"/>
+        <matchup id="18" value="50"/>
+        <matchup id="19" value="75"/>
+        <matchup id="20" value="75"/>
+        <matchup id="22" value="125"/>
+        <matchup id="23" value="50"/>
+    </type>
+    <type id="19" name="精灵王">
+        <matchup id="1" value="125"/>
+        <matchup id="2" value="125"/>
+        <matchup id="3" value="125"/>
+        <matchup id="4" value="125"/>
+        <matchup id="5" value="125"/>
+        <matchup id="6" value="125"/>
+        <matchup id="7" value="125"/>
+        <matchup id="8" value="125"/>
+        <matchup id="9" value="125"/>
+        <matchup id="10" value="125"/>
+        <matchup id="11" value="125"/>
+        <matchup id="12" value="125"/>
+        <matchup id="13" value="125"/>
+        <matchup id="14" value="125"/>
+        <matchup id="15" value="125"/>
+        <matchup id="16" value="125"/>
+        <matchup id="17" value="125"/>
+        <matchup id="18" value="125"/>
+        <matchup id="19" value="125"/>
+        <matchup id="19" value="50"/>
+        <matchup id="19" value="75"/>
+        <matchup id="20" value="125"/>
+        <matchup id="20" value="75"/>
+        <matchup id="21" value="125"/>
+        <matchup id="22" value="125"/>
+        <matchup id="22" value="125"/>
+        <matchup id="23" value="125"/>
+        <matchup id="23" value="50"/>
+        <matchup id="23" value="75"/>
+        <matchup id="24" value="125"/>
+        <matchup id="25" value="125"/>
+        <matchup id="26" value="125"/>
+        <matchup id="27" value="125"/>
+    </type>
+    <type id="20" name="上古">
+        <matchup id="19" value="75"/>
+        <matchup id="19" value="75"/>
+        <matchup id="20" value="50"/>
+        <matchup id="20" value="75"/>
+        <matchup id="22" value="125"/>
+        <matchup id="23" value="50"/>
+    </type>
+    <type id="21" name="圣灵">
+        <matchup id="1" value="125"/>
+        <matchup id="2" value="125"/>
+        <matchup id="3" value="125"/>
+        <matchup id="4" value="125"/>
+        <matchup id="5" value="125"/>
+        <matchup id="6" value="125"/>
+        <matchup id="7" value="125"/>
+        <matchup id="8" value="125"/>
+        <matchup id="9" value="125"/>
+        <matchup id="10" value="125"/>
+        <matchup id="11" value="125"/>
+        <matchup id="12" value="125"/>
+        <matchup id="13" value="125"/>
+        <matchup id="14" value="125"/>
+        <matchup id="15" value="125"/>
+        <matchup id="16" value="125"/>
+        <matchup id="17" value="125"/>
+        <matchup id="18" value="125"/>
+        <matchup id="19" value="100"/>
+        <matchup id="19" value="125"/>
+        <matchup id="19" value="75"/>
+        <matchup id="20" value="100"/>
+        <matchup id="20" value="125"/>
+        <matchup id="20" value="75"/>
+        <matchup id="21" value="100"/>
+        <matchup id="21" value="125"/>
+        <matchup id="22" value="125"/>
+        <matchup id="22" value="125"/>
+        <matchup id="23" value="125"/>
+        <matchup id="23" value="50"/>
+        <matchup id="24" value="125"/>
+        <matchup id="25" value="125"/>
+        <matchup id="26" value="125"/>
+        <matchup id="27" value="125"/>
+    </type>
+    <type id="22" name="神迹">
+        <matchup id="1" value="200"/>
+        <matchup id="2" value="200"/>
+        <matchup id="3" value="200"/>
+        <matchup id="4" value="200"/>
+        <matchup id="5" value="200"/>
+        <matchup id="6" value="200"/>
+        <matchup id="7" value="200"/>
+        <matchup id="8" value="200"/>
+        <matchup id="9" value="200"/>
+        <matchup id="10" value="200"/>
+        <matchup id="11" value="200"/>
+        <matchup id="12" value="200"/>
+        <matchup id="13" value="200"/>
+        <matchup id="14" value="200"/>
+        <matchup id="15" value="200"/>
+        <matchup id="16" value="200"/>
+        <matchup id="17" value="200"/>
+        <matchup id="18" value="200"/>
+        <matchup id="19" value="100"/>
+        <matchup id="19" value="200"/>
+        <matchup id="19" value="75"/>
+        <matchup id="20" value="200"/>
+        <matchup id="20" value="75"/>
+        <matchup id="20" value="75"/>
+        <matchup id="21" value="200"/>
+        <matchup id="22" value="125"/>
+        <matchup id="22" value="200"/>
+        <matchup id="23" value="100"/>
+        <matchup id="23" value="200"/>
+        <matchup id="23" value="50"/>
+        <matchup id="24" value="200"/>
+        <matchup id="25" value="200"/>
+        <matchup id="26" value="200"/>
+        <matchup id="27" value="200"/>
+    </type>
+    <type id="23" name="神盾">
+        <matchup id="1" value="75"/>
+        <matchup id="2" value="75"/>
+        <matchup id="3" value="75"/>
+        <matchup id="4" value="75"/>
+        <matchup id="5" value="75"/>
+        <matchup id="6" value="75"/>
+        <matchup id="7" value="75"/>
+        <matchup id="8" value="75"/>
+        <matchup id="9" value="75"/>
+        <matchup id="10" value="75"/>
+        <matchup id="11" value="75"/>
+        <matchup id="12" value="75"/>
+        <matchup id="13" value="75"/>
+        <matchup id="14" value="75"/>
+        <matchup id="15" value="75"/>
+        <matchup id="16" value="75"/>
+        <matchup id="17" value="75"/>
+        <matchup id="18" value="75"/>
+        <matchup id="19" value="75"/>
+        <matchup id="19" value="75"/>
+        <matchup id="20" value="75"/>
+        <matchup id="20" value="75"/>
+        <matchup id="21" value="75"/>
+        <matchup id="22" value="125"/>
+        <matchup id="22" value="75"/>
+        <matchup id="23" value="50"/>
+        <matchup id="23" value="75"/>
+        <matchup id="24" value="75"/>
+        <matchup id="25" value="75"/>
+        <matchup id="26" value="75"/>
+        <matchup id="27" value="75"/>
+    </type>
+    <!--    <type id="24" name="FOREIGN">-->
+    <!--        <matchup id="19" value="75"/>-->
+    <!--        <matchup id="20" value="75"/>-->
+    <!--        <matchup id="22" value="125"/>-->
+    <!--        <matchup id="23" value="50"/>-->
+    <!--    </type>-->
+    <!--    <type id="25" name="FAERIES">-->
+    <!--        <matchup id="19" value="75"/>-->
+    <!--        <matchup id="20" value="75"/>-->
+    <!--        <matchup id="22" value="125"/>-->
+    <!--        <matchup id="23" value="50"/>-->
+    <!--    </type>-->
+    <!--    <type id="26" name="POLLUTE">-->
+    <!--        <matchup id="19" value="75"/>-->
+    <!--        <matchup id="20" value="75"/>-->
+    <!--        <matchup id="22" value="125"/>-->
+    <!--        <matchup id="23" value="50"/>-->
+    <!--    </type>-->
+    <!--    <type id="27" name="CRYSTAL">-->
+    <!--        <matchup id="19" value="75"/>-->
+    <!--        <matchup id="20" value="75"/>-->
+    <!--        <matchup id="22" value="125"/>-->
+    <!--        <matchup id="23" value="50"/>-->
+    <!--    </type>-->
+</root>
