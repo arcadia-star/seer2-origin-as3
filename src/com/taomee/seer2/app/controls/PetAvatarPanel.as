@@ -7,6 +7,7 @@ import com.taomee.seer2.app.net.Connection;
 import com.taomee.seer2.app.pet.data.PetInfo;
 import com.taomee.seer2.app.pet.data.PetInfoManager;
 import com.taomee.seer2.app.pet.events.PetInfoEvent;
+import com.taomee.seer2.app.popup.AlertManager;
 import com.taomee.seer2.app.popup.ServerMessager;
 import com.taomee.seer2.app.quest.QuestManager;
 import com.taomee.seer2.app.vip.VipManager;
@@ -256,12 +257,8 @@ public class PetAvatarPanel extends Sprite {
             ServerMessager.addMessage("你的精灵不需要恢复");
             return;
         }
-        if (VipManager.vipInfo.isVip()) {
-            this.oldCoinNum = ActorManager.actorInfo.coins;
-            this.recoverAllPetBagPet();
-        } else {
-            ModuleManager.showAppModule("CurePetsTipPanel");
-        }
+        this.oldCoinNum = ActorManager.actorInfo.coins;
+        this.recoverAllPetBagPet();
     }
 
     private function recoverAllPetBagPet():void {
@@ -280,7 +277,14 @@ public class PetAvatarPanel extends Sprite {
         }
         _loc4_ = int(param1.message.getRawData().readUnsignedInt());
         ActorManager.actorInfo.coins = uint(_loc4_);
-        ServerMessager.addMessage("你是VIP，每次战斗之后自动并且免费回血哦。");
+        if (VipManager.vipInfo.isVip())
+        {
+            ServerMessager.addMessage("你是VIP，每次战斗之后自动并且免费回血哦。");
+        }
+        else
+        {
+            ServerMessager.addMessage("背包中所有精灵已经恢复成功！花费"+(this.oldCoinNum - _loc4_)+"赛尔豆");
+        }
     }
 
     private function completeRecoverPetGudie():void {
