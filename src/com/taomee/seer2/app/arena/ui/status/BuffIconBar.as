@@ -79,6 +79,7 @@ public class BuffIconBar extends Sprite {
     public function update():void {
         var _loc2_:FighterBuffInfo = null;
         var _loc3_:int = 0;
+        var _loc4_:int = 0;
         this.clearIcon();
         var _loc1_:Vector.<FighterBuffInfo> = new Vector.<FighterBuffInfo>();
         for each(_loc2_ in this._fighter.fighterInfo.fightBuffInfoVec) {
@@ -87,11 +88,11 @@ public class BuffIconBar extends Sprite {
             }
         }
         this.replaceBuff(_loc1_);
+        _loc4_ = this.showTraitChangedIcon(0);
         _loc3_ = int(_loc1_.length);
         if (_loc3_ > 0) {
-            this.showBuffIcon(_loc1_);
+            this.showBuffIcon(_loc1_,_loc4_);
         }
-        this.showTraitChangedIcon(_loc3_);
     }
 
     private function replaceBuff(param1:Vector.<FighterBuffInfo>):void {
@@ -135,9 +136,9 @@ public class BuffIconBar extends Sprite {
         return _loc2_;
     }
 
-    private function showTraitChangedIcon(param1:uint):void {
+    private function showTraitChangedIcon(param1:uint):int {
         if (this._fighter.fighterTurnResultInfo == null) {
-            return;
+            return 0;
         }
         var _loc2_:int = int(param1);
         var _loc3_:int = this._fighter.fighterTurnResultInfo.changedAtk;
@@ -165,6 +166,7 @@ public class BuffIconBar extends Sprite {
             this.addTraitIcon(TRAIT_SPEED, _loc2_, _loc7_);
             _loc2_++;
         }
+        return _loc2_;
     }
 
     private function addTraitIcon(param1:int, param2:int, param3:int):void {
@@ -198,7 +200,8 @@ public class BuffIconBar extends Sprite {
         }
         icon = this._iconMap.getValue(traitIndex) as Sprite;
         updateBuffStatus(changedValue);
-        icon.x = iconIndex * this._direction * ICON_WIDTH;
+        icon.x = (iconIndex % this._maxLine) * this._direction * ICON_WIDTH;
+        icon.y = int(iconIndex / this._maxLine) * (ICON_WIDTH + 2);
         TooltipManager.addCommonTip(icon, tip);
         addChild(icon);
     }
@@ -261,7 +264,7 @@ public class BuffIconBar extends Sprite {
         this._iconMap = new HashMap();
     }
 
-    private function showBuffIcon(param1:Vector.<FighterBuffInfo>):void {
+    private function showBuffIcon(param1:Vector.<FighterBuffInfo>,param2:int = 0):void {
         var _loc4_:FighterBuffInfo = null;
         var _loc5_:int = 0;
         var _loc6_:BuffIcon = null;
@@ -269,10 +272,11 @@ public class BuffIconBar extends Sprite {
         var _loc8_:String = null;
         var _loc2_:int = int(param1.length);
         var _loc3_:int = 0;
-        while (_loc3_ < _loc2_) {
+        while (_loc3_ < _loc2_)
+        {
             _loc5_ = int((_loc4_ = param1[_loc3_]).buffId);
-            if (SkillSideEffectConfig.contains(_loc5_) != false) {
-                if (this._iconMap.containsKey(_loc5_) == false) {
+            if (SkillSideEffectConfig.contains(_loc5_)) {
+                if (!this._iconMap.containsKey(_loc5_)) {
                     (_loc6_ = new BuffIcon()).setBuffId(_loc5_);
                     _loc6_.updateBuffStatus(_loc4_.dummy2);
                     if (this._specialList.indexOf(_loc5_) == -1) {
@@ -284,11 +288,11 @@ public class BuffIconBar extends Sprite {
                         _loc7_ = this._iconMap.getValue(_loc8_) as Sprite;
                     }
                 }
-                if (_loc3_ >= this._maxLine) {
-                    _loc7_.x = _loc3_ % this._maxLine * this._direction * ICON_WIDTH;
-                    _loc7_.y = ICON_WIDTH + 2;
+                if (_loc3_ + param2 >= this._maxLine) {
+                    _loc7_.x = ((_loc3_ + param2) % this._maxLine) * this._direction * ICON_WIDTH;
+                    _loc7_.y = int((_loc3_ + param2) / this._maxLine) * (ICON_WIDTH + 2);
                 } else {
-                    _loc7_.x = _loc3_ * this._direction * ICON_WIDTH;
+                    _loc7_.x = (_loc3_ + param2) * this._direction * ICON_WIDTH;
                     _loc7_.y = 0;
                 }
                 TooltipManager.addMultipleTip(_loc7_, _loc4_.tip);
