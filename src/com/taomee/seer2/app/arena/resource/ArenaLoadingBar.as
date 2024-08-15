@@ -115,7 +115,7 @@ public class ArenaLoadingBar extends Sprite {
         this._TipTxt.selectable = false;
         this._TipTxt.wordWrap = true;
         this._TipTxt.multiline = true;
-        this._TipTxt.x = 228;
+        this._TipTxt.x = 228 + 100;
         this._TipTxt.y = 56;
         this._TipTxt.width = 488;
         this._tipList = FightLoadingTipConfig.getTipList();
@@ -183,7 +183,8 @@ public class ArenaLoadingBar extends Sprite {
         param2.y = 2;
         param2.scaleX = param2.scaleY = 1.5;
         param1.addChild(param2);
-        if (param4.evolveLevel != 0) {
+        //下面是神魔头像框的代码
+        /*if (param4.evolveLevel != 0) {
             _loc8_ = "";
             if ((_loc9_ = param4.evolveLevel > 1000 ? uint(param4.evolveLevel - 1000) : param4.evolveLevel) > 2) {
                 if (_loc9_ < 5) {
@@ -202,6 +203,7 @@ public class ArenaLoadingBar extends Sprite {
                 }
             }
         }
+        */
         param3.type = int(param4.typeId);
         param1.addChild(param3);
         var _loc7_:String = String(URLUtil.getPetIcon(param4.resourceId));

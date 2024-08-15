@@ -3,7 +3,7 @@
   <component name="Black">
     <option name="sdkName" value="Python 3.7" />
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_15" default="true" project-jdk-name="AIRSDK_Windows" project-jdk-type="Flex SDK Type (new)">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_15" default="true" project-jdk-name="AIRSDK" project-jdk-type="Flex SDK Type (new)">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>

@@ -1,6 +1,7 @@
 package com.taomee.seer2.app.arena.ui.status.panel {
 import com.taomee.seer2.app.arena.Fighter;
 import com.taomee.seer2.app.arena.data.FighterTeam;
+import com.taomee.seer2.app.arena.ui.status.BuffIconBar;
 import com.taomee.seer2.app.arena.ui.status.statusBar.DoubleFighterStatusBar;
 import com.taomee.seer2.app.arena.ui.status.substatusbar.SubFighterStatusBar;
 import com.taomee.seer2.app.arena.util.FightSide;
@@ -74,6 +75,16 @@ public class DoubleFightStatusPanel extends FightStatusPanel {
         if (_arenaData.leftTeam.subFighter) {
             _loc2_ = uint(PetPressConfig.getPressColor(_arenaData.leftTeam.subFighter.fighterInfo.typeId, _arenaData.rightTeam.subFighter.fighterInfo.typeId));
             this._leftSubFighterBar.updatePetPress(_loc2_);
+        }
+    }
+
+    override protected function createBuffIconBar(param1:uint):void {
+        if (param1 == FightSide.LEFT) {
+            this._leftBuffIconBar = new BuffIconBar(FightSide.LEFT,5);
+            addChild(this._leftBuffIconBar);
+        } else if (param1 == FightSide.RIGHT) {
+            this._rightBuffIconBar = new BuffIconBar(FightSide.RIGHT,5);
+            addChild(this._rightBuffIconBar);
         }
     }
 

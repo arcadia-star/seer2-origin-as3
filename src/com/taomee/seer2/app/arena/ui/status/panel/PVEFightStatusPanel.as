@@ -25,8 +25,8 @@ public class PVEFightStatusPanel extends FightStatusPanel {
     override protected function layout():void {
         if (ArenaUIIsNew.isNewUI) {
             setChildPosition(_rightMainFighterBar, 1200, 0);
-            setChildPosition(_leftBuffIconBar, 174, 86);
-            setChildPosition(_rightBuffIconBar, 994, 86);
+            setChildPosition(_leftBuffIconBar, 94, 86);
+            setChildPosition(_rightBuffIconBar, 1074, 86);
             setChildPosition(_leftCapsuleBar, 6, 112);
             setChildPosition(_rightCapsuleBar, 1159, 112);
         } else {
