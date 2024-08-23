@@ -175,7 +175,7 @@ public class PetConfig {
     }
 
     private static function addPetDefinition(param1:uint, param2:uint, param3:String, param4:int, param5:uint, param6:uint, param7:String, param8:String, param9:uint, param10:uint, param11:String, param12:String, param13:uint, param14:String, param15:uint, param16:String, param17:String, param18:uint, param19:uint, param20:uint, param21:uint, param22:uint, param23:uint, param24:Boolean, param25:String, param26:Array, param27:uint, param28:uint, param29:uint, param30:uint):void {
-        if (_maxPetResourceId < param2 && (param2 <= 1000 || param2 >= 2500 && param2 <= 3000)) {
+        if (_maxPetResourceId < param2 && (param2 <= 1000 || param2 >= 2500 && param2 <= 100000)) {
             _maxPetResourceId = param2;
         }
         if (param4 == 1) {
