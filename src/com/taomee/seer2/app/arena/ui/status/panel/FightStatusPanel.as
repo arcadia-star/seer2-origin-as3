@@ -64,12 +64,12 @@ public class FightStatusPanel extends Sprite {
     public function FightStatusPanel() {
         this._tm = new Timer(2000, 1);
         super();
-        this.createSkillBubble(FightSide.LEFT);
-        this.createSkillBubble(FightSide.RIGHT);
         this.createBar(FightSide.LEFT);
         this.createBar(FightSide.RIGHT);
         this.createBuffIconBar(FightSide.LEFT);
         this.createBuffIconBar(FightSide.RIGHT);
+        this.createSkillBubble(FightSide.LEFT);
+        this.createSkillBubble(FightSide.RIGHT);
         this.createCapsuleBar(FightSide.LEFT);
         this.createCapsuleBar(FightSide.RIGHT);
         this.createAngerBar(FightSide.LEFT);
@@ -257,7 +257,7 @@ public class FightStatusPanel extends Sprite {
         }
     }
 
-    private function createBuffIconBar(param1:uint):void {
+    protected function createBuffIconBar(param1:uint):void {
         if (param1 == FightSide.LEFT) {
             this._leftBuffIconBar = new BuffIconBar(FightSide.LEFT);
             addChild(this._leftBuffIconBar);

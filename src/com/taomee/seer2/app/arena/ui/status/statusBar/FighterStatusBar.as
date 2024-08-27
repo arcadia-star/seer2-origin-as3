@@ -236,7 +236,9 @@ public class FighterStatusBar extends Sprite {
         if (this.border) {
             DisplayObjectUtil.removeFromParent(this.border);
         }
-        if (_loc2_.evolveLevel != 0) {
+        //下面这个是神魔头像框的代码
+        /*if (_loc2_.evolveLevel != 0)
+        {
             _loc3_ = "";
             if ((_loc4_ = _loc2_.evolveLevel > 1000 ? uint(_loc2_.evolveLevel - 1000) : _loc2_.evolveLevel) > 2) {
                 if (_loc4_ < 5) {
@@ -257,6 +259,7 @@ public class FighterStatusBar extends Sprite {
                 }
             }
         }
+        */
     }
 
     private function getCurIconDisplayerParent():Sprite {

@@ -649,6 +649,12 @@ public class URLUtil {
         return rewrite(ClientConfig.rootURL + VersionManager.getURL(_loc2_));
     }
 
+    public static function getPetOriginDemo(param1:uint):String {
+        param1 = getResRealId(param1);
+        var _loc2_:String = _petDemoBase + param1 + POSTFIX_SWF;
+        return rewrite(ClientConfig.rootURL + VersionManager.getURL(_loc2_));
+    }
+
     public static function getMiniGameIntro(param1:String):String {
         var _loc2_:String = _miniGameIntroBase + param1 + POSTFIX_SWF;
         return rewrite(ClientConfig.rootURL + VersionManager.getURL(_loc2_));
