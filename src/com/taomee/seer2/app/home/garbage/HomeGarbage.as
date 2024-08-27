@@ -13,6 +13,7 @@ import com.taomee.seer2.app.popup.ServerMessager;
 import com.taomee.seer2.core.manager.TimeManager;
 import com.taomee.seer2.core.map.ResourceLibrary;
 import com.taomee.seer2.core.module.ModuleManager;
+import com.taomee.seer2.core.net.MessageEvent;
 import com.taomee.seer2.core.utils.DisplayObjectUtil;
 
 import flash.display.MovieClip;
@@ -77,8 +78,16 @@ public class HomeGarbage extends Sprite {
         }
         DisplayObjectUtil.removeFromParent(this._garbageMc);
         DisplayObjectUtil.removeFromParent(this._recycleMc);
-        ItemManager.addEventListener1(ItemEvent.SERVER_ITEM_GIVEN, this.onServerItemGiven);
+        //ItemManager.addEventListener1(ItemEvent.SERVER_ITEM_GIVEN, this.onServerItemGiven);
+        Connection.addCommandListener(CommandSet.HOME_GARBAGE_CLEAN_1123,this.garbageCleanFix);
         Connection.send(CommandSet.HOME_GARBAGE_CLEAN_1123);
+    }
+
+    private function garbageCleanFix(e:MessageEvent):void
+    {
+        //正常扫垃圾的监听(就是上面那个ItemManager的监听)寄了,导致不能连续扫垃圾。我这里用1123的监听应付一下
+        Connection.removeCommandListener(CommandSet.HOME_GARBAGE_CLEAN_1123,this.garbageCleanFix);
+        dispatchEvent(new Event(Event.COMPLETE));
     }
 
     private function onServerItemGiven(param1:ItemEvent):void {

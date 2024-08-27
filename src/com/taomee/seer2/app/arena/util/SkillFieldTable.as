@@ -43,6 +43,9 @@ public class SkillFieldTable {
         _typeMap.add(19, "精灵王");
         _typeMap.add(20, "上古");
         _typeMap.add(21, "圣灵");
+        _typeMap.add(22, "神迹");
+        _typeMap.add(23, "神遁");
+        _typeMap.add(24, "皮肤");
     }
 
     public static function getCategoryName(param1:int):String {
