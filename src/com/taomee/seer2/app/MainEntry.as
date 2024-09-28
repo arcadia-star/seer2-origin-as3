@@ -51,8 +51,8 @@ import org.taomee.manager.TaomeeManager;
 import org.taomee.utils.StringUtil;
 import org.taomee.utils.Tick;
 
-import seer2.next.entry.NextEntry;
 import seer2.next.entry.DynConfig;
+import seer2.next.entry.NextEntry;
 
 public class MainEntry {
 
@@ -264,7 +264,10 @@ public class MainEntry {
         this._logger.info("成功登录online");
         Connection.removeCommandListener(CommandSet.ONLINE_LOGIN_1001, this.onLoginOnline);
         LoginInfo.setFromOnline(param1.message.getRawData());
-        UILoader.load(URLUtil.getUISwf("UI"), LoadType.DOMAIN, this.onLoadUI);
+        //登录成功，触发
+        NextEntry.afterLoginSuccess(function ():void {
+            UILoader.load(URLUtil.getUISwf("UI"), LoadType.DOMAIN, onLoadUI);
+        });
     }
 
     private function onLoadUI(param1:ContentInfo):void {

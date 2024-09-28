@@ -35,5 +35,5 @@
     <character id="34" name="忧郁" atk="100" def="90" spk="110" spf="90" spd="110" hpm="100"/>
     <character id="35" name="可爱" atk="90" def="100" spk="90" spf="110" spd="110" hpm="100"/>
     <character id="66" name="六冷" atk="110" def="110" spk="110" spf="110" spd="110" hpm="110"/>
-    <character id="67" name="小黑" atk="90" def="90" spk="90" spf="90" spd="90" hpm="90"/>
+    <character id="67" name="六热" atk="90" def="90" spk="90" spf="90" spd="90" hpm="90"/>
 </root>
