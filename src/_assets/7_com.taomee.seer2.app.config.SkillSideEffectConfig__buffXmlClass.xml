@@ -972,7 +972,7 @@
           description="主动换场使下一个上场精灵烧伤 若更换水系、地面系、沙漠系、特质系时无法造成烧伤 换场不保留"/>
     <buff Id="3907" name="火之领域" description="每回合吸收对手5点怒气"/>
     <buff Id="3908" name="火焰领域" description="每回合吸收对手10点怒气"/>
-    <buff Id="3909" name="封印夺魂" description="能力提升不超过2级且主动换场将失去所有能力强化状态"/>
+    <buff Id="3909" name="封印夺魂" description="强化不超过2级且主动换场时清空强弱化"/>
     <buff Id="3910" name="鸿鸣刀" description="每回合恢复10点体力"/>
     <buff Id="3911" name="龙牙刀" description="每3回合强化自身全能力1级"/>
     <buff Id="3912" name="虎翼刀" description="每回合恢复65点体力"/>
@@ -1876,7 +1876,7 @@
     <buff Id="11664" name="无限恐惧" description="每次攻击时有概率使对方恐惧，对战每进行1回合该概率提升2%"/>
     <buff Id="11665" name="魔像镜界" description="免疫弱化"/>
     <buff Id="11666" name="重影分身" description="闪避下1次受到的攻击伤害 若成功闪避则随机强化自身2项能力状态"/>
-    <buff Id="11667" name="劫印" description="造成伤害下降90%"/>
+    <buff Id="11667" name="劫印" description="受到伤害降低90%"/>
     <buff Id="11668" name="附灵" description="每回合可吸收800点特攻伤害 受到物攻伤害翻倍 无法和散灵并存"/>
     <buff Id="11669" name="散灵" description="每回合可吸收800点物攻伤害 受到特攻伤害翻倍 无法和附灵并存"/>
     <buff Id="11670" name="汲血" description="无法恢复"/>

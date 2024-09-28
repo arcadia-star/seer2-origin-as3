@@ -6478,6 +6478,9 @@
         <Item ID="200019" Name="高效体力药剂" HP="350" Type="2">
             <Tip><![CDATA[恢复精灵350点体力]]></Tip>
         </Item>
+        <Item ID="200020" Name="完全体力药剂" HP="999" Type="2">
+            <Tip><![CDATA[恢复精灵2000点体力]]></Tip>
+        </Item>
         <!-- 怒气药剂类 id范围: 200021 ~ 200030  -->
         <Item ID="200021" Name="初级怒气药剂" Price="10" Type="3">
             <Tip><![CDATA[恢复精灵10点怒气]]></Tip>
@@ -6494,8 +6497,16 @@
         <Item ID="200025" Name="超级怒气药剂" Price="50" Type="3">
             <Tip><![CDATA[恢复精灵50点怒气]]></Tip>
         </Item>
+        <Item ID="200026" Name="完全怒气药剂" Price="99" Type="3">
+            <Tip><![CDATA[恢复精灵200点怒气]]></Tip>
+        </Item>
         <!-- 战斗药剂类 id范围: 200031 ~ 200040  -->
-        <Item ID="200031" Name="初级战斗药剂" Price="20" Type="4"/>
+        <Item ID="200031" Name="初级战斗药剂" Price="20" Type="4">
+            <Tip><![CDATA[恢复精灵20点体力 10点怒气]]></Tip>
+        </Item>
+        <Item ID="200039" Name="完全战斗药剂" Price="20" Type="4">
+            <Tip><![CDATA[恢复精灵2000点体力 200点怒气]]></Tip>
+        </Item>
         <!-- 属性药剂类 id范围: 200041 ~ 200060  -->
         <Item ID="200041" Name="初级攻击药水" Price="20" Type="4"/>
         <!-- 辅助类 id范围: 200061 ~ 200120  -->
@@ -7423,7 +7434,7 @@
             <Tip><![CDATA[在精灵背包中使用，使精灵英菲尼迪获得纹章]]></Tip>
         </Item>
         <Item ID="200627" Name="水性纹章" Type="14">
-            <Tip><![CDATA[在精灵背包中使用，使精灵玛莎拉蒂获得纹章]]></Tip>
+            <Tip><![CDATA[纹章无效 请勿购买]]></Tip>
         </Item>
         <Item ID="200628" Name="蓝球纹章" Type="14">
             <Tip><![CDATA[在精灵背包中使用，使精灵爱丽斯获得纹章]]></Tip>
@@ -7518,8 +7529,8 @@
         <Item ID="200658" Name="绝袭纹章" Type="14">
             <Tip><![CDATA[200658对手具有强化时自身造成伤害增加15% 纹章无法安装 请勿购买]]></Tip>
         </Item>
-        <Item ID="200659" Name="恨的纹章" Type="14">
-            <Tip><![CDATA[在精灵背包中使用，使暗月兔出场时自带恨的执念]]></Tip>
+        <Item ID="200659" Name="恨的纹章A" Type="14">
+            <Tip><![CDATA[200659在精灵背包中使用，使暗月兔出场时自带恨的执念]]></Tip>
         </Item>
         <Item ID="200660" Name="梦回纹章" Type="14">
             <Tip><![CDATA[在精灵背包中使用，使斯嘶对手具有睡眠状态时自己每回合恢复1/8体力]]></Tip>
@@ -7557,8 +7568,8 @@
         <Item ID="200671" Name="再生纹章" Type="14">
             <Tip><![CDATA[在精灵背包中使用，使呆目蜥或变色蜥自截再生时下降的能力不会出现物攻下降]]></Tip>
         </Item>
-        <Item ID="200672" Name="恨的纹章" Type="14">
-            <Tip><![CDATA[在精灵背包中使用，使暗夜兔出场时自带恨的执念]]></Tip>
+        <Item ID="200672" Name="恨的纹章B" Type="14">
+            <Tip><![CDATA[200672在精灵背包中使用，使暗夜兔出场时自带恨的执念]]></Tip>
         </Item>
         <Item ID="200673" Name="逆怒纹章" Type="14">
             <Tip><![CDATA[使芭蕉猴怒气低于30时受到的伤害减少15%]]></Tip>
@@ -9424,7 +9435,7 @@
             <Tip><![CDATA[【商品】在精灵背包中使用，使使雷克萨斯自己的火系技能必中]]></Tip>
         </Item>
         <Item ID="203030" Name="水性纹章" Type="14" mibi="1">
-            <Tip><![CDATA[【商品】在精灵背包中使用，使玛莎拉蒂所有水系技能命中对手时可增加自己5点怒气]]></Tip>
+            <Tip><![CDATA[【商品】纹章无效 请勿购买]]></Tip>
         </Item>
         <Item ID="203031" Name="异能纹章" Type="14" mibi="1">
             <Tip><![CDATA[【商品】在精灵背包中使用，使英菲尼迪的超能系技能造成的伤害增加10%]]></Tip>
@@ -9447,8 +9458,8 @@
         <Item ID="203037" Name="永续纹章" Type="14" mibi="1">
             <Tip><![CDATA[【商品】在精灵背包中使用，使死神塔纳标记的持续时间延长到整场战斗]]></Tip>
         </Item>
-        <Item ID="203038" Name="恨的纹章" Type="14" mibi="1">
-            <Tip><![CDATA[【商品】在精灵背包中使用，使暗月兔出场时自带恨的执念]]></Tip>
+        <Item ID="203038" Name="恨的纹章C" Type="14" mibi="1">
+            <Tip><![CDATA[203038【商品】在精灵背包中使用，使暗月兔出场时自带恨的执念]]></Tip>
         </Item>
         <Item ID="203039" Name="梦回纹章" Type="14" mibi="1">
             <Tip><![CDATA[【商品】在精灵背包中使用，使斯嘶的对手具有睡眠状态时自己每回合恢复1/8体力]]></Tip>
@@ -16468,7 +16479,7 @@
             <Tip><![CDATA[暴击伤害增加15%]]></Tip>
         </Item>
         <Item ID="300146" Name="水性" NumbersID="146" MiBuyID="203030">
-            <Tip><![CDATA[水系技能恢复自身5点怒气]]></Tip>
+            <Tip><![CDATA[纹章无效 请勿购买]]></Tip>
         </Item>
         <Item ID="300147" Name="召唤" NumbersID="137" MiBuyID="203002">
             <Tip><![CDATA[使幽灵获得数+1]]></Tip>
@@ -17553,7 +17564,7 @@
             <Tip><![CDATA[体力＜1/2时受到伤害减少10%]]></Tip>
         </Item>
         <Item ID="300517" Name="变种" NumbersID="517" MiBuyID="203448">
-            <Tip><![CDATA[具有开火时强化自身特防1级]]></Tip>
+            <Tip><![CDATA[获得开火时强化自身特防1级]]></Tip>
         </Item>
 
 
@@ -27393,19 +27404,19 @@
 
 
         <Item ID="605007" Name="圣马驰骋星钻减员（丘布）" Max="10000" Price="3">
-        <Tip><![CDATA[圣马驰骋星钻减员（丘布）]]></Tip>
+            <Tip><![CDATA[圣马驰骋星钻减员（丘布）]]></Tip>
         </Item>
         <Item ID="605008" Name="圣马驰骋星钻减员（白龙驹）" Max="10000" Price="3">
-        <Tip><![CDATA[圣马驰骋星钻减员（白龙驹）]]></Tip>
+            <Tip><![CDATA[圣马驰骋星钻减员（白龙驹）]]></Tip>
         </Item>
         <Item ID="605009" Name="圣马驰骋星钻减员（冥界天尊）" Max="10000" Price="3">
-        <Tip><![CDATA[圣马驰骋星钻减员（冥界天尊）]]></Tip>
+            <Tip><![CDATA[圣马驰骋星钻减员（冥界天尊）]]></Tip>
         </Item>
         <Item ID="605010" Name="圣马驰骋星钻减员（的卢）" Max="10000" Price="3">
-        <Tip><![CDATA[圣马驰骋星钻减员（的卢）]]></Tip>
+            <Tip><![CDATA[圣马驰骋星钻减员（的卢）]]></Tip>
         </Item>
         <Item ID="605011" Name="圣马驰骋星钻减员（影劫）" Max="10000" Price="3">
-        <Tip><![CDATA[圣马驰骋星钻减员（影劫）]]></Tip>
+            <Tip><![CDATA[圣马驰骋星钻减员（影劫）]]></Tip>
         </Item>
 
 
@@ -27618,22 +27629,22 @@
 
         <!--20140815版本【闪电麒麟超进化】-->
         <Item ID="605070" Name="王域麒麟星钻减员（暗煞）" Max="10000" Price="1">
-        <Tip><![CDATA[王域麒麟星钻减员（暗煞）]]></Tip>
+            <Tip><![CDATA[王域麒麟星钻减员（暗煞）]]></Tip>
         </Item>
         <Item ID="605071" Name="王域麒麟星钻减员（超煞）" Max="10000" Price="1">
-        <Tip><![CDATA[王域麒麟星钻减员（超煞）]]></Tip>
+            <Tip><![CDATA[王域麒麟星钻减员（超煞）]]></Tip>
         </Item>
         <Item ID="605072" Name="王域麒麟星钻减员（武煞）" Max="10000" Price="1">
-        <Tip><![CDATA[王域麒麟星钻减员（武煞）]]></Tip>
+            <Tip><![CDATA[王域麒麟星钻减员（武煞）]]></Tip>
         </Item>
         <Item ID="605073" Name="王域麒麟星钻减员（地煞）" Max="10000" Price="1">
-        <Tip><![CDATA[王域麒麟星钻减员（地煞）]]></Tip>
+            <Tip><![CDATA[王域麒麟星钻减员（地煞）]]></Tip>
         </Item>
         <Item ID="605074" Name="王域麒麟星钻减员（炎煞）" Max="10000" Price="1">
-        <Tip><![CDATA[王域麒麟星钻减员（炎煞）]]></Tip>
+            <Tip><![CDATA[王域麒麟星钻减员（炎煞）]]></Tip>
         </Item>
         <Item ID="605075" Name="王域麒麟星钻减员（雷煞）" Max="10000" Price="1">
-        <Tip><![CDATA[王域麒麟星钻减员（雷煞）]]></Tip>
+            <Tip><![CDATA[王域麒麟星钻减员（雷煞）]]></Tip>
         </Item>
 
         <Item ID="605076" Name="精灵王域麒麟"  mibi="1" Price="48">

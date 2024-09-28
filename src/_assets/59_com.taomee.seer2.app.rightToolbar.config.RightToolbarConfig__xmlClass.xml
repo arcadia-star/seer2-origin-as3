@@ -34,8 +34,8 @@
 		<toolbar type="xxx" sort="7"  tip="万王之战等你来！" startTime="2012_8_20_6_0" endTime="2034_12_31_24_0" clickType="module"  clickParams="PVPDoorCampPanel"  lightStartTime="" weekLimit="39" swapId="1816"/>-->
     </toolbar>
 
-    <toolbar type="up" sort="5" tip="天空竞技场" startTime="2012_8_20_6_0" endTime="2034_12_31_24_0" clickType="module"
-             clickParams="SkySportsPanel" lightStartTime="" weekLimit="39" swapId="1816">
+    <toolbar type="up" sort="5" tip="天空竞技场" startTime="2012_8_20_6_0" endTime="2034_12_31_24_0" clickType="gotoMap"
+             clickParams="1300" lightStartTime="" weekLimit="39" swapId="1816">
         <toolbar type="xxx" sort="44" tip="精灵大乱斗" startTime="2012_8_20_6_0" endTime="2034_12_31_24_0"
                  clickType="module" clickParams="PetMeleePanel" class="AddStatisticsTwoToolbar" lightStartTime=""
                  weekLimit="39" swapId="1816"/>
@@ -43,7 +43,7 @@
                  clickType="module" clickParams="NoPoultryBattleFieldMainPanel" class="AddStatisticsThreeToolbar"
                  lightStartTime="" weekLimit="39" swapId="1816"/>
         <toolbar type="xxx" sort="46" tip="太空武斗场" startTime="2012_8_20_6_0" endTime="2034_12_31_24_0"
-                 clickType="module" clickParams="SpaceAltrlMainPanel" class="AddStatisticsFourToolbar" lightStartTime=""
+                 clickType="gotoMap" clickParams="3832" class="AddStatisticsFourToolbar" lightStartTime=""
                  weekLimit="39" swapId="1816"/>
         <toolbar type="xxx" sort="47" tip="御风赛场" startTime="2012_8_20_6_0" endTime="2034_12_31_24_0"
                  clickType="module" clickParams="YufengPvpPanel" lightStartTime="" weekLimit="39" swapId="1816"/>
@@ -52,12 +52,10 @@
     <toolbar type="up" sort="2" tip="SPT先锋队" startTime="2012_8_20_6_0" endTime="2034_12_31_24_0" clickType="module"
              clickParams="SPTPanel" class="FightWayOneToolbar" lightStartTime="" weekLimit="39" swapId="1816">
         <!--<toolbar type="xxx" sort="2"  tip="SPT先锋队 南半球暗影SPT开启" startTime="2012_8_20_6_0" endTime="2034_12_31_24_0"  clickType="module"  clickParams="SPTPanel" class="FightWayOneToolbar" lightStartTime="" weekLimit="39" swapId="1816"/>-->
-        <toolbar type="xxx" sort="32" tip="闯关梦境送精灵" startTime="2012_8_20_6_0" endTime="2034_12_31_24_0"
+        <toolbar type="xxx" sort="32" tip="永恒梦境" startTime="2012_8_20_6_0" endTime="2034_12_31_24_0"
                  clickType="gotoMap" clickParams="3840" class="FightWayTwoToolbar" lightStartTime="" weekLimit="39"
                  swapId="1816"/>
-        <toolbar type="xxx" sort="3" tip="副本炼狱" startTime="2012_8_20_6_0" endTime="2034_12_31_24_0"
-                 clickType="gotoMap" clickParams="1071" class="FightWayThreeToolbar" lightStartTime="" weekLimit="39"
-                 swapId="1816"/>
+        <!--<toolbar type="xxx" sort="3"  tip="炼狱" startTime="2012_8_20_6_0" endTime="2034_12_31_24_0" clickType="gotoMap" clickParams="1071" class="FightWayThreeToolbar" lightStartTime="" weekLimit="39" swapId="1816"/>-->
         <toolbar type="xxx" sort="4" tip="灵兽" startTime="2012_8_20_6_0" endTime="2034_12_31_24_0" clickType="module"
                  clickParams="BagginsLogPanel" class="FightWayFourToolbar" lightStartTime="" weekLimit="39"
                  swapId="1816"/>

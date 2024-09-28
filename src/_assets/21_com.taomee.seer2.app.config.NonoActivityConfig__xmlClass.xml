@@ -12,6 +12,7 @@
     <activity content="星钻抽奖神级精灵" isShowGo="1" goType="module" goContent="LiMing2Panel"/>
     <activity content="雷神器灵突破" isShowGo="1" goType="module" goContent="LeishenleiyiSkillGetPanel"/>
     <activity content="炎帝器灵突破" isShowGo="1" goType="module" goContent="YandikaisaSkillGetPanel"/>
-
+    <activity content="王之暗魄道具获取1" isShowGo="1" goType="module" goContent="PetClearPanel"/>
+    <activity content="王之暗魄道具获取2" isShowGo="1" goType="module" goContent="AnPoPanel"/>
 
 </root>

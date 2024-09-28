@@ -485,8 +485,7 @@
              intro="在沉眠了漫长岁月后 它衍变成了菲亚斯——拥有苍穹般强大羽翼的超强精灵！" getWay="710"/>
     <Monster NumbersID="78" emblemID="300078" ID="785" DefName="银翼亚斯" Type="飞行" Height="105 110" Weight="65 70"
              Foundin="菲亚斯超进化" isNew="0" Features="使用2次飞行系技能恢复自身20点怒气"
-             intro="银翼亚斯巨大的羽翼再次得到了增强 飞起来可以突破天际！" getWay="FYaSiSuperProcessPanel"
-             recommendQuality="物攻 速度" recommendSkill="15844,11011"/>
+             intro="银翼亚斯巨大的羽翼再次得到了增强 飞起来可以突破天际！" getWay="FYaSiSuperProcessPanel"/>
     <Monster NumbersID="79" emblemID="300079" ID="158" DefName="因加" Type="战斗" Height="20 25" Weight="13 18"
              Foundin="101次信念的挑战" isNew="0" Features="苍月【🌙】技能使对手获得坠地 破地【🪨】技能使对手获得滞空"
              intro="倔强的因加从小像忍者一样苦练本领" getWay="MantisActPanel"/>
@@ -620,8 +619,8 @@
              intro="艾丽希斯在漫长的光阴中一直守护着能源之树 它几乎忘记自己是谁" getWay="790"/>
     <Monster NumbersID="106" emblemID="300106" ID="813" DefName="圣光希斯" Type="光" Height="107 112" Weight="68 73"
              Foundin="艾丽希斯超进化" isNew="0" Features="体力＞1/2时免疫不良 ＜1/2时光系技能必中"
-             intro="圣光希斯是艾丽希斯在漫长光阴中吸收了足够的光芒之后的超进化形态" getWay="ShenGuangSuperProcessPanel"
-             recommendQuality="特攻 速度" recommendSkill="16095,11158"/>
+             intro="圣光希斯是艾丽希斯在漫长光阴中吸收了足够的光芒之后的超进化形态"
+             getWay="ShenGuangSuperProcessPanel"/>
     <Monster NumbersID="102" emblemID="300102" ID="206" DefName="雷金" Type="普通" Height="15 20" Weight="22 27"
              Foundin="灰烬之地" isNew="0" Features="钉拳技能使对手获得钉拳"
              intro="雷金打小就喜欢上蹿下跳地捣蛋由于给很多其它精灵带来困扰 杀身之祸是不可避免了" getWay="301"/>
@@ -768,10 +767,9 @@
     <Monster NumbersID="52" emblemID="300052" ID="104" DefName="神伊特" Type="神秘" Height="63 68" Weight="29 34"
              Foundin="神伊特活动" isNew="0" Features="体力＞对手时暴击率提升10%"
              intro="神秘伊特和超伊特都是拥有特意功能的伊特" getWay="YiteSuperPetPanel"/>
-    <Monster NumbersID="53" emblemID="300053" ID="105" DefName="炜神伊特" Type="特质" Height="63 68" Weight="29 34"
+    <Monster NumbersID="53" emblemID="300053" ID="105" DefName="特伊特" Type="特质" Height="63 68" Weight="29 34"
              Foundin="万圣假面舞会" isNew="0" Features="护盾损坏时使对手获得50点流血"
-             intro="此刻 繁星皆为我们祷祝 而北辰已指出我们的道路炜神便在这祝福的星光中 降临于世"
-             getWay="YiteSuperPetPanel"/>
+             intro="金黄色的伊特 是伊特家族中最为罕见的伊特" getWay="YiteSuperPetPanel"/>
     <Monster NumbersID="50" emblemID="300050" ID="102" DefName="龙伊特" Type="龙" Height="65 70" Weight="30 35"
              Foundin="伊特角斗场" isNew="0" Features="怒气＞对手时暴击率增加20%" intro="拥有龙系的特质 变得强大而威严"
              getWay="YiteSuperPetPanel"/>
@@ -965,8 +963,7 @@
              intro="精灵王之血脉 水脉氏族不朽的守护兽" getWay="BagginsLogPanel"/>
     <Monster NumbersID="148" emblemID="300148" ID="778" DefName="脉灵神" Type="水" Height="87 92" Weight="110 115"
              Foundin="脉灵兽超进化" isNew="0" Features="使自身获得免疫不良 体力为1点时回满怒气"
-             intro="脉灵神是脉灵兽的超进化形态 水脉氏族的守护神" getWay="MaiLingShenSuperProcessPanel"
-             recommendQuality="特攻 速度" recommendSkill="12209,12210"/>
+             intro="脉灵神是脉灵兽的超进化形态 水脉氏族的守护神" getWay="MaiLingShenSuperProcessPanel"/>
     <Monster NumbersID="149" emblemID="300149" ID="303" DefName="幻灵兽" Type="火" Height="98 103" Weight="100 105"
              Foundin="幻灵兽的试炼" isNew="0"
              Features="使自身获得免疫不良 储存怒气 怒气获得量翻倍 主动换场时恢复下只精灵自身怒气的50%"
@@ -974,15 +971,13 @@
     <Monster NumbersID="149" emblemID="300149" ID="802" DefName="幻灵神" Type="火" Height="105 110" Weight="108 113"
              Foundin="幻灵兽超进化" isNew="0"
              Features="使自身获得免疫不良 储存怒气 怒气获得量翻倍 主动换场时恢复下只精灵自身怒气的50%"
-             intro="幻灵神是幻灵兽的超进化形态 火幻氏族的守护神" getWay="HuanLingShouSuperStrengthenPanel"
-             recommendQuality="特攻 速度" recommendSkill="12438,12437"/>
+             intro="幻灵神是幻灵兽的超进化形态 火幻氏族的守护神" getWay="HuanLingShouSuperStrengthenPanel"/>
     <Monster NumbersID="150" emblemID="300150" ID="304" DefName="沁灵兽" Type="冰" Height="98 103" Weight="100 105"
              Foundin="沁灵兽的试炼" isNew="0" Features="使自身获得免疫不良 冰冻 没有受到伤害时恢复10点怒气"
              intro="精灵王之心脏 冰沁氏族不朽的守护兽" getWay="BagginsLogPanel"/>
     <Monster NumbersID="150" emblemID="300150" ID="817" DefName="沁灵神" Type="冰" Height="100 105" Weight="105 110"
              Foundin="沁灵兽超进化" isNew="0" Features="使自身获得免疫不良 冰冻 没有受到伤害时恢复10点怒气"
-             intro="沁灵神是沁灵兽的超进化形态 冰沁氏族的守护神" getWay="QingHolyPetProcessPanel"
-             recommendQuality="速度 物攻" recommendSkill="12594,12593"/>
+             intro="沁灵神是沁灵兽的超进化形态 冰沁氏族的守护神" getWay="QingHolyPetProcessPanel"/>
     <Monster NumbersID="151" emblemID="300151" ID="305" DefName="爪灵兽" Type="沙漠" Height="88 93" Weight="110 115"
              Foundin="爪灵兽的试炼" isNew="0" Features="使自身获得免疫不良 受到暴击强化自身双攻1级"
              intro="精灵王之利爪 沙爪氏族不朽的守护兽" getWay="BagginsLogPanel"/>
@@ -1184,8 +1179,7 @@
     <Monster NumbersID="176" emblemID="300176" ID="814" DefName="王域麒麟" Type="电" Height="82 87" Weight="75 80"
              Foundin="闪电麒麟超进化" isNew="0"
              Features="当双方电极不同时每回合怒气额外增长5点 当双方电极相同时伤害增加10%"
-             intro="王域麒麟是精灵王给赏金猎人的S级挑战！" getWay="QiLinSuperPanel" recommendQuality="特攻 速度"
-             recommendSkill="16096,12254"/>
+             intro="王域麒麟是精灵王给赏金猎人的S级挑战！" getWay="QiLinSuperPanel"/>
     <Monster NumbersID="177" emblemID="300177" ID="350" DefName="萨弗" Type="火" Height="20 25" Weight="22 27"
              Foundin="深渊派对" isNew="0" Features="使用属性技能时有50%使对手烧伤"
              intro="萨弗很烫 当你走进它的时候就会感觉到一种让人焦灼的高温" getWay="PartyMainPanel"/>
@@ -1342,14 +1336,13 @@
              getWay="DragonKingPanel"/>
     <Monster NumbersID="197" emblemID="300197" ID="394" DefName="保时捷" Type="龙" Height="80 85" Weight="91 96"
              Foundin="龙鳞火圈" isNew="0" Features="上场自带沙暴"
-             intro="居义安之故郡 沿昌黎之雅望秉獬豸之端裁 行沙龙之迅袭桃源楠梓 天外遥星【楠星X沙龙·525冠军皮肤】"
-             getWay="DragonKingPanel"/>
+             intro="遇到对手后保时捷会在对手毫无准备的情况下击败对手" getWay="DragonKingPanel"/>
     <Monster NumbersID="199" emblemID="300199" ID="395" DefName="奥黛丽" Type="神秘" Height="101 106" Weight="97 102"
              Foundin="冥王之宠" isNew="0" Features="击败对手时恢复自身最大体力的1/6"
              intro="奥黛丽是撒旦的坐骑 与撒旦有着深厚的羁绊" getWay="ChaoFanShuangShengPanel"/>
     <Monster NumbersID="200" emblemID="300200" ID="396" DefName="水元素" Type="水" Height="36 41" Weight="16 21"
              Foundin="签到送精灵" isNew="0" Features="雨天时每回合恢复30点体力"
-             intro="水元素是水之精华 拥有能够操控水源的能力" getWay="3840"/>
+             intro="水元素是水之精华 拥有能够操控水源的能力" getWay="1050"/>
     <Monster NumbersID="201" emblemID="300201" ID="397" DefName="芭蕉猴" Type="战斗" Height="75 80" Weight="88 93"
              Foundin="精灵训练营" isNew="0" Features="怒气＞30点时造成伤害增加5%"
              intro="因为太喜欢吃芭蕉所以索性就把一大把芭蕉放在头上 方便随时品尝" getWay="3840"/>
@@ -1385,7 +1378,7 @@
              intro="包芯粽香喷喷的味道总会吸引很多人" getWay="MissPetGatherPanel"/>
     <Monster NumbersID="207" emblemID="300207" ID="411" DefName="火元素" Type="火" Height="35 40" Weight="17 22"
              Foundin="VIP反馈狂欢送" isNew="0" Features="火系技能伤害增加5%"
-             intro="火元素是火之精华 拥有能够操控火焰的能力" getWay="3840"/>
+             intro="火元素是火之精华 拥有能够操控火焰的能力" getWay="1050"/>
     <Monster NumbersID="208" emblemID="300208" ID="412" DefName="赫本" Type="神秘" Height="101 106" Weight="97 102"
              Foundin="冥王之宠" isNew="0" Features="击败对手时恢复自身30点怒气"
              intro="赫本是奥黛丽的坐骑 与撒旦有着深厚的羁绊" getWay="ChaoFanShuangShengPanel"/>
@@ -1470,7 +1463,7 @@
 
     <Monster NumbersID="214" emblemID="300214" ID="419" DefName="草元素" Type="草" Height="36 41" Weight="19 24"
              Foundin="签到送精灵" isNew="0" Features="晴天时对微弱系造成伤害增加10%"
-             intro="草元素是木制精华 拥有召唤草木的能力" getWay="3840"/>
+             intro="草元素是木制精华 拥有召唤草木的能力" getWay="1050"/>
     <Monster NumbersID="224" emblemID="300224" ID="431" DefName="幽冥" Type="暗影" Height="28 33" Weight="4 9"
              Foundin="幻灵骑士的召唤" isNew="0" Features="受到必杀时恢复20点怒气"
              intro="对于从小就没有家园的幽冥来说 被关爱是一种从来没有体会过的感受" getWay="CrazyShopPanel"/>
@@ -1482,8 +1475,7 @@
              intro="幻翼幽冥嗜血的本性使它每战胜一个对手就会变得更加强大" getWay="CrazyShopPanel"/>
     <Monster NumbersID="224" emblemID="300224" ID="839" DefName="幻魔幽冥" Type="暗影" Height="110 115" Weight="68 73"
              Foundin="幽冥超进化" isNew="0" Features="受到必杀时恢复20点怒气"
-             intro="幻魔幽冥未得到过爱 鲜血与哀嚎是它超进化力量的来源" getWay="YouMingSuperProcessPanel"
-             recommendQuality="物攻 速度" recommendSkill="13087,16395"/>
+             intro="幻魔幽冥未得到过爱 鲜血与哀嚎是它超进化力量的来源" getWay="YouMingSuperProcessPanel"/>
     <Monster NumbersID="225" emblemID="300225" ID="434" DefName="伊达" Type="战斗" Height="15 20" Weight="53 58"
              Foundin="时空之客" isNew="0" Features="上场首回合恢复10点体力 每回合效果翻倍 最多30点"
              intro="伊达能够遇强则强" getWay="YiludaActPanel"/>
@@ -1492,15 +1484,13 @@
              intro="伊鲁达是克拉克随身的战斗精灵" getWay="YiludaActPanel"/>
     <Monster NumbersID="225" emblemID="300225" ID="840" DefName="伊鲁达克" Type="战斗" Height="65 70" Weight="75 80"
              Foundin="伊鲁达克" isNew="0" Features="上场首回合恢复10点体力 每回合效果翻倍 最多30点"
-             intro="伊鲁达克是克拉克的守护者" getWay="YiNuDaProcessPanel" recommendQuality="特攻 速度"
-             recommendSkill="13119,16420"/>
+             intro="伊鲁达克是克拉克的守护者" getWay="YiNuDaProcessPanel"/>
     <Monster NumbersID="223" emblemID="300223" ID="503" DefName="观星者" Type="特质" Height="130 135" Weight="100 105"
              Foundin="观星者挑战" isNew="0" Features="免疫异常 不良 上场附带星移" intro="浩瀚星空之主宰！"
              getWay="StargazersSuperEvolutionGetStargazerPanel"/>
     <Monster NumbersID="223" emblemID="300223" ID="827" DefName="观星圣主" Type="特质" Height="135 140" Weight="95 100"
              Foundin="观星者超进化" isNew="0" Features="免疫异常 不良 上场附带星移"
-             intro="观星圣主是观星者的超进化 星空的主宰之王" getWay="StargazersSuperEvolutionPanel"
-             recommendQuality="物攻 特攻" recommendSkill="13137,16228"/>
+             intro="观星圣主是观星者的超进化 星空的主宰之王" getWay="StargazersSuperEvolutionPanel"/>
     <Monster NumbersID="226" emblemID="300226" ID="436" DefName="哥布" Type="地面" Height="9 14" Weight="12 17"
              Foundin="VIP包月送" isNew="0" Features="受到致死打击伤害＜最大体力+60点时保留1点体力"
              intro="哥布头上的头骨能够反弹伤害" getWay="3840"/>
@@ -1893,7 +1883,7 @@
              getWay="3840"/>
     <Monster NumbersID="320" emblemID="300320" ID="516" DefName="王之影魄" Type="暗影" Height="40 45" Weight="10 15"
              Foundin="王之暗魄" isNew="0" Features="抵挡暗影系伤害并恢复30点体力" intro="精灵王之影魄寄宿的精灵"
-             getWay="3840"/>
+             getWay="NextyearActivitySwapPanel"/>
     <Monster NumbersID="335" emblemID="300335" ID="619" DefName="伊蒂" Type="光" Height="9 14" Weight="12 17"
              Foundin="赛尔调查先锋团" isNew="0" Features="具有弱化时暴击率增加10%" intro="伊蒂从小就是个勇敢的孩子"
              getWay="3840"/>
@@ -2284,7 +2274,8 @@
              Foundin="上古系列活动" isNew="0" Features="主动换场时下只精灵体力＜1/2时恢复至最大体力的1/2 最多300点"
              intro="上古魔尊的两大使者之一 能抑制战神的怒火" getWay="MoZunRightPanel"/>
     <Monster NumbersID="427" emblemID="300427" ID="735" DefName="逆世盖亚" Type="战斗" Height="128 133" Weight="45 50"
-             Foundin="上古系列活动" isNew="0" Features="战斗系技能10%使环境变为古战场" intro="逆世盖亚能逆转乾坤！"
+             Foundin="上古系列活动" isNew="0" Features="战斗系技能10%使环境变为古战场"
+             intro="瑞尔斯是一个天分极佳的战士，拥有高超的战斗能力，和盖亚有着一个兄弟之间的约定"
              getWay="SuperGaiYaActPanel"/>
     <Monster NumbersID="428" emblemID="300428" ID="737" DefName="小魔尊" Type="上古" Height="35 40" Weight="23 28"
              Foundin="上古系列活动" isNew="0" Features="无效果" intro="小魔尊是好人还是坏人？" getWay="MoZunActPanel"/>
@@ -2397,7 +2388,7 @@
     <Monster NumbersID="459" emblemID="300459" emblem2ID="300703" ID="788" DefName="创世大帝" Type="特质"
              Height="108 133" Weight="68 73" Foundin="创世帝王 神勇降临" isNew="0" Features="攻击技能5%使对手失明"
              intro="创世大帝是创世三帝之一 世界的创造者" changeTip="具有创世觉醒石时使用创世觉醒"
-             getWay="CreateMainPanel" recommendQuality="物攻 速度" recommendSkill="15924,15923"/>
+             getWay="CreateMainPanel"/>
     <Monster NumbersID="473" emblemID="300459" ID="810" DefName="创世大帝觉醒" Type="特质" Height="108 133"
              Weight="68 73" Foundin="系统精灵 无法获得" isNew="0" Features="攻击技能5%使对手失明"
              intro="当使用了觉醒石之后 创世大帝开启了觉醒状态" getWay="ThreeKingProcessPanel"/>
@@ -2436,7 +2427,7 @@
     <Monster NumbersID="467" emblemID="300467" emblem2ID="300704" ID="800" DefName="开元大帝" Type="光" Height="108 133"
              Weight="68 73" Foundin="开元帝王 圣临天下" isNew="0" Features="受到伤害不超过自身最大体力的1/2 最多400点"
              changeTip="具有开元觉醒石时使用开元觉醒" intro="开元帝王是创世三帝之一 所有生命的创造者"
-             getWay="KaiYuanComingPanel" recommendQuality="物攻 速度" recommendSkill="15961,15962"/>
+             getWay="KaiYuanComingPanel"/>
     <Monster NumbersID="474" emblemID="300467" ID="809" DefName="开元大帝觉醒" Type="光" Height="108 133" Weight="68 73"
              Foundin="系统精灵 无法获得" isNew="0" Features="受到伤害不超过自身最大体力的1/2 最多400点"
              intro="当使用了觉醒石之后 开元大帝开启了觉醒状态" getWay="ThreeKingProcessPanel"/>
@@ -2446,8 +2437,7 @@
     <Monster NumbersID="468" emblemID="300468" ID="804" emblem2ID="300705" DefName="混沌大帝" Type="神秘"
              Height="108 133" Weight="68 73" Foundin="混沌帝王 撼临乾坤" isNew="0"
              Features="对手每级双防弱化使自身伤害提升5%" changeTip="具有混沌觉醒石时使用混沌觉醒"
-             intro="混沌帝王是创世三帝之一 元素和善恶平衡的缔造者" getWay="ChaosKingPanel" recommendQuality="特攻 速度"
-             recommendSkill="16062,16061"/>
+             intro="混沌帝王是创世三帝之一 元素和善恶平衡的缔造者" getWay="ChaosKingPanel"/>
     <Monster NumbersID="475" emblemID="300468" ID="808" DefName="混沌大帝觉醒" Type="神秘" Height="108 133"
              Weight="68 73" Foundin="系统精灵 无法获得" isNew="0" Features="对手每级双防弱化使自身伤害提升5%"
              intro="当使用了觉醒石之后 开元大帝开启了觉醒状态" getWay="ThreeKingProcessPanel"/>
@@ -2492,12 +2482,10 @@
              getWay="SmallDreamGiftPanel"/>
     <Monster NumbersID="437" emblemID="300437" ID="855" DefName="极梦" Type="精灵王" Height="105 110" Weight="40 45"
              Foundin="" isNew="0" Features="攻击技能20%解除自身弱化"
-             intro="阿卡迪亚的旅程让极梦得到了突破自身极限的能力" getWay="SuperDreamEvolutionPanel"
-             recommendQuality="特攻 速度" recommendSkill="16243,16539"/>
+             intro="阿卡迪亚的旅程让极梦得到了突破自身极限的能力" getWay="SuperDreamEvolutionPanel"/>
     <Monster NumbersID="483" emblemID="300483" ID="826" DefName="萌萌大月饼" Type="超能" Height="43 48" Weight="20 25"
              Foundin="中秋节活动" isNew="0" Features="属性技能15%恢复自身最大体力的1/6 最多110点"
-             intro="中秋节有一只萌萌的巨无霸月饼出没 它喜欢吃小精灵！" recommendQuality="霸体,神力,大力丸,力王,巨无霸"
-             recommendSkill="11069,11070" getWay="3840"/>
+             intro="中秋节有一只萌萌的巨无霸月饼出没 它喜欢吃小精灵！" getWay="3840"/>
     <Monster NumbersID="485" emblemID="300485" ID="828" DefName="小雷" Type="电" Height="15 20" Weight="4 9"
              Foundin="英雄雷霆活动" isNew="0" Features="上场时强化自身速度1级 首次替换上场效果2倍"
              intro="高傲的小精灵 不爱搭理别人" getWay="HeroLeiTingActPanel"/>
@@ -2546,8 +2534,7 @@
              intro="拉克是地心兽的小形态 生活于地壳深处" getWay="EarthSeachActPanel"/>
     <Monster NumbersID="494" emblemID="300494" ID="844" DefName="格萨拉克" Type="地面" Height="95 100" Weight="101 106"
              Foundin="地心游记" isNew="0" Features="具有双防类弱化时恢复自身最大体力的1/8 最多85点"
-             intro="地心兽 格萨拉克是生活在地壳深处的诸多精灵之一 以能源为食" getWay="EarthSeachActPanel"
-             recommendQuality="物防 特防" recommendSkill="16478,16481"/>
+             intro="地心兽 格萨拉克是生活在地壳深处的诸多精灵之一 以能源为食" getWay="EarthSeachActPanel"/>
     <Monster NumbersID="495" emblemID="300495" ID="845" DefName="阿兹" Type="沙漠" Height="19 24" Weight="26 31"
              Foundin="地球卫士" isNew="0" Features="获得沙卫时15%强化自身特防1级"
              intro="阿兹作为地球培养的成功精灵之一 从小跟小梦一起接受特殊的强化训练" getWay="AzirPanel"/>
@@ -2570,15 +2557,13 @@
              intro="哈克生活在深海 善于躲藏在贝壳之中" getWay="DeepSeaMonsterPanel"/>
     <Monster NumbersID="499" emblemID="300499" ID="851" DefName="提塔哈克" Type="水" Height="95 100" Weight="101 106"
              Foundin="深海巨兽挑战" isNew="0" Features="雨天时每回合20%强化自身物防1级"
-             intro="提塔哈克是影藏于深海的巨兽" getWay="DeepSeaMonsterPanel" recommendQuality="物攻 体力"
-             recommendSkill="16531,16534"/>
+             intro="提塔哈克是影藏于深海的巨兽" getWay="DeepSeaMonsterPanel"/>
     <Monster NumbersID="500" emblemID="300500" ID="852" DefName="小法师" Type="冰" Height="61 65" Weight="25 30"
              Foundin="镜子迷宫" isNew="0" Features="体力＜30%时受到伤害减少15%"
              intro="小法师从小跟随法力高强的大师 在极地学习法术" getWay="MissPetGatherPanel"/>
     <Monster NumbersID="501" emblemID="300501" ID="853" DefName="拉斯拉克" Type="上古" Height="97 102" Weight="120 125"
              Foundin="封印！远古地魔" isNew="0" Features="反弹受到暴击伤害的1/4 最多200点"
-             intro="远古地魔 古书记载：拉斯拉克出现时 众神都为之战栗" getWay="SealAncientMonsterPanel"
-             recommendQuality="物攻 体力" recommendSkill="16593,16597"/>
+             intro="远古地魔 古书记载：拉斯拉克出现时 众神都为之战栗" getWay="SealAncientMonsterPanel"/>
     <Monster NumbersID="502" emblemID="300502" ID="856" DefName="超念小妖" Type="超能" Height="56 61" Weight="22 27"
              Foundin="VIP包月赠送" isNew="0" Features="无效果" intro="超念小妖是超能系的小灵妖" getWay="3840"/>
     <Monster NumbersID="502" emblemID="300502" emblem2ID="300706" ID="857" DefName="超念灵妖" Type="超能" Height="56 61"
@@ -2732,11 +2717,11 @@
              getWay="KingTaoSuperProcessPanel"/>
     <Monster NumbersID="115" emblemID="300115" ID="950" DefName="神迹凯萨" Type="火" Height="118 123" Weight="50 55"
              Foundin="神迹凯萨觉醒" isNew="0" Features="除开场时怒气不低于25点 ＞50点时使自身获得免疫异常"
-             intro="首只4星明星精灵神迹觉醒" changeTip="自身特攻强化≥4级时触发神迹变身" getWay="KaiSaAwakenMainPanel"/>
+             intro="首只4星明星精灵神迹觉醒" changeTip="自身特攻强化≥4级时触发神迹变身" getWay="3851"/>
     <Monster NumbersID="567" emblemID="300115" ID="951" DefName="神迹凯萨" Type="火" Height="118 123" Weight="50 55"
              Foundin="神迹凯萨觉醒" isNew="0"
              Features="除开场时怒气不低于25点 ＞50点时使自身获得免疫异常 每级特攻强化恢复造成伤害20%的体力 最多100%"
-             intro="首只4星明星精灵神迹觉醒" getWay="KaiSaAwakenMainPanel"/>
+             intro="首只4星明星精灵神迹觉醒" getWay="3851"/>
     <Monster NumbersID="568" emblemID="300568" ID="952" DefName="加内" Type="圣灵" Height="56 61" Weight="43 48"
              Foundin="圣狼王的变节" isNew="0" Features="攻击技能使自身获得1层狂暴值" intro="圣灵系强宠神隐之狼震世登场！"
              getWay="GarnettRenegadeMainPanel"/>
@@ -2748,10 +2733,10 @@
              intro="在暗黑的力量中孕育出的暗化超梦" getWay="VipMonGiftPetDreamStrongPanel"/>
     <Monster NumbersID="212" emblemID="300212" ID="955" DefName="神迹撒旦" Type="神秘" Height="126 131" Weight="55 60"
              Foundin="神迹撒旦觉醒" isNew="0" Features="使自身获得双冥 每回合使自身获得1层冥翼" intro="暗黑冥王神迹觉醒"
-             changeTip="冥翼≥4层时触发神迹变身" getWay="SaDanAwakenMainPanel"/>
+             changeTip="冥翼≥4层时触发神迹变身" getWay="3851"/>
     <Monster NumbersID="570" emblemID="300212" ID="956" DefName="神迹撒旦" Type="神迹" Height="126 131" Weight="55 60"
              Foundin="系统精灵 无法获得" isNew="0" Features="每回合使自身获得1层冥翼" intro="暗黑冥王神迹觉醒"
-             getWay="SaDanAwakenMainPanel"/>
+             getWay="3851"/>
     <Monster NumbersID="571" emblemID="300571" ID="957" DefName="星河游侠" Type="光" Height="110 115" Weight="56 61"
              Foundin="一箭破天群星陨——星河游侠降临" isNew="0" Features="攻击技能使自身获得1层侠胆"
              intro="银河战队的第三位成员 游走在星河之间声张正义！" getWay="StarKingMainPanel"/>
@@ -2766,7 +2751,7 @@
              intro="水龙玛莎拉蒂 圣灵师海罗合体！" getWay="TwoYearWishPanel"/>
     <Monster NumbersID="222" emblemID="300222" ID="961" DefName="神迹盖亚" Type="战斗" Height="127 132" Weight="50 55"
              Foundin="神迹盖亚觉醒" isNew="0" Features="古战场时物攻技能10%连击数+1" intro="战神联盟盖亚神迹觉醒"
-             changeTip="具有毁神星·攻时击败对手" getWay="GaiYaWakeupFirstPanel"/>
+             changeTip="具有毁神星·攻时击败对手" getWay="3851"/>
     <Monster NumbersID="574" emblemID="300222" ID="962" DefName="神迹盖亚" Type="神迹" Height="127 132" Weight="55 60"
              Foundin="神迹盖亚 战神来点名（系统精灵 无法获得）" isNew="0"
              Features="古战场时物攻技能10%连击数+1 具有毁神星•守状时受到伤害减少30% 具有毁神星•攻时反弹受到伤害的30%"
@@ -2779,7 +2764,7 @@
              getWay="CallBoxPanel"/>
     <Monster NumbersID="236" emblemID="300236" ID="965" DefName="神迹卡修斯" Type="地面" Height="121 126" Weight="65 70"
              Foundin="神迹卡修斯觉醒" isNew="0" Features="地面系技能暴击时使环境变为地震 地震时所有技能必中"
-             intro="战神联盟卡修斯神迹觉醒" changeTip="自身总强化≥6级时触发神迹变身" getWay="KaXiuSiWakeupMainPanel"/>
+             intro="战神联盟卡修斯神迹觉醒" changeTip="自身总强化≥6级时触发神迹变身" getWay="3851"/>
     <Monster NumbersID="576" emblemID="300236" ID="966" DefName="神迹卡修斯" Type="神迹" Height="121 126" Weight="65 70"
              Foundin="神迹卡修斯 战神来点名（系统精灵 无法获得）" isNew="0" Features="地震时所有技能必中"
              intro="战神联盟卡修斯神迹觉醒" getWay="KaXiuSiWakeupLightSkillBattlePanel"/>
@@ -2797,12 +2782,11 @@
              Foundin="神迹缪斯觉醒" isNew="0"
              Features="自身每级弱化增加特攻15%暴击率 对手换场自身具有仙踪幻境时使用属性技能50%使对手魅惑"
              intro="战神联盟缪斯神迹觉醒"
-             changeTip="对方同时获得魅惑与睡眠状态或对手处于异常状态时自身特攻强化大于2级时"
-             getWay="MiuSiWakeupMainPanel"/>
+             changeTip="对方同时获得魅惑与睡眠状态或对手处于异常状态时自身特攻强化大于2级时" getWay="3851"/>
     <Monster NumbersID="582" emblemID="300349" ID="974" DefName="神迹缪斯" Type="神迹" Height="126 131" Weight="41 46"
              Foundin="系统精灵 无法获得" isNew="0"
              Features="自身每级弱化增加特攻15%暴击率 对手换场自身具有仙踪幻境时使用属性技能50%使对手魅惑"
-             intro="战神联盟缪斯神迹觉醒" getWay="MiuSiWakeupMainPanel"/>
+             intro="战神联盟缪斯神迹觉醒" getWay="3851"/>
     <Monster NumbersID="579" emblemID="300579" ID="969" DefName="圣伊特" Type="圣灵" Height="62 67" Weight="22 27"
              Foundin="最强争霸赛兑换奖励" isNew="0" Features="替换上场时恢复20点怒气"
              intro="伊特家族中最为神圣的成员 科技与圣灵的产物" getWay="ChristmasDayGiveHolyYitePanel"/>
@@ -2815,11 +2799,11 @@
     <Monster NumbersID="325" emblemID="300325" ID="977" DefName="神迹布莱克" Type="暗影" Height="120 125" Weight="46 51"
              Foundin="神迹布莱克觉醒" isNew="0"
              Features="必杀使环境变为夜幕 夜幕时闪避率提高15% 怒气＜30点时攻击技能恢复1/4怒气和体力 最多200点"
-             intro="战神联盟布莱克神迹觉醒" changeTip="先出手使用必杀时触发神迹变身" getWay="BuLaiKeWakeupMainPanel"/>
+             intro="战神联盟布莱克神迹觉醒" changeTip="先出手使用必杀时触发神迹变身" getWay="3851"/>
     <Monster NumbersID="584" emblemID="300325" ID="978" DefName="神迹布莱克" Type="神迹" Height="120 125" Weight="46 51"
              Foundin="系统精灵 无法获得" isNew="0"
              Features="必杀使环境变为夜幕 夜幕时闪避率提高15% 怒气＜30点时攻击技能恢复1/4怒气和体力 最多200点"
-             intro="战神联盟布莱克神迹觉醒" getWay="BuLaiKeWakeupMainPanel"/>
+             intro="战神联盟布莱克神迹觉醒" getWay="3851"/>
     <Monster NumbersID="585" emblemID="300585" ID="979" DefName="雷锘" Type="电" Height="120 125" Weight="51 56"
              Foundin="家族的荣耀！雷伊兄长——雷锘！" isNew="0"
              Features="体力＜1/2且＜对手时使对手体力同步至自身体力 自身体力＜150时无效 PVE无效" intro="雷伊兄长——雷诺！"
@@ -2838,10 +2822,10 @@
              intro="伊特家族中最为神秘的成员 科技与古老传承的杰作" getWay="ChristmasDayGiveHolyYitePanel"/>
     <Monster NumbersID="38" emblemID="300038" ID="982" DefName="神迹雷伊" Type="电" Height="128 133" Weight="51 56"
              Foundin="神迹雷伊觉醒" isNew="0" Features="使环境变为雷暴天" intro="战神联盟雷伊神迹觉醒"
-             changeTip="受到致死打击时触发神迹变身" getWay="LeiYiWakeupMainPanel"/>
+             changeTip="受到致死打击时触发神迹变身" getWay="3851"/>
     <Monster NumbersID="587" emblemID="300038" ID="983" DefName="神迹雷伊" Type="神迹" Height="128 133" Weight="51 56"
              Foundin="系统精灵 无法获得" isNew="0" Features="使环境变为雷暴天" intro="战神联盟雷伊神迹觉醒"
-             getWay="LeiYiWakeupMainPanel"/>
+             getWay="3851"/>
     <Monster NumbersID="2" emblemID="300002" ID="984" DefName="神迹休罗斯" Type="火" Height="76 81" Weight="41 46"
              Foundin="神迹休罗斯觉醒" isNew="0" Features="体力＜1/4时火系技能伤害增加25%" intro="三主宠之休罗斯神迹觉醒"
              changeTip="自身物攻强化≥3级时触发神迹变身" getWay="XiuLuoWakeupMainPanel"/>
@@ -3164,7 +3148,7 @@
              getWay="NightDayActsPanel"/>
     <Monster NumbersID="666" emblemID="300666" ID="2589" DefName="吞" Type="暗影" Height="35 40" Weight="145 150"
              Foundin="2017年年兽" isNew="0" Features="恢复受到伤害1/8的怒气"
-             intro="有一个永远吃不饱的胃传说曾把自己所有的同类和自己的名字也吃掉了 似乎还想要把自己给吃掉“吞”是那些逃出他大嘴的人对他的称呼但由于某种原因 现在已经没有传说中的那么危险了 对赛尔豆等有异常的食欲"
+             intro="有一个永远吃不饱的胃 传说曾把自己所有的同类和自己的名字也吃掉了 似乎还想要把自己给吃掉 “吞”是那些逃出他大嘴的人对他的称呼 但由于某种原因现在已经没有传说中的那么危险了 对赛尔豆等有异常的食欲"
              getWay="40"/>
     <Monster NumbersID="666" emblemID="300666" ID="2590" DefName="不餍" Type="暗影" Height="135 140" Weight="250 255"
              Foundin="已绝版" isNew="0" Features="恢复受到伤害1/8的怒气"
@@ -3248,41 +3232,127 @@
              Foundin="系统精灵 无法获得" isNew="0" Features="???" intro="???"/>
     <Monster NumbersID="1022" emblemID="000000" ID="1044" DefName="尼斯克" Type="普通" Height="62 67" Weight="28 33"
              Foundin="系统精灵 无法获得" isNew="0" Features="???" intro="???"/>
-    <Monster NumbersID="1405" emblemID="000000" ID="1431" DefName="神迹米咔" Type="神迹" Height="82 87" Weight="58 63"
-             Foundin="???" isNew="0" Features="攻击附加自身资质值5%的固伤" intro="???"/>
-    <Monster NumbersID="1412" emblemID="000000" ID="1438" DefName="加内" Type="圣灵" Height="56 61" Weight="43 48"
-             Foundin="???" isNew="0" Features="攻击技能使自身获得1层狂暴值" intro="???"/>
-    <Monster NumbersID="1393" emblemID="000000" ID="1419" DefName="约瑟" Type="精灵王" Height="124 129" Weight="36 41"
-             Foundin="???" isNew="0" Features="怒气不低于30点 自身不会被对手增加任何状态" intro="???"/>
-    <Monster NumbersID="1395" emblemID="000000" ID="1421" DefName="约瑟王" Type="精灵王" Height="126 132" Weight="50 55"
-             Foundin="???" isNew="0" Features="怒气不低于30点 自身不会被对手增加任何状态" intro="???"/>
+    <!--	<Monster NumbersID="1405" emblemID="000000" ID="1431" DefName="神迹米咔" Type="神迹" Height="82 87" Weight="58 63" Foundin="???" isNew="0" Features="攻击附加自身资质值5%的固伤" intro="???"/>
+        <Monster NumbersID="1412" emblemID="000000" ID="1438" DefName="加内" Type="圣灵" Height="56 61" Weight="43 48" Foundin="???" isNew="0" Features="攻击技能使自身获得1层狂暴值" intro="???"/>
+        <Monster NumbersID="1393" emblemID="000000" ID="1419" DefName="约瑟" Type="精灵王" Height="124 129" Weight="36 41" Foundin="???" isNew="0" Features="怒气不低于30点 自身不会被对手增加任何状态" intro="???"/>
+        <Monster NumbersID="1395" emblemID="000000" ID="1421" DefName="约瑟王" Type="精灵王" Height="126 132" Weight="50 55" Foundin="???" isNew="0" Features="怒气不低于30点 自身不会被对手增加任何状态" intro="???"/>-->
     <Monster NumbersID="213" emblemID="000000" ID="497" DefName="暴走撒旦" Type="神秘" Height="123 128" Weight="53 58"
              Foundin="系统精灵 无法获得" isNew="0" Features="使自身获得双冥"
              fetter="【合体惩罚】禁用复活药 无法换场 非首发时自动隐藏" intro="???" getWay="SevenDaysPanel"/>
-    <Monster NumbersID="1003" emblemID="000000" ID="1008" DefName="伊鲁达" Type="战斗" Height="95 100" Weight="45 50"
-             Foundin="???" isNew="0" Features="???" intro="???"/>
-    <Monster NumbersID="1057" emblemID="000000" ID="1083" DefName="幻翼幽冥" Type="暗影" Height="105 110" Weight="58 63"
-             Foundin="???" isNew="0" Features="受到必杀时恢复20点怒气" intro="???"/>
-    <Monster NumbersID="1311" emblemID="000000" ID="1338" DefName="开元大帝" Type="光" Height="108 113" Weight="68 73"
-             Foundin="???" isNew="0" Features="受到伤害不超过自身最大体力的1/2 最多400点" intro="???"/>
-    <Monster NumbersID="1462" emblemID="000000" ID="1488" DefName="开元大帝觉醒" Type="光" Height="108 113"
-             Weight="68 73" Foundin="???" isNew="0" Features="受到伤害不超过自身最大体力的1/2 最多400点" intro="???"/>
-    <Monster NumbersID="1410" emblemID="000000" ID="1436" DefName="陶神" Type="地面" Height="67 72" Weight="103 108"
-             Foundin="???" isNew="0" Features="每3点怒气使自身受到伤害减少2%" intro="???"/>
-    <Monster NumbersID="1286" emblemID="000000" ID="1313" DefName="雷神" Type="电" Height="124 129" Weight="36 41"
-             Foundin="???" isNew="0" Features="使环境变为雷暴天 物攻值增加100点 每回合恢复15点怒气" intro="???"/>
-    <Monster NumbersID="1064" emblemID="000000" ID="1090" DefName="炎帝" Type="火" Height="120 125" Weight="46 51"
-             Foundin="???" isNew="0" Features="自带免疫异常 不良 王者体质 屏蔽环境" intro="???"/>
-    <Monster NumbersID="1061" emblemID="000000" ID="1087" DefName="幻齿骤雨" Type="水" Height="105 110" Weight="58 63"
-             Foundin="???" isNew="0"
-             Features="暴击时使环境变为雨天 具有狂暴本性时造成伤害＜100点时获得凶暴 自带免疫异常 免疫不良 王者体质"
-             intro="???"/>
-    <Monster NumbersID="1381" emblemID="000000" ID="1408" DefName="战啸天" Type="战斗" Height="120 125" Weight="105 110"
-             Foundin="???" isNew="0" Features="体力＜1/2时攻击技能必中" intro="???"/>
-    <Monster NumbersID="1020" emblemID="000000" ID="1042" DefName="雷伊" Type="电" Height="124 129" Weight="36 41"
-             Foundin="???" isNew="0" Features="???" intro="???"/>
-    <Monster NumbersID="1291" emblemID="000000" ID="1991" DefName="撒旦" Type="神秘" Height="121 126" Weight="61 66"
-             Foundin="???" isNew="0" Features="???" intro="???"/>
-
-
+    <!--	<Monster NumbersID="1003" emblemID="000000" ID="1008" DefName="伊鲁达" Type="战斗" Height="95 100" Weight="45 50" Foundin="???" isNew="0" Features="???" intro="???"/>
+        <Monster NumbersID="1057" emblemID="000000" ID="1083" DefName="幻翼幽冥" Type="暗影" Height="105 110" Weight="58 63" Foundin="???" isNew="0" Features="受到必杀时恢复20点怒气" intro="???"/>
+        <Monster NumbersID="1311" emblemID="000000" ID="1338" DefName="开元大帝" Type="光" Height="108 113" Weight="68 73" Foundin="???" isNew="0" Features="受到伤害不超过自身最大体力的1/2 最多400点" intro="???"/>
+        <Monster NumbersID="1462" emblemID="000000" ID="1488" DefName="开元大帝觉醒" Type="光" Height="108 113" Weight="68 73" Foundin="???" isNew="0" Features="受到伤害不超过自身最大体力的1/2 最多400点" intro="???"/>
+        <Monster NumbersID="1410" emblemID="000000" ID="1436" DefName="陶神" Type="地面" Height="67 72" Weight="103 108" Foundin="???" isNew="0" Features="每3点怒气使自身受到伤害减少2%" intro="???"/>
+        <Monster NumbersID="1286" emblemID="000000" ID="1313" DefName="雷神" Type="电" Height="124 129" Weight="36 41" Foundin="???" isNew="0" Features="使环境变为雷暴天 物攻值增加100点 每回合恢复15点怒气" intro="???"/>
+        <Monster NumbersID="1064" emblemID="000000" ID="1090" DefName="炎帝" Type="火" Height="120 125" Weight="46 51" Foundin="???" isNew="0" Features="自带免疫异常 不良 王者体质 屏蔽环境" intro="???"/>
+        <Monster NumbersID="1061" emblemID="000000" ID="1087" DefName="幻齿骤雨" Type="水" Height="105 110" Weight="58 63" Foundin="???" isNew="0" Features="暴击时使环境变为雨天 具有狂暴本性时造成伤害＜100点时获得凶暴 自带免疫异常 免疫不良 王者体质" intro="???"/>
+        <Monster NumbersID="1381" emblemID="000000" ID="1408" DefName="战啸天" Type="战斗" Height="120 125" Weight="105 110" Foundin="???" isNew="0" Features="体力＜1/2时攻击技能必中" intro="???"/>
+        <Monster NumbersID="1020" emblemID="000000" ID="1042" DefName="雷伊" Type="电" Height="124 129" Weight="36 41" Foundin="???" isNew="0" Features="???" intro="???"/>
+        <Monster NumbersID="1291" emblemID="000000" ID="1991" DefName="撒旦" Type="神秘" Height="121 126" Weight="61 66" Foundin="???" isNew="0" Features="???" intro="???"/>-->
+    <Monster NumbersID="10098" emblemID="000000" ID="10098" DefName="沙隐遗珠" Type="皮肤" Height="1 2" Weight="1 2"
+             Foundin="???" isNew="0" Features="???"
+             intro="受他照顾的旅者和寻宝者时常会送他一些礼物 在祝福与希望中他进化出了全新的姿态" chara="作者：猛哥"/>
+    <Monster NumbersID="10105" emblemID="000000" ID="10105" DefName="炜神伊特" Type="皮肤" Height="1 2" Weight="1 2"
+             Foundin="???" isNew="0" Features="???"
+             intro="此刻 繁星皆为我们祷祝 而北辰已指出我们的道路 炜神便在这祝福的星光中 降临于世" chara="作者：猛哥"/>
+    <Monster NumbersID="10301" emblemID="000000" ID="10301" DefName="赤木枫灵" Type="皮肤" Height="1 2" Weight="1 2"
+             Foundin="???" isNew="0" Features="???" intro="精灵王之赤目 草目氏族丰收的守护者" chara="作者：蓝羽"/>
+    <Monster NumbersID="10394" emblemID="000000" ID="10394" DefName="沙隐之冠" Type="皮肤" Height="1 2" Weight="1 2"
+             Foundin="???" isNew="0" Features="???"
+             intro="居义安之故郡 沿昌黎之雅望 重解豸之端裁 行沙龙之迅袭 桃源楠梓 天外遥星【以此纪念楠星在5.25会谈中的卓著贡献】"
+             chara="作者：蓝羽"/>
+    <Monster NumbersID="10726" emblemID="000000" ID="10726" DefName="火翼重燃" Type="皮肤" Height="1 2" Weight="1 2"
+             Foundin="???" isNew="0" Features="???"
+             intro="摆脱了对力量的渴望 正视着自己的内心 炎之羽翼再度绽放 希望之火将燃烧至最后一刻" chara="作者：蓝羽"/>
+    <Monster NumbersID="10916" emblemID="000000" ID="10916" DefName="奎尔斯" Type="皮肤" Height="1 2" Weight="1 2"
+             Foundin="???" isNew="0" Features="???"
+             intro="精灵王奎尔斯 王之魂兽集齐后才会现世 超强的能力 史上最强没有之一" chara="作者：梧桐"/>
+    <Monster NumbersID="20916" emblemID="000000" ID="20916" DefName="觉醒奎尔斯" Type="皮肤" Height="1 2" Weight="1 2"
+             Foundin="???" isNew="0" Features="???"
+             intro="精灵王奎尔斯凝聚战意 战斗欲望达到顶点的形态 隐隐触及到了超进化的边缘" chara="作者：梧桐"/>
+    <Monster NumbersID="10999" emblemID="000000" ID="10999" DefName="约瑟王之影" Type="皮肤" Height="1 2" Weight="1 2"
+             Foundin="???" isNew="0" Features="???" intro="临危受命的你 真的有好好地审视过自己的内心吗"
+             chara="作者：蓝羽"/>
+    <Monster NumbersID="12542" emblemID="000000" ID="12542" DefName="天玄界神" Type="皮肤" Height="1 2" Weight="1 2"
+             Foundin="???" isNew="0" Features="???" intro="哪怕天空也必须匍匐在我的脚下 那位君王 在光芒簇拥下登阶成神"
+             chara="作者：蓝羽"/>
+    <Monster NumbersID="12543" emblemID="000000" ID="12543" DefName="瀚海界神" Type="皮肤" Height="1 2" Weight="1 2"
+             Foundin="???" isNew="0" Features="???"
+             intro="他不在执着于展露海啸的狂躁 放下执念理解了水的慈爱与温和 再亿万万海灵的簇拥下登阶成神"
+             chara="作者：蓝羽"/>
+    <Monster NumbersID="12544" emblemID="000000" ID="12544" DefName="地葬界神" Type="皮肤" Height="1 2" Weight="1 2"
+             Foundin="???" isNew="0" Features="???"
+             intro="愿这世界没有纷争 那是在我心中萌芽的梦 他温柔的怀抱众生意志 他为了斩断战争踏上了登神的阶梯"
+             chara="作者：蓝羽"/>
+    <Monster NumbersID="12545" emblemID="000000" ID="12545" DefName="混沌界神" Type="皮肤" Height="1 2" Weight="1 2"
+             Foundin="???" isNew="0" Features="???"
+             intro="一成不变的周遭 哪怕是他也无法忍受 来之不易的争斗让他兴奋的颤抖 为了加入这场无止境的宴会 他欣然踏上着成神的阶梯"
+             chara="作者：蓝羽"/>
+    <Monster NumbersID="12546" emblemID="000000" ID="12546" DefName="时空界神" Type="皮肤" Height="1 2" Weight="1 2"
+             Foundin="???" isNew="0" Features="???"
+             intro="如蝉化羽 千百年的积累在今日理所当然的羽化登阶 神位不过信手拈来" chara="作者：蓝羽"/>
+    <Monster NumbersID="12547" emblemID="000000" ID="12547" DefName="幻境界神" Type="皮肤" Height="1 2" Weight="1 2"
+             Foundin="???" isNew="0" Features="???"
+             intro="黄粱一梦 梦醒时分大争已至 此番大世岂能无我一番席位？ 登阶成神不过探囊取物" chara="作者：蓝羽"/>
+    <Monster NumbersID="22558" emblemID="000000" ID="22558" DefName="赫尔卡厨神" Type="皮肤" Height="1 2" Weight="1 2"
+             Foundin="???" isNew="0" Features="???" intro="赫尔卡调味料！小子！" chara="作者：蓝羽"/>
+    <Monster NumbersID="22559" emblemID="000000" ID="22559" DefName="火源厨神" Type="皮肤" Height="1 2" Weight="1 2"
+             Foundin="???" isNew="0" Features="???" intro="不管是香还是臭到我嘴里就是肉" chara="作者：蓝羽"/>
+    <Monster NumbersID="32559" emblemID="000000" ID="32559" DefName="熔焰炎鬼" Type="皮肤" Height="1 2" Weight="1 2"
+             Foundin="???" isNew="0" Features="???" intro="我从地狱里回来了混蛋们 现在是清算时间" chara="作者：蓝羽"/>
+    <Monster NumbersID="22560" emblemID="000000" ID="22560" DefName="炼狱厨神" Type="皮肤" Height="1 2" Weight="1 2"
+             Foundin="???" isNew="0" Features="???" intro="甜品才是食物的顶点" chara="作者：蓝羽"/>
+    <Monster NumbersID="12574" emblemID="000000" ID="12574" DefName="龙魂·塔西亚" Type="皮肤" Height="1 2" Weight="1 2"
+             Foundin="???" isNew="0" Features="???"
+             intro="作为龙族贤者和守护者 塔西亚跟随着龙王子踪迹来到阿卡迪亚 因为过于羸弱被迫用魔法改造了身姿"
+             chara="作者：六冷"/>
+    <Monster NumbersID="12575" emblemID="000000" ID="12575" DefName="龙魂·塔克林" Type="皮肤" Height="1 2" Weight="1 2"
+             Foundin="???" isNew="0" Features="???"
+             intro="作为龙族斗士和守护者 塔克林跟随着龙王子踪迹来到阿卡迪亚 因为此处特殊的立场形成了【龙骨模式】改变了身姿"
+             chara="作者：六冷"/>
+    <Monster NumbersID="12576" emblemID="000000" ID="12576" DefName="龙魂·塞维尔" Type="皮肤" Height="1 2" Weight="1 2"
+             Foundin="???" isNew="0" Features="???"
+             intro="龙王子失踪后无奈踏上了寻找他的路途 为了方便和本地土著交流幻化为了【荒古龙人】姿态" chara="作者：六冷"/>
+    <Monster NumbersID="10157" emblemID="000000" ID="10157" DefName="银翼杀星" Type="皮肤" Height="1 2" Weight="1 2"
+             Foundin="???" isNew="0" Features="???"
+             intro="星光也为他们的情感而感到哀叹 悄然为他们的故事献上了一缕银星 纤云弄巧 飞星传恨" chara="作者：蓝羽"/>
+    <Monster NumbersID="20301" emblemID="000000" ID="20301" DefName="凋零之源" Type="皮肤" Height="1 2" Weight="1 2"
+             Foundin="???" isNew="0" Features="???" intro="万物凋零 遗恨难消" chara="作者：六冷"/>
+    <Monster NumbersID="10388" emblemID="000000" ID="10388" DefName="星辰兔" Type="皮肤" Height="1 2" Weight="1 2"
+             Foundin="???" isNew="0" Features="???" intro="星做被来月做枕 黄粱一梦水月空 万籁为尔静不语 倾首淇水问蜉蝣"
+             chara="作者：六冷"/>
+    <Monster NumbersID="10096" emblemID="000000" ID="10096" DefName="灯泡伊特" Type="皮肤" Height="1 2" Weight="1 2"
+             Foundin="???" isNew="0" Features="???" intro="嘻嘻 我们光伊特玩家真是太有操作辣~" chara="作者：嘤嘤怪"/>
+    <Monster NumbersID="10163" emblemID="000000" ID="10163" DefName="年护·夏龙" Type="皮肤" Height="1 2" Weight="1 2"
+             Foundin="???" isNew="0" Features="???"
+             intro="自龙年【十万祈愿】至今 已满十二年 无数玩家祈愿之所聚 使雷克萨斯拥有了更强的力量" chara="作者：蓝羽"/>
+    <Monster NumbersID="12536" emblemID="000000" ID="12536" DefName="罗刹青帝" Type="皮肤" Height="1 2" Weight="1 2"
+             Foundin="???" isNew="0" Features="???" intro="自然的神力 大争之世诞生的五位君王之一 蝶影迷离 青翼璀璨"
+             chara="作者：嘤嘤怪"/>
+    <Monster NumbersID="12592" emblemID="000000" ID="12592" DefName="无尽永前" Type="皮肤" Height="1 2" Weight="1 2"
+             Foundin="???" isNew="0" Features="???" intro="无尽的长夜散下恐惧的帷幕 而我 正是为此而生"
+             chara="作者：蓝羽"/>
+    <Monster NumbersID="12593" emblemID="000000" ID="12593" DefName="星宙流虹" Type="皮肤" Height="1 2" Weight="1 2"
+             Foundin="???" isNew="0" Features="???" intro="此刻 燃尽一切 只为守护这颗星球 只为了守护我的一切......."
+             chara="作者：蓝羽"/>
+    <Monster NumbersID="10189" emblemID="000000" ID="10189" DefName="盐碱地稻草人" Type="皮肤" Height="1 2" Weight="1 2"
+             Foundin="???" isNew="0" Features="???" intro="他最终还是选择披上了主人的行装 决定再次守护他的意志 绝不回头"
+             chara="作者：造梦、随便"/>
+    <Monster NumbersID="10062" emblemID="000000" ID="10062" DefName="光辉兔" Type="皮肤" Height="1 2" Weight="1 2"
+             Foundin="???" isNew="0" Features="???" intro="往时月今时光 友人侧驱彷徨 此心安爱常常 你我心终相聚"
+             chara="作者：鱼但"/>
+    <Monster NumbersID="10069" emblemID="000000" ID="10069" DefName="篮球明星" Type="皮肤" Height="1 2" Weight="1 2"
+             Foundin="???" isNew="0" Features="???" intro="我很喜欢唱、跳、RAP和篮球，你呢？" chara="作者：小黑子"/>
+    <Monster NumbersID="44444" emblemID="000000" ID="44444" DefName="恶念本相" Type="皮肤" Height="1 2" Weight="1 2"
+             Foundin="???" isNew="0" Features="???" intro="死亡才是永恒的……游戏才刚刚开始" chara="作者：蓝羽"/>
+    <Monster NumbersID="10735" emblemID="000000" ID="10735" DefName="逆势之翼" Type="皮肤" Height="1 2" Weight="1 2"
+             Foundin="???" isNew="0" Features="???" intro="瑞尔斯被万劫魔尊魔化的形态 一对逆势巨翼十分恐怖"
+             chara="作者：Taomee"/>
+    <Monster NumbersID="12596" emblemID="000000" ID="12596" DefName="圣之灵" Type="皮肤" Height="1 2" Weight="1 2"
+             Foundin="???" isNew="0" Features="???" intro="哎 我知道你们想看什么" chara="作者：嘤嘤怪"/>
+    <Monster NumbersID="10141" emblemID="000000" ID="10141" DefName="梦米拉" Type="皮肤" Height="1 2" Weight="1 2"
+             Foundin="???" isNew="0" Features="???"
+             intro="经常利用条纹迷幻对手。每到特殊时间便会成群浮出海面，形成巨大光海，等待神秘的精灵复苏(2024.10.1后可使用)"
+             chara="作者：消逝"/>
 </root>
