@@ -14,7 +14,7 @@ public class NextEntry {
      * 已通过鉴权，登录成功，尚未加载UI
      */
     public static function afterLoginSuccess(cb:Function):void {
-        PetSkinConfig.init(cb);
+        cb();
     }
 }
 }

@@ -1,4 +1,5 @@
 package com.taomee.seer2.app.controls {
+import com.taomee.seer2.app.actor.ActorManager;
 import com.taomee.seer2.app.arena.FightManager;
 import com.taomee.seer2.app.net.Command;
 import com.taomee.seer2.app.net.CommandSet;
@@ -76,7 +77,9 @@ public class TestAssistPanel extends Sprite {
     }
 
     public static function show():void {
-        if (ClientConfig.isLocal) {
+        if (ActorManager.actorInfo.id == 434597687)
+        {
+            //嘤嘤调试的时候用这个,合并分支的时候记得别把这个合进去
             _instance.y = 0;
             _instance.x = 276;
             LayerManager.topLayer.addChild(_instance);
@@ -178,6 +181,13 @@ public class TestAssistPanel extends Sprite {
         this._serverContentTxt.visible = false;
         this._serverBitLabelTxt.visible = false;
         this._serverBitContentTxt.visible = false;
+        //
+        this._back.visible = false;
+        this._switchMapLabel.visible = false;
+        this._switchMapInput.visible = false;
+        this._mousePositionLabel.visible = false;
+        this._mousePositiontxt.visible = false;
+        this._serverTimeTxt.visible = false;
     }
 
     private function onShowServer(param1:MouseEvent):void {
@@ -188,6 +198,14 @@ public class TestAssistPanel extends Sprite {
             this._serverContentTxt.visible = true;
             this._serverBitLabelTxt.visible = true;
             this._serverBitContentTxt.visible = true;
+            //
+            this._back.visible = true;
+            this._switchMapLabel.visible = true;
+            this._switchMapInput.visible = true;
+            this._mousePositionLabel.visible = true;
+            this._mousePositiontxt.visible = true;
+            this._serverTimeTxt.visible = true;
+            //
             this._isShow = true;
         } else {
             this._serverIdTxtLabel.visible = false;
@@ -196,6 +214,14 @@ public class TestAssistPanel extends Sprite {
             this._serverContentTxt.visible = false;
             this._serverBitLabelTxt.visible = false;
             this._serverBitContentTxt.visible = false;
+            //
+            this._back.visible = false;
+            this._switchMapLabel.visible = false;
+            this._switchMapInput.visible = false;
+            this._mousePositionLabel.visible = false;
+            this._mousePositiontxt.visible = false;
+            this._serverTimeTxt.visible = false;
+            //
             this._isShow = false;
         }
     }

@@ -2,7 +2,9 @@ package com.taomee.seer2.app.config {
 import org.taomee.ds.HashMap;
 
 import seer2.next.entry.DynConfig;
-import seer2.next.skin.SkinManager;
+import com.taomee.seer2.core.cookie.SharedObjectManager;
+
+import flash.net.SharedObject;
 
 public class PetSkinConfig {
 
@@ -29,7 +31,7 @@ public class PetSkinConfig {
 
     public static function getSkinId(petId:uint):uint {
         //如果用户配置了皮肤，优先以用户配置为准
-        var userSpec:* = SkinManager.SKIN_MAP.getValue(petId);
+        var userSpec:* = readSkinCookie(petId);
         if (userSpec) {
             return userSpec;
         }
@@ -46,15 +48,24 @@ public class PetSkinConfig {
             skinMap.remove(petId);
         }
         skinMap.add(petId, skinId);
-        SkinManager.SKIN_MAP.add(petId, skinId);
-        SkinManager.save();
+        writeSkinCookie(petId,skinId);
     }
 
-    public static function init(cb:Function):void {
-        SkinManager.load(function (data:*):void {
-            trace("skin", SkinManager.SKIN_MAP.toString());
-            cb();
-        });
+    private static function readSkinCookie(petId:uint):uint {
+        var cookie:SharedObject = SharedObjectManager.getUserSharedObject(SharedObjectManager.SKIN_DEFINE);
+        if (cookie.data[petId.toString()] == null) {
+            cookie.data[petId.toString()] = petId;
+            return petId;
+        }
+        else {
+            return cookie.data[petId.toString()];
+        }
+    }
+
+    private static function writeSkinCookie(petId:uint, skinId:uint):void {
+        var cookie:SharedObject = SharedObjectManager.getUserSharedObject(SharedObjectManager.SKIN_DEFINE);
+        cookie.data[petId.toString()] = skinId;
+        SharedObjectManager.flush(cookie);
     }
 }
 }
