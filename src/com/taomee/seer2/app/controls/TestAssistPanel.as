@@ -77,9 +77,8 @@ public class TestAssistPanel extends Sprite {
     }
 
     public static function show():void {
-        if (ActorManager.actorInfo.id == 434597687)
+        if (ClientConfig.isLocal)
         {
-            //嘤嘤调试的时候用这个,合并分支的时候记得别把这个合进去
             _instance.y = 0;
             _instance.x = 276;
             LayerManager.topLayer.addChild(_instance);

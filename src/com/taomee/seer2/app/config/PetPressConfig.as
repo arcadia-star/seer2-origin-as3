@@ -1,6 +1,5 @@
 package com.taomee.seer2.app.config {
 public class PetPressConfig {
-    
     private static var _pressList:Array = [
         [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0.75, 0.75, 1, 1],
         [1, 0.5, 2, 0.5, 1, 0.5, 0.5, 1, 1, 0.5, 1, 2, 1, 1, 1, 2, 1, 0.5, 0.75, 0.75, 1, 1.25],

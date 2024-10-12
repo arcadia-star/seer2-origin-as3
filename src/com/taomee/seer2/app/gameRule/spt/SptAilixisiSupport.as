@@ -107,8 +107,7 @@ public class SptAilixisiSupport extends BaseSptSupport {
         var _loc5_:DialogDefinition = null;
         var _loc6_:XML = null;
         var _loc7_:DialogDefinition = null;
-        if (TimeLimitConfig.InLimitTime(5))
-        {
+        if (TimeLimitConfig.InLimitTime(5)) {
             _loc2_ = ActorManager.actorInfo;
             _loc3_ = _loc2_.highestPetLevel;
             if (_loc3_ >= _petMaxLevelLimit) {
