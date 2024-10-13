@@ -33,17 +33,14 @@ public class TestMain extends Sprite {
             _descriptionTxt.defaultTextFormat = _loc1_;
             _descriptionTxt.autoSize = TextFieldAutoSize.LEFT;
             _descriptionTxt.wordWrap = true;
-            _descriptionTxt.border = true;
+            _descriptionTxt.border = false;
             var text = TextUtils.replaceColorFormat("很好！[br]把这封问候信带给[ffcc00]草目氏族的酋长[-]，表达我们[ff0000]希望结盟的意愿[-]。记住，随机应变，结盟，只能成功！表达我们希望结盟的意愿。[br]记住，随机应变，[00ff00]结盟[-]，只能成功！");
             _descriptionTxt.htmlText = TextUtils.wrapHtmlFontSize(text);
-            _descriptionTxt.htmlText = 1231311;
+            _descriptionTxt.htmlText = "1231311\n12312\n231212\n31311\n12312\n2312";
+            _descriptionTxt.htmlText = "1231311\n12312";
             var _back = _tip["backMc"];
-            if (_descriptionTxt.height > 50) {
-                _back.height = _descriptionTxt.height + 20;
-            } else {
-                _back.height = 110.55;
-            }
-            _descriptionTxt.y = 2 - _back.height;
+            _back.height = Math.max(110.55, _descriptionTxt.height + 20);
+            _descriptionTxt.y = 5 - _back.height;
             TooltipManager.addMultipleTip(_descriptionTxt, text);
 
         })

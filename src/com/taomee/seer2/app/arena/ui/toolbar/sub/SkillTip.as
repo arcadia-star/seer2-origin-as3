@@ -43,12 +43,8 @@ public class SkillTip extends Sprite {
 
     public function setSkillInfo(param1:SkillInfo):void {
         this._descriptionTxt.htmlText = TextUtils.wrapHtmlFontSize(TextUtils.replaceColorFormat(param1.description));
-        if (_descriptionTxt.height > 50) {
-            _back.height = _descriptionTxt.height + 20;
-        } else {
-            _back.height = 110.55;
-        }
-        _descriptionTxt.y = 2 - _back.height;
+        _back.height = Math.max(110.55, _descriptionTxt.height + 20);
+        _descriptionTxt.y = 5 - _back.height;
     }
 }
 }
