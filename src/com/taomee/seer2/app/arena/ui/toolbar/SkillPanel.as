@@ -18,6 +18,8 @@ import flash.display.MovieClip;
 import flash.display.Sprite;
 import flash.events.MouseEvent;
 
+import seer2.next.utils.TextUtils;
+
 internal class SkillPanel extends Sprite {
 
     private static const SKILL_BTN_NUM:int = 4;
@@ -203,8 +205,8 @@ internal class SkillPanel extends Sprite {
         }
         var _loc2_:Boolean = this._controlledFighter.fighterInfo.hasSuperSkill();
         if (_loc2_) {
-            _loc4_ = this._superSkillBtn.getSkillInfo() == null ? "必杀技" : this._superSkillBtn.getSkillInfo().description;
-            TooltipManager.addCommonTip(this._superSkillBtn, _loc4_);
+            _loc4_ = this._superSkillBtn.getSkillInfo() == null ? "必杀技" : TextUtils.replaceColorFormat(this._superSkillBtn.getSkillInfo().description);
+            TooltipManager.addMultipleTip(this._superSkillBtn, _loc4_);
         } else {
             TooltipManager.addCommonTip(this._superSkillBtn, "60级领悟必杀技");
         }

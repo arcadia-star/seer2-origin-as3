@@ -6,6 +6,8 @@ import com.taomee.seer2.core.utils.DisplayObjectUtil;
 import flash.text.TextField;
 import flash.text.TextFieldAutoSize;
 
+import seer2.next.utils.TextUtils;
+
 public class SkillTipSkin extends BaseTipSkin {
 
 
@@ -38,7 +40,7 @@ public class SkillTipSkin extends BaseTipSkin {
         this._data = param1;
         if (this._data) {
             this._nameTxt.text = param1.name;
-            this._descriptionTxt.text = param1.description;
+            this._descriptionTxt.htmlText = TextUtils.replaceColorFormat(param1.description);
             _back.width = this._descriptionTxt.width + 10;
             _back.height = this._descriptionTxt.height + 50;
         }
