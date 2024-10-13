@@ -18,6 +18,10 @@ public class PetSkinDefineConfig {
         super();
     }
 
+    public static function initialize():void {
+        setup();
+    }
+
     private static function setup():void {
         var _xml:XML = null;
         var _skinXml:XML = DynConfig.petSkinDefineConfigXML || XML(new _xmlClass());
@@ -55,17 +59,13 @@ public class PetSkinDefineConfig {
         return [petId];
     }
 
-    public static function getSkinName(petId:uint,skinId:uint):String {
+    public static function getSkinName(petId:uint, skinId:uint):String {
         var nameMap:HashMap = null;
-        if (_skinNameMap.containsKey(petId))
-        {
+        if (_skinNameMap.containsKey(petId)) {
             nameMap = _skinNameMap.getValue(petId) as HashMap;
-            if(nameMap && nameMap.containsKey(skinId))
-            {
+            if (nameMap && nameMap.containsKey(skinId)) {
                 return nameMap.getValue(skinId);
-            }
-            else
-            {
+            } else {
                 return "未定义该皮肤";
             }
         }

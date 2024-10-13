@@ -5,6 +5,7 @@ import com.taomee.seer2.app.config.skill.SkillSideEffectType;
 import org.taomee.ds.HashMap;
 
 import seer2.next.entry.DynConfig;
+import seer2.next.utils.TextUtils;
 
 public class SkillSideEffectConfig {
 
@@ -22,7 +23,7 @@ public class SkillSideEffectConfig {
         super();
     }
 
-    private static function initialize():void {
+    public static function initialize():void {
         var _loc2_:XML = null;
         _map = new HashMap();
         _buffConfigXML = DynConfig.buffConfigXML || XML(new _buffXmlClass());

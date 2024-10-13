@@ -2,6 +2,7 @@ package com.taomee.seer2.app.config {
 import org.taomee.ds.HashMap;
 
 import seer2.next.entry.DynConfig;
+
 import com.taomee.seer2.core.cookie.SharedObjectManager;
 
 import flash.net.SharedObject;
@@ -18,6 +19,10 @@ public class PetSkinConfig {
 
     public function PetSkinConfig() {
         super();
+    }
+
+    public static function initialize():void {
+        setup();
     }
 
     private static function setup():void {
@@ -48,7 +53,7 @@ public class PetSkinConfig {
             skinMap.remove(petId);
         }
         skinMap.add(petId, skinId);
-        writeSkinCookie(petId,skinId);
+        writeSkinCookie(petId, skinId);
     }
 
     private static function readSkinCookie(petId:uint):uint {
@@ -56,8 +61,7 @@ public class PetSkinConfig {
         if (cookie.data[petId.toString()] == null) {
             cookie.data[petId.toString()] = petId;
             return petId;
-        }
-        else {
+        } else {
             return cookie.data[petId.toString()];
         }
     }

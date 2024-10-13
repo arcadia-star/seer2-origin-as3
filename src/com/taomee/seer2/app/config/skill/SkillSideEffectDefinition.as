@@ -1,4 +1,6 @@
 package com.taomee.seer2.app.config.skill {
+import seer2.next.utils.TextUtils;
+
 public class SkillSideEffectDefinition {
 
 
@@ -14,7 +16,7 @@ public class SkillSideEffectDefinition {
         super();
         this.id = param1;
         this.name = param2;
-        this.description = param3;
+        this.description = TextUtils.replaceColorFormat(param3);
         this.isShow = param4;
     }
 }

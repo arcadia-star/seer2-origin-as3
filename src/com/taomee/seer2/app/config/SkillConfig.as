@@ -28,7 +28,7 @@ public class SkillConfig {
         super();
     }
 
-    private static function initialize():void {
+    public static function initialize():void {
         _skillMap = new HashMap();
         _hideSkillMap = new HashMap();
         setup();

@@ -50,7 +50,7 @@ public class PetConfig {
         super();
     }
 
-    private static function initialize():void {
+    public static function initialize():void {
         _petDefinitionMap = new HashMap();
         _bunchSkillSettingMap = new HashMap();
         _bunchSkillSettingMap_2 = new HashMap();

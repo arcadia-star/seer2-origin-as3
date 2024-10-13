@@ -1,4 +1,6 @@
 package com.taomee.seer2.app.config.skill {
+import seer2.next.utils.TextUtils;
+
 public class SkillDefinition {
 
 
@@ -24,7 +26,7 @@ public class SkillDefinition {
         this.type = param4;
         this.anger = param5;
         this.power = param6;
-        this.description = param7;
+        this.description = TextUtils.replaceColorFormat(param7);
     }
 }
 }

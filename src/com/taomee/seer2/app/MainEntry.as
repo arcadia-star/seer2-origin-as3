@@ -1,6 +1,13 @@
 package com.taomee.seer2.app {
 import com.taomee.analytics.Analytics;
 import com.taomee.seer2.app.actor.ActorManager;
+import com.taomee.seer2.app.arena.util.HitInfoConfig;
+import com.taomee.seer2.app.config.ItemConfig;
+import com.taomee.seer2.app.config.PetConfig;
+import com.taomee.seer2.app.config.PetSkinConfig;
+import com.taomee.seer2.app.config.PetSkinDefineConfig;
+import com.taomee.seer2.app.config.SkillConfig;
+import com.taomee.seer2.app.config.SkillSideEffectConfig;
 import com.taomee.seer2.app.debugTools.DebugTools;
 import com.taomee.seer2.app.init.LoginInfo;
 import com.taomee.seer2.app.manager.StatisticsManager;
@@ -9,6 +16,7 @@ import com.taomee.seer2.app.net.Connection;
 import com.taomee.seer2.app.newPlayerGuideVerOne.NewPlayerGuideTimeManager;
 import com.taomee.seer2.app.notify.NoticeManager;
 import com.taomee.seer2.app.novice.NoviceInit;
+import com.taomee.seer2.app.popup.AlertManager;
 import com.taomee.seer2.app.quest.QuestManager;
 import com.taomee.seer2.app.rightToolbar.RightToolbarConter;
 import com.taomee.seer2.app.team.TeamManager;
@@ -156,6 +164,20 @@ public class MainEntry {
         t.customItems.push(imageLevelItem);
         imageLevelItem.addEventListener(ContextMenuEvent.MENU_ITEM_SELECT, function (param1:ContextMenuEvent):void {
             getImageModuleShow();
+        });
+        var dynConfigItem:ContextMenuItem = new ContextMenuItem("重载配置");
+        t.customItems.push(dynConfigItem);
+        dynConfigItem.addEventListener(ContextMenuEvent.MENU_ITEM_SELECT, function (param1:ContextMenuEvent):void {
+            DynConfig.loadConfigCallback(function ():void {
+                ItemConfig.initialize();
+                SkillSideEffectConfig.initialize();
+                SkillConfig.initialize();
+                PetConfig.initialize();
+                HitInfoConfig.initialize();
+                PetSkinConfig.initialize();
+                PetSkinDefineConfig.initialize();
+                AlertManager.showAlert("重新加载成功");
+            });
         });
     }
 

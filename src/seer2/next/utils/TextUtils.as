@@ -8,6 +8,10 @@ public class TextUtils {
      * [颜色]文字[-]
      */
     public static function replaceColorFormat(input:String):String {
+        if (!input) {
+            return '';
+        }
+
         // 先替换 [br] 为 <br>
         input = input.replace(/\[br]/g, "<br>");
 
@@ -21,7 +25,7 @@ public class TextUtils {
     }
 
     public static function wrapHtmlFontSize(input:String):String {
-        return "<font color='#ffffff' size='10'>" + input + "</font>"
+        return "<font color='#ffffff' size='11'>" + input + "</font>"
     }
 }
 }

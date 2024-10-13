@@ -75,7 +75,7 @@ public class ItemConfig {
         super();
     }
 
-    private static function initialize():void {
+    public static function initialize():void {
         _basisMap = new HashMap();
         _equipMap = new HashMap();
         _petMap = new HashMap();

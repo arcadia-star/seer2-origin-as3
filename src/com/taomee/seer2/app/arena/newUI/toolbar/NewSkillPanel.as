@@ -244,7 +244,7 @@ internal class NewSkillPanel extends Sprite {
         }
         var _loc2_:Boolean = this._controlledFighter.fighterInfo.hasSuperSkill();
         if (_loc2_) {
-            _loc8_ = this._superSkillBtn.getSkillInfo() == null ? "必杀技" : TextUtils.replaceColorFormat(this._superSkillBtn.getSkillInfo().description);
+            _loc8_ = this._superSkillBtn.getSkillInfo() == null ? "必杀技" : this._superSkillBtn.getSkillInfo().description;
             TooltipManager.addMultipleTip(this._superSkillBtn, _loc8_);
         } else {
             TooltipManager.addCommonTip(this._superSkillBtn, "60级领悟必杀技");

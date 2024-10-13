@@ -30,6 +30,11 @@ public class HitInfoConfig {
         return _loc2_;
     }
 
+    public static function initialize():void {
+        _hitDatas = new HashMap();
+        setup();
+    }
+
     private static function setup():void {
         var _loc5_:XML = null;
         var _loc6_:AnimiationHitInfo = null;

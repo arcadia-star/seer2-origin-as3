@@ -23,7 +23,7 @@ public class BaseTipSkin extends Sprite {
     }
 
     public function show(param1:String):void {
-        this._tipTxt.htmlText = StringUtil.replace(param1, "\\n", "<br>");
+        this._tipTxt.htmlText = param1;
         if (this._back) {
             this._back.width = this._tipTxt.x + this._tipTxt.textWidth + 8;
             this._back.height = this._tipTxt.y + this._tipTxt.textHeight + 14;

@@ -40,7 +40,7 @@ public class SkillTipSkin extends BaseTipSkin {
         this._data = param1;
         if (this._data) {
             this._nameTxt.text = param1.name;
-            this._descriptionTxt.htmlText = TextUtils.replaceColorFormat(param1.description);
+            this._descriptionTxt.htmlText = param1.description;
             _back.width = this._descriptionTxt.width + 10;
             _back.height = this._descriptionTxt.height + 50;
         }
