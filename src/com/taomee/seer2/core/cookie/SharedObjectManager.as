@@ -53,6 +53,8 @@ public class SharedObjectManager {
 
     public static const IMAGE_FIGHT_LEVEL_INDEX:String = "imageFightLevelIndex";
 
+    public static const SKIN_DEFINE:String = "skinDefine";
+
     private static var _commonRoot:String;
 
     private static var _userRoot:String;

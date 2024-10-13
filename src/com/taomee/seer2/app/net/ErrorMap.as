@@ -257,7 +257,7 @@ public class ErrorMap {
         errorMessage = findErrorMessage(statusCode);
         try {
             if (errorMessage != "") {
-                //AlertManager.showAlert(errorMessage + "!");
+                AlertManager.showAlert(errorMessage + "!");
             }
         } catch (e:Error) {
             _logger.error("UI 还未起来");
