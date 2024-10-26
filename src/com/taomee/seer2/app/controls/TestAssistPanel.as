@@ -69,6 +69,9 @@ public class TestAssistPanel extends Sprite {
 
     private var _txtFilter:GlowFilter;
 
+
+    public static var DebugMode:Boolean = false;
+
     public function TestAssistPanel() {
         this._txtFilter = new GlowFilter(0, 1, 2, 2, 10, 1);
         super();
@@ -77,10 +80,11 @@ public class TestAssistPanel extends Sprite {
     }
 
     public static function show():void {
-        if (ClientConfig.isLocal)
+        //if (ClientConfig.isLocal)
+        if(DebugMode)
         {
             _instance.y = 0;
-            _instance.x = 276;
+            _instance.x = 280;
             LayerManager.topLayer.addChild(_instance);
         }
     }
@@ -168,7 +172,7 @@ public class TestAssistPanel extends Sprite {
         this._serverSim.x = 2;
         this._serverSim.y = 64;
         this._serverSim.mouseEnabled = true;
-        this._serverSim.text = "发送协议";
+        this._serverSim.text = "协议测试";
         addChild(this._serverSim);
         this._serverSim.addEventListener(MouseEvent.CLICK, this.onShowServer);
         this._serverIdTxt.addEventListener(KeyboardEvent.KEY_DOWN, this.onKeyDown);

@@ -204,6 +204,7 @@ public class ToolBar extends Sprite {
         this._mainUI["userUp"].addEventListener(MouseEvent.CLICK, onUserUp);
         TooltipManager.addCommonTip(this._mainUI["userUp"], "在线提问");
         this.readSound();
+        this.readRemote();
     }
 
     private function showSpringLess(param1:uint):void {
@@ -257,6 +258,16 @@ public class ToolBar extends Sprite {
         } else {
             _loc2_ = new SoundTransform(0);
             SoundMixer.soundTransform = _loc2_;
+        }
+    }
+
+    private function readRemote():void {
+        var _loc1_:SharedObject = SharedObjectManager.getUserSharedObject(SharedObjectManager.USER_SETTING);
+        if (_loc1_.data["remote"] == null || _loc1_.data["remote"] == 1) {
+            _loc1_.data["remote"] = 1;
+            ActorManager.showRemoteActor = true;
+        } else {
+            ActorManager.showRemoteActor = false;
         }
     }
 

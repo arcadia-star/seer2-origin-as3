@@ -20,8 +20,6 @@ import flash.text.TextFormat;
 
 import org.taomee.utils.Tick;
 
-import seer2.next.fight.auto.AutoFightPanel;
-
 public class ArenaLoadingBar extends Sprite {
 
 
@@ -87,9 +85,6 @@ public class ArenaLoadingBar extends Sprite {
         this._isLoaded = false;
         this.createChildren();
         this.addAnimationEventListener();
-        if(AutoFightPanel.isRunning) {
-            this._animation.gotoAndPlay(39);
-        }
     }
 
     private function createChildren():void {
@@ -293,11 +288,7 @@ public class ArenaLoadingBar extends Sprite {
         this.updateDigitalVec(this._digitalVec, param1);
         if (param1 == 100 && this._isLoaded == false) {
             this._isLoaded = true;
-            if(AutoFightPanel.isRunning) {
-                this._animation.gotoAndPlay(this._animation.totalFrames - 3);
-            }else{
-                this._animation.gotoAndPlay("vanish");
-            }
+            this._animation.gotoAndPlay("vanish");
             this._infoHolder.visible = false;
         }
     }
