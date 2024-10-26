@@ -2,7 +2,9 @@ package com.taomee.seer2.app.debugTools {
 import com.adobe.serialization.json.JSON;
 import com.greensock.TweenLite;
 import com.taomee.seer2.app.component.Combobox;
+import com.taomee.seer2.app.controls.TestAssistPanel;
 import com.taomee.seer2.app.dialog.NpcDialog;
+import com.taomee.seer2.app.net.ErrorMap;
 import com.taomee.seer2.app.popup.AlertManager;
 import com.taomee.seer2.app.processor.activity.npcPosHandle.NpcPosHandle;
 import com.taomee.seer2.app.utils.ActsHelperUtil;
@@ -271,6 +273,13 @@ public class JumpTestNpcPanel extends Sprite {
     private function onPanelJumpBtn(param1:MouseEvent):void {
         var _loc2_:URLVariables = null;
         var _loc3_:int = 0;
+        if(this._panelCombobox.editorTxt == "DEBUG_ON"){
+            this.DEBUGMODE(true);
+            return;
+        }else if(this._panelCombobox.editorTxt == "DEBUG_OFF"){
+            this.DEBUGMODE(false);
+            return;
+        }
         if (this._panelCombobox.editorTxt != "") {
             ModuleManager.showAppModule(this._panelCombobox.editorTxt);
             if (this._panelItemArr.indexOf(this._panelCombobox.editorTxt) != 0) {
@@ -293,6 +302,16 @@ public class JumpTestNpcPanel extends Sprite {
         if (this._mapIdTxt.text != "") {
             ActsHelperUtil.goHandle(int(this._mapIdTxt.text));
             this.addPanelItem(this._panelCombobox.editorTxt);
+        }
+    }
+
+    private function DEBUGMODE(param1:Boolean = false):void {
+        TestAssistPanel.DebugMode = param1;
+        ErrorMap.DebugMode = param1;
+        if(param1) {
+            TestAssistPanel.show();
+        }else{
+             TestAssistPanel.hide();
         }
     }
 

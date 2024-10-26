@@ -102,24 +102,45 @@ public class ImagePanel {
         }
     }
 
+    private static function writeRemoteCookie(param1:Boolean):void {
+        var _loc2_:SharedObject = SharedObjectManager.getUserSharedObject(SharedObjectManager.USER_SETTING);
+        _loc2_.data["remote"] = param1 ? 1 : 0;
+        SharedObjectManager.flush(_loc2_);
+        if (param1) {
+            _remoteOnBtn.gotoAndStop(2);
+            _remoteOffBtn.gotoAndStop(1);
+        } else {
+            _remoteOnBtn.gotoAndStop(1);
+            _remoteOffBtn.gotoAndStop(2);
+        }
+    }
+
     private static function initRemote():void {
         _remoteOnBtn = _mc["remoteOnBtn"];
         _remoteOffBtn = _mc["remoteOffBtn"];
         _remoteOnBtn.buttonMode = true;
         _remoteOffBtn.buttonMode = true;
-        updateRemote();
+        var _loc1_:SharedObject = SharedObjectManager.getUserSharedObject(SharedObjectManager.USER_SETTING);
+        if (_loc1_.data["remote"] == null || _loc1_.data["remote"] == 1) {
+            _loc1_.data["remote"] = 1;
+            _remoteOnBtn.gotoAndStop(2);
+            _remoteOffBtn.gotoAndStop(1);
+        } else {
+            _remoteOnBtn.gotoAndStop(1);
+            _remoteOffBtn.gotoAndStop(2);
+        }
         _remoteOnBtn.addEventListener(MouseEvent.CLICK, onRemoteOn);
         _remoteOffBtn.addEventListener(MouseEvent.CLICK, onRemoteOff);
     }
 
     private static function onRemoteOn(param1:MouseEvent):void {
         actorManagetClass.showRemoteActor = true;
-        updateRemote();
+        writeRemoteCookie(true);
     }
 
     private static function onRemoteOff(param1:MouseEvent):void {
         actorManagetClass.showRemoteActor = false;
-        updateRemote();
+        writeRemoteCookie(false);
     }
 
     private static function updateRemote():void {
