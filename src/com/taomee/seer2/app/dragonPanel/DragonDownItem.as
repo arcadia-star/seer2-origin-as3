@@ -62,7 +62,7 @@ public class DragonDownItem extends Sprite {
             case 5:
                 this._mainMC.y = 10;
         }
-        this._tweenMax.paused(true);
+        this._tweenMax.paused = true;
         this._setTimeout = setTimeout(this.timeOut, 1100);
     }
 
@@ -74,7 +74,7 @@ public class DragonDownItem extends Sprite {
     }
 
     public function dispose():void {
-        this._tweenMax.paused(true);
+        this._tweenMax.paused = true;
         DisplayUtil.removeForParent(this._mainMC);
         clearTimeout(this._setTimeout);
     }
