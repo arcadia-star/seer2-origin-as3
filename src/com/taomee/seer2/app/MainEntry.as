@@ -46,6 +46,7 @@ import com.taomee.seer2.core.utils.URLUtil;
 import flash.display.Sprite;
 import flash.events.ContextMenuEvent;
 import flash.events.Event;
+import flash.events.EventDispatcher;
 import flash.events.IOErrorEvent;
 import flash.events.SecurityErrorEvent;
 import flash.ui.ContextMenuItem;
@@ -77,6 +78,8 @@ public class MainEntry {
 
     private var _bg:Sprite;
 
+    public static var eventDispatcher:EventDispatcher = new EventDispatcher;
+
     public function MainEntry() {
         super();
     }
@@ -93,9 +96,15 @@ public class MainEntry {
         VersionManager.setup(param2);
     }
 
+    public function get dispatcher():EventDispatcher
+    {
+        return eventDispatcher;
+    }
+
     public function initialize(param1:Sprite, param2:Object):void {
         DynConfig.mainEntry = this;
         DynConfig.loadConfigCallback(function ():void {
+            eventDispatcher.dispatchEvent(new Event("DLL_XML_LOAD_COMPLETE"));
             initialize1(param1, param2);
         });
     }
