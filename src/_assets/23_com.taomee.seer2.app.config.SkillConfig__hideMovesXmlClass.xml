@@ -138,7 +138,7 @@
         <HideMove ID="10436" Tips="战斗开始第1回合击败对手"/>
         <HideMove ID="10437" Tips="自己处于能力提升状态时击败不低于60级的对手"/>
         <HideMove ID="10446" Tips="在试炼之战普通模式中获得10次胜利"/>
-        <HideMove ID="10447" Tips="在勇士之战普通模式中获得5次胜利"/>
+        <HideMove ID="10447" Tips="在勇士之门普通模式中获得5次胜利"/>
         <HideMove ID="10448" Tips="自己物攻和特攻都强化到6级后战胜不低于60级的对手"/>
         <HideMove ID="10449" Tips="使用极速火环击败对手30次"/>
         <HideMove ID="10385" Tips="获得50场战斗胜利"/>
@@ -436,7 +436,7 @@
         <HideMove ID="11435" Tips="使用伊特领域30次"/>
         <HideMove ID="11436" Tips="一次战斗中先使用伊特领域再使用另一种领域后击败不低于60级的对手"/>
         <HideMove ID="11437" Tips="获得50场战斗胜利"/>
-        <HideMove ID="11438" Tips="使用战狂闪空破击败对手50次"/>
+        <HideMove ID="11438" Tips="使用战狂闪空破击败对手30次"/>
         <HideMove ID="11478" Tips="使用偷袭击败对手30次"/>
         <HideMove ID="11479" Tips="获得50场战斗胜利"/>
         <HideMove ID="11480" Tips="使用憋气30次"/>
@@ -530,7 +530,7 @@
         <HideMove ID="11799" Tips="使用万圣前奏30次"/>
         <HideMove ID="11800" Tips="使用南瓜诅咒30次"/>
         <HideMove ID="11801" Tips="自己处于能力下降状态时击败对手"/>
-        <HideMove ID="11802" Tips="使用万圣狂欢宴胜利20次"/>
+        <HideMove ID="11802" Tips="使用万圣狂欢宴胜利30次"/>
         <HideMove ID="11814" Tips="使用添加橡胶和弹力加成各30次"/>
         <HideMove ID="11815" Tips="使用灵巧攻击击败对手30次"/>
         <HideMove ID="11816" Tips="使用治愈橡胶30次"/>
@@ -927,7 +927,7 @@
         <HideMove ID="13506" Tips="在自己满血状态下战胜不低于60级的精灵"/>
         <HideMove ID="13507" Tips="使用神之隐袭击败对手30次"/>
         <HideMove ID="13508" Tips="使用神之瞬击击败对手20次"/>
-        <HideMove ID="13509" Tips="使用必杀技击败不低于60级的对手20次"/>
+        <HideMove ID="13509" Tips="使用必杀技击败不低于60级的对手10次"/>
         <HideMove ID="13521" Tips="在一场10回合的战斗中获得胜利"/>
         <HideMove ID="13522" Tips="使用猎杀击败对手30次"/>
         <HideMove ID="13523" Tips="使用搏斗击败对手30次"/>
@@ -1290,7 +1290,7 @@
         <HideMove ID="15109" Tips="对手处于能力下降状态时击败对手"/>
         <HideMove ID="15110" Tips="经历80次战斗"/>
         <HideMove ID="15122" Tips="获得50场战斗胜利"/>
-        <HideMove ID="15123" Tips="对手处于能力下降状态时击败对手"/>
+        <HideMove ID="15123" Tips="经历80次战斗"/>
         <HideMove ID="15124" Tips="在一场10回合的战斗中获得胜利"/>
         <HideMove ID="15125" Tips="对手处于能力下降状态时击败对手"/>
         <HideMove ID="15139" Tips="获得50场战斗胜利"/>
@@ -2422,7 +2422,7 @@
         <!--碧珞-->
         <HideMove ID="18887" Tips="装备北冥纹章获得50场战斗胜利"/>
         <HideMove ID="18888" Tips="获得50场战斗胜利"/>
-        <HideMove ID="18889" Tips="经历80次战斗"/>
+        <HideMove ID="18889" Tips="经历60次战斗"/>
         <HideMove ID="18890" Tips="装备北冥纹章获得80场战斗胜利"/>
 
         <!--圣武缚灵-->

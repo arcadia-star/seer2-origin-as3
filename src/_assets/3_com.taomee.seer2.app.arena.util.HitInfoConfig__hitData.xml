@@ -9,16 +9,16 @@
 
 <fighters>
     <!-- physics:物理攻击 attribute:属性攻击 special:特殊攻击 critical:必杀攻击 fit:合体攻击 -->
-    <fighter id='1' physics='28' attribute='63' special='43' critical='0' fit='0'/>
+    <fighter id='1' physics='28' attribute='63' special='43' critical='90' fit='113'/>
     <fighter id='2' physics='43' attribute='38' special='27' critical='0' fit='0'/>
     <fighter id='3' physics="21" attribute="17" special="20" critical="22" fit="191"/>
-    <fighter id='4' physics='33' attribute='19' special='17' critical='0' fit='0'/>
+    <fighter id='4' physics='33' attribute='19' special='17' critical='65' fit='113'/>
     <fighter id='5' physics='28' attribute='17' special='16' critical='0' fit='0'/>
     <fighter id='6' physics='53' attribute='15' special='38' critical='14' fit='191'/>
-    <fighter id='7' physics='46' attribute='16' special='23' critical='0' fit='0'/>
+    <fighter id='7' physics='46' attribute='16' special='23' critical='95' fit='113'/>
     <fighter id='8' physics='57' attribute='15' special='21' critical='0' fit='0'/>
     <fighter id='9' physics='18' attribute='39' special='27' critical='77' fit='191'/>
-    <fighter id='10' physics='23' attribute='23' special='19' critical='0' fit='0'/>
+    <fighter id='10' physics='0' attribute='0' special='0' critical='0' fit='0'/>
     <fighter id='11' physics='20' attribute='36' special='59' critical='0' fit='0'/>
     <fighter id='12' physics='35' attribute='64' special='78' critical='27' fit='0'/>
     <fighter id='13' physics='25' attribute='22' special='22' critical='0' fit='0'/>
@@ -99,7 +99,7 @@
     <fighter id='88' physics='63' attribute='23' special='40' critical='0' fit='0'/>
     <fighter id='89' physics='56' attribute='17' special='34' critical='108' fit='0'/>
     <fighter id='90' physics='23' attribute='35' special='77' critical='169' fit='90'/>
-    <fighter id='91' physics='36' attribute='35' special='60' critical='0' fit='0'/>
+    <fighter id='91' physics='36' attribute='35' special='60' critical='108' fit='108'/>
     <fighter id='92' physics='61' attribute='14' special='33' critical='96' fit='199'/>
     <fighter id='93' physics='51' attribute='14' special='59' critical='94' fit='199'/>
     <fighter id='94' physics='75' attribute='16' special='52' critical='95' fit='199'/>
@@ -402,7 +402,7 @@
     <fighter id='391' physics='36' attribute='34' special='43' critical='110' fit='0'/>
     <fighter id='392' physics='21' attribute='28' special='35' critical='0' fit='0'/>
     <fighter id='393' physics='25' attribute='21' special='29' critical='0' fit='0'/>
-    <fighter id='394' physics='25' attribute='25' special='35' critical='155' fit='0'/>
+    <fighter id='394' physics='25' attribute='25' special='28' critical='57' fit='0'/>
     <fighter id='395' physics='31' attribute='27' special='37' critical='52' fit='0'/>
     <fighter id='396' physics='33' attribute='38' special='33' critical='39' fit='0'/>
     <fighter id='397' physics='16' attribute='10' special='21' critical='0' fit='0'/>
@@ -584,7 +584,7 @@
     <fighter id='615' physics='30' attribute='42' special='42' critical='85' fit='0'/>
     <fighter id='616' physics='26' attribute='8' special='29' critical='0' fit='0'/>
     <fighter id='617' physics='28' attribute='14' special='20' critical='19' fit='0'/>
-    <fighter id='618' physics='25' attribute='25' special='26' critical='90' fit='0'/>
+    <fighter id='618' physics='25' attribute='45' special='20' critical='80' fit='225'/>
     <fighter id='619' physics='27' attribute='28' special='31' critical='0' fit='0'/>
     <fighter id='620' physics='29' attribute='30' special='23' critical='42' fit='0'/>
     <fighter id='621' physics='29' attribute='28' special='28' critical='0' fit='0'/>
@@ -598,7 +598,7 @@
     <fighter id='629' physics='30' attribute='24' special='26' critical='42' fit='0'/>
     <fighter id='630' physics='54' attribute='34' special='59' critical='77' fit='0'/>
     <fighter id='631' physics='28' attribute='32' special='41' critical='72' fit='0'/>
-    <fighter id='632' physics='39' attribute='28' special='51' critical='70' fit='0'/>
+    <fighter id='632' physics='35' attribute='25' special='50' critical='100' fit='225'/>
     <!--<No pet '633'~'635'(我不知道为什么)>-->
     <fighter id='633' physics='36' attribute='28' special='39' critical='52' fit='0'/>
     <fighter id='634' physics='24' attribute='26' special='30' critical='0' fit='0'/>
@@ -607,7 +607,7 @@
     <fighter id='637' physics='20' attribute='31' special='23' critical='0' fit='0'/>
     <fighter id='638' physics='27' attribute='24' special='30' critical='61' fit='0'/>
     <!--<No pet '639'>-->
-    <fighter id='640' physics='33' attribute='25' special='25' critical='98' fit='0'/>
+    <fighter id='640' physics='25' attribute='35' special='40' critical='75' fit='225'/>
     <fighter id='641' physics='38' attribute='39' special='33' critical='61' fit='0'/>
     <fighter id='642' physics='33' attribute='10' special='13' critical='13' fit='0'/>
     <fighter id='643' physics='28' attribute='24' special='36' critical='0' fit='0'/>
@@ -820,7 +820,7 @@
     <fighter id='852' physics='26' attribute='27' special='45' critical='92' fit='0'/>
     <fighter id='853' physics='17' attribute='16' special='38' critical='17' fit='0'/>
     <fighter id='854' physics='60' attribute='11' special='54' critical='98' fit='0'/>
-    <fighter id='855' physics='26' attribute='13' special='4' critical='26' fit='0'/>
+    <fighter id='855' physics='50' attribute='20' special='63' critical='135' fit='135'/>
     <fighter id='856' physics='20' attribute='13' special='27' critical='26' fit='0'/>
     <fighter id='857' physics='19' attribute='13' special='28' critical='19' fit='0'/>
     <fighter id='858' physics='25' attribute='14' special='20' critical='21' fit='0'/>
@@ -958,7 +958,7 @@
     <fighter id='2516' physics='23' attribute='14' special='37' critical='84' fit='0'/>
     <fighter id='2517' physics='29' attribute='14' special='50' critical='64' fit='0'/>
     <fighter id='2518' physics='27' attribute='7' special='33' critical='60' fit='25'/>
-    <fighter id='2519' physics='27' attribute='20' special='32' critical='40' fit='0'/>
+    <fighter id='2519' physics='31' attribute='20' special='42' critical='85' fit='0'/>
     <fighter id='2520' physics='28' attribute='13' special='20' critical='51' fit='0'/>
     <fighter id='2521' physics='38' attribute='14' special='25' critical='55' fit='0'/>
     <fighter id='2522' physics='15' attribute='13' special='29' critical='40' fit='0'/>
@@ -1008,6 +1008,9 @@
     <fighter id='2566' physics='32' attribute='18' special='36' critical='96' fit='0'/>
     <fighter id='2567' physics='35' attribute='12' special='28' critical='35' fit='0'/>
     <fighter id='2568' physics='49' attribute='36' special='24' critical='79' fit='0'/>
+
+    <fighter id='2610' physics='86' attribute='39' special='44' critical='227' fit='0'/>
+    <fighter id='2619' physics='31' attribute='20' special='42' critical='85' fit='0'/>
     <!--<No pet '2569'>-->
     <fighter id='2570' physics='25' attribute='13' special='38' critical='80' fit='0'/>
     <fighter id='2571' physics='24' attribute='14' special='39' critical='71' fit='0'/>
@@ -1641,6 +1644,7 @@
     <fighter id='2995' physics='30' attribute='18' special='35' critical='0' fit='0'/>
     <fighter id='2996' physics='39' attribute='34' special='24' critical='0' fit='0'/>
     <fighter id='2997' physics='34' attribute='38' special='55' critical='0' fit='0'/>
+    <!--<id 10000后的都是皮肤>-->
     <fighter id='10098' physics='29' attribute='35' special='47' critical='47' fit='178'/>
     <fighter id='10105' physics='30' attribute='35' special='44' critical='74' fit='131'/>
     <fighter id='10301' physics='18' attribute='9' special='44' critical='30' fit='0'/>
@@ -1677,6 +1681,19 @@
     <fighter id='10735' physics='48' attribute='29' special='63' critical='100' fit='0'/>
     <fighter id='12596' physics='18' attribute='13' special='13' critical='13' fit='0'/>
     <fighter id='10141' physics='10' attribute='30' special='45' critical='97' fit='0'/>
+    <fighter id='10618' physics='25' attribute='25' special='26' critical='90' fit='0'/>
+    <fighter id='10632' physics='39' attribute='28' special='51' critical='70' fit='0'/>
+    <fighter id='10640' physics='33' attribute='25' special='25' critical='98' fit='0'/>
+    <fighter id='10221' physics='25' attribute='21' special='20' critical='55' fit='0'/>
+    <fighter id='12519' physics='27' attribute='20' special='32' critical='40' fit='0'/>
+    <fighter id='32558' physics='30' attribute='20' special='45' critical='56' fit='56'/>
+    <fighter id='12998' physics='58' attribute='26' special='50' critical='68' fit='68'/>
+    <fighter id='10205' physics='45' attribute='25' special='25' critical='80' fit='0'/>
+    <fighter id='10207' physics='35' attribute='20' special='30' critical='70' fit='0'/>
+    <fighter id='13437' physics='104' attribute='30' special='42' critical='82' fit='0'/>
+    <fighter id='10855' physics='55' attribute='20' special='80' critical='127' fit='127'/>
+    <fighter id='42558' physics='210' attribute='40' special='105' critical='210' fit='210'/>
+    <fighter id='12980' physics='60' attribute='12' special='22' critical='60' fit='60'/>
 </fighters>
 
         <!--  <fighter id='PETID' physics='41' attribute='26' special='45' critical='39' fit='64' /> -->

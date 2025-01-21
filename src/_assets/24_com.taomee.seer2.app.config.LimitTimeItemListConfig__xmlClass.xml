@@ -1,0 +1,69 @@
+<!-- limitCount=        д          -->
+<!-- prevPrice  ԭ ۣ -->
+<!-- currPrice   ּۣ -->
+<root>
+    <title time="2015年9月25日18:00——10月15日18:00"/>
+
+    <item id="801072" startTime="2015_09_25_18_00" endTime="2015_10_15_18_00" currPrice="180" prevPrice="46.4"
+          shopId="510088"/>
+    <item id="605665" startTime="2015_09_25_18_00" endTime="2015_10_15_18_00" currPrice="126" prevPrice="3.5"
+          shopId="510072"/>
+    <item id="605669" startTime="2015_09_25_18_00" endTime="2015_10_15_18_00" currPrice="128" prevPrice="15"
+          shopId="510384"/>
+    <item id="604154" startTime="2015_09_25_18_00" endTime="2015_10_15_18_00" currPrice="6" prevPrice="0"
+          shopId="510065"/>
+    <item id="604155" startTime="2015_09_25_18_00" endTime="2015_10_15_18_00" currPrice="20" prevPrice="0"
+          shopId="510066"/>
+    <item id="604156" startTime="2015_09_25_18_00" endTime="2015_10_15_18_00" currPrice="20" prevPrice="0"
+          shopId="510204"/>
+    <item id="604157" startTime="2015_09_25_18_00" endTime="2015_10_15_18_00" currPrice="30" prevPrice="0"
+          shopId="510735"/>
+    <item id="401262" startTime="2015_09_25_18_00" endTime="2015_10_15_18_00" currPrice="0.1" prevPrice="0"
+          shopId="510088"/>
+    <item id="606004" startTime="2015_09_25_18_00" endTime="2015_10_15_18_00" currPrice="18" prevPrice="9"
+          shopId="510088"/>
+    <item id="401205" startTime="2015_09_25_18_00" endTime="2015_10_15_18_00" currPrice="68" prevPrice="34"
+          shopId="510088"/>
+    <item id="203254" startTime="2015_09_25_18_00" endTime="2015_10_15_18_00" currPrice="40" prevPrice="10"
+          shopId="510088"/>
+    <item id="606781" startTime="2015_09_25_18_00" endTime="2015_10_15_18_00" currPrice="177.4" prevPrice="99.9"
+          shopId="510088"/>
+    <item id="200063" startTime="2015_09_25_18_00" endTime="2015_10_15_18_00" currPrice="15" prevPrice="5"
+          shopId="510088"/>
+    <item id="200467" startTime="2015_09_25_18_00" endTime="2015_10_15_18_00" currPrice="15" prevPrice="5"
+          shopId="510088"/>
+    <item id="200468" startTime="2015_09_25_18_00" endTime="2015_10_15_18_00" currPrice="15" prevPrice="5"
+          shopId="510088"/>
+    <item id="200469" startTime="2015_09_25_18_00" endTime="2015_10_15_18_00" currPrice="15" prevPrice="5"
+          shopId="510088"/>
+    <item id="200470" startTime="2015_09_25_18_00" endTime="2015_10_15_18_00" currPrice="15" prevPrice="5"
+          shopId="510088"/>
+    <item id="200471" startTime="2015_09_25_18_00" endTime="2015_10_15_18_00" currPrice="15" prevPrice="5"
+          shopId="510088"/>
+    <item id="200031" startTime="2015_09_25_18_00" endTime="2015_10_15_18_00" currPrice="15" prevPrice="5"
+          shopId="510088"/>
+    <item id="202013" startTime="2015_09_25_18_00" endTime="2015_10_15_18_00" currPrice="15" prevPrice="5"
+          shopId="510088"/>
+    <item id="202014" startTime="2015_09_25_18_00" endTime="2015_10_15_18_00" currPrice="15" prevPrice="5"
+          shopId="510088"/>
+    <item id="202015" startTime="2015_09_25_18_00" endTime="2015_10_15_18_00" currPrice="15" prevPrice="5"
+          shopId="510088"/>
+    <item id="202016" startTime="2015_09_25_18_00" endTime="2015_10_15_18_00" currPrice="15" prevPrice="5"
+          shopId="510088"/>
+    <item id="202017" startTime="2015_09_25_18_00" endTime="2015_10_15_18_00" currPrice="15" prevPrice="5"
+          shopId="510088"/>
+    <item id="202018" startTime="2015_09_25_18_00" endTime="2015_10_15_18_00" currPrice="15" prevPrice="5"
+          shopId="510088"/>
+    <item id="200483" startTime="2015_09_25_18_00" endTime="2015_10_15_18_00" currPrice="15" prevPrice="5"
+          shopId="510088"/>
+    <item id="200485" startTime="2015_09_25_18_00" endTime="2015_10_15_18_00" currPrice="15" prevPrice="5"
+          shopId="510088"/>
+    <item id="200020" startTime="2015_09_25_18_00" endTime="2015_10_15_18_00" currPrice="15" prevPrice="5"
+          shopId="510088"/>
+    <item id="200026" startTime="2015_09_25_18_00" endTime="2015_10_15_18_00" currPrice="15" prevPrice="5"
+          shopId="510088"/>
+    <item id="200039" startTime="2015_09_25_18_00" endTime="2015_10_15_18_00" currPrice="15" prevPrice="5"
+          shopId="510088"/>
+
+
+</root>

@@ -1,0 +1,1308 @@
+<!-- 采矿配置表 -->
+<!-- Item表示采矿点，ID采矿点编号，out_num表示每个矿点可以产出x～y个矿石，max表示每个矿点可以采集x次/天, DayLimitType是数据库中每天限制的TYPE值，condition表示是否有前提条件，1表示有，0表示没有，默认为0 -->
+<!-- CheckCond, 表示需要满足condition_flag对应bit为1的条件-->
+<!-- ClearCond, 表示需要清理的标志位,condition_flag对应的bit-->
+<!-- Ore 表示采矿点产出的矿， Item id此采矿点可能产的矿，rate出此矿石的机率（Ore下的所有Item rate加起来和应为10），count为一次出几个矿，默认为1，如需改变，请自行添加此字段count=“x”-->
+<!-- OnlySrvUse 表示此配置项只能服务器获得，cli不能通过mine协议获得。 不填默认为0, 1表示项只能服务器获得 -->
+<!-- TypeCheckFun 表示需校验的函数指针的数组下标-->
+<!-- Flag 0表示是物品，1表示是特殊事件，2表示是精灵，3表示不是物品 -->
+<!--  NumDoSomethingFun 表示特殊处理某些东西的函数指针的数组下标 (目前只有在rand_event)  --> 
+<!--Type 1表示是采矿-->
+<!--RandTimes表示随机的次数，并且保证每次随机的下标不一样-->
+<!--ItemDoFunIndex对物品需要特殊处理的函数指针下标 -->
+<!--  CheckTime 表示需要校验的时间表中的编号 --> 
+
+<Mine>
+	<Item ID="1" name="红色矿点" out_num="2 4" max="3" DayLimitType="4" Type = "1" >
+	<Ore>
+		<Item id="400001" rate="60" />
+		<Item id="400002" rate="40" />
+	</Ore>
+	</Item>
+	<Item ID="2" name="黄色矿点" out_num="2 4" max="3" DayLimitType="5" Type = "1" >
+		<Ore>
+		<Item id="400001" rate="30" />
+		<Item id="400003" rate="70" />
+		</Ore>
+	</Item>
+	<Item ID="3" name="绿色矿点" out_num="2 4" max="3" DayLimitType="6" Type = "1" >
+	<Ore>
+		<Item id="400003" rate="50" />
+		<Item id="400004" rate="50" />
+		</Ore>
+	</Item>
+	<Item ID="4" name="蓝色矿点" out_num="2 4" max="3" DayLimitType="7" Type = "1" >
+	<Ore>
+		<Item id="400004" rate="70" />
+		<Item id="400005" rate="30" />
+		</Ore>
+	</Item>
+	<Item ID="5" name="绿色矿点" out_num="2 4" max="3" DayLimitType="8" Type = "1" >
+	<Ore>
+		<Item id="400003" rate="50" />
+		<Item id="400004" rate="50" />
+	</Ore>
+	</Item>
+	<Item ID="6" name="黄色矿点" out_num="2 4" max="3" DayLimitType="9" Type = "1" >
+		<Ore>
+		<Item id="400001" rate="30" />
+		<Item id="400003" rate="70" />
+		</Ore>
+	</Item>
+	<Item ID="7" name="红色矿点" out_num="2 4" max="3" DayLimitType="10" Type = "1" >
+	<Ore>
+		<Item id="400001" rate="60" />
+		<Item id="400002" rate="40" />
+	</Ore>
+	</Item>
+	<Item ID="8" name="蓝色矿点" out_num="2 4" max="3" DayLimitType="11" Type = "1" >
+	<Ore>
+		<Item id="400004" rate="70" />
+		<Item id="400005" rate="30" />
+	</Ore>
+	</Item>
+	<Item ID="9" name="红色矿点" out_num="2 4" max="3" DayLimitType="31" Type = "1" >
+	<Ore>
+		<Item id="400001" rate="60" />
+		<Item id="400002" rate="40" />
+	</Ore>
+	</Item>
+	<Item ID="10" name="黄色矿点" out_num="2 4" max="3" DayLimitType="32" Type = "1" >
+		<Ore>
+		<Item id="400001" rate="30" />
+		<Item id="400003" rate="70" />
+		</Ore>
+	</Item>
+	<Item ID="11" name="点击宝藏开启礼物" out_num="1 1" max="3" DayLimitType="58">
+		<Ore>
+		<Item id="400001" rate="5" />
+		<Item id="400002" rate="5" />
+		<Item id="400003" rate="5" />
+		<Item id="400004" rate="5" />
+		<Item id="400005" rate="5" />
+		<Item id="400006" rate="5" />
+		<Item id="400007" rate="5" />
+		<Item id="400008" rate="4" />
+		<Item id="400009" rate="4" />
+		<Item id="400010" rate="5" />
+		<Item id="400011" rate="5" />
+		<Item id="400012" rate="4" />
+		<Item id="400013" rate="5" />
+		<Item id="400014" rate="5" />
+		<Item id="400015" rate="5" />
+		<Item id="400016" rate="5" />
+		<Item id="400017" rate="5" />
+		<Item id="400018" rate="5" />
+		<Item id="400019" rate="5" />
+		<Item id="400020" rate="5" />
+		<Item id="400024" rate="3" />
+		</Ore>
+	</Item> 
+	<Item ID="12" name="巡演活动在烈焰峡谷发送礼物" out_num="1 1" max="30" DayLimitType="60">
+		<Ore>
+			<Item id="13" rate="10" />
+			<Item id="200211" rate="20" />
+			<Item id="200212" rate="10" />
+			<Item id="400101" rate="40" />
+			<Item id="200011" rate="7" />
+			<Item id="200012" rate="5" />
+			<Item id="200001" rate="5" />
+			<Item id="200002" rate="2" />
+			<Item id="200003" rate="1" />
+		</Ore>
+		<Time>
+			<TM DateStart="20110917" DateEnd="20110918" TimeStart="16 0" TimeEnd="17 0" />
+		</Time>
+	</Item>
+	<Item ID="13" name="巡演活动在赤炼山脉发送礼物" out_num="1 1" max="30" DayLimitType="61">
+		<Ore>
+			<Item id="13" rate="10" />
+			<Item id="200211" rate="20" />
+			<Item id="200212" rate="10" />
+			<Item id="400101" rate="40" />
+			<Item id="200011" rate="7" />
+			<Item id="200012" rate="5" />
+			<Item id="200001" rate="5" />
+			<Item id="200002" rate="2" />
+			<Item id="200003" rate="1" />
+		</Ore>
+		<Time>
+			<TM DateStart="20110917" DateEnd="20110918" TimeStart="16 0" TimeEnd="17 0" />
+		</Time>
+	</Item>
+	<Item ID="14" name="巡演活动在蛮神战场发送礼物" out_num="1 1" max="30" DayLimitType="62">
+		<Ore>
+			<Item id="13" rate="10" />
+			<Item id="200211" rate="20" />
+			<Item id="200212" rate="10" />
+			<Item id="400101" rate="40" />
+			<Item id="200011" rate="7" />
+			<Item id="200012" rate="5" />
+			<Item id="200001" rate="5" />
+			<Item id="200002" rate="2" />
+			<Item id="200003" rate="1" />
+		</Ore>
+		<Time>
+			<TM DateStart="20110917" DateEnd="20110918" TimeStart="16 0" TimeEnd="17 0" />
+		</Time>
+	</Item>
+	<Item ID="15" name="巡演活动在火系氏族主城发送礼物" out_num="1 1" max="30" DayLimitType="63">
+		<Ore>
+			<Item id="13" rate="10" />
+			<Item id="200211" rate="20" />
+			<Item id="200212" rate="10" />
+			<Item id="400101" rate="40" />
+			<Item id="200011" rate="7" />
+			<Item id="200012" rate="5" />
+			<Item id="200001" rate="5" />
+			<Item id="200002" rate="2" />
+			<Item id="200003" rate="1" />
+		</Ore>
+		<Time>
+			<TM DateStart="20110917" DateEnd="20110918" TimeStart="16 0" TimeEnd="17 0" />
+		</Time>
+	</Item>
+	<Item ID="16" name="巡演活动在灰烬之地发送礼物" out_num="1 1" max="30" DayLimitType="64">
+		<Ore>
+			<Item id="13" rate="10" />
+			<Item id="200211" rate="20" />
+			<Item id="200212" rate="10" />
+			<Item id="400101" rate="40" />
+			<Item id="200011" rate="7" />
+			<Item id="200012" rate="5" />
+			<Item id="200001" rate="5" />
+			<Item id="200002" rate="2" />
+			<Item id="200003" rate="1" />
+		</Ore>
+		<Time>
+			<TM DateStart="20110917" DateEnd="20110918" TimeStart="16 0" TimeEnd="17 0" />
+		</Time>
+	</Item>
+	<Item ID="17" name="巡演活动在灰烬岔口发送礼物" out_num="1 1" max="30" DayLimitType="65">
+		<Ore>
+			<Item id="13" rate="10" />
+			<Item id="200211" rate="20" />
+			<Item id="200212" rate="10" />
+			<Item id="400101" rate="40" />
+			<Item id="200011" rate="7" />
+			<Item id="200012" rate="5" />
+			<Item id="200001" rate="5" />
+			<Item id="200002" rate="2" />
+			<Item id="200003" rate="1" />
+		</Ore>
+		<Time>
+			<TM DateStart="20110917" DateEnd="20110918" TimeStart="16 0" TimeEnd="17 0" />
+		</Time>
+	</Item>
+	<Item ID="18" name="贪食者格尔西克" out_num="1 1" CheckCond="1" ClearCond = "1" >
+		<Ore>
+			<Item id="13" rate="10" />
+			<Item id="400017" rate="15" />
+			<Item id="400002" rate="15" />
+			<Item id="400006" rate="15" />
+			<Item id="400008" rate="15" />
+			<Item id="400012" rate="15" />
+			<Item id="200001" rate="7" />
+			<Item id="200002" rate="5" />
+			<Item id="200003" rate="3" />
+		</Ore>
+	</Item>
+	<Item ID="19" name="M5对战奖励" out_num="1 1" CheckCond="4" ClearCond="2 3 4">
+		<Ore>
+			<Item id="400101" rate="30" />
+			<Item id="400101" count="3" rate="25" />
+			<Item id="400101" count="5" rate="15" />
+			<Item id="200011" rate="10" />
+			<Item id="200012" rate="6" />
+			<Item id="200001" rate="6" />
+			<Item id="200002" rate="5" />
+			<Item id="200003" rate="3" />
+		</Ore>
+	</Item>
+	<Item ID="20" name="捣蛋反攻战(宝箱1)" out_num="1 1" TypeCheckFun = "1" >
+		<Ore>
+			<Item id="200001" count="2" rate="30" />
+			<Item id="1" count="200" rate="30" />
+			<Item id="1" count="300" rate="20" />
+			<Item id="200013" rate="20" />
+		</Ore>
+	</Item>
+	<Item ID="21" name="捣蛋反攻战(宝箱2)" out_num="1 1" TypeCheckFun = "1" >
+		<Ore>
+			<Item id="200013" rate="30" />
+			<Item id="1" count="300" rate="30" />
+			<Item id="1" count="400" rate="20" />
+			<Item id="200002" rate="20" />
+		</Ore>
+	</Item>
+	<Item ID="22" name="捣蛋反攻战(宝箱3)" out_num="1 1" TypeCheckFun = "1" >
+		<Ore>
+			<Item id="400204" rate="10" OnlyFlagIndex = "154" />
+			<Item id="400204" rate="10" OnlyFlagIndex = "155" />
+			<Item id="400205" count="10" rate="20" />
+			<Item id="400205" count="20" rate="25" />
+			<Item id="400205" count="30" rate="25" />
+			<Item id="200221" rate="10" DayMax = "3" DayLimitType = "174" />
+		</Ore>
+	</Item>
+	<!-- <Item ID="25" name="小屋日常抽奖" out_num="1 1" OnlySrvUse="1" >
+		<Ores>
+			<Items rate = "50">
+				<Item id="1" count="100"/>
+			</Items>
+			<Items rate = "20">
+				<Item id="200001" count="1"/>
+			</Items>
+			<Items rate = "5">
+				<Item id="200002" count="1"/>
+			</Items>	
+			<Items rate = "5">
+				<Item id="200003" count="1"/>
+			</Items>	
+			<Items rate = "5">
+				<Item id="1" count="100"/>
+				<Item id="200001" count="1"/>
+			</Items>
+			<Items rate = "3">
+				<Item id="1" count="100"/>
+				<Item id="200002" count="1"/>
+			</Items>
+			<Items rate = "2">
+				<Item id="1" count="100"/>
+				<Item id="200003" count="1"/>
+			</Items>	
+			<Items rate = "5">
+				<Item id="1" count="100"/>
+				<Item id="200001" count="1"/>
+				<Item id="200213" count="1"/>
+			</Items>
+			<Items rate = "3">
+				<Item id="1" count="100"/>
+				<Item id="200002" count="1"/>
+				<Item id="200213" count="1"/>
+			</Items>
+			<Items rate = "2">
+				<Item id="1" count="100"/>
+				<Item id="200003" count="1"/>
+				<Item id="200213" count="1"/>
+			</Items>
+		</Ores>
+	</Item> -->
+	<Item ID="26" name="稀有精灵:爆炸头" out_num="1 1"  >
+		<delOre>
+			<Item id = "400210" count = "1" />
+		</delOre>
+		<Ore>
+			<Item id="16" count = "3" rate="30"  />
+			<Item id="16" count = "5" rate="50" />
+			<Item id="16" count = "7" rate="20" />
+		</Ore>
+	</Item>
+	<Item ID="27" name="捣蛋鬼出击, 对战失败选择正确的伊特" out_num="1 1" CheckCond="5"  ClearCond = "5" >
+		<Ore>
+			<Item id="200217" rate="20" />
+			<Item id="400006" rate="20" />
+			<Item id="400018" rate="10" />
+			<Item id="400017" rate="10" />
+			<Item id="400013" rate="10" />
+			<Item id="400011" rate="10" />
+			<Item id="400014" rate="10" />
+			<Item id="400009" rate="10" />
+		</Ore>
+	</Item>
+	<Item ID="28" name="捣蛋鬼出击, 用户失败获取南瓜头, 进入小屋会出现南瓜头" out_num="1 1"
+	      max="5" DayLimitType="196" TypeCheckFun= "2" >
+		<Ore>
+			<Item id="200217" rate="20" />
+			<Item id="400006" rate="20" />
+			<Item id="400018" rate="10" />
+			<Item id="400017" rate="10" />
+			<Item id="400013" rate="10" />
+			<Item id="400011" rate="10" />
+			<Item id="400014" rate="10" />
+			<Item id="400009" rate="10" />
+		</Ore>
+	</Item>
+	<Item ID="29" name="捣蛋鬼出击, 跟黑暗伊特对战，获胜" out_num="1 1" OnlySrvUse = "1" >
+		<Ore>
+			<Item id="13" rate="20" />
+			<Item id="400204" OnlyFlagIndex = "179" rate="10" />
+			<Item id="200304" OnlyFlagIndex = "180" rate="10" />
+			<Item id="200217" rate="60" />
+		</Ore>
+	</Item>
+	<Item ID="30" name="仓库中精灵寻宝第一类奖励" out_num="1 1" OnlySrvUse = "1" >
+		<Ore>
+			<Item id="400006" rate="16" />
+			<Item id="400007" rate="16" />
+			<Item id="400008" rate="17" />
+			<Item id="400009" rate="17" />
+			<Item id="400027" rate="17" />
+			<Item id="400028" rate="17" />
+		</Ore>
+	</Item>
+	<Item ID="31" name="仓库中精灵寻宝第二类奖励" out_num="1 1" OnlySrvUse = "1" >
+		<Ore>
+			<Item id="1" rate="100"/>
+		</Ore>
+	</Item>
+	<Item ID="32" name="仓库中精灵寻宝第三类奖励" out_num="1 3" OnlySrvUse = "1" >
+		<Ore>
+			<Item id="200213" rate="50"/>
+			<Item id="200211" rate="50"/>
+		</Ore>
+	</Item>
+	<Item ID="33" name="仓库中精灵寻宝第四类奖励" out_num="1 1" OnlySrvUse = "1" >
+		<Ore>
+			<Item id="200221" rate="100" />
+		</Ore>
+	</Item>
+
+	<Item ID="34" name="遇到阿布" out_num="1 1" CheckCond="7"  ClearCond = "7" >
+		<Ore>
+			<Item id="400211" rate="40"  DayMax = "25" DayLimitType = "207" />
+			<Item id="400005" rate="10" />
+			<Item id="400006" rate="10" />
+			<Item id="400009" rate="20" />
+			<Item id="200217" rate="20" />
+		</Ore>
+	</Item>
+
+	<Item ID="35" name="蜘蛛泡泡" out_num="1 1" max="100" DayLimitType="203" >
+		<Ore>
+			<Item id="13" rate="26" />
+			<Item id="400211" rate="15" DayMax = "10" DayLimitType = "208" />
+			<Item id="400017" rate="15" />
+			<Item id="400002" rate="15" />
+			<Item id="200011" rate="15" />
+			<Item id="200012" rate="7" />
+			<Item id="200001" rate="5" />
+			<Item id="200002" rate="2" />
+		</Ore>
+	</Item>
+
+	<Item ID="36" name="伊特气球和暗影伊特气球" out_num="10 20"  max="250" DayLimitType="204"  >
+		<Ore>
+			<Item id="1" rate="100" />
+		</Ore>
+	</Item>
+
+	<Item ID="37" name="伊特气球和暗影伊特气球" out_num="5 15"   max="5" DayLimitType="205" >
+		<Ore>
+			<Item id="400211" rate="100" />
+		</Ore>
+	</Item>
+
+	<Item ID="38" name="伊特气球和暗影伊特气球" out_num="10 30"  max="5" DayLimitType="206"  >
+		<Ore>
+			<Item id="400211" rate="100" />
+		</Ore>
+	</Item>
+
+	<Item ID="39" name="木乃伊归来 搜宝大探险" out_num="1 2"  max="5" DayLimitType="209"  >
+		<Ore>
+			<Item id="400211" rate="50" />
+			<Item id="1" count = "50"  rate="30" />
+			<Item id="200217" rate="20" />
+		</Ore>
+	</Item>
+	<Item ID="40" name="烹饪:炸黄鱼" out_num="1 1" >
+		<delOre>
+			<Item id = "400801" count = "5" />
+			<Item id = "400008" count = "3" />
+			<Item id = "400007" count = "4" />
+		</delOre>
+		<Ore>
+			<Item id="200501" rate="30" />
+			<Item id="200502" rate="60" />
+			<Item id="200503" rate="10" />
+		</Ore>
+	</Item>
+	<Item ID="41" name="烹饪:酒香河蟹" out_num="1 1" >
+		<delOre>
+			<Item id = "400802" count = "6" />
+			<Item id = "400018" count = "4" />
+			<Item id = "400011" count = "5" />
+		</delOre>
+		<Ore>
+			<Item id="200504" rate="30" />
+			<Item id="200505" rate="60" />
+			<Item id="200506" rate="10" />
+		</Ore>
+	</Item>
+	<Item ID="42" name="烹饪:石斑鱼卷" out_num="1 1" >
+		<delOre>
+			<Item id = "400805" count = "4" />
+			<Item id = "400012" count = "3" />
+			<Item id = "400010" count = "5" />
+		</delOre>
+		<Ore>
+			<Item id="200507" rate="30" />
+			<Item id="200508" rate="60" />
+			<Item id="200509" rate="10" />
+		</Ore>
+	</Item>
+	<Item ID="43" name="烹饪:酱香灯鱼" out_num="1 1" >
+		<delOre>
+			<Item id = "400804" count = "4" />
+			<Item id = "400013" count = "3" />
+			<Item id = "400014" count = "2" />
+			<Item id = "400017" count = "2" />
+		</delOre>
+		<Ore>
+			<Item id="200510" rate="30" />
+			<Item id="200511" rate="60" />
+			<Item id="200512" rate="10" />
+		</Ore>
+	</Item>
+	<Item ID="44" name="烹饪:烤气泡鱼" out_num="1 1" >
+		<delOre>
+			<Item id = "400803" count = "4" />
+			<Item id = "400030" count = "3" />
+			<Item id = "400028" count = "2" />
+			<Item id = "400015" count = "3" />
+		</delOre>
+		<Ore>
+			<Item id="200513" rate="30" />
+			<Item id="200514" rate="60" />
+			<Item id="200515" rate="10" />
+		</Ore>
+	</Item>
+	<Item ID="45" name="谁偷吃了我的料理：获得料理类型" out_num="1 1" OnlySrvUse = "1" >
+		<Ore>
+			<Item id="200502" rate="100" />
+		</Ore>
+		<Time>
+			<TM DateStart="0" DateEnd="0" TimeStart="18 0" TimeEnd="20 0" />
+		</Time>
+	</Item>
+	<Item ID="46" name="仓库中精灵寻宝第五类奖励" out_num="1 1" OnlySrvUse = "1" >
+		<Ore>
+			<Item id="400010" rate="16" />
+			<Item id="400011" rate="16" />
+			<Item id="400012" rate="17" />
+			<Item id="400013" rate="17" />
+			<Item id="400014" rate="17" />
+			<Item id="400029" rate="17" />
+		</Ore>
+	</Item>
+	<Item ID="47" name="仓库中精灵寻宝第六类奖励" out_num="1 1" OnlySrvUse = "1" >
+		<Ore>
+			<Item id="400015" rate="16" />
+			<Item id="400016" rate="16" />
+			<Item id="400017" rate="17" />
+			<Item id="400018" rate="17" />
+			<Item id="400030" rate="17" />
+			<Item id="400031" rate="17" />
+		</Ore>
+	</Item>
+	<Item ID="48" name="小屋对战胜利获取物品" out_num="1 1" OnlySrvUse = "1" >
+		<Ore>
+			<Item id="13" rate="40" />
+			<Item id="200502" rate="5" />
+			<Item id="200001" rate="3" />
+			<Item id="200211" rate="2" />
+			<Item id="200012" rate="15" />
+			<Item id="400024" rate="3" />
+			<Item id="400205" rate="2" />
+			<Item id="400802" rate="5" />
+			<Item id="200511" rate="3" />
+			<Item id="200505" rate="2" />
+			<Item id="200514" rate="3" />
+			<Item id="200214" rate="2" />
+			<Item id="200509" rate="3" />
+			<Item id="200013" rate="2" />
+			<Item id="400805" rate="5" />
+			<Item id="400806" rate="3" />
+			<Item id="200002" rate="2" />
+		</Ore>
+	</Item>
+	<Item ID="49" name="破晓黎明 冰封之轴" out_num="1 1"  max="732" DayLimitType="251" TypeCheckFun = "3" >
+		<Ore>
+			<Item id="1" count = "5" rate="14" DayMax = "600" DayLimitType = "250" />
+			<Item id="200221" count = "1" rate="1" DayMax = "10" DayLimitType = "292" />
+			<Item id="400212" rate="10" DayMax = "20" DayLimitType = "243" />
+			<Item id="400213" rate="10" DayMax = "20" DayLimitType = "244" />
+			<Item id="400005" rate="10" DayMax = "20" DayLimitType = "245" />
+			<Item id="400006" rate="15" DayMax = "20" DayLimitType = "246" />
+			<Item id="400017" rate="10" DayMax = "20" DayLimitType = "247" />
+			<Item id="200516" rate="20" DayMax = "20" DayLimitType = "248" />
+			<Item id="124" level = "5" Flag = "2" rate="10" DayMax = "2" DayLimitType = "249" />
+		</Ore>
+	</Item>
+	<Item ID="50" name="登入非VIP礼包" out_num="1 1" TypeCheckFun = "4" >
+		<Ore>
+			<Item id="1" count = "200" rate="30" DayMax = "1" DayLimitType = "256" />
+			<Item id="1" count = "500" rate="15" DayMax = "1" DayLimitType = "257" />
+			<Item id="200213" rate="10" DayMax = "1" DayLimitType = "258" />
+			<Item id="200214" rate="5" DayMax = "1" DayLimitType = "259" />
+			<Item id="200001" rate="20" DayMax = "1" DayLimitType = "261" />
+			<Item id="200002" rate="10" DayMax = "1" DayLimitType = "262" />
+			<Item id="200013" rate="10" DayMax = "1" DayLimitType = "263" />
+		</Ore>
+	</Item>
+	<Item ID="51" name="登入VIP礼包" out_num="1 1" Vip = "1" TypeCheckFun = "4" >
+		<Ore>
+			<Item id="400102" rate="80" DayMax = "20" DayLimitType = "264" />
+			<Item id="1" count = "500" rate="8" DayMax = "20" DayLimitType = "265" />
+			<Item id="200221" rate="2" DayMax = "20" DayLimitType = "266" />
+			<Item id="200003" rate="10" DayMax = "20" DayLimitType = "267" />
+		</Ore>
+	</Item>
+	<Item ID="52" name="鸡与沙，胜利获取物品" out_num="1 1" max="20" DayLimitType="270" >
+		<Ore>
+			<Item id="400217" rate="10" />
+			<Item id="13" rate="20" />
+			<Item id="400218" rate="60" />
+			<Item id="400006" rate="10"  />
+		</Ore>
+	</Item>
+	<Item ID="53" name="扑克小怪" out_num="1 1" OnlySrvUse = "1">
+		<Ore>
+			<Item id="400103" rate="70" DayMax="39" DayLimitType="279"/>
+			<Item id="400807" rate="10" />
+			<Item id="400801" rate="10" />
+			<Item id="400805" rate="10"  />
+		</Ore>
+	</Item>
+	<Item ID="54" name="圣诞主题精灵：（小麋鹿）遇到次数" out_num="1 1" max="1" DayLimitType="283" >
+	</Item>
+	<Item ID="55" name="谁是圣诞代言人" out_num="1 1" CheckCond="20" ClearCond="20">
+		<Ore>
+			<Item id="13" />
+			<Item id="400220" rate="50" DayMax="50" DayLimitType="285"/>
+			<Item id="400221" rate="20" DayMax="20" DayLimitType="284"/>
+			<Item id="400222" rate="30" DayMax="30" DayLimitType="286"/>
+		</Ore>
+	</Item>
+	<Item ID="56" name="铃儿响叮当！它是谁？" out_num="1 1" CheckCond="21" ClearCond="21">
+		<Ore>
+			<Item id="13" />
+			<Item id="400220" rate="50" DayMax="50" DayLimitType="285"/>
+			<Item id="400221" rate="20" DayMax="20" DayLimitType="284"/>
+			<Item id="400222" rate="30" DayMax="30" DayLimitType="286"/>
+		</Ore>
+	</Item>
+	<Item ID="57" name="谁是圣诞代言人:阿卡（与阿卡精灵对战）" out_num="1 1" CheckCond="20 22" ClearCond="20 22" >
+		<Ore>
+			<Item id="13" />
+			<Item id="400220" rate="50" DayMax="50" DayLimitType="285"/>
+			<Item id="400221" rate="20" DayMax="20" DayLimitType="284"/>
+			<Item id="400222" rate="30" DayMax="30" DayLimitType="286"/>
+		</Ore>
+	</Item>
+	<!--<Item ID="58" name="采矿、场景交互额外送东西" out_num="1 1" OnlySrvUse = "1">
+		<Ore>
+			<Item id="13" rate="10"/>
+			<Item id="400220" rate="30" DayMax="20" DayLimitType="287"/>
+			<Item id="400221" rate="30" DayMax="20" DayLimitType="287"/>
+			<Item id="400222" rate="30" DayMax="20" DayLimitType="287"/>
+		</Ore>
+	</Item> -->
+	<!-- 场景交互得到物品 -->
+	<!-- <Item ID="59" name="实验室" out_num="1 1" max="1" DayLimitType="288" >
+	<Ore>
+		<Item id="400220" rate="50" />
+		<Item id="400221" rate="20" />
+		<Item id="400222" rate="30"/>
+	</Ore>
+	</Item>
+	<Item ID="60" name="实验室" out_num="1 1" max="1" DayLimitType="289" >
+	<Ore>
+		<Item id="400220" rate="50" />
+		<Item id="400221" rate="20" />
+		<Item id="400222" rate="30"/>
+	</Ore>
+	</Item>
+	<Item ID="61" name="实验室" out_num="1 1" max="1" DayLimitType="290" >
+	<Ore>
+		<Item id="400220" rate="50" />
+		<Item id="400221" rate="20" />
+		<Item id="400222" rate="30"/>
+	</Ore>
+	</Item> -->
+	<!-- end 场景交互得到物品 -->
+	<!-- <Item ID="62" name="圣诞，打野怪，飞天小鹿" out_num="1 1" OnlySrvUse = "1">
+		<Ore>
+			<Item id="13" rate="45"/>
+			<Item id="400224" rate="40" />
+			<Item id="400224" rate="5" count="2"/>
+			<Item id="200533" rate="10" />
+		</Ore>
+	</Item>
+		<Item ID="63" name="圣诞，袜子礼物" out_num="1 1" OnlySrvUse = "1">
+		<Ore>
+			<Item id="1" count = "100" rate="10" />
+			<Item id="1" count = "50" rate="10" />
+			<Item id="400021" rate="1" />
+			<Item id="400013" rate="9" />
+			<Item id="400006" rate="5" />
+			<Item id="400210" rate="5" />
+			<Item id="200502" rate="5" />
+			<Item id="200001" rate="3" />
+			<Item id="200211" rate="2" />
+			<Item id="200012" rate="15" />
+			<Item id="400024" rate="3" />
+			<Item id="400205" rate="2" />
+			<Item id="400802" rate="5" />
+			<Item id="200511" rate="3" />
+			<Item id="200505" rate="2" />
+			<Item id="200514" rate="3" />
+			<Item id="200214" rate="2" />
+			<Item id="200509" rate="3" />
+			<Item id="200013" rate="2" />
+			<Item id="400805" rate="5" />
+			<Item id="400806" rate="3" />
+			<Item id="200002" rate="2" />
+
+		</Ore>
+	</Item> -->
+	<!-- <Item ID="64" name="每日任务10039，好运送不停" out_num="1 1" OnlySrvUse = "1">
+		<Ore>
+			<Item id="1" count = "1000" rate="20" />
+			<Item id="1" count = "2000" rate="10" />
+			<Item id="1" count = "3000" rate="5" />
+			<Item id="200003" rate="20" />
+			<Item id="200215" rate="10" />
+			<Item id="200522" rate="10" />
+			<Item id="200015" rate="15" />
+			<Item id="200214" rate="5" />
+			<Item id="200221" rate="5" />
+		</Ore>
+	</Item> -->
+	<Item ID="65" name="神秘精灵出现, 点击盒子输出道具" out_num="1 1" max="40" DayLimitType="310" CheckCond="26" ClearCond = "26">
+		<Ore>
+			<Item id="400213" rate="15" />
+			<Item id="400212" rate="15" />
+			<Item id="400006" rate="25" />
+			<Item id="400238" rate="25" />
+			<Item id="400026" rate="10" />
+			<Item id="13" rate="10" />
+		</Ore>
+	</Item>
+	<!--Item ID="66" name="打开黄色红包" out_num="1 1" TypeCheckFun = "5">
+		<Ore>
+			<Item id="400006" rate="20" />
+			<Item id="400018" rate="10" />
+			<Item id="400213" rate="20" />
+			<Item id="400212" rate="20" />
+			<Item id="400011" rate="10" />
+			<Item id="13" rate="10" />
+			<Item id="400009" rate="10" />
+		</Ore>
+	</Item>
+	<Item ID="67" name="前往好友基地， 挑战失败" out_num="1 1" max="10" DayLimitType="325" CheckCond="31" ClearCond = "31">
+		<Ore>
+			<Item id="400240" rate="20" />
+			<Item id="400006" rate="25" />
+			<Item id="400018" rate="15" />
+			<Item id="400213" rate="10" />
+			<Item id="400212" rate="10" />
+			<Item id="400011" rate="10" />
+			<Item id="400009" rate="10" />
+		</Ore>
+	</Item>
+		<Item ID="68" name="前往好友基地， 挑战成功" out_num="1 1" OnlySrvUse = "1" >
+		<Ore>
+			<Item id="400240" rate="100" />
+		</Ore>
+	</Item> -->
+
+	<!--Item ID="69" name="乐园大抽奖, NONO.3试用周" out_num="1 1" Vip = "1" max="5" DayLimitType="334" >
+		<Ore>
+			<Item id="19" rate="20" OnlyFlagIndex = "365" />
+			<Item id="1" count="100" rate="10" />
+			<Item id="1" count="1000" rate="5" />
+			<Item id="200535" rate="10" />
+			<Item id="200221" rate="5" />
+			<Item id="200219" rate="10" />
+			<Item id="200225" rate="5" />
+			<Item id="1" count="50" rate="35" />
+		</Ore>
+	</Item>
+	<Item ID="70" name="乐园大抽奖, NONO.3试用周, 非VIP版" out_num="1 1"  max="5" DayLimitType="334" >
+		<Ore>
+			<Item id="1" count="100" rate="30" />
+			<Item id="1" count="1000" rate="5" />
+			<Item id="200535" rate="10" />
+			<Item id="200221" rate="5" />
+			<Item id="200219" rate="10" />
+			<Item id="200225" rate="5" />
+			<Item id="1" count="50" rate="35" />
+		</Ore>
+	</Item-->
+	<Item ID="71" name="商城抽奖 第一次" out_num="1 1"  max="1" DayLimitType="343" >
+		<Ore>
+			<Item id="500501" count="3" rate="25" />
+			<Item id="500501" count="4" rate="25" />
+			<Item id="500501" count="5" rate="25" />
+			<Item id="500501" count="10" rate="25" />
+		</Ore>
+	</Item>
+	<Item ID="72" name="商城抽奖" out_num="1 1"  max="5" DayLimitType="343" TypeCheckFun = "6">
+		<Ore>
+			<Item id="500501" count="1" rate="30" />
+			<Item id="500501" count="4" rate="5" />
+			<Item id="500501" count="1" rate="20" />
+			<Item id="500501" count="3" rate="6" />
+			<Item id="500501" count="2" rate="15" />
+			<Item id="500501" count="10" rate="1" />
+			<Item id="500501" count="1" rate="20" />
+			<Item id="500501" count="5" rate="3" />
+		</Ore>
+	</Item>
+	<Item ID="73" name="VIP充值礼包" out_num="1 1" TypeCheckFun = "7" RandTimes="3" >
+		<Ore>
+			<Item id="200230" count="1" rate="10" ItemDoFunIndex="4" />
+			<Item id="200222" count="1" rate="15" />
+			<Item id="200223" count="1" rate="15" />
+			<Item id="200225" count="1" rate="20" />
+			<Item id="200226" count="1" rate="10" />
+			<Item id="200227" count="1" rate="10" />
+			<Item id="200228" count="1" rate="10" />
+			<Item id="200229" count="1" rate="10" />
+		</Ore>
+	</Item>
+	<Item ID="74" name="快乐天天抽奖(此排列顺序不能改动)" out_num="1 1" max="3" DayLimitType="344" TypeCheckFun = "8" >
+		<Ore>
+			<Item id="500503" count="1" rate="1" ItemDoFunIndex="1" />
+			<Item id="20" count="1" rate="25" />
+			<Item id="500505" count="1" rate="10" ItemDoFunIndex="3" />
+			<Item id="21" count="1" rate="25" />
+			<Item id="500504" count="1" rate="4" ItemDoFunIndex="2" />
+			<Item id="400102" count="1" rate="5" />
+			<Item id="22" count="1" rate="25" />
+			<Item id="1" count="100" rate="5" />
+		</Ore>
+	</Item>
+	<Item ID="75" name="500赛尔豆--90" out_num="1 1"  TypeCheckFun = "9" CheckTime="2">
+		<delOre>
+			<Item id = "1" count = "500" />
+		</delOre>
+		<Ore>
+			<Item id="200203" count="1" rate="10" />
+			<Item id="400021" count="1" rate="10" />
+			<Item id="200522" count="1" rate="30" />
+			<Item id="200204" count="1" rate="40" />
+			<Item id="200215" count="1" rate="5" />
+			<Item id="200221" count="1" rate="5" DayMax="20" DayLimitType="358"/>
+		</Ore>
+	</Item>
+	<Item ID="76" name="500赛尔豆--124" out_num="1 1"  TypeCheckFun = "9" CheckTime="2">
+		<delOre>
+			<Item id = "1" count = "500" />
+		</delOre>
+		<Ore>
+			<Item id="200203" count="1" rate="10" />
+			<Item id="400021" count="1" rate="10" />
+			<Item id="200522" count="1" rate="30" />
+			<Item id="200204" count="1" rate="40" />
+			<Item id="200215" count="1" rate="5" />
+			<Item id="200221" count="1" rate="5" DayMax="20" DayLimitType="358"/>
+		</Ore>
+	</Item>
+	<Item ID="77" name="500赛尔豆--142" out_num="1 1"  TypeCheckFun = "9" CheckTime="2">
+		<delOre>
+			<Item id = "1" count = "500" />
+		</delOre>
+		<Ore>
+			<Item id="200203" count="1" rate="10" />
+			<Item id="400021" count="1" rate="10" />
+			<Item id="200522" count="1" rate="30" />
+			<Item id="200204" count="1" rate="40" />
+			<Item id="200215" count="1" rate="5" />
+			<Item id="200221" count="1" rate="5" DayMax="20" DayLimitType="358"/>
+		</Ore>
+	</Item>
+	<Item ID="78" name="500赛尔豆--141" out_num="1 1"  TypeCheckFun = "9" CheckTime="2">
+		<delOre>
+			<Item id = "1" count = "500" />
+		</delOre>
+		<Ore>
+			<Item id="200203" count="1" rate="10" />
+			<Item id="400021" count="1" rate="10" />
+			<Item id="200522" count="1" rate="30" />
+			<Item id="200204" count="1" rate="40" />
+			<Item id="200215" count="1" rate="5" />
+			<Item id="200221" count="1" rate="5" DayMax="20" DayLimitType="358"/>
+		</Ore>
+	</Item>
+	<Item ID="79" name="500赛尔豆--160" out_num="1 1"  TypeCheckFun = "9" CheckTime="2">
+		<delOre>
+			<Item id = "1" count = "500" />
+		</delOre>
+		<Ore>
+			<Item id="200203" count="1" rate="10" />
+			<Item id="400021" count="1" rate="10" />
+			<Item id="200522" count="1" rate="30" />
+			<Item id="200204" count="1" rate="40" />
+			<Item id="200215" count="1" rate="5" />
+			<Item id="200221" count="1" rate="5" DayMax="20" DayLimitType="358"/>
+		</Ore>
+	</Item>
+	<Item ID="80" name="500赛尔豆--204" out_num="1 1"  TypeCheckFun = "9" CheckTime="2">
+		<delOre>
+			<Item id = "1" count = "500" />
+		</delOre>
+		<Ore>
+			<Item id="200203" count="1" rate="10" />
+			<Item id="400021" count="1" rate="10" />
+			<Item id="200522" count="1" rate="30" />
+			<Item id="200204" count="1" rate="40" />
+			<Item id="200215" count="1" rate="5" />
+			<Item id="200221" count="1" rate="5" DayMax="20" DayLimitType="358"/>
+		</Ore>
+	</Item>
+	<Item ID="81" name="500赛尔豆--202" out_num="1 1"  TypeCheckFun = "9" CheckTime="2">
+		<delOre>
+			<Item id = "1" count = "500" />
+		</delOre>
+		<Ore>
+			<Item id="200203" count="1" rate="10" />
+			<Item id="400021" count="1" rate="10" />
+			<Item id="200522" count="1" rate="30" />
+			<Item id="200204" count="1" rate="40" />
+			<Item id="200215" count="1" rate="5" />
+			<Item id="200221" count="1" rate="5" DayMax="20" DayLimitType="358"/>
+		</Ore>
+	</Item>
+	<Item ID="82" name="500赛尔豆--211" out_num="1 1"  TypeCheckFun = "9" CheckTime="2">
+		<delOre>
+			<Item id = "1" count = "500" />
+		</delOre>
+		<Ore>
+			<Item id="200203" count="1" rate="10" />
+			<Item id="400021" count="1" rate="10" />
+			<Item id="200522" count="1" rate="30" />
+			<Item id="200204" count="1" rate="40" />
+			<Item id="200215" count="1" rate="5" />
+			<Item id="200221" count="1" rate="5" DayMax="20" DayLimitType="358"/>
+		</Ore>
+	</Item>
+	<Item ID="83" name="500赛尔豆--230" out_num="1 1"  TypeCheckFun = "9" CheckTime="2">
+		<delOre>
+			<Item id = "1" count = "500" />
+		</delOre>
+		<Ore>
+			<Item id="200203" count="1" rate="10" />
+			<Item id="400021" count="1" rate="10" />
+			<Item id="200522" count="1" rate="30" />
+			<Item id="200204" count="1" rate="40" />
+			<Item id="200215" count="1" rate="5" />
+			<Item id="200221" count="1" rate="5" DayMax="20" DayLimitType="358"/>
+		</Ore>
+	</Item>
+	<Item ID="84" name="500赛尔豆--261" out_num="1 1"  TypeCheckFun = "9" CheckTime="2">
+		<delOre>
+			<Item id = "1" count = "500" />
+		</delOre>
+		<Ore>
+			<Item id="200203" count="1" rate="10" />
+			<Item id="400021" count="1" rate="10" />
+			<Item id="200522" count="1" rate="30" />
+			<Item id="200204" count="1" rate="40" />
+			<Item id="200215" count="1" rate="5" />
+			<Item id="200221" count="1" rate="5" DayMax="20" DayLimitType="358"/>
+		</Ore>
+	</Item>
+	<Item ID="85" name="500赛尔豆--281" out_num="1 1"  TypeCheckFun = "9" CheckTime="2">
+		<delOre>
+			<Item id = "1" count = "500" />
+		</delOre>
+		<Ore>
+			<Item id="200203" count="1" rate="10" />
+			<Item id="400021" count="1" rate="10" />
+			<Item id="200522" count="1" rate="30" />
+			<Item id="200204" count="1" rate="40" />
+			<Item id="200215" count="1" rate="5" />
+			<Item id="200221" count="1" rate="5" DayMax="20" DayLimitType="358"/>
+		</Ore>
+	</Item>
+	<Item ID="86" name="500赛尔豆--302" out_num="1 1"  TypeCheckFun = "9" CheckTime="2">
+		<delOre>
+			<Item id = "1" count = "500" />
+		</delOre>
+		<Ore>
+			<Item id="200203" count="1" rate="10" />
+			<Item id="400021" count="1" rate="10" />
+			<Item id="200522" count="1" rate="30" />
+			<Item id="200204" count="1" rate="40" />
+			<Item id="200215" count="1" rate="5" />
+			<Item id="200221" count="1" rate="5" DayMax="20" DayLimitType="358"/>
+		</Ore>
+	</Item>
+	<Item ID="87" name="1000赛尔豆--90" out_num="1 1"  TypeCheckFun = "9" CheckTime="2">
+		<delOre>
+			<Item id = "1" count = "1000" />
+		</delOre>
+		<Ore>
+			<Item id="200216" count="1" rate="10" />
+			<Item id="400102" count="2" rate="10" />
+			<Item id="200203" count="2" rate="30" />
+			<Item id="200205" count="1" rate="40" />
+			<Item id="400021" count="1" rate="5" />
+			<Item id="200222" count="1" rate="5" DayMax="20" DayLimitType="359"/>
+		</Ore>
+	</Item>
+	<Item ID="88" name="1000赛尔豆--124" out_num="1 1"  TypeCheckFun = "9" CheckTime="2">
+		<delOre>
+			<Item id = "1" count = "1000" />
+		</delOre>
+		<Ore>
+			<Item id="200216" count="1" rate="10" />
+			<Item id="400102" count="2" rate="10" />
+			<Item id="200203" count="2" rate="30" />
+			<Item id="200205" count="1" rate="40" />
+			<Item id="400021" count="1" rate="5" />
+			<Item id="200222" count="1" rate="5" DayMax="20" DayLimitType="359"/>
+		</Ore>
+	</Item>
+	<Item ID="89" name="1000赛尔豆--142" out_num="1 1"  TypeCheckFun = "9" CheckTime="2">
+		<delOre>
+			<Item id = "1" count = "1000" />
+		</delOre>
+		<Ore>
+			<Item id="200216" count="1" rate="10" />
+			<Item id="400102" count="2" rate="10" />
+			<Item id="200203" count="2" rate="30" />
+			<Item id="200205" count="1" rate="40" />
+			<Item id="400021" count="1" rate="5" />
+			<Item id="200222" count="1" rate="5" DayMax="20" DayLimitType="359"/>
+		</Ore>
+	</Item>
+	<Item ID="90" name="1000赛尔豆--141" out_num="1 1"  TypeCheckFun = "9" CheckTime="2">
+		<delOre>
+			<Item id = "1" count = "1000" />
+		</delOre>
+		<Ore>
+			<Item id="200216" count="1" rate="10" />
+			<Item id="400102" count="2" rate="10" />
+			<Item id="200203" count="2" rate="30" />
+			<Item id="200205" count="1" rate="40" />
+			<Item id="400021" count="1" rate="5" />
+			<Item id="200222" count="1" rate="5" DayMax="20" DayLimitType="359"/>
+		</Ore>
+	</Item>
+	<Item ID="91" name="1000赛尔豆--160" out_num="1 1"  TypeCheckFun = "9" CheckTime="2">
+		<delOre>
+			<Item id = "1" count = "1000" />
+		</delOre>
+		<Ore>
+			<Item id="200216" count="1" rate="10" />
+			<Item id="400102" count="2" rate="10" />
+			<Item id="200203" count="2" rate="30" />
+			<Item id="200205" count="1" rate="40" />
+			<Item id="400021" count="1" rate="5" />
+			<Item id="200222" count="1" rate="5" DayMax="20" DayLimitType="359"/>
+		</Ore>
+	</Item>
+	<Item ID="92" name="1000赛尔豆--204" out_num="1 1"  TypeCheckFun = "9" CheckTime="2">
+		<delOre>
+			<Item id = "1" count = "1000" />
+		</delOre>
+		<Ore>
+			<Item id="200216" count="1" rate="10" />
+			<Item id="400102" count="2" rate="10" />
+			<Item id="200203" count="2" rate="30" />
+			<Item id="200205" count="1" rate="40" />
+			<Item id="400021" count="1" rate="5" />
+			<Item id="200222" count="1" rate="5" DayMax="20" DayLimitType="359"/>
+		</Ore>
+	</Item>
+	<Item ID="93" name="1000赛尔豆--202" out_num="1 1"  TypeCheckFun = "9" CheckTime="2">
+		<delOre>
+			<Item id = "1" count = "1000" />
+		</delOre>
+		<Ore>
+			<Item id="200216" count="1" rate="10" />
+			<Item id="400102" count="2" rate="10" />
+			<Item id="200203" count="2" rate="30" />
+			<Item id="200205" count="1" rate="40" />
+			<Item id="400021" count="1" rate="5" />
+			<Item id="200222" count="1" rate="5" DayMax="20" DayLimitType="359"/>
+		</Ore>
+	</Item>
+	<Item ID="94" name="1000赛尔豆--211" out_num="1 1"  TypeCheckFun = "9" CheckTime="2">
+		<delOre>
+			<Item id = "1" count = "1000" />
+		</delOre>
+		<Ore>
+			<Item id="200216" count="1" rate="10" />
+			<Item id="400102" count="2" rate="10" />
+			<Item id="200203" count="2" rate="30" />
+			<Item id="200205" count="1" rate="40" />
+			<Item id="400021" count="1" rate="5" />
+			<Item id="200222" count="1" rate="5" DayMax="20" DayLimitType="359"/>
+		</Ore>
+	</Item>
+	<Item ID="95" name="1000赛尔豆--230" out_num="1 1"  TypeCheckFun = "9" CheckTime="2">
+		<delOre>
+			<Item id = "1" count = "1000" />
+		</delOre>
+		<Ore>
+			<Item id="200216" count="1" rate="10" />
+			<Item id="400102" count="2" rate="10" />
+			<Item id="200203" count="2" rate="30" />
+			<Item id="200205" count="1" rate="40" />
+			<Item id="400021" count="1" rate="5" />
+			<Item id="200222" count="1" rate="5" DayMax="20" DayLimitType="359"/>
+		</Ore>
+	</Item>
+	<Item ID="96" name="1000赛尔豆--261" out_num="1 1"  TypeCheckFun = "9" CheckTime="2">
+		<delOre>
+			<Item id = "1" count = "1000" />
+		</delOre>
+		<Ore>
+			<Item id="200216" count="1" rate="10" />
+			<Item id="400102" count="2" rate="10" />
+			<Item id="200203" count="2" rate="30" />
+			<Item id="200205" count="1" rate="40" />
+			<Item id="400021" count="1" rate="5" />
+			<Item id="200222" count="1" rate="5" DayMax="20" DayLimitType="359"/>
+		</Ore>
+	</Item>
+	<Item ID="97" name="1000赛尔豆--281" out_num="1 1"  TypeCheckFun = "9" CheckTime="2">
+		<delOre>
+			<Item id = "1" count = "1000" />
+		</delOre>
+		<Ore>
+			<Item id="200216" count="1" rate="10" />
+			<Item id="400102" count="2" rate="10" />
+			<Item id="200203" count="2" rate="30" />
+			<Item id="200205" count="1" rate="40" />
+			<Item id="400021" count="1" rate="5" />
+			<Item id="200222" count="1" rate="5" DayMax="20" DayLimitType="359"/>
+		</Ore>
+	</Item>
+	<Item ID="98" name="1000赛尔豆--302" out_num="1 1"  TypeCheckFun = "9" CheckTime="2">
+		<delOre>
+			<Item id = "1" count = "1000" />
+		</delOre>
+		<Ore>
+			<Item id="200216" count="1" rate="10" />
+			<Item id="400102" count="2" rate="10" />
+			<Item id="200203" count="2" rate="30" />
+			<Item id="200205" count="1" rate="40" />
+			<Item id="400021" count="1" rate="5" />
+			<Item id="200222" count="1" rate="5" DayMax="20" DayLimitType="359"/>
+		</Ore>
+	</Item>
+	<Item ID="99" name="2500赛尔豆--90" out_num="1 1"  TypeCheckFun = "9" CheckTime="2">
+		<delOre>
+			<Item id = "1" count = "2500" />
+		</delOre>
+		<Ore>
+			<Item id="400102" count="4" rate="10" />
+			<Item id="200222" count="1" rate="10" DayMax="20" DayLimitType="359"/>
+			<Item id="200205" count="3" rate="30" />
+			<Item id="200216" count="2" rate="40" />
+			<Item id="200205" count="5" rate="5" />
+			<Item id="200225" count="1" rate="5" DayMax="2" DayLimitType="360"/>
+		</Ore>
+	</Item>
+	<Item ID="100" name="2500赛尔豆--124" out_num="1 1"  TypeCheckFun = "9" CheckTime="2">
+		<delOre>
+			<Item id = "1" count = "2500" />
+		</delOre>
+		<Ore>
+			<Item id="400102" count="4" rate="10" />
+			<Item id="200222" count="1" rate="10" DayMax="20" DayLimitType="359"/>
+			<Item id="200205" count="3" rate="30" />
+			<Item id="200216" count="2" rate="40" />
+			<Item id="200205" count="5" rate="5" />
+			<Item id="200225" count="1" rate="5" DayMax="2" DayLimitType="360"/>
+		</Ore>
+	</Item>
+	<Item ID="101" name="2500赛尔豆--142" out_num="1 1"  TypeCheckFun = "9" CheckTime="2">
+		<delOre>
+			<Item id = "1" count = "2500" />
+		</delOre>
+		<Ore>
+			<Item id="400102" count="4" rate="10" />
+			<Item id="200222" count="1" rate="10" DayMax="20" DayLimitType="359"/>
+			<Item id="200205" count="3" rate="30" />
+			<Item id="200216" count="2" rate="40" />
+			<Item id="200205" count="5" rate="5" />
+			<Item id="200225" count="1" rate="5" DayMax="2" DayLimitType="360"/>
+		</Ore>
+	</Item>
+	<Item ID="102" name="2500赛尔豆--141" out_num="1 1"  TypeCheckFun = "9" CheckTime="2">
+		<delOre>
+			<Item id = "1" count = "2500" />
+		</delOre>
+		<Ore>
+			<Item id="400102" count="4" rate="10" />
+			<Item id="200222" count="1" rate="10" DayMax="20" DayLimitType="359"/>
+			<Item id="200205" count="3" rate="30" />
+			<Item id="200216" count="2" rate="40" />
+			<Item id="200205" count="5" rate="5" />
+			<Item id="200225" count="1" rate="5" DayMax="2" DayLimitType="360"/>
+		</Ore>
+	</Item>
+	<Item ID="103" name="2500赛尔豆--160" out_num="1 1"  TypeCheckFun = "9" CheckTime="2">
+		<delOre>
+			<Item id = "1" count = "2500" />
+		</delOre>
+		<Ore>
+			<Item id="400102" count="4" rate="10" />
+			<Item id="200222" count="1" rate="10" DayMax="20" DayLimitType="359"/>
+			<Item id="200205" count="3" rate="30" />
+			<Item id="200216" count="2" rate="40" />
+			<Item id="200205" count="5" rate="5" />
+			<Item id="200225" count="1" rate="5" DayMax="2" DayLimitType="360"/>
+		</Ore>
+	</Item>
+	<Item ID="104" name="2500赛尔豆--204" out_num="1 1"  TypeCheckFun = "9" CheckTime="2">
+		<delOre>
+			<Item id = "1" count = "2500" />
+		</delOre>
+		<Ore>
+			<Item id="400102" count="4" rate="10" />
+			<Item id="200222" count="1" rate="10" DayMax="20" DayLimitType="359"/>
+			<Item id="200205" count="3" rate="30" />
+			<Item id="200216" count="2" rate="40" />
+			<Item id="200205" count="5" rate="5" />
+			<Item id="200225" count="1" rate="5" DayMax="2" DayLimitType="360"/>
+		</Ore>
+	</Item>
+	<Item ID="105" name="2500赛尔豆--202" out_num="1 1"  TypeCheckFun = "9" CheckTime="2">
+		<delOre>
+			<Item id = "1" count = "2500" />
+		</delOre>
+		<Ore>
+			<Item id="400102" count="4" rate="10" />
+			<Item id="200222" count="1" rate="10" DayMax="20" DayLimitType="359"/>
+			<Item id="200205" count="3" rate="30" />
+			<Item id="200216" count="2" rate="40" />
+			<Item id="200205" count="5" rate="5" />
+			<Item id="200225" count="1" rate="5" DayMax="2" DayLimitType="360"/>
+		</Ore>
+	</Item>
+	<Item ID="106" name="2500赛尔豆--211" out_num="1 1"  TypeCheckFun = "9" CheckTime="2">
+		<delOre>
+			<Item id = "1" count = "2500" />
+		</delOre>
+		<Ore>
+			<Item id="400102" count="4" rate="10" />
+			<Item id="200222" count="1" rate="10" DayMax="20" DayLimitType="359"/>
+			<Item id="200205" count="3" rate="30" />
+			<Item id="200216" count="2" rate="40" />
+			<Item id="200205" count="5" rate="5" />
+			<Item id="200225" count="1" rate="5" DayMax="2" DayLimitType="360"/>
+		</Ore>
+	</Item>
+	<Item ID="107" name="2500赛尔豆--230" out_num="1 1"  TypeCheckFun = "9" CheckTime="2">
+		<delOre>
+			<Item id = "1" count = "2500" />
+		</delOre>
+		<Ore>
+			<Item id="400102" count="4" rate="10" />
+			<Item id="200222" count="1" rate="10" DayMax="20" DayLimitType="359"/>
+			<Item id="200205" count="3" rate="30" />
+			<Item id="200216" count="2" rate="40" />
+			<Item id="200205" count="5" rate="5" />
+			<Item id="200225" count="1" rate="5" DayMax="2" DayLimitType="360"/>
+		</Ore>
+	</Item>
+	<Item ID="108" name="2500赛尔豆--261" out_num="1 1"  TypeCheckFun = "9" CheckTime="2">
+		<delOre>
+			<Item id = "1" count = "2500" />
+		</delOre>
+		<Ore>
+			<Item id="400102" count="4" rate="10" />
+			<Item id="200222" count="1" rate="10" DayMax="20" DayLimitType="359"/>
+			<Item id="200205" count="3" rate="30" />
+			<Item id="200216" count="2" rate="40" />
+			<Item id="200205" count="5" rate="5" />
+			<Item id="200225" count="1" rate="5" DayMax="2" DayLimitType="360"/>
+		</Ore>
+	</Item>
+	<Item ID="109" name="2500赛尔豆--281" out_num="1 1"  TypeCheckFun = "9" CheckTime="2">
+		<delOre>
+			<Item id = "1" count = "2500" />
+		</delOre>
+		<Ore>
+			<Item id="400102" count="4" rate="10" />
+			<Item id="200222" count="1" rate="10" DayMax="20" DayLimitType="359"/>
+			<Item id="200205" count="3" rate="30" />
+			<Item id="200216" count="2" rate="40" />
+			<Item id="200205" count="5" rate="5" />
+			<Item id="200225" count="1" rate="5" DayMax="2" DayLimitType="360"/>
+		</Ore>
+	</Item>
+	<Item ID="110" name="2500赛尔豆--302" out_num="1 1"  TypeCheckFun = "9" CheckTime="2">
+		<delOre>
+			<Item id = "1" count = "2500" />
+		</delOre>
+		<Ore>
+			<Item id="400102" count="4" rate="10" />
+			<Item id="200222" count="1" rate="10" DayMax="20" DayLimitType="359"/>
+			<Item id="200205" count="3" rate="30" />
+			<Item id="200216" count="2" rate="40" />
+			<Item id="200205" count="5" rate="5" />
+			<Item id="200225" count="1" rate="5" DayMax="2" DayLimitType="360"/>
+		</Ore>
+	</Item>
+	<Item ID="111" name="繁殖奖励" out_num="1 1"  TypeCheckFun = "10">
+		<Ore>
+			<Item id="200225" count="1" rate="40" />
+			<Item id="200225" count="1" rate="30" />
+			<Item id="200225" count="1" rate="30" />
+		</Ore>
+	</Item>
+	<Item ID="112" name="新一轮反攻,多精灵对战(此排列顺序不能改动)" out_num="1 1" CheckTime="31" TypeCheckFun = "11" OnlySrvUse="1" >
+		<Ore>
+			<Item id="1" count="500" rate="20" DayMax="10" DayLimitType="386" ItemDoFunIndex="5"/>
+			<Item id="400204" count="1" rate="30" DayMax="2" DayLimitType="385" ItemDoFunIndex="5"/>
+			<Item id="200214" count="1" rate="20" DayMax="20" DayLimitType="387" ItemDoFunIndex="5"/>
+			<Item id="200215" count="1" rate="20" DayMax="20" DayLimitType="388" ItemDoFunIndex="5"/>
+			<Item id="1" count="1000" rate="10" DayMax="5" DayLimitType="389" ItemDoFunIndex="5"/>
+		</Ore>
+	</Item>
+	<Item ID="113" name="飞伊特" out_num="1 1" CheckTime="31" TypeCheckFun = "12"  OnlySrvUse="1" >
+		<Ore>
+			<Item id="400106" count="1" rate="95" />
+			<Item id="1" count="500" rate="2" DayMax="10" DayLimitType="390"/>
+			<Item id="200214" count="1" rate="3" DayMax="50" DayLimitType="391"/>
+		</Ore>
+			<Item id="1" count="500" rate="50" />
+	</Item>
+	<Item ID="114" name="虫伊特" out_num="1 1" CheckTime="31" TypeCheckFun = "12"  OnlySrvUse="1" >
+		<Ore>
+			<Item id="400108" count="1" rate="95" />
+			<Item id="1" count="500" rate="2" DayMax="10" DayLimitType="390"/>
+			<Item id="200214" count="1" rate="3" DayMax="50" DayLimitType="391"/>
+		</Ore>
+	</Item>
+	<Item ID="115" name="沙伊特" out_num="1 1" CheckTime="31" TypeCheckFun = "12"  OnlySrvUse="1" >
+		<Ore>
+			<Item id="400107" count="1" rate="95" />
+			<Item id="1" count="500" rate="2" DayMax="10" DayLimitType="390"/>
+			<Item id="200214" count="1" rate="3" DayMax="50" DayLimitType="391"/>
+		</Ore>
+	</Item>
+	<Item ID="116" name="草原狂想战中帮助站岗" out_num="1 1" TypeCheckFun = "13" max="10" DayLimitType="395" >
+		<Ore>
+			<Item id="1" count="500" rate="10" />
+			<Item id="400006" count="5" rate="5" />
+			<Item id="400109" count="1" rate="85" />
+		</Ore>
+	</Item>
+	<Item ID="117" name="脉流守卫战" out_num="1 1" max="10" DayLimitType="397" >
+		<Ore>
+			<Item id="1" count="500" rate="10" />
+			<Item id="400110" count="1" rate="85" />
+			<Item id="200001" count="1" rate="5" />
+		</Ore>
+	</Item>
+	<Item ID="118" name="vip宣传公告，每小时一条（顺序不能变）" out_num="1 1" max="24" DayLimitType="398" TypeCheckFun = "14" >
+		<Ore>
+			<Item id="1" count="50" rate="0" />
+			<Item id="1" count="100" rate="33" />
+			<Item id="200213" count="1" rate="33" />
+			<Item id="1" count="200" rate="33" />
+			<Item id="400102" count="1" rate="1" />
+		</Ore>
+	</Item>
+</Mine>
+
