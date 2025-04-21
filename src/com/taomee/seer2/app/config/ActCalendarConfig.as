@@ -39,10 +39,9 @@ public class ActCalendarConfig {
         var _loc11_:XML = null;
         var _loc12_:XMLList = null;
         var _loc13_:XML = null;
-        weekActList = new Vector.<Vector.<ActDetailInfo>>(7);
+        weekActList = new Vector.<Vector.<ActDetailInfo>>(3);
         var _loc1_:XML = xml;
         var _loc2_:XMLList = _loc1_.descendants("acts");
-        var _loc3_:Date = new Date(TimeManager.getServerTime() * 1000);
         for each(_loc5_ in _loc2_) {
             _loc6_ = _loc5_.descendants("act");
             _loc7_ = new Vector.<ActDetailInfo>();
@@ -52,14 +51,7 @@ public class ActCalendarConfig {
                 _loc9_.willOver = Boolean(int(_loc8_.@willOver));
                 _loc9_.detailDes = _loc8_.@detailDes;
                 _loc9_.timeDes = _loc8_.@timeDes;
-                _loc4_ = String(_loc8_.@startTime).split(":");
-                _loc3_.hours = int(_loc4_[0]);
-                _loc3_.minutes = int(_loc4_[1]);
-                _loc9_.startTime = _loc3_.getTime() / 1000;
-                _loc4_ = String(_loc8_.@endTime).split(":");
-                _loc3_.hours = int(_loc4_[0]);
-                _loc3_.minutes = int(_loc4_[1]);
-                _loc9_.endTime = _loc3_.getTime() / 1000;
+                //这里删了startTime和endTime,感觉没用
                 _loc9_.go = String(_loc8_.@go);
                 _loc9_.iconId = uint(_loc8_.@iconId);
                 _loc10_ = _loc8_.descendants("item");
@@ -81,6 +73,8 @@ public class ActCalendarConfig {
     }
 
     public static function setCurActIndex():void {
+        //没看懂这个是干什么的,但是一系列改动导致调用这个可能出问题，先直接return掉
+        return;
         var _loc5_:ActDetailInfo = null;
         var _loc6_:Vector.<ActDetailInfo> = null;
         var _loc7_:ActDetailInfo = null;
