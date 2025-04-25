@@ -19,19 +19,24 @@ import com.taomee.seer2.app.arena.util.FightPostion;
 import com.taomee.seer2.app.arena.util.FightSide;
 import com.taomee.seer2.app.arena.util.FighterActionType;
 import com.taomee.seer2.app.arena.util.SkillCategoryName;
+import com.taomee.seer2.app.config.PetSkinConfig;
 import com.taomee.seer2.app.pet.data.SkillInfo;
+import com.taomee.seer2.app.popup.ServerMessager;
 import com.taomee.seer2.core.entity.AnimateElement;
 import com.taomee.seer2.core.loader.ContentInfo;
 import com.taomee.seer2.core.scene.LayerManager;
 import com.taomee.seer2.core.scene.SceneManager;
 import com.taomee.seer2.core.utils.DisplayObjectUtil;
 import com.taomee.seer2.core.utils.URLUtil;
-import com.taomee.seer2.app.config.PetSkinConfig;
 
 import flash.display.MovieClip;
 import flash.events.Event;
 
 import org.taomee.ds.HashMap;
+
+import seer2.next.play.HitData;
+
+import seer2.next.play.HitEvent;
 
 public class Fighter extends AnimateElement {
 
@@ -96,19 +101,13 @@ public class Fighter extends AnimateElement {
             this.y = 50;
         }
         this.updatePosition();
-        if(this._fighterSide == FightSide.LEFT)
-        {
-            if(PetSkinConfig.getSkinId(this._fighterInfo.resourceId))
-            {
+        if (this._fighterSide == FightSide.LEFT) {
+            if (PetSkinConfig.getSkinId(this._fighterInfo.resourceId)) {
                 this._resourceUrl = URLUtil.getPetFightSwf(PetSkinConfig.getSkinId(this._fighterInfo.resourceId));
-            }
-            else
-            {
+            } else {
                 this._resourceUrl = URLUtil.getPetFightSwf(this._fighterInfo.resourceId);
             }
-        }
-        else
-        {
+        } else {
             this._resourceUrl = URLUtil.getPetFightSwf(this._fighterInfo.resourceId);
         }
     }
@@ -296,20 +295,14 @@ public class Fighter extends AnimateElement {
         }
         if (this._fighterAnimation == null) {
             this._fighterAnimation = new FighterAnimation();
-            if(this._fighterSide == FightSide.LEFT)
-            {
-                if(PetSkinConfig.getSkinId(this._fighterInfo.resourceId))
-                {
+            if (this._fighterSide == FightSide.LEFT) {
+                if (PetSkinConfig.getSkinId(this._fighterInfo.resourceId)) {
                     this._fighterAnimation.setup(this._fighterMC, PetSkinConfig.getSkinId(this._fighterInfo.resourceId));
+                } else {
+                    this._fighterAnimation.setup(this._fighterMC, this._fighterInfo.resourceId);
                 }
-                else
-                {
-                    this._fighterAnimation.setup(this._fighterMC,this._fighterInfo.resourceId);
-                }
-            }
-            else
-            {
-                this._fighterAnimation.setup(this._fighterMC,this._fighterInfo.resourceId);
+            } else {
+                this._fighterAnimation.setup(this._fighterMC, this._fighterInfo.resourceId);
             }
             animation = this._fighterAnimation;
         }
@@ -376,15 +369,20 @@ public class Fighter extends AnimateElement {
         }
     }
 
-    private function onHit(param1:Event):void {
-        this._fighterAnimation.removeEventListener(FighterAnimation.EVT_HIT, this.onHit);
-        if (this._turnResultInfo.atkTimes > 0) {
-            if (this._currentSkillInfo.category != SkillCategoryName.POW) {
-                this.playSkillSound(this._currentSkillInfo.id);
-            }
-            this.playSkillEffect(this._fighterTurnResultInfo.skillId);
+    private function onHit(param1:HitEvent):void {
+        var hitData:HitData = param1.data;
+        if (hitData.last()) {
+            this._fighterAnimation.removeEventListener(FighterAnimation.EVT_HIT, this.onHit);
         }
-        this.dispatchActionEvent(FighterEvent.HIT);
+        if (hitData.first()) {
+            if (this._turnResultInfo.atkTimes > 0) {
+                if (this._currentSkillInfo.category != SkillCategoryName.POW) {
+                    this.playSkillSound(this._currentSkillInfo.id);
+                }
+                this.playSkillEffect(this._fighterTurnResultInfo.skillId);
+            }
+        }
+        this.dispatchActionEvent(FighterEvent.HIT, null, hitData);
         param1.stopImmediatePropagation();
     }
 
@@ -471,9 +469,9 @@ public class Fighter extends AnimateElement {
         return this._isFit;
     }
 
-    private function dispatchActionEvent(param1:String):void {
+    private function dispatchActionEvent(param1:String, param2:String = null, hitData:HitData = null):void {
         if (hasEventListener(param1)) {
-            dispatchEvent(new FighterEvent(param1));
+            dispatchEvent(new FighterEvent(param1, param2, hitData));
         }
     }
 

@@ -21,6 +21,8 @@ import flash.events.EventDispatcher;
 import flash.utils.clearTimeout;
 import flash.utils.setTimeout;
 
+import seer2.next.play.HitData;
+
 public class FightTurnResultParser extends EventDispatcher {
 
     public static const PARSE_END:String = "parseEnd";
@@ -96,11 +98,16 @@ public class FightTurnResultParser extends EventDispatcher {
             var burstArr:Array = null;
             var skillHitTimeOut:Function = null;
             var evt:FighterEvent = param1;
-            atker.removeEventListener(FighterEvent.HIT, onAtkerHit);
+            var hitData:HitData = evt.hitData;
+
+            if (hitData.last()) {
+                atker.removeEventListener(FighterEvent.HIT, onAtkerHit);
+            }
+
             atkerTurnResultInfo = atker.fighterTurnResultInfo;
             skillInfo = atker.fighterInfo.getSkillInfo(atkerTurnResultInfo.skillId);
             if (skillInfo != null && skillInfo.categoryId != SkillCategoryValue.BUF_VALUE) {
-                if (parsingTurnResultInfo.atkTimes > 1) {
+                if (false && parsingTurnResultInfo.atkTimes > 1) {//连击先不展示了
                     skillHitTimeOut = function ():void {
                         if (skillHitCount < parsingTurnResultInfo.atkTimes) {
                             atkee.sectionSkill();
@@ -127,6 +134,10 @@ public class FightTurnResultParser extends EventDispatcher {
                         ArenaAnimationManager.createAnimation(ArenaAnimationType.POWSKILLHIT);
                     }
                 }
+            }
+            if (!hitData.last()) {
+                //只显示伤害就行，剩下的动画先不显示
+                return;
             }
             if (parsingTurnResultInfo.isCritical) {
                 ArenaAnimationManager.createAnimation(ArenaAnimationType.BAOJI);

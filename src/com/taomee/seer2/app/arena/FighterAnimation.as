@@ -5,13 +5,16 @@ import com.taomee.seer2.app.arena.util.HitInfoConfig;
 import com.taomee.seer2.core.animation.IAnimation;
 import com.taomee.seer2.core.config.ClientConfig;
 import com.taomee.seer2.core.player.FighterMoviePlayer;
-import com.taomee.seer2.app.config.PetSkinConfig;
 
 import flash.display.FrameLabel;
 import flash.display.MovieClip;
 import flash.display.Sprite;
+import flash.events.DataEvent;
 import flash.events.Event;
 import flash.utils.setTimeout;
+
+import seer2.next.play.HitData;
+import seer2.next.play.HitEvent;
 
 public class FighterAnimation extends Sprite implements IAnimation {
 
@@ -153,8 +156,8 @@ public class FighterAnimation extends Sprite implements IAnimation {
             removeActionPlayEventListener();
             doActionEnd();
         };
-        dispatchHitEvent = function ():void {
-            dispatchEvent(new Event(EVT_HIT));
+        dispatchHitEvent = function (hitData:HitData = null):void {
+            dispatchEvent(new HitEvent(EVT_HIT, hitData ? hitData : HitData.default1()));
         };
         if (this._mc != null && this._mc.numChildren > 0) {
             this._mc.removeEventListener(Event.FRAME_CONSTRUCTED, this.onFrameConstructed);
@@ -162,7 +165,24 @@ public class FighterAnimation extends Sprite implements IAnimation {
             if (this._currentLabel == FighterActionType.ATK_PHY || this._currentLabel == FighterActionType.ATK_BUF || this._currentLabel == FighterActionType.ATK_SPE || this._currentLabel == FighterActionType.ATK_POW || this._currentLabel == FighterActionType.INTERCOURSE) {
                 hitInfo = HitInfoConfig.getHitData(this._fighterResourceId);
                 time = hitInfo.getHitValue(this._currentLabel);
-                setTimeout(dispatchHitEvent, time * 1000);
+                if (time > 0) {//帧数表大于0的使用帧数表配置
+                    setTimeout(dispatchHitEvent, time * 1000);
+                } else {//否则使用事件触发
+                    var _mc:MovieClip = this._mc;
+                    const onMcHit:Function = function (event:Event):void {
+                        if (event instanceof DataEvent) {//连击事件
+                            var hitData:HitData = HitData.from(event as DataEvent);
+                            if (hitData.last()) {
+                                _mc.removeEventListener("hit", onMcHit);
+                            }
+                            dispatchHitEvent(hitData);
+                        } else {//普通事件
+                            _mc.removeEventListener("hit", onMcHit);
+                            dispatchHitEvent();
+                        }
+                    }
+                    _mc.addEventListener("hit", onMcHit)
+                }
             }
             this.playAnimation(onActionPlay);
         }
