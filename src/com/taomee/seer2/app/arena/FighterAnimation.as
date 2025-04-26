@@ -165,7 +165,7 @@ public class FighterAnimation extends Sprite implements IAnimation {
             if (this._currentLabel == FighterActionType.ATK_PHY || this._currentLabel == FighterActionType.ATK_BUF || this._currentLabel == FighterActionType.ATK_SPE || this._currentLabel == FighterActionType.ATK_POW || this._currentLabel == FighterActionType.INTERCOURSE) {
                 hitInfo = HitInfoConfig.getHitData(this._fighterResourceId);
                 time = hitInfo.getHitValue(this._currentLabel);
-                if (time > 0) {//帧数表大于0的使用帧数表配置
+                if (false && time > 0) {//帧数表大于0的使用帧数表配置
                     setTimeout(dispatchHitEvent, time * 1000);
                 } else {//否则使用事件触发
                     var _mc:MovieClip = this._mc;

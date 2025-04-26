@@ -13,7 +13,7 @@ public class ClientConfig {
 
     private static var _rootURL:String = "";
 
-    public static const timeRate:uint = 33;
+    public static const timeRate:uint = 40;
 
     public static var isInitComplete:Boolean = false;
 
