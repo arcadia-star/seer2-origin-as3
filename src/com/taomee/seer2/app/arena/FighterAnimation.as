@@ -162,7 +162,7 @@ public class FighterAnimation extends Sprite implements IAnimation {
             if (this._currentLabel == FighterActionType.ATK_PHY || this._currentLabel == FighterActionType.ATK_BUF || this._currentLabel == FighterActionType.ATK_SPE || this._currentLabel == FighterActionType.ATK_POW || this._currentLabel == FighterActionType.INTERCOURSE) {
                 hitInfo = HitInfoConfig.getHitData(this._fighterResourceId);
                 time = hitInfo.getHitValue(this._currentLabel);
-                setTimeout(dispatchHitEvent, time * 1000);
+                setTimeout(dispatchHitEvent, time);
             }
             this.playAnimation(onActionPlay);
         }

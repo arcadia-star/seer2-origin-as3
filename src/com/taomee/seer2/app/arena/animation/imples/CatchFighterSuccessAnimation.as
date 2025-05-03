@@ -49,7 +49,7 @@ public class CatchFighterSuccessAnimation extends BaseAnimation {
         }
         addChild(this._successAnimation);
         this._moviePlayer = new FighterMoviePlayer(this._successAnimation, this.onAnimationEnd, ClientConfig.timeRate);
-        this._timeOutIndex = setTimeout(this.onSuccess, EVT_SUCCEDD_FRAME_COUNTER / ClientConfig.timeRate * 1000);
+        this._timeOutIndex = setTimeout(this.onSuccess, EVT_SUCCEDD_FRAME_COUNTER * ClientConfig.timeRate);
     }
 
     private function onAnimationEnd():void {

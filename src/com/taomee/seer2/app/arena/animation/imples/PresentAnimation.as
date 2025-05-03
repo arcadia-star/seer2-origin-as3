@@ -56,7 +56,7 @@ public class PresentAnimation extends BaseAnimation {
 
     override public function play():void {
         this._moviePlayer = new FighterMoviePlayer(this._animation, this.onAnimationEnd, ClientConfig.timeRate);
-        this._timeOutId = setTimeout(this.onPresent, EVT_PRESENT_FRAME_NUM / ClientConfig.timeRate * 1000);
+        this._timeOutId = setTimeout(this.onPresent, EVT_PRESENT_FRAME_NUM * ClientConfig.timeRate);
     }
 
     override public function dispose():void {

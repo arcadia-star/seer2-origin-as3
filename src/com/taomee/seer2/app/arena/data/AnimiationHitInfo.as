@@ -39,7 +39,7 @@ public class AnimiationHitInfo {
             case FighterActionType.INTERCOURSE:
                 _loc2_ = this.fit;
         }
-        return _loc2_ / ClientConfig.timeRate;
+        return _loc2_ * ClientConfig.timeRate;
     }
 }
 }
