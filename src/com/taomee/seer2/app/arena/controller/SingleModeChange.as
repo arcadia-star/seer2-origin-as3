@@ -1,6 +1,7 @@
 package com.taomee.seer2.app.arena.controller {
 import com.taomee.seer2.app.arena.ArenaScene;
 import com.taomee.seer2.app.arena.Fighter;
+import com.taomee.seer2.app.arena.FighterAnimation;
 import com.taomee.seer2.app.arena.animation.ArenaAnimationManager;
 import com.taomee.seer2.app.arena.processor.Processor_19;
 import com.taomee.seer2.app.arena.util.FightMode;
@@ -27,6 +28,7 @@ internal class SingleModeChange extends BaseModeChange {
         var fighter:Fighter = param1;
         var angerVaule:uint = param2;
         onTick = function (param1:uint):void {
+            leftMainFighter.fighterAnimation.removeEventListener(FighterAnimation.EVT_END,onTick);
             Tick.instance.removeRender(onTick);
             onChangeStatusPet(1);
         };
@@ -81,7 +83,8 @@ internal class SingleModeChange extends BaseModeChange {
                 leftMainFighter.disappear(FightSide.LEFT);
                 onChangeStatusPet(0);
             } else {
-                Tick.instance.addRender(onTick, 2000);
+                leftMainFighter.fighterAnimation.addEventListener(FighterAnimation.EVT_END,onTick);
+                Tick.instance.addRender(onTick, 8000);
                 leftMainFighter.disappear(FightSide.LEFT);
             }
         }

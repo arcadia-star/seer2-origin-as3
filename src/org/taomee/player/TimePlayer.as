@@ -14,7 +14,7 @@ public class TimePlayer {
 
     protected var _timeRate:uint = 40;
 
-    protected var _duration:uint;
+    protected var _duration:uint = 0;
 
     protected var _totalTime:uint;
 
