@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<project name="swc example" default="main" basedir="../../">
+    <property name="FLEX_HOME" value="C:/software/flash/AIRSDK_Windows"/>
+    <property name="CP_PATH" value="E:/sync/seer2/dll"/>
+    <property name="MAIN_NAME" value="Seer2CoreDLL"/>
+    <property name="DEPLOY.dir" value="${basedir}/out/ant-build"/>
+    <property name="SWC_FILE" value="${DEPLOY.dir}/${MAIN_NAME}.swc"/>
+    <property name="SWF_FILE" value="${DEPLOY.dir}/${MAIN_NAME}.swf"/>
+    <taskdef resource="flexTasks.tasks" classpath="${FLEX_HOME}/ant/lib/flexTasks.jar"/>
+    <taskdef name="dll" classname="Seer2DLL" classpath="_scripts/build/Seer2DLL.jar"/>
+    <target name="main" depends="clean,compile,unzip"/>
+    <target name="dev" depends="main,copy"/>
+    <target name="clean">
+        <delete dir="${DEPLOY.dir}"/>
+        <mkdir dir="${DEPLOY.dir}"/>
+    </target>
+    <target name="compile">
+        <compc output="${SWC_FILE}" failonerror="true" maxmemory="1024m"
+               dump-config="${DEPLOY.dir}/config.xml"
+               size-report="${DEPLOY.dir}/sizereport.xml"
+               link-report="${DEPLOY.dir}/linkreport.xml"
+               actionscript-file-encoding="UTF-8"
+        >
+            <source-path path-element="${basedir}/src"/>
+            <include-sources dir="${basedir}/src" includes="*"/>
+            <library-path dir="${basedir}/lib" includes="*" append="true"/>
+        </compc>
+    </target>
+    <target name="unzip">
+        <dll input="${SWC_FILE}" output="${SWF_FILE}"/>
+    </target>
+    <target name="copy">
+        <copy file="${SWF_FILE}" todir="${CP_PATH}"/>
+    </target>
+</project>
