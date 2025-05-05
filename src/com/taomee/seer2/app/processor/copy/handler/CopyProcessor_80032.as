@@ -57,7 +57,7 @@ public class CopyProcessor_80032 extends CopyProcessor {
 
     private const MI_FOR:Array = [202350, 202351];
 
-    private const POS_LIST:Array = [[320, 135], [781, 35], [0, 0], [160, 385], [140, 305], [255, 245], [715, 380], [740, 311], [582, 265], [392, 212]];
+    private const POS_LIST:Array = [[380, 115], [895, 15], [0, 0], [200, 480], [175, 385], [340, 310], [925, 480], [945, 385], [760, 320], [515, 255]];
 
     private const FIGHT_INDEX:Vector.<int> = Vector.<int>([492, 493, 494]);
 
