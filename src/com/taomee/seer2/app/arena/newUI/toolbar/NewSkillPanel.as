@@ -54,6 +54,7 @@ internal class NewSkillPanel extends Sprite {
         var i:int = 0;
         var onSkillBtnOver:Function = null;
         var onSkillBtnOut:Function = null;
+        var onSuperSkillBtnOver:Function = null;
         var skillBtn:NewSkillButton = null;
         super();
         onSkillBtnOver = function (param1:MouseEvent):void {
@@ -73,6 +74,27 @@ internal class NewSkillPanel extends Sprite {
                 param1.stopImmediatePropagation();
             }
         };
+        onSuperSkillBtnOver = function (param1:MouseEvent):void
+        {
+            if (_controlledFighter.fighterInfo.hasSuperSkill())
+            {
+                if(_superSkillBtn.getSkillInfo())
+                {
+                    _tip.setSuperSkillInfo(_superSkillBtn.getSkillInfo(),null);
+                }
+                else
+                {
+                    _tip.setSuperSkillInfo(null,"必杀技");
+                }
+            } else
+            {
+                _tip.setSuperSkillInfo(null,"60级领悟必杀技");
+            }
+            _tip.x = _superSkillBtn.x + 40;
+            _tip.y = _superSkillBtn.y + 10;
+            addChild(_tip);
+            param1.stopImmediatePropagation();
+        };
         this.mouseEnabled = false;
         this._superSkillBtn = new NewSuperSkillButton();
         this._superSkillBtn.x = 590;
@@ -81,6 +103,8 @@ internal class NewSkillPanel extends Sprite {
         this._superSkillBtn.useHandCursor = true;
         this._superSkillBtn.enabled = false;
         this._superSkillBtn.addEventListener(MouseEvent.CLICK, this.onSkillBtnClick);
+        this._superSkillBtn.addEventListener(MouseEvent.MOUSE_OVER, onSuperSkillBtnOver);
+        this._superSkillBtn.addEventListener(MouseEvent.MOUSE_OUT, onSkillBtnOut);
         offsetX = 30;
         offsetY = -60;
         btnWidth = 140;
@@ -244,10 +268,13 @@ internal class NewSkillPanel extends Sprite {
         }
         var _loc2_:Boolean = this._controlledFighter.fighterInfo.hasSuperSkill();
         if (_loc2_) {
+            /*原来必杀技的介绍框删掉，换成新的(新的放到上面初始化加监听的地方了)
             _loc8_ = this._superSkillBtn.getSkillInfo() == null ? "必杀技" : this._superSkillBtn.getSkillInfo().description;
             TooltipManager.addMultipleTip(this._superSkillBtn, _loc8_);
+            */
         } else {
-            TooltipManager.addCommonTip(this._superSkillBtn, "60级领悟必杀技");
+            //同上
+            //TooltipManager.addCommonTip(this._superSkillBtn, "60级领悟必杀技");
         }
         var _loc5_:int = 30;
         var _loc6_:int = -60;
