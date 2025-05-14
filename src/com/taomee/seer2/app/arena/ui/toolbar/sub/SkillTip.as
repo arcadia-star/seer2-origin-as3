@@ -46,5 +46,22 @@ public class SkillTip extends Sprite {
         _back.height = Math.max(110.55, _descriptionTxt.height + 20);
         _descriptionTxt.y = 5 - _back.height;
     }
+
+    public function setSuperSkillInfo(param1:SkillInfo = null,tip:String = null):void{
+        if(param1)
+        {
+            this._descriptionTxt.htmlText = TextUtils.wrapHtmlFontSize(param1.description);
+        }
+        else if(tip)
+        {
+            this._descriptionTxt.htmlText = TextUtils.wrapHtmlFontSize("60级领悟必杀技");
+        }
+        else
+        {
+            this._descriptionTxt.htmlText = TextUtils.wrapHtmlFontSize("未配置技能!");
+        }
+        _back.height = Math.max(110.55, _descriptionTxt.height + 20);
+        _descriptionTxt.y = 5 - _back.height;
+    }
 }
 }
