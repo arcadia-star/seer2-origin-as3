@@ -140,13 +140,76 @@ public class QuestMapHandler_39_660 extends QuestMapHandler {
         this._mc_4.addEventListener(MouseEvent.CLICK, this.onStewardTalkAgain);
     }
 
-    private function onStewardTalkAgain(param1:MouseEvent):void {
-        /*
-         * Decompilation error
-         * Timeout (1 minute) was reached
-         * Instruction count: 22
-         */
-        throw new flash.errors.IllegalOperationError("Not decompiled due to timeout");
+    private function onStewardTalkAgain(param1:MouseEvent) : void
+    {
+        var event:MouseEvent = param1;
+        NpcDialog.show(97,"财务官",[[1,"缇娜女王陛下！我已经按照约定完成了任务，现在带我走吧！"]],["会带你走才怪……"],[function():void
+        {
+            NpcDialog.show(39,"缇娜",[[1,"你在做梦吗？我怎么不记得我说过要带你走？"]],["看吧……"],[function():void
+            {
+                NpcDialog.show(97,"财务官",[[2,"不对，不对啊……女王陛下，你是在开玩笑吧？呵——呵——女王陛下真有幽默感……"]],["丢脸丢到家了……"],[function():void
+                {
+                    _mc_4.removeEventListener(MouseEvent.CLICK,onStewardTalkAgain);
+                    DisplayUtil.removeForParent(_mc_3);
+                    DisplayUtil.removeForParent(_mc_4);
+                    _mc_0 = _processor.resLib.getMovieClip("mc_10");
+                    _map.front.addChild(_mc_0);
+                    MovieClipUtil.playMc(_mc_0,1,_mc_0.totalFrames,function():void
+                    {
+                        NpcDialog.show(107,"总督大人",[[0,"叛徒……你简直丢尽飞翼氏族的颜面！！还不退下！"]],["哇塞！总督大人驾到！！"],[function():void
+                        {
+                            NpcDialog.show(80,"葛蕾芬兵团长",[[0,"背叛者……死！！"]],["突然感觉有安全感多了……"],[function():void
+                            {
+                                NpcDialog.show(39,"缇娜",[[1,"你们还能得意多久呢？博士已经封印了神兽的力量，所有的精灵都会陷入虚弱状态。哦——呵呵呵！"]],["斯坦因说的拘束器……难道是？！"],[function():void
+                                {
+                                    NpcDialog.show(80,"葛蕾芬兵团长",[[0,"葛雷芬……无法被呼唤出来……"]],["这，这？！"],[function():void
+                                    {
+                                        NpcDialog.show(83,"萨伯尔兵团长",[[0,"糟糕！萨伯尔也是！！"]],["哎？！？！？！"],[function():void
+                                        {
+                                            DisplayUtil.removeForParent(_mc_0);
+                                            _mc_1 = _processor.resLib.getMovieClip("mc_11");
+                                            _map.front.addChild(_mc_1);
+                                            MovieClipUtil.playMc(_mc_1,1,_mc_1.totalFrames,function():void
+                                            {
+                                                NpcDialog.show(87,"刚铎",[[0,"将未来托付给他人，只能证明自己的软弱！！"]],["嗯，嗯！"],[function():void
+                                                {
+                                                    NpcDialog.show(107,"总督大人",[[0,"刚铎……我知道，你一定会出现。但是他们已经拘束了神兽的力量，赤手空拳的我们还能够做什么？"]],["对啊，精灵都没办法使用。"],[function():void
+                                                    {
+                                                        NpcDialog.show(87,"刚铎",[[1,"有赤手空拳就够了。我来告诉你，靠自己的力量可以做到什么吧！"]],["可以做到什么？"],[function():void
+                                                        {
+                                                            MovieClipUtil.playFullScreen(URLUtil.getQuestFullScreenAnimation("39_1"),function():void
+                                                            {
+                                                                NpcDialog.show(39,"缇娜",[[3,"什么……困住神兽的拘束器被解开了？！不可能！！"]],["难道说……？！"],[function():void
+                                                                {
+                                                                    MovieClipUtil.playFullScreen(URLUtil.getQuestFullScreenAnimation("39_2"),function():void
+                                                                    {
+                                                                        NpcDialog.show(107,"总督大人",[[0,"刚铎，我想，我开始理解你当年对我说的话了。"]],["总督，当年究竟发生了什么？"],[function():void
+                                                                        {
+                                                                            NpcDialog.show(107,"总督大人",[[0,"星际使者，我很感激你为飞翼氏族所做的一切。我想这么多年来我做的最正确的决定，就是信任了你。"]],["喂，不要回避我的问题嘛。"],[function():void
+                                                                            {
+                                                                                NpcDialog.show(87,"刚铎",[[0,"哦~~是谁！扰乱了我的思绪……是谁！！走进了我的生命~~所以，下次再说！"]],["又来？！？！"],[function():void
+                                                                                {
+                                                                                    QuestManager.addEventListener(QuestEvent.COMPLETE,onQuestComplete);
+                                                                                    QuestManager.completeStep(_quest.id,4);
+                                                                                }]);
+                                                                            }]);
+                                                                        }]);
+                                                                    },true,false,2);
+                                                                }]);
+                                                            },true,false,2);
+                                                        }]);
+                                                    }]);
+                                                }]);
+                                            },true);
+                                        }]);
+                                    }]);
+                                }]);
+                            }]);
+                        }]);
+                    },true);
+                }]);
+            }]);
+        }]);
     }
 
     private function onQuestComplete(param1:QuestEvent):void {
