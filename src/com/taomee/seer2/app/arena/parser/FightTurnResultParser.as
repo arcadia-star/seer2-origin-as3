@@ -100,7 +100,8 @@ public class FightTurnResultParser extends EventDispatcher {
             atkerTurnResultInfo = atker.fighterTurnResultInfo;
             skillInfo = atker.fighterInfo.getSkillInfo(atkerTurnResultInfo.skillId);
             if (skillInfo != null && skillInfo.categoryId != SkillCategoryValue.BUF_VALUE) {
-                if (parsingTurnResultInfo.atkTimes > 1) {
+                //原来这里是连击段数动画的判定，我让他只显示一段伤害
+                /*if (parsingTurnResultInfo.atkTimes > 1){
                     skillHitTimeOut = function ():void {
                         if (skillHitCount < parsingTurnResultInfo.atkTimes) {
                             atkee.sectionSkill();
@@ -120,7 +121,11 @@ public class FightTurnResultParser extends EventDispatcher {
                     timeout = 0;
                     burstArr = getBurstList(parsingTurnResultInfo.atkTimes);
                     skillHitTimeOut();
-                } else {
+                } else */
+                {
+                    if (parsingTurnResultInfo.atkTimes > 1) {
+                        ServerMessager.addMessage("连击次数为: " + parsingTurnResultInfo.atkTimes + "次");
+                    }
                     atkee.takeAction();
                     ArenaAnimationManager.showAtkeeHpReduceSplash(atkee, parsingTurnResultInfo);
                     if (skillInfo.category == SkillCategoryName.POW) {
