@@ -6,6 +6,7 @@ import com.taomee.seer2.app.dialog.NpcDialog;
 import com.taomee.seer2.app.inventory.ItemManager;
 import com.taomee.seer2.app.manager.DayLimitManager;
 import com.taomee.seer2.app.net.parser.Parser_1142;
+import com.taomee.seer2.app.popup.AlertManager;
 import com.taomee.seer2.app.popup.ServerMessager;
 import com.taomee.seer2.app.scene.LobbyPanel;
 import com.taomee.seer2.app.serverBuffer.ServerBuffer;
@@ -264,6 +265,11 @@ public class YueLingShouEvolutionManager {
     private static function onSwap(param1:MouseEvent):void {
         var e:MouseEvent = param1;
         var idx:int = swapBtnList.indexOf(e.currentTarget as SimpleButton);
+        if(idx < 2)
+        {
+            AlertManager.showAlert("领取该道具会消耗对应进度,改服暂时屏蔽\n若仍要领取,请前往官服");
+            return;
+        }
         SwapManager.swapItem(3928, 1, function (param1:IDataInput):void {
             new SwapInfo(param1);
             updateDate();

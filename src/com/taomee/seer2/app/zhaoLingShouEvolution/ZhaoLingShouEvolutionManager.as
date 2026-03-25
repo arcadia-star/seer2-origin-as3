@@ -350,7 +350,7 @@ public class ZhaoLingShouEvolutionManager {
             _loc3_++;
         }
         var _loc4_:int = (_loc4_ = int(param1.infoVec[1])) > 200 ? 200 : _loc4_;
-        this._barMc.gotoAndStop(_loc4_);
+        this._barMc.gotoAndStop(int(_loc4_ / 2));
         TooltipManager.addCommonTip(this._barMc, _loc4_.toString());
         this._mainUI.visible = true;
     }
