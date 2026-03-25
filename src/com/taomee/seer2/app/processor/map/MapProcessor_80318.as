@@ -19,6 +19,7 @@ import com.taomee.seer2.core.map.MapProcessor;
 import com.taomee.seer2.core.module.ModuleManager;
 import com.taomee.seer2.core.scene.SceneManager;
 import com.taomee.seer2.core.scene.SceneType;
+import com.taomee.seer2.core.ui.toolTip.TooltipManager;
 import com.taomee.seer2.core.utils.URLUtil;
 
 import flash.display.MovieClip;
@@ -165,6 +166,7 @@ public class MapProcessor_80318 extends MapProcessor {
             this.dreamValues = 200;
         }
         this.bar.scaleY = this.dreamValues / 200;
+        TooltipManager.addCommonTip(this.bar,this.dreamValues.toString());
         if (this.dreamValues >= 50 && this.dreamValues < 100) {
             this.setBtnEnable(this.swapList[0], true);
         } else if (this.dreamValues >= 100 && this.dreamValues < 200) {
