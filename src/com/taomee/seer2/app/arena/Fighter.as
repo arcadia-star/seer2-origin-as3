@@ -96,19 +96,13 @@ public class Fighter extends AnimateElement {
             this.y = 50;
         }
         this.updatePosition();
-        if(this._fighterSide == FightSide.LEFT)
-        {
-            if(PetSkinConfig.getSkinId(this._fighterInfo.resourceId))
-            {
+        if (this._fighterSide == FightSide.LEFT) {
+            if (PetSkinConfig.getSkinId(this._fighterInfo.resourceId)) {
                 this._resourceUrl = URLUtil.getPetFightSwf(PetSkinConfig.getSkinId(this._fighterInfo.resourceId));
-            }
-            else
-            {
+            } else {
                 this._resourceUrl = URLUtil.getPetFightSwf(this._fighterInfo.resourceId);
             }
-        }
-        else
-        {
+        } else {
             this._resourceUrl = URLUtil.getPetFightSwf(this._fighterInfo.resourceId);
         }
     }
@@ -296,20 +290,14 @@ public class Fighter extends AnimateElement {
         }
         if (this._fighterAnimation == null) {
             this._fighterAnimation = new FighterAnimation();
-            if(this._fighterSide == FightSide.LEFT)
-            {
-                if(PetSkinConfig.getSkinId(this._fighterInfo.resourceId))
-                {
+            if (this._fighterSide == FightSide.LEFT) {
+                if (PetSkinConfig.getSkinId(this._fighterInfo.resourceId)) {
                     this._fighterAnimation.setup(this._fighterMC, PetSkinConfig.getSkinId(this._fighterInfo.resourceId));
+                } else {
+                    this._fighterAnimation.setup(this._fighterMC, this._fighterInfo.resourceId);
                 }
-                else
-                {
-                    this._fighterAnimation.setup(this._fighterMC,this._fighterInfo.resourceId);
-                }
-            }
-            else
-            {
-                this._fighterAnimation.setup(this._fighterMC,this._fighterInfo.resourceId);
+            } else {
+                this._fighterAnimation.setup(this._fighterMC, this._fighterInfo.resourceId);
             }
             animation = this._fighterAnimation;
         }

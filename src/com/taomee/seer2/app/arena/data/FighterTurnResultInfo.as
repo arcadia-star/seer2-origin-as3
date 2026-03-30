@@ -111,6 +111,10 @@ public class FighterTurnResultInfo {
         return this._catchTime;
     }
 
+    public function get position():uint {
+        return this._position;
+    }
+
     public function get hp():uint {
         return this._hp;
     }

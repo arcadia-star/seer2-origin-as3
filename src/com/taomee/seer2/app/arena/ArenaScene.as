@@ -147,7 +147,9 @@ public class ArenaScene extends BaseScene {
         interruptFlag = false;
         DialogPanel.hide();
         Connection.addCommandListener(CommandSet.FIGHT_END_1507, onFightEnd);
-        new ArenaResourceLoadCMD(this._arenaData, onGetInfoComplete).send();
+        new ArenaResourceLoadCMD(this._arenaData, onGetInfoComplete, this, function ():void {
+            Connection.removeCommandListener(CommandSet.FIGHT_END_1507, onFightEnd);
+        }).send();
     }
 
     public function sortAllFighters():void {

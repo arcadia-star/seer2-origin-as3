@@ -387,6 +387,10 @@ public class FightController implements IFightController {
     }
 
     public function exitFight():void {
+        exitFight0(this._resultInfo, _scene);
+    }
+
+    public static function exitFight0(_resultInfo:FightResultInfo, _scene:ArenaScene):void {
         var petInfo:PetInfo = null;
         var j:int = 0;
         var changedPetInfo:PetInfo = null;
@@ -406,7 +410,7 @@ public class FightController implements IFightController {
         };
         var petInfoVec:Vector.<PetInfo> = PetInfoManager.getAllBagPetInfo();
         var petInfoLen:int = int(petInfoVec.length);
-        var changedPetInfoLen:int = int(this._resultInfo.changedPetInfoVec.length);
+        var changedPetInfoLen:int = int(_resultInfo.changedPetInfoVec.length);
         var i:int = 0;
         ArenaAnimationManager.forCheckStuck = -1;
         ArenaAnimationManager.showCountDownTime = 0;
@@ -414,7 +418,7 @@ public class FightController implements IFightController {
             petInfo = petInfoVec[i];
             j = 0;
             while (j < changedPetInfoLen) {
-                changedPetInfo = this._resultInfo.changedPetInfoVec[j];
+                changedPetInfo = _resultInfo.changedPetInfoVec[j];
                 if (changedPetInfo.level > ActorManager.actorInfo.highestPetLevel) {
                     ActorManager.actorInfo.highestPetLevel = changedPetInfo.level;
                 }
@@ -430,21 +434,21 @@ public class FightController implements IFightController {
             }
             i++;
         }
-        if (this._resultInfo.gainedEmblemPetId != 0) {
-            showPetGainEmblemMessage(this._resultInfo.gainedEmblemPetId, this._resultInfo.gainedEmblemId);
+        if (_resultInfo.gainedEmblemPetId != 0) {
+            showPetGainEmblemMessage(_resultInfo.gainedEmblemPetId, _resultInfo.gainedEmblemId);
         }
-        this._scene.exitFight();
+        _scene.exitFight();
         AutoFightPanel.FightOverEvent.dispatchEvent(new Event("fightOverEvent"));
         if (FightManager.hasEventListener(FightStartEvent.FIGHT_OVER)) {
-            SceneManager.addEventListener(SceneEvent.SWITCH_COMPLETE, this.onSwitchEvent);
+            SceneManager.addEventListener(SceneEvent.SWITCH_COMPLETE, onSwitchEvent);
         }
         if (DecorationControl._isShowDecoration) {
             DecorationControl.dispose();
         }
     }
 
-    private function onSwitchEvent(param1:SceneEvent):void {
-        SceneManager.removeEventListener(SceneEvent.SWITCH_COMPLETE, this.onSwitchEvent);
+    private static function onSwitchEvent(param1:SceneEvent):void {
+        SceneManager.removeEventListener(SceneEvent.SWITCH_COMPLETE, onSwitchEvent);
         FightManager.dispatchEvent(new FightStartEvent(FightStartEvent.FIGHT_OVER));
     }
 

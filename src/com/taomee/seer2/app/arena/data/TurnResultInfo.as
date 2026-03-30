@@ -18,6 +18,8 @@ public class TurnResultInfo {
 
     private var _skillTypeDelation:uint;
 
+    public var skillTypeDelationRate:uint;
+
     public function TurnResultInfo(param1:IDataInput) {
         var _loc3_:FighterTurnResultInfo = null;
         var _loc5_:FighterBuffInfo = null;
@@ -35,6 +37,7 @@ public class TurnResultInfo {
         this._notifyIndex = param1.readUnsignedInt();
         this._isCritical = param1.readUnsignedInt() >= 1;
         this._skillTypeDelation = param1.readUnsignedInt();
+        this.skillTypeDelationRate = _skillTypeDelation;
         this._atkTimes = param1.readUnsignedInt();
         this._changedHp = param1.readUnsignedInt();
         if (this._skillTypeDelation > 100) {

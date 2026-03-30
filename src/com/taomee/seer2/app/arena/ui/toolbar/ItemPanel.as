@@ -22,7 +22,7 @@ import flash.display.Sprite;
 import flash.events.MouseEvent;
 import flash.geom.Point;
 
-internal class ItemPanel extends Sprite {
+public class ItemPanel extends Sprite {
 
     private static const MEDICINE_ITEM_TYPE_VECTOR:Vector.<int> = Vector.<int>([PetItemType.PHYSICAL_MEDICINE, PetItemType.ANGER_MEDICINE, PetItemType.FIGHT_MEDICINE, PetItemType.PROPERTY_MEDICINE, PetItemType.AID_MEDICINE, PetItemType.RESURRECTION]);
 
@@ -210,8 +210,14 @@ internal class ItemPanel extends Sprite {
     }
 
     public function resetData():void {
-        var filterByPetItemType:Function = null;
-        filterByPetItemType = function (param1:PetItem, param2:int, param3:Vector.<PetItem>):Boolean {
+        this._petItemVec = filterItems(_filterType);
+        this._pageIndex = 0;
+        this._maxPageIndex = Math.max(0, Math.floor((this._petItemVec.length - 1) / ITEM_NUM_PATGE));
+        this.showPage(this._pageIndex);
+    }
+
+    public static function filterItems(_filterType:int):Vector.<PetItem> {
+        var filterByPetItemType:Function = function (param1:PetItem, param2:int, param3:Vector.<PetItem>):Boolean {
             var _loc4_:ArenaScene = null;
             var _loc5_:Boolean = false;
             var _loc6_:Fighter = null;
@@ -253,11 +259,22 @@ internal class ItemPanel extends Sprite {
             }
             return false;
         };
-        this._petItemVec = ItemManager.getPetRelateVec();
-        this._petItemVec = this._petItemVec.filter(filterByPetItemType);
-        this._pageIndex = 0;
-        this._maxPageIndex = Math.max(0, Math.floor((this._petItemVec.length - 1) / ITEM_NUM_PATGE));
-        this.showPage(this._pageIndex);
+        return ItemManager.getPetRelateVec().filter(filterByPetItemType);
+    }
+
+    public static function filterItemsAllFight(_filterType:int):Vector.<PetItem> {
+        var filterByPetItemType:Function = function (param1:PetItem, param2:int, param3:Vector.<PetItem>):Boolean {
+            if (_filterType == PetItemType.CAPSULE) {
+                return param1.type == PetItemType.CAPSULE;
+            }
+            if (_filterType == PetItemType.PHYSICAL_MEDICINE) {
+                if (MEDICINE_ITEM_TYPE_VECTOR.indexOf(param1.type) != -1) {
+                    return true;
+                }
+            }
+            return false;
+        };
+        return ItemManager.getPetRelateVec().filter(filterByPetItemType);
     }
 
     private function showPage(param1:int):void {

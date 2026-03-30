@@ -19,7 +19,7 @@ public class Processor_9 extends ArenaProcessor {
         Connection.addCommandListener(CommandSet.FIGHT_BUFF_RESULT_NOTIFY_9, this.processor);
     }
 
-    override public function processor(param1:MessageEvent):void {
+    public static function parse(param1:MessageEvent):BuffResultInfo {
         var _loc2_:IDataInput = param1.message.getRawData();
         var _loc3_:BuffResultInfo = new BuffResultInfo();
         _loc3_.userId = _loc2_.readUnsignedInt();
@@ -33,7 +33,11 @@ public class Processor_9 extends ArenaProcessor {
             _loc6_++;
         }
         _loc3_.buffResultInfoRoundDatas = _loc4_;
-        fightController.addBuffResultInfo(_loc3_);
+        return _loc3_;
+    }
+
+    override public function processor(param1:MessageEvent):void {
+        fightController.addBuffResultInfo(parse(param1));
     }
 
     override public function dispose():void {
