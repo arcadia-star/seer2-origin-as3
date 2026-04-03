@@ -1,5 +1,4 @@
 package seer2.next.entry {
-import com.taomee.seer2.app.config.PetSkinConfig;
 
 public class NextEntry {
     public function NextEntry() {

@@ -1,4 +1,6 @@
 package org.taomee.bean {
+import com.taomee.seer2.app.pet.data.PetInfoManager;
+
 import flash.events.Event;
 import flash.events.EventDispatcher;
 import flash.utils.Dictionary;
@@ -81,6 +83,7 @@ public class BeanManager {
         } else {
             _currentList = null;
             _playering = false;
+            PetInfoManager.cancelPetFellow();
             dispatchEvent(new BeanEvent(BeanEvent.COMPLETE, _currentID));
         }
     }
