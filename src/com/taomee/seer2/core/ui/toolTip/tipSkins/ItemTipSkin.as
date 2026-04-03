@@ -29,6 +29,7 @@ public class ItemTipSkin extends BaseTipSkin {
         this._descriptionTxt.autoSize = TextFieldAutoSize.LEFT;
         this._descriptionTxt.width = 160;
         this._descriptionTxt.wordWrap = true;
+        this._descriptionTxt.multiline = true;
         _back = _tipSkin["back"];
         this._remarkTxt = _tipSkin["remark"];
         _tipSkin.x = 10;
@@ -39,8 +40,8 @@ public class ItemTipSkin extends BaseTipSkin {
     override public function setData(param1:Object):void {
         this._data = param1;
         if (this._data) {
-            this._nameTxt.text = param1.name;
-            this._descriptionTxt.text = param1.description;
+            this._nameTxt.htmlText = param1.name;
+            this._descriptionTxt.htmlText = param1.description;
             DisplayObjectUtil.removeFromParent(this._remarkTxt);
             _back.width = this._descriptionTxt.width + 10;
             _back.height = this._descriptionTxt.height + 50;

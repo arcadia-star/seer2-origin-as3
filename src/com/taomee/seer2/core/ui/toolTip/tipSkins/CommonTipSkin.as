@@ -24,7 +24,7 @@ public class CommonTipSkin extends BaseTipSkin {
         this._flipBackMc = _tipSkin["flipBack"] as MovieClip;
         _tipTxt = _tipSkin["txtTip"] as TextField;
         _tipTxt.autoSize = TextFieldAutoSize.LEFT;
-        _tipTxt.multiline = false;
+        _tipTxt.multiline = true;
         _tipSkin.x = -9;
         _tipSkin.y = -30;
         addChild(_tipSkin);
