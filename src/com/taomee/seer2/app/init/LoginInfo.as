@@ -145,7 +145,7 @@ public class LoginInfo {
         TimeManager.setupLogin(param1);
         parseQuestData(param1);
         PetInfoManager.setupPetInfoData(param1);
-        _userInfo.setFollowingPetInfo(PetInfoManager.getFollowingPetInfo());
+        _userInfo.setFollowingPetInfo(null);
         _userInfo.setPetRidePetInfo(PetInfoManager.getPetRidingPetInfo());
         TimeManager.setupTime(param1);
         _isShowLoginAwardPanel = param1.readUnsignedInt();

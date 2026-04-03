@@ -484,6 +484,16 @@ public class PetInfoManager {
         count1016 = 0;
     }
 
+    public static function cancelPetFellow():void {
+        var _loc1_:PetInfo = getFollowingPetInfo();
+        if(_loc1_) {
+            requestSetPetFollow(_loc1_.catchTime,0);
+        }
+        else {
+            trace("未加载精灵数据");
+        }
+    }
+
     private static function getAllStoragePetInfo():Vector.<PetInfo> {
         var _loc3_:PetInfo = null;
         var _loc1_:Vector.<PetInfo> = new Vector.<PetInfo>();
