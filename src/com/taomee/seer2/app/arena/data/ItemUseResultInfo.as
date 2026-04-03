@@ -8,31 +8,31 @@ public class ItemUseResultInfo {
 
     public var fighterId:uint;
 
-    private var _side:uint;
+    public var _side:uint;
 
-    private var _skillId:uint;
+    public var _skillId:uint;
 
-    private var _position:uint;
+    public var _position:uint;
 
-    private var _hp:uint;
+    public var _hp:uint;
 
-    private var _maxHp:uint;
+    public var _maxHp:uint;
 
-    private var _anger:uint;
+    public var _anger:uint;
 
-    private var _isDying:Boolean;
+    public var _isDying:Boolean;
 
-    private var _atkLevel:uint;
+    public var _atkLevel:uint;
 
-    private var _defenceLevel:uint;
+    public var _defenceLevel:uint;
 
-    private var _specialAtkLevel:uint;
+    public var _specialAtkLevel:uint;
 
-    private var _specialDefenceLevel:uint;
+    public var _specialDefenceLevel:uint;
 
-    private var _speedLevel:uint;
+    public var _speedLevel:uint;
 
-    private var _buffInfoVec:Vector.<FighterBuffInfo>;
+    public var _buffInfoVec:Vector.<FighterBuffInfo>;
 
     public function ItemUseResultInfo(param1:IDataInput) {
         super();

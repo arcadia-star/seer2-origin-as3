@@ -62,6 +62,7 @@ import org.taomee.utils.Tick;
 
 import seer2.next.entry.DynConfig;
 import seer2.next.entry.NextEntry;
+import seer2.next.fight.ui.FightUI;
 
 public class MainEntry {
 
@@ -96,8 +97,7 @@ public class MainEntry {
         VersionManager.setup(param2);
     }
 
-    public function get dispatcher():EventDispatcher
-    {
+    public function get dispatcher():EventDispatcher {
         return eventDispatcher;
     }
 
@@ -187,6 +187,12 @@ public class MainEntry {
                 PetSkinDefineConfig.initialize();
                 AlertManager.showAlert("重新加载成功");
             });
+        });
+        var useFightUI:ContextMenuItem = new ContextMenuItem("使用新UI");
+        t.customItems.push(useFightUI);
+        useFightUI.addEventListener(ContextMenuEvent.MENU_ITEM_SELECT, function (param1:ContextMenuEvent):void {
+            FightUI.enable = !FightUI.enable;
+            AlertManager.showAlert("切换成功:" + (FightUI.enable ? "开启" : "关闭"));
         });
     }
 

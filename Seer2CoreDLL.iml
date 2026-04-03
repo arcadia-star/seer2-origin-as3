@@ -2,7 +2,7 @@
 <module type="Flex" version="4">
   <component name="FacetManager">
     <facet type="Python" name="Python">
-      <configuration sdkName="Python 3.12" />
+      <configuration sdkName="Python 3.7 (seer2-origin-as3)" />
     </facet>
   </component>
   <component name="FlexBuildConfigurationManager" active="Seer2CoreDLL">
@@ -68,6 +68,5 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="library" name="Python 3.12 interpreter library" level="application" />
   </component>
 </module>

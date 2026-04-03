@@ -1,4 +1,5 @@
 package com.taomee.seer2.app.arena.cmd {
+import com.taomee.seer2.app.arena.ArenaScene;
 import com.taomee.seer2.app.arena.data.ArenaDataInfo;
 import com.taomee.seer2.app.arena.data.FighterTeam;
 import com.taomee.seer2.app.arena.data.TeamInfo;
@@ -8,8 +9,11 @@ import com.taomee.seer2.app.arena.util.FightSide;
 import com.taomee.seer2.app.net.CommandSet;
 import com.taomee.seer2.app.net.Connection;
 import com.taomee.seer2.core.net.MessageEvent;
+import com.taomee.seer2.core.scene.LayerManager;
 
 import flash.utils.IDataInput;
+
+import seer2.next.fight.ui.FightUI;
 
 public class ArenaResourceLoadCMD implements IArenaBaseCMD {
 
@@ -19,10 +23,16 @@ public class ArenaResourceLoadCMD implements IArenaBaseCMD {
 
     private var _onGetInfoComplete:Function;
 
-    public function ArenaResourceLoadCMD(param1:ArenaDataInfo, param2:Function) {
+    private var _arenaScene:ArenaScene;
+
+    private var _init4FightUi:Function;
+
+    public function ArenaResourceLoadCMD(param1:ArenaDataInfo, param2:Function, arenaScene:ArenaScene, init4FightUi:Function) {
         super();
         this._arenaData = param1;
         this._onGetInfoComplete = param2;
+        _arenaScene = arenaScene;
+        _init4FightUi = init4FightUi;
         this.init();
     }
 
@@ -80,7 +90,16 @@ public class ArenaResourceLoadCMD implements IArenaBaseCMD {
                 DecorationControl.fightPetInfo = _loc4_.fightUserInfoVec[0].fighterInfoVec[0];
             }
         }
-        this._onGetInfoComplete();
+
+        //拦截，换自定义的UI
+        if (FightUI.enable) {
+            _init4FightUi();
+            var fightUI:FightUI = new FightUI;
+            LayerManager.root.addChildAt(fightUI, 1);
+            fightUI.init(_arenaScene, _arenaData);
+        } else {
+            this._onGetInfoComplete();
+        }
         this.dispose();
     }
 
