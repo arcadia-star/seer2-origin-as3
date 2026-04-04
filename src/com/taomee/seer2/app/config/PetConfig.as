@@ -7,6 +7,7 @@ import com.taomee.seer2.app.config.skill.PetSkillSettingDefinition;
 import org.taomee.ds.HashMap;
 
 import seer2.next.entry.DynConfig;
+import seer2.next.utils.TextUtils;
 
 public class PetConfig {
 
@@ -103,7 +104,7 @@ public class PetConfig {
         _loc2_.isNew = param1.attribute("isNew");
         _loc2_.Height = param1.attribute("Height");
         _loc2_.Weight = param1.attribute("Weight");
-        _loc2_.Features = param1.attribute("Features");
+        _loc2_.Features = TextUtils.replaceColorFormat(param1.attribute("Features"));
         _loc2_.emblemID = param1.attribute("emblemID");
         _loc2_.emblem2ID = param1.attribute("emblem2ID");
         _loc2_.Foundin = param1.attribute("Foundin");

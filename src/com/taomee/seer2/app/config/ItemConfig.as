@@ -14,6 +14,7 @@ import com.taomee.seer2.core.utils.URLUtil;
 import org.taomee.ds.HashMap;
 
 import seer2.next.entry.DynConfig;
+import seer2.next.utils.TextUtils;
 
 public class ItemConfig {
 
@@ -182,7 +183,7 @@ public class ItemConfig {
         } else {
             _loc11_ = parseInt(param1, "Max");
         }
-        var _loc12_:String = parseChild(param1, "Tip");
+        var _loc12_:String = TextUtils.replaceColorFormat(parseChild(param1, "Tip"));
         var _loc13_:int = parseInt(param1, "SlotIndex", 0);
         var _loc14_:int = parseInt(param1, "SuitID", 0);
         var _loc15_:int = parseInt(param1, "LifeTime", 0);
