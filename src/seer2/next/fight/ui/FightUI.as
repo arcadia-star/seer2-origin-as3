@@ -484,15 +484,14 @@ public class FightUI extends Sprite {
             morphPet.anger = 20;
             morphPet.hp = morphPet.maxHp;
             morphPet.position = pet.position;
+            pet.hp = 0;
             pet.position = 0;
             teamData(uid).init();
             var frame:FrameData = new FrameData();
-
+            frame.change = new ChangeData();
             if (thisTeam(uid)) {
-                frame.change = new ChangeData();
                 frame.change.left = ChangeData.MORPH;
             } else {
-                frame.change = new ChangeData();
                 frame.change.right = ChangeData.MORPH;
             }
             pushNextFrame(frame);
