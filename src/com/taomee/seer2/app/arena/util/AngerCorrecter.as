@@ -3,6 +3,10 @@ import com.taomee.seer2.app.arena.Fighter;
 import com.taomee.seer2.app.arena.cmd.ArenaResourceLoadCMD;
 import com.taomee.seer2.app.arena.data.FighterBuffInfo;
 
+import seer2.next.fight.ui.data.BuffData;
+
+import seer2.next.fight.ui.data.PetData;
+
 public class AngerCorrecter {
 
     private static var thisAngerCorrecter:AngerCorrecter = new AngerCorrecter();
@@ -32,6 +36,72 @@ public class AngerCorrecter {
 
     public static function getInstance():AngerCorrecter {
         return thisAngerCorrecter;
+    }
+
+    public static function angerFix(pet:PetData, enemy:PetData, leftMonster:int, rightMonster:int):void {
+        var fns:Array = [];
+        fns = fns.concat(angerFix0(pet, enemy, leftMonster));
+        fns = fns.concat(angerFix0(enemy, pet, rightMonster));
+        fns.sort(function (a:Object, b:Object):int {
+            return a[1] - b[1];
+        });
+        for (var i:int = 0; i < fns.length; i++) {
+            fns[i][0]();
+        }
+    }
+
+    private static function angerFix0(pet:PetData, enemy:PetData, leftMonster:int):Array {
+        var fns:Array = [];
+
+        function push(f:Function, order:int):void {
+            fns.push([f, order]);
+        }
+
+        var args:Array = [0, 0, 0, 0, 0];
+        for each(var buff:BuffData in pet.buffs) {
+            if (buff.id == 30006) {
+                args[0] = buff.count;
+                push(function ():void {
+                    enemy.anger = Math.max(enemy.anger - (args[0] * 2 + 3), 0);
+                }, 1);
+            } else if (buff.id == 11129) {
+                args[1] = buff.count;
+                push(function ():void {
+                    pet.anger = Math.min(pet.anger + args[1] * 2 + 3, 100);
+                }, 2);
+            } else if (buff.id == 11891) {
+                push(function ():void {
+                    pet.anger = 50;
+                }, 3);
+            } else if (buff.id == 11900) {
+                push(function ():void {
+                    pet.anger = Math.min(pet.anger + (Math.min(Math.abs(pet.atk), 2)
+                            + Math.min(Math.abs(pet.def), 2)
+                            + Math.min(Math.abs(pet.spa), 2)
+                            + Math.min(Math.abs(pet.spd), 2)
+                            + Math.min(Math.abs(pet.spe), 2)
+                            + Math.min(Math.abs(enemy.atk), 2)
+                            + Math.min(Math.abs(enemy.def), 2)
+                            + Math.min(Math.abs(enemy.spa), 2)
+                            + Math.min(Math.abs(enemy.spd), 2)
+                            + Math.min(Math.abs(enemy.spe), 2)
+                    ) * 5, 100);
+                }, 4);
+            }
+        }
+        push(function ():void {
+            pet.anger = Math.min(pet.anger + 15, 100);
+        }, 5);
+        if (leftMonster == 2542) {
+            push(function ():void {
+                if (pet.anger < 50) {
+                    pet.anger = Math.min(pet.anger + 20, 100);
+                } else if (pet.anger >= 50) {
+                    pet.anger = Math.max(pet.anger - 15, 0);
+                }
+            }, 6);
+        }
+        return fns;
     }
 
     public function angerCalulater(param1:Fighter, param2:Fighter):void {

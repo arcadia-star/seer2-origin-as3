@@ -20,6 +20,7 @@ import com.taomee.seer2.app.arena.processor.Parser_8;
 import com.taomee.seer2.app.arena.processor.Processor_15;
 import com.taomee.seer2.app.arena.processor.Processor_9;
 import com.taomee.seer2.app.arena.ui.toolbar.ItemPanel;
+import com.taomee.seer2.app.arena.util.AngerCorrecter;
 import com.taomee.seer2.app.arena.util.FightEndReason;
 import com.taomee.seer2.app.arena.util.FightMode;
 import com.taomee.seer2.app.arena.util.FightSide;
@@ -27,6 +28,7 @@ import com.taomee.seer2.app.arena.util.FightWeatherNameMap;
 import com.taomee.seer2.app.config.FitConfig;
 import com.taomee.seer2.app.config.ItemConfig;
 import com.taomee.seer2.app.config.PetConfig;
+import com.taomee.seer2.app.config.PetSkinConfig;
 import com.taomee.seer2.app.config.SkillSideEffectConfig;
 import com.taomee.seer2.app.config.item.PetItemDefinition;
 import com.taomee.seer2.app.inventory.ItemManager;
@@ -261,6 +263,16 @@ public class FightUI extends Sprite {
         var buffer:IDataInput = param1.message.getRawData();
         var round:uint = uint(buffer.readUnsignedByte());
         var weather:uint = uint(buffer.readUnsignedByte());
+
+        //怒气修正，服务端少了下发，只能本地修正
+        addPetAnger(_arenaData.left.slave, 15);
+        addPetAnger(_arenaData.right.slave, 15);
+        AngerCorrecter.angerFix(_arenaData.left.master, _arenaData.right.master,
+                rawFighterInfo(_rawArenaData.leftTeam.teamInfo.leaderId, _arenaData.left.master.pid).resourceId,
+                rawFighterInfo(_rawArenaData.rightTeam.teamInfo.leaderId, _arenaData.right.master.pid).resourceId
+        );
+        addPetAnger(_arenaData.left.master, 0);
+        addPetAnger(_arenaData.right.master, 0);
 
         _operation = [];
         _arenaData.round = round;
@@ -710,6 +722,18 @@ public class FightUI extends Sprite {
         }
     }
 
+    private function addPetAnger(pet:PetData, anger:int):void {
+        if (pet) {
+            pet.anger += anger;
+            if (pet.anger < 0) {
+                pet.anger = 0;
+            }
+            if (pet.anger > 100) {
+                pet.anger = 100;
+            }
+        }
+    }
+
     private function updateWeather(weather:int):void {
         if (weather > 0) {
             _arenaData.weatherIcon = "internal://UI_WeatherIcon" + weather;
@@ -798,8 +822,8 @@ public class FightUI extends Sprite {
 
     private static function fromArena(arenaData:ArenaDataInfo):ArenaData {
         var arena:ArenaData = new ArenaData();
-        arena.left = fromTeam(arenaData.leftTeam.teamInfo);
-        arena.right = fromTeam(arenaData.rightTeam.teamInfo);
+        arena.left = fromTeam(arenaData.leftTeam.teamInfo, 1);
+        arena.right = fromTeam(arenaData.rightTeam.teamInfo, 2);
         arena.left.items = fromItem(PetItemType.PHYSICAL_MEDICINE);
         arena.left.capsules = fromItem(PetItemType.CAPSULE);
 //        arena.round = URLUtil.getMapSoundUrl(obj.resourceId);
@@ -808,15 +832,15 @@ public class FightUI extends Sprite {
         return arena;
     }
 
-    private static function fromTeam(team:TeamInfo):TeamData {
+    private static function fromTeam(team:TeamInfo, side:int):TeamData {
         var pets:Vector.<PetData> = new Vector.<PetData>();
         var fighters:Vector.<FighterInfo> = team.fightUserInfoVec[0].fighterInfoVec;
         for (var i:int = 0; i < fighters.length; i++) {
-            pets.push(fromPet(fighters[i]))
+            pets.push(fromPet(fighters[i], side))
         }
         fighters = team.fightUserInfoVec[0].changeFighterInfoVec;
         for (i = 0; i < fighters.length; i++) {
-            pets.push(fromPet(fighters[i]))
+            pets.push(fromPet(fighters[i], side))
         }
         var target:TeamData = new TeamData();
         target.pets = pets;
@@ -826,7 +850,7 @@ public class FightUI extends Sprite {
         return target;
     }
 
-    private static function fromPet(obj:FighterInfo):PetData {
+    private static function fromPet(obj:FighterInfo, side:int):PetData {
         var target:PetData = new PetData;
         target.pid = obj.catchTime;
         target.petIcon = URLUtil.getPetIcon(obj.resourceId);
@@ -853,6 +877,14 @@ public class FightUI extends Sprite {
         }
         target.buffs = new <BuffData>[];
         target.items = new <ItemData>[];
+
+        //皮肤系统
+        if (side === 1) {
+            var skinId:uint = PetSkinConfig.getSkinId(obj.resourceId);
+            if (skinId > 0) {
+                target.petSwf = URLUtil.getPetFightSwf(skinId);
+            }
+        }
         return target;
     }
 
@@ -891,7 +923,7 @@ public class FightUI extends Sprite {
             var buff:FighterBuffInfo = buffInfoVec[k];
             var buffData:BuffData = new BuffData();
             buffData.id = buff.buffId;
-            buffData.name = SkillSideEffectConfig.getName(buff.buffId);
+            buffData.name = buff.buffId + "-" + SkillSideEffectConfig.getName(buff.buffId);
             buffData.icon = URLUtil.getSkillSideEffectIcon(buff.buffId);
             buffData.tips = buff.tip;
             buffData.count = buff.dummy0 || buff.dummy1 || buff.dummy2
