@@ -164,7 +164,8 @@ public class FightUI extends Sprite {
         if (skill > 0) {
             var skills:Vector.<SkillData> = _arenaData.left.master.skills;
             for (var i:int = 0; i < skills.length; i++) {
-                if (skills[i].id === skill && skills[i].enable) {
+//                if (skills[i].id === skill && skills[i].enable) {
+                if (skills[i].id === skill) {//怒气计算不准，这里先放开
                     Connection.send(CommandSet.FIGHT_USE_SKILL_1502, skill);
                 }
             }
@@ -280,9 +281,9 @@ public class FightUI extends Sprite {
         var frame:FrameData = new FrameData;
         frame.change = new ChangeData;
         if (thisTeam(result.userId)) {
-            frame.change.left = 1;
+            frame.change.left = ChangeData.REPLACE;
         } else {
-            frame.change.right = 1;
+            frame.change.right = ChangeData.REPLACE;
         }
         pushNextFrame(frame);
         if (_changePet && _changePet.length) {
@@ -379,7 +380,7 @@ public class FightUI extends Sprite {
                 } else if (!thisTeam(uid) && master !== teamData(uid).master) {
                     var frame:FrameData = new FrameData;
                     frame.change = new ChangeData;
-                    frame.change.right = 1;
+                    frame.change.right = ChangeData.REPLACE;
                     pushNextFrame(frame);
                 }
             }
@@ -477,12 +478,12 @@ public class FightUI extends Sprite {
 
             if (thisTeam(uid)) {
                 frame.change = new ChangeData();
-                frame.change.left = 2;
+                frame.change.left = ChangeData.MORPH;
             } else {
                 frame.change = new ChangeData();
-                frame.change.right = 2;
+                frame.change.right = ChangeData.MORPH;
             }
-            pushNextFrame();
+            pushNextFrame(frame);
             _loc8_++;
         }
     }
@@ -569,7 +570,7 @@ public class FightUI extends Sprite {
             var frame:FrameData = new FrameData;
             frame.end = new EndData();
             frame.end.winner = _fightResult.showWinnerSider;
-            frame.end.alert = _fightRevenue.fighterRevenueInfoVec.length > 0 ? 2 : 1;
+            frame.end.alert = _fightRevenue.fighterRevenueInfoVec.length > 0 ? EndData.HIDDEN : EndData.DEFAULT;
             pushNextFrame(frame);
             pushNextFunc(function ():void {
                 if (_fightRevenue.fighterRevenueInfoVec.length > 0) {
