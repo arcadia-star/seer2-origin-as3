@@ -462,10 +462,10 @@ public class FightUI extends Sprite {
                             pet.skills.push(fromSkill(fitSkills[k]));
                         }
                     }
-                    //这里不换精灵了，让用户手动换
-                    pushNextFrame();
                 }
             }
+            //这里不换精灵了，让用户手动换
+            pushNextFrame();
         }
     }
 
