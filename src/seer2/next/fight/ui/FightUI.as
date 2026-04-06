@@ -257,7 +257,7 @@ public class FightUI extends Sprite {
             frame.event.type = EventData.HP_DECREASE;
             frame.event.side = 3 - target.side;
             frame.event.change = target.damage
-            frame.event.delay = 100;
+            frame.event.delay = 1000;
         } else {
             frame.move = target;
         }
