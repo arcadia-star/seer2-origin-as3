@@ -81,6 +81,7 @@ public class FightUI extends Sprite {
     private var _itemId:uint;
     private var _fightRevenue:RevenueInfo;
     private var _fightResult:FightResultInfo;
+    private var _uiStyle:int;
 
     private var _mayFit:Function;
 
@@ -95,11 +96,12 @@ public class FightUI extends Sprite {
         }
         _player = new clazz;
         if (FightMode.FIGHT_BOSS === _rawArenaData.fightMode) {
-            _player.updateUiStyle(1);
+            _uiStyle = 1;
         }
         if (_arenaData.left.slave) {
-            _player.updateUiStyle(2);
+            _uiStyle = 2;
         }
+        _player.updateUiStyle(_uiStyle);
         addChild(_player);
         var fightIndex:int = FightManager.currentFightRecord.initData.hasOwnProperty("positionIndex") ? int(FightManager.currentFightRecord.initData.positionIndex) : 0;
         var frame:FrameData = new FrameData;
@@ -198,6 +200,11 @@ public class FightUI extends Sprite {
         if (escape > 0) {
             Connection.send(CommandSet.FIGHT_ESCAPE_1509);
         }
+        var functional:int = data.functional;
+        if (functional === 1) {
+            _uiStyle = (_uiStyle + 1) % 4;
+            _player.updateUiStyle(_uiStyle);
+        }
     }
 
     internal function processor2FirstRoundStart(param1:MessageEvent):void {
@@ -262,7 +269,7 @@ public class FightUI extends Sprite {
             frame.move = target;
         }
         frame.logs = new Vector.<String>();
-        frame.logs.push("<font color=\'#ffffff\'>[" + _arenaData.round + "]</font><font color=\'#00ffff\'>" + movePet.name + "</font><font color=\'#ffffff\'>使用技能</font><font color=\'#ffff00\'>" + target.skill + "</font>");
+        frame.logs.push("<font color=\'#ffffff\'>[" + _arenaData.round + "]</font><font color=\'#00ffff\'>" + movePet.name + "</font><font color=\'#ffffff\'>使用</font><font color=\'#ffff00\'>" + target.skill + "</font>");
         pushNextFrame(frame);
         if (_mayFit) {
             var _mayFitTmp:Function = _mayFit;
