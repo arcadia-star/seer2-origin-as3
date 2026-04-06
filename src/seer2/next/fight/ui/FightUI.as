@@ -255,7 +255,7 @@ public class FightUI extends Sprite {
             //简洁模式，只显示伤害，无动画
             frame.event = new EventData;
             frame.event.type = EventData.HP_DECREASE;
-            frame.event.side = target.side;
+            frame.event.side = 3 - target.side;
             frame.event.change = target.damage
             frame.event.delay = 100;
         } else {
