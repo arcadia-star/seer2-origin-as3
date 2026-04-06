@@ -188,11 +188,17 @@ public class MainEntry {
                 AlertManager.showAlert("重新加载成功");
             });
         });
-        var useFightUI:ContextMenuItem = new ContextMenuItem("使用新UI");
+        var useFightUI:ContextMenuItem = new ContextMenuItem("FightUI:" + (FightUI.enable ? "开启" : "关闭"));
         t.customItems.push(useFightUI);
         useFightUI.addEventListener(ContextMenuEvent.MENU_ITEM_SELECT, function (param1:ContextMenuEvent):void {
             FightUI.enable = !FightUI.enable;
             AlertManager.showAlert("切换成功:" + (FightUI.enable ? "开启" : "关闭"));
+        });
+        var disableMoveFrame:ContextMenuItem = new ContextMenuItem("FightUI 简洁模式:" + (FightUI.disableMoveFrame ? "开启" : "关闭"));
+        t.customItems.push(disableMoveFrame);
+        disableMoveFrame.addEventListener(ContextMenuEvent.MENU_ITEM_SELECT, function (param1:ContextMenuEvent):void {
+            FightUI.disableMoveFrame = !FightUI.disableMoveFrame;
+            AlertManager.showAlert("切换成功:" + (FightUI.disableMoveFrame ? "开启" : "关闭"));
         });
     }
 

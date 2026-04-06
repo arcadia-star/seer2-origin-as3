@@ -59,6 +59,7 @@ import seer2.next.fight.ui.data.*;
 
 public class FightUI extends Sprite {
     public static var enable:Boolean = false;
+    public static var disableMoveFrame:Boolean = false;
     public static var clazz:Class;
     {
         UILoader.load(URLUtil.getUISwf("FramePlayer"), LoadType.SWF, function (param1:ContentInfo):void {
@@ -103,6 +104,8 @@ public class FightUI extends Sprite {
         var fightIndex:int = FightManager.currentFightRecord.initData.hasOwnProperty("positionIndex") ? int(FightManager.currentFightRecord.initData.positionIndex) : 0;
         var frame:FrameData = new FrameData;
         frame.start = new StartData();
+        frame.logs = new Vector.<String>();
+        frame.logs.push("<font color=\'#ffffff\'>index:[" + fightIndex + "] side:[" + _rawArenaData.leftTeam.teamInfo.serverSide + "]</font>");
         pushNextFrame(frame);
         pushNextFunc(function ():void {
             Connection.send(CommandSet.FIGHT_RES_READY_1501, fightIndex);
@@ -209,6 +212,7 @@ public class FightUI extends Sprite {
         var side:int = 1;
         var monster:int;
         var skillId:int;
+        var movePet:PetData;
         for (var i:int = 0; i < obj.fighterTurnResultInfoVec.length; i++) {
             var turnResult:FighterTurnResultInfo = obj.fighterTurnResultInfoVec[i];
             var pet:PetData = updatePosition(turnResult.userId, turnResult.catchTime, turnResult.position);
@@ -216,6 +220,7 @@ public class FightUI extends Sprite {
                 side = teamSide(turnResult.userId);
                 monster = rawFighterInfo(turnResult.userId, turnResult.catchTime).resourceId;
                 skillId = turnResult.skillId;
+                movePet = pet;
             }
             pet.hp = turnResult.hp;
             pet.maxHp = turnResult.maxHp;
@@ -246,7 +251,18 @@ public class FightUI extends Sprite {
         target.effectUrl = URLUtil.getSkillEffectSwf(PetConfig.getPetSkillSettingDefinition(skillId).effectId);
 
         var frame:FrameData = new FrameData;
-        frame.move = target;
+        if (disableMoveFrame) {
+            //简洁模式，只显示伤害，无动画
+            frame.event = new EventData;
+            frame.event.type = EventData.HP_DECREASE;
+            frame.event.side = target.side;
+            frame.event.change = target.damage
+            frame.event.delay = 100;
+        } else {
+            frame.move = target;
+        }
+        frame.logs = new Vector.<String>();
+        frame.logs.push("<font color=\'#ffffff\'>[" + _arenaData.round + "]</font><font color=\'#00ffff\'>" + movePet.name + "</font><font color=\'#ffffff\'>使用技能</font><font color=\'#ffff00\'>" + target.skill + "</font>");
         pushNextFrame(frame);
         if (_mayFit) {
             var _mayFitTmp:Function = _mayFit;
