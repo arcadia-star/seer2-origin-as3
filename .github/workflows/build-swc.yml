@@ -1,0 +1,68 @@
+# .github/workflows/build-swc.yml
+name: Build Seer2CoreDLL SWC
+
+on:
+  workflow_dispatch:        # 手动触发
+
+jobs:
+  build:
+    runs-on: windows-latest   # Windows 环境
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'   # 可根据需要调整
+
+      - name: Download and install AIR SDK
+        shell: pwsh
+        run: |
+          # 下载 AIR SDK（使用官方镜像，可替换为你的可靠 URL）
+          $airSdkUrl = "https://airdownload.adobe.com/air/win/download/50.2/AIRSDK_Compiler.zip"
+          $zipPath = "$env:RUNNER_TEMP\AIRSDK.zip"
+          $extractPath = "$env:RUNNER_TEMP\AIRSDK"
+          Write-Host "Downloading AIR SDK from $airSdkUrl ..."
+          Invoke-WebRequest -Uri $airSdkUrl -OutFile $zipPath
+          Write-Host "Extracting to $extractPath ..."
+          Expand-Archive -Path $zipPath -DestinationPath $extractPath -Force
+          # 将 bin 目录添加到 PATH（后续步骤可用 compc）
+          $binPath = "$extractPath\bin"
+          Write-Host "Adding $binPath to PATH"
+          Add-Content $env:GITHUB_PATH $binPath
+          # 可选：设置 AIR_HOME 环境变量
+          Write-Host "AIR_HOME=$extractPath" | Out-File -FilePath $env:GITHUB_ENV -Append
+
+      - name: Verify compc availability
+        shell: cmd
+        run: |
+          where compc
+          compc -version
+
+      - name: Compile SWC with compc
+        shell: cmd
+        run: |
+          compc -target-player=32.0 ^
+            -source-path src ^
+            -library-path lib/as3corelib.swc ^
+            -library-path lib/greensock-taomee.swc ^
+            -library-path lib/textLayout.swc ^
+            -output out/Seer2CoreDLL.swc ^
+            -include-sources src ^
+            -warnings=false
+
+      - name: Run Python post-processing script
+        shell: pwsh
+        run: |
+          cd _scripts
+          python build-seer2-core-dll.py
+
+      - name: Upload artifact (optional)
+        uses: actions/upload-artifact@v4
+        with:
+          name: Seer2CoreDLL-output
+          path: |
+            out/Seer2CoreDLL.swc
+            out/Seer2CoreDLL.swf   # 如果 Python 脚本生成了 swf
