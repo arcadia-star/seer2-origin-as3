@@ -181,6 +181,14 @@ public class FightControlPanel extends Sprite {
         if (this._controlledFighter.fighterInfo.hp > 0) {
             this.showSkillPanel();
             _loc2_ = -1;
+            if (this._controlledFighter.fighterInfo.hasSuperSkill()) {
+                if ((_loc6_ = this._controlledFighter.fighterInfo.getSuperSkill()) != null && this._controlledFighter.fighterInfo.checkSkillAnger(_loc6_)) {
+                    _loc2_ = int(_loc6_.id);
+                    _loc1_ = new OperateEvent(OperateEvent.OPERATE_SKILL, _loc2_, OperateEvent.OPERATE_END);
+                    this.endInput(_loc1_);
+                    return;
+                }
+            }
             _loc3_ = this._controlledFighter.fighterInfo.skillInfoVec;
             _loc4_ = int(_loc3_.length);
             _loc5_ = 0;

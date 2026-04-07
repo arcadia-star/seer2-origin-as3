@@ -680,6 +680,12 @@ public class FightUI extends Sprite {
                             break;
                         }
                     }
+                    for (i = 0; i < skills.length; i++) {
+                        if (skills[i].enable && skills[i].category === '必杀') {
+                            skill = skills[i].id;
+                            break;
+                        }
+                    }
                     Connection.send(CommandSet.FIGHT_USE_SKILL_1502, skill);
                 } else {
                     var pid:int = 0;
