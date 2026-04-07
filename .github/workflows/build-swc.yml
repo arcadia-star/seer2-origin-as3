@@ -17,53 +17,21 @@ jobs:
         with:
           python-version: '3.11'
 
-      # ---------- 安装 AIR SDK Manager ----------
-      - name: Download AIR SDK Manager installer
-        shell: pwsh
-        run: |
-          $url = "https://github.com/airsdk/airsdkmanager-releases/releases/download/3.0.5/AIRSDKManager_win_3.0.5.exe"
-          $out = "$env:RUNNER_TEMP\AIRSDKManager.exe"
-          Write-Host "Downloading AIR SDK Manager from $url ..."
-          Invoke-WebRequest -Uri $url -OutFile $out -UseBasicParsing
-          Write-Host "Download completed."
+      # 使用现成的 Action 安装 Adobe AIR SDK
+      - name: Setup Adobe AIR SDK
+        uses: WillieCubed/setup-adobe-air-sdk@v1
+        with:
+          version: '51.3.1.2'          # 可替换为你需要的版本，如 '32.0' 或 '50.2'
+          install-playerglobal: false   # 若不需要 playerglobal 可设为 false
 
-      - name: Install AIR SDK Manager silently
-        shell: pwsh
-        run: |
-          $installer = "$env:RUNNER_TEMP\AIRSDKManager.exe"
-          $installPath = "C:\AIRSDK"
-          Write-Host "Installing AIR SDK Manager to $installPath ..."
-          Start-Process -FilePath $installer -ArgumentList "/S /D=$installPath" -Wait -NoNewWindow
-          Write-Host "Installation finished."
-
-      - name: Install AIR SDK (version 51.3.1.2) using Manager
-        shell: pwsh
-        run: |
-          $manager = "C:\AIRSDK\bin\AIRSDKManager.exe"
-          $sdkVersion = "51.3.1.2"
-          Write-Host "Installing AIR SDK version $sdkVersion ..."
-          & $manager -install $sdkVersion
-          # 管理器会将 SDK 安装到 C:\AIRSDK\$sdkVersion
-          $sdkPath = "C:\AIRSDK\$sdkVersion"
-          if (Test-Path $sdkPath) {
-            Write-Host "AIR SDK installed at $sdkPath"
-            $binPath = "$sdkPath\bin"
-            Write-Host "Adding $binPath to GITHUB_PATH"
-            Add-Content $env:GITHUB_PATH $binPath
-            # 可选：设置 AIR_HOME 环境变量
-            Write-Host "AIR_HOME=$sdkPath" | Out-File -FilePath $env:GITHUB_ENV -Append
-          } else {
-            Write-Error "AIR SDK installation failed: $sdkPath not found"
-            exit 1
-          }
-
-      - name: Verify compc availability
+      # 验证 compc 是否可用
+      - name: Verify compc
         shell: cmd
         run: |
           where compc
           compc -version
 
-      # ---------- 编译 SWC ----------
+      # 编译 SWC
       - name: Compile SWC with compc
         shell: cmd
         run: |
@@ -76,14 +44,14 @@ jobs:
             -include-sources src ^
             -warnings=false
 
-      # ---------- 运行 Python 后处理脚本 ----------
+      # 运行 Python 后处理脚本
       - name: Run Python post-processing script
         shell: pwsh
         run: |
           cd _scripts
           python build-seer2-core-dll.py
 
-      # ---------- 上传产物（可选）----------
+      # 上传产物（可选）
       - name: Upload artifacts
         uses: actions/upload-artifact@v4
         with:
