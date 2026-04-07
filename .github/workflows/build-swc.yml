@@ -6,7 +6,7 @@ on:
 
 jobs:
   build:
-    runs-on: windows-latest   # Windows 环境
+    runs-on: windows-latest
 
     steps:
       - name: Checkout repository
@@ -15,25 +15,47 @@ jobs:
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.11'   # 可根据需要调整
+          python-version: '3.11'
 
-      - name: Download and install AIR SDK
+      # ---------- 安装 AIR SDK Manager ----------
+      - name: Download AIR SDK Manager installer
         shell: pwsh
         run: |
-          # 下载 AIR SDK（使用官方镜像，可替换为你的可靠 URL）
-          $airSdkUrl = "https://airdownload.adobe.com/air/win/download/50.2/AIRSDK_Compiler.zip"
-          $zipPath = "$env:RUNNER_TEMP\AIRSDK.zip"
-          $extractPath = "$env:RUNNER_TEMP\AIRSDK"
-          Write-Host "Downloading AIR SDK from $airSdkUrl ..."
-          Invoke-WebRequest -Uri $airSdkUrl -OutFile $zipPath
-          Write-Host "Extracting to $extractPath ..."
-          Expand-Archive -Path $zipPath -DestinationPath $extractPath -Force
-          # 将 bin 目录添加到 PATH（后续步骤可用 compc）
-          $binPath = "$extractPath\bin"
-          Write-Host "Adding $binPath to PATH"
-          Add-Content $env:GITHUB_PATH $binPath
-          # 可选：设置 AIR_HOME 环境变量
-          Write-Host "AIR_HOME=$extractPath" | Out-File -FilePath $env:GITHUB_ENV -Append
+          $url = "https://github.com/airsdk/airsdkmanager-releases/releases/download/3.0.5/AIRSDKManager_win_3.0.5.exe"
+          $out = "$env:RUNNER_TEMP\AIRSDKManager.exe"
+          Write-Host "Downloading AIR SDK Manager from $url ..."
+          Invoke-WebRequest -Uri $url -OutFile $out -UseBasicParsing
+          Write-Host "Download completed."
+
+      - name: Install AIR SDK Manager silently
+        shell: pwsh
+        run: |
+          $installer = "$env:RUNNER_TEMP\AIRSDKManager.exe"
+          $installPath = "C:\AIRSDK"
+          Write-Host "Installing AIR SDK Manager to $installPath ..."
+          Start-Process -FilePath $installer -ArgumentList "/S /D=$installPath" -Wait -NoNewWindow
+          Write-Host "Installation finished."
+
+      - name: Install AIR SDK (version 51.3.1.2) using Manager
+        shell: pwsh
+        run: |
+          $manager = "C:\AIRSDK\bin\AIRSDKManager.exe"
+          $sdkVersion = "51.3.1.2"
+          Write-Host "Installing AIR SDK version $sdkVersion ..."
+          & $manager -install $sdkVersion
+          # 管理器会将 SDK 安装到 C:\AIRSDK\$sdkVersion
+          $sdkPath = "C:\AIRSDK\$sdkVersion"
+          if (Test-Path $sdkPath) {
+            Write-Host "AIR SDK installed at $sdkPath"
+            $binPath = "$sdkPath\bin"
+            Write-Host "Adding $binPath to GITHUB_PATH"
+            Add-Content $env:GITHUB_PATH $binPath
+            # 可选：设置 AIR_HOME 环境变量
+            Write-Host "AIR_HOME=$sdkPath" | Out-File -FilePath $env:GITHUB_ENV -Append
+          } else {
+            Write-Error "AIR SDK installation failed: $sdkPath not found"
+            exit 1
+          }
 
       - name: Verify compc availability
         shell: cmd
@@ -41,6 +63,7 @@ jobs:
           where compc
           compc -version
 
+      # ---------- 编译 SWC ----------
       - name: Compile SWC with compc
         shell: cmd
         run: |
@@ -53,16 +76,18 @@ jobs:
             -include-sources src ^
             -warnings=false
 
+      # ---------- 运行 Python 后处理脚本 ----------
       - name: Run Python post-processing script
         shell: pwsh
         run: |
           cd _scripts
           python build-seer2-core-dll.py
 
-      - name: Upload artifact (optional)
+      # ---------- 上传产物（可选）----------
+      - name: Upload artifacts
         uses: actions/upload-artifact@v4
         with:
           name: Seer2CoreDLL-output
           path: |
             out/Seer2CoreDLL.swc
-            out/Seer2CoreDLL.swf   # 如果 Python 脚本生成了 swf
+            out/Seer2CoreDLL.swf
