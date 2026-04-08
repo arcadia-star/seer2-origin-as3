@@ -1,0 +1,54 @@
+# .github/workflows/build-swc.yml
+name: Build Seer2CoreDLL SWC
+
+on:
+  workflow_dispatch:        # 手动触发
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      # 使用正确的 Action 安装 Adobe AIR SDK
+      - name: Setup Adobe AIR SDK
+        uses: joshtynjala/setup-adobe-air-action@v2
+        with:
+          air-version: "51.3.1.2"      # 可替换为其他版本，如 "50.0.1.1" 或 "32.0"
+          accept-license: true          # 必须接受许可
+
+      # 编译 SWC
+      - name: Compile SWC with compc
+        shell: cmd
+        run: |
+          compc -target-player=32.0 ^
+            -source-path src ^
+            -library-path lib/as3corelib.swc ^
+            -library-path lib/greensock-taomee.swc ^
+            -library-path lib/textLayout.swc ^
+            -output out/Seer2CoreDLL.swc ^
+            -include-sources src ^
+            -warnings=false
+
+      # 运行 Python 后处理脚本
+      - name: Run Python post-processing script
+        shell: pwsh
+        run: |
+          cd _scripts
+          python build-seer2-core-dll.py
+
+      # 上传产物（可选）
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: Seer2CoreDLL-output
+          path: |
+            out/Seer2CoreDLL.swc
+            out/Seer2CoreDLL.swf
