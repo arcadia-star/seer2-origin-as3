@@ -55,6 +55,8 @@ import com.taomee.seer2.core.utils.URLUtil;
 import flash.display.Sprite;
 import flash.utils.IDataInput;
 
+import seer2.next.fight.auto.AutoFightPanel;
+
 import seer2.next.fight.ui.data.*;
 
 public class FightUI extends Sprite {
@@ -84,6 +86,10 @@ public class FightUI extends Sprite {
     private var _uiStyle:int;
 
     private var _mayFit:Function;
+
+    public function FightUI() {
+        addChild(new FightUIExt());
+    }
 
     public function init(param1:ArenaScene, param2:ArenaDataInfo):void {
         //构造初始帧，并加载UI
@@ -167,6 +173,21 @@ public class FightUI extends Sprite {
 
     internal function onOperate(event:Object):void {
         var data:Object = event.data;
+        var functional:int = data.functional;
+        if (functional === 1) {
+            _uiStyle = (_uiStyle + 1) % 4;
+            _player.updateUiStyle(_uiStyle);
+        }
+        if (AutoFightPanel.isRunning) {
+            AlertManager.showConfirm("【鱼但】帮你战斗中，你要取消吗", function ():void {
+                AutoFightPanel.isRunning = false;
+            });
+            return;
+        }
+        if (FightUIExt.isDeposit) {
+            AlertManager.showAutoCloseAlert("自动战斗中，无法操作", 1);
+            return;
+        }
         var skill:int = data.skill;
         if (skill > 0) {
             var skills:Vector.<SkillData> = _arenaData.left.master.skills;
@@ -199,11 +220,6 @@ public class FightUI extends Sprite {
         var escape:int = data.escape;
         if (escape > 0) {
             Connection.send(CommandSet.FIGHT_ESCAPE_1509);
-        }
-        var functional:int = data.functional;
-        if (functional === 1) {
-            _uiStyle = (_uiStyle + 1) % 4;
-            _player.updateUiStyle(_uiStyle);
         }
     }
 
@@ -665,43 +681,65 @@ public class FightUI extends Sprite {
         _player.playFrameJson(JSON.parse(JSON.stringify(frame)), cb);
     }
 
+    private function autoOperateFish():void {
+        FightUIExt.fish(_arenaData);
+    }
+
+    private function autoOperate():void {
+        var pet:PetData = _arenaData.left.master;
+        if (pet.hp > 0) {
+            var skill:int = 0;
+            var skills:Vector.<SkillData> = pet.skills;
+            for (var i:int = 0; i < skills.length; i++) {
+                if (skills[i].enable) {
+                    skill = skills[i].id;
+                    break;
+                }
+            }
+            for (i = 0; i < skills.length; i++) {
+                if (skills[i].enable && skills[i].category === '必杀') {
+                    skill = skills[i].id;
+                    break;
+                }
+            }
+            Connection.send(CommandSet.FIGHT_USE_SKILL_1502, skill);
+        } else {
+            var pid:int = 0;
+            var pets:Vector.<PetData> = _arenaData.left.pets;
+            for (var j:int = 0; j < pets.length; j++) {
+                if (pets[j].hp > 0) {
+                    pid = pets[j].pid;
+                    break;
+                }
+            }
+            if (pid != 0) {
+                Connection.send(CommandSet.FIGHT_CHANGE_FIGHTER_1032, pid);
+            } else {
+                Connection.send(CommandSet.FIGHT_USE_SKILL_1502, 0);
+            }
+        }
+    }
+
     private function playCountDown():void {
         _countDown++;
+        if (AutoFightPanel.isRunning) {
+            autoOperateFish();
+            return;
+        }
+        if (FightUIExt.isDeposit) {
+            autoOperate();
+            return;
+        }
         var snapshot:int = _countDown;
+        FightUIExt.callbackWhenDepositBtn = function ():void {
+            FightUIExt.callbackWhenDepositBtn = null;
+            if (snapshot === _countDown) {
+                autoOperate();
+            }
+        }
         _player.playCountDown(function ():void {
             if (snapshot === _countDown) {
-                var pet:PetData = _arenaData.left.master;
-                if (pet.hp > 0) {
-                    var skill:int = 0;
-                    var skills:Vector.<SkillData> = pet.skills;
-                    for (var i:int = 0; i < skills.length; i++) {
-                        if (skills[i].enable) {
-                            skill = skills[i].id;
-                            break;
-                        }
-                    }
-                    for (i = 0; i < skills.length; i++) {
-                        if (skills[i].enable && skills[i].category === '必杀') {
-                            skill = skills[i].id;
-                            break;
-                        }
-                    }
-                    Connection.send(CommandSet.FIGHT_USE_SKILL_1502, skill);
-                } else {
-                    var pid:int = 0;
-                    var pets:Vector.<PetData> = _arenaData.left.pets;
-                    for (var j:int = 0; j < pets.length; j++) {
-                        if (pets[j].hp > 0) {
-                            pid = pets[j].pid;
-                            break;
-                        }
-                    }
-                    if (pid != 0) {
-                        Connection.send(CommandSet.FIGHT_CHANGE_FIGHTER_1032, pid);
-                    } else {
-                        Connection.send(CommandSet.FIGHT_USE_SKILL_1502, 0);
-                    }
-                }
+                autoOperate();
             }
         });
     }
