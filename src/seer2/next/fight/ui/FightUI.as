@@ -48,6 +48,7 @@ import com.taomee.seer2.core.loader.LoadType;
 import com.taomee.seer2.core.loader.UILoader;
 import com.taomee.seer2.core.module.ModuleManager;
 import com.taomee.seer2.core.net.MessageEvent;
+import com.taomee.seer2.core.scene.MapLoader;
 import com.taomee.seer2.core.sound.SoundManager;
 import com.taomee.seer2.core.utils.DisplayObjectUtil;
 import com.taomee.seer2.core.utils.URLUtil;
@@ -892,8 +893,8 @@ public class FightUI extends Sprite {
         arena.right = fromTeam(arenaData.rightTeam.teamInfo, 2);
         arena.left.items = fromItem(PetItemType.PHYSICAL_MEDICINE);
         arena.left.capsules = fromItem(PetItemType.CAPSULE);
-//        arena.round = URLUtil.getMapSoundUrl(obj.resourceId);
-//        arena.mapSwf = obj.mapSwf;
+        arena.round = 0;
+        arena.mapSwf = MapLoader.lastMapUrl;
 //        arena.mapSound = URLUtil.getMapSoundUrl(obj.resourceId);
         return arena;
     }

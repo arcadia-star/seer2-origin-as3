@@ -117,7 +117,7 @@ public class PetConfig {
         _loc2_.recommendSkill = Vector.<String>(String(param1.attribute("recommendSkill")).split(","));
         _loc2_.getWay = param1.attribute("getWay");
         _loc2_.isClose = param1.attribute("isClose");
-        _loc2_.fetter = param1.attribute("fetter");
+        _loc2_.fetter = TextUtils.replaceColorFormat(param1.attribute("fetter"));
         _loc2_.changeTip = param1.attribute("changeTip");
         _petDefinitonInfoMap.add(_loc2_.id, _loc2_);
     }

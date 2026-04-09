@@ -21,6 +21,9 @@ public class SkillInfo {
         super();
         this._id = param1;
         this._definition = SkillConfig.getSkillDefinition(this._id);
+        if (!this._definition) {
+            this._definition = new SkillDefinition(this._id, "未知:" + this._id, 1, 1, 0, 0, "未知技能");
+        }
     }
 
     public function get id():uint {

@@ -11,6 +11,7 @@ public class MapLoader extends BaseMapLoader {
 
     public static var isDream:Boolean;
 
+    public static var lastMapUrl:String;
 
     public function MapLoader() {
         super();
@@ -36,6 +37,7 @@ public class MapLoader extends BaseMapLoader {
         var _loc1_:XML = _configXml.elements("resource")[0];
         var _loc2_:String = _loc1_.attribute("url").toString();
         _swfUrl = URLUtil.getMapSwf(_loc2_);
+        lastMapUrl = _swfUrl;
         UILoader.load(_swfUrl, LoadType.SWF, this.onSwfLoaded, this.onLoadError);
     }
 
