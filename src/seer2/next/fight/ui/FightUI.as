@@ -89,7 +89,6 @@ public class FightUI extends Sprite {
     private var _mayFit:Function;
 
     public function FightUI() {
-        addChild(new FightUIExt());
     }
 
     public function init(param1:ArenaScene, param2:ArenaDataInfo):void {
@@ -110,6 +109,7 @@ public class FightUI extends Sprite {
         }
         _player.updateUiStyle(_uiStyle);
         addChild(_player);
+        addChild(new FightUIExt());
         var fightIndex:int = FightManager.currentFightRecord.initData.hasOwnProperty("positionIndex") ? int(FightManager.currentFightRecord.initData.positionIndex) : 0;
         var frame:FrameData = new FrameData;
         frame.start = new StartData();
