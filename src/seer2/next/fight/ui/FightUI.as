@@ -59,6 +59,7 @@ import flash.utils.IDataInput;
 import seer2.next.fight.auto.AutoFightPanel;
 
 import seer2.next.fight.ui.data.*;
+import seer2.next.utils.JsUtils;
 
 public class FightUI extends Sprite {
     public static var enable:Boolean = false;
@@ -679,7 +680,9 @@ public class FightUI extends Sprite {
     }
 
     private function playFrame(frame:FrameData, cb:Function):void {
-        _player.playFrameJson(JSON.parse(JSON.stringify(frame)), cb);
+        var _frame:Object = JSON.parse(JSON.stringify(frame));
+        JsUtils.call("FightUI_playFrameJson", _frame);
+        _player.playFrameJson(_frame, cb);
     }
 
     private function autoOperateFish():void {
