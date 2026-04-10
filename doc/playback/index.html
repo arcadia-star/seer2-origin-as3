@@ -1,0 +1,106 @@
+<div id="container"></div>
+<script type="module">
+    import * as jsondiffpatch from 'https://cdn.jsdelivr.net/npm/jsondiffpatch@0.7.3/+esm'
+    import diffMatchPatch from 'https://cdn.jsdelivr.net/npm/diff-match-patch@1.0.5/+esm'
+
+    function Diff(d) {
+        const _ctx = {c: null, d: null};
+        const _data = d || [];
+
+        const diff = jsondiffpatch.create({
+            omitRemovedValues: true,
+            textDiff: {
+                minLength: 20,
+                diffMatchPatch: diffMatchPatch,
+            },
+            objectHash: function (obj, index) {
+                return obj['id'] || obj['pid'] || '$index:' + index;
+            }
+        });
+
+        const compress = (next) => {
+            if (next.data) {
+                next.delta = diff.diff(_ctx.c, next.data);
+                _ctx.c = next.data;
+                delete next.data;
+            }
+        }
+        const decompress = () => {
+            const next = _data.shift();
+            if (next && next.delta) {
+                next.data = diff.patch(_ctx.d, next.delta);
+                _ctx.d = next.data;
+                delete next.delta;
+            }
+            return next;
+        }
+        return {
+            compress, decompress, get data() {
+                return _data
+            }
+        }
+    }
+
+    window.Diff = Diff;
+</script>
+<script type="module">
+    const response = await fetch('playback.diff.json');
+    const playbackDiff = await response.json();
+
+    let version = 1;
+    const diff = Diff(playbackDiff);
+
+    function next() {
+        if (diff.data.length) {
+            const frame = diff.decompress();
+            console.log(frame);
+            player.playFrame(frame, version++);
+        }
+    }
+
+    function playerCallback(data) {
+        console.log(data);
+        if (data.type === 'init') {
+            next();
+        }
+        if (data.type === 'playEnd') {
+            next();
+        }
+    }
+
+    window.playerCallback = playerCallback;
+</script>
+<script>
+    window.RufflePlayer = window.RufflePlayer || {};
+    window.RufflePlayer.config = {
+        fontSources: [
+            "FallbackFont.swf",
+        ],
+        defaultFonts: {
+            sans: [
+                "fallback",
+            ],
+        }
+    }
+
+    window.addEventListener("DOMContentLoaded", () => {
+        let ruffle = window.RufflePlayer.newest();
+        let player = ruffle.createPlayer();
+        window.player = player;
+        player.style.width = "100%";
+        player.style.height = "100%";
+        player.config = {
+            autoplay: "on",
+            unmuteOverlay: "hidden",
+            splashScreen: false,
+            contextMenu: "rightClickOnly",
+            backgroundColor: "#00000000",
+            wmode: "transparent",
+            allowScriptAccess: true,
+        };
+        let container = document.getElementById("container");
+        container.appendChild(player);
+        player.ruffle().load("FightPlayer.swf?silence=true&cb=playerCallback");
+    });
+</script>
+<script src="https://cdn.jsdelivr.net/npm/@ruffle-rs/ruffle@0.2.0-nightly.2026.4.9/ruffle.min.js"></script>

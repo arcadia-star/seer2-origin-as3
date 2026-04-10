@@ -1,0 +1,7592 @@
+[
+  {
+    "start": {
+      "tips": null,
+      "urls": null
+    },
+    "logs": [
+      "<font color='#ffffff'>index:[0] side:[1]</font>"
+    ],
+    "delta": [
+      0,
+      {
+        "round": 0,
+        "right": {
+          "slave": null,
+          "capsules": [],
+          "items": [],
+          "_master": {
+            "atk": 0,
+            "pid": 1,
+            "level": 80,
+            "rate": 100,
+            "position": 1,
+            "name": "菲亚斯",
+            "maxAnger": 100,
+            "petIcon": "res/pet/icon/157.swf?ielbayd4",
+            "buffs": [],
+            "alive": 1,
+            "typeIcon": "internal://UI_PetTypeIcon_7",
+            "skills": [
+              {
+                "typeIcon": "internal://UI_PetTypeIcon_1",
+                "anger": 0,
+                "id": 10832,
+                "tips": "先制+1",
+                "name": "快攻",
+                "enable": false,
+                "power": 45,
+                "category": "物理"
+              },
+              {
+                "typeIcon": "internal://UI_PetTypeIcon_1",
+                "anger": 5,
+                "id": 10956,
+                "tips": "5%弱化对手物防1级",
+                "name": "俯冲",
+                "enable": false,
+                "power": 60,
+                "category": "物理"
+              },
+              {
+                "typeIcon": "internal://UI_PetTypeIcon_1",
+                "anger": 10,
+                "id": 10276,
+                "tips": "强化自身物攻1级",
+                "name": "毅力",
+                "enable": false,
+                "power": 0,
+                "category": "属性"
+              },
+              {
+                "typeIcon": "internal://UI_PetTypeIcon_7",
+                "anger": 10,
+                "id": 11003,
+                "tips": "附加40点固伤",
+                "name": "翔羽切",
+                "enable": false,
+                "power": 70,
+                "category": "物理"
+              },
+              {
+                "typeIcon": "internal://UI_PetTypeIcon_7",
+                "anger": 15,
+                "id": 11004,
+                "tips": "附加40点固伤",
+                "name": "翔羽刃",
+                "enable": false,
+                "power": 75,
+                "category": "特殊"
+              },
+              {
+                "typeIcon": "internal://UI_PetTypeIcon_1",
+                "anger": 20,
+                "id": 11005,
+                "tips": "【95】使对手沉默",
+                "name": "沉默",
+                "enable": false,
+                "power": 0,
+                "category": "属性"
+              },
+              {
+                "typeIcon": "internal://UI_PetTypeIcon_7",
+                "anger": 15,
+                "id": 11006,
+                "tips": "使用2次强化自身速度1级",
+                "name": "空之轨迹",
+                "enable": false,
+                "power": 75,
+                "category": "物理"
+              },
+              {
+                "typeIcon": "internal://UI_PetTypeIcon_7",
+                "anger": 10,
+                "id": 11007,
+                "tips": "强化自身速度1级",
+                "name": "展翅",
+                "enable": false,
+                "power": 0,
+                "category": "属性"
+              },
+              {
+                "typeIcon": "internal://UI_PetTypeIcon_7",
+                "anger": 15,
+                "id": 11008,
+                "tips": "使用2次强化自身物攻1级",
+                "name": "翔天冲",
+                "enable": false,
+                "power": 85,
+                "category": "物理"
+              },
+              {
+                "typeIcon": "internal://UI_PetTypeIcon_7",
+                "anger": 20,
+                "id": 11009,
+                "tips": "使用2次强化自身特攻1级",
+                "name": "翔天舞",
+                "enable": false,
+                "power": 90,
+                "category": "特殊"
+              },
+              {
+                "typeIcon": "internal://UI_PetTypeIcon_1",
+                "anger": 20,
+                "id": 11010,
+                "tips": "使用2次强化自身物防1级",
+                "name": "月华冲",
+                "enable": false,
+                "power": 90,
+                "category": "物理"
+              },
+              {
+                "typeIcon": "internal://UI_PetTypeIcon_1",
+                "anger": 20,
+                "id": 11011,
+                "tips": "使用2次强化自身特防1级",
+                "name": "月华舞",
+                "enable": false,
+                "power": 95,
+                "category": "特殊"
+              },
+              {
+                "typeIcon": "internal://UI_PetTypeIcon_7",
+                "anger": 100,
+                "id": 11012,
+                "tips": "<font color='#93E312'>必中</font> 20%强化自身特攻1级 20%强化自身物攻1级",
+                "name": "闪空翔烈破",
+                "enable": false,
+                "power": 170,
+                "category": "必杀"
+              },
+              {
+                "typeIcon": "internal://UI_PetTypeIcon_7",
+                "anger": 10,
+                "id": 11013,
+                "tips": "重现上次的技能效果",
+                "name": "回忆重现",
+                "enable": false,
+                "power": 10,
+                "category": "物理"
+              },
+              {
+                "typeIcon": "internal://UI_PetTypeIcon_7",
+                "anger": 15,
+                "id": 11014,
+                "tips": "<font color='#CB2C1B'>【实际效果】</font><br>转移自身不良<br><font color='#02CAC9'>【设计效果】</font><br>转移自身不良并使自身获得分身术",
+                "name": "分身术",
+                "enable": false,
+                "power": 0,
+                "category": "属性"
+              },
+              {
+                "typeIcon": "internal://UI_PetTypeIcon_7",
+                "anger": 20,
+                "id": 11015,
+                "tips": "<font color='#93E312'>必中</font> 使用2次强化自身物攻1级",
+                "name": "天空烈冲",
+                "enable": false,
+                "power": 90,
+                "category": "物理"
+              },
+              {
+                "typeIcon": "internal://UI_PetTypeIcon_7",
+                "anger": 20,
+                "id": 11016,
+                "tips": "<font color='#93E312'>必中</font> 使用2次强化自身特攻1级",
+                "name": "天空之舞",
+                "enable": false,
+                "power": 95,
+                "category": "特殊"
+              }
+            ],
+            "anger": 20,
+            "maxHp": 3000,
+            "spd": 0,
+            "hp": 3000,
+            "petSound": "res/pet/sound/157.mp3?ielbv24o",
+            "spa": 0,
+            "def": 0,
+            "items": [],
+            "petSwf": "res/pet/fight/157.swf?ielatw60",
+            "spe": 0
+          },
+          "pets": [
+            {
+              "atk": 0,
+              "pid": 1,
+              "level": 80,
+              "rate": 100,
+              "position": 1,
+              "name": "菲亚斯",
+              "maxAnger": 100,
+              "petIcon": "res/pet/icon/157.swf?ielbayd4",
+              "buffs": [],
+              "alive": 1,
+              "typeIcon": "internal://UI_PetTypeIcon_7",
+              "skills": [
+                {
+                  "typeIcon": "internal://UI_PetTypeIcon_1",
+                  "anger": 0,
+                  "id": 10832,
+                  "tips": "先制+1",
+                  "name": "快攻",
+                  "enable": false,
+                  "power": 45,
+                  "category": "物理"
+                },
+                {
+                  "typeIcon": "internal://UI_PetTypeIcon_1",
+                  "anger": 5,
+                  "id": 10956,
+                  "tips": "5%弱化对手物防1级",
+                  "name": "俯冲",
+                  "enable": false,
+                  "power": 60,
+                  "category": "物理"
+                },
+                {
+                  "typeIcon": "internal://UI_PetTypeIcon_1",
+                  "anger": 10,
+                  "id": 10276,
+                  "tips": "强化自身物攻1级",
+                  "name": "毅力",
+                  "enable": false,
+                  "power": 0,
+                  "category": "属性"
+                },
+                {
+                  "typeIcon": "internal://UI_PetTypeIcon_7",
+                  "anger": 10,
+                  "id": 11003,
+                  "tips": "附加40点固伤",
+                  "name": "翔羽切",
+                  "enable": false,
+                  "power": 70,
+                  "category": "物理"
+                },
+                {
+                  "typeIcon": "internal://UI_PetTypeIcon_7",
+                  "anger": 15,
+                  "id": 11004,
+                  "tips": "附加40点固伤",
+                  "name": "翔羽刃",
+                  "enable": false,
+                  "power": 75,
+                  "category": "特殊"
+                },
+                {
+                  "typeIcon": "internal://UI_PetTypeIcon_1",
+                  "anger": 20,
+                  "id": 11005,
+                  "tips": "【95】使对手沉默",
+                  "name": "沉默",
+                  "enable": false,
+                  "power": 0,
+                  "category": "属性"
+                },
+                {
+                  "typeIcon": "internal://UI_PetTypeIcon_7",
+                  "anger": 15,
+                  "id": 11006,
+                  "tips": "使用2次强化自身速度1级",
+                  "name": "空之轨迹",
+                  "enable": false,
+                  "power": 75,
+                  "category": "物理"
+                },
+                {
+                  "typeIcon": "internal://UI_PetTypeIcon_7",
+                  "anger": 10,
+                  "id": 11007,
+                  "tips": "强化自身速度1级",
+                  "name": "展翅",
+                  "enable": false,
+                  "power": 0,
+                  "category": "属性"
+                },
+                {
+                  "typeIcon": "internal://UI_PetTypeIcon_7",
+                  "anger": 15,
+                  "id": 11008,
+                  "tips": "使用2次强化自身物攻1级",
+                  "name": "翔天冲",
+                  "enable": false,
+                  "power": 85,
+                  "category": "物理"
+                },
+                {
+                  "typeIcon": "internal://UI_PetTypeIcon_7",
+                  "anger": 20,
+                  "id": 11009,
+                  "tips": "使用2次强化自身特攻1级",
+                  "name": "翔天舞",
+                  "enable": false,
+                  "power": 90,
+                  "category": "特殊"
+                },
+                {
+                  "typeIcon": "internal://UI_PetTypeIcon_1",
+                  "anger": 20,
+                  "id": 11010,
+                  "tips": "使用2次强化自身物防1级",
+                  "name": "月华冲",
+                  "enable": false,
+                  "power": 90,
+                  "category": "物理"
+                },
+                {
+                  "typeIcon": "internal://UI_PetTypeIcon_1",
+                  "anger": 20,
+                  "id": 11011,
+                  "tips": "使用2次强化自身特防1级",
+                  "name": "月华舞",
+                  "enable": false,
+                  "power": 95,
+                  "category": "特殊"
+                },
+                {
+                  "typeIcon": "internal://UI_PetTypeIcon_7",
+                  "anger": 100,
+                  "id": 11012,
+                  "tips": "<font color='#93E312'>必中</font> 20%强化自身特攻1级 20%强化自身物攻1级",
+                  "name": "闪空翔烈破",
+                  "enable": false,
+                  "power": 170,
+                  "category": "必杀"
+                },
+                {
+                  "typeIcon": "internal://UI_PetTypeIcon_7",
+                  "anger": 10,
+                  "id": 11013,
+                  "tips": "重现上次的技能效果",
+                  "name": "回忆重现",
+                  "enable": false,
+                  "power": 10,
+                  "category": "物理"
+                },
+                {
+                  "typeIcon": "internal://UI_PetTypeIcon_7",
+                  "anger": 15,
+                  "id": 11014,
+                  "tips": "<font color='#CB2C1B'>【实际效果】</font><br>转移自身不良<br><font color='#02CAC9'>【设计效果】</font><br>转移自身不良并使自身获得分身术",
+                  "name": "分身术",
+                  "enable": false,
+                  "power": 0,
+                  "category": "属性"
+                },
+                {
+                  "typeIcon": "internal://UI_PetTypeIcon_7",
+                  "anger": 20,
+                  "id": 11015,
+                  "tips": "<font color='#93E312'>必中</font> 使用2次强化自身物攻1级",
+                  "name": "天空烈冲",
+                  "enable": false,
+                  "power": 90,
+                  "category": "物理"
+                },
+                {
+                  "typeIcon": "internal://UI_PetTypeIcon_7",
+                  "anger": 20,
+                  "id": 11016,
+                  "tips": "<font color='#93E312'>必中</font> 使用2次强化自身特攻1级",
+                  "name": "天空之舞",
+                  "enable": false,
+                  "power": 95,
+                  "category": "特殊"
+                }
+              ],
+              "anger": 20,
+              "maxHp": 3000,
+              "spd": 0,
+              "hp": 3000,
+              "petSound": "res/pet/sound/157.mp3?ielbv24o",
+              "spa": 0,
+              "def": 0,
+              "items": [],
+              "petSwf": "res/pet/fight/157.swf?ielatw60",
+              "spe": 0
+            }
+          ],
+          "_slave": null,
+          "master": {
+            "atk": 0,
+            "pid": 1,
+            "level": 80,
+            "rate": 100,
+            "position": 1,
+            "name": "菲亚斯",
+            "maxAnger": 100,
+            "petIcon": "res/pet/icon/157.swf?ielbayd4",
+            "buffs": [],
+            "alive": 1,
+            "typeIcon": "internal://UI_PetTypeIcon_7",
+            "skills": [
+              {
+                "typeIcon": "internal://UI_PetTypeIcon_1",
+                "anger": 0,
+                "id": 10832,
+                "tips": "先制+1",
+                "name": "快攻",
+                "enable": false,
+                "power": 45,
+                "category": "物理"
+              },
+              {
+                "typeIcon": "internal://UI_PetTypeIcon_1",
+                "anger": 5,
+                "id": 10956,
+                "tips": "5%弱化对手物防1级",
+                "name": "俯冲",
+                "enable": false,
+                "power": 60,
+                "category": "物理"
+              },
+              {
+                "typeIcon": "internal://UI_PetTypeIcon_1",
+                "anger": 10,
+                "id": 10276,
+                "tips": "强化自身物攻1级",
+                "name": "毅力",
+                "enable": false,
+                "power": 0,
+                "category": "属性"
+              },
+              {
+                "typeIcon": "internal://UI_PetTypeIcon_7",
+                "anger": 10,
+                "id": 11003,
+                "tips": "附加40点固伤",
+                "name": "翔羽切",
+                "enable": false,
+                "power": 70,
+                "category": "物理"
+              },
+              {
+                "typeIcon": "internal://UI_PetTypeIcon_7",
+                "anger": 15,
+                "id": 11004,
+                "tips": "附加40点固伤",
+                "name": "翔羽刃",
+                "enable": false,
+                "power": 75,
+                "category": "特殊"
+              },
+              {
+                "typeIcon": "internal://UI_PetTypeIcon_1",
+                "anger": 20,
+                "id": 11005,
+                "tips": "【95】使对手沉默",
+                "name": "沉默",
+                "enable": false,
+                "power": 0,
+                "category": "属性"
+              },
+              {
+                "typeIcon": "internal://UI_PetTypeIcon_7",
+                "anger": 15,
+                "id": 11006,
+                "tips": "使用2次强化自身速度1级",
+                "name": "空之轨迹",
+                "enable": false,
+                "power": 75,
+                "category": "物理"
+              },
+              {
+                "typeIcon": "internal://UI_PetTypeIcon_7",
+                "anger": 10,
+                "id": 11007,
+                "tips": "强化自身速度1级",
+                "name": "展翅",
+                "enable": false,
+                "power": 0,
+                "category": "属性"
+              },
+              {
+                "typeIcon": "internal://UI_PetTypeIcon_7",
+                "anger": 15,
+                "id": 11008,
+                "tips": "使用2次强化自身物攻1级",
+                "name": "翔天冲",
+                "enable": false,
+                "power": 85,
+                "category": "物理"
+              },
+              {
+                "typeIcon": "internal://UI_PetTypeIcon_7",
+                "anger": 20,
+                "id": 11009,
+                "tips": "使用2次强化自身特攻1级",
+                "name": "翔天舞",
+                "enable": false,
+                "power": 90,
+                "category": "特殊"
+              },
+              {
+                "typeIcon": "internal://UI_PetTypeIcon_1",
+                "anger": 20,
+                "id": 11010,
+                "tips": "使用2次强化自身物防1级",
+                "name": "月华冲",
+                "enable": false,
+                "power": 90,
+                "category": "物理"
+              },
+              {
+                "typeIcon": "internal://UI_PetTypeIcon_1",
+                "anger": 20,
+                "id": 11011,
+                "tips": "使用2次强化自身特防1级",
+                "name": "月华舞",
+                "enable": false,
+                "power": 95,
+                "category": "特殊"
+              },
+              {
+                "typeIcon": "internal://UI_PetTypeIcon_7",
+                "anger": 100,
+                "id": 11012,
+                "tips": "<font color='#93E312'>必中</font> 20%强化自身特攻1级 20%强化自身物攻1级",
+                "name": "闪空翔烈破",
+                "enable": false,
+                "power": 170,
+                "category": "必杀"
+              },
+              {
+                "typeIcon": "internal://UI_PetTypeIcon_7",
+                "anger": 10,
+                "id": 11013,
+                "tips": "重现上次的技能效果",
+                "name": "回忆重现",
+                "enable": false,
+                "power": 10,
+                "category": "物理"
+              },
+              {
+                "typeIcon": "internal://UI_PetTypeIcon_7",
+                "anger": 15,
+                "id": 11014,
+                "tips": "<font color='#CB2C1B'>【实际效果】</font><br>转移自身不良<br><font color='#02CAC9'>【设计效果】</font><br>转移自身不良并使自身获得分身术",
+                "name": "分身术",
+                "enable": false,
+                "power": 0,
+                "category": "属性"
+              },
+              {
+                "typeIcon": "internal://UI_PetTypeIcon_7",
+                "anger": 20,
+                "id": 11015,
+                "tips": "<font color='#93E312'>必中</font> 使用2次强化自身物攻1级",
+                "name": "天空烈冲",
+                "enable": false,
+                "power": 90,
+                "category": "物理"
+              },
+              {
+                "typeIcon": "internal://UI_PetTypeIcon_7",
+                "anger": 20,
+                "id": 11016,
+                "tips": "<font color='#93E312'>必中</font> 使用2次强化自身特攻1级",
+                "name": "天空之舞",
+                "enable": false,
+                "power": 95,
+                "category": "特殊"
+              }
+            ],
+            "anger": 20,
+            "maxHp": 3000,
+            "spd": 0,
+            "hp": 3000,
+            "petSound": "res/pet/sound/157.mp3?ielbv24o",
+            "spa": 0,
+            "def": 0,
+            "items": [],
+            "petSwf": "res/pet/fight/157.swf?ielatw60",
+            "spe": 0
+          }
+        },
+        "mapSwf": "res/map/swf/100007.swf?iela7k5k",
+        "weatherIcon": "internal://UI_WeatherIcon7",
+        "weatherTips": "雷暴天 加成属性：电",
+        "left": {
+          "slave": null,
+          "capsules": [
+            {
+              "count": 80,
+              "icon": "res/item/pet/icon/200001.swf?ield1znk",
+              "id": 200001,
+              "tips": "只能捕获≤30级的精灵 具有1倍捕获率",
+              "name": "普通精灵胶囊"
+            },
+            {
+              "count": 388,
+              "icon": "res/item/pet/icon/200002.swf?ield1pmg",
+              "id": 200002,
+              "tips": "只能捕获≤60级的精灵 具有1.5倍捕获率",
+              "name": "中级精灵胶囊"
+            },
+            {
+              "count": 316,
+              "icon": "res/item/pet/icon/200003.swf?ield2174",
+              "id": 200003,
+              "tips": "没有捕获等级限制 具有2倍捕获率",
+              "name": "高级精灵胶囊"
+            },
+            {
+              "count": 35,
+              "icon": "res/item/pet/icon/200007.swf?ield23ig",
+              "id": 200007,
+              "tips": "可以百分百捕捉的精灵胶囊",
+              "name": "无敌精灵胶囊"
+            }
+          ],
+          "items": [
+            {
+              "count": 39,
+              "icon": "res/item/pet/icon/200011.swf?ield1pmg",
+              "id": 200011,
+              "tips": "恢复精灵20点体力",
+              "name": "初级体力药剂"
+            },
+            {
+              "count": 106,
+              "icon": "res/item/pet/icon/200012.swf?ield2174",
+              "id": 200012,
+              "tips": "恢复精灵50点体力",
+              "name": "中级体力药剂"
+            },
+            {
+              "count": 244,
+              "icon": "res/item/pet/icon/200013.swf?ield1qe8",
+              "id": 200013,
+              "tips": "恢复精灵100点体力",
+              "name": "高级体力药剂"
+            },
+            {
+              "count": 209,
+              "icon": "res/item/pet/icon/200014.swf?ield22qo",
+              "id": 200014,
+              "tips": "恢复精灵200点体力",
+              "name": "特级体力药剂"
+            },
+            {
+              "count": 182,
+              "icon": "res/item/pet/icon/200015.swf?ield1rxs",
+              "id": 200015,
+              "tips": "恢复精灵300点体力",
+              "name": "超级体力药剂"
+            },
+            {
+              "count": 826,
+              "icon": "res/item/pet/icon/200016.swf?ield23ig",
+              "id": 200016,
+              "tips": "恢复精灵250点体力",
+              "name": "熔炼体力药剂"
+            },
+            {
+              "count": 796,
+              "icon": "res/item/pet/icon/200019.swf?ield1u94",
+              "id": 200019,
+              "tips": "恢复精灵350点体力",
+              "name": "高效体力药剂"
+            },
+            {
+              "count": 48,
+              "icon": "res/item/pet/icon/200021.swf?ield21yw",
+              "id": 200021,
+              "tips": "恢复精灵10点怒气",
+              "name": "初级怒气药剂"
+            },
+            {
+              "count": 495,
+              "icon": "res/item/pet/icon/200022.swf?ield1qe8",
+              "id": 200022,
+              "tips": "恢复精灵20点怒气",
+              "name": "中级怒气药剂"
+            },
+            {
+              "count": 607,
+              "icon": "res/item/pet/icon/200023.swf?ield22qo",
+              "id": 200023,
+              "tips": "恢复精灵30点怒气",
+              "name": "高级怒气药剂"
+            },
+            {
+              "count": 66,
+              "icon": "res/item/pet/icon/200024.swf?ield1rxs",
+              "id": 200024,
+              "tips": "恢复精灵40点怒气",
+              "name": "特级怒气药剂"
+            },
+            {
+              "count": 50,
+              "icon": "res/item/pet/icon/200025.swf?ield24a8",
+              "id": 200025,
+              "tips": "恢复精灵50点怒气",
+              "name": "超级怒气药剂"
+            },
+            {
+              "count": 834,
+              "icon": "res/item/pet/icon/200064.swf?ield1v0w",
+              "id": 200064,
+              "tips": "复活已战败的精灵并恢复最大体力",
+              "name": "高级复活药水"
+            },
+            {
+              "count": 875,
+              "icon": "res/item/pet/icon/200062.swf?ield1thc",
+              "id": 200062,
+              "tips": "复活已战败的精灵并恢复最大体力的1/2",
+              "name": "初级复活药水"
+            }
+          ],
+          "_master": {
+            "atk": 0,
+            "pid": 1678534071,
+            "level": 100,
+            "rate": 100,
+            "position": 1,
+            "name": "雷伊",
+            "maxAnger": 100,
+            "petIcon": "res/pet/icon/90.swf?ielbb0og",
+            "buffs": [],
+            "alive": 1,
+            "typeIcon": "internal://UI_PetTypeIcon_8",
+            "skills": [
+              {
+                "typeIcon": "internal://UI_PetTypeIcon_1",
+                "anger": 15,
+                "id": 11177,
+                "tips": "先制+2 【神迹变身后会丢失】",
+                "name": "风驰电掣",
+                "enable": true,
+                "power": 70,
+                "category": "物理"
+              },
+              {
+                "typeIcon": "internal://UI_PetTypeIcon_8",
+                "anger": 15,
+                "id": 11178,
+                "tips": "先制+1",
+                "name": "闪光击",
+                "enable": true,
+                "power": 60,
+                "category": "物理"
+              },
+              {
+                "typeIcon": "internal://UI_PetTypeIcon_8",
+                "anger": 20,
+                "id": 11179,
+                "tips": "使自身获得电系强化",
+                "name": "充电",
+                "enable": true,
+                "power": 0,
+                "category": "属性"
+              },
+              {
+                "typeIcon": "internal://UI_PetTypeIcon_8",
+                "anger": 15,
+                "id": 11180,
+                "tips": "体力＜50%时威力2倍",
+                "name": "惊雷切",
+                "enable": true,
+                "power": 75,
+                "category": "物理"
+              },
+              {
+                "typeIcon": "internal://UI_PetTypeIcon_8",
+                "anger": 100,
+                "id": 11189,
+                "tips": "<font color='#93E312'>必中</font> 10%伤害4倍",
+                "name": "雷神天明闪",
+                "enable": false,
+                "power": 170,
+                "category": "必杀"
+              }
+            ],
+            "anger": 20,
+            "maxHp": 558,
+            "spd": 0,
+            "hp": 558,
+            "petSound": "res/pet/sound/90.mp3?ielbv2wg",
+            "spa": 0,
+            "def": 0,
+            "items": [],
+            "petSwf": "res/pet/fight/90.swf?ielau1kg",
+            "spe": 0
+          },
+          "pets": [
+            {
+              "atk": 0,
+              "pid": 1678534071,
+              "level": 100,
+              "rate": 100,
+              "position": 1,
+              "name": "雷伊",
+              "maxAnger": 100,
+              "petIcon": "res/pet/icon/90.swf?ielbb0og",
+              "buffs": [],
+              "alive": 1,
+              "typeIcon": "internal://UI_PetTypeIcon_8",
+              "skills": [
+                {
+                  "typeIcon": "internal://UI_PetTypeIcon_1",
+                  "anger": 15,
+                  "id": 11177,
+                  "tips": "先制+2 【神迹变身后会丢失】",
+                  "name": "风驰电掣",
+                  "enable": true,
+                  "power": 70,
+                  "category": "物理"
+                },
+                {
+                  "typeIcon": "internal://UI_PetTypeIcon_8",
+                  "anger": 15,
+                  "id": 11178,
+                  "tips": "先制+1",
+                  "name": "闪光击",
+                  "enable": true,
+                  "power": 60,
+                  "category": "物理"
+                },
+                {
+                  "typeIcon": "internal://UI_PetTypeIcon_8",
+                  "anger": 20,
+                  "id": 11179,
+                  "tips": "使自身获得电系强化",
+                  "name": "充电",
+                  "enable": true,
+                  "power": 0,
+                  "category": "属性"
+                },
+                {
+                  "typeIcon": "internal://UI_PetTypeIcon_8",
+                  "anger": 15,
+                  "id": 11180,
+                  "tips": "体力＜50%时威力2倍",
+                  "name": "惊雷切",
+                  "enable": true,
+                  "power": 75,
+                  "category": "物理"
+                },
+                {
+                  "typeIcon": "internal://UI_PetTypeIcon_8",
+                  "anger": 100,
+                  "id": 11189,
+                  "tips": "<font color='#93E312'>必中</font> 10%伤害4倍",
+                  "name": "雷神天明闪",
+                  "enable": false,
+                  "power": 170,
+                  "category": "必杀"
+                }
+              ],
+              "anger": 20,
+              "maxHp": 558,
+              "spd": 0,
+              "hp": 558,
+              "petSound": "res/pet/sound/90.mp3?ielbv2wg",
+              "spa": 0,
+              "def": 0,
+              "items": [],
+              "petSwf": "res/pet/fight/90.swf?ielau1kg",
+              "spe": 0
+            },
+            {
+              "atk": 0,
+              "pid": 1470790670,
+              "level": 100,
+              "rate": 100,
+              "position": 0,
+              "name": "圣·神王伊特",
+              "maxAnger": 100,
+              "petIcon": "res/pet/icon/2518.swf?iijtkifs",
+              "buffs": [],
+              "alive": 1,
+              "typeIcon": "internal://UI_PetTypeIcon_19",
+              "skills": [
+                {
+                  "typeIcon": "internal://UI_PetTypeIcon_19",
+                  "anger": 20,
+                  "id": 15589,
+                  "tips": "王之领域时威力2倍 王者领域时威力2倍并获得王之风暴 同时具有时威力4倍",
+                  "name": "王之风暴",
+                  "enable": false,
+                  "power": 80,
+                  "category": "特殊"
+                },
+                {
+                  "typeIcon": "internal://UI_PetTypeIcon_19",
+                  "anger": 25,
+                  "id": 17957,
+                  "tips": "先制+2 无视Miss吸收对手强化 具有伊特领域时额外反转对手强化",
+                  "name": "王之震慑",
+                  "enable": false,
+                  "power": 80,
+                  "category": "特殊"
+                },
+                {
+                  "typeIcon": "internal://UI_PetTypeIcon_19",
+                  "anger": 20,
+                  "id": 17958,
+                  "tips": "<font color='#93E312'>必中</font> 获得王者领域与随机1种2级领域 具有纹章时不会重复获得已有领域",
+                  "name": "王域",
+                  "enable": false,
+                  "power": 0,
+                  "category": "属性"
+                },
+                {
+                  "typeIcon": "internal://UI_PetTypeIcon_19",
+                  "anger": 40,
+                  "id": 17960,
+                  "tips": "使对手随机获得1种不良 具有王者领域时无视Miss额外使对手随机获得1种异常",
+                  "name": "王罚",
+                  "enable": false,
+                  "power": 100,
+                  "category": "物理"
+                },
+                {
+                  "typeIcon": "internal://UI_PetTypeIcon_19",
+                  "anger": 100,
+                  "id": 15591,
+                  "tips": "连击17次 无视对手<font color='#02CAC9'>护盾</font>",
+                  "name": "十七朝皇",
+                  "enable": false,
+                  "power": 15,
+                  "category": "必杀"
+                }
+              ],
+              "anger": 0,
+              "maxHp": 716,
+              "spd": 0,
+              "hp": 716,
+              "petSound": "res/pet/sound/2518.mp3",
+              "spa": 0,
+              "def": 0,
+              "items": [],
+              "petSwf": "res/pet/fight/2518.swf?iil3q194",
+              "spe": 0
+            },
+            {
+              "atk": 0,
+              "pid": 1587792377,
+              "level": 100,
+              "rate": 100,
+              "position": 0,
+              "name": "星之首影",
+              "maxAnger": 100,
+              "petIcon": "res/pet/icon/2562.swf?isuiujx4",
+              "buffs": [],
+              "alive": 1,
+              "typeIcon": "internal://UI_PetTypeIcon_18",
+              "skills": [
+                {
+                  "typeIcon": "internal://UI_PetTypeIcon_18",
+                  "anger": 25,
+                  "id": 18501,
+                  "tips": "【90】使对手下一次恢复体力效果变为扣除体力",
+                  "name": "星辉流转",
+                  "enable": false,
+                  "power": 0,
+                  "category": "属性"
+                },
+                {
+                  "typeIcon": "internal://UI_PetTypeIcon_18",
+                  "anger": 0,
+                  "id": 18493,
+                  "tips": "【95】星辰位移进入塞纳留斯的掌控 使环境变为<font color='#6699CC'>星移</font>",
+                  "name": "星移",
+                  "enable": true,
+                  "power": 0,
+                  "category": "属性"
+                },
+                {
+                  "typeIcon": "internal://UI_PetTypeIcon_18",
+                  "anger": 15,
+                  "id": 11955,
+                  "tips": "<font color='#93E312'>必中</font>",
+                  "name": "流星雨",
+                  "enable": false,
+                  "power": 110,
+                  "category": "特殊"
+                },
+                {
+                  "typeIcon": "internal://UI_PetTypeIcon_18",
+                  "anger": 20,
+                  "id": 13139,
+                  "tips": "清除对手强化",
+                  "name": "圣光惩戒",
+                  "enable": false,
+                  "power": 75,
+                  "category": "特殊"
+                },
+                {
+                  "typeIcon": "internal://UI_PetTypeIcon_18",
+                  "anger": 100,
+                  "id": 18503,
+                  "tips": "必杀技 凝固星辰的位移 星移环境下使下一次的移除星移效果不生效",
+                  "name": "星之凝",
+                  "enable": false,
+                  "power": 170,
+                  "category": "必杀"
+                }
+              ],
+              "anger": 0,
+              "maxHp": 590,
+              "spd": 0,
+              "hp": 590,
+              "petSound": "res/pet/sound/2562.mp3",
+              "spa": 0,
+              "def": 0,
+              "items": [],
+              "petSwf": "res/pet/fight/2562.swf?isuivqcw",
+              "spe": 0
+            },
+            {
+              "atk": 0,
+              "pid": 1625068128,
+              "level": 100,
+              "rate": 100,
+              "position": 0,
+              "name": "圣·约瑟王",
+              "maxAnger": 100,
+              "petIcon": "res/pet/icon/999.swf?ielbb2zs",
+              "buffs": [],
+              "alive": 1,
+              "typeIcon": "internal://UI_PetTypeIcon_19",
+              "skills": [
+                {
+                  "typeIcon": "internal://UI_PetTypeIcon_19",
+                  "anger": 25,
+                  "id": 17166,
+                  "tips": "连击5~10次 连击数＜8次时弱化对手双防1级",
+                  "name": "王力浩瀚",
+                  "enable": true,
+                  "power": 20,
+                  "category": "物理"
+                },
+                {
+                  "typeIcon": "internal://UI_PetTypeIcon_19",
+                  "anger": 25,
+                  "id": 17165,
+                  "tips": "先制+1 使对手获得普世度天",
+                  "name": "普世度天",
+                  "enable": true,
+                  "power": 0,
+                  "category": "属性"
+                },
+                {
+                  "typeIcon": "internal://UI_PetTypeIcon_19",
+                  "anger": 20,
+                  "id": 14333,
+                  "tips": "先制+4 清除对手强化",
+                  "name": "擎天修罗",
+                  "enable": true,
+                  "power": 95,
+                  "category": "特殊"
+                },
+                {
+                  "typeIcon": "internal://UI_PetTypeIcon_19",
+                  "anger": 20,
+                  "id": 14328,
+                  "tips": "对手每级强化增加20%暴击率",
+                  "name": "暴戾皇拳",
+                  "enable": true,
+                  "power": 80,
+                  "category": "物理"
+                },
+                {
+                  "typeIcon": "internal://UI_PetTypeIcon_19",
+                  "anger": 100,
+                  "id": 17168,
+                  "tips": "先制+2 无视对手<font color='#02CAC9'>护盾</font> 双防强化 清除<font color='#6699CC'>环境</font> 克制系数不低于1.75",
+                  "name": "王灵羽蔑宙",
+                  "enable": false,
+                  "power": 210,
+                  "category": "必杀"
+                }
+              ],
+              "anger": 30,
+              "maxHp": 810,
+              "spd": 0,
+              "hp": 810,
+              "petSound": "res/pet/sound/999.mp3?ielbv2wg",
+              "spa": 0,
+              "def": 0,
+              "items": [],
+              "petSwf": "res/pet/fight/11000.swf",
+              "spe": 0
+            },
+            {
+              "atk": 0,
+              "pid": 1729775595,
+              "level": 100,
+              "rate": 100,
+              "position": 0,
+              "name": "神迹盖亚",
+              "maxAnger": 100,
+              "petIcon": "res/pet/icon/961.swf?ielbb3rk",
+              "buffs": [],
+              "alive": 1,
+              "typeIcon": "internal://UI_PetTypeIcon_14",
+              "skills": [
+                {
+                  "typeIcon": "internal://UI_PetTypeIcon_14",
+                  "anger": 20,
+                  "id": 13049,
+                  "tips": "<font color='#93E312'>必中</font> 【神迹变身后会丢失】",
+                  "name": "擒九域",
+                  "enable": false,
+                  "power": 100,
+                  "category": "物理"
+                },
+                {
+                  "typeIcon": "internal://UI_PetTypeIcon_1",
+                  "anger": 15,
+                  "id": 13045,
+                  "tips": "附加50点伤害 【神迹变身后会丢失】",
+                  "name": "渗透劲",
+                  "enable": false,
+                  "power": 80,
+                  "category": "物理"
+                },
+                {
+                  "typeIcon": "internal://UI_PetTypeIcon_14",
+                  "anger": 15,
+                  "id": 17444,
+                  "tips": "使环境变为<font color='#6699CC'>古战场</font>并使自身获得毁神星•守",
+                  "name": "末日野性",
+                  "enable": false,
+                  "power": 0,
+                  "category": "属性"
+                },
+                {
+                  "typeIcon": "internal://UI_PetTypeIcon_14",
+                  "anger": 30,
+                  "id": 17445,
+                  "tips": "具有毁神星•攻时强化自身物攻1级 击败对手使自身获得造成伤害等值的擒凶域",
+                  "name": "擒凶域",
+                  "enable": false,
+                  "power": 135,
+                  "category": "物理"
+                },
+                {
+                  "typeIcon": "internal://UI_PetTypeIcon_14",
+                  "anger": 100,
+                  "id": 13055,
+                  "tips": "清除对手强化",
+                  "name": "石破天惊",
+                  "enable": false,
+                  "power": 170,
+                  "category": "必杀"
+                }
+              ],
+              "anger": 0,
+              "maxHp": 592,
+              "spd": 0,
+              "hp": 592,
+              "petSound": "res/pet/sound/961.mp3?ielbv24o",
+              "spa": 0,
+              "def": 0,
+              "items": [],
+              "petSwf": "res/pet/fight/961.swf?ielauats",
+              "spe": 0
+            },
+            {
+              "atk": 0,
+              "pid": 1775228039,
+              "level": 16,
+              "rate": 100,
+              "position": 0,
+              "name": "法拉",
+              "maxAnger": 100,
+              "petIcon": "res/pet/icon/10.swf?ielbaz4w",
+              "buffs": [],
+              "alive": 1,
+              "typeIcon": "internal://UI_PetTypeIcon_1",
+              "skills": [
+                {
+                  "typeIcon": "internal://UI_PetTypeIcon_1",
+                  "anger": 0,
+                  "id": 10050,
+                  "tips": "5%弱化对手物防1级",
+                  "name": "撞击",
+                  "enable": true,
+                  "power": 35,
+                  "category": "物理"
+                },
+                {
+                  "typeIcon": "internal://UI_PetTypeIcon_1",
+                  "anger": 5,
+                  "id": 10051,
+                  "tips": "使对手体力不低于1点",
+                  "name": "手下留情",
+                  "enable": false,
+                  "power": 55,
+                  "category": "物理"
+                },
+                {
+                  "typeIcon": "internal://UI_PetTypeIcon_1",
+                  "anger": 10,
+                  "id": 10052,
+                  "tips": "5%弱化对手特防1级",
+                  "name": "白化光线",
+                  "enable": false,
+                  "power": 60,
+                  "category": "特殊"
+                },
+                {
+                  "typeIcon": "internal://UI_PetTypeIcon_1",
+                  "anger": 10,
+                  "id": 10053,
+                  "tips": "使自身获得10点命中提升",
+                  "name": "瞄准",
+                  "enable": false,
+                  "power": 0,
+                  "category": "属性"
+                }
+              ],
+              "anger": 0,
+              "maxHp": 69,
+              "spd": 0,
+              "hp": 69,
+              "petSound": "res/pet/sound/10.mp3?ielbv2wg",
+              "spa": 0,
+              "def": 0,
+              "items": [],
+              "petSwf": "res/pet/fight/10.swf?ielatwxs",
+              "spe": 0
+            },
+            {
+              "atk": 0,
+              "pid": -1565191701,
+              "level": 100,
+              "rate": 100,
+              "position": 0,
+              "name": "神迹·盖亚",
+              "maxAnger": 100,
+              "petIcon": "res/pet/icon/962.swf?ielbazwo",
+              "buffs": [],
+              "alive": 1,
+              "typeIcon": "internal://UI_PetTypeIcon_14",
+              "skills": [
+                {
+                  "typeIcon": "internal://UI_PetTypeIcon_1",
+                  "anger": 0,
+                  "id": 0,
+                  "tips": "未知技能",
+                  "name": "未知:0",
+                  "enable": true,
+                  "power": 0,
+                  "category": "物理"
+                },
+                {
+                  "typeIcon": "internal://UI_PetTypeIcon_1",
+                  "anger": 0,
+                  "id": 0,
+                  "tips": "未知技能",
+                  "name": "未知:0",
+                  "enable": true,
+                  "power": 0,
+                  "category": "物理"
+                },
+                {
+                  "typeIcon": "internal://UI_PetTypeIcon_22",
+                  "anger": 15,
+                  "id": 17461,
+                  "tips": "将环境变为古战场并使自身获得毁神星•守 换场继承 持续直到战斗结束",
+                  "name": "末日野性",
+                  "enable": false,
+                  "power": 0,
+                  "category": "属性"
+                },
+                {
+                  "typeIcon": "internal://UI_PetTypeIcon_22",
+                  "anger": 30,
+                  "id": 17462,
+                  "tips": "具有毁神星•攻时强化1级物攻 成功击杀对手时下只精灵受到同等伤害",
+                  "name": "擒凶域",
+                  "enable": false,
+                  "power": 135,
+                  "category": "物理"
+                },
+                {
+                  "typeIcon": "internal://UI_PetTypeIcon_22",
+                  "anger": 100,
+                  "id": 17460,
+                  "tips": "清除对手强化",
+                  "name": "石破天惊",
+                  "enable": false,
+                  "power": 170,
+                  "category": "必杀"
+                }
+              ],
+              "anger": 0,
+              "maxHp": 592,
+              "spd": 0,
+              "hp": 592,
+              "petSound": "res/pet/sound/962.mp3",
+              "spa": 0,
+              "def": 0,
+              "items": [],
+              "petSwf": "res/pet/fight/962.swf?ielatz94",
+              "spe": 0
+            }
+          ],
+          "_slave": null,
+          "master": {
+            "atk": 0,
+            "pid": 1678534071,
+            "level": 100,
+            "rate": 100,
+            "position": 1,
+            "name": "雷伊",
+            "maxAnger": 100,
+            "petIcon": "res/pet/icon/90.swf?ielbb0og",
+            "buffs": [],
+            "alive": 1,
+            "typeIcon": "internal://UI_PetTypeIcon_8",
+            "skills": [
+              {
+                "typeIcon": "internal://UI_PetTypeIcon_1",
+                "anger": 15,
+                "id": 11177,
+                "tips": "先制+2 【神迹变身后会丢失】",
+                "name": "风驰电掣",
+                "enable": true,
+                "power": 70,
+                "category": "物理"
+              },
+              {
+                "typeIcon": "internal://UI_PetTypeIcon_8",
+                "anger": 15,
+                "id": 11178,
+                "tips": "先制+1",
+                "name": "闪光击",
+                "enable": true,
+                "power": 60,
+                "category": "物理"
+              },
+              {
+                "typeIcon": "internal://UI_PetTypeIcon_8",
+                "anger": 20,
+                "id": 11179,
+                "tips": "使自身获得电系强化",
+                "name": "充电",
+                "enable": true,
+                "power": 0,
+                "category": "属性"
+              },
+              {
+                "typeIcon": "internal://UI_PetTypeIcon_8",
+                "anger": 15,
+                "id": 11180,
+                "tips": "体力＜50%时威力2倍",
+                "name": "惊雷切",
+                "enable": true,
+                "power": 75,
+                "category": "物理"
+              },
+              {
+                "typeIcon": "internal://UI_PetTypeIcon_8",
+                "anger": 100,
+                "id": 11189,
+                "tips": "<font color='#93E312'>必中</font> 10%伤害4倍",
+                "name": "雷神天明闪",
+                "enable": false,
+                "power": 170,
+                "category": "必杀"
+              }
+            ],
+            "anger": 20,
+            "maxHp": 558,
+            "spd": 0,
+            "hp": 558,
+            "petSound": "res/pet/sound/90.mp3?ielbv2wg",
+            "spa": 0,
+            "def": 0,
+            "items": [],
+            "petSwf": "res/pet/fight/90.swf?ielau1kg",
+            "spe": 0
+          }
+        },
+        "mapSound": null
+      }
+    ]
+  },
+  {
+    "delta": {
+      "round": [
+        0,
+        1
+      ]
+    }
+  },
+  {
+    "delta": {
+      "left": {
+        "_master": {
+          "skills": {
+            "0": {
+              "enable": [
+                0,
+                false
+              ]
+            },
+            "1": {
+              "enable": [
+                0,
+                false
+              ]
+            },
+            "2": {
+              "enable": [
+                0,
+                false
+              ]
+            },
+            "3": {
+              "enable": [
+                0,
+                false
+              ]
+            },
+            "_t": "a"
+          },
+          "anger": [
+            0,
+            0
+          ]
+        },
+        "pets": {
+          "0": {
+            "skills": {
+              "0": {
+                "enable": [
+                  0,
+                  false
+                ]
+              },
+              "1": {
+                "enable": [
+                  0,
+                  false
+                ]
+              },
+              "2": {
+                "enable": [
+                  0,
+                  false
+                ]
+              },
+              "3": {
+                "enable": [
+                  0,
+                  false
+                ]
+              },
+              "_t": "a"
+            },
+            "anger": [
+              0,
+              0
+            ]
+          },
+          "_t": "a"
+        },
+        "master": {
+          "skills": {
+            "0": {
+              "enable": [
+                0,
+                false
+              ]
+            },
+            "1": {
+              "enable": [
+                0,
+                false
+              ]
+            },
+            "2": {
+              "enable": [
+                0,
+                false
+              ]
+            },
+            "3": {
+              "enable": [
+                0,
+                false
+              ]
+            },
+            "_t": "a"
+          },
+          "anger": [
+            0,
+            0
+          ]
+        }
+      }
+    }
+  },
+  {
+    "delta": {
+      "left": {
+        "_master": {
+          "skills": {
+            "0": {
+              "enable": [
+                0,
+                true
+              ]
+            },
+            "1": {
+              "enable": [
+                0,
+                true
+              ]
+            },
+            "2": {
+              "enable": [
+                0,
+                true
+              ]
+            },
+            "3": {
+              "enable": [
+                0,
+                true
+              ]
+            },
+            "_t": "a"
+          },
+          "anger": [
+            0,
+            20
+          ]
+        },
+        "pets": {
+          "0": {
+            "skills": {
+              "0": {
+                "enable": [
+                  0,
+                  true
+                ]
+              },
+              "1": {
+                "enable": [
+                  0,
+                  true
+                ]
+              },
+              "2": {
+                "enable": [
+                  0,
+                  true
+                ]
+              },
+              "3": {
+                "enable": [
+                  0,
+                  true
+                ]
+              },
+              "_t": "a"
+            },
+            "anger": [
+              0,
+              20
+            ]
+          },
+          "_t": "a"
+        },
+        "master": {
+          "skills": {
+            "0": {
+              "enable": [
+                0,
+                true
+              ]
+            },
+            "1": {
+              "enable": [
+                0,
+                true
+              ]
+            },
+            "2": {
+              "enable": [
+                0,
+                true
+              ]
+            },
+            "3": {
+              "enable": [
+                0,
+                true
+              ]
+            },
+            "_t": "a"
+          },
+          "anger": [
+            0,
+            20
+          ]
+        }
+      }
+    }
+  },
+  {
+    "delta": {
+      "right": {
+        "_master": {
+          "anger": [
+            0,
+            0
+          ]
+        },
+        "pets": {
+          "0": {
+            "anger": [
+              0,
+              0
+            ]
+          },
+          "_t": "a"
+        },
+        "master": {
+          "anger": [
+            0,
+            0
+          ]
+        }
+      }
+    }
+  },
+  {
+    "move": {
+      "effectUrl": "res/skill/effect/07_3_001.swf?iele5hq0",
+      "soundUrl": "res/skill/sound/07_3_001.mp3?iele5cbk",
+      "damage": 0,
+      "miss": 0,
+      "critical": 0,
+      "rate": 100,
+      "skill": "沉默",
+      "side": 2,
+      "category": "属性"
+    },
+    "logs": [
+      "<font color='#ffffff'>[1]</font><font color='#00ffff'>菲亚斯</font><font color='#ffffff'>使用</font><font color='#ffff00'>沉默</font>"
+    ],
+    "delta": {
+      "left": {
+        "_master": {
+          "buffs": {
+            "0": [
+              {
+                "icon": "res/skill/sideEffect/14.swf?iele4i88",
+                "count": 0,
+                "id": 14,
+                "tips": "沉默,属性技能Miss,持续回合2",
+                "name": "14-沉默"
+              }
+            ],
+            "1": [
+              {
+                "icon": "res/skill/sideEffect/11115.swf?iele4muw",
+                "count": 1,
+                "id": 11115,
+                "tips": "千钧[1], 满级增加200点物攻值,持续到战斗结束",
+                "name": "11115-千钧"
+              }
+            ],
+            "_t": "a"
+          }
+        },
+        "pets": {
+          "0": {
+            "buffs": {
+              "0": [
+                {
+                  "icon": "res/skill/sideEffect/14.swf?iele4i88",
+                  "count": 0,
+                  "id": 14,
+                  "tips": "沉默,属性技能Miss,持续回合2",
+                  "name": "14-沉默"
+                }
+              ],
+              "1": [
+                {
+                  "icon": "res/skill/sideEffect/11115.swf?iele4muw",
+                  "count": 1,
+                  "id": 11115,
+                  "tips": "千钧[1], 满级增加200点物攻值,持续到战斗结束",
+                  "name": "11115-千钧"
+                }
+              ],
+              "_t": "a"
+            }
+          },
+          "_t": "a"
+        },
+        "master": {
+          "buffs": {
+            "0": [
+              {
+                "icon": "res/skill/sideEffect/14.swf?iele4i88",
+                "count": 0,
+                "id": 14,
+                "tips": "沉默,属性技能Miss,持续回合2",
+                "name": "14-沉默"
+              }
+            ],
+            "1": [
+              {
+                "icon": "res/skill/sideEffect/11115.swf?iele4muw",
+                "count": 1,
+                "id": 11115,
+                "tips": "千钧[1], 满级增加200点物攻值,持续到战斗结束",
+                "name": "11115-千钧"
+              }
+            ],
+            "_t": "a"
+          }
+        }
+      }
+    }
+  },
+  {
+    "delta": {
+      "left": {
+        "_master": {
+          "skills": {
+            "0": {
+              "enable": [
+                0,
+                false
+              ]
+            },
+            "1": {
+              "enable": [
+                0,
+                false
+              ]
+            },
+            "2": {
+              "enable": [
+                0,
+                false
+              ]
+            },
+            "3": {
+              "enable": [
+                0,
+                false
+              ]
+            },
+            "_t": "a"
+          },
+          "anger": [
+            0,
+            0
+          ]
+        },
+        "pets": {
+          "0": {
+            "skills": {
+              "0": {
+                "enable": [
+                  0,
+                  false
+                ]
+              },
+              "1": {
+                "enable": [
+                  0,
+                  false
+                ]
+              },
+              "2": {
+                "enable": [
+                  0,
+                  false
+                ]
+              },
+              "3": {
+                "enable": [
+                  0,
+                  false
+                ]
+              },
+              "_t": "a"
+            },
+            "anger": [
+              0,
+              0
+            ]
+          },
+          "_t": "a"
+        },
+        "master": {
+          "skills": {
+            "0": {
+              "enable": [
+                0,
+                false
+              ]
+            },
+            "1": {
+              "enable": [
+                0,
+                false
+              ]
+            },
+            "2": {
+              "enable": [
+                0,
+                false
+              ]
+            },
+            "3": {
+              "enable": [
+                0,
+                false
+              ]
+            },
+            "_t": "a"
+          },
+          "anger": [
+            0,
+            0
+          ]
+        }
+      }
+    }
+  },
+  {
+    "move": {
+      "effectUrl": "res/skill/effect/08_3_003.swf?iele5gy8",
+      "soundUrl": "res/skill/sound/08_3_003.mp3?iele5bjs",
+      "damage": 0,
+      "miss": 1,
+      "critical": 0,
+      "rate": 200,
+      "skill": "充电",
+      "side": 1,
+      "category": "属性"
+    },
+    "logs": [
+      "<font color='#ffffff'>[1]</font><font color='#00ffff'>雷伊</font><font color='#ffffff'>使用</font><font color='#ffff00'>充电</font>"
+    ]
+  },
+  {
+    "delta": {
+      "round": [
+        0,
+        2
+      ],
+      "right": {
+        "_master": {
+          "anger": [
+            0,
+            15
+          ]
+        },
+        "pets": {
+          "0": {
+            "anger": [
+              0,
+              15
+            ]
+          },
+          "_t": "a"
+        },
+        "master": {
+          "anger": [
+            0,
+            15
+          ]
+        }
+      },
+      "left": {
+        "_master": {
+          "skills": {
+            "0": {
+              "enable": [
+                0,
+                true
+              ]
+            },
+            "1": {
+              "enable": [
+                0,
+                true
+              ]
+            },
+            "3": {
+              "enable": [
+                0,
+                true
+              ]
+            },
+            "_t": "a"
+          },
+          "anger": [
+            0,
+            15
+          ]
+        },
+        "pets": {
+          "0": {
+            "skills": {
+              "0": {
+                "enable": [
+                  0,
+                  true
+                ]
+              },
+              "1": {
+                "enable": [
+                  0,
+                  true
+                ]
+              },
+              "3": {
+                "enable": [
+                  0,
+                  true
+                ]
+              },
+              "_t": "a"
+            },
+            "anger": [
+              0,
+              15
+            ]
+          },
+          "_t": "a"
+        },
+        "master": {
+          "skills": {
+            "0": {
+              "enable": [
+                0,
+                true
+              ]
+            },
+            "1": {
+              "enable": [
+                0,
+                true
+              ]
+            },
+            "3": {
+              "enable": [
+                0,
+                true
+              ]
+            },
+            "_t": "a"
+          },
+          "anger": [
+            0,
+            15
+          ]
+        }
+      }
+    }
+  },
+  {
+    "delta": {
+      "left": {
+        "_master": {
+          "skills": {
+            "0": {
+              "enable": [
+                0,
+                false
+              ]
+            },
+            "1": {
+              "enable": [
+                0,
+                false
+              ]
+            },
+            "3": {
+              "enable": [
+                0,
+                false
+              ]
+            },
+            "_t": "a"
+          },
+          "anger": [
+            0,
+            0
+          ]
+        },
+        "pets": {
+          "0": {
+            "skills": {
+              "0": {
+                "enable": [
+                  0,
+                  false
+                ]
+              },
+              "1": {
+                "enable": [
+                  0,
+                  false
+                ]
+              },
+              "3": {
+                "enable": [
+                  0,
+                  false
+                ]
+              },
+              "_t": "a"
+            },
+            "anger": [
+              0,
+              0
+            ]
+          },
+          "_t": "a"
+        },
+        "master": {
+          "skills": {
+            "0": {
+              "enable": [
+                0,
+                false
+              ]
+            },
+            "1": {
+              "enable": [
+                0,
+                false
+              ]
+            },
+            "3": {
+              "enable": [
+                0,
+                false
+              ]
+            },
+            "_t": "a"
+          },
+          "anger": [
+            0,
+            0
+          ]
+        }
+      }
+    }
+  },
+  {
+    "delta": {
+      "left": {
+        "_master": {
+          "skills": {
+            "0": {
+              "enable": [
+                0,
+                true
+              ]
+            },
+            "1": {
+              "enable": [
+                0,
+                true
+              ]
+            },
+            "3": {
+              "enable": [
+                0,
+                true
+              ]
+            },
+            "_t": "a"
+          },
+          "anger": [
+            0,
+            15
+          ]
+        },
+        "pets": {
+          "0": {
+            "skills": {
+              "0": {
+                "enable": [
+                  0,
+                  true
+                ]
+              },
+              "1": {
+                "enable": [
+                  0,
+                  true
+                ]
+              },
+              "3": {
+                "enable": [
+                  0,
+                  true
+                ]
+              },
+              "_t": "a"
+            },
+            "anger": [
+              0,
+              15
+            ]
+          },
+          "_t": "a"
+        },
+        "master": {
+          "skills": {
+            "0": {
+              "enable": [
+                0,
+                true
+              ]
+            },
+            "1": {
+              "enable": [
+                0,
+                true
+              ]
+            },
+            "3": {
+              "enable": [
+                0,
+                true
+              ]
+            },
+            "_t": "a"
+          },
+          "anger": [
+            0,
+            15
+          ]
+        }
+      }
+    }
+  },
+  {},
+  {
+    "move": {
+      "effectUrl": "res/skill/effect/01_1_003.swf?iele5gy8",
+      "soundUrl": "res/skill/sound/01_1_003.mp3?iele5cbk",
+      "damage": 33,
+      "miss": 0,
+      "critical": 0,
+      "rate": 100,
+      "skill": "快攻",
+      "side": 2,
+      "category": "物理"
+    },
+    "logs": [
+      "<font color='#ffffff'>[2]</font><font color='#00ffff'>菲亚斯</font><font color='#ffffff'>使用</font><font color='#ffff00'>快攻</font>"
+    ],
+    "delta": {
+      "right": {
+        "_master": {
+          "anger": [
+            0,
+            30
+          ]
+        },
+        "pets": {
+          "0": {
+            "anger": [
+              0,
+              30
+            ]
+          },
+          "_t": "a"
+        },
+        "master": {
+          "anger": [
+            0,
+            30
+          ]
+        }
+      },
+      "left": {
+        "_master": {
+          "buffs": {
+            "0": {
+              "tips": [
+                0,
+                "沉默,属性技能Miss,持续回合1"
+              ]
+            },
+            "_t": "a"
+          },
+          "anger": [
+            0,
+            17
+          ],
+          "hp": [
+            0,
+            525
+          ]
+        },
+        "pets": {
+          "0": {
+            "buffs": {
+              "0": {
+                "tips": [
+                  0,
+                  "沉默,属性技能Miss,持续回合1"
+                ]
+              },
+              "_t": "a"
+            },
+            "anger": [
+              0,
+              17
+            ],
+            "hp": [
+              0,
+              525
+            ]
+          },
+          "_t": "a"
+        },
+        "master": {
+          "buffs": {
+            "0": {
+              "tips": [
+                0,
+                "沉默,属性技能Miss,持续回合1"
+              ]
+            },
+            "_t": "a"
+          },
+          "anger": [
+            0,
+            17
+          ],
+          "hp": [
+            0,
+            525
+          ]
+        }
+      }
+    }
+  },
+  {
+    "delta": {
+      "left": {
+        "_master": {
+          "skills": {
+            "0": {
+              "enable": [
+                0,
+                false
+              ]
+            },
+            "1": {
+              "enable": [
+                0,
+                false
+              ]
+            },
+            "3": {
+              "enable": [
+                0,
+                false
+              ]
+            },
+            "_t": "a"
+          },
+          "anger": [
+            0,
+            2
+          ]
+        },
+        "pets": {
+          "0": {
+            "skills": {
+              "0": {
+                "enable": [
+                  0,
+                  false
+                ]
+              },
+              "1": {
+                "enable": [
+                  0,
+                  false
+                ]
+              },
+              "3": {
+                "enable": [
+                  0,
+                  false
+                ]
+              },
+              "_t": "a"
+            },
+            "anger": [
+              0,
+              2
+            ]
+          },
+          "_t": "a"
+        },
+        "master": {
+          "skills": {
+            "0": {
+              "enable": [
+                0,
+                false
+              ]
+            },
+            "1": {
+              "enable": [
+                0,
+                false
+              ]
+            },
+            "3": {
+              "enable": [
+                0,
+                false
+              ]
+            },
+            "_t": "a"
+          },
+          "anger": [
+            0,
+            2
+          ]
+        }
+      }
+    }
+  },
+  {
+    "move": {
+      "effectUrl": "res/skill/effect/08_1_002.swf?iele5g6g",
+      "soundUrl": "res/skill/sound/08_1_002.mp3?iele5cbk",
+      "damage": 274,
+      "miss": 0,
+      "critical": 0,
+      "rate": 200,
+      "skill": "惊雷切",
+      "side": 1,
+      "category": "物理"
+    },
+    "logs": [
+      "<font color='#ffffff'>[2]</font><font color='#00ffff'>雷伊</font><font color='#ffffff'>使用</font><font color='#ffff00'>惊雷切</font>"
+    ],
+    "delta": {
+      "right": {
+        "_master": {
+          "anger": [
+            0,
+            34
+          ],
+          "hp": [
+            0,
+            2726
+          ]
+        },
+        "pets": {
+          "0": {
+            "anger": [
+              0,
+              34
+            ],
+            "hp": [
+              0,
+              2726
+            ]
+          },
+          "_t": "a"
+        },
+        "master": {
+          "anger": [
+            0,
+            34
+          ],
+          "hp": [
+            0,
+            2726
+          ]
+        }
+      },
+      "left": {
+        "_master": {
+          "skills": {
+            "0": {
+              "enable": [
+                0,
+                true
+              ]
+            },
+            "1": {
+              "enable": [
+                0,
+                true
+              ]
+            },
+            "3": {
+              "enable": [
+                0,
+                true
+              ]
+            },
+            "_t": "a"
+          },
+          "anger": [
+            0,
+            17
+          ]
+        },
+        "pets": {
+          "0": {
+            "skills": {
+              "0": {
+                "enable": [
+                  0,
+                  true
+                ]
+              },
+              "1": {
+                "enable": [
+                  0,
+                  true
+                ]
+              },
+              "3": {
+                "enable": [
+                  0,
+                  true
+                ]
+              },
+              "_t": "a"
+            },
+            "anger": [
+              0,
+              17
+            ]
+          },
+          "_t": "a"
+        },
+        "master": {
+          "skills": {
+            "0": {
+              "enable": [
+                0,
+                true
+              ]
+            },
+            "1": {
+              "enable": [
+                0,
+                true
+              ]
+            },
+            "3": {
+              "enable": [
+                0,
+                true
+              ]
+            },
+            "_t": "a"
+          },
+          "anger": [
+            0,
+            17
+          ]
+        }
+      }
+    }
+  },
+  {
+    "delta": {
+      "round": [
+        0,
+        3
+      ],
+      "right": {
+        "_master": {
+          "anger": [
+            0,
+            49
+          ]
+        },
+        "pets": {
+          "0": {
+            "anger": [
+              0,
+              49
+            ]
+          },
+          "_t": "a"
+        },
+        "master": {
+          "anger": [
+            0,
+            49
+          ]
+        }
+      },
+      "left": {
+        "_master": {
+          "skills": {
+            "2": {
+              "enable": [
+                0,
+                true
+              ]
+            },
+            "_t": "a"
+          },
+          "anger": [
+            0,
+            32
+          ]
+        },
+        "pets": {
+          "0": {
+            "skills": {
+              "2": {
+                "enable": [
+                  0,
+                  true
+                ]
+              },
+              "_t": "a"
+            },
+            "anger": [
+              0,
+              32
+            ]
+          },
+          "_t": "a"
+        },
+        "master": {
+          "skills": {
+            "2": {
+              "enable": [
+                0,
+                true
+              ]
+            },
+            "_t": "a"
+          },
+          "anger": [
+            0,
+            32
+          ]
+        }
+      }
+    }
+  },
+  {
+    "delta": {
+      "left": {
+        "_master": {
+          "skills": {
+            "2": {
+              "enable": [
+                0,
+                false
+              ]
+            },
+            "_t": "a"
+          },
+          "anger": [
+            0,
+            17
+          ]
+        },
+        "pets": {
+          "0": {
+            "skills": {
+              "2": {
+                "enable": [
+                  0,
+                  false
+                ]
+              },
+              "_t": "a"
+            },
+            "anger": [
+              0,
+              17
+            ]
+          },
+          "_t": "a"
+        },
+        "master": {
+          "skills": {
+            "2": {
+              "enable": [
+                0,
+                false
+              ]
+            },
+            "_t": "a"
+          },
+          "anger": [
+            0,
+            17
+          ]
+        }
+      }
+    }
+  },
+  {
+    "delta": {
+      "left": {
+        "_master": {
+          "skills": {
+            "2": {
+              "enable": [
+                0,
+                true
+              ]
+            },
+            "_t": "a"
+          },
+          "anger": [
+            0,
+            32
+          ]
+        },
+        "pets": {
+          "0": {
+            "skills": {
+              "2": {
+                "enable": [
+                  0,
+                  true
+                ]
+              },
+              "_t": "a"
+            },
+            "anger": [
+              0,
+              32
+            ]
+          },
+          "_t": "a"
+        },
+        "master": {
+          "skills": {
+            "2": {
+              "enable": [
+                0,
+                true
+              ]
+            },
+            "_t": "a"
+          },
+          "anger": [
+            0,
+            32
+          ]
+        }
+      }
+    }
+  },
+  {
+    "delta": {
+      "left": {
+        "_master": {
+          "skills": {
+            "2": {
+              "enable": [
+                0,
+                false
+              ]
+            },
+            "_t": "a"
+          },
+          "anger": [
+            0,
+            17
+          ]
+        },
+        "pets": {
+          "0": {
+            "skills": {
+              "2": {
+                "enable": [
+                  0,
+                  false
+                ]
+              },
+              "_t": "a"
+            },
+            "anger": [
+              0,
+              17
+            ]
+          },
+          "_t": "a"
+        },
+        "master": {
+          "skills": {
+            "2": {
+              "enable": [
+                0,
+                false
+              ]
+            },
+            "_t": "a"
+          },
+          "anger": [
+            0,
+            17
+          ]
+        }
+      }
+    }
+  },
+  {
+    "move": {
+      "effectUrl": "res/skill/effect/01_1_013.swf?iele5hq0",
+      "soundUrl": "res/skill/sound/01_1_003.mp3?iele5cbk",
+      "damage": 60,
+      "miss": 0,
+      "critical": 0,
+      "rate": 100,
+      "skill": "风驰电掣",
+      "side": 1,
+      "category": "物理"
+    },
+    "logs": [
+      "<font color='#ffffff'>[3]</font><font color='#00ffff'>雷伊</font><font color='#ffffff'>使用</font><font color='#ffff00'>风驰电掣</font>"
+    ],
+    "delta": {
+      "right": {
+        "_master": {
+          "hp": [
+            0,
+            2666
+          ]
+        },
+        "pets": {
+          "0": {
+            "hp": [
+              0,
+              2666
+            ]
+          },
+          "_t": "a"
+        },
+        "master": {
+          "hp": [
+            0,
+            2666
+          ]
+        }
+      },
+      "left": {
+        "_master": {
+          "buffs": {
+            "0": {
+              "tips": [
+                0,
+                "沉默,属性技能Miss,持续回合0"
+              ]
+            },
+            "_t": "a"
+          },
+          "skills": {
+            "2": {
+              "enable": [
+                0,
+                true
+              ]
+            },
+            "_t": "a"
+          },
+          "anger": [
+            0,
+            32
+          ]
+        },
+        "pets": {
+          "0": {
+            "buffs": {
+              "0": {
+                "tips": [
+                  0,
+                  "沉默,属性技能Miss,持续回合0"
+                ]
+              },
+              "_t": "a"
+            },
+            "skills": {
+              "2": {
+                "enable": [
+                  0,
+                  true
+                ]
+              },
+              "_t": "a"
+            },
+            "anger": [
+              0,
+              32
+            ]
+          },
+          "_t": "a"
+        },
+        "master": {
+          "buffs": {
+            "0": {
+              "tips": [
+                0,
+                "沉默,属性技能Miss,持续回合0"
+              ]
+            },
+            "_t": "a"
+          },
+          "skills": {
+            "2": {
+              "enable": [
+                0,
+                true
+              ]
+            },
+            "_t": "a"
+          },
+          "anger": [
+            0,
+            32
+          ]
+        }
+      }
+    }
+  },
+  {
+    "delta": {
+      "right": {
+        "_master": {
+          "anger": [
+            0,
+            29
+          ]
+        },
+        "pets": {
+          "0": {
+            "anger": [
+              0,
+              29
+            ]
+          },
+          "_t": "a"
+        },
+        "master": {
+          "anger": [
+            0,
+            29
+          ]
+        }
+      }
+    }
+  },
+  {
+    "move": {
+      "effectUrl": "res/skill/effect/07_2_003.swf?iele5hq0",
+      "soundUrl": "res/skill/sound/07_2_001.mp3?iele5cbk",
+      "damage": 54,
+      "miss": 0,
+      "critical": 0,
+      "rate": 50,
+      "skill": "天空之舞",
+      "side": 2,
+      "category": "特殊"
+    },
+    "logs": [
+      "<font color='#ffffff'>[3]</font><font color='#00ffff'>菲亚斯</font><font color='#ffffff'>使用</font><font color='#ffff00'>天空之舞</font>"
+    ],
+    "delta": {
+      "right": {
+        "_master": {
+          "buffs": {
+            "0": [
+              {
+                "icon": "res/skill/sideEffect/3015.swf?iele4kjk",
+                "count": 0,
+                "id": 3015,
+                "tips": "必中,所有技能必中,持续回合0",
+                "name": "3015-必中"
+              }
+            ],
+            "_t": "a"
+          },
+          "anger": [
+            0,
+            44
+          ]
+        },
+        "pets": {
+          "0": {
+            "buffs": {
+              "0": [
+                {
+                  "icon": "res/skill/sideEffect/3015.swf?iele4kjk",
+                  "count": 0,
+                  "id": 3015,
+                  "tips": "必中,所有技能必中,持续回合0",
+                  "name": "3015-必中"
+                }
+              ],
+              "_t": "a"
+            },
+            "anger": [
+              0,
+              44
+            ]
+          },
+          "_t": "a"
+        },
+        "master": {
+          "buffs": {
+            "0": [
+              {
+                "icon": "res/skill/sideEffect/3015.swf?iele4kjk",
+                "count": 0,
+                "id": 3015,
+                "tips": "必中,所有技能必中,持续回合0",
+                "name": "3015-必中"
+              }
+            ],
+            "_t": "a"
+          },
+          "anger": [
+            0,
+            44
+          ]
+        }
+      },
+      "left": {
+        "_master": {
+          "anger": [
+            0,
+            36
+          ],
+          "hp": [
+            0,
+            471
+          ]
+        },
+        "pets": {
+          "0": {
+            "anger": [
+              0,
+              36
+            ],
+            "hp": [
+              0,
+              471
+            ]
+          },
+          "_t": "a"
+        },
+        "master": {
+          "anger": [
+            0,
+            36
+          ],
+          "hp": [
+            0,
+            471
+          ]
+        }
+      }
+    }
+  },
+  {
+    "delta": {
+      "round": [
+        0,
+        4
+      ],
+      "right": {
+        "_master": {
+          "anger": [
+            0,
+            59
+          ]
+        },
+        "pets": {
+          "0": {
+            "anger": [
+              0,
+              59
+            ]
+          },
+          "_t": "a"
+        },
+        "master": {
+          "anger": [
+            0,
+            59
+          ]
+        }
+      },
+      "left": {
+        "_master": {
+          "anger": [
+            0,
+            51
+          ]
+        },
+        "pets": {
+          "0": {
+            "anger": [
+              0,
+              51
+            ]
+          },
+          "_t": "a"
+        },
+        "master": {
+          "anger": [
+            0,
+            51
+          ]
+        }
+      }
+    }
+  },
+  {
+    "delta": {
+      "left": {
+        "_master": {
+          "anger": [
+            0,
+            36
+          ]
+        },
+        "pets": {
+          "0": {
+            "anger": [
+              0,
+              36
+            ]
+          },
+          "_t": "a"
+        },
+        "master": {
+          "anger": [
+            0,
+            36
+          ]
+        }
+      }
+    }
+  },
+  {
+    "delta": {
+      "left": {
+        "_master": {
+          "anger": [
+            0,
+            51
+          ]
+        },
+        "pets": {
+          "0": {
+            "anger": [
+              0,
+              51
+            ]
+          },
+          "_t": "a"
+        },
+        "master": {
+          "anger": [
+            0,
+            51
+          ]
+        }
+      }
+    }
+  },
+  {
+    "delta": {
+      "left": {
+        "_master": {
+          "anger": [
+            0,
+            36
+          ]
+        },
+        "pets": {
+          "0": {
+            "anger": [
+              0,
+              36
+            ]
+          },
+          "_t": "a"
+        },
+        "master": {
+          "anger": [
+            0,
+            36
+          ]
+        }
+      }
+    }
+  },
+  {
+    "move": {
+      "effectUrl": "res/skill/effect/01_1_013.swf?iele5hq0",
+      "soundUrl": "res/skill/sound/01_1_003.mp3?iele5cbk",
+      "damage": 62,
+      "miss": 0,
+      "critical": 0,
+      "rate": 100,
+      "skill": "风驰电掣",
+      "side": 1,
+      "category": "物理"
+    },
+    "logs": [
+      "<font color='#ffffff'>[4]</font><font color='#00ffff'>雷伊</font><font color='#ffffff'>使用</font><font color='#ffff00'>风驰电掣</font>"
+    ],
+    "delta": {
+      "right": {
+        "_master": {
+          "buffs": {
+            "_t": "a",
+            "_0": [
+              0,
+              0,
+              0
+            ]
+          },
+          "anger": [
+            0,
+            60
+          ],
+          "hp": [
+            0,
+            2604
+          ]
+        },
+        "pets": {
+          "0": {
+            "buffs": {
+              "_t": "a",
+              "_0": [
+                0,
+                0,
+                0
+              ]
+            },
+            "anger": [
+              0,
+              60
+            ],
+            "hp": [
+              0,
+              2604
+            ]
+          },
+          "_t": "a"
+        },
+        "master": {
+          "buffs": {
+            "_t": "a",
+            "_0": [
+              0,
+              0,
+              0
+            ]
+          },
+          "anger": [
+            0,
+            60
+          ],
+          "hp": [
+            0,
+            2604
+          ]
+        }
+      },
+      "left": {
+        "_master": {
+          "buffs": {
+            "_t": "a",
+            "_0": [
+              0,
+              0,
+              0
+            ]
+          },
+          "anger": [
+            0,
+            51
+          ]
+        },
+        "pets": {
+          "0": {
+            "buffs": {
+              "_t": "a",
+              "_0": [
+                0,
+                0,
+                0
+              ]
+            },
+            "anger": [
+              0,
+              51
+            ]
+          },
+          "_t": "a"
+        },
+        "master": {
+          "buffs": {
+            "_t": "a",
+            "_0": [
+              0,
+              0,
+              0
+            ]
+          },
+          "anger": [
+            0,
+            51
+          ]
+        }
+      }
+    }
+  },
+  {
+    "delta": {
+      "right": {
+        "_master": {
+          "anger": [
+            0,
+            50
+          ]
+        },
+        "pets": {
+          "0": {
+            "anger": [
+              0,
+              50
+            ]
+          },
+          "_t": "a"
+        },
+        "master": {
+          "anger": [
+            0,
+            50
+          ]
+        }
+      }
+    }
+  },
+  {
+    "move": {
+      "effectUrl": "res/skill/effect/07_2_003.swf?iele5hq0",
+      "soundUrl": "res/skill/sound/07_2_001.mp3?iele5cbk",
+      "damage": 84,
+      "miss": 0,
+      "critical": 0,
+      "rate": 50,
+      "skill": "天空之舞",
+      "side": 2,
+      "category": "特殊"
+    },
+    "logs": [
+      "<font color='#ffffff'>[4]</font><font color='#00ffff'>菲亚斯</font><font color='#ffffff'>使用</font><font color='#ffff00'>天空之舞</font>"
+    ],
+    "delta": {
+      "right": {
+        "_master": {
+          "buffs": {
+            "0": [
+              {
+                "icon": "res/skill/sideEffect/3015.swf?iele4kjk",
+                "count": 0,
+                "id": 3015,
+                "tips": "必中,所有技能必中,持续回合0",
+                "name": "3015-必中"
+              }
+            ],
+            "_t": "a"
+          },
+          "anger": [
+            0,
+            85
+          ],
+          "spa": [
+            0,
+            1
+          ]
+        },
+        "pets": {
+          "0": {
+            "buffs": {
+              "0": [
+                {
+                  "icon": "res/skill/sideEffect/3015.swf?iele4kjk",
+                  "count": 0,
+                  "id": 3015,
+                  "tips": "必中,所有技能必中,持续回合0",
+                  "name": "3015-必中"
+                }
+              ],
+              "_t": "a"
+            },
+            "anger": [
+              0,
+              85
+            ],
+            "spa": [
+              0,
+              1
+            ]
+          },
+          "_t": "a"
+        },
+        "master": {
+          "buffs": {
+            "0": [
+              {
+                "icon": "res/skill/sideEffect/3015.swf?iele4kjk",
+                "count": 0,
+                "id": 3015,
+                "tips": "必中,所有技能必中,持续回合0",
+                "name": "3015-必中"
+              }
+            ],
+            "_t": "a"
+          },
+          "anger": [
+            0,
+            85
+          ],
+          "spa": [
+            0,
+            1
+          ]
+        }
+      },
+      "left": {
+        "_master": {
+          "anger": [
+            0,
+            58
+          ],
+          "hp": [
+            0,
+            387
+          ]
+        },
+        "pets": {
+          "0": {
+            "anger": [
+              0,
+              58
+            ],
+            "hp": [
+              0,
+              387
+            ]
+          },
+          "_t": "a"
+        },
+        "master": {
+          "anger": [
+            0,
+            58
+          ],
+          "hp": [
+            0,
+            387
+          ]
+        }
+      }
+    }
+  },
+  {
+    "delta": {
+      "round": [
+        0,
+        5
+      ],
+      "right": {
+        "_master": {
+          "anger": [
+            0,
+            100
+          ]
+        },
+        "pets": {
+          "0": {
+            "anger": [
+              0,
+              100
+            ]
+          },
+          "_t": "a"
+        },
+        "master": {
+          "anger": [
+            0,
+            100
+          ]
+        }
+      },
+      "left": {
+        "_master": {
+          "anger": [
+            0,
+            73
+          ]
+        },
+        "pets": {
+          "0": {
+            "anger": [
+              0,
+              73
+            ]
+          },
+          "_t": "a"
+        },
+        "master": {
+          "anger": [
+            0,
+            73
+          ]
+        }
+      }
+    }
+  },
+  {
+    "delta": {
+      "left": {
+        "_master": {
+          "anger": [
+            0,
+            58
+          ]
+        },
+        "pets": {
+          "0": {
+            "anger": [
+              0,
+              58
+            ]
+          },
+          "_t": "a"
+        },
+        "master": {
+          "anger": [
+            0,
+            58
+          ]
+        }
+      }
+    }
+  },
+  {
+    "delta": {
+      "left": {
+        "_master": {
+          "anger": [
+            0,
+            73
+          ]
+        },
+        "pets": {
+          "0": {
+            "anger": [
+              0,
+              73
+            ]
+          },
+          "_t": "a"
+        },
+        "master": {
+          "anger": [
+            0,
+            73
+          ]
+        }
+      }
+    }
+  },
+  {
+    "delta": {
+      "left": {
+        "_master": {
+          "anger": [
+            0,
+            58
+          ]
+        },
+        "pets": {
+          "0": {
+            "anger": [
+              0,
+              58
+            ]
+          },
+          "_t": "a"
+        },
+        "master": {
+          "anger": [
+            0,
+            58
+          ]
+        }
+      }
+    }
+  },
+  {
+    "move": {
+      "effectUrl": "res/skill/effect/01_1_013.swf?iele5hq0",
+      "soundUrl": "res/skill/sound/01_1_003.mp3?iele5cbk",
+      "damage": 62,
+      "miss": 0,
+      "critical": 0,
+      "rate": 100,
+      "skill": "风驰电掣",
+      "side": 1,
+      "category": "物理"
+    },
+    "logs": [
+      "<font color='#ffffff'>[5]</font><font color='#00ffff'>雷伊</font><font color='#ffffff'>使用</font><font color='#ffff00'>风驰电掣</font>"
+    ],
+    "delta": {
+      "right": {
+        "_master": {
+          "buffs": {
+            "_t": "a",
+            "_0": [
+              0,
+              0,
+              0
+            ]
+          },
+          "hp": [
+            0,
+            2542
+          ]
+        },
+        "pets": {
+          "0": {
+            "buffs": {
+              "_t": "a",
+              "_0": [
+                0,
+                0,
+                0
+              ]
+            },
+            "hp": [
+              0,
+              2542
+            ]
+          },
+          "_t": "a"
+        },
+        "master": {
+          "buffs": {
+            "_t": "a",
+            "_0": [
+              0,
+              0,
+              0
+            ]
+          },
+          "hp": [
+            0,
+            2542
+          ]
+        }
+      },
+      "left": {
+        "_master": {
+          "anger": [
+            0,
+            73
+          ]
+        },
+        "pets": {
+          "0": {
+            "anger": [
+              0,
+              73
+            ]
+          },
+          "_t": "a"
+        },
+        "master": {
+          "anger": [
+            0,
+            73
+          ]
+        }
+      }
+    }
+  },
+  {
+    "delta": {
+      "right": {
+        "_master": {
+          "anger": [
+            0,
+            0
+          ]
+        },
+        "pets": {
+          "0": {
+            "anger": [
+              0,
+              0
+            ]
+          },
+          "_t": "a"
+        },
+        "master": {
+          "anger": [
+            0,
+            0
+          ]
+        }
+      }
+    }
+  },
+  {
+    "move": {
+      "effectUrl": "res/skill/effect/07_1_001.swf?iele5gy8",
+      "soundUrl": "res/skill/sound/11012.mp3?iele5as0",
+      "damage": 161,
+      "miss": 0,
+      "critical": 0,
+      "rate": 50,
+      "skill": "闪空翔烈破",
+      "side": 2,
+      "category": "必杀"
+    },
+    "logs": [
+      "<font color='#ffffff'>[5]</font><font color='#00ffff'>菲亚斯</font><font color='#ffffff'>使用</font><font color='#ffff00'>闪空翔烈破</font>"
+    ],
+    "delta": {
+      "right": {
+        "_master": {
+          "atk": [
+            0,
+            1
+          ],
+          "buffs": {
+            "0": [
+              {
+                "icon": "res/skill/sideEffect/3015.swf?iele4kjk",
+                "count": 0,
+                "id": 3015,
+                "tips": "必中,所有技能必中,持续回合0",
+                "name": "3015-必中"
+              }
+            ],
+            "_t": "a"
+          },
+          "anger": [
+            0,
+            15
+          ]
+        },
+        "pets": {
+          "0": {
+            "atk": [
+              0,
+              1
+            ],
+            "buffs": {
+              "0": [
+                {
+                  "icon": "res/skill/sideEffect/3015.swf?iele4kjk",
+                  "count": 0,
+                  "id": 3015,
+                  "tips": "必中,所有技能必中,持续回合0",
+                  "name": "3015-必中"
+                }
+              ],
+              "_t": "a"
+            },
+            "anger": [
+              0,
+              15
+            ]
+          },
+          "_t": "a"
+        },
+        "master": {
+          "atk": [
+            0,
+            1
+          ],
+          "buffs": {
+            "0": [
+              {
+                "icon": "res/skill/sideEffect/3015.swf?iele4kjk",
+                "count": 0,
+                "id": 3015,
+                "tips": "必中,所有技能必中,持续回合0",
+                "name": "3015-必中"
+              }
+            ],
+            "_t": "a"
+          },
+          "anger": [
+            0,
+            15
+          ]
+        }
+      },
+      "left": {
+        "_master": {
+          "anger": [
+            0,
+            87
+          ],
+          "hp": [
+            0,
+            226
+          ]
+        },
+        "pets": {
+          "0": {
+            "anger": [
+              0,
+              87
+            ],
+            "hp": [
+              0,
+              226
+            ]
+          },
+          "_t": "a"
+        },
+        "master": {
+          "anger": [
+            0,
+            87
+          ],
+          "hp": [
+            0,
+            226
+          ]
+        }
+      }
+    }
+  },
+  {
+    "delta": {
+      "round": [
+        0,
+        6
+      ],
+      "right": {
+        "_master": {
+          "anger": [
+            0,
+            30
+          ]
+        },
+        "pets": {
+          "0": {
+            "anger": [
+              0,
+              30
+            ]
+          },
+          "_t": "a"
+        },
+        "master": {
+          "anger": [
+            0,
+            30
+          ]
+        }
+      },
+      "left": {
+        "_master": {
+          "skills": {
+            "4": {
+              "enable": [
+                0,
+                true
+              ]
+            },
+            "_t": "a"
+          },
+          "anger": [
+            0,
+            100
+          ]
+        },
+        "pets": {
+          "0": {
+            "skills": {
+              "4": {
+                "enable": [
+                  0,
+                  true
+                ]
+              },
+              "_t": "a"
+            },
+            "anger": [
+              0,
+              100
+            ]
+          },
+          "_t": "a"
+        },
+        "master": {
+          "skills": {
+            "4": {
+              "enable": [
+                0,
+                true
+              ]
+            },
+            "_t": "a"
+          },
+          "anger": [
+            0,
+            100
+          ]
+        }
+      }
+    }
+  },
+  {
+    "delta": {
+      "left": {
+        "_master": {
+          "skills": {
+            "0": {
+              "enable": [
+                0,
+                false
+              ]
+            },
+            "1": {
+              "enable": [
+                0,
+                false
+              ]
+            },
+            "2": {
+              "enable": [
+                0,
+                false
+              ]
+            },
+            "3": {
+              "enable": [
+                0,
+                false
+              ]
+            },
+            "4": {
+              "enable": [
+                0,
+                false
+              ]
+            },
+            "_t": "a"
+          },
+          "anger": [
+            0,
+            0
+          ]
+        },
+        "pets": {
+          "0": {
+            "skills": {
+              "0": {
+                "enable": [
+                  0,
+                  false
+                ]
+              },
+              "1": {
+                "enable": [
+                  0,
+                  false
+                ]
+              },
+              "2": {
+                "enable": [
+                  0,
+                  false
+                ]
+              },
+              "3": {
+                "enable": [
+                  0,
+                  false
+                ]
+              },
+              "4": {
+                "enable": [
+                  0,
+                  false
+                ]
+              },
+              "_t": "a"
+            },
+            "anger": [
+              0,
+              0
+            ]
+          },
+          "_t": "a"
+        },
+        "master": {
+          "skills": {
+            "0": {
+              "enable": [
+                0,
+                false
+              ]
+            },
+            "1": {
+              "enable": [
+                0,
+                false
+              ]
+            },
+            "2": {
+              "enable": [
+                0,
+                false
+              ]
+            },
+            "3": {
+              "enable": [
+                0,
+                false
+              ]
+            },
+            "4": {
+              "enable": [
+                0,
+                false
+              ]
+            },
+            "_t": "a"
+          },
+          "anger": [
+            0,
+            0
+          ]
+        }
+      }
+    }
+  },
+  {
+    "delta": {
+      "left": {
+        "_master": {
+          "skills": {
+            "0": {
+              "enable": [
+                0,
+                true
+              ]
+            },
+            "1": {
+              "enable": [
+                0,
+                true
+              ]
+            },
+            "2": {
+              "enable": [
+                0,
+                true
+              ]
+            },
+            "3": {
+              "enable": [
+                0,
+                true
+              ]
+            },
+            "4": {
+              "enable": [
+                0,
+                true
+              ]
+            },
+            "_t": "a"
+          },
+          "anger": [
+            0,
+            100
+          ]
+        },
+        "pets": {
+          "0": {
+            "skills": {
+              "0": {
+                "enable": [
+                  0,
+                  true
+                ]
+              },
+              "1": {
+                "enable": [
+                  0,
+                  true
+                ]
+              },
+              "2": {
+                "enable": [
+                  0,
+                  true
+                ]
+              },
+              "3": {
+                "enable": [
+                  0,
+                  true
+                ]
+              },
+              "4": {
+                "enable": [
+                  0,
+                  true
+                ]
+              },
+              "_t": "a"
+            },
+            "anger": [
+              0,
+              100
+            ]
+          },
+          "_t": "a"
+        },
+        "master": {
+          "skills": {
+            "0": {
+              "enable": [
+                0,
+                true
+              ]
+            },
+            "1": {
+              "enable": [
+                0,
+                true
+              ]
+            },
+            "2": {
+              "enable": [
+                0,
+                true
+              ]
+            },
+            "3": {
+              "enable": [
+                0,
+                true
+              ]
+            },
+            "4": {
+              "enable": [
+                0,
+                true
+              ]
+            },
+            "_t": "a"
+          },
+          "anger": [
+            0,
+            100
+          ]
+        }
+      }
+    }
+  },
+  {
+    "delta": {
+      "right": {
+        "_master": {
+          "anger": [
+            0,
+            20
+          ]
+        },
+        "pets": {
+          "0": {
+            "anger": [
+              0,
+              20
+            ]
+          },
+          "_t": "a"
+        },
+        "master": {
+          "anger": [
+            0,
+            20
+          ]
+        }
+      }
+    }
+  },
+  {
+    "move": {
+      "effectUrl": "res/skill/effect/07_1_001.swf?iele5gy8",
+      "soundUrl": "res/skill/sound/11012.mp3?iele5as0",
+      "damage": 156,
+      "miss": 0,
+      "critical": 0,
+      "rate": 50,
+      "skill": "闪空翔烈破",
+      "side": 2,
+      "category": "必杀"
+    },
+    "logs": [
+      "<font color='#ffffff'>[6]</font><font color='#00ffff'>菲亚斯</font><font color='#ffffff'>使用</font><font color='#ffff00'>闪空翔烈破</font>"
+    ],
+    "delta": {
+      "right": {
+        "_master": {
+          "anger": [
+            0,
+            55
+          ]
+        },
+        "pets": {
+          "0": {
+            "anger": [
+              0,
+              55
+            ]
+          },
+          "_t": "a"
+        },
+        "master": {
+          "anger": [
+            0,
+            55
+          ]
+        }
+      },
+      "left": {
+        "_master": {
+          "hp": [
+            0,
+            70
+          ]
+        },
+        "pets": {
+          "0": {
+            "hp": [
+              0,
+              70
+            ]
+          },
+          "_t": "a"
+        },
+        "master": {
+          "hp": [
+            0,
+            70
+          ]
+        }
+      }
+    }
+  },
+  {
+    "delta": {
+      "left": {
+        "_master": {
+          "skills": {
+            "0": {
+              "enable": [
+                0,
+                false
+              ]
+            },
+            "1": {
+              "enable": [
+                0,
+                false
+              ]
+            },
+            "2": {
+              "enable": [
+                0,
+                false
+              ]
+            },
+            "3": {
+              "enable": [
+                0,
+                false
+              ]
+            },
+            "4": {
+              "enable": [
+                0,
+                false
+              ]
+            },
+            "_t": "a"
+          },
+          "anger": [
+            0,
+            0
+          ]
+        },
+        "pets": {
+          "0": {
+            "skills": {
+              "0": {
+                "enable": [
+                  0,
+                  false
+                ]
+              },
+              "1": {
+                "enable": [
+                  0,
+                  false
+                ]
+              },
+              "2": {
+                "enable": [
+                  0,
+                  false
+                ]
+              },
+              "3": {
+                "enable": [
+                  0,
+                  false
+                ]
+              },
+              "4": {
+                "enable": [
+                  0,
+                  false
+                ]
+              },
+              "_t": "a"
+            },
+            "anger": [
+              0,
+              0
+            ]
+          },
+          "_t": "a"
+        },
+        "master": {
+          "skills": {
+            "0": {
+              "enable": [
+                0,
+                false
+              ]
+            },
+            "1": {
+              "enable": [
+                0,
+                false
+              ]
+            },
+            "2": {
+              "enable": [
+                0,
+                false
+              ]
+            },
+            "3": {
+              "enable": [
+                0,
+                false
+              ]
+            },
+            "4": {
+              "enable": [
+                0,
+                false
+              ]
+            },
+            "_t": "a"
+          },
+          "anger": [
+            0,
+            0
+          ]
+        }
+      }
+    }
+  },
+  {
+    "move": {
+      "effectUrl": "res/skill/effect/08_1_001.swf?iele5g6g",
+      "soundUrl": "res/skill/sound/11189.mp3?iele5bjs",
+      "damage": 575,
+      "miss": 0,
+      "critical": 0,
+      "rate": 200,
+      "skill": "雷神天明闪",
+      "side": 1,
+      "category": "必杀"
+    },
+    "logs": [
+      "<font color='#ffffff'>[6]</font><font color='#00ffff'>雷伊</font><font color='#ffffff'>使用</font><font color='#ffff00'>雷神天明闪</font>"
+    ],
+    "delta": {
+      "right": {
+        "_master": {
+          "anger": [
+            0,
+            64
+          ],
+          "hp": [
+            0,
+            1967
+          ]
+        },
+        "pets": {
+          "0": {
+            "anger": [
+              0,
+              64
+            ],
+            "hp": [
+              0,
+              1967
+            ]
+          },
+          "_t": "a"
+        },
+        "master": {
+          "anger": [
+            0,
+            64
+          ],
+          "hp": [
+            0,
+            1967
+          ]
+        }
+      },
+      "left": {
+        "_master": {
+          "buffs": {
+            "0": [
+              {
+                "icon": "res/skill/sideEffect/3015.swf?iele4kjk",
+                "count": 0,
+                "id": 3015,
+                "tips": "必中,所有技能必中,持续回合0",
+                "name": "3015-必中"
+              }
+            ],
+            "_t": "a"
+          },
+          "skills": {
+            "0": {
+              "enable": [
+                0,
+                true
+              ]
+            },
+            "1": {
+              "enable": [
+                0,
+                true
+              ]
+            },
+            "3": {
+              "enable": [
+                0,
+                true
+              ]
+            },
+            "_t": "a"
+          },
+          "anger": [
+            0,
+            15
+          ]
+        },
+        "pets": {
+          "0": {
+            "buffs": {
+              "0": [
+                {
+                  "icon": "res/skill/sideEffect/3015.swf?iele4kjk",
+                  "count": 0,
+                  "id": 3015,
+                  "tips": "必中,所有技能必中,持续回合0",
+                  "name": "3015-必中"
+                }
+              ],
+              "_t": "a"
+            },
+            "skills": {
+              "0": {
+                "enable": [
+                  0,
+                  true
+                ]
+              },
+              "1": {
+                "enable": [
+                  0,
+                  true
+                ]
+              },
+              "3": {
+                "enable": [
+                  0,
+                  true
+                ]
+              },
+              "_t": "a"
+            },
+            "anger": [
+              0,
+              15
+            ]
+          },
+          "_t": "a"
+        },
+        "master": {
+          "buffs": {
+            "0": [
+              {
+                "icon": "res/skill/sideEffect/3015.swf?iele4kjk",
+                "count": 0,
+                "id": 3015,
+                "tips": "必中,所有技能必中,持续回合0",
+                "name": "3015-必中"
+              }
+            ],
+            "_t": "a"
+          },
+          "skills": {
+            "0": {
+              "enable": [
+                0,
+                true
+              ]
+            },
+            "1": {
+              "enable": [
+                0,
+                true
+              ]
+            },
+            "3": {
+              "enable": [
+                0,
+                true
+              ]
+            },
+            "_t": "a"
+          },
+          "anger": [
+            0,
+            15
+          ]
+        }
+      }
+    }
+  },
+  {
+    "delta": {
+      "round": [
+        0,
+        7
+      ],
+      "right": {
+        "_master": {
+          "anger": [
+            0,
+            79
+          ]
+        },
+        "pets": {
+          "0": {
+            "anger": [
+              0,
+              79
+            ]
+          },
+          "_t": "a"
+        },
+        "master": {
+          "anger": [
+            0,
+            79
+          ]
+        }
+      },
+      "left": {
+        "_master": {
+          "skills": {
+            "2": {
+              "enable": [
+                0,
+                true
+              ]
+            },
+            "_t": "a"
+          },
+          "anger": [
+            0,
+            30
+          ]
+        },
+        "pets": {
+          "0": {
+            "skills": {
+              "2": {
+                "enable": [
+                  0,
+                  true
+                ]
+              },
+              "_t": "a"
+            },
+            "anger": [
+              0,
+              30
+            ]
+          },
+          "_t": "a"
+        },
+        "master": {
+          "skills": {
+            "2": {
+              "enable": [
+                0,
+                true
+              ]
+            },
+            "_t": "a"
+          },
+          "anger": [
+            0,
+            30
+          ]
+        }
+      }
+    }
+  },
+  {
+    "delta": {
+      "left": {
+        "_master": {
+          "skills": {
+            "2": {
+              "enable": [
+                0,
+                false
+              ]
+            },
+            "_t": "a"
+          },
+          "anger": [
+            0,
+            15
+          ]
+        },
+        "pets": {
+          "0": {
+            "skills": {
+              "2": {
+                "enable": [
+                  0,
+                  false
+                ]
+              },
+              "_t": "a"
+            },
+            "anger": [
+              0,
+              15
+            ]
+          },
+          "_t": "a"
+        },
+        "master": {
+          "skills": {
+            "2": {
+              "enable": [
+                0,
+                false
+              ]
+            },
+            "_t": "a"
+          },
+          "anger": [
+            0,
+            15
+          ]
+        }
+      }
+    }
+  },
+  {
+    "delta": {
+      "left": {
+        "_master": {
+          "skills": {
+            "2": {
+              "enable": [
+                0,
+                true
+              ]
+            },
+            "_t": "a"
+          },
+          "anger": [
+            0,
+            30
+          ]
+        },
+        "pets": {
+          "0": {
+            "skills": {
+              "2": {
+                "enable": [
+                  0,
+                  true
+                ]
+              },
+              "_t": "a"
+            },
+            "anger": [
+              0,
+              30
+            ]
+          },
+          "_t": "a"
+        },
+        "master": {
+          "skills": {
+            "2": {
+              "enable": [
+                0,
+                true
+              ]
+            },
+            "_t": "a"
+          },
+          "anger": [
+            0,
+            30
+          ]
+        }
+      }
+    }
+  },
+  {
+    "delta": {
+      "left": {
+        "_master": {
+          "skills": {
+            "2": {
+              "enable": [
+                0,
+                false
+              ]
+            },
+            "_t": "a"
+          },
+          "anger": [
+            0,
+            15
+          ]
+        },
+        "pets": {
+          "0": {
+            "skills": {
+              "2": {
+                "enable": [
+                  0,
+                  false
+                ]
+              },
+              "_t": "a"
+            },
+            "anger": [
+              0,
+              15
+            ]
+          },
+          "_t": "a"
+        },
+        "master": {
+          "skills": {
+            "2": {
+              "enable": [
+                0,
+                false
+              ]
+            },
+            "_t": "a"
+          },
+          "anger": [
+            0,
+            15
+          ]
+        }
+      }
+    }
+  },
+  {
+    "move": {
+      "effectUrl": "res/skill/effect/01_1_013.swf?iele5hq0",
+      "soundUrl": "res/skill/sound/01_1_003.mp3?iele5cbk",
+      "damage": 63,
+      "miss": 0,
+      "critical": 0,
+      "rate": 100,
+      "skill": "风驰电掣",
+      "side": 1,
+      "category": "物理"
+    },
+    "logs": [
+      "<font color='#ffffff'>[7]</font><font color='#00ffff'>雷伊</font><font color='#ffffff'>使用</font><font color='#ffff00'>风驰电掣</font>"
+    ],
+    "delta": {
+      "right": {
+        "_master": {
+          "buffs": {
+            "_t": "a",
+            "_0": [
+              0,
+              0,
+              0
+            ]
+          },
+          "anger": [
+            0,
+            80
+          ],
+          "hp": [
+            0,
+            1904
+          ]
+        },
+        "pets": {
+          "0": {
+            "buffs": {
+              "_t": "a",
+              "_0": [
+                0,
+                0,
+                0
+              ]
+            },
+            "anger": [
+              0,
+              80
+            ],
+            "hp": [
+              0,
+              1904
+            ]
+          },
+          "_t": "a"
+        },
+        "master": {
+          "buffs": {
+            "_t": "a",
+            "_0": [
+              0,
+              0,
+              0
+            ]
+          },
+          "anger": [
+            0,
+            80
+          ],
+          "hp": [
+            0,
+            1904
+          ]
+        }
+      },
+      "left": {
+        "_master": {
+          "buffs": {
+            "_t": "a",
+            "_0": [
+              0,
+              0,
+              0
+            ]
+          },
+          "skills": {
+            "2": {
+              "enable": [
+                0,
+                true
+              ]
+            },
+            "_t": "a"
+          },
+          "anger": [
+            0,
+            30
+          ]
+        },
+        "pets": {
+          "0": {
+            "buffs": {
+              "_t": "a",
+              "_0": [
+                0,
+                0,
+                0
+              ]
+            },
+            "skills": {
+              "2": {
+                "enable": [
+                  0,
+                  true
+                ]
+              },
+              "_t": "a"
+            },
+            "anger": [
+              0,
+              30
+            ]
+          },
+          "_t": "a"
+        },
+        "master": {
+          "buffs": {
+            "_t": "a",
+            "_0": [
+              0,
+              0,
+              0
+            ]
+          },
+          "skills": {
+            "2": {
+              "enable": [
+                0,
+                true
+              ]
+            },
+            "_t": "a"
+          },
+          "anger": [
+            0,
+            30
+          ]
+        }
+      }
+    }
+  },
+  {
+    "delta": {
+      "right": {
+        "_master": {
+          "anger": [
+            0,
+            60
+          ]
+        },
+        "pets": {
+          "0": {
+            "anger": [
+              0,
+              60
+            ]
+          },
+          "_t": "a"
+        },
+        "master": {
+          "anger": [
+            0,
+            60
+          ]
+        }
+      }
+    }
+  },
+  {
+    "move": {
+      "effectUrl": "res/skill/effect/07_2_003.swf?iele5hq0",
+      "soundUrl": "res/skill/sound/07_2_001.mp3?iele5cbk",
+      "damage": 90,
+      "miss": 0,
+      "critical": 0,
+      "rate": 50,
+      "skill": "天空之舞",
+      "side": 2,
+      "category": "特殊"
+    },
+    "logs": [
+      "<font color='#ffffff'>[7]</font><font color='#00ffff'>菲亚斯</font><font color='#ffffff'>使用</font><font color='#ffff00'>天空之舞</font>"
+    ],
+    "delta": {
+      "right": {
+        "_master": {
+          "buffs": {
+            "0": [
+              {
+                "icon": "res/skill/sideEffect/3015.swf?iele4kjk",
+                "count": 0,
+                "id": 3015,
+                "tips": "必中,所有技能必中,持续回合0",
+                "name": "3015-必中"
+              }
+            ],
+            "_t": "a"
+          },
+          "anger": [
+            0,
+            75
+          ]
+        },
+        "pets": {
+          "0": {
+            "buffs": {
+              "0": [
+                {
+                  "icon": "res/skill/sideEffect/3015.swf?iele4kjk",
+                  "count": 0,
+                  "id": 3015,
+                  "tips": "必中,所有技能必中,持续回合0",
+                  "name": "3015-必中"
+                }
+              ],
+              "_t": "a"
+            },
+            "anger": [
+              0,
+              75
+            ]
+          },
+          "_t": "a"
+        },
+        "master": {
+          "buffs": {
+            "0": [
+              {
+                "icon": "res/skill/sideEffect/3015.swf?iele4kjk",
+                "count": 0,
+                "id": 3015,
+                "tips": "必中,所有技能必中,持续回合0",
+                "name": "3015-必中"
+              }
+            ],
+            "_t": "a"
+          },
+          "anger": [
+            0,
+            75
+          ]
+        }
+      },
+      "left": {
+        "_master": {
+          "alive": [
+            0,
+            0
+          ],
+          "skills": {
+            "0": {
+              "enable": [
+                0,
+                false
+              ]
+            },
+            "1": {
+              "enable": [
+                0,
+                false
+              ]
+            },
+            "2": {
+              "enable": [
+                0,
+                false
+              ]
+            },
+            "3": {
+              "enable": [
+                0,
+                false
+              ]
+            },
+            "_t": "a"
+          },
+          "anger": [
+            0,
+            37
+          ],
+          "hp": [
+            0,
+            0
+          ]
+        },
+        "pets": {
+          "0": {
+            "alive": [
+              0,
+              0
+            ],
+            "skills": {
+              "0": {
+                "enable": [
+                  0,
+                  false
+                ]
+              },
+              "1": {
+                "enable": [
+                  0,
+                  false
+                ]
+              },
+              "2": {
+                "enable": [
+                  0,
+                  false
+                ]
+              },
+              "3": {
+                "enable": [
+                  0,
+                  false
+                ]
+              },
+              "_t": "a"
+            },
+            "anger": [
+              0,
+              37
+            ],
+            "hp": [
+              0,
+              0
+            ]
+          },
+          "_t": "a"
+        },
+        "master": {
+          "alive": [
+            0,
+            0
+          ],
+          "skills": {
+            "0": {
+              "enable": [
+                0,
+                false
+              ]
+            },
+            "1": {
+              "enable": [
+                0,
+                false
+              ]
+            },
+            "2": {
+              "enable": [
+                0,
+                false
+              ]
+            },
+            "3": {
+              "enable": [
+                0,
+                false
+              ]
+            },
+            "_t": "a"
+          },
+          "anger": [
+            0,
+            37
+          ],
+          "hp": [
+            0,
+            0
+          ]
+        }
+      }
+    }
+  },
+  {
+    "delta": {
+      "round": [
+        0,
+        8
+      ],
+      "right": {
+        "_master": {
+          "anger": [
+            0,
+            90
+          ]
+        },
+        "pets": {
+          "0": {
+            "anger": [
+              0,
+              90
+            ]
+          },
+          "_t": "a"
+        },
+        "master": {
+          "anger": [
+            0,
+            90
+          ]
+        }
+      },
+      "left": {
+        "_master": {
+          "anger": [
+            0,
+            52
+          ]
+        },
+        "pets": {
+          "0": {
+            "anger": [
+              0,
+              52
+            ]
+          },
+          "_t": "a"
+        },
+        "master": {
+          "anger": [
+            0,
+            52
+          ]
+        }
+      }
+    }
+  },
+  {
+    "change": {
+      "left": 1,
+      "right": 0
+    },
+    "delta": {
+      "left": {
+        "_master": {
+          "pid": [
+            0,
+            1470790670
+          ],
+          "name": [
+            0,
+            "圣·神王伊特"
+          ],
+          "petIcon": [
+            "@@ -10,19 +10,21 @@\n con/\n-90\n+2518\n .swf?i\n-elbb0og\n+ijtkifs\n",
+            0,
+            2
+          ],
+          "buffs": {
+            "0": [
+              {
+                "icon": "res/skill/sideEffect/11123.swf?iele4j00",
+                "count": 6,
+                "id": 11123,
+                "tips": "圣灵[6], 满级增加300点特攻值,持续到战斗结束",
+                "name": "11123-圣灵"
+              }
+            ],
+            "1": [
+              {
+                "icon": "res/skill/sideEffect/11124.swf?iele4muw",
+                "count": 6,
+                "id": 11124,
+                "tips": "钻盾[6], 满级增加300点物防值,持续到战斗结束",
+                "name": "11124-钻盾"
+              }
+            ],
+            "2": [
+              {
+                "icon": "res/skill/sideEffect/11126.swf?iele4nmo",
+                "count": 6,
+                "id": 11126,
+                "tips": "神耀[6], 满级增加15%暴击率,持续到战斗结束",
+                "name": "11126-神耀"
+              }
+            ],
+            "3": [
+              {
+                "icon": "res/skill/sideEffect/11129.swf?iele4kjk",
+                "count": 6,
+                "id": 11129,
+                "tips": "怒劫[6], 满级每回合恢复15点怒气,持续到战斗结束",
+                "name": "11129-怒劫"
+              }
+            ],
+            "4": [
+              {
+                "icon": "res/skill/sideEffect/30005.swf?iele4j00",
+                "count": 1,
+                "id": 30005,
+                "tips": "神辉[1], 初始增加暴击抵抗概率10% 每升1级增加暴击抵抗概率2%,持续到战斗结束",
+                "name": "30005-神辉"
+              }
+            ],
+            "_t": "a",
+            "_0": [
+              0,
+              0,
+              0
+            ]
+          },
+          "alive": [
+            0,
+            1
+          ],
+          "typeIcon": [
+            "@@ -23,5 +23,6 @@\n con_\n-8\n+19\n",
+            0,
+            2
+          ],
+          "skills": {
+            "0": [
+              {
+                "typeIcon": "internal://UI_PetTypeIcon_19",
+                "anger": 20,
+                "id": 15589,
+                "tips": "王之领域时威力2倍 王者领域时威力2倍并获得王之风暴 同时具有时威力4倍",
+                "name": "王之风暴",
+                "enable": true,
+                "power": 80,
+                "category": "特殊"
+              }
+            ],
+            "1": [
+              {
+                "typeIcon": "internal://UI_PetTypeIcon_19",
+                "anger": 25,
+                "id": 17957,
+                "tips": "先制+2 无视Miss吸收对手强化 具有伊特领域时额外反转对手强化",
+                "name": "王之震慑",
+                "enable": true,
+                "power": 80,
+                "category": "特殊"
+              }
+            ],
+            "2": [
+              {
+                "typeIcon": "internal://UI_PetTypeIcon_19",
+                "anger": 20,
+                "id": 17958,
+                "tips": "<font color='#93E312'>必中</font> 获得王者领域与随机1种2级领域 具有纹章时不会重复获得已有领域",
+                "name": "王域",
+                "enable": true,
+                "power": 0,
+                "category": "属性"
+              }
+            ],
+            "3": [
+              {
+                "typeIcon": "internal://UI_PetTypeIcon_19",
+                "anger": 40,
+                "id": 17960,
+                "tips": "使对手随机获得1种不良 具有王者领域时无视Miss额外使对手随机获得1种异常",
+                "name": "王罚",
+                "enable": true,
+                "power": 100,
+                "category": "物理"
+              }
+            ],
+            "4": [
+              {
+                "typeIcon": "internal://UI_PetTypeIcon_19",
+                "anger": 100,
+                "id": 15591,
+                "tips": "连击17次 无视对手<font color='#02CAC9'>护盾</font>",
+                "name": "十七朝皇",
+                "enable": false,
+                "power": 15,
+                "category": "必杀"
+              }
+            ],
+            "_t": "a",
+            "_0": [
+              0,
+              0,
+              0
+            ],
+            "_1": [
+              0,
+              0,
+              0
+            ],
+            "_2": [
+              0,
+              0,
+              0
+            ],
+            "_3": [
+              0,
+              0,
+              0
+            ],
+            "_4": [
+              0,
+              0,
+              0
+            ]
+          },
+          "anger": [
+            0,
+            41
+          ],
+          "maxHp": [
+            0,
+            716
+          ],
+          "hp": [
+            0,
+            716
+          ],
+          "petSound": [
+            "@@ -11,19 +11,12 @@\n und/\n-90.mp3?ielbv2wg\n+2518.mp3\n",
+            0,
+            2
+          ],
+          "petSwf": [
+            "@@ -11,19 +11,21 @@\n ght/\n-90\n+2518\n .swf?i\n-elau1kg\n+il3q194\n",
+            0,
+            2
+          ]
+        },
+        "pets": {
+          "0": {
+            "position": [
+              0,
+              0
+            ]
+          },
+          "1": {
+            "position": [
+              0,
+              1
+            ],
+            "buffs": {
+              "0": [
+                {
+                  "icon": "res/skill/sideEffect/11123.swf?iele4j00",
+                  "count": 6,
+                  "id": 11123,
+                  "tips": "圣灵[6], 满级增加300点特攻值,持续到战斗结束",
+                  "name": "11123-圣灵"
+                }
+              ],
+              "1": [
+                {
+                  "icon": "res/skill/sideEffect/11124.swf?iele4muw",
+                  "count": 6,
+                  "id": 11124,
+                  "tips": "钻盾[6], 满级增加300点物防值,持续到战斗结束",
+                  "name": "11124-钻盾"
+                }
+              ],
+              "2": [
+                {
+                  "icon": "res/skill/sideEffect/11126.swf?iele4nmo",
+                  "count": 6,
+                  "id": 11126,
+                  "tips": "神耀[6], 满级增加15%暴击率,持续到战斗结束",
+                  "name": "11126-神耀"
+                }
+              ],
+              "3": [
+                {
+                  "icon": "res/skill/sideEffect/11129.swf?iele4kjk",
+                  "count": 6,
+                  "id": 11129,
+                  "tips": "怒劫[6], 满级每回合恢复15点怒气,持续到战斗结束",
+                  "name": "11129-怒劫"
+                }
+              ],
+              "4": [
+                {
+                  "icon": "res/skill/sideEffect/30005.swf?iele4j00",
+                  "count": 1,
+                  "id": 30005,
+                  "tips": "神辉[1], 初始增加暴击抵抗概率10% 每升1级增加暴击抵抗概率2%,持续到战斗结束",
+                  "name": "30005-神辉"
+                }
+              ],
+              "_t": "a"
+            },
+            "skills": {
+              "0": {
+                "enable": [
+                  0,
+                  true
+                ]
+              },
+              "1": {
+                "enable": [
+                  0,
+                  true
+                ]
+              },
+              "2": {
+                "enable": [
+                  0,
+                  true
+                ]
+              },
+              "3": {
+                "enable": [
+                  0,
+                  true
+                ]
+              },
+              "_t": "a"
+            },
+            "anger": [
+              0,
+              41
+            ]
+          },
+          "_t": "a"
+        },
+        "master": {
+          "pid": [
+            0,
+            1470790670
+          ],
+          "name": [
+            0,
+            "圣·神王伊特"
+          ],
+          "petIcon": [
+            "@@ -10,19 +10,21 @@\n con/\n-90\n+2518\n .swf?i\n-elbb0og\n+ijtkifs\n",
+            0,
+            2
+          ],
+          "buffs": {
+            "0": [
+              {
+                "icon": "res/skill/sideEffect/11123.swf?iele4j00",
+                "count": 6,
+                "id": 11123,
+                "tips": "圣灵[6], 满级增加300点特攻值,持续到战斗结束",
+                "name": "11123-圣灵"
+              }
+            ],
+            "1": [
+              {
+                "icon": "res/skill/sideEffect/11124.swf?iele4muw",
+                "count": 6,
+                "id": 11124,
+                "tips": "钻盾[6], 满级增加300点物防值,持续到战斗结束",
+                "name": "11124-钻盾"
+              }
+            ],
+            "2": [
+              {
+                "icon": "res/skill/sideEffect/11126.swf?iele4nmo",
+                "count": 6,
+                "id": 11126,
+                "tips": "神耀[6], 满级增加15%暴击率,持续到战斗结束",
+                "name": "11126-神耀"
+              }
+            ],
+            "3": [
+              {
+                "icon": "res/skill/sideEffect/11129.swf?iele4kjk",
+                "count": 6,
+                "id": 11129,
+                "tips": "怒劫[6], 满级每回合恢复15点怒气,持续到战斗结束",
+                "name": "11129-怒劫"
+              }
+            ],
+            "4": [
+              {
+                "icon": "res/skill/sideEffect/30005.swf?iele4j00",
+                "count": 1,
+                "id": 30005,
+                "tips": "神辉[1], 初始增加暴击抵抗概率10% 每升1级增加暴击抵抗概率2%,持续到战斗结束",
+                "name": "30005-神辉"
+              }
+            ],
+            "_t": "a",
+            "_0": [
+              0,
+              0,
+              0
+            ]
+          },
+          "alive": [
+            0,
+            1
+          ],
+          "typeIcon": [
+            "@@ -23,5 +23,6 @@\n con_\n-8\n+19\n",
+            0,
+            2
+          ],
+          "skills": {
+            "0": [
+              {
+                "typeIcon": "internal://UI_PetTypeIcon_19",
+                "anger": 20,
+                "id": 15589,
+                "tips": "王之领域时威力2倍 王者领域时威力2倍并获得王之风暴 同时具有时威力4倍",
+                "name": "王之风暴",
+                "enable": true,
+                "power": 80,
+                "category": "特殊"
+              }
+            ],
+            "1": [
+              {
+                "typeIcon": "internal://UI_PetTypeIcon_19",
+                "anger": 25,
+                "id": 17957,
+                "tips": "先制+2 无视Miss吸收对手强化 具有伊特领域时额外反转对手强化",
+                "name": "王之震慑",
+                "enable": true,
+                "power": 80,
+                "category": "特殊"
+              }
+            ],
+            "2": [
+              {
+                "typeIcon": "internal://UI_PetTypeIcon_19",
+                "anger": 20,
+                "id": 17958,
+                "tips": "<font color='#93E312'>必中</font> 获得王者领域与随机1种2级领域 具有纹章时不会重复获得已有领域",
+                "name": "王域",
+                "enable": true,
+                "power": 0,
+                "category": "属性"
+              }
+            ],
+            "3": [
+              {
+                "typeIcon": "internal://UI_PetTypeIcon_19",
+                "anger": 40,
+                "id": 17960,
+                "tips": "使对手随机获得1种不良 具有王者领域时无视Miss额外使对手随机获得1种异常",
+                "name": "王罚",
+                "enable": true,
+                "power": 100,
+                "category": "物理"
+              }
+            ],
+            "4": [
+              {
+                "typeIcon": "internal://UI_PetTypeIcon_19",
+                "anger": 100,
+                "id": 15591,
+                "tips": "连击17次 无视对手<font color='#02CAC9'>护盾</font>",
+                "name": "十七朝皇",
+                "enable": false,
+                "power": 15,
+                "category": "必杀"
+              }
+            ],
+            "_t": "a",
+            "_0": [
+              0,
+              0,
+              0
+            ],
+            "_1": [
+              0,
+              0,
+              0
+            ],
+            "_2": [
+              0,
+              0,
+              0
+            ],
+            "_3": [
+              0,
+              0,
+              0
+            ],
+            "_4": [
+              0,
+              0,
+              0
+            ]
+          },
+          "anger": [
+            0,
+            41
+          ],
+          "maxHp": [
+            0,
+            716
+          ],
+          "hp": [
+            0,
+            716
+          ],
+          "petSound": [
+            "@@ -11,19 +11,12 @@\n und/\n-90.mp3?ielbv2wg\n+2518.mp3\n",
+            0,
+            2
+          ],
+          "petSwf": [
+            "@@ -11,19 +11,21 @@\n ght/\n-90\n+2518\n .swf?i\n-elau1kg\n+il3q194\n",
+            0,
+            2
+          ]
+        }
+      }
+    }
+  },
+  {
+    "delta": {
+      "left": {
+        "_master": {
+          "skills": {
+            "1": {
+              "enable": [
+                0,
+                false
+              ]
+            },
+            "3": {
+              "enable": [
+                0,
+                false
+              ]
+            },
+            "_t": "a"
+          },
+          "anger": [
+            0,
+            21
+          ]
+        },
+        "pets": {
+          "1": {
+            "skills": {
+              "1": {
+                "enable": [
+                  0,
+                  false
+                ]
+              },
+              "3": {
+                "enable": [
+                  0,
+                  false
+                ]
+              },
+              "_t": "a"
+            },
+            "anger": [
+              0,
+              21
+            ]
+          },
+          "_t": "a"
+        },
+        "master": {
+          "skills": {
+            "1": {
+              "enable": [
+                0,
+                false
+              ]
+            },
+            "3": {
+              "enable": [
+                0,
+                false
+              ]
+            },
+            "_t": "a"
+          },
+          "anger": [
+            0,
+            21
+          ]
+        }
+      }
+    }
+  },
+  {
+    "delta": {
+      "left": {
+        "_master": {
+          "skills": {
+            "1": {
+              "enable": [
+                0,
+                true
+              ]
+            },
+            "3": {
+              "enable": [
+                0,
+                true
+              ]
+            },
+            "_t": "a"
+          },
+          "anger": [
+            0,
+            41
+          ]
+        },
+        "pets": {
+          "1": {
+            "skills": {
+              "1": {
+                "enable": [
+                  0,
+                  true
+                ]
+              },
+              "3": {
+                "enable": [
+                  0,
+                  true
+                ]
+              },
+              "_t": "a"
+            },
+            "anger": [
+              0,
+              41
+            ]
+          },
+          "_t": "a"
+        },
+        "master": {
+          "skills": {
+            "1": {
+              "enable": [
+                0,
+                true
+              ]
+            },
+            "3": {
+              "enable": [
+                0,
+                true
+              ]
+            },
+            "_t": "a"
+          },
+          "anger": [
+            0,
+            41
+          ]
+        }
+      }
+    }
+  },
+  {
+    "delta": {
+      "left": {
+        "_master": {
+          "skills": {
+            "1": {
+              "enable": [
+                0,
+                false
+              ]
+            },
+            "3": {
+              "enable": [
+                0,
+                false
+              ]
+            },
+            "_t": "a"
+          },
+          "anger": [
+            0,
+            21
+          ]
+        },
+        "pets": {
+          "1": {
+            "skills": {
+              "1": {
+                "enable": [
+                  0,
+                  false
+                ]
+              },
+              "3": {
+                "enable": [
+                  0,
+                  false
+                ]
+              },
+              "_t": "a"
+            },
+            "anger": [
+              0,
+              21
+            ]
+          },
+          "_t": "a"
+        },
+        "master": {
+          "skills": {
+            "1": {
+              "enable": [
+                0,
+                false
+              ]
+            },
+            "3": {
+              "enable": [
+                0,
+                false
+              ]
+            },
+            "_t": "a"
+          },
+          "anger": [
+            0,
+            21
+          ]
+        }
+      }
+    }
+  },
+  {
+    "move": {
+      "effectUrl": "res/skill/effect/14_2_005.swf?iele5gy8",
+      "soundUrl": "res/skill/sound/01_2_002.mp3?iele5cbk",
+      "damage": 229,
+      "miss": 0,
+      "critical": 0,
+      "rate": 125,
+      "skill": "王之风暴",
+      "side": 1,
+      "category": "特殊"
+    },
+    "logs": [
+      "<font color='#ffffff'>[8]</font><font color='#00ffff'>圣·神王伊特</font><font color='#ffffff'>使用</font><font color='#ffff00'>王之风暴</font>"
+    ],
+    "delta": {
+      "right": {
+        "_master": {
+          "buffs": {
+            "_t": "a",
+            "_0": [
+              0,
+              0,
+              0
+            ]
+          },
+          "anger": [
+            0,
+            93
+          ],
+          "hp": [
+            0,
+            1675
+          ]
+        },
+        "pets": {
+          "0": {
+            "buffs": {
+              "_t": "a",
+              "_0": [
+                0,
+                0,
+                0
+              ]
+            },
+            "anger": [
+              0,
+              93
+            ],
+            "hp": [
+              0,
+              1675
+            ]
+          },
+          "_t": "a"
+        },
+        "master": {
+          "buffs": {
+            "_t": "a",
+            "_0": [
+              0,
+              0,
+              0
+            ]
+          },
+          "anger": [
+            0,
+            93
+          ],
+          "hp": [
+            0,
+            1675
+          ]
+        }
+      },
+      "left": {
+        "_master": {
+          "skills": {
+            "1": {
+              "enable": [
+                0,
+                true
+              ]
+            },
+            "_t": "a"
+          },
+          "anger": [
+            0,
+            36
+          ]
+        },
+        "pets": {
+          "1": {
+            "skills": {
+              "1": {
+                "enable": [
+                  0,
+                  true
+                ]
+              },
+              "_t": "a"
+            },
+            "anger": [
+              0,
+              36
+            ]
+          },
+          "_t": "a"
+        },
+        "master": {
+          "skills": {
+            "1": {
+              "enable": [
+                0,
+                true
+              ]
+            },
+            "_t": "a"
+          },
+          "anger": [
+            0,
+            36
+          ]
+        }
+      }
+    }
+  },
+  {
+    "delta": {
+      "right": {
+        "_master": {
+          "anger": [
+            0,
+            83
+          ]
+        },
+        "pets": {
+          "0": {
+            "anger": [
+              0,
+              83
+            ]
+          },
+          "_t": "a"
+        },
+        "master": {
+          "anger": [
+            0,
+            83
+          ]
+        }
+      }
+    }
+  },
+  {
+    "move": {
+      "effectUrl": "res/skill/effect/07_2_003.swf?iele5hq0",
+      "soundUrl": "res/skill/sound/07_2_001.mp3?iele5cbk",
+      "damage": 164,
+      "miss": 0,
+      "critical": 0,
+      "rate": 75,
+      "skill": "天空之舞",
+      "side": 2,
+      "category": "特殊"
+    },
+    "logs": [
+      "<font color='#ffffff'>[8]</font><font color='#00ffff'>菲亚斯</font><font color='#ffffff'>使用</font><font color='#ffff00'>天空之舞</font>"
+    ],
+    "delta": {
+      "right": {
+        "_master": {
+          "buffs": {
+            "0": [
+              {
+                "icon": "res/skill/sideEffect/3015.swf?iele4kjk",
+                "count": 0,
+                "id": 3015,
+                "tips": "必中,所有技能必中,持续回合0",
+                "name": "3015-必中"
+              }
+            ],
+            "_t": "a"
+          },
+          "anger": [
+            0,
+            100
+          ],
+          "spa": [
+            0,
+            2
+          ]
+        },
+        "pets": {
+          "0": {
+            "buffs": {
+              "0": [
+                {
+                  "icon": "res/skill/sideEffect/3015.swf?iele4kjk",
+                  "count": 0,
+                  "id": 3015,
+                  "tips": "必中,所有技能必中,持续回合0",
+                  "name": "3015-必中"
+                }
+              ],
+              "_t": "a"
+            },
+            "anger": [
+              0,
+              100
+            ],
+            "spa": [
+              0,
+              2
+            ]
+          },
+          "_t": "a"
+        },
+        "master": {
+          "buffs": {
+            "0": [
+              {
+                "icon": "res/skill/sideEffect/3015.swf?iele4kjk",
+                "count": 0,
+                "id": 3015,
+                "tips": "必中,所有技能必中,持续回合0",
+                "name": "3015-必中"
+              }
+            ],
+            "_t": "a"
+          },
+          "anger": [
+            0,
+            100
+          ],
+          "spa": [
+            0,
+            2
+          ]
+        }
+      },
+      "left": {
+        "_master": {
+          "skills": {
+            "3": {
+              "enable": [
+                0,
+                true
+              ]
+            },
+            "_t": "a"
+          },
+          "anger": [
+            0,
+            47
+          ],
+          "hp": [
+            0,
+            552
+          ]
+        },
+        "pets": {
+          "1": {
+            "skills": {
+              "3": {
+                "enable": [
+                  0,
+                  true
+                ]
+              },
+              "_t": "a"
+            },
+            "anger": [
+              0,
+              47
+            ],
+            "hp": [
+              0,
+              552
+            ]
+          },
+          "_t": "a"
+        },
+        "master": {
+          "skills": {
+            "3": {
+              "enable": [
+                0,
+                true
+              ]
+            },
+            "_t": "a"
+          },
+          "anger": [
+            0,
+            47
+          ],
+          "hp": [
+            0,
+            552
+          ]
+        }
+      }
+    }
+  },
+  {
+    "delta": {
+      "round": [
+        0,
+        9
+      ],
+      "left": {
+        "_master": {
+          "anger": [
+            0,
+            77
+          ]
+        },
+        "pets": {
+          "1": {
+            "anger": [
+              0,
+              77
+            ]
+          },
+          "_t": "a"
+        },
+        "master": {
+          "anger": [
+            0,
+            77
+          ]
+        }
+      }
+    }
+  },
+  {
+    "delta": {
+      "left": {
+        "_master": {
+          "anger": [
+            0,
+            57
+          ]
+        },
+        "pets": {
+          "1": {
+            "anger": [
+              0,
+              57
+            ]
+          },
+          "_t": "a"
+        },
+        "master": {
+          "anger": [
+            0,
+            57
+          ]
+        }
+      }
+    }
+  },
+  {
+    "delta": {
+      "left": {
+        "_master": {
+          "anger": [
+            0,
+            77
+          ]
+        },
+        "pets": {
+          "1": {
+            "anger": [
+              0,
+              77
+            ]
+          },
+          "_t": "a"
+        },
+        "master": {
+          "anger": [
+            0,
+            77
+          ]
+        }
+      }
+    }
+  },
+  {
+    "delta": {
+      "left": {
+        "_master": {
+          "anger": [
+            0,
+            57
+          ]
+        },
+        "pets": {
+          "1": {
+            "anger": [
+              0,
+              57
+            ]
+          },
+          "_t": "a"
+        },
+        "master": {
+          "anger": [
+            0,
+            57
+          ]
+        }
+      }
+    }
+  },
+  {
+    "move": {
+      "effectUrl": "res/skill/effect/14_2_005.swf?iele5gy8",
+      "soundUrl": "res/skill/sound/01_2_002.mp3?iele5cbk",
+      "damage": 450,
+      "miss": 0,
+      "critical": 1,
+      "rate": 125,
+      "skill": "王之风暴",
+      "side": 1,
+      "category": "特殊"
+    },
+    "logs": [
+      "<font color='#ffffff'>[9]</font><font color='#00ffff'>圣·神王伊特</font><font color='#ffffff'>使用</font><font color='#ffff00'>王之风暴</font>"
+    ],
+    "delta": {
+      "right": {
+        "_master": {
+          "buffs": {
+            "_t": "a",
+            "_0": [
+              0,
+              0,
+              0
+            ]
+          },
+          "hp": [
+            0,
+            1225
+          ]
+        },
+        "pets": {
+          "0": {
+            "buffs": {
+              "_t": "a",
+              "_0": [
+                0,
+                0,
+                0
+              ]
+            },
+            "hp": [
+              0,
+              1225
+            ]
+          },
+          "_t": "a"
+        },
+        "master": {
+          "buffs": {
+            "_t": "a",
+            "_0": [
+              0,
+              0,
+              0
+            ]
+          },
+          "hp": [
+            0,
+            1225
+          ]
+        }
+      },
+      "left": {
+        "_master": {
+          "anger": [
+            0,
+            72
+          ]
+        },
+        "pets": {
+          "1": {
+            "anger": [
+              0,
+              72
+            ]
+          },
+          "_t": "a"
+        },
+        "master": {
+          "anger": [
+            0,
+            72
+          ]
+        }
+      }
+    }
+  },
+  {
+    "delta": {
+      "right": {
+        "_master": {
+          "anger": [
+            0,
+            0
+          ]
+        },
+        "pets": {
+          "0": {
+            "anger": [
+              0,
+              0
+            ]
+          },
+          "_t": "a"
+        },
+        "master": {
+          "anger": [
+            0,
+            0
+          ]
+        }
+      }
+    }
+  },
+  {
+    "move": {
+      "effectUrl": "res/skill/effect/07_1_001.swf?iele5gy8",
+      "soundUrl": "res/skill/sound/11012.mp3?iele5as0",
+      "damage": 286,
+      "miss": 0,
+      "critical": 0,
+      "rate": 75,
+      "skill": "闪空翔烈破",
+      "side": 2,
+      "category": "必杀"
+    },
+    "logs": [
+      "<font color='#ffffff'>[9]</font><font color='#00ffff'>菲亚斯</font><font color='#ffffff'>使用</font><font color='#ffff00'>闪空翔烈破</font>"
+    ],
+    "delta": {
+      "right": {
+        "_master": {
+          "buffs": {
+            "0": [
+              {
+                "icon": "res/skill/sideEffect/3015.swf?iele4kjk",
+                "count": 0,
+                "id": 3015,
+                "tips": "必中,所有技能必中,持续回合0",
+                "name": "3015-必中"
+              }
+            ],
+            "_t": "a"
+          },
+          "anger": [
+            0,
+            15
+          ]
+        },
+        "pets": {
+          "0": {
+            "buffs": {
+              "0": [
+                {
+                  "icon": "res/skill/sideEffect/3015.swf?iele4kjk",
+                  "count": 0,
+                  "id": 3015,
+                  "tips": "必中,所有技能必中,持续回合0",
+                  "name": "3015-必中"
+                }
+              ],
+              "_t": "a"
+            },
+            "anger": [
+              0,
+              15
+            ]
+          },
+          "_t": "a"
+        },
+        "master": {
+          "buffs": {
+            "0": [
+              {
+                "icon": "res/skill/sideEffect/3015.swf?iele4kjk",
+                "count": 0,
+                "id": 3015,
+                "tips": "必中,所有技能必中,持续回合0",
+                "name": "3015-必中"
+              }
+            ],
+            "_t": "a"
+          },
+          "anger": [
+            0,
+            15
+          ]
+        }
+      },
+      "left": {
+        "_master": {
+          "anger": [
+            0,
+            91
+          ],
+          "hp": [
+            0,
+            266
+          ]
+        },
+        "pets": {
+          "1": {
+            "anger": [
+              0,
+              91
+            ],
+            "hp": [
+              0,
+              266
+            ]
+          },
+          "_t": "a"
+        },
+        "master": {
+          "anger": [
+            0,
+            91
+          ],
+          "hp": [
+            0,
+            266
+          ]
+        }
+      }
+    }
+  },
+  {
+    "delta": {
+      "round": [
+        0,
+        10
+      ],
+      "right": {
+        "_master": {
+          "anger": [
+            0,
+            30
+          ]
+        },
+        "pets": {
+          "0": {
+            "anger": [
+              0,
+              30
+            ]
+          },
+          "_t": "a"
+        },
+        "master": {
+          "anger": [
+            0,
+            30
+          ]
+        }
+      },
+      "left": {
+        "_master": {
+          "skills": {
+            "4": {
+              "enable": [
+                0,
+                true
+              ]
+            },
+            "_t": "a"
+          },
+          "anger": [
+            0,
+            100
+          ]
+        },
+        "pets": {
+          "1": {
+            "skills": {
+              "4": {
+                "enable": [
+                  0,
+                  true
+                ]
+              },
+              "_t": "a"
+            },
+            "anger": [
+              0,
+              100
+            ]
+          },
+          "_t": "a"
+        },
+        "master": {
+          "skills": {
+            "4": {
+              "enable": [
+                0,
+                true
+              ]
+            },
+            "_t": "a"
+          },
+          "anger": [
+            0,
+            100
+          ]
+        }
+      }
+    }
+  },
+  {
+    "delta": {
+      "left": {
+        "_master": {
+          "skills": {
+            "0": {
+              "enable": [
+                0,
+                false
+              ]
+            },
+            "1": {
+              "enable": [
+                0,
+                false
+              ]
+            },
+            "2": {
+              "enable": [
+                0,
+                false
+              ]
+            },
+            "3": {
+              "enable": [
+                0,
+                false
+              ]
+            },
+            "4": {
+              "enable": [
+                0,
+                false
+              ]
+            },
+            "_t": "a"
+          },
+          "anger": [
+            0,
+            0
+          ]
+        },
+        "pets": {
+          "1": {
+            "skills": {
+              "0": {
+                "enable": [
+                  0,
+                  false
+                ]
+              },
+              "1": {
+                "enable": [
+                  0,
+                  false
+                ]
+              },
+              "2": {
+                "enable": [
+                  0,
+                  false
+                ]
+              },
+              "3": {
+                "enable": [
+                  0,
+                  false
+                ]
+              },
+              "4": {
+                "enable": [
+                  0,
+                  false
+                ]
+              },
+              "_t": "a"
+            },
+            "anger": [
+              0,
+              0
+            ]
+          },
+          "_t": "a"
+        },
+        "master": {
+          "skills": {
+            "0": {
+              "enable": [
+                0,
+                false
+              ]
+            },
+            "1": {
+              "enable": [
+                0,
+                false
+              ]
+            },
+            "2": {
+              "enable": [
+                0,
+                false
+              ]
+            },
+            "3": {
+              "enable": [
+                0,
+                false
+              ]
+            },
+            "4": {
+              "enable": [
+                0,
+                false
+              ]
+            },
+            "_t": "a"
+          },
+          "anger": [
+            0,
+            0
+          ]
+        }
+      }
+    }
+  },
+  {
+    "delta": {
+      "left": {
+        "_master": {
+          "skills": {
+            "0": {
+              "enable": [
+                0,
+                true
+              ]
+            },
+            "1": {
+              "enable": [
+                0,
+                true
+              ]
+            },
+            "2": {
+              "enable": [
+                0,
+                true
+              ]
+            },
+            "3": {
+              "enable": [
+                0,
+                true
+              ]
+            },
+            "4": {
+              "enable": [
+                0,
+                true
+              ]
+            },
+            "_t": "a"
+          },
+          "anger": [
+            0,
+            100
+          ]
+        },
+        "pets": {
+          "1": {
+            "skills": {
+              "0": {
+                "enable": [
+                  0,
+                  true
+                ]
+              },
+              "1": {
+                "enable": [
+                  0,
+                  true
+                ]
+              },
+              "2": {
+                "enable": [
+                  0,
+                  true
+                ]
+              },
+              "3": {
+                "enable": [
+                  0,
+                  true
+                ]
+              },
+              "4": {
+                "enable": [
+                  0,
+                  true
+                ]
+              },
+              "_t": "a"
+            },
+            "anger": [
+              0,
+              100
+            ]
+          },
+          "_t": "a"
+        },
+        "master": {
+          "skills": {
+            "0": {
+              "enable": [
+                0,
+                true
+              ]
+            },
+            "1": {
+              "enable": [
+                0,
+                true
+              ]
+            },
+            "2": {
+              "enable": [
+                0,
+                true
+              ]
+            },
+            "3": {
+              "enable": [
+                0,
+                true
+              ]
+            },
+            "4": {
+              "enable": [
+                0,
+                true
+              ]
+            },
+            "_t": "a"
+          },
+          "anger": [
+            0,
+            100
+          ]
+        }
+      }
+    }
+  },
+  {
+    "delta": {
+      "left": {
+        "_master": {
+          "skills": {
+            "0": {
+              "enable": [
+                0,
+                false
+              ]
+            },
+            "1": {
+              "enable": [
+                0,
+                false
+              ]
+            },
+            "2": {
+              "enable": [
+                0,
+                false
+              ]
+            },
+            "3": {
+              "enable": [
+                0,
+                false
+              ]
+            },
+            "4": {
+              "enable": [
+                0,
+                false
+              ]
+            },
+            "_t": "a"
+          },
+          "anger": [
+            0,
+            0
+          ]
+        },
+        "pets": {
+          "1": {
+            "skills": {
+              "0": {
+                "enable": [
+                  0,
+                  false
+                ]
+              },
+              "1": {
+                "enable": [
+                  0,
+                  false
+                ]
+              },
+              "2": {
+                "enable": [
+                  0,
+                  false
+                ]
+              },
+              "3": {
+                "enable": [
+                  0,
+                  false
+                ]
+              },
+              "4": {
+                "enable": [
+                  0,
+                  false
+                ]
+              },
+              "_t": "a"
+            },
+            "anger": [
+              0,
+              0
+            ]
+          },
+          "_t": "a"
+        },
+        "master": {
+          "skills": {
+            "0": {
+              "enable": [
+                0,
+                false
+              ]
+            },
+            "1": {
+              "enable": [
+                0,
+                false
+              ]
+            },
+            "2": {
+              "enable": [
+                0,
+                false
+              ]
+            },
+            "3": {
+              "enable": [
+                0,
+                false
+              ]
+            },
+            "4": {
+              "enable": [
+                0,
+                false
+              ]
+            },
+            "_t": "a"
+          },
+          "anger": [
+            0,
+            0
+          ]
+        }
+      }
+    }
+  },
+  {
+    "move": {
+      "effectUrl": "res/skill/effect/11_1_004.swf?iele5gy8",
+      "soundUrl": "res/skill/sound/15591_0.mp3",
+      "damage": 1058,
+      "miss": 0,
+      "critical": 1,
+      "rate": 125,
+      "skill": "十七朝皇",
+      "side": 1,
+      "category": "合体"
+    },
+    "logs": [
+      "<font color='#ffffff'>[10]</font><font color='#00ffff'>圣·神王伊特</font><font color='#ffffff'>使用</font><font color='#ffff00'>十七朝皇</font>"
+    ],
+    "delta": {
+      "right": {
+        "_master": {
+          "buffs": {
+            "_t": "a",
+            "_0": [
+              0,
+              0,
+              0
+            ]
+          },
+          "anger": [
+            0,
+            47
+          ],
+          "hp": [
+            0,
+            167
+          ]
+        },
+        "pets": {
+          "0": {
+            "buffs": {
+              "_t": "a",
+              "_0": [
+                0,
+                0,
+                0
+              ]
+            },
+            "anger": [
+              0,
+              47
+            ],
+            "hp": [
+              0,
+              167
+            ]
+          },
+          "_t": "a"
+        },
+        "master": {
+          "buffs": {
+            "_t": "a",
+            "_0": [
+              0,
+              0,
+              0
+            ]
+          },
+          "anger": [
+            0,
+            47
+          ],
+          "hp": [
+            0,
+            167
+          ]
+        }
+      },
+      "left": {
+        "_master": {
+          "anger": [
+            0,
+            15
+          ]
+        },
+        "pets": {
+          "1": {
+            "anger": [
+              0,
+              15
+            ]
+          },
+          "_t": "a"
+        },
+        "master": {
+          "anger": [
+            0,
+            15
+          ]
+        }
+      }
+    }
+  },
+  {
+    "delta": {
+      "right": {
+        "_master": {
+          "anger": [
+            0,
+            37
+          ]
+        },
+        "pets": {
+          "0": {
+            "anger": [
+              0,
+              37
+            ]
+          },
+          "_t": "a"
+        },
+        "master": {
+          "anger": [
+            0,
+            37
+          ]
+        }
+      }
+    }
+  },
+  {
+    "move": {
+      "effectUrl": "res/skill/effect/07_1_001.swf?iele5gy8",
+      "soundUrl": "res/skill/sound/11012.mp3?iele5as0",
+      "damage": 265,
+      "miss": 0,
+      "critical": 0,
+      "rate": 75,
+      "skill": "闪空翔烈破",
+      "side": 2,
+      "category": "必杀"
+    },
+    "logs": [
+      "<font color='#ffffff'>[10]</font><font color='#00ffff'>菲亚斯</font><font color='#ffffff'>使用</font><font color='#ffff00'>闪空翔烈破</font>"
+    ],
+    "delta": {
+      "right": {
+        "_master": {
+          "atk": [
+            0,
+            2
+          ],
+          "buffs": {
+            "0": [
+              {
+                "icon": "res/skill/sideEffect/3015.swf?iele4kjk",
+                "count": 0,
+                "id": 3015,
+                "tips": "必中,所有技能必中,持续回合0",
+                "name": "3015-必中"
+              }
+            ],
+            "_t": "a"
+          },
+          "anger": [
+            0,
+            72
+          ]
+        },
+        "pets": {
+          "0": {
+            "atk": [
+              0,
+              2
+            ],
+            "buffs": {
+              "0": [
+                {
+                  "icon": "res/skill/sideEffect/3015.swf?iele4kjk",
+                  "count": 0,
+                  "id": 3015,
+                  "tips": "必中,所有技能必中,持续回合0",
+                  "name": "3015-必中"
+                }
+              ],
+              "_t": "a"
+            },
+            "anger": [
+              0,
+              72
+            ]
+          },
+          "_t": "a"
+        },
+        "master": {
+          "atk": [
+            0,
+            2
+          ],
+          "buffs": {
+            "0": [
+              {
+                "icon": "res/skill/sideEffect/3015.swf?iele4kjk",
+                "count": 0,
+                "id": 3015,
+                "tips": "必中,所有技能必中,持续回合0",
+                "name": "3015-必中"
+              }
+            ],
+            "_t": "a"
+          },
+          "anger": [
+            0,
+            72
+          ]
+        }
+      },
+      "left": {
+        "_master": {
+          "skills": {
+            "0": {
+              "enable": [
+                0,
+                true
+              ]
+            },
+            "1": {
+              "enable": [
+                0,
+                true
+              ]
+            },
+            "2": {
+              "enable": [
+                0,
+                true
+              ]
+            },
+            "_t": "a"
+          },
+          "anger": [
+            0,
+            33
+          ],
+          "hp": [
+            0,
+            1
+          ]
+        },
+        "pets": {
+          "1": {
+            "skills": {
+              "0": {
+                "enable": [
+                  0,
+                  true
+                ]
+              },
+              "1": {
+                "enable": [
+                  0,
+                  true
+                ]
+              },
+              "2": {
+                "enable": [
+                  0,
+                  true
+                ]
+              },
+              "_t": "a"
+            },
+            "anger": [
+              0,
+              33
+            ],
+            "hp": [
+              0,
+              1
+            ]
+          },
+          "_t": "a"
+        },
+        "master": {
+          "skills": {
+            "0": {
+              "enable": [
+                0,
+                true
+              ]
+            },
+            "1": {
+              "enable": [
+                0,
+                true
+              ]
+            },
+            "2": {
+              "enable": [
+                0,
+                true
+              ]
+            },
+            "_t": "a"
+          },
+          "anger": [
+            0,
+            33
+          ],
+          "hp": [
+            0,
+            1
+          ]
+        }
+      }
+    }
+  },
+  {
+    "delta": {
+      "round": [
+        0,
+        11
+      ],
+      "right": {
+        "_master": {
+          "anger": [
+            0,
+            87
+          ]
+        },
+        "pets": {
+          "0": {
+            "anger": [
+              0,
+              87
+            ]
+          },
+          "_t": "a"
+        },
+        "master": {
+          "anger": [
+            0,
+            87
+          ]
+        }
+      },
+      "left": {
+        "_master": {
+          "skills": {
+            "3": {
+              "enable": [
+                0,
+                true
+              ]
+            },
+            "_t": "a"
+          },
+          "anger": [
+            0,
+            63
+          ]
+        },
+        "pets": {
+          "1": {
+            "skills": {
+              "3": {
+                "enable": [
+                  0,
+                  true
+                ]
+              },
+              "_t": "a"
+            },
+            "anger": [
+              0,
+              63
+            ]
+          },
+          "_t": "a"
+        },
+        "master": {
+          "skills": {
+            "3": {
+              "enable": [
+                0,
+                true
+              ]
+            },
+            "_t": "a"
+          },
+          "anger": [
+            0,
+            63
+          ]
+        }
+      }
+    }
+  },
+  {
+    "delta": {
+      "left": {
+        "_master": {
+          "anger": [
+            0,
+            43
+          ]
+        },
+        "pets": {
+          "1": {
+            "anger": [
+              0,
+              43
+            ]
+          },
+          "_t": "a"
+        },
+        "master": {
+          "anger": [
+            0,
+            43
+          ]
+        }
+      }
+    }
+  },
+  {
+    "delta": {
+      "left": {
+        "_master": {
+          "anger": [
+            0,
+            63
+          ]
+        },
+        "pets": {
+          "1": {
+            "anger": [
+              0,
+              63
+            ]
+          },
+          "_t": "a"
+        },
+        "master": {
+          "anger": [
+            0,
+            63
+          ]
+        }
+      }
+    }
+  },
+  {
+    "delta": {
+      "left": {
+        "_master": {
+          "anger": [
+            0,
+            43
+          ]
+        },
+        "pets": {
+          "1": {
+            "anger": [
+              0,
+              43
+            ]
+          },
+          "_t": "a"
+        },
+        "master": {
+          "anger": [
+            0,
+            43
+          ]
+        }
+      }
+    }
+  },
+  {
+    "move": {
+      "effectUrl": "res/skill/effect/14_2_005.swf?iele5gy8",
+      "soundUrl": "res/skill/sound/01_2_002.mp3?iele5cbk",
+      "damage": 249,
+      "miss": 0,
+      "critical": 0,
+      "rate": 125,
+      "skill": "王之风暴",
+      "side": 1,
+      "category": "特殊"
+    },
+    "logs": [
+      "<font color='#ffffff'>[11]</font><font color='#00ffff'>圣·神王伊特</font><font color='#ffffff'>使用</font><font color='#ffff00'>王之风暴</font>"
+    ],
+    "delta": {
+      "right": {
+        "_master": {
+          "buffs": {
+            "_t": "a",
+            "_0": [
+              0,
+              0,
+              0
+            ]
+          },
+          "alive": [
+            0,
+            0
+          ],
+          "anger": [
+            0,
+            91
+          ],
+          "hp": [
+            0,
+            0
+          ]
+        },
+        "pets": {
+          "0": {
+            "buffs": {
+              "_t": "a",
+              "_0": [
+                0,
+                0,
+                0
+              ]
+            },
+            "alive": [
+              0,
+              0
+            ],
+            "anger": [
+              0,
+              91
+            ],
+            "hp": [
+              0,
+              0
+            ]
+          },
+          "_t": "a"
+        },
+        "master": {
+          "buffs": {
+            "_t": "a",
+            "_0": [
+              0,
+              0,
+              0
+            ]
+          },
+          "alive": [
+            0,
+            0
+          ],
+          "anger": [
+            0,
+            91
+          ],
+          "hp": [
+            0,
+            0
+          ]
+        }
+      },
+      "left": {
+        "_master": {
+          "anger": [
+            0,
+            58
+          ]
+        },
+        "pets": {
+          "1": {
+            "anger": [
+              0,
+              58
+            ]
+          },
+          "_t": "a"
+        },
+        "master": {
+          "anger": [
+            0,
+            58
+          ]
+        }
+      }
+    }
+  },
+  {
+    "end": {
+      "alert": 0,
+      "winner": 1
+    }
+  }
+]
