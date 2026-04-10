@@ -4,7 +4,8 @@ import flash.external.ExternalInterface;
 public class JsUtils {
     public static function call(func:String, ...rest):void {
         if (ExternalInterface.available) {
-            ExternalInterface.call(func, rest);
+            var args:Array = [func].concat(rest);
+            ExternalInterface.call.apply(null, args);
         }
     }
 }
