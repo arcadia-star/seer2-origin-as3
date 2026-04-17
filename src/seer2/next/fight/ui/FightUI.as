@@ -539,29 +539,38 @@ public class FightUI extends Sprite {
     }
 
     internal function processor19PetMorph(param1:MessageEvent):void {
-        var _loc2_:IDataInput = param1.message.getRawData();
-        var _loc3_:int = int(_loc2_.readUnsignedInt());
-        var _loc8_:int = 0;
-        while (_loc8_ < _loc3_) {
-            var uid:uint = uint(_loc2_.readUnsignedInt());
-            var typ:int = int(_loc2_.readUnsignedByte());
-            var pid:uint = uint(_loc2_.readUnsignedInt());
-            var morphPid:uint = uint(_loc2_.readUnsignedInt());
-
+        var buffer:IDataInput = param1.message.getRawData();
+        var len:int = int(buffer.readUnsignedInt());
+        for (var idx:int = 0; idx < len; idx++) {
+            var uid:uint = uint(buffer.readUnsignedInt());
+            var typ:int = int(buffer.readUnsignedByte());
+            var pid:int = int(buffer.readUnsignedInt());
+            var morphPid:int = int(buffer.readUnsignedInt());
             var pet:PetData = petData(uid, pid);
             var morphPet:PetData = petData(uid, morphPid);
             morphPet.anger = 20;
-            morphPet.hp = morphPet.maxHp;
+            if (typ === 0) {
+                morphPet.hp = morphPet.maxHp;
+            } else {
+                morphPet.hp = 0;
+            }
             morphPet.position = pet.position;
             pet.hp = 0;
             pet.position = 0;
-            //神迹变身完移除
             var team:TeamData = teamData(uid);
+            //神迹变身交换背包位置
+            var pos1:int = 0;
+            var pos2:int = 0;
             for (var i:int = 0; i < team.pets.length; i++) {
                 if (team.pets[i].pid === pid) {
-                    team.pets.removeAt(i);
+                    pos1 = i;
+                }
+                if (team.pets[i].pid === morphPid) {
+                    pos2 = i;
                 }
             }
+            team.pets[pos1] = morphPet;
+            team.pets[pos2] = pet;
             team.init();
             var frame:FrameData = new FrameData();
             frame.change = new ChangeData();
@@ -571,7 +580,6 @@ public class FightUI extends Sprite {
                 frame.change.right = ChangeData.MORPH;
             }
             pushNextFrame(frame);
-            _loc8_++;
         }
     }
 
