@@ -87,6 +87,9 @@ public class FightUI extends Sprite {
     private var _fightResult:FightResultInfo;
     private var _uiStyle:int;
 
+    //临时存放需要选择精灵的道具
+    private var _itemId4Pet:int;
+
     private var _mayFit:Function;
 
     public function FightUI() {
@@ -102,7 +105,7 @@ public class FightUI extends Sprite {
             throw new Error("clazz is not loaded");
         }
         _player = new clazz;
-        if (FightMode.FIGHT_BOSS === _rawArenaData.fightMode) {
+        if (FightMode.FIGHT_BOSS === _rawArenaData.fightMode || _arenaData.right.master.hp >= 1000) {
             _uiStyle = 1;
         }
         if (_arenaData.left.slave) {
@@ -110,7 +113,6 @@ public class FightUI extends Sprite {
         }
         _player.updateUiStyle(_uiStyle);
         addChild(_player);
-        addChild(new FightUIExt());
         var fightIndex:int = FightManager.currentFightRecord.initData.hasOwnProperty("positionIndex") ? int(FightManager.currentFightRecord.initData.positionIndex) : 0;
         var frame:FrameData = new FrameData;
         frame.start = new StartData();
@@ -121,6 +123,7 @@ public class FightUI extends Sprite {
             Connection.send(CommandSet.FIGHT_RES_READY_1501, fightIndex);
             _player.playFightWaiting();
             SoundManager.backgroundSoundEnabled = true;
+            addChild(new FightUIExt());
         });
 
         //收到cmd-2，开始倒计时
@@ -205,17 +208,39 @@ public class FightUI extends Sprite {
             var petItemDefinition:PetItemDefinition = ItemConfig.getPetDefinition(item);
             //复活药剂开面板
             if (petItemDefinition && petItemDefinition.type === PetItemType.RESURRECTION) {
-
+                _itemId4Pet = item;
+                _player.showPetPanel();
+                return;
             }
             _itemId = item;
             Connection.send(CommandSet.FIGHT_USE_MEDICINE_1048, _arenaData.left.master.pid, item, 1);
         }
         var pet:int = data.pet;
         if (pet != 0) {
+            if (_itemId4Pet > 0) {
+                _itemId = _itemId4Pet;
+                Connection.send(CommandSet.FIGHT_USE_MEDICINE_1048, pet, _itemId, 1);
+                _itemId4Pet = 0;
+                return;
+            }
+            var pet0:PetData = petData(thisUid(), pet);
+            if (pet0.alive <= 0 || pet0.position > 0) {
+                return;
+            }
             Connection.send(CommandSet.FIGHT_CHANGE_FIGHTER_1032, pet);
         }
         var capsule:int = data.capsule;
         if (capsule > 0) {
+            if (capsule > 200003) {
+                var snapshot:int = _countDown;
+                AlertManager.showConfirm("FightUI解除了部分限制，无敌不一定能捕获", function ():void {
+                    if (snapshot === _countDown) {
+                        _itemId = capsule;
+                        Connection.send(CommandSet.FIGHT_CATCH_PET_1031, capsule);
+                    }
+                });
+                return;
+            }
             _itemId = capsule;
             Connection.send(CommandSet.FIGHT_CATCH_PET_1031, capsule);
         }
@@ -391,11 +416,14 @@ public class FightUI extends Sprite {
         pet.spe = obj._speedLevel - 6;
         pet.buffs = fromBuff(obj._buffInfoVec);
         var frame:FrameData = new FrameData;
-        frame.event = new EventData;
-        frame.event.type = hpChange > 0 ? EventData.ITEM_HP : EventData.ITEM_ANGER;
-        frame.event.side = teamSide(obj.userId);
-        frame.event.change = hpChange > 0 ? hpChange : angerChange;
-        frame.event.delay = 0;
+        //只有对战中精灵展示
+        if (pet.position > 0) {
+            frame.event = new EventData;
+            frame.event.type = hpChange > 0 ? EventData.ITEM_HP : EventData.ITEM_ANGER;
+            frame.event.side = teamSide(obj.userId);
+            frame.event.change = hpChange > 0 ? hpChange : angerChange;
+            frame.event.delay = 0;
+        }
         pushNextFrame(frame);
     }
 
@@ -527,7 +555,14 @@ public class FightUI extends Sprite {
             morphPet.position = pet.position;
             pet.hp = 0;
             pet.position = 0;
-            teamData(uid).init();
+            //神迹变身完移除
+            var team:TeamData = teamData(uid);
+            for (var i:int = 0; i < team.pets.length; i++) {
+                if (team.pets[i].pid === pid) {
+                    team.pets.removeAt(i);
+                }
+            }
+            team.init();
             var frame:FrameData = new FrameData();
             frame.change = new ChangeData();
             if (thisTeam(uid)) {
@@ -751,6 +786,7 @@ public class FightUI extends Sprite {
     private function clearCountDown():void {
         _countDown++;
         _player.clearFgLayer();
+        _itemId4Pet = 0;
     }
 
     private function nextPetOperate():void {
