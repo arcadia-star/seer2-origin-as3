@@ -3,6 +3,11 @@ name: Build Seer2CoreDLL SWC
 
 on:
   workflow_dispatch:        # 手动触发
+  push:
+    branches:
+      - main
+    paths:
+      - 'src/**'
 
 jobs:
   build:
