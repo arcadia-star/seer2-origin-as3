@@ -61,7 +61,7 @@ jobs:
           FB_URL: ${{ secrets.FB_URL }}
           FB_USERNAME: ${{ secrets.FB_USERNAME }}
           FB_PASSWORD: ${{ secrets.FB_PASSWORD }}
-        shell: bash
+        shell: pwsh
         run: |
           # 使用 $GITHUB_WORKSPACE 构建本地文件的绝对路径
           filebrowser-client upload out/Seer2CoreDLL.swf /dll/Seer2CoreDLL.swf \
