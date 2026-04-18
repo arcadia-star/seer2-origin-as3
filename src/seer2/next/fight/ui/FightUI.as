@@ -108,7 +108,7 @@ public class FightUI extends Sprite {
         if (FightMode.FIGHT_BOSS === _rawArenaData.fightMode || _arenaData.right.master.hp >= 1000) {
             _uiStyle = 1;
         }
-        if (_arenaData.left.slave) {
+        if (is2v2()) {
             _uiStyle = 2;
         }
         _player.updateUiStyle(_uiStyle);
@@ -195,6 +195,10 @@ public class FightUI extends Sprite {
         }
         var skill:int = data.skill;
         if (skill > 0) {
+            var master:PetData = _arenaData.left.master;
+            if (!is2v2() && master.hp <= 0) {
+                return;
+            }
             var skills:Vector.<SkillData> = _arenaData.left.master.skills;
             for (var i:int = 0; i < skills.length; i++) {
 //                if (skills[i].id === skill && skills[i].enable) {
@@ -224,7 +228,7 @@ public class FightUI extends Sprite {
                 return;
             }
             var pet0:PetData = petData(thisUid(), pet);
-            if (pet0.alive <= 0 || pet0.position > 0) {
+            if (pet0.hp <= 0 || pet0.position > 0) {
                 return;
             }
             Connection.send(CommandSet.FIGHT_CHANGE_FIGHTER_1032, pet);
@@ -348,7 +352,12 @@ public class FightUI extends Sprite {
         var frame:FrameData = new FrameData;
         frame.smooth = FrameData.SMOOTH_TRUE;
         pushNextFrame(frame);
-        pushNextFunc(playCountDown);
+        pushNextFunc(function ():void {
+            if (!is2v2() && _arenaData.left.master.hp <= 0) {
+                _player.showPetPanel();
+            }
+            playCountDown();
+        })
     }
 
     internal function processor8ChangePet(param1:MessageEvent):void {
@@ -879,6 +888,10 @@ public class FightUI extends Sprite {
     private function pushProcessor(command:Command, processor:Function):void {
         Connection.addCommandListener(command, processor);
         _processors.push([command, processor]);
+    }
+
+    private function is2v2():Boolean {
+        return _arenaData.left.slave;
     }
 
     private function thisUid():int {
