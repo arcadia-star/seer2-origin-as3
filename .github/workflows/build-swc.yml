@@ -24,7 +24,7 @@ jobs:
         uses: actions/cache@v4
         with:
           path: ~/adobe-air-sdk
-          key: ${{ runner.os }}-adobe-air-sdk-${{ hashFiles('.air-version') }}
+          key: ${{ runner.os }}-adobe-air-sdk-51.3.1.2
           restore-keys: |
             ${{ runner.os }}-adobe-air-sdk-       
 
@@ -67,21 +67,18 @@ jobs:
       # 上传改服
       - name: Upload to File Browser (PowerShell)
         env:
-          FB_URL: ${{ secrets.FB_URL }}           # 例如 https://your-filebrowser.com
+          FB_URL: ${{ secrets.FB_URL }}
           FB_USERNAME: ${{ secrets.FB_USERNAME }}
           FB_PASSWORD: ${{ secrets.FB_PASSWORD }}
-        shell: bash   # 使用 bash 以兼容 curl 语法（GitHub Actions windows-latest 自带 bash）
+        shell: pwsh
         run: |
-          # 登录并获取 cookie 和 XSRF token
-          LOGIN_RESPONSE=$(curl -s -i -X POST "$FB_URL/api/login" \
-            -H "Content-Type: application/json" \
-            -d "{\"username\":\"$FB_USERNAME\", \"password\":\"$FB_PASSWORD\"}")
-        
-          COOKIE=$(echo "$LOGIN_RESPONSE" | grep -i "set-cookie" | grep "http.sess=" | cut -d' ' -f2 | cut -d';' -f1)
-          XSRF_TOKEN=$(echo "$LOGIN_RESPONSE" | grep -i "set-cookie" | grep "XSRF-TOKEN=" | cut -d' ' -f2 | cut -d';' -f1 | cut -d'=' -f2)
-
-          # 上传文件到 dll/ 目录（如果目录不存在，File Browser 会自动创建）
-          curl -X POST "$FB_URL/api/resources/dll/Seer2CoreDLL.swf" \
-            -H "Cookie: $COOKIE; XSRF-TOKEN=$XSRF_TOKEN" \
-            -H "X-XSRF-TOKEN: $XSRF_TOKEN" \
-            -F "file=@./out/Seer2CoreDLL.swf"
+          # Login
+          $loginBody = @{username=$env:FB_USERNAME; password=$env:FB_PASSWORD} | ConvertTo-Json
+          $loginResponse = Invoke-WebRequest -Uri "$env:FB_URL/api/login" -Method Post -Body $loginBody -ContentType "application/json" -SessionVariable fbSession
+          $xsrfToken = ($loginResponse.Headers.'Set-Cookie' | Where-Object { $_ -like "XSRF-TOKEN=*" }) -replace 'XSRF-TOKEN=([^;]+);.*', '$1'
+          
+          # Upload
+          $filePath = Resolve-Path "./out/Seer2CoreDLL.swf"
+          $uploadUri = "$env:FB_URL/api/resources/dll/Seer2CoreDLL.swf"
+          $form = @{ file = Get-Item $filePath }
+          Invoke-WebRequest -Uri $uploadUri -Method Post -Form $form -WebSession $fbSession -Headers @{ "X-XSRF-TOKEN" = $xsrfToken }
