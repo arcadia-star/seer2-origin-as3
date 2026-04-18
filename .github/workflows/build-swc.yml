@@ -16,20 +16,9 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-
-      # ---------- 缓存 Adobe AIR SDK ----------
-      - name: Cache Adobe AIR SDK
-        id: cache-air
-        uses: actions/cache@v4
-        with:
-          path: ${{ runner.tool_cache }}\adobe-air
-          key: ${{ runner.os }}-adobe-air-sdk-51.3.1.2
-          restore-keys: |
-            ${{ runner.os }}-adobe-air-
       
       # 使用正确的 Action 安装 Adobe AIR SDK
       - name: Setup Adobe AIR SDK
-        if: steps.cache-air.outputs.cache-hit != 'true'
         uses: joshtynjala/setup-adobe-air-action@v2
         with:
           air-version: "51.3.1.2"      # 可替换为其他版本，如 "50.0.1.1" 或 "32.0"
