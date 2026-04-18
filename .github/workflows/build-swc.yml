@@ -64,8 +64,8 @@ jobs:
         shell: bash
         run: |
           # 使用 $GITHUB_WORKSPACE 构建本地文件的绝对路径
-          local_file_path="${GITHUB_WORKSPACE}/out/Seer2CoreDLL.swf"
-          filebrowser-client upload "$local_file_path" /dll/Seer2CoreDLL.swf \
+          filebrowser-client upload out/Seer2CoreDLL.swf /dll/Seer2CoreDLL.swf \
             --host "$FB_URL" \
             --username "$FB_USERNAME" \
-            --password "$FB_PASSWORD"
+            --password "$FB_PASSWORD" \
+            --override
