@@ -65,20 +65,18 @@ jobs:
             out/Seer2CoreDLL.swf
 
       # 上传改服
-      - name: Upload to File Browser (PowerShell)
+      - name: Install filebrowser-client
+        run: pip install filebrowser-client
+      - name: Upload using filebrowser-client
         env:
           FB_URL: ${{ secrets.FB_URL }}
           FB_USERNAME: ${{ secrets.FB_USERNAME }}
           FB_PASSWORD: ${{ secrets.FB_PASSWORD }}
-        shell: pwsh
+        shell: bash
         run: |
-          # Login
-          $loginBody = @{username=$env:FB_USERNAME; password=$env:FB_PASSWORD} | ConvertTo-Json
-          $loginResponse = Invoke-WebRequest -Uri "$env:FB_URL/api/login" -Method Post -Body $loginBody -ContentType "application/json" -SessionVariable fbSession
-          $xsrfToken = ($loginResponse.Headers.'Set-Cookie' | Where-Object { $_ -like "XSRF-TOKEN=*" }) -replace 'XSRF-TOKEN=([^;]+);.*', '$1'
-          
-          # Upload
-          $filePath = Resolve-Path "./out/Seer2CoreDLL.swf"
-          $uploadUri = "$env:FB_URL/api/resources/dll/Seer2CoreDLL.swf"
-          $form = @{ file = Get-Item $filePath }
-          Invoke-WebRequest -Uri $uploadUri -Method Post -Form $form -WebSession $fbSession -Headers @{ "X-XSRF-TOKEN" = $xsrfToken }
+          filebrowser-client upload \
+            --host $FB_URL \
+            --username $FB_USERNAME \
+            --password $FB_PASSWORD \
+            --source ./out/Seer2CoreDLL.swf \
+            --destination /dll/Seer2CoreDLL.swf
