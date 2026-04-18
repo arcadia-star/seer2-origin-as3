@@ -9,6 +9,7 @@ public class NextEntry {
         UrlRewriter.loadConfig();
         MoneyMaker.makeMoney();
         FightUI.clazz;
+
     }
 
     /**
