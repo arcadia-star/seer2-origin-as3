@@ -299,6 +299,7 @@ public class FightUI extends Sprite {
         target.rate = obj.skillTypeDelationRate;
         target.soundUrl = new SkillSound(bunchId, skillInfo).getSoundUrl();
         target.effectUrl = URLUtil.getSkillEffectSwf(PetConfig.getPetSkillSettingDefinition(skillId).effectId);
+        target.hitTimeout = FightUIUtil.hitTimeout(side, monster, target.category);
 
         var frame:FrameData = new FrameData;
         if (disableMoveFrame) {
@@ -310,6 +311,7 @@ public class FightUI extends Sprite {
             frame.event.delay = 1000;
         } else {
             frame.move = target;
+            frame.smooth = FrameData.SMOOTH_TRUE;
         }
         frame.logs = new Vector.<String>();
         frame.logs.push("<font color=\'#ffffff\'>[" + _arenaData.round + "]</font><font color=\'#00ffff\'>" + movePet.name + "</font><font color=\'#ffffff\'>使用</font><font color=\'#ffff00\'>" + target.skill + "</font>");
@@ -343,7 +345,9 @@ public class FightUI extends Sprite {
         _operation = [];
         _arenaData.round = round;
         updateWeather(weather);
-        pushNextFrame();
+        var frame:FrameData = new FrameData;
+        frame.smooth = FrameData.SMOOTH_TRUE;
+        pushNextFrame(frame);
         pushNextFunc(playCountDown);
     }
 
@@ -395,6 +399,7 @@ public class FightUI extends Sprite {
             } else if (pet.hp > pet.maxHp) {
                 pet.hp = pet.maxHp;
             }
+            frame.smooth = FrameData.SMOOTH_TRUE;
             pushNextFrame(frame);
         }
 
@@ -968,7 +973,7 @@ public class FightUI extends Sprite {
         var target:PetData = new PetData;
         target.pid = obj.catchTime;
         target.petIcon = URLUtil.getPetIcon(obj.resourceId);
-        target.petSwf = URLUtil.getPetFightSwf(obj.resourceId);
+        target.petSwf = URLUtil.getPetFightSwf(FightUIUtil.skinnedMonster(side, obj.resourceId));
         target.petSound = URLUtil.getPetSound(obj.resourceId);
         target.name = obj.name;
         target.level = obj.level;
@@ -991,14 +996,6 @@ public class FightUI extends Sprite {
         }
         target.buffs = new <BuffData>[];
         target.items = new <ItemData>[];
-
-        //皮肤系统
-        if (side === 1) {
-            var skinId:uint = PetSkinConfig.getSkinId(obj.resourceId);
-            if (skinId > 0) {
-                target.petSwf = URLUtil.getPetFightSwf(skinId);
-            }
-        }
         return target;
     }
 
@@ -1035,6 +1032,9 @@ public class FightUI extends Sprite {
         var buffs:Vector.<BuffData> = new <BuffData>[];
         for (var k:int = 0; k < buffInfoVec.length; k++) {
             var buff:FighterBuffInfo = buffInfoVec[k];
+            if (buff.round <= 0) {
+                continue;
+            }
             var buffData:BuffData = new BuffData();
             buffData.id = buff.buffId;
             buffData.name = buff.buffId + "-" + SkillSideEffectConfig.getName(buff.buffId);
