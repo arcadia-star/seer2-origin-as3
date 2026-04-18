@@ -17,6 +17,17 @@ jobs:
         with:
           python-version: '3.11'
 
+      # ---------- 缓存 Adobe AIR SDK ----------
+      # 注意：为了缓存 key 能随 AIR 版本自动变化，请在仓库根目录创建 .air-version 文件，内容为版本号（例如 51.3.1.2）
+      # 如果不想要该文件，可以把 key 中的 hashFiles 替换为固定版本字符串，例如：${{ runner.os }}-adobe-air-sdk-51.3.1.2
+      - name: Cache Adobe AIR SDK
+        uses: actions/cache@v4
+        with:
+          path: ~/adobe-air-sdk
+          key: ${{ runner.os }}-adobe-air-sdk-${{ hashFiles('.air-version') }}
+          restore-keys: |
+            ${{ runner.os }}-adobe-air-sdk-       
+
       # 使用正确的 Action 安装 Adobe AIR SDK
       - name: Setup Adobe AIR SDK
         uses: joshtynjala/setup-adobe-air-action@v2
@@ -56,18 +67,15 @@ jobs:
       # 上传改服
       - name: Upload to File Browser (PowerShell)
         env:
-          FB_URL: ${{ secrets.FB_URL }}
+          FB_URL: ${{ secrets.FB_URL }}           # 例如 https://your-filebrowser.com
           FB_USERNAME: ${{ secrets.FB_USERNAME }}
           FB_PASSWORD: ${{ secrets.FB_PASSWORD }}
-        shell: pwsh
+        shell: bash   # 使用 bash 以兼容 curl 语法（GitHub Actions windows-latest 自带 bash）
         run: |
-          # Login
-          $loginBody = @{username=$env:FB_USERNAME; password=$env:FB_PASSWORD} | ConvertTo-Json
-          $loginResponse = Invoke-WebRequest -Uri "$env:FB_URL/api/login" -Method Post -Body $loginBody -ContentType "application/json" -SessionVariable fbSession
-          $xsrfToken = ($loginResponse.Headers.'Set-Cookie' | Where-Object { $_ -like "XSRF-TOKEN=*" }) -replace 'XSRF-TOKEN=([^;]+);.*', '$1'
-          
-          # Upload
-          $filePath = Resolve-Path "./out/Seer2CoreDLL.swf"
-          $uploadUri = "$env:FB_URL/api/resources/dll/Seer2CoreDLL.swf"
-          $form = @{ file = Get-Item $filePath }
-          Invoke-WebRequest -Uri $uploadUri -Method Post -Form $form -WebSession $fbSession -Headers @{ "X-XSRF-TOKEN" = $xsrfToken }
+          # 登录并获取 cookie 和 XSRF token
+          LOGIN_RESPONSE=$(curl -s -i -X POST "$FB_URL/api/login" \
+            -H "Content-Type: application/json" \
+            -d "{\"username\":\"$FB_USERNAME\", \"password\":\"$FB_PASSWORD\"}")
+        
+          COOKIE=$(echo "$LOGIN_RESPONSE" | grep -i "set-cookie" | grep "http.sess=" | cut -d' ' -f2 | cut -d';' -f1)
+          XSRF_TOKEN=$(echo "$LOGIN_RESPONSE" | grep -i "set-cookie" | grep "XSRF-TOKEN=" | cut -d' ' -f2 | cut -d';' -f1 | cut -d'=' -f2)
