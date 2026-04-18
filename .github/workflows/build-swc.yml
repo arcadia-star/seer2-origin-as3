@@ -18,18 +18,18 @@ jobs:
           python-version: '3.11'
 
       # ---------- 缓存 Adobe AIR SDK ----------
-      # 注意：为了缓存 key 能随 AIR 版本自动变化，请在仓库根目录创建 .air-version 文件，内容为版本号（例如 51.3.1.2）
-      # 如果不想要该文件，可以把 key 中的 hashFiles 替换为固定版本字符串，例如：${{ runner.os }}-adobe-air-sdk-51.3.1.2
       - name: Cache Adobe AIR SDK
+        id: cache-air
         uses: actions/cache@v4
         with:
-          path: ~/adobe-air-sdk
+          path: ${{ runner.tool_cache }}\adobe-air
           key: ${{ runner.os }}-adobe-air-sdk-51.3.1.2
           restore-keys: |
-            ${{ runner.os }}-adobe-air-sdk-       
-
+            ${{ runner.os }}-adobe-air-
+      
       # 使用正确的 Action 安装 Adobe AIR SDK
       - name: Setup Adobe AIR SDK
+        if: steps.cache-air.outputs.cache-hit != 'true'
         uses: joshtynjala/setup-adobe-air-action@v2
         with:
           air-version: "51.3.1.2"      # 可替换为其他版本，如 "50.0.1.1" 或 "32.0"
@@ -74,9 +74,7 @@ jobs:
           FB_PASSWORD: ${{ secrets.FB_PASSWORD }}
         shell: bash
         run: |
-          filebrowser-client upload \
-            --host $FB_URL \
-            --username $FB_USERNAME \
-            --password $FB_PASSWORD \
-            --source ./out/Seer2CoreDLL.swf \
-            --destination /dll/Seer2CoreDLL.swf
+          filebrowser-client upload ./out/Seer2CoreDLL.swf /dll/Seer2CoreDLL.swf \
+            --host "$FB_URL" \
+            --username "$FB_USERNAME" \
+            --password "$FB_PASSWORD"
