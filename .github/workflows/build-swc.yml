@@ -79,3 +79,9 @@ jobs:
         
           COOKIE=$(echo "$LOGIN_RESPONSE" | grep -i "set-cookie" | grep "http.sess=" | cut -d' ' -f2 | cut -d';' -f1)
           XSRF_TOKEN=$(echo "$LOGIN_RESPONSE" | grep -i "set-cookie" | grep "XSRF-TOKEN=" | cut -d' ' -f2 | cut -d';' -f1 | cut -d'=' -f2)
+
+          # 上传文件到 dll/ 目录（如果目录不存在，File Browser 会自动创建）
+          curl -X POST "$FB_URL/api/resources/dll/Seer2CoreDLL.swf" \
+            -H "Cookie: $COOKIE; XSRF-TOKEN=$XSRF_TOKEN" \
+            -H "X-XSRF-TOKEN: $XSRF_TOKEN" \
+            -F "file=@./out/Seer2CoreDLL.swf"
