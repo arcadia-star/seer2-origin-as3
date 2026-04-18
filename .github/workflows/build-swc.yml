@@ -63,4 +63,8 @@ jobs:
           FB_PASSWORD: ${{ secrets.FB_PASSWORD }}
         shell: pwsh
         run: |
-          filebrowser-client upload out/Seer2CoreDLL.swf /dll/Seer2CoreDLL.swf --host "$FB_URL" --username "$FB_USERNAME" --password "$FB_PASSWORD" --override
+          filebrowser-client upload out/Seer2CoreDLL.swf /dll/Seer2CoreDLL.swf `
+            --host $env:FB_URL `
+            --username $env:FB_USERNAME `
+            --password $env:FB_PASSWORD `
+            --override
