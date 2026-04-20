@@ -100,6 +100,8 @@ public class FightUI extends Sprite {
         _arenaScene = param1;
         _rawArenaData = param2;
         _arenaData = fromArena(_rawArenaData);
+        //非核心功能，先放到ext里面
+        FightUIExt.append(_arenaData, _rawArenaData);
         updateWeather(_rawArenaData.fightWeather);
         if (!clazz) {
             throw new Error("clazz is not loaded");

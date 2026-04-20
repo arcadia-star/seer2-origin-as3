@@ -1,9 +1,17 @@
 package seer2.next.fight.ui {
+import com.taomee.seer2.app.actor.UserInfoManager;
+import com.taomee.seer2.app.arena.data.ArenaDataInfo;
+import com.taomee.seer2.app.arena.data.TeamInfo;
 import com.taomee.seer2.app.arena.resource.FightUIManager;
 import com.taomee.seer2.app.arena.util.FightPostion;
+import com.taomee.seer2.app.config.ItemConfig;
+import com.taomee.seer2.app.config.PetConfig;
 import com.taomee.seer2.app.net.CommandSet;
 import com.taomee.seer2.app.net.Connection;
+import com.taomee.seer2.app.pet.data.PetInfo;
+import com.taomee.seer2.app.pet.data.PetInfoManager;
 import com.taomee.seer2.core.effects.SoundEffects;
+import com.taomee.seer2.core.utils.URLUtil;
 
 import flash.display.MovieClip;
 import flash.display.Sprite;
@@ -11,6 +19,7 @@ import flash.events.MouseEvent;
 
 import seer2.next.fight.auto.AutoFightPanel;
 import seer2.next.fight.ui.data.ArenaData;
+import seer2.next.fight.ui.data.ItemData;
 import seer2.next.fight.ui.data.PetData;
 
 public class FightUIExt extends Sprite {
@@ -116,6 +125,85 @@ public class FightUIExt extends Sprite {
                 Connection.send(CommandSet.FIGHT_CHANGE_FIGHTER_1032, o.pid);
             } else if (o.hp == 0) {
                 Connection.send(CommandSet.FIGHT_USE_MEDICINE_1048, o.pid, 200064, 1);
+            }
+        }
+    }
+
+    public static function append(arenaData:ArenaData, rawArenaData:ArenaDataInfo):void {
+        var teamInfo:TeamInfo = rawArenaData.leftTeam.teamInfo;
+        var pets:Vector.<PetData> = arenaData.left.pets;
+        for (var i:int = 0; i < pets.length; i++) {
+            var pet:PetData = pets[i];
+            var rawPet:PetInfo = PetInfoManager.getPetInfoFromAllBag(pet.pid);
+            if (!rawPet) {
+                continue;
+            }
+            var item:ItemData;
+
+            var serverSide:int = teamInfo.serverSide;
+            if (serverSide === 1) {
+                item = new ItemData;
+                item.id = 20000000;
+                item.name = "邀战";
+                item.count = 1;
+                item.icon = "todo img here";
+                item.tips = "邀战方";
+                pet.items.push(item);
+            }
+
+            var emblemId:int = rawPet.emblemId;
+            if (emblemId > 0) {
+                item = new ItemData;
+                item.id = emblemId;
+                item.name = ItemConfig.getEmblemDefinition(emblemId).name;
+                item.count = 1;
+                item.icon = URLUtil.getEmblemIcon(emblemId);
+                item.tips = ItemConfig.getEmblemDefinition(emblemId).tip;
+                pet.items.push(item);
+            }
+
+            var decorationId:int = rawPet.decorationId;
+            if (decorationId > 0) {
+                item = new ItemData;
+                item.id = decorationId;
+                item.name = ItemConfig.getEmblemDefinition(decorationId).name;
+                item.count = 1;
+                item.icon = URLUtil.getEmblemIcon(decorationId);
+                item.tips = ItemConfig.getEmblemDefinition(decorationId).tip;
+                pet.items.push(item);
+            }
+
+            var featureId:int = rawPet.featureId;
+            if (featureId > 0) {
+                item = new ItemData;
+                item.id = 10000000 + featureId;
+                item.name = "特性";
+                item.count = 1;
+                item.icon = URLUtil.getFeatureIcon(featureId);
+                item.tips = rawPet.featureDescription;
+                pet.items.push(item);
+            }
+
+            var fetter:String = PetConfig.getPetDefinitionInfo(rawPet.resourceId).fetter;
+            if (fetter) {
+                item = new ItemData;
+                item.id = 20000000 + 1;
+                item.name = "羁绊";
+                item.count = 1;
+                item.icon = "todo img here";
+                item.tips = fetter;
+                pet.items.push(item);
+            }
+
+            var changeTip:String = PetConfig.getPetDefinitionInfo(rawPet.resourceId).changeTip;
+            if (changeTip) {
+                item = new ItemData;
+                item.id = 20000000 + 2;
+                item.name = "变身";
+                item.count = 1;
+                item.icon = "todo img here";
+                item.tips = changeTip;
+                pet.items.push(item);
             }
         }
     }
