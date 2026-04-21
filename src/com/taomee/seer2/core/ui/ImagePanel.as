@@ -1,5 +1,7 @@
 package com.taomee.seer2.core.ui {
 import com.greensock.TweenLite;
+import com.taomee.seer2.app.arena.controller.ArenaUIIsNew;
+import com.taomee.seer2.app.popup.AlertManager;
 import com.taomee.seer2.core.cookie.SharedObjectManager;
 import com.taomee.seer2.core.scene.ImageLevelManager;
 import com.taomee.seer2.core.scene.LayerManager;
@@ -22,6 +24,9 @@ import flash.utils.getDefinitionByName;
 import org.taomee.utils.AlignType;
 import org.taomee.utils.DisplayUtil;
 
+import seer2.next.entry.DynSwitch;
+import seer2.next.fight.ui.FightUI;
+
 public class ImagePanel {
 
     private static var _mc:MovieClip;
@@ -37,6 +42,16 @@ public class ImagePanel {
     private static var _soundOnBtn:MovieClip;
 
     private static var _soundOffBtn:MovieClip;
+
+    private static var _fuiList:Vector.<MovieClip>;
+
+    private static var _clearOnBtn:MovieClip;
+
+    private static var _clearOffBtn:MovieClip;
+
+    private static var _autobsOnBtn:MovieClip;
+
+    private static var _autobsOffBtn:MovieClip;
 
     private static var _stage:Stage;
 
@@ -55,8 +70,167 @@ public class ImagePanel {
         initImage();
         initRemote();
         initSound();
+        initFUI();
+        initClearMode();
+        initAutobs();
         param1.addChild(_mc);
         DisplayUtil.align(_mc, AlignType.MIDDLE_CENTER, new Rectangle(0, 0, param1.stageWidth, param1.stageHeight));
+    }
+
+    private static function initFUI():void {
+        _fuiList = Vector.<MovieClip>([]);
+        var i:int = 0;
+        while (i < 3) {
+            _fuiList.push(_mc["fui" + i + "Btn"]);
+            _fuiList[i].buttonMode = true;
+            _fuiList[i].addEventListener(MouseEvent.CLICK, onFUIClick);
+            _fuiList[i].gotoAndStop(1);
+            i++;
+        }
+        var _loc1_:SharedObject = SharedObjectManager.getUserSharedObject(SharedObjectManager.USER_SETTING);
+        //0是经典，1是现代，2是改服UI(墨佬的FUI)
+        //把1放前面，默认是1，即现代UI
+        if (_loc1_.data["fui"] == null || _loc1_.data["fui"] == 1) {
+            _loc1_.data["fui"] = 1;
+            FightUI.enable = false;
+            ArenaUIIsNew.isNewUI = true;
+            _fuiList[0].gotoAndStop(1);
+            _fuiList[1].gotoAndStop(2);
+            _fuiList[2].gotoAndStop(1);
+        }
+        else if (_loc1_.data["fui"] == 0) {
+            _loc1_.data["fui"] = 0;
+            FightUI.enable = false;
+            ArenaUIIsNew.isNewUI = false;
+            _fuiList[0].gotoAndStop(2);
+            _fuiList[1].gotoAndStop(1);
+            _fuiList[2].gotoAndStop(1);
+        }
+        else {
+            _loc1_.data["fui"] = 2;
+            FightUI.enable = true;
+            _fuiList[0].gotoAndStop(1);
+            _fuiList[1].gotoAndStop(1);
+            _fuiList[2].gotoAndStop(2);
+        }
+    }
+
+    private static function onFUIClick(param1:MouseEvent):void {
+        var i:int = 0;
+        while(i < 3) {
+            if(param1.target == _fuiList[i]) {
+                break;
+            }
+            i++;
+        }
+        if(i < 3) {
+            writeFUICookie(i);
+        }
+        else{
+            AlertManager.showAlert("FUI cookie设置出错");
+        }
+    }
+
+    private static function writeFUICookie(param1:int):void {
+        var _loc2_:SharedObject = SharedObjectManager.getUserSharedObject(SharedObjectManager.USER_SETTING);
+        _loc2_.data["fui"] = param1;
+        SharedObjectManager.flush(_loc2_);
+        if (param1 == 1) {
+            FightUI.enable = false;
+            ArenaUIIsNew.isNewUI = true;
+            _fuiList[0].gotoAndStop(1);
+            _fuiList[1].gotoAndStop(2);
+            _fuiList[2].gotoAndStop(1);
+        }
+        else if (param1 == 0) {
+            FightUI.enable = false;
+            ArenaUIIsNew.isNewUI = false;
+            _fuiList[0].gotoAndStop(2);
+            _fuiList[1].gotoAndStop(1);
+            _fuiList[2].gotoAndStop(1);
+        }
+        else {
+            FightUI.enable = true;
+            _fuiList[0].gotoAndStop(1);
+            _fuiList[1].gotoAndStop(1);
+            _fuiList[2].gotoAndStop(2);
+        }
+    }
+
+    private static function initClearMode():void {
+        _clearOnBtn = _mc["clearOnBtn"];
+        _clearOffBtn = _mc["clearOffBtn"];
+        _clearOnBtn.buttonMode = true;
+        _clearOffBtn.buttonMode = true;
+        var _loc1_:SharedObject = SharedObjectManager.getUserSharedObject(SharedObjectManager.USER_SETTING);
+        if (_loc1_.data["clear"] == null || _loc1_.data["clear"] == 0) {
+            _loc1_.data["clear"] = 0;
+            FightUI.disableMoveFrame = false;
+            DynSwitch.clearMode = false;
+            _clearOffBtn.gotoAndStop(2);
+            _clearOnBtn.gotoAndStop(1);
+        } else {
+            FightUI.disableMoveFrame = true;
+            DynSwitch.clearMode = true;
+            _clearOffBtn.gotoAndStop(1);
+            _clearOnBtn.gotoAndStop(2);
+        }
+        _clearOnBtn.addEventListener(MouseEvent.CLICK, onClearClick);
+        _clearOffBtn.addEventListener(MouseEvent.CLICK, onClearClick);
+    }
+
+    private static function onClearClick(param1:MouseEvent):void {
+        var clearMode:int = param1.target == _clearOnBtn ? 1 : 0;
+        var _loc2_:SharedObject = SharedObjectManager.getUserSharedObject(SharedObjectManager.USER_SETTING);
+        _loc2_.data["clear"] = clearMode;
+        SharedObjectManager.flush(_loc2_);
+        if (clearMode == 1) {
+            FightUI.disableMoveFrame = true;
+            DynSwitch.clearMode = true;
+            _clearOnBtn.gotoAndStop(2);
+            _clearOffBtn.gotoAndStop(1);
+        } else {
+            FightUI.disableMoveFrame = false;
+            DynSwitch.clearMode = false;
+            _clearOnBtn.gotoAndStop(1);
+            _clearOffBtn.gotoAndStop(2);
+        }
+    }
+
+    private static function initAutobs():void {
+        _autobsOnBtn = _mc["autobsOnBtn"];
+        _autobsOffBtn = _mc["autobsOffBtn"];
+        _autobsOnBtn.buttonMode = true;
+        _autobsOffBtn.buttonMode = true;
+        var _loc1_:SharedObject = SharedObjectManager.getUserSharedObject(SharedObjectManager.USER_SETTING);
+        if (_loc1_.data["autobs"] == null || _loc1_.data["autobs"] == 0) {
+            _loc1_.data["autobs"] = 0;
+            DynSwitch.autobsMode = false;
+            _autobsOffBtn.gotoAndStop(2);
+            _autobsOnBtn.gotoAndStop(1);
+        } else {
+            DynSwitch.autobsMode = true;
+            _autobsOffBtn.gotoAndStop(1);
+            _autobsOnBtn.gotoAndStop(2);
+        }
+        _autobsOnBtn.addEventListener(MouseEvent.CLICK, onAutobsClick);
+        _autobsOffBtn.addEventListener(MouseEvent.CLICK, onAutobsClick);
+    }
+
+    private static function onAutobsClick(param1:MouseEvent):void {
+        var autobsMode:int = param1.target == _autobsOnBtn ? 1 : 0;
+        var _loc2_:SharedObject = SharedObjectManager.getUserSharedObject(SharedObjectManager.USER_SETTING);
+        _loc2_.data["autobs"] = autobsMode;
+        SharedObjectManager.flush(_loc2_);
+        if (autobsMode == 1) {
+            DynSwitch.autobsMode = true;
+            _autobsOnBtn.gotoAndStop(2);
+            _autobsOffBtn.gotoAndStop(1);
+        } else {
+            DynSwitch.autobsMode = false;
+            _autobsOnBtn.gotoAndStop(1);
+            _autobsOffBtn.gotoAndStop(2);
+        }
     }
 
     private static function initSound():void {

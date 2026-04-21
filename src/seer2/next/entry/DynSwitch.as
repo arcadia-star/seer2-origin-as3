@@ -8,6 +8,9 @@ public class DynSwitch {
     public static var changeLogModifyTime:String;
     public static var changeLogModifyUser:String;
     public static var changeLogAnnouncement:String;
+    //设置中要设定的一些全局变量
+    public static var clearMode:Boolean;//简洁模式(对战使用法拉动画/无攻击动画)
+    public static var autobsMode:Boolean;//自动战斗时满怒气是否使用必杀
 
     public static var _xml:XML;
 
