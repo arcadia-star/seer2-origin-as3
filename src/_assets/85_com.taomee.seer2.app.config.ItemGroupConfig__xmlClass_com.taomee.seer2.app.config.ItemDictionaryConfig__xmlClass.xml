@@ -1,0 +1,220 @@
+<root>
+    <star index="1" name="小碎片" type="0" value="1000" lvl_cof="0" max_lvl="1" needExp="0" effv="0,10,20,30,40,50,100"
+           desc="小星魂碎片可兑换1000赛尔豆" effdesc="小星魂" itemIcon="202127"/>
+    <star index="2" name="大碎片" type="0" value="2000" lvl_cof="0" max_lvl="1" needExp="0" effv="0,10,20,30,40,50,100"
+           desc="大星魂碎片可兑换2000赛尔豆" effdesc="小星魂" itemIcon="202128"/>
+
+    <star index="1" name="星尘" type="1" value="1000" lvl_cof="0" max_lvl="1" needExp="0" effv="0,10,20,30,40,50,100"
+           desc="转化成100点星力" effdesc="星力绿魂" itemIcon="202098"/>
+    <star index="2" name="星光" type="2" value="2000" lvl_cof="0" max_lvl="1" needExp="0" effv="0,10,20,30,40,50,100"
+           desc="转化成500点星力" effdesc="星力蓝魂" itemIcon="202099"/>
+    <star index="1" name="星耀" type="3" value="1000" lvl_cof="0" max_lvl="1" needExp="0" effv="0,10,20,30,40,50,100"
+           desc="转化成1000点星力" effdesc="星力紫魂" itemIcon="202100"/>
+    <star index="2" name="星辉" type="4" value="2000" lvl_cof="0" max_lvl="1" needExp="0" effv="0,10,20,30,40,50,100"
+           desc="转化成10000点星力" effdesc="星力金魂" itemIcon="202101"/>
+    <star index="1" name="星芒" type="5" value="1000" lvl_cof="0" max_lvl="1" needExp="0" effv="0,10,20,30,40,50,100"
+           desc="转化成100000点星力" effdesc="星力橙魂" itemIcon="202102"/>
+    <star index="2" name="星火" type="6" value="2000" lvl_cof="0" max_lvl="1" needExp="0" effv="0,10,20,30,40,50,100"
+           desc="转化成1000000点星力" effdesc="星力红魂" itemIcon="202103"/>
+
+    <star index="11113" name="百钧" type="1" value="30" lvl_cof="120" max_lvl="6" needExp="0,120,240,480,960,1920"
+           effv="0,10,20,30,40,50,100" desc="满级增加100点物攻值" effdesc="物攻" itemIcon="202028"/>
+    <star index="11115" name="千钧" type="2" value="60" lvl_cof="360" max_lvl="6" needExp="0,360,720,1440,2880,5760"
+           effv="0,25,60,95,130,160,200" desc="满级增加200点物攻值" effdesc="物攻" itemIcon="202029"/>
+    <star index="11122" name="万钧" type="3" value="120" lvl_cof="480" max_lvl="6" needExp="0,480,960,1920,3840,7680"
+           effv="0,50,100,150,200,250,300" desc="满级增加300点物攻值" effdesc="物攻" itemIcon="202030"/>
+    <star index="30015" name="亿钧" type="4" value="120" lvl_cof="600" max_lvl="6" needExp="0,960,1920,3840,7680,15360"
+           effv="0,100,150,200,250,300,350" desc="满级增加350点物攻值 未实装" effdesc="物攻" itemIcon="202031"/>
+    <star index="30016" name="兆钧" type="5" value="120" lvl_cof="720" max_lvl="6" needExp="0,1920,3840,7680,15360,30720"
+           effv="0,150,200,250,300,350,400" desc="满级增加400点物攻值 未实装" effdesc="物攻" itemIcon="202032"/>
+
+    <star index="11114" name="超灵" type="1" value="30" lvl_cof="120" max_lvl="6" needExp="0,120,240,480,960,1920"
+           effv="0,10,20,30,40,50,100" desc="满级增加100点特攻值" effdesc="特攻" itemIcon="202033"/>
+    <star index="11116" name="神灵" type="2" value="60" lvl_cof="360" max_lvl="6" needExp="0,360,720,1440,2880,5760"
+           effv="0,25,60,95,130,160,200" desc="满级增加200点特攻值" effdesc="特攻" itemIcon="202034"/>
+    <star index="11123" name="圣灵" type="3" value="120" lvl_cof="480" max_lvl="6" needExp="0,480,960,1920,3840,7680"
+           effv="0,50,100,150,200,250,300" desc="满级增加300点特攻值" effdesc="特攻" itemIcon="202035"/>
+    <star index="30017" name="尊灵" type="4" value="120" lvl_cof="600" max_lvl="6" needExp="0,960,1920,3840,7680,15360"
+           effv="0,100,150,200,250,300,350" desc="满级增加350点特攻值 未实装" effdesc="特攻" itemIcon="202036"/>
+    <star index="30018" name="王灵" type="5" value="120" lvl_cof="720" max_lvl="6" needExp="0,1920,3840,7680,15360,30720"
+           effv="0,150,200,250,300,350,400" desc="满级增加400点特攻值 未实装" effdesc="特攻" itemIcon="202037"/>
+
+    <star index="30019" name="石盾" type="1" value="30" lvl_cof="120" max_lvl="6" needExp="0,120,240,480,960,1920"
+           effv="0,10,20,30,40,50,100" desc="满级增加100点物防值 未实装" effdesc="物防" itemIcon="202038"/>
+    <star index="11117" name="钢盾" type="2" value="60" lvl_cof="360" max_lvl="6" needExp="0,360,720,1440,2880,5760"
+           effv="0,25,60,95,130,160,200" desc="满级增加200点物防值" effdesc="物防" itemIcon="202039"/>
+    <star index="11124" name="钻盾" type="3" value="120" lvl_cof="480" max_lvl="6" needExp="0,480,960,1920,3840,7680"
+           effv="0,50,100,150,200,250,300" desc="满级增加300点物防值" effdesc="物防" itemIcon="202040"/>
+    <star index="30020" name="金盾" type="4" value="120" lvl_cof="600" max_lvl="6" needExp="0,960,1920,3840,7680,15360"
+           effv="0,100,150,200,250,300,350" desc="满级增加350点物防值 未实装" effdesc="物防" itemIcon="202041"/>
+    <star index="30021" name="晶盾" type="5" value="120" lvl_cof="720" max_lvl="6" needExp="0,1920,3840,7680,15360,30720"
+           effv="0,150,200,250,300,350,400" desc="满级增加400点物防值 未实装" effdesc="物防" itemIcon="202042"/>
+
+    <star index="30022" name="凡界" type="1" value="30" lvl_cof="120" max_lvl="6" needExp="0,120,240,480,960,1920"
+           effv="0,10,20,30,40,50,100" desc="满级增加100点物防值 未实装" effdesc="物防" itemIcon="202043"/>
+    <star index="11118" name="灵界" type="2" value="60" lvl_cof="360" max_lvl="6" needExp="0,360,720,1440,2880,5760"
+           effv="0,25,60,95,130,160,200" desc="满级增加200点特防值" effdesc="特防" itemIcon="202044"/>
+    <star index="11125" name="魂界" type="3" value="120" lvl_cof="480" max_lvl="6" needExp="0,480,960,1920,3840,7680"
+           effv="0,50,100,150,200,250,300" desc="满级增加300点特防值" effdesc="特防" itemIcon="202045"/>
+    <star index="30023" name="神界" type="4" value="120" lvl_cof="600" max_lvl="6" needExp="0,960,1920,3840,7680,15360"
+           effv="0,100,150,200,250,300,350" desc="满级增加350点物防值 未实装" effdesc="物防" itemIcon="202046"/>
+    <star index="30024" name="天界" type="5" value="120" lvl_cof="720" max_lvl="6" needExp="0,1920,3840,7680,15360,30720"
+           effv="0,150,200,250,300,350,400" desc="满级增加400点物防值 未实装" effdesc="物防" itemIcon="202047"/>
+
+    <star index="30025" name="妖助" type="1" value="30" lvl_cof="120" max_lvl="6" needExp="0,120,240,480,960,1920"
+           effv="0,1,2,3,4,5,6" desc="满级增加6%暴击率 未实装" effdesc="暴击" itemIcon="202048"/>
+    <star index="11119" name="鬼助" type="2" value="60" lvl_cof="360" max_lvl="6" needExp="0,360,720,1440,2880,5760"
+           effv="0,2,4,6,8,10,12" desc="满级增加12%暴击率" effdesc="暴击" itemIcon="202049"/>
+    <star index="11126" name="神耀" type="3" value="120" lvl_cof="480" max_lvl="6" needExp="0,480,960,1920,3840,7680"
+           effv="0,5,7,9,11,13,15" desc="满级增加15%暴击率" effdesc="暴击" itemIcon="202050"/>
+    <star index="30001" name="魔耀" type="4" value="240" lvl_cof="960" max_lvl="6" needExp="0,960,1920,3840,7680,15360"
+           effv="0,10,12,14,16,18,20" desc="满级增加20%暴击率 未实装" effdesc="暴击" itemIcon="202051"/>
+    <star index="30026" name="圣助" type="5" value="120" lvl_cof="720" max_lvl="6" needExp="0,1920,3840,7680,15360,30720"
+           effv="0,15,17,19,21,23,25" desc="满级增加25%暴击率 未实装" effdesc="暴击" itemIcon="202052"/>
+
+    <star index="30027" name="妖助" type="1" value="30" lvl_cof="120" max_lvl="6" needExp="0,120,240,480,960,1920"
+           effv="0,2,4,6,8,10,12" desc="满级增加12%抗暴率 未实装" effdesc="抗暴" itemIcon="202053"/>
+    <star index="30004" name="鬼协" type="2" value="60" lvl_cof="360" max_lvl="6" needExp="0,360,720,1440,2880,5760"
+           effv="0,5,7,9,11,13,15" desc="满级增加15%抗暴率" effdesc="抗暴" itemIcon="202054"/>
+    <star index="30005" name="神辉" type="3" value="120" lvl_cof="480" max_lvl="6" needExp="0,480,960,1920,3840,7680"
+           effv="0,10,12,14,16,18,20" desc="满级增加20%抗暴率" effdesc="抗暴" itemIcon="202055"/>
+    <star index="30028" name="神协" type="4" value="240" lvl_cof="960" max_lvl="6" needExp="0,960,1920,3840,7680,15360"
+           effv="0,15,17,19,21,23,25" desc="满级增加25%抗暴率 未实装" effdesc="抗暴" itemIcon="202056"/>
+    <star index="30029" name="圣协" type="5" value="120" lvl_cof="720" max_lvl="6" needExp="0,1920,3840,7680,15360,30720"
+           effv="0,20,22,24,26,28,30" desc="满级增加30%抗暴率 未实装" effdesc="抗暴" itemIcon="202057"/>
+
+    <star index="30030" name="寻魄" type="1" value="30" lvl_cof="120" max_lvl="6" needExp="0,120,240,480,960,1920"
+           effv="0,1,2,3,4,5,6" desc="满级增加6%命中率 未实装" effdesc="命中" itemIcon="202063"/>
+    <star index="11120" name="精准" type="2" value="60" lvl_cof="360" max_lvl="6" needExp="0,360,720,1440,2880,5760"
+           effv="0,2,4,6,8,10,12" desc="满级增加12%命中率" effdesc="命中" itemIcon="202064"/>
+    <star index="11127" name="锁魂" type="3" value="120" lvl_cof="480" max_lvl="6" needExp="0,480,960,1920,3840,7680"
+           effv="0,5,7,9,11,13,15" desc="满级增加15%命中率" effdesc="命中" itemIcon="202065"/>
+    <star index="30031" name="命极" type="4" value="240" lvl_cof="960" max_lvl="6" needExp="0,960,1920,3840,7680,15360"
+           effv="0,10,12,14,16,18,20" desc="满级增加20%命中率 未实装" effdesc="命中" itemIcon="202066"/>
+    <star index="30032" name="形显" type="5" value="120" lvl_cof="720" max_lvl="6" needExp="0,1920,3840,7680,15360,30720"
+           effv="0,15,17,19,21,23,25" desc="满级增加25%命中率 未实装" effdesc="命中" itemIcon="202067"/>
+
+    <star index="30033" name="妖步" type="1" value="30" lvl_cof="120" max_lvl="6" needExp="0,120,240,480,960,1920"
+           effv="0,1,2,3,4,5,6" desc="满级增加6%闪避率 未实装" effdesc="闪避" itemIcon="202058"/>
+    <star index="11121" name="鬼步" type="2" value="60" lvl_cof="360" max_lvl="6" needExp="0,360,720,1440,2880,5760"
+           effv="0,2,4,6,8,10,12" desc="满级增加12%闪避率" effdesc="闪避" itemIcon="202059"/>
+    <star index="11128" name="虚灵" type="3" value="120" lvl_cof="480" max_lvl="6" needExp="0,480,960,1920,3840,7680"
+           effv="0,5,7,9,11,13,15" desc="满级增加15%闪避率" effdesc="闪避" itemIcon="202060"/>
+    <star index="30034" name="神隐" type="4" value="240" lvl_cof="960" max_lvl="6" needExp="0,960,1920,3840,7680,15360"
+           effv="0,10,12,14,16,18,20" desc="满级增加20%闪避率 未实装" effdesc="闪避" itemIcon="202061"/>
+    <star index="30035" name="形隐" type="5" value="120" lvl_cof="720" max_lvl="6" needExp="0,1920,3840,7680,15360,30720"
+           effv="0,15,17,19,21,23,25" desc="满级增加25%闪避率 未实装" effdesc="闪避" itemIcon="202062"/>
+
+    <star index="30036" name="怒激" type="1" value="30" lvl_cof="120" max_lvl="6" needExp="0,120,240,480,960,1920"
+           effv="0,1,2,3,4,5,6" desc="满级每回合恢复自身5点怒气 未实装" effdesc="增怒" itemIcon="202068"/>
+    <star index="30012" name="无极" type="2" value="60" lvl_cof="360" max_lvl="6" needExp="0,360,720,1440,2880,5760"
+           effv="0,2,4,6,8,10,12" desc="满级每回合恢复自身12点怒气 未实装" effdesc="增怒" itemIcon="202069"/>
+    <star index="11129" name="怒劫" type="3" value="120" lvl_cof="480" max_lvl="6" needExp="0,480,960,1920,3840,7680"
+           effv="0,5,7,9,11,13,15" desc="满级每回合恢复自身15点怒气" effdesc="增怒" itemIcon="202070"/>
+    <star index="30037" name="怒憎" type="4" value="240" lvl_cof="960" max_lvl="6" needExp="0,960,1920,3840,7680,15360"
+           effv="0,10,12,14,16,18,20" desc="满级每回合恢复自身20点怒气 未实装" effdesc="增怒" itemIcon="202071"/>
+    <star index="30038" name="怒暴" type="5" value="120" lvl_cof="720" max_lvl="6" needExp="0,1920,3840,7680,15360,30720"
+           effv="0,15,17,19,21,23,25" desc="满级每回合恢复自身25点怒气 未实装" effdesc="增怒" itemIcon="202072"/>
+
+    <star index="30039" name="怒止" type="1" value="30" lvl_cof="120" max_lvl="6" needExp="0,120,240,480,960,1920"
+           effv="0,1,2,3,4,5,6" desc="满级每回合减少对手5点怒气 未实装" effdesc="减怒" itemIcon="202073"/>
+    <star index="30040" name="怒息" type="2" value="60" lvl_cof="360" max_lvl="6" needExp="0,360,720,1440,2880,5760"
+           effv="0,2,4,6,8,10,12" desc="满级每回合减少对手12点怒气 未实装" effdesc="减怒" itemIcon="202074"/>
+    <star index="30006" name="怒浩" type="3" value="120" lvl_cof="480" max_lvl="6" needExp="0,480,960,1920,3840,7680"
+           effv="0,5,7,9,11,13,15" desc="满级每回合减少对手15点怒气 PVE时可能会导致卡机" effdesc="减怒" itemIcon="202075"/>
+    <star index="30041" name="怒灭" type="4" value="240" lvl_cof="960" max_lvl="6" needExp="0,960,1920,3840,7680,15360"
+           effv="0,10,12,14,16,18,20" desc="满级每回合减少对手20点怒气 未实装" effdesc="减怒" itemIcon="202076"/>
+    <star index="30042" name="怒餍" type="5" value="120" lvl_cof="720" max_lvl="6" needExp="0,1920,3840,7680,15360,30720"
+           effv="0,15,17,19,21,23,25" desc="满级每回合减少对手25点怒气 未实装" effdesc="减怒" itemIcon="202077"/>
+
+    <star index="30043" name="生息" type="1" value="30" lvl_cof="120" max_lvl="6" needExp="0,120,240,480,960,1920"
+           effv="0,10,20,30,40,50,100" desc="满级增加100点体力值 未实装" effdesc="体力" itemIcon="202078"/>
+    <star index="30044" name="盎然" type="2" value="60" lvl_cof="360" max_lvl="6" needExp="0,360,720,1440,2880,5760"
+           effv="0,25,60,95,130,160,200" desc="满级增加200点体力值 未实装" effdesc="体力" itemIcon="202079"/>
+    <star index="30045" name="不灭" type="3" value="120" lvl_cof="480" max_lvl="6" needExp="0,480,960,1920,3840,7680"
+           effv="0,50,100,150,200,250,300" desc="满级增加300点体力值 未实装" effdesc="体力" itemIcon="202080"/>
+    <star index="30046" name="命轮" type="4" value="120" lvl_cof="600" max_lvl="6" needExp="0,960,1920,3840,7680,15360"
+           effv="0,100,150,200,250,300,350" desc="满级增加350点体力值 未实装" effdesc="体力" itemIcon="202081"/>
+    <star index="30047" name="星命" type="5" value="120" lvl_cof="720" max_lvl="6" needExp="0,1920,3840,7680,15360,30720"
+           effv="0,150,200,250,300,350,400" desc="满级增加400点体力值 未实装" effdesc="体力" itemIcon="202082"/>
+
+    <star index="30048" name="疾风" type="1" value="30" lvl_cof="120" max_lvl="6" needExp="0,120,240,480,960,1920"
+           effv="0,10,20,30,40,50,100" desc="满级增加100点速度值 未实装" effdesc="速度" itemIcon="202083"/>
+    <star index="30049" name="飞鸿" type="2" value="60" lvl_cof="360" max_lvl="6" needExp="0,360,720,1440,2880,5760"
+           effv="0,25,60,95,130,160,200" desc="满级增加200点速度值 未实装" effdesc="速度" itemIcon="202084"/>
+    <star index="30050" name="耀空" type="3" value="120" lvl_cof="480" max_lvl="6" needExp="0,480,960,1920,3840,7680"
+           effv="0,50,100,150,200,250,300" desc="满级增加300点速度值 未实装" effdesc="速度" itemIcon="202085"/>
+    <star index="30051" name="驱影" type="4" value="120" lvl_cof="600" max_lvl="6" needExp="0,960,1920,3840,7680,15360"
+           effv="0,100,150,200,250,300,350" desc="满级增加350点速度值 未实装" effdesc="速度" itemIcon="202086"/>
+    <star index="30052" name="逐光" type="5" value="120" lvl_cof="720" max_lvl="6" needExp="0,1920,3840,7680,15360,30720"
+           effv="0,150,200,250,300,350,400" desc="满级增加400点速度值 未实装" effdesc="速度" itemIcon="202087"/>
+
+    <star index="30053" name="蛮力" type="1" value="30" lvl_cof="120" max_lvl="6" needExp="0,120,240,480,960,1920"
+           effv="0,1,2,3,4,5,6" desc="满级造成伤害增加6% 未实装" effdesc="增伤" itemIcon="202088"/>
+    <star index="30054" name="大力" type="2" value="60" lvl_cof="360" max_lvl="6" needExp="0,360,720,1440,2880,5760"
+           effv="0,2,4,6,8,10,12" desc="满级造成伤害增加12% 未实装" effdesc="增伤" itemIcon="202089"/>
+    <star index="30055" name="强力" type="3" value="120" lvl_cof="480" max_lvl="6" needExp="0,480,960,1920,3840,7680"
+           effv="0,5,7,9,11,13,15" desc="满级造成伤害增加15% 未实装" effdesc="增伤" itemIcon="202090"/>
+    <star index="30056" name="巨力" type="4" value="240" lvl_cof="960" max_lvl="6" needExp="0,960,1920,3840,7680,15360"
+           effv="0,10,12,14,16,18,20" desc="满级造成伤害增加20% 未实装" effdesc="增伤" itemIcon="202091"/>
+    <star index="30057" name="神力" type="5" value="120" lvl_cof="720" max_lvl="6" needExp="0,1920,3840,7680,15360,30720"
+           effv="0,15,17,19,21,23,25" desc="满级造成伤害增加25% 未实装" effdesc="增伤" itemIcon="202092"/>
+
+    <star index="30058" name="妖护" type="1" value="30" lvl_cof="120" max_lvl="6" needExp="0,120,240,480,960,1920"
+           effv="0,1,2,3,4,5,6" desc="满级受到伤害降低6% 未实装" effdesc="减伤" itemIcon="202093"/>
+    <star index="30059" name="鬼护" type="2" value="60" lvl_cof="360" max_lvl="6" needExp="0,360,720,1440,2880,5760"
+           effv="0,2,4,6,8,10,12" desc="满级受到伤害降低12% 未实装" effdesc="减伤" itemIcon="202094"/>
+    <star index="30060" name="灵护" type="3" value="120" lvl_cof="480" max_lvl="6" needExp="0,480,960,1920,3840,7680"
+           effv="0,5,7,9,11,13,15" desc="满级受到伤害降低15% 未实装" effdesc="减伤" itemIcon="202095"/>
+    <star index="30061" name="神护" type="4" value="240" lvl_cof="960" max_lvl="6" needExp="0,960,1920,3840,7680,15360"
+           effv="0,10,12,14,16,18,20" desc="满级受到伤害降低20% 未实装" effdesc="减伤" itemIcon="202096"/>
+    <star index="30062" name="圣护" type="5" value="120" lvl_cof="720" max_lvl="6" needExp="0,1920,3840,7680,15360,30720"
+           effv="0,15,17,19,21,23,25" desc="满级受到伤害降低25% 未实装" effdesc="减伤" itemIcon="202097"/>
+
+    <star index="30002" name="魔灵" type="4" value="240" lvl_cof="960" max_lvl="6" needExp="0,960,1920,3840,7680,15360"
+           effv="0,10,15,20,25,30,35" desc="满级每回合恢复35点怒气（疑似专属星魂 官方预案 未实装）" effdesc="增怒" itemIcon="202072"/>
+
+    <star index="30003" name="界神" type="4" value="240" lvl_cof="960" max_lvl="6" needExp="0,960,1920,3840,7680,15360"
+           effv="0,1,2,3,4,5,6;0,1,2,3,4,5,6" desc="满级使首发精灵特攻伤害增加6% 受到特攻伤害减少6% 换场失效（实际效果）【圣灵界王神 圣界神王专属 由商城购买】"
+           effdesc="全队增益" itemIcon="202118"/>
+    <star index="30011" name="界神" type="4" value="240" lvl_cof="960" max_lvl="6" needExp="0,960,1920,3840,7680,15360"
+           effv="0,1,2,4,6,8,10;0,1,2,4,6,8,10" desc="满级使全队特攻伤害增加10% 受到特攻伤害减少10%（设计效果）【圣灵界王神 圣界神王专属 由商城购买】"
+           effdesc="全队增益" itemIcon="202118"/>
+
+    <star index="30007" name="制念" type="4" value="240" lvl_cof="960" max_lvl="6" needExp="0,960,1920,3840,7680,15360"
+           effv="0,10,20,40,60,80,100" desc="满级免疫超能系技能伤害【米咔专属 由商城购买】" effdesc="减伤" itemIcon="202104"/>
+
+    <star index="30008" name="王恩" type="4" value="240" lvl_cof="960" max_lvl="6" needExp="0,960,1920,3840,7680,15360"
+           effv="0,5,10,15,20,30,40" desc="满级我方非约瑟/约瑟王的首发精灵受到伤害减少40% 换场失效（实际效果）【约瑟 约瑟王专属 由商城购买】" effdesc="全队增益" itemIcon="202109"/>
+    <star index="30014" name="王恩" type="4" value="240" lvl_cof="960" max_lvl="6" needExp="0,960,1920,3840,7680,15360"
+           effv="0,5,10,15,20,30,40" desc="满级我方非约瑟/约瑟王的精灵受到伤害减少40%（设计效果）【约瑟 约瑟王专属 由商城购买】" effdesc="全队增益" itemIcon="202109"/>
+
+    <star index="30009" name="齐天" type="4" value="240" lvl_cof="960" max_lvl="6" needExp="0,960,1920,3840,7680,15360"
+           effv="0,60,120,180,240,300,360" desc="满级增加360点物攻值【齐天大圣专属 由商城购买/双11活动消费奖励】" effdesc="物攻" itemIcon="202124"/>
+
+    <star index="30010" name="金鸡" type="4" value="240" lvl_cof="960" max_lvl="6" needExp="0,960,1920,3840,7680,15360"
+           effv="0,5,7,9,11,13,15" desc="满级我方精灵必杀暴击率提升15% 对罗亚啼克效果2倍【罗克 罗慕洛 罗亚啼克专属 已绝版】" effdesc="全队增益"
+        itemIcon="202121"/>
+
+    <star index="30013" name="光启" type="3" value="240" lvl_cof="960" max_lvl="6" needExp="0,480,960,1920,3840,7680"
+           effv="0,10,12,14,16,18,20" desc=" 效果未知（官方预案 未实装）" effdesc="未知" itemIcon="202115"/>
+
+    <star index="30063" name="伙伴" type="4" value="240" lvl_cof="960" max_lvl="6" needExp="0,960,1920,3840,7680,15360"
+           effv="0,10,20,40,60,80,100" desc="满级全队成员获得经验增加50% 可叠加【主宠专属】 未实装" effdesc="经验" itemIcon="202105"/>
+
+    <star index="30064" name="圣念" type="4" value="240" lvl_cof="960" max_lvl="6" needExp="0,960,1920,3840,7680,15360"
+           effv="0,10,20,40,60,80,100" desc="满级暴击伤害增加50%【XXXX专属】 未实装" effdesc="暴伤" itemIcon="202106"/>
+
+    <star index="30065" name="青冥" type="4" value="240" lvl_cof="960" max_lvl="6" needExp="0,960,1920,3840,7680,15360"
+           effv="0,10,20,40,60,80,100" desc="满级对微弱系造成伤害翻倍【碧珞·逍遥专属】 未实装" effdesc="增伤" itemIcon="202107"/>
+
+    <star index="30066" name="护星" type="4" value="240" lvl_cof="960" max_lvl="6" needExp="0,960,1920,3840,7680,15360"
+           effv="0,10,20,40,60,80,100" desc="满级每个星魂每回合恢复20点体力【XXXXX专属】 未实装" effdesc="回复" itemIcon="202108"/>
+
+    <star index="30067" name="友情" type="4" value="240" lvl_cof="960" max_lvl="6" needExp="0,960,1920,3840,7680,15360"
+           effv="0,10,20,40,60,80,100" desc="满级使全队受到伤害减少25% 使全队受到伤害减少25点【XXX专属】 未实装" effdesc="减伤" itemIcon="202110"/>
+
+    <star index="30068" name="朦胧" type="4" value="240" lvl_cof="960" max_lvl="6" needExp="0,960,1920,3840,7680,15360"
+           effv="0,10,20,40,60,80,100" desc="满级使自身速度值提升10% 恢复量增加50%【XXX专属】 未实装" effdesc="增速" itemIcon="202111"/>
+
+</root>
