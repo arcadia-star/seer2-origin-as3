@@ -62,6 +62,7 @@ jobs:
       - name: Install filebrowser-client
         run: pip install filebrowser-client
       - name: Upload using filebrowser-client
+        if: github.repository == 'arcadia-star/seer2-origin-as3'
         env:
           FB_URL: ${{ secrets.FB_URL }}
           FB_USERNAME: ${{ secrets.FB_USERNAME }}
