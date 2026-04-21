@@ -56,6 +56,7 @@ import com.taomee.seer2.core.utils.URLUtil;
 import flash.display.Sprite;
 import flash.utils.IDataInput;
 
+import seer2.next.entry.DynSwitch;
 import seer2.next.fight.auto.AutoFightPanel;
 
 import seer2.next.fight.ui.data.*;
@@ -757,10 +758,13 @@ public class FightUI extends Sprite {
                     break;
                 }
             }
-            for (i = 0; i < skills.length; i++) {
-                if (skills[i].enable && skills[i].category === '必杀') {
-                    skill = skills[i].id;
-                    break;
+            if(DynSwitch.autobsMode)
+            {
+                for (i = 0; i < skills.length; i++) {
+                    if (skills[i].enable && skills[i].category === '必杀') {
+                        skill = skills[i].id;
+                        break;
+                    }
                 }
             }
             Connection.send(CommandSet.FIGHT_USE_SKILL_1502, skill);

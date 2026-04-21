@@ -19,11 +19,14 @@ import com.taomee.seer2.app.popup.AlertManager;
 import com.taomee.seer2.app.popup.ServerMessager;
 import com.taomee.seer2.app.quest.QuestManager;
 import com.taomee.seer2.core.utils.DisplayObjectUtil;
+import com.taomee.seer2.core.ui.ImagePanel;
 
 import flash.display.SimpleButton;
 import flash.display.Sprite;
 import flash.events.Event;
 import flash.events.MouseEvent;
+
+import seer2.next.entry.DynSwitch;
 
 public class FightControlPanel extends Sprite {
 
@@ -182,7 +185,7 @@ public class FightControlPanel extends Sprite {
             this.showSkillPanel();
             _loc2_ = -1;
             if (this._controlledFighter.fighterInfo.hasSuperSkill()) {
-                if ((_loc6_ = this._controlledFighter.fighterInfo.getSuperSkill()) != null && this._controlledFighter.fighterInfo.checkSkillAnger(_loc6_)) {
+                if ((_loc6_ = this._controlledFighter.fighterInfo.getSuperSkill()) != null && this._controlledFighter.fighterInfo.checkSkillAnger(_loc6_) && DynSwitch.autobsMode) {
                     _loc2_ = int(_loc6_.id);
                     _loc1_ = new OperateEvent(OperateEvent.OPERATE_SKILL, _loc2_, OperateEvent.OPERATE_END);
                     this.endInput(_loc1_);
