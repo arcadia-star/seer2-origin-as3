@@ -40,6 +40,8 @@ public class StarInfo {
 
     public var desc:Array;
 
+    public var itemIcon:int;
+
     public function StarInfo() {
         super();
     }
@@ -63,6 +65,7 @@ public class StarInfo {
         param2.effdesc = param1.effdesc;
         param2.buffSwf = param1.buffSwf;
         param2.effvalue = param1.effvalue;
+        param2.itemIcon = param1.itemIcon;
     }
 }
 }
