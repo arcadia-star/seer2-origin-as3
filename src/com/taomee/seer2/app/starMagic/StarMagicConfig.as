@@ -32,6 +32,7 @@ public class StarMagicConfig {
         var _loc15_:Array = null;
         var _loc16_:Array = null;
         var _loc17_:int = 0;
+        var _loc18_:String = null;
         _xml = XML(new _xmlClass());
         _starHunInfoVec = Vector.<StarInfo>([]);
         var _loc2_:XMLList = _xml.descendants("runes");
@@ -48,6 +49,7 @@ public class StarMagicConfig {
             _loc12_ = String(_loc3_.attribute("effdesc"));
             _loc13_ = uint(_loc3_.attribute("buffSwf"));
             _loc14_ = String(_loc3_.attribute("effv"));
+            _loc18_ = String(_loc3_.attribute("itemIcon"));
             _loc15_ = _loc11_.split(",");
             _loc1_.id = int(_loc9_);
             _loc1_.buffId = int(_loc9_);
@@ -60,6 +62,7 @@ public class StarMagicConfig {
             _loc1_.buffSwf = _loc13_;
             _loc1_.effdesc = _loc12_;
             _loc1_.desc = _loc10_.split(";");
+            _loc1_.itemIcon = int(_loc18_);
             _loc15_ = _loc14_.split(";");
             _loc16_ = new Array();
             _loc17_ = 0;
