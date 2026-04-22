@@ -676,6 +676,9 @@ public class FightUI extends Sprite {
                     "closeCallback": onFightEnd
                 });
             });
+        } else if (AutoFightPanel.isRunning) {
+            //鱼自动战斗开启时不展示面板
+            pushNextFunc(onFightEnd);
         } else {
             var frame:FrameData = new FrameData;
             frame.end = new EndData();
@@ -758,8 +761,7 @@ public class FightUI extends Sprite {
                     break;
                 }
             }
-            if(DynSwitch.autobsMode)
-            {
+            if (DynSwitch.autobsMode) {
                 for (i = 0; i < skills.length; i++) {
                     if (skills[i].enable && skills[i].category === '必杀') {
                         skill = skills[i].id;
