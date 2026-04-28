@@ -66,6 +66,7 @@ public class StarInfo {
         param2.buffSwf = param1.buffSwf;
         param2.effvalue = param1.effvalue;
         param2.itemIcon = param1.itemIcon;
+        param2.nameT = param1.nameT;
     }
 }
 }
