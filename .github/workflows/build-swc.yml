@@ -29,25 +29,13 @@ jobs:
           air-version: "51.3.1.2"      # 可替换为其他版本，如 "50.0.1.1" 或 "32.0"
           accept-license: true          # 必须接受许可
 
-      # 编译 SWC
+      # 编译 SWC、DLL
       - name: Compile SWC with compc
-        shell: cmd
+        shell: bash
         run: |
-          compc -target-player=32.0 ^
-            -source-path src ^
-            -library-path lib/as3corelib.swc ^
-            -library-path lib/greensock-taomee.swc ^
-            -library-path lib/textLayout.swc ^
-            -output out/Seer2CoreDLL.swc ^
-            -include-sources src ^
-            -warnings=false
-
-      # 运行 Python 后处理脚本
-      - name: Run Python post-processing script
-        shell: pwsh
-        run: |
-          cd _scripts
-          python build-seer2-core-dll.py
+          current_time=$(date +'%Y-%m-%d_%H:%M:%S')  
+          sed -i "s/#BuildVersion#/${current_time}/g" "src/seer2/next/donotmodify/BuildVersion.as"
+          ./build.sh
 
       # 上传产物（可选）
       - name: Upload artifacts

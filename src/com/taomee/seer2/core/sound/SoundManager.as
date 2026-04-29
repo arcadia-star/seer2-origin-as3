@@ -122,7 +122,7 @@ public class SoundManager {
         return "";
     }
 
-    private static function getCurrentMapSoundSetting():String {
+    public static function getCurrentMapSoundSetting():String {
         var _loc3_:XML = null;
         if (SceneManager.active == null) {
             return "";
@@ -216,7 +216,7 @@ public class SoundManager {
         }
     }
 
-    private static function parseSoundSetting(param1:String):Array {
+    public static function parseSoundSetting(param1:String):Array {
         var _loc6_:String = null;
         var _loc7_:Array = null;
         var _loc8_:String = null;

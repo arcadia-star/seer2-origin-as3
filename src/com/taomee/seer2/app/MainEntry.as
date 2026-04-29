@@ -60,6 +60,8 @@ import org.taomee.manager.TaomeeManager;
 import org.taomee.utils.StringUtil;
 import org.taomee.utils.Tick;
 
+import seer2.next.donotmodify.BuildVersion;
+
 import seer2.next.entry.DynConfig;
 import seer2.next.entry.NextEntry;
 import seer2.next.fight.ui.FightUI;
@@ -193,6 +195,7 @@ public class MainEntry {
         dbgToolItem.addEventListener(ContextMenuEvent.MENU_ITEM_SELECT,function(param1:ContextMenuEvent):void{
             DynConfig.mainEntry.showDebugToolPanel(true);
         });
+        t.customItems.push(new ContextMenuItem(BuildVersion.BuildVersion));
     }
 
     private function loginOnline():void {
