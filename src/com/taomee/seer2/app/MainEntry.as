@@ -60,6 +60,8 @@ import org.taomee.manager.TaomeeManager;
 import org.taomee.utils.StringUtil;
 import org.taomee.utils.Tick;
 
+import seer2.next.donotmodify.BuildVersion;
+
 import seer2.next.entry.DynConfig;
 import seer2.next.entry.NextEntry;
 import seer2.next.fight.ui.FightUI;
@@ -200,6 +202,7 @@ public class MainEntry {
             FightUI.disableMoveFrame = !FightUI.disableMoveFrame;
             AlertManager.showAlert("切换成功:" + (FightUI.disableMoveFrame ? "开启" : "关闭"));
         });
+        t.customItems.push(new ContextMenuItem(BuildVersion.BuildVersion));
     }
 
     private function loginOnline():void {
