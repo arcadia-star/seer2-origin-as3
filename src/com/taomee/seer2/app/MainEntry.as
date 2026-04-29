@@ -172,6 +172,7 @@ public class MainEntry {
         DisplayObjectUtil.removeFromParent(this._bg);
         imageLevelItem = new ContextMenuItem("游戏设置");
         var t:Object = this._root.contextMenu;
+        t.customItems.push(new ContextMenuItem("您的DLL版本：" + BuildVersion.BuildVersion));
         t.customItems.push(imageLevelItem);
         imageLevelItem.addEventListener(ContextMenuEvent.MENU_ITEM_SELECT, function (param1:ContextMenuEvent):void {
             getImageModuleShow();
@@ -192,10 +193,9 @@ public class MainEntry {
         });
         var dbgToolItem:ContextMenuItem = new ContextMenuItem("调试工具");
         t.customItems.push(dbgToolItem);
-        dbgToolItem.addEventListener(ContextMenuEvent.MENU_ITEM_SELECT,function(param1:ContextMenuEvent):void{
+        dbgToolItem.addEventListener(ContextMenuEvent.MENU_ITEM_SELECT, function (param1:ContextMenuEvent):void {
             DynConfig.mainEntry.showDebugToolPanel(true);
         });
-        t.customItems.push(new ContextMenuItem(BuildVersion.BuildVersion));
     }
 
     private function loginOnline():void {

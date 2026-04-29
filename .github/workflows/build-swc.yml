@@ -33,7 +33,7 @@ jobs:
       - name: Compile SWC with compc
         shell: bash
         run: |
-          current_time=$(date +'%Y-%m-%d_%H:%M:%S')  
+          current_time=$(TZ='Asia/Shanghai' date +'%Y-%m-%d_%H:%M:%S')
           sed -i "s/#BuildVersion#/${current_time}/g" "src/seer2/next/donotmodify/BuildVersion.as"
           ./build.sh
 
