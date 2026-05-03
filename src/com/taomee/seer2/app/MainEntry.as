@@ -334,8 +334,7 @@ public class MainEntry {
         } else if (param1.id == "2") {
         }
         //先放在这里，理论上要等进入地图才行
-        FightUI.enable = false;
-        AlertManager.showAutoCloseAlert("FightUI内测中，可以通过右键菜单开启，如有BUG辛苦反馈", 3);
+        AlertManager.showAutoCloseAlert("FightUI(改服UI)内测中，可以通过设置菜单开启，如有BUG辛苦反馈", 3);
     }
 
     private function onQuestInit(param1:QuestEvent):void {
