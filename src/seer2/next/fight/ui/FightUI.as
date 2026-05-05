@@ -182,7 +182,7 @@ public class FightUI extends Sprite {
         var data:Object = event.data;
         var functional:int = data.functional;
         if (functional === 1) {
-            _uiStyle = (_uiStyle + 1) % 4;
+            _uiStyle = (_uiStyle + 1) % 5;
             _player.updateUiStyle(_uiStyle);
         }
         if (AutoFightPanel.isRunning) {

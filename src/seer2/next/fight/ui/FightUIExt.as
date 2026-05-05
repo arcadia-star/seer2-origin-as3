@@ -19,8 +19,8 @@ import flash.events.MouseEvent;
 
 import seer2.next.fight.auto.AutoFightPanel;
 import seer2.next.fight.ui.data.ArenaData;
-import seer2.next.fight.ui.data.ItemData;
 import seer2.next.fight.ui.data.PetData;
+import seer2.next.fight.ui.data.PetExtData;
 
 public class FightUIExt extends Sprite {
     public static var isDeposit:Boolean = false;
@@ -138,73 +138,34 @@ public class FightUIExt extends Sprite {
             if (!rawPet) {
                 continue;
             }
-            var item:ItemData;
-
-            var serverSide:int = teamInfo.serverSide;
-            if (serverSide === 1) {
-                item = new ItemData;
-                item.id = 20000000;
-                item.name = "邀战";
-                item.count = 1;
-                item.icon = "todo img here";
-                item.tips = "邀战方";
-                pet.items.push(item);
-            }
-
-            var emblemId:int = rawPet.emblemId;
-            if (emblemId > 0) {
-                item = new ItemData;
-                item.id = emblemId;
-                item.name = ItemConfig.getEmblemDefinition(emblemId).name;
-                item.count = 1;
-                item.icon = URLUtil.getEmblemIcon(emblemId);
-                item.tips = ItemConfig.getEmblemDefinition(emblemId).tip;
-                pet.items.push(item);
-            }
-
-            var decorationId:int = rawPet.decorationId;
-            if (decorationId > 0) {
-                item = new ItemData;
-                item.id = decorationId;
-                item.name = ItemConfig.getEmblemDefinition(decorationId).name;
-                item.count = 1;
-                item.icon = URLUtil.getEmblemIcon(decorationId);
-                item.tips = ItemConfig.getEmblemDefinition(decorationId).tip;
-                pet.items.push(item);
-            }
-
+            var petExtData:PetExtData = new PetExtData;
+            petExtData.monster = rawPet.resourceId;
+            petExtData.sex = rawPet.sex;
             var featureId:int = rawPet.featureId;
             if (featureId > 0) {
-                item = new ItemData;
-                item.id = 10000000 + featureId;
-                item.name = "特性";
-                item.count = 1;
-                item.icon = URLUtil.getFeatureIcon(featureId);
-                item.tips = rawPet.featureDescription;
-                pet.items.push(item);
+                petExtData.featureTips = rawPet.featureDescription;
             }
-
+            var emblemId:int = rawPet.emblemId;
+            if (emblemId > 0) {
+                petExtData.emblem1 = emblemId;
+                petExtData.emblem1Tips = ItemConfig.getEmblemDefinition(emblemId).tip;
+            }
+            var decorationId:int = rawPet.decorationId;
+            if (decorationId > 0) {
+                petExtData.emblem2 = decorationId;
+                petExtData.emblem2Tips = ItemConfig.getEmblemDefinition(decorationId).tip;
+            }
             var fetter:String = PetConfig.getPetDefinitionInfo(rawPet.resourceId).fetter;
             if (fetter) {
-                item = new ItemData;
-                item.id = 20000000 + 1;
-                item.name = "羁绊";
-                item.count = 1;
-                item.icon = "todo img here";
-                item.tips = fetter;
-                pet.items.push(item);
+                petExtData.fetterTips = fetter;
             }
-
             var changeTip:String = PetConfig.getPetDefinitionInfo(rawPet.resourceId).changeTip;
             if (changeTip) {
-                item = new ItemData;
-                item.id = 20000000 + 2;
-                item.name = "变身";
-                item.count = 1;
-                item.icon = "todo img here";
-                item.tips = changeTip;
-                pet.items.push(item);
+                petExtData.morphTips = changeTip;
             }
+            petExtData.showIcon = 1;
+
+            pet.ext = petExtData;
         }
     }
 }
