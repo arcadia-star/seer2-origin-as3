@@ -31865,6 +31865,12 @@ ChgMonId：神迹变身后精灵monID，变身前后都要配
         <LearnableMoves>
         </LearnableMoves>
     </Monster>
+    <Monster NumbersID="7890" ID="7890" DefName="简洁动画" Type="24" GrowthType="0" HP="0" Atk="0" Def="0"
+             SpAtk="0" SpDef="0" Spd="0" YieldingExp="0" CatchRate="0" YieldingEV="0" EvolvesFrom="0"
+             EvolvesTo="0" Height="0 0" Weight="0 0" Features="9999" Gender="0 10" FreeForbidden="1" StarLv="5">
+        <LearnableMoves>
+        </LearnableMoves>
+    </Monster>
     <!-- 精灵信息目前最多定义 3000个，注意越界定义 -->
     <!-- ID段9000+以上为人模社区形象 -->
 </Monsters>

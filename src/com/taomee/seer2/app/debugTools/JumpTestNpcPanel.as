@@ -152,10 +152,14 @@ public class JumpTestNpcPanel extends Sprite {
         this._mapJumpBtn.addEventListener(MouseEvent.CLICK, this.onMapJumpBtn);
         this._npcDragSwitchBtn.addEventListener(MouseEvent.CLICK, this.onNpcSwitchBtn);
         this._confirmBtn.addEventListener(MouseEvent.CLICK, this.onConfirmBtn);
+        this._confirmBtn.visible = false;//同下
+        this._mainUI["testDialogBtn"].visible = false;//嘤:隐藏起来防止有人问
+        this._selectedMc.visible = false;
         this._mainUI["testDialogBtn"].addEventListener(MouseEvent.CLICK, this.onTestDialogBtnClick);
         var _loc1_:int = 0;
         _loc1_ = 0;
         while (_loc1_ < this._tabBtnList.length) {
+            this._tabBtnList[_loc1_].visible = false;//也是隐藏起来,反正用不了
             this._tabBtnList[_loc1_].addEventListener(MouseEvent.CLICK, this.onTabBtn);
             _loc1_++;
         }

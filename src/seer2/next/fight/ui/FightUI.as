@@ -56,6 +56,7 @@ import com.taomee.seer2.core.utils.URLUtil;
 import flash.display.Sprite;
 import flash.utils.IDataInput;
 
+import seer2.next.entry.DynSwitch;
 import seer2.next.fight.auto.AutoFightPanel;
 
 import seer2.next.fight.ui.data.*;
@@ -124,7 +125,6 @@ public class FightUI extends Sprite {
         pushNextFunc(function ():void {
             Connection.send(CommandSet.FIGHT_RES_READY_1501, fightIndex);
             _player.playFightWaiting();
-            SoundManager.backgroundSoundEnabled = true;
             addChild(new FightUIExt());
         });
 
@@ -677,6 +677,9 @@ public class FightUI extends Sprite {
                     "closeCallback": onFightEnd
                 });
             });
+        } else if (AutoFightPanel.isRunning) {
+            //鱼自动战斗开启时不展示面板
+            pushNextFunc(onFightEnd);
         } else {
             var frame:FrameData = new FrameData;
             frame.end = new EndData();
@@ -759,10 +762,12 @@ public class FightUI extends Sprite {
                     break;
                 }
             }
-            for (i = 0; i < skills.length; i++) {
-                if (skills[i].enable && skills[i].category === '必杀') {
-                    skill = skills[i].id;
-                    break;
+            if (DynSwitch.autobsMode) {
+                for (i = 0; i < skills.length; i++) {
+                    if (skills[i].enable && skills[i].category === '必杀') {
+                        skill = skills[i].id;
+                        break;
+                    }
                 }
             }
             Connection.send(CommandSet.FIGHT_USE_SKILL_1502, skill);
@@ -962,7 +967,10 @@ public class FightUI extends Sprite {
         arena.left.capsules = fromItem(PetItemType.CAPSULE);
         arena.round = 0;
         arena.mapSwf = MapLoader.lastMapUrl;
-//        arena.mapSound = URLUtil.getMapSoundUrl(obj.resourceId);
+        var soundSetting:Array = SoundManager.parseSoundSetting(SoundManager.getCurrentMapSoundSetting());
+        if (soundSetting.length > 0) {
+            arena.mapSound = soundSetting[0].url;
+        }
         return arena;
     }
 

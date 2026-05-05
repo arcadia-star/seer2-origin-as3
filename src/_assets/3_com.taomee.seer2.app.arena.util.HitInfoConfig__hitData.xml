@@ -1644,6 +1644,8 @@
     <fighter id='2995' physics='30' attribute='18' special='35' critical='0' fit='0'/>
     <fighter id='2996' physics='39' attribute='34' special='24' critical='0' fit='0'/>
     <fighter id='2997' physics='34' attribute='38' special='55' critical='0' fit='0'/>
+    <!--<嘤:我把7890设定为简洁模式的无动画皮肤，一直用法拉感觉不是个事>-->
+    <fighter id='7890' physics='0'  attribute='0'  special='0'  critical='0' fit='0'/>
     <!--<id 10000后的都是皮肤>-->
     <fighter id='10098' physics='29' attribute='35' special='47' critical='47' fit='178'/>
     <fighter id='10105' physics='30' attribute='35' special='44' critical='74' fit='131'/>

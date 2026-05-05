@@ -60,6 +60,8 @@ import org.taomee.manager.TaomeeManager;
 import org.taomee.utils.StringUtil;
 import org.taomee.utils.Tick;
 
+import seer2.next.donotmodify.BuildVersion;
+
 import seer2.next.entry.DynConfig;
 import seer2.next.entry.NextEntry;
 import seer2.next.fight.ui.FightUI;
@@ -168,8 +170,9 @@ public class MainEntry {
         TaomeeManager.stage.removeEventListener(Event.RESIZE, this.onResize);
         SceneManager.removeEventListener(SceneEvent.SWITCH_COMPLETE, this.onSwitchComplete);
         DisplayObjectUtil.removeFromParent(this._bg);
-        imageLevelItem = new ContextMenuItem("设置画质");
+        imageLevelItem = new ContextMenuItem("游戏设置");
         var t:Object = this._root.contextMenu;
+        t.customItems.push(new ContextMenuItem("您的DLL版本：" + BuildVersion.BuildVersion));
         t.customItems.push(imageLevelItem);
         imageLevelItem.addEventListener(ContextMenuEvent.MENU_ITEM_SELECT, function (param1:ContextMenuEvent):void {
             getImageModuleShow();
@@ -188,17 +191,10 @@ public class MainEntry {
                 AlertManager.showAlert("重新加载成功");
             });
         });
-        var useFightUI:ContextMenuItem = new ContextMenuItem("使用FightUI");
-        t.customItems.push(useFightUI);
-        useFightUI.addEventListener(ContextMenuEvent.MENU_ITEM_SELECT, function (param1:ContextMenuEvent):void {
-            FightUI.enable = !FightUI.enable;
-            AlertManager.showAlert("切换成功:" + (FightUI.enable ? "开启" : "关闭"));
-        });
-        var disableMoveFrame:ContextMenuItem = new ContextMenuItem("FightUI简洁模式");
-        t.customItems.push(disableMoveFrame);
-        disableMoveFrame.addEventListener(ContextMenuEvent.MENU_ITEM_SELECT, function (param1:ContextMenuEvent):void {
-            FightUI.disableMoveFrame = !FightUI.disableMoveFrame;
-            AlertManager.showAlert("切换成功:" + (FightUI.disableMoveFrame ? "开启" : "关闭"));
+        var dbgToolItem:ContextMenuItem = new ContextMenuItem("调试工具");
+        t.customItems.push(dbgToolItem);
+        dbgToolItem.addEventListener(ContextMenuEvent.MENU_ITEM_SELECT, function (param1:ContextMenuEvent):void {
+            DynConfig.mainEntry.showDebugToolPanel(true);
         });
     }
 
@@ -338,8 +334,7 @@ public class MainEntry {
         } else if (param1.id == "2") {
         }
         //先放在这里，理论上要等进入地图才行
-        FightUI.enable = false;
-        AlertManager.showAutoCloseAlert("FightUI内测中，可以通过右键菜单开启，如有BUG辛苦反馈", 3);
+        AlertManager.showAutoCloseAlert("FightUI(改服UI)内测中，可以通过设置菜单开启，如有BUG辛苦反馈", 3);
     }
 
     private function onQuestInit(param1:QuestEvent):void {

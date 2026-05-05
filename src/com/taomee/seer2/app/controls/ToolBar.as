@@ -1,6 +1,7 @@
 package com.taomee.seer2.app.controls {
 import com.taomee.seer2.app.activeCount.ActiveCountManager;
 import com.taomee.seer2.app.actor.ActorManager;
+import com.taomee.seer2.app.arena.controller.ArenaUIIsNew;
 import com.taomee.seer2.app.controls.toolbar.emotion.EmotionSelectPanel;
 import com.taomee.seer2.app.controls.widget.ActorBagWidgetClick;
 import com.taomee.seer2.app.controls.widget.AllPetBagWidgetClick;
@@ -35,6 +36,7 @@ import com.taomee.seer2.core.scene.LayerManager;
 import com.taomee.seer2.core.scene.SceneManager;
 import com.taomee.seer2.core.scene.SceneType;
 import com.taomee.seer2.core.scene.events.SceneEvent;
+import com.taomee.seer2.core.ui.ImagePanel;
 import com.taomee.seer2.core.ui.UIManager;
 import com.taomee.seer2.core.ui.toolTip.TooltipManager;
 import com.taomee.seer2.core.utils.DisplayObjectUtil;
@@ -50,6 +52,10 @@ import flash.media.SoundTransform;
 import flash.net.SharedObject;
 
 import org.taomee.ds.HashMap;
+
+import seer2.next.entry.DynSwitch;
+
+import seer2.next.fight.ui.FightUI;
 
 public class ToolBar extends Sprite {
 
@@ -205,6 +211,9 @@ public class ToolBar extends Sprite {
         TooltipManager.addCommonTip(this._mainUI["userUp"], "在线提问");
         this.readSound();
         this.readRemote();
+        this.readClearMode();
+        this.readFUI();
+        this.readAutobs();
     }
 
     private function showSpringLess(param1:uint):void {
@@ -268,6 +277,48 @@ public class ToolBar extends Sprite {
             ActorManager.showRemoteActor = true;
         } else {
             ActorManager.showRemoteActor = false;
+        }
+    }
+
+    private function readFUI():void {
+        var _loc1_:SharedObject = SharedObjectManager.getUserSharedObject(SharedObjectManager.USER_SETTING);
+        //0是经典，1是现代，2是改服UI(墨佬的FUI)
+        //把1放前面，默认是1，即现代UI
+        if (_loc1_.data["fui"] == null || _loc1_.data["fui"] == 1) {
+            _loc1_.data["fui"] = 1;
+            FightUI.enable = false;
+            ArenaUIIsNew.isNewUI = true;
+        }
+        else if (_loc1_.data["fui"] == 0) {
+            _loc1_.data["fui"] = 0;
+            FightUI.enable = false;
+            ArenaUIIsNew.isNewUI = false;
+        }
+        else {
+            _loc1_.data["fui"] = 2;
+            FightUI.enable = true;
+        }
+    }
+
+    private function readClearMode():void {
+        var _loc1_:SharedObject = SharedObjectManager.getUserSharedObject(SharedObjectManager.USER_SETTING);
+        if (_loc1_.data["clear"] == null || _loc1_.data["clear"] == 0) {
+            _loc1_.data["clear"] = 0;
+            FightUI.disableMoveFrame = false;
+            DynSwitch.clearMode = false;
+        } else {
+            FightUI.disableMoveFrame = true;
+            DynSwitch.clearMode = true;
+        }
+    }
+
+    private function readAutobs():void {
+        var _loc1_:SharedObject = SharedObjectManager.getUserSharedObject(SharedObjectManager.USER_SETTING);
+        if (_loc1_.data["autobs"] == null || _loc1_.data["autobs"] == 0) {
+            _loc1_.data["autobs"] = 0;
+            DynSwitch.autobsMode = false;
+        } else {
+            DynSwitch.autobsMode = true;
         }
     }
 

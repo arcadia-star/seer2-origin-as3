@@ -3445,4 +3445,6 @@
              Weight="199 199" Foundin="???" isNew="0" Features="适用精灵:混沌大帝 混沌神"
              intro="谁终将声震人间，必长久深自缄默；谁终将点燃闪电，必长久如云漂泊。"
              chara="作者：嘤嘤怪 付琴 腾讯-洛克王国"/>
+    <Monster NumbersID="7890" emblemID="000000" ID="7890" DefName="简洁动画" Type="动画" Height="0 0" Weight="0 0"
+             Foundin="???" isNew="0" Features="???" intro=" " chara="???"/>
 </root>
