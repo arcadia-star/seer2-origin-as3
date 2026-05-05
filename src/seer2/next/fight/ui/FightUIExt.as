@@ -6,6 +6,8 @@ import com.taomee.seer2.app.arena.resource.FightUIManager;
 import com.taomee.seer2.app.arena.util.FightPostion;
 import com.taomee.seer2.app.config.ItemConfig;
 import com.taomee.seer2.app.config.PetConfig;
+import com.taomee.seer2.app.config.info.PetDictionaryInfo;
+import com.taomee.seer2.app.config.pet.PetDefinition;
 import com.taomee.seer2.app.net.CommandSet;
 import com.taomee.seer2.app.net.Connection;
 import com.taomee.seer2.app.pet.data.PetInfo;
@@ -135,6 +137,8 @@ public class FightUIExt extends Sprite {
         for (var i:int = 0; i < pets.length; i++) {
             var pet:PetData = pets[i];
             var rawPet:PetInfo = PetInfoManager.getPetInfoFromAllBag(pet.pid);
+            var petDefinition:PetDefinition = PetConfig.getPetDefinition(rawPet.resourceId);
+            var petDefinitionInfo:PetDictionaryInfo = PetConfig.getPetDefinitionInfo(rawPet.resourceId);
             if (!rawPet) {
                 continue;
             }
@@ -149,19 +153,19 @@ public class FightUIExt extends Sprite {
             if (emblemId > 0) {
                 petExtData.emblem1 = emblemId;
                 petExtData.emblem1Tips = ItemConfig.getEmblemDefinition(emblemId).tip;
+            } else if (petDefinition && petDefinition.emblemId > 0) {
+                petExtData.emblem1Tips = ItemConfig.getEmblemDefinition(petDefinition.emblemId).tip;
             }
             var decorationId:int = rawPet.decorationId;
             if (decorationId > 0) {
                 petExtData.emblem2 = decorationId;
                 petExtData.emblem2Tips = ItemConfig.getEmblemDefinition(decorationId).tip;
+            } else if (petDefinition && petDefinition.emblem2Id > 0) {
+                petExtData.emblem2Tips = ItemConfig.getEmblemDefinition(petDefinition.emblem2Id).tip;
             }
-            var fetter:String = PetConfig.getPetDefinitionInfo(rawPet.resourceId).fetter;
-            if (fetter) {
-                petExtData.fetterTips = fetter;
-            }
-            var changeTip:String = PetConfig.getPetDefinitionInfo(rawPet.resourceId).changeTip;
-            if (changeTip) {
-                petExtData.morphTips = changeTip;
+            if (petDefinitionInfo) {
+                petExtData.fetterTips = petDefinitionInfo.fetter;
+                petExtData.morphTips = petDefinitionInfo.changeTip;
             }
             petExtData.showIcon = 1;
 
