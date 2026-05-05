@@ -137,11 +137,11 @@ public class FightUIExt extends Sprite {
         for (var i:int = 0; i < pets.length; i++) {
             var pet:PetData = pets[i];
             var rawPet:PetInfo = PetInfoManager.getPetInfoFromAllBag(pet.pid);
-            var petDefinition:PetDefinition = PetConfig.getPetDefinition(rawPet.resourceId);
-            var petDefinitionInfo:PetDictionaryInfo = PetConfig.getPetDefinitionInfo(rawPet.resourceId);
             if (!rawPet) {
                 continue;
             }
+            var petDefinition:PetDefinition = PetConfig.getPetDefinition(rawPet.resourceId);
+            var petDefinitionInfo:PetDictionaryInfo = PetConfig.getPetDefinitionInfo(rawPet.resourceId);
             var petExtData:PetExtData = new PetExtData;
             petExtData.monster = rawPet.resourceId;
             petExtData.sex = rawPet.sex;
