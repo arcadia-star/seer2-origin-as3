@@ -112,11 +112,8 @@ public class MapAssetExtractor {
             this._pathData[_loc3_] = new Array(this._verticalGridNum);
             _loc4_ = 0;
             while (_loc4_ < this._verticalGridNum) {
-                if (_loc2_.getPixel32(_loc3_, _loc4_) == 0) {
-                    this._pathData[_loc3_][_loc4_] = true;
-                } else {
-                    this._pathData[_loc3_][_loc4_] = false;
-                }
+                // 无视地形修改：所有网格都标记为可行走
+                this._pathData[_loc3_][_loc4_] = true;
                 _loc4_++;
             }
             _loc3_++;
