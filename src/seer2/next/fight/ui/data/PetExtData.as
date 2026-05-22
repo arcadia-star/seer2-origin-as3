@@ -11,6 +11,9 @@ public class PetExtData {
     public var morphTips:String;
     public var showIcon:int;
 
+    //private
+    public var typeId:int;
+
     public function PetExtData() {
 
     }

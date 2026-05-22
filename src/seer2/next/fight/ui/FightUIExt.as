@@ -29,44 +29,13 @@ public class FightUIExt extends Sprite {
     public static var isDeposit:Boolean = false;
     public static var callbackWhenDepositBtn:Function;
 
-    private var _depositTxtMc:MovieClip;
-
-    private var _deposite:MovieClip;
-
-    public function FightUIExt() {
-        createDepositBtn();
-    }
-
-    public function createDepositBtn():void {
-        this._deposite = FightUIManager.getMovieClip("New_UI_DepositBtn");
-        this._deposite.y = 435 - 50;
-        this._deposite.x = 1140;
-        this._deposite.buttonMode = true;
-        isDeposit = false;
-        this._deposite.addEventListener(MouseEvent.CLICK, this.onDeposite);
-        addChild(this._deposite);
-        this._deposite.gotoAndStop(1);
-        this._depositTxtMc = FightUIManager.getMovieClip("New_UI_DepositTxt");
-        this._depositTxtMc.x = 490;
-        this._depositTxtMc.y = 125;
-        this._depositTxtMc.visible = false;
-        addChild(this._depositTxtMc);
-    }
-
-    private function onDeposite(param1:MouseEvent):void {
-        if ((param1.currentTarget as MovieClip).currentFrame <= 2) {
-            isDeposit = true;
-            (param1.currentTarget as MovieClip).gotoAndStop(3);
-            this._depositTxtMc.visible = true;
+    public static function onDeposit2():void {
+        isDeposit = !isDeposit;
+        if (isDeposit) {
             if (FightUIExt.callbackWhenDepositBtn) {
                 FightUIExt.callbackWhenDepositBtn();
             }
-        } else if ((param1.currentTarget as MovieClip).currentFrame == 3) {
-            isDeposit = false;
-            (param1.currentTarget as MovieClip).gotoAndStop(1);
-            this._depositTxtMc.visible = false;
         }
-        SoundEffects.playSoundMouseClick(0.35);
     }
 
     public static function fish(_arenaData:ArenaData):void {

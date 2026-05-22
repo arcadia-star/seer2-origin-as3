@@ -28,7 +28,7 @@ import com.taomee.seer2.app.arena.util.FightWeatherNameMap;
 import com.taomee.seer2.app.config.FitConfig;
 import com.taomee.seer2.app.config.ItemConfig;
 import com.taomee.seer2.app.config.PetConfig;
-import com.taomee.seer2.app.config.PetSkinConfig;
+import com.taomee.seer2.app.config.PetPressConfig;
 import com.taomee.seer2.app.config.SkillSideEffectConfig;
 import com.taomee.seer2.app.config.item.PetItemDefinition;
 import com.taomee.seer2.app.inventory.ItemManager;
@@ -48,6 +48,7 @@ import com.taomee.seer2.core.loader.LoadType;
 import com.taomee.seer2.core.loader.UILoader;
 import com.taomee.seer2.core.module.ModuleManager;
 import com.taomee.seer2.core.net.MessageEvent;
+import com.taomee.seer2.core.scene.ImageLevelManager;
 import com.taomee.seer2.core.scene.MapLoader;
 import com.taomee.seer2.core.sound.SoundManager;
 import com.taomee.seer2.core.utils.DisplayObjectUtil;
@@ -157,6 +158,7 @@ public class FightUI extends Sprite {
         Connection.addErrorHandler(CommandSet.FIGHT_USE_SKILL_1502, processorCmdError);
         Connection.addErrorHandler(CommandSet.FIGHT_ESCAPE_1509, processorCmdError);
         _player.addEventListener(OperateEvent.OPERATE_END, onOperate);
+        _player.addEventListener("sundries", onSundries);
     }
 
     private function onFightEnd():void {
@@ -166,6 +168,7 @@ public class FightUI extends Sprite {
         }
 
         _player.removeEventListener(OperateEvent.OPERATE_END, onOperate);
+        _player.removeEventListener("sundries", onSundries);
         while (_processors.length) {
             var object:Object = _processors.shift();
             Connection.removeCommandListener(object[0], object[1]);
@@ -179,13 +182,24 @@ public class FightUI extends Sprite {
         FightController.exitFight0(_fightResult, _arenaScene);
     }
 
-    internal function onOperate(event:Object):void {
+    internal function onSundries(event:Object):void {
         var data:Object = event.data;
         var functional:int = data.functional;
-        if (functional === OperateData.FUNCTIONAL_SETTING) {
+        if (functional === 1) {
             _uiStyle = (_uiStyle + 1) % 5;
             _player.updateUiStyle(_uiStyle);
         }
+        if (functional === 2) {
+            FightUIExt.onDeposit2();
+            _player.updateAutoFightStatus(FightUIExt.isDeposit);
+        }
+        if (functional === 3) {
+            ImageLevelManager.showImagePanel();
+        }
+    }
+
+    internal function onOperate(event:Object):void {
+        var data:Object = event.data;
         if (AutoFightPanel.isRunning) {
             AlertManager.showConfirm("【鱼但】帮你战斗中，你要取消吗", function ():void {
                 AutoFightPanel.isRunning = false;
@@ -846,24 +860,24 @@ public class FightUI extends Sprite {
     }
 
     private function updatePetAlive():void {
-        var pets:Vector.<PetData>;
-        var pet:PetData;
-        pets = _arenaData.left.pets;
-        for (var i:int = 0; i < pets.length; i++) {
-            pet = pets[i];
-            pet.alive = pet.hp > 0 ? 1 : 0;
-            if (pet.position > 0 && pet.ext) {
-                pet.ext.showIcon = 1;
+        function update(thisTeam:TeamData, oppoTeam:TeamData):void {
+            var pets:Vector.<PetData>;
+            var pet:PetData;
+            var otherMaster:PetData;
+            pets = thisTeam.pets;
+            otherMaster = oppoTeam.master;
+            for (var i:int = 0; i < pets.length; i++) {
+                pet = pets[i];
+                pet.alive = pet.hp > 0 ? 1 : 0;
+                pet.rate = 100 * PetPressConfig.getPressNumber(pet.ext.typeId, otherMaster.ext.typeId);
+                if (pet.position > 0 && pet.ext) {
+                    pet.ext.showIcon = 1;
+                }
             }
         }
-        pets = _arenaData.right.pets;
-        for (i = 0; i < pets.length; i++) {
-            pet = pets[i];
-            pet.alive = pet.hp > 0 ? 1 : 0;
-            if (pet.position > 0 && pet.ext) {
-                pet.ext.showIcon = 1;
-            }
-        }
+
+        update(_arenaData.left, _arenaData.right);
+        update(_arenaData.right, _arenaData.left);
     }
 
     private function addPetAnger(pet:PetData, anger:int):void {
@@ -1013,6 +1027,7 @@ public class FightUI extends Sprite {
         var extData:PetExtData = new PetExtData;
         extData.monster = obj.resourceId;
         extData.showIcon = 0;
+        extData.typeId = obj.typeId;
         target.ext = extData;
         return target;
     }
