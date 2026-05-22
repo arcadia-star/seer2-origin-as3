@@ -26,11 +26,10 @@ public class FightUIExt extends Sprite {
     }
 
     public function createDepositBtn():void {
-        this._deposite = FightUIManager.getMovieClip("New_UI_DepositBtn");
+        /*this._deposite = FightUIManager.getMovieClip("New_UI_DepositBtn");
         this._deposite.y = 435 - 50;
         this._deposite.x = 1140;
         this._deposite.buttonMode = true;
-        isDeposit = false;
         this._deposite.addEventListener(MouseEvent.CLICK, this.onDeposite);
         addChild(this._deposite);
         this._deposite.gotoAndStop(1);
@@ -39,6 +38,17 @@ public class FightUIExt extends Sprite {
         this._depositTxtMc.y = 125;
         this._depositTxtMc.visible = false;
         addChild(this._depositTxtMc);
+         */
+        isDeposit = false;
+    }
+
+    public static function onDeposit2():void {
+        isDeposit = !isDeposit;
+        if(isDeposit) {
+            if (FightUIExt.callbackWhenDepositBtn) {
+                FightUIExt.callbackWhenDepositBtn();
+            }
+        }
     }
 
     private function onDeposite(param1:MouseEvent):void {

@@ -28,6 +28,7 @@ import com.taomee.seer2.app.arena.util.FightWeatherNameMap;
 import com.taomee.seer2.app.config.FitConfig;
 import com.taomee.seer2.app.config.ItemConfig;
 import com.taomee.seer2.app.config.PetConfig;
+import com.taomee.seer2.app.config.PetPressConfig;
 import com.taomee.seer2.app.config.PetSkinConfig;
 import com.taomee.seer2.app.config.SkillSideEffectConfig;
 import com.taomee.seer2.app.config.item.PetItemDefinition;
@@ -48,6 +49,7 @@ import com.taomee.seer2.core.loader.LoadType;
 import com.taomee.seer2.core.loader.UILoader;
 import com.taomee.seer2.core.module.ModuleManager;
 import com.taomee.seer2.core.net.MessageEvent;
+import com.taomee.seer2.core.scene.ImageLevelManager;
 import com.taomee.seer2.core.scene.MapLoader;
 import com.taomee.seer2.core.sound.SoundManager;
 import com.taomee.seer2.core.utils.DisplayObjectUtil;
@@ -87,6 +89,7 @@ public class FightUI extends Sprite {
     private var _fightRevenue:RevenueInfo;
     private var _fightResult:FightResultInfo;
     private var _uiStyle:int;
+    private var _ext:FightUIExt;
 
     //临时存放需要选择精灵的道具
     private var _itemId4Pet:int;
@@ -154,6 +157,7 @@ public class FightUI extends Sprite {
         Connection.addErrorHandler(CommandSet.FIGHT_USE_SKILL_1502, processorCmdError);
         Connection.addErrorHandler(CommandSet.FIGHT_ESCAPE_1509, processorCmdError);
         _player.addEventListener(OperateEvent.OPERATE_END, onOperate);
+        _player.addEventListener("sundries", onSundries);
     }
 
     private function onFightEnd():void {
@@ -163,6 +167,7 @@ public class FightUI extends Sprite {
         }
 
         _player.removeEventListener(OperateEvent.OPERATE_END, onOperate);
+        _player.removeEventListener("sundries", onSundries);
         while (_processors.length) {
             var object:Object = _processors.shift();
             Connection.removeCommandListener(object[0], object[1]);
@@ -176,12 +181,28 @@ public class FightUI extends Sprite {
         FightController.exitFight0(_fightResult, _arenaScene);
     }
 
+    internal function onSundries(event:Object):void {
+        var data:Object = event.data;
+        var functional:int = data.functional;
+        if (functional === 2) {
+            FightUIExt.onDeposit2();
+        }
+        if (functional === 3) {
+            ImageLevelManager.showImagePanel();
+        }
+    }
     internal function onOperate(event:Object):void {
         var data:Object = event.data;
         var functional:int = data.functional;
         if (functional === 1) {
             _uiStyle = (_uiStyle + 1) % 4;
             _player.updateUiStyle(_uiStyle);
+        }
+        if (functional === 2) {
+            FightUIExt.onDeposit2();
+        }
+        if (functional === 3) {
+            ImageLevelManager.showImagePanel();
         }
         if (AutoFightPanel.isRunning) {
             AlertManager.showConfirm("【鱼但】帮你战斗中，你要取消吗", function ():void {
@@ -844,14 +865,20 @@ public class FightUI extends Sprite {
 
     private function updatePetAlive():void {
         var pets:Vector.<PetData> = _arenaData.left.pets;
+        var otherMaster:PetData = _arenaData.right.master;
         for (var i:int = 0; i < pets.length; i++) {
             var pet:PetData = pets[i];
             pet.alive = pet.hp > 0 ? 1 : 0;
+            pet.rate = 100 * PetPressConfig.getPressNumber(uint(pet.typeIcon.slice(26)),
+                    uint(otherMaster.typeIcon.slice(26)));
         }
         pets = _arenaData.right.pets;
+        otherMaster = _arenaData.left.master
         for (i = 0; i < pets.length; i++) {
             pet = pets[i];
             pet.alive = pet.hp > 0 ? 1 : 0;
+            pet.rate = 100 * PetPressConfig.getPressNumber(uint(pet.typeIcon.slice(26)),
+                    uint(otherMaster.typeIcon.slice(26)));
         }
     }
 
@@ -959,8 +986,8 @@ public class FightUI extends Sprite {
 
     private static function fromArena(arenaData:ArenaDataInfo):ArenaData {
         var arena:ArenaData = new ArenaData();
-        arena.left = fromTeam(arenaData.leftTeam.teamInfo, 1);
-        arena.right = fromTeam(arenaData.rightTeam.teamInfo, 2);
+        arena.left = fromTeam(arenaData.leftTeam.teamInfo, 1, arenaData.rightTeam.teamInfo);
+        arena.right = fromTeam(arenaData.rightTeam.teamInfo, 2, arenaData.leftTeam.teamInfo);
         arena.left.items = fromItem(PetItemType.PHYSICAL_MEDICINE);
         arena.left.capsules = fromItem(PetItemType.CAPSULE);
         arena.round = 0;
@@ -972,15 +999,15 @@ public class FightUI extends Sprite {
         return arena;
     }
 
-    private static function fromTeam(team:TeamInfo, side:int):TeamData {
+    private static function fromTeam(team:TeamInfo, side:int, otherTeam:TeamInfo):TeamData {
         var pets:Vector.<PetData> = new Vector.<PetData>();
         var fighters:Vector.<FighterInfo> = team.fightUserInfoVec[0].fighterInfoVec;
         for (var i:int = 0; i < fighters.length; i++) {
-            pets.push(fromPet(fighters[i], side))
+            pets.push(fromPet(fighters[i], side, otherTeam.fightUserInfoVec[0].fighterInfoVec[0]))
         }
         fighters = team.fightUserInfoVec[0].changeFighterInfoVec;
         for (i = 0; i < fighters.length; i++) {
-            pets.push(fromPet(fighters[i], side))
+            pets.push(fromPet(fighters[i], side, otherTeam.fightUserInfoVec[0].fighterInfoVec[0]))
         }
         var target:TeamData = new TeamData();
         target.pets = pets;
@@ -990,7 +1017,7 @@ public class FightUI extends Sprite {
         return target;
     }
 
-    private static function fromPet(obj:FighterInfo, side:int):PetData {
+    private static function fromPet(obj:FighterInfo, side:int, otherTeamMainFighter:FighterInfo):PetData {
         var target:PetData = new PetData;
         target.pid = obj.catchTime;
         target.petIcon = URLUtil.getPetIcon(obj.resourceId);
@@ -1005,7 +1032,10 @@ public class FightUI extends Sprite {
         target.maxAnger = obj.maxAnger;
         target.hp = obj.hp;
         target.maxHp = obj.maxHp;
-        target.rate = 100;
+        target.rate = 100 * PetPressConfig.getPressNumber(obj.typeId,
+                otherTeamMainFighter ? otherTeamMainFighter.typeId : 1);
+        trace("[DLL_FUI]" + target.name + " typeId=" + obj.typeId + " rate=" + target.rate + " otherName=" +
+                (otherTeamMainFighter ? otherTeamMainFighter.name : "空") + " typeId=" + (otherTeamMainFighter ? otherTeamMainFighter.typeId : "?") + "\n");
         target.atk = 0;
         target.def = 0;
         target.spa = 0;
