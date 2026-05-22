@@ -117,6 +117,7 @@ public class FightUI extends Sprite {
             _uiStyle = 2;
         }
         _player.updateUiStyle(_uiStyle);
+        _player.updateAutoFightStatus(FightUIExt.isDeposit);
         addChild(_player);
         var fightIndex:int = FightManager.currentFightRecord.initData.hasOwnProperty("positionIndex") ? int(FightManager.currentFightRecord.initData.positionIndex) : 0;
         var frame:FrameData = new FrameData;
