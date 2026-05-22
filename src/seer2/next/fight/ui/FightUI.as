@@ -29,7 +29,6 @@ import com.taomee.seer2.app.config.FitConfig;
 import com.taomee.seer2.app.config.ItemConfig;
 import com.taomee.seer2.app.config.PetConfig;
 import com.taomee.seer2.app.config.PetPressConfig;
-import com.taomee.seer2.app.config.PetSkinConfig;
 import com.taomee.seer2.app.config.SkillSideEffectConfig;
 import com.taomee.seer2.app.config.item.PetItemDefinition;
 import com.taomee.seer2.app.inventory.ItemManager;
@@ -62,6 +61,7 @@ import seer2.next.entry.DynSwitch;
 import seer2.next.fight.auto.AutoFightPanel;
 
 import seer2.next.fight.ui.data.*;
+import seer2.next.fight.ui.event.OperateData;
 import seer2.next.utils.JsUtils;
 
 public class FightUI extends Sprite {
@@ -89,7 +89,6 @@ public class FightUI extends Sprite {
     private var _fightRevenue:RevenueInfo;
     private var _fightResult:FightResultInfo;
     private var _uiStyle:int;
-    private var _ext:FightUIExt;
 
     //临时存放需要选择精灵的道具
     private var _itemId4Pet:int;
@@ -104,6 +103,8 @@ public class FightUI extends Sprite {
         _arenaScene = param1;
         _rawArenaData = param2;
         _arenaData = fromArena(_rawArenaData);
+        //非核心功能，先放到ext里面
+        FightUIExt.append(_arenaData, _rawArenaData);
         updateWeather(_rawArenaData.fightWeather);
         if (!clazz) {
             throw new Error("clazz is not loaded");
@@ -116,6 +117,7 @@ public class FightUI extends Sprite {
             _uiStyle = 2;
         }
         _player.updateUiStyle(_uiStyle);
+        _player.updateAutoFightStatus(FightUIExt.isDeposit);
         addChild(_player);
         var fightIndex:int = FightManager.currentFightRecord.initData.hasOwnProperty("positionIndex") ? int(FightManager.currentFightRecord.initData.positionIndex) : 0;
         var frame:FrameData = new FrameData;
@@ -184,26 +186,21 @@ public class FightUI extends Sprite {
     internal function onSundries(event:Object):void {
         var data:Object = event.data;
         var functional:int = data.functional;
+        if (functional === 1) {
+            _uiStyle = (_uiStyle + 1) % 5;
+            _player.updateUiStyle(_uiStyle);
+        }
         if (functional === 2) {
             FightUIExt.onDeposit2();
+            _player.updateAutoFightStatus(FightUIExt.isDeposit);
         }
         if (functional === 3) {
             ImageLevelManager.showImagePanel();
         }
     }
+
     internal function onOperate(event:Object):void {
         var data:Object = event.data;
-        var functional:int = data.functional;
-        if (functional === 1) {
-            _uiStyle = (_uiStyle + 1) % 4;
-            _player.updateUiStyle(_uiStyle);
-        }
-        if (functional === 2) {
-            FightUIExt.onDeposit2();
-        }
-        if (functional === 3) {
-            ImageLevelManager.showImagePanel();
-        }
         if (AutoFightPanel.isRunning) {
             AlertManager.showConfirm("【鱼但】帮你战斗中，你要取消吗", function ():void {
                 AutoFightPanel.isRunning = false;
@@ -864,22 +861,24 @@ public class FightUI extends Sprite {
     }
 
     private function updatePetAlive():void {
-        var pets:Vector.<PetData> = _arenaData.left.pets;
-        var otherMaster:PetData = _arenaData.right.master;
-        for (var i:int = 0; i < pets.length; i++) {
-            var pet:PetData = pets[i];
-            pet.alive = pet.hp > 0 ? 1 : 0;
-            pet.rate = 100 * PetPressConfig.getPressNumber(uint(pet.typeIcon.slice(26)),
-                    uint(otherMaster.typeIcon.slice(26)));
+        function update(thisTeam:TeamData, oppoTeam:TeamData):void {
+            var pets:Vector.<PetData>;
+            var pet:PetData;
+            var otherMaster:PetData;
+            pets = thisTeam.pets;
+            otherMaster = oppoTeam.master;
+            for (var i:int = 0; i < pets.length; i++) {
+                pet = pets[i];
+                pet.alive = pet.hp > 0 ? 1 : 0;
+                pet.rate = 100 * PetPressConfig.getPressNumber(pet.ext.typeId, otherMaster.ext.typeId);
+                if (pet.position > 0 && pet.ext) {
+                    pet.ext.showIcon = 1;
+                }
+            }
         }
-        pets = _arenaData.right.pets;
-        otherMaster = _arenaData.left.master
-        for (i = 0; i < pets.length; i++) {
-            pet = pets[i];
-            pet.alive = pet.hp > 0 ? 1 : 0;
-            pet.rate = 100 * PetPressConfig.getPressNumber(uint(pet.typeIcon.slice(26)),
-                    uint(otherMaster.typeIcon.slice(26)));
-        }
+
+        update(_arenaData.left, _arenaData.right);
+        update(_arenaData.right, _arenaData.left);
     }
 
     private function addPetAnger(pet:PetData, anger:int):void {
@@ -963,31 +962,13 @@ public class FightUI extends Sprite {
     }
 
     private function rawFighterInfo(userId:uint, catchTime:uint):FighterInfo {
-        var teamInfo:TeamInfo;
-        if (thisTeam(userId)) {
-            teamInfo = _rawArenaData.leftTeam.teamInfo;
-        } else {
-            teamInfo = _rawArenaData.rightTeam.teamInfo;
-        }
-        var fighterInfoVec:Vector.<FighterInfo> = teamInfo.fightUserInfoVec[0].fighterInfoVec;
-        for (var i:int = 0; i < fighterInfoVec.length; i++) {
-            if (fighterInfoVec[i].catchTime === catchTime) {
-                return fighterInfoVec[i];
-            }
-        }
-        fighterInfoVec = teamInfo.fightUserInfoVec[0].changeFighterInfoVec;
-        for (i = 0; i < fighterInfoVec.length; i++) {
-            if (fighterInfoVec[i].catchTime === catchTime) {
-                return fighterInfoVec[i];
-            }
-        }
-        throw new Error("invalid");
+        return _rawArenaData.fighterInfo(userId, catchTime);
     }
 
     private static function fromArena(arenaData:ArenaDataInfo):ArenaData {
         var arena:ArenaData = new ArenaData();
-        arena.left = fromTeam(arenaData.leftTeam.teamInfo, 1, arenaData.rightTeam.teamInfo);
-        arena.right = fromTeam(arenaData.rightTeam.teamInfo, 2, arenaData.leftTeam.teamInfo);
+        arena.left = fromTeam(arenaData.leftTeam.teamInfo, 1);
+        arena.right = fromTeam(arenaData.rightTeam.teamInfo, 2);
         arena.left.items = fromItem(PetItemType.PHYSICAL_MEDICINE);
         arena.left.capsules = fromItem(PetItemType.CAPSULE);
         arena.round = 0;
@@ -999,15 +980,15 @@ public class FightUI extends Sprite {
         return arena;
     }
 
-    private static function fromTeam(team:TeamInfo, side:int, otherTeam:TeamInfo):TeamData {
+    private static function fromTeam(team:TeamInfo, side:int):TeamData {
         var pets:Vector.<PetData> = new Vector.<PetData>();
         var fighters:Vector.<FighterInfo> = team.fightUserInfoVec[0].fighterInfoVec;
         for (var i:int = 0; i < fighters.length; i++) {
-            pets.push(fromPet(fighters[i], side, otherTeam.fightUserInfoVec[0].fighterInfoVec[0]))
+            pets.push(fromPet(fighters[i], side))
         }
         fighters = team.fightUserInfoVec[0].changeFighterInfoVec;
         for (i = 0; i < fighters.length; i++) {
-            pets.push(fromPet(fighters[i], side, otherTeam.fightUserInfoVec[0].fighterInfoVec[0]))
+            pets.push(fromPet(fighters[i], side))
         }
         var target:TeamData = new TeamData();
         target.pets = pets;
@@ -1017,7 +998,7 @@ public class FightUI extends Sprite {
         return target;
     }
 
-    private static function fromPet(obj:FighterInfo, side:int, otherTeamMainFighter:FighterInfo):PetData {
+    private static function fromPet(obj:FighterInfo, side:int):PetData {
         var target:PetData = new PetData;
         target.pid = obj.catchTime;
         target.petIcon = URLUtil.getPetIcon(obj.resourceId);
@@ -1032,10 +1013,7 @@ public class FightUI extends Sprite {
         target.maxAnger = obj.maxAnger;
         target.hp = obj.hp;
         target.maxHp = obj.maxHp;
-        target.rate = 100 * PetPressConfig.getPressNumber(obj.typeId,
-                otherTeamMainFighter ? otherTeamMainFighter.typeId : 1);
-        trace("[DLL_FUI]" + target.name + " typeId=" + obj.typeId + " rate=" + target.rate + " otherName=" +
-                (otherTeamMainFighter ? otherTeamMainFighter.name : "空") + " typeId=" + (otherTeamMainFighter ? otherTeamMainFighter.typeId : "?") + "\n");
+        target.rate = 100;
         target.atk = 0;
         target.def = 0;
         target.spa = 0;
@@ -1047,6 +1025,11 @@ public class FightUI extends Sprite {
         }
         target.buffs = new <BuffData>[];
         target.items = new <ItemData>[];
+        var extData:PetExtData = new PetExtData;
+        extData.monster = obj.resourceId;
+        extData.showIcon = 0;
+        extData.typeId = obj.typeId;
+        target.ext = extData;
         return target;
     }
 

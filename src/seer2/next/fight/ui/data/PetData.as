@@ -24,6 +24,7 @@ public class PetData {
     public var skills:Vector.<SkillData>
     public var buffs:Vector.<BuffData>
     public var items:Vector.<ItemData>
+    public var ext:PetExtData
 
     public static function from(obj:Object):PetData {
         var target:PetData = new PetData;
@@ -49,6 +50,7 @@ public class PetData {
         target.skills = transSkill(obj.skills);
         target.buffs = transBuff(obj.buffs);
         target.items = transItem(obj.items);
+        target.ext = PetExtData.from(obj.ext);
         return target;
     }
 
@@ -76,6 +78,7 @@ public class PetData {
         target.skills = cloneSkill(obj.skills);
         target.buffs = cloneBuff(obj.buffs);
         target.items = cloneItem(obj.items);
+        target.ext = PetExtData.clone(obj.ext);
         return target;
     }
 
@@ -146,3 +149,4 @@ public class PetData {
     }
 }
 }
+
