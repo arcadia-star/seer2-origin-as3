@@ -1,6 +1,7 @@
 package seer2.next.fight.ui {
 import com.taomee.seer2.app.actor.UserInfoManager;
 import com.taomee.seer2.app.arena.data.ArenaDataInfo;
+import com.taomee.seer2.app.arena.data.FighterInfo;
 import com.taomee.seer2.app.arena.data.TeamInfo;
 import com.taomee.seer2.app.arena.resource.FightUIManager;
 import com.taomee.seer2.app.arena.util.FightPostion;
@@ -131,45 +132,41 @@ public class FightUIExt extends Sprite {
         }
     }
 
-    public static function append(arenaData:ArenaData, rawArenaData:ArenaDataInfo):void {
-        var teamInfo:TeamInfo = rawArenaData.leftTeam.teamInfo;
+    public static function append(arenaData:ArenaData, _rawArenaData:ArenaDataInfo):void {
         var pets:Vector.<PetData> = arenaData.left.pets;
+        var leftUid:int = _rawArenaData.leftTeam.teamInfo.leaderId;
         for (var i:int = 0; i < pets.length; i++) {
             var pet:PetData = pets[i];
-            var rawPet:PetInfo = PetInfoManager.getPetInfoFromAllBag(pet.pid);
-            if (!rawPet) {
+            var rawFighter:FighterInfo = _rawArenaData.fighterInfo(leftUid, pet.pid);
+            if (!rawFighter) {
                 continue;
             }
-            var petDefinition:PetDefinition = PetConfig.getPetDefinition(rawPet.resourceId);
-            var petDefinitionInfo:PetDictionaryInfo = PetConfig.getPetDefinitionInfo(rawPet.resourceId);
-            var petExtData:PetExtData = new PetExtData;
-            petExtData.monster = rawPet.resourceId;
-            petExtData.sex = rawPet.sex;
-            var featureId:int = rawPet.featureId;
+            var petDefinition:PetDefinition = PetConfig.getPetDefinition(rawFighter.resourceId);
+            var petDefinitionInfo:PetDictionaryInfo = PetConfig.getPetDefinitionInfo(rawFighter.resourceId);
+            var rawPet:PetInfo = PetInfoManager.getPetInfoFromAllBag(pet.pid);
+
+            var petExtData:PetExtData = pet.ext;
+            petExtData.sex = rawPet ? rawPet.sex : 0;
+            var featureId:int = rawPet ? rawPet.featureId : 0;
             if (featureId > 0) {
                 petExtData.featureTips = rawPet.featureDescription;
             }
-            var emblemId:int = rawPet.emblemId;
+            var emblemId:int = rawPet ? rawPet.emblemId : 0;
             if (emblemId > 0) {
                 petExtData.emblem1 = emblemId;
                 petExtData.emblem1Tips = ItemConfig.getEmblemDefinition(emblemId).tip;
             } else if (petDefinition && petDefinition.emblemId > 0) {
                 petExtData.emblem1Tips = ItemConfig.getEmblemDefinition(petDefinition.emblemId).tip;
             }
-            var decorationId:int = rawPet.decorationId;
+            var decorationId:int = rawPet ? rawPet.decorationId : 0;
             if (decorationId > 0) {
                 petExtData.emblem2 = decorationId;
                 petExtData.emblem2Tips = ItemConfig.getEmblemDefinition(decorationId).tip;
             } else if (petDefinition && petDefinition.emblem2Id > 0) {
                 petExtData.emblem2Tips = ItemConfig.getEmblemDefinition(petDefinition.emblem2Id).tip;
             }
-            if (petDefinitionInfo) {
-                petExtData.fetterTips = petDefinitionInfo.fetter;
-                petExtData.morphTips = petDefinitionInfo.changeTip;
-            }
-            petExtData.showIcon = 1;
-
-            pet.ext = petExtData;
+            petExtData.fetterTips = petDefinitionInfo ? petDefinitionInfo.fetter : null;
+            petExtData.morphTips = petDefinitionInfo ? petDefinitionInfo.changeTip : null;
         }
     }
 }

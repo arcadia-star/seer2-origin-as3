@@ -60,6 +60,7 @@ import seer2.next.entry.DynSwitch;
 import seer2.next.fight.auto.AutoFightPanel;
 
 import seer2.next.fight.ui.data.*;
+import seer2.next.fight.ui.event.OperateData;
 import seer2.next.utils.JsUtils;
 
 public class FightUI extends Sprite {
@@ -181,7 +182,7 @@ public class FightUI extends Sprite {
     internal function onOperate(event:Object):void {
         var data:Object = event.data;
         var functional:int = data.functional;
-        if (functional === 1) {
+        if (functional === OperateData.FUNCTIONAL_SETTING) {
             _uiStyle = (_uiStyle + 1) % 5;
             _player.updateUiStyle(_uiStyle);
         }
@@ -845,15 +846,23 @@ public class FightUI extends Sprite {
     }
 
     private function updatePetAlive():void {
-        var pets:Vector.<PetData> = _arenaData.left.pets;
+        var pets:Vector.<PetData>;
+        var pet:PetData;
+        pets = _arenaData.left.pets;
         for (var i:int = 0; i < pets.length; i++) {
-            var pet:PetData = pets[i];
+            pet = pets[i];
             pet.alive = pet.hp > 0 ? 1 : 0;
+            if (pet.position > 0 && pet.ext) {
+                pet.ext.showIcon = 1;
+            }
         }
         pets = _arenaData.right.pets;
         for (i = 0; i < pets.length; i++) {
             pet = pets[i];
             pet.alive = pet.hp > 0 ? 1 : 0;
+            if (pet.position > 0 && pet.ext) {
+                pet.ext.showIcon = 1;
+            }
         }
     }
 
@@ -938,25 +947,7 @@ public class FightUI extends Sprite {
     }
 
     private function rawFighterInfo(userId:uint, catchTime:uint):FighterInfo {
-        var teamInfo:TeamInfo;
-        if (thisTeam(userId)) {
-            teamInfo = _rawArenaData.leftTeam.teamInfo;
-        } else {
-            teamInfo = _rawArenaData.rightTeam.teamInfo;
-        }
-        var fighterInfoVec:Vector.<FighterInfo> = teamInfo.fightUserInfoVec[0].fighterInfoVec;
-        for (var i:int = 0; i < fighterInfoVec.length; i++) {
-            if (fighterInfoVec[i].catchTime === catchTime) {
-                return fighterInfoVec[i];
-            }
-        }
-        fighterInfoVec = teamInfo.fightUserInfoVec[0].changeFighterInfoVec;
-        for (i = 0; i < fighterInfoVec.length; i++) {
-            if (fighterInfoVec[i].catchTime === catchTime) {
-                return fighterInfoVec[i];
-            }
-        }
-        throw new Error("invalid");
+        return _rawArenaData.fighterInfo(userId, catchTime);
     }
 
     private static function fromArena(arenaData:ArenaDataInfo):ArenaData {
@@ -1019,6 +1010,10 @@ public class FightUI extends Sprite {
         }
         target.buffs = new <BuffData>[];
         target.items = new <ItemData>[];
+        var extData:PetExtData = new PetExtData;
+        extData.monster = obj.resourceId;
+        extData.showIcon = 0;
+        target.ext = extData;
         return target;
     }
 

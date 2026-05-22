@@ -83,5 +83,27 @@ public class ArenaDataInfo {
     public function set turnCount(param1:uint):void {
         this._turnCount = param1;
     }
+
+    public function fighterInfo(userId:int, catchTime:uint):FighterInfo {
+        var teamInfo:TeamInfo;
+        if (userId === this.leftTeam.teamInfo.leaderId) {
+            teamInfo = this.leftTeam.teamInfo;
+        } else {
+            teamInfo = this.rightTeam.teamInfo;
+        }
+        var fighterInfoVec:Vector.<FighterInfo> = teamInfo.fightUserInfoVec[0].fighterInfoVec;
+        for (var i:int = 0; i < fighterInfoVec.length; i++) {
+            if (fighterInfoVec[i].catchTime === catchTime) {
+                return fighterInfoVec[i];
+            }
+        }
+        fighterInfoVec = teamInfo.fightUserInfoVec[0].changeFighterInfoVec;
+        for (i = 0; i < fighterInfoVec.length; i++) {
+            if (fighterInfoVec[i].catchTime === catchTime) {
+                return fighterInfoVec[i];
+            }
+        }
+        throw new Error("invalid");
+    }
 }
 }
