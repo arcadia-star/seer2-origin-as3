@@ -155,6 +155,10 @@ public class StarMagicIconDisplayer extends Sprite
             this._displayer.visible = false;
             resId = 202098;
         }
+        if(this._exhibitMode)
+        {
+            this._displayer.mouseEnabled = false;
+        }
         this._displayer.setIconUrl(URLUtil.getPetRelateIcon(resId),function():void
         {
             _displayer.x = _displayer.y = 0;
