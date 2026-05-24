@@ -8,6 +8,7 @@ import com.taomee.seer2.app.arena.util.FightPostion;
 import com.taomee.seer2.app.config.ItemConfig;
 import com.taomee.seer2.app.config.PetConfig;
 import com.taomee.seer2.app.config.info.PetDictionaryInfo;
+import com.taomee.seer2.app.config.item.EmblemItemDefinition;
 import com.taomee.seer2.app.config.pet.PetDefinition;
 import com.taomee.seer2.app.net.CommandSet;
 import com.taomee.seer2.app.net.Connection;
@@ -123,20 +124,29 @@ public class FightUIExt extends Sprite {
             var emblemId:int = rawPet ? rawPet.emblemId : 0;
             if (emblemId > 0) {
                 petExtData.emblem1 = emblemId;
-                petExtData.emblem1Tips = ItemConfig.getEmblemDefinition(emblemId).tip;
+                petExtData.emblem1Tips = getEmblemDefinitionTips(emblemId);
             } else if (petDefinition && petDefinition.emblemId > 0) {
-                petExtData.emblem1Tips = ItemConfig.getEmblemDefinition(petDefinition.emblemId).tip;
+                petExtData.emblem1Tips = getEmblemDefinitionTips(petDefinition.emblemId);
             }
             var decorationId:int = rawPet ? rawPet.decorationId : 0;
             if (decorationId > 0) {
                 petExtData.emblem2 = decorationId;
-                petExtData.emblem2Tips = ItemConfig.getEmblemDefinition(decorationId).tip;
+                petExtData.emblem2Tips = getEmblemDefinitionTips(decorationId);
             } else if (petDefinition && petDefinition.emblem2Id > 0) {
-                petExtData.emblem2Tips = ItemConfig.getEmblemDefinition(petDefinition.emblem2Id).tip;
+                petExtData.emblem2Tips = getEmblemDefinitionTips(petDefinition.emblem2Id);
             }
             petExtData.fetterTips = petDefinitionInfo ? petDefinitionInfo.fetter : null;
             petExtData.morphTips = petDefinitionInfo ? petDefinitionInfo.changeTip : null;
         }
     }
+
+    private static function getEmblemDefinitionTips(param1:int):String {
+        var emblemDefinition:EmblemItemDefinition = ItemConfig.getEmblemDefinition(param1);
+        if (emblemDefinition) {
+            return emblemDefinition.tip;
+        }
+        return null;
+    }
+
 }
 }
