@@ -918,6 +918,7 @@ public class FightUI extends Sprite {
 
     private function pushProcessor(command:Command, processor:Function):void {
         Connection.addCommandListener(command, processor);
+        Connection.releaseCommand(command);
         _processors.push([command, processor]);
     }
 
