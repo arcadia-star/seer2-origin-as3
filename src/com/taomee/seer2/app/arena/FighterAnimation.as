@@ -160,7 +160,7 @@ public class FighterAnimation extends Sprite implements IAnimation {
             this._actionAnimation = this._mc.getChildAt(0) as MovieClip;
             if (this._currentLabel == FighterActionType.ATK_PHY || this._currentLabel == FighterActionType.ATK_BUF || this._currentLabel == FighterActionType.ATK_SPE || this._currentLabel == FighterActionType.ATK_POW || this._currentLabel == FighterActionType.INTERCOURSE) {
                 hitInfo = HitInfoConfig.getHitData(this._fighterResourceId);
-                time = hitInfo.getHitValue(this._currentLabel);
+                time = hitInfo.getHitValue(this._currentLabel) * ClientConfig.timeRate;
                 setTimeout(dispatchHitEvent, time);
             }
             this.playAnimation(onActionPlay);

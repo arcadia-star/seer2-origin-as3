@@ -5,6 +5,8 @@ import com.taomee.seer2.app.arena.util.HitInfoConfig;
 import com.taomee.seer2.app.arena.util.SkillCategoryName;
 import com.taomee.seer2.app.config.PetSkinConfig;
 
+import seer2.next.entry.DynSwitch;
+
 public class FightUIUtil {
     public function FightUIUtil() {
     }
@@ -20,9 +22,14 @@ public class FightUIUtil {
         return monster;
     }
 
-    public static function hitTimeout(side:int, monster:int, category:String):int {
+    public static function hitArray(side:int, monster:int, category:String):Array {
         var hitInfo:AnimiationHitInfo = HitInfoConfig.getHitData(FightUIUtil.skinnedMonster(side, monster));
-        return hitInfo.getHitValue(playLabel(category));
+        if (DynSwitch.hitDmgMode) {
+            return hitInfo.getHitArray(playLabel(category));
+        }
+        else {
+            return [hitInfo.getHitValue(playLabel(category))];
+        }
     }
 
     public static function playLabel(category:String):String {

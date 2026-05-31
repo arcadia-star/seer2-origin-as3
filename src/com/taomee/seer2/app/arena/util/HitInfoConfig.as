@@ -50,6 +50,26 @@ public class HitInfoConfig {
             _loc6_.fit = _loc5_.@fit;
             _loc6_.physics = _loc5_.@physics;
             _loc6_.special = _loc5_.@special;
+            _loc6_.hasArray = false;
+            _hitDatas.add(_loc6_.id, _loc6_);
+            _loc4_++;
+        }
+        //读取arrayVec
+        _loc2_ = _loc1_.child("fighterVec");
+        _loc3_ = uint(_loc2_.length());
+        _loc4_ = 0;
+        var id:uint;
+        while (_loc4_ < _loc3_) {
+            _loc5_ = _loc2_[_loc4_];
+            id = _loc5_.@id;
+            _loc6_ = _hitDatas.getValue(id);
+            _loc6_.attributeArray = _loc5_.@attribute.toString().split(',');
+            _loc6_.criticalArray = _loc5_.@critical.toString().split(",");
+            _loc6_.fitArray = _loc5_.@fit.toString().split(",");
+            _loc6_.physicsArray = _loc5_.@physics.toString().split(",");
+            _loc6_.specialArray = _loc5_.@special.toString().split(",");
+            _loc6_.hasArray = true;
+            _hitDatas.remove(_loc6_.id);
             _hitDatas.add(_loc6_.id, _loc6_);
             _loc4_++;
         }

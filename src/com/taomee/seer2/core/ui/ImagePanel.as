@@ -7,6 +7,7 @@ import com.taomee.seer2.core.scene.ImageLevelManager;
 import com.taomee.seer2.core.scene.LayerManager;
 import com.taomee.seer2.core.scene.SceneManager;
 import com.taomee.seer2.core.scene.SceneType;
+import com.taomee.seer2.core.ui.toolTip.TooltipManager;
 
 import flash.display.Bitmap;
 import flash.display.BitmapData;
@@ -31,6 +32,14 @@ public class ImagePanel {
 
     private static var _mc:MovieClip;
 
+    private static var _gameMc:MovieClip;
+
+    private static var _fightMc:MovieClip;
+
+    private static var _preBtn:SimpleButton;
+
+    private static var _nextBtn:SimpleButton;
+
     private static var _closeBtn:SimpleButton;
 
     private static var _btnList:Vector.<MovieClip>;
@@ -45,13 +54,17 @@ public class ImagePanel {
 
     private static var _fuiList:Vector.<MovieClip>;
 
-    private static var _clearOnBtn:MovieClip;
+    private static var _fightMcOnBtn:MovieClip;
 
-    private static var _clearOffBtn:MovieClip;
+    private static var _fightMcOffBtn:MovieClip;
 
     private static var _autobsOnBtn:MovieClip;
 
     private static var _autobsOffBtn:MovieClip;
+
+    private static var _hitDmgOnBtn:MovieClip;
+
+    private static var _hitDmgOffBtn:MovieClip;
 
     private static var _stage:Stage;
 
@@ -67,21 +80,46 @@ public class ImagePanel {
         _mc = new UI_Image_Level();
         _closeBtn = _mc["closeBtn"];
         _closeBtn.addEventListener(MouseEvent.CLICK, onClose);
+        _gameMc = _mc["gameSetting"];
+        _fightMc = _mc["fightSetting"];
         initImage();
         initRemote();
         initSound();
         initFUI();
         initClearMode();
         initAutobs();
+        initHitDmg();
+        //initTips();//ToolTipManager的图层居然比这玩意低，找找有没有更高的图层再说
+        initPageBtn();
+        _fightMc.visible = false;
         param1.addChild(_mc);
         DisplayUtil.align(_mc, AlignType.MIDDLE_CENTER, new Rectangle(0, 0, param1.stageWidth, param1.stageHeight));
+    }
+
+    private static function initTips():void {
+        TooltipManager.addCommonTip(_fightMc["fui"], "战斗中使用的UI风格 其中改服UI是改服自主研发的UI 一定程度上缓解卡怒气、卡变身等bug 但可能存在其他bug");
+        TooltipManager.addCommonTip(_fightMc["fightMc"], "对战中是否播放技能动画 关闭后对战内不再播放精灵技能动画");
+        TooltipManager.addCommonTip(_fightMc["autoBs"], "开启自动战斗时若怒气已满是否使用必杀 关闭后满怒情况下仍会使用首个技能");
+        TooltipManager.addCommonTip(_fightMc["hitDmg"], "对战中伤害数字的展现形式 开启后某些精灵造成伤害时伤害显示会与动画动作一致");
+    }
+
+    private static function initPageBtn():void {
+        _preBtn = _mc["preBtn"];
+        _nextBtn = _mc["nextBtn"];
+        _preBtn.addEventListener("click", onPageClick);
+        _nextBtn.addEventListener("click", onPageClick);
+    }
+
+    private static function onPageClick(e:MouseEvent):void {
+        _fightMc.visible = !_fightMc.visible;
+        _gameMc.visible = !_gameMc.visible;
     }
 
     private static function initFUI():void {
         _fuiList = Vector.<MovieClip>([]);
         var i:int = 0;
         while (i < 3) {
-            _fuiList.push(_mc["fui" + i + "Btn"]);
+            _fuiList.push(_fightMc["fui" + i + "Btn"]);
             _fuiList[i].buttonMode = true;
             _fuiList[i].addEventListener(MouseEvent.CLICK, onFUIClick);
             _fuiList[i].gotoAndStop(1);
@@ -119,16 +157,12 @@ public class ImagePanel {
         var i:int = 0;
         while(i < 3) {
             if(param1.target == _fuiList[i]) {
-                break;
+                writeFUICookie(i);
+                return;
             }
             i++;
         }
-        if(i < 3) {
-            writeFUICookie(i);
-        }
-        else{
-            AlertManager.showAlert("FUI cookie设置出错");
-        }
+        AlertManager.showAlert("FUI cookie设置出错");
     }
 
     private static function writeFUICookie(param1:int):void {
@@ -158,48 +192,48 @@ public class ImagePanel {
     }
 
     private static function initClearMode():void {
-        _clearOnBtn = _mc["clearOnBtn"];
-        _clearOffBtn = _mc["clearOffBtn"];
-        _clearOnBtn.buttonMode = true;
-        _clearOffBtn.buttonMode = true;
+        _fightMcOnBtn = _fightMc["clearOnBtn"];
+        _fightMcOffBtn = _fightMc["clearOffBtn"];
+        _fightMcOnBtn.buttonMode = true;
+        _fightMcOffBtn.buttonMode = true;
         var _loc1_:SharedObject = SharedObjectManager.getUserSharedObject(SharedObjectManager.USER_SETTING);
         if (_loc1_.data["clear"] == null || _loc1_.data["clear"] == 0) {
             _loc1_.data["clear"] = 0;
             FightUI.disableMoveFrame = false;
             DynSwitch.clearMode = false;
-            _clearOffBtn.gotoAndStop(2);
-            _clearOnBtn.gotoAndStop(1);
+            _fightMcOffBtn.gotoAndStop(1);
+            _fightMcOnBtn.gotoAndStop(2);
         } else {
             FightUI.disableMoveFrame = true;
             DynSwitch.clearMode = true;
-            _clearOffBtn.gotoAndStop(1);
-            _clearOnBtn.gotoAndStop(2);
+            _fightMcOffBtn.gotoAndStop(2);
+            _fightMcOnBtn.gotoAndStop(1);
         }
-        _clearOnBtn.addEventListener(MouseEvent.CLICK, onClearClick);
-        _clearOffBtn.addEventListener(MouseEvent.CLICK, onClearClick);
+        _fightMcOnBtn.addEventListener(MouseEvent.CLICK, onClearClick);
+        _fightMcOffBtn.addEventListener(MouseEvent.CLICK, onClearClick);
     }
 
     private static function onClearClick(param1:MouseEvent):void {
-        var clearMode:int = param1.target == _clearOnBtn ? 1 : 0;
+        var clearMode:int = param1.target == _fightMcOnBtn ? 0 : 1;
         var _loc2_:SharedObject = SharedObjectManager.getUserSharedObject(SharedObjectManager.USER_SETTING);
         _loc2_.data["clear"] = clearMode;
         SharedObjectManager.flush(_loc2_);
         if (clearMode == 1) {
             FightUI.disableMoveFrame = true;
             DynSwitch.clearMode = true;
-            _clearOnBtn.gotoAndStop(2);
-            _clearOffBtn.gotoAndStop(1);
+            _fightMcOnBtn.gotoAndStop(1);
+            _fightMcOffBtn.gotoAndStop(2);
         } else {
             FightUI.disableMoveFrame = false;
             DynSwitch.clearMode = false;
-            _clearOnBtn.gotoAndStop(1);
-            _clearOffBtn.gotoAndStop(2);
+            _fightMcOnBtn.gotoAndStop(2);
+            _fightMcOffBtn.gotoAndStop(1);
         }
     }
 
     private static function initAutobs():void {
-        _autobsOnBtn = _mc["autobsOnBtn"];
-        _autobsOffBtn = _mc["autobsOffBtn"];
+        _autobsOnBtn = _fightMc["autobsOnBtn"];
+        _autobsOffBtn = _fightMc["autobsOffBtn"];
         _autobsOnBtn.buttonMode = true;
         _autobsOffBtn.buttonMode = true;
         var _loc1_:SharedObject = SharedObjectManager.getUserSharedObject(SharedObjectManager.USER_SETTING);
@@ -233,9 +267,45 @@ public class ImagePanel {
         }
     }
 
+    private static function initHitDmg():void {
+        _hitDmgOnBtn = _fightMc["hitDmgOn"];
+        _hitDmgOffBtn = _fightMc["hitDmgOff"];
+        _hitDmgOnBtn.buttonMode = true;
+        _hitDmgOffBtn.buttonMode = true;
+        var _loc1_:SharedObject = SharedObjectManager.getUserSharedObject(SharedObjectManager.USER_SETTING);
+        if (_loc1_.data["hitDmg"] == null || _loc1_.data["hitDmg"] == 0) {
+            _loc1_.data["hitDmg"] = 0;
+            DynSwitch.hitDmgMode = false;
+            _hitDmgOffBtn.gotoAndStop(2);
+            _hitDmgOnBtn.gotoAndStop(1);
+        } else {
+            DynSwitch.hitDmgMode = true;
+            _hitDmgOffBtn.gotoAndStop(1);
+            _hitDmgOnBtn.gotoAndStop(2);
+        }
+        _hitDmgOnBtn.addEventListener(MouseEvent.CLICK, onHitDmgClick);
+        _hitDmgOffBtn.addEventListener(MouseEvent.CLICK, onHitDmgClick);
+    }
+
+    private static function onHitDmgClick(param1:MouseEvent):void {
+        var hitDmgMode:int = param1.target == _hitDmgOnBtn ? 1 : 0;
+        var _loc2_:SharedObject = SharedObjectManager.getUserSharedObject(SharedObjectManager.USER_SETTING);
+        _loc2_.data["hitDmg"] = hitDmgMode;
+        SharedObjectManager.flush(_loc2_);
+        if (hitDmgMode == 1) {
+            DynSwitch.hitDmgMode = true;
+            _hitDmgOnBtn.gotoAndStop(2);
+            _hitDmgOffBtn.gotoAndStop(1);
+        } else {
+            DynSwitch.hitDmgMode = false;
+            _hitDmgOnBtn.gotoAndStop(1);
+            _hitDmgOffBtn.gotoAndStop(2);
+        }
+    }
+
     private static function initSound():void {
-        _soundOnBtn = _mc["soundOnBtn"];
-        _soundOffBtn = _mc["soundOffBtn"];
+        _soundOnBtn = _gameMc["soundOnBtn"];
+        _soundOffBtn = _gameMc["soundOffBtn"];
         _soundOnBtn.buttonMode = true;
         _soundOffBtn.buttonMode = true;
         var _loc1_:SharedObject = SharedObjectManager.getUserSharedObject(SharedObjectManager.USER_SETTING);
@@ -290,8 +360,8 @@ public class ImagePanel {
     }
 
     private static function initRemote():void {
-        _remoteOnBtn = _mc["remoteOnBtn"];
-        _remoteOffBtn = _mc["remoteOffBtn"];
+        _remoteOnBtn = _gameMc["remoteOnBtn"];
+        _remoteOffBtn = _gameMc["remoteOffBtn"];
         _remoteOnBtn.buttonMode = true;
         _remoteOffBtn.buttonMode = true;
         var _loc1_:SharedObject = SharedObjectManager.getUserSharedObject(SharedObjectManager.USER_SETTING);
@@ -331,7 +401,7 @@ public class ImagePanel {
         _btnList = Vector.<MovieClip>([]);
         var _loc1_:int = 0;
         while (_loc1_ < 3) {
-            _btnList.push(_mc["btn" + _loc1_]);
+            _btnList.push(_gameMc["btn" + _loc1_]);
             _btnList[_loc1_].buttonMode = true;
             _btnList[_loc1_].addEventListener(MouseEvent.CLICK, onClick);
             _btnList[_loc1_].gotoAndStop(1);
