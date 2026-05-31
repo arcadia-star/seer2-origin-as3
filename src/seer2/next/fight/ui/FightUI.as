@@ -321,7 +321,7 @@ public class FightUI extends Sprite {
         target.rate = obj.skillTypeDelationRate;
         target.soundUrl = new SkillSound(bunchId, skillInfo).getSoundUrl();
         target.effectUrl = URLUtil.getSkillEffectSwf(PetConfig.getPetSkillSettingDefinition(skillId).effectId);
-        target.hitTimeout = FightUIUtil.hitTimeout(side, monster, target.category);
+        target.hits = FightUIUtil.hitArray(side, monster, target.category);
 
         var frame:FrameData = new FrameData;
         if (disableMoveFrame) {

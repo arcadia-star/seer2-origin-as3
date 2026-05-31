@@ -9,7 +9,7 @@ public class MoveData {
     public var rate:int;
     public var soundUrl:String;
     public var effectUrl:String;
-    public var hitTimeout:int;
+    public var hits:Array;
 
     public static function from(obj:Object):MoveData {
         if (!obj) {
@@ -25,7 +25,7 @@ public class MoveData {
         target.rate = obj.rate;
         target.soundUrl = obj.soundUrl;
         target.effectUrl = obj.effectUrl;
-        target.hitTimeout = obj.hitTimeout;
+        target.hits = obj.hit;
         return target;
     }
 
@@ -43,7 +43,7 @@ public class MoveData {
         target.rate = obj.rate;
         target.soundUrl = obj.soundUrl;
         target.effectUrl = obj.effectUrl;
-        target.hitTimeout = obj.hitTimeout;
+        target.hits = obj.hits;
         return target;
     }
 }
