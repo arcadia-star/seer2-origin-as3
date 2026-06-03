@@ -686,7 +686,8 @@ public class FightUI extends Sprite {
             pushNextFunc(function ():void {
                 AlertManager.showAutoCloseAlert("战斗超时结束", 3, onFightEnd);
             });
-        } else if (_fightResult.endReason === FightEndReason.CATCH_END) {
+        } else if (_fightResult.endReason === FightEndReason.CATCH_END && _catchPid > 1) {
+            //=1是虚拟捕捉 不给精灵
             pushNextFunc(function ():void {
                 ModuleManager.toggleModule(URLUtil.getAppModule("PetCatchPanel"), "正在打开捕捉成功面板...", {
                     "petId": _catchPid,
