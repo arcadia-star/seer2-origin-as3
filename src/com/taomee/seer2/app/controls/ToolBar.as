@@ -214,6 +214,7 @@ public class ToolBar extends Sprite {
         this.readClearMode();
         this.readFUI();
         this.readAutobs();
+        this.readHitDmg();
     }
 
     private function showSpringLess(param1:uint):void {
@@ -319,6 +320,16 @@ public class ToolBar extends Sprite {
             DynSwitch.autobsMode = false;
         } else {
             DynSwitch.autobsMode = true;
+        }
+    }
+
+    private function readHitDmg():void {
+        var _loc1_:SharedObject = SharedObjectManager.getUserSharedObject(SharedObjectManager.USER_SETTING);
+        if (_loc1_.data["hitDmg"] == null || _loc1_.data["hitDmg"] == 0) {
+            _loc1_.data["hitDmg"] = 0;
+            DynSwitch.hitDmgMode = false;
+        } else {
+            DynSwitch.hitDmgMode = true;
         }
     }
 
