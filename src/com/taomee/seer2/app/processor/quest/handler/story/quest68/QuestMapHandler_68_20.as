@@ -86,6 +86,7 @@ public class QuestMapHandler_68_20 extends QuestMapHandler {
     }
 
     private function hideGudie(param1:ModuleEvent):void {
+        ModuleManager.removeEventListener("BusinessPanel", ModuleEvent.OPEN, this.hideGudie);
         if (QuestManager.isAccepted(_quest.id)) {
             GuideManager.instance.pause();
         }
@@ -133,20 +134,15 @@ public class QuestMapHandler_68_20 extends QuestMapHandler {
             QuestManager.addEventListener(QuestEvent.COMPLETE, onComplete);
             var _loc1_:* = new Rectangle(0, 0, 24, 23);
             GuideManager.instance.addTarget(_loc1_, 1);
-            GuideManager.instance.addGuide2Target(_loc1_, 0, 1, new Point(203, 62), false, false, GudieDirectionType.CONTENT, true, false, true);
+            GuideManager.instance.addGuide2Target(_loc1_, 0, 1, new Point(252, 100), false, false, GudieDirectionType.CONTENT, true, false, true);
             GuideManager.instance.startGuide(1);
         }]);
     }
 
     private function fightPetGudie():void {
         NpcDialog.show(2, "伊娃博士", [[0, "你前面购买的<font color=\'#ff0000\'>" + "精灵胶囊" + "</font>是专门用来捕捉精灵的，接下来会有一种名叫<font color=\'#ff0000\'>" + "啾啾" + "</font>的精灵，如果你能成功<font color=\'#ff0000\'>" + "捕捉" + "</font>它，就会成为你的新伙伴哦！"]], ["真的吗？我一定会成功的！"], [function ():void {
-            if (PetInfoManager.getFirstPetInfo().level >= 20) {
-                QuestManager.addEventListener(QuestEvent.STEP_COMPLETE, onStepComplete);
-                QuestManager.completeStep(_quest.id, 2);
-            } else {
-                GuideManager.instance.close();
-                FightManager.startFightWithGudiePet(0);
-            }
+            QuestManager.addEventListener(QuestEvent.STEP_COMPLETE, onStepComplete);
+            QuestManager.completeStep(_quest.id, 2);
         }]);
     }
 
