@@ -57,7 +57,11 @@ public class AnimiationHitInfo {
 
     public function getHitArray(param1:String):Array {
         var _loc2_:Array;
-        if (!hasArray) return [getHitValue(param1)];//不是所有精灵都配置了array
+        if (!hasArray) {
+            var hit:int = getHitValue(param1);
+            hit = hit == 0 ? 1 : hit;
+            return [hit];
+        }//不是所有精灵都配置了array
         switch (param1) {
             case FighterActionType.ATK_PHY:
                 _loc2_ = this.physicsArray;
