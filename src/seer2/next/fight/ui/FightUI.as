@@ -122,6 +122,14 @@ public class FightUI extends Sprite {
         var fightIndex:int = FightManager.currentFightRecord.initData.hasOwnProperty("positionIndex") ? int(FightManager.currentFightRecord.initData.positionIndex) : 0;
         var frame:FrameData = new FrameData;
         frame.start = new StartData();
+        var petResUrlVec:Vector.<String> = new Vector.<String>();
+        for (var i:int = 0; i < _arenaData.left.pets.length; ++i) {
+            petResUrlVec.push(_arenaData.left.pets[i].petSwf);
+        }
+        for (i = 0; i < _arenaData.right.pets.length; ++i) {
+            petResUrlVec.push(_arenaData.right.pets[i].petSwf);
+        }
+        frame.start.urls = petResUrlVec;
         frame.logs = new Vector.<String>();
         frame.logs.push("<font color=\'#ffffff\'>index:[" + fightIndex + "] side:[" + _rawArenaData.leftTeam.teamInfo.serverSide + "]</font>");
         pushNextFrame(frame);
