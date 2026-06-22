@@ -8,6 +8,7 @@ import com.taomee.seer2.core.effects.SoundEffects;
 import com.taomee.seer2.core.scene.SceneManager;
 import com.taomee.seer2.core.scene.SceneType;
 import com.taomee.seer2.core.ui.toolTip.TooltipManager;
+import com.taomee.seer2.core.utils.DisplayObjectUtil;
 
 import flash.display.MovieClip;
 import flash.display.SimpleButton;
@@ -44,6 +45,18 @@ public class HomeInputFrameWidget extends Sprite implements IWidgetable {
         this._page = this._mainUI["page"];
         this._homeBag = this._page["homeBag"];
         this._plantBag = this._page["plantBag"];
+
+        //临时改动：移动端鼠标悬停困难，为了适配移动端，取消展开功能，点击直接回到小屋，去种植园可以通过大地图直接走
+        DisplayObjectUtil.removeFromParent(this._homeBag);
+        DisplayObjectUtil.removeFromParent(this._btn);
+        this._homeBag.x += this._mainUI.x;
+        this._homeBag.y += this._mainUI.y;
+        this._homeBag.scaleX = this._homeBag.scaleY = 0.86;
+        this._homeBag.x -= 10;
+        this._homeBag.y += 23;
+        addChild(this._homeBag);
+        //临时改动结束
+
         this._isShow = false;
         this.updateNonoPage();
         this.updateTooltip();
