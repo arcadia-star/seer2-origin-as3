@@ -73,13 +73,18 @@ public class DynConfig {
         loadingCnt += 1;
         var loader:URLLoader = new URLLoader();
         var onLoaderComplete:Function = function (event:Event):void {
-            var loader:URLLoader = event.target as URLLoader;
+            loader.removeEventListener(Event.COMPLETE, onLoaderComplete);
+            loader.removeEventListener(IOErrorEvent.IO_ERROR, onLoaderError);
+            loader.removeEventListener(SecurityErrorEvent.SECURITY_ERROR, onLoaderError);
             var xml:XML = new XML(loader.data);
             success(xml);
             loadingCnt -= 1;
             tryCallback();
         };
         var onLoaderError:Function = function (event:Event):void {
+            loader.removeEventListener(Event.COMPLETE, onLoaderComplete);
+            loader.removeEventListener(IOErrorEvent.IO_ERROR, onLoaderError);
+            loader.removeEventListener(SecurityErrorEvent.SECURITY_ERROR, onLoaderError);
             trace("DynConfig loadXML error:", url);
             loadingCnt -= 1;
             tryCallback();
@@ -87,7 +92,8 @@ public class DynConfig {
         loader.addEventListener(Event.COMPLETE, onLoaderComplete);
         loader.addEventListener(IOErrorEvent.IO_ERROR, onLoaderError);
         loader.addEventListener(SecurityErrorEvent.SECURITY_ERROR, onLoaderError);
-        var request:URLRequest = new URLRequest(url);
+        var targetURL:String = (DynSwitch.isAIR ? "http://43.138.190.6/seer2/" : "") + url;
+        var request:URLRequest = new URLRequest(targetURL);
         loader.load(request);
     }
 

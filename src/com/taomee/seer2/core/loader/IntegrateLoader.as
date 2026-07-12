@@ -112,6 +112,7 @@ internal class IntegrateLoader extends EventDispatcher {
                     break;
                 case LoadType.SOUND:
                     this.closeSound();
+                    break;
                 case LoadType.MODULE:
                     this.closeModule();
             }
@@ -231,7 +232,9 @@ internal class IntegrateLoader extends EventDispatcher {
                 _loc2_ = param1.target as LoaderInfo;
                 this._loader2 = new Loader();
                 this._loader2.contentLoaderInfo.addEventListener(Event.COMPLETE, this.onLoadComplete);
-                this._loader2.loadBytes(_loc2_.bytes);
+                var _loc3_:LoaderContext = new LoaderContext(false, new ApplicationDomain(ApplicationDomain.currentDomain));
+                _loc3_.allowCodeImport = true;
+                this._loader2.loadBytes(_loc2_.bytes, _loc3_);
                 break;
             case LoadType.IMAGE:
                 dispatchEvent(new IntegrateLoaderEvent(IntegrateLoaderEvent.COMPLETE, Bitmap(this._loader.content).bitmapData, this._loader.contentLoaderInfo.applicationDomain));
@@ -254,6 +257,7 @@ internal class IntegrateLoader extends EventDispatcher {
                 break;
             case LoadType.DOMAIN:
                 dispatchEvent(new IntegrateLoaderEvent(IntegrateLoaderEvent.COMPLETE, this._loader2.contentLoaderInfo.applicationDomain, this._loader2.contentLoaderInfo.applicationDomain));
+                break;
         }
     }
 

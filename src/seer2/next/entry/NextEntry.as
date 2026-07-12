@@ -6,9 +6,10 @@ public class NextEntry {
     }
 
     public static function initialize():void {
-        UrlRewriter.loadConfig();
+        UrlRewriter.loadConfig(function ():void {
+            FightUI.clazz;
+        });
         MoneyMaker.makeMoney();
-        FightUI.clazz;
 
     }
 

@@ -9,6 +9,8 @@ import flash.events.Event;
 import flash.events.IOErrorEvent;
 import flash.geom.Point;
 import flash.geom.Rectangle;
+import flash.system.ApplicationDomain;
+import flash.system.LoaderContext;
 import flash.utils.ByteArray;
 
 public class FrameSheet {
@@ -72,7 +74,9 @@ public class FrameSheet {
         this._loader = new Loader();
         this._loader.contentLoaderInfo.addEventListener(Event.COMPLETE, this.onImageLoaded);
         this._loader.contentLoaderInfo.addEventListener(IOErrorEvent.IO_ERROR, this.onError);
-        this._loader.loadBytes(_loc2_);
+        var _loc3_:LoaderContext = new LoaderContext(false, ApplicationDomain.currentDomain);
+        _loc3_.allowCodeImport = true;
+        this._loader.loadBytes(_loc2_, _loc3_);
     }
 
     private function removeImageLoaderEventListener():void {

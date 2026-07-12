@@ -192,8 +192,8 @@ public class DisplayUtil {
             param2.offsetPoint(param4);
         }
         var _loc5_:Rectangle = param1.getRect(param1);
-        var _loc6_:Number = param2.width - param1.width;
-        var _loc7_:Number = param2.height - param1.height;
+        var _loc6_:Number = param2.width - _loc5_.width;
+        var _loc7_:Number = param2.height - _loc5_.height;
         switch (param3) {
             case AlignType.TOP_LEFT:
                 param1.x = param2.x;
@@ -209,7 +209,7 @@ public class DisplayUtil {
                 break;
             case AlignType.MIDDLE_LEFT:
                 param1.x = param2.x;
-                param1.y = param2.y + _loc7_ / 2 - _loc5_.x;
+                param1.y = param2.y + _loc7_ / 2 - _loc5_.y;
                 break;
             case AlignType.MIDDLE_CENTER:
                 param1.x = param2.x + _loc6_ / 2 - _loc5_.x;

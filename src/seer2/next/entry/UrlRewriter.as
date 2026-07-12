@@ -11,23 +11,35 @@ import mx.utils.Base64Decoder;
 
 public class UrlRewriter {
 
+    private static const airBaseURL:String = "http://43.138.190.6/seer2/";
 
     public function UrlRewriter() {
         super();
     }
 
-    public static function loadConfig():void {
-        UILoader.load("config/bloom-path.data", LoadType.TEXT, function (param1:ContentInfo):void {
+    public static function loadConfig(onComplete:Function = null):void {
+        var bloomPathUrl:String = "config/bloom-path.data";
+        if (DynSwitch.isAIR) {
+            bloomPathUrl = airBaseURL + bloomPathUrl;
+        }
+        UILoader.load(bloomPathUrl, LoadType.TEXT, function (param1:ContentInfo):void {
             var mightContains:Function = parseData(param1.content);
             URLUtil.rewrite = function (param1:String):String {
                 var path:String = "/" + getPathFromURL(param1);
                 if (Boolean(mightContains(path))) {
-                    trace("seer2-next-url-rewrite hit: " + param1);
-                    return param1;
+                    //trace("seer2-next-url-rewrite hit: " + param1);
+                    return DynSwitch.isAIR ? airBaseURL + param1 : param1;
                 }
-                trace("seer2-next-url-rewrite miss: " + param1);
-                return (DynSwitch.bloomfilterFallbackUrl || "//seer2.61.com/") + param1;
+                //trace("seer2-next-url-rewrite miss: " + param1);
+                return (DynSwitch.isAIR ? "http:" : "") + (DynSwitch.bloomfilterFallbackUrl || "//seer2.61.com/") + param1;
             };
+            if (onComplete != null) {
+                onComplete();
+            }
+        },function (param1:*):void {
+            if (onComplete != null) {
+                onComplete();
+            }
         });
     }
 

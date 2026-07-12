@@ -165,13 +165,16 @@ public class MainEntry {
     }
 
     private function onSwitchComplete(param1:SceneEvent):void {
-        var imageLevelItem:ContextMenuItem;
-        var evt:SceneEvent = param1;
         TaomeeManager.stage.removeEventListener(Event.RESIZE, this.onResize);
         SceneManager.removeEventListener(SceneEvent.SWITCH_COMPLETE, this.onSwitchComplete);
         DisplayObjectUtil.removeFromParent(this._bg);
-        imageLevelItem = new ContextMenuItem("游戏设置");
         var t:Object = this._root.contextMenu;
+        if (!t) {
+            trace("no contextMenu");
+            return;
+        }
+        var imageLevelItem:ContextMenuItem;
+        imageLevelItem = new ContextMenuItem("游戏设置");
         t.customItems.push(new ContextMenuItem("您的DLL版本：" + BuildVersion.BuildVersion));
         t.customItems.push(imageLevelItem);
         imageLevelItem.addEventListener(ContextMenuEvent.MENU_ITEM_SELECT, function (param1:ContextMenuEvent):void {
@@ -239,7 +242,6 @@ public class MainEntry {
     }
 
     private function getTopLeftTmcid():LittleEndianByteArray {
-        var _loc2_:String = null;
         var _loc1_:LittleEndianByteArray = new LittleEndianByteArray();
         _loc1_.length = 64;
         if (GlobalsManager.tab != null && GlobalsManager.tab != "none" && GlobalsManager.tab != "") {
@@ -352,7 +354,7 @@ public class MainEntry {
                     SceneManager.changeScene(SceneType.COPY, 80351);
                 }
             }
-            if (ActorManager.actorInfo.createTime > _loc2_ && !NewPlayerGuideTimeManager.timeCheckNewGuide() && QuestManager.isComplete(83) == false) {
+            if (ActorManager.actorInfo.createTime > _loc2_ && !NewPlayerGuideTimeManager.timeCheckNewGuide() && !QuestManager.isComplete(83)) {
                 SceneManager.changeScene(SceneType.COPY, 80351);
             } else if (NewPlayerGuideTimeManager.timeCheckNewGuide() && !QuestManager.isComplete(99)) {
                 SceneManager.changeScene(SceneType.COPY, 80491);
@@ -361,7 +363,7 @@ public class MainEntry {
             }
         } else {
             QuestManager.addEventListener(QuestEvent.COMPLETE, this.onQuestComplete);
-            if (NoviceInit.exec() == false) {
+            if (!NoviceInit.exec()) {
                 this.enterScene();
             }
         }

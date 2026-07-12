@@ -1,5 +1,9 @@
 package seer2.next.entry {
+import flash.system.Capabilities;
+
 public class DynSwitch {
+    // 兼容AIR架构
+    public static const isAIR:Boolean = Capabilities.playerType == "Desktop";
     // 布隆过滤器
     public static var bloomfilterFallbackUrl:String;
     // 内网工具

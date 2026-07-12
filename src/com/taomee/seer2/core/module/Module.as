@@ -89,10 +89,18 @@ public class Module extends Sprite {
         this.setBackGround();
         LayerManager.moduleLayer.addChild(this);
         this.setCoverUI();
-        if (this._isAlignContent == false) {
+        if (!this._isAlignContent) {
             DisplayUtil.align(this, 4, this._rootRect, this._offset);
+            this._isAlignContent = true;
+            //嘤：保证只调用一次！首次调用这个的时候面板内容可能还没有完全加载出来，这里可以保证根据背景版调整位置
+            //原理是这样的：首次调用这两个东西的时候面板往往只加载出最基础的部分，代码中addChild和其他添加元件的代码还没有执行
+            //一般来讲最基础部分应该是不歪的，后续添加的东西可能歪。
+            //歪的原理是这样的：一个元件可能有透明部分或不显示部分很大，正常观察的时候感觉不到，但是隐藏的部分也计入面积
+            //这部分透明的部分一旦超出背景板，就会使整个面板范围扩大。
+            //由于美术设定都是以背景板为最大边界，溢出背景板的部分参与校准判断就会导致背景板看起来歪了（实际上也是歪了）
+            //所以只调用一次，在背景板加载出来之后以背景板为对象校准一次，后续导致偏移的部分添加了也不要再校准
         }
-        if (this._isAlign == false) {
+        if (!this._isAlign) {
             this._setTimeout = setTimeout(this.align, 100);
             TweenLite.from(this, 0.3, {"alpha": 0});
         } else {
@@ -113,10 +121,11 @@ public class Module extends Sprite {
     }
 
     public function align():void {
+        if (this._isAlign) return;//防止反复校准位置（导致偏移）
         var _loc1_:int = 0;
         var _loc2_:int = 0;
         this._rootRect = new Rectangle(0, 0, this.WINDOW_W, this.WINDOW_H);
-        if (this._isAlignContent == false) {
+        if (!this._isAlignContent) {
             DisplayUtil.align(this, 4, this._rootRect, this._offset);
         }
         if (this.width >= this.WINDOW_W) {
@@ -128,6 +137,7 @@ public class Module extends Sprite {
         }
         this.x += (_loc1_ - this.WINDOW_W) / 2;
         this.y += (_loc2_ - this.WINDOW_H) / 2;
+        this._isAlign = true;
     }
 
     protected function setBackGround():void {
