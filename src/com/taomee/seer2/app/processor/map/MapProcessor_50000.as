@@ -485,7 +485,16 @@ public class MapProcessor_50000 extends MapProcessor {
                 ModuleManager.toggleModule(URLUtil.getAppModule("GameMenu"), "正在打开小游戏库...");
                 break;
             case this._openPetStorage:
-                ModuleManager.toggleModule(URLUtil.getAppModule("PetStoragePanel"), "正在打开精灵仓库...");
+                ServerBufferManager.getServerBuffer(461,function(server:ServerBuffer):void {
+                    var isUseNew:Boolean = Boolean(server.readDataAtPostion(8));
+                    if(isUseNew) {
+                        ModuleManager.showModule(URLUtil.getAppModule("NewPetStoragePanel"),"正在打开精灵仓库...");
+                    }
+                    else {
+                        ModuleManager.showModule(URLUtil.getAppModule("PetStoragePanel"),"正在打开精灵仓库...");
+                    }
+                });
+                break;
         }
     }
 

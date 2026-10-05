@@ -101,10 +101,10 @@ public class Module extends Sprite {
             //所以只调用一次，在背景板加载出来之后以背景板为对象校准一次，后续导致偏移的部分添加了也不要再校准
         }
         if (!this._isAlign) {
-            this._setTimeout = setTimeout(this.align, 100);
-            TweenLite.from(this, 0.3, {"alpha": 0});
-        } else {
             this.align();
+            //this._setTimeout = setTimeout(this.align, 100);
+            //TweenLite.from(this, 0.3, {"alpha": 0});
+            //不时延直接校准
         }
     }
 

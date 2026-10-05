@@ -6,11 +6,14 @@ import com.taomee.seer2.app.gameRule.door.IDoor;
 import com.taomee.seer2.app.gameRule.door.PVPDoor;
 import com.taomee.seer2.app.gameRule.door.constant.DoorRule;
 import com.taomee.seer2.app.gameRule.door.constant.DoorType;
+import com.taomee.seer2.app.gameRule.door.core.vo.DoorLevelInfomation;
 import com.taomee.seer2.app.lobby.LobbyScene;
 import com.taomee.seer2.app.manager.StatisticsManager;
+import com.taomee.seer2.app.popup.AlertManager;
 import com.taomee.seer2.core.map.MapModel;
 import com.taomee.seer2.core.map.MapProcessor;
 import com.taomee.seer2.core.scene.SceneManager;
+import com.taomee.seer2.core.scene.SceneType;
 import com.taomee.seer2.core.ui.toolTip.TooltipManager;
 
 import flash.display.MovieClip;
@@ -42,6 +45,16 @@ public class MapProcessor_86 extends MapProcessor {
         this._doors.push(new BinaryDoor(_loc2_["leftPassage"], DoorType.Door_NORMAL));
         this._doors.push(new PVPDoor(_loc2_["leftPassage4"], DoorType.PVP_Door_NORMAL, DoorRule.BINARY_DOOR));
         StatisticsManager.sendNovice(StatisticsManager.ui_interact_202);
+
+        var doorInformation:DoorLevelInfomation = new DoorLevelInfomation();
+        var requestDailyLimit:Function = function():void {
+            if(doorInformation.getMaxLevelPVENormalHistory(DoorRule.BINARY_DOOR - 1) < 21) {
+                AlertManager.showAlert("请先通关英雄之门的普通模式",function():void{
+                    SceneManager.changeScene(SceneType.LOBBY, 85);
+                });
+            }
+        }
+        doorInformation.getInformation(requestDailyLimit);
     }
 
     private function initDeferTeleport():void {
