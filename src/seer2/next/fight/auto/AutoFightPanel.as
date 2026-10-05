@@ -7,6 +7,7 @@ import com.taomee.seer2.app.net.Connection;
 import com.taomee.seer2.app.pet.data.PetInfo;
 import com.taomee.seer2.app.pet.data.PetInfoManager;
 import com.taomee.seer2.app.pet.events.PetInfoEvent;
+import com.taomee.seer2.app.popup.AlertManager;
 import com.taomee.seer2.core.map.grids.HashMap;
 import com.taomee.seer2.core.net.MessageEvent;
 import com.taomee.seer2.core.ui.UIManager;
@@ -100,6 +101,8 @@ public class AutoFightPanel extends Sprite {
     private var fightTimeTxt:TextField;
 
     private var fightTime:int;
+
+    private var outputFunc:Function = null;
 
     public function AutoFightPanel() {
         super();
@@ -318,6 +321,7 @@ public class AutoFightPanel extends Sprite {
                 while (text_.charAt(++index) != ",") {
                     if (text_.charAt(index) == "") {
                         this.txtOut.text = "格式错误!";
+                        if (outputFunc) outputFunc("格式错误!");
                         return {
                             "next": this.opArray[0],
                             "operation": currentChar,
@@ -330,6 +334,7 @@ public class AutoFightPanel extends Sprite {
                 while (text_.charAt(++index) != ")") {
                     if (text_.charAt(index) == "") {
                         this.txtOut.text = "格式错误!";
+                        if (outputFunc) outputFunc("格式错误!");
                         return {
                             "next": this.opArray[0],
                             "operation": currentChar,
@@ -350,6 +355,7 @@ public class AutoFightPanel extends Sprite {
                 opArray.push(temp);
                 if (this.opArray[int(curN)] == undefined) {
                     this.txtOut.text = "数组越界!";
+                    if (outputFunc) outputFunc("数组越界!");
                     opArray.pop();
                     return {
                         "next": this.opArray[0],
@@ -397,7 +403,7 @@ public class AutoFightPanel extends Sprite {
         _crossSymbleMc2.visible = isCure;
     }
 
-    private function onEnd(event:MouseEvent):void {
+    private function onEnd(event:MouseEvent = null):void {
         this.delayTimer.reset();
         this.curNode = null;
         this.index = 0;
@@ -409,7 +415,7 @@ public class AutoFightPanel extends Sprite {
         endBtn.alpha = 0.7;
     }
 
-    private function onStart(event:MouseEvent):void {
+    private function onStart(event:MouseEvent = null):void {
         var h:Object = null;
         var reStart:Function = function (event:TimerEvent):void {
             if (!isRunning) {
@@ -427,6 +433,7 @@ public class AutoFightPanel extends Sprite {
         };
         if (uint(this.commandId.text) == 0 || uint(this.paramId.text) == 0) {
             this.txtOut.text = "输入有误!";
+            if (outputFunc) outputFunc("输入有误!");
             return;
         }
         this._curCommand = Command.getCommand(uint(this.commandId.text));
@@ -456,6 +463,7 @@ public class AutoFightPanel extends Sprite {
             return;
         }
         this.txtOut.text = "只支持1500,1046,1511协议";
+        if (outputFunc) outputFunc("只支持1500,1046,1511协议");
     }
 
     private function continueFight(event:Event):void {
@@ -545,6 +553,31 @@ public class AutoFightPanel extends Sprite {
         myButton.x = _x;
         myButton.y = _y;
         return myButton;
+    }
+
+    public function setCommand(cmd:int, id:int):void { // 外部接口: 设置战斗协议与对战参数
+        if (cmd != 1500 || cmd != 1511 || cmd != 1046) {
+            if(outputFunc) outputFunc("[自动战斗] 仅支持1500 1511 1046协议");
+            return;
+        }
+        this.commandId.text = cmd.toString();
+        this.paramId.text = id.toString();
+    }
+
+    public function setTodoList(input:String):void { // 外部接口: 出招列表设置
+        this.sequence.text = input;
+    }
+
+    public function startFight():void { // 外部接口: 开始自动战斗
+        this.onStart();
+    }
+
+    public function stopFight():void { // 外部接口: 停止自动战斗
+        this.onEnd();
+    }
+
+    public function setOutputFunc(func:Function):void { // 外部接口: 自定义输出, 输入自定义输出函数, 要求该函数接收一个String变量作为输出内容
+        this.outputFunc = func;
     }
 }
 }

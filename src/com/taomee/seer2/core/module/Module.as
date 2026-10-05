@@ -105,6 +105,9 @@ public class Module extends Sprite {
             TweenLite.from(this, 0.3, {"alpha": 0});
         } else {
             this.align();
+            //this._setTimeout = setTimeout(this.align, 100);
+            //TweenLite.from(this, 0.3, {"alpha": 0});
+            //不时延直接校准
         }
     }
 
