@@ -2,7 +2,7 @@ package seer2.next.fight.ui.data {
 import seer2.next.fight.*;
 
 public class PetData {
-    public var pid:int;
+    public var pid:uint;
     public var petIcon:String;
     public var petSwf:String;
     public var petSound:String;
@@ -29,6 +29,7 @@ public class PetData {
     public static function from(obj:Object):PetData {
         var target:PetData = new PetData;
         target.pid = obj.pid;
+
         target.petIcon = obj.petIcon;
         target.petSwf = obj.petSwf;
         target.petSound = obj.petSound;

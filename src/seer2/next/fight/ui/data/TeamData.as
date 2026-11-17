@@ -78,6 +78,8 @@ public class TeamData {
     }
 
     public function init():void {
+        _master = null;
+        _slave = null;
         for (var i:int = 0; i < pets.length; i++) {
             var pet:PetData = pets[i];
             if (pet.position === 1) {

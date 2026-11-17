@@ -15,6 +15,7 @@ public class FrameData {
 
     public var sleep:int;
     public var smooth:int;
+    public var angerPayment:Object;
     public var logs:Vector.<String>;
 
     public static function from(obj:Object):FrameData {
@@ -27,6 +28,7 @@ public class FrameData {
         target.end = EndData.from(obj.end);
         target.sleep = obj.sleep;
         target.smooth = obj.smooth;
+        target.angerPayment = cloneAngerPayment(obj.angerPayment);
         target.logs = transString(obj.logs);
         return target;
     }
@@ -41,8 +43,13 @@ public class FrameData {
         target.end = EndData.clone(obj.end);
         target.sleep = obj.sleep;
         target.smooth = obj.smooth;
+        target.angerPayment = cloneAngerPayment(obj.angerPayment);
         target.logs = cloneString(obj.logs);
         return target;
+    }
+
+    private static function cloneAngerPayment(payment:Object):Object {
+        return payment ? {side: payment.side, before: payment.before, after: payment.after} : null;
     }
 
     private static function transString(array:Array):Vector.<String> {
