@@ -30,7 +30,7 @@ import com.taomee.seer2.app.config.ItemConfig;
 import com.taomee.seer2.app.config.PetConfig;
 import com.taomee.seer2.app.config.PetPressConfig;
 import com.taomee.seer2.app.config.SkillSideEffectConfig;
-import com.taomee.seer2.app.config.item.PetItemDefinition;
+import com.taomee.seer2.app.config.pet.PetFitDefinition;
 import com.taomee.seer2.app.inventory.ItemManager;
 import com.taomee.seer2.app.inventory.constant.PetItemType;
 import com.taomee.seer2.app.inventory.item.PetItem;
@@ -90,10 +90,10 @@ public class FightUI extends Sprite {
     private var _fightResult:FightResultInfo;
     private var _uiStyle:int;
 
-    //临时存放需要选择精灵的道具
-    private var _itemId4Pet:int;
-
-    private var _mayFit:Function;
+    private var _attackAnger:Array = [];
+    private var _fitResult:Object;
+    private var _fitActor:Object;
+    private var _fitChangePending:Boolean = false;
 
     public function FightUI() {
     }
@@ -235,24 +235,15 @@ public class FightUI extends Sprite {
         }
         var item:int = data.item;
         if (item > 0) {
-            var petItemDefinition:PetItemDefinition = ItemConfig.getPetDefinition(item);
-            //复活药剂开面板
-            if (petItemDefinition && petItemDefinition.type === PetItemType.RESURRECTION) {
-                _itemId4Pet = item;
-                _player.showPetPanel();
-                return;
+            // 播放器完成普通药/复活药的目标选择，DLL只提交完整操作。
+            if (!data.target) {
+                throw new Error("道具操作缺少目标精灵，请同步更新FramePlayer.swf");
             }
             _itemId = item;
-            Connection.send(CommandSet.FIGHT_USE_MEDICINE_1048, _arenaData.left.master.pid, item, 1);
+            Connection.send(CommandSet.FIGHT_USE_MEDICINE_1048, uint(data.target), item, 1);
         }
-        var pet:int = data.pet;
+        var pet:uint = data.pet;
         if (pet != 0) {
-            if (_itemId4Pet > 0) {
-                _itemId = _itemId4Pet;
-                Connection.send(CommandSet.FIGHT_USE_MEDICINE_1048, pet, _itemId, 1);
-                _itemId4Pet = 0;
-                return;
-            }
             var pet0:PetData = petData(thisUid(), pet);
             if (pet0.hp <= 0 || pet0.position > 0) {
                 return;
@@ -293,6 +284,7 @@ public class FightUI extends Sprite {
         var monster:int;
         var skillId:int;
         var movePet:PetData;
+        var actorUid:uint;
         for (var i:int = 0; i < obj.fighterTurnResultInfoVec.length; i++) {
             var turnResult:FighterTurnResultInfo = obj.fighterTurnResultInfoVec[i];
             var pet:PetData = updatePosition(turnResult.userId, turnResult.catchTime, turnResult.position);
@@ -301,6 +293,7 @@ public class FightUI extends Sprite {
                 monster = rawFighterInfo(turnResult.userId, turnResult.catchTime).resourceId;
                 skillId = turnResult.skillId;
                 movePet = pet;
+                actorUid = turnResult.userId;
             }
             pet.hp = turnResult.hp;
             pet.maxHp = turnResult.maxHp;
@@ -313,6 +306,7 @@ public class FightUI extends Sprite {
             pet.buffs = fromBuff(turnResult.buffInfoVec);
         }
         if (skillId <= 0) {
+            _attackAnger = [];
             //非攻击，更新下状态就行，无需动画
             pushNextFrame();
             return;
@@ -332,6 +326,8 @@ public class FightUI extends Sprite {
         target.hits = FightUIUtil.hitArray(side, monster, target.category);
 
         var frame:FrameData = new FrameData;
+        frame.angerPayment = _attackAnger[side];
+        _attackAnger = [];
         if (disableMoveFrame) {
             //简洁模式，只显示伤害，无动画
             frame.event = new EventData;
@@ -346,11 +342,8 @@ public class FightUI extends Sprite {
         frame.logs = new Vector.<String>();
         frame.logs.push("<font color=\'#ffffff\'>[" + _arenaData.round + "]</font><font color=\'#00ffff\'>" + movePet.name + "</font><font color=\'#ffffff\'>使用</font><font color=\'#ffff00\'>" + target.skill + "</font>");
         pushNextFrame(frame);
-        if (_mayFit) {
-            var _mayFitTmp:Function = _mayFit;
-            _mayFit = null;
-            _mayFitTmp(skillId);
-        }
+        _fitActor = skillInfo.isIntercourse ? {uid: actorUid, skillId: skillId} : null;
+        completeFit();
     }
 
     internal function processor5UserRevenue(param1:MessageEvent):void {
@@ -396,11 +389,14 @@ public class FightUI extends Sprite {
         pet.anger = result.angerValue;
         pet.buffs = fromBuff(buffInfos);
         var frame:FrameData = new FrameData;
-        frame.change = new ChangeData;
-        if (thisTeam(result.userId)) {
-            frame.change.left = ChangeData.REPLACE;
-        } else {
-            frame.change.right = ChangeData.REPLACE;
+        // 合体后的8号包是握手确认，系统精灵直接出现，不播放胶囊出场。
+        if (!FitConfig.isPetFit(rawFighterInfo(result.userId, result.fighterId).bunchId)) {
+            frame.change = new ChangeData;
+            if (thisTeam(result.userId)) {
+                frame.change.left = ChangeData.REPLACE;
+            } else {
+                frame.change.right = ChangeData.REPLACE;
+            }
         }
         pushNextFrame(frame);
         if (_changePet && _changePet.length) {
@@ -514,25 +510,36 @@ public class FightUI extends Sprite {
 
     internal function processor16AttackBefore(param1:MessageEvent):void {
         var buffer:IDataInput = param1.message.getRawDataCopy();
+        _attackAnger = [];
 
         function parse():void {
             var uid:uint = uint(buffer.readUnsignedInt());
             var pid:uint = uint(buffer.readUnsignedInt());
             var anger:uint = uint(buffer.readUnsignedInt());
+            if (pid === 0) {
+                return;
+            }
             var slave:PetData = teamData(uid).slave;
-            updatePosition(uid, pid, 1).anger = anger;
+            var pet:PetData = updatePosition(uid, pid, 1);
+            var payment:Object = {side: teamSide(uid), before: pet.anger, after: anger};
+            _attackAnger[payment.side] = payment;
             if (slave && slave.position === 1) {
                 var frame:FrameData = new FrameData;
                 frame.event = new EventData();
                 frame.event.type = EventData.PET_EXCHANGE;
                 frame.event.side = teamSide(uid);
+                frame.event.delay = 0;
+                // 位置交换先播放；耗怒留到3号攻击帧，与攻击同时开始。
                 pushNextFrame(frame);
             }
         }
 
         parse();
-        parse()
-        pushNextFrame();
+        parse();
+        for each (var entry:Object in _attackAnger) {
+            var team:TeamData = entry.side === FightSide.LEFT ? _arenaData.left : _arenaData.right;
+            team.master.anger = entry.after;
+        }
     }
 
     internal function processor17(param1:MessageEvent):void {
@@ -546,7 +553,7 @@ public class FightUI extends Sprite {
         var len:int = uint(buffer.readUnsignedInt());
         for (i = 0; i < len; i++) {
             var uid:int = uint(buffer.readUnsignedInt());
-            var pid:int = uint(buffer.readUnsignedInt());
+            var pid:uint = buffer.readUnsignedInt();
             var hp:int = uint(buffer.readUnsignedInt());
             fitPets.push([uid, pid, hp])
         }
@@ -555,26 +562,47 @@ public class FightUI extends Sprite {
         for (i = 0; i < len; i++) {
             fitSkills.push(new SkillInfo(buffer.readUnsignedInt()));
         }
-        _mayFit = function (fitSkill:int):void {
-            for (var j:int = 0; j < fitPets.length; j++) {
-                var data:Object = fitPets[j];
-                var uid:int = data[0];
-                var pid:int = data[1];
-                var hp:int = data[2];
-                var pet:PetData = petData(uid, pid);
-                pet.hp = hp;
-                if (FitConfig.isPetFit(rawFighterInfo(uid, pid).bunchId)) {
-                    pet.anger += FitConfig.formSkillIdGetPetFitDefinition(fitSkill).anger;
-                    if (fitSkills.length > 0) {
-                        pet.skills = new <SkillData>[];
-                        for (var k:int = 0; k < fitSkills.length; k++) {
-                            pet.skills.push(fromSkill(fitSkills[k]));
-                        }
-                    }
-                }
+        _fitResult = {pets: fitPets, skills: fitSkills};
+        completeFit();
+    }
+
+    private function completeFit():void {
+        // 18号与合体技能结果可能先后到达，齐备后再生成合体状态帧。
+        if (!_fitResult || !_fitActor) {
+            return;
+        }
+        var result:Object = _fitResult;
+        var actor:Object = _fitActor;
+        _fitResult = null;
+        _fitActor = null;
+        for each (var entry:Array in result.pets) {
+            petData(entry[0], entry[1]).hp = entry[2];
+        }
+        var definition:PetFitDefinition = FitConfig.formSkillIdGetPetFitDefinition(actor.skillId);
+        var team:TeamData = teamData(actor.uid);
+        var target:PetData;
+        for each (var candidate:PetData in team.pets) {
+            if (rawFighterInfo(actor.uid, candidate.pid).bunchId === definition.id) {
+                target = candidate;
+                break;
             }
-            //这里不换精灵了，让用户手动换
-            pushNextFrame();
+        }
+        if (!target) {
+            throw new Error("合体系统精灵不在开场阵容中: " + definition.id);
+        }
+        updatePosition(actor.uid, target.pid, 1);
+        addPetAnger(target, definition.anger);
+        if (result.skills.length > 0) {
+            target.skills = new <SkillData>[];
+            for each (var skill:SkillInfo in result.skills) {
+                target.skills.push(fromSkill(skill));
+            }
+        }
+        pushNextFrame();
+        if (thisTeam(actor.uid)) {
+            // 旧UI UseChangeCMD 的自动握手，不是玩家再选一次换场操作。
+            _fitChangePending = true;
+            Connection.send(CommandSet.FIGHT_CHANGE_FIGHTER_1032, target.pid);
         }
     }
 
@@ -584,8 +612,11 @@ public class FightUI extends Sprite {
         for (var idx:int = 0; idx < len; idx++) {
             var uid:uint = uint(buffer.readUnsignedInt());
             var typ:int = int(buffer.readUnsignedByte());
-            var pid:int = int(buffer.readUnsignedInt());
-            var morphPid:int = int(buffer.readUnsignedInt());
+            var pid:uint = buffer.readUnsignedInt();
+            var morphPid:uint = buffer.readUnsignedInt();
+            if (typ !== 0 && typ !== 1) {
+                throw new Error("不支持的变身类型: " + typ);
+            }
             var pet:PetData = petData(uid, pid);
             var morphPet:PetData = petData(uid, morphPid);
             morphPet.anger = 20;
@@ -599,16 +630,8 @@ public class FightUI extends Sprite {
             pet.position = 0;
             var team:TeamData = teamData(uid);
             //神迹变身交换背包位置
-            var pos1:int = 0;
-            var pos2:int = 0;
-            for (var i:int = 0; i < team.pets.length; i++) {
-                if (team.pets[i].pid === pid) {
-                    pos1 = i;
-                }
-                if (team.pets[i].pid === morphPid) {
-                    pos2 = i;
-                }
-            }
+            var pos1:int = team.pets.indexOf(pet);
+            var pos2:int = team.pets.indexOf(morphPet);
             team.pets[pos1] = morphPet;
             team.pets[pos2] = pet;
             team.init();
@@ -643,6 +666,10 @@ public class FightUI extends Sprite {
     internal function processor1032CmdPet(param1:MessageEvent):void {
         var buffer:IDataInput = param1.message.getRawData();
         var normal:uint = uint(buffer.readUnsignedByte());
+        if (_fitChangePending) {
+            _fitChangePending = false;
+            return;
+        }
         clearCountDown();
         nextPetOperate();
         if (!normal) {
@@ -667,15 +694,7 @@ public class FightUI extends Sprite {
 
     internal function processor1502CmdSkill(param1:MessageEvent):void {
         clearCountDown();
-        var buffer:IDataInput = param1.message.getRawData();
-        var uid:int = thisUid();
-        var pid:int = buffer.readUnsignedInt();
-        var skill:int = buffer.readUnsignedInt();
-        var pet:PetData = petData(uid, pid);
-        if (skill !== 0) {
-            pet.anger = Math.max(pet.anger - new SkillInfo(skill).anger, 0);
-        }
-        pushNextFrame();
+        // 1502只确认选招，不扣怒、不生成状态帧；数值由16号和3号提供。
         nextPetOperate();
     }
 
@@ -728,6 +747,9 @@ public class FightUI extends Sprite {
     }
 
     internal function processorCmdError(param1:MessageEvent):void {
+        if (param1.message.commandId === 1032) {
+            _fitChangePending = false;
+        }
         ServerMessager.addMessage(ErrorMap.findErrorMessage(param1.message.statusCode));
     }
 
@@ -797,7 +819,7 @@ public class FightUI extends Sprite {
             }
             Connection.send(CommandSet.FIGHT_USE_SKILL_1502, skill);
         } else {
-            var pid:int = 0;
+            var pid:uint = 0;
             var pets:Vector.<PetData> = _arenaData.left.pets;
             for (var j:int = 0; j < pets.length; j++) {
                 if (pets[j].hp > 0) {
@@ -840,7 +862,6 @@ public class FightUI extends Sprite {
     private function clearCountDown():void {
         _countDown++;
         _player.clearFgLayer();
-        _itemId4Pet = 0;
     }
 
     private function nextPetOperate():void {
@@ -912,7 +933,7 @@ public class FightUI extends Sprite {
         }
     }
 
-    private function updatePosition(uid:int, pid:int, position:int):PetData {
+    private function updatePosition(uid:int, pid:uint, position:int):PetData {
         var team:TeamData = teamData(uid);
         var pet:PetData = petData(uid, pid);
         if (position === 1) {
@@ -961,7 +982,7 @@ public class FightUI extends Sprite {
         return team;
     }
 
-    private function petData(uid:int, pid:int):PetData {
+    private function petData(uid:int, pid:uint):PetData {
         var team:TeamData = teamData(uid);
         for (var i:int = 0; i < team.pets.length; i++) {
             if (team.pets[i].pid === pid) {
@@ -1063,6 +1084,7 @@ public class FightUI extends Sprite {
             var obj:PetItem = petItems[i];
             var target:ItemData = new ItemData;
             target.id = obj.referenceId;
+            target.type = ItemConfig.getPetDefinition(obj.referenceId).type;
             target.name = obj.name;
             target.count = obj.quantity;
             target.icon = ItemConfig.getItemIconUrl(obj.referenceId);
@@ -1084,7 +1106,7 @@ public class FightUI extends Sprite {
             buffData.name = buff.buffId + "-" + SkillSideEffectConfig.getName(buff.buffId);
             buffData.icon = URLUtil.getSkillSideEffectIcon(buff.buffId);
             buffData.tips = buff.tip;
-            buffData.count = buff.dummy0 || buff.dummy1 || buff.dummy2
+            buffData.count = buff.dummy2;
             buffs.push(buffData);
         }
         return buffs;

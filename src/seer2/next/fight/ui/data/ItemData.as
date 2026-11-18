@@ -2,6 +2,7 @@ package seer2.next.fight.ui.data {
 
 public class ItemData {
     public var id:int;
+    public var type:int;
     public var name:String;
     public var count:int;
     public var icon:String;
@@ -10,6 +11,7 @@ public class ItemData {
     public static function from(obj:Object):ItemData {
         var target:ItemData = new ItemData;
         target.id = obj.id;
+        target.type = obj.type;
         target.name = obj.name;
         target.count = obj.count;
         target.icon = obj.icon;
@@ -20,6 +22,7 @@ public class ItemData {
     public static function clone(obj:ItemData):ItemData {
         var target:ItemData = new ItemData;
         target.id = obj.id;
+        target.type = obj.type;
         target.name = obj.name;
         target.count = obj.count;
         target.icon = obj.icon;
