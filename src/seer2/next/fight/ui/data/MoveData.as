@@ -10,6 +10,7 @@ public class MoveData {
     public var soundUrl:String;
     public var effectUrl:String;
     public var hits:Array;
+    public var hitTipIds:Array;
 
     public static function from(obj:Object):MoveData {
         if (!obj) {
@@ -26,6 +27,7 @@ public class MoveData {
         target.soundUrl = obj.soundUrl;
         target.effectUrl = obj.effectUrl;
         target.hits = obj.hit;
+        target.hitTipIds = obj.hitTipIds;
         return target;
     }
 
@@ -44,6 +46,7 @@ public class MoveData {
         target.soundUrl = obj.soundUrl;
         target.effectUrl = obj.effectUrl;
         target.hits = obj.hits;
+        target.hitTipIds = obj.hitTipIds ? obj.hitTipIds.concat() : null;
         return target;
     }
 }

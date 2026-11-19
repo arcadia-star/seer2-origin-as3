@@ -851,6 +851,10 @@ public class PetInfo {
         return this._skillInfo;
     }
 
+    public function get hasTrainingAndSkillData():Boolean {
+        return _learningInfo != null && _skillInfo != null && _skillInfo.skillInfoVec != null;
+    }
+
     public function get learningInfo():PetLearningInfo {
         if (this._learningInfo == null) {
             this._learningInfo = new PetLearningInfo();
