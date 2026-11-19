@@ -5,6 +5,7 @@ public class PetData {
     public var pid:uint;
     public var petIcon:String;
     public var petSwf:String;
+    public var pose:String;
     public var petSound:String;
     public var name:String;
     public var level:int;
@@ -32,6 +33,7 @@ public class PetData {
 
         target.petIcon = obj.petIcon;
         target.petSwf = obj.petSwf;
+        target.pose = obj.pose;
         target.petSound = obj.petSound;
         target.name = obj.name;
         target.level = obj.level;
@@ -60,6 +62,7 @@ public class PetData {
         target.pid = obj.pid;
         target.petIcon = obj.petIcon;
         target.petSwf = obj.petSwf;
+        target.pose = obj.pose;
         target.petSound = obj.petSound;
         target.name = obj.name;
         target.level = obj.level;

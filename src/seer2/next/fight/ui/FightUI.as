@@ -1,6 +1,7 @@
 package seer2.next.fight.ui {
 import com.taomee.seer2.app.arena.ArenaScene;
 import com.taomee.seer2.app.arena.FightManager;
+import com.taomee.seer2.app.arena.animation.imples.BuffDisabledAnimation;
 import com.taomee.seer2.app.arena.controller.FightController;
 import com.taomee.seer2.app.arena.data.ArenaDataInfo;
 import com.taomee.seer2.app.arena.data.BuffResultInfo;
@@ -21,6 +22,7 @@ import com.taomee.seer2.app.arena.processor.Processor_15;
 import com.taomee.seer2.app.arena.processor.Processor_9;
 import com.taomee.seer2.app.arena.ui.toolbar.ItemPanel;
 import com.taomee.seer2.app.arena.util.AngerCorrecter;
+import com.taomee.seer2.app.arena.util.FighterActionType;
 import com.taomee.seer2.app.arena.util.FightEndReason;
 import com.taomee.seer2.app.arena.util.FightMode;
 import com.taomee.seer2.app.arena.util.FightSide;
@@ -235,12 +237,16 @@ public class FightUI extends Sprite {
         }
         var item:int = data.item;
         if (item > 0) {
-            // 播放器完成普通药/复活药的目标选择，DLL只提交完整操作。
-            if (!data.target) {
-                throw new Error("道具操作缺少目标精灵，请同步更新FramePlayer.swf");
+            var target:uint = _arenaData.left.master.pid;
+            if (isRevivalItem(item)) {
+                target = uint(data.target);
+                if (target === 0 || !canRevivePet(petData(thisUid(), target))) {
+                    ServerMessager.addMessage("请选择已倒下且未上场的精灵");
+                    return;
+                }
             }
             _itemId = item;
-            Connection.send(CommandSet.FIGHT_USE_MEDICINE_1048, uint(data.target), item, 1);
+            Connection.send(CommandSet.FIGHT_USE_MEDICINE_1048, target, item, 1);
         }
         var pet:uint = data.pet;
         if (pet != 0) {
@@ -313,10 +319,11 @@ public class FightUI extends Sprite {
         }
         var bunchId:uint = PetConfig.getPetDefinition(monster).bunchId;
         var skillInfo:SkillInfo = new SkillInfo(skillId);
+        var isFusion:Boolean = skillInfo.isIntercourse;
         var target:MoveData = new MoveData();
         target.side = side;
         target.skill = skillInfo.name;
-        target.category = skillInfo.isIntercourse ? "合体" : skillInfo.category;
+        target.category = isFusion ? "合体" : skillInfo.category;
         target.damage = obj.changedHp;
         target.critical = obj.isCritical ? 1 : 0;
         target.miss = obj.atkTimes === 0 ? 1 : 0;
@@ -336,14 +343,22 @@ public class FightUI extends Sprite {
             frame.event.change = target.damage
             frame.event.delay = 1000;
         } else {
+            var defender:TeamData = side === FightSide.LEFT ? _arenaData.right : _arenaData.left;
+            target.hitTipIds = [];
+            for each (var buff:BuffData in defender.master.buffs) {
+                if (BuffDisabledAnimation.BUFF_ID_LIST.indexOf(buff.id) !== -1) {
+                    target.hitTipIds.push(buff.id);
+                }
+            }
             frame.move = target;
             frame.smooth = FrameData.SMOOTH_TRUE;
         }
         frame.logs = new Vector.<String>();
         frame.logs.push("<font color=\'#ffffff\'>[" + _arenaData.round + "]</font><font color=\'#00ffff\'>" + movePet.name + "</font><font color=\'#ffffff\'>使用</font><font color=\'#ffff00\'>" + target.skill + "</font>");
+        if (isFusion) {
+            _fitActor = {uid: actorUid, pid: movePet.pid, skillId: skillId, continues: false};
+        }
         pushNextFrame(frame);
-        _fitActor = skillInfo.isIntercourse ? {uid: actorUid, skillId: skillId} : null;
-        completeFit();
     }
 
     internal function processor5UserRevenue(param1:MessageEvent):void {
@@ -354,6 +369,8 @@ public class FightUI extends Sprite {
         var buffer:IDataInput = param1.message.getRawData();
         var round:uint = uint(buffer.readUnsignedByte());
         var weather:uint = uint(buffer.readUnsignedByte());
+
+        continueFit();
 
         //怒气修正，服务端少了下发，只能本地修正
         addPetAnger(_arenaData.left.slave, 15);
@@ -385,6 +402,12 @@ public class FightUI extends Sprite {
         var result:Parser_8 = new Parser_8(buffer);
         var buffInfos:Vector.<FighterBuffInfo> = result.parserFighterBuffInfo(buffer);
 
+        if (_fitActor && result.userId !== _fitActor.uid) {
+            var previous:PetData = teamData(result.userId).master;
+            if (previous.hp <= 0 && previous.pid !== result.fighterId) {
+                continueFit();
+            }
+        }
         var pet:PetData = updatePosition(result.userId, result.fighterId, 1);
         pet.anger = result.angerValue;
         pet.buffs = fromBuff(buffInfos);
@@ -566,9 +589,15 @@ public class FightUI extends Sprite {
         completeFit();
     }
 
+    private function continueFit():void {
+        if (!_fitActor) return;
+        _fitActor.continues = true;
+        completeFit();
+    }
+
     private function completeFit():void {
-        // 18号与合体技能结果可能先后到达，齐备后再生成合体状态帧。
-        if (!_fitResult || !_fitActor) {
+        // 3、18号只确定合体结果；下一回合或对手补位才确认战斗继续。
+        if (_fightResult || !_fitResult || !_fitActor || !_fitActor.continues) {
             return;
         }
         var result:Object = _fitResult;
@@ -700,6 +729,8 @@ public class FightUI extends Sprite {
 
     internal function processor1507FightEnd(param1:MessageEvent):void {
         _fightResult = new FightResultInfo(param1.message.getRawDataCopy());
+        _fitActor = null;
+        _fitResult = null;
 
         if (_escapeUid && _escapeUid.length) {
             pushNextFunc(function ():void {
@@ -760,8 +791,33 @@ public class FightUI extends Sprite {
         updateSkillEnable();
         updatePetAlive();
         frame.data = ArenaData.clone(_arenaData);
+        setFramePoses(frame);
+        updateItemTargets(frame.data.left);
         _next.push({frame: frame});
         playNext();
+    }
+
+    private function setFramePoses(frame:FrameData):void {
+        var winner:int = frame.end ? frame.end.winner : 0;
+        var outgoingSide:int = _fitActor ? teamSide(_fitActor.uid) : 0;
+        setTeamPoses(frame.data.left, FightSide.LEFT);
+        setTeamPoses(frame.data.right, FightSide.RIGHT);
+
+        function setTeamPoses(team:TeamData, side:int):void {
+            for each (var pet:PetData in team.pets) {
+                if (side === outgoingSide && pet.pid === uint(_fitActor.pid)) {
+                    pet.pose = null;
+                } else if (side === winner) {
+                    pet.pose = FighterActionType.WIN;
+                } else if (pet.hp <= 0) {
+                    pet.pose = FighterActionType.DEAD;
+                } else if (pet.hp < pet.maxHp * 0.2) {
+                    pet.pose = FighterActionType.ABOUT_TO_DIE;
+                } else {
+                    pet.pose = FighterActionType.IDLE;
+                }
+            }
+        }
     }
 
     private function pushNextFunc(func:Function):void {
@@ -1077,6 +1133,24 @@ public class FightUI extends Sprite {
         return target;
     }
 
+    private static function isRevivalItem(itemId:int):Boolean {
+        return ItemConfig.getPetDefinition(itemId).type === PetItemType.RESURRECTION;
+    }
+
+    private static function canRevivePet(pet:PetData):Boolean {
+        return pet.position === 0 && pet.hp <= 0;
+    }
+
+    private static function updateItemTargets(team:TeamData):void {
+        var targets:Vector.<uint> = new <uint>[];
+        for each (var pet:PetData in team.pets) {
+            if (canRevivePet(pet)) targets.push(pet.pid);
+        }
+        for each (var item:ItemData in team.items) {
+            if (isRevivalItem(item.id)) item.targetPids = targets;
+        }
+    }
+
     private static function fromItem(typ:int):Vector.<ItemData> {
         var items:Vector.<ItemData> = new <ItemData>[];
         var petItems:Vector.<PetItem> = ItemPanel.filterItemsAllFight(typ);
@@ -1084,7 +1158,6 @@ public class FightUI extends Sprite {
             var obj:PetItem = petItems[i];
             var target:ItemData = new ItemData;
             target.id = obj.referenceId;
-            target.type = ItemConfig.getPetDefinition(obj.referenceId).type;
             target.name = obj.name;
             target.count = obj.quantity;
             target.icon = ItemConfig.getItemIconUrl(obj.referenceId);
